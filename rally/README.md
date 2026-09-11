@@ -3,15 +3,16 @@
 ![Driving prototype](docs/driving.png)
 
 A native C++17 pseudo-3D road experiment: gray asphalt, red/white kerbs,
-yellow dashed center line, blue sky and green ground. It starts stationary on
-the top straight, travelling right around a loop traced from the supplied map.
+yellow dashed center line, blue sky and green ground. It starts stationary on the front stretch of the compact flat tri-oval.
+The earlier Fuji-reference circuit is also selectable.
+Player speed is capped at 224 to limit the observed backwards-motion strobing.
 Hold **Up** to accelerate or **Down** to brake to a stop. Releasing both holds
-speed. **Escape** returns to MOS. Hold **Left/Right** to change steering by one step per rendered frame (four
-each way). Releasing keeps the angle; holding the opposite direction returns
-through center. Both held together leave it unchanged. The HUD shows the selected step. Steering changes the car angle while
+speed. **Escape** returns to MOS. Hold **Left/Right** to change steering by three 256-circle angle units per rendered frame (21
+each way; 1.40625° per unit). Releasing keeps the angle; holding the opposite direction returns
+through center. Both held together leave it unchanged. The HUD shows the signed angle unit. Steering changes the car angle while
 lateral motion retains inertia. The chase camera follows part of the lateral
-movement; bends push the car outward. Grass slows it toward 90 speed units. Speed is in arbitrary world units/second, not km/h.
-The HUD shows speed, steering step and whether the car is on road or grass.
+movement; bends push the car outward. The off-road speed penalty is temporarily disabled for constant-speed grip tests. Speed is in arbitrary world units/second, not km/h.
+The HUD shows speed, steering angle and whether the car is on road or grass.
 
 From the AgonArcade repository root:
 
@@ -26,19 +27,33 @@ make -C rally test
 
 ![Hand-traced centreline](assets/track.svg)
 
-The centreline is hand-digitized from the user's 320×200 arcade track-map image.
-It follows the visible route and direction, but is not surveyed Fuji geometry
-or extracted game-ROM data. The Jukebox Potrace adapters were inspected; they
-trace region outlines, whereas this small reference needs one smooth centreline.
-No Jukebox files were changed. A mask was unnecessary for this first trace.
+Two circuits are embedded in the binary:
 
-`tools/generate_track.py` owns editable cubic control points in reference-image
-coordinates. `make -C rally track` regenerates the SVG, CSV, and integer C++ table.
-The closed loop is uniformly sampled by arc length into 512 points, spaced 64
-world units apart: 32,768 units total. This scale is chosen for road rendering,
-not a claim to reproduce the map's printed 4,359-meter lap length. The generator
-also stores unit tangents; runtime interpolation preserves fractional progress
-through samples and across the closing seam. Geometry uses fixed-point math.
+1. **Tri-oval** (default): an original, unbanked loop with a bowed front stretch,
+   long back straight and matching tighter end turns. It runs counterclockwise in map
+   coordinates. Lap length is 5,760 world units; this
+   is a gameplay scale, not a measured Michigan/Daytona replica. The tightest analytical radius is about 367 units, twice Fuji's 183.
+   Sampled-table minima are about 369 and 190 respectively.
+2. **Fuji reference**: the previously accepted hand-traced arcade-map centreline,
+   preserved byte-for-byte in its generated geometry CSV. It is not surveyed
+   Fuji geometry or game-ROM data. Its lap remains 32,768 world units.
+
+Editable cubics live in `assets/tracks/fuji.json` and `tri-oval.json`.
+`make -C rally track` regenerates both tables, maps, CSVs and radius summaries.
+Both use 64-unit arc spacing (512 Fuji samples, 90 tri-oval samples), with
+interpolated position and tangent and continuous closing seams. Ground stays
+level throughout; neither circuit introduces banking. Live grip tuning limits lateral tire acceleration against the bend demand
+(`speed² / radius`) and steering demand.
+
+After loading `rally.bin` in MOS:
+
+```text
+run                 # tri-oval
+run . oval          # explicit tri-oval
+run . fuji          # preserved Fuji circuit
+```
+
+See [track maps and geometry notes](assets/tracks/README.md).
 
 For each screen row, find the track point at the corresponding distance ahead
 and project its lateral displacement against the camera's local right vector.
@@ -55,7 +70,7 @@ Mode 136 (320×240) uses double buffering, filled primitives and no active softw
 sprites. Every frame covers the back buffer. Simulation uses elapsed MOS
 centiseconds; rendering targets 25 fps. Actual presentation rate remains subject
 to CPU/VDP timing. The user confirmed the earlier automatic-following build passes on physical
-hardware on September 11, 2026; the new car/steering build awaits human validation.
+hardware on September 11, 2026; the current traffic milestone is emulator-reviewed and awaits hardware validation.
 Hardware frame rate was not measured.
 
 Projection remains `z = 8000 / (y - 96)`, with camera height 50 world units.
@@ -79,12 +94,10 @@ Headless native captures additionally exercised right and left turns, accelerati
 coasting, stopping and Escape. A host-only VDU exporter in `tests/preview_track.cpp`
 helps inspect whole-loop scenes; native captures remain the rasterization check.
 
-For repeatable native captures, the program accepts an optional starting distance
-in world units. After loading the binary in MOS, `run . 4800` starts before the
-first sharp right bend; `run . 14500` approaches the left bend. Normal `run`
-starts at the map's start point. The prior road-only build was accepted on emulator and hardware. The current
-car/steering build has passed host checks and native scripted-input capture;
-human driving review remains pending.
+For repeatable native captures, append a starting distance: `run . oval 4000`
+or `run . fuji 4800`. A numeric-only argument also selects a tri-oval distance.
+The two-track driving build has been reviewed through user emulator play; native
+selection and rendering have also been exercised in isolated headless captures.
 
 ## Hardware deployment
 
@@ -101,18 +114,55 @@ run
 
 ## Player car artwork
 
-The [editable Blender model and nine yaw views](assets/car/README.md) are integrated
+The [editable Blender model and five source yaw views](assets/car/README.md) are integrated
 into the driving prototype. All exported sprites use the Agon RGB222 palette and
-binary transparency. The nine views are embedded in the binary and preloaded
+binary transparency. The five views are embedded in the binary and preloaded
 into VDP bitmap memory once, then drawn as ordinary bitmaps into the back buffer.
-No separate asset files are required. Each steering step selects its corresponding yaw view.
+No separate asset files are required. The nearest view follows the fine steering angle; a VDP affine reflection supplies
+the four opposite orientations. See [matrix notes](../docs/research/rally-vdp-transforms.md).
 
 The car displays at approximately 1.6x its original size: each 64x48 source
 view is resampled to 102x77 with nearest-neighbor sampling during startup.
 This is about 20% smaller in each dimension than the preceding 128x96 trial.
-All nine VDP bitmaps use 70,686 bytes; embedded source remains 27,648 bytes.
+Five VDP bitmaps use 39,270 pixel bytes; embedded source uses 15,360 bytes.
 The draw origin is adjusted to retain the same ground contact and center.
 
 Each rendered frame snapshots the complete 16-byte held-key map and applies
 steering once. OS/VDP key-repeat events do not control steering. Elapsed-time
 physics updates cannot apply extra steering during catch-up.
+
+## Live grip tuning
+
+Hold **-** to reduce grip or **=** to increase it, by five percentage points per
+rendered frame. Range 25–200%, default 60%; both together leave it unchanged.
+The HUD displays the value. It applies immediately and is not saved between runs.
+
+The tire-force budget is 180 world acceleration units at 100% grip, shared by
+steering and the acceleration needed to follow the curve. Demand beyond that
+budget causes outward slip; braking reduces curve demand with speed squared.
+Grass still halves the lateral budget, but its speed penalty is temporarily
+disabled (`OffroadSpeedPenalty=false`). Releasing Up/Down holds speed even
+off road; braking still works. These are
+arcade tuning units, not calibrated real-world G measurements or a full vehicle
+model. Track-relative forward motion and the chase camera remain as before.
+
+## First traffic pass
+
+Six opponents follow fixed lateral lines at 140, 160 and 180 world units/sec.
+Their body colours are blue, British Racing Green (dark RGB222 approximation),
+yellow, cyan, lavender and orange. Each has complementary nose/wing accents and
+an independently chosen contrasting helmet. Lavender is lighter than blue.
+
+Five original images cross UART once. Six 256-byte lookup tables describe the
+body, stripe, wing and helmet substitutions; VDP buffered command 72 generates
+the thirty opponent images locally. Tyres, metal, visor and transparency survive
+unchanged. Image/table payload is 40,806 bytes instead of 274,890 pixel bytes
+(about 85% less), plus command headers. One scratch mapping buffer is reused
+and freed after expansion.
+All liveries share five embedded source views. Thirty-five uploaded bitmaps
+(five views for the player and each opponent) use 274,890 pixel bytes.
+
+Opponents use the road's arc-distance projection and draw farthest first, before
+the player. VDP Q8 matrices scale and mirror the loaded views. Relative track
+tangents choose a yaw view, clamped to the available artwork. Cars disappear
+behind the near plane; there are no collisions or overtaking decisions yet.

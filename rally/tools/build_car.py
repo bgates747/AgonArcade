@@ -1,5 +1,5 @@
 """Run with Blender: blender -b --python rally/tools/build_car.py.
-Original open-wheel model, flat palette materials, nine orthographic yaw views.
+Original open-wheel model, flat palette materials, five orthographic yaw views.
 """
 from pathlib import Path
 import math
@@ -99,7 +99,7 @@ camera.rotation_euler=(Vector((0,0,.55))-camera.location).to_track_quat('-Z','Y'
 camera.data.type='ORTHO';camera.data.ortho_scale=4.6;scene.camera=camera
 # Constant framing/ground anchor; yaw turns the model, never the camera.
 scene['palette']='Agon RGB222; 0,85,170,255 per channel; binary-alpha export'
-scene['notes']='Original open-wheel racer. +Y forward, +Z up. Yaw views -30..30 in 7.5 degree steps.'
+scene['notes']='Original open-wheel racer. +Y forward, +Z up. Yaw views 0..29.53125 degrees in 7.3828125 degree steps; mirror for opposite side.'
 car.rotation_euler.z=0
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.object.select_all(action='DESELECT')
@@ -111,8 +111,8 @@ for screen in bpy.data.screens:
             area.spaces.active.shading.color_type='MATERIAL'
             area.spaces.active.region_3d.view_perspective='CAMERA'
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'rally-car.blend'))
-for index in range(9):
-    angle=-30+index*7.5;car.rotation_euler.z=math.radians(angle)
+for index in range(5):
+    angle=index*(21*360/256)/4;car.rotation_euler.z=math.radians(angle)
     scene.render.filepath=str(RAW/f'car-{index:02d}.png')
     bpy.ops.render.render(write_still=True)
-print('Saved editable car and nine raw yaw views:',OUT)
+print('Saved editable car and five raw yaw views:',OUT)

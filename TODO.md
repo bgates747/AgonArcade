@@ -1,9 +1,8 @@
 # AgonArcade TODO
 
-3. [ ] RALLY-04: Confirm physical-hardware behavior of the deployed driving build.
-   Car artwork/size and driving behavior have been reviewed; frame-based held-key
-   steering passes host and native scripted checks. User approved the local
-   driving milestone commit. Hardware confirmation for this binary is pending.
+3. [ ] RALLY-04: Deploy and validate the current traffic milestone on physical
+   hardware. Emulator gameplay has been reviewed and the local commit approved;
+   the card still carries the earlier driving build. Preserve card autoexec.txt.
 
 2. [ ] STUNT-01: Next project direction — Stunt Car Racer-inspired game using
    a custom Pingo VDP with true 3D, flat-shaded triangles. Start by qualifying

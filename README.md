@@ -33,11 +33,12 @@ Pynvaders and Aginvadors remain in their separate repository.
 ## Agon Rally prototype
 
 The [flat-road prototype](rally/README.md) lives in `rally/`: gray asphalt,
-red/white kerbs and yellow dashed markings, now following a looping track traced
-from the supplied arcade map. Up accelerates, Down brakes, and Escape returns
-to MOS. Left/Right steer the player car, with lateral inertia and a grass slowdown.
-The new driving build awaits human review; the earlier road-only milestone
-passed on hardware.
+red/white kerbs and yellow dashed markings, with a compact flat tri-oval and the preserved Fuji-reference circuit. Up accelerates, Down brakes, and Escape returns
+to MOS. Left/Right steer the player car, with lateral inertia and adjustable grip. The off-road speed penalty is
+temporarily disabled for constant-speed testing.
+Six coloured opponents use VDP scaling, mirroring and local colour-table expansion.
+The current traffic milestone is emulator-reviewed; physical-hardware validation
+remains pending. The earlier road-only milestone passed on hardware.
 
 ![Agon Rally curve](rally/docs/curve-right.png)
 

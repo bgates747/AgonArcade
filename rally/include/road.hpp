@@ -4,6 +4,7 @@
 namespace rally {
 constexpr int Horizon = 96, RoadTop = 103, CameraHeight = 50;
 constexpr int Bottom = 223, Period = 80;
+constexpr bool OffroadSpeedPenalty=false; // Temporary constant-speed grip testing.
 struct Stream {
     uint8_t data[4096];
     unsigned size = 0;
@@ -23,51 +24,70 @@ struct Stream {
     }
 };
 struct Sample { int32_t x,y,tx,ty; };
-inline Sample trackSample(int32_t distanceQ8) {
-    unsigned index=unsigned(distanceQ8>>14)&(TrackCount-1);
+inline Sample trackSample(int32_t distanceQ8, const TrackDef &track=Fuji) {
+    unsigned index=unsigned(distanceQ8>>14);
+    if(index>=track.count) index%=track.count;
     int32_t f=distanceQ8&16383;
-    const auto &a=Track[index]; const auto &b=Track[(index+1)&(TrackCount-1)];
+    const auto &a=track.points[index]; const auto &b=track.points[index+1==track.count?0:index+1];
     return {int32_t(a.x)*256+((int32_t(b.x-a.x)*f)>>6),
             int32_t(a.y)*256+((int32_t(b.y-a.y)*f)>>6),
             a.tx+((int32_t(b.tx-a.tx)*f)>>14),
             a.ty+((int32_t(b.ty-a.ty)*f)>>14)};
 }
 struct Motion {
+    const TrackDef *track=&Fuji;
     int32_t phase=0, position=0, speed=0;
     int32_t lateral=0, lateralVelocity=0; // Q8 world units, Q8 units/sec
-    int steering=0, yawStep=0;
+    int16_t steering=0; // Signed 256-unit circle angle, three units per held frame.
+    int grip=60;
     bool offroad() const { return lateral>78L*256 || lateral< -78L*256; }
-    int view() const { return 4-yawStep; } // Blender positive yaw turns toward -X.
+    int view() const { return ((steering<0?-steering:steering)*4+10)/21; }
+    bool mirrored() const { return steering>0; } // Positive Blender yaw faces left.
     int carX() const { return 128+int(lateral*3/1024); }
     int32_t cameraOffset() const { return lateral*2/3; }
     void steerFrame(bool left, bool right) {
         // Called exactly once per rendered frame, independent of key repeat.
         if(left!=right) {
-            if(left && yawStep> -4) --yawStep;
-            if(right && yawStep<4) ++yawStep;
+            steering+=right?3:-3;
+            if(steering>21) steering=21;
+            if(steering< -21) steering= -21;
         }
-        steering=yawStep*250;
+    }
+    void gripFrame(bool less,bool more) {
+        if(less!=more) grip+=more?5:-5;
+        if(grip<25) grip=25;
+        if(grip>200) grip=200;
+    }
+    void lateralStep(int32_t centripetal) { // Q8 world acceleration required by curve
+        int32_t wanted=int32_t(steering)*speed*512/63;
+        int32_t required=(wanted-lateralVelocity)*100/12+centripetal;
+        int32_t limit=int32_t(grip)*180*256/100;
+        if(offroad()) limit=limit/2;
+        int32_t available=required;
+        if(available>limit) available=limit;
+        if(available< -limit) available= -limit;
+        lateralVelocity+=(available-centripetal)/100;
+        if(speed==0) lateralVelocity=0;
     }
     void tick(bool accelerate, bool brake) {
         speed+=brake?-4:accelerate?2:0;
-        if(offroad() && speed>90) speed-=4;
+        if(OffroadSpeedPenalty && offroad() && speed>90) speed-=4;
         if(speed<0) speed=0;
-        if(speed>300) speed=300;
+        if(speed>224) speed=224;
         int32_t p=(position/100)*256+(position%100)*256/100;
-        Sample a=trackSample(p), b=trackSample(p+64L*256);
+        Sample a=trackSample(p,*track), b=trackSample(p+64L*256,*track);
         int32_t bend=(a.tx*b.ty-a.ty*b.tx)/4096;
-        int32_t outward= -speed*speed*bend/737280L;
-        int32_t wanted=(int32_t(steering)*speed/1500+outward)*256;
-        lateralVelocity+=(wanted-lateralVelocity)/12;
-        if(speed==0) lateralVelocity=0;
+        // v^2 / radius: tangent change is Q12 over 64 world units.
+        lateralStep(speed*speed*bend/1024);
         lateral+=lateralVelocity/100;
         if(lateral>150L*256) { lateral=150L*256; lateralVelocity=0; }
         if(lateral< -150L*256) { lateral= -150L*256; lateralVelocity=0; }
-        position=(position+speed)%(TrackLength*100);
+        position=(position+speed)%(track->length*100);
         phase=(phase+speed)%(Period*100);
     }
 };
 struct Road {
+    const TrackDef *track=&Fuji;
     int32_t depth[Bottom-Horizon+2]; // hundredth units for material phase
     int32_t depthQ8[Bottom-Horizon+2];
     int32_t centers[Bottom+2]; // projected Q8 pixels
@@ -86,9 +106,9 @@ struct Road {
     static int edge(int y, int width) { return (y-Horizon)*width/CameraHeight; }
     void project(int32_t position, int32_t phase, int32_t cameraOffset=0) {
         int32_t p=(position/100)*256+(position%100)*256/100;
-        Sample camera=trackSample(p);
+        Sample camera=trackSample(p,*track);
         for(int y=RoadTop;y<=Bottom+1;++y) {
-            Sample ahead=trackSample(p+depthQ8[y-Horizon]);
+            Sample ahead=trackSample(p+depthQ8[y-Horizon],*track);
             int32_t dx=ahead.x-camera.x, dy=ahead.y-camera.y;
             // Right vector in map coordinates (-ty, tx). Arc distance supplies
             // depth: intentionally an arcade approximation, not a full 3D camera.
