@@ -1,6 +1,7 @@
 #include "road.hpp"
 #include "car.hpp"
 #include "traffic.hpp"
+#include "scenery.hpp"
 #include <agon/mos.h>
 #include <agon/vdp.h>
 #include <stdio.h>
@@ -54,6 +55,27 @@ void drawTraffic() {
         vdp_draw_bitmap(center-51*scale/256,y-70*scale/256);
     }
     vdp_adv_use_affine_matrix(1,65535);
+}
+void loadScenery() {
+    constexpr unsigned Source=63800,Bitmap=100;
+    vdp_adv_clear_buffer(Source);
+    vdp_adv_write_block_data(Source,sizeof(rally::SceneryPixels),(char *)rally::SceneryPixels);
+    vdp_adv_clear_buffer(64000+Bitmap);
+    rally::Stream command;
+    command.byte(23);command.byte(0);command.byte(0xa0);command.word(64000+Bitmap);
+    command.byte(72);command.byte(4);command.word(Source);
+    for(auto colour:rally::SceneryPalette) command.byte(colour);
+    mos_puts((char *)command.data,command.size,0);
+    vdp_select_bitmap(Bitmap);vdp_adv_bitmap_from_buffer(1024,rally::RoadTop,1);
+    vdp_adv_clear_buffer(Source);
+}
+void drawScenery() {
+    int32_t p=motion.position/100*256+(motion.position%100)*256/100;
+    auto heading=rally::trackSample(p,*motion.track);
+    int offset=rally::sceneryHeading(heading.tx,heading.ty);
+    vdp_adv_use_affine_matrix(1,65535);
+    vdp_select_bitmap(100);vdp_draw_bitmap(-offset,0);
+    if(offset>1024-320) vdp_draw_bitmap(1024-offset,0);
 }
 void text(int x,int y,const char *s) {
     vdp_cursor_tab(x,y);
@@ -118,6 +140,7 @@ int main(int argc, char **argv) {
         23,0,0xa0,0xf0,0xf9,32,11,0xc0,
         0xff,0xff,0,0,101,0,0,0,1,0,0,0};
     mos_puts((char *)mirrorCommands,sizeof(mirrorCommands),0);
+    loadScenery();
     vdp_set_text_colour(15);
     vdp_set_text_bg_colour(0);
     clock_t previous=clock(), next=previous;
@@ -136,8 +159,9 @@ int main(int argc, char **argv) {
         for (unsigned i=0;i<elapsed;++i) {
             motion.tick(up,down);traffic.tick(track->length*100);
         }
-        road.render(stream,motion.phase,motion.position,motion.cameraOffset());
+        road.render(stream,motion.phase,motion.position,motion.cameraOffset(),false);
         if (stream.overflow) break;
+        drawScenery();
         mos_puts(reinterpret_cast<char *>(stream.data),stream.size,0);
         drawTraffic();
         vdp_select_bitmap(motion.view());
@@ -148,7 +172,7 @@ int main(int argc, char **argv) {
         snprintf(hud,sizeof(hud),"SPEED %03ld  UP/DN  -= GRIP  ESC QUIT",(long)motion.speed);
         text(1,28,hud);
         snprintf(hud,sizeof(hud),"%s L/R%+d GRIP%03d%% %s",
-                 track==&rally::Fuji?"FUJI":"TRI-OVAL",motion.steering,motion.grip,motion.offroad()?"GRASS":"ROAD ");
+                 track==&rally::Fuji?"FUJI":"TRI-OVAL",motion.steering,motion.grip,motion.surfaceName());
         text(1,29,hud);
         vdp_swap();
     }

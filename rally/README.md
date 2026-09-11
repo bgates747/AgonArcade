@@ -3,16 +3,17 @@
 ![Driving prototype](docs/driving.png)
 
 A native C++17 pseudo-3D road experiment: gray asphalt, red/white kerbs,
-yellow dashed center line, blue sky and green ground. It starts stationary on the front stretch of the compact flat tri-oval.
+yellow dashed center line, white/yellow shoulder lines, doubled kerb width,
+a solid blue sky and distant procedural scenery. It starts stationary on the front stretch of the compact flat tri-oval.
 The earlier Fuji-reference circuit is also selectable.
 Player speed is capped at 224 to limit the observed backwards-motion strobing.
 Hold **Up** to accelerate or **Down** to brake to a stop. Releasing both holds
-speed. **Escape** returns to MOS. Hold **Left/Right** to change steering by three 256-circle angle units per rendered frame (21
+speed on the road. **Escape** returns to MOS. Hold **Left/Right** to change steering by three 256-circle angle units per rendered frame (21
 each way; 1.40625° per unit). Releasing keeps the angle; holding the opposite direction returns
 through center. Both held together leave it unchanged. The HUD shows the signed angle unit. Steering changes the car angle while
 lateral motion retains inertia. The chase camera follows part of the lateral
-movement; bends push the car outward. The off-road speed penalty is temporarily disabled for constant-speed grip tests. Speed is in arbitrary world units/second, not km/h.
-The HUD shows speed, steering angle and whether the car is on road or grass.
+movement; bends push the car outward. Kerbs slow the car moderately; grass slows it more strongly. Speed is in arbitrary world units/second, not km/h.
+The HUD shows speed, steering angle and whether the car is on road, kerb or grass.
 
 From the AgonArcade repository root:
 
@@ -83,7 +84,7 @@ Projected rows merge into bands only when material agrees and their centreline
 is within one pixel of the interpolated segment, before coordinate rounding.
 Adjacent bands share their boundary edge: native VDP rasterization exposed gaps
 when bands stopped on separate final rows. A packed quadrilateral costs 27 bytes.
-A sweep at 17-world-unit intervals around the loop observed at most 1,125 road/
+A sweep at 17-world-unit intervals around the loop observed at most 2,043 road/
 background bytes and 17 bands; this sampled bound is not an exhaustive proof.
 HUD and swap traffic is additional. No command-buffer patching is needed here.
 
@@ -140,9 +141,10 @@ The HUD displays the value. It applies immediately and is not saved between runs
 The tire-force budget is 180 world acceleration units at 100% grip, shared by
 steering and the acceleration needed to follow the curve. Demand beyond that
 budget causes outward slip; braking reduces curve demand with speed squared.
-Grass still halves the lateral budget, but its speed penalty is temporarily
-disabled (`OffroadSpeedPenalty=false`). Releasing Up/Down holds speed even
-off road; braking still works. These are
+Kerbs increase the lateral grip budget by 15%; grass halves it. Kerb drag removes three speed units per
+centisecond above 160; grass drag removes four above 90. Throttle adds two,
+so neither surface allows full-speed running. Braking still reaches zero.
+These are
 arcade tuning units, not calibrated real-world G measurements or a full vehicle
 model. Track-relative forward motion and the chase camera remain as before.
 
@@ -165,4 +167,30 @@ All liveries share five embedded source views. Thirty-five uploaded bitmaps
 Opponents use the road's arc-distance projection and draw farthest first, before
 the player. VDP Q8 matrices scale and mirror the loaded views. Relative track
 tangents choose a yaw view, clamped to the available artwork. Cars disappear
-behind the near plane; there are no collisions or overtaking decisions yet.
+behind the near plane; there are no car-to-car collisions or overtaking decisions yet.
+
+## Distant scenery and road edges
+
+The [procedural panorama](assets/scenery/README.md) uses solid blue sky shading, clouds, periodic foothills and a snow-capped mountain. One infinitely
+distant layer scrolls with absolute track heading, wrapping at 1024 pixels.
+The same heading restores the same view, independent of steering and lateral
+position. A prebuilt 4-bit image expands on the VDP from a single 52,736-byte upload.
+
+Kerbs now span 16 world units per side (formerly eight). An inset two-unit
+shoulder stripe occupies lateral distances 84–86 world units (moved inward
+by its own two-unit width) and alternates white/yellow with the existing marking phase. Road
+projection and driving limits retain their prior scale. Two extra quadrilaterals
+per road band draw the shoulder stripes; wider kerbs reuse existing commands.
+
+Surface contact uses a 12-world-unit car half-width. Asphalt ends at ±90;
+kerbs end at ±106. Thus kerb contact starts when the car centre exceeds ±78,
+and grass contact when it exceeds ±94. Contact on either side selects the
+worse surface. These are fixed-width arcade collision bounds, independent of
+the rendered yaw view. The HUD reports ROAD, KERB or GRASS.
+
+## Current performance limitation
+
+The September 11 scenery/surface build (96,333 bytes) was deployed to hardware.
+User testing reports lag and backwards-motion strobing at the 224 speed cap;
+the emulator has also become less smooth. Functional captures and host tests
+do not establish frame-rate or pacing acceptance. Timing research is pending.

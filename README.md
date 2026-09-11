@@ -34,8 +34,7 @@ Pynvaders and Aginvadors remain in their separate repository.
 
 The [flat-road prototype](rally/README.md) lives in `rally/`: gray asphalt,
 red/white kerbs and yellow dashed markings, with a compact flat tri-oval and the preserved Fuji-reference circuit. Up accelerates, Down brakes, and Escape returns
-to MOS. Left/Right steer the player car, with lateral inertia and adjustable grip. The off-road speed penalty is
-temporarily disabled for constant-speed testing.
+to MOS. Left/Right steer the player car, with lateral inertia and adjustable grip. Kerb and grass contact impose progressively stronger speed penalties.
 Six coloured opponents use VDP scaling, mirroring and local colour-table expansion.
 The current traffic milestone is emulator-reviewed; physical-hardware validation
 remains pending. The earlier road-only milestone passed on hardware.

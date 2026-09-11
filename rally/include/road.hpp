@@ -4,7 +4,8 @@
 namespace rally {
 constexpr int Horizon = 96, RoadTop = 103, CameraHeight = 50;
 constexpr int Bottom = 223, Period = 80;
-constexpr bool OffroadSpeedPenalty=false; // Temporary constant-speed grip testing.
+constexpr int RoadHalfWidth=90, KerbOuterWidth=106, CarHalfWidth=12;
+enum class Surface { Road, Kerb, Grass };
 struct Stream {
     uint8_t data[4096];
     unsigned size = 0;
@@ -40,7 +41,16 @@ struct Motion {
     int32_t lateral=0, lateralVelocity=0; // Q8 world units, Q8 units/sec
     int16_t steering=0; // Signed 256-unit circle angle, three units per held frame.
     int grip=60;
-    bool offroad() const { return lateral>78L*256 || lateral< -78L*256; }
+    Surface surface() const {
+        int32_t outer=(lateral<0?-lateral:lateral)+CarHalfWidth*256L;
+        if(outer>KerbOuterWidth*256L) return Surface::Grass;
+        if(outer>RoadHalfWidth*256L) return Surface::Kerb;
+        return Surface::Road;
+    }
+    bool offroad() const { return surface()==Surface::Grass; }
+    const char *surfaceName() const {
+        return surface()==Surface::Grass?"GRASS":surface()==Surface::Kerb?"KERB ":"ROAD ";
+    }
     int view() const { return ((steering<0?-steering:steering)*4+10)/21; }
     bool mirrored() const { return steering>0; } // Positive Blender yaw faces left.
     int carX() const { return 128+int(lateral*3/1024); }
@@ -62,18 +72,28 @@ struct Motion {
         int32_t wanted=int32_t(steering)*speed*512/63;
         int32_t required=(wanted-lateralVelocity)*100/12+centripetal;
         int32_t limit=int32_t(grip)*180*256/100;
-        if(offroad()) limit=limit/2;
+        if(surface()==Surface::Grass) limit=limit/2;
+        else if(surface()==Surface::Kerb) limit=limit*115/100;
         int32_t available=required;
         if(available>limit) available=limit;
         if(available< -limit) available= -limit;
         lateralVelocity+=(available-centripetal)/100;
         if(speed==0) lateralVelocity=0;
     }
-    void tick(bool accelerate, bool brake) {
+    void speedStep(bool accelerate, bool brake) {
         speed+=brake?-4:accelerate?2:0;
-        if(OffroadSpeedPenalty && offroad() && speed>90) speed-=4;
+        Surface contact=surface();
+        int floor=contact==Surface::Grass?90:160;
+        int drag=contact==Surface::Grass?4:3;
+        if(contact!=Surface::Road && speed>floor) {
+            speed-=drag;
+            if(speed<floor) speed=floor;
+        }
         if(speed<0) speed=0;
         if(speed>224) speed=224;
+    }
+    void tick(bool accelerate, bool brake) {
+        speedStep(accelerate,brake);
         int32_t p=(position/100)*256+(position%100)*256/100;
         Sample a=trackSample(p,*track), b=trackSample(p+64L*256,*track);
         int32_t bend=(a.tx*b.ty-a.ty*b.tx)/4096;
@@ -141,16 +161,19 @@ struct Road {
         s.quad(c+edge(y,a),c+edge(y,b),y,
                cc+edge(yy,a),cc+edge(yy,b),yy,color);
     }
-    void render(Stream &s, int32_t phase, int32_t position=0, int32_t cameraOffset=0) {
+    void render(Stream &s, int32_t phase, int32_t position=0, int32_t cameraOffset=0, bool fillSky=true) {
         project(position,phase,cameraOffset);
         s.size=0; s.overflow=false; bands=0;
-        s.rect(0,0,319,RoadTop-1,4);
+        if(fillSky) s.rect(0,0,319,RoadTop-1,4);
         s.rect(0,RoadTop,319,223,2);
         int y=RoadTop;
         while(y<=Bottom) {
             int end=bandEnd(y);
-            strip(s,y,end+1,-98,98,paint[y]?9:15);
-            strip(s,y,end+1,-90,90,8);
+            strip(s,y,end+1,-KerbOuterWidth,KerbOuterWidth,paint[y]?9:15);
+            strip(s,y,end+1,-RoadHalfWidth,RoadHalfWidth,8);
+            // Two-unit inset shoulder stripe; paired overdraw avoids extra edges.
+            strip(s,y,end+1,-86,86,paint[y]?11:15);
+            strip(s,y,end+1,-84,84,8);
             if(paint[y]) strip(s,y,end+1,-2,2,11);
             ++bands;
             y=end+1;

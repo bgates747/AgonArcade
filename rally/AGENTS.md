@@ -4,7 +4,7 @@ Follow the repository-root handoff and canonical Agon instructions. Read README.
 before edits. Use the root `.venv/bin/python`. Build/test from the root with
 `make -C rally` and `make -C rally test`. The user accepted the lower viewpoint and authorized flat curves from the
 supplied track map. The player car and Left/Right steering are now integrated,
-with lateral inertia and outward curve slip. Grass speed penalty is temporarily disabled. Up/Down control speed.
+with lateral inertia and outward curve slip. Kerb/grass speed penalties are enabled (160/90 tuning thresholds). Up/Down control speed.
 Generate track data with `make -C rally track`; editable cubics are in `assets/tracks/*.json`. Both circuits are embedded;
 normal `run` selects the tri-oval and `run . fuji` retains the earlier circuit. The prior road-only milestone is emulator/hardware validated. The current traffic
 milestone is emulator-reviewed and approved for a local commit; it has not been
@@ -21,5 +21,10 @@ Minus/equal adjust live grip once per frame (25–200%, 5-point increments).
 Track, grip and steering were tuned through user emulator play; local milestone commit approved.
 
 Six opponents use three fixed lanes/speeds, VDP lookup-table material-colour substitutions and VDP
-Q8 scale/reflection matrices. See include/traffic.hpp; collisions are absent.
+Q8 scale/reflection matrices. See include/traffic.hpp; car-to-car collisions are absent.
 Default grip is 60%, still live-tweakable.
+
+Scenery: `make -C rally scenery` uses Pillow + local agon-utils nearest-palette conversion.
+Generated 4-bit panorama expands via VDP command 72; draw-time scrolling uses
+absolute track tangent with integer atan lookup, no parallax. See assets/scenery.
+Widened kerbs and shoulder lines plus scenery await user emulator review.

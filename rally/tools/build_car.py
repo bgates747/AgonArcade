@@ -14,7 +14,7 @@ for block in list(bpy.data.materials): bpy.data.materials.remove(block)
 # sRGB palette codes map exactly to the Agon RGB222 cube after export.
 COLORS={'red':(255,0,0),'red_dark':(170,0,0),'orange':(255,85,0),
         'cream':(255,255,170),'white':(255,255,255),'yellow':(255,255,0),
-        'rubber':(0,0,0),'tread':(85,85,85),'metal':(170,170,170),
+        'rubber':(0,0,0),'tread':(0,0,0),'metal':(170,170,170),
         'dark_metal':(85,85,85),'helmet':(0,170,255),'visor':(0,0,85)}
 def linear(v):
     v=v/255

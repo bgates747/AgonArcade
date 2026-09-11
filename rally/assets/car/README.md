@@ -1,7 +1,7 @@
 # Rally player car
 
 Original editable low-poly open-wheel racer: red/orange bodywork, cream wings,
-black slick tires, metal hubs and a cyan helmet. The current driving prototype embeds these views and selects them in response
+solid black slick tyres and light-grey hubs and a cyan helmet. The current driving prototype embeds these views and selects them in response
 to steering.
 
 Open `rally-car.blend` in Blender. Named mesh objects are parented to
@@ -49,3 +49,7 @@ cyan/red, lavender/yellow and orange/blue. VDP buffered command 72 remaps body s
 helmet independently, using five uploaded originals and six 256-byte tables. Tyres, metal, dark visor and alpha survive.
 The green body uses RGB(0,85,0) with RGB(0,170,0) highlights. Lavender's base is
 RGB(170,85,255), distinct from blue RGB(0,0,255). All share five source views.
+
+Tyre facets and tread are black; wheel hubs use RGB(170,170,170), lighter
+than the RGB(85,85,85) asphalt.
+Other metal parts retain their original colours.

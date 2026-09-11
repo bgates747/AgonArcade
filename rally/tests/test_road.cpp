@@ -1,9 +1,27 @@
 #include "road.hpp"
 #include "traffic.hpp"
+#include "scenery.hpp"
 #include <assert.h>
 #include <stdio.h>
 #include <initializer_list>
 int main() {
+    assert(rally::sceneryHeading(4096,0)==0);
+    assert(rally::sceneryHeading(0,4096)==256);
+    assert(rally::sceneryHeading(-4096,0)==512);
+    assert(rally::sceneryHeading(0,-4096)==768);
+    assert(rally::sceneryHeading(4096,4096)==128);
+    assert(rally::sceneryHeading(4096,-4096)==896);
+    for(const auto *track:{&rally::Fuji,&rally::TriOval}) {
+        int previous=0;
+        for(int32_t p=0;p<=track->length;++p) {
+            auto sample=rally::trackSample(p*256,*track);
+            int heading=rally::sceneryHeading(sample.tx,sample.ty);
+            int delta=(heading-previous+1536)%1024-512;
+            if(p) assert(delta>=-2 && delta<=2);
+            previous=heading;
+        }
+    }
+
     for(unsigned livery=0;livery<rally::LiveryCount;++livery) for(unsigned pixel=0;pixel<256;++pixel) {
         unsigned result=rally::carColour(pixel,livery);
         assert((result&0xc0)==(pixel&0xc0));
@@ -121,17 +139,40 @@ int main() {
     }
     detents.steering=2;assert(detents.view()==0);
     detents.steering=3;assert(detents.view()==1);
-    rightCar.lateral=100L*256;rightCar.speed=224;
-    for(int i=0;i<150;++i) rightCar.tick(true,false);
-    assert(rightCar.speed==224 && rightCar.offroad());
-    rightCar.speed=200;
-    for(int i=0;i<100;++i) rightCar.tick(false,false);
-    assert(rightCar.speed==200); // Off-road coasting holds speed for grip testing.
+    for(int sign:{-1,1}) {
+        rally::Motion car;
+        car.lateral=sign*78L*256;assert(car.surface()==rally::Surface::Road);
+        car.lateral+=sign;assert(car.surface()==rally::Surface::Kerb);
+        car.lateral=sign*94L*256;assert(car.surface()==rally::Surface::Kerb);
+        car.lateral+=sign;assert(car.surface()==rally::Surface::Grass);
+    }
+    rally::Motion kerbCar,grassCar;
+    kerbCar.lateral=85L*256;grassCar.lateral=100L*256;
+    kerbCar.speed=grassCar.speed=224;
+    kerbCar.speedStep(true,false);grassCar.speedStep(true,false);
+    assert(kerbCar.speed==223 && grassCar.speed==222);
+    for(int i=0;i<200;++i) {kerbCar.speedStep(true,false);grassCar.speedStep(true,false);}
+    assert(kerbCar.speed==160 && grassCar.speed==90);
+    kerbCar.speed=grassCar.speed=200;
+    kerbCar.speedStep(false,false);grassCar.speedStep(false,false);
+    assert(kerbCar.speed==197 && grassCar.speed==196);
+    for(int i=0;i<200;++i) {kerbCar.speedStep(false,true);grassCar.speedStep(false,true);}
+    assert(kerbCar.speed==0 && grassCar.speed==0);
+    kerbCar.lateral=0;kerbCar.speed=160;
+    for(int i=0;i<32;++i) kerbCar.speedStep(true,false);
+    assert(kerbCar.speed==224);
+    rightCar.lateral=100L*256;rightCar.speed=200;
     for(int i=0;i<200;++i) rightCar.tick(false,true);
     assert(rightCar.speed==0 && rightCar.lateralVelocity==0);
     int32_t rest=rightCar.lateral;
     for(int i=0;i<50;++i) rightCar.tick(false,false);
     assert(rightCar.lateral==rest);
+    rally::Motion roadGrip,kerbGrip,grassGrip;
+    kerbGrip.lateral=85L*256;grassGrip.lateral=100L*256;
+    roadGrip.speed=kerbGrip.speed=grassGrip.speed=200;
+    roadGrip.lateralStep(115L*256);kerbGrip.lateralStep(115L*256);grassGrip.lateralStep(115L*256);
+    assert(kerbGrip.lateralVelocity==0);
+    assert(roadGrip.lateralVelocity<0 && grassGrip.lateralVelocity<roadGrip.lateralVelocity);
     rally::Motion lowGrip,highGrip;
     lowGrip.speed=highGrip.speed=200;lowGrip.grip=25;highGrip.grip=200;
     for(int i=0;i<100;++i) {lowGrip.lateralStep(200L*256);highGrip.lateralStep(200L*256);}
@@ -148,7 +189,7 @@ int main() {
     assert(near-road.centers[210]>far-road.centers[110]);
     for(int32_t pos=0;pos<rally::TrackLength*100;pos+=6400)
         for(int offset: {-100,100}) { road.render(s,pos%8000,pos,offset*256L);assert(!s.overflow); }
-    printf("Steering symmetry, persistent steering detents, off-road constant speed, stopped motion and camera parallax pass.\n");
+    printf("Steering symmetry, persistent steering detents, kerb/grass drag, stopped motion and camera parallax pass.\n");
     road.track=&rally::TriOval;
     unsigned ovalMax=0;
     for(int32_t pos=0;pos<rally::TriOval.length*100;pos+=1700) {
