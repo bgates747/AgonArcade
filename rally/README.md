@@ -1,14 +1,17 @@
 # Agon Rally — flat-track prototype
 
-![Emulator right-hand bend](docs/curve-right.png)
+![Driving prototype](docs/driving.png)
 
 A native C++17 pseudo-3D road experiment: gray asphalt, red/white kerbs,
 yellow dashed center line, blue sky and green ground. It starts stationary on
 the top straight, travelling right around a loop traced from the supplied map.
 Hold **Up** to accelerate or **Down** to brake to a stop. Releasing both holds
-speed. **Escape** returns to MOS. The camera follows the track automatically;
-there is no steering yet. Speed is in arbitrary world units/second, not km/h.
-The HUD shows progress around the loop and the current drawing-band count.
+speed. **Escape** returns to MOS. Hold **Left/Right** to change steering by one step per rendered frame (four
+each way). Releasing keeps the angle; holding the opposite direction returns
+through center. Both held together leave it unchanged. The HUD shows the selected step. Steering changes the car angle while
+lateral motion retains inertia. The chase camera follows part of the lateral
+movement; bends push the car outward. Grass slows it toward 90 speed units. Speed is in arbitrary world units/second, not km/h.
+The HUD shows speed, steering step and whether the car is on road or grass.
 
 From the AgonArcade repository root:
 
@@ -42,15 +45,18 @@ and project its lateral displacement against the camera's local right vector.
 Depth uses arc distance along the course. This is an arcade approximation, not
 a general 3D camera: it preserves the established road-width/depth relationship
 while introducing curves. It is not intended for crossing roads, hills or banked
-surfaces. The simulation automatically follows the centreline and tangent.
+surfaces. Forward progress and camera orientation follow the route tangent. Steering controls
+a separate lateral offset with a bounded arcade slip model, not a free-world
+vehicle heading simulation. This keeps the current road projection intact.
 
 ## Rendering and validation
 
 Mode 136 (320×240) uses double buffering, filled primitives and no active software
 sprites. Every frame covers the back buffer. Simulation uses elapsed MOS
 centiseconds; rendering targets 25 fps. Actual presentation rate remains subject
-to CPU/VDP timing. The user confirmed the deployed prototype passes on physical
-hardware on September 11, 2026; hardware frame rate was not measured.
+to CPU/VDP timing. The user confirmed the earlier automatic-following build passes on physical
+hardware on September 11, 2026; the new car/steering build awaits human validation.
+Hardware frame rate was not measured.
 
 Projection remains `z = 8000 / (y - 96)`, with camera height 50 world units.
 The road starts at row 103 with a finite 24-pixel width, hiding the vanishing
@@ -76,7 +82,9 @@ helps inspect whole-loop scenes; native captures remain the rasterization check.
 For repeatable native captures, the program accepts an optional starting distance
 in world units. After loading the binary in MOS, `run . 4800` starts before the
 first sharp right bend; `run . 14500` approaches the left bend. Normal `run`
-starts at the map's start point. The user accepted emulator gameplay and confirmed the hardware test passes.
+starts at the map's start point. The prior road-only build was accepted on emulator and hardware. The current
+car/steering build has passed host checks and native scripted-input capture;
+human driving review remains pending.
 
 ## Hardware deployment
 
@@ -90,3 +98,21 @@ cd /mystuff/arcade/rally
 load rally.bin
 run
 ```
+
+## Player car artwork
+
+The [editable Blender model and nine yaw views](assets/car/README.md) are integrated
+into the driving prototype. All exported sprites use the Agon RGB222 palette and
+binary transparency. The nine views are embedded in the binary and preloaded
+into VDP bitmap memory once, then drawn as ordinary bitmaps into the back buffer.
+No separate asset files are required. Each steering step selects its corresponding yaw view.
+
+The car displays at approximately 1.6x its original size: each 64x48 source
+view is resampled to 102x77 with nearest-neighbor sampling during startup.
+This is about 20% smaller in each dimension than the preceding 128x96 trial.
+All nine VDP bitmaps use 70,686 bytes; embedded source remains 27,648 bytes.
+The draw origin is adjusted to retain the same ground contact and center.
+
+Each rendered frame snapshots the complete 16-byte held-key map and applies
+steering once. OS/VDP key-repeat events do not control steering. Elapsed-time
+physics updates cannot apply extra steering during catch-up.

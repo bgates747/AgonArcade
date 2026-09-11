@@ -35,7 +35,9 @@ Pynvaders and Aginvadors remain in their separate repository.
 The [flat-road prototype](rally/README.md) lives in `rally/`: gray asphalt,
 red/white kerbs and yellow dashed markings, now following a looping track traced
 from the supplied arcade map. Up accelerates, Down brakes, and Escape returns
-to MOS. The camera follows the course automatically; steering is deferred.
+to MOS. Left/Right steer the player car, with lateral inertia and a grass slowdown.
+The new driving build awaits human review; the earlier road-only milestone
+passed on hardware.
 
 ![Agon Rally curve](rally/docs/curve-right.png)
 
