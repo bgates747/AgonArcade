@@ -2,6 +2,7 @@
 #include "car.hpp"
 #include "traffic.hpp"
 #include "scenery.hpp"
+#include "demo.hpp"
 #include <agon/mos.h>
 #include <agon/vdp.h>
 #include <stdio.h>
@@ -11,6 +12,10 @@
 namespace {
 rally::Motion motion;
 rally::Traffic traffic;
+rally::DemoDriver demoDriver;
+bool demoMode=true;
+bool demoInputArmed=false;
+bool escapeArmed=true;
 rally::SceneryHistory sceneryHistory;
 rally::Road road;
 rally::Stream stream;
@@ -104,16 +109,18 @@ void text(int x,int y,const char *s) {
 }
 int main(int argc, char **argv) {
     const rally::TrackDef *track=&rally::TriOval;
-    int distanceArg=1;
-    if(argc>1 && strcmp(argv[1],"fuji")==0) { track=&rally::Fuji; distanceArg=2; }
-    else if(argc>1 && strcmp(argv[1],"oval")==0) distanceArg=2;
+    long start=0;
+    for(int i=1;i<argc;++i) {
+        if(strcmp(argv[i],"fuji")==0) track=&rally::Fuji;
+        else if(strcmp(argv[i],"oval")==0) track=&rally::TriOval;
+        else if(strcmp(argv[i],"demo")==0) demoMode=true;
+        else if(strcmp(argv[i],"race")==0) demoMode=false;
+        else {char *end;long value=strtol(argv[i],&end,10);if(*end==0 && value>=0) start=value;}
+    }
     motion.track=road.track=track;
     road.init();
-    if(argc>distanceArg) {
-        long start=strtol(argv[distanceArg],nullptr,10);
-        if(start>=0 && start<track->length) {
-            motion.position=start*100;motion.phase=(start%rally::Period)*100;
-        }
+    if(start<track->length) {
+        motion.position=start*100;motion.phase=(start%rally::Period)*100;
     }
     traffic.init(motion.position,track->length*100);
     if (vdp_mode(136)<0) return 1;
@@ -169,15 +176,33 @@ int main(int argc, char **argv) {
         if (long(now-next)<0) continue;
         next=now+4;
         for(unsigned i=0;i<16;++i) heldKeys[i]=vdp_getKeyMap(i);
-        if(key(113)) break;
+
         unsigned elapsed=unsigned(now-previous);
         previous=now;
-        motion.steerFrame(key(26),key(122));
+        bool anyKey=false;
+        for(auto bits:heldKeys) anyKey=anyKey || bits!=0;
+        bool startingRace=false;
+        if(demoMode) {
+            if(!anyKey) demoInputArmed=true; // Ignore a launch key still held.
+            if(demoInputArmed && anyKey) {
+                demoMode=false;startingRace=true;
+                motion.steering-=motion.demoCurveSteering;
+                if(motion.steering>21) motion.steering=21;
+                if(motion.steering< -21) motion.steering=-21;
+                motion.demoCurveSteering=0;
+            }
+        }
+        if(startingRace && key(113)) escapeArmed=false;
+        if(!key(113)) escapeArmed=true;
+        if(!demoMode && !startingRace && escapeArmed && key(113)) break;
+        if(demoMode) demoDriver.frame(motion);
+        else motion.steerFrame(key(26),key(122));
         motion.gripFrame(key(24),key(94));
         bool up=key(58), down=key(42);
         // Elapsed-time physics may catch up; steering is applied only once above.
         for (unsigned i=0;i<elapsed;++i) {
-            motion.tick(up,down);traffic.tick(track->length*100);
+            if(demoMode) demoDriver.tick(motion);else motion.tick(up,down);
+            traffic.tick(track->length*100);
         }
         road.render(stream,motion.phase,motion.position,motion.cameraOffset(),false);
         if (stream.overflow) break;
@@ -189,11 +214,15 @@ int main(int argc, char **argv) {
         vdp_draw_bitmap(motion.carX()-19,149);
         vdp_adv_use_affine_matrix(1,65535);
         char hud[41];
-        snprintf(hud,sizeof(hud),"SPEED %03ld  UP/DN  -= GRIP  ESC QUIT",(long)motion.speed);
-        text(1,28,hud);
-        snprintf(hud,sizeof(hud),"%s L/R%+d GRIP%03d%% %s",
-                 track==&rally::Fuji?"FUJI":"TRI-OVAL",motion.steering,motion.grip,motion.surfaceName());
-        text(1,29,hud);
+        if(demoMode) {
+            text(7,28,"PRESS ANY KEY TO RACE");
+        } else {
+            snprintf(hud,sizeof(hud),"SPEED %03ld  UP/DN  -= GRIP  ESC QUIT",(long)motion.speed);
+            text(1,28,hud);
+            snprintf(hud,sizeof(hud),"%s L/R%+d GRIP%03d%% %s",
+                     track==&rally::Fuji?"FUJI":"TRI-OVAL",motion.steering,motion.grip,motion.surfaceName());
+            text(1,29,hud);
+        }
         vdp_swap();
         sceneryHistory.swapped();
     }

@@ -22,6 +22,11 @@
     pixel tests pass. Native pixel comparison passes; user hardware review inconclusive.
     Frozen as potential progress; performance acceptance remains in RALLY-10.
 
+12. [ ] RALLY-13 (deferred by user): Revisit implicit road-following/autosteer.
+    Separate camera/track-frame rotation from vehicle heading and driver steering;
+    agree on the intended handling before changing the current model. User wants
+    current behaviour retained until ready for deeper development.
+
 2. [ ] STUNT-01: Next project direction — Stunt Car Racer-inspired game using
    a custom Pingo VDP with true 3D, flat-shaded triangles. Start by qualifying
    the existing renderer/examples and a minimal elevated track with one ramp.
@@ -34,4 +39,5 @@ RALLY-02 research evidence is recorded in [the research log](docs/2026-09-11-res
 
 RALLY-01 emulator and physical-hardware acceptance are recorded in
 [the Rally development log](docs/2026-09-11-rally.md). The user authorized a
-local milestone commit; remote publication is deferred.
+local milestone commit and subsequently authorized publication to the existing
+public bgates747/AgonArcade repository.

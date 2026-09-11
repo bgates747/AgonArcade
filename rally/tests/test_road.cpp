@@ -1,10 +1,26 @@
 #include "road.hpp"
 #include "traffic.hpp"
 #include "scenery.hpp"
+#include "demo.hpp"
 #include <assert.h>
 #include <stdio.h>
 #include <initializer_list>
 int main() {
+    for(const auto *track:{&rally::Fuji,&rally::TriOval}) for(int frameTicks:{4,12,24}) {
+        rally::Motion car;car.track=track;car.lateral=40L*256;
+        rally::DemoDriver driver;int32_t travelled=0,maxError=0;bool turned=false;
+        for(int tick=0;travelled<track->length*200 && tick<200000;++tick) {
+            if(tick%frameTicks==0) driver.frame(car);
+            driver.tick(car);travelled+=car.speed;
+            if(car.view()>0) turned=true;
+            int32_t error=car.lateral<0?-car.lateral:car.lateral;
+            if(error>maxError) maxError=error;
+        }
+        assert(travelled>=track->length*200 && turned);
+        assert(maxError<60L*256);
+        assert(car.lateral<5L*256 && car.lateral> -5L*256);
+    }
+
     rally::SceneryHistory history;
     auto update=history.prepare(100);
     assert(update.repaint && update.delta==0 && update.left==0 && update.right==319);

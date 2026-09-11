@@ -197,3 +197,29 @@ The September 11 scenery/surface build (96,333 bytes) was deployed to hardware.
 User testing reports lag and backwards-motion strobing at the 224 speed cap;
 the emulator has also become less smooth. Functional captures and host tests
 do not establish frame-rate or pacing acceptance. Timing research is pending.
+
+## Demo driver
+
+Launch defaults to demo driving on the tri-oval; `run . fuji` demos Fuji.
+The information bar is replaced by PRESS ANY KEY TO RACE.
+Track name, `demo`, and an optional starting distance can appear in any order.
+Any newly held key switches to manual control after launch keys have been
+released; Escape then exits on a subsequent press. Use `run . race` to bypass
+demo. The takeover continues the current lap and speed.
+
+A damped lateral controller steers toward the centre with at most three angle
+units per rendered update. A 512-world-unit curvature look-ahead chooses a
+conservative speed using the configured grip, leaving correction headroom.
+The driver uses ordinary acceleration/braking, lateral grip and surface physics;
+it never teleports or locks the car to the centre. A curvature-derived steering
+baseline supplies the road-following component of the displayed angle; the
+controller adds lateral correction. This baseline is subtracted from lateral
+demand because the track reference frame already turns. Manual takeover removes
+the baseline and restores the existing manual model. No opponent avoidance is
+implemented; car-to-car collisions are still absent. There is no lap/time limit.
+Host checks complete two laps on each track at 4/12/24 raw clock units per
+control update, recovering from a 40-world-unit lateral offset. This is a
+functional demo, not a measured constant-speed performance benchmark.
+
+Implicit track-following/autosteer is acknowledged and deferred for review under
+RALLY-13. The user requested retaining current behaviour for now.

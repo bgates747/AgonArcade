@@ -40,6 +40,7 @@ struct Motion {
     int32_t phase=0, position=0, speed=0;
     int32_t lateral=0, lateralVelocity=0; // Q8 world units, Q8 units/sec
     int16_t steering=0; // Signed 256-unit circle angle, three units per held frame.
+    int16_t demoCurveSteering=0; // Demo road-following baseline; manual driving uses zero.
     int grip=60;
     Surface surface() const {
         int32_t outer=(lateral<0?-lateral:lateral)+CarHalfWidth*256L;
@@ -69,7 +70,7 @@ struct Motion {
         if(grip>200) grip=200;
     }
     void lateralStep(int32_t centripetal) { // Q8 world acceleration required by curve
-        int32_t wanted=int32_t(steering)*speed*512/63;
+        int32_t wanted=int32_t(steering-demoCurveSteering)*speed*512/63;
         int32_t required=(wanted-lateralVelocity)*100/12+centripetal;
         int32_t limit=int32_t(grip)*180*256/100;
         if(surface()==Surface::Grass) limit=limit/2;

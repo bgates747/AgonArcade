@@ -28,3 +28,8 @@ Scenery: `make -C rally scenery` uses Pillow + local agon-utils nearest-palette 
 Generated 4-bit panorama expands via VDP command 72; draw-time scrolling uses
 absolute track tangent with integer atan lookup, no parallax. See assets/scenery.
 Widened kerbs and shoulder lines plus scenery await user emulator review.
+
+Demo is the launch default; any key takes over, `run . race` bypasses it.
+Escape quits after takeover. The prompt occupies the existing HUD band.
+Uses normal physics with curvature-based speed control and centre correction.
+The current review emulator autoexec selects demo; physical card is unchanged.
