@@ -18,8 +18,11 @@ Raw gradient work is under ignored `obj/scenery`.
 The generator emits PNG, packed 4-bit indices (52,736 bytes), and a C++ header.
 Buffered command 72 expands the indices with a 16-byte palette on the VDP.
 The resulting opaque bitmap occupies 105,472 bytes; temporary source buffer
-63800 is released after expansion. Bitmap 100 uses buffer 64100. Draw one or
-two clipped copies to cover the screen across the panorama wrap.
+63800 is released after expansion. Bitmap 100 uses buffer 64100. First use draws one or two clipped copies. Subsequent frames retain separate
+heading offsets for both draw buffers, scroll the sky viewport via stock
+VDU 23,7, and repaint only the exposed edge. No movement skips upper-sky work; the bottom sixteen sky rows are refreshed
+to erase foreground overlap.
+Large heading jumps fall back to full sky redraw.
 
 Heading uses a generated integer atan lookup (1024 units/circle), with octant
 symmetry and absolute track tangents. No runtime floating point, parallax speeds,

@@ -11,6 +11,7 @@
 namespace {
 rally::Motion motion;
 rally::Traffic traffic;
+rally::SceneryHistory sceneryHistory;
 rally::Road road;
 rally::Stream stream;
 constexpr unsigned CarWidth=102, CarHeight=77;
@@ -73,9 +74,28 @@ void drawScenery() {
     int32_t p=motion.position/100*256+(motion.position%100)*256/100;
     auto heading=rally::trackSample(p,*motion.track);
     int offset=rally::sceneryHeading(heading.tx,heading.ty);
+    auto update=sceneryHistory.prepare(offset);
+
     vdp_adv_use_affine_matrix(1,65535);
-    vdp_select_bitmap(100);vdp_draw_bitmap(-offset,0);
-    if(offset>1024-320) vdp_draw_bitmap(1024-offset,0);
+    if(update.delta) {
+        vdp_set_graphics_viewport(0,0,319,rally::RoadTop-1);
+        vdp_scroll_screen_extent(2,update.delta>0?1:0,
+                                 update.delta>0?update.delta:-update.delta);
+    }
+    vdp_select_bitmap(100);
+    if(update.repaint) {
+        vdp_set_graphics_viewport(update.left,0,update.right,rally::RoadTop-1);
+        if(1024-offset>update.left) vdp_draw_bitmap(-offset,0);
+        if(1024-offset<=update.right) vdp_draw_bitmap(1024-offset,0);
+    }
+    // Foreground triangles and distant cars can overlap the bottom of the sky.
+    // Repair that narrow band after scrolling, including when heading is static.
+    if(!update.repaint || update.delta) {
+        vdp_set_graphics_viewport(0,rally::RoadTop-16,319,rally::RoadTop-1);
+        vdp_draw_bitmap(-offset,0);
+        if(offset>1024-320) vdp_draw_bitmap(1024-offset,0);
+    }
+    vdp_set_graphics_viewport(0,0,319,239);
 }
 void text(int x,int y,const char *s) {
     vdp_cursor_tab(x,y);
@@ -175,6 +195,7 @@ int main(int argc, char **argv) {
                  track==&rally::Fuji?"FUJI":"TRI-OVAL",motion.steering,motion.grip,motion.surfaceName());
         text(1,29,hud);
         vdp_swap();
+        sceneryHistory.swapped();
     }
     vdp_mode(0);
     vdp_set_logical_coordinates();

@@ -173,14 +173,17 @@ behind the near plane; there are no car-to-car collisions or overtaking decision
 
 The [procedural panorama](assets/scenery/README.md) uses solid blue sky shading, clouds, periodic foothills and a snow-capped mountain. One infinitely
 distant layer scrolls with absolute track heading, wrapping at 1024 pixels.
+Stock viewport scrolling retains separate scenery offsets in both draw buffers
+and repaints only exposed edges; unchanged headings skip upper-sky drawing. The bottom sixteen sky rows are
+refreshed to erase road/traffic overlap.
 The same heading restores the same view, independent of steering and lateral
 position. A prebuilt 4-bit image expands on the VDP from a single 52,736-byte upload.
 
 Kerbs now span 16 world units per side (formerly eight). An inset two-unit
 shoulder stripe occupies lateral distances 84–86 world units (moved inward
 by its own two-unit width) and alternates white/yellow with the existing marking phase. Road
-projection and driving limits retain their prior scale. Two extra quadrilaterals
-per road band draw the shoulder stripes; wider kerbs reuse existing commands.
+projection and driving limits retain their prior scale. Two narrow quadrilaterals
+per road band draw the shoulder stripes without repainting the road interior; wider kerbs reuse existing commands.
 
 Surface contact uses a 12-world-unit car half-width. Asphalt ends at ±90;
 kerbs end at ±106. Thus kerb contact starts when the car centre exceeds ±78,

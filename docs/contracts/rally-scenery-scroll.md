@@ -33,3 +33,11 @@ road/traffic rendering, physics, steering and tuning. No firmware changes.
 
 Root TODO.md is the authoritative task register. This document freezes behaviour
 and acceptance criteria, not a second task queue.
+
+Implementation qualification amendment: native captures exposed road raster
+coverage on sky row 102, and distant traffic can extend above the horizon.
+Retained pixels must not preserve foreground debris. After scrolling, refresh
+the bottom sixteen sky rows (87..102), including zero-heading frames; the
+upper 87 rows still need no work when unchanged. A full redraw already covers
+this band. This supersedes the zero-work clause only for the overlap band and
+preserves existing foreground appearance rather than clipping cars differently.

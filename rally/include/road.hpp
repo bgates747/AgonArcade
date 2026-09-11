@@ -171,9 +171,9 @@ struct Road {
             int end=bandEnd(y);
             strip(s,y,end+1,-KerbOuterWidth,KerbOuterWidth,paint[y]?9:15);
             strip(s,y,end+1,-RoadHalfWidth,RoadHalfWidth,8);
-            // Two-unit inset shoulder stripe; paired overdraw avoids extra edges.
-            strip(s,y,end+1,-86,86,paint[y]?11:15);
-            strip(s,y,end+1,-84,84,8);
+            // Draw only the two shoulder strips, avoiding full-road repainting.
+            strip(s,y,end+1,-86,-84,paint[y]?11:15);
+            strip(s,y,end+1,84,86,paint[y]?11:15);
             if(paint[y]) strip(s,y,end+1,-2,2,11);
             ++bands;
             y=end+1;

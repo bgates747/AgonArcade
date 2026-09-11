@@ -5,6 +5,35 @@
 #include <stdio.h>
 #include <initializer_list>
 int main() {
+    rally::SceneryHistory history;
+    auto update=history.prepare(100);
+    assert(update.repaint && update.delta==0 && update.left==0 && update.right==319);
+    history.swapped();update=history.prepare(105);
+    assert(update.repaint && update.delta==0 && update.right==319);
+    history.swapped();update=history.prepare(110);
+    assert(update.delta==10 && update.left==310 && update.right==319);
+    history.swapped();update=history.prepare(100);
+    assert(update.delta== -5 && update.left==0 && update.right==4);
+    assert(!history.prepare(100).repaint);
+    update=history.prepare(800);assert(update.repaint && update.delta==0 && update.right==319);
+    history.prepare(1020);update=history.prepare(4);
+    assert(update.delta==8 && update.left==312);
+    update=history.prepare(1020);assert(update.delta== -8 && update.right==7);
+    // Simulate retained pixels in two physical buffers over turns/wrap/jumps.
+    int pixels[2][320]={};rally::SceneryHistory retained;
+    for(int step=0;step<1500;++step) {
+        int offset=(step<700?step*3:4500-step*3)&1023;
+        unsigned slot=retained.slot;auto u=retained.prepare(offset);
+        if(u.repaint) {
+            int old[320];for(int x=0;x<320;++x) old[x]=pixels[slot][x];
+            if(u.delta) for(int x=0;x<320;++x)
+                if(x+u.delta>=0 && x+u.delta<320) pixels[slot][x]=old[x+u.delta];
+            for(int x=u.left;x<=u.right;++x) pixels[slot][x]=(offset+x)&1023;
+        }
+        for(int x=0;x<320;++x) assert(pixels[slot][x]==((offset+x)&1023));
+        retained.swapped();
+    }
+
     assert(rally::sceneryHeading(4096,0)==0);
     assert(rally::sceneryHeading(0,4096)==256);
     assert(rally::sceneryHeading(-4096,0)==512);

@@ -249,3 +249,38 @@ VDP only, not implemented or performance-qualified.
 Sources: agon-docs/docs/vdp/VDU-Commands.md section vdu-23-7; pinned VDP
 context/graphics.h:396, context.h:45; pinned FabGL
 dispdrivers/vga64controller.cpp:361.
+
+## Remediation attempt 2 — retained stock-VDP scenery scrolling
+
+Contract committed before implementation as `139ba6f`, tracked by RALLY-11.
+`SceneryHistory` stores valid flags and absolute offsets for each alternating
+draw buffer. It emits full redraw on first use or |delta|>255, no work at zero
+delta, otherwise a shortest-wrap signed scroll and exact exposed strip.
+`drawScenery` uses stock graphics-viewport scroll, clips ordinary bitmap draws
+to the strip, and restores the full graphics viewport. The slot changes after
+the existing swap submission. Frame timing/physics and stock firmware unchanged.
+
+Build and ASan/UBSan checks pass. Tests include 1,500 simulated alternating-buffer
+updates with turns, wraps and jumps, verifying every retained horizontal pixel
+against the ideal panorama. This proves host history/strip bookkeeping, not the
+VDP scroll implementation or hardware performance. Hardware retest remains
+required; custom completion callbacks are not used. User additionally authorized
+SD deployment immediately before the graphical emulator review alert.
+
+Native validation amendment for attempt 2: exact panorama comparisons found
+foreground pixels on row 102. Road rasterisation reaches the boundary and
+distant cars can extend into the lower sky. Added a post-scroll refresh of
+rows 87..102, including zero-heading frames, to prevent stale foreground from
+being retained. Full redraws already repair this band. The other 87 sky rows
+remain retained. This is recorded as a qualification amendment to the frozen
+contract; no foreground clipping/geometry change was introduced.
+
+Attempt 2 candidate deployed: 97,244 bytes, AGON:/mystuff/arcade/rally/rally.bin,
+autoexec untouched, writes flushed before emulator summons. Native verification
+matched ideal panorama pixels through row 101 in 23 captures. Hardware timing
+and subjective response are still unqualified.
+
+Hardware review outcome: user reports improvement is hard to determine and
+authorizes freezing as potential progress. Attempts 1 and 2 are retained as a
+checkpoint, with **no confirmed frame-rate/latency improvement**. Performance
+qualification remains open; do not label this build a hardware performance pass.

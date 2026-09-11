@@ -1,8 +1,8 @@
 # AgonArcade TODO
 
-3. [ ] RALLY-04: Validate the current 96,344-byte narrow-shoulder build on physical
+3. [ ] RALLY-04: Validate the current 97,244-byte retained-scrolling build on physical
    hardware. Deployed to AGON /mystuff/arcade/rally/rally.bin; autoexec.txt
-   preserved. Prior build had lag/strobing; remediation retest result pending.
+   preserved. Prior build had lag/strobing; retained-scrolling retest inconclusive. Performance acceptance remains open.
 
 8. [ ] RALLY-09: Review kerb/grass contact slowdown and inset shoulder lines.
    Car-width contact, milder kerb drag, restored grass drag and HUD surface labels
@@ -18,7 +18,9 @@
 
 10. [ ] RALLY-11: Implement stock viewport scrolling for retained scenery.
     Frozen contract: docs/contracts/rally-scenery-scroll.md. Separate per-buffer
-    offsets, exposed-edge repaint and wrap/fallback tests; hardware benefit unmeasured.
+    offsets and exposed-edge repaint implemented; host wrap/fallback and retained-
+    pixel tests pass. Native pixel comparison passes; user hardware review inconclusive.
+    Frozen as potential progress; performance acceptance remains in RALLY-10.
 
 2. [ ] STUNT-01: Next project direction — Stunt Car Racer-inspired game using
    a custom Pingo VDP with true 3D, flat-shaded triangles. Start by qualifying
