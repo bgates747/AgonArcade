@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500">
+<rect width="960" height="500" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#222;font-size:15px}.title{font-size:21px;font-weight:bold}.small{font-size:13px}</style>
+<text x="30" y="34" class="title">Flat-road perspective: why distance needs a reciprocal table</text>
+<text x="30" y="63">Original analytical illustration; these parameters are not extracted from Pole Position.</text>
+<rect x="35.0" y="80.0" width="496.0" height="372.0" fill="#fafafa" stroke="#bbb"/>
+<path d="M283.0,228.8 L105.83500000000001,425.65000000000003 L460.165,425.65000000000003 Z" fill="#dedede" stroke="#333"/>
+<line x1="35.0" y1="228.8" x2="531.0" y2="228.8" stroke="#777" stroke-dasharray="5 5"/>
+<text x="42.75" y="219.5" class="small">Horizon y = 96</text>
+<line x1="134.2" y1="394.1333333333334" x2="431.8" y2="394.1333333333334" stroke="#28728a"/>
+<text x="436.45" y="398.1333333333334" class="small">z=150</text>
+<line x1="171.4" y1="352.8" x2="394.6" y2="352.8" stroke="#28728a"/>
+<line x1="193.72000000000003" y1="328.0" x2="372.28" y2="328.0" stroke="#28728a"/>
+<text x="376.93" y="332.0" class="small">z=250</text>
+<line x1="208.6" y1="311.4666666666667" x2="357.40000000000003" y2="311.4666666666667" stroke="#28728a"/>
+<line x1="227.20000000000002" y1="290.8" x2="338.8" y2="290.8" stroke="#28728a"/>
+<text x="343.45" y="294.8" class="small">z=400</text>
+<line x1="245.8" y1="270.1333333333333" x2="320.2" y2="270.1333333333333" stroke="#28728a"/>
+<line x1="260.68" y1="253.6" x2="305.32" y2="253.6" stroke="#28728a"/>
+<text x="309.97" y="257.6" class="small">z=1000</text>
+<line x1="271.84000000000003" y1="241.20000000000002" x2="294.15999999999997" y2="241.20000000000002" stroke="#28728a"/>
+<text x="570" y="128" class="title">Flat-ground equations</text>
+<text x="570" y="170">q = screen_y − horizon</text>
+<text x="570" y="204">depth z = focal_length × height / q</text>
+<text x="570" y="238">scale = q / height</text>
+<text x="570" y="272">half_width = road_half_width × scale</text>
+<text x="570" y="326">Equal steps in world distance compress</text>
+<text x="570" y="350">toward the horizon. Equal screen steps</text>
+<text x="570" y="374">do not represent equal travel distances.</text>
+<text x="30" y="478" class="small">f=160 px; camera height=100 units; road half-width=90 units. Supporting values: projection.csv.</text>
+</svg>

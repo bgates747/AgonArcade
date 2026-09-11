@@ -14,3 +14,9 @@ Keep new games in sibling subdirectories. This checkout is AgonArcade even
 though its existing local directory is named AgonDefender. Pynvaders is separate.
 Leave emulator-related changes uncommitted until human validation and explicit
 commit approval, as required by the canonical workflow.
+
+Rally flat-track prototype lives in `rally/`. Read `rally/README.md`.
+Build/test with `make -C rally` and `make -C rally test`. For projection background, read
+`docs/plans/rally-flat-road.md` and `docs/research/pole-position/README.md`.
+The report distinguishes original hardware evidence from proposed Agon geometry
+and estimated performance. Root `TODO.md` remains the sole task list.

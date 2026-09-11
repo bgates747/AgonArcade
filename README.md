@@ -29,3 +29,18 @@ make -C defender test
 The local checkout lives at `~/Agon/mystuff/AgonDefender`; the repository is named
 **AgonArcade**. Future games belong in sibling subdirectories beside `defender/`.
 Pynvaders and Aginvadors remain in their separate repository.
+
+## Agon Rally prototype
+
+The [flat-road prototype](rally/README.md) lives in `rally/`: gray asphalt,
+red/white kerbs and yellow dashed markings, now following a looping track traced
+from the supplied arcade map. Up accelerates, Down brakes, and Escape returns
+to MOS. The camera follows the course automatically; steering is deferred.
+
+![Agon Rally curve](rally/docs/curve-right.png)
+
+Build with `make -C rally`, then launch `./rally/run.sh` after preparing its
+isolated emulator profile as described in its README. The
+[detailed research](docs/research/pole-position/README.md) covers original arcade
+hardware, projection, command budgets and supporting sources; the
+[earlier proposal](docs/plans/rally-flat-road.md) records the broader design.
