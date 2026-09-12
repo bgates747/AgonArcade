@@ -1,7 +1,7 @@
 # R19-09 scenery integration précis
 
-Read-only preparation while R19-08 vehicle images run. R19-09 remains in the
-root TODO execution register; no scenery kernel is implemented by these notes.
+R19-08 is complete. R19-09 remains in the root TODO execution register; its
+MatFloor prerequisite is qualified, but no scenery kernel is implemented yet.
 The accepted oracle is949f618 under `.work/oracle`. Authoritative files are
 `include/scenery.hpp`, `include/scenery_data.hpp`, `include/scene.hpp`, and
 `src/main.cpp::loadScenery/drawScenery`. Keep the accepted artwork and behaviour.
@@ -96,3 +96,49 @@ with the resident state protocol. The current vehicle visual loader is a
 diagnostic fixture, not the game frontend. Static payload ledgers omit stock
 cached inverse chunks and allocator metadata; later heap/stability tests remain
 necessary. Full-scene timing belongs to R19-10 at normal CPU/UART settings.
+
+## Qualified floor and proposed exact interpolation construction
+
+Golem f856fa2d0e0465d0586b16f7086a3377b046772f adds MatFloor. All236 native
+full-record tests pass for binary32 integer neighbours,1/16384 fractions,
+signed zero/subnormals, byte carries and source preservation. Host tests check
+every integer boundary0..16777215 and adjacent binary32 values with both signs;
+the full sanitizer/golden/negative suite passes. See evidence/golem-floor.
+This is a primitive checkpoint, not scenery integration.
+
+Static tangent data bounds are oval DX[-624,624], DY[-408,480]; Fuji
+DX[-1005,432], DY[-395,1215]. Fuji's largest delta*fraction product is19902915,
+above exact binary32 integers. Applying MatFloor after that rounded product
+would be too late. The following proposed decomposition avoids that product:
+
+```text
+h=fraction14/64; l=fraction14%64       // h0..255, l0..63
+biased=delta*h+262144                 //5869..571969 for common delta[-1005,1215]
+q=biased/256; r=biased%256            // integer DivModPositive, r0..255
+correction=floor((r*64+delta*l)/16384)
+interpolated=base+(q-1024)+correction
+```
+
+All integer products/sums fit binary32 exactly. The final numerator is
+[-63315,92865]; dividing by16384 preserves its fraction at magnitude<6.
+MatFloor then produces[-4,5]. The broad resulting component interval is
+[-5124,5311], containing the tighter mathematical convex-interpolation bound
+[-4096,4096]. A checked narrowing copy can validate that bound before absolute
+value/reciprocal use. One common delta/base helper can serve x and y without
+duplicating its compiler temporaries. This construction still needs native
+integration and exhaustive host comparison with accepted trackSample.
+
+For each record, max(abs(baseX)-abs(deltaX),abs(baseY)-abs(deltaY)) lower-bounds
+the major absolute tangent over the full interpolation interval. The minimum
+is2441 on the oval and2501 on Fuji. Thus a checked denominator range2048..4096
+is conservative for both complete tracks. Preserve a default zero heading on
+the unreachable zero-vector path; do not evaluate a zero reciprocal.
+
+This tight denominator also bounds the atan ratio construction without a new
+general divider: numerator<=4096*256=1048576 and reciprocal<=1/2048 give an
+initial quotient bound0..512. Correct the floored estimate against exact
+products q*major and(q+1)*major, each<=513*4096=2101248. Decrement when the first
+exceeds the numerator; increment when the second does not. Finally validate
+the expected0..256 table index. Prove the reciprocal's error is within one
+integer and test the construction before relying on this proposal. No per-frame
+ratio or bearing should be supplied by the eZ80.

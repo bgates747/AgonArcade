@@ -261,3 +261,19 @@ R19-09 scenery/frontend is next; SCENERY.md records source-based preparation and
 the important fractional-tangent/signed-floor pitfall. Performance, long stability,
 independent review and final delivery remain R19-10 through R19-12. The overall
 goal is still active.
+
+## R19-09 — Signed-floor prerequisite checkpoint, still open
+
+Golem f856fa2d0e0465d0586b16f7086a3377b046772f qualifies MatFloor without
+the small-fraction loss of the signed16 bias conversion. All236 native complete
+records and the full host boundary/sanitizer/golden/negative suite pass. Native
+evidence includes1/16384 fractions, negative subnormals, signed zero, byte carries
+and source preservation. No scenery kernel or frontend integration is claimed.
+
+SCENERY.md now records accepted bearing/history/scroll behavior and a second
+precision trap: Fuji delta*fraction can reach19902915, outside exact binary32
+integers. It proposes an exact quotient/remainder decomposition before floor,
+and records conservative major-tangent lower bounds2441/2501. The next work is
+to qualify that interpolation and the bounded corrected atan ratio on VDP, then
+implement retained-page scenery and the accepted interactive frontend. R19-09
+and all subsequent boxes remain unchecked; no GUI, push or deployment.

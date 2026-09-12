@@ -1,0 +1,153 @@
+{
+  "command": [
+    "./fab-agon-emulator",
+    "--renderer",
+    "sw"
+  ],
+  "runtime_before": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/fab-agon-emulator": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/fab-agon-emulator",
+      "bytes": 1744,
+      "sha256": "161b1dfa57e0cf6923e361dee987a78aead8f7a7389554a4985532c3e13187dd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/fab-agon-emulator.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator",
+      "bytes": 1897192,
+      "sha256": "a96ca0e6f5f51ba6b750bd6fcf96efcaed88e61c431171f79a7db5f29877f17e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/mos_platform.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.bin",
+      "bytes": 108490,
+      "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/mos_platform.map": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.map",
+      "bytes": 167185,
+      "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/firmware/vdp_platform.so": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/vdp_platform.so",
+      "bytes": 10279688,
+      "sha256": "bc7a8a6a28e176c9679c96de4bda16010b765074ec8ba155fccde189c1051955"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/.mos-release": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/.mos-release",
+      "bytes": 14,
+      "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/.mos-release.sha256": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/.mos-release.sha256",
+      "bytes": 166,
+      "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/autoexec.txt": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/autoexec.txt",
+      "bytes": 51,
+      "sha256": "b39fdbf266022af22d97e57ee77d6964384aaf43ea35f555eacb33aaedfa9013"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/cases.dat": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/cases.dat",
+      "bytes": 6142,
+      "sha256": "574045f2d7515905f4fa75b916f54f1f00d6386e151a1f401b2b82024c56b966"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/fuji.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/fuji.road",
+      "bytes": 116800,
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/oval.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/oval.road",
+      "bytes": 20584,
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/program.bin": {
+      "target": "/home/smith/Agon/mystuff/golem-rally19/build/golem-floor/initial/program.bin",
+      "bytes": 1387,
+      "sha256": "e352edc539fdf65bcfb0e573441413eaa4a0933dd5123743da6df0b1df185621"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/rally.bin": {
+      "target": "/home/smith/Agon/mystuff/golem-rally19/build/golem-floor/initial/bin/probe.bin",
+      "bytes": 11531,
+      "sha256": "51662f9b32364967970e5b0f8d385c0fa255d8a12b6073d6bef947d8f13753d0"
+    }
+  },
+  "runtime_after": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/fab-agon-emulator": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/fab-agon-emulator",
+      "bytes": 1744,
+      "sha256": "161b1dfa57e0cf6923e361dee987a78aead8f7a7389554a4985532c3e13187dd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/fab-agon-emulator.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator",
+      "bytes": 1897192,
+      "sha256": "a96ca0e6f5f51ba6b750bd6fcf96efcaed88e61c431171f79a7db5f29877f17e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/mos_platform.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.bin",
+      "bytes": 108490,
+      "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/mos_platform.map": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.map",
+      "bytes": 167185,
+      "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/firmware/vdp_platform.so": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/vdp_platform.so",
+      "bytes": 10279688,
+      "sha256": "bc7a8a6a28e176c9679c96de4bda16010b765074ec8ba155fccde189c1051955"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/.mos-release": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/.mos-release",
+      "bytes": 14,
+      "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/.mos-release.sha256": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/.mos-release.sha256",
+      "bytes": 166,
+      "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/autoexec.txt": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/autoexec.txt",
+      "bytes": 51,
+      "sha256": "b39fdbf266022af22d97e57ee77d6964384aaf43ea35f555eacb33aaedfa9013"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/cases.dat": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/cases.dat",
+      "bytes": 6142,
+      "sha256": "574045f2d7515905f4fa75b916f54f1f00d6386e151a1f401b2b82024c56b966"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/exit.txt": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/exit.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/fuji.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/fuji.road",
+      "bytes": 116800,
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/oval.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/oval.road",
+      "bytes": 20584,
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/program.bin": {
+      "target": "/home/smith/Agon/mystuff/golem-rally19/build/golem-floor/initial/program.bin",
+      "bytes": 1387,
+      "sha256": "e352edc539fdf65bcfb0e573441413eaa4a0933dd5123743da6df0b1df185621"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/rally.bin": {
+      "target": "/home/smith/Agon/mystuff/golem-rally19/build/golem-floor/initial/bin/probe.bin",
+      "bytes": 11531,
+      "sha256": "51662f9b32364967970e5b0f8d385c0fa255d8a12b6073d6bef947d8f13753d0"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/results.dat": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/golem-floor-initial/sdcard/rally/results.dat",
+      "bytes": 22656,
+      "sha256": "c7cf57f9839e6fbbc8ef3ede7df7d0cef1b80c49fbbd82f330d422a1394ea400"
+    }
+  },
+  "host_seconds": 44.06021283099835,
+  "scope": "Shared normal-clock, stock, headless fixture transport for new R19 probes.\n\nDiagnostic only. GP/guest exit markers are not raster-completion evidence.\n"
+}
