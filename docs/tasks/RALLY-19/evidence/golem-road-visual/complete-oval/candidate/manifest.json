@@ -1,0 +1,430 @@
+{
+  "purpose": "native visual/input evidence; no performance measurements",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate",
+  "runtime_before": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/fab-agon-emulator": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/fab-agon-emulator",
+      "bytes": 1744,
+      "sha256": "161b1dfa57e0cf6923e361dee987a78aead8f7a7389554a4985532c3e13187dd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/fab-agon-emulator.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator",
+      "bytes": 1897192,
+      "sha256": "a96ca0e6f5f51ba6b750bd6fcf96efcaed88e61c431171f79a7db5f29877f17e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/mos_platform.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.bin",
+      "bytes": 108490,
+      "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/mos_platform.map": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.map",
+      "bytes": 167185,
+      "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/firmware/vdp_platform.so": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/vdp_platform.so",
+      "bytes": 10279688,
+      "sha256": "bc7a8a6a28e176c9679c96de4bda16010b765074ec8ba155fccde189c1051955"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/.mos-release": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/.mos-release",
+      "bytes": 14,
+      "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/.mos-release.sha256": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/.mos-release.sha256",
+      "bytes": 166,
+      "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/autoexec.txt": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/autoexec.txt",
+      "bytes": 51,
+      "sha256": "b39fdbf266022af22d97e57ee77d6964384aaf43ea35f555eacb33aaedfa9013"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/fuji.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/fuji.road",
+      "bytes": 116800,
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/oval.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/oval.road",
+      "bytes": 20584,
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/poses.dat": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/poses.dat",
+      "bytes": 362,
+      "sha256": "33a067a1081c27b22a2d250f10c60df70e689c3d4727e7e029628bc56164e57b"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/program.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/road-visual/complete-oval/candidate/program.bin",
+      "bytes": 54551,
+      "sha256": "4a52e63a7eb01e8e681a1e6c995182da4577e303958d4287952499acfe757a04"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/rally.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/road-visual/complete-oval/candidate/bin/probe.bin",
+      "bytes": 13645,
+      "sha256": "57108beb784e73049e44139df6bde3eb436aafd1b15dcdefead04be95b173318"
+    }
+  },
+  "headless": true,
+  "capture_source_sha256": "4e00de92a477321c99bae068d1509c0c25959bd734d4ce91559f5c4326039126",
+  "capture_harness_sha256": "37efeea309763719c5dc91fdbabb1f6e4c7ff52df6a7e008234747ef666bf549",
+  "interposer_sha256": "d9d19dae76542000675594be83a3ca511ca1a18476acb2b54fc7c39079a4559e",
+  "build_command": [
+    "clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-fPIC",
+    "-I/home/smith/.local/include",
+    "-L/home/smith/.local/lib",
+    "-Wl,-rpath,/home/smith/.local/lib",
+    "-lSDL3",
+    "-ldl",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/visual_capture_linux.c",
+    "-o",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-road-visual/complete-oval/candidate/visual-capture.so"
+  ],
+  "schedule": "capture 30\nkey 90 right down\nkey 95 right up\ncapture 210\nkey 270 right down\nkey 275 right up\ncapture 390\nkey 450 right down\nkey 455 right up\ncapture 570\nkey 630 right down\nkey 635 right up\ncapture 750\nkey 810 right down\nkey 815 right up\ncapture 930\nkey 990 right down\nkey 995 right up\ncapture 1110\nkey 1170 right down\nkey 1175 right up\ncapture 1290\nkey 1350 right down\nkey 1355 right up\ncapture 1470\nkey 1530 right down\nkey 1535 right up\ncapture 1650\nkey 1710 right down\nkey 1715 right up\ncapture 1830\nkey 1890 right down\nkey 1895 right up\ncapture 2010\nkey 2070 right down\nkey 2075 right up\ncapture 2190\nkey 2250 right down\nkey 2255 right up\ncapture 2370\nkey 2430 right down\nkey 2435 right up\ncapture 2550\nkey 2610 right down\nkey 2615 right up\ncapture 2730\nkey 2790 right down\nkey 2795 right up\ncapture 2910\nkey 2970 right down\nkey 2975 right up\ncapture 3090\nkey 3150 right down\nkey 3155 right up\ncapture 3270\nkey 3330 right down\nkey 3335 right up\ncapture 3450\nkey 3510 right down\nkey 3515 right up\ncapture 3630\nkey 3690 right down\nkey 3695 right up\ncapture 3810\nkey 3870 right down\nkey 3875 right up\ncapture 3990\nkey 4050 right down\nkey 4055 right up\ncapture 4170\nkey 4230 right down\nkey 4235 right up\ncapture 4350\nkey 4410 right down\nkey 4415 right up\ncapture 4530\nkey 4590 right down\nkey 4595 right up\ncapture 4710\nkey 4770 right down\nkey 4775 right up\ncapture 4890\nkey 4950 right down\nkey 4955 right up\ncapture 5070\nkey 5130 right down\nkey 5135 right up\ncapture 5250\nkey 5270 escape down\nkey 5275 escape up\nquit 5290\n",
+  "ready_file": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/ready.viz",
+  "frame_definition": "host SDL presents, starting at ready-file detection or the first present",
+  "command": [
+    "./fab-agon-emulator",
+    "--renderer",
+    "sw"
+  ],
+  "actual_process_commands": [
+    "88838 /home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator --firmware platform --mos /home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/mos_platform.bin --sdcard /home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard --renderer sw"
+  ],
+  "pid": 88838,
+  "timed_out": false,
+  "returncode": 0,
+  "wall_seconds_with_startup": 89.78299359299854,
+  "captures": [
+    {
+      "file": "frame-000030.png",
+      "sha256": "991e048cb09e237a6891851f4f4a87ae00ffd958abd4dfc41a69a27aa511e8aa",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000210.png",
+      "sha256": "7c3a53d0cdb162448f2427a1d244ac92265b53cff05671c821b141f660c7fbdf",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000390.png",
+      "sha256": "2209bf53605dae28abfa09bdad09964d2e6e6b1092b908be52b1066c2a63a2d3",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000570.png",
+      "sha256": "2eaf117873048ec2d51c0ef72e8143c8df228b714ec447246918cef3310365d8",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000750.png",
+      "sha256": "111ef8142aa31bc0ad089efc77885c1d1e22940c88f5a7f2cd1b7833567d6ebc",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000930.png",
+      "sha256": "adf332544455dd6e747b360c291cbbacad6b4ca14f1f9491654f01f19b3cc2cc",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001110.png",
+      "sha256": "98ccf05742fe3784a99a4dd53daf31e53791b5890c937098d3f9fc51d7d19367",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001290.png",
+      "sha256": "8db8b56898f6f3af74162d831d7d66705dda1e031436ce2aa53cd1607fb32e48",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001470.png",
+      "sha256": "4812b8a1364af1ebddc245bb94c61025b99915532f9ec8de6d50fa1bb594963b",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001650.png",
+      "sha256": "57872b69949667c74836147ae54a3677137648796a4a362dd9d7a1c9c97e3896",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001830.png",
+      "sha256": "2e45d5647f7ad7ab049bdca58ab8d7d6e0180badec19084eea6d746471edb524",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002010.png",
+      "sha256": "3fa3483a81fc7676adaed41a2264ee8aa26b409620a95b24fe15f9caa977bbc2",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002190.png",
+      "sha256": "7c805d32c046d4e163a6e0eb058ee8e72c04dfb8e810283671abad0e9cea828b",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002370.png",
+      "sha256": "09a7fbe0cd999eb1ac3d6f8b4ea82b6aa86d7d1747a9e1dda2d4a41b071435f6",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002550.png",
+      "sha256": "0926165fc5d59e7f5c00f4481301281f8c5d8dbc14df5a36eb8e6603e71af325",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002730.png",
+      "sha256": "e77fe9d98133e519498e445521021a2a0b3869d33e2a0532e45f0250af82e007",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002910.png",
+      "sha256": "3e1f316a881950b0ae8e852217dd7dfe33becf90610b0c3282dd52da09e62864",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-003090.png",
+      "sha256": "98904b46d36113213b5e21fc2843b0c87e97af06653955976141c10a65100989",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-003270.png",
+      "sha256": "cff981a0881081344ced8c31aaa661fc0f1beeb9a7bb1660c0f300dac11dc88d",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-003450.png",
+      "sha256": "7804b1c25282cc7f0b24fa79f55afcc16a29268816eb095f10716cddf254a50f",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-003630.png",
+      "sha256": "5bed72b900da9766f5b0ce7f67b23fa06ddce125a7b469efdd99b62f4f6b614d",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-003810.png",
+      "sha256": "3d08041a9f7bf4b567649f514c6360bef677127607465bb7bfc4efee81a97410",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-003990.png",
+      "sha256": "a826cbda2d107e062af313e73be3959bfa96cd2bc828f7ffcf6a6a2ed85f2718",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-004170.png",
+      "sha256": "3ea7779145b1cb00043f989e1890f3df80433788df338663e8a7827b11e99261",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-004350.png",
+      "sha256": "1b58c1a5e933d433b9c0a0f9aec4310474e69f5dee47fa589c59862c2189faaf",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-004530.png",
+      "sha256": "a03daa39eeeb5e9db004a9f269c381ee24605e6c2167181297aa238223018853",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-004710.png",
+      "sha256": "d9758ab5c7defb6d263ba255ee4167804ffd0207e19a796f43cdb829024d221d",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-004890.png",
+      "sha256": "991e048cb09e237a6891851f4f4a87ae00ffd958abd4dfc41a69a27aa511e8aa",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-005070.png",
+      "sha256": "e0fb742a3b844aeed8a3d183785c8ba1e91b24e84ba49e346fcb9a97c33fe519",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-005250.png",
+      "sha256": "337d14abf60cb5fdaecb09ffa3da40800e0d595ebb1b57062742daaac525c803",
+      "size": [
+        640,
+        480
+      ]
+    }
+  ],
+  "guest_reports": [
+    {
+      "source": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/exit.viz",
+      "file": "guest-exit.viz",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "source": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/geometry.dat",
+      "file": "guest-geometry.dat",
+      "sha256": "881917794c435cf76d978cc44cfb2f73d78a6b4852a7853e1e49e6b2568d0767"
+    }
+  ],
+  "runtime_after": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/fab-agon-emulator": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/fab-agon-emulator",
+      "bytes": 1744,
+      "sha256": "161b1dfa57e0cf6923e361dee987a78aead8f7a7389554a4985532c3e13187dd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/fab-agon-emulator.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator",
+      "bytes": 1897192,
+      "sha256": "a96ca0e6f5f51ba6b750bd6fcf96efcaed88e61c431171f79a7db5f29877f17e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/mos_platform.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.bin",
+      "bytes": 108490,
+      "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/mos_platform.map": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.map",
+      "bytes": 167185,
+      "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/firmware/vdp_platform.so": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/vdp_platform.so",
+      "bytes": 10279688,
+      "sha256": "bc7a8a6a28e176c9679c96de4bda16010b765074ec8ba155fccde189c1051955"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/.mos-release": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/.mos-release",
+      "bytes": 14,
+      "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/.mos-release.sha256": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/.mos-release.sha256",
+      "bytes": 166,
+      "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/autoexec.txt": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/autoexec.txt",
+      "bytes": 51,
+      "sha256": "b39fdbf266022af22d97e57ee77d6964384aaf43ea35f555eacb33aaedfa9013"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/fuji.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/fuji.road",
+      "bytes": 116800,
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/oval.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/oval.road",
+      "bytes": 20584,
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/poses.dat": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/poses.dat",
+      "bytes": 362,
+      "sha256": "33a067a1081c27b22a2d250f10c60df70e689c3d4727e7e029628bc56164e57b"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/program.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/road-visual/complete-oval/candidate/program.bin",
+      "bytes": 54551,
+      "sha256": "4a52e63a7eb01e8e681a1e6c995182da4577e303958d4287952499acfe757a04"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/road-visual-complete-oval-candidate/sdcard/rally/rally.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/road-visual/complete-oval/candidate/bin/probe.bin",
+      "bytes": 13645,
+      "sha256": "57108beb784e73049e44139df6bde3eb436aafd1b15dcdefead04be95b173318"
+    }
+  },
+  "runtime_inputs_unchanged": true,
+  "status": "captures and scheduled event injection verified; inspect guest reports/images for behavior"
+}

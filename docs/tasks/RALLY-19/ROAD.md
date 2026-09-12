@@ -78,3 +78,47 @@ once at each later stripe boundary. Advance both cursors when boundaries coincid
 and do not fetch beyond the terminal224 after marking the job finished. Reuse the
 previous bottom centre for the next top. Full-road diagnostic readback must retain
 the candidate's own complete endpoint list for independent pixel masks.
+
+## Full-road construction and final qualification setup
+
+The first full-road native probe passes63 oval and93 Fuji poses, totalling2493
+bands with exact accepted rounded centres, rows and material parity. The32-call
+finite job reports inactive at its terminal224. The first road-only images also
+pass (30 oval and30 Fuji cases plus the four-case initial run). These are useful
+pre-integration evidence, not the final milestone qualification.
+
+`build_road_kernel.py` replaces anchor descriptors with the complete typed phase/
+curve arrays and resident cursor merge. It evaluates the first top centre, then
+one new bottom centre per band. Optional diagnostic tracing unrolls the32 calls
+and copies each current endpoint/material into33 fixed6-byte slots in1600. Tail
+slots repeat the terminal endpoint; only bandCount+1 entries are meaningful, and
+the terminal material is unused. An untraced build uses bounded Repeat(32).
+
+`build_admitted_road.py` links the original admitted-state program to the road
+job in one Golem compilation. It preserves staging1000, active1001, admission
+status1002 and expectedSequence1003; road output/status move to1020/1021, matrices
+move+100 and program IDs+400. Road reads the existing activeposition/activephase
+fields directly, with no duplicate active-record fields. On oval, staging/active
+position bounds are specialized to the same lap limit already enforced by its
+guard. The old position-times-two diagnostic is retained for direct comparison
+with the original210-event admission suite, then dispatches the road job.
+
+Resident clearRoad and clearFooter draw the green road region and black HUD
+background. The moving road requires the frozen97-byte state/trigger packet plus
+3-byte swap, without host-projected corners or host road-clear rectangles. The
+visual loader uploads the constant sky region only on initial buffer preparation;
+GP/readback traffic is diagnostic and separately excluded from recurring scene
+traffic. Actual vehicle/scenery/HUD integration remains later milestones.
+
+Both selected-track admitted jobs pass all210 original admission events, including
+27 accepted road frames each. Every rejected/missing trigger preserves all288
+bytes of road output/status/trace. Byte-cut recovery, modulo sequence wrap and
+reload remain covered. Final admitted full-road images are in progress.
+
+Before final image qualification, `road_outline_metric.py` adds a supplemental
+strict native-outline check. The original frozen centreline and per-material
+metrics are unchanged. Per-row minimum/maximum road-coloured x coordinates must
+differ by at most1px; an appearing/disappearing row is allowed only for a single
+clipped border column. Calibration accepts1px translation and rejects2px shifts,
+2px width growth, an erased interior row and a two-column border appearance.
+This strengthens width/outer-edge evidence; it does not relax a failing metric.

@@ -1,0 +1,8084 @@
+{
+  "scope": "Qualify complete road dispatch behind the unchanged80-byte admitted-state ABI.\n\nThe original210 admission cases are retained, including byte cuts and wrap.\nRejected/missing triggers must leave all road diagnostic outputs unchanged.\n",
+  "track": "oval",
+  "cases": 210,
+  "accepted": 27,
+  "pass": true,
+  "results": [
+    {
+      "name": "bootstrap",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "valid_signed_boundaries_and_low_word_ffff",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "duplicate_sequence",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "sequence_gap",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "valid_upper_track_and_signed_bounds",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          126,
+          0
+        ],
+        [
+          105,
+          131,
+          0
+        ],
+        [
+          106,
+          134,
+          0
+        ],
+        [
+          108,
+          138,
+          0
+        ],
+        [
+          112,
+          143,
+          0
+        ],
+        [
+          116,
+          145,
+          0
+        ],
+        [
+          119,
+          147,
+          1
+        ],
+        [
+          121,
+          148,
+          0
+        ],
+        [
+          125,
+          149,
+          1
+        ],
+        [
+          130,
+          151,
+          0
+        ],
+        [
+          136,
+          152,
+          1
+        ],
+        [
+          137,
+          152,
+          1
+        ],
+        [
+          146,
+          154,
+          0
+        ],
+        [
+          159,
+          155,
+          0
+        ],
+        [
+          163,
+          155,
+          1
+        ],
+        [
+          196,
+          157,
+          0
+        ],
+        [
+          207,
+          157,
+          0
+        ],
+        [
+          224,
+          158,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          126,
+          0,
+          32143
+        ],
+        [
+          105,
+          131,
+          0,
+          33489
+        ],
+        [
+          106,
+          134,
+          0,
+          34382
+        ],
+        [
+          108,
+          138,
+          0,
+          35452
+        ],
+        [
+          112,
+          143,
+          0,
+          36541
+        ],
+        [
+          116,
+          145,
+          0,
+          37196
+        ],
+        [
+          119,
+          147,
+          1,
+          37622
+        ],
+        [
+          121,
+          148,
+          0,
+          37890
+        ],
+        [
+          125,
+          149,
+          1,
+          38218
+        ],
+        [
+          130,
+          151,
+          0,
+          38572
+        ],
+        [
+          136,
+          152,
+          1,
+          38941
+        ],
+        [
+          137,
+          152,
+          1,
+          39003
+        ],
+        [
+          146,
+          154,
+          0,
+          39299
+        ],
+        [
+          159,
+          155,
+          0,
+          39689
+        ],
+        [
+          163,
+          155,
+          1,
+          39730
+        ],
+        [
+          196,
+          157,
+          0,
+          40071
+        ],
+        [
+          207,
+          157,
+          0,
+          40184
+        ],
+        [
+          224,
+          158,
+          0,
+          40329
+        ]
+      ],
+      "band_count": 17,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "bad_version_0",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_version_2",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_version_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_length_0",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_length_79",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_length_81",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_length_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_sequence_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_track_1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_track_2",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_track_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_position_-1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_position_576000",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_position_2147483647",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_position_-2147483648",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_phase_8000",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_phase_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_steering_-22",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_steering_22",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_steering_-32768",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_steering_32767",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_lateral_-38401",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_lateral_38401",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_lateral_-2147483648",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_lateral_2147483647",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_speed_301",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_speed_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_surface_3",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_surface_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_flags_8",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_flags_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_grip_24",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_grip_201",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_grip_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_sequence_copy_3",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_sequence_copy_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_seal_0",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_seal_23064",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_seal_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car0_position_-1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car0_position_576000",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car0_lane_-91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car0_lane_91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car0_reserved_1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car0_reserved_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car1_position_-1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car1_position_576000",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car1_lane_-91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car1_lane_91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car1_reserved_1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car1_reserved_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car2_position_-1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car2_position_576000",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car2_lane_-91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car2_lane_91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car2_reserved_1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car2_reserved_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car3_position_-1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car3_position_576000",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car3_lane_-91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car3_lane_91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car3_reserved_1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car3_reserved_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car4_position_-1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car4_position_576000",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car4_lane_-91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car4_lane_91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car4_reserved_1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car4_reserved_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car5_position_-1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car5_position_576000",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car5_lane_-91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car5_lane_91",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car5_reserved_1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "bad_car5_reserved_65535",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "valid_minus_one_and_ffff_low_words",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          44,
+          0
+        ],
+        [
+          110,
+          74,
+          0
+        ],
+        [
+          113,
+          88,
+          0
+        ],
+        [
+          115,
+          95,
+          0
+        ],
+        [
+          116,
+          98,
+          0
+        ],
+        [
+          118,
+          104,
+          0
+        ],
+        [
+          119,
+          106,
+          1
+        ],
+        [
+          121,
+          110,
+          0
+        ],
+        [
+          122,
+          112,
+          0
+        ],
+        [
+          124,
+          116,
+          0
+        ],
+        [
+          125,
+          117,
+          1
+        ],
+        [
+          130,
+          123,
+          0
+        ],
+        [
+          134,
+          126,
+          0
+        ],
+        [
+          136,
+          128,
+          1
+        ],
+        [
+          142,
+          132,
+          1
+        ],
+        [
+          146,
+          134,
+          0
+        ],
+        [
+          147,
+          134,
+          0
+        ],
+        [
+          163,
+          140,
+          1
+        ],
+        [
+          169,
+          142,
+          1
+        ],
+        [
+          175,
+          144,
+          1
+        ],
+        [
+          182,
+          145,
+          1
+        ],
+        [
+          196,
+          147,
+          0
+        ],
+        [
+          224,
+          149,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          44,
+          0,
+          11139
+        ],
+        [
+          110,
+          74,
+          0,
+          19034
+        ],
+        [
+          113,
+          88,
+          0,
+          22417
+        ],
+        [
+          115,
+          95,
+          0,
+          24351
+        ],
+        [
+          116,
+          98,
+          0,
+          25102
+        ],
+        [
+          118,
+          104,
+          0,
+          26510
+        ],
+        [
+          119,
+          106,
+          1,
+          27147
+        ],
+        [
+          121,
+          110,
+          0,
+          28165
+        ],
+        [
+          122,
+          112,
+          0,
+          28674
+        ],
+        [
+          124,
+          116,
+          0,
+          29615
+        ],
+        [
+          125,
+          117,
+          1,
+          29915
+        ],
+        [
+          130,
+          123,
+          0,
+          31417
+        ],
+        [
+          134,
+          126,
+          0,
+          32302
+        ],
+        [
+          136,
+          128,
+          1,
+          32647
+        ],
+        [
+          142,
+          132,
+          1,
+          33683
+        ],
+        [
+          146,
+          134,
+          0,
+          34338
+        ],
+        [
+          147,
+          134,
+          0,
+          34424
+        ],
+        [
+          163,
+          140,
+          1,
+          35804
+        ],
+        [
+          169,
+          142,
+          1,
+          36322
+        ],
+        [
+          175,
+          144,
+          1,
+          36839
+        ],
+        [
+          182,
+          145,
+          1,
+          37211
+        ],
+        [
+          196,
+          147,
+          0,
+          37554
+        ],
+        [
+          224,
+          149,
+          0,
+          38240
+        ]
+      ],
+      "band_count": 22,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_0",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_1",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_2",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_3",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_4",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_5",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_6",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_7",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_8",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_9",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_10",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_11",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_12",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_13",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_14",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_15",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_16",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_17",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_18",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_19",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_20",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_21",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_22",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_23",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_24",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_25",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_26",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_27",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_28",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_29",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_30",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_31",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_32",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_33",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_34",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_35",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_36",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_37",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_38",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_39",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_40",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_41",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_42",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_43",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_44",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_45",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_46",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_47",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_48",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_49",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_50",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_51",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_52",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_53",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_54",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_55",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_56",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_57",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_58",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_59",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_60",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_61",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_62",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_63",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_64",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_65",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_66",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_67",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_68",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_69",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_70",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_71",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_72",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_73",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_74",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_75",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_76",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_77",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_78",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "declared_short_79",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "raw_cut_0_idle_500ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_cut_0",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_cut_1_idle_500ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_cut_1",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_cut_10_idle_500ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_cut_10",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_cut_40_idle_500ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_cut_40",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_cut_79_idle_500ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_cut_79",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_1_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_1",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_2_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_2",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_3_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_3",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_4_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_4",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_5_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_5",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_6_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_6",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_7_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_7",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_8_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_8",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_9_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_9",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_header_cut_10_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_header_cut_10",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_trigger_cut_1_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_trigger_cut_1",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_trigger_cut_2_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_trigger_cut_2",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_trigger_cut_3_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_trigger_cut_3",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_trigger_cut_4_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_trigger_cut_4",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "raw_trigger_cut_5_idle_2000ms",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "recovery_after_trigger_cut_5",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "repeat_trigger_without_state",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "complete_staging_without_trigger",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "delayed_single_trigger",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "repeat_delayed_trigger",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "seed_expected_65534",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "accept_sequence_65534",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "accept_sequence_zero_after_wrap",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    },
+    {
+      "name": "reload_resets_state",
+      "admission_pass": true,
+      "accepted": false,
+      "road_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "first_frame_after_reload",
+      "admission_pass": true,
+      "accepted": true,
+      "actual": [
+        [
+          104,
+          70,
+          0
+        ],
+        [
+          106,
+          87,
+          0
+        ],
+        [
+          108,
+          102,
+          0
+        ],
+        [
+          110,
+          113,
+          0
+        ],
+        [
+          112,
+          122,
+          0
+        ],
+        [
+          114,
+          129,
+          0
+        ],
+        [
+          116,
+          133,
+          0
+        ],
+        [
+          117,
+          135,
+          0
+        ],
+        [
+          119,
+          138,
+          1
+        ],
+        [
+          121,
+          140,
+          0
+        ],
+        [
+          125,
+          144,
+          1
+        ],
+        [
+          126,
+          145,
+          1
+        ],
+        [
+          130,
+          147,
+          0
+        ],
+        [
+          132,
+          148,
+          0
+        ],
+        [
+          136,
+          149,
+          1
+        ],
+        [
+          139,
+          151,
+          1
+        ],
+        [
+          146,
+          152,
+          0
+        ],
+        [
+          163,
+          154,
+          1
+        ],
+        [
+          169,
+          155,
+          1
+        ],
+        [
+          196,
+          156,
+          0
+        ],
+        [
+          224,
+          157,
+          0
+        ]
+      ],
+      "oracle": [
+        [
+          104,
+          70,
+          0,
+          17792
+        ],
+        [
+          106,
+          87,
+          0,
+          22167
+        ],
+        [
+          108,
+          102,
+          0,
+          25992
+        ],
+        [
+          110,
+          113,
+          0,
+          29030
+        ],
+        [
+          112,
+          122,
+          0,
+          31318
+        ],
+        [
+          114,
+          129,
+          0,
+          32931
+        ],
+        [
+          116,
+          133,
+          0,
+          34085
+        ],
+        [
+          117,
+          135,
+          0,
+          34591
+        ],
+        [
+          119,
+          138,
+          1,
+          35342
+        ],
+        [
+          121,
+          140,
+          0,
+          35952
+        ],
+        [
+          125,
+          144,
+          1,
+          36817
+        ],
+        [
+          126,
+          145,
+          1,
+          36993
+        ],
+        [
+          130,
+          147,
+          0,
+          37639
+        ],
+        [
+          132,
+          148,
+          0,
+          37849
+        ],
+        [
+          136,
+          149,
+          1,
+          38270
+        ],
+        [
+          139,
+          151,
+          1,
+          38586
+        ],
+        [
+          146,
+          152,
+          0,
+          38969
+        ],
+        [
+          163,
+          154,
+          1,
+          39476
+        ],
+        [
+          169,
+          155,
+          1,
+          39618
+        ],
+        [
+          196,
+          156,
+          0,
+          39951
+        ],
+        [
+          224,
+          157,
+          0,
+          40296
+        ]
+      ],
+      "band_count": 20,
+      "active": 0,
+      "flags": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_centre_error": 0,
+      "road_pass": true,
+      "pass": true
+    }
+  ],
+  "limits": "Still road only. GP is parser echo, not raster completion; raw interrupted writes use the existing diagnostic idle recovery. No frontend/traffic acceptance."
+}

@@ -1,0 +1,11 @@
+make: Entering directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/road-visual/admitted-first-oval/oracle'
+[compiling src/main.cpp]
+[1msrc/main.cpp:33:78: [0m[0;1;31merror: [0m[1munused variable 'Output' [-Werror,-Wunused-variable][0m
+        uint8_t state[80];constexpr unsigned PositionOffset=8,PhaseOffset=12,Output=1020,Status=1021;
+[0;1;32m                                                                             ^
+[0m[1msrc/main.cpp:33:90: [0m[0;1;31merror: [0m[1munused variable 'Status' [-Werror,-Wunused-variable][0m
+        uint8_t state[80];constexpr unsigned PositionOffset=8,PhaseOffset=12,Output=1020,Status=1021;
+[0;1;32m                                                                                         ^
+[0m2 errors generated.
+make: *** [/home/smith/Agon/agondev/release/config/makefile.inc:105: obj/main.o] Error 1
+make: Leaving directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/road-visual/admitted-first-oval/oracle'
