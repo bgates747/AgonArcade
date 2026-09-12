@@ -1,6 +1,34 @@
 # Physical VDP reset investigation — 2026-09-12
 
 
+## Latest card change — pre-Golem hardware comparison
+
+After the frozen Golem experiment closed, the Author requested the latest
+pre-Golem eZ80-computed renderer in its place. The card now holds the stripped
+949f618-derived build, SHA256
+`e14e5c0f155a4f035e925b1da5971e8f7202fe47c7147e24a5726ef937d4fe5f`,
+at `/mystuff/arcade/rally/rally.bin`, plus the unchanged oval/Fuji `.road` data.
+Launch remains `run . oval demo`. The only autoexec change was uncommenting
+`EMOS KEYINPUT extender`; CRLF and all other bytes were preserved. The Author
+reports the mainboard USB keyboard circuit is damaged, so Extender keyboard
+input is required. Do not disable it again as a routine default.
+
+All three attached VDP flash segments were independently verified against the
+official stock2.16.0 artifacts; no firmware rewrite was necessary. Production
+contains no fences, debug counters, marker files, timing reports or diagnostic
+modes. Native demo/takeover/MOS-exit smoke checks passed, and the card was synced
+and safely unmounted. Physical gameplay remains for the Author to assess.
+Reproduction: `build_pre_golem_production.py`; deployment: `deploy_pre_golem.py`.
+Evidence and exact backup paths: `evidence/hardware-production/pre-golem-oval/`.
+Freeze update: the Author subsequently confirmed this build is a viable product
+on hardware and authorized committing the deployment evidence. The pending
+review fields in captured JSON describe the earlier deployment-time state;
+they are retained as historical records. Sustained hardware FPS is unmeasured.
+No push is requested. The earlier Golem
+firmware/card records below are historical; preserved VDP/CLR files on the card
+are unused by this pre-Golem executable.
+
+
 Current status (2026-09-12, after official-firmware reset test): **R19-11-H2 is
 qualified for the observed startup correction.** The Author confirmed continued,
 slow rendering after using the board reset button on restored official VDP2.16.0.

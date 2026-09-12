@@ -197,3 +197,30 @@ The parent RALLY-19 task is closed after its separately committed R19-12 deliver
 (e91eb4c). All requested execution checkboxes are retained as completed under the
 Author's explicit goal instruction. This closes the measured research scope;
 physical acceleration remains unsuccessful, and unrelated task IDs remain open.
+
+
+## Post-goal requested pre-Golem hardware comparison
+
+The Author requested replacing the card game with the latest pre-Golem eZ80
+span/scene renderer, derived from accepted949f618, oval/demo, no instrumentation.
+`build_pre_golem_production.py` extracts unchanged renderer functions, controls,
+art and HUD while removing all diagnostics, markers, counters and optional test
+modes. Every original header is byte-identical; accepted driving settings remain.
+Headless captures show the demo, race takeover and Escape returning to MOS, with
+no diagnostic files created. Binary SHA256:
+`e14e5c0f155a4f035e925b1da5971e8f7202fe47c7147e24a5726ef937d4fe5f`.
+
+The attached VDP bootloader/partitions/application match official2.16.0; verification
+required no rewrite. The mounted AGON card's `/mystuff/arcade/rally/rally.bin` and
+oval/Fuji `.road` files were deployed with local backups. `EMOS KEYINPUT extender`
+was uncommented, preserving all remaining autoexec bytes and real CRLF. Extender
+keyboard is required because the Author reports a damaged mainboard USB keyboard
+circuit. The card was synced and unmounted. Hardware gameplay/performance is not
+yet validated. Deployment evidence lives under RALLY-19 hardware-production/
+pre-golem-oval. Those were the observations at deployment time.
+
+Freeze update: the Author subsequently accepted this build as a viable hardware
+product. Sustained FPS remains unmeasured. RALLY-20/Extender PORT-017 now own
+future work, with implementation paused. The Author authorized separate freeze
+commits for this deployment and the standalone release source. Root `.work/`
+holds local firmware/recovery backups and is ignored, not deleted or published.
