@@ -1,0 +1,17 @@
+{
+  "command": [
+    "g++",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/projection_reference.cpp",
+    "-o",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/projection_reference"
+  ],
+  "source_sha256": "d1b2cad73fdb9f273903dd099d00ca6e14469d4a94e3289e17a9759f9f143826",
+  "executable_sha256": "eba12b0bb7a33efe9e31f0b04b953a58ecfb12953b3b5413b482b898cee731d0"
+}

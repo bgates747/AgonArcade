@@ -1,0 +1,583 @@
+import trackData oval.coeff 20520 fnv1a64 f9933656014327c4 records 90
+field position 1000:0 s32 0 575999
+field row 1000:4 s16 103 224
+field interval 1001:0 u16 0 89
+field local 1001:2 u16 0 6399
+field fraction14 1001:4 u16 0 16381
+field fraction12 1001:6 u16 0 4095
+field square12 1001:8 u16 0 4094
+field aheadIndex 1001:10 u16 0 18
+field centrePixel 1001:12 s16 -32768 32767
+field rowIndex 1001:14 u16 0 121
+field intervalOK 1002:0 u16 0 1
+field depthOK 1002:2 u16 0 1
+field coefficientOK 1002:4 u16 0 1
+field rec0a 1500:0 s16 -98 10272
+field rec0b 1500:2 s16 -3740 7058
+field rec0c 1500:4 s32 -6712 66929
+field rec0d 1500:8 s16 -5243 8964
+field rec0e 1500:10 s16 -1315 9
+field rec1a 1500:12 s16 -98 10272
+field rec1b 1500:14 s16 -3740 7058
+field rec1c 1500:16 s32 -6712 66929
+field rec1d 1500:20 s16 -5243 8964
+field rec1e 1500:22 s16 -1315 9
+field rec2a 1500:24 s16 -98 10272
+field rec2b 1500:26 s16 -3740 7058
+field rec2c 1500:28 s32 -6712 66929
+field rec2d 1500:32 s16 -5243 8964
+field rec2e 1500:34 s16 -1315 9
+field rec3a 1500:36 s16 -98 10272
+field rec3b 1500:38 s16 -3740 7058
+field rec3c 1500:40 s32 -6712 66929
+field rec3d 1500:44 s16 -5243 8964
+field rec3e 1500:46 s16 -1315 9
+field rec4a 1500:48 s16 -98 10272
+field rec4b 1500:50 s16 -3740 7058
+field rec4c 1500:52 s32 -6712 66929
+field rec4d 1500:56 s16 -5243 8964
+field rec4e 1500:58 s16 -1315 9
+field rec5a 1500:60 s16 -98 10272
+field rec5b 1500:62 s16 -3740 7058
+field rec5c 1500:64 s32 -6712 66929
+field rec5d 1500:68 s16 -5243 8964
+field rec5e 1500:70 s16 -1315 9
+field rec6a 1500:72 s16 -98 10272
+field rec6b 1500:74 s16 -3740 7058
+field rec6c 1500:76 s32 -6712 66929
+field rec6d 1500:80 s16 -5243 8964
+field rec6e 1500:82 s16 -1315 9
+field rec7a 1500:84 s16 -98 10272
+field rec7b 1500:86 s16 -3740 7058
+field rec7c 1500:88 s32 -6712 66929
+field rec7d 1500:92 s16 -5243 8964
+field rec7e 1500:94 s16 -1315 9
+field rec8a 1500:96 s16 -98 10272
+field rec8b 1500:98 s16 -3740 7058
+field rec8c 1500:100 s32 -6712 66929
+field rec8d 1500:104 s16 -5243 8964
+field rec8e 1500:106 s16 -1315 9
+field rec9a 1500:108 s16 -98 10272
+field rec9b 1500:110 s16 -3740 7058
+field rec9c 1500:112 s32 -6712 66929
+field rec9d 1500:116 s16 -5243 8964
+field rec9e 1500:118 s16 -1315 9
+field rec10a 1500:120 s16 -98 10272
+field rec10b 1500:122 s16 -3740 7058
+field rec10c 1500:124 s32 -6712 66929
+field rec10d 1500:128 s16 -5243 8964
+field rec10e 1500:130 s16 -1315 9
+field rec11a 1500:132 s16 -98 10272
+field rec11b 1500:134 s16 -3740 7058
+field rec11c 1500:136 s32 -6712 66929
+field rec11d 1500:140 s16 -5243 8964
+field rec11e 1500:142 s16 -1315 9
+field rec12a 1500:144 s16 -98 10272
+field rec12b 1500:146 s16 -3740 7058
+field rec12c 1500:148 s32 -6712 66929
+field rec12d 1500:152 s16 -5243 8964
+field rec12e 1500:154 s16 -1315 9
+field rec13a 1500:156 s16 -98 10272
+field rec13b 1500:158 s16 -3740 7058
+field rec13c 1500:160 s32 -6712 66929
+field rec13d 1500:164 s16 -5243 8964
+field rec13e 1500:166 s16 -1315 9
+field rec14a 1500:168 s16 -98 10272
+field rec14b 1500:170 s16 -3740 7058
+field rec14c 1500:172 s32 -6712 66929
+field rec14d 1500:176 s16 -5243 8964
+field rec14e 1500:178 s16 -1315 9
+field rec15a 1500:180 s16 -98 10272
+field rec15b 1500:182 s16 -3740 7058
+field rec15c 1500:184 s32 -6712 66929
+field rec15d 1500:188 s16 -5243 8964
+field rec15e 1500:190 s16 -1315 9
+field rec16a 1500:192 s16 -98 10272
+field rec16b 1500:194 s16 -3740 7058
+field rec16c 1500:196 s32 -6712 66929
+field rec16d 1500:200 s16 -5243 8964
+field rec16e 1500:202 s16 -1315 9
+field rec17a 1500:204 s16 -98 10272
+field rec17b 1500:206 s16 -3740 7058
+field rec17c 1500:208 s32 -6712 66929
+field rec17d 1500:212 s16 -5243 8964
+field rec17e 1500:214 s16 -1315 9
+field rec18a 1500:216 s16 -98 10272
+field rec18b 1500:218 s16 -3740 7058
+field rec18c 1500:220 s32 -6712 66929
+field rec18d 1500:224 s16 -5243 8964
+field rec18e 1500:226 s16 -1315 9
+field a 1502:0 s16 -98 10272
+field outa 1001:16 s16 -98 10272
+field b 1502:2 s16 -3740 7058
+field outb 1001:18 s16 -3740 7058
+field c 1502:4 s32 -6712 66929
+field outc 1001:20 s32 -6712 66929
+field d 1502:8 s16 -5243 8964
+field outd 1001:24 s16 -5243 8964
+field e 1502:10 s16 -1315 9
+field oute 1001:26 s16 -1315 9
+field depth0 1510:0 s32 16000 292571
+field depth1 1510:4 s32 16000 292571
+field depth2 1510:8 s32 16000 292571
+field depth3 1510:12 s32 16000 292571
+field depth4 1510:16 s32 16000 292571
+field depth5 1510:20 s32 16000 292571
+field depth6 1510:24 s32 16000 292571
+field depth7 1510:28 s32 16000 292571
+field depth8 1510:32 s32 16000 292571
+field depth9 1510:36 s32 16000 292571
+field depth10 1510:40 s32 16000 292571
+field depth11 1510:44 s32 16000 292571
+field depth12 1510:48 s32 16000 292571
+field depth13 1510:52 s32 16000 292571
+field depth14 1510:56 s32 16000 292571
+field depth15 1510:60 s32 16000 292571
+field depth16 1510:64 s32 16000 292571
+field depth17 1510:68 s32 16000 292571
+field depth18 1510:72 s32 16000 292571
+field depth19 1510:76 s32 16000 292571
+field depth20 1510:80 s32 16000 292571
+field depth21 1510:84 s32 16000 292571
+field depth22 1510:88 s32 16000 292571
+field depth23 1510:92 s32 16000 292571
+field depth24 1510:96 s32 16000 292571
+field depth25 1510:100 s32 16000 292571
+field depth26 1510:104 s32 16000 292571
+field depth27 1510:108 s32 16000 292571
+field depth28 1510:112 s32 16000 292571
+field depth29 1510:116 s32 16000 292571
+field depth30 1510:120 s32 16000 292571
+field depth31 1510:124 s32 16000 292571
+field depth32 1510:128 s32 16000 292571
+field depth33 1510:132 s32 16000 292571
+field depth34 1510:136 s32 16000 292571
+field depth35 1510:140 s32 16000 292571
+field depth36 1510:144 s32 16000 292571
+field depth37 1510:148 s32 16000 292571
+field depth38 1510:152 s32 16000 292571
+field depth39 1510:156 s32 16000 292571
+field depth40 1510:160 s32 16000 292571
+field depth41 1510:164 s32 16000 292571
+field depth42 1510:168 s32 16000 292571
+field depth43 1510:172 s32 16000 292571
+field depth44 1510:176 s32 16000 292571
+field depth45 1510:180 s32 16000 292571
+field depth46 1510:184 s32 16000 292571
+field depth47 1510:188 s32 16000 292571
+field depth48 1510:192 s32 16000 292571
+field depth49 1510:196 s32 16000 292571
+field depth50 1510:200 s32 16000 292571
+field depth51 1510:204 s32 16000 292571
+field depth52 1510:208 s32 16000 292571
+field depth53 1510:212 s32 16000 292571
+field depth54 1510:216 s32 16000 292571
+field depth55 1510:220 s32 16000 292571
+field depth56 1510:224 s32 16000 292571
+field depth57 1510:228 s32 16000 292571
+field depth58 1510:232 s32 16000 292571
+field depth59 1510:236 s32 16000 292571
+field depth60 1510:240 s32 16000 292571
+field depth61 1510:244 s32 16000 292571
+field depth62 1510:248 s32 16000 292571
+field depth63 1510:252 s32 16000 292571
+field depth64 1510:256 s32 16000 292571
+field depth65 1510:260 s32 16000 292571
+field depth66 1510:264 s32 16000 292571
+field depth67 1510:268 s32 16000 292571
+field depth68 1510:272 s32 16000 292571
+field depth69 1510:276 s32 16000 292571
+field depth70 1510:280 s32 16000 292571
+field depth71 1510:284 s32 16000 292571
+field depth72 1510:288 s32 16000 292571
+field depth73 1510:292 s32 16000 292571
+field depth74 1510:296 s32 16000 292571
+field depth75 1510:300 s32 16000 292571
+field depth76 1510:304 s32 16000 292571
+field depth77 1510:308 s32 16000 292571
+field depth78 1510:312 s32 16000 292571
+field depth79 1510:316 s32 16000 292571
+field depth80 1510:320 s32 16000 292571
+field depth81 1510:324 s32 16000 292571
+field depth82 1510:328 s32 16000 292571
+field depth83 1510:332 s32 16000 292571
+field depth84 1510:336 s32 16000 292571
+field depth85 1510:340 s32 16000 292571
+field depth86 1510:344 s32 16000 292571
+field depth87 1510:348 s32 16000 292571
+field depth88 1510:352 s32 16000 292571
+field depth89 1510:356 s32 16000 292571
+field depth90 1510:360 s32 16000 292571
+field depth91 1510:364 s32 16000 292571
+field depth92 1510:368 s32 16000 292571
+field depth93 1510:372 s32 16000 292571
+field depth94 1510:376 s32 16000 292571
+field depth95 1510:380 s32 16000 292571
+field depth96 1510:384 s32 16000 292571
+field depth97 1510:388 s32 16000 292571
+field depth98 1510:392 s32 16000 292571
+field depth99 1510:396 s32 16000 292571
+field depth100 1510:400 s32 16000 292571
+field depth101 1510:404 s32 16000 292571
+field depth102 1510:408 s32 16000 292571
+field depth103 1510:412 s32 16000 292571
+field depth104 1510:416 s32 16000 292571
+field depth105 1510:420 s32 16000 292571
+field depth106 1510:424 s32 16000 292571
+field depth107 1510:428 s32 16000 292571
+field depth108 1510:432 s32 16000 292571
+field depth109 1510:436 s32 16000 292571
+field depth110 1510:440 s32 16000 292571
+field depth111 1510:444 s32 16000 292571
+field depth112 1510:448 s32 16000 292571
+field depth113 1510:452 s32 16000 292571
+field depth114 1510:456 s32 16000 292571
+field depth115 1510:460 s32 16000 292571
+field depth116 1510:464 s32 16000 292571
+field depth117 1510:468 s32 16000 292571
+field depth118 1510:472 s32 16000 292571
+field depth119 1510:476 s32 16000 292571
+field depth120 1510:480 s32 16000 292571
+field depth121 1510:484 s32 16000 292571
+field depth 1511:0 s32 16000 292571
+field localWide 1501:0 s32 0 6399
+field fraction14Wide 1501:4 s32 0 16381
+field fraction12Wide 1501:8 s32 0 4095
+field squareWide 1501:12 s32 0 4094
+scratch 2 4
+scratch 3 4
+scratch 4 4
+scratch 5 4
+scratch 6 4
+scratch 7 4
+scratch 8 36
+scratch 9 4
+scratch 10 4
+scratch 11 4
+copy 2000 1001:0 11:0 2
+scratch 12 4
+scratch 13 36
+scratch 14 4
+scratch 15 4
+scratch 16 4
+copy 2000 1001:2 16:0 2
+divmod_positive 2000 source 1000:0 divisor 6400 exhaustive_domain 0 575999
+scratch 17 3
+scratch 18 2
+scratch 19 15
+scratch 20 0
+copy 20 19:11 17:0 2
+lookup 2000 table 4000 count 90 stride 228 instruction 19 source_id_offset 11 guarded_body 20
+copy 2000 1501:0 1001:2 2
+scratch 21 4
+scratch 22 36
+scratch 23 4
+scratch 24 4
+scratch 25 4
+copy 2000 1001:4 25:0 2
+copy 2000 1501:4 1001:4 2
+scratch 26 4
+scratch 27 36
+scratch 28 4
+scratch 29 4
+scratch 30 4
+copy 2000 1001:6 30:0 2
+copy 2000 1501:8 1001:6 2
+scratch 31 4
+scratch 32 36
+scratch 33 4
+scratch 34 4
+scratch 35 4
+copy 2000 1001:8 35:0 2
+copy 2000 1501:12 1001:8 2
+scratch 36 4
+scratch 37 4
+scratch 38 36
+scratch 39 4
+scratch 40 4
+scratch 41 4
+copy 2000 1001:14 41:0 2
+scratch 42 3
+scratch 43 2
+scratch 44 15
+scratch 45 0
+copy 45 42:0 1001:14 2
+copy 45 44:13 42:0 2
+element_lookup 2000 source 1510 count 122 stride 4 instruction 44 source_offset_field 13 guarded_body 45
+scratch 46 4
+scratch 47 36
+scratch 48 4
+scratch 49 4
+scratch 50 4
+copy 2000 1001:10 50:0 2
+scratch 51 3
+scratch 52 2
+scratch 53 15
+scratch 54 0
+copy 54 51:0 1001:10 2
+copy 54 53:13 51:0 2
+element_lookup 2000 source 1500 count 19 stride 12 instruction 53 source_offset_field 13 guarded_body 54
+copy 2000 1001:16 1502:0 2
+copy 2000 1001:18 1502:2 2
+copy 2000 1001:20 1502:4 4
+copy 2000 1001:24 1502:8 2
+copy 2000 1001:26 1502:10 2
+scratch 55 4
+scratch 56 4
+scratch 57 4
+scratch 58 36
+scratch 59 4
+scratch 60 4
+scratch 61 4
+scratch 62 4
+scratch 63 4
+copy 2000 1001:12 63:0 2
+symbol aFloat 1134 4 1
+symbol aTerm 1142 4 1
+symbol aheadFloat 1132 4 1
+symbol aheadScaled 1133 4 1
+symbol bFloat 1135 4 1
+symbol bTerm 1139 4 1
+symbol cFloat 1136 4 1
+symbol centreQ8 1148 4 1
+symbol coefficient 1502 12 0
+symbol compute 2000 1270 2
+symbol dFloat 1137 4 1
+symbol dTerm 1140 4 1
+symbol depthFloat 1131 4 1
+symbol depths 1510 488 0
+symbol eFloat 1138 4 1
+symbol eTerm 1141 4 1
+symbol fraction12Float 1123 4 1
+symbol fraction14Float 1122 4 1
+symbol fractionFloat 1121 4 1
+symbol fractionUnit 1126 4 1
+symbol half 1162 4 1
+symbol input 1000 80 0
+symbol intervalData 1500 228 0
+symbol lineA 1143 4 1
+symbol lineB 1145 4 1
+symbol lineBPart 1144 4 1
+symbol localFloat 1120 4 1
+symbol minus103 1160 4 1
+symbol minus96 1161 4 1
+symbol output 1001 80 0
+symbol pixelCentre 1102 4 1
+symbol qFloat 1130 4 1
+symbol roundedCentre 1149 4 1
+symbol rowFloat 1128 4 1
+symbol rowMinus103 1129 4 1
+symbol rowSlope 1146 4 1
+symbol scaledSlope 1147 4 1
+symbol selectedDepth 1511 4 0
+symbol squareDivided 1125 4 1
+symbol squareFloat 1124 4 1
+symbol squareUnit 1127 4 1
+symbol status 1002 10 0
+symbol trackData 4000 228 5
+symbol untouched 1003 2 0
+symbol wide 1501 16 0
+bootstrap_bytes 26434
+resident_payload_bytes 23641
+owned_ids 196
+asset_payload_bytes 20520
+program_payload_bytes 1594
+scratch_payload_bytes 1527
+resident_plus_bootstrap_payload_bytes 50075
+owned 2
+owned 3
+owned 4
+owned 5
+owned 6
+owned 7
+owned 8
+owned 9
+owned 10
+owned 11
+owned 12
+owned 13
+owned 14
+owned 15
+owned 16
+owned 17
+owned 18
+owned 19
+owned 20
+owned 21
+owned 22
+owned 23
+owned 24
+owned 25
+owned 26
+owned 27
+owned 28
+owned 29
+owned 30
+owned 31
+owned 32
+owned 33
+owned 34
+owned 35
+owned 36
+owned 37
+owned 38
+owned 39
+owned 40
+owned 41
+owned 42
+owned 43
+owned 44
+owned 45
+owned 46
+owned 47
+owned 48
+owned 49
+owned 50
+owned 51
+owned 52
+owned 53
+owned 54
+owned 55
+owned 56
+owned 57
+owned 58
+owned 59
+owned 60
+owned 61
+owned 62
+owned 63
+owned 1000
+owned 1001
+owned 1002
+owned 1003
+owned 1102
+owned 1120
+owned 1121
+owned 1122
+owned 1123
+owned 1124
+owned 1125
+owned 1126
+owned 1127
+owned 1128
+owned 1129
+owned 1130
+owned 1131
+owned 1132
+owned 1133
+owned 1134
+owned 1135
+owned 1136
+owned 1137
+owned 1138
+owned 1139
+owned 1140
+owned 1141
+owned 1142
+owned 1143
+owned 1144
+owned 1145
+owned 1146
+owned 1147
+owned 1148
+owned 1149
+owned 1160
+owned 1161
+owned 1162
+owned 1500
+owned 1501
+owned 1502
+owned 1510
+owned 1511
+owned 2000
+owned 4000
+owned 4001
+owned 4002
+owned 4003
+owned 4004
+owned 4005
+owned 4006
+owned 4007
+owned 4008
+owned 4009
+owned 4010
+owned 4011
+owned 4012
+owned 4013
+owned 4014
+owned 4015
+owned 4016
+owned 4017
+owned 4018
+owned 4019
+owned 4020
+owned 4021
+owned 4022
+owned 4023
+owned 4024
+owned 4025
+owned 4026
+owned 4027
+owned 4028
+owned 4029
+owned 4030
+owned 4031
+owned 4032
+owned 4033
+owned 4034
+owned 4035
+owned 4036
+owned 4037
+owned 4038
+owned 4039
+owned 4040
+owned 4041
+owned 4042
+owned 4043
+owned 4044
+owned 4045
+owned 4046
+owned 4047
+owned 4048
+owned 4049
+owned 4050
+owned 4051
+owned 4052
+owned 4053
+owned 4054
+owned 4055
+owned 4056
+owned 4057
+owned 4058
+owned 4059
+owned 4060
+owned 4061
+owned 4062
+owned 4063
+owned 4064
+owned 4065
+owned 4066
+owned 4067
+owned 4068
+owned 4069
+owned 4070
+owned 4071
+owned 4072
+owned 4073
+owned 4074
+owned 4075
+owned 4076
+owned 4077
+owned 4078
+owned 4079
+owned 4080
+owned 4081
+owned 4082
+owned 4083
+owned 4084
+owned 4085
+owned 4086
+owned 4087
+owned 4088
+owned 4089
+cleanup_bytes 1176

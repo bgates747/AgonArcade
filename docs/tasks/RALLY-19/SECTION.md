@@ -92,3 +92,93 @@ evidence and the corrected native report are retained.
 Next integration uses these helpers for real coefficients and phase/boundary
 selection, then compares complete materials/geometry to the frozen oracle and
 measures alternative batching. Do not check R19-06 from the helper test alone.
+
+## Real track projection and complete-band checkpoint
+
+Golem compiler checkpoint: f54651a9ed3df87fc3d1e4240264cf44888cc951.
+`build_projection_kernel.py` repacks the unchanged selected track's coefficients
+and emits readable hosted source. The existing C++ compiler emits every VDU
+instruction. Dynamic interval/record selection, fraction quantization, depth
+lookup and scalar arithmetic execute in stock VDP. `projection_reference.cpp`
+uses the actual accepted LookupRoad implementation; it is not a duplicate float
+model or a source of candidate screen coordinates.
+
+The first construction deferred the b/d/e and final Q8 truncations while retaining
+fractionQ14, fractionQ12 and squareQ12. Its theoretical four-truncation centre
+error is less than(2+q/8)/256, at most0.0703125px before float roundoff. A declared
+0.075px numeric allowance passed186 oval and294 Fuji native queries, with maximum
+errors0.042999267578125 and0.042236328125px. Selected records and every integer
+index stage matched. `evidence/golem-projection/fetched-scale-{oval,fuji}` retains
+raw readbacks, source/loader/compiler/runtime identities, full Golem source and
+resource maps. The earlier `initial-oval` fails because a compiler helper omitted
+the fetched-scalar bit in matrix operation0x27. It is retained, not overwritten.
+
+`build_section_kernel.py` adds immutable phaseIndex/pattern/curve-band assets
+derived from the accepted tables. For this proof the curve and stripe descriptors
+bracket diagnostic anchor row160; they do not precompute projected endpoints.
+The VDP selects the curve bin and stripe pattern from position and independent
+phase, intersects the bounds, chooses paint parity, evaluates both endpoints,
+calculates the normalized five strips and plots two triangles for each strip.
+The eZ80 transports raw position/phase (plus ignored lateral in visual tests).
+One selected track is resident at a time. The raw diagnostic packet is not a
+replacement for the already frozen80-byte production ABI or its admission guard.
+
+`probe_section.py` passes61 oval and79 Fuji selection/corner queries using the
+original deferred-truncation variant (`evidence/golem-section/initial-*`). Every
+boundary/material agrees and rounded centres differ by at most1px. Crucially,
+the first complete-section visual run (`loader-oval`) nevertheless fails the
+shoulder metric at position72000/phase3999: one centre rounds to153 instead of
+154, and the thin shoulder only reaches0.877049 one-pixel agreement. This is an
+actual raster discrepancy, not grounds to relax the frozen regional metric.
+
+The section generator now restores the four truncations with MatTrunc and uses
+MatRoundAway for accepted half-away endpoint rounding. Both compiler intrinsics
+extract positive binary32 magnitude and sign, convert only nonnegative values
+with stock fixed conversion, reload an exact signed32 integer and restore sign.
+This avoids negative-float-to-unsigned undefined conversion and preserves signed
+zero. The rounding half constant uses nextafter(0.5,0) to avoid prematurely
+rounding the input immediately below0.5 up to1. Host tests qualify all half-value
+discontinuities and neighbours through8388607, and reject invalid shapes/ranges
+and aliasing. Native `evidence/golem-rounding/signed-boundaries` passes122 varied
+values. The scalar truncation domain is |x|<=16777215; nearest rounding<=8388607.
+
+`visual_section.py` compiles separate oracle and candidate guest paths, renders
+both buffers, captures through the existing Linux SDL observer and advances poses
+with scheduled headless right-arrow events. Escape must produce a zero exit.viz.
+Each renderer reports its own geometry; masks classify that renderer's actual
+native pixels. They use the frozen same-material RGB radius-one metric separately
+for asphalt, kerb, shoulder and centreline. No candidate receives oracle corners
+or uses the oracle's mask as its own. Background is scored separately. GP is
+only a parser echo; captures wait additional host presents before inspection.
+
+All28 oval visual cases pass with the restored quantization:24 frozen cases plus
+four extra seam/lateral poses, under `evidence/golem-section-visual/quantized-oval`.
+The initial corrected four-case run also passes; its predecessor's failure remains
+available. Fuji's wider images and the construction timing comparison are still
+in progress at this checkpoint, so R19-06 is deliberately unchecked.
+
+The alternative batching measurement compares shared per-position preparation
+against repeating that same preparation for the second endpoint. `time_section.py`
+uses serial ABBA, normal guest clock/UART, warmed64-pose groups,16 finite resident
+calls/group and two measured passes. No observer is loaded. Raw120Hz guest-tick
+spans end at a stock GP parser echo and are construction-cost evidence only:
+they do not qualify raster completion, full-scene speed, eZ80 savings or R19-10.
+Full-road boundary enumeration and admission/resource integration remain later
+milestones; the anchor descriptor table is specifically a one-band proof.
+
+Reproduce from the Rally execution worktree (always choose unused run names):
+
+```sh
+.venv/bin/python docs/tasks/RALLY-19/probe_projection.py NAME --track oval
+.venv/bin/python docs/tasks/RALLY-19/probe_rounding.py NAME
+.venv/bin/python docs/tasks/RALLY-19/probe_section.py NAME --track fuji
+.venv/bin/python docs/tasks/RALLY-19/visual_section.py NAME --track oval
+.venv/bin/python docs/tasks/RALLY-19/visual_section.py NAME --track fuji --limit 35
+.venv/bin/python docs/tasks/RALLY-19/visual_section.py NAME --track fuji --offset 35
+.venv/bin/python docs/tasks/RALLY-19/time_section.py NAME --track oval
+```
+
+Requirements remain agondev on PATH, each project's own Python environment,
+Pillow for native-image masks, stock Fab1.2.4/MOS3.0.2 and canonical wrapper
+generation. The visual observer uses Linux clang/libdl/SDL3; it is not timing
+instrumentation. Nothing is launched graphically or deployed to hardware.

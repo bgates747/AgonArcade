@@ -1,0 +1,6148 @@
+{
+  "pass": false,
+  "scope": "Compare VDP evaluation of real compact track records to accepted C++ oracle.\n\nThe candidate retains fractionQ14/fractionQ12/squareQ12, but defers b/d/e and\nfinal Q8 truncations. Those four errors total <(2+q/8)/256 <=0.0703125 pixel;\nallow 0.075 pixel including bounded float32 roundoff. Rounded endpoints must\nstill differ by <=1 pixel. This is a numeric construction test, not road pixels.\n",
+  "track": "oval",
+  "cases": 186,
+  "maximum_float_pixel_error": 125.232177734375,
+  "maximum_endpoint_pixel_error": 125,
+  "results": [
+    {
+      "position": 0,
+      "row": 103,
+      "integer_stages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        17
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 116.8408203125,
+      "oracle_q8": 29911,
+      "oracle_pixel": 117,
+      "native_pixel": 117,
+      "float_pixel_error": 0.0009765625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 0,
+      "row": 104,
+      "integer_stages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        15
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        4800,
+        1065,
+        25887,
+        -2411,
+        -24
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 125.560546875,
+      "oracle_q8": 32143,
+      "oracle_pixel": 126,
+      "native_pixel": 126,
+      "float_pixel_error": 0.001953125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 0,
+      "row": 116,
+      "integer_stages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 145.2978515625,
+      "oracle_q8": 37196,
+      "oracle_pixel": 145,
+      "native_pixel": 145,
+      "float_pixel_error": 0.0009765625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 0,
+      "row": 160,
+      "integer_stages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 155.0625,
+      "oracle_q8": 39696,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 0,
+      "row": 200,
+      "integer_stages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.6640625,
+      "oracle_q8": 40106,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 0,
+      "row": 224,
+      "integer_stages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        10080,
+        1250,
+        0,
+        0,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.5,
+      "oracle_q8": 40320,
+      "oracle_pixel": 158,
+      "native_pixel": 158,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 1,
+      "row": 103,
+      "integer_stages": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        17
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 116.8408203125,
+      "oracle_q8": 29911,
+      "oracle_pixel": 117,
+      "native_pixel": 117,
+      "float_pixel_error": 0.0009765625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 1,
+      "row": 104,
+      "integer_stages": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        15
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        4800,
+        1065,
+        25887,
+        -2411,
+        -24
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 125.560546875,
+      "oracle_q8": 32143,
+      "oracle_pixel": 126,
+      "native_pixel": 126,
+      "float_pixel_error": 0.001953125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 1,
+      "row": 116,
+      "integer_stages": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        6
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 145.2978515625,
+      "oracle_q8": 37196,
+      "oracle_pixel": 145,
+      "native_pixel": 145,
+      "float_pixel_error": 0.0009765625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 1,
+      "row": 160,
+      "integer_stages": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 155.0625,
+      "oracle_q8": 39696,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 1,
+      "row": 200,
+      "integer_stages": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.6640625,
+      "oracle_q8": 40106,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 1,
+      "row": 224,
+      "integer_stages": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        10080,
+        1250,
+        0,
+        0,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.5,
+      "oracle_q8": 40320,
+      "oracle_pixel": 158,
+      "native_pixel": 158,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 24,
+      "row": 103,
+      "integer_stages": [
+        0,
+        24,
+        61,
+        15,
+        0,
+        17
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 116.83411407470703,
+      "oracle_q8": 29909,
+      "oracle_pixel": 117,
+      "native_pixel": 117,
+      "float_pixel_error": 0.00208282470703125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 24,
+      "row": 104,
+      "integer_stages": [
+        0,
+        24,
+        61,
+        15,
+        0,
+        15
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        4800,
+        1065,
+        25887,
+        -2411,
+        -24
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 125.55853271484375,
+      "oracle_q8": 32142,
+      "oracle_pixel": 126,
+      "native_pixel": 126,
+      "float_pixel_error": 0.00384521484375,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 24,
+      "row": 116,
+      "integer_stages": [
+        0,
+        24,
+        61,
+        15,
+        0,
+        6
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 145.301025390625,
+      "oracle_q8": 37197,
+      "oracle_pixel": 145,
+      "native_pixel": 145,
+      "float_pixel_error": 0.000244140625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 24,
+      "row": 160,
+      "integer_stages": [
+        0,
+        24,
+        61,
+        15,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 155.07101440429688,
+      "oracle_q8": 39700,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.007110595703125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 24,
+      "row": 200,
+      "integer_stages": [
+        0,
+        24,
+        61,
+        15,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.66671752929688,
+      "oracle_q8": 40110,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.012969970703125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 24,
+      "row": 224,
+      "integer_stages": [
+        0,
+        24,
+        61,
+        15,
+        0,
+        0
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        10080,
+        1250,
+        0,
+        0,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.51788330078125,
+      "oracle_q8": 40324,
+      "oracle_pixel": 158,
+      "native_pixel": 158,
+      "float_pixel_error": 0.00225830078125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 25,
+      "row": 103,
+      "integer_stages": [
+        0,
+        25,
+        64,
+        16,
+        0,
+        17
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 116.83366394042969,
+      "oracle_q8": 29909,
+      "oracle_pixel": 117,
+      "native_pixel": 117,
+      "float_pixel_error": 0.0016326904296875,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 25,
+      "row": 104,
+      "integer_stages": [
+        0,
+        25,
+        64,
+        16,
+        0,
+        15
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        4800,
+        1065,
+        25887,
+        -2411,
+        -24
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 125.55840301513672,
+      "oracle_q8": 32143,
+      "oracle_pixel": 126,
+      "native_pixel": 126,
+      "float_pixel_error": 0.00019073486328125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 25,
+      "row": 116,
+      "integer_stages": [
+        0,
+        25,
+        64,
+        16,
+        0,
+        6
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 145.30123901367188,
+      "oracle_q8": 37196,
+      "oracle_pixel": 145,
+      "native_pixel": 145,
+      "float_pixel_error": 0.004364013671875,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 25,
+      "row": 160,
+      "integer_stages": [
+        0,
+        25,
+        64,
+        16,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 155.0715789794922,
+      "oracle_q8": 39700,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.0065460205078125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 25,
+      "row": 200,
+      "integer_stages": [
+        0,
+        25,
+        64,
+        16,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.66688537597656,
+      "oracle_q8": 40110,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.0128021240234375,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 25,
+      "row": 224,
+      "integer_stages": [
+        0,
+        25,
+        64,
+        16,
+        0,
+        0
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        10080,
+        1250,
+        0,
+        0,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.51907348632812,
+      "oracle_q8": 40324,
+      "oracle_pixel": 158,
+      "native_pixel": 158,
+      "float_pixel_error": 0.003448486328125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 99,
+      "row": 103,
+      "integer_stages": [
+        0,
+        99,
+        253,
+        63,
+        0,
+        17
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 116.81263732910156,
+      "oracle_q8": 29903,
+      "oracle_pixel": 117,
+      "native_pixel": 117,
+      "float_pixel_error": 0.0040435791015625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 99,
+      "row": 104,
+      "integer_stages": [
+        0,
+        99,
+        253,
+        63,
+        0,
+        15
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        4800,
+        1065,
+        25887,
+        -2411,
+        -24
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 125.55210876464844,
+      "oracle_q8": 32141,
+      "oracle_pixel": 126,
+      "native_pixel": 126,
+      "float_pixel_error": 0.0013275146484375,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 99,
+      "row": 116,
+      "integer_stages": [
+        0,
+        99,
+        253,
+        63,
+        0,
+        6
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 145.3111572265625,
+      "oracle_q8": 37199,
+      "oracle_pixel": 145,
+      "native_pixel": 145,
+      "float_pixel_error": 0.0025634765625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 99,
+      "row": 160,
+      "integer_stages": [
+        0,
+        99,
+        253,
+        63,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 155.09825134277344,
+      "oracle_q8": 39707,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.0072174072265625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 99,
+      "row": 200,
+      "integer_stages": [
+        0,
+        99,
+        253,
+        63,
+        0,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.67518615722656,
+      "oracle_q8": 40112,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.0123138427734375,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 99,
+      "row": 224,
+      "integer_stages": [
+        0,
+        99,
+        253,
+        63,
+        0,
+        0
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        10080,
+        1250,
+        0,
+        0,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.57510375976562,
+      "oracle_q8": 40339,
+      "oracle_pixel": 158,
+      "native_pixel": 158,
+      "float_pixel_error": 0.000885009765625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 100,
+      "row": 103,
+      "integer_stages": [
+        0,
+        100,
+        256,
+        64,
+        1,
+        17
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 116.81216430664062,
+      "oracle_q8": 29903,
+      "oracle_pixel": 117,
+      "native_pixel": 117,
+      "float_pixel_error": 0.003570556640625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 100,
+      "row": 104,
+      "integer_stages": [
+        0,
+        100,
+        256,
+        64,
+        1,
+        15
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        4800,
+        1065,
+        25887,
+        -2411,
+        -24
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 125.55195617675781,
+      "oracle_q8": 32141,
+      "oracle_pixel": 126,
+      "native_pixel": 126,
+      "float_pixel_error": 0.0011749267578125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 100,
+      "row": 116,
+      "integer_stages": [
+        0,
+        100,
+        256,
+        64,
+        1,
+        6
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 145.31137084960938,
+      "oracle_q8": 37200,
+      "oracle_pixel": 145,
+      "native_pixel": 145,
+      "float_pixel_error": 0.001129150390625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 100,
+      "row": 160,
+      "integer_stages": [
+        0,
+        100,
+        256,
+        64,
+        1,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 155.09881591796875,
+      "oracle_q8": 39707,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.00665283203125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 100,
+      "row": 200,
+      "integer_stages": [
+        0,
+        100,
+        256,
+        64,
+        1,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.67535400390625,
+      "oracle_q8": 40112,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.01214599609375,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 100,
+      "row": 224,
+      "integer_stages": [
+        0,
+        100,
+        256,
+        64,
+        1,
+        0
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        10080,
+        1250,
+        0,
+        0,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.5762939453125,
+      "oracle_q8": 40339,
+      "oracle_pixel": 158,
+      "native_pixel": 158,
+      "float_pixel_error": 0.0020751953125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 6399,
+      "row": 103,
+      "integer_stages": [
+        0,
+        6399,
+        16381,
+        4095,
+        4094,
+        18
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 114.17990112304688,
+      "oracle_q8": 29229,
+      "oracle_pixel": 114,
+      "native_pixel": 114,
+      "float_pixel_error": 0.004119873046875,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 6399,
+      "row": 104,
+      "integer_stages": [
+        0,
+        6399,
+        16381,
+        4095,
+        4094,
+        16
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        3840,
+        989,
+        33751,
+        -2746,
+        -33
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 124.35586547851562,
+      "oracle_q8": 31835,
+      "oracle_pixel": 124,
+      "native_pixel": 124,
+      "float_pixel_error": 0.000396728515625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 6399,
+      "row": 116,
+      "integer_stages": [
+        0,
+        6399,
+        16381,
+        4095,
+        4094,
+        7
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.1531219482422,
+      "oracle_q8": 37416,
+      "oracle_pixel": 146,
+      "native_pixel": 146,
+      "float_pixel_error": 0.0031280517578125,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 6399,
+      "row": 160,
+      "integer_stages": [
+        0,
+        6399,
+        16381,
+        4095,
+        4094,
+        2
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 154.95318603515625,
+      "oracle_q8": 39671,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.01165771484375,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 6399,
+      "row": 200,
+      "integer_stages": [
+        0,
+        6399,
+        16381,
+        4095,
+        4094,
+        2
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.55552673339844,
+      "oracle_q8": 40083,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.0186920166015625,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 6399,
+      "row": 224,
+      "integer_stages": [
+        0,
+        6399,
+        16381,
+        4095,
+        4094,
+        1
+      ],
+      "integer_stages_pass": true,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": true,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.38677978515625,
+      "oracle_q8": 40298,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.02728271484375,
+      "endpoint_pixel_error": 0,
+      "pass": true
+    },
+    {
+      "position": 6400,
+      "row": 103,
+      "integer_stages": [
+        0,
+        6400,
+        16384,
+        4096,
+        4096,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 114.17919921875,
+      "oracle_q8": 29229,
+      "oracle_pixel": 114,
+      "native_pixel": 114,
+      "float_pixel_error": 0.00341796875,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6400,
+      "row": 104,
+      "integer_stages": [
+        0,
+        6400,
+        16384,
+        4096,
+        4096,
+        16
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        3840,
+        989,
+        33751,
+        -2746,
+        -33
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 124.35546875,
+      "oracle_q8": 31833,
+      "oracle_pixel": 124,
+      "native_pixel": 124,
+      "float_pixel_error": 0.0078125,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6400,
+      "row": 116,
+      "integer_stages": [
+        0,
+        6400,
+        16384,
+        4096,
+        4096,
+        7
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.1533203125,
+      "oracle_q8": 37413,
+      "oracle_pixel": 146,
+      "native_pixel": 146,
+      "float_pixel_error": 0.0087890625,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6400,
+      "row": 160,
+      "integer_stages": [
+        0,
+        6400,
+        16384,
+        4096,
+        4096,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 154.953125,
+      "oracle_q8": 39668,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6400,
+      "row": 200,
+      "integer_stages": [
+        0,
+        6400,
+        16384,
+        4096,
+        4096,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.5546875,
+      "oracle_q8": 40078,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6400,
+      "row": 224,
+      "integer_stages": [
+        0,
+        6400,
+        16384,
+        4096,
+        4096,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.38671875,
+      "oracle_q8": 40292,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.00390625,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6401,
+      "row": 103,
+      "integer_stages": [
+        0,
+        6401,
+        16386,
+        4096,
+        4096,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 114.17919921875,
+      "oracle_q8": 29229,
+      "oracle_pixel": 114,
+      "native_pixel": 114,
+      "float_pixel_error": 0.00341796875,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6401,
+      "row": 104,
+      "integer_stages": [
+        0,
+        6401,
+        16386,
+        4096,
+        4096,
+        16
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        3840,
+        989,
+        33751,
+        -2746,
+        -33
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 124.35546875,
+      "oracle_q8": 31833,
+      "oracle_pixel": 124,
+      "native_pixel": 124,
+      "float_pixel_error": 0.0078125,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6401,
+      "row": 116,
+      "integer_stages": [
+        0,
+        6401,
+        16386,
+        4096,
+        4096,
+        7
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.1533203125,
+      "oracle_q8": 37413,
+      "oracle_pixel": 146,
+      "native_pixel": 146,
+      "float_pixel_error": 0.0087890625,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6401,
+      "row": 160,
+      "integer_stages": [
+        0,
+        6401,
+        16386,
+        4096,
+        4096,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 154.953125,
+      "oracle_q8": 39668,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6401,
+      "row": 200,
+      "integer_stages": [
+        0,
+        6401,
+        16386,
+        4096,
+        4096,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.5546875,
+      "oracle_q8": 40078,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.0,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 6401,
+      "row": 224,
+      "integer_stages": [
+        0,
+        6401,
+        16386,
+        4096,
+        4096,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.38671875,
+      "oracle_q8": 40292,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.00390625,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 39210,
+      "row": 103,
+      "integer_stages": [
+        0,
+        39210,
+        34841,
+        8710,
+        18521,
+        19
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 162.57571411132812,
+      "oracle_q8": 22813,
+      "oracle_pixel": 89,
+      "native_pixel": 163,
+      "float_pixel_error": 73.46243286132812,
+      "endpoint_pixel_error": 74,
+      "pass": false
+    },
+    {
+      "position": 39210,
+      "row": 104,
+      "integer_stages": [
+        0,
+        39210,
+        34841,
+        8710,
+        18521,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 121.54643249511719,
+      "oracle_q8": 26002,
+      "oracle_pixel": 102,
+      "native_pixel": 122,
+      "float_pixel_error": 19.976119995117188,
+      "endpoint_pixel_error": 20,
+      "pass": false
+    },
+    {
+      "position": 39210,
+      "row": 116,
+      "integer_stages": [
+        0,
+        39210,
+        34841,
+        8710,
+        18521,
+        8
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8160,
+        1235,
+        3932,
+        -975,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.7900390625,
+      "oracle_q8": 38323,
+      "oracle_pixel": 150,
+      "native_pixel": 147,
+      "float_pixel_error": 2.9091796875,
+      "endpoint_pixel_error": 3,
+      "pass": false
+    },
+    {
+      "position": 39210,
+      "row": 160,
+      "integer_stages": [
+        0,
+        39210,
+        34841,
+        8710,
+        18521,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 151.72100830078125,
+      "oracle_q8": 40550,
+      "oracle_pixel": 158,
+      "native_pixel": 152,
+      "float_pixel_error": 6.67742919921875,
+      "endpoint_pixel_error": 6,
+      "pass": false
+    },
+    {
+      "position": 39210,
+      "row": 200,
+      "integer_stages": [
+        0,
+        39210,
+        34841,
+        8710,
+        18521,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 151.2850341796875,
+      "oracle_q8": 40598,
+      "oracle_pixel": 159,
+      "native_pixel": 151,
+      "float_pixel_error": 7.3009033203125,
+      "endpoint_pixel_error": 8,
+      "pass": false
+    },
+    {
+      "position": 39210,
+      "row": 224,
+      "integer_stages": [
+        0,
+        39210,
+        34841,
+        8710,
+        18521,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 150.94882202148438,
+      "oracle_q8": 40598,
+      "oracle_pixel": 159,
+      "native_pixel": 151,
+      "float_pixel_error": 7.637115478515625,
+      "endpoint_pixel_error": 8,
+      "pass": false
+    },
+    {
+      "position": 65535,
+      "row": 103,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 153.0938720703125,
+      "oracle_q8": 15988,
+      "oracle_pixel": 62,
+      "native_pixel": 153,
+      "float_pixel_error": 90.6407470703125,
+      "endpoint_pixel_error": 91,
+      "pass": false
+    },
+    {
+      "position": 65535,
+      "row": 104,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 121.20756530761719,
+      "oracle_q8": 17792,
+      "oracle_pixel": 70,
+      "native_pixel": 121,
+      "float_pixel_error": 51.70756530761719,
+      "endpoint_pixel_error": 51,
+      "pass": false
+    },
+    {
+      "position": 65535,
+      "row": 116,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        8
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8160,
+        1235,
+        3932,
+        -975,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.7924041748047,
+      "oracle_q8": 34085,
+      "oracle_pixel": 133,
+      "native_pixel": 147,
+      "float_pixel_error": 13.647872924804688,
+      "endpoint_pixel_error": 14,
+      "pass": false
+    },
+    {
+      "position": 65535,
+      "row": 160,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 151.25418090820312,
+      "oracle_q8": 39387,
+      "oracle_pixel": 154,
+      "native_pixel": 151,
+      "float_pixel_error": 2.601287841796875,
+      "endpoint_pixel_error": 3,
+      "pass": false
+    },
+    {
+      "position": 65535,
+      "row": 200,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 150.4105224609375,
+      "oracle_q8": 40000,
+      "oracle_pixel": 156,
+      "native_pixel": 150,
+      "float_pixel_error": 5.8394775390625,
+      "endpoint_pixel_error": 6,
+      "pass": false
+    },
+    {
+      "position": 65535,
+      "row": 224,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 149.74659729003906,
+      "oracle_q8": 40296,
+      "oracle_pixel": 157,
+      "native_pixel": 150,
+      "float_pixel_error": 7.6596527099609375,
+      "endpoint_pixel_error": 7,
+      "pass": false
+    },
+    {
+      "position": 72000,
+      "row": 103,
+      "integer_stages": [
+        0,
+        6464,
+        16547,
+        4136,
+        4176,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 114.15090942382812,
+      "oracle_q8": 14845,
+      "oracle_pixel": 58,
+      "native_pixel": 114,
+      "float_pixel_error": 56.162628173828125,
+      "endpoint_pixel_error": 56,
+      "pass": false
+    },
+    {
+      "position": 72000,
+      "row": 104,
+      "integer_stages": [
+        0,
+        6464,
+        16547,
+        4136,
+        4176,
+        16
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        3840,
+        989,
+        33751,
+        -2746,
+        -33
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 124.33956146240234,
+      "oracle_q8": 16190,
+      "oracle_pixel": 63,
+      "native_pixel": 124,
+      "float_pixel_error": 61.097373962402344,
+      "endpoint_pixel_error": 61,
+      "pass": false
+    },
+    {
+      "position": 72000,
+      "row": 116,
+      "integer_stages": [
+        0,
+        6464,
+        16547,
+        4136,
+        4176,
+        7
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.1615753173828,
+      "oracle_q8": 32498,
+      "oracle_pixel": 127,
+      "native_pixel": 146,
+      "float_pixel_error": 19.216262817382812,
+      "endpoint_pixel_error": 19,
+      "pass": false
+    },
+    {
+      "position": 72000,
+      "row": 160,
+      "integer_stages": [
+        0,
+        6464,
+        16547,
+        4136,
+        4176,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 154.95083618164062,
+      "oracle_q8": 39131,
+      "oracle_pixel": 153,
+      "native_pixel": 155,
+      "float_pixel_error": 2.095367431640625,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 72000,
+      "row": 200,
+      "integer_stages": [
+        0,
+        6464,
+        16547,
+        4136,
+        4176,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.5211181640625,
+      "oracle_q8": 39777,
+      "oracle_pixel": 155,
+      "native_pixel": 157,
+      "float_pixel_error": 1.1422119140625,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 72000,
+      "row": 224,
+      "integer_stages": [
+        0,
+        6464,
+        16547,
+        4136,
+        4176,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.3843994140625,
+      "oracle_q8": 39954,
+      "oracle_pixel": 156,
+      "native_pixel": 157,
+      "float_pixel_error": 1.3140869140625,
+      "endpoint_pixel_error": 1,
+      "pass": false
+    },
+    {
+      "position": 111210,
+      "row": 103,
+      "integer_stages": [
+        0,
+        45674,
+        51389,
+        12847,
+        40294,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 167.228271484375,
+      "oracle_q8": 10751,
+      "oracle_pixel": 42,
+      "native_pixel": 167,
+      "float_pixel_error": 125.232177734375,
+      "endpoint_pixel_error": 125,
+      "pass": false
+    },
+    {
+      "position": 111210,
+      "row": 104,
+      "integer_stages": [
+        0,
+        45674,
+        51389,
+        12847,
+        40294,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 117.62144470214844,
+      "oracle_q8": 11139,
+      "oracle_pixel": 44,
+      "native_pixel": 118,
+      "float_pixel_error": 74.10972595214844,
+      "endpoint_pixel_error": 74,
+      "pass": false
+    },
+    {
+      "position": 111210,
+      "row": 116,
+      "integer_stages": [
+        0,
+        45674,
+        51389,
+        12847,
+        40294,
+        9
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8000,
+        1215,
+        4669,
+        -1035,
+        -4
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.64088439941406,
+      "oracle_q8": 23141,
+      "oracle_pixel": 90,
+      "native_pixel": 147,
+      "float_pixel_error": 56.24635314941406,
+      "endpoint_pixel_error": 57,
+      "pass": false
+    },
+    {
+      "position": 111210,
+      "row": 160,
+      "integer_stages": [
+        0,
+        45674,
+        51389,
+        12847,
+        40294,
+        5
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8640,
+        1234,
+        2130,
+        -728,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 147.41522216796875,
+      "oracle_q8": 34819,
+      "oracle_pixel": 136,
+      "native_pixel": 147,
+      "float_pixel_error": 11.40350341796875,
+      "endpoint_pixel_error": 11,
+      "pass": false
+    },
+    {
+      "position": 111210,
+      "row": 200,
+      "integer_stages": [
+        0,
+        45674,
+        51389,
+        12847,
+        40294,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 142.6881103515625,
+      "oracle_q8": 37159,
+      "oracle_pixel": 145,
+      "native_pixel": 143,
+      "float_pixel_error": 2.4642333984375,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 111210,
+      "row": 224,
+      "integer_stages": [
+        0,
+        45674,
+        51389,
+        12847,
+        40294,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 139.76577758789062,
+      "oracle_q8": 37920,
+      "oracle_pixel": 148,
+      "native_pixel": 140,
+      "float_pixel_error": 8.359222412109375,
+      "endpoint_pixel_error": 8,
+      "pass": false
+    },
+    {
+      "position": 131071,
+      "row": 103,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 150.99441528320312,
+      "oracle_q8": 9959,
+      "oracle_pixel": 39,
+      "native_pixel": 151,
+      "float_pixel_error": 112.09207153320312,
+      "endpoint_pixel_error": 112,
+      "pass": false
+    },
+    {
+      "position": 131071,
+      "row": 104,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 121.20756530761719,
+      "oracle_q8": 11139,
+      "oracle_pixel": 44,
+      "native_pixel": 121,
+      "float_pixel_error": 77.69584655761719,
+      "endpoint_pixel_error": 77,
+      "pass": false
+    },
+    {
+      "position": 131071,
+      "row": 116,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        8
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8160,
+        1235,
+        3932,
+        -975,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.7924041748047,
+      "oracle_q8": 25102,
+      "oracle_pixel": 98,
+      "native_pixel": 147,
+      "float_pixel_error": 48.73771667480469,
+      "endpoint_pixel_error": 49,
+      "pass": false
+    },
+    {
+      "position": 131071,
+      "row": 160,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 151.25418090820312,
+      "oracle_q8": 35546,
+      "oracle_pixel": 139,
+      "native_pixel": 151,
+      "float_pixel_error": 12.402618408203125,
+      "endpoint_pixel_error": 12,
+      "pass": false
+    },
+    {
+      "position": 131071,
+      "row": 200,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 150.4105224609375,
+      "oracle_q8": 37652,
+      "oracle_pixel": 147,
+      "native_pixel": 150,
+      "float_pixel_error": 3.3323974609375,
+      "endpoint_pixel_error": 3,
+      "pass": false
+    },
+    {
+      "position": 131071,
+      "row": 224,
+      "integer_stages": [
+        0,
+        65535,
+        36697,
+        9174,
+        20547,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 149.74659729003906,
+      "oracle_q8": 38240,
+      "oracle_pixel": 149,
+      "native_pixel": 150,
+      "float_pixel_error": 0.3715972900390625,
+      "endpoint_pixel_error": 1,
+      "pass": false
+    },
+    {
+      "position": 144000,
+      "row": 103,
+      "integer_stages": [
+        0,
+        12928,
+        33095,
+        8273,
+        16709,
+        19
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 152.21994018554688,
+      "oracle_q8": 9325,
+      "oracle_pixel": 36,
+      "native_pixel": 152,
+      "float_pixel_error": 115.79415893554688,
+      "endpoint_pixel_error": 116,
+      "pass": false
+    },
+    {
+      "position": 144000,
+      "row": 104,
+      "integer_stages": [
+        0,
+        12928,
+        33095,
+        8273,
+        16709,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 121.86337280273438,
+      "oracle_q8": 10647,
+      "oracle_pixel": 42,
+      "native_pixel": 122,
+      "float_pixel_error": 80.27352905273438,
+      "endpoint_pixel_error": 80,
+      "pass": false
+    },
+    {
+      "position": 144000,
+      "row": 116,
+      "integer_stages": [
+        0,
+        12928,
+        33095,
+        8273,
+        16709,
+        8
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8160,
+        1235,
+        3932,
+        -975,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.78758239746094,
+      "oracle_q8": 24181,
+      "oracle_pixel": 94,
+      "native_pixel": 147,
+      "float_pixel_error": 52.33055114746094,
+      "endpoint_pixel_error": 53,
+      "pass": false
+    },
+    {
+      "position": 144000,
+      "row": 160,
+      "integer_stages": [
+        0,
+        12928,
+        33095,
+        8273,
+        16709,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 152.15383911132812,
+      "oracle_q8": 36172,
+      "oracle_pixel": 141,
+      "native_pixel": 152,
+      "float_pixel_error": 10.856964111328125,
+      "endpoint_pixel_error": 11,
+      "pass": false
+    },
+    {
+      "position": 144000,
+      "row": 200,
+      "integer_stages": [
+        0,
+        12928,
+        33095,
+        8273,
+        16709,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 152.10745239257812,
+      "oracle_q8": 38070,
+      "oracle_pixel": 149,
+      "native_pixel": 152,
+      "float_pixel_error": 3.396514892578125,
+      "endpoint_pixel_error": 3,
+      "pass": false
+    },
+    {
+      "position": 144000,
+      "row": 224,
+      "integer_stages": [
+        0,
+        12928,
+        33095,
+        8273,
+        16709,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 152.05026245117188,
+      "oracle_q8": 38501,
+      "oracle_pixel": 150,
+      "native_pixel": 152,
+      "float_pixel_error": 1.655731201171875,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 145234,
+      "row": 103,
+      "integer_stages": [
+        0,
+        14162,
+        36254,
+        9063,
+        20053,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 157.9217529296875,
+      "oracle_q8": 9231,
+      "oracle_pixel": 36,
+      "native_pixel": 158,
+      "float_pixel_error": 121.8631591796875,
+      "endpoint_pixel_error": 122,
+      "pass": false
+    },
+    {
+      "position": 145234,
+      "row": 104,
+      "integer_stages": [
+        0,
+        14162,
+        36254,
+        9063,
+        20053,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 121.2888412475586,
+      "oracle_q8": 10543,
+      "oracle_pixel": 41,
+      "native_pixel": 121,
+      "float_pixel_error": 80.1052474975586,
+      "endpoint_pixel_error": 80,
+      "pass": false
+    },
+    {
+      "position": 145234,
+      "row": 116,
+      "integer_stages": [
+        0,
+        14162,
+        36254,
+        9063,
+        20053,
+        8
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8160,
+        1235,
+        3932,
+        -975,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.79185485839844,
+      "oracle_q8": 23955,
+      "oracle_pixel": 94,
+      "native_pixel": 147,
+      "float_pixel_error": 53.21763610839844,
+      "endpoint_pixel_error": 53,
+      "pass": false
+    },
+    {
+      "position": 145234,
+      "row": 160,
+      "integer_stages": [
+        0,
+        14162,
+        36254,
+        9063,
+        20053,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 151.3658447265625,
+      "oracle_q8": 36094,
+      "oracle_pixel": 141,
+      "native_pixel": 151,
+      "float_pixel_error": 10.3736572265625,
+      "endpoint_pixel_error": 10,
+      "pass": false
+    },
+    {
+      "position": 145234,
+      "row": 200,
+      "integer_stages": [
+        0,
+        14162,
+        36254,
+        9063,
+        20053,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 150.61984252929688,
+      "oracle_q8": 38235,
+      "oracle_pixel": 149,
+      "native_pixel": 151,
+      "float_pixel_error": 1.264373779296875,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 145234,
+      "row": 224,
+      "integer_stages": [
+        0,
+        14162,
+        36254,
+        9063,
+        20053,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 150.03433227539062,
+      "oracle_q8": 38502,
+      "oracle_pixel": 150,
+      "native_pixel": 150,
+      "float_pixel_error": 0.364105224609375,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 183210,
+      "row": 103,
+      "integer_stages": [
+        0,
+        52138,
+        2401,
+        600,
+        87,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 116.5673828125,
+      "oracle_q8": 20067,
+      "oracle_pixel": 78,
+      "native_pixel": 117,
+      "float_pixel_error": 38.1806640625,
+      "endpoint_pixel_error": 39,
+      "pass": false
+    },
+    {
+      "position": 183210,
+      "row": 104,
+      "integer_stages": [
+        0,
+        52138,
+        2401,
+        600,
+        87,
+        15
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        4800,
+        1065,
+        25887,
+        -2411,
+        -24
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 125.47915649414062,
+      "oracle_q8": 20697,
+      "oracle_pixel": 81,
+      "native_pixel": 125,
+      "float_pixel_error": 44.631500244140625,
+      "endpoint_pixel_error": 44,
+      "pass": false
+    },
+    {
+      "position": 183210,
+      "row": 116,
+      "integer_stages": [
+        0,
+        52138,
+        2401,
+        600,
+        87,
+        6
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 145.4243927001953,
+      "oracle_q8": 27682,
+      "oracle_pixel": 108,
+      "native_pixel": 145,
+      "float_pixel_error": 37.29158020019531,
+      "endpoint_pixel_error": 37,
+      "pass": false
+    },
+    {
+      "position": 183210,
+      "row": 160,
+      "integer_stages": [
+        0,
+        52138,
+        2401,
+        600,
+        87,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 155.15316772460938,
+      "oracle_q8": 35584,
+      "oracle_pixel": 139,
+      "native_pixel": 155,
+      "float_pixel_error": 16.153167724609375,
+      "endpoint_pixel_error": 16,
+      "pass": false
+    },
+    {
+      "position": 183210,
+      "row": 200,
+      "integer_stages": [
+        0,
+        52138,
+        2401,
+        600,
+        87,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.76991271972656,
+      "oracle_q8": 37738,
+      "oracle_pixel": 147,
+      "native_pixel": 157,
+      "float_pixel_error": 9.355850219726562,
+      "endpoint_pixel_error": 10,
+      "pass": false
+    },
+    {
+      "position": 183210,
+      "row": 224,
+      "integer_stages": [
+        0,
+        52138,
+        2401,
+        600,
+        87,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.590087890625,
+      "oracle_q8": 38197,
+      "oracle_pixel": 149,
+      "native_pixel": 158,
+      "float_pixel_error": 8.383056640625,
+      "endpoint_pixel_error": 9,
+      "pass": false
+    },
+    {
+      "position": 216000,
+      "row": 103,
+      "integer_stages": [
+        0,
+        19392,
+        49643,
+        12410,
+        37599,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 166.73681640625,
+      "oracle_q8": 34934,
+      "oracle_pixel": 136,
+      "native_pixel": 167,
+      "float_pixel_error": 30.27587890625,
+      "endpoint_pixel_error": 31,
+      "pass": false
+    },
+    {
+      "position": 216000,
+      "row": 104,
+      "integer_stages": [
+        0,
+        19392,
+        49643,
+        12410,
+        37599,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 118.07661437988281,
+      "oracle_q8": 35020,
+      "oracle_pixel": 137,
+      "native_pixel": 118,
+      "float_pixel_error": 18.720260620117188,
+      "endpoint_pixel_error": 19,
+      "pass": false
+    },
+    {
+      "position": 216000,
+      "row": 116,
+      "integer_stages": [
+        0,
+        19392,
+        49643,
+        12410,
+        37599,
+        9
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8000,
+        1215,
+        4669,
+        -1035,
+        -4
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.68653869628906,
+      "oracle_q8": 36049,
+      "oracle_pixel": 141,
+      "native_pixel": 147,
+      "float_pixel_error": 5.8701324462890625,
+      "endpoint_pixel_error": 6,
+      "pass": false
+    },
+    {
+      "position": 216000,
+      "row": 160,
+      "integer_stages": [
+        0,
+        19392,
+        49643,
+        12410,
+        37599,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 147.99835205078125,
+      "oracle_q8": 39008,
+      "oracle_pixel": 152,
+      "native_pixel": 148,
+      "float_pixel_error": 4.37664794921875,
+      "endpoint_pixel_error": 4,
+      "pass": false
+    },
+    {
+      "position": 216000,
+      "row": 200,
+      "integer_stages": [
+        0,
+        19392,
+        49643,
+        12410,
+        37599,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 143.72894287109375,
+      "oracle_q8": 39883,
+      "oracle_pixel": 156,
+      "native_pixel": 144,
+      "float_pixel_error": 12.06402587890625,
+      "endpoint_pixel_error": 12,
+      "pass": false
+    },
+    {
+      "position": 216000,
+      "row": 224,
+      "integer_stages": [
+        0,
+        19392,
+        49643,
+        12410,
+        37599,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 141.1673126220703,
+      "oracle_q8": 39975,
+      "oracle_pixel": 156,
+      "native_pixel": 141,
+      "float_pixel_error": 14.985031127929688,
+      "endpoint_pixel_error": 15,
+      "pass": false
+    },
+    {
+      "position": 255210,
+      "row": 103,
+      "integer_stages": [
+        0,
+        58602,
+        18949,
+        4737,
+        5478,
+        19
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 146.7605743408203,
+      "oracle_q8": 39669,
+      "oracle_pixel": 155,
+      "native_pixel": 147,
+      "float_pixel_error": 8.196456909179688,
+      "endpoint_pixel_error": 8,
+      "pass": false
+    },
+    {
+      "position": 255210,
+      "row": 104,
+      "integer_stages": [
+        0,
+        58602,
+        18949,
+        4737,
+        5478,
+        16
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        3840,
+        989,
+        33751,
+        -2746,
+        -33
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 124.09898376464844,
+      "oracle_q8": 40550,
+      "oracle_pixel": 158,
+      "native_pixel": 124,
+      "float_pixel_error": 34.29945373535156,
+      "endpoint_pixel_error": 34,
+      "pass": false
+    },
+    {
+      "position": 255210,
+      "row": 116,
+      "integer_stages": [
+        0,
+        58602,
+        18949,
+        4737,
+        5478,
+        7
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.28543090820312,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 146,
+      "float_pixel_error": 13.714569091796875,
+      "endpoint_pixel_error": 14,
+      "pass": false
+    },
+    {
+      "position": 255210,
+      "row": 160,
+      "integer_stages": [
+        0,
+        58602,
+        18949,
+        4737,
+        5478,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 154.62367248535156,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 155,
+      "float_pixel_error": 5.3763275146484375,
+      "endpoint_pixel_error": 5,
+      "pass": false
+    },
+    {
+      "position": 255210,
+      "row": 200,
+      "integer_stages": [
+        0,
+        58602,
+        18949,
+        4737,
+        5478,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.01673889160156,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 156,
+      "float_pixel_error": 3.9832611083984375,
+      "endpoint_pixel_error": 4,
+      "pass": false
+    },
+    {
+      "position": 255210,
+      "row": 224,
+      "integer_stages": [
+        0,
+        58602,
+        18949,
+        4737,
+        5478,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.67691040039062,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 157,
+      "float_pixel_error": 3.323089599609375,
+      "endpoint_pixel_error": 3,
+      "pass": false
+    },
+    {
+      "position": 288000,
+      "row": 103,
+      "integer_stages": [
+        0,
+        25856,
+        655,
+        163,
+        6,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 116.76777648925781,
+      "oracle_q8": 33715,
+      "oracle_pixel": 132,
+      "native_pixel": 117,
+      "float_pixel_error": 14.931442260742188,
+      "endpoint_pixel_error": 15,
+      "pass": false
+    },
+    {
+      "position": 288000,
+      "row": 104,
+      "integer_stages": [
+        0,
+        25856,
+        655,
+        163,
+        6,
+        15
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        4800,
+        1065,
+        25887,
+        -2411,
+        -24
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 125.53863525390625,
+      "oracle_q8": 36551,
+      "oracle_pixel": 143,
+      "native_pixel": 126,
+      "float_pixel_error": 17.23870849609375,
+      "endpoint_pixel_error": 17,
+      "pass": false
+    },
+    {
+      "position": 288000,
+      "row": 116,
+      "integer_stages": [
+        0,
+        25856,
+        655,
+        163,
+        6,
+        6
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 145.33226013183594,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 145,
+      "float_pixel_error": 14.667739868164062,
+      "endpoint_pixel_error": 15,
+      "pass": false
+    },
+    {
+      "position": 288000,
+      "row": 160,
+      "integer_stages": [
+        0,
+        25856,
+        655,
+        163,
+        6,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 155.15499877929688,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 155,
+      "float_pixel_error": 4.845001220703125,
+      "endpoint_pixel_error": 5,
+      "pass": false
+    },
+    {
+      "position": 288000,
+      "row": 200,
+      "integer_stages": [
+        0,
+        25856,
+        655,
+        163,
+        6,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.6928253173828,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 157,
+      "float_pixel_error": 3.3071746826171875,
+      "endpoint_pixel_error": 3,
+      "pass": false
+    },
+    {
+      "position": 288000,
+      "row": 224,
+      "integer_stages": [
+        0,
+        25856,
+        655,
+        163,
+        6,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.6155242919922,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 158,
+      "float_pixel_error": 2.3844757080078125,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 327210,
+      "row": 103,
+      "integer_stages": [
+        0,
+        65066,
+        35496,
+        8874,
+        19225,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 162.76016235351562,
+      "oracle_q8": 20353,
+      "oracle_pixel": 80,
+      "native_pixel": 163,
+      "float_pixel_error": 83.25625610351562,
+      "endpoint_pixel_error": 83,
+      "pass": false
+    },
+    {
+      "position": 327210,
+      "row": 104,
+      "integer_stages": [
+        0,
+        65066,
+        35496,
+        8874,
+        19225,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 121.42692565917969,
+      "oracle_q8": 23220,
+      "oracle_pixel": 91,
+      "native_pixel": 121,
+      "float_pixel_error": 30.723800659179688,
+      "endpoint_pixel_error": 30,
+      "pass": false
+    },
+    {
+      "position": 327210,
+      "row": 116,
+      "integer_stages": [
+        0,
+        65066,
+        35496,
+        8874,
+        19225,
+        8
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8160,
+        1235,
+        3932,
+        -975,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.79090881347656,
+      "oracle_q8": 37822,
+      "oracle_pixel": 148,
+      "native_pixel": 147,
+      "float_pixel_error": 0.9512786865234375,
+      "endpoint_pixel_error": 1,
+      "pass": false
+    },
+    {
+      "position": 327210,
+      "row": 160,
+      "integer_stages": [
+        0,
+        65066,
+        35496,
+        8874,
+        19225,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 151.55599975585938,
+      "oracle_q8": 40936,
+      "oracle_pixel": 160,
+      "native_pixel": 152,
+      "float_pixel_error": 8.350250244140625,
+      "endpoint_pixel_error": 8,
+      "pass": false
+    },
+    {
+      "position": 327210,
+      "row": 200,
+      "integer_stages": [
+        0,
+        65066,
+        35496,
+        8874,
+        19225,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 150.97608947753906,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 151,
+      "float_pixel_error": 9.023910522460938,
+      "endpoint_pixel_error": 9,
+      "pass": false
+    },
+    {
+      "position": 327210,
+      "row": 224,
+      "integer_stages": [
+        0,
+        65066,
+        35496,
+        8874,
+        19225,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 150.5240936279297,
+      "oracle_q8": 40960,
+      "oracle_pixel": 160,
+      "native_pixel": 151,
+      "float_pixel_error": 9.475906372070312,
+      "endpoint_pixel_error": 9,
+      "pass": false
+    },
+    {
+      "position": 360000,
+      "row": 103,
+      "integer_stages": [
+        0,
+        32320,
+        17203,
+        4300,
+        4514,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 114.03462219238281,
+      "oracle_q8": 13419,
+      "oracle_pixel": 52,
+      "native_pixel": 114,
+      "float_pixel_error": 61.61665344238281,
+      "endpoint_pixel_error": 62,
+      "pass": false
+    },
+    {
+      "position": 360000,
+      "row": 104,
+      "integer_stages": [
+        0,
+        32320,
+        17203,
+        4300,
+        4514,
+        16
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        3840,
+        989,
+        33751,
+        -2746,
+        -33
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 124.27418518066406,
+      "oracle_q8": 14103,
+      "oracle_pixel": 55,
+      "native_pixel": 124,
+      "float_pixel_error": 69.18434143066406,
+      "endpoint_pixel_error": 69,
+      "pass": false
+    },
+    {
+      "position": 360000,
+      "row": 116,
+      "integer_stages": [
+        0,
+        32320,
+        17203,
+        4300,
+        4514,
+        7
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.19541931152344,
+      "oracle_q8": 29824,
+      "oracle_pixel": 117,
+      "native_pixel": 146,
+      "float_pixel_error": 29.695419311523438,
+      "endpoint_pixel_error": 29,
+      "pass": false
+    },
+    {
+      "position": 360000,
+      "row": 160,
+      "integer_stages": [
+        0,
+        32320,
+        17203,
+        4300,
+        4514,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 154.92567443847656,
+      "oracle_q8": 38519,
+      "oracle_pixel": 150,
+      "native_pixel": 155,
+      "float_pixel_error": 4.4608306884765625,
+      "endpoint_pixel_error": 5,
+      "pass": false
+    },
+    {
+      "position": 360000,
+      "row": 200,
+      "integer_stages": [
+        0,
+        32320,
+        17203,
+        4300,
+        4514,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.38348388671875,
+      "oracle_q8": 39554,
+      "oracle_pixel": 155,
+      "native_pixel": 156,
+      "float_pixel_error": 1.87567138671875,
+      "endpoint_pixel_error": 1,
+      "pass": false
+    },
+    {
+      "position": 360000,
+      "row": 224,
+      "integer_stages": [
+        0,
+        32320,
+        17203,
+        4300,
+        4514,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.2487030029297,
+      "oracle_q8": 39934,
+      "oracle_pixel": 156,
+      "native_pixel": 157,
+      "float_pixel_error": 1.2565155029296875,
+      "endpoint_pixel_error": 1,
+      "pass": false
+    },
+    {
+      "position": 399210,
+      "row": 103,
+      "integer_stages": [
+        0,
+        5994,
+        15344,
+        3836,
+        3592,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 114.3626480102539,
+      "oracle_q8": 9715,
+      "oracle_pixel": 38,
+      "native_pixel": 114,
+      "float_pixel_error": 76.4134292602539,
+      "endpoint_pixel_error": 76,
+      "pass": false
+    },
+    {
+      "position": 399210,
+      "row": 104,
+      "integer_stages": [
+        0,
+        5994,
+        15344,
+        3836,
+        3592,
+        16
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        3840,
+        989,
+        33751,
+        -2746,
+        -33
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 124.4586181640625,
+      "oracle_q8": 10434,
+      "oracle_pixel": 41,
+      "native_pixel": 124,
+      "float_pixel_error": 83.7008056640625,
+      "endpoint_pixel_error": 83,
+      "pass": false
+    },
+    {
+      "position": 399210,
+      "row": 116,
+      "integer_stages": [
+        0,
+        5994,
+        15344,
+        3836,
+        3592,
+        7
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.099609375,
+      "oracle_q8": 22447,
+      "oracle_pixel": 88,
+      "native_pixel": 146,
+      "float_pixel_error": 58.416015625,
+      "endpoint_pixel_error": 58,
+      "pass": false
+    },
+    {
+      "position": 399210,
+      "row": 160,
+      "integer_stages": [
+        0,
+        5994,
+        15344,
+        3836,
+        3592,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 154.96800231933594,
+      "oracle_q8": 34302,
+      "oracle_pixel": 134,
+      "native_pixel": 155,
+      "float_pixel_error": 20.975814819335938,
+      "endpoint_pixel_error": 21,
+      "pass": false
+    },
+    {
+      "position": 399210,
+      "row": 200,
+      "integer_stages": [
+        0,
+        5994,
+        15344,
+        3836,
+        3592,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.77288818359375,
+      "oracle_q8": 36904,
+      "oracle_pixel": 144,
+      "native_pixel": 157,
+      "float_pixel_error": 12.61663818359375,
+      "endpoint_pixel_error": 13,
+      "pass": false
+    },
+    {
+      "position": 399210,
+      "row": 224,
+      "integer_stages": [
+        0,
+        5994,
+        15344,
+        3836,
+        3592,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.40184020996094,
+      "oracle_q8": 37777,
+      "oracle_pixel": 148,
+      "native_pixel": 157,
+      "float_pixel_error": 9.835433959960938,
+      "endpoint_pixel_error": 9,
+      "pass": false
+    },
+    {
+      "position": 432000,
+      "row": 103,
+      "integer_stages": [
+        0,
+        38784,
+        33751,
+        8437,
+        17378,
+        19
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 162.26869201660156,
+      "oracle_q8": 10129,
+      "oracle_pixel": 40,
+      "native_pixel": 162,
+      "float_pixel_error": 122.70228576660156,
+      "endpoint_pixel_error": 122,
+      "pass": false
+    },
+    {
+      "position": 432000,
+      "row": 104,
+      "integer_stages": [
+        0,
+        38784,
+        33751,
+        8437,
+        17378,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 121.74468231201172,
+      "oracle_q8": 11468,
+      "oracle_pixel": 45,
+      "native_pixel": 122,
+      "float_pixel_error": 76.94780731201172,
+      "endpoint_pixel_error": 77,
+      "pass": false
+    },
+    {
+      "position": 432000,
+      "row": 116,
+      "integer_stages": [
+        0,
+        38784,
+        33751,
+        8437,
+        17378,
+        8
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8160,
+        1235,
+        3932,
+        -975,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.78854370117188,
+      "oracle_q8": 24168,
+      "oracle_pixel": 94,
+      "native_pixel": 147,
+      "float_pixel_error": 52.382293701171875,
+      "endpoint_pixel_error": 53,
+      "pass": false
+    },
+    {
+      "position": 432000,
+      "row": 160,
+      "integer_stages": [
+        0,
+        38784,
+        33751,
+        8437,
+        17378,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 151.99569702148438,
+      "oracle_q8": 36085,
+      "oracle_pixel": 141,
+      "native_pixel": 152,
+      "float_pixel_error": 11.038665771484375,
+      "endpoint_pixel_error": 11,
+      "pass": false
+    },
+    {
+      "position": 432000,
+      "row": 200,
+      "integer_stages": [
+        0,
+        38784,
+        33751,
+        8437,
+        17378,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 151.7989501953125,
+      "oracle_q8": 38251,
+      "oracle_pixel": 149,
+      "native_pixel": 152,
+      "float_pixel_error": 2.3809814453125,
+      "endpoint_pixel_error": 3,
+      "pass": false
+    },
+    {
+      "position": 432000,
+      "row": 224,
+      "integer_stages": [
+        0,
+        38784,
+        33751,
+        8437,
+        17378,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 151.65542602539062,
+      "oracle_q8": 38745,
+      "oracle_pixel": 151,
+      "native_pixel": 152,
+      "float_pixel_error": 0.307769775390625,
+      "endpoint_pixel_error": 1,
+      "pass": false
+    },
+    {
+      "position": 437678,
+      "row": 103,
+      "integer_stages": [
+        0,
+        44462,
+        48286,
+        12071,
+        35573,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 155.90162658691406,
+      "oracle_q8": 10423,
+      "oracle_pixel": 41,
+      "native_pixel": 156,
+      "float_pixel_error": 115.18678283691406,
+      "endpoint_pixel_error": 115,
+      "pass": false
+    },
+    {
+      "position": 437678,
+      "row": 104,
+      "integer_stages": [
+        0,
+        44462,
+        48286,
+        12071,
+        35573,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 118.42761993408203,
+      "oracle_q8": 11698,
+      "oracle_pixel": 46,
+      "native_pixel": 118,
+      "float_pixel_error": 72.73230743408203,
+      "endpoint_pixel_error": 72,
+      "pass": false
+    },
+    {
+      "position": 437678,
+      "row": 116,
+      "integer_stages": [
+        0,
+        44462,
+        48286,
+        12071,
+        35573,
+        9
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8000,
+        1215,
+        4669,
+        -1035,
+        -4
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.7216796875,
+      "oracle_q8": 23357,
+      "oracle_pixel": 91,
+      "native_pixel": 147,
+      "float_pixel_error": 55.4833984375,
+      "endpoint_pixel_error": 56,
+      "pass": false
+    },
+    {
+      "position": 437678,
+      "row": 160,
+      "integer_stages": [
+        0,
+        44462,
+        48286,
+        12071,
+        35573,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 148.33941650390625,
+      "oracle_q8": 35356,
+      "oracle_pixel": 138,
+      "native_pixel": 148,
+      "float_pixel_error": 10.23004150390625,
+      "endpoint_pixel_error": 10,
+      "pass": false
+    },
+    {
+      "position": 437678,
+      "row": 200,
+      "integer_stages": [
+        0,
+        44462,
+        48286,
+        12071,
+        35573,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 144.536376953125,
+      "oracle_q8": 37547,
+      "oracle_pixel": 147,
+      "native_pixel": 145,
+      "float_pixel_error": 2.131591796875,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 437678,
+      "row": 224,
+      "integer_stages": [
+        0,
+        44462,
+        48286,
+        12071,
+        35573,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 142.20419311523438,
+      "oracle_q8": 38239,
+      "oracle_pixel": 149,
+      "native_pixel": 142,
+      "float_pixel_error": 7.166900634765625,
+      "endpoint_pixel_error": 7,
+      "pass": false
+    },
+    {
+      "position": 471210,
+      "row": 103,
+      "integer_stages": [
+        0,
+        12458,
+        31892,
+        7973,
+        15519,
+        19
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 151.9288787841797,
+      "oracle_q8": 23382,
+      "oracle_pixel": 91,
+      "native_pixel": 152,
+      "float_pixel_error": 60.59294128417969,
+      "endpoint_pixel_error": 61,
+      "pass": false
+    },
+    {
+      "position": 471210,
+      "row": 104,
+      "integer_stages": [
+        0,
+        12458,
+        31892,
+        7973,
+        15519,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 122.07972717285156,
+      "oracle_q8": 24536,
+      "oracle_pixel": 96,
+      "native_pixel": 122,
+      "float_pixel_error": 26.235977172851562,
+      "endpoint_pixel_error": 26,
+      "pass": false
+    },
+    {
+      "position": 471210,
+      "row": 116,
+      "integer_stages": [
+        0,
+        12458,
+        31892,
+        7973,
+        15519,
+        8
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8160,
+        1235,
+        3932,
+        -975,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.78578186035156,
+      "oracle_q8": 30624,
+      "oracle_pixel": 120,
+      "native_pixel": 147,
+      "float_pixel_error": 27.160781860351562,
+      "endpoint_pixel_error": 27,
+      "pass": false
+    },
+    {
+      "position": 471210,
+      "row": 160,
+      "integer_stages": [
+        0,
+        12458,
+        31892,
+        7973,
+        15519,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 152.3651885986328,
+      "oracle_q8": 36584,
+      "oracle_pixel": 143,
+      "native_pixel": 152,
+      "float_pixel_error": 9.458938598632812,
+      "endpoint_pixel_error": 9,
+      "pass": false
+    },
+    {
+      "position": 471210,
+      "row": 200,
+      "integer_stages": [
+        0,
+        12458,
+        31892,
+        7973,
+        15519,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 152.67138671875,
+      "oracle_q8": 38110,
+      "oracle_pixel": 149,
+      "native_pixel": 153,
+      "float_pixel_error": 3.80419921875,
+      "endpoint_pixel_error": 4,
+      "pass": false
+    },
+    {
+      "position": 471210,
+      "row": 224,
+      "integer_stages": [
+        0,
+        12458,
+        31892,
+        7973,
+        15519,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 152.4427947998047,
+      "oracle_q8": 38440,
+      "oracle_pixel": 150,
+      "native_pixel": 152,
+      "float_pixel_error": 2.2865447998046875,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 504000,
+      "row": 103,
+      "integer_stages": [
+        0,
+        45248,
+        50298,
+        12574,
+        38599,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 161.63340759277344,
+      "oracle_q8": 31765,
+      "oracle_pixel": 124,
+      "native_pixel": 162,
+      "float_pixel_error": 37.55137634277344,
+      "endpoint_pixel_error": 38,
+      "pass": false
+    },
+    {
+      "position": 504000,
+      "row": 104,
+      "integer_stages": [
+        0,
+        45248,
+        50298,
+        12574,
+        38599,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 117.90615844726562,
+      "oracle_q8": 32925,
+      "oracle_pixel": 129,
+      "native_pixel": 118,
+      "float_pixel_error": 10.707122802734375,
+      "endpoint_pixel_error": 11,
+      "pass": false
+    },
+    {
+      "position": 504000,
+      "row": 116,
+      "integer_stages": [
+        0,
+        45248,
+        50298,
+        12574,
+        38599,
+        9
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8000,
+        1215,
+        4669,
+        -1035,
+        -4
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.66946411132812,
+      "oracle_q8": 37560,
+      "oracle_pixel": 147,
+      "native_pixel": 147,
+      "float_pixel_error": 0.049285888671875,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 504000,
+      "row": 160,
+      "integer_stages": [
+        0,
+        45248,
+        50298,
+        12574,
+        38599,
+        5
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8640,
+        1234,
+        2130,
+        -728,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 147.86502075195312,
+      "oracle_q8": 39476,
+      "oracle_pixel": 154,
+      "native_pixel": 148,
+      "float_pixel_error": 6.338104248046875,
+      "endpoint_pixel_error": 6,
+      "pass": false
+    },
+    {
+      "position": 504000,
+      "row": 200,
+      "integer_stages": [
+        0,
+        45248,
+        50298,
+        12574,
+        38599,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 143.3383331298828,
+      "oracle_q8": 40078,
+      "oracle_pixel": 157,
+      "native_pixel": 143,
+      "float_pixel_error": 13.216354370117188,
+      "endpoint_pixel_error": 14,
+      "pass": false
+    },
+    {
+      "position": 504000,
+      "row": 224,
+      "integer_stages": [
+        0,
+        45248,
+        50298,
+        12574,
+        38599,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 140.64132690429688,
+      "oracle_q8": 40176,
+      "oracle_pixel": 157,
+      "native_pixel": 141,
+      "float_pixel_error": 16.296173095703125,
+      "endpoint_pixel_error": 16,
+      "pass": false
+    },
+    {
+      "position": 543210,
+      "row": 103,
+      "integer_stages": [
+        0,
+        18922,
+        48440,
+        12110,
+        35803,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 153.79595947265625,
+      "oracle_q8": 31233,
+      "oracle_pixel": 122,
+      "native_pixel": 154,
+      "float_pixel_error": 31.79205322265625,
+      "endpoint_pixel_error": 32,
+      "pass": false
+    },
+    {
+      "position": 543210,
+      "row": 104,
+      "integer_stages": [
+        0,
+        18922,
+        48440,
+        12110,
+        35803,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 118.38733673095703,
+      "oracle_q8": 32375,
+      "oracle_pixel": 126,
+      "native_pixel": 118,
+      "float_pixel_error": 8.077507019042969,
+      "endpoint_pixel_error": 8,
+      "pass": false
+    },
+    {
+      "position": 543210,
+      "row": 116,
+      "integer_stages": [
+        0,
+        18922,
+        48440,
+        12110,
+        35803,
+        9
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8000,
+        1215,
+        4669,
+        -1035,
+        -4
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.7176513671875,
+      "oracle_q8": 37422,
+      "oracle_pixel": 146,
+      "native_pixel": 147,
+      "float_pixel_error": 0.5379638671875,
+      "endpoint_pixel_error": 1,
+      "pass": false
+    },
+    {
+      "position": 543210,
+      "row": 160,
+      "integer_stages": [
+        0,
+        18922,
+        48440,
+        12110,
+        35803,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 148.3001708984375,
+      "oracle_q8": 39914,
+      "oracle_pixel": 156,
+      "native_pixel": 148,
+      "float_pixel_error": 7.6138916015625,
+      "endpoint_pixel_error": 8,
+      "pass": false
+    },
+    {
+      "position": 543210,
+      "row": 200,
+      "integer_stages": [
+        0,
+        18922,
+        48440,
+        12110,
+        35803,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 144.4434814453125,
+      "oracle_q8": 40164,
+      "oracle_pixel": 157,
+      "native_pixel": 144,
+      "float_pixel_error": 12.4471435546875,
+      "endpoint_pixel_error": 13,
+      "pass": false
+    },
+    {
+      "position": 543210,
+      "row": 224,
+      "integer_stages": [
+        0,
+        18922,
+        48440,
+        12110,
+        35803,
+        3
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 142.1022491455078,
+      "oracle_q8": 40221,
+      "oracle_pixel": 157,
+      "native_pixel": 142,
+      "float_pixel_error": 15.011032104492188,
+      "endpoint_pixel_error": 15,
+      "pass": false
+    },
+    {
+      "position": 569599,
+      "row": 103,
+      "integer_stages": [
+        0,
+        45311,
+        50460,
+        12615,
+        38852,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9120,
+        1233,
+        983,
+        -485,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 156.42849731445312,
+      "oracle_q8": 30402,
+      "oracle_pixel": 119,
+      "native_pixel": 156,
+      "float_pixel_error": 37.670684814453125,
+      "endpoint_pixel_error": 37,
+      "pass": false
+    },
+    {
+      "position": 569599,
+      "row": 104,
+      "integer_stages": [
+        0,
+        45311,
+        50460,
+        12615,
+        38852,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 117.86345672607422,
+      "oracle_q8": 32283,
+      "oracle_pixel": 126,
+      "native_pixel": 118,
+      "float_pixel_error": 8.242012023925781,
+      "endpoint_pixel_error": 8,
+      "pass": false
+    },
+    {
+      "position": 569599,
+      "row": 116,
+      "integer_stages": [
+        0,
+        45311,
+        50460,
+        12615,
+        38852,
+        9
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8000,
+        1215,
+        4669,
+        -1035,
+        -4
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.66519165039062,
+      "oracle_q8": 37106,
+      "oracle_pixel": 145,
+      "native_pixel": 147,
+      "float_pixel_error": 1.719879150390625,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 569599,
+      "row": 160,
+      "integer_stages": [
+        0,
+        45311,
+        50460,
+        12615,
+        38852,
+        5
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8640,
+        1234,
+        2130,
+        -728,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 147.7974853515625,
+      "oracle_q8": 39734,
+      "oracle_pixel": 155,
+      "native_pixel": 148,
+      "float_pixel_error": 7.4134521484375,
+      "endpoint_pixel_error": 7,
+      "pass": false
+    },
+    {
+      "position": 569599,
+      "row": 200,
+      "integer_stages": [
+        0,
+        45311,
+        50460,
+        12615,
+        38852,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 143.2406768798828,
+      "oracle_q8": 40149,
+      "oracle_pixel": 157,
+      "native_pixel": 143,
+      "float_pixel_error": 13.591354370117188,
+      "endpoint_pixel_error": 14,
+      "pass": false
+    },
+    {
+      "position": 569599,
+      "row": 224,
+      "integer_stages": [
+        0,
+        45311,
+        50460,
+        12615,
+        38852,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 140.50982666015625,
+      "oracle_q8": 40364,
+      "oracle_pixel": 158,
+      "native_pixel": 141,
+      "float_pixel_error": 17.16204833984375,
+      "endpoint_pixel_error": 17,
+      "pass": false
+    },
+    {
+      "position": 569600,
+      "row": 103,
+      "integer_stages": [
+        0,
+        45312,
+        50462,
+        12615,
+        38852,
+        20
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        0
+      ],
+      "native_centre": 154.27784729003906,
+      "oracle_q8": 30405,
+      "oracle_pixel": 119,
+      "native_pixel": 154,
+      "float_pixel_error": 35.50831604003906,
+      "endpoint_pixel_error": 35,
+      "pass": false
+    },
+    {
+      "position": 569600,
+      "row": 104,
+      "integer_stages": [
+        0,
+        45312,
+        50462,
+        12615,
+        38852,
+        18
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        1760,
+        720,
+        52347,
+        -3205,
+        -68
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 117.86345672607422,
+      "oracle_q8": 32285,
+      "oracle_pixel": 126,
+      "native_pixel": 118,
+      "float_pixel_error": 8.249824523925781,
+      "endpoint_pixel_error": 8,
+      "pass": false
+    },
+    {
+      "position": 569600,
+      "row": 116,
+      "integer_stages": [
+        0,
+        45312,
+        50462,
+        12615,
+        38852,
+        9
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8000,
+        1215,
+        4669,
+        -1035,
+        -4
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 146.66519165039062,
+      "oracle_q8": 37103,
+      "oracle_pixel": 145,
+      "native_pixel": 147,
+      "float_pixel_error": 1.731597900390625,
+      "endpoint_pixel_error": 2,
+      "pass": false
+    },
+    {
+      "position": 569600,
+      "row": 160,
+      "integer_stages": [
+        0,
+        45312,
+        50462,
+        12615,
+        38852,
+        5
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8640,
+        1234,
+        2130,
+        -728,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 147.7974853515625,
+      "oracle_q8": 39728,
+      "oracle_pixel": 155,
+      "native_pixel": 148,
+      "float_pixel_error": 7.3900146484375,
+      "endpoint_pixel_error": 7,
+      "pass": false
+    },
+    {
+      "position": 569600,
+      "row": 200,
+      "integer_stages": [
+        0,
+        45312,
+        50462,
+        12615,
+        38852,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 143.2406768798828,
+      "oracle_q8": 40138,
+      "oracle_pixel": 157,
+      "native_pixel": 143,
+      "float_pixel_error": 13.548385620117188,
+      "endpoint_pixel_error": 14,
+      "pass": false
+    },
+    {
+      "position": 569600,
+      "row": 224,
+      "integer_stages": [
+        0,
+        45312,
+        50462,
+        12615,
+        38852,
+        4
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8960,
+        1253,
+        1311,
+        -577,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 140.50982666015625,
+      "oracle_q8": 40348,
+      "oracle_pixel": 158,
+      "native_pixel": 141,
+      "float_pixel_error": 17.09954833984375,
+      "endpoint_pixel_error": 17,
+      "pass": false
+    },
+    {
+      "position": 575999,
+      "row": 103,
+      "integer_stages": [
+        0,
+        51711,
+        1308,
+        327,
+        26,
+        17
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        2720,
+        874,
+        43500,
+        -3070,
+        -48
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 116.69400787353516,
+      "oracle_q8": 29912,
+      "oracle_pixel": 117,
+      "native_pixel": 117,
+      "float_pixel_error": 0.14974212646484375,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 575999,
+      "row": 104,
+      "integer_stages": [
+        0,
+        51711,
+        1308,
+        327,
+        26,
+        15
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        4800,
+        1065,
+        25887,
+        -2411,
+        -24
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 125.51643371582031,
+      "oracle_q8": 32143,
+      "oracle_pixel": 126,
+      "native_pixel": 126,
+      "float_pixel_error": 0.0421600341796875,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 575999,
+      "row": 116,
+      "integer_stages": [
+        0,
+        51711,
+        1308,
+        327,
+        26,
+        6
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        8480,
+        1234,
+        2621,
+        -810,
+        -2
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 145.3668670654297,
+      "oracle_q8": 37196,
+      "oracle_pixel": 145,
+      "native_pixel": 145,
+      "float_pixel_error": 0.0699920654296875,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 575999,
+      "row": 160,
+      "integer_stages": [
+        0,
+        51711,
+        1308,
+        327,
+        26,
+        2
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9440,
+        1252,
+        492,
+        -328,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 155.16879272460938,
+      "oracle_q8": 39700,
+      "oracle_pixel": 155,
+      "native_pixel": 155,
+      "float_pixel_error": 0.090667724609375,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 575999,
+      "row": 200,
+      "integer_stages": [
+        0,
+        51711,
+        1308,
+        327,
+        26,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 156.7217559814453,
+      "oracle_q8": 40112,
+      "oracle_pixel": 157,
+      "native_pixel": 157,
+      "float_pixel_error": 0.0342559814453125,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    },
+    {
+      "position": 575999,
+      "row": 224,
+      "integer_stages": [
+        0,
+        51711,
+        1308,
+        327,
+        26,
+        1
+      ],
+      "integer_stages_pass": false,
+      "selected_record": [
+        9760,
+        1251,
+        164,
+        -164,
+        0
+      ],
+      "selected_record_pass": false,
+      "flags": [
+        1,
+        1,
+        1
+      ],
+      "native_centre": 157.60597229003906,
+      "oracle_q8": 40329,
+      "oracle_pixel": 158,
+      "native_pixel": 158,
+      "float_pixel_error": 0.0708160400390625,
+      "endpoint_pixel_error": 0,
+      "pass": false
+    }
+  ]
+}

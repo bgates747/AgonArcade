@@ -1,0 +1,267 @@
+{
+  "pass": false,
+  "scope": "Headless native R19-06 section images, independent geometry/masks per renderer.\n\nDiagnostic raw input is position/phase/lateral. Lateral is deliberately unused:\nthe frozen camera follows the centreline. No host corners reach the candidate.\n",
+  "cases": 4,
+  "results": [
+    {
+      "pose": [
+        0,
+        0,
+        0
+      ],
+      "expected_geometry": [
+        154,
+        155,
+        147,
+        163,
+        0
+      ],
+      "actual_geometry": [
+        154,
+        155,
+        147,
+        163,
+        0
+      ],
+      "geometry_pass": true,
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 72750,
+            "actual_pixels": 72750,
+            "union_pixels": 72750,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 3340,
+            "actual_pixels": 3340,
+            "union_pixels": 3340,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 616,
+            "actual_pixels": 616,
+            "union_pixels": 616,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 94,
+            "actual_pixels": 94,
+            "union_pixels": 94,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      },
+      "pass": true
+    },
+    {
+      "pose": [
+        39210,
+        1,
+        -8960
+      ],
+      "expected_geometry": [
+        157,
+        159,
+        147,
+        163,
+        0
+      ],
+      "actual_geometry": [
+        157,
+        159,
+        147,
+        163,
+        0
+      ],
+      "geometry_pass": true,
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 72744,
+            "actual_pixels": 72744,
+            "union_pixels": 72744,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 3340,
+            "actual_pixels": 3340,
+            "union_pixels": 3340,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 624,
+            "actual_pixels": 624,
+            "union_pixels": 624,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 92,
+            "actual_pixels": 92,
+            "union_pixels": 92,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      },
+      "pass": true
+    },
+    {
+      "pose": [
+        72000,
+        3999,
+        8960
+      ],
+      "expected_geometry": [
+        150,
+        154,
+        146,
+        163,
+        1
+      ],
+      "actual_geometry": [
+        150,
+        153,
+        146,
+        163,
+        1
+      ],
+      "geometry_pass": true,
+      "pixels": {
+        "pass": false,
+        "regions": {
+          "background": {
+            "expected_pixels": 72547,
+            "actual_pixels": 72531,
+            "union_pixels": 72552,
+            "exact_fraction": 0.999641636343588,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 3438,
+            "actual_pixels": 3446,
+            "union_pixels": 3474,
+            "exact_fraction": 0.9815774323546345,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 635,
+            "actual_pixels": 659,
+            "union_pixels": 673,
+            "exact_fraction": 0.9227340267459139,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 103,
+            "actual_pixels": 87,
+            "union_pixels": 122,
+            "exact_fraction": 0.5573770491803278,
+            "one_pixel_fraction": 0.8770491803278688,
+            "pass": false
+          },
+          "centreline": {
+            "expected_pixels": 77,
+            "actual_pixels": 77,
+            "union_pixels": 86,
+            "exact_fraction": 0.7906976744186046,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      },
+      "pass": false
+    },
+    {
+      "pose": [
+        111210,
+        4000,
+        -17920
+      ],
+      "expected_geometry": [
+        130,
+        137,
+        147,
+        163,
+        1
+      ],
+      "actual_geometry": [
+        130,
+        137,
+        147,
+        163,
+        1
+      ],
+      "geometry_pass": true,
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 72767,
+            "actual_pixels": 72762,
+            "union_pixels": 72767,
+            "exact_fraction": 0.9999312875341845,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 3260,
+            "actual_pixels": 3260,
+            "union_pixels": 3260,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 600,
+            "actual_pixels": 605,
+            "union_pixels": 605,
+            "exact_fraction": 0.9917355371900827,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 93,
+            "actual_pixels": 93,
+            "union_pixels": 93,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 80,
+            "actual_pixels": 80,
+            "union_pixels": 80,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      },
+      "pass": true
+    }
+  ]
+}

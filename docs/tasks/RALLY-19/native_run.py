@@ -8,10 +8,10 @@ from profile import prepare,TASK
 from capture import runtime_identity
 GOLEM=Path('/home/smith/Agon/mystuff/golem-rally19')
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
-def execute(category,name,source,case_bytes):
+def execute(category,name,source,case_bytes,loader=None,timeout=120):
     root=TASK/'evidence'/category/name;root.mkdir(parents=True,exist_ok=False)
     build=GOLEM/'build'/category/name;(build/'src').mkdir(parents=True,exist_ok=False)
-    loader=GOLEM/'examples/native_admission'
+    loader=loader or GOLEM/'examples/native_admission'
     for a,b in [('main.cpp','src/main.cpp'),('Makefile','Makefile')]:shutil.copy2(loader/a,build/b)
     with (root/'build.txt').open('w') as log:
         subprocess.run(['make','-C',str(GOLEM/'src')],check=True,stdout=log,stderr=subprocess.STDOUT)
@@ -31,7 +31,7 @@ def execute(category,name,source,case_bytes):
         try:
             while not (app/'exit.txt').exists():
                 if proc.poll() is not None:raise RuntimeError('early emulator exit')
-                if time.monotonic()-start>120:raise TimeoutError('native probe')
+                if time.monotonic()-start>timeout:raise TimeoutError('native probe')
                 time.sleep(.02)
         finally:
             if proc.poll() is None:

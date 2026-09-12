@@ -1,0 +1,8 @@
+make: Entering directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/section-visual/initial-oval/oval-oracle'
+[compiling src/transport.cpp]
+[compiling src/main.cpp]
+[Linking bin/probe.noname.bin]
+/home/smith/Agon/agondev/release/bin/ez80-none-elf-ld: obj/main.o: in function `_main':
+main.cpp:(.text+0x45a): multiple definition of `_main'; obj/transport.o:transport.cpp:(.text+0x0): first defined here
+make: *** [/home/smith/Agon/agondev/release/config/makefile.inc:86: bin/probe.noname.bin] Error 1
+make: Leaving directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/section-visual/initial-oval/oval-oracle'

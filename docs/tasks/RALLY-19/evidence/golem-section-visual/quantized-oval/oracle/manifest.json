@@ -1,0 +1,404 @@
+{
+  "purpose": "native visual/input evidence; no performance measurements",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle",
+  "runtime_before": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/fab-agon-emulator": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/fab-agon-emulator",
+      "bytes": 1744,
+      "sha256": "161b1dfa57e0cf6923e361dee987a78aead8f7a7389554a4985532c3e13187dd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/fab-agon-emulator.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator",
+      "bytes": 1897192,
+      "sha256": "a96ca0e6f5f51ba6b750bd6fcf96efcaed88e61c431171f79a7db5f29877f17e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/mos_platform.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.bin",
+      "bytes": 108490,
+      "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/mos_platform.map": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.map",
+      "bytes": 167185,
+      "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/firmware/vdp_platform.so": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/vdp_platform.so",
+      "bytes": 10279688,
+      "sha256": "bc7a8a6a28e176c9679c96de4bda16010b765074ec8ba155fccde189c1051955"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/.mos-release": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/.mos-release",
+      "bytes": 14,
+      "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/.mos-release.sha256": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/.mos-release.sha256",
+      "bytes": 166,
+      "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/autoexec.txt": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/autoexec.txt",
+      "bytes": 51,
+      "sha256": "b39fdbf266022af22d97e57ee77d6964384aaf43ea35f555eacb33aaedfa9013"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/fuji.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/fuji.road",
+      "bytes": 116800,
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/oval.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/oval.road",
+      "bytes": 20584,
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/poses.dat": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/poses.dat",
+      "bytes": 338,
+      "sha256": "9ae9c1ae3efa3bf8d8346986156b690736647f1b357bad3be96a4e469fa6d410"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/rally.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/section-visual/quantized-oval/oval-oracle/bin/probe.bin",
+      "bytes": 51258,
+      "sha256": "3d46daf8c14a61ddca9d7cde4c07d28102d9b084c36afb04825937c36ee28311"
+    }
+  },
+  "headless": true,
+  "capture_source_sha256": "4e00de92a477321c99bae068d1509c0c25959bd734d4ce91559f5c4326039126",
+  "capture_harness_sha256": "37efeea309763719c5dc91fdbabb1f6e4c7ff52df6a7e008234747ef666bf549",
+  "interposer_sha256": "d9d19dae76542000675594be83a3ca511ca1a18476acb2b54fc7c39079a4559e",
+  "build_command": [
+    "clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-fPIC",
+    "-I/home/smith/.local/include",
+    "-L/home/smith/.local/lib",
+    "-Wl,-rpath,/home/smith/.local/lib",
+    "-lSDL3",
+    "-ldl",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/visual_capture_linux.c",
+    "-o",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-section-visual/quantized-oval/oracle/visual-capture.so"
+  ],
+  "schedule": "capture 30\nkey 60 right down\nkey 65 right up\ncapture 120\nkey 150 right down\nkey 155 right up\ncapture 210\nkey 240 right down\nkey 245 right up\ncapture 300\nkey 330 right down\nkey 335 right up\ncapture 390\nkey 420 right down\nkey 425 right up\ncapture 480\nkey 510 right down\nkey 515 right up\ncapture 570\nkey 600 right down\nkey 605 right up\ncapture 660\nkey 690 right down\nkey 695 right up\ncapture 750\nkey 780 right down\nkey 785 right up\ncapture 840\nkey 870 right down\nkey 875 right up\ncapture 930\nkey 960 right down\nkey 965 right up\ncapture 1020\nkey 1050 right down\nkey 1055 right up\ncapture 1110\nkey 1140 right down\nkey 1145 right up\ncapture 1200\nkey 1230 right down\nkey 1235 right up\ncapture 1290\nkey 1320 right down\nkey 1325 right up\ncapture 1380\nkey 1410 right down\nkey 1415 right up\ncapture 1470\nkey 1500 right down\nkey 1505 right up\ncapture 1560\nkey 1590 right down\nkey 1595 right up\ncapture 1650\nkey 1680 right down\nkey 1685 right up\ncapture 1740\nkey 1770 right down\nkey 1775 right up\ncapture 1830\nkey 1860 right down\nkey 1865 right up\ncapture 1920\nkey 1950 right down\nkey 1955 right up\ncapture 2010\nkey 2040 right down\nkey 2045 right up\ncapture 2100\nkey 2130 right down\nkey 2135 right up\ncapture 2190\nkey 2220 right down\nkey 2225 right up\ncapture 2280\nkey 2310 right down\nkey 2315 right up\ncapture 2370\nkey 2400 right down\nkey 2405 right up\ncapture 2460\nkey 2480 escape down\nkey 2485 escape up\nquit 2500\n",
+  "ready_file": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/ready.viz",
+  "frame_definition": "host SDL presents, starting at ready-file detection or the first present",
+  "command": [
+    "./fab-agon-emulator",
+    "--renderer",
+    "sw"
+  ],
+  "actual_process_commands": [
+    "83651 /home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator --firmware platform --mos /home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/mos_platform.bin --sdcard /home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard --renderer sw"
+  ],
+  "pid": 83651,
+  "timed_out": false,
+  "returncode": 0,
+  "wall_seconds_with_startup": 43.05093071999727,
+  "captures": [
+    {
+      "file": "frame-000030.png",
+      "sha256": "4b1f7731633b339826dc6bd147e4861951773e1aa14ce078de026e04f9673c67",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000120.png",
+      "sha256": "1792fc258b449bd59530ae7153e7ed3e93d81258e3ed1d9e8985a78b36cb124e",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000210.png",
+      "sha256": "de807ebafdd42525f0c4ce6434c2b4a9c9fc9e28ff27c41d73a87427637359c1",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000300.png",
+      "sha256": "68f41819f26ef42fdcb7b06c0eb75ec41755b3a7ef8870c34ad05847e476c08e",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000390.png",
+      "sha256": "60c4a2cb3ffe91f4aa1f738a1e1daefd92405fe9dc8984a1ff797884fd74b738",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000480.png",
+      "sha256": "6ebbb6bbef720ad7d118e16a94efe4a59d26c9ecb02aedf7979fb649265f5269",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000570.png",
+      "sha256": "de6af009f9e101e037ed9e086f16db238e8b8907c5c907330b12ec32c7af9ba3",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000660.png",
+      "sha256": "abf260f94bb7badd4496a0d1ea5f791c799c0cb8ecb95cc76a1c3289d28c0d1c",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000750.png",
+      "sha256": "0a3caff3a29f377ed4148bb477a1a1a4c441d8e22950e7577998fb4b4027289a",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000840.png",
+      "sha256": "acc8979d61c7091cd3d4c59a75bbcee538322f3c7e0cc674c0cdc2572b4a6364",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-000930.png",
+      "sha256": "5a875941702d9f221ac4a995a25f8590761c118b71ab5806a3b1abed94baa486",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001020.png",
+      "sha256": "e29358948c0d2ad460e70ba37b555ae5ee98e3957a9d6ef7923400ff55c8d5b6",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001110.png",
+      "sha256": "669524a093cf9deb2206b2e41e14805344091fb356c086734fcbe9dc9b882abe",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001200.png",
+      "sha256": "dcc03006015f50649b03e282c0c6e75884d8ac83b18713c5148abf911d1f72ba",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001290.png",
+      "sha256": "adc28fc63dd2e972e63f8f3261628db0f96727ff5154e2b5c0b2a2adf3dd33f2",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001380.png",
+      "sha256": "13f5f6aeff3373bfe426e03ad31620a6555d6b37a627d3f7b53b3b277dbe03e3",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001470.png",
+      "sha256": "e2a4fef7ab555bf116b134e093771163b671a34fc98f645760d577b459c7da88",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001560.png",
+      "sha256": "869f3576a03bd4bb2337866e93fa6224e2c326dc914ff3ae6ffff2a94cd177cb",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001650.png",
+      "sha256": "c5e7dad8509b200199828f9c85dcd62d06259f80c2b95cd41d0ccb10642501cf",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001740.png",
+      "sha256": "cf89f908e491c58f01db196b79423e182bad22db12e0e9677a554797e8d54b65",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001830.png",
+      "sha256": "ee129ffef10a258cb001ddf37dc9211859f15e14854d5acee20441679fbcd450",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-001920.png",
+      "sha256": "cbc8870745e8b9684caeeef1f625fd1f12c540e31330a7a9ff5a4f6f0f62be32",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002010.png",
+      "sha256": "60c4a2cb3ffe91f4aa1f738a1e1daefd92405fe9dc8984a1ff797884fd74b738",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002100.png",
+      "sha256": "16f14e4b0193c4cc8f06e51d2887aaed44323923b82fcc8cd96e44e0cec378fc",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002190.png",
+      "sha256": "f698bdeca072356d1f41f4f0e04c900b6e1c53a0cac6d2675ef08478460b455e",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002280.png",
+      "sha256": "cbc8870745e8b9684caeeef1f625fd1f12c540e31330a7a9ff5a4f6f0f62be32",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002370.png",
+      "sha256": "512c3862f07a33eb51c17038da40c9c38219651cf021df38d7a6453485b2e545",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "file": "frame-002460.png",
+      "sha256": "4b1f7731633b339826dc6bd147e4861951773e1aa14ce078de026e04f9673c67",
+      "size": [
+        640,
+        480
+      ]
+    }
+  ],
+  "guest_reports": [
+    {
+      "source": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/exit.viz",
+      "file": "guest-exit.viz",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "source": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/geometry.dat",
+      "file": "guest-geometry.dat",
+      "sha256": "0e423cdfc535f2138c4cf057ae2a7d7de587b7f605dea65deb7df27e66e8ee51"
+    }
+  ],
+  "runtime_after": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/fab-agon-emulator": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/fab-agon-emulator",
+      "bytes": 1744,
+      "sha256": "161b1dfa57e0cf6923e361dee987a78aead8f7a7389554a4985532c3e13187dd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/fab-agon-emulator.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator",
+      "bytes": 1897192,
+      "sha256": "a96ca0e6f5f51ba6b750bd6fcf96efcaed88e61c431171f79a7db5f29877f17e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/mos_platform.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.bin",
+      "bytes": 108490,
+      "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/mos_platform.map": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.map",
+      "bytes": 167185,
+      "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/firmware/vdp_platform.so": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/vdp_platform.so",
+      "bytes": 10279688,
+      "sha256": "bc7a8a6a28e176c9679c96de4bda16010b765074ec8ba155fccde189c1051955"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/.mos-release": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/.mos-release",
+      "bytes": 14,
+      "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/.mos-release.sha256": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/.mos-release.sha256",
+      "bytes": 166,
+      "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/autoexec.txt": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/autoexec.txt",
+      "bytes": 51,
+      "sha256": "b39fdbf266022af22d97e57ee77d6964384aaf43ea35f555eacb33aaedfa9013"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/fuji.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/fuji.road",
+      "bytes": 116800,
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/oval.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/oval.road",
+      "bytes": 20584,
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/poses.dat": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/poses.dat",
+      "bytes": 338,
+      "sha256": "9ae9c1ae3efa3bf8d8346986156b690736647f1b357bad3be96a4e469fa6d410"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/section-visual-quantized-oval-oracle/sdcard/rally/rally.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/section-visual/quantized-oval/oval-oracle/bin/probe.bin",
+      "bytes": 51258,
+      "sha256": "3d46daf8c14a61ddca9d7cde4c07d28102d9b084c36afb04825937c36ee28311"
+    }
+  },
+  "runtime_inputs_unchanged": true,
+  "status": "captures and scheduled event injection verified; inspect guest reports/images for behavior"
+}
