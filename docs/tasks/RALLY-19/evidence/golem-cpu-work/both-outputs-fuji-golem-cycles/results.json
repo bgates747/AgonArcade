@@ -1,0 +1,464 @@
+{
+  "scope": "Run finite CPU-only scene construction and validate intercepted command counts.\n\nOptional debugger cycles cover construction plus sink/marker overhead, excluding\nfixture physics, real UART transmission and VDP drawing. Not frame latency.\n",
+  "pass": true,
+  "track": "fuji",
+  "renderer": "golem",
+  "poses": 64,
+  "real_warmup_frames": 2,
+  "CPU_only_frames_not_rendered": 64,
+  "bytes_constructed": 7488,
+  "per_pose": [
+    {
+      "pose": 0,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1990284955
+    },
+    {
+      "pose": 1,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1375286013
+    },
+    {
+      "pose": 2,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 761151943
+    },
+    {
+      "pose": 3,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2899032635
+    },
+    {
+      "pose": 4,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 872599450
+    },
+    {
+      "pose": 5,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 824611647
+    },
+    {
+      "pose": 6,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 777541552
+    },
+    {
+      "pose": 7,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1825901610
+    },
+    {
+      "pose": 8,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 51205005
+    },
+    {
+      "pose": 9,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 4144726455
+    },
+    {
+      "pose": 10,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2093411337
+    },
+    {
+      "pose": 11,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2545594437
+    },
+    {
+      "pose": 12,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1220631340
+    },
+    {
+      "pose": 13,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1038476441
+    },
+    {
+      "pose": 14,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2097639378
+    },
+    {
+      "pose": 15,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3851916500
+    },
+    {
+      "pose": 16,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2040192255
+    },
+    {
+      "pose": 17,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1053357489
+    },
+    {
+      "pose": 18,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 840243915
+    },
+    {
+      "pose": 19,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3528211151
+    },
+    {
+      "pose": 20,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2379088510
+    },
+    {
+      "pose": 21,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3622734259
+    },
+    {
+      "pose": 22,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3336412276
+    },
+    {
+      "pose": 23,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3074210110
+    },
+    {
+      "pose": 24,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3420046065
+    },
+    {
+      "pose": 25,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 4093922667
+    },
+    {
+      "pose": 26,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 941450573
+    },
+    {
+      "pose": 27,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3939934681
+    },
+    {
+      "pose": 28,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 30643792
+    },
+    {
+      "pose": 29,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2982523917
+    },
+    {
+      "pose": 30,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2173218198
+    },
+    {
+      "pose": 31,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2529153576
+    },
+    {
+      "pose": 32,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 896410787
+    },
+    {
+      "pose": 33,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3957086437
+    },
+    {
+      "pose": 34,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2456560719
+    },
+    {
+      "pose": 35,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1588528291
+    },
+    {
+      "pose": 36,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 851568290
+    },
+    {
+      "pose": 37,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 513679911
+    },
+    {
+      "pose": 38,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2352822904
+    },
+    {
+      "pose": 39,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 4074186642
+    },
+    {
+      "pose": 40,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 23253717
+    },
+    {
+      "pose": 41,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 288770463
+    },
+    {
+      "pose": 42,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1527719889
+    },
+    {
+      "pose": 43,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1932573677
+    },
+    {
+      "pose": 44,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1486688948
+    },
+    {
+      "pose": 45,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3690374145
+    },
+    {
+      "pose": 46,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1055366106
+    },
+    {
+      "pose": 47,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2302138556
+    },
+    {
+      "pose": 48,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1778883975
+    },
+    {
+      "pose": 49,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1336204825
+    },
+    {
+      "pose": 50,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1973094163
+    },
+    {
+      "pose": 51,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2272399287
+    },
+    {
+      "pose": 52,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 449833798
+    },
+    {
+      "pose": 53,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 487877403
+    },
+    {
+      "pose": 54,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1744150972
+    },
+    {
+      "pose": 55,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1067269734
+    },
+    {
+      "pose": 56,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 3015746553
+    },
+    {
+      "pose": 57,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1560733267
+    },
+    {
+      "pose": 58,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2656836309
+    },
+    {
+      "pose": 59,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 2844270401
+    },
+    {
+      "pose": 60,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1879720024
+    },
+    {
+      "pose": 61,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1978283509
+    },
+    {
+      "pose": 62,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 4284212062
+    },
+    {
+      "pose": 63,
+      "bytes": 117,
+      "calls": 4,
+      "hash": 1859756176
+    }
+  ],
+  "cycles": [
+    23526,
+    23526,
+    23526,
+    23526,
+    23631,
+    23631,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23631,
+    23526,
+    23631,
+    23526,
+    23526,
+    23526,
+    23526,
+    23631,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23631,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23526,
+    23631,
+    23526,
+    23526,
+    23526,
+    23526
+  ],
+  "runtime_inputs_unchanged": true,
+  "remaining": "Bound sink/marker overhead; matching real-rendering unpaced ABBA and frozen performance audit."
+}

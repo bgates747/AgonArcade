@@ -130,25 +130,68 @@ independent bridge to the untouched accepted oracle's64-pose state hashes, byte
 totals and timing; instrumented oracle code is not automatically the original
 binary. Prebuild all variants before serial timing.
 
-For isolated eZ80 work, investigate a diagnostic-only GNU linker wrap of
-`_mos_puts`. The installed agondev uses `ez80-none-elf-ld`; its
+For isolated eZ80 work, the diagnostic uses GNU linker wraps of `_mos_puts` and
+`_putch`. The installed agondev uses `ez80-none-elf-ld`; its
 `config/makefile.inc` puts linker options in LINKERFLAGS/LINKERLIBFLAGS (not a
 generic LDFLAGS variable). The SDK signature is
-`void mos_puts(const char *, uint24_t, char)`. A separately compiled CPU-only
-variant could forward normally during bootstrap and suppress only UART output
-inside a finite measured scene-generation span. That would retain original
+`void mos_puts(const char *, uint24_t, char)` and `int putch(int)`. A separately
+compiled CPU-only variant forwards normally during bootstrap and suppresses UART
+output inside a finite measured scene-generation span. This retains original
 geometry, command construction, branch decisions, HUD and swap construction,
 while avoiding driver/backpressure waits in the work measurement. Do not enable
 that suppression in the rendering/latency benchmark.
 
-This construction is not implemented or qualified yet. It must prove wrapping
-covers all libvdp sends, match independent per-pose byte accounting (and97+17+3
-candidate bytes with the fixed fixture HUD), preserve source/input state, and
-bound the added counter/wrapper/marker overhead. Debugger cycle spans need memory
-barriers and must exclude raw fixture setup/physics. Report actual work scope:
+Native per-pose byte accounting and source/input-state checks now pass, including
+97+17+3 candidate bytes with the fixed fixture HUD. The added counter/wrapper/
+marker overhead still needs a bound. Debugger cycle markers have memory barriers
+and exclude raw fixture setup/physics. Report actual work scope:
 stream construction is distinct from MOS driver cycles and UART waits. Do not
 silently treat a swallowed transmission as measured real submission, nor derive
 CPU savings from its byte counter. If the wrap or overhead bounds are unsuitable,
 fall back to explicitly scoped preparation spans plus separately measured real
 submission, retaining the limitation. Real rendering runs must keep normal UART,
 all120 road rows, original scenery/six cars and warmed resident data.
+
+## CPU construction/count probe results
+
+`build_cpu_work.py` builds a separate diagnostic from the qualified frontend,
+changing only the diagnostic entry/option guard and adding `cpu_work.hpp`. It
+rejects ordinary play. The real frontend and qualified bootstraps remain intact.
+Two warmup frames render normally; the next64 spans construct the full scene's
+command stream with output suppressed. Those64 are explicitly not rendered or
+counted as VDP-completed frames. Normal output resumes for cleanup and reporting.
+
+The first `_mos_puts`-only attempt missed60 bytes per oracle pose: SDK
+`vdp_adv_use_affine_matrix.c` uses six `_putch` calls per matrix selection.
+Its retained sources/report show that failure. The corrected linker wraps both
+output functions, forwarding them outside the CPU span. Four ordinary native
+count runs and four debugger runs pass all64 per-pose expected byte counts and
+original state hashes on both tracks. Candidate spans have exactly four output
+calls and117 constructed bytes each. Totals:56888 oracle bytes/oval batch,
+49188 oracle/Fuji and7488 candidate bytes on either track, including the fixture
+HUD and swap commands. These match the independent original byte accounting.
+
+The debugger captures128 alternating begin/end stops per run, yielding64
+construction-cycle spans. Raw means, including sink and marker overhead:
+
+| Track | Oracle cycles/pose | Golem cycles/pose |
+| --- | ---: | ---: |
+| Oval |322475.9375|23517.484375|
+| Fuji |291303.4375|23537.484375|
+
+These are useful provisional measurements, not yet a frozen CPU-budget pass.
+Before accepting a reduction, calibrate a conservative upper bound on sink/
+marker bookkeeping and subtract that bound from oracle work, retaining raw
+candidate work as a conservative upper comparison. Keep actual MOS driver/
+UART waits outside this construction scope and measure real rendering separately.
+No latency, unpaced-frame, heap or stability claim follows from these samples.
+
+```sh
+PATH=/home/smith/Agon/agondev/release/bin:$PATH .venv/bin/python docs/tasks/RALLY-19/build_cpu_work.py NEW
+.venv/bin/python docs/tasks/RALLY-19/probe_cpu_work.py NEW-oval-oracle --build NEW --track oval --renderer oracle --cycles
+.venv/bin/python docs/tasks/RALLY-19/probe_cpu_work.py NEW-oval-golem --build NEW --track oval --renderer golem --cycles
+```
+
+Repeat with Fuji and fresh evidence names. Build and execution identities,
+complete intercepted counts, debugger logs and the initial failure are under
+`evidence/golem-cpu-work/`. R19-10 remains unchecked.

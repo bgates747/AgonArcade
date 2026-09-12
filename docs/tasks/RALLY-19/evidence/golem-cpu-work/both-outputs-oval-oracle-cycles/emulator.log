@@ -1,0 +1,799 @@
+
+[1mAgon EZ80 Debugger[0m
+
+[36mbr[eak] <address>             [37mSet a breakpoint at the hex address
+[36mc[ontinue]                    [37mResume (un-pause) Agon CPU
+[36mdelete <address>              [37mDelete a breakpoint
+[36mdis[assemble] [start] [end]   [37mDisassemble in current ADL mode
+[36mdis16 [start] [end]           [37mDisassemble in ADL=0 (Z80) mode
+[36mdis24 [start] [end]           [37mDisassemble in ADL=1 (24-bit) mode
+[36mexit                          [37mQuit from Agon Light Emulator
+[36minfo breakpoints              [37mList breakpoints
+[36m[mem]ory <start> [len]        [37mDump memory. <start> can be a register
+[36mn[ext]                        [37mStep over function calls
+[36mpause                         [37mPause execution and enter debugger
+[36mstate                         [37mShow CPU state
+[36m.                             [37mShow CPU state
+[36ms[tep]                        [37mExecute one instuction
+[36mtrace on                      [37mEnable logging every instruction
+[36mtrace off                     [37mDisable logging every instruction
+[36mtrigger <address> cmd1 : cmd2 : ...[37m
+    Perform debugger commands when <address> is reached
+    eg: break $123 is equivalent to:
+        trigger $123 pause:"CPU paused at breakpoint":state
+
+[36mtriggers                      [37mList triggers
+
+The previous command can be repeated by pressing return.
+
+[32mCPU running. Press <CTRL-C> to pause
+[39m
+Video driver: dummy (can override with SDL_VIDEO_DRIVER environment variable)
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01a8 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 60311254   Cycles per instruction: 2.6
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0139 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 313663   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:016c MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 52003   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0198 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 321028   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01a7 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51789   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0169 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 330598   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:013b MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51731   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0177 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 325304   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0150 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51740   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0186 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 340029   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0187 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51777   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:014e MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 330421   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0128 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51821   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:012f MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 352837   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0141 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51970   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0110 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 357832   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:013a MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51994   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0140 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 340120   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0152 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51970   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01d1 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 354010   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01c8 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51765   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01e8 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 334660   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:019c MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51701   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0105 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 360728   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01dd MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51821   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01d3 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 370336   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01c5 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51762   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0141 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 340042   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01ec MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51692   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01ee MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 333208   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:010f MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51985   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01ec MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 330428   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0107 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51979   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01ee MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 330542   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01fa MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51964   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01d0 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 366128   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01ca MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51768   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:015e MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 330368   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0118 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51707   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0105 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 324430   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01b7 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51701   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01c0 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 308324   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01ac MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51756   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0119 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 308150   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01cd MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51701   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01f9 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 302600   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0114 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51979   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0159 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 280746   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0182 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 52075   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:010c MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 286061   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:011b MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51967   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0138 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 275299   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0135 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51771   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01bb MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 263607   Cycles per instruction: 2.7
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0187 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51725   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0153 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 263278   Cycles per instruction: 2.7
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0103 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51613   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0177 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 278335   Cycles per instruction: 2.7
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:015b MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51662   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:010b MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 286225   Cycles per instruction: 2.7
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01c9 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51625   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0154 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 290412   Cycles per instruction: 2.7
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0164 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51882   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01d4 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 290470   Cycles per instruction: 2.7
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01f6 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51900   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01d2 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 303014   Cycles per instruction: 2.7
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01e8 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51888   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:013c MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 307120   Cycles per instruction: 2.7
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:011f MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51659   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01f0 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 320909   Cycles per instruction: 2.7
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:019f MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51610   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:017e MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 333358   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:013a MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51625   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01c2 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 348636   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01c6 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51780   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01d1 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 346447   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0179 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51689   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01a7 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 338442   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01a4 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51949   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01a9 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 349351   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01be MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51973   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:013a MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 339828   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:014c MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51970   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0168 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 338497   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0144 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51738   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01cd MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 354951   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0175 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51689   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0113 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 358960   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01bf MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51695   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:010d MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 350393   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01f9 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51756   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0144 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 319049   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01f5 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51698   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01ed MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 334193   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01fc MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51967   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0106 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 319345   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:010c MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51958   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0176 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 330207   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0173 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51949   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01ed MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 360241   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01cc MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51741   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:012d MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 328826   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01d2 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51686   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0102 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 328773   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01c0 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51713   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0172 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 312450   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:015b MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51753   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0108 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 323353   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01ad MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51686   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01c9 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 306666   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01cc MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51955   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0176 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 306785   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0173 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51949   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01ce MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 310869   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01d7 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51961   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:017c MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 301055   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0173 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51765   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0166 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 301301   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:011d MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51704   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:0172 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 295725   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0156 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51833   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01f1 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 306546   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01e3 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51762   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:018e MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 320731   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:0168 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51821   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01b8 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 311197   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c ADL:1
+[36m>> [39m* 0402bc: NOP                  AF:0100 BC:ffefd1 DE:00003c HL:000000 SPS:0000 SPL:0aef47 IX:0affe5 IY:00003c IR:01ab MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 51939   Cycles per instruction: 2.4
+                               SPL top $0aef47: 09 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m
+[33mCPU paused (breakpoint)[39m
+* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 ADL:1
+[36m>> [39m* 0402be: NOP                  AF:0002 BC:000001 DE:000000 HL:000001 SPS:0000 SPL:0aef47 IX:0affe5 IY:065539 IR:01b9 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 311023   Cycles per instruction: 2.8
+                               SPL top $0aef47: 76 25 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+[36m>> [39m[32mCPU running[39m

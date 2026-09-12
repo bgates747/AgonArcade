@@ -113,3 +113,15 @@ events preserve the qualified68-swap sequence. Raw steady-frame intervals are
 retained with the initial host-handshake transition explicitly excluded. This
 qualifies the finite Linux observation method, not Golem performance. The next
 benchmark construction and CPU-scope pitfalls are documented in PERFORMANCE.md.
+
+R19-10 next partial checkpoint: a separate CPU-only frontend diagnostic now
+matches all64 independent per-pose command counts and original state hashes on
+both tracks, both normally and under debugger cycle sampling. The first sink
+missed60 bytes/pose because the SDK affine helper uses putch; the corrected build
+wraps both putch and mos_puts, and retains the failed sources/count report.
+
+Raw construction means (sink/marker overhead included) are322475.9375/23517.484375
+cycles for oval oracle/Golem and291303.4375/23537.484375 for Fuji. These are not
+yet accepted CPU savings: overhead must be bounded, and real UART/VDP timing
+must remain separate. The CPU-only64 spans do not render; only two warmups do.
+PERFORMANCE.md records exact scope and next calibration. No box is completed.
