@@ -11,7 +11,7 @@ This ordered register owns progress across AgonArcade and Golem.
    checkpoint into an isolated Rally worktree; preserve originals. Commit this
    complete plan, oracle identity, scope, acceptance metrics, headless policy and
    per-checkbox commit rule before compiler/game development or experiments.
-1. [ ] **R19-01 — Reproduce the accepted application and compiler foundations.**
+1. [x] **R19-01 — Reproduce the accepted application and compiler foundations.**
    Verify handoff SHA256s and a083173 Golem identity; create isolated Golem branch
    and project venvs. Read current design/lifecycle/compiler code; preserve dirty
    deployment files. Build/test the existing compiler examples and exact reviewed

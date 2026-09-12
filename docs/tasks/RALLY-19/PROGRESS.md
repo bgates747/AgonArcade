@@ -16,3 +16,17 @@ headless-only operation and local commit authorization for every completed box.
 This supersedes older discussion-only and GUI-validation/alert requirements for
 this goal. Performance thresholds in the contract are explicitly chosen execution
 criteria; they are not mislabeled as previously measured or Author-supplied facts.
+
+## R19-01 — Foundations reproduced, 2026-09-12
+
+All delivered SHA256SUMS pass. The local foundation.py reconstructs the final
+review source from committed task code, checks it against the archived source,
+then rebuilds it to the exact accepted 142,960-byte binary hash. Road, pacing,
+fixed-band and production 2x manual-handling tests pass under host sanitizers.
+Golem foundation commit 3a9920e0fc6aff70c15fddfc617fb76dac0e4186 preserves its
+existing semantics with regression checks; hello and loop compile. Both new
+worktrees have their own CPython 3.14.6 venvs. Runtime, input/data, compiler and
+binary identities are in evidence/foundation.json; build log is adjacent.
+A canonical stock profile was prepared at .emulator/foundation; no graphical
+launch and no upstream/original-worktree edits. Native visual/runtime oracle
+qualification follows in R19-02; compiler arithmetic probes follow in R19-04.
