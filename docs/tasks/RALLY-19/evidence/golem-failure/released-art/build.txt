@@ -1,0 +1,10 @@
+make: Entering directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/failure/released-art'
+[compiling src/main.cpp]
+In file included from src/main.cpp:468:
+In file included from ./include/failure_work.hpp:3:
+[1m./include/tagged_readback.hpp:19:21: [0m[0;1;31merror: [0m[1mcannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>[0m
+    for(uint8_t tag:{uint8_t(0x55),uint8_t(0xaa)}){
+[0;1;32m                    ^
+[0m1 error generated.
+make: *** [/home/smith/Agon/agondev/release/config/makefile.inc:105: obj/main.o] Error 1
+make: Leaving directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/failure/released-art'

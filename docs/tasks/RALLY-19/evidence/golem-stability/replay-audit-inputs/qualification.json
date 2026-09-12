@@ -1,0 +1,169 @@
+{
+  "pass": true,
+  "scope": "Independently audit long replay sequences, raw state, finite values and growth.",
+  "runs": [
+    {
+      "track": "oval",
+      "source_run": "soak-oval",
+      "frames": 18064,
+      "guest_seconds": 602.1333333333333,
+      "wall_seconds_including_final_readback": 602.343957499,
+      "all_payloads_exact": true,
+      "missing_duplicate_or_protocol_errors": 0,
+      "nonfinite": 0,
+      "natural_lap_crossings": 44,
+      "natural_stripe_crossings": 2312,
+      "nearby_visible_depth_poses": 2375,
+      "steering_values": [
+        -21,
+        -18,
+        -15,
+        -14,
+        -12,
+        -11,
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        3,
+        6,
+        7,
+        9,
+        12,
+        14,
+        15,
+        18,
+        21
+      ],
+      "grip_range": [
+        25,
+        200
+      ],
+      "surfaces": [
+        0,
+        1,
+        2
+      ],
+      "flags": [
+        0,
+        1,
+        2
+      ],
+      "lateral_range_q8": [
+        -38400,
+        38400
+      ],
+      "speed_range": [
+        0,
+        300
+      ],
+      "warmup_last_growth_frame": -1,
+      "steady_signature": {
+        "matrices": 106,
+        "live_allocs": 3698,
+        "live_bytes": 720553
+      },
+      "steady_frames": 18064,
+      "after_cleanup": [
+        26,
+        174986
+      ]
+    },
+    {
+      "track": "fuji",
+      "source_run": "soak-fuji-checked",
+      "frames": 18064,
+      "guest_seconds": 602.1333333333333,
+      "wall_seconds_including_final_readback": 602.318576503,
+      "all_payloads_exact": true,
+      "missing_duplicate_or_protocol_errors": 0,
+      "nonfinite": 0,
+      "natural_lap_crossings": 15,
+      "natural_stripe_crossings": 2392,
+      "nearby_visible_depth_poses": 2284,
+      "steering_values": [
+        -21,
+        -18,
+        -15,
+        -14,
+        -12,
+        -11,
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -3,
+        -2,
+        -1,
+        0,
+        3,
+        6,
+        7,
+        9,
+        12,
+        14,
+        15,
+        18,
+        21
+      ],
+      "grip_range": [
+        25,
+        200
+      ],
+      "surfaces": [
+        0,
+        1,
+        2
+      ],
+      "flags": [
+        0,
+        1,
+        2
+      ],
+      "lateral_range_q8": [
+        -38400,
+        38400
+      ],
+      "speed_range": [
+        0,
+        300
+      ],
+      "warmup_last_growth_frame": 8,
+      "steady_signature": {
+        "matrices": 112,
+        "live_allocs": 3772,
+        "live_bytes": 843427
+      },
+      "steady_frames": 18055,
+      "after_cleanup": [
+        26,
+        174986
+      ]
+    }
+  ],
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-oval/manifest.json": "547de8d42948472050a5d40376d657e0ba289d950b5899db790c6e760328ef81",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-oval/host-sanitizers.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-oval/expected.dat": "b52450a7e67e586d643b1d0c7c9716aab10e2a1abf806478274de8a6dd353e70",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-oval/calls.csv": "e570835d33f9330e7e30ad5cde863395ffbe9155a39f1085cdece25ba14674f6",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-oval/replay-summary.csv": "22d3760b9b8f063438677a1d8aa2830c1d22b3ca1384323ca7c8b31fb09ce578",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-oval/replay-readback.dat": "1a86db2cbdca991d0c4bd45e6720167dc96545f746d23656d5a09cdea7591675",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-oval/memory.csv": "044cf2e41665d3eab1e1440a14dd659e1a540192817210afca6e2dd9d869565d",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-fuji-checked/manifest.json": "311936b577516345e3c6b72149a4ab2ead4c7353d9af798383533764f5f69dc6",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-fuji-checked/host-sanitizers.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-fuji-checked/expected.dat": "20c2e5042c9e274f690dbd7e731feb17e200a0dfb9a6354921009fe483476203",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-fuji-checked/calls.csv": "198bd293524842e5abe7b168c10c732de111782055469b51d85f083332574ee4",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-fuji-checked/replay-summary.csv": "22d3760b9b8f063438677a1d8aa2830c1d22b3ca1384323ca7c8b31fb09ce578",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-fuji-checked/replay-readback.dat": "4ef3ee30ca8f7cbf2f38e74fddc7c05aea77e4a054b8bf79430359b02fb4d116",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/soak-fuji-checked/memory.csv": "447550d75ea447ca22ef88c5c97f5f495d2b9f2ec61655fa71d4ad48b104788d"
+  },
+  "auditor_sha256": "f7f40c965926d7f140bea06be86ce6e95fc539cbbeb713511a363ad929b61537",
+  "limits": "Synthetic deterministic keys/clock; real keyboard-map chain is covered by separate native frontend tests. Observer allocations exclude malloc paths bypassing heap_caps. No hardware or performance claim. Lifecycle and final loader qualification remain separate."
+}

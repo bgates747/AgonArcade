@@ -1,0 +1,10 @@
+make: Entering directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/lifecycle/initial'
+[compiling src/main.cpp]
+In file included from src/main.cpp:171:
+In file included from ./include/lifecycle_work.hpp:3:
+[1m./include/render_readback.hpp:24:6: [0m[0;1;31merror: [0m[1munused function 'admission' [-Werror,-Wunused-function][0m
+bool admission(uint8_t*out){
+[0;1;32m     ^
+[0m1 error generated.
+make: *** [/home/smith/Agon/agondev/release/config/makefile.inc:105: obj/main.o] Error 1
+make: Leaving directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/lifecycle/initial'

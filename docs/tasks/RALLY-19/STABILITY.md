@@ -90,3 +90,9 @@ Reproduction from the repository root uses `.venv/bin/python` explicitly:
 `probe_loader.py NAME --build checked-assets`, with these script paths prefixed
 by `docs/tasks/RALLY-19/`. Use fresh names and put agondev/release/bin on PATH
 for builds. All probes create canonical local profiles and launch dummy SDL.
+
+## Requested clean stopping point
+
+Both long replays and full-oval lifecycle passed. See DEBRIEF-2026-09-12.md
+for exact results, loader fixes, the native two-vblank path and pending work.
+The Author requested stopping for discussion. R19-11 and R19-12 remain open.

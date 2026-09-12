@@ -270,3 +270,14 @@ The immutable audit inputs are in `evidence/golem-performance/qualification.json
 raw runs are under golem-render-work, golem-cpu-work and golem-cpu-calibration.
 Historical failed sources/results remain. These results establish the frozen
 Linux emulator performance criteria, not hardware performance or user acceptance.
+
+## Debrief clarification
+
+Double buffering itself does not imply30Hz. The pinned native USERSPACE path
+consumes two separate boolean vblank signals per Canvas swap. This is a specific
+emulator finding; no wait-removal experiment or hardware result establishes its
+full causal impact yet. Sustained measured Golem throughput is30.2042/30.1281FPS
+(oval/Fuji); reciprocal median latency (~31.6FPS) is not sustained throughput.
+See DEBRIEF-2026-09-12.md. New build_render_work.py calls require an explicit
+--frontend argument, e.g. --frontend checked-cleanup. The final loader-hardened
+benchmark build is prepared but unrun at this requested stopping point.

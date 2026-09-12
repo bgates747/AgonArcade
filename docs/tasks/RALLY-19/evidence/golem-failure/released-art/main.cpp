@@ -465,4 +465,5 @@ int gameMain(int argc, char **argv) {
     return 0;
 }
 
-int main(int argc,char **argv){int result=gameMain(argc,argv);road.~LookupRoad();return result;}
+#include "failure_work.hpp"
+int main(int argc,char**argv){return failureMain(argc,argv);}

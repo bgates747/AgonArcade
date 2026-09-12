@@ -3,19 +3,11 @@ import argparse,json,shutil,subprocess
 from pathlib import Path
 from profile import TASK
 from native_run import sha
+from frontend_bridge import verify
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('name');p.add_argument('--frontend',required=True);a=p.parse_args()
-    qualified=json.loads((TASK/'evidence/golem-frontend/qualification.json').read_text());assert qualified['pass']
-    old=Path(qualified['build']['work']);base=TASK/'.work/frontend'/a.frontend
-    selected=json.loads((base/'manifest.json').read_text())
-    for path,digest in qualified['build']['outputs'].items():assert sha(Path(path))==digest,path
-    for path,digest in {**selected['source_hashes'],**selected['outputs']}.items():assert sha(Path(path))==digest,path
-    assert (TASK/'frontend.cpp').read_bytes()==(old/'src/main.cpp').read_bytes()
-    for header in (old/'include').glob('*.hpp'):
-        if header.name!='golem_renderer.hpp':assert header.read_bytes()==(base/'include'/header.name).read_bytes(),header
-    for track in ['oval','fuji']:
-        for ext in ['.vdp','.clr','.road']:assert (old/(track+ext)).read_bytes()==(base/(track+ext)).read_bytes()
+    base=TASK/'.work/frontend'/a.frontend;qualified,selected,bridge=verify(base)
     work=TASK/'.work/stability'/a.name;(work/'src').mkdir(parents=True,exist_ok=False)
     shutil.copytree(base/'include',work/'include');shutil.copy2(base/'Makefile',work/'Makefile')
     for name in ['stability_work.hpp','replay_inputs.hpp','render_readback.hpp']:shutil.copy2(TASK/name,work/'include'/name)
@@ -58,8 +50,8 @@ if(fwrite(data,1,80,stdout)!=80)return 4;
     with (work/'build.txt').open('w') as log:
         subprocess.run(['make','-C',str(work)],check=True,stdout=log,stderr=subprocess.STDOUT)
         subprocess.run(['g++','-std=c++17','-O1','-g','-fsanitize=address,undefined','-fno-omit-frame-pointer','-I'+str(work/'include'),str(work/'host.cpp'),'-o',str(work/'host')],check=True,stdout=log,stderr=subprocess.STDOUT)
-    files=[Path(__file__),TASK/'frontend.cpp',*[TASK/n for n in ['replay_inputs.hpp','stability_work.hpp','render_readback.hpp']],work/'host.cpp',work/'src/main.cpp',*sorted((work/'include').glob('*.hpp'))]
+    files=[Path(__file__),TASK/'frontend_bridge.py',TASK/'frontend.cpp',*[TASK/n for n in ['replay_inputs.hpp','stability_work.hpp','render_readback.hpp']],work/'host.cpp',work/'src/main.cpp',*sorted((work/'include').glob('*.hpp'))]
     outputs=[work/'bin/rally.bin',work/'bin/rally.map',work/'host',*[work/(t+e) for t in ['oval','fuji'] for e in ['.vdp','.clr','.road']]]
-    report={'scope':__doc__,'source_hashes':{str(f):sha(f) for f in files},'outputs':{str(f):sha(f) for f in outputs},'accepted_input_body_sha256':__import__('hashlib').sha256(body.encode()).hexdigest(),'work':str(work),'qualified_frontend':qualified['build'],'selected_frontend':selected,'bridge':'Frontend body, simulation/projection/art headers and resident bootstrap bytes exact; only loader integrity and test layer differ.'}
+    report={'scope':__doc__,'source_hashes':{str(f):sha(f) for f in files},'outputs':{str(f):sha(f) for f in outputs},'accepted_input_body_sha256':__import__('hashlib').sha256(body.encode()).hexdigest(),'work':str(work),'qualified_frontend':qualified['build'],'selected_frontend':selected,'bridge':bridge}
     (work/'manifest.json').write_text(json.dumps(report,indent=2)+'\n');print(work)
 if __name__=='__main__':main()

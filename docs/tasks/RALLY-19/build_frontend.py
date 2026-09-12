@@ -32,7 +32,7 @@ def main():
         generate(work)
         subprocess.run(['make','-C',str(work)],check=True,stdout=log,stderr=subprocess.STDOUT)
     assert before=={str(p):sha(p) for p in source_paths},'Source changed during build'
-    output_paths=[work/'bin/rally.bin',*[work/(t+ext) for t in ['oval','fuji'] for ext in ['.vdp','.clr','.road']]]
+    output_paths=[work/'bin/rally.bin',work/'include/scene_assets.hpp',*[work/(t+ext) for t in ['oval','fuji'] for ext in ['.vdp','.clr','.road']]]
     report={'scope':__doc__,'source_hashes':before,'outputs':{str(p):sha(p) for p in output_paths},
             'golem_compiler_sha256':sha(GOLEM/'build/golemc'),'work':str(work),
             'remaining':'Headless frontend/control validation and all frozen performance/stability tests.'}

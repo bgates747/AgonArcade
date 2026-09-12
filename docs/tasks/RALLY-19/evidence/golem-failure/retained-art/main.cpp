@@ -306,12 +306,6 @@ int gameMain(int argc, char **argv) {
         uint32_t begin=rawClock();
         if(!golemRenderer.load(track==&rally::Fuji)||!waitForVDP()){
             vdp_mode(0);vdp_set_logical_coordinates();vdp_cursor_enable(true);
-            // R19-11: release uploads even when scene initialization fails.
-            bool released=golemRenderer.unload();
-            for(unsigned bitmap=0;bitmap<35;++bitmap)vdp_adv_clear_buffer(64000+bitmap);
-            vdp_adv_clear_buffer(64100);vdp_adv_clear_buffer(63984);
-            released=waitForVDP()&&released;
-            if(!released)printf("Golem initialization cleanup did not complete.\n");
             printf("Golem scene data could not be loaded.\n");return 31;
         }
         startupTicks=rally::ticksSince(rawClock(),begin);
@@ -465,4 +459,5 @@ int gameMain(int argc, char **argv) {
     return 0;
 }
 
-int main(int argc,char **argv){int result=gameMain(argc,argv);road.~LookupRoad();return result;}
+#include "failure_work.hpp"
+int main(int argc,char**argv){return failureMain(argc,argv);}
