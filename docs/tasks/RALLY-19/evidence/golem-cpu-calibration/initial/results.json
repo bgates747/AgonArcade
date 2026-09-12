@@ -1,0 +1,244 @@
+{
+  "scope": "Conservatively bound sink/marker cost using unchanged native wrapper code.\n\nSubtract the full calibrated call/loop cost from oracle work; do not subtract\nanything from candidate work. This intentionally understates construction savings.\n",
+  "pass": true,
+  "cases": 32,
+  "repeated_calls": 64,
+  "empty_upper_cycles": 184,
+  "call_loop_upper_cycles": 323,
+  "identical_wrapper_and_marker_object_instructions": true,
+  "rows": [
+    {
+      "kind": 0,
+      "seed": 0,
+      "bytes": 0,
+      "calls": 0,
+      "cycles": 184
+    },
+    {
+      "kind": 0,
+      "seed": 250,
+      "bytes": 250,
+      "calls": 250,
+      "cycles": 184
+    },
+    {
+      "kind": 0,
+      "seed": 65530,
+      "bytes": 65530,
+      "calls": 65530,
+      "cycles": 184
+    },
+    {
+      "kind": 0,
+      "seed": 4294967280,
+      "bytes": 4294967280,
+      "calls": 4294967280,
+      "cycles": 184
+    },
+    {
+      "kind": 1,
+      "seed": 0,
+      "bytes": 64,
+      "calls": 64,
+      "cycles": 17530
+    },
+    {
+      "kind": 1,
+      "seed": 250,
+      "bytes": 314,
+      "calls": 314,
+      "cycles": 17530
+    },
+    {
+      "kind": 1,
+      "seed": 65530,
+      "bytes": 65594,
+      "calls": 65594,
+      "cycles": 17530
+    },
+    {
+      "kind": 1,
+      "seed": 4294967280,
+      "bytes": 48,
+      "calls": 48,
+      "cycles": 17530
+    },
+    {
+      "kind": 2,
+      "seed": 0,
+      "bytes": 64,
+      "calls": 64,
+      "cycles": 20614
+    },
+    {
+      "kind": 2,
+      "seed": 250,
+      "bytes": 314,
+      "calls": 314,
+      "cycles": 20614
+    },
+    {
+      "kind": 2,
+      "seed": 65530,
+      "bytes": 65594,
+      "calls": 65594,
+      "cycles": 20614
+    },
+    {
+      "kind": 2,
+      "seed": 4294967280,
+      "bytes": 48,
+      "calls": 48,
+      "cycles": 20614
+    },
+    {
+      "kind": 3,
+      "seed": 0,
+      "bytes": 192,
+      "calls": 64,
+      "cycles": 20614
+    },
+    {
+      "kind": 3,
+      "seed": 250,
+      "bytes": 442,
+      "calls": 314,
+      "cycles": 20614
+    },
+    {
+      "kind": 3,
+      "seed": 65530,
+      "bytes": 65722,
+      "calls": 65594,
+      "cycles": 20614
+    },
+    {
+      "kind": 3,
+      "seed": 4294967280,
+      "bytes": 176,
+      "calls": 48,
+      "cycles": 20614
+    },
+    {
+      "kind": 4,
+      "seed": 0,
+      "bytes": 576,
+      "calls": 64,
+      "cycles": 20614
+    },
+    {
+      "kind": 4,
+      "seed": 250,
+      "bytes": 826,
+      "calls": 314,
+      "cycles": 20614
+    },
+    {
+      "kind": 4,
+      "seed": 65530,
+      "bytes": 66106,
+      "calls": 65594,
+      "cycles": 20614
+    },
+    {
+      "kind": 4,
+      "seed": 4294967280,
+      "bytes": 560,
+      "calls": 48,
+      "cycles": 20614
+    },
+    {
+      "kind": 5,
+      "seed": 0,
+      "bytes": 896,
+      "calls": 64,
+      "cycles": 20614
+    },
+    {
+      "kind": 5,
+      "seed": 250,
+      "bytes": 1146,
+      "calls": 314,
+      "cycles": 20614
+    },
+    {
+      "kind": 5,
+      "seed": 65530,
+      "bytes": 66426,
+      "calls": 65594,
+      "cycles": 20614
+    },
+    {
+      "kind": 5,
+      "seed": 4294967280,
+      "bytes": 880,
+      "calls": 48,
+      "cycles": 20614
+    },
+    {
+      "kind": 6,
+      "seed": 0,
+      "bytes": 6208,
+      "calls": 64,
+      "cycles": 20614
+    },
+    {
+      "kind": 6,
+      "seed": 250,
+      "bytes": 6458,
+      "calls": 314,
+      "cycles": 20614
+    },
+    {
+      "kind": 6,
+      "seed": 65530,
+      "bytes": 71738,
+      "calls": 65594,
+      "cycles": 20614
+    },
+    {
+      "kind": 6,
+      "seed": 4294967280,
+      "bytes": 6192,
+      "calls": 48,
+      "cycles": 20614
+    },
+    {
+      "kind": 7,
+      "seed": 0,
+      "bytes": 131072,
+      "calls": 64,
+      "cycles": 20614
+    },
+    {
+      "kind": 7,
+      "seed": 250,
+      "bytes": 131322,
+      "calls": 314,
+      "cycles": 20614
+    },
+    {
+      "kind": 7,
+      "seed": 65530,
+      "bytes": 196602,
+      "calls": 65594,
+      "cycles": 20614
+    },
+    {
+      "kind": 7,
+      "seed": 4294967280,
+      "bytes": 131056,
+      "calls": 48,
+      "cycles": 20614
+    }
+  ],
+  "runtime_inputs_unchanged": true,
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/calibrate_cpu_work.py": "7ce37e524b5011975217d3790c40a9c1773356f807622b5a13e027ad64c0a69e",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/cpu_calibration.inc": "2ccd1d43b01fd1babf50d3ba24d8f69f9f250a2db5e376b7e00b9ed32b98d9aa",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/cpu-work/both-outputs/include/cpu_work.hpp": "df4511a6973b40fe5c2ffb721ad3f5f82ed90e847594a8a18a86478634de63f4",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/cpu-calibration/initial/src/main.cpp": "4b99be6f76bf64c1227e3be0c377e71795524f5dd2ec7f3045dbc76765cf2872",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/cpu-calibration/initial/include/cpu_work.hpp": "3304cd629b6636b01f76f8a767a9f2f9765916277963fca65886444386444e95"
+  },
+  "interpretation": "For each oracle frame subtract empty_upper_cycles + calls*call_loop_upper_cycles; retain full raw candidate cycles. Includes conservative loop/argument overhead and both32-bit counter carries/wrap. Excludes actual UART/MOS driver work."
+}

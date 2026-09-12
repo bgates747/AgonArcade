@@ -310,3 +310,30 @@ the upcoming measurement separation and a read-only native swap-observer lead.
 R19-09 is checked and committed immediately. R19-10 performance, R19-11 long
 stability/review and R19-12 delivery remain open. All emulators were headless and
 have exited. No GUI alert, push, SD deployment or original/upstream edits occurred.
+
+## R19-10 — Frozen performance/offload budgets passed
+
+Golem completion record4efba69d43107622ce62af2b54bd2e6d530edf21 precedes this
+milestone. Compiler and qualified frontend/bootstrap bytes remain unchanged.
+Normal-clock real-rendering ABBA passes on both tracks against the exact accepted
+oracle, with two64-pose batches per variant, all admitted sequences and all
+native completed swaps accounted for. Median31.6682/31.6487 ms and p9536.7422/
+36.7128 ms meet the frozen thresholds; median changes are+0.00823%/-0.01802%.
+
+Scene/update/call/swap remains100 bytes (HUD separate), reducing scene traffic
+88.5305%/86.6944%. Separately calibrated scene/command-construction CPU work falls
+at least91.9657%/91.0111%, excluding fixture physics and MOS/UART driver waits.
+Those waits remain enabled in real rendering. The audit recomputes raw event,
+cycle, counter and byte evidence; checks copied headers/bootstraps/runtime hashes;
+and includes an unchanged-oracle bridge, startup scopes and process-memory records.
+
+PERFORMANCE.md and evidence/golem-performance/qualification.json hold details,
+limitations and commands. The extra mode-init swap and the SDK's putch-based
+affine output caused retained diagnostic failures before their correction.
+No criterion was relaxed. The normal native swap cadence is effectively unchanged;
+this is offload headroom, not a claim of higher hardware frame rate.
+
+R19-10 is checked and committed immediately. R19-11 both-track ten-minute
+stability, sequence/memory/lifecycle/malformed replay and independent review
+remain, followed by R19-12 delivery. All emulators have exited; no GUI, alert,
+push, SD deployment or original/upstream source changes occurred.

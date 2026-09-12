@@ -1,0 +1,1326 @@
+{
+  "milestone": "R19-10",
+  "scope": "Audit R19-10 normal-clock offload, construction work and completed-frame budgets.\n\nNative viewport swaps describe emulator frames, not physical ESP32 performance.\nCPU work means scene/command construction; real driver waits are measured separately.\n",
+  "pass": true,
+  "checks": {
+    "oval_oracle_bridge": true,
+    "fuji_oracle_bridge": true,
+    "oval_median": true,
+    "oval_p95": true,
+    "oval_regression": true,
+    "fuji_median": true,
+    "fuji_p95": true,
+    "fuji_regression": true,
+    "oval_CPU_work": true,
+    "oval_scene_bytes": true,
+    "fuji_CPU_work": true,
+    "fuji_scene_bytes": true
+  },
+  "tracks": {
+    "oval": {
+      "stock_visible_frame_ms": {
+        "samples": 126,
+        "minimum": 26.770696,
+        "mean": 33.19176757142857,
+        "median": 31.665623,
+        "p95": 36.709599,
+        "maximum": 36.795608
+      },
+      "golem_visible_frame_ms": {
+        "samples": 126,
+        "minimum": 17.731078,
+        "mean": 33.108013523809525,
+        "median": 31.668228,
+        "p95": 36.742199,
+        "maximum": 36.875848
+      },
+      "median_change_percent": 0.008226586920456747,
+      "CPU_construction_cycles": {
+        "oracle_raw": {
+          "samples": 128,
+          "minimum": 263278,
+          "mean": 322471.015625,
+          "median": 324867.0,
+          "p95": 360241,
+          "maximum": 370336
+        },
+        "oracle_conservative_lower": {
+          "samples": 128,
+          "minimum": 233378,
+          "mean": 292682.046875,
+          "median": 294805.5,
+          "p95": 330341,
+          "maximum": 340113
+        },
+        "golem_raw_upper": {
+          "samples": 128,
+          "minimum": 23506,
+          "mean": 23515.0234375,
+          "median": 23506.0,
+          "p95": 23611,
+          "maximum": 23611
+        },
+        "conservative_reduction_percent": 91.96567617024255
+      },
+      "UART": {
+        "oracle_mean_scene_including_swap": 871.875,
+        "golem_scene_including_swap": 100,
+        "scene_reduction_percent": 88.5304659498208,
+        "fixture_HUD_bytes": 17,
+        "oracle_mean_total": 888.875,
+        "golem_total": 117
+      }
+    },
+    "fuji": {
+      "stock_visible_frame_ms": {
+        "samples": 126,
+        "minimum": 22.307962,
+        "mean": 33.224318412698416,
+        "median": 31.654418,
+        "p95": 36.718369,
+        "maximum": 36.799828
+      },
+      "golem_visible_frame_ms": {
+        "samples": 126,
+        "minimum": 23.142887,
+        "mean": 33.19155661904762,
+        "median": 31.6487135,
+        "p95": 36.712789,
+        "maximum": 36.751369
+      },
+      "median_change_percent": -0.01802118111917661,
+      "CPU_construction_cycles": {
+        "oracle_raw": {
+          "samples": 128,
+          "minimum": 257243,
+          "mean": 291305.8984375,
+          "median": 289549.5,
+          "p95": 339624,
+          "maximum": 354264
+        },
+        "oracle_conservative_lower": {
+          "samples": 128,
+          "minimum": 228635,
+          "mean": 261804.6015625,
+          "median": 259649.5,
+          "p95": 310477,
+          "maximum": 324041
+        },
+        "golem_raw_upper": {
+          "samples": 128,
+          "minimum": 23526,
+          "mean": 23533.3828125,
+          "median": 23526.0,
+          "p95": 23631,
+          "maximum": 23631
+        },
+        "conservative_reduction_percent": 91.01108892966424
+      },
+      "UART": {
+        "oracle_mean_scene_including_swap": 751.5625,
+        "golem_scene_including_swap": 100,
+        "scene_reduction_percent": 86.6943866943867,
+        "fixture_HUD_bytes": 17,
+        "oracle_mean_total": 768.5625,
+        "golem_total": 117
+      }
+    }
+  },
+  "oracle_bridge": {
+    "oval": {
+      "final_geometry_exact": true,
+      "stock_ms": {
+        "samples": 126,
+        "minimum": 26.812486,
+        "mean": 33.198639666666665,
+        "median": 31.651403000000002,
+        "p95": 36.713249,
+        "maximum": 36.743939
+      },
+      "instrumented_ms": {
+        "samples": 126,
+        "minimum": 26.796726,
+        "mean": 33.20840898412698,
+        "median": 31.663898,
+        "p95": 36.722409,
+        "maximum": 36.809999
+      },
+      "median_change_percent": 0.039476923029280186
+    },
+    "fuji": {
+      "final_geometry_exact": true,
+      "stock_ms": {
+        "samples": 126,
+        "minimum": 22.221363,
+        "mean": 33.11373554761905,
+        "median": 31.654963000000002,
+        "p95": 36.749598,
+        "maximum": 36.831049
+      },
+      "instrumented_ms": {
+        "samples": 126,
+        "minimum": 25.328154,
+        "mean": 33.25016691269841,
+        "median": 31.650173,
+        "p95": 36.731558,
+        "maximum": 36.743939
+      },
+      "median_change_percent": -0.015131908383536619
+    }
+  },
+  "runs": [
+    {
+      "phase": "bridge",
+      "track": "oval",
+      "variant": "stock",
+      "index": 0,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 27.297543,
+        "mean": 33.17987882539683,
+        "median": 31.645628,
+        "p95": 36.712479,
+        "maximum": 36.743939
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.861913,
+        "mean": 33.32242784126984,
+        "median": 31.647538,
+        "p95": 36.725009,
+        "maximum": 36.755189
+      },
+      "guest_frame_ms": null,
+      "batch_submission_mean_ms": 32.8125,
+      "application_ready_ms": null,
+      "VDP_mode_swap_to_warmup_return_ms": 2324.719519,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15536,
+          "VmRSS_kB": 14720
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15536,
+          "VmRSS_kB": 14720
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379084,
+          "VmSize_kB": 377348,
+          "VmHWM_kB": 16172,
+          "VmRSS_kB": 15744
+        }
+      }
+    },
+    {
+      "phase": "bridge",
+      "track": "oval",
+      "variant": "oracle",
+      "index": 1,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 27.177964,
+        "mean": 33.2031133015873,
+        "median": 31.660018,
+        "p95": 36.726269,
+        "maximum": 36.769038
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.895553,
+        "mean": 33.35655415873016,
+        "median": 31.668588,
+        "p95": 36.729629,
+        "maximum": 36.748179
+      },
+      "guest_frame_ms": {
+        "samples": 64,
+        "minimum": 16.666666666666668,
+        "mean": 33.07291666666667,
+        "median": 33.333333333333336,
+        "p95": 33.333333333333336,
+        "maximum": 33.333333333333336
+      },
+      "batch_submission_mean_ms": 33.072916666666664,
+      "application_ready_ms": 2750.0,
+      "VDP_mode_swap_to_warmup_return_ms": 2324.912818,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15532,
+          "VmRSS_kB": 14780
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15532,
+          "VmRSS_kB": 14780
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379088,
+          "VmSize_kB": 377352,
+          "VmHWM_kB": 16168,
+          "VmRSS_kB": 15808
+        }
+      }
+    },
+    {
+      "phase": "bridge",
+      "track": "oval",
+      "variant": "oracle",
+      "index": 2,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 26.796726,
+        "mean": 33.213704666666665,
+        "median": 31.671187,
+        "p95": 36.714729,
+        "maximum": 36.809999
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 28.999064,
+        "mean": 33.28463806349206,
+        "median": 31.651488,
+        "p95": 36.717609,
+        "maximum": 36.785618
+      },
+      "guest_frame_ms": {
+        "samples": 64,
+        "minimum": 16.666666666666668,
+        "mean": 33.07291666666667,
+        "median": 33.333333333333336,
+        "p95": 33.333333333333336,
+        "maximum": 33.333333333333336
+      },
+      "batch_submission_mean_ms": 33.072916666666664,
+      "application_ready_ms": 2750.0,
+      "VDP_mode_swap_to_warmup_return_ms": 2323.319837,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15708,
+          "VmRSS_kB": 14736
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15708,
+          "VmRSS_kB": 14736
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379088,
+          "VmSize_kB": 377352,
+          "VmHWM_kB": 16232,
+          "VmRSS_kB": 15764
+        }
+      }
+    },
+    {
+      "phase": "bridge",
+      "track": "oval",
+      "variant": "stock",
+      "index": 3,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 26.812486,
+        "mean": 33.21740050793651,
+        "median": 31.651738,
+        "p95": 36.721919,
+        "maximum": 36.738209
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.980631,
+        "mean": 33.34210455555556,
+        "median": 31.647068,
+        "p95": 36.728588,
+        "maximum": 36.760739
+      },
+      "guest_frame_ms": null,
+      "batch_submission_mean_ms": 33.072916666666664,
+      "application_ready_ms": null,
+      "VDP_mode_swap_to_warmup_return_ms": 2327.95981,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15700,
+          "VmRSS_kB": 14756
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15700,
+          "VmRSS_kB": 14756
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379080,
+          "VmSize_kB": 377344,
+          "VmHWM_kB": 16164,
+          "VmRSS_kB": 15784
+        }
+      }
+    },
+    {
+      "phase": "bridge",
+      "track": "fuji",
+      "variant": "stock",
+      "index": 0,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 22.221363,
+        "mean": 33.019688317460314,
+        "median": 31.657229,
+        "p95": 36.749598,
+        "maximum": 36.831049
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 31.103411,
+        "mean": 33.321133253968256,
+        "median": 31.662828,
+        "p95": 36.751849,
+        "maximum": 36.771749
+      },
+      "guest_frame_ms": null,
+      "batch_submission_mean_ms": 32.8125,
+      "application_ready_ms": null,
+      "VDP_mode_swap_to_warmup_return_ms": 2311.419845,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15356,
+          "VmRSS_kB": 14736
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15356,
+          "VmRSS_kB": 14736
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 377352,
+          "VmHWM_kB": 15992,
+          "VmRSS_kB": 15764
+        }
+      }
+    },
+    {
+      "phase": "bridge",
+      "track": "fuji",
+      "variant": "oracle",
+      "index": 1,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.902912,
+        "mean": 33.28739550793651,
+        "median": 31.652498,
+        "p95": 36.737239,
+        "maximum": 36.743939
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.901982,
+        "mean": 33.287698365079365,
+        "median": 31.656539,
+        "p95": 36.726319,
+        "maximum": 36.745758
+      },
+      "guest_frame_ms": {
+        "samples": 64,
+        "minimum": 16.666666666666668,
+        "mean": 33.07291666666667,
+        "median": 33.333333333333336,
+        "p95": 33.333333333333336,
+        "maximum": 33.333333333333336
+      },
+      "batch_submission_mean_ms": 33.072916666666664,
+      "application_ready_ms": 4683.333333333333,
+      "VDP_mode_swap_to_warmup_return_ms": 2324.177262,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15756,
+          "VmRSS_kB": 14772
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15756,
+          "VmRSS_kB": 14772
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 377348,
+          "VmHWM_kB": 16228,
+          "VmRSS_kB": 15796
+        }
+      }
+    },
+    {
+      "phase": "bridge",
+      "track": "fuji",
+      "variant": "oracle",
+      "index": 2,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 25.328154,
+        "mean": 33.21293831746032,
+        "median": 31.649568,
+        "p95": 36.718989,
+        "maximum": 36.737689
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.841353,
+        "mean": 33.31325282539682,
+        "median": 31.645888,
+        "p95": 36.722699,
+        "maximum": 36.745819
+      },
+      "guest_frame_ms": {
+        "samples": 64,
+        "minimum": 16.666666666666668,
+        "mean": 32.8125,
+        "median": 33.333333333333336,
+        "p95": 33.333333333333336,
+        "maximum": 33.333333333333336
+      },
+      "batch_submission_mean_ms": 32.8125,
+      "application_ready_ms": 4683.333333333333,
+      "VDP_mode_swap_to_warmup_return_ms": 2325.074817,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15176,
+          "VmRSS_kB": 14748
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15176,
+          "VmRSS_kB": 14748
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379088,
+          "VmSize_kB": 377352,
+          "VmHWM_kB": 16004,
+          "VmRSS_kB": 15776
+        }
+      }
+    },
+    {
+      "phase": "bridge",
+      "track": "fuji",
+      "variant": "stock",
+      "index": 3,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 24.780427,
+        "mean": 33.20778277777778,
+        "median": 31.643119,
+        "p95": 36.736169,
+        "maximum": 36.786529
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.861173,
+        "mean": 33.305798571428575,
+        "median": 31.650858,
+        "p95": 36.723329,
+        "maximum": 36.775059
+      },
+      "guest_frame_ms": null,
+      "batch_submission_mean_ms": 32.8125,
+      "application_ready_ms": null,
+      "VDP_mode_swap_to_warmup_return_ms": 2329.850589,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15440,
+          "VmRSS_kB": 14740
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15440,
+          "VmRSS_kB": 14740
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379080,
+          "VmSize_kB": 377344,
+          "VmHWM_kB": 15828,
+          "VmRSS_kB": 15768
+        }
+      }
+    },
+    {
+      "phase": "abba",
+      "track": "oval",
+      "variant": "stock",
+      "index": 0,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 26.770696,
+        "mean": 33.11780061904762,
+        "median": 31.685408,
+        "p95": 36.724739,
+        "maximum": 36.795608
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.866823,
+        "mean": 33.33797966666667,
+        "median": 31.688428,
+        "p95": 36.710009,
+        "maximum": 36.755008
+      },
+      "guest_frame_ms": null,
+      "batch_submission_mean_ms": 32.8125,
+      "application_ready_ms": null,
+      "VDP_mode_swap_to_warmup_return_ms": 2326.142581,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15584,
+          "VmRSS_kB": 14776
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15584,
+          "VmRSS_kB": 14776
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379084,
+          "VmSize_kB": 377348,
+          "VmHWM_kB": 16412,
+          "VmRSS_kB": 15804
+        }
+      }
+    },
+    {
+      "phase": "abba",
+      "track": "oval",
+      "variant": "golem",
+      "index": 1,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 17.731078,
+        "mean": 33.06345219047619,
+        "median": 31.652838,
+        "p95": 36.745439,
+        "maximum": 36.875848
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.952932,
+        "mean": 33.36463522222222,
+        "median": 31.661058,
+        "p95": 36.734439,
+        "maximum": 36.870808
+      },
+      "guest_frame_ms": {
+        "samples": 64,
+        "minimum": 0.0,
+        "mean": 32.552083333333336,
+        "median": 33.333333333333336,
+        "p95": 33.333333333333336,
+        "maximum": 33.333333333333336
+      },
+      "batch_submission_mean_ms": 32.552083333333336,
+      "application_ready_ms": 3150.0,
+      "VDP_mode_swap_to_warmup_return_ms": 3146.130548,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15552,
+          "VmRSS_kB": 15276
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15552,
+          "VmRSS_kB": 15276
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 377352,
+          "VmHWM_kB": 16580,
+          "VmRSS_kB": 16312
+        }
+      }
+    },
+    {
+      "phase": "abba",
+      "track": "oval",
+      "variant": "golem",
+      "index": 2,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 23.098488,
+        "mean": 33.15257485714286,
+        "median": 31.672058,
+        "p95": 36.717179,
+        "maximum": 36.775159
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.866762,
+        "mean": 33.28226553968254,
+        "median": 31.675488,
+        "p95": 36.723509,
+        "maximum": 36.758079
+      },
+      "guest_frame_ms": {
+        "samples": 64,
+        "minimum": 0.0,
+        "mean": 32.552083333333336,
+        "median": 33.333333333333336,
+        "p95": 33.333333333333336,
+        "maximum": 33.333333333333336
+      },
+      "batch_submission_mean_ms": 32.552083333333336,
+      "application_ready_ms": 3150.0,
+      "VDP_mode_swap_to_warmup_return_ms": 3143.377024,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15796,
+          "VmRSS_kB": 15220
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15796,
+          "VmRSS_kB": 15220
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379088,
+          "VmSize_kB": 377352,
+          "VmHWM_kB": 16816,
+          "VmRSS_kB": 16248
+        }
+      }
+    },
+    {
+      "phase": "abba",
+      "track": "oval",
+      "variant": "stock",
+      "index": 3,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 27.229824,
+        "mean": 33.26573452380952,
+        "median": 31.643039,
+        "p95": 36.69922,
+        "maximum": 36.723479
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.868652,
+        "mean": 33.32387322222222,
+        "median": 31.646538,
+        "p95": 36.705679,
+        "maximum": 36.767419
+      },
+      "guest_frame_ms": null,
+      "batch_submission_mean_ms": 33.072916666666664,
+      "application_ready_ms": null,
+      "VDP_mode_swap_to_warmup_return_ms": 2323.469736,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15716,
+          "VmRSS_kB": 14760
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15716,
+          "VmRSS_kB": 14760
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379088,
+          "VmSize_kB": 377352,
+          "VmHWM_kB": 16352,
+          "VmRSS_kB": 15792
+        }
+      }
+    },
+    {
+      "phase": "abba",
+      "track": "fuji",
+      "variant": "stock",
+      "index": 0,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 22.307962,
+        "mean": 33.16140576190476,
+        "median": 31.657068,
+        "p95": 36.726658,
+        "maximum": 36.799828
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.817033,
+        "mean": 33.32172307936508,
+        "median": 31.658738,
+        "p95": 36.730039,
+        "maximum": 36.812868
+      },
+      "guest_frame_ms": null,
+      "batch_submission_mean_ms": 32.8125,
+      "application_ready_ms": null,
+      "VDP_mode_swap_to_warmup_return_ms": 2330.583645,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15956,
+          "VmRSS_kB": 14748
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15956,
+          "VmRSS_kB": 14748
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379084,
+          "VmSize_kB": 377348,
+          "VmHWM_kB": 16432,
+          "VmRSS_kB": 15780
+        }
+      }
+    },
+    {
+      "phase": "abba",
+      "track": "fuji",
+      "variant": "golem",
+      "index": 1,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 24.704498,
+        "mean": 33.235698507936505,
+        "median": 31.634558,
+        "p95": 36.109312,
+        "maximum": 36.751369
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.863173,
+        "mean": 33.33531077777778,
+        "median": 31.32868,
+        "p95": 36.149792,
+        "maximum": 36.736579
+      },
+      "guest_frame_ms": {
+        "samples": 64,
+        "minimum": 16.666666666666668,
+        "mean": 32.8125,
+        "median": 33.333333333333336,
+        "p95": 33.333333333333336,
+        "maximum": 33.333333333333336
+      },
+      "batch_submission_mean_ms": 32.8125,
+      "application_ready_ms": 4266.666666666667,
+      "VDP_mode_swap_to_warmup_return_ms": 4263.085418,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15524,
+          "VmRSS_kB": 15488
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15524,
+          "VmRSS_kB": 15488
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 442820,
+          "VmSize_kB": 377348,
+          "VmHWM_kB": 16928,
+          "VmRSS_kB": 16516
+        }
+      }
+    },
+    {
+      "phase": "abba",
+      "track": "fuji",
+      "variant": "golem",
+      "index": 2,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 23.142887,
+        "mean": 33.14741473015873,
+        "median": 31.648878,
+        "p95": 36.716489,
+        "maximum": 36.719809
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.847063,
+        "mean": 33.28244919047619,
+        "median": 31.648458,
+        "p95": 36.717219,
+        "maximum": 36.745819
+      },
+      "guest_frame_ms": {
+        "samples": 64,
+        "minimum": 0.0,
+        "mean": 32.552083333333336,
+        "median": 33.333333333333336,
+        "p95": 33.333333333333336,
+        "maximum": 33.333333333333336
+      },
+      "batch_submission_mean_ms": 32.552083333333336,
+      "application_ready_ms": 4250.0,
+      "VDP_mode_swap_to_warmup_return_ms": 4242.086439,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15476,
+          "VmRSS_kB": 15400
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15476,
+          "VmRSS_kB": 15400
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379072,
+          "VmSize_kB": 377336,
+          "VmHWM_kB": 16836,
+          "VmRSS_kB": 16424
+        }
+      }
+    },
+    {
+      "phase": "abba",
+      "track": "fuji",
+      "variant": "stock",
+      "index": 3,
+      "visible_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.865602,
+        "mean": 33.287231063492065,
+        "median": 31.645348,
+        "p95": 36.708759,
+        "maximum": 36.749338
+      },
+      "canvas_intervals_ms": {
+        "samples": 63,
+        "minimum": 30.864233,
+        "mean": 33.36888582539682,
+        "median": 31.654128,
+        "p95": 36.723889,
+        "maximum": 36.762488
+      },
+      "guest_frame_ms": null,
+      "batch_submission_mean_ms": 33.072916666666664,
+      "application_ready_ms": null,
+      "VDP_mode_swap_to_warmup_return_ms": 2330.730374,
+      "process_memory": {
+        "warmed_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15096,
+          "VmRSS_kB": 14768
+        },
+        "submitted_process_memory": {
+          "VmPeak_kB": 379020,
+          "VmSize_kB": 375708,
+          "VmHWM_kB": 15096,
+          "VmRSS_kB": 14768
+        },
+        "finished_process_memory": {
+          "VmPeak_kB": 379088,
+          "VmSize_kB": 377352,
+          "VmHWM_kB": 15796,
+          "VmRSS_kB": 15796
+        }
+      }
+    }
+  ],
+  "resources": {
+    "oval": {
+      "bootstrap_bytes": 90816,
+      "resident_payload_bytes": 78565,
+      "owned_ids": 836,
+      "asset_payload_bytes": 36523,
+      "program_payload_bytes": 38741,
+      "scratch_payload_bytes": 3301,
+      "resident_plus_bootstrap_payload_bytes": 169381,
+      "cleanup_bytes": 5016
+    },
+    "fuji": {
+      "bootstrap_bytes": 212200,
+      "resident_payload_bytes": 199711,
+      "owned_ids": 853,
+      "asset_payload_bytes": 157129,
+      "program_payload_bytes": 39236,
+      "scratch_payload_bytes": 3346,
+      "resident_plus_bootstrap_payload_bytes": 411911,
+      "cleanup_bytes": 5118
+    }
+  },
+  "overhead": {
+    "sink_empty_cycles": 184,
+    "sink_call_upper_cycles": 323,
+    "observer": [
+      {
+        "track": "oval",
+        "plain_mean_ticks": 254,
+        "observed_mean_ticks": 252,
+        "observer_change_percent": -0.7874015748031482,
+        "pass": true
+      },
+      {
+        "track": "fuji",
+        "plain_mean_ticks": 253,
+        "observed_mean_ticks": 254,
+        "observer_change_percent": 0.39525691699604515,
+        "pass": true
+      }
+    ]
+  },
+  "sampling": "Per-track serial ABBA, two64-pose batches/variant.128 guest intervals and126 steady native intervals; mode/startup/two warmups excluded. First measured native transition contains host marker handshake and is excluded. Median is conventional; p95 is nearest rank.",
+  "limits": "Emulator only. CPU figures measure command construction, excluding MOS driver/transmission waits; actual normal UART waits remain in real-rendering runs. Process RSS includes emulator/host overhead, not physical VDP heap. Ready time is program entry through warmup, excluding MOS binary load/firmware boot. Stock original lacks that counter; its native warm-stage span is separately reported. GP readback is post-batch admission proof, not frame timing.",
+  "audit_sha256": "32a73250441ad17fc3bda1bda664725a887235372e55e14944b97845f4e9bffc",
+  "evidence": {
+    "evidence/golem-scenery-visual/qualification.json": "1adcff46a044c56c0b2be8460a95f0d09c30da278b0e329defae2b55282b1456",
+    "evidence/golem-frontend/qualification.json": "3b87e8ad544f853e013cdd61bfc9d8854ed3d97020035a19e55de0ec950a2ca9",
+    "evidence/golem-swap-overhead/initial/results.json": "79291b89b039b646a8cfc464603a41ef548815bd48c812288c131c0e96caf0d4",
+    "evidence/baseline/byte-accounting.json": "e73d0090dd80d1920160b51b023bb85fdd6be6a76529cc3031a51cd6303ef331",
+    "evidence/baseline/manifest.json": "68514d58122e6be7175dbf04b1dea7ff9e66bd8232acf1928a22329a106951ed",
+    "evidence/golem-render-work/qualified-bridge/results.json": "57148dcfcb53a4ee82f5a719d62586b9ae1a78cb43a499479e58dcee7d8e01b6",
+    "evidence/golem-render-work/qualified-bridge/oval-0-stock/manifest.json": "8fd77be50c626445a40c8abfeb38a461a42406788f8865c1dc648db5d4daac08",
+    "evidence/golem-render-work/qualified-bridge/oval-0-stock/measurement.csv": "62045d98afa67bd69e0f6f53dd894f2359bb1d5561725a3283a6aba444a62301",
+    "evidence/golem-render-work/qualified-bridge/oval-0-stock/swaps.csv": "668977a6bf2f5633542680c5577f53a7b01baf94378612719a89fcb490eab345",
+    "evidence/golem-render-work/qualified-bridge/oval-0-stock/scene.csv": "972278c92c8063254ba8b92a4a10c9bdafab43cb82cdeca811e81a5694a0dc97",
+    "evidence/golem-render-work/qualified-bridge/oval-1-oracle/manifest.json": "a7af21e488a0aedbed94a88b9f303f8778bf40f85877e124503bb02907d9d8a4",
+    "evidence/golem-render-work/qualified-bridge/oval-1-oracle/render-summary.csv": "51a4f5a7d5cbf47d7031610f043c8e7b6adf9a988de5c5e8a88e126f3c8ff537",
+    "evidence/golem-render-work/qualified-bridge/oval-1-oracle/render-rows.csv": "f908a6a77540fd09deff4b4c85f6aa9cf6bd2372712bb799fa2dd31b014d3968",
+    "evidence/golem-render-work/qualified-bridge/oval-1-oracle/swaps.csv": "3251df5f0aa81aeaca222402d7f09d7a43bb7ada24f9d8811284086b06949441",
+    "evidence/golem-render-work/qualified-bridge/oval-1-oracle/scene.csv": "972278c92c8063254ba8b92a4a10c9bdafab43cb82cdeca811e81a5694a0dc97",
+    "evidence/golem-render-work/qualified-bridge/oval-2-oracle/manifest.json": "775c7e3601a29318ad8ecf4f166b9e8c39098acf60dbc39e28830c9bd7247d4e",
+    "evidence/golem-render-work/qualified-bridge/oval-2-oracle/render-summary.csv": "51a4f5a7d5cbf47d7031610f043c8e7b6adf9a988de5c5e8a88e126f3c8ff537",
+    "evidence/golem-render-work/qualified-bridge/oval-2-oracle/render-rows.csv": "eb9cfca6765cc2ad0872ef797fcc3f0b18049fa5393fcccce41267803c09cca7",
+    "evidence/golem-render-work/qualified-bridge/oval-2-oracle/swaps.csv": "33b866475e56786a94e79023d0b2255f7a28a46b469cb726b389aa406d5bfe4a",
+    "evidence/golem-render-work/qualified-bridge/oval-2-oracle/scene.csv": "972278c92c8063254ba8b92a4a10c9bdafab43cb82cdeca811e81a5694a0dc97",
+    "evidence/golem-render-work/qualified-bridge/oval-3-stock/manifest.json": "6ab20e71048503e8d161dccb5c46987cc85526022584886b48791a2d888cd960",
+    "evidence/golem-render-work/qualified-bridge/oval-3-stock/measurement.csv": "4e9f1bb36166796763997bfd5616798edd8fa9657f20d002083a60e79c30fc91",
+    "evidence/golem-render-work/qualified-bridge/oval-3-stock/swaps.csv": "92abdf1c5a3d81e2a8b3942cf51fc0b4c92b7ce787348769b056a09297231559",
+    "evidence/golem-render-work/qualified-bridge/oval-3-stock/scene.csv": "972278c92c8063254ba8b92a4a10c9bdafab43cb82cdeca811e81a5694a0dc97",
+    "evidence/golem-render-work/qualified-bridge/fuji-0-stock/manifest.json": "0c231289e55143074c25bc2fd6928e91c5a5fee50782f80a4e33cbaa6ab4c21e",
+    "evidence/golem-render-work/qualified-bridge/fuji-0-stock/measurement.csv": "901d88e04dd336285cf0d8d6ee110d7e022d4744c3c03629cecb8371794f3e8d",
+    "evidence/golem-render-work/qualified-bridge/fuji-0-stock/swaps.csv": "d355190151d76587e295969ff19883eb1306311fcdfd579c3aabb138ed9d46b1",
+    "evidence/golem-render-work/qualified-bridge/fuji-0-stock/scene.csv": "2c387b2b97efa1ec18a481c27455b8af55ec203fc9e391a28c24104af66d8101",
+    "evidence/golem-render-work/qualified-bridge/fuji-1-oracle/manifest.json": "5caea1b4dcff591e8b08b4d99d9cbe37143f9a8f7278df2130dc0ad1a2a8d8cc",
+    "evidence/golem-render-work/qualified-bridge/fuji-1-oracle/render-summary.csv": "1fd8eef4b994e62eb3db5672499e42c90e9c8f6c5b1c8d48f392bff198a940e6",
+    "evidence/golem-render-work/qualified-bridge/fuji-1-oracle/render-rows.csv": "dbae9122950a0c80642dc97703603961922577a2c5bbd7fb168bc1cc09999687",
+    "evidence/golem-render-work/qualified-bridge/fuji-1-oracle/swaps.csv": "17d1c4ce2577d87fa7ace4d9920d690edf2e4a1f980f530d32412b2441766f1e",
+    "evidence/golem-render-work/qualified-bridge/fuji-1-oracle/scene.csv": "2c387b2b97efa1ec18a481c27455b8af55ec203fc9e391a28c24104af66d8101",
+    "evidence/golem-render-work/qualified-bridge/fuji-2-oracle/manifest.json": "16968ad1332da4c9e3f76f6249ba256cc45535f323df3eda5583b8d3ba00475a",
+    "evidence/golem-render-work/qualified-bridge/fuji-2-oracle/render-summary.csv": "f1fa0aa06a8140282cfb3ee35cbb1275a4a62c5348c50353641041fcb0d8e193",
+    "evidence/golem-render-work/qualified-bridge/fuji-2-oracle/render-rows.csv": "fa20154a9b183554fd564c0fb1f778726bb502014910f6a2f35a12c510c52d0d",
+    "evidence/golem-render-work/qualified-bridge/fuji-2-oracle/swaps.csv": "916a98da2c37a4b9f77080ec10910510e04ebf02240e2afb68987551e9e98eba",
+    "evidence/golem-render-work/qualified-bridge/fuji-2-oracle/scene.csv": "2c387b2b97efa1ec18a481c27455b8af55ec203fc9e391a28c24104af66d8101",
+    "evidence/golem-render-work/qualified-bridge/fuji-3-stock/manifest.json": "a313f37a0cd9449d01795986bf403c5b7d1d650fdf522b84846534b562b505b8",
+    "evidence/golem-render-work/qualified-bridge/fuji-3-stock/measurement.csv": "901d88e04dd336285cf0d8d6ee110d7e022d4744c3c03629cecb8371794f3e8d",
+    "evidence/golem-render-work/qualified-bridge/fuji-3-stock/swaps.csv": "d7f418fa59e613deaecca78e8e87aec257f21e3d6e6e2a5f5485cdb7cb478977",
+    "evidence/golem-render-work/qualified-bridge/fuji-3-stock/scene.csv": "2c387b2b97efa1ec18a481c27455b8af55ec203fc9e391a28c24104af66d8101",
+    "evidence/golem-render-work/qualified-abba/results.json": "c41727362374074625654c7ee5dc6721ef3cddea541fde9aa6746a3b4552f7e3",
+    "evidence/golem-render-work/qualified-abba/oval-0-stock/manifest.json": "568d5a46a55461ce2726a5923e5d9bacaa890dd3d6a7c06254a56decb142b0f1",
+    "evidence/golem-render-work/qualified-abba/oval-0-stock/measurement.csv": "62045d98afa67bd69e0f6f53dd894f2359bb1d5561725a3283a6aba444a62301",
+    "evidence/golem-render-work/qualified-abba/oval-0-stock/swaps.csv": "0f93e0defffc45274a765f829c288b173154381f3799c0145eba8cae3f424fec",
+    "evidence/golem-render-work/qualified-abba/oval-1-golem/manifest.json": "e6e5cc844bcb578ae6b8926d2b739efc316b6dbec1d41967e8c57108534ec837",
+    "evidence/golem-render-work/qualified-abba/oval-1-golem/render-summary.csv": "9faa383fe495d81a0bee93dd9cf8544cb50f1bc1447f7dab6868e4e861c008b9",
+    "evidence/golem-render-work/qualified-abba/oval-1-golem/render-rows.csv": "4bd0a3e990ef9ce97875f8c527b28e5ebe1509149a13ed0e67405413cfe0e6d4",
+    "evidence/golem-render-work/qualified-abba/oval-1-golem/swaps.csv": "4a68eaec12753e3051d998806ce45aa747ba080e751adbc50769ad4c6c3845dc",
+    "evidence/golem-render-work/qualified-abba/oval-2-golem/manifest.json": "dd869ed20d08665a143a074497a1c808e80a8ab0f73fd791e91e0e0dae5f8eaa",
+    "evidence/golem-render-work/qualified-abba/oval-2-golem/render-summary.csv": "9faa383fe495d81a0bee93dd9cf8544cb50f1bc1447f7dab6868e4e861c008b9",
+    "evidence/golem-render-work/qualified-abba/oval-2-golem/render-rows.csv": "4bd0a3e990ef9ce97875f8c527b28e5ebe1509149a13ed0e67405413cfe0e6d4",
+    "evidence/golem-render-work/qualified-abba/oval-2-golem/swaps.csv": "53292afd0d4c55a30a1b99d2e2ad2288adc8428c473a0ea7fa56f23e4e48ccd9",
+    "evidence/golem-render-work/qualified-abba/oval-3-stock/manifest.json": "d85de5e1a39aff6298069e9db1863d9a2fe8db503be9b26c7ae28fe541e4efc6",
+    "evidence/golem-render-work/qualified-abba/oval-3-stock/measurement.csv": "4e9f1bb36166796763997bfd5616798edd8fa9657f20d002083a60e79c30fc91",
+    "evidence/golem-render-work/qualified-abba/oval-3-stock/swaps.csv": "02cb1e25a3b5fea3d16eaae0be61102a64204a96dbef896599ca3c559cdfed62",
+    "evidence/golem-render-work/qualified-abba/fuji-0-stock/manifest.json": "4598433d05e6e6305553d225da3348b4ea6d9d8f7bfa5de882c913086e72d295",
+    "evidence/golem-render-work/qualified-abba/fuji-0-stock/measurement.csv": "901d88e04dd336285cf0d8d6ee110d7e022d4744c3c03629cecb8371794f3e8d",
+    "evidence/golem-render-work/qualified-abba/fuji-0-stock/swaps.csv": "b99aba21d6cfd062e8dc3b169faad512cc8f5aa38d3de9da280f653ccb7063c7",
+    "evidence/golem-render-work/qualified-abba/fuji-1-golem/manifest.json": "629d3350d6049aafa00212c1d6b439afcb82d3d2925cc9b97403e53e67096066",
+    "evidence/golem-render-work/qualified-abba/fuji-1-golem/render-summary.csv": "469e00c3f801d0d4e8fc1197e1bf76b09f290de83c8a49da59f1226670c483d1",
+    "evidence/golem-render-work/qualified-abba/fuji-1-golem/render-rows.csv": "80edc57421da7170718359eb91a077efd3756b97e752a0a27017b8bd5df8590e",
+    "evidence/golem-render-work/qualified-abba/fuji-1-golem/swaps.csv": "815b5145ed1fb6e0ed2030670709b9967f84c8344cc65e4dbecb23d5ae6ed27a",
+    "evidence/golem-render-work/qualified-abba/fuji-2-golem/manifest.json": "728d62e095dc2f4fffc8f753632bb4ebbd4118970684fdeb26aa74d6e3452f6d",
+    "evidence/golem-render-work/qualified-abba/fuji-2-golem/render-summary.csv": "65010e772fb5241d05176498d754ed1ee0eb2e119c981db84c732c172bfd114a",
+    "evidence/golem-render-work/qualified-abba/fuji-2-golem/render-rows.csv": "5c091f775bd0d5330fe11eed51feea7084d58ae09f502a084f9f1ade203ca028",
+    "evidence/golem-render-work/qualified-abba/fuji-2-golem/swaps.csv": "3224c1f237a17ff40d9b67ad040f93f12ab0398ea0af225b63712126af187641",
+    "evidence/golem-render-work/qualified-abba/fuji-3-stock/manifest.json": "54fb52ba88c331b22a2ed48f01a2467eeb461029ff55ab3915f21fd93348545b",
+    "evidence/golem-render-work/qualified-abba/fuji-3-stock/measurement.csv": "bbeafc91a549787845fb4dd0473527f9927ee1d560626254df8ae2d1136eb4cc",
+    "evidence/golem-render-work/qualified-abba/fuji-3-stock/swaps.csv": "a666543a7fe3b1ed79c5d62e39f2a29da77584154e420ca2e68122ae1ba642b1",
+    "evidence/golem-cpu-calibration/initial/results.json": "52f6822321c0d7dd3553ab457fe70d641d096cb3d560b4baf53d675014c8390b",
+    "evidence/golem-cpu-calibration/initial/cpu-calibration.csv": "1486fcb760cd07e6a4e7180b63ad1070acdf5e52610d3c3f05178cc4a1be5254",
+    "evidence/golem-cpu-calibration/initial/emulator.log": "7221131a8ee8ca58ef0b59541072c75ec6161c74ec2ccf26736ee0599fab2d9d",
+    "evidence/golem-cpu-calibration/initial/identical-wrappers.json": "1ad002a35634dd21c3ba0d540b3f3a2ed9f4a2de830a51f284923b9c092aa7b8",
+    "evidence/golem-cpu-calibration/initial/measured-object.txt": "8d9d35a73a87df44fb997ed0c5ebf70a5ebdcdf68f10657c9d9997f1d8faa9cf",
+    "evidence/golem-cpu-calibration/initial/calibration-object.txt": "2fa57f96f5a8ed8600b093af34c3fcb1ba3e23a93019c7b5299cc656fe97ade1",
+    "evidence/baseline/oval-bytes.csv": "c87d2c8b9361712fa51103f0dc7a6cfebf52d8c918d0d5f852e58736e33a0b0e",
+    "evidence/golem-cpu-work/abba-oval-0-oracle/results.json": "aa3ac8e1e4a545dd7210e7a224104730d19da364448c53fef57f4f31c97e629d",
+    "evidence/golem-cpu-work/abba-oval-0-oracle/manifest.json": "5c5a7ffa1b4dfd97b8bf9842e80703256bd29165b65420a8e4fcda4fb1097534",
+    "evidence/golem-cpu-work/abba-oval-0-oracle/cpu-work.csv": "7e00be1e304e6e1c88c2295e0459eefd67feeb1426559c2fda0c2af1c8da5440",
+    "evidence/golem-cpu-work/abba-oval-0-oracle/emulator.log": "077ae4cdc23bd45b1494dbc038feea0aeb1cb81a798d01cafb19b83216c6174c",
+    "evidence/golem-cpu-work/abba-oval-1-golem/results.json": "64a58b85d67b7faaf2bfc84d3b0bc19b37a0438a385d0e891e5b89e486884f1b",
+    "evidence/golem-cpu-work/abba-oval-1-golem/manifest.json": "40144e0cabc58e8e74afd875f89e6c6d35a3a527c4d121975081bd446e44120c",
+    "evidence/golem-cpu-work/abba-oval-1-golem/cpu-work.csv": "10f39a7564d29b74136ea6a12e8e12420716fbcd785980e5da975da75dd652c3",
+    "evidence/golem-cpu-work/abba-oval-1-golem/emulator.log": "2d3d460217ea6516a7e9585885f30451dce00775241e746ceb36b3e025498a6b",
+    "evidence/golem-cpu-work/abba-oval-2-golem/results.json": "3c863563da19cc8f7c4e894235585f1122a3320b64450195852988c451542e2e",
+    "evidence/golem-cpu-work/abba-oval-2-golem/manifest.json": "44aa2e25f5ddc6e544a75e0ed3d7193845e711720136c54a8352d1cb4012550c",
+    "evidence/golem-cpu-work/abba-oval-2-golem/cpu-work.csv": "10f39a7564d29b74136ea6a12e8e12420716fbcd785980e5da975da75dd652c3",
+    "evidence/golem-cpu-work/abba-oval-2-golem/emulator.log": "a7ef87274899c8f23e8ed44b223e1287554c5bcf3bedf8ee53c9cbf85d77aae1",
+    "evidence/golem-cpu-work/abba-oval-3-oracle/results.json": "3670582cc6238d4fc26523b4d705883d49e53e6f55d1159ef00f81804bf2994a",
+    "evidence/golem-cpu-work/abba-oval-3-oracle/manifest.json": "93620391e96b62ba28dfc59cfc0563620b5d0e779f8a0cf0e317b2a8b8857ac6",
+    "evidence/golem-cpu-work/abba-oval-3-oracle/cpu-work.csv": "7e00be1e304e6e1c88c2295e0459eefd67feeb1426559c2fda0c2af1c8da5440",
+    "evidence/golem-cpu-work/abba-oval-3-oracle/emulator.log": "b5112edffab0ea714ae6f934c8156abf07ee530b6b3256c0d29390816cb096df",
+    "evidence/baseline/fuji-bytes.csv": "2a2440adbe5513ee26714af96b3b2279bd7eb08ed4379cb8ded5a2de29f5f2c2",
+    "evidence/golem-cpu-work/abba-fuji-0-oracle/results.json": "a1ff0df2da62275217895c8840e80290f9fe56d5acfb0881cb77c92d1f797ca3",
+    "evidence/golem-cpu-work/abba-fuji-0-oracle/manifest.json": "bec817f14312baef0f6f7ef2af5ecbb83d5a792aa04ccb9a3a903aae94dcaae8",
+    "evidence/golem-cpu-work/abba-fuji-0-oracle/cpu-work.csv": "73544b24566be77f097329e7a8d2378657c45f05f75dd5340663b583bdbbe174",
+    "evidence/golem-cpu-work/abba-fuji-0-oracle/emulator.log": "75e623e36b02e08322e1bbf0451104181615de03319fc8468b60705856d6717a",
+    "evidence/golem-cpu-work/abba-fuji-1-golem/results.json": "5acd2c341c1e90acd03c1dd99daac4b3afb918c801dd8e7583c2e62e71d1ea31",
+    "evidence/golem-cpu-work/abba-fuji-1-golem/manifest.json": "b39a9caa3f4267b0bfcaf6123d82c7bcea8d3fb9c22d36a3ea8a300b7941e7eb",
+    "evidence/golem-cpu-work/abba-fuji-1-golem/cpu-work.csv": "45bf019c3323550d377d90acd2dc5a41ef43b91e8002dd819dc8902f1c25af4d",
+    "evidence/golem-cpu-work/abba-fuji-1-golem/emulator.log": "3ff4efc06682d7ba25160e09235c0219ddc2baa7252306104ceab94884a05afc",
+    "evidence/golem-cpu-work/abba-fuji-2-golem/results.json": "15c5188df4cc5cf8f88ea07f09cdc336c7fe42038cf049ef6ecf475a363d0f13",
+    "evidence/golem-cpu-work/abba-fuji-2-golem/manifest.json": "b8f1248dc9f61c59ea610bde13a9092532602e5f12a820d469345d65b8d6e39f",
+    "evidence/golem-cpu-work/abba-fuji-2-golem/cpu-work.csv": "45bf019c3323550d377d90acd2dc5a41ef43b91e8002dd819dc8902f1c25af4d",
+    "evidence/golem-cpu-work/abba-fuji-2-golem/emulator.log": "e7cafac737b811662d0cbdea99a24164fb453aaf00a7ae3b018fee7a48f869a2",
+    "evidence/golem-cpu-work/abba-fuji-3-oracle/results.json": "89e13a88f6cb5c7cab3be4e326957fec31cf664e965d6b277b23afaaa1623678",
+    "evidence/golem-cpu-work/abba-fuji-3-oracle/manifest.json": "5234de360e9f50af1c32e4a3cc4225b142efc8307286fe7b076e62f0adf61bd6",
+    "evidence/golem-cpu-work/abba-fuji-3-oracle/cpu-work.csv": "73544b24566be77f097329e7a8d2378657c45f05f75dd5340663b583bdbbe174",
+    "evidence/golem-cpu-work/abba-fuji-3-oracle/emulator.log": "1239e4838b4ea440fe2057ef38380de8b8a5886e3d81528523c3d2e04c0cb725"
+  },
+  "checked_includes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/initial": {
+      "frontend_state.hpp": {
+        "sha256": "b819c2faa58e8b2161453e4c57297a236a2435a3a1f4187cf52674414b972017",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend_state.hpp"
+      },
+      "tuning.hpp": {
+        "sha256": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp"
+      },
+      "demo.hpp": {
+        "sha256": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp"
+      },
+      "lookup_road.hpp": {
+        "sha256": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp"
+      },
+      "scene_protocol.hpp": {
+        "sha256": "c9dc8a11ce12a04f55382e5d2c1aaf5ffdd028a7d8741b09eadceedbc7068aee",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_protocol.hpp"
+      },
+      "golem_renderer.hpp": {
+        "sha256": "32bacb4cdad62bcc825cff113f5a0eeac823ed72dcc13b1feb24726bc829e37a",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/golem_renderer.hpp"
+      },
+      "scene.hpp": {
+        "sha256": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp"
+      },
+      "band_table.hpp": {
+        "sha256": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp"
+      },
+      "scenery_data.hpp": {
+        "sha256": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp"
+      },
+      "road.hpp": {
+        "sha256": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp"
+      },
+      "workload.hpp": {
+        "sha256": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp"
+      },
+      "vehicle.hpp": {
+        "sha256": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp"
+      },
+      "traffic.hpp": {
+        "sha256": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp"
+      },
+      "render_work.hpp": {
+        "sha256": "e5db779355824d67f560b7237be047c93259e3b9dc8fb515c770579cd29343d0",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/render_work.hpp"
+      },
+      "track.hpp": {
+        "sha256": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp"
+      },
+      "lookup_format.hpp": {
+        "sha256": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp"
+      },
+      "scenery.hpp": {
+        "sha256": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp"
+      },
+      "bearing_table.hpp": {
+        "sha256": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp"
+      },
+      "section_protocol.hpp": {
+        "sha256": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp"
+      },
+      "render_readback.hpp": {
+        "sha256": "b73564c5a7220205015dc432d4bd68e2b2beae72ad2a6504b13a1aadce6941f2",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/render_readback.hpp"
+      },
+      "section_road.hpp": {
+        "sha256": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp"
+      },
+      "car.hpp": {
+        "sha256": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp"
+      },
+      "pacing.hpp": {
+        "sha256": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp"
+      },
+      "section_phase.hpp": {
+        "sha256": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp"
+      },
+      "task_workload.hpp": {
+        "sha256": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp"
+      }
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/cpu-work/both-outputs": {
+      "frontend_state.hpp": {
+        "sha256": "b819c2faa58e8b2161453e4c57297a236a2435a3a1f4187cf52674414b972017",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend_state.hpp"
+      },
+      "tuning.hpp": {
+        "sha256": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp"
+      },
+      "demo.hpp": {
+        "sha256": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp"
+      },
+      "lookup_road.hpp": {
+        "sha256": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp"
+      },
+      "cpu_work.hpp": {
+        "sha256": "df4511a6973b40fe5c2ffb721ad3f5f82ed90e847594a8a18a86478634de63f4",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/cpu_work.hpp"
+      },
+      "scene_protocol.hpp": {
+        "sha256": "c9dc8a11ce12a04f55382e5d2c1aaf5ffdd028a7d8741b09eadceedbc7068aee",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_protocol.hpp"
+      },
+      "golem_renderer.hpp": {
+        "sha256": "32bacb4cdad62bcc825cff113f5a0eeac823ed72dcc13b1feb24726bc829e37a",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/golem_renderer.hpp"
+      },
+      "scene.hpp": {
+        "sha256": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp"
+      },
+      "band_table.hpp": {
+        "sha256": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp"
+      },
+      "scenery_data.hpp": {
+        "sha256": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp"
+      },
+      "road.hpp": {
+        "sha256": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp"
+      },
+      "workload.hpp": {
+        "sha256": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp"
+      },
+      "vehicle.hpp": {
+        "sha256": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp"
+      },
+      "traffic.hpp": {
+        "sha256": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp"
+      },
+      "track.hpp": {
+        "sha256": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp"
+      },
+      "lookup_format.hpp": {
+        "sha256": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp"
+      },
+      "scenery.hpp": {
+        "sha256": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp"
+      },
+      "bearing_table.hpp": {
+        "sha256": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp"
+      },
+      "section_protocol.hpp": {
+        "sha256": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp"
+      },
+      "section_road.hpp": {
+        "sha256": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp"
+      },
+      "car.hpp": {
+        "sha256": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp"
+      },
+      "pacing.hpp": {
+        "sha256": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp"
+      },
+      "section_phase.hpp": {
+        "sha256": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp"
+      },
+      "task_workload.hpp": {
+        "sha256": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+        "authoritative": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp"
+      }
+    }
+  },
+  "remaining": "R19-11 long stability, memory/lifecycle/malformed replay and independent review; R19-12 delivery. No hardware acceptance."
+}

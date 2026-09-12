@@ -195,3 +195,78 @@ PATH=/home/smith/Agon/agondev/release/bin:$PATH .venv/bin/python docs/tasks/RALL
 Repeat with Fuji and fresh evidence names. Build and execution identities,
 complete intercepted counts, debugger logs and the initial failure are under
 `evidence/golem-cpu-work/`. R19-10 remains unchecked.
+
+## R19-10 completed qualification
+
+`qualify_performance.py` passes the frozen budgets without changing the playable
+frontend, compiler implementation, qualified bootstrap bytes or visual metric.
+Golem's companion completion record is4efba69d43107622ce62af2b54bd2e6d530edf21.
+R19-11 stability/lifecycle/review and R19-12 delivery remain open.
+
+| Measured property | Oval | Fuji |
+| --- | ---: | ---: |
+| Golem scene/update/call/swap bytes |100|100|
+| Scene traffic reduction |88.5305%|86.6944%|
+| Conservative scene-construction CPU reduction |91.9657%|91.0111%|
+| Native visible-frame median |31.6682 ms|31.6487 ms|
+| Native visible-frame p95 |36.7422 ms|36.7128 ms|
+| Median change versus accepted oracle |+0.00823%|-0.01802%|
+
+The fixed timing HUD adds17 bytes, making117 total/frame. The unchanged demo HUD
+adds24 bytes, making124 total/frame. Manual HUD strings vary with track, steering,
+grip and surface; they remain separate from the100-byte scene budget and identical
+to the accepted frontend. Offload substantially frees construction work and UART
+capacity; emulator frame cadence remains effectively unchanged.
+
+Real-rendering evidence uses an unwrapped diagnostic build: no output suppression,
+no per-frame GP or geometry readback, no CPU unthrottling. Both tracks ran serial
+ABBA against the exact accepted binary, two64-pose batches per variant. Every
+Golem batch reports66 accepted states (two warmups plus64 poses), final sequence65,
+next expected66 and zero admission errors. The external native observer confirms
+all68 swaps including mode initialization and explicit startup. Each track/variant
+provides126 steady native intervals; the first measured transition is excluded
+because it contains the host marker handshake. All128 guest intervals remain.
+Medians use the conventional definition; p95 uses nearest rank.
+
+A separate eight-run bridge confirms the instrumented oracle's final scene CSV
+matches the untouched binary exactly, with negligible median timing change. The
+audit verifies normal process arguments, pinned runtime hashes, copied headers,
+qualified bootstrap identities, raw event nesting/counts and per-pose accounting.
+The first smoke run is retained independently of the acceptance batches.
+
+CPU evidence uses another serial ABBA, two64-pose debugger samples per renderer
+and track. Calibration covers32 cases, both output functions,64 calls per active
+case and32-bit counter carries/wrap. Relocatable object instructions and relocation
+targets for wrappers/markers are identical in measured and calibration builds.
+The conservative bound is184 cycles per span plus323 per intercepted call,
+including calibration-loop/argument overhead. The audit subtracts the entire
+bound from each oracle sample and retains all candidate overhead. Resulting
+mean lower oracle bounds are292682.046875/261804.6015625 cycles; candidate upper
+means are23515.0234375/23533.3828125. These measure scene/command construction,
+not the MOS serial driver or blocked UART time. Actual transmission waits are
+preserved in the separate real-rendering runs; no CPU saving is inferred from
+wire-byte counts.
+
+Program-entry-to-warmed-ready time is2.750 s for the instrumented oval oracle
+versus3.150 s Golem; Fuji is4.683 s oracle versus4.250–4.267 s Golem. These exclude
+MOS binary loading and firmware boot. The exact original binary lacks that
+counter; its native mode-swap-to-warmup span is separately retained. Warmed
+process RSS is14736–14780 KiB for the measured oracles and15220–15488 KiB for Golem;
+observed high-water RSS reaches16928 KiB. This includes emulator/host overhead,
+not physical ESP32 heap. Static resident payload remains78565/199711 bytes and
+836/853 owned IDs, excluding external original art and cached affine inverses.
+Memory growth and fault recovery still require R19-11's separate untimed probes.
+
+New-name native reproduction (all runners generate canonical headless profiles):
+
+```sh
+PATH=/home/smith/Agon/agondev/release/bin:$PATH .venv/bin/python docs/tasks/RALLY-19/calibrate_cpu_work.py NEW-calibration --build both-outputs
+PATH=/home/smith/Agon/agondev/release/bin:$PATH .venv/bin/python docs/tasks/RALLY-19/build_render_work.py NEW-render
+.venv/bin/python docs/tasks/RALLY-19/measure_render_work.py NEW-bridge --build NEW-render --phase bridge
+.venv/bin/python docs/tasks/RALLY-19/measure_render_work.py NEW-abba --build NEW-render --phase abba
+```
+
+The immutable audit inputs are in `evidence/golem-performance/qualification.json`;
+raw runs are under golem-render-work, golem-cpu-work and golem-cpu-calibration.
+Historical failed sources/results remain. These results establish the frozen
+Linux emulator performance criteria, not hardware performance or user acceptance.

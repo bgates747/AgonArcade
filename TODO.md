@@ -76,11 +76,16 @@ This ordered register owns progress across AgonArcade and Golem.
    12 both-track control/exit runs and638 sanitized raw-state records. Accepted
    input/physics/HUD unchanged;100-byte scene/update/call/swap. See SCENERY.md,
    FRONTEND.md and their qualification reports. Golem completion cd6d1ed.
-10. [ ] **R19-10 — Meet the frozen offload/performance budgets.** Run normal-clock
+10. [x] **R19-10 — Meet the frozen offload/performance budgets.** Run normal-clock
     serial ABBA on both tracks with identical fixtures and warmed assets; record
     >=75% scene-UART reduction and <=128-byte scene packets, >=50% eZ80 scene-work
     reduction, median <=33.33ms and p95 <=50ms, no >5% median regression. Optimize
     within contract if needed; retain honest end-to-end/timing limitations. Commit.
+    Qualified:100-byte scene traffic,86.69–88.53% UART reduction,>=91.01%
+    conservative scene-construction CPU reduction; native medians<=31.67 ms,
+    p95<=36.75 ms, negligible oracle regression. Both-track serial ABBA and
+    source/runtime/sequence audits in PERFORMANCE.md and golem-performance
+    qualification. Golem completion4efba69; hardware/stability remain unproven.
 11. [ ] **R19-11 — Complete stability and independent correctness review.** Run
     >=10 minutes per track of deterministic headless replay, signed extremes,
     overlap, input transitions, reset/reload and shutdown. Verify sequence/memory
@@ -97,7 +102,7 @@ This ordered register owns progress across AgonArcade and Golem.
 This is the authoritative task checklist. Details are in `docs/tasks/<ID>.md`;
 task-specific supporting files belong in `docs/tasks/<ID>/`.
 
-18. [ ] [RALLY-19](docs/tasks/RALLY-19.md): Execute the frozen unattended stock-VDP/Golem contract; R19-00 through R19-05 complete. Full scene geometry, integration and performance remain in the execution register above.
+18. [ ] [RALLY-19](docs/tasks/RALLY-19.md): Execute the frozen unattended stock-VDP/Golem contract; R19-00 through R19-10 complete. Long stability/review and final delivery remain in the execution register above.
 
 17. [ ] [RALLY-18](docs/tasks/RALLY-18.md): Review isolated centreline-camera/road-lookup candidate; headless validation passed. Lookup computation 67.0/71.4 FPS equivalent (oval/Fuji), commands+UART 37.0/41.2; perspective option measured separately. Unfenced 30 Hz review baseline accepted as a working assumption, not a verified guarantee; mainline integration and hardware qualification pending; [results](docs/tasks/RALLY-18/results/README.md).
 

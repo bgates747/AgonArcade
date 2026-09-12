@@ -125,3 +125,18 @@ cycles for oval oracle/Golem and291303.4375/23537.484375 for Fuji. These are not
 yet accepted CPU savings: overhead must be bounded, and real UART/VDP timing
 must remain separate. The CPU-only64 spans do not render; only two warmups do.
 PERFORMANCE.md records exact scope and next calibration. No box is completed.
+
+R19-10 completed after calibrated CPU and real-rendering ABBA audits. Conservative
+construction-work reductions are91.9657% oval/91.0111% Fuji;100-byte scene traffic
+reduces UART load88.5305%/86.6944%. Normal-clock native medians31.6682/31.6487 ms
+and p9536.7422/36.7128 ms pass, with negligible change versus the exact oracle.
+Every Golem batch accepts all66 warmup/workload states without errors and has
+all68 native swaps accounted for, including the two non-workload startup swaps.
+
+Calibration bounds unchanged sink/marker object instructions at184 cycles/span
+plus323/call, conservatively removed from oracle work while retaining candidate
+overhead. Real rendering is unwrapped with normal UART waits and no per-frame
+poll. The oracle bridge, raw intervals/cycles, copied-header/bootstrap identities,
+startup scopes, process RSS and static ledgers are audited in PERFORMANCE.md and
+evidence/golem-performance/qualification.json. Golem completion4efba69 precedes
+checking R19-10. R19-11 stability/review and R19-12 delivery remain open.
