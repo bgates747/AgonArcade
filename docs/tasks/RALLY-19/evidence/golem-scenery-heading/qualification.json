@@ -1,0 +1,61 @@
+{
+  "scope": "Audit numeric heading evidence; does not qualify scenery rendering or timing.",
+  "pass": true,
+  "cases": 773,
+  "runs": [
+    {
+      "name": "intervals-oval",
+      "track": "oval",
+      "cases": 165,
+      "ledger": {
+        "owned_ids": 976,
+        "resident_payload_bytes": 75825,
+        "bootstrap_bytes": 89867,
+        "program_payload_bytes": 35323,
+        "scratch_payload_bytes": 3979
+      },
+      "results_sha256": "b8967e57995715a157ac6a589d927ab4eff5927f13dd23b0010d8a33d17250de",
+      "readback_sha256": "ee0d0d92f8868e8f0feb140793a3951f7336a8aff99446d38e85cc960c6d50a1",
+      "identity_sha256": "16df3212b916a36fcb59f34e6edb62354590a5ccb4ef7d44ac47a8df601b1d6d"
+    },
+    {
+      "name": "intervals-fuji-a",
+      "track": "fuji",
+      "cases": 384,
+      "ledger": {
+        "owned_ids": 995,
+        "resident_payload_bytes": 196979,
+        "bootstrap_bytes": 211287,
+        "program_payload_bytes": 35818,
+        "scratch_payload_bytes": 4032
+      },
+      "results_sha256": "27675b7b003d0cda3761989feb3f658d34cff959d5f4be861032d506b170bd14",
+      "readback_sha256": "a3db8c3d57152ffc3d840a33219cc4ee3f219c9dcf95ae7e3b28554ec4e3fa91",
+      "identity_sha256": "034a4390f85deaddbce88ef6df02cac61bf8203443d4d0d65941436926008839"
+    },
+    {
+      "name": "intervals-fuji-b",
+      "track": "fuji",
+      "cases": 224,
+      "ledger": {
+        "owned_ids": 995,
+        "resident_payload_bytes": 196979,
+        "bootstrap_bytes": 211287,
+        "program_payload_bytes": 35818,
+        "scratch_payload_bytes": 4032
+      },
+      "results_sha256": "1763e0b27740f6f12ebe8517e3e6f570bbd3dc2aed84f85f32a7f241c540abb9",
+      "readback_sha256": "c9943979c251c6c7736a74a9f1b248b8fe988626ea8c20f7dc4fca0d41a0aeaf",
+      "identity_sha256": "027bff92ec24e59360448e7348918115eefaee2898e5f8720fdf5ba1fe25dc39"
+    }
+  ],
+  "compiler_commit": "cd0ae0c907692cfc1a45fc153910f633caa2ada6",
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/qualify_scenery_heading.py": "ef8a1c59dec70b8fa1821fc073b694dc32d6cbd78d9e081616ee703c1f83b0b7",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/probe_scenery_heading.py": "793065264a5f19819545e03abd4f88efdea883b27984ef9822868733bfd4ee03",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/host_scenery_heading.cpp": "2a4409ca684e2c5ebaea6243022f954468635bf7f0e0662d174ecf5d9b1b15b0",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_heading.py": "b3fb9bc475b02674bbc44a0ce072844f83d9c521689131a5ae796d451f7b1edc",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-scenery-proof/fraction-and-direct/results.json": "ec64a9da4658c925573b9f674f1ba49138f91c7cbe9fe8133ffdcb5fd5159307"
+  },
+  "remaining": "History, viewport/scroll, full-scene images, frontend, timing and stability are not qualified."
+}

@@ -1,0 +1,69 @@
+{
+  "scope": "Observe accepted/opposite VDU24 Y ordering, full reset and one-pixel width.",
+  "observations": [
+    {
+      "case": "accepted-order",
+      "red_pixels": 76800,
+      "red_bounds": [
+        0,
+        0,
+        319,
+        239
+      ]
+    },
+    {
+      "case": "opposite-order",
+      "red_pixels": 400,
+      "red_bounds": [
+        20,
+        30,
+        39,
+        49
+      ]
+    },
+    {
+      "case": "accepted-then-accepted-full",
+      "red_pixels": 76800,
+      "red_bounds": [
+        0,
+        0,
+        319,
+        239
+      ]
+    },
+    {
+      "case": "opposite-then-accepted-full",
+      "red_pixels": 400,
+      "red_bounds": [
+        20,
+        30,
+        39,
+        49
+      ]
+    },
+    {
+      "case": "accepted-one-pixel-width",
+      "red_pixels": 76800,
+      "red_bounds": [
+        0,
+        0,
+        319,
+        239
+      ]
+    },
+    {
+      "case": "opposite-one-pixel-width",
+      "red_pixels": 20,
+      "red_bounds": [
+        20,
+        30,
+        20,
+        49
+      ]
+    }
+  ],
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/probe_viewport_order.py": "5cbd300985f02825a7f3d5b6378877fc382b13293106def17a0e29c7dc52e55b",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/viewport_order_loader.cpp": "70ac4b49be9ce277bbbe2e7bb108e5d0a4d71de8bbddcfad7b30d0c94f95906b"
+  }
+}

@@ -1,7 +1,9 @@
 # R19-09 scenery integration précis
 
-R19-08 is complete. R19-09 remains in the root TODO execution register; its
-MatFloor prerequisite is qualified, but no scenery kernel is implemented yet.
+R19-08 is complete. R19-09 remains open in the root TODO execution register.
+MatFloor, shared scalar conversion scratch and the numeric heading kernel are
+qualified. Scenery drawing/history and
+the interactive frontend are not yet integrated.
 The accepted oracle is949f618 under `.work/oracle`. Authoritative files are
 `include/scenery.hpp`, `include/scenery_data.hpp`, `include/scene.hpp`, and
 `src/main.cpp::loadScenery/drawScenery`. Keep the accepted artwork and behaviour.
@@ -69,7 +71,7 @@ with explicit affine reset. Typed viewport/scroll intrinsics still need compiler
 validation and native proof before integration. Resource ownership excludes
 the existing63800..64100 reservation from Golem allocation/cleanup.
 
-## Construction cautions, not qualified implementation
+## Initial construction cautions (historical; results below)
 
 The admitted road already exports interval and fraction14 in output1020 at
 offsets0/4. Fraction14 is0..16381 and preserves exactly the accepted hundredths
@@ -97,7 +99,7 @@ diagnostic fixture, not the game frontend. Static payload ledgers omit stock
 cached inverse chunks and allocator metadata; later heap/stability tests remain
 necessary. Full-scene timing belongs to R19-10 at normal CPU/UART settings.
 
-## Qualified floor and proposed exact interpolation construction
+## Qualified floor and initially proposed interpolation construction
 
 Golem f856fa2d0e0465d0586b16f7086a3377b046772f adds MatFloor. All236 native
 full-record tests pass for binary32 integer neighbours,1/16384 fractions,
@@ -142,3 +144,131 @@ exceeds the numerator; increment when the second does not. Finally validate
 the expected0..256 table index. Prove the reciprocal's error is within one
 integer and test the construction before relying on this proposal. No per-frame
 ratio or bearing should be supplied by the eZ80.
+
+## Exhaustive host result and first resident heading construction
+
+The subsequent proof_scenery.py run `fraction-and-direct` checks all3,852,800
+reachable hundredth-positions (7,705,600 tangent components). Both the proposed
+split construction and the cheaper direct product, scale1/16384, MatFloor,
+then integer-base addition match accepted trackSample exactly at every position.
+Although some Fuji products lose integer precision, none cross a floor boundary
+in the frozen reachable domain. This corrects the earlier conservative concern:
+splitting is not necessary for these exact track data. The native road's
+floor(float(local)*2.56) fraction also matches the accepted fraction everywhere.
+
+The corrected atan ratio and final heading match the oracle throughout. There
+are no overestimates and62 Fuji underestimates; at position533719, tangent
+(3904,1220) gives estimate79 where the exact table index is80. Actual major
+minima are2890/2858 (oval/Fuji), inside the conservative2048..4096 guard.
+This is exhaustive host evidence, not yet native scenery qualification.
+
+build_scenery_heading.py therefore uses the cheaper direct interpolation and
+only the necessary upward quotient correction. It refuses generation unless
+the proof and all source hashes match, with zero direct-product mismatches and
+zero overestimates for the selected frozen track. This data-specific proof must
+be rerun before adapting the construction to changed track data. Pinned stock
+userspace-platform/matrix/mat.cpp::inverse computes adjoint/determinant; for the
+diagonal(major,1,1) matrix, its first entry is the single binary32 division1/major.
+
+The first complete road/car+numeric-heading program compiles the oval at1018
+owned IDs; Fuji exceeds the frozen1024 limit. No native heading test or scenery
+draw has run yet. The failed source/log is preserved in
+evidence/golem-scenery-heading/resource-failure. Next, qualify optional reuse of
+the short-lived32-bit conversion triple, analogous to SharedWordScratch, instead
+of raising the cap. This also leaves room for history/scroll/frontend work.
+
+Current proposed storage:1730 work/diagnostics,1731 signed tangents,1732 seven
+status words,1733 bounded major,1734 checked atan index,1735 selected atan byte,
+1736 wrap constant; immutable atan Asset1902. Programs3000..3008 reuse existing
+vpM0..9 and vpInverse after vehicle drawing for this numeric-only checkpoint.
+The eventual scene order must prepare the road's interval/fraction first, draw
+scenery next, then road/vehicles; the current appended heading calculation is
+only a proof harness, not the final ordering.
+
+## Qualified shared scalar scratch
+
+Golem cd0ae0c adds opt-in SharedScalarScratch, preserving default and word-only
+lowering. All672 native records (224 each isolated/word/scalar) and host
+sanitizer/golden/negative tests pass. See evidence/golem-shared-scalar. The first
+probe failed compilation for missing explicit Copy byte counts; no emulator ran
+for that failed source. Corrected typed copies pass with signed zero/subnormals,
+wide carries, nested calls, repeated conversions and neighbour preservation.
+
+Using that directive reduces the complete road/car+numeric-heading program by42
+IDs. Current oval/Fuji compilation:976/995 IDs,75825/196979 resident payload,
+89867/211287 bootstrap bytes. No resource ceiling was raised. These figures are
+not native heap or performance acceptance.
+
+The first scenery-heading loader omitted the artwork forward declaration and
+failed to build; retained smoke-oval/build.txt records it. Declaring artwork
+correctly produced two exact native oval records. Broader interval and correction
+witness coverage is in progress; no scenery-image claim yet.
+
+## Viewport ordering question for the next native graphics probe
+
+Read-only source inspection found a detail that needs direct qualification:
+agondev/src/lib/libvdp/vdp_set_graphics_viewport.c sends its arguments unchanged
+as left,bottom,right,top. Pinned console8/video/vdu.h reads that wire order and
+passes left,top/right,bottom through toScreenCoordinates. In pixel mode,
+context/viewport.h::scale preserves Y, and setGraphicsViewport rejects reversed
+corners. The accepted main.cpp calls vdp_set_graphics_viewport(left,0,right,103).
+Those calls appear reversed for this source path. Do not silently assume the
+named helper or apparent rectangle order proves clipping happened. Before
+integrating scroll, compare exact emitted bytes and native clipped drawing,
+including the accepted order and the opposite Y order, one-pixel regions, and
+full-view restoration. Preserve the oracle; any behavioral difference must be
+documented before choosing a candidate mapping. This is a source-level concern,
+not yet an observed native failure or permission to rewrite the accepted game.
+
+The six-image native `golem-viewport-order/initial` probe now confirms the concern.
+After VDU26 restores the full viewport, accepted order(20,30,39,49) allows all
+76800 red pixels through; correct wire order(20,49,39,30) clips to exactly400
+pixels in x20..39,y30..49. The accepted full-view call(0,0,319,239) also fails to
+restore a previously valid small viewport. Correct ordering permits a one-pixel
+width, producing20 pixels; accepted ordering again leaves the full screen.
+
+Consequently the accepted scenery path's apparent viewport optimizations are
+not operating as described by its intent on this pinned native runtime. Preserve
+all original captures and source. The resident construction should use explicit
+pixel-coordinate GraphicsViewport(left,top,right,bottom), emitting native wire
+left,bottom,right,top, and restore the viewport correctly. This is an intentional
+implementation correction within the offload/optimization task, not a changed
+visual oracle: it must pass the frozen full-scene and sequential-history images
+against original behavior. In particular, narrower clipping must not leave old
+car/road pixels in the sky. Keep the full-panorama fallback available if the
+accepted output cannot be maintained by the intended strip/repair construction.
+No performance saving is established by the clipping probe alone.
+
+## Numeric heading checkpoint qualified
+
+All773 complete native183-byte records pass:165 oval,608 Fuji. These comprise
+the156 existing vehicle poses, every track interval midpoint with fractional
+progress, and axis/equal-component/reciprocal-correction witnesses plus adjacent
+positions. All tangents, ratio intermediates, seven status words and final
+bearings match the accepted trackSample/sceneryHeading host reference and the
+exhaustively proved binary32 construction. Road and all car jobs remain active;
+the unchanged original artwork is bootstrapped. Only the production80-byte state
+is updated per call; diagnostic readback is excluded from scene-UART claims.
+
+`evidence/golem-scenery-heading/qualification.json` audits actual readback bytes,
+all fixture names, source/compiler identities, unchanged runtime inputs and
+resource limits. The initial audit compared the whole before/after inventory,
+which includes new guest results/exit files after execution; inspection confirmed
+zero changed inputs, and the audit now checks all pre-run entries remain exact.
+Golem implementation is cd0ae0c907692cfc1a45fc153910f633caa2ada6.
+
+Reproduce from the execution root with new run names:
+
+```sh
+.venv/bin/python docs/tasks/RALLY-19/probe_scenery_heading.py NEW-oval --track oval
+.venv/bin/python docs/tasks/RALLY-19/probe_scenery_heading.py NEW-fuji-a --track fuji --offset 0 --limit 384
+.venv/bin/python docs/tasks/RALLY-19/probe_scenery_heading.py NEW-fuji-b --track fuji --offset 384 --limit 384
+```
+
+Existing evidence must never be overwritten.
+The current qualification audit binds the named frozen runs and source hashes.
+
+R19-09 remains unchecked. Next qualify typed viewport/scroll drawing, implement
+both retained-page histories, compare full-scene and sequential scrolling images,
+then integrate the accepted input/simulation/demo/HUD frontend. Numeric heading
+does not establish full-scene performance, retained-image correctness or stability.

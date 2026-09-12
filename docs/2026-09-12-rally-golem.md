@@ -37,3 +37,18 @@ R19-08 stays unchecked pending projection, yaw/reflection, drawing and per-car
 image tests. CARS.md records current storage, evidence, commands and the clipping/
 compiler-bound issue to solve before reciprocal projection. This is progress
 toward the existing full goal, not a reduced completion criterion.
+
+R19-09 partial checkpoint: Golem cd0ae0c qualifies shared scalar conversion
+scratch (672 native records plus host sanitizer/golden/negative suite). Complete
+road/car plus fractional scenery heading fits976/995 owned IDs without raising
+the1024 cap. Exhaustive host arithmetic checks cover all3,852,800 reachable
+positions;773 native complete records match the accepted tangent/bearing and
+all intermediate diagnostics. R19-09 remains open for scenery/history/frontend.
+
+The next graphics investigation uncovered and natively confirmed an existing
+oracle issue: its pixel-mode viewport helper calls reverse Y endpoints and are
+ignored. A six-image probe verifies full-screen versus400/20-pixel clipping and
+failure of the apparent full-view restoration. SCENERY.md records the proposed
+explicit pixel-coordinate mapping and the requirement to preserve all original
+full-scene/sequential imagery, including foreground repair. Original code and
+captures remain untouched. This is a correctness discovery, not a timing result.

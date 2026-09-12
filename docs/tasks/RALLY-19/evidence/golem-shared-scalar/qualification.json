@@ -1,0 +1,38 @@
+{
+  "scope": "Scratch reuse primitive; not scenery or full-scene performance qualification",
+  "pass": true,
+  "runs": [
+    {
+      "variant": "isolated",
+      "cases": 224,
+      "ledger": {
+        "owned_ids": 56,
+        "resident_payload_bytes": 1574,
+        "bootstrap_bytes": 2378
+      },
+      "results_sha256": "e818ea964ba1d186899064ece8fe553701e15980f5a3be9377598b2ee5066d0a"
+    },
+    {
+      "variant": "word",
+      "cases": 224,
+      "ledger": {
+        "owned_ids": 53,
+        "resident_payload_bytes": 1530,
+        "bootstrap_bytes": 2292
+      },
+      "results_sha256": "c993c18eaa8e0211cbe54d91b5c0d684f5ce4795dd9798400bc3c2fdb0b855a0"
+    },
+    {
+      "variant": "scalar",
+      "cases": 224,
+      "ledger": {
+        "owned_ids": 44,
+        "resident_payload_bytes": 1374,
+        "bootstrap_bytes": 2010
+      },
+      "results_sha256": "c2b914a2f1dbdaf419072f54f69d1496d2446019a6e588919721a4b084fb8c20"
+    }
+  ],
+  "host_suite": "host-tests.json",
+  "failure": "initial-isolated rejected missing Copy byte-count arguments before native execution; retained."
+}
