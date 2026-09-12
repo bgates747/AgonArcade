@@ -1,0 +1,29 @@
+{
+  "runs": [
+    {
+      "label": "oval",
+      "profile": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.emulator/capture-_w3n8wwi/oval",
+      "requested_quit_returncode": -6
+    },
+    {
+      "label": "fuji",
+      "profile": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.emulator/capture-_w3n8wwi/fuji",
+      "requested_quit_returncode": -6
+    }
+  ],
+  "binary": {
+    "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.work/build-17dif6ob/sections",
+    "sources": {
+      "section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+      "protocol.py": "9a14e012189fa8cf667a195158d6daa018eeea196d71b114e60a740cf6b6c810",
+      "section_road.hpp": "60a28b1a79fd36d7bfe5a1bc96880b09f73d91f798e7544c77b1fc8675d8292a",
+      "section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+      "test_sections.cpp": "a7a2f8887f97df4b74e2458d197517d5c4de6c49d2fa3102df8e304ec6fc1803"
+    },
+    "binary_sha256": "0081dc8164dbfb259f97f6cde29a3f0cc47d599cf1a76c8b218d74bab8c4cfaf",
+    "binary_bytes": 134184,
+    "build_log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.work/build-17dif6ob/sections-build.log",
+    "linux_build": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.WkgeE6\nSource archive SHA256: 1f417f8216bbf30f2ed6868f3cb1c3da07df40a1a626ab1b83e7bf68b7ad7ae5\nBinary SHA256: 0081dc8164dbfb259f97f6cde29a3f0cc47d599cf1a76c8b218d74bab8c4cfaf\n"
+  },
+  "capture_source_sha256": "85ab8edcb085992367d9cf7c1e8676b45ff637e6b89a57bb050f670fc0b50f41"
+}

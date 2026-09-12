@@ -1,0 +1,401 @@
+{
+  "variants": {
+    "full": {
+      "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-10/pavement/.work/build-j2xqysad/full",
+      "binary_sha256": "d08300dc7c0b4ab9b55dbbafc7cf3ba02c1f6e9cb42b8b828385751e1e6aa920",
+      "binary_bytes": 129237,
+      "linux_build": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.cNhnEA\nSource archive SHA256: 7e98f385eaf90ecd06ee4f779bb691c46db83faebac0d9a941c0afdb3d817b09\nBinary SHA256: d08300dc7c0b4ab9b55dbbafc7cf3ba02c1f6e9cb42b8b828385751e1e6aa920\n"
+    },
+    "pavement": {
+      "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-10/pavement/.work/build-j2xqysad/pavement",
+      "binary_sha256": "fb27f734e737b017578213451b19fb905d9649a6c6b1687eeede0dcb2aad4102",
+      "binary_bytes": 128894,
+      "linux_build": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.riIHr9\nSource archive SHA256: 45e742b0be5888041274f4960f9e1294110fc73a813a6d195c0d45f238924c2f\nBinary SHA256: fb27f734e737b017578213451b19fb905d9649a6c6b1687eeede0dcb2aad4102\n"
+    }
+  },
+  "mainline": {
+    "Makefile": "c93547e65aa2126eaf33fc860aabd2e282381521e529cb68ecad3a11fc4c6244",
+    "bin/rally.bin": "d08300dc7c0b4ab9b55dbbafc7cf3ba02c1f6e9cb42b8b828385751e1e6aa920",
+    "src/main.cpp": "2f8c084fc4be5eb11b6c785a47ba8cf654c20664b4c91c34d8fcf9c223c1bd49",
+    "include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8",
+    "include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "include/road.hpp": "ec808d57188dda98198e7a0deea59f485596a3be5a0f37529a2ad554a1d107a2",
+    "include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+    "include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "include/traffic.hpp": "7e418a934c7caa5f2766b8c4ff35519535a012083919eeead0588ca0495560a1",
+    "include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+    "include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "tests/test_pacing.cpp": "6f91f950ac00b89534ea1bec1375981d9a256dba7fe31f7b631a7ba42ad0df30",
+    "tests/test_road.cpp": "57d0f4f205153e732b8599662e095b8dd68cd84c654e67fa79fbb98fe5e1da40",
+    "tests/preview_track.cpp": "134d04152111e084ab6a0a51bbfc9a3504f4b3a6eb4f283bb2adb4be77506a25",
+    "tests/test_bands.cpp": "5fb235460a1d2f2e38d2c39f75f80e6c6534721fbb84d9ed4bdef758e21ad7b2",
+    "tools/deploy.py": "17bbf66ee044c70f0b759eb0b9b61f07823c43f0eb9723bb41581130837c11b5",
+    "tools/generate_track.py": "02ffd42608f111dd87d9a8edd7044277dbc051c0997fcbd6f4aa36d8e3e63acc",
+    "tools/build_car.py": "bf73aab0d740982cde7f166068a797de74fdc4260e3b438c713424d911916f9f",
+    "tools/prepare_emulator.py": "b23c8cc2489cb040684383d61d4d5a038c6d4017c3bfcb07c760280d8d9481df",
+    "tools/export_car.py": "b000e49da774b1a916bfce89cd812aabf18dd7f275430a5cd654c06a7cf821df",
+    "tools/generate_scenery.py": "bdf757fc16408f8af1fba6dab3e5fb6fcde2e9961e05ac17512e6b6be6a7b457",
+    "tools/build_linux.py": "eb274b8b8d472855c6bca5f40ad40213054060624655601a7107b5ce2089c074"
+  },
+  "runs": [
+    {
+      "case": "oval-01-full",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 972,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 145992,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 13.624750728020445,
+      "load_before": [
+        5.40234375,
+        8.1083984375,
+        9.033203125
+      ],
+      "load_after": [
+        4.87890625,
+        7.90673828125,
+        8.95068359375
+      ],
+      "mean_ticks": {
+        "physics": 0.03125,
+        "geometry": 5.375,
+        "bands": 4.0625,
+        "submit": 3.6875,
+        "fence": 2.03125
+      },
+      "track": "oval",
+      "variant": "full"
+    },
+    {
+      "case": "oval-02-pavement",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 574,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 20820,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 10.31015118904179,
+      "load_before": [
+        4.87890625,
+        7.90673828125,
+        8.95068359375
+      ],
+      "load_after": [
+        5.48095703125,
+        7.89404296875,
+        8.92724609375
+      ],
+      "mean_ticks": {
+        "physics": 0.0625,
+        "geometry": 4.6875,
+        "bands": 0.3125,
+        "submit": 1.875,
+        "fence": 2.03125
+      },
+      "track": "oval",
+      "variant": "pavement"
+    },
+    {
+      "case": "oval-03-pavement",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 522,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 20820,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 10.483651561953593,
+      "load_before": [
+        5.48095703125,
+        7.89404296875,
+        8.92724609375
+      ],
+      "load_after": [
+        5.986328125,
+        7.9150390625,
+        8.921875
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 4.40625,
+        "bands": 0.625,
+        "submit": 1.125,
+        "fence": 2
+      },
+      "track": "oval",
+      "variant": "pavement"
+    },
+    {
+      "case": "oval-04-full",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 994,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 145992,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 13.600633593974635,
+      "load_before": [
+        5.986328125,
+        7.9150390625,
+        8.921875
+      ],
+      "load_after": [
+        5.2255859375,
+        7.68701171875,
+        8.82861328125
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.84375,
+        "bands": 4,
+        "submit": 3.6875,
+        "fence": 2
+      },
+      "track": "oval",
+      "variant": "full"
+    },
+    {
+      "case": "fuji-01-full",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 864,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 4051303552,
+        "road_bytes": 112809,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 13.716326825961005,
+      "load_before": [
+        5.12744140625,
+        7.62548828125,
+        8.80029296875
+      ],
+      "load_after": [
+        5.30908203125,
+        7.58642578125,
+        8.77294921875
+      ],
+      "mean_ticks": {
+        "physics": 0.03125,
+        "geometry": 5.09375,
+        "bands": 3.15625,
+        "submit": 3.21875,
+        "fence": 2
+      },
+      "track": "fuji",
+      "variant": "full"
+    },
+    {
+      "case": "fuji-02-pavement",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 566,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 4051303552,
+        "road_bytes": 12180,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 10.414966248034034,
+      "load_before": [
+        5.30908203125,
+        7.58642578125,
+        8.77294921875
+      ],
+      "load_after": [
+        6.869140625,
+        7.859375,
+        8.8564453125
+      ],
+      "mean_ticks": {
+        "physics": 0.03125,
+        "geometry": 5.53125,
+        "bands": 0.21875,
+        "submit": 1.0625,
+        "fence": 2
+      },
+      "track": "fuji",
+      "variant": "pavement"
+    },
+    {
+      "case": "fuji-03-pavement",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 560,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 4051303552,
+        "road_bytes": 12180,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 9.740554969001096,
+      "load_before": [
+        6.39892578125,
+        7.7451171875,
+        8.81005859375
+      ],
+      "load_after": [
+        6.04638671875,
+        7.6494140625,
+        8.77001953125
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.4375,
+        "bands": 0.34375,
+        "submit": 0.96875,
+        "fence": 2
+      },
+      "track": "fuji",
+      "variant": "pavement"
+    },
+    {
+      "case": "fuji-04-full",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 894,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 4051303552,
+        "road_bytes": 112809,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 13.344671614002436,
+      "load_before": [
+        5.72216796875,
+        7.55517578125,
+        8.72998046875
+      ],
+      "load_after": [
+        8.099609375,
+        7.98583984375,
+        8.86767578125
+      ],
+      "mean_ticks": {
+        "physics": 0.03125,
+        "geometry": 5.40625,
+        "bands": 3.28125,
+        "submit": 3.25,
+        "fence": 2
+      },
+      "track": "fuji",
+      "variant": "full"
+    }
+  ],
+  "headless": true,
+  "clock_hz": 120,
+  "target_hz": 60,
+  "runtime": {
+    "/Users/bgates/Agon/fab-agon-emulator/fab-agon-emulator": "cdf9d21e2db2266e4113982e661138074cae54186e062e63759db6341ffb6c86",
+    "/Users/bgates/Agon/fab-agon-emulator/firmware/vdp_platform.so": "0d3aeb7a6bb55976fbddb3d6d32bf4a5a7269d075245bf6243dc69fb0bdbbf24",
+    "/Users/bgates/Agon/fab-agon-emulator/firmware/mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+  },
+  "experiment_sources": {
+    "pavement.hpp": "1e0a13568e68ddd5cd765ff46f841abe5037136875096343e0e5c6de933602eb",
+    "test_pavement.cpp": "b69bd14c36e1cb9b1b99ad918725e7273af18d8222f3bd72414ce0a72a53007c",
+    "experiment.py": "9f79281cb0755e090fc8339af816255b5d4f5edfb8c4d97005e729a40dd705f6"
+  }
+}

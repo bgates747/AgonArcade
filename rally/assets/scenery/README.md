@@ -2,7 +2,7 @@
 
 ![Procedural panorama](panorama.png)
 
-A deterministic 1024×103 panorama generated from code: solid blue sky,
+A deterministic 1024×104 panorama generated from code: solid blue sky,
 procedural clouds, a snow-capped Fuji-like peak, and periodic foothill profiles.
 All features are treated as infinitely distant, sharing one absolute track-heading
 scroll. Steering and lateral camera offset do not move this layer independently.
@@ -15,7 +15,7 @@ The sky is solid RGB(0,85,255) blue, approximating the reference’s top band. N
 Clouds, mountain and foothills also use solid palette colours.
 Raw gradient work is under ignored `obj/scenery`.
 
-The generator emits PNG, packed 4-bit indices (52,736 bytes), and a C++ header.
+The generator emits PNG, packed 4-bit indices (53,248 bytes), and a C++ header.
 Buffered command 72 expands the indices with a 16-byte palette on the VDP.
 The resulting opaque bitmap occupies 105,472 bytes; temporary source buffer
 63800 is released after expansion. Bitmap 100 uses buffer 64100. First use draws one or two clipped copies. Subsequent frames retain separate

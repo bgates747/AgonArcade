@@ -1,0 +1,29 @@
+{
+  "runs": [
+    {
+      "label": "resident",
+      "profile": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.emulator/probe-6vexgit1/resident",
+      "requested_quit_returncode": -6,
+      "report": "direct=0 acknowledged=1 bytes=345\n"
+    },
+    {
+      "label": "direct",
+      "profile": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.emulator/probe-6vexgit1/direct",
+      "requested_quit_returncode": -6,
+      "report": "direct=1 acknowledged=1 bytes=1503\n"
+    }
+  ],
+  "binary": {
+    "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.work/build-9ji784le/probe",
+    "sources": {
+      "section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+      "protocol.py": "9a14e012189fa8cf667a195158d6daa018eeea196d71b114e60a740cf6b6c810",
+      "probe.cpp": "6f12c35437527a13ae3e87433fee558e2fc6759b8bb317a43d262952fd9804f1"
+    },
+    "binary_sha256": "df01a0835e5b2f9378441f71379d6c504619a9516045e182889b61860f0a6446",
+    "binary_bytes": 11408,
+    "build_log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.work/build-9ji784le/probe-build.log",
+    "linux_build": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.DMq8Qy\nSource archive SHA256: 04f4854a1ebcf9efb8c3bf67dc67f0d8664f21d30248901bf8996a513ba7ea8d\nBinary SHA256: df01a0835e5b2f9378441f71379d6c504619a9516045e182889b61860f0a6446\n"
+  },
+  "capture_source_sha256": "38e81a225fbfee0555b9c74ad3334eb1a5e3f5c40a0559388a2cba1f34a9d44b"
+}

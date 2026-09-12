@@ -1,0 +1,82 @@
+[
+  {
+    "track": "oval",
+    "variant": "full",
+    "frames": 128,
+    "batch_ticks": 1992,
+    "fps": 7.710843373493976,
+    "frame_ms": 129.6875,
+    "budget_multiple": 7.781249999999999,
+    "over_budget_ms": 113.02083333333333,
+    "road_bytes_per_frame": 2281.125,
+    "sections_per_frame": 19,
+    "max_sections": 27,
+    "stage_ms": {
+      "physics": 0.0,
+      "geometry": 46.354166666666664,
+      "bands": 34.635416666666664,
+      "submit": 32.03125,
+      "fence": 16.666666666666668
+    }
+  },
+  {
+    "track": "oval",
+    "variant": "sections",
+    "frames": 128,
+    "batch_ticks": 680,
+    "fps": 22.588235294117645,
+    "frame_ms": 44.270833333333336,
+    "budget_multiple": 2.65625,
+    "over_budget_ms": 27.604166666666668,
+    "road_bytes_per_frame": 513.984375,
+    "sections_per_frame": 19.359375,
+    "max_sections": 28,
+    "stage_ms": {
+      "physics": 0.2604166666666667,
+      "geometry": 2.0833333333333335,
+      "bands": 4.166666666666667,
+      "submit": 20.572916666666668,
+      "fence": 17.1875
+    }
+  },
+  {
+    "track": "fuji",
+    "variant": "full",
+    "frames": 128,
+    "batch_ticks": 1882,
+    "fps": 8.161530286928798,
+    "frame_ms": 122.52604166666667,
+    "budget_multiple": 7.3515625,
+    "over_budget_ms": 105.859375,
+    "road_bytes_per_frame": 1762.640625,
+    "sections_per_frame": 14.5625,
+    "max_sections": 24,
+    "stage_ms": {
+      "physics": 0.2604166666666667,
+      "geometry": 47.265625,
+      "bands": 28.645833333333332,
+      "submit": 29.427083333333332,
+      "fence": 16.927083333333332
+    }
+  },
+  {
+    "track": "fuji",
+    "variant": "sections",
+    "frames": 128,
+    "batch_ticks": 650,
+    "fps": 23.63076923076923,
+    "frame_ms": 42.317708333333336,
+    "budget_multiple": 2.5390625,
+    "over_budget_ms": 25.651041666666668,
+    "road_bytes_per_frame": 403.046875,
+    "sections_per_frame": 14.921875,
+    "max_sections": 24,
+    "stage_ms": {
+      "physics": 0.6510416666666666,
+      "geometry": 1.8229166666666667,
+      "bands": 3.515625,
+      "submit": 18.359375,
+      "fence": 17.96875
+    }
+  }
+]

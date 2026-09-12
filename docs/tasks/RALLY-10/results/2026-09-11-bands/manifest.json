@@ -1,0 +1,353 @@
+{
+  "host": "macOS-14.8.9-x86_64-i386-64bit-Mach-O",
+  "headless": true,
+  "renderer": "sw",
+  "identities": {
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/bin/rally.bin": "5a6749f16ff6e7de9a17932771c8cf7454bdebf3c8bd117c5d3afb1c4477f684",
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/src/main.cpp": "2f8c084fc4be5eb11b6c785a47ba8cf654c20664b4c91c34d8fcf9c223c1bd49",
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/include/road.hpp": "33511107e0f83e58350bf475d675a4051c715a3eb263b0c8bbe8c60607920300",
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/include/band_table.hpp": "124db6a933a6f18af40bb928188df2a986dc449336c09a468393cafb89fdf82c",
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8",
+    "/Users/bgates/Agon/fab-agon-emulator/fab-agon-emulator": "cdf9d21e2db2266e4113982e661138074cae54186e062e63759db6341ffb6c86",
+    "/Users/bgates/Agon/fab-agon-emulator/firmware/vdp_platform.so": "0d3aeb7a6bb55976fbddb3d6d32bf4a5a7269d075245bf6243dc69fb0bdbbf24",
+    "/Users/bgates/Agon/fab-agon-emulator/firmware/mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+  },
+  "runs": [
+    {
+      "case": "oval-01-greedy",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 1262,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 98931,
+        "fixed_bands": 0
+      },
+      "wall_seconds_including_startup_and_report": 17.74798576597823,
+      "load_before": [
+        13.513671875,
+        13.07275390625,
+        12.84765625
+      ],
+      "load_after": [
+        12.4658203125,
+        12.88330078125,
+        12.78466796875
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.65625,
+        "bands": 9.0625,
+        "submit": 3,
+        "fence": 2
+      },
+      "track": "oval"
+    },
+    {
+      "case": "oval-02-fixed",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 956,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 150501,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 14.138739868998528,
+      "load_before": [
+        12.4658203125,
+        12.88330078125,
+        12.78466796875
+      ],
+      "load_after": [
+        11.28466796875,
+        12.6083984375,
+        12.6884765625
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.1875,
+        "bands": 4,
+        "submit": 3.71875,
+        "fence": 2.03125
+      },
+      "track": "oval"
+    },
+    {
+      "case": "oval-03-fixed",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 1044,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 150501,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 16.476088175957557,
+      "load_before": [
+        11.28466796875,
+        12.6083984375,
+        12.6884765625
+      ],
+      "load_after": [
+        9.75732421875,
+        12.203125,
+        12.5419921875
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.65625,
+        "bands": 4.75,
+        "submit": 3.90625,
+        "fence": 2
+      },
+      "track": "oval"
+    },
+    {
+      "case": "oval-04-greedy",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 1470,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 98931,
+        "fixed_bands": 0
+      },
+      "wall_seconds_including_startup_and_report": 21.21740162203787,
+      "load_before": [
+        9.8564453125,
+        12.18310546875,
+        12.53271484375
+      ],
+      "load_after": [
+        19.73974609375,
+        14.3291015625,
+        13.2958984375
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 6.65625,
+        "bands": 10.1875,
+        "submit": 4.09375,
+        "fence": 2.03125
+      },
+      "track": "oval"
+    },
+    {
+      "case": "fuji-01-greedy",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 1194,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 4051303552,
+        "road_bytes": 90777,
+        "fixed_bands": 0
+      },
+      "wall_seconds_including_startup_and_report": 17.45464739500312,
+      "load_before": [
+        19.73974609375,
+        14.3291015625,
+        13.2958984375
+      ],
+      "load_after": [
+        16.509765625,
+        13.8857421875,
+        13.15576171875
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.15625,
+        "bands": 8.46875,
+        "submit": 3.03125,
+        "fence": 2
+      },
+      "track": "fuji"
+    },
+    {
+      "case": "fuji-02-fixed",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 876,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 4051303552,
+        "road_bytes": 116157,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 13.122999861021526,
+      "load_before": [
+        15.828125,
+        13.78759765625,
+        13.12548828125
+      ],
+      "load_after": [
+        15.697265625,
+        13.81396484375,
+        13.1416015625
+      ],
+      "mean_ticks": {
+        "physics": 0.03125,
+        "geometry": 5.3125,
+        "bands": 3.28125,
+        "submit": 3.0625,
+        "fence": 2
+      },
+      "track": "fuji"
+    },
+    {
+      "case": "fuji-03-fixed",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 938,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 4051303552,
+        "road_bytes": 116157,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 13.647640826995485,
+      "load_before": [
+        15.697265625,
+        13.81396484375,
+        13.1416015625
+      ],
+      "load_after": [
+        20.54638671875,
+        14.9677734375,
+        13.56396484375
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.875,
+        "bands": 3.53125,
+        "submit": 3.25,
+        "fence": 2
+      },
+      "track": "fuji"
+    },
+    {
+      "case": "fuji-04-greedy",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 1226,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 4051303552,
+        "road_bytes": 90777,
+        "fixed_bands": 0
+      },
+      "wall_seconds_including_startup_and_report": 16.544828473008238,
+      "load_before": [
+        20.54638671875,
+        14.9677734375,
+        13.56396484375
+      ],
+      "load_after": [
+        20.72412109375,
+        15.22705078125,
+        13.67724609375
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.28125,
+        "bands": 8.8125,
+        "submit": 3,
+        "fence": 2.0625
+      },
+      "track": "fuji"
+    }
+  ]
+}

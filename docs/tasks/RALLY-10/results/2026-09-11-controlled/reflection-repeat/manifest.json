@@ -1,0 +1,177 @@
+{
+  "host": "macOS-14.8.9-x86_64-i386-64bit-Mach-O",
+  "track": "oval",
+  "headless": true,
+  "renderer": "sw",
+  "identities": {
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/bin/rally.bin": "2ca804042731898cd33d66d973d1fe2ae1a9d0d040deaa6760e56056993e0424",
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/src/main.cpp": "90fc3e8898f63406342f999049ba27542f82d534248454c5f2890c3118c816ae",
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/include/road.hpp": "2a1ef30f2043dbd71f2438c2ffe7a9173f1acfa0d4c80dd22b44e7d7cb2b7919",
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8",
+    "/Users/bgates/Agon/fab-agon-emulator/fab-agon-emulator": "cdf9d21e2db2266e4113982e661138074cae54186e062e63759db6341ffb6c86",
+    "/Users/bgates/Agon/fab-agon-emulator/firmware/vdp_platform.so": "0d3aeb7a6bb55976fbddb3d6d32bf4a5a7269d075245bf6243dc69fb0bdbbf24",
+    "/Users/bgates/Agon/fab-agon-emulator/firmware/mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+  },
+  "runs": [
+    {
+      "case": "01-full-fence",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 1238,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 98931
+      },
+      "wall_seconds_including_startup_and_report": 16.538043989043217,
+      "load_before": [
+        23.6875,
+        15.08935546875,
+        14.14453125
+      ],
+      "load_after": [
+        18.73486328125,
+        14.41455078125,
+        13.919921875
+      ],
+      "mean_ticks": {
+        "physics": 0.03125,
+        "geometry": 5.09375,
+        "bands": 8.96875,
+        "submit": 3.25,
+        "fence": 2
+      }
+    },
+    {
+      "case": "01-mirror-fence",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 1236,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 1,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 98931
+      },
+      "wall_seconds_including_startup_and_report": 16.304785156040452,
+      "load_before": [
+        18.73486328125,
+        14.41455078125,
+        13.919921875
+      ],
+      "load_after": [
+        17.3955078125,
+        14.42578125,
+        13.9365234375
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.34375,
+        "bands": 8.8125,
+        "submit": 3.09375,
+        "fence": 2.0625
+      }
+    },
+    {
+      "case": "02-mirror-fence",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 1234,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 1,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 98931
+      },
+      "wall_seconds_including_startup_and_report": 15.960806556977332,
+      "load_before": [
+        17.3955078125,
+        14.42578125,
+        13.9365234375
+      ],
+      "load_after": [
+        14.34228515625,
+        13.8974609375,
+        13.75634765625
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.625,
+        "bands": 8.625,
+        "submit": 3.03125,
+        "fence": 2
+      }
+    },
+    {
+      "case": "02-full-fence",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 64,
+        "acknowledged": 64,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 1204,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 1,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 64,
+        "pose_hash": 1844998336,
+        "road_bytes": 98931
+      },
+      "wall_seconds_including_startup_and_report": 17.71663709997665,
+      "load_before": [
+        14.34228515625,
+        13.8974609375,
+        13.75634765625
+      ],
+      "load_after": [
+        12.79541015625,
+        13.58837890625,
+        13.6484375
+      ],
+      "mean_ticks": {
+        "physics": 0,
+        "geometry": 5.5,
+        "bands": 8.375,
+        "submit": 2.875,
+        "fence": 2.0625
+      }
+    }
+  ]
+}

@@ -24,6 +24,23 @@ make -C rally test
 ./rally/run.sh
 ```
 
+On the Intel Mac, use the repository-root Python 3.13 environment. Without a
+local `agondev-config`, `make -C rally` builds a source snapshot on the configured
+SSH host `agon-linux`, runs its sanitizer tests, and downloads a checksum-verified
+binary. Each build uses a fresh directory and preserves the Linux game checkout.
+`make -C rally remote` selects this route explicitly; `make -C rally test` runs
+host tests locally without the cross-compiler. The SSH alias and Linux toolchain
+path are machine-specific settings in `tools/build_linux.py`.
+Pillow and the local `agon-utils` checkout support the asset tools; ordinary
+builds use the tracked generated headers. Blender 4.1.1 is installed on this Mac;
+the migrated model was generated with 4.0.2 and has not been regenerated here.
+
+Profile preparation defaults to `~/Agon/fab-agon-emulator` on macOS. Use
+`--runtime /path/to/official/fab-checkout` to select another runtime explicitly.
+The generated isolated `rally/.emulator` profile maps only `rally.bin` and writes
+CRLF `autoexec.txt` commands to load and run it in default demo mode. The launch
+script delegates to the canonical profile-local wrapper.
+
 ## Track source and geometry
 
 ![Hand-traced centreline](assets/track.svg)
@@ -68,15 +85,18 @@ vehicle heading simulation. This keeps the current road projection intact.
 ## Rendering and validation
 
 Mode 136 (320×240) uses double buffering, filled primitives and no active software
-sprites. Every frame covers the back buffer. Simulation uses elapsed MOS
-centiseconds; rendering targets 25 fps. Actual presentation rate remains subject
-to CPU/VDP timing. The user confirmed the earlier automatic-following build passes on physical
+sprites. MOS supplies 120 raw ticks per second in this mode (user confirmed).
+The loop schedules submissions four ticks apart, nominally 30 per second before
+workload delays. One legacy physics iteration still runs per elapsed tick;
+its existing tuning and `/100` world-unit scale are preserved. This is not a
+new wall-time correction. Actual presentation rate remains subject to CPU/VDP
+timing. The user confirmed the earlier automatic-following build passes on physical
 hardware on September 11, 2026; the current traffic milestone is emulator-reviewed and awaits hardware validation.
 Hardware frame rate was not measured.
 
 Projection remains `z = 8000 / (y - 96)`, with camera height 50 world units.
-The road starts at row 103 with a finite 24-pixel width, hiding the vanishing
-point. Foreground width extends beyond the screen; signed coordinates let the
+The road spans exactly 120 rows, y=104 through y=223, starting with a finite
+28-pixel width that hides the vanishing point. Foreground width extends beyond the screen; signed coordinates let the
 VDP clip the sides. Unresolved markings above row 116 are suppressed. Material
 phase runs continuously as track position wraps, avoiding a texture jump.
 
@@ -84,8 +104,8 @@ Projected rows merge into bands only when material agrees and their centreline
 is within one pixel of the interpolated segment, before coordinate rounding.
 Adjacent bands share their boundary edge: native VDP rasterization exposed gaps
 when bands stopped on separate final rows. A packed quadrilateral costs 27 bytes.
-A sweep at 17-world-unit intervals around the loop observed at most 2,043 road/
-background bytes and 17 bands; this sampled bound is not an exhaustive proof.
+A sweep at 17-world-unit intervals around the loop observed at most 1,935 road/
+background bytes and 16 bands; this sampled bound is not an exhaustive proof.
 HUD and swap traffic is additional. No command-buffer patching is needed here.
 
 `make -C rally test` runs ASan/UBSan checks for projection, material phases,
@@ -142,7 +162,7 @@ The tire-force budget is 180 world acceleration units at 100% grip, shared by
 steering and the acceleration needed to follow the curve. Demand beyond that
 budget causes outward slip; braking reduces curve demand with speed squared.
 Kerbs increase the lateral grip budget by 15%; grass halves it. Kerb drag removes three speed units per
-centisecond above 160; grass drag removes four above 90. Throttle adds two,
+raw clock tick above 160; grass drag removes four above 90. Throttle adds two,
 so neither surface allows full-speed running. Braking still reaches zero.
 These are
 arcade tuning units, not calibrated real-world G measurements or a full vehicle
@@ -177,7 +197,7 @@ Stock viewport scrolling retains separate scenery offsets in both draw buffers
 and repaints only exposed edges; unchanged headings skip upper-sky drawing. The bottom sixteen sky rows are
 refreshed to erase road/traffic overlap.
 The same heading restores the same view, independent of steering and lateral
-position. A prebuilt 4-bit image expands on the VDP from a single 52,736-byte upload.
+position. A prebuilt 4-bit image expands on the VDP from a single 53,248-byte upload.
 
 Kerbs now span 16 world units per side (formerly eight). An inset two-unit
 shoulder stripe occupies lateral distances 84–86 world units (moved inward
@@ -196,7 +216,86 @@ the rendered yaw view. The HUD reports ROAD, KERB or GRASS.
 The September 11 scenery/surface build (96,333 bytes) was deployed to hardware.
 User testing reports lag and backwards-motion strobing at the 224 speed cap;
 the emulator has also become less smooth. Functional captures and host tests
-do not establish frame-rate or pacing acceptance. Timing research is pending.
+do not establish frame-rate or pacing acceptance. See the
+[pacing research](../docs/research/rally-frame-pacing.md) and the opt-in experiment below.
+
+## First pacing experiment
+
+`run . fence` enables a stock general-poll token after each swap and waits for
+its reply before submitting another frame. Normal `run` remains the baseline.
+A reply timeout of 600 raw ticks (five seconds) stops the experiment. This
+timeout covers the reply wait; it cannot interrupt an already blocked UART send.
+There are no custom firmware callbacks. This is a candidate completion fence,
+not hardware-qualified proof of monitor presentation.
+
+`run . bench` and `run . fence bench` run a 20-second full-scene demo sample
+using the MOS clock, then return to MOS and write `timing-free.csv` or
+`timing-fence.csv` in the current Agon directory. `profile` collects the same
+data during manual/demo play until exit. Storage is bounded to the first 1,024
+frames; subsequent omissions are counted. No per-frame console or SD logging.
+Both timed variants fence startup; the baseline also drains its final commands
+before writing the report. Clock resolution is two ticks, about 16.7 ms.
+
+The report separates control/physics, road projection, drawing-command
+submission (including backpressure), and post-swap reply wait. Road byte counts
+exclude scenery, cars, HUD and protocol overhead. Submission/acknowledgment
+counts do not count unique host presentations.
+
+From the Mac repository root:
+
+```sh
+.venv/bin/python docs/tasks/RALLY-10/run_timing.py
+.venv/bin/python docs/tasks/RALLY-10/run_timing.py --reverse
+.venv/bin/python rally/tools/prepare_emulator.py --fence
+./rally/run.sh
+```
+
+The timing helper runs isolated headless profiles serially and retains raw CSVs
+under `rally/.emulator/benchmarks/`. `--track fuji` selects the other track.
+These measurements include emulator/host scheduling effects and need hardware
+follow-up. Steering remains once per rendered update; catch-up is still unbounded.
+
+## Controlled timing fixture
+
+`run . fixture fence` runs 64 fixed poses around the selected track, after two
+unmeasured warm-up frames. `nosky`, `notraffic`, `mirror`, and `light` each alter
+one diagnostic workload; these switches require `fixture` and do not change
+normal driving. `light` skips detailed stage samples to compare timing overhead.
+The fixed sequence has no elapsed-time physics. Reports include pose hashes,
+road byte totals, geometry and band-generation stages, and a completion marker.
+
+Run the task-owned headless suite with
+`.venv/bin/python docs/tasks/RALLY-10/run_timing.py --workloads --passes 2`.
+Read [RALLY-10's detailed results](../docs/tasks/RALLY-10/results/2026-09-11-controlled/README.md).
+Graphical emulator launches are reserved for user review notifications.
+
+## Precomputed band experiment (RALLY-10)
+
+`run . oval fixedbands fence` selects precomputed geometric band boundaries;
+omit `fixedbands` for the greedy baseline. The same switch works with `fuji`,
+manual `race`, and diagnostic `fixture`. Normal launches retain the baseline
+unless the profile is explicitly prepared with `--fixed-bands`.
+
+The table selects a boundary list for each 16-world-unit section of each track.
+Material changes still split bands using the existing per-row paint flags.
+Projection and physics are unchanged by the band-selection option. With the
+120-row viewport, tables occupy 21,619 bytes; additional
+bands can increase drawing-command traffic. The generator and comparison tools
+live in [RALLY-10](../docs/tasks/RALLY-10.md); this candidate needs human review.
+
+After changing track geometry or projection, regenerate the table and rerun
+`make -C rally test` before using `fixedbands`:
+
+```sh
+c++ -O2 -std=c++17 -Irally/include docs/tasks/RALLY-10/generate_band_table.cpp -o rally/obj/generate_band_table
+./rally/obj/generate_band_table > rally/obj/band_table.hpp
+mv rally/obj/band_table.hpp rally/include/band_table.hpp
+```
+
+These generator commands run from the repository root. The generated header is
+embedded in the binary; there are no additional SD assets. The separate
+`test_bands` test covers independent material patterns, sampled approximation
+error, lateral offsets, table seams and stream capacity on both tracks.
 
 ## Demo driver
 

@@ -6,7 +6,7 @@ import agonutils
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'assets/scenery';OUT.mkdir(exist_ok=True,parents=True)
 RAW=ROOT/'obj/scenery';RAW.mkdir(exist_ok=True,parents=True)
-W,H=1024,103
+W,H=1024,104
 # Sixteen RGB222 colours including rich blues, snowy whites and wooded greens.
 palette=[(0,85,255),(85,85,255),(85,170,255),(170,170,255),
  (255,255,255),(170,170,170),(85,85,170),(0,85,170),

@@ -3,21 +3,71 @@
 #include "traffic.hpp"
 #include "scenery.hpp"
 #include "demo.hpp"
+#include "pacing.hpp"
+#include "workload.hpp"
 #include <agon/mos.h>
 #include <agon/vdp.h>
 #include <stdio.h>
 #include <string.h>
-#include <time.h>
 #include <stdlib.h>
 namespace {
 rally::Motion motion;
+rally::Road road;
 rally::Traffic traffic;
 rally::DemoDriver demoDriver;
 bool demoMode=true;
 bool demoInputArmed=false;
 bool escapeArmed=true;
+bool fenced=false,profiling=false,benchmark=false;
+bool workload=false,noSky=false,noTraffic=false,mirrorPlayer=false,lightTiming=false;
+unsigned workloadStep=0;
+uint32_t poseHash=0,roadBytesTotal=0;
+rally::PollFence pollFence;
+rally::FrameTiming timings[rally::TimingCapacity];
+unsigned timingCount=0;
+uint32_t submitted=0,acknowledged=0,unrecorded=0;
+uint32_t benchmarkStart=0,runTicks=0,startupTicks=0,drainTicks=0;
+bool fenceFailed=false;
+// MOS updates a 32-bit counter, while eZ80 loads are at most 24 bits.
+// Two matching volatile reads reject a rollover between the component loads.
+uint32_t rawClock() {
+    uint32_t first,second;
+    do {first=sys_vars->time;second=sys_vars->time;} while(first!=second);
+    return second;
+}
+struct PollBackend {
+    uint32_t ticks() {return rawClock();}
+    uint8_t poll() {return reinterpret_cast<volatile uint8_t *>(sys_vars)[0x37];}
+    void send(uint8_t token) {
+        const uint8_t command[]={23,0,0x80,token};
+        mos_puts((char *)command,sizeof(command),0);
+    }
+} pollBackend;
+bool waitForVDP() {return pollFence.wait(pollBackend,rally::FenceTimeout);}
+void saveTimings() {
+    const char *name=fenced?"timing-fence.csv":"timing-free.csv";
+    FILE *file=fopen(name,"w");
+    if(!file) {printf("Could not write %s\n",name);return;}
+    fprintf(file,"# clock_hz=120,fenced=%u,submitted=%lu,acknowledged=%lu,unrecorded=%lu,timeout=%u,run_ticks=%lu,startup_ticks=%lu,drain_ticks=%lu,workload=%u,no_sky=%u,no_traffic=%u,mirror=%u,light=%u,recorded=%u,pose_hash=%lu,road_bytes=%lu,fixed_bands=%u\n",
+            unsigned(fenced),(unsigned long)submitted,(unsigned long)acknowledged,
+            (unsigned long)unrecorded,unsigned(fenceFailed),(unsigned long)runTicks,
+            (unsigned long)startupTicks,(unsigned long)drainTicks,unsigned(workload),
+            unsigned(noSky),unsigned(noTraffic),unsigned(mirrorPlayer),unsigned(lightTiming),
+            timingCount,(unsigned long)poseHash,(unsigned long)roadBytesTotal,unsigned(road.fixedBands));
+    fprintf(file,"start,interval,physics,projection,submit,fence,road_bytes,cars,mirrored,geometry,bands,pose,band_count\n");
+    for(unsigned i=0;i<timingCount;++i) {
+        const auto &t=timings[i];
+        fprintf(file,"%lu,%lu,%lu,%lu,%lu,%lu,%u,%u,%u,%lu,%lu,%u,%u\n",
+                (unsigned long)t.start,(unsigned long)t.interval,(unsigned long)t.physics,
+                (unsigned long)t.projection,(unsigned long)t.submit,(unsigned long)t.fence,
+                unsigned(t.roadBytes),unsigned(t.cars),unsigned(t.mirrored),
+                (unsigned long)t.geometry,(unsigned long)t.bands,unsigned(t.pose),unsigned(t.bandCount));
+    }
+    fprintf(file,"# complete\n");
+    if(fclose(file)!=0) printf("Error closing %s\n",name);
+    else printf("Timing saved: %s (%u rows)\n",name,timingCount);
+}
 rally::SceneryHistory sceneryHistory;
-rally::Road road;
 rally::Stream stream;
 constexpr unsigned CarWidth=102, CarHeight=77;
 uint8_t carUpload[CarWidth*CarHeight];
@@ -35,7 +85,8 @@ void trafficMatrix(unsigned id,int scale,bool mirror) {
     command.word(0);command.word(scale);command.word(0);
     mos_puts((char *)command.data,command.size,0);
 }
-void drawTraffic() {
+unsigned drawTraffic() {
+    unsigned visible=0;
     int order[rally::TrafficCount];int32_t distance[rally::TrafficCount];
     for(int i=0;i<rally::TrafficCount;++i) order[i]=i;
     const int32_t lap=motion.track->length*100;
@@ -46,6 +97,7 @@ void drawTraffic() {
     for(int index:order) {
         int32_t z=distance[index]/100;
         if(z<64 || z>1100) continue;
+        ++visible;
         int q=int(8000/z),y=rally::Horizon+q;
         const auto &car=traffic.cars[index];
         int center=int(road.centers[y]/256)+car.lane*q/rally::CameraHeight;
@@ -61,6 +113,7 @@ void drawTraffic() {
         vdp_draw_bitmap(center-51*scale/256,y-70*scale/256);
     }
     vdp_adv_use_affine_matrix(1,65535);
+    return visible;
 }
 void loadScenery() {
     constexpr unsigned Source=63800,Bitmap=100;
@@ -115,8 +168,22 @@ int main(int argc, char **argv) {
         else if(strcmp(argv[i],"oval")==0) track=&rally::TriOval;
         else if(strcmp(argv[i],"demo")==0) demoMode=true;
         else if(strcmp(argv[i],"race")==0) demoMode=false;
+        else if(strcmp(argv[i],"fence")==0) fenced=true;
+        else if(strcmp(argv[i],"profile")==0) profiling=true;
+        else if(strcmp(argv[i],"bench")==0) profiling=benchmark=true;
+        else if(strcmp(argv[i],"fixture")==0) workload=profiling=true;
+        else if(strcmp(argv[i],"nosky")==0) noSky=true;
+        else if(strcmp(argv[i],"notraffic")==0) noTraffic=true;
+        else if(strcmp(argv[i],"mirror")==0) mirrorPlayer=true;
+        else if(strcmp(argv[i],"light")==0) lightTiming=true;
+        else if(strcmp(argv[i],"fixedbands")==0) road.fixedBands=true;
         else {char *end;long value=strtol(argv[i],&end,10);if(*end==0 && value>=0) start=value;}
     }
+    if((noSky || noTraffic || mirrorPlayer || lightTiming) && !workload) {
+        printf("Workload switches require fixture.\n");return 1;
+    }
+    if(workload) benchmark=false;
+    const bool detailTiming=profiling && !lightTiming;
     motion.track=road.track=track;
     road.init();
     if(start<track->length) {
@@ -170,15 +237,33 @@ int main(int argc, char **argv) {
     loadScenery();
     vdp_set_text_colour(15);
     vdp_set_text_bg_colour(0);
-    clock_t previous=clock(), next=previous;
+    // Fence uploads and queued startup primitives before timed work. Both A/B
+    // cases use this barrier; normal unfenced play retains its existing startup.
+    if(fenced || profiling) {
+        uint32_t begin=rawClock();
+        vdp_swap();sceneryHistory.swapped();
+        fenceFailed=!waitForVDP();
+        startupTicks=rally::ticksSince(rawClock(),begin);
+    }
+    uint32_t previous=rawClock(),next=previous;
+    benchmarkStart=previous;
     for (;;) {
-        clock_t now=clock();
-        if (long(now-next)<0) continue;
+        if(fenceFailed) break;
+        if(workload && workloadStep>=rally::WorkloadWarmup+rally::WorkloadFrames) break;
+        bool warming=workload && workloadStep<rally::WorkloadWarmup;
+        unsigned pose=workload && !warming?workloadStep-rally::WorkloadWarmup:0;
+        uint32_t now=rawClock();
+        if(benchmark && rally::ticksSince(now,benchmarkStart)>=rally::BenchmarkTicks) break;
+        if (!rally::tickDue(now,next)) continue;
         next=now+4;
         for(unsigned i=0;i<16;++i) heldKeys[i]=vdp_getKeyMap(i);
 
-        unsigned elapsed=unsigned(now-previous);
+        uint32_t elapsed=rally::ticksSince(now,previous);
         previous=now;
+        if(workload) {
+            if(key(113)) break;
+            rally::workloadPose(pose,motion,traffic,mirrorPlayer);
+        } else {
         bool anyKey=false;
         for(auto bits:heldKeys) anyKey=anyKey || bits!=0;
         bool startingRace=false;
@@ -200,21 +285,31 @@ int main(int argc, char **argv) {
         motion.gripFrame(key(24),key(94));
         bool up=key(58), down=key(42);
         // Elapsed-time physics may catch up; steering is applied only once above.
-        for (unsigned i=0;i<elapsed;++i) {
+        for (uint32_t i=0;i<elapsed;++i) {
             if(demoMode) demoDriver.tick(motion);else motion.tick(up,down);
             traffic.tick(track->length*100);
         }
-        road.render(stream,motion.phase,motion.position,motion.cameraOffset(),false);
+        }
+        uint32_t physicsEnd=detailTiming?rawClock():0;
+        uint32_t geometryEnd=0;
+        if(detailTiming) {
+            road.project(motion.position,motion.phase,motion.cameraOffset());
+            geometryEnd=rawClock();
+            road.emit(stream,false);
+        } else road.render(stream,motion.phase,motion.position,motion.cameraOffset(),false);
         if (stream.overflow) break;
-        drawScenery();
+        uint32_t projectionEnd=detailTiming?rawClock():0;
+        if(noSky) {vdp_gcol(0,4);vdp_filled_rectangle(0,0,319,rally::RoadTop-1);}
+        else drawScenery();
         mos_puts(reinterpret_cast<char *>(stream.data),stream.size,0);
-        drawTraffic();
+        unsigned visible=noTraffic?0:drawTraffic();
         vdp_select_bitmap(motion.view());
         vdp_adv_use_affine_matrix(1,motion.mirrored()?63984:65535);
         vdp_draw_bitmap(motion.carX()-19,149);
         vdp_adv_use_affine_matrix(1,65535);
         char hud[41];
-        if(demoMode) {
+        if(workload) text(9,28,"TIMING FIXTURE");
+        else if(demoMode) {
             text(7,28,"PRESS ANY KEY TO RACE");
         } else {
             snprintf(hud,sizeof(hud),"SPEED %03ld  UP/DN  -= GRIP  ESC QUIT",(long)motion.speed);
@@ -225,10 +320,48 @@ int main(int argc, char **argv) {
         }
         vdp_swap();
         sceneryHistory.swapped();
+        ++submitted;
+        uint32_t submitEnd=detailTiming?rawClock():0;
+        if(fenced || warming) {
+            fenceFailed=!waitForVDP();
+            if(!fenceFailed) ++acknowledged;
+        }
+        if(detailTiming && !warming) {
+            uint32_t end=rawClock();
+            if(timingCount<rally::TimingCapacity) timings[timingCount++]={
+                rally::ticksSince(now,benchmarkStart),elapsed,
+                rally::ticksSince(physicsEnd,now),rally::ticksSince(projectionEnd,physicsEnd),
+                rally::ticksSince(submitEnd,projectionEnd),rally::ticksSince(end,submitEnd),
+                rally::ticksSince(geometryEnd,physicsEnd),rally::ticksSince(projectionEnd,geometryEnd),
+                uint16_t(pose),uint16_t(road.bands),
+                uint16_t(stream.size),uint8_t(visible),uint8_t(motion.mirrored())};
+            else ++unrecorded;
+        }
+        if(!warming) {
+            roadBytesTotal+=stream.size;
+            if(workload) poseHash=rally::workloadHash(poseHash,motion,traffic);
+        }
+        if(workload) {
+            ++workloadStep;
+            if(workloadStep==rally::WorkloadWarmup) {
+                submitted=acknowledged=0;
+                previous=next=benchmarkStart=rawClock();
+            }
+        }
+    }
+    runTicks=rally::ticksSince(rawClock(),benchmarkStart);
+    // Drain the baseline's submitted swaps before resetting the mode/writing
+    // diagnostics. This final reply is not counted as per-frame acknowledgments.
+    if(profiling && !fenceFailed) {
+        uint32_t begin=rawClock();
+        fenceFailed=!waitForVDP();
+        drainTicks=rally::ticksSince(rawClock(),begin);
     }
     vdp_mode(0);
     vdp_set_logical_coordinates();
     vdp_cursor_enable(true);
     printf("Agon Rally: road prototype ended.\n");
+    if(fenceFailed) printf("Stock VDP poll reply timed out; run stopped.\n");
+    if(profiling) saveTimings();
     return 0;
 }

@@ -1,0 +1,111 @@
+{
+  "runs": [
+    {
+      "case": "oval",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 376,
+        "acknowledged": 376,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 2404,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 0,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 376,
+        "pose_hash": 0,
+        "road_bytes": 203155,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 32.05016316496767,
+      "load_before": [
+        51.25830078125,
+        42.552734375,
+        29.576171875
+      ],
+      "load_after": [
+        51.7607421875,
+        44.01318359375,
+        30.65185546875
+      ],
+      "mean_ticks": {
+        "physics": 1.1329787234042554,
+        "geometry": 0.9308510638297872,
+        "bands": 0.7180851063829787,
+        "submit": 1.601063829787234,
+        "fence": 2.0106382978723403
+      },
+      "track": "oval",
+      "fps": 18.768718801996673,
+      "frame_ms": 53.28014184397163,
+      "budget_multiple": 3.1968085106382977
+    },
+    {
+      "case": "fuji",
+      "metadata": {
+        "clock_hz": 120,
+        "fenced": 1,
+        "submitted": 504,
+        "acknowledged": 504,
+        "unrecorded": 0,
+        "timeout": 0,
+        "run_ticks": 2400,
+        "startup_ticks": 2,
+        "drain_ticks": 0,
+        "workload": 0,
+        "no_sky": 0,
+        "no_traffic": 0,
+        "mirror": 0,
+        "light": 0,
+        "recorded": 504,
+        "pose_hash": 0,
+        "road_bytes": 161995,
+        "fixed_bands": 1
+      },
+      "wall_seconds_including_startup_and_report": 28.08888327301247,
+      "load_before": [
+        51.7607421875,
+        44.01318359375,
+        30.65185546875
+      ],
+      "load_after": [
+        34.958984375,
+        40.685546875,
+        29.83837890625
+      ],
+      "mean_ticks": {
+        "physics": 0.4444444444444444,
+        "geometry": 1.0476190476190477,
+        "bands": 0.5198412698412699,
+        "submit": 0.7341269841269841,
+        "fence": 2.015873015873016
+      },
+      "track": "fuji",
+      "fps": 25.2,
+      "frame_ms": 39.682539682539684,
+      "budget_multiple": 2.380952380952381
+    }
+  ],
+  "binary": {
+    "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.work/build-17dif6ob/sections",
+    "sources": {
+      "section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+      "protocol.py": "9a14e012189fa8cf667a195158d6daa018eeea196d71b114e60a740cf6b6c810",
+      "section_road.hpp": "60a28b1a79fd36d7bfe5a1bc96880b09f73d91f798e7544c77b1fc8675d8292a",
+      "section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+      "test_sections.cpp": "a7a2f8887f97df4b74e2458d197517d5c4de6c49d2fa3102df8e304ec6fc1803"
+    },
+    "binary_sha256": "0081dc8164dbfb259f97f6cde29a3f0cc47d599cf1a76c8b218d74bab8c4cfaf",
+    "binary_bytes": 134184,
+    "build_log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-15/.work/build-17dif6ob/sections-build.log",
+    "linux_build": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.WkgeE6\nSource archive SHA256: 1f417f8216bbf30f2ed6868f3cb1c3da07df40a1a626ab1b83e7bf68b7ad7ae5\nBinary SHA256: 0081dc8164dbfb259f97f6cde29a3f0cc47d599cf1a76c8b218d74bab8c4cfaf\n"
+  },
+  "headless": true,
+  "capture_interposer": false,
+  "workload": "ordinary 20-second demo with physics"
+}

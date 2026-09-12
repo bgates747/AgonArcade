@@ -1,8 +1,9 @@
 #pragma once
 #include <stdint.h>
 #include "track.hpp"
+#include "band_table.hpp"
 namespace rally {
-constexpr int Horizon = 96, RoadTop = 103, CameraHeight = 50;
+constexpr int Horizon = 96, RoadTop = 104, CameraHeight = 50;
 constexpr int Bottom = 223, Period = 80;
 constexpr int RoadHalfWidth=90, KerbOuterWidth=106, CarHalfWidth=12;
 enum class Surface { Road, Kerb, Grass };
@@ -109,6 +110,8 @@ struct Motion {
 };
 struct Road {
     const TrackDef *track=&Fuji;
+    bool fixedBands=false; // RALLY-10 candidate; greedy remains the baseline.
+    const uint8_t *bandLimits=BandEnds;
     int32_t depth[Bottom-Horizon+2]; // hundredth units for material phase
     int32_t depthQ8[Bottom-Horizon+2];
     int32_t centers[Bottom+2]; // projected Q8 pixels
@@ -126,6 +129,11 @@ struct Road {
     }
     static int edge(int y, int width) { return (y-Horizon)*width/CameraHeight; }
     void project(int32_t position, int32_t phase, int32_t cameraOffset=0) {
+        if(fixedBands) {
+            unsigned bin=unsigned(position/(BandBinWorld*100L));
+            if(track==&Fuji) bin+=BandFujiOffset;
+            bandLimits=BandEnds+BandOffsets[bin];
+        }
         int32_t p=(position/100)*256+(position%100)*256/100;
         Sample camera=trackSample(p,*track);
         for(int y=RoadTop;y<=Bottom+1;++y) {
@@ -139,6 +147,14 @@ struct Road {
         }
     }
     int bandEnd(int y) const {
+        if(fixedBands) {
+            int end=y;
+            const uint8_t *limit=bandLimits;
+            while(*limit<y) ++limit;
+            int cap=*limit;
+            while(end<cap && paint[end+1]==paint[y]) ++end;
+            return end;
+        }
         int end=y;
         // Greedily grow a band only while all intermediate row centers stay
         // within one pixel of the segment and the material does not change.
@@ -164,6 +180,9 @@ struct Road {
     }
     void render(Stream &s, int32_t phase, int32_t position=0, int32_t cameraOffset=0, bool fillSky=true) {
         project(position,phase,cameraOffset);
+        emit(s,fillSky);
+    }
+    void emit(Stream &s, bool fillSky=true) {
         s.size=0; s.overflow=false; bands=0;
         if(fillSky) s.rect(0,0,319,RoadTop-1,4);
         s.rect(0,RoadTop,319,223,2);

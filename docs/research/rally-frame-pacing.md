@@ -2,6 +2,13 @@
 
 ## Result and limits
 
+Mac continuation: the user confirmed **120 raw ticks/second** for Rally's mode.
+Clock calibration is no longer an open prerequisite for this configuration.
+The opt-in fence and first measurements are now implemented; see
+[iteration 1 evidence](rally-timing-2026-09-11/README.md). Earlier sections below
+preserve the original research chronology. Current physics coefficients remain
+unchanged, and no hardware performance improvement is claimed.
+
 Progress checkpoint: `791da51`, following traffic milestone `0e5986b`.
 The deployed 96,333-byte scenery/surface build is **not performance accepted**.
 User reports lag and backwards-motion strobing at speed 224 on hardware, with

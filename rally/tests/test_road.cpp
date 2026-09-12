@@ -89,7 +89,7 @@ int main() {
     road.init();
     for(int q=2;q<=127;++q) assert(road.depth[q]<road.depth[q-1]);
     assert(rally::Road::edge(223,90)==228);
-    assert(rally::Road::edge(rally::RoadTop,90)==12);
+    assert(rally::Road::edge(rally::RoadTop,90)==14);
     assert(road.depth[rally::RoadTop-rally::Horizon]>0);
     unsigned maximum=0;
     for(int phase=0;phase<8000;++phase) {
