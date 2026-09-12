@@ -191,3 +191,9 @@ No additional optimization, source scope, remote publication or hardware action
 is undertaken. Original worktrees, local flash/SD backups and the accepted oracle
 are retained. The final experiment closes under the frozen scope; further work
 requires a new task decision.
+
+
+The parent RALLY-19 task is closed after its separately committed R19-12 delivery
+(e91eb4c). All requested execution checkboxes are retained as completed under the
+Author's explicit goal instruction. This closes the measured research scope;
+physical acceleration remains unsuccessful, and unrelated task IDs remain open.

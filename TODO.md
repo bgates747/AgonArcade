@@ -113,7 +113,7 @@ This ordered register owns progress across AgonArcade and Golem.
 This is the authoritative task checklist. Details are in `docs/tasks/<ID>.md`;
 task-specific supporting files belong in `docs/tasks/<ID>/`.
 
-18. [ ] [RALLY-19](docs/tasks/RALLY-19.md): Execute the frozen unattended stock-VDP/Golem contract; R19-00 through R19-10 complete. Long stability/review and final delivery remain in the execution register above.
+18. [x] [RALLY-19](docs/tasks/RALLY-19.md): Frozen research experiment complete through R19-12 (delivery e91eb4c; Golem3ac500c). Native criteria pass; physical startup corrected, hardware rendering too slow. See DELIVERY.md; no practical acceleration or publication claimed.
 
 17. [ ] [RALLY-18](docs/tasks/RALLY-18.md): Review isolated centreline-camera/road-lookup candidate; headless validation passed. Lookup computation 67.0/71.4 FPS equivalent (oval/Fuji), commands+UART 37.0/41.2; perspective option measured separately. Unfenced 30 Hz review baseline accepted as a working assumption, not a verified guarantee; mainline integration and hardware qualification pending; [results](docs/tasks/RALLY-18/results/README.md).
 
