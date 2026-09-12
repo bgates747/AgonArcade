@@ -51,3 +51,7 @@ scope, identities, reproduction commands, retained failures and timing/mask
 limitations; evidence/visual-freeze.json hashes the frozen metric and masks.
 No game/compiler implementation or upstream state changed. All native tests
 were headless, with no alert. R19-03 now defines the reusable Golem/scene ABI.
+
+Evidence packaging follow-up: preserve raw MOS CSV CRLF via task-local Git
+attributes instead of rewriting hash-identified data. Explicitly include raw
+capture/debugger logs otherwise hidden by the repository-wide *.log ignore.
