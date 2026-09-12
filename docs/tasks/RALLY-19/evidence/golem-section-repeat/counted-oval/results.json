@@ -1,0 +1,94 @@
+{
+  "scope": "Separate counted diagnostic of the finite256-call group used for timing.\n\nThe per-invocation counter is present only here, not in the timing construction.\n",
+  "pass": true,
+  "results": [
+    {
+      "pose": [
+        0,
+        0
+      ],
+      "oracle": [
+        147,
+        163,
+        154,
+        155,
+        0
+      ],
+      "actual": [
+        147,
+        163,
+        154,
+        155,
+        0
+      ],
+      "invocations": 256,
+      "pass": true
+    },
+    {
+      "pose": [
+        6399,
+        3999
+      ],
+      "oracle": [
+        156,
+        163,
+        155,
+        155,
+        1
+      ],
+      "actual": [
+        156,
+        163,
+        155,
+        155,
+        1
+      ],
+      "invocations": 512,
+      "pass": true
+    },
+    {
+      "pose": [
+        6400,
+        4000
+      ],
+      "oracle": [
+        154,
+        163,
+        154,
+        155,
+        1
+      ],
+      "actual": [
+        154,
+        163,
+        154,
+        155,
+        1
+      ],
+      "invocations": 768,
+      "pass": true
+    },
+    {
+      "pose": [
+        575999,
+        7999
+      ],
+      "oracle": [
+        159,
+        163,
+        155,
+        155,
+        0
+      ],
+      "actual": [
+        159,
+        163,
+        155,
+        155,
+        0
+      ],
+      "invocations": 1024,
+      "pass": true
+    }
+  ]
+}

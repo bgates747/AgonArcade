@@ -40,11 +40,15 @@ This ordered register owns progress across AgonArcade and Golem.
    atomic-by-order state update and finite render dispatch. Test malformed and
    incomplete packets, track/table bounds, sequence handling, reload, allocation
    balance and return to outer input processing. Commit compiler/runtime and tests.
-6. [ ] **R19-06 — Compute and draw one complete road section on VDP.** Feed only
+6. [x] **R19-06 — Compute and draw one complete road section on VDP.** Feed only
    game-state/table inputs, evaluate current compact projection coefficients on
    VDP, derive stripe phase/boundaries and plot gray road, kerbs, shoulders and
    centreline. Compare signed/lateral/seam cases against the oracle; measure
    matrix/lookup batching choices and choose a measured construction. Commit proof.
+   Qualified:74 native section-image pairs, exact centres and100% radius-one
+   agreement per visible material; shared preparation selected by serial ABBA.
+   See `docs/tasks/RALLY-19/SECTION.md` and its qualification.json. Golem980024b
+   records completion (implementation f54651a). Full-scene targets remain open.
 7. [ ] **R19-07 — Extend resident road computation to both complete tracks.**
    Select resident sections, derive all required boundaries/material parity,
    maintain shared edges/finite clipping and lap-independent stripes. Pass the

@@ -1,6 +1,6 @@
 """Serial ABBA comparison of one-band VDP construction choices.
 
-Normal guest clock/UART; no observer interposer. One group is 16 finite resident
+Normal guest clock/UART; no observer interposer. One group is 256 finite resident
 calls, observed by stock GP parser echo with 120Hz guest ticks. First 64 groups
 warm resident data; then two identical 64-pose passes. This is construction cost,
 not complete scene CPU work, frame rate, raster completion or R19-10 acceptance.
@@ -23,10 +23,10 @@ def main():
     for order,variant in enumerate(['shared','repeated','repeated','shared']):
         source=build(a.track,TASK/'.work/section-timing-source'/a.name/str(order));s=source.read_text()
         if variant=='repeated':s=s.replace('WidenUnsigned(row,bottomRow); Call(projectRow);','Call(prepareProjection); WidenUnsigned(row,bottomRow); Call(projectRow);')
-        source.write_text(s+'\nProgram benchmark(2100) { Repeat(16) { Call(section); }; };\n')
+        source.write_text(s+'\nProgram benchmark(2100) { Repeat(256) { Call(section); }; };\n')
         run,raw=execute('golem-section-timing',a.name+f'-{order}-{variant}',source,data,loader=loader,timeout=300)
         ticks=[v[0] for v in struct.iter_unpack('<I',raw)];assert len(ticks)==128 and all(ticks)
-        perCall=[v*1000/120/16 for v in ticks]
+        perCall=[v*1000/120/256 for v in ticks]
         results.append({'variant':variant,'order':order,'evidence':str(run.relative_to(TASK)),'group_ticks':ticks,'median_ms_per_call':statistics.median(perCall),'mean_ms_per_call':statistics.mean(perCall),'min_ms_per_call':min(perCall),'max_ms_per_call':max(perCall)})
         (root/'progress.json').write_text(json.dumps(results,indent=2)+'\n')
     report={'scope':__doc__,'track':a.track,'poses':cases,'source_hashes':{str(path):sha(path) for path in [TASK/'section_timing.cpp',TASK/'build_section_kernel.py',TASK/'build_projection_kernel.py',GOLEM/'src/hosted.hpp']},'runs':results}

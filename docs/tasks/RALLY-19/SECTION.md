@@ -1,7 +1,8 @@
 # R19-06 section implementation notes
 
-R19-06 is open. R19-05 qualified full admission, resident records and lifecycle;
-it did not implement any full-scene road geometry. Root TODO.md is authoritative.
+R19-06 is complete; qualification is below. R19-05 qualified full admission,
+resident records and lifecycle. Full-road/full-scene integration remains later
+work. Root TODO.md is authoritative.
 These are working implementation notes and evidence references, not another
 checklist or a relaxation of the frozen contract.
 
@@ -159,7 +160,7 @@ in progress at this checkpoint, so R19-06 is deliberately unchecked.
 
 The alternative batching measurement compares shared per-position preparation
 against repeating that same preparation for the second endpoint. `time_section.py`
-uses serial ABBA, normal guest clock/UART, warmed64-pose groups,16 finite resident
+uses serial ABBA, normal guest clock/UART, warmed64-pose groups,256 finite resident
 calls/group and two measured passes. No observer is loaded. Raw120Hz guest-tick
 spans end at a stock GP parser echo and are construction-cost evidence only:
 they do not qualify raster completion, full-scene speed, eZ80 savings or R19-10.
@@ -182,3 +183,58 @@ Requirements remain agondev on PATH, each project's own Python environment,
 Pillow for native-image masks, stock Fab1.2.4/MOS3.0.2 and canonical wrapper
 generation. The visual observer uses Linux clang/libdl/SDL3; it is not timing
 instrumentation. Nothing is launched graphically or deployed to hardware.
+
+## R19-06 qualification
+
+`evidence/golem-section/qualification.json` passes. The preceding checkpoints
+remain dated evidence of the experiments; this section records their final
+outcome without editing or discarding the failed runs. Compiler implementation
+is Golem f54651a; cross-repository completion notes are committed at980024b.
+
+All74 complete-band native image pairs pass:66 frozen poses plus8 extra seam and
+lateral cases,28 oval and46 Fuji. The section endpoint centres exactly match the
+oracle in every visual case. Minimum per-region radius-one agreement is100% for
+asphalt, kerb, shoulders and centreline. Both tracks draw all expected materials,
+exercise both buffers and exit through scheduled headless Escape. This qualifies
+the band containing row160; it is not full-road or full-scene image acceptance.
+
+Serial ABBA construction results (normal guest clock/UART, stock native VDP):
+
+| Track | Shared preparation mean | Repeated preparation mean | Reduction |
+| --- | --- | --- | --- |
+| Oval | 0.169372559 ms/section | 0.183359782 ms/section | 7.63% |
+| Fuji | 0.171661377 ms/section | 0.189717611 ms/section | 9.52% |
+
+All grouped medians are0.1953125ms/call; timer granularity prevents a median
+speedup claim. The initial16-call grouped attempt (`abba-oval-0-shared`) produced
+zero-tick samples and was rejected. Final groups contain256 finite resident calls,
+64 warm groups and two64-group measured passes, with separate serial runs in
+ABBA order. MOS time advances in two120Hz ticks here, so the effective timestamp
+step is16.667ms, or0.065104ms/call after dividing a256-call group. Each span ends
+at a GP parser echo, not a raster-completion event. The runs contain no observer
+interposer and no per-section counter. Separate `golem-section-repeat/counted-*`
+probes verify exactly1024 invocations and correct final geometry/materials over
+four varied states per track. Shared preparation is the measured selected choice.
+
+The compiler regression suite passes with sanitizers, and the earlier R19-04
+arithmetic kernel recompiles byte-for-byte identically (see
+`arithmetic-bytecode-regression.json`). Host and native signed-quantization proof
+remain as described above. MOS guest exit reports are preserved as raw CRLF;
+task-local Git attributes now recognize their carriage returns as line endings.
+
+| Section construction | Oval | Fuji |
+| --- | ---: | ---: |
+| Owned IDs | 455 | 877 |
+| Resident payload bytes | 36804 | 139772 |
+| Bootstrap bytes | 43236 | 152112 |
+| Resident plus retained bootstrap payload | 80040 | 291884 |
+
+These are compiler payload ledgers, not heap measurements. The unchanged earlier
+admission kernel uses306 IDs; naively adding it to Fuji's877 would exceed1024.
+R19-07 must pack/integrate the coefficient tables and shared resources before
+full-scene integration. A practical next construction is a few immutable banks
+below65535 bytes each, selecting an interval's228-byte record by source bank and
+offset instead of assigning one ID to each of512 intervals. Keep raw coefficient
+bytes, guards and the frozen ABI unchanged. Then enumerate and merge the complete
+curve/stripe boundary lists, project shared endpoints once and draw every band.
+The row160 bracket assets are only this milestone's diagnostic construction.

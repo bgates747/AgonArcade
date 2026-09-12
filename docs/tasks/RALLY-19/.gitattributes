@@ -1,4 +1,6 @@
 # MOS evidence is byte-exact CRLF data: preserve it, do not normalize captures.
 evidence/**/*.csv -text whitespace=cr-at-eol
+evidence/**/guest-*.txt -text whitespace=cr-at-eol
+evidence/**/guest-*.viz -text whitespace=cr-at-eol
 # Raw stdout/debugger logs can contain terminal escape/control bytes.
 evidence/**/*.log -text -diff

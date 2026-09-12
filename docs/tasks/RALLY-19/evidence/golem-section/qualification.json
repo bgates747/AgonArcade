@@ -1,0 +1,127 @@
+{
+  "milestone": "R19-06",
+  "pass": true,
+  "scope": "One complete accepted band containing diagnostic row160, both tracks; no full-scene/hardware/performance-goal completion claim. Raw game-state/table inputs only. Frozen production admission ABI unchanged.",
+  "compiler_commit": "f54651a9ed3df87fc3d1e4240264cf44888cc951",
+  "visual_cases": 74,
+  "max_centre_error_pixels": 0,
+  "minimum_material_one_pixel_agreement": {
+    "asphalt": 1.0,
+    "kerb": 1.0,
+    "shoulder": 1.0,
+    "centreline": 1.0
+  },
+  "timing": {
+    "oval": {
+      "shared_mean_ms": 0.16937255859375,
+      "repeated_mean_ms": 0.18335978190104166,
+      "shared_reduction_fraction": 0.07628294036061023,
+      "group_median_ms_per_call": [
+        0.1953125,
+        0.1953125,
+        0.1953125,
+        0.1953125
+      ]
+    },
+    "fuji": {
+      "shared_mean_ms": 0.171661376953125,
+      "repeated_mean_ms": 0.18971761067708334,
+      "shared_reduction_fraction": 0.09517426273458451,
+      "group_median_ms_per_call": [
+        0.1953125,
+        0.1953125,
+        0.1953125,
+        0.1953125
+      ]
+    }
+  },
+  "timing_scope": "Normal guest clock/UART, stock VDP, no observer; serial ABBA, 256 resident invocations/group,64 warm groups,128 measured groups/run. GP parser echo, not raster completion. Native timer advances in two-tick steps; grouped median ties reflect that granularity. Counted separate probes verify1024 invocations/track.",
+  "choice": "Share interval lookup and fraction preparation across both endpoints; evaluate each row from its resident coefficients and preserve oracle truncation.",
+  "resources": {
+    "oval": {
+      "bootstrap_bytes": 43236,
+      "resident_payload_bytes": 36804,
+      "owned_ids": 455,
+      "asset_payload_bytes": 26566,
+      "program_payload_bytes": 6830,
+      "scratch_payload_bytes": 3408,
+      "resident_plus_bootstrap_payload_bytes": 80040
+    },
+    "fuji": {
+      "bootstrap_bytes": 152112,
+      "resident_payload_bytes": 139772,
+      "owned_ids": 877,
+      "asset_payload_bytes": 129534,
+      "program_payload_bytes": 6830,
+      "scratch_payload_bytes": 3408,
+      "resident_plus_bootstrap_payload_bytes": 291884
+    }
+  },
+  "remaining": "Full-road enumeration, production admission integration, cars/background/frontend, matched full-scene timing and10-minute stability remain R19-07 onward. Current Fuji877 IDs leaves147; naively adding the earlier306-ID admission kernel would exceed1024, so integrate/pack before full scene.",
+  "evidence": [
+    {
+      "path": "evidence/golem-section-visual/quantized-oval/results.json",
+      "sha256": "5865b4330cfe32c7ef8bde0e17660f60e0baaeb13755c811a27bc20a8f46823d"
+    },
+    {
+      "path": "evidence/golem-section-visual/quantized-oval/oracle/manifest.json",
+      "sha256": "3afa61587b0df10a72edaf544cbbc016513a67a07529547d886e63d9200d4831"
+    },
+    {
+      "path": "evidence/golem-section-visual/quantized-oval/candidate/manifest.json",
+      "sha256": "f92b3bd6aa7a17c50b9c7aa85ae65bfe410483fef654cfcf7ceb9d2ea985ef8d"
+    },
+    {
+      "path": "evidence/golem-section-visual/quantized-fuji-a/results.json",
+      "sha256": "97f39cec13c0c15a100cbd153ed4a53d47cf4bb9856846636a52762c89fc26b5"
+    },
+    {
+      "path": "evidence/golem-section-visual/quantized-fuji-a/oracle/manifest.json",
+      "sha256": "d10ea19e747e1d2a30dfdfc71be01dd895bb30c35be395555c9f88bc06b167ef"
+    },
+    {
+      "path": "evidence/golem-section-visual/quantized-fuji-a/candidate/manifest.json",
+      "sha256": "3db2ff236e2fb1680a705cddea54753fe0c6d0f29ecf083dd8beb11242892933"
+    },
+    {
+      "path": "evidence/golem-section-visual/quantized-fuji-b/results.json",
+      "sha256": "d25b1b2db80d2ecbfb498d8857a4453384864c951daaab9af487bea1b86ca65c"
+    },
+    {
+      "path": "evidence/golem-section-visual/quantized-fuji-b/oracle/manifest.json",
+      "sha256": "1f9c05e6393ffa6d685572720ea7d69c6e907c372767a356f8799ca32227520a"
+    },
+    {
+      "path": "evidence/golem-section-visual/quantized-fuji-b/candidate/manifest.json",
+      "sha256": "0237f606d4ae1aed11188592594477cf00aa2379b67f4972557a276daf63358e"
+    },
+    {
+      "path": "evidence/golem-rounding/signed-boundaries/results.json",
+      "sha256": "d0252fdb770a429913ab6fa79f3413af85924bdd3b260a29558738be8ed5650a"
+    },
+    {
+      "path": "evidence/golem-section/arithmetic-bytecode-regression.json",
+      "sha256": "65b9924b2cb0ba9228bc0765c269e2ee69c81caf6f1c5cb1bf38629206a310e3"
+    },
+    {
+      "path": "evidence/golem-section/host-tests-quantization.json",
+      "sha256": "a23a61a5c5cf04808dd8b3bf12384776a2236e71976ecc526597ac5159883dc3"
+    },
+    {
+      "path": "evidence/golem-section-repeat/counted-oval/results.json",
+      "sha256": "14aa428c451325f55657e348b3eced758ae1a6442692cad04e34e5a1491c7539"
+    },
+    {
+      "path": "evidence/golem-section-timing/groups256-oval/results.json",
+      "sha256": "048b691f27654eb78c9e3d374f0ab6aaa28680d653febd5bc67a5acf2ec53c64"
+    },
+    {
+      "path": "evidence/golem-section-repeat/counted-fuji/results.json",
+      "sha256": "06b28fcee33be4cc15afccc61726dc343ff7d1f3e7d3cf4a6a1dc96060ceda10"
+    },
+    {
+      "path": "evidence/golem-section-timing/groups256-fuji/results.json",
+      "sha256": "222ba98bdf40ed830fb6e943ca22646d97a8388198900b1d64d70b48c2348bc4"
+    }
+  ]
+}
