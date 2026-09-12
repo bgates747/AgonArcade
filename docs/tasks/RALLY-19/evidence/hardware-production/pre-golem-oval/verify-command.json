@@ -1,0 +1,17 @@
+[
+  "/home/smith/.platformio/penv/bin/python",
+  "/home/smith/.platformio/packages/tool-esptoolpy/esptool.py",
+  "--chip",
+  "esp32",
+  "--port",
+  "/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0",
+  "--baud",
+  "921600",
+  "verify_flash",
+  "0x1000",
+  "/home/smith/Agon/mystuff/AgonArcade-rally19/.work/stock-vdp-2.16.0/bootloader.bin",
+  "0x8000",
+  "/home/smith/Agon/mystuff/AgonArcade-rally19/.work/stock-vdp-2.16.0/partitions.bin",
+  "0x10000",
+  "/home/smith/Agon/mystuff/AgonArcade-rally19/.work/stock-vdp-2.16.0/firmware.bin"
+]

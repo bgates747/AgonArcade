@@ -1,0 +1,25 @@
+{
+  "authorization": "Author requested latest pre-Golem eZ80 renderer replacing existing game, oval/demo without diagnostics, stock VDP and enabled extender keyboard.",
+  "destination": "/media/smith/AGON/mystuff/arcade/rally",
+  "deployed": {
+    "rally.bin": {
+      "sha256": "e14e5c0f155a4f035e925b1da5971e8f7202fe47c7147e24a5726ef937d4fe5f",
+      "bytes": 131731
+    },
+    "oval.road": {
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+      "bytes": 20584
+    },
+    "fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    }
+  },
+  "backup": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/hardware-backup/pre-golem-oval",
+  "synced": true,
+  "autoexec_only_change": "Uncomment EMOS KEYINPUT extender; all other bytes and CRLF preserved.",
+  "autoexec_sha256": "c051ef1f18ce2941ba4e583a12f8d70adb9ffeac5ac13c55027db071a059d9e7",
+  "firmware": "Official stock VDP2.16.0; all3 segments independently verified without rewriting flash.",
+  "physical_game_validation": "Pending Author test; onboard USB keyboard circuit damaged, extender keyboard is required.",
+  "unused_golem_data": "Existing VDP/CLR files retained but not loaded by this program."
+}
