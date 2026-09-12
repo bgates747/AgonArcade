@@ -97,3 +97,58 @@ retain guest raw intervals and separate steady completed-frame intervals from
 the first frame's host marker handshake. CPU scene-work measurements still need
 their own bounded symbol spans; neither native wall intervals nor a GP reply
 alone supplies them.
+
+## Observer overhead qualification
+
+`measure_swap_overhead.py initial` ran eight serial exact-oracle workloads, ABBA
+per track with A=plain and B=observed, preparing all profiles and building the
+observer before timing. Actual process arguments confirm normal CPU limiting;
+there were no concurrent emulators, builds or captures. Source/runtime inputs
+remained unchanged. Each batch has64 poses,384 traffic draws, matching track
+state hashes and exact expected road-byte totals. Each observed run also retains
+136 strictly nested events and63 steady completed-frame intervals; the first
+transition includes the host go-marker handshake and is explicitly excluded.
+
+| Track | Plain mean batch ticks | Observed mean batch ticks | Difference |
+| --- | ---: | ---: | ---: |
+| Oval |254|252|-0.7874%|
+| Fuji |253|254|+0.3953%|
+
+The120 Hz guest batch clock is quantized at8.333 ms. Both pass the diagnostic's
+5% absolute-effect guard; these small differences are not evidence of a real
+observer speedup. See `evidence/golem-swap-overhead/initial/results.json`, raw
+CSV intervals and per-run manifests. This qualifies the method on these finite
+oracle runs; it does not satisfy the Golem speedup or full-scene latency targets.
+
+## Next concrete CPU measurement construction
+
+Keep the R19-09 frontend source and qualified bootstraps intact. A separate
+task-local benchmark build can replace only its diagnostic function/option guard,
+using the exact same raw pose/physics setup and renderer functions. Reuse the
+qualified `.vdp` bytes and identify the distinct benchmark binary. Preserve an
+independent bridge to the untouched accepted oracle's64-pose state hashes, byte
+totals and timing; instrumented oracle code is not automatically the original
+binary. Prebuild all variants before serial timing.
+
+For isolated eZ80 work, investigate a diagnostic-only GNU linker wrap of
+`_mos_puts`. The installed agondev uses `ez80-none-elf-ld`; its
+`config/makefile.inc` puts linker options in LINKERFLAGS/LINKERLIBFLAGS (not a
+generic LDFLAGS variable). The SDK signature is
+`void mos_puts(const char *, uint24_t, char)`. A separately compiled CPU-only
+variant could forward normally during bootstrap and suppress only UART output
+inside a finite measured scene-generation span. That would retain original
+geometry, command construction, branch decisions, HUD and swap construction,
+while avoiding driver/backpressure waits in the work measurement. Do not enable
+that suppression in the rendering/latency benchmark.
+
+This construction is not implemented or qualified yet. It must prove wrapping
+covers all libvdp sends, match independent per-pose byte accounting (and97+17+3
+candidate bytes with the fixed fixture HUD), preserve source/input state, and
+bound the added counter/wrapper/marker overhead. Debugger cycle spans need memory
+barriers and must exclude raw fixture setup/physics. Report actual work scope:
+stream construction is distinct from MOS driver cycles and UART waits. Do not
+silently treat a swallowed transmission as measured real submission, nor derive
+CPU savings from its byte counter. If the wrap or overhead bounds are unsuitable,
+fall back to explicitly scoped preparation spans plus separately measured real
+submission, retaining the limitation. Real rendering runs must keep normal UART,
+all120 road rows, original scenery/six cars and warmed resident data.

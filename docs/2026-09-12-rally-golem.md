@@ -104,3 +104,12 @@ vdu_mode explains the additional initialization swap. PERFORMANCE.md records
 the synchronous userspace primitive path and distinguishes pointer-swap return,
 Canvas's further vblank wait and SDL presentations. Observer overhead, candidate
 ABBA and isolated guest CPU work remain open; no R19-10 box is checked.
+
+The native observer overhead check passes eight serial exact-oracle batches,
+ABBA per track with two plain/two observed runs. Batch-clock differences are
+-0.7874% oval and+0.3953% Fuji, inside the5% diagnostic guard; guest clock
+quantization is8.333ms. All inputs/state hashes/road totals match, and observed
+events preserve the qualified68-swap sequence. Raw steady-frame intervals are
+retained with the initial host-handshake transition explicitly excluded. This
+qualifies the finite Linux observation method, not Golem performance. The next
+benchmark construction and CPU-scope pitfalls are documented in PERFORMANCE.md.
