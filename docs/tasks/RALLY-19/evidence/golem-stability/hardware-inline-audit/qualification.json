@@ -1,0 +1,169 @@
+{
+  "pass": true,
+  "scope": "Independently audit long replay sequences, raw state, finite values and growth.",
+  "runs": [
+    {
+      "track": "oval",
+      "source_run": "hardware-inline-soak-oval",
+      "frames": 18064,
+      "guest_seconds": 602.1333333333333,
+      "wall_seconds_including_final_readback": 602.306699818,
+      "all_payloads_exact": true,
+      "missing_duplicate_or_protocol_errors": 0,
+      "nonfinite": 0,
+      "natural_lap_crossings": 44,
+      "natural_stripe_crossings": 2312,
+      "nearby_visible_depth_poses": 2375,
+      "steering_values": [
+        -21,
+        -18,
+        -15,
+        -14,
+        -12,
+        -11,
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        3,
+        6,
+        7,
+        9,
+        12,
+        14,
+        15,
+        18,
+        21
+      ],
+      "grip_range": [
+        25,
+        200
+      ],
+      "surfaces": [
+        0,
+        1,
+        2
+      ],
+      "flags": [
+        0,
+        1,
+        2
+      ],
+      "lateral_range_q8": [
+        -38400,
+        38400
+      ],
+      "speed_range": [
+        0,
+        300
+      ],
+      "warmup_last_growth_frame": -1,
+      "steady_signature": {
+        "matrices": 106,
+        "live_allocs": 3698,
+        "live_bytes": 745263
+      },
+      "steady_frames": 18064,
+      "after_cleanup": [
+        26,
+        174986
+      ]
+    },
+    {
+      "track": "fuji",
+      "source_run": "hardware-inline-soak-fuji",
+      "frames": 18064,
+      "guest_seconds": 602.1333333333333,
+      "wall_seconds_including_final_readback": 602.321937476,
+      "all_payloads_exact": true,
+      "missing_duplicate_or_protocol_errors": 0,
+      "nonfinite": 0,
+      "natural_lap_crossings": 15,
+      "natural_stripe_crossings": 2392,
+      "nearby_visible_depth_poses": 2284,
+      "steering_values": [
+        -21,
+        -18,
+        -15,
+        -14,
+        -12,
+        -11,
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -3,
+        -2,
+        -1,
+        0,
+        3,
+        6,
+        7,
+        9,
+        12,
+        14,
+        15,
+        18,
+        21
+      ],
+      "grip_range": [
+        25,
+        200
+      ],
+      "surfaces": [
+        0,
+        1,
+        2
+      ],
+      "flags": [
+        0,
+        1,
+        2
+      ],
+      "lateral_range_q8": [
+        -38400,
+        38400
+      ],
+      "speed_range": [
+        0,
+        300
+      ],
+      "warmup_last_growth_frame": 8,
+      "steady_signature": {
+        "matrices": 112,
+        "live_allocs": 3772,
+        "live_bytes": 868137
+      },
+      "steady_frames": 18055,
+      "after_cleanup": [
+        26,
+        174986
+      ]
+    }
+  ],
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-oval/manifest.json": "bad354e209fde6523425090d9bd36ae2793e9d8da448c61cacfab19e0f17d072",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-oval/host-sanitizers.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-oval/expected.dat": "b52450a7e67e586d643b1d0c7c9716aab10e2a1abf806478274de8a6dd353e70",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-oval/calls.csv": "197dee63378fac9f5bcc9a3fbb23afff127a4d4a32613e421563d09f0ec517a7",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-oval/replay-summary.csv": "22d3760b9b8f063438677a1d8aa2830c1d22b3ca1384323ca7c8b31fb09ce578",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-oval/replay-readback.dat": "1a86db2cbdca991d0c4bd45e6720167dc96545f746d23656d5a09cdea7591675",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-oval/memory.csv": "2ec9482feb85e1bb0062ea3fb9a1e66d04886e2b33eb1e5ec8e6cddb8767eae3",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-fuji/manifest.json": "e0dad010822e17255172d0c2edd3b6940cc088eed1184c266427febbc17d85ae",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-fuji/host-sanitizers.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-fuji/expected.dat": "20c2e5042c9e274f690dbd7e731feb17e200a0dfb9a6354921009fe483476203",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-fuji/calls.csv": "ca0b611f3e4be4722d40ccd810c65c0743bf11e12b83482129323c66ef0945ad",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-fuji/replay-summary.csv": "22d3760b9b8f063438677a1d8aa2830c1d22b3ca1384323ca7c8b31fb09ce578",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-fuji/replay-readback.dat": "4ef3ee30ca8f7cbf2f38e74fddc7c05aea77e4a054b8bf79430359b02fb4d116",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-stability/hardware-inline-soak-fuji/memory.csv": "aa4c75823c394f0c36397215537f7a5baf09a334d00e6f4a39d9f1d7945b8c81"
+  },
+  "auditor_sha256": "f7f40c965926d7f140bea06be86ce6e95fc539cbbeb713511a363ad929b61537",
+  "limits": "Synthetic deterministic keys/clock; real keyboard-map chain is covered by separate native frontend tests. Observer allocations exclude malloc paths bypassing heap_caps. No hardware or performance claim. Lifecycle and final loader qualification remain separate."
+}

@@ -259,3 +259,23 @@ has not delivered a practical hardware acceleration. Its diagnostic164-byte
 minimum stack margin is also small and does not establish every-path safety.
 Final native regression/timing documentation and R19-12 delivery remain separate.
 No remote push, new flash, deployment or GUI launch accompanied this checkpoint.
+
+
+## H3 complete — Review prepared and final-asset controls checked
+
+The dedicated `hardware-stack-review` emulator was launched after the cause was
+identified, as the Author explicitly requested, and later observed closed by
+20:03UTC. This is a session observation, not graphical approval inferred from
+window closure. No additional attention emulator is launched at this checkpoint.
+Its preserved inputs and the review scope are indexed in
+`evidence/hardware-production/inline-controls/review-record.json`.
+
+All12 final-asset native frontend cases now pass: demo, held left/right steering,
+takeover, autosteer and explicit oracle mode on both tracks. The independent
+qualifier verifies638 host state records, exact accepted input/physics/HUD bodies,
+97 recurring state/submit bytes, zero invalid states and successful cleanup/MOS
+exit. The unfenced production control capture uses the same deployed scene assets.
+The two602-second audited replays, both lifecycle suites,834 loader faults and
+eight native file failures are recorded in STABILITY.md and their raw evidence.
+H3 is checked under the standing milestone commit authorization. This completes
+review preparation; it does not turn the slow physical result into a speed pass.

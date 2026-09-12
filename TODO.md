@@ -99,7 +99,7 @@ This ordered register owns progress across AgonArcade and Golem.
     11.2. [x] **R19-11-H2 — Correct and qualify stock compatibility.** Fix the
           evidenced game/compiler cause; reproduce the failure and validate the
           correction on physical VDP, restoring official firmware after diagnosis.
-    11.3. [ ] **R19-11-H3 — Prepare human review.** Run appropriate headless
+    11.3. [x] **R19-11-H3 — Prepare human review.** Run appropriate headless
           regression checks, preserve evidence and launch a dedicated review
           emulator only when the bug is identified and the game likely runs.
           Details and authorization: `docs/tasks/RALLY-19/HARDWARE-DEBUG.md`.

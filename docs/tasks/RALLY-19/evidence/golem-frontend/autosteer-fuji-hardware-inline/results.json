@@ -1,0 +1,37 @@
+{
+  "scope": "Headless interactive frontend validation; captures are not performance data.",
+  "case": "autosteer",
+  "track": "fuji",
+  "pass": true,
+  "checks": {
+    "takeover_or_race": true,
+    "frames": true,
+    "progress": true,
+    "speed": true,
+    "state_valid": true,
+    "cleanup": true,
+    "frame_count": true,
+    "scene_bytes": true,
+    "track": true,
+    "held_steering": true,
+    "grip_increase": true
+  },
+  "play": {
+    "demo": 0,
+    "steering": 21,
+    "speed": 90,
+    "lateral": 38400,
+    "position": 87094,
+    "frames": 91
+  },
+  "renderer": {
+    "frames": 91,
+    "scene_bytes": 8827,
+    "startup_ticks": 1156,
+    "state_invalid": 0,
+    "cleanup_ok": 1,
+    "grip": 200,
+    "phase": 7094,
+    "track": 1
+  }
+}

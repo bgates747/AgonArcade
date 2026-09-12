@@ -1,0 +1,20 @@
+{
+  "scope": "R19-11-H3 preparation and regression record; no graphical/hardware speed acceptance inferred.",
+  "session_observation": "Dedicated hardware-stack-review graphical emulator was launched after the stack cause was identified and later observed closed by20:03UTC. No new GUI launch is performed for this record.",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/hardware-stack-review",
+  "launch_entrypoint": "./fab-agon-emulator --renderer sw from the dedicated profile directory",
+  "profile_inputs_sha256": {
+    ".emulator/hardware-stack-review/fab-agon-emulator": "161b1dfa57e0cf6923e361dee987a78aead8f7a7389554a4985532c3e13187dd",
+    ".emulator/hardware-stack-review/sdcard/autoexec.txt": "9b9bf53efdb0408c03402bdb2b68318289a989b43945aebee8677480b33f8c14",
+    ".emulator/hardware-stack-review/sdcard/rally/rally.bin": "64c8b0734bcd253112d162173fc38f343eafbc96894dc1d09b4793766ed59129",
+    ".emulator/hardware-stack-review/sdcard/rally/oval.vdp": "cad8b8339151262576f9cab237a58b4b5d47e5fc49acb9ea3eb046269ad9d044",
+    ".emulator/hardware-stack-review/sdcard/rally/oval.clr": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f"
+  },
+  "frontend_qualification_sha256": "885c9e91d78fe596785101486d0dce90cc05fe473dd08cbbf415344210f79fdc",
+  "headless_regression": {
+    "native_control_cases": 12,
+    "host_state_records": 638,
+    "input_physics_HUD_unchanged": true
+  },
+  "human_acceptance_scope": "Official physical reset success is recorded separately under official-inline-restore/acceptance.json; user reported slow operation. Closing an emulator window is not approval."
+}

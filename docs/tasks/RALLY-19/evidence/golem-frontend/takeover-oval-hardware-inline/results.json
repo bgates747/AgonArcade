@@ -1,0 +1,37 @@
+{
+  "scope": "Headless interactive frontend validation; captures are not performance data.",
+  "case": "takeover",
+  "track": "oval",
+  "pass": true,
+  "checks": {
+    "takeover_or_race": true,
+    "frames": true,
+    "progress": true,
+    "speed": true,
+    "state_valid": true,
+    "cleanup": true,
+    "frame_count": true,
+    "scene_bytes": true,
+    "track": true,
+    "steering_reversed": true,
+    "grip_range": true
+  },
+  "play": {
+    "demo": 0,
+    "steering": -21,
+    "speed": 90,
+    "lateral": 23100,
+    "position": 125468,
+    "frames": 96
+  },
+  "renderer": {
+    "frames": 96,
+    "scene_bytes": 9312,
+    "startup_ticks": 570,
+    "state_invalid": 0,
+    "cleanup_ok": 1,
+    "grip": 150,
+    "phase": 5468,
+    "track": 0
+  }
+}

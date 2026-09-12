@@ -1,0 +1,74 @@
+{
+  "pass": true,
+  "scope": "Full-scene stock-VDP malformed transport, sequence wrap and owned lifecycle.",
+  "track": "oval",
+  "events": 210,
+  "accepted": 27,
+  "observed_calls": 198,
+  "all_96_byte_readbacks_exact": true,
+  "rejected_geometry_and_history_unchanged": true,
+  "sequence_wrap": true,
+  "nonfinite": 0,
+  "owned_ids": 836,
+  "cleanup_cycles": 3,
+  "foreign_canary_preserved": true,
+  "memory": {
+    "100": [
+      3699,
+      745289,
+      867827,
+      992489,
+      988790
+    ],
+    "200": [
+      255,
+      560158,
+      867827,
+      999185,
+      998930
+    ],
+    "300": [
+      3706,
+      745461,
+      867827,
+      1105087,
+      1101381
+    ],
+    "201": [
+      255,
+      560158,
+      867827,
+      1111783,
+      1111528
+    ],
+    "301": [
+      3706,
+      745461,
+      867827,
+      1217685,
+      1213979
+    ],
+    "202": [
+      255,
+      560158,
+      867827,
+      1224381,
+      1224126
+    ],
+    "302": [
+      3706,
+      745461,
+      867827,
+      1330283,
+      1326577
+    ],
+    "400": [
+      26,
+      174986,
+      867827,
+      1330298,
+      1330272
+    ]
+  },
+  "remaining": "Final qualification audit and normal frontend exit on checked build; no hardware acceptance."
+}

@@ -96,3 +96,80 @@ for builds. All probes create canonical local profiles and launch dummy SDL.
 Both long replays and full-oval lifecycle passed. See DEBRIEF-2026-09-12.md
 for exact results, loader fixes, the native two-vblank path and pending work.
 The Author requested stopping for discussion. R19-11 and R19-12 remain open.
+
+## Stack-fix candidate regression
+
+After the Author resumed hardware diagnosis, the stock processLoop stack failure
+led to selective compiler call inlining. These bootstraps differ from the earlier
+replays; their old soak/performance results are not final-candidate acceptance.
+See HARDWARE-DEBUG.md for the physical evidence and current firmware/card state.
+
+The `hardware-inline` research frontend reproduces the production candidate's
+two scene assets exactly. The explicit `--inline-qualified` builder option checks
+the full66-pose proof, evidence/source identities and regenerated integrity
+header, while retaining exact cleanup/road data and original simulation/transport.
+Without that option the old strict bridge rejects the changed bootstraps.
+Damaged bootstrap and stale-header negative checks also reject temporary copies.
+
+Reproduction uses fresh names and the existing build environment:
+`build_frontend.py hardware-inline`, followed by `build_stability.py`,
+`build_lifecycle.py` or `build_render_work.py` with
+`hardware-inline --frontend hardware-inline --inline-qualified`.
+Prefix scripts with `docs/tasks/RALLY-19/` and invoke `.venv/bin/python`.
+These are diagnostic builds; the card retains its separate production binary.
+
+`probe_loader.py hardware-inline --build hardware-inline` passes834 sanitized
+fault cases; the larger bootstrap sizes add read-boundary cases to the old738.
+`probe_lifecycle.py hardware-inline-fuji --build hardware-inline --track fuji`
+passes210 events/27 admitted states, sequence wrap and rejection/history checks,
+three teardown/reload cycles, all853 owned IDs and the foreign canary check.
+Equivalent cleanup phases remain255 allocations/560158 bytes, reload phases
+3779/868319, and final teardown26/174986. These are native tracked allocations.
+The updated oval lifecycle, long replays and final timing/controls still require
+their own execution and audit. Physical stock compatibility remains unaccepted.
+
+The matching oval lifecycle subsequently passed all210 events/27 admissions
+and three cleanup/reload cycles, including all836 owned IDs and the foreign
+canary. Reload phases remained3706 allocations/745461 bytes; cleanup phases
+were255/560158 and final teardown26/174986, identical across repeated cycles.
+Evidence: `evidence/golem-lifecycle/hardware-inline-oval/results.json`.
+Both-track native missing/corrupt bootstrap/cleanup tests were then started;
+their individual result files determine completion, not this progress note.
+
+All eight native startup-failure cases subsequently passed: missing/corrupted
+`.vdp` and `.clr` on each track returned the expected error31 and left no queried
+scene/art/bootstrap buffer readable. Results are under `evidence/golem-failure/`
+with prefix `hardware-inline-<track>-<case>`. The first final-asset long replay,
+`hardware-inline-soak-oval`, was then started for18064 frames; completion and
+steady-state memory still require its final report and the both-track auditor.
+
+The corrected oval long replay passed18064 frames/72256 ticks (602.133 guest
+seconds). Every admitted80-byte state matched the sanitized host replay and the
+independent final92-byte guest readback matched. All106 matrices stayed finite;
+all3698 tracked live allocations/745263 bytes stayed constant throughout.
+Evidence: `evidence/golem-stability/hardware-inline-soak-oval/results.json`.
+The matching Fuji run was then started; the final both-track audit remains open.
+
+Fuji also passed18064 frames/72256 ticks. The independent both-track audit
+`evidence/golem-stability/hardware-inline-audit/qualification.json` recomputes
+all state/status/readback checks and steady memory from the raw captures.
+Both runs exceeded600 wall seconds as well as602.133 guest seconds. Fuji's only
+growth was one16-byte metadata allocation at frame8; the remaining18055 frames
+stayed at112 matrices,3772 allocations/868137 bytes. Both runs cleaned down to
+26 allocations/174986 bytes. Coverage includes59 natural lap crossings, all
+surfaces, both steering/lateral limits, speed0..300, grip25..200 and4659 poses
+with nearby visible vehicle depths. Actual keyboard inputs and final timing
+remain separate checks; these replays do not establish physical performance.
+
+
+All12 final frontend control runs subsequently passed and were independently
+qualified in `evidence/golem-frontend/hardware-inline-qualification.json`.
+There are638 exact host state records, unchanged input/physics/HUD source,
+held steering limits of-21/+21, grip25/200, proper takeover and armed Escape,
+zero invalid states,97 state/submit bytes per frame and cleanup/MOS exit.
+Bootstrap-only startup is570 ticks/4.75s oval and1156 ticks/9.633s Fuji; these
+values exclude art upload and are not whole-application startup times.
+The Author also confirmed slow continued rendering after a board reset on restored
+official VDP2.16.0. That physical startup correction is accepted separately from
+native stability and the still-unacceptable physical speed. H2/H3 evidence and
+limits are in HARDWARE-DEBUG.md. Final-asset timing and overall R19-11 review remain.
