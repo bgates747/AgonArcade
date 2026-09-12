@@ -1,0 +1,30 @@
+--- /home/smith/Agon/agon-vdp/video/vdu_stream_processor.h	2026-07-20 10:21:59.625501707 -0400
++++ docs/tasks/RALLY-19/.work/vdp-stack-diagnostic/video/vdu_stream_processor.h	2026-09-12 15:22:35.777591724 -0400
+@@ -584,11 +584,27 @@
+ 
+ // Process all available commands from the stream (used for buffer call/jump commands)
+ //
++static unsigned r19depth=0,r19max=0,r19frames=0;
++static uint16_t r19chain[64];
+ void VDUStreamProcessor::processAllAvailable() {
++    unsigned char spMarker;
++    if(r19depth<64)r19chain[r19depth]=id;
++    ++r19depth;
++    if(r19depth>r19max){
++        r19max=r19depth;
++        force_debug_log("R19 DEPTH %u SP %08x HWM %u CHAIN ",r19depth,(unsigned)&spMarker,(unsigned)uxTaskGetStackHighWaterMark(NULL));
++        for(unsigned i=0;i<r19depth&&i<64;++i)force_debug_log("%u/",r19chain[i]);
++        force_debug_log("\r\n");
++    }
++
+ 	while (byteAvailable()) {
+ 		flushEcho();
+ 		vdu(readByte());
+ 	}
++    if(r19depth==1 && r19chain[0]==2000 && (++r19frames<=3 || (r19frames%120)==0)) {
++        force_debug_log("R19 FRAME %u DONE HWM %u HEAP %u PSRAM %u\r\n",r19frames,(unsigned)uxTaskGetStackHighWaterMark(NULL),(unsigned)ESP.getFreeHeap(),(unsigned)ESP.getFreePsram());
++    }
++    --r19depth;
+ 	// Don't call processEventQueue to allow nested buffer calls to edit values that could trigger events
+ }
+ 

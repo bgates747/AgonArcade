@@ -1,0 +1,21 @@
+[   683][E][esp32-hal-misc.c:143] disableCore1WDT(): Failed to remove Core 1 IDLE task from WDT
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (processLoop) 
+Core  0 register dump:
+PC      : 0x4008a5ac  PS      : 0x00060c36  A0      : 0x3ffbb5c0  A1      : 0x3ffbb500  
+A2      : 0x00000000  A3      : 0x00060c23  A4      : 0x00060c20  A5      : 0x3f800078  
+A6      : 0x3f884f4c  A7      : 0x00000000  A8      : 0x00000001  A9      : 0x00000000  
+A10     : 0x00060c23  A11     : 0x00000004  A12     : 0x3f84784c  A13     : 0x00000001  
+A14     : 0x007bd5c8  A15     : 0x003fffff  SAR     : 0x0000001c  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x4008c74c  LEND    : 0x4008c762  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4008a5a9:0x3ffbb500 0x3ffbb5bd:0x3ffbb5d0 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 57cb8a6c110c1076
+
+Rebooting...
+[   683][E][esp32-hal-misc.c:143] disableCore1WDT(): Failed to remove Core 1 IDLE task from WDT

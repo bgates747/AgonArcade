@@ -36,3 +36,23 @@ Official VDP artifacts and full preflash backup are in repository-root
 The active official version is 2.16.0, source tag c7ac293d2aa81ddfa693390549bcd909069c8fc3.
 The failing ESP32 is locally connected; resolve its stable serial path again
 before flashing. Do not use the remote Extender P4 bench for this task.
+
+## H1 — physical fault located
+
+Stock serial capture reports `Stack canary watchpoint triggered (processLoop)`
+on Core 0, followed by reboot. The corrupted backtrace is not usable for an
+exact source-line attribution. Evidence: `evidence/hardware-production/serial-stock/passive.bin`.
+
+A separately built official-2.16.0 diagnostic changes only the processLoop stack
+from 4096 to 16384 bytes and adds UART0 call-depth/high-water logging. It reports
+eight nested processAllAvailable calls along:
+submit2000 -> commitState2002 -> renderProof2004 -> road_fullRoad2400 ->
+road_drawNextBand2701 -> road_projectRow2406 -> LoadElement guard316 ->
+patched-copy315. Each additional observed interpreter level costs384 bytes.
+The first completed frame leaves11956 of16384 stack bytes:4428 consumed,
+including diagnostic overhead, above stock4096. At least three frame returns
+were observed. This is not yet a full gameplay or stock-firmware acceptance.
+The native host's stack did not expose the ESP32's small task-stack constraint.
+
+H2 will reduce emitted call nesting while preserving stock VDP semantics and
+production game inputs. Larger firmware stack is a diagnostic control only.

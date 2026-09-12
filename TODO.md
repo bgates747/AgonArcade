@@ -93,7 +93,7 @@ This ordered register owns progress across AgonArcade and Golem.
     thresholds. Review generated commands for hidden eZ80 geometry/custom features.
     Commit the audit and reproducible evidence; do not assert hardware acceptance.
     Hardware investigation authorized after the stock-VDP reset reproduced:
-    11.1. [ ] **R19-11-H1 — Locate the physical reset.** Capture stock ESP32
+    11.1. [x] **R19-11-H1 — Locate the physical reset.** Capture stock ESP32
           serial boot/crash output; if necessary flash a separately built VDP
           with targeted serial diagnostics. Preserve exact production assets.
     11.2. [ ] **R19-11-H2 — Correct and qualify stock compatibility.** Fix the
