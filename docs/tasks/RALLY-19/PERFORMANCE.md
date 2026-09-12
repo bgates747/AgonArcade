@@ -36,8 +36,8 @@ Inspection of the pinned official Fab1.2.4 runtime source found potentially usef
 exported native functions. Under
 `AgonJukebox/.emulator/runtime/fab-1.2.4/src/vdp/userspace-vdp-gl/src/`:
 
-1. `canvas.cpp:647`, `Canvas::swapBuffers`, queues the SwapBuffers primitive and
-   calls `primitivesExecutionWait()`.
+1. `canvas.cpp:647`, `Canvas::swapBuffers`, passes a SwapBuffers primitive to
+   `addPrimitive` and calls `primitivesExecutionWait()`.
 2. `dispdrivers/vgabasecontroller.cpp:812`, `VGABaseController::swapBuffers`, waits
    for userspace vblank, acquires the display lock and swaps viewport pointers.
 3. `dispdrivers/vgapalettedcontroller.cpp:405`, `VGAPalettedController::swapBuffers`,
@@ -56,3 +56,44 @@ calls as separate frames would be incorrect. SDL presentation remains separate.
 The existing heap observer in `memory_probe_linux.cpp` belongs to untimed memory
 qualification. Do not mix its allocation tracking with performance results.
 All runtime modules remain stock and hash-identified; all emulators are headless.
+
+## Native execution-path detail and first probe
+
+Further source inspection matters here: native `displaycontroller.cpp:540`
+compiles out the queued path and executes primitives synchronously in
+`addPrimitive`. Its `primitivesExecutionWait` calls userspace `waitVblank`.
+Thus Canvas return includes a further wait after the actual viewport-pointer
+swap. The two timestamps describe distinct milestones; neither is an SDL present.
+
+The first task-local observer records both Canvas and paletted-controller call
+entry/return, using bounded static storage and clock/atomic operations only in
+the hot hooks. It resolves symbols during warmup and flushes after the entire
+guest batch/report. The initial exact-oracle run produced68 nested calls of each
+kind, failing the harness's predicted67. This is explained by stock
+`vdu.h:300` (`vdu_mode`): entering a double-buffered mode internally swaps once
+to clear the other page. The accepted diagnostic then explicitly swaps once,
+warms twice and renders64 workload poses. The initial sources/logs are preserved
+in `evidence/golem-swap-observer/initial-oval`; subsequent checks must require all
+68 operations and must not count the mode initialization as a game frame.
+
+This tests event identity/order only. Observer overhead, controls without the
+observer, per-stage guest work and matched candidate timing remain unqualified.
+
+The corrected `mode-count-oval` and `mode-count-fuji` runs both pass: each has
+68 Canvas calls and68 paletted-controller calls, monotonically ordered ordinals
+and strict entry/return nesting. Each unchanged guest reports64 poses,384 traffic
+draws and its original per-track state hash. Runtime inputs remain unchanged.
+The observer sees actual native swap functions through the original module;
+it does not supply replacement graphics operations or a firmware callback.
+
+```sh
+.venv/bin/python docs/tasks/RALLY-19/probe_swaps.py NEW-oval --track oval
+.venv/bin/python docs/tasks/RALLY-19/probe_swaps.py NEW-fuji --track fuji
+```
+
+This is a partial R19-10 checkpoint. Before using observer timestamps to accept
+performance, qualify overhead against serial identical runs without preload,
+retain guest raw intervals and separate steady completed-frame intervals from
+the first frame's host marker handshake. CPU scene-work measurements still need
+their own bounded symbol spans; neither native wall intervals nor a GP reply
+alone supplies them.

@@ -1,0 +1,25 @@
+{
+  "scope": "Qualify native swap observation against the exact accepted 64-pose workload.\n\nThis initial probe tests event identity/order; it is not an offload benchmark.\n",
+  "pass": true,
+  "swaps": 68,
+  "mode_initialization_swap": 1,
+  "startup_swap": 1,
+  "warmup_swaps": 2,
+  "workload_swaps": 64,
+  "events": 136,
+  "strict_nesting_and_sequence": true,
+  "measurement": {
+    "frames": 64,
+    "submit_ticks": 254,
+    "complete_ticks": 254,
+    "completed": 1,
+    "road_bytes": 25595,
+    "cars": 384,
+    "pose_hash": 1859756176,
+    "bands": 947,
+    "load_ticks": 282
+  },
+  "runtime_inputs_unchanged": true,
+  "swaps_sha256": "e0dee4bc5a586c05bd7f3e66d48d299353851b8d5061294b824dfd4a5b13c6b1",
+  "remaining": "Observer overhead/disabled comparison, true scene-work CPU spans and candidate ABBA. No performance pass yet."
+}

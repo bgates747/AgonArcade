@@ -94,3 +94,13 @@ R19-09. Recurring scene/update/call/swap is100 bytes, with HUD separate.836/853
 IDs fit the unchanged cap. No performance or live-memory claim follows from
 these correctness results; R19-10 through R19-12 remain open. All emulator work
 was headless, with no alerts, pushes, SD deployment or original/upstream edits.
+
+R19-10 partial measurement checkpoint: an external Linux observer reaches the
+unchanged native Canvas/paletted-controller swap functions. Both exact-oracle
+64-pose tracks pass136 nested entry/return records, accounting for the mode's
+internal page-clear swap, one explicit startup swap and two warmup swaps. The
+first expected-count failure (67 versus68) and its sources are retained; stock
+vdu_mode explains the additional initialization swap. PERFORMANCE.md records
+the synchronous userspace primitive path and distinguishes pointer-swap return,
+Canvas's further vblank wait and SDL presentations. Observer overhead, candidate
+ABBA and isolated guest CPU work remain open; no R19-10 box is checked.
