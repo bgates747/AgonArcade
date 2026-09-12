@@ -1,0 +1,9 @@
+make: Entering directory '/home/smith/Agon/mystuff/golem-rally19/src'
+mkdir -p ../build
+g++ -std=c++17 -Wall -Wextra -O2 -o ../build/golemc golemc.cpp
+make: Leaving directory '/home/smith/Agon/mystuff/golem-rally19/src'
+wrote 1321 bytes to /home/smith/Agon/mystuff/golem-rally19/build/native-arithmetic/program.bin
+make: Entering directory '/home/smith/Agon/mystuff/golem-rally19/build/native-arithmetic'
+mkdir: cannot create directory ‘bin’: File exists
+make: *** [/home/smith/Agon/agondev/release/config/makefile.inc:151: bin] Error 1
+make: Leaving directory '/home/smith/Agon/mystuff/golem-rally19/build/native-arithmetic'

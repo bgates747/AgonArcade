@@ -1,0 +1,40 @@
+{
+  "golem_commit": "e6197940d952989963c096099e9badbe30deaa51",
+  "phase": "R19-04 partial checkpoint; checkbox remains open",
+  "program_sha256": "314f2402bd6280c6c97703b46f089b35fdea713abb89db60ecf9c81740a3f245",
+  "final_compiler_reproduces_native_program": true,
+  "white_pixels_exact": [
+    [
+      103,
+      30
+    ],
+    [
+      73,
+      60
+    ],
+    [
+      16,
+      90
+    ],
+    [
+      89,
+      120
+    ],
+    [
+      43,
+      150
+    ]
+  ],
+  "source_hashes": {
+    "src/golemc.cpp": "4d46bb53d9a397a3697e36fb967889c432cd67a74757ab9ba3668b8802e2f022",
+    "src/hosted.hpp": "8a19fd8ee9d1b38b1db0c6c9abf6ee4eebb7e549252655354702074848371cf6",
+    "examples/native_arithmetic/kernel.golem": "956adcbc1d325899cf5552b03e9bbe48980024e6b91e35dddd4830c2a08dcd33",
+    "examples/native_arithmetic/main.cpp": "31f9878d36afcce408ae58afcd6c7057bd9727233cab985cb4efef149acf54c3"
+  },
+  "limits": [
+    "native runtime invalid-input guards still pending",
+    "native loop trip variants and broader indexed/type/lifetime cases pending",
+    "kernel timings/peak memory not yet measured",
+    "GP is diagnostic byte readback, not render completion"
+  ]
+}

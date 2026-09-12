@@ -76,3 +76,34 @@ bias for negative integer output, and exclusion of conditional-word 0xFFFF's
 missing-value sentinel. The design explicitly accounts for these, matrix inverse
 caches and finite recovery from incomplete raw commands. Native arithmetic,
 admission and performance are still pending; no claim of a running VDP renderer.
+
+## R19-04 — First native arithmetic checkpoint, still unchecked, 2026-09-12
+
+Golem commit e6197940d952989963c096099e9badbe30deaa51 extends its C++ compiler
+with typed hosted declarations, real stock arithmetic lowering, finite calls/
+repeats and checked signed-store/PLOT. Existing regressions, new byte goldens,
+26 negative cases and the frozen hosted design accept/reject corpus pass with
+sanitizers. Source formatting and conservative alias/range checks were followed
+by reproduction of exactly the same native program bytes, recorded in
+evidence/golem-arithmetic/checkpoint.json.
+
+The passing isolated-build headless native run executes five varied input sets:
+product, product-plus-input, reciprocal via diagonal affine inversion, division,
+screen-Y rotation, signed floors including -32768/32767, and computed PLOT.
+Its eight-trip loop wraps 65534 to 6 without corrupting adjacent 12345. Raw
+results are copied back through stock GP-token echoes; this is diagnostic byte
+readback, not a rendering-completion callback. Captured pixels are exactly the
+five expected white points. No eZ80 implementation of the tested arithmetic.
+
+The 1321-byte Golem bootstrap owns 35 IDs and reports 810 resident payload bytes,
+excluding matrix metadata and allocator overhead. Kernel timing/peak memory are
+not measured yet. Retained first run shows a wrong Cartesian-Y rotation reference;
+the correction follows pinned stock source. Retained second attempt shows the
+agondev forced-mkdir rebuild failure; per-run build directories avoid it without
+upstream edits. Both failures and the passing evidence remain inspectable.
+
+R19-04 remains open for native bad-depth admission, zero/one/120-trip loop cases,
+broader index/type/lifetime checks and numerical cost measurements. R19-05 still
+owns production state admission, dynamic indexing/assets and full lifecycle.
+Neither the complete Golem interface nor the Rally renderer is claimed done.
+All emulator work was headless; no alerts, pushes or SD changes.
