@@ -3,6 +3,12 @@
 This is the authoritative task checklist. Details are in `docs/tasks/<ID>.md`;
 task-specific supporting files belong in `docs/tasks/<ID>/`.
 
+17. [ ] [RALLY-18](docs/tasks/RALLY-18.md): Implement accepted centreline-fixed camera and precomputed road experiment, with separately measured perspective vehicle views; code isolated in task bucket.
+
+16. [ ] [RALLY-17](docs/tasks/RALLY-17.md): Review isolated benchmarks: computation/state only 19.73/17.51 ms versus 32.10/27.94 ms including command construction/UART (oval/Fuji); accepted game unchanged.
+
+15. [ ] [RALLY-16](docs/tasks/RALLY-16.md): Review unpaced normal-eZ80 benchmark: resident sections 29.7/29.9 FPS; native VDP swap path contains two vertical-blank waits.
+
 14. [ ] [RALLY-15](docs/tasks/RALLY-15.md): Review isolated VDP-resident full-road renderer — implemented; headless fixed fixture 22.6/23.6 FPS, ordinary demo 18.8/25.2 FPS (oval/Fuji); mainline unchanged.
 9. [ ] [RALLY-10](docs/tasks/RALLY-10.md): Investigate performance and frame pacing — pavement experiment measured at 13.6–14.0 FPS; full-road VDP section experiment proceeds as RALLY-15.
 13. [ ] [RALLY-14](docs/tasks/RALLY-14.md): Instrument emulator/VDP draw operations and MOS timing callbacks — supports RALLY-10.

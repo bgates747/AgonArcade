@@ -50,3 +50,10 @@ renderers meet the 30 Hz application cap. This supports eZ80-side work being
 the bottleneck at normal speed; the emulated VDP keeps up at that rate.
 It does not establish 60 Hz capability. The newer RALLY-15 resident-section
 renderer was not part of these unlimited-CPU runs.
+
+Later [RALLY-16 measurements](../../RALLY-16/results/README.md) removed all
+application pacing with normal eZ80 throttling. The native VDP adapter's swap
+path was then found to contain two consumptive vertical-blank waits. Thus the
+30 FPS unlimited result cannot distinguish the application's explicit cap
+from that additional emulator-side limit; the earlier CPU-speed sensitivity
+remains valid.

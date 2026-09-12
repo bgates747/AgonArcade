@@ -1,0 +1,822 @@
+{
+  "headless": true,
+  "clock_hz": 120,
+  "variants": {
+    "full": {
+      "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.work/build-shujrlvx/full",
+      "sha256": "013859c67219ef3b1c0de75204dfae65204fba5271245c4653add4e75b5b8ba2",
+      "bytes": 120806,
+      "source_sha256": "efb2345e7785cc2384523ce10846d3b221417f3a9ee6379a2b41132a419d0a03",
+      "build_evidence": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.NIMiM0\nSource archive SHA256: 833e2f2fd913b449f39479819aefdaa38ad17e7ceca655f35f83dc2614d96fb8\nBinary SHA256: 013859c67219ef3b1c0de75204dfae65204fba5271245c4653add4e75b5b8ba2\n",
+      "build_log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.work/build-shujrlvx/full-build.txt"
+    },
+    "pavement": {
+      "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.work/build-shujrlvx/pavement",
+      "sha256": "a83db9a54ad2c22f8aed4d81ab093ef114d34b53ff38232830386fffa13ac506",
+      "bytes": 120463,
+      "source_sha256": "6e1e11c8030bc7e453924f841fcec011a96a5c0d1f2b1171d9a181e3e8805cca",
+      "build_evidence": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.U8fEAG\nSource archive SHA256: 8d0910381e9806f57a616757b4def6db1cc88d1dafbcbcdf1947d812b9261e1d\nBinary SHA256: a83db9a54ad2c22f8aed4d81ab093ef114d34b53ff38232830386fffa13ac506\n",
+      "build_log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.work/build-shujrlvx/pavement-build.txt"
+    },
+    "sections": {
+      "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.work/build-shujrlvx/sections",
+      "sha256": "372c0cba84743cff1504288c1688d947c45e5aaed77e3fd21f9d3d98cd2168a2",
+      "bytes": 125747,
+      "source_sha256": "baff7c5c6b29ffc252f8cb83f82c4d3fc6d26fb167f0256f4ba5ea6dfe3a1f85",
+      "build_evidence": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.OtSnlE\nSource archive SHA256: 09eb3f42b93e48d9b078ce6d28bbcafe839042de577d9a4c50d6dc94c47258eb\nBinary SHA256: 372c0cba84743cff1504288c1688d947c45e5aaed77e3fd21f9d3d98cd2168a2\n",
+      "build_log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.work/build-shujrlvx/sections-build.txt"
+    }
+  },
+  "mainline": {
+    "rally/AGENTS.md": "0ade6fbfed09cc527bb1542c1ded89f0f6630c0e4d2b1f143fdc89b89bda12b5",
+    "rally/Makefile": "c93547e65aa2126eaf33fc860aabd2e282381521e529cb68ecad3a11fc4c6244",
+    "rally/README.md": "775e1c898f6233abb4ea6db310ae2ea649ad582208abe9d34937b3da31c57095",
+    "rally/assets/car/README.md": "ce1652e4672ecadff22c61fa5bd9a8d6fc2e5a3e35745d92b0ae054199cc7163",
+    "rally/assets/car/car-00.png": "b7623b6217676ac703a8b991343119db42674776439579f5c8adddb7e9fbb5df",
+    "rally/assets/car/car-00.rgba2222": "043194aa2bd550d3ad1a8974577b1d9a8ef00dc1350a2207a316fea44b841d14",
+    "rally/assets/car/car-01.png": "6e107aa1c80b427b2d815f2d6bec2c86858f5fbf9948e0ed17c76aa65357a9ee",
+    "rally/assets/car/car-01.rgba2222": "b0a798dfc03698fc2d463c85eec7bef1e8cd1b2100a93256f43a689d573c354d",
+    "rally/assets/car/car-02.png": "43d0ccc17ac80f73b40074f3bb8cd8e3ed09e676252d987daa5d6d2b103a6222",
+    "rally/assets/car/car-02.rgba2222": "0295d05f9a63841b3a1125f4784b1ace55b9a598abd2328375fe44a28dfbca8a",
+    "rally/assets/car/car-03.png": "5fcc867b060f40ba18c75a406fc39b66e454aaa2892a746dd8adbd75ec6c2f1d",
+    "rally/assets/car/car-03.rgba2222": "92f58f82287f180372f42ad51528403d60fef30a9bd66ef41a7b9e3d09ece4d1",
+    "rally/assets/car/car-04.png": "8f8a1fd1b5523fbd21b0617a8d1d8b85aced42e3e363a3a4b70540b889a3caf2",
+    "rally/assets/car/car-04.rgba2222": "24697dba67713161e9524d392075eee15b9a43148f00b5d74a65fe66a9e571b2",
+    "rally/assets/car/rally-car.blend": "3d991158329d654c2b0be2a9128722f529d4a41d8ad4d2786c182589a3220094",
+    "rally/assets/car/road-mockup.png": "fdd665bcd850e8097d5b43a38645cf7cdafc493f5fe65f1724e73ee584c703c8",
+    "rally/assets/car/sprites.json": "c026ace6c0e8b21df2f1ab32e23f48328d5f7829776c049b00ced08fdfd2fdb2",
+    "rally/assets/car/yaw-sheet.png": "ea0be5b8f69ebbbb64d248ff5575711f6751abbd0d3bcc0fd772abd7820c0677",
+    "rally/assets/scenery/README.md": "a4d0f50e8027ed7ec89db27211620ff5da06afe72a679caa0f492ebc7920b86b",
+    "rally/assets/scenery/panorama.idx4": "ee42c8bc3e50ef3b0ad3e96f088a7b86560f8d9f19ccd6f567104c619e64b4af",
+    "rally/assets/scenery/panorama.png": "de12e05d6e7d035f71b93fa08b8c1e77ca18cc3c5f985b89bd49b052c2490140",
+    "rally/assets/scenery/scenery.gpl": "7e0bac2bf8df2ea753330c8162bc01afef8872802017f368979ad1430958b451",
+    "rally/assets/track.csv": "a82cfbbe8586f51731538d45ce51b3edd6547abef3994434b4ab004e8d0a711d",
+    "rally/assets/track.svg": "11c8835952a6b849a0a3f31814c1d75a06519aa36ca91d302309982ac7ef3fb4",
+    "rally/assets/tracks/README.md": "36eada2c9e918567353839c6ccbf4a8170501d040d571459fbe02a84b68e1574",
+    "rally/assets/tracks/drawing-radius-comparison.json": "5ddde864b03828413161eb1a9d987a4ca228ae4bd482caeb5e026bbf20d3de2d",
+    "rally/assets/tracks/fuji-stats.json": "2e315220f4ba897aeb9da93d112179136e0549689756ed05b9f57f3a2e53d10a",
+    "rally/assets/tracks/fuji.csv": "491008bb91b69c0ce658c6de94dfd358c0b4b07045a6a5b9518731b5160e966f",
+    "rally/assets/tracks/fuji.json": "5916fb21af5b01211518f324c109d92c535fe2fca1ae6b8052e07e51b5d251df",
+    "rally/assets/tracks/fuji.svg": "b53ac59dd78b34ede1a96eb43dee0860802d5c4f8b7ef580895c2c07870b5cf9",
+    "rally/assets/tracks/tri-oval-stats.json": "b2c2e3caf14287a6ada923091fb7d53d110609f4bc6f70936fc85615f86158d6",
+    "rally/assets/tracks/tri-oval.csv": "a82cfbbe8586f51731538d45ce51b3edd6547abef3994434b4ab004e8d0a711d",
+    "rally/assets/tracks/tri-oval.json": "ae99a58428351bc598784afa1d6872d2044df273a7bb05ce9506472aa94f3378",
+    "rally/assets/tracks/tri-oval.svg": "11c8835952a6b849a0a3f31814c1d75a06519aa36ca91d302309982ac7ef3fb4",
+    "rally/docs/curve-left.png": "84e10688e1927326d7ceb060a062907b6f756856b15bafc03fe1dc0e2012bacb",
+    "rally/docs/curve-right.png": "efd149f70f2187fe9a2830ef7c950361b920171f355edb3866df087d8504da24",
+    "rally/docs/driving.png": "8bb73bfb7f172fcd7f1457d5c5f191ff1b3633e8963ca868bf43c1b3002a6cc0",
+    "rally/docs/straight-road.png": "0ad4de88bbd1b508332856f09cbfb1b7e936e89f605432b07ecbc310cc3b4dbc",
+    "rally/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "rally/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "rally/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+    "rally/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+    "rally/include/road.hpp": "ec808d57188dda98198e7a0deea59f485596a3be5a0f37529a2ad554a1d107a2",
+    "rally/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "rally/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "rally/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "rally/include/traffic.hpp": "7e418a934c7caa5f2766b8c4ff35519535a012083919eeead0588ca0495560a1",
+    "rally/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8",
+    "rally/run.sh": "9fe1b93fc45e67c040c794b0cd585c27b2c304b8fe73d601bfdde831cb1d5ce3",
+    "rally/src/main.cpp": "2f8c084fc4be5eb11b6c785a47ba8cf654c20664b4c91c34d8fcf9c223c1bd49",
+    "rally/tests/preview_track.cpp": "134d04152111e084ab6a0a51bbfc9a3504f4b3a6eb4f283bb2adb4be77506a25",
+    "rally/tests/test_bands.cpp": "5fb235460a1d2f2e38d2c39f75f80e6c6534721fbb84d9ed4bdef758e21ad7b2",
+    "rally/tests/test_pacing.cpp": "6f91f950ac00b89534ea1bec1375981d9a256dba7fe31f7b631a7ba42ad0df30",
+    "rally/tests/test_road.cpp": "57d0f4f205153e732b8599662e095b8dd68cd84c654e67fa79fbb98fe5e1da40",
+    "rally/tools/build_car.py": "bf73aab0d740982cde7f166068a797de74fdc4260e3b438c713424d911916f9f",
+    "rally/tools/build_linux.py": "eb274b8b8d472855c6bca5f40ad40213054060624655601a7107b5ce2089c074",
+    "rally/tools/deploy.py": "17bbf66ee044c70f0b759eb0b9b61f07823c43f0eb9723bb41581130837c11b5",
+    "rally/tools/export_car.py": "b000e49da774b1a916bfce89cd812aabf18dd7f275430a5cd654c06a7cf821df",
+    "rally/tools/generate_scenery.py": "bdf757fc16408f8af1fba6dab3e5fb6fcde2e9961e05ac17512e6b6be6a7b457",
+    "rally/tools/generate_track.py": "02ffd42608f111dd87d9a8edd7044277dbc051c0997fcbd6f4aa36d8e3e63acc",
+    "rally/tools/prepare_emulator.py": "b23c8cc2489cb040684383d61d4d5a038c6d4017c3bfcb07c760280d8d9481df",
+    "rally/bin/rally.bin": "d08300dc7c0b4ab9b55dbbafc7cf3ba02c1f6e9cb42b8b828385751e1e6aa920"
+  },
+  "runtime": {
+    "/Users/bgates/Agon/fab-agon-emulator/fab-agon-emulator": "cdf9d21e2db2266e4113982e661138074cae54186e062e63759db6341ffb6c86",
+    "/Users/bgates/Agon/fab-agon-emulator/firmware/vdp_platform.so": "0d3aeb7a6bb55976fbddb3d6d32bf4a5a7269d075245bf6243dc69fb0bdbbf24",
+    "/Users/bgates/Agon/fab-agon-emulator/firmware/mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.work/vdp_rally_sink.so": "0a73e7de4d240fb572323d415cd5b14ee8fece23f4db4895eb9e091df5401f46"
+  },
+  "runs": [
+    {
+      "track": "oval",
+      "variant": "full",
+      "mode": "count",
+      "case": "oval-01-full-count",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 918,
+        "drain_ticks": 2,
+        "total_ticks": 918,
+        "completed": 1,
+        "road_bytes": 145992,
+        "cars": 384,
+        "pose_hash": 81866944
+      },
+      "sink": {
+        "bytes": 170010,
+        "fnv1a64": "a22058ce19a327d1",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "83687 bash ./fab-agon-emulator --renderer sw",
+        "83687 bash ./fab-agon-emulator --renderer sw",
+        "83687 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-full-count/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-full-count/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-full-count/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-full-count/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        3.78369140625,
+        3.1865234375,
+        3.47314453125
+      ],
+      "load_after": [
+        3.75,
+        3.208984375,
+        3.47607421875
+      ],
+      "wall_seconds_with_startup": 13.507662646996323,
+      "frame_ms": 119.53125,
+      "fps": 8.366013071895425
+    },
+    {
+      "track": "oval",
+      "variant": "full",
+      "mode": "sink",
+      "case": "oval-02-full-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 1214,
+        "drain_ticks": 2,
+        "total_ticks": 1214,
+        "completed": 1,
+        "road_bytes": 145992,
+        "cars": 384,
+        "pose_hash": 81866944
+      },
+      "sink": {
+        "bytes": 170010,
+        "fnv1a64": "a22058ce19a327d1",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "83716 bash ./fab-agon-emulator --renderer sw",
+        "83716 bash ./fab-agon-emulator --renderer sw",
+        "83716 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-full-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-full-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-full-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-full-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        3.75,
+        3.208984375,
+        3.47607421875
+      ],
+      "load_after": [
+        4.310546875,
+        3.37255859375,
+        3.5283203125
+      ],
+      "wall_seconds_with_startup": 16.40896321099717,
+      "frame_ms": 158.07291666666666,
+      "fps": 6.326194398682043
+    },
+    {
+      "track": "oval",
+      "variant": "full",
+      "mode": "sink",
+      "case": "oval-03-full-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 1076,
+        "drain_ticks": 2,
+        "total_ticks": 1076,
+        "completed": 1,
+        "road_bytes": 145992,
+        "cars": 384,
+        "pose_hash": 81866944
+      },
+      "sink": {
+        "bytes": 170010,
+        "fnv1a64": "a22058ce19a327d1",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "83759 bash ./fab-agon-emulator --renderer sw",
+        "83759 bash ./fab-agon-emulator --renderer sw",
+        "83759 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-full-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-full-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-full-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-full-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        4.310546875,
+        3.37255859375,
+        3.5283203125
+      ],
+      "load_after": [
+        4.85107421875,
+        3.5341796875,
+        3.58251953125
+      ],
+      "wall_seconds_with_startup": 15.278757663967554,
+      "frame_ms": 140.10416666666666,
+      "fps": 7.137546468401488
+    },
+    {
+      "track": "oval",
+      "variant": "pavement",
+      "mode": "count",
+      "case": "oval-01-pavement-count",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 664,
+        "drain_ticks": 2,
+        "total_ticks": 664,
+        "completed": 1,
+        "road_bytes": 20820,
+        "cars": 384,
+        "pose_hash": 81866944
+      },
+      "sink": {
+        "bytes": 44838,
+        "fnv1a64": "649bb63166bbee9b",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "83796 bash ./fab-agon-emulator --renderer sw",
+        "83796 bash ./fab-agon-emulator --renderer sw",
+        "83796 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-pavement-count/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-pavement-count/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-pavement-count/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-pavement-count/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        4.85107421875,
+        3.5341796875,
+        3.58251953125
+      ],
+      "load_after": [
+        5.28662109375,
+        3.66552734375,
+        3.62841796875
+      ],
+      "wall_seconds_with_startup": 12.186501655029133,
+      "frame_ms": 86.45833333333333,
+      "fps": 11.566265060240964
+    },
+    {
+      "track": "oval",
+      "variant": "pavement",
+      "mode": "sink",
+      "case": "oval-02-pavement-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 718,
+        "drain_ticks": 4,
+        "total_ticks": 718,
+        "completed": 1,
+        "road_bytes": 20820,
+        "cars": 384,
+        "pose_hash": 81866944
+      },
+      "sink": {
+        "bytes": 44838,
+        "fnv1a64": "649bb63166bbee9b",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "83831 bash ./fab-agon-emulator --renderer sw",
+        "83831 bash ./fab-agon-emulator --renderer sw",
+        "83831 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-pavement-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-pavement-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-pavement-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-pavement-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        5.82373046875,
+        3.8037109375,
+        3.67724609375
+      ],
+      "load_after": [
+        5.54248046875,
+        3.8095703125,
+        3.68017578125
+      ],
+      "wall_seconds_with_startup": 12.794887819967698,
+      "frame_ms": 93.48958333333333,
+      "fps": 10.696378830083566
+    },
+    {
+      "track": "oval",
+      "variant": "pavement",
+      "mode": "sink",
+      "case": "oval-03-pavement-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 688,
+        "drain_ticks": 2,
+        "total_ticks": 688,
+        "completed": 1,
+        "road_bytes": 20820,
+        "cars": 384,
+        "pose_hash": 81866944
+      },
+      "sink": {
+        "bytes": 44838,
+        "fnv1a64": "649bb63166bbee9b",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "83871 bash ./fab-agon-emulator --renderer sw",
+        "83871 bash ./fab-agon-emulator --renderer sw",
+        "83871 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-pavement-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-pavement-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-pavement-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-pavement-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        5.54248046875,
+        3.8095703125,
+        3.68017578125
+      ],
+      "load_after": [
+        4.90478515625,
+        3.7529296875,
+        3.6611328125
+      ],
+      "wall_seconds_with_startup": 12.974865256983321,
+      "frame_ms": 89.58333333333333,
+      "fps": 11.162790697674419
+    },
+    {
+      "track": "oval",
+      "variant": "sections",
+      "mode": "count",
+      "case": "oval-01-sections-count",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 492,
+        "drain_ticks": 4,
+        "total_ticks": 492,
+        "completed": 1,
+        "road_bytes": 32895,
+        "cars": 384,
+        "pose_hash": 81866944
+      },
+      "sink": {
+        "bytes": 56913,
+        "fnv1a64": "db103a6a910ad3fa",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "83906 bash ./fab-agon-emulator --renderer sw",
+        "83906 bash ./fab-agon-emulator --renderer sw",
+        "83906 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-sections-count/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-sections-count/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-sections-count/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-01-sections-count/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        4.90478515625,
+        3.7529296875,
+        3.6611328125
+      ],
+      "load_after": [
+        11.0302734375,
+        5.14111328125,
+        4.15625
+      ],
+      "wall_seconds_with_startup": 13.366096228011884,
+      "frame_ms": 64.0625,
+      "fps": 15.609756097560975
+    },
+    {
+      "track": "oval",
+      "variant": "sections",
+      "mode": "sink",
+      "case": "oval-02-sections-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 306,
+        "drain_ticks": 2,
+        "total_ticks": 306,
+        "completed": 1,
+        "road_bytes": 32895,
+        "cars": 384,
+        "pose_hash": 81866944
+      },
+      "sink": {
+        "bytes": 56913,
+        "fnv1a64": "db103a6a910ad3fa",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "83941 bash ./fab-agon-emulator --renderer sw",
+        "83941 bash ./fab-agon-emulator --renderer sw",
+        "83941 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-sections-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-sections-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-sections-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-02-sections-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        11.0302734375,
+        5.14111328125,
+        4.15625
+      ],
+      "load_after": [
+        10.30712890625,
+        5.0888671875,
+        4.1435546875
+      ],
+      "wall_seconds_with_startup": 7.326394719013479,
+      "frame_ms": 39.84375,
+      "fps": 25.098039215686274
+    },
+    {
+      "track": "oval",
+      "variant": "sections",
+      "mode": "sink",
+      "case": "oval-03-sections-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 236,
+        "drain_ticks": 2,
+        "total_ticks": 236,
+        "completed": 1,
+        "road_bytes": 32895,
+        "cars": 384,
+        "pose_hash": 81866944
+      },
+      "sink": {
+        "bytes": 56913,
+        "fnv1a64": "db103a6a910ad3fa",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "83957 bash ./fab-agon-emulator --renderer sw",
+        "83957 bash ./fab-agon-emulator --renderer sw",
+        "83957 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-sections-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-sections-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-sections-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/oval-03-sections-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        10.30712890625,
+        5.0888671875,
+        4.1435546875
+      ],
+      "load_after": [
+        12.037109375,
+        5.62890625,
+        4.34619140625
+      ],
+      "wall_seconds_with_startup": 7.0655275649623945,
+      "frame_ms": 30.729166666666668,
+      "fps": 32.54237288135593
+    },
+    {
+      "track": "fuji",
+      "variant": "full",
+      "mode": "count",
+      "case": "fuji-01-full-count",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 820,
+        "drain_ticks": 2,
+        "total_ticks": 820,
+        "completed": 1,
+        "road_bytes": 111432,
+        "cars": 384,
+        "pose_hash": 2288172160
+      },
+      "sink": {
+        "bytes": 135025,
+        "fnv1a64": "85e08598c45c9e51",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "83977 bash ./fab-agon-emulator --renderer sw",
+        "83977 bash ./fab-agon-emulator --renderer sw",
+        "83977 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-full-count/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-full-count/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-full-count/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-full-count/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        12.037109375,
+        5.62890625,
+        4.34619140625
+      ],
+      "load_after": [
+        11.82568359375,
+        5.80322265625,
+        4.4228515625
+      ],
+      "wall_seconds_with_startup": 11.629037061007693,
+      "frame_ms": 106.77083333333333,
+      "fps": 9.365853658536587
+    },
+    {
+      "track": "fuji",
+      "variant": "full",
+      "mode": "sink",
+      "case": "fuji-02-full-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 806,
+        "drain_ticks": 2,
+        "total_ticks": 806,
+        "completed": 1,
+        "road_bytes": 111432,
+        "cars": 384,
+        "pose_hash": 2288172160
+      },
+      "sink": {
+        "bytes": 135025,
+        "fnv1a64": "85e08598c45c9e51",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "83997 bash ./fab-agon-emulator --renderer sw",
+        "83997 bash ./fab-agon-emulator --renderer sw",
+        "83997 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-full-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-full-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-full-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-full-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        11.82568359375,
+        5.80322265625,
+        4.4228515625
+      ],
+      "load_after": [
+        11.521484375,
+        6.03857421875,
+        4.53076171875
+      ],
+      "wall_seconds_with_startup": 12.789581949007697,
+      "frame_ms": 104.94791666666667,
+      "fps": 9.528535980148883
+    },
+    {
+      "track": "fuji",
+      "variant": "full",
+      "mode": "sink",
+      "case": "fuji-03-full-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 798,
+        "drain_ticks": 2,
+        "total_ticks": 798,
+        "completed": 1,
+        "road_bytes": 111432,
+        "cars": 384,
+        "pose_hash": 2288172160
+      },
+      "sink": {
+        "bytes": 135025,
+        "fnv1a64": "85e08598c45c9e51",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "84016 bash ./fab-agon-emulator --renderer sw",
+        "84016 bash ./fab-agon-emulator --renderer sw",
+        "84016 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-full-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-full-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-full-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-full-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        11.521484375,
+        6.03857421875,
+        4.53076171875
+      ],
+      "load_after": [
+        9.970703125,
+        5.88818359375,
+        4.49462890625
+      ],
+      "wall_seconds_with_startup": 11.429934339947067,
+      "frame_ms": 103.90625,
+      "fps": 9.62406015037594
+    },
+    {
+      "track": "fuji",
+      "variant": "pavement",
+      "mode": "count",
+      "case": "fuji-01-pavement-count",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 570,
+        "drain_ticks": 0,
+        "total_ticks": 570,
+        "completed": 1,
+        "road_bytes": 12180,
+        "cars": 384,
+        "pose_hash": 2288172160
+      },
+      "sink": {
+        "bytes": 35773,
+        "fnv1a64": "2da80b3a15571627",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "84038 bash ./fab-agon-emulator --renderer sw",
+        "84038 bash ./fab-agon-emulator --renderer sw",
+        "84038 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-pavement-count/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-pavement-count/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-pavement-count/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-pavement-count/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        9.970703125,
+        5.88818359375,
+        4.49462890625
+      ],
+      "load_after": [
+        8.8056640625,
+        5.775390625,
+        4.47119140625
+      ],
+      "wall_seconds_with_startup": 8.941463024006225,
+      "frame_ms": 74.21875,
+      "fps": 13.473684210526315
+    },
+    {
+      "track": "fuji",
+      "variant": "pavement",
+      "mode": "sink",
+      "case": "fuji-02-pavement-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 492,
+        "drain_ticks": 0,
+        "total_ticks": 492,
+        "completed": 1,
+        "road_bytes": 12180,
+        "cars": 384,
+        "pose_hash": 2288172160
+      },
+      "sink": {
+        "bytes": 35773,
+        "fnv1a64": "2da80b3a15571627",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "84057 bash ./fab-agon-emulator --renderer sw",
+        "84057 bash ./fab-agon-emulator --renderer sw",
+        "84057 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-pavement-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-pavement-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-pavement-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-pavement-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        8.8056640625,
+        5.775390625,
+        4.47119140625
+      ],
+      "load_after": [
+        10.0390625,
+        6.1435546875,
+        4.6171875
+      ],
+      "wall_seconds_with_startup": 9.519369841960724,
+      "frame_ms": 64.0625,
+      "fps": 15.609756097560975
+    },
+    {
+      "track": "fuji",
+      "variant": "pavement",
+      "mode": "sink",
+      "case": "fuji-03-pavement-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 510,
+        "drain_ticks": 2,
+        "total_ticks": 510,
+        "completed": 1,
+        "road_bytes": 12180,
+        "cars": 384,
+        "pose_hash": 2288172160
+      },
+      "sink": {
+        "bytes": 35773,
+        "fnv1a64": "2da80b3a15571627",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "84080 bash ./fab-agon-emulator --renderer sw",
+        "84080 bash ./fab-agon-emulator --renderer sw",
+        "84080 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-pavement-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-pavement-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-pavement-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-pavement-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        10.0390625,
+        6.1435546875,
+        4.6171875
+      ],
+      "load_after": [
+        9.33740234375,
+        6.1220703125,
+        4.626953125
+      ],
+      "wall_seconds_with_startup": 8.499459383019712,
+      "frame_ms": 66.40625,
+      "fps": 15.058823529411764
+    },
+    {
+      "track": "fuji",
+      "variant": "sections",
+      "mode": "count",
+      "case": "fuji-01-sections-count",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 256,
+        "drain_ticks": 2,
+        "total_ticks": 256,
+        "completed": 1,
+        "road_bytes": 25470,
+        "cars": 384,
+        "pose_hash": 2288172160
+      },
+      "sink": {
+        "bytes": 49063,
+        "fnv1a64": "faaadee9895e27e4",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "84098 bash ./fab-agon-emulator --renderer sw",
+        "84098 bash ./fab-agon-emulator --renderer sw",
+        "84098 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-sections-count/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-sections-count/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-sections-count/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-01-sections-count/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        9.33740234375,
+        6.1220703125,
+        4.626953125
+      ],
+      "load_after": [
+        8.90966796875,
+        6.08642578125,
+        4.623046875
+      ],
+      "wall_seconds_with_startup": 6.77334251900902,
+      "frame_ms": 33.333333333333336,
+      "fps": 29.999999999999996
+    },
+    {
+      "track": "fuji",
+      "variant": "sections",
+      "mode": "sink",
+      "case": "fuji-02-sections-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 210,
+        "drain_ticks": 2,
+        "total_ticks": 210,
+        "completed": 1,
+        "road_bytes": 25470,
+        "cars": 384,
+        "pose_hash": 2288172160
+      },
+      "sink": {
+        "bytes": 49063,
+        "fnv1a64": "faaadee9895e27e4",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "84119 bash ./fab-agon-emulator --renderer sw",
+        "84119 bash ./fab-agon-emulator --renderer sw",
+        "84119 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-sections-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-sections-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-sections-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-02-sections-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        8.90966796875,
+        6.08642578125,
+        4.623046875
+      ],
+      "load_after": [
+        11.2578125,
+        6.6640625,
+        4.84375
+      ],
+      "wall_seconds_with_startup": 5.938064485962968,
+      "frame_ms": 27.34375,
+      "fps": 36.57142857142857
+    },
+    {
+      "track": "fuji",
+      "variant": "sections",
+      "mode": "sink",
+      "case": "fuji-03-sections-sink",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 216,
+        "drain_ticks": 0,
+        "total_ticks": 216,
+        "completed": 1,
+        "road_bytes": 25470,
+        "cars": 384,
+        "pose_hash": 2288172160
+      },
+      "sink": {
+        "bytes": 49063,
+        "fnv1a64": "faaadee9895e27e4",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "84137 bash ./fab-agon-emulator --renderer sw",
+        "84137 bash ./fab-agon-emulator --renderer sw",
+        "84137 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-sections-sink/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-sections-sink/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-sections-sink/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-17/.emulator/batch-nwjn9seu/fuji-03-sections-sink/sdcard --verbose -z --renderer sw"
+      ],
+      "cpu": "default 18.432 MHz; UART timing unchanged",
+      "load_before": [
+        11.2578125,
+        6.6640625,
+        4.84375
+      ],
+      "load_after": [
+        10.83642578125,
+        6.65283203125,
+        4.85009765625
+      ],
+      "wall_seconds_with_startup": 6.634725621028338,
+      "frame_ms": 28.125,
+      "fps": 35.55555555555556
+    }
+  ]
+}

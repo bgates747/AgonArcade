@@ -1,0 +1,92 @@
+[
+  {
+    "track": "oval",
+    "renderer": "full",
+    "frames": 128,
+    "fps": 8.571428571428571,
+    "frame_ms": 116.66666666666667,
+    "budget_multiple": 7.0,
+    "over_budget_ms": 100.0,
+    "fps_range": [
+      8.47682119205298,
+      8.668171557562077
+    ],
+    "mean_final_drain_ms": 16.666666666666668,
+    "road_bytes_per_batch": 145992
+  },
+  {
+    "track": "oval",
+    "renderer": "pavement",
+    "frames": 128,
+    "fps": 13.938294010889292,
+    "frame_ms": 71.74479166666667,
+    "budget_multiple": 4.3046875,
+    "over_budget_ms": 55.078125,
+    "fps_range": [
+      13.426573426573425,
+      14.490566037735848
+    ],
+    "mean_final_drain_ms": 16.666666666666668,
+    "road_bytes_per_batch": 20820
+  },
+  {
+    "track": "oval",
+    "renderer": "sections",
+    "frames": 128,
+    "fps": 29.65250965250965,
+    "frame_ms": 33.723958333333336,
+    "budget_multiple": 2.0234375,
+    "over_budget_ms": 17.057291666666668,
+    "fps_range": [
+      29.31297709923664,
+      29.999999999999996
+    ],
+    "mean_final_drain_ms": 25.0,
+    "road_bytes_per_batch": 32895
+  },
+  {
+    "track": "fuji",
+    "renderer": "full",
+    "frames": 128,
+    "fps": 9.94818652849741,
+    "frame_ms": 100.52083333333333,
+    "budget_multiple": 6.031249999999999,
+    "over_budget_ms": 83.85416666666666,
+    "fps_range": [
+      9.6,
+      10.32258064516129
+    ],
+    "mean_final_drain_ms": 16.666666666666668,
+    "road_bytes_per_batch": 112809
+  },
+  {
+    "track": "fuji",
+    "renderer": "pavement",
+    "frames": 128,
+    "fps": 16.340425531914896,
+    "frame_ms": 61.197916666666664,
+    "budget_multiple": 3.6718749999999996,
+    "over_budget_ms": 44.53125,
+    "fps_range": [
+      16.134453781512605,
+      16.551724137931036
+    ],
+    "mean_final_drain_ms": 16.666666666666668,
+    "road_bytes_per_batch": 12180
+  },
+  {
+    "track": "fuji",
+    "renderer": "sections",
+    "frames": 128,
+    "fps": 29.883268482490273,
+    "frame_ms": 33.463541666666664,
+    "budget_multiple": 2.0078124999999996,
+    "over_budget_ms": 16.796874999999996,
+    "fps_range": [
+      29.767441860465116,
+      29.999999999999996
+    ],
+    "mean_final_drain_ms": 16.666666666666668,
+    "road_bytes_per_batch": 25795
+  }
+]

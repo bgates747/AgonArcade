@@ -1,0 +1,20 @@
+[compiling src/main.cpp]
+[Linking bin/rally.noname.bin]
+[Start address 0x40000]
+[Setting name 'rally.bin' in binary]
+[Done]
+mkdir -p obj
+g++ -std=c++17 -Wall -Wextra -Werror -fsanitize=address,undefined -g -Iinclude tests/test_road.cpp -o obj/test_road
+./obj/test_road
+Full-loop curve budget: 1935 bytes, 16 bands; interpolation and band error checks pass.
+Steering symmetry, persistent steering detents, kerb/grass drag, stopped motion and camera parallax pass.
+Tri-oval loop/offset sweep: 1854 bytes maximum; sample and lap seams pass.
+Projection, all 8000 material phases, speed bounds, stop/coast, wrap and encoding pass. Max road bytes: 1368
+g++ -std=c++17 -Wall -Wextra -Werror -fsanitize=address,undefined -g -Iinclude tests/test_pacing.cpp -o obj/test_pacing
+./obj/test_pacing
+Poll fence rejects stale replies, alternates tokens, times out and handles clock wrap.
+g++ -std=c++17 -Wall -Wextra -Werror -fsanitize=address,undefined -g -Iinclude tests/test_bands.cpp -o obj/test_bands
+./obj/test_bands
+Fixed bands: 334053 held-out views, 0.449707 px max error; all 202 material patterns/table: 3945 bytes, 32 bands max.
+Built and verified /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-16/.work/build-et0smbgn/full/bin/rally.bin (119190 bytes)
+Remote build evidence retained at agon-linux:/home/smith/Agon/mystuff/rally-mac-build.043dYu
