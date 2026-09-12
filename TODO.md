@@ -8,6 +8,13 @@ pre-Golem product and enable unattended development through Extender. Read the
 [frozen planning contract](docs/tasks/RALLY-20/CONTRACT.md). Planning is the only
 completed phase. The requested emulator summons is notification-only.
 
+**Author priority amendment, 2026-09-12:** first deliver mainboard SD read/write
+access through Extender. Execution authority is the Extender project's local
+`docs/tasks/PORT-017.md` on its active `main` branch. Only that capability's
+necessary prerequisites may proceed before its physical acceptance; all other
+Rally work waits. R20-02/03 consume that task's evidence instead of duplicating
+its implementation. The goal remains paused until explicitly released.
+
 0. [x] **R20-00 — Freeze the plan before implementation.** Identify the accepted
    stripped production binary; consolidate useful open Rally work without
    asserting unperformed acceptance; record ownership, bootstrap/recovery
@@ -37,6 +44,10 @@ completed phase. The requested emulator summons is notification-only.
    evidence-selected candidates; compare physical A/B results against frozen
    targets while preserving graphics, tuning and control feel. Commit retained
    changes and rejected findings; do not equate less UART traffic with faster VDP.
+   Include the Author's deferred traffic-visibility candidate: draw traffic only
+   once its projected top and footprint stay within the road-span refresh area,
+   avoiding retained-background damage. Measure repair savings and appearance
+   transitions; see the R20-06 contract amendment. Implementation remains paused.
 7. [ ] **R20-07 — Qualify and restore clean production.** Both-track visuals,
    controls, stability and physical performance; instrumentation absent from
    product; official VDP restored and Extender keyboard working. Commit evidence

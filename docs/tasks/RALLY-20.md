@@ -38,6 +38,12 @@ tracks, collisions/explosions and higher resolutions are not performance fixes.
 
 ## Cross-project ownership
 
+2026-09-12 priority amendment: mainboard SD read/write access is the first
+blocking deliverable. **agon-extender/docs/tasks/PORT-017.md** owns implementation
+and component qualification on Extender's active main branch, with all needed
+context there. This task consumes its results. Other development waits except
+necessary SD-service prerequisites. Registration does not release the pause.
+
 RALLY-20 owns the ordered integration plan, run evidence and acceptance. It does
 not replace component ownership or sweep unrelated component TODOs into scope.
 
