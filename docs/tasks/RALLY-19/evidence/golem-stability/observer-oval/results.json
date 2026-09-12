@@ -1,0 +1,27 @@
+{
+  "pass": true,
+  "scope": "Headless deterministic replay with stock-call/finite-value/allocation observation.\n\nUntimed diagnostic; no rendering-performance or physical-hardware claims.\n",
+  "frames": 128,
+  "track": "oval",
+  "guest_ticks": 512,
+  "long_duration_pass": false,
+  "all_active_payloads_exact": true,
+  "guest_final_readback_exact": true,
+  "nonfinite": 0,
+  "read_errors": 0,
+  "memory_ranges": {
+    "matrices": [
+      106,
+      106
+    ],
+    "live_allocs": [
+      3698,
+      3698
+    ],
+    "live_bytes": [
+      720553,
+      720553
+    ]
+  },
+  "remaining": "Audit steady-state allocation history, lifecycle/malformed inputs and coverage before R19-11 acceptance."
+}

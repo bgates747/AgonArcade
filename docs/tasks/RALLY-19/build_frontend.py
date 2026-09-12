@@ -4,11 +4,12 @@ from pathlib import Path
 from profile import TASK
 from native_run import GOLEM,sha
 from build_scenery_draw import build
+from asset_integrity import generate
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('name');a=p.parse_args()
     work=TASK/'.work/frontend'/a.name;(work/'src').mkdir(parents=True,exist_ok=False)
-    source_paths=[TASK/'frontend.cpp',TASK/'golem_renderer.hpp',TASK/'frontend_state.hpp',TASK/'scene_protocol.hpp',
+    source_paths=[TASK/'frontend.cpp',TASK/'golem_renderer.hpp',TASK/'frontend_state.hpp',TASK/'scene_protocol.hpp',TASK/'checked_asset.hpp',TASK/'asset_integrity.py',
                   Path(__file__),GOLEM/'src/golemc.cpp',GOLEM/'src/hosted.hpp']
     source_paths+=sorted(TASK.glob('build_*kernel.py'))
     source_paths += [TASK/n for n in ['build_scenery_draw.py','build_scenery_history.py','build_scenery_heading.py',
@@ -17,7 +18,7 @@ def main():
     before={str(p):sha(p) for p in source_paths}
     shutil.copytree(TASK/'.work/oracle/include',work/'include')
     shutil.copy2(TASK/'frontend.cpp',work/'src/main.cpp')
-    for name in ['golem_renderer.hpp','frontend_state.hpp','scene_protocol.hpp']:shutil.copy2(TASK/name,work/'include'/name)
+    for name in ['golem_renderer.hpp','frontend_state.hpp','scene_protocol.hpp','checked_asset.hpp']:shutil.copy2(TASK/name,work/'include'/name)
     (work/'Makefile').write_text('NAME=rally\n.DEFAULT_GOAL := all\nLDHAS_ARG_PROCESSING=0\nLDHAS_EXIT_HANDLER=0\n'
                                'include $(shell agondev-config --makefile)\nCXXFLAGS += -std=c++17 -Wall -Wextra -Werror -fno-exceptions -fno-rtti\n')
     with (work/'build.txt').open('w') as log:
@@ -28,6 +29,7 @@ def main():
             subprocess.run([str(GOLEM/'build/golemc'),'--hosted',str(source),str(output)],check=True,stdout=log,stderr=subprocess.STDOUT)
             shutil.copy2(output.with_name(output.name+'.clear'),work/(track+'.clr'))
             shutil.copy2(TASK.parent/'RALLY-18/data'/(track+'.road'),work/(track+'.road'))
+        generate(work)
         subprocess.run(['make','-C',str(work)],check=True,stdout=log,stderr=subprocess.STDOUT)
     assert before=={str(p):sha(p) for p in source_paths},'Source changed during build'
     output_paths=[work/'bin/rally.bin',*[work/(t+ext) for t in ['oval','fuji'] for ext in ['.vdp','.clr','.road']]]

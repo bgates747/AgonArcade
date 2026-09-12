@@ -1,0 +1,11 @@
+make: Entering directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/stability/initial'
+[compiling src/main.cpp]
+[Linking bin/rally.noname.bin]
+[Start address 0x40000]
+[Setting name 'rally.bin' in binary]
+[Done]
+make: Leaving directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/stability/initial'
+/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/stability/initial/host.cpp: In function ‘int main(int, char**)’:
+/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/stability/initial/host.cpp:13:9: error: ‘struct rally::Traffic’ has no member named ‘reset’
+   13 | traffic.reset(motion.track->length*100);
+      |         ^~~~~
