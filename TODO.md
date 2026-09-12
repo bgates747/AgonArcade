@@ -29,7 +29,7 @@ This ordered register owns progress across AgonArcade and Golem.
    Design only the intrinsics needed by Rally, preserving existing language
    semantics. Fix exact compact state fields, ranges and ordered commit/trigger
    protocol including independent stripe phase and HUD needs. Commit design/tests.
-4. [ ] **R19-04 — Implement and qualify reusable stock arithmetic in Golem.**
+4. [x] **R19-04 — Implement and qualify reusable stock arithmetic in Golem.**
    Extend the C++ compiler with the defined lowering. Add golden/negative and
    sanitizer tests, preserving print/uint16/addition/For-Next. Run native headless
    varying-input product, multiply-add, reciprocal/division, rotation, negative

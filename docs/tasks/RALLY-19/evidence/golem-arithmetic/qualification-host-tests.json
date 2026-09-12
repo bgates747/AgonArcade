@@ -1,0 +1,45 @@
+{
+  "existing": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_existing.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_existing"
+    ],
+    "stdout": "Existing language: print escapes/case, little-endian uint16, addition, loop buffer comparison, ten rejection cases pass.\n"
+  },
+  "hosted": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_hosted.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_hosted"
+    ],
+    "stdout": "Hosted compiler: stock byte goldens, typed load, forward calls, finite repeat, signed-store/PLOT lowering and 26 negative cases pass.\n"
+  },
+  "design_cases": {
+    "accepted": 3,
+    "rejected": 12,
+    "failure_preserves_output": true
+  },
+  "source_hashes": {
+    "src/golemc.cpp": "4d46bb53d9a397a3697e36fb967889c432cd67a74757ab9ba3668b8802e2f022",
+    "src/hosted.hpp": "8a19fd8ee9d1b38b1db0c6c9abf6ee4eebb7e549252655354702074848371cf6",
+    "tests/test_existing.cpp": "e1a8efdb74b7d78ed886a8606529fdeaa84969d37a0d23ce36caf1756ab5c1d5",
+    "tests/test_hosted.cpp": "1b6392a814598c4abc9fde84913cc912591349202c8dad2e8e02aece575311d6"
+  }
+}

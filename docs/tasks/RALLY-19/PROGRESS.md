@@ -107,3 +107,28 @@ broader index/type/lifetime checks and numerical cost measurements. R19-05 still
 owns production state admission, dynamic indexing/assets and full lifecycle.
 Neither the complete Golem interface nor the Rally renderer is claimed done.
 All emulator work was headless; no alerts, pushes or SD changes.
+
+## R19-04 — Reusable native arithmetic qualified, 2026-09-12
+
+Golem commit 181c906270aa858e2381a4dde68495a50bc98127 completes the arithmetic
+milestone. The reusable compiler/native kernels now prove matrix product/add/
+subtract/scalar multiply, diagonal affine reciprocal/division, rotation,
+nonzero matrix-cell replacement/extraction, signed conversion and computed PLOT.
+Five differing inputs include 7*9, 84/7, negative products and signed-word limits.
+Zero/negative/oversized denominators are rejected before inversion; valid input
+is admitted. Native repeat counts 0/1/8/120 and neighboring-field preservation
+pass. Host golden/negative/sanitizer regressions remain passing.
+
+Complete-intrinsics visual and capture-free cost runs both pass. Final readback
+remains correct after 40,960 finite calls. The final program is 2461 bootstrap
+bytes, 66 IDs and 1477 declared payload bytes, excluding metadata/peak allocator
+memory. Full arithmetic takes 30 ticks/4096 calls in both final repeats, about
+61.0 us/call including UART submission and the final GP parser echo. Observed
+clock granularity is two ticks, so small differences from empty jobs cannot be
+used as pure VDP timing. No rendering-completion or ESP32 performance claim.
+
+Evidence/golem-arithmetic/qualification.json maps the milestone requirements to
+source identities, raw byte results, pixels, host tests and cost reports. The
+runtime guard covers this arithmetic kernel's denominator; full frame-state
+admission, dynamic asset/table indexing, metadata/memory balance and reset/reload
+are still R19-05/11. All tests were headless; original worktrees and SD untouched.

@@ -1,0 +1,407 @@
+{
+  "scope": "Compile existing C++ Golem, execute its kernels headlessly on stock VDP.\n\nGP echoes are used for diagnostic byte readback, never called frame completion.\nNo custom firmware, no unlimited CPU, and no mathematical answers from eZ80.\n",
+  "cases": [
+    {
+      "case": 0,
+      "actual": [
+        63.0,
+        70.0,
+        0.1111111119389534,
+        9.333333015441895,
+        10.0,
+        0.0,
+        -4,
+        103,
+        30,
+        6,
+        12345,
+        7.0,
+        63.0,
+        7.0
+      ],
+      "expected": [
+        63.0,
+        70.0,
+        0.1111111119389534,
+        9.333333015441895,
+        10.0,
+        -0.0,
+        -4,
+        103,
+        30,
+        6,
+        12345,
+        7.0,
+        63.0,
+        7.0
+      ],
+      "float_absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "numeric_pass": true,
+      "plot_rgb": [
+        255,
+        255,
+        255
+      ],
+      "plot_pass": true
+    },
+    {
+      "case": 1,
+      "actual": [
+        33.0,
+        36.0,
+        0.09090909361839294,
+        7.363636493682861,
+        7.071067810058594,
+        -7.071067810058594,
+        127,
+        73,
+        60,
+        6,
+        12345,
+        3.0,
+        33.0,
+        3.0
+      ],
+      "expected": [
+        33.0,
+        36.0,
+        0.09090909361839294,
+        7.363636493682861,
+        7.071067810058594,
+        -7.071067810058594,
+        127,
+        73,
+        60,
+        6,
+        12345,
+        3.0,
+        33.0,
+        3.0
+      ],
+      "float_absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "numeric_pass": true,
+      "plot_rgb": [
+        255,
+        255,
+        255
+      ],
+      "plot_pass": true
+    },
+    {
+      "case": 2,
+      "actual": [
+        -24.0,
+        -28.0,
+        0.1666666716337204,
+        7.0,
+        -4.37113897078234e-07,
+        -10.0,
+        -32768,
+        16,
+        90,
+        6,
+        12345,
+        -4.0,
+        -24.0,
+        -4.0
+      ],
+      "expected": [
+        -24.0,
+        -28.0,
+        0.1666666716337204,
+        7.0,
+        6.123233998228043e-16,
+        -10.0,
+        -32768,
+        16,
+        90,
+        6,
+        12345,
+        -4.0,
+        -24.0,
+        -4.0
+      ],
+      "float_absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4.371138976905574e-07,
+        0.0
+      ],
+      "numeric_pass": true,
+      "plot_rgb": [
+        255,
+        255,
+        255
+      ],
+      "plot_pass": true
+    },
+    {
+      "case": 3,
+      "actual": [
+        49.0,
+        56.0,
+        0.1428571492433548,
+        12.000000953674316,
+        -4.37113897078234e-07,
+        10.0,
+        32767,
+        89,
+        120,
+        6,
+        12345,
+        7.0,
+        49.0,
+        7.0
+      ],
+      "expected": [
+        49.0,
+        56.0,
+        0.1428571492433548,
+        12.000000953674316,
+        6.123233998228043e-16,
+        10.0,
+        32767,
+        89,
+        120,
+        6,
+        12345,
+        7.0,
+        49.0,
+        7.0
+      ],
+      "float_absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4.371138976905574e-07,
+        0.0
+      ],
+      "numeric_pass": true,
+      "plot_rgb": [
+        255,
+        255,
+        255
+      ],
+      "plot_pass": true
+    },
+    {
+      "case": 4,
+      "actual": [
+        3.0,
+        4.0,
+        0.3333333432674408,
+        14.0,
+        7.071067810058594,
+        -7.071067810058594,
+        0,
+        43,
+        150,
+        6,
+        12345,
+        1.0,
+        3.0,
+        1.0
+      ],
+      "expected": [
+        3.0,
+        4.0,
+        0.3333333432674408,
+        14.0,
+        7.071067810058594,
+        -7.071067810058594,
+        0,
+        43,
+        150,
+        6,
+        12345,
+        1.0,
+        3.0,
+        1.0
+      ],
+      "float_absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "numeric_pass": true,
+      "plot_rgb": [
+        255,
+        255,
+        255
+      ],
+      "plot_pass": true
+    }
+  ],
+  "loops": [
+    [
+      65534,
+      12345
+    ],
+    [
+      65535,
+      12345
+    ],
+    [
+      6,
+      12345
+    ],
+    [
+      118,
+      12345
+    ]
+  ],
+  "guards": [
+    [
+      0,
+      3.0
+    ],
+    [
+      0,
+      3.0
+    ],
+    [
+      0,
+      3.0
+    ],
+    [
+      0,
+      3.0
+    ],
+    [
+      0,
+      3.0
+    ],
+    [
+      1,
+      7.0
+    ]
+  ],
+  "final_after_repeated_calls": [
+    7.0,
+    8.0,
+    0.1428571492433548,
+    6.000000476837158,
+    7.071067810058594,
+    -7.071067810058594,
+    0,
+    47,
+    150,
+    6,
+    12345,
+    1.0,
+    7.0,
+    1.0
+  ],
+  "costs": [
+    {
+      "kind": "startup",
+      "calls": "1",
+      "ticks": "6",
+      "clock_hz": "120",
+      "host_command_bytes": "0",
+      "mean_ms_per_call": 50.0
+    },
+    {
+      "kind": "2010",
+      "calls": "256",
+      "ticks": "2",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.06510416666666667
+    },
+    {
+      "kind": "2011",
+      "calls": "256",
+      "ticks": "2",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.06510416666666667
+    },
+    {
+      "kind": "2012",
+      "calls": "256",
+      "ticks": "2",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.06510416666666667
+    },
+    {
+      "kind": "2013",
+      "calls": "256",
+      "ticks": "4",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.13020833333333334
+    },
+    {
+      "kind": "2000",
+      "calls": "256",
+      "ticks": "0",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.0
+    },
+    {
+      "kind": "2010",
+      "calls": "256",
+      "ticks": "2",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.06510416666666667
+    },
+    {
+      "kind": "2011",
+      "calls": "256",
+      "ticks": "2",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.06510416666666667
+    },
+    {
+      "kind": "2012",
+      "calls": "256",
+      "ticks": "2",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.06510416666666667
+    },
+    {
+      "kind": "2013",
+      "calls": "256",
+      "ticks": "4",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.13020833333333334
+    },
+    {
+      "kind": "2000",
+      "calls": "256",
+      "ticks": "0",
+      "clock_hz": "120",
+      "host_command_bytes": "1540",
+      "mean_ms_per_call": 0.0
+    }
+  ],
+  "timing_scope": "Guest raw-clock batch including command transmission and final GP parser milestone; not raster completion. Visual hook active; preliminary only.",
+  "pass": true
+}

@@ -1,0 +1,73 @@
+{
+  "milestone": "R19-04",
+  "golem_commit": "181c906270aa858e2381a4dde68495a50bc98127",
+  "native_visual": "complete-intrinsics/results.json",
+  "native_normal_clock_cost": "complete-intrinsics-cost/results.json",
+  "host_tests": "qualification-host-tests.json",
+  "program_sha256": "33ca6b9031db8e3599f9e9f98efc86e417d674d4651422b496d5f3ff960e54a3",
+  "coverage": {
+    "ordinary_language_preserved": "host legacy regression suite",
+    "stock_goldens_and_rejections": "hosted sanitizer suite plus frozen design corpus",
+    "product_7_times_9": 63.0,
+    "division_84_by_7": 12.000000953674316,
+    "rotation_and_signed_conversion": "native cases, varied inputs including signed limits",
+    "indexed_operands": "MatPut and MatExtract at row 1 column 0, distinct typed input offsets",
+    "runtime_zero_and_invalid_depth_rejection": [
+      [
+        0,
+        3.0
+      ],
+      [
+        0,
+        3.0
+      ],
+      [
+        0,
+        3.0
+      ],
+      [
+        0,
+        3.0
+      ],
+      [
+        0,
+        3.0
+      ],
+      [
+        1,
+        7.0
+      ]
+    ],
+    "finite_loops": [
+      [
+        65534,
+        12345
+      ],
+      [
+        65535,
+        12345
+      ],
+      [
+        6,
+        12345
+      ],
+      [
+        118,
+        12345
+      ]
+    ],
+    "scratch_lifetimes": "final 46-byte readback correct after 40960 serial calls; adjacent canary intact; fixed declared IDs",
+    "numerical_error_and_cost": "raw per-case errors, program.map sizes and 4096-call batch CSVs"
+  },
+  "resource_payload_only": {
+    "bootstrap_bytes": 2461,
+    "resident_bytes": 1477,
+    "owned_ids": 66
+  },
+  "limits": [
+    "timing includes UART and final parser echo; not pure VDP or raster completion",
+    "no hardware performance claim",
+    "live metadata/allocator peak and full reset/reload lifecycle remain R19-05/11",
+    "whole Rally state validation and dynamic asset indexing remain R19-05"
+  ]
+}
