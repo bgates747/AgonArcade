@@ -205,3 +205,30 @@ real interval/lookahead coefficients, derive phase/section boundaries and draw
 all section materials. The helper fixture does not satisfy R19-06 and its box
 remains unchecked. All emulator tests were headless and normal-clock. No changes
 to original worktrees, upstream firmware, SD or remote publication.
+
+## R19-08 — Complete numeric vehicle projection checkpoint, still open
+
+Golem c1bdb577084d498d2714ca4b0ba062a28dfa74ff qualifies checked fixed-type
+narrowing and optional shared word-conversion temporaries. Clipping/reciprocal
+passes1110 native depth inputs. Isolated versus shared conversions pass330 full
+readbacks across signed/unsigned values, nested calls and repeats. Host sanitizer/
+golden/negative tests pass, with exact source identities retained in evidence.
+
+The admitted full-road program now computes player and all six opponent distance,
+ordering, clipped depth, position, scale, yaw/view and reflection entirely on VDP.
+All156 native numeric fixtures pass exact comparison with the accepted reference
+(69 oval,87 Fuji). The original80-byte raw state is unchanged. Static tangent
+records upload once; no host-projected values enter frames. CARS.md documents
+the new generator, storage and284-byte diagnostic format.
+
+The initial player-centre declaration was too broad for its destination and was
+corrected to the exact containing sum. The unshared Fuji kernel exceeded the
+frozen1024-buffer cap; its failure is preserved. Opt-in sharing brings ownership
+to848/867 IDs, payload69140/190294 and bootstrap81338/202758 bytes. No ceiling was
+raised. See evidence/golem-vehicle-projection/qualification.json and the clipping/
+shared-scratch qualification reports. This is numeric and resource evidence,
+not full-scene performance or whole-VDP heap measurement.
+
+R19-08 remains unchecked: typed bitmap drawing, original artwork/liveries and
+native per-car images/material/occlusion qualification are next. All emulator
+work was headless; no GUI alert, original/upstream edit, push or deployment.

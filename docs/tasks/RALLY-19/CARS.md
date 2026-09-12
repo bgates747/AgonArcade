@@ -134,7 +134,7 @@ The traced admitted road+sort uses759/783 IDs and62847/180711 resident payload b
 Use fresh names when reproducing. Every emulator remains headless; these numeric
 checks do not qualify full-scene images, timing, long-term memory or hardware.
 
-## Projection integration considerations (not yet implemented)
+## Projection integration considerations (recorded before implementation)
 
 Camera/opponent headings discard sub-world-unit position, so tangent interpolation
 can use local whole-world units0..63 and divide by64 instead of multiplying by
@@ -172,3 +172,60 @@ in binary32; a determinant exceeding2^24 may round by one, but that is already
 beyond the largest yaw threshold1785 after division by4096, where view4 saturates.
 Validate the actual view/handedness and frozen positions rather than requiring
 irrelevant exactness in a saturated internal cross-product diagnostic.
+
+## Qualified numeric projection checkpoint
+
+Golem c1bdb577 adds CopyChecked and opt-in SharedWordScratch. Checked clipping
+passes1110 native inputs, including all1037 valid integer depths64..1100; nested
+shared/isolation tests pass330 full records. The compiler's full host sanitizer/
+golden/negative suite passes. See evidence/golem-vehicle-clip and
+evidence/golem-shared-scratch; each records the exact compiler source hashes used.
+The clipping runs preceded the sharing change, whose subsequent full projection
+runs exercise the same guarded reciprocal on the final compiler source.
+
+`build_vehicle_projection.py` extends the admitted road+sort generator. It
+statically repacks unchanged track tangents as `(tx,ty,deltaTx,deltaTy)` records
+in Asset1900, selects them on VDP, and evaluates whole-world interpolation with
+signed floor. It projects each sorted record only after CopyChecked admits its
+depth. It exports the unrounded road pixel centre before the row Call returns,
+then performs the accepted truncation, scale, yaw/view and reflection equations.
+The final player projection uses the same road evaluator at row214. Per-frame
+input remains the original80-byte raw state; no projected car data is supplied.
+
+`probe_vehicle_projection.py` passes all156 native fixtures (69 oval,87 Fuji).
+Every284-byte readback matches the accepted reference: complete admission state,
+all six ordered records, all six projected slots, player coordinates/view/mirror,
+and selection/visibility/count flags. All43 steering values per track, signed
+lateral extremes, depth boundaries, lap wraps and equal-distance ordering are
+included. The66 original references were previously matched to native oracle
+scene diagnostics; the90 supplemental references came from the sanitized host
+oracle. Numeric results are exact, rather than relying on the1px image tolerance.
+
+Storage:1710 work,1711 four status/count words,1712 checked depth,1713 selected
+12-byte car,1714 six16-byte output slots,1715 shared current slot,1716 player
+12-byte record,1717 exported road float,1718 integer temporaries,1719 thresholds,
+1720 signed zero. Each output slot is `(u16 visible,ID,bitmap,scale,mirror;
+s16 x,y; u16 translation)`. Invisible slots keep their original ID and canonical
+zero/default values; they are never drawn. Player storage is `(u16 bitmap,mirror;
+s16 x,y,centre; u16 reserved)`. Matrices1810..1819 and1890..1893 support programs
+2850..2861. Ordinary fields preserve values across Call; mutable matrix bounds
+are deliberately reloaded. Bitmap drawing is not yet present in this checkpoint.
+
+An initial broad player-centre bound correctly failed compilation; the exact
+containing sum is[-4450,4449]. The first unshared full projection compiled at1022
+IDs on the oval but exceeded the1024-ID cap on Fuji. Failed source/log evidence is
+retained under evidence/golem-vehicle-projection/{bound-failure,resource-failure}.
+Explicit sharing of short-lived conversion triples reduces ownership to848/867
+IDs. Resident payload is69140/190294 bytes and bootstrap81338/202758 bytes. Both
+remain within frozen ceilings; these are payload ledgers, not whole-VDP heap or
+timing measurements. Qualification is in that directory's qualification.json.
+
+Next within R19-08: typed bitmap/affine selection, original five views and VDP
+colour mapping, native images with per-car material/occlusion comparisons.
+All later frontend/performance/stability criteria remain open. Use fresh names:
+
+```sh
+.venv/bin/python docs/tasks/RALLY-19/probe_shared_scratch.py nested-initial
+.venv/bin/python docs/tasks/RALLY-19/probe_vehicle_projection.py shared-initial-oval
+.venv/bin/python docs/tasks/RALLY-19/probe_vehicle_projection.py shared-initial-fuji --track fuji
+```

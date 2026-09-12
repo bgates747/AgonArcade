@@ -1,0 +1,31 @@
+{
+  "scope": "Complete admitted road plus numeric player/opponent distance, sorting, clipping, projection and yaw. No bitmap drawing yet.",
+  "golem_commit": "c1bdb577084d498d2714ca4b0ba062a28dfa74ff",
+  "pass": true,
+  "cases": 156,
+  "tracks": [
+    {
+      "track": "oval",
+      "cases": 69,
+      "pass": true,
+      "run": "shared-initial-oval",
+      "bootstrap_bytes": 81338,
+      "resident_payload_bytes": 69140,
+      "owned_ids": 848
+    },
+    {
+      "track": "fuji",
+      "cases": 87,
+      "pass": true,
+      "run": "shared-initial-fuji",
+      "bootstrap_bytes": 202758,
+      "resident_payload_bytes": 190294,
+      "owned_ids": 867
+    }
+  ],
+  "limits": {
+    "owned_ids": 1024,
+    "payload_plus_bootstrap": 1048576
+  },
+  "remaining": "Vehicle image/material/occlusion qualification, full-scene frontend, performance, stability. R19-08 remains open."
+}

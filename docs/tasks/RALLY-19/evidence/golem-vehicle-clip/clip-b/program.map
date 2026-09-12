@@ -1,0 +1,87 @@
+field rawDepth 1000:0 u16 0 65535
+field depth 1001:0 u16 64 1100
+field projectedQ 1001:2 u16 7 125
+field count 1001:4 u16 0 65535
+field guard 1001:6 u16 0 65535
+field visible 1002:0 u16 0 1
+field depthSigned 1004:0 s16 64 1100
+field one 1005:0 u16 1 1
+copy 2001 1004:0 1001:0 2
+scratch 2 4
+scratch 3 4
+scratch 4 36
+scratch 5 4
+scratch 6 4
+scratch 7 4
+copy 2001 1001:2 7:0 2
+scratch 8 3
+copy 2001 8:0 1001:4 2
+copy 2001 1001:4 8:0 2
+scratch 9 0
+scratch 10 4
+copy 2000 10:0 1000:0 1
+copy 2000 10:2 1000:1 1
+scratch 11 0
+scratch 12 2
+scratch 13 0
+scratch 14 2
+scratch 15 0
+scratch 16 2
+scratch 17 0
+scratch 18 2
+require_range 2000 1000:0 u16 64 1100 sticky_status 1002:0
+scratch 19 0
+copy 2000 1001:0 1000:0 2
+scratch 20 2
+copy_checked 2000 1000:0 to 1001:0 u16 64 1100 status 1002:0
+symbol constants 1005 2 0
+symbol denominator 1110 36 1
+symbol expected 1003 2 0
+symbol input 1000 80 0
+symbol output 1001 80 0
+symbol project 2001 184 2
+symbol q 1112 4 1
+symbol reciprocal 1111 4 1
+symbol status 1002 10 0
+symbol submit 2000 85 2
+symbol unused 1102 4 1
+symbol wide 1004 2 0
+bootstrap_bytes 1190
+resident_payload_bytes 684
+owned_ids 31
+asset_payload_bytes 0
+program_payload_bytes 387
+scratch_payload_bytes 297
+resident_plus_bootstrap_payload_bytes 1874
+owned 2
+owned 3
+owned 4
+owned 5
+owned 6
+owned 7
+owned 8
+owned 9
+owned 10
+owned 11
+owned 12
+owned 13
+owned 14
+owned 15
+owned 16
+owned 17
+owned 18
+owned 19
+owned 20
+owned 1000
+owned 1001
+owned 1002
+owned 1003
+owned 1004
+owned 1005
+owned 1102
+owned 1110
+owned 1111
+owned 1112
+owned 2000
+owned 2001
+cleanup_bytes 186
