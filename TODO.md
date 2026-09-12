@@ -96,7 +96,7 @@ This ordered register owns progress across AgonArcade and Golem.
     11.1. [x] **R19-11-H1 — Locate the physical reset.** Capture stock ESP32
           serial boot/crash output; if necessary flash a separately built VDP
           with targeted serial diagnostics. Preserve exact production assets.
-    11.2. [ ] **R19-11-H2 — Correct and qualify stock compatibility.** Fix the
+    11.2. [x] **R19-11-H2 — Correct and qualify stock compatibility.** Fix the
           evidenced game/compiler cause; reproduce the failure and validate the
           correction on physical VDP, restoring official firmware after diagnosis.
     11.3. [ ] **R19-11-H3 — Prepare human review.** Run appropriate headless

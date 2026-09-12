@@ -57,4 +57,8 @@ Program sgDrawScenery(3045) {
     Call(road_fullRoad); Call(vpProjectAll); Call(vdDrawAll);
     Call(shAdvance);'''
     assert s.count(old)==1;s=s.replace(old,new)
+    # Stock ESP32 VDP processLoop has a 4096-byte task stack. Collapse selected
+    # immutable wrappers, retaining buffer storage and all conditional guards.
+    # Hardware reset evidence and temporary stack diagnostic: HARDWARE-DEBUG.md.
+    s += '\nInlineCalls(renderProof, road_projectRow, road_drawSection, vpProcess, vehicleComputeDistance, vpComputeHeading, road_fullRoad, vpProjectAll, vdDrawAll);\n'
     target=root/(track+'-scenery-draw.golem');target.write_text(s);return target

@@ -1,5 +1,44 @@
 # R19-10 measurement précis
 
+## Later physical result — read before interpreting the native benchmarks
+
+The corrected production game reached120 logged root-call returns on a physical
+ESP32 with the stock4096-byte task-stack size, without a panic in that capture.
+Calls3 through120 took approximately98.68 seconds between host UART arrivals:
+about1.186 resident-call returns/second. This is sparse diagnostic timing, not
+a scanout observer or official-release performance qualification. Nevertheless,
+it confirms the Author's visibly slow hardware result survives the compiler's
+stack correction. Full evidence and subsequent official-firmware restoration
+are in HARDWARE-DEBUG.md. R19-10's native pass does not establish a practical
+hardware speedup. Final-asset native measurements remain to be requalified.
+
+After independently verified restoration of official VDP2.16.0, the Author used
+the board reset button and confirmed the game continues running slowly. Therefore
+the visible slowdown also occurs without our diagnostic firmware. This was not
+a cold power cycle, nor a timed official-release benchmark. The production game
+contains no fencing, performance counters or logging. See the recorded acceptance
+scope in `evidence/hardware-production/official-inline-restore/acceptance.json`.
+
+The Author's circle example correctly distinguishes command delivery from native
+drawing work. Stock streamed and buffered execution both dispatch bytes through
+`vdu(readByte())`; buffering does not introduce a faster circle rasterizer.
+See the [pinned stock stream processor](https://github.com/AgonPlatform/agon-vdp/blob/c7ac293d2aa81ddfa693390549bcd909069c8fc3/video/vdu_stream_processor.h)
+and [buffer call implementation](https://github.com/AgonPlatform/agon-vdp/blob/c7ac293d2aa81ddfa693390549bcd909069c8fc3/video/vdu_buffered.h).
+Stored batches can save UART traffic and eZ80 command construction. Overall
+speed improves only when those savings outweigh added interpreter work and
+matter to the application's bottleneck. Any benefit from a native bulk matrix
+operation comes from that native operation, not from storing its invocation.
+
+Rally's current scalar/matrix/byte-manipulation lowering adds substantial
+interpretation and buffer access to move arithmetic off the eZ80. The physical
+result rejects an assumption that this implementation is a useful accelerator.
+It does not prove every possible lowering or native bulk operation is unhelpful;
+such alternatives need their own physical measurements before further claims.
+No unmeasured optimisation is approved or promised by this note. The original
+frozen criteria remain unchanged, and hardware performance is reported separately.
+
+## Original measurement design and historical evidence
+
 R19-10 remains unchecked in the root TODO. This document refines measurement
 implementation within CONTRACT.md; it does not change its acceptance thresholds.
 The complete frontend currently has correctness/control evidence only. Its

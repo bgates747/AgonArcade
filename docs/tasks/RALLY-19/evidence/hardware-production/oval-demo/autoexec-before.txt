@@ -1,0 +1,14 @@
+#VDU 22 20
+#EMOS EXCOM
+#VDU 22 20
+#EMOS LEGACY --keep-display
+#CD /extender/gqt
+
+SET KEYBOARD 1
+EMOS KEYINPUT extender
+#cd /mystuff/aginvadors
+#load aginvadors.bin
+
+cd /mystuff/arcade/rally
+load rally.bin
+run . oval fixedbands fence

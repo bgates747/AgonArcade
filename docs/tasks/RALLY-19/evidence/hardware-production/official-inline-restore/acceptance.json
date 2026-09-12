@@ -1,0 +1,46 @@
+{
+  "recorded_utc": "2026-09-12T20:46:49Z",
+  "author_reply": "yes it is running, slowly. i did not power completely down, just used the reset button, which should reset vdp and mos, same as cycling power should",
+  "observed_action": "Board reset button; no complete power-off.",
+  "accepted_scope": "Author confirms visible continued operation of the corrected production oval/demo on restored official VDP2.16.0 after this reset.",
+  "not_established": [
+    "Cold power-cycle equivalence or success",
+    "Practical hardware performance",
+    "General stack safety on every path",
+    "Exact physical scanout FPS"
+  ],
+  "capture_closed": true,
+  "capture_closed_utc": "2026-09-12T20:46:49Z",
+  "capture_close_reason": "Explicit stop file after Author confirmation; tool reported Capture closed.",
+  "raw_serial_bytes": 194,
+  "serial_panic_markers": {
+    "Guru Meditation": 0,
+    "Stack canary": 0,
+    "Backtrace:": 0,
+    "R19 DIAGNOSTIC": 0
+  },
+  "serial_scope": "Passive stock serial; lack of panic bytes alone is not proof of game execution. Author supplies visible-run confirmation.",
+  "evidence_sha256": {
+    "evidence/hardware-production/official-inline-live/capture.json": "09139767aa5aca3ed987eeb1c61b9a53785bb56b4aec0641a5c201868ea4bf9a",
+    "evidence/hardware-production/official-inline-live/serial-chunks.jsonl": "36072dec4d6091f84906099152d27d706f5b0d562b437e6293c723127deb73c6",
+    "evidence/hardware-production/official-inline-live/serial.bin": "6604d2fa30185145357dd051d829814aba22339f28275765330b9184119640f9"
+  },
+  "installed_firmware": {
+    "official_version": "2.16.0",
+    "assets_sha256": {
+      "bootloader.bin": "f2dfacdea6ae72d0aeeb7c30e525c4c6fc768a041849feac694cbb2ee2224448",
+      "partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f"
+    },
+    "serial_device": "/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0",
+    "resolved": "/dev/ttyUSB0",
+    "scope": "Restore official application image after corrected production completed120 calls on stock-sized diagnostic stack. MOS and card unchanged. Whole Agon reset required afterward."
+  },
+  "production_sha256": {
+    "rally.bin": "64c8b0734bcd253112d162173fc38f343eafbc96894dc1d09b4793766ed59129",
+    "oval.vdp": "cad8b8339151262576f9cab237a58b4b5d47e5fc49acb9ea3eb046269ad9d044",
+    "oval.clr": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f"
+  },
+  "launch": "run . oval demo",
+  "performance_status": "Visibly slow on official firmware. Diagnostic observed approximately1.186 root-call returns/sec; not a scanout FPS benchmark."
+}

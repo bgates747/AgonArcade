@@ -1,0 +1,25 @@
+{
+  "visual": {
+    "oval": {
+      "cases": 8,
+      "pass": true,
+      "results_file": "docs/tasks/RALLY-19/evidence/golem-scenery-visual/hardware-inline-oval/results.json",
+      "sha256": "0db9a6d98ee7d8f3f34e0f18d3bd6006a3f91157667532bc404ae4153b3a3900"
+    },
+    "fuji": {
+      "cases": 8,
+      "pass": true,
+      "results_file": "docs/tasks/RALLY-19/evidence/golem-scenery-visual/hardware-inline-fuji/results.json",
+      "sha256": "00b04215a4db8c4af57b824005e2ca38e39146738bca5406fa8cbc03428815d7"
+    }
+  },
+  "exact_deployable_assets_visually_tested": true,
+  "production_controls": "../inline-controls/manifest.json",
+  "physical_corrected_stock_stack": "PENDING SD card mount/deployment and restart",
+  "large_stack_diagnostic": "Original production app completed 720 observed frame returns; stock app previously panicked with processLoop stack canary.",
+  "complete_frozen_regression": {
+    "pass": true,
+    "cases": 66,
+    "qualification": "frozen-qualification.json"
+  }
+}

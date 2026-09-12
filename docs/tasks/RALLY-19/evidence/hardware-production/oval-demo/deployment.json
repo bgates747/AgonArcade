@@ -1,0 +1,22 @@
+{
+  "authorization": "Author explicitly requested physical-card deployment and autoexec oval/demo launch, without fencing/logging/measurement. Overrides earlier no-deployment goal boundary for this action.",
+  "deployed": {
+    "/media/smith/AGON/mystuff/arcade/rally/rally.bin": {
+      "bytes": 95822,
+      "sha256": "2d6b0d385f1b271c77cebb37e6a253ac55b11bf11d8df91a0b2720ed1829bbee"
+    },
+    "/media/smith/AGON/mystuff/arcade/rally/oval.vdp": {
+      "bytes": 90816,
+      "sha256": "0484e9cd1ed405be276b521045cc54d66e6fa81befec1354f49cc4522df401c6"
+    },
+    "/media/smith/AGON/mystuff/arcade/rally/oval.clr": {
+      "bytes": 5016,
+      "sha256": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f"
+    }
+  },
+  "autoexec_command": "run . oval demo",
+  "normalized_literal_newline_escapes": false,
+  "backup": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/hardware-backup/oval-demo",
+  "synced": true,
+  "hardware_validation": "Pending Author test; compilation and production-source/binary exclusion checks passed."
+}

@@ -1,0 +1,44 @@
+{
+  "scope": "Closed passive capture of corrected production under diagnostic VDP retaining stock4096-byte task stack; not official-release acceptance.",
+  "last_logged_root_return": 120,
+  "panic_in_capture": false,
+  "deepest_reported_nesting": 6,
+  "minimum_reported_stack_headroom_bytes": 164,
+  "samples": [
+    {
+      "ordinal": 1,
+      "stack_free_bytes_min": 824,
+      "heap_free_bytes": 95356,
+      "psram_free_bytes": 3572339,
+      "last_byte_arrival_seconds": 2174.7599990480085
+    },
+    {
+      "ordinal": 2,
+      "stack_free_bytes_min": 164,
+      "heap_free_bytes": 95356,
+      "psram_free_bytes": 3572135,
+      "last_byte_arrival_seconds": 2175.563137200006
+    },
+    {
+      "ordinal": 3,
+      "stack_free_bytes_min": 164,
+      "heap_free_bytes": 95356,
+      "psram_free_bytes": 3572123,
+      "last_byte_arrival_seconds": 2176.366649720003
+    },
+    {
+      "ordinal": 120,
+      "stack_free_bytes_min": 164,
+      "heap_free_bytes": 95356,
+      "psram_free_bytes": 3572419,
+      "last_byte_arrival_seconds": 2275.0501828630076
+    }
+  ],
+  "root_returns_per_second_between_3_and_120": 1.1856081381931514,
+  "limits": "Root-call returns, not direct scanout measurement. Sparse host UART arrival timestamps with200ms read timeout. Firmware includes depth bookkeeping and sparse logs. Small remaining stack margin merits continued qualification. Two boot markers include the initial idle capture boot and the later Author restart.",
+  "inputs": {
+    "serial.bin": "5d86a64f2da97724252593637c595cd5f0b1620336d7b057549487c5f366333a",
+    "serial-chunks.jsonl": "ce40e7b8d60b78af51c6de69995dc905018af1b914e73553b7f7148d092ed314",
+    "capture.json": "3e04ca692a5c8aacd61e824f3983b456a6c9ad2be40d2973e6ba704ed6456150"
+  }
+}
