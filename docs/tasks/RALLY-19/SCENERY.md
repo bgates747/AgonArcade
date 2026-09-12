@@ -383,3 +383,50 @@ draws the full road and vehicles. It removes the redundant preparation from
 road_fullRoad, retaining the prepared ordinary-field coefficients across calls.
 The host must perform exactly one swap per accepted scene call; subsequent
 image tests must qualify the logical slot against actual double-buffer pages.
+
+## Complete scene construction
+
+`build_scenery_draw.py` now implements that ordering. It evaluates road projection
+once, then bearing/history, scenery, full road and vehicles, followed by logical
+page advance. Ordinary stored projection coefficients survive the intervening
+calls. The eZ80 performs one real swap after each valid97-byte submission; it
+does not send sky bearing, history, viewport endpoints or projected coordinates.
+
+Programs3040..3045 and constants/work buffers1750/1751 implement panorama drawing,
+horizontal scrolling, exposed-strip repaint, foreground repair and full graphics
+viewport restoration. The panorama remains the original1024x104 bitmap100,
+loaded once with its accepted packed source/palette conversion. The scroll region
+is0..319 by0..103; the repair region is0..319 by88..103. Panorama wrapping draws
+the left image at-offset and the next image at1024-offset, with the same accepted
+intersection decisions. Every GraphicsViewport synchronizes Canvas clipping.
+
+Full-scene resource ledgers are836/853 IDs,78565/199711 resident payload bytes,
+90816/212200 bootstrap bytes,38741/39236 program bytes and3301/3346 scratch bytes
+(oval/Fuji). These totals exclude original external car/panorama art and the
+stock runtime's cached affine inverses. They are not live heap measurements.
+
+`visual_scenery.py` retains the original viewport behavior in its independent
+accepted reference, includes background in the unchanged frozen regional metric,
+and uses each renderer's own diagnostic geometry for masks. All66 frozen scenes
+pass, including bridges back to their untouched original captures. Sequential
+history tests use one actual swap per pose, with two retained pages within each
+fresh batch; the complete120-pose sequence suite passes. It covers
+zero/small scrolls, +/-255 partial repaint limits, +/-256 and half-turn full
+repaints and1023/0 bearing wrap. Numeric history already has444 native records.
+
+`qualify_scenery.py` recomputes all image metrics/geometry, verifies source/runtime
+identities and proves that the frontend's `.vdp` bytes are exactly those used in
+the native image comparisons. `qualify_frontend.py` separately audits actual
+input/exit results and preserves the accepted simulation/HUD source block.
+Their reports, rather than this implementation description, establish completed
+qualification. Neither diagnostic captures nor GP replies establish timing.
+
+The final image audit passes all186 pairs. Every vehicle pixel is exact;
+background agreement is100% with the frozen radius-one metric (minimum exact
+background99.9606%). Minimum road-region agreement is98.095% for the shoulder;
+all road centreline diagnostics match exactly. All frozen66 reference bridges
+pass. No tolerance was relaxed. The separately completed frontend audit covers
+12 native runs and638 host records. These two reports jointly complete R19-09;
+their narrow scope notes do not constitute timing or long-stability acceptance.
+Golem's completion record is cd6d1eda81b077bf358d834e8f5a16fb83413d27; compiler
+implementation remains a997437. R19-10 through R19-12 remain unchecked.

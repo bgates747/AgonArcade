@@ -1,0 +1,895 @@
+{
+  "scope": "Full native scenery, road and vehicles against the untouched accepted oracle.\n\nBackground is included using the frozen region metric; each renderer supplies\nits own geometry mask. Scenery commands in the reference retain original behavior.\n",
+  "cases": 8,
+  "pass": true,
+  "results": [
+    {
+      "case": "fuji-00",
+      "pass": true,
+      "scenery_state_pass": true,
+      "car_geometry_pass": true,
+      "player_geometry_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43089,
+            "actual_pixels": 43089,
+            "union_pixels": 43089,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 23334,
+            "actual_pixels": 23342,
+            "union_pixels": 23352,
+            "exact_fraction": 0.9988009592326139,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2121,
+            "actual_pixels": 2116,
+            "union_pixels": 2121,
+            "exact_fraction": 0.9976426214049976,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 413,
+            "actual_pixels": 410,
+            "union_pixels": 423,
+            "exact_fraction": 0.9456264775413712,
+            "one_pixel_fraction": 0.9976359338061466,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 146,
+            "actual_pixels": 146,
+            "union_pixels": 146,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-0": {
+            "expected_pixels": 309,
+            "actual_pixels": 309,
+            "union_pixels": 309,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-1": {
+            "expected_pixels": 122,
+            "actual_pixels": 122,
+            "union_pixels": 122,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-2": {
+            "expected_pixels": 60,
+            "actual_pixels": 60,
+            "union_pixels": 60,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-3": {
+            "expected_pixels": 43,
+            "actual_pixels": 43,
+            "union_pixels": 43,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-4": {
+            "expected_pixels": 33,
+            "actual_pixels": 33,
+            "union_pixels": 33,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-5": {
+            "expected_pixels": 20,
+            "actual_pixels": 20,
+            "union_pixels": 20,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "player": {
+            "expected_pixels": 1990,
+            "actual_pixels": 1990,
+            "union_pixels": 1990,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      }
+    },
+    {
+      "case": "fuji-01",
+      "pass": true,
+      "scenery_state_pass": true,
+      "car_geometry_pass": true,
+      "player_geometry_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43089,
+            "actual_pixels": 43089,
+            "union_pixels": 43089,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 23040,
+            "actual_pixels": 23048,
+            "union_pixels": 23058,
+            "exact_fraction": 0.9987856709168185,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2121,
+            "actual_pixels": 2116,
+            "union_pixels": 2121,
+            "exact_fraction": 0.9976426214049976,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 413,
+            "actual_pixels": 410,
+            "union_pixels": 423,
+            "exact_fraction": 0.9456264775413712,
+            "one_pixel_fraction": 0.9976359338061466,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 296,
+            "actual_pixels": 296,
+            "union_pixels": 296,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-0": {
+            "expected_pixels": 309,
+            "actual_pixels": 309,
+            "union_pixels": 309,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-1": {
+            "expected_pixels": 122,
+            "actual_pixels": 122,
+            "union_pixels": 122,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-2": {
+            "expected_pixels": 60,
+            "actual_pixels": 60,
+            "union_pixels": 60,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-3": {
+            "expected_pixels": 43,
+            "actual_pixels": 43,
+            "union_pixels": 43,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-4": {
+            "expected_pixels": 33,
+            "actual_pixels": 33,
+            "union_pixels": 33,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-5": {
+            "expected_pixels": 20,
+            "actual_pixels": 20,
+            "union_pixels": 20,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "player": {
+            "expected_pixels": 2134,
+            "actual_pixels": 2134,
+            "union_pixels": 2134,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      }
+    },
+    {
+      "case": "fuji-02",
+      "pass": true,
+      "scenery_state_pass": true,
+      "car_geometry_pass": true,
+      "player_geometry_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43102,
+            "actual_pixels": 43100,
+            "union_pixels": 43102,
+            "exact_fraction": 0.9999535984409076,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 23043,
+            "actual_pixels": 23041,
+            "union_pixels": 23054,
+            "exact_fraction": 0.9989589659061334,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2101,
+            "actual_pixels": 2110,
+            "union_pixels": 2110,
+            "exact_fraction": 0.9957345971563981,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 368,
+            "actual_pixels": 363,
+            "union_pixels": 374,
+            "exact_fraction": 0.9545454545454546,
+            "one_pixel_fraction": 0.9919786096256684,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 345,
+            "actual_pixels": 345,
+            "union_pixels": 345,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-0": {
+            "expected_pixels": 309,
+            "actual_pixels": 309,
+            "union_pixels": 309,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-1": {
+            "expected_pixels": 122,
+            "actual_pixels": 122,
+            "union_pixels": 122,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-2": {
+            "expected_pixels": 60,
+            "actual_pixels": 60,
+            "union_pixels": 60,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-3": {
+            "expected_pixels": 43,
+            "actual_pixels": 43,
+            "union_pixels": 43,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-4": {
+            "expected_pixels": 33,
+            "actual_pixels": 33,
+            "union_pixels": 33,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-5": {
+            "expected_pixels": 20,
+            "actual_pixels": 20,
+            "union_pixels": 20,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "player": {
+            "expected_pixels": 2134,
+            "actual_pixels": 2134,
+            "union_pixels": 2134,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      }
+    },
+    {
+      "case": "fuji-03",
+      "pass": true,
+      "scenery_state_pass": true,
+      "car_geometry_pass": true,
+      "player_geometry_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43190,
+            "actual_pixels": 43188,
+            "union_pixels": 43190,
+            "exact_fraction": 0.9999536929844871,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 23857,
+            "actual_pixels": 23857,
+            "union_pixels": 23857,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 1785,
+            "actual_pixels": 1787,
+            "union_pixels": 1787,
+            "exact_fraction": 0.9988808058198098,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 374,
+            "actual_pixels": 374,
+            "union_pixels": 374,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 365,
+            "actual_pixels": 365,
+            "union_pixels": 365,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-0": {
+            "expected_pixels": 340,
+            "actual_pixels": 340,
+            "union_pixels": 340,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-1": {
+            "expected_pixels": 148,
+            "actual_pixels": 148,
+            "union_pixels": 148,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-2": {
+            "expected_pixels": 73,
+            "actual_pixels": 73,
+            "union_pixels": 73,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-3": {
+            "expected_pixels": 47,
+            "actual_pixels": 47,
+            "union_pixels": 47,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-4": {
+            "expected_pixels": 35,
+            "actual_pixels": 35,
+            "union_pixels": 35,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-5": {
+            "expected_pixels": 24,
+            "actual_pixels": 24,
+            "union_pixels": 24,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "player": {
+            "expected_pixels": 1442,
+            "actual_pixels": 1442,
+            "union_pixels": 1442,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      }
+    },
+    {
+      "case": "fuji-04",
+      "pass": true,
+      "scenery_state_pass": true,
+      "car_geometry_pass": true,
+      "player_geometry_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43076,
+            "actual_pixels": 43076,
+            "union_pixels": 43076,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 24135,
+            "actual_pixels": 24143,
+            "union_pixels": 24153,
+            "exact_fraction": 0.9988407237196207,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2006,
+            "actual_pixels": 2002,
+            "union_pixels": 2006,
+            "exact_fraction": 0.9980059820538385,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 384,
+            "actual_pixels": 380,
+            "union_pixels": 394,
+            "exact_fraction": 0.9390862944162437,
+            "one_pixel_fraction": 0.9923857868020305,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 361,
+            "actual_pixels": 361,
+            "union_pixels": 361,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-0": {
+            "expected_pixels": 309,
+            "actual_pixels": 309,
+            "union_pixels": 309,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-1": {
+            "expected_pixels": 132,
+            "actual_pixels": 132,
+            "union_pixels": 132,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-2": {
+            "expected_pixels": 66,
+            "actual_pixels": 66,
+            "union_pixels": 66,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-3": {
+            "expected_pixels": 45,
+            "actual_pixels": 45,
+            "union_pixels": 45,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-4": {
+            "expected_pixels": 34,
+            "actual_pixels": 34,
+            "union_pixels": 34,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-5": {
+            "expected_pixels": 23,
+            "actual_pixels": 23,
+            "union_pixels": 23,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "player": {
+            "expected_pixels": 1109,
+            "actual_pixels": 1109,
+            "union_pixels": 1109,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      }
+    },
+    {
+      "case": "fuji-05",
+      "pass": true,
+      "scenery_state_pass": true,
+      "car_geometry_pass": true,
+      "player_geometry_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43101,
+            "actual_pixels": 43100,
+            "union_pixels": 43101,
+            "exact_fraction": 0.9999767986821652,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 25247,
+            "actual_pixels": 25263,
+            "union_pixels": 25277,
+            "exact_fraction": 0.9982592870989437,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2089,
+            "actual_pixels": 2093,
+            "union_pixels": 2097,
+            "exact_fraction": 0.994277539341917,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 391,
+            "actual_pixels": 372,
+            "union_pixels": 398,
+            "exact_fraction": 0.9170854271356784,
+            "one_pixel_fraction": 0.9874371859296482,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 266,
+            "actual_pixels": 266,
+            "union_pixels": 266,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-0": {
+            "expected_pixels": 309,
+            "actual_pixels": 309,
+            "union_pixels": 309,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-1": {
+            "expected_pixels": 122,
+            "actual_pixels": 122,
+            "union_pixels": 122,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-2": {
+            "expected_pixels": 60,
+            "actual_pixels": 60,
+            "union_pixels": 60,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-3": {
+            "expected_pixels": 41,
+            "actual_pixels": 41,
+            "union_pixels": 41,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-4": {
+            "expected_pixels": 32,
+            "actual_pixels": 32,
+            "union_pixels": 32,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-5": {
+            "expected_pixels": 22,
+            "actual_pixels": 22,
+            "union_pixels": 22,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      }
+    },
+    {
+      "case": "fuji-06",
+      "pass": true,
+      "scenery_state_pass": true,
+      "car_geometry_pass": true,
+      "player_geometry_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43196,
+            "actual_pixels": 43195,
+            "union_pixels": 43196,
+            "exact_fraction": 0.9999768497083064,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 25108,
+            "actual_pixels": 25094,
+            "union_pixels": 25115,
+            "exact_fraction": 0.9988851284093171,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2055,
+            "actual_pixels": 2066,
+            "union_pixels": 2066,
+            "exact_fraction": 0.994675701839303,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 367,
+            "actual_pixels": 371,
+            "union_pixels": 378,
+            "exact_fraction": 0.9523809523809523,
+            "one_pixel_fraction": 0.9814814814814815,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 292,
+            "actual_pixels": 292,
+            "union_pixels": 292,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-0": {
+            "expected_pixels": 340,
+            "actual_pixels": 340,
+            "union_pixels": 340,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-1": {
+            "expected_pixels": 143,
+            "actual_pixels": 143,
+            "union_pixels": 143,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-2": {
+            "expected_pixels": 73,
+            "actual_pixels": 73,
+            "union_pixels": 73,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-3": {
+            "expected_pixels": 47,
+            "actual_pixels": 47,
+            "union_pixels": 47,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-4": {
+            "expected_pixels": 35,
+            "actual_pixels": 35,
+            "union_pixels": 35,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-5": {
+            "expected_pixels": 24,
+            "actual_pixels": 24,
+            "union_pixels": 24,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      }
+    },
+    {
+      "case": "fuji-07",
+      "pass": true,
+      "scenery_state_pass": true,
+      "car_geometry_pass": true,
+      "player_geometry_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43090,
+            "actual_pixels": 43090,
+            "union_pixels": 43090,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 23333,
+            "actual_pixels": 23342,
+            "union_pixels": 23352,
+            "exact_fraction": 0.9987581363480644,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2109,
+            "actual_pixels": 2104,
+            "union_pixels": 2109,
+            "exact_fraction": 0.9976292081555239,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 429,
+            "actual_pixels": 425,
+            "union_pixels": 439,
+            "exact_fraction": 0.9453302961275627,
+            "one_pixel_fraction": 0.9977220956719818,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 139,
+            "actual_pixels": 139,
+            "union_pixels": 139,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-0": {
+            "expected_pixels": 309,
+            "actual_pixels": 309,
+            "union_pixels": 309,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-1": {
+            "expected_pixels": 126,
+            "actual_pixels": 126,
+            "union_pixels": 126,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-2": {
+            "expected_pixels": 60,
+            "actual_pixels": 60,
+            "union_pixels": 60,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-3": {
+            "expected_pixels": 41,
+            "actual_pixels": 41,
+            "union_pixels": 41,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-4": {
+            "expected_pixels": 32,
+            "actual_pixels": 32,
+            "union_pixels": 32,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "car-5": {
+            "expected_pixels": 22,
+            "actual_pixels": 22,
+            "union_pixels": 22,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "player": {
+            "expected_pixels": 1990,
+            "actual_pixels": 1990,
+            "union_pixels": 1990,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      }
+    }
+  ]
+}

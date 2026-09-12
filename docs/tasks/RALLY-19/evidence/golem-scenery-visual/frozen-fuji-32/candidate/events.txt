@@ -1,0 +1,27 @@
+initialized actions=25
+ready host_present=336
+capture frame=30 host_present=365 width=640 height=480
+key frame=90 name=right down=1 host_present=425
+key frame=95 name=right down=0 host_present=430
+capture frame=210 host_present=545 width=640 height=480
+key frame=270 name=right down=1 host_present=605
+key frame=275 name=right down=0 host_present=610
+capture frame=390 host_present=725 width=640 height=480
+key frame=450 name=right down=1 host_present=785
+key frame=455 name=right down=0 host_present=790
+capture frame=570 host_present=905 width=640 height=480
+key frame=630 name=right down=1 host_present=965
+key frame=635 name=right down=0 host_present=970
+capture frame=750 host_present=1085 width=640 height=480
+key frame=810 name=right down=1 host_present=1145
+key frame=815 name=right down=0 host_present=1150
+capture frame=930 host_present=1265 width=640 height=480
+key frame=990 name=right down=1 host_present=1325
+key frame=995 name=right down=0 host_present=1330
+capture frame=1110 host_present=1445 width=640 height=480
+key frame=1170 name=right down=1 host_present=1505
+key frame=1175 name=right down=0 host_present=1510
+capture frame=1290 host_present=1625 width=640 height=480
+key frame=1310 name=escape down=1 host_present=1645
+key frame=1315 name=escape down=0 host_present=1650
+quit frame=1330 host_present=1665

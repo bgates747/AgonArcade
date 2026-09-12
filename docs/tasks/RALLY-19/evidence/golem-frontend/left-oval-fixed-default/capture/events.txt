@@ -1,0 +1,14 @@
+initialized actions=12
+ready host_present=215
+key frame=10 name=up down=1 host_present=224
+key frame=20 name=left down=1 host_present=234
+capture frame=30 host_present=244 width=640 height=480
+key frame=30 name=minus down=1 host_present=244
+capture frame=100 host_present=314 width=640 height=480
+key frame=100 name=left down=0 host_present=314
+key frame=100 name=minus down=0 host_present=314
+capture frame=150 host_present=364 width=640 height=480
+key frame=160 name=up down=0 host_present=374
+key frame=180 name=escape down=1 host_present=394
+key frame=186 name=escape down=0 host_present=400
+quit frame=220 host_present=434

@@ -67,11 +67,15 @@ This ordered register owns progress across AgonArcade and Golem.
    reflections and original liveries. Every vehicle pixel exact; road materials
    >=98.095%.894/913 IDs,100-byte scene packet. See CARS.md and
    `docs/tasks/RALLY-19/evidence/golem-cars/qualification.json`; Golem c66d0f.
-9. [ ] **R19-09 — Integrate the complete Golem-driven Rally frontend.** Add scenery
+9. [x] **R19-09 — Integrate the complete Golem-driven Rally frontend.** Add scenery
    bearing/retained-buffer handling and HUD/state mapping to the resident scene
    path. Preserve accepted simulation/input/manual/demo/settings and old renderer
    as an explicit oracle option. Prove a frame requires only compact state/trigger,
    not eZ80-projected corners; test input takeover and MOS exit headlessly. Commit.
+   Qualified:186 full-scene native image pairs,444 native history records,
+   12 both-track control/exit runs and638 sanitized raw-state records. Accepted
+   input/physics/HUD unchanged;100-byte scene/update/call/swap. See SCENERY.md,
+   FRONTEND.md and their qualification reports. Golem completion cd6d1ed.
 10. [ ] **R19-10 — Meet the frozen offload/performance budgets.** Run normal-clock
     serial ABBA on both tracks with identical fixtures and warmed assets; record
     >=75% scene-UART reduction and <=128-byte scene packets, >=50% eZ80 scene-work

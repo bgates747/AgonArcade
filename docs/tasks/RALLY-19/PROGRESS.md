@@ -277,3 +277,36 @@ and records conservative major-tangent lower bounds2441/2501. The next work is
 to qualify that interpolation and the bounded corrected atan ratio on VDP, then
 implement retained-page scenery and the accepted interactive frontend. R19-09
 and all subsequent boxes remain unchecked; no GUI, push or deployment.
+
+## R19-09 — Complete scenery and Golem frontend qualified
+
+Golem completion documentation commit cd6d1eda81b077bf358d834e8f5a16fb83413d27
+precedes this milestone; compiler implementation remains a997437. Full-scene
+scenery/road/car programs and the Golem-default frontend are now integrated.
+The host sends80 raw state bytes,11 update bytes and6 call bytes, followed by
+the unchanged HUD and one3-byte swap. Bearing, retained-page state, scroll strips,
+road coordinates and vehicle projection/order stay on the stock VDP.
+
+`qualify_scenery.py` recomputes186 native image pairs:66 frozen scenes and120
+actual two-page history sequences. Every vehicle pixel is exact; background
+radius-one agreement is100%; all road regions pass, with shoulder minimum98.095%.
+Original scene bridges, geometry, original art, runtime identities and exact
+frontend/bootstrap identity are verified. Native history has444 records; the
+host history proof covers4,194,304 combinations. No tolerance was relaxed.
+
+`qualify_frontend.py` passes12 both-track native input/exit cases and638 sanitized
+host raw-state records. Held steering/grip limits, reversal, throttle, demo
+takeover, Escape arming, optional autosteer and the explicit oracle option pass.
+Accepted input/physics/HUD source blocks are unchanged. The initial guard mistook
+the fixed-bands default for an unsupported option; its rejected source and error
+screen remain under golem-frontend. It was corrected without changing120 road rows.
+
+Resource totals are836/853 IDs and78565/199711 resident payload bytes, with
+90816/212200 bootstrap bytes. External artwork and cached inverses are excluded
+from those static totals. Startup counters cover bootstrap loading only; normal
+cleanup evidence is not a live heap/fault-recovery proof. PERFORMANCE.md records
+the upcoming measurement separation and a read-only native swap-observer lead.
+
+R19-09 is checked and committed immediately. R19-10 performance, R19-11 long
+stability/review and R19-12 delivery remain open. All emulators were headless and
+have exited. No GUI alert, push, SD deployment or original/upstream edits occurred.

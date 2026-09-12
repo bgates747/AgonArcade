@@ -1,0 +1,2600 @@
+{
+  "scope": "Check raw frontend state mapping against frozen packets and bad producer state.",
+  "cases": 638,
+  "pass": true,
+  "build_command": [
+    "g++",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-g",
+    "-O1",
+    "-fsanitize=address,undefined",
+    "-I/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include",
+    "-I/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/host_frontend_state.cpp",
+    "-o",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend-state/initial/test"
+  ],
+  "results": [
+    {
+      "case": "oval-00-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-00-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-00-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-00-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-01-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-01-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-01-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-01-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-02-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-02-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-02-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-02-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-03-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-03-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-03-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-03-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-04-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-04-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-04-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-04-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-05-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-05-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-05-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-05-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-06-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-06-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-06-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-06-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-07-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-07-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-07-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-07-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-08-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-08-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-08-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-08-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-09-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-09-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-09-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-09-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-10-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-10-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-10-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-10-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-11-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-11-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-11-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-11-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-12-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-12-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-12-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-12-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-13-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-13-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-13-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-13-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-14-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-14-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-14-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-14-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-15-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-15-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-15-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-15-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-16-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-16-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-16-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-16-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-17-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-17-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-17-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-17-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-18-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-18-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-18-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-18-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-19-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-19-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-19-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-19-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-20-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-20-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-20-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-20-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-21-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-21-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-21-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-21-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-22-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-22-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-22-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-22-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-23-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-23-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-23-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-23-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-00-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-00-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-00-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-00-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-01-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-01-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-01-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-01-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-02-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-02-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-02-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-02-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-03-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-03-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-03-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-03-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-04-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-04-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-04-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-04-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-05-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-05-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-05-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-05-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-06-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-06-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-06-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-06-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-07-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-07-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-07-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-07-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-08-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-08-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-08-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-08-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-09-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-09-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-09-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-09-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-10-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-10-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-10-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-10-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-11-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-11-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-11-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-11-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-12-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-12-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-12-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-12-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-13-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-13-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-13-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-13-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-14-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-14-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-14-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-14-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-15-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-15-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-15-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-15-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-16-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-16-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-16-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-16-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-17-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-17-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-17-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-17-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-18-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-18-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-18-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-18-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-19-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-19-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-19-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-19-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-20-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-20-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-20-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-20-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-21-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-21-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-21-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-21-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-22-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-22-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-22-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-22-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-23-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-23-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-23-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-23-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-248-300-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-248-300-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-248-300-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-248-300-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-248-800-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-248-800-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-248-800-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-248-800-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-098-300-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-098-300-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-098-300-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-098-300-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-098-800-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-098-800-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-098-800-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-098-800-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-188-300-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-188-300-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-188-300-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-188-300-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-188-800-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-188-800-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-188-800-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-188-800-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-421-300-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-421-300-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-421-300-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-421-300-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-421-800-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-421-800-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-421-800-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-421-800-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-146-300-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-146-300-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-146-300-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-146-300-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-146-800-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-146-800-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-146-800-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-146-800-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-303-300-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-303-300-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-303-300-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-303-300-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-303-800-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-303-800-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-303-800-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-303-800-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-378-300-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-378-300-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-378-300-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-378-300-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-378-800-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-378-800-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-378-800-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-378-800-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-213-300-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-213-300-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-213-300-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-213-300-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-213-800-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-213-800-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-213-800-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-213-800-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-343-300-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-343-300-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-343-300-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-343-300-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-343-800-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-343-800-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-343-800-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-bend-343-800-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-depth-edges-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-depth-edges-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-depth-edges-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-depth-edges-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-nonstable-ties-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-nonstable-ties-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-nonstable-ties-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-nonstable-ties-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--21-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--21-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--21-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--21-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--20-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--20-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--20-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--20-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--19-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--19-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--19-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--19-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--18-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--18-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--18-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--18-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--17-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--17-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--17-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--17-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--16-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--16-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--16-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--16-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--15-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--15-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--15-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--15-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--14-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--14-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--14-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--14-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--13-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--13-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--13-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--13-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--12-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--12-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--12-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--12-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--11-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--11-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--11-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--11-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--10-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--10-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--10-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--10-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--9-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--9-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--9-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--9-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--8-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--8-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--8-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--8-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--7-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--7-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--7-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--7-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--6-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--6-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--6-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--6-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--5-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--5-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--5-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--5-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--4-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--4-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--4-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--4-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--3-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--3-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--3-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--3-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--2-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--2-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--2-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--2-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--1-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--1-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--1-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering--1-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-0-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-0-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-0-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-0-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-1-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-1-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-1-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-1-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-2-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-2-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-2-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-2-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-3-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-3-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-3-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-3-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-4-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-4-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-4-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-4-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-5-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-5-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-5-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-5-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-6-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-6-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-6-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-6-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-7-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-7-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-7-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-7-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-8-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-8-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-8-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-8-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-9-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-9-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-9-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-9-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-10-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-10-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-10-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-10-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-11-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-11-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-11-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-11-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-12-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-12-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-12-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-12-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-13-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-13-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-13-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-13-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-14-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-14-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-14-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-14-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-15-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-15-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-15-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-15-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-16-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-16-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-16-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-16-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-17-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-17-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-17-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-17-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-18-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-18-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-18-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-18-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-19-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-19-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-19-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-19-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-20-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-20-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-20-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-20-flags-3",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-21-flags-0",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-21-flags-1",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-21-flags-2",
+      "pass": true
+    },
+    {
+      "case": "oval-steering-21-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-depth-edges-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-depth-edges-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-depth-edges-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-depth-edges-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-nonstable-ties-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-nonstable-ties-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-nonstable-ties-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-nonstable-ties-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--21-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--21-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--21-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--21-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--20-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--20-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--20-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--20-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--19-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--19-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--19-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--19-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--18-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--18-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--18-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--18-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--17-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--17-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--17-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--17-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--16-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--16-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--16-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--16-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--15-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--15-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--15-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--15-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--14-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--14-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--14-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--14-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--13-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--13-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--13-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--13-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--12-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--12-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--12-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--12-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--11-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--11-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--11-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--11-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--10-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--10-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--10-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--10-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--9-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--9-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--9-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--9-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--8-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--8-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--8-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--8-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--7-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--7-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--7-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--7-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--6-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--6-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--6-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--6-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--5-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--5-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--5-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--5-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--4-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--4-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--4-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--4-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--3-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--3-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--3-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--3-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--2-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--2-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--2-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--2-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--1-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--1-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--1-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering--1-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-0-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-0-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-0-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-0-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-1-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-1-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-1-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-1-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-2-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-2-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-2-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-2-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-3-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-3-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-3-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-3-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-4-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-4-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-4-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-4-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-5-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-5-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-5-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-5-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-6-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-6-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-6-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-6-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-7-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-7-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-7-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-7-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-8-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-8-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-8-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-8-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-9-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-9-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-9-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-9-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-10-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-10-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-10-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-10-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-11-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-11-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-11-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-11-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-12-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-12-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-12-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-12-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-13-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-13-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-13-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-13-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-14-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-14-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-14-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-14-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-15-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-15-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-15-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-15-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-16-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-16-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-16-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-16-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-17-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-17-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-17-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-17-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-18-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-18-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-18-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-18-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-19-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-19-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-19-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-19-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-20-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-20-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-20-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-20-flags-3",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-21-flags-0",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-21-flags-1",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-21-flags-2",
+      "pass": true
+    },
+    {
+      "case": "fuji-steering-21-flags-3",
+      "pass": true
+    },
+    {
+      "case": "unknown-track",
+      "pass": true
+    },
+    {
+      "case": "bad-sequence",
+      "pass": true
+    },
+    {
+      "case": "bad-grip-low",
+      "pass": true
+    },
+    {
+      "case": "bad-grip-high",
+      "pass": true
+    },
+    {
+      "case": "negative-position",
+      "pass": true
+    },
+    {
+      "case": "position-beyond-lap",
+      "pass": true
+    },
+    {
+      "case": "negative-phase",
+      "pass": true
+    },
+    {
+      "case": "phase-would-wrap",
+      "pass": true
+    },
+    {
+      "case": "bad-lateral",
+      "pass": true
+    },
+    {
+      "case": "bad-steering",
+      "pass": true
+    },
+    {
+      "case": "negative-speed",
+      "pass": true
+    },
+    {
+      "case": "speed-would-wrap",
+      "pass": true
+    },
+    {
+      "case": "bad-car-position",
+      "pass": true
+    },
+    {
+      "case": "bad-car-lane",
+      "pass": true
+    }
+  ],
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/proof_frontend_state.py": "6c4f780845e1245fcc334b396efedc5034e1a79d9671d0dcf30952f123443489",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/host_frontend_state.cpp": "76a4768e6a77968340d224923a654b8a7b7eff378b2346da8bb7a0456878d76d",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend_state.hpp": "b819c2faa58e8b2161453e4c57297a236a2435a3a1f4187cf52674414b972017",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_protocol.hpp": "c9dc8a11ce12a04f55382e5d2c1aaf5ffdd028a7d8741b09eadceedbc7068aee",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8"
+  }
+}

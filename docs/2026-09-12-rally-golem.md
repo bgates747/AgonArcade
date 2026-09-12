@@ -79,3 +79,18 @@ literal records,672 existing conversion regressions and the full host suite pass
 default/word-only bootstrap bytes remain unchanged. Combined numeric history now
 fits821/838 IDs. R19-09 remains open for drawing, real page association and the
 accepted interactive frontend, followed by frozen timing and stability criteria.
+
+R19-09 completed:186 full-scene native image pairs pass, including all66 frozen
+poses and120 sequential actual-page tests. Vehicle pixels are exact, background
+radius-one agreement100%, road-region minimum98.095%, and all centreline geometry
+matches. The unchanged compiler's byte-identical bootstraps drive the integrated
+frontend. All12 both-track control/exit runs and638 sanitized raw-state records
+pass; accepted input/physics/HUD blocks remain unchanged. The initial fixed-bands
+option-guard failure is retained with its source and headless error capture.
+
+SCENERY.md, FRONTEND.md and their separate qualification reports hold the evidence.
+Golem completion record cd6d1eda81b077bf358d834e8f5a16fb83413d27 precedes checking
+R19-09. Recurring scene/update/call/swap is100 bytes, with HUD separate.836/853
+IDs fit the unchanged cap. No performance or live-memory claim follows from
+these correctness results; R19-10 through R19-12 remain open. All emulator work
+was headless, with no alerts, pushes, SD deployment or original/upstream edits.
