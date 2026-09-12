@@ -92,6 +92,17 @@ This ordered register owns progress across AgonArcade and Golem.
     integrity, compiler/loader negative tests and all frozen regional visual
     thresholds. Review generated commands for hidden eZ80 geometry/custom features.
     Commit the audit and reproducible evidence; do not assert hardware acceptance.
+    Hardware investigation authorized after the stock-VDP reset reproduced:
+    11.1. [ ] **R19-11-H1 — Locate the physical reset.** Capture stock ESP32
+          serial boot/crash output; if necessary flash a separately built VDP
+          with targeted serial diagnostics. Preserve exact production assets.
+    11.2. [ ] **R19-11-H2 — Correct and qualify stock compatibility.** Fix the
+          evidenced game/compiler cause; reproduce the failure and validate the
+          correction on physical VDP, restoring official firmware after diagnosis.
+    11.3. [ ] **R19-11-H3 — Prepare human review.** Run appropriate headless
+          regression checks, preserve evidence and launch a dedicated review
+          emulator only when the bug is identified and the game likely runs.
+          Details and authorization: `docs/tasks/RALLY-19/HARDWARE-DEBUG.md`.
 12. [ ] **R19-12 — Deliver and stop at the agreed scope.** Document Golem language
     additions, renderer protocol, ownership, build/run/benchmark commands, resource
     totals, final binary/data/compiler hashes and measured limits. Record linked
