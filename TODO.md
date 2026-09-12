@@ -1,5 +1,51 @@
 # AgonArcade TODO
 
+## RALLY-20 execution register — paused for planning review
+
+The Author requested this new goal on 2026-09-12: optimize the hardware-accepted
+pre-Golem product and enable unattended development through Extender. Read the
+[task and forwarding map](docs/tasks/RALLY-20.md) and
+[frozen planning contract](docs/tasks/RALLY-20/CONTRACT.md). Planning is the only
+completed phase. The requested emulator summons is notification-only.
+
+0. [x] **R20-00 — Freeze the plan before implementation.** Identify the accepted
+   stripped production binary; consolidate useful open Rally work without
+   asserting unperformed acceptance; record ownership, bootstrap/recovery
+   constraints, measurement controls, evidence gates and review pause. Commit
+   planning documents only. Notify with an emulator, then await Author review.
+1. [ ] **R20-01 — Preserve and reproduce the accepted product and bench.** Retain
+   dirty deployment evidence and exact backups; establish source/build lineage,
+   maintained-source integration plan, fresh hardware identities and supported
+   connection/recovery paths. Preserve Extender keyboard input. Commit evidence.
+2. [ ] **R20-02 — Freeze and prove the owned control/transfer interface.** Resolve
+   concrete loader bootstrap, EMOS UART ownership, keyboard coexistence, RAM/ROM
+   budgets, any additional firmware permission and recovery before implementation.
+   Prove the smallest host/P4/eZ80 foreground service path. Commit contracts/proof.
+3. [ ] **R20-03 — Qualify SD transactions and recovery.** Stage, verify and activate
+   files through MOS with a preserved fallback; test integrity and interruption.
+   Establish cooperative recovery and separately qualify any hardware reset path.
+   Do not actuate the unresolved reset circuit. Commit results and limitations.
+4. [ ] **R20-04 — Demonstrate ten unattended development cycles.** At least two
+   distinct builds, bounded execution, retrieved results, recoverable failures
+   and restored product, without human SD movement/reset. Commit orchestration
+   and evidence; state any hard-hang recovery gap explicitly.
+5. [ ] **R20-05 — Measure the physical pre-Golem baseline.** Constant-speed
+   straight/curve matrix with independently varied traffic, both tracks;
+   distinguish pacing, submission, completion and instrumentation overhead.
+   Record matched batches and ordinary demo separately. Commit physical evidence.
+6. [ ] **R20-06 — Optimize measured limiting work.** First batch bounded to three
+   evidence-selected candidates; compare physical A/B results against frozen
+   targets while preserving graphics, tuning and control feel. Commit retained
+   changes and rejected findings; do not equate less UART traffic with faster VDP.
+7. [ ] **R20-07 — Qualify and restore clean production.** Both-track visuals,
+   controls, stability and physical performance; instrumentation absent from
+   product; official VDP restored and Extender keyboard working. Commit evidence
+   and state outstanding human review rather than claiming it happened.
+8. [ ] **R20-08 — Deliver a maintained product and repeatable bench.** Document
+   source/build/run identities, measurements, rollback and remaining limitations;
+   preserve oval demo startup and publish local component commit map. Obtain
+   applicable human validation/commit approvals. Stop cleanly; no automatic push.
+
 ## RALLY-19 autonomous execution register
 
 The Author authorized the goal, headless-only tests and a commit per completed
@@ -115,19 +161,12 @@ task-specific supporting files belong in `docs/tasks/<ID>/`.
 
 18. [x] [RALLY-19](docs/tasks/RALLY-19.md): Frozen research experiment complete through R19-12 (delivery e91eb4c; Golem3ac500c). Native criteria pass; physical startup corrected, hardware rendering too slow. See DELIVERY.md; no practical acceleration or publication claimed.
 
-17. [ ] [RALLY-18](docs/tasks/RALLY-18.md): Review isolated centreline-camera/road-lookup candidate; headless validation passed. Lookup computation 67.0/71.4 FPS equivalent (oval/Fuji), commands+UART 37.0/41.2; perspective option measured separately. Unfenced 30 Hz review baseline accepted as a working assumption, not a verified guarantee; mainline integration and hardware qualification pending; [results](docs/tasks/RALLY-18/results/README.md).
+RALLY-18, RALLY-17, RALLY-16, RALLY-15, RALLY-10, RALLY-14, RALLY-04,
+RALLY-09, RALLY-08 and RALLY-11 are **consolidated into RALLY-20**, not marked
+completed. Their original documents/results remain historical evidence. The
+[forwarding map](docs/tasks/RALLY-20.md#forwarded-work) records each remaining
+obligation and its new execution step. Old native timings are not hardware FPS.
 
-16. [ ] [RALLY-17](docs/tasks/RALLY-17.md): Review isolated benchmarks: computation/state only 19.73/17.51 ms versus 32.10/27.94 ms including command construction/UART (oval/Fuji); accepted game unchanged.
-
-15. [ ] [RALLY-16](docs/tasks/RALLY-16.md): Review unpaced normal-eZ80 benchmark: resident sections 29.7/29.9 FPS; native VDP swap path contains two vertical-blank waits.
-
-14. [ ] [RALLY-15](docs/tasks/RALLY-15.md): Review isolated VDP-resident full-road renderer — implemented; headless fixed fixture 22.6/23.6 FPS, ordinary demo 18.8/25.2 FPS (oval/Fuji); mainline unchanged.
-9. [ ] [RALLY-10](docs/tasks/RALLY-10.md): Investigate performance and frame pacing — pavement experiment measured at 13.6–14.0 FPS; full-road VDP section experiment proceeds as RALLY-15.
-13. [ ] [RALLY-14](docs/tasks/RALLY-14.md): Instrument emulator/VDP draw operations and MOS timing callbacks — supports RALLY-10.
-3. [ ] [RALLY-04](docs/tasks/RALLY-04.md): Validate the selected Rally build on physical hardware.
-8. [ ] [RALLY-09](docs/tasks/RALLY-09.md): Review kerb/grass handling and inset shoulder lines.
-7. [ ] [RALLY-08](docs/tasks/RALLY-08.md): Complete scenery and road-edge emulator review.
-10. [ ] [RALLY-11](docs/tasks/RALLY-11.md): Qualify implemented retained scenery scrolling; performance remains unaccepted.
 2. [ ] [STUNT-01](docs/tasks/STUNT-01.md): Future separate 3D stunt racer.
 
 Completed milestones and acceptance evidence remain in the dated development

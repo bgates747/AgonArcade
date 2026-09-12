@@ -1,5 +1,16 @@
 # AgonArcade handoff
 
+Current task: **RALLY-20**, planning frozen and paused for Author review. Read
+`docs/tasks/RALLY-20.md`, its `CONTRACT.md`, and
+`docs/2026-09-12-rally-autonomous.md` first. Optimize the accepted stripped
+pre-Golem hardware product, not the full-scene Golem renderer. The accepted
+binary's reproducible lineage is in that contract; root `make -C rally` is not
+yet established as its build command. Do not start implementation, hardware
+operations or builds until the Author releases the planning review gate.
+The planning emulator summons is expressly authorized; all later test runs are
+headless except an unavoidable human physical-intervention summons. Root TODO
+owns the cross-project register. Preserve prior dirty production/bench evidence.
+
 This is the isolated RALLY-19 execution worktree, branch `rally19-golem`, at
 `/home/smith/Agon/mystuff/AgonArcade-rally19`. Root `rally/` is the earlier game;
 `make -C rally` does not build the current Golem candidate. Start RALLY-19 work
