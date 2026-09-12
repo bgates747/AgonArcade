@@ -1,0 +1,77 @@
+{
+  "scope": "Audit valid viewport/scroll captures, including actual in-region drawing.",
+  "pass": true,
+  "cases": 30,
+  "runs": [
+    {
+      "name": "valid-0",
+      "cases": 8,
+      "region_nonbackground_pixels": [
+        3552,
+        3544,
+        3552,
+        3596,
+        3600,
+        3552,
+        3544,
+        3552
+      ],
+      "results_sha256": "790820754d7b915a8950ae981d33ec4d3ad6af1fbb14c09c651daa67251083fb",
+      "inputs_sha256": "bee333b176316197c5a77c34bd6d0ca59913f4134b57d06dde9e398a112c88eb"
+    },
+    {
+      "name": "valid-1",
+      "cases": 8,
+      "region_nonbackground_pixels": [
+        3596,
+        3600,
+        3552,
+        3543,
+        3552,
+        3600,
+        3600,
+        3540
+      ],
+      "results_sha256": "e399ed7971b9fb038eb01ec1c03d6412382636d7e9c6eda51aabdb608e397aaa",
+      "inputs_sha256": "95ddbdcd6ddb8ac1fa7b301e72848cc4641cf15f9050e47251998d1b2ccf7974"
+    },
+    {
+      "name": "valid-2",
+      "cases": 8,
+      "region_nonbackground_pixels": [
+        3540,
+        3540,
+        3597,
+        3600,
+        20,
+        20,
+        20,
+        20
+      ],
+      "results_sha256": "1c1668521eb40441126ad4e4765ee72d76330e299dd4aa4fee8a34363c498e32",
+      "inputs_sha256": "3c685cc12fd23f76e11288380a943393e355f589d49d88c2fef219ca9feebe03"
+    },
+    {
+      "name": "valid-3",
+      "cases": 6,
+      "region_nonbackground_pixels": [
+        13954,
+        13919,
+        1,
+        1,
+        68680,
+        61136
+      ],
+      "results_sha256": "29182f9189ec0ef477e44d981793625f1a599ce4c543809aaa65cb7b42fcc7a2",
+      "inputs_sha256": "b8e12aee51e5694fba065067b3fbd7afd31e9ce689584bfff7fc4e112534f3f8"
+    }
+  ],
+  "host_suite": "host-tests.json",
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/qualify_viewport.py": "2496bc645c4097850a3abf42b1687d03616eebf5fc100d2838e20f3dacc91dbb",
+    "/home/smith/Agon/mystuff/golem-rally19/src/hosted.hpp": "02ec5ed47b0dc4f0391668cc263e94186252e07e24ca08300c457da52bbcd057",
+    "/home/smith/Agon/mystuff/golem-rally19/examples/native_quantization/viewport.golem": "4091f5cacd8443450d6505d4c324b03d52e846a23a5363486beb079fe49aa753"
+  },
+  "limitations": "Caller must use valid pixel viewport and movement no larger than its axis. No full-scene/history/timing acceptance.",
+  "retained_failures": "initial native crash for unsupported oversize vertical move; smoke missing affine feature; feature-smoke lacked Canvas clip synchronization"
+}

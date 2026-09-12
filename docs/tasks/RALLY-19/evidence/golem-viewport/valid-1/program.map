@@ -1,0 +1,59 @@
+field left 1000:0 s16 0 319
+field top 1000:2 s16 0 239
+field right 1000:4 s16 0 319
+field bottom 1000:6 s16 0 239
+field direction 1000:8 u16 0 3
+field amount 1000:10 u16 0 255
+field zero 1001:0 s16 0 0
+field maxX 1001:2 s16 319 319
+field maxY 1001:4 s16 239 239
+field negative 1001:6 s16 -10 -10
+field markerX 1001:8 s16 180 180
+field markerY 1001:10 s16 180 180
+field bitmap 1001:12 u16 0 0
+field marker 1001:14 u16 1 1
+scratch 2 15
+copy 2000 2:1 1000:0 2
+copy 2000 2:3 1000:6 2
+copy 2000 2:5 1000:4 2
+copy 2000 2:7 1000:2 2
+graphics_viewport 2000 pixel_left_top_right_bottom wire_0_3_2_1 plot4_sync
+scratch 3 23
+copy 2000 3:3 1001:12 1
+copy 2000 3:13 1001:6 2
+copy 2000 3:15 1001:6 2
+draw_bitmap 2000 index 1001:12 x 1001:6 y 1001:6 matrix 65535 reset65535 external_range 0 0
+scratch 4 5
+copy 2000 4:3 1000:8 1
+copy 2000 4:4 1000:10 1
+scroll_graphics 2000 extent2 direction0_right_1_left_2_down_3_up
+scratch 5 15
+copy 2000 5:1 1001:0 2
+copy 2000 5:3 1001:4 2
+copy 2000 5:5 1001:2 2
+copy 2000 5:7 1001:0 2
+graphics_viewport 2000 pixel_left_top_right_bottom wire_0_3_2_1 plot4_sync
+scratch 6 23
+copy 2000 6:3 1001:14 1
+copy 2000 6:13 1001:8 2
+copy 2000 6:15 1001:10 2
+draw_bitmap 2000 index 1001:14 x 1001:8 y 1001:10 matrix 65535 reset65535 external_range 1 1
+symbol constants 1001 16 0
+symbol draw 2000 270 2
+symbol input 1000 12 0
+bootstrap_bytes 576
+resident_payload_bytes 379
+owned_ids 8
+asset_payload_bytes 0
+program_payload_bytes 351
+scratch_payload_bytes 28
+resident_plus_bootstrap_payload_bytes 955
+owned 2
+owned 3
+owned 4
+owned 5
+owned 6
+owned 1000
+owned 1001
+owned 2000
+cleanup_bytes 48

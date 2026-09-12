@@ -1,0 +1,29 @@
+{
+  "scope": "Exact native images for viewport/scroll and full-view restoration.\n\nReference uses direct agondev calls with qualified pixel-mode Y wire order.\nCompiler candidate receives rectangle/direction/amount fields, not command bytes.\n",
+  "offset": 0,
+  "cases": [
+    [
+      20,
+      30,
+      79,
+      89,
+      0,
+      0
+    ],
+    [
+      20,
+      30,
+      79,
+      89,
+      0,
+      1
+    ]
+  ],
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/probe_viewport.py": "55df94321eb84d86d0062079e8652c4ee9fc67b861f6ad82fec376e9b65ec066",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/viewport_loader.cpp": "fd5812d681dd5ffee5b35a589d82848f3021b854fe4f60ae538859e01048a043",
+    "/home/smith/Agon/mystuff/golem-rally19/examples/native_quantization/viewport.golem": "4091f5cacd8443450d6505d4c324b03d52e846a23a5363486beb079fe49aa753",
+    "/home/smith/Agon/mystuff/golem-rally19/src/hosted.hpp": "2da59eca470a89282fe2c6254bd58cb939c11b5f3881e091312c808be1d04d2f",
+    "/home/smith/Agon/mystuff/golem-rally19/build/golemc": "35f4f678d22d046498e697c0b8ce27dbb3ffe7d87f16c7fa40c57c79484fcb2f"
+  }
+}

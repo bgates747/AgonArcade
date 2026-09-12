@@ -272,3 +272,56 @@ R19-09 remains unchecked. Next qualify typed viewport/scroll drawing, implement
 both retained-page histories, compare full-scene and sequential scrolling images,
 then integrate the accepted input/simulation/demo/HUD frontend. Numeric heading
 does not establish full-scene performance, retained-image correctness or stability.
+
+## Viewport/scroll primitive work in progress
+
+The first typed graphics probe exposed two more harness/runtime details. The
+direct-reference branch initially omitted Golem's stock affine feature flag;
+affine-reset bytes then produced a64-pixel text artifact. Adding the same flag
+gives exact candidate/reference smoke images, but inspecting those images shows
+that correct VDU24 ordering alone still does not clip raw bitmap draws. VDU24
+updates Context::graphicsViewport; raw Context::drawBitmap uses the Canvas clip
+left by the previous PLOT. Context::plot always calls setGraphicsOptions, which
+synchronizes the clip even for a non-drawing PLOT4 move.
+
+The proposed typed GraphicsViewport therefore emits VDU24 in correct wire order
+followed by absolute PLOT4(0,0), explicitly updating the graphics cursor stack as
+a documented side effect. It must be tested with an independent outside-region
+pixel assertion, not merely against an equally unclipped reference. Both direct
+reference and compiler candidate will use that synchronization and correct full
+restoration. Earlier captures remain preserved as failed/insufficient evidence.
+
+The broad initial reference probe also exited by SIGSEGV at the transition to
+the255-pixel downward-scroll case in a60-pixel-high region. This was not a timeout.
+Pinned displaycontroller.h::genericVScroll fills `scroll` rows without clamping
+to region height; at Y30,255 rows can exceed the240-row framebuffer. This source
+path explains the likely crash, though no upstream code was changed. Scroll's
+caller precondition is now explicit: amount must not exceed the current region's
+size along the selected axis. Test valid edge values including equality, all four
+directions, one-pixel extents, and255 horizontally in a320-wide viewport. Rally's
+horizontal0..255 movement across a320-wide panorama satisfies that precondition.
+Out-of-region crash evidence stays archived; it is not a supported scroll case
+or a reason to expand this goal into firmware repair.
+
+## Viewport/scroll checkpoint qualified
+
+All30 valid native image pairs pass with correct viewport Y order and PLOT4
+synchronization. The audit independently checks every outside-region pixel,
+nonempty drawing/scroll fill within the region, the restored-view marker and
+all original image/source/runtime hashes. It covers all four directions,
+zero and equal-axis-size moves, one-pixel regions, and255 horizontally in width320.
+The full host sanitizer/golden/negative suite passes with the new viewport target.
+Evidence is in `evidence/golem-viewport/qualification.json`, valid-0 through
+valid-3. Golem commit is recorded in this checkpoint's development log.
+
+Reproduction uses fresh names, from the execution root:
+
+```sh
+.venv/bin/python docs/tasks/RALLY-19/probe_viewport.py NEW-0 --offset 0 --limit 8
+.venv/bin/python docs/tasks/RALLY-19/probe_viewport.py NEW-1 --offset 8 --limit 8
+.venv/bin/python docs/tasks/RALLY-19/probe_viewport.py NEW-2 --offset 16 --limit 8
+.venv/bin/python docs/tasks/RALLY-19/probe_viewport.py NEW-3 --offset 24 --limit 8
+```
+
+The accepted game and its frozen images remain untouched. History/scenery
+integration and visual comparison are next; R19-09 is still unchecked.

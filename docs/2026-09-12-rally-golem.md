@@ -52,3 +52,16 @@ failure of the apparent full-view restoration. SCENERY.md records the proposed
 explicit pixel-coordinate mapping and the requirement to preserve all original
 full-scene/sequential imagery, including foreground repair. Original code and
 captures remain untouched. This is a correctness discovery, not a timing result.
+
+R19-09 next partial checkpoint: Golem392d96848c518d82ce56410b139f95e12f0f08d3
+qualifies GraphicsViewport and ScrollGraphics. Thirty native image pairs match
+direct commands exactly, with full outside-region preservation, actual in-region
+drawing, one-pixel extents and viewport restoration. Host sanitizer/golden/
+negative tests pass. Raw bitmap draws additionally require a non-drawing PLOT4
+after VDU24 to synchronize Canvas clipping; this is now explicit in the intrinsic.
+
+Retained evidence includes a direct-reference affine-feature omission, equal but
+unclipped intermediate smoke images, and a stock native crash for an unsupported
+255-row scroll inside a60-row region. Scroll amount must fit its viewport axis;
+the valid255-horizontal/320-wide Rally case passes. No firmware changes or timing
+claims. R19-09 remains unchecked pending retained history/scenery/frontend work.

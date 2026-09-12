@@ -1,0 +1,17 @@
+{
+  "scope": "Initial probe failure; excluded from qualified input domain",
+  "returncode": -11,
+  "timed_out": false,
+  "last_observed_input_event": "right key down frame1980, after capture1950 (case16); transition to case17",
+  "next_case": [
+    20,
+    30,
+    79,
+    89,
+    2,
+    255
+  ],
+  "limitation": "reference initially omitted affine feature flag, causing text artifacts; later feature-smoke fixes that separately",
+  "source_explanation": "genericVScroll fills scroll rows without region-size clamp;255 rows fromY30 exceed240-row framebuffer",
+  "classification": "likely native scroll-size bug; no isolated debugger claim and no upstream changes"
+}

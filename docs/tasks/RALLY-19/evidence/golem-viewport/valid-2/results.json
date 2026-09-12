@@ -1,0 +1,119 @@
+{
+  "scope": "Exact native images for viewport/scroll and full-view restoration.\n\nReference uses direct agondev calls with qualified pixel-mode Y wire order.\nCompiler candidate receives rectangle/direction/amount fields, not command bytes.\n",
+  "cases": 8,
+  "pass": true,
+  "results": [
+    {
+      "case": [
+        20,
+        30,
+        79,
+        89,
+        3,
+        1
+      ],
+      "different_pixels": 0,
+      "marker_present": true,
+      "outside_unchanged": true,
+      "pass": true
+    },
+    {
+      "case": [
+        20,
+        30,
+        79,
+        89,
+        3,
+        7
+      ],
+      "different_pixels": 0,
+      "marker_present": true,
+      "outside_unchanged": true,
+      "pass": true
+    },
+    {
+      "case": [
+        20,
+        30,
+        79,
+        89,
+        3,
+        59
+      ],
+      "different_pixels": 0,
+      "marker_present": true,
+      "outside_unchanged": true,
+      "pass": true
+    },
+    {
+      "case": [
+        20,
+        30,
+        79,
+        89,
+        3,
+        60
+      ],
+      "different_pixels": 0,
+      "marker_present": true,
+      "outside_unchanged": true,
+      "pass": true
+    },
+    {
+      "case": [
+        20,
+        30,
+        20,
+        49,
+        0,
+        1
+      ],
+      "different_pixels": 0,
+      "marker_present": true,
+      "outside_unchanged": true,
+      "pass": true
+    },
+    {
+      "case": [
+        20,
+        30,
+        20,
+        49,
+        3,
+        1
+      ],
+      "different_pixels": 0,
+      "marker_present": true,
+      "outside_unchanged": true,
+      "pass": true
+    },
+    {
+      "case": [
+        20,
+        30,
+        39,
+        30,
+        0,
+        1
+      ],
+      "different_pixels": 0,
+      "marker_present": true,
+      "outside_unchanged": true,
+      "pass": true
+    },
+    {
+      "case": [
+        20,
+        30,
+        39,
+        30,
+        3,
+        1
+      ],
+      "different_pixels": 0,
+      "marker_present": true,
+      "outside_unchanged": true,
+      "pass": true
+    }
+  ]
+}
