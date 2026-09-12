@@ -1,0 +1,98 @@
+{
+  "scope": "Prove the finite full-road merge limit over all accepted curve/phase tables.",
+  "table_source_sha256": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180"
+  },
+  "tracks": {
+    "oval": {
+      "max_sections": 29,
+      "combinations_checked": 36360,
+      "witness": {
+        "position": 107200,
+        "phase": 80,
+        "bin": 67,
+        "phase_pattern": 2,
+        "rows": [
+          104,
+          105,
+          107,
+          110,
+          112,
+          115,
+          116,
+          117,
+          118,
+          119,
+          121,
+          122,
+          125,
+          126,
+          129,
+          130,
+          135,
+          137,
+          138,
+          147,
+          152,
+          156,
+          160,
+          164,
+          197,
+          198,
+          204,
+          212,
+          221,
+          224
+        ]
+      }
+    },
+    "fuji": {
+      "max_sections": 32,
+      "combinations_checked": 206848,
+      "witness": {
+        "position": 1566400,
+        "phase": 1389,
+        "bin": 979,
+        "phase_pattern": 40,
+        "rows": [
+          104,
+          107,
+          108,
+          110,
+          112,
+          116,
+          117,
+          120,
+          122,
+          123,
+          126,
+          127,
+          130,
+          132,
+          135,
+          136,
+          137,
+          139,
+          140,
+          151,
+          152,
+          154,
+          156,
+          158,
+          172,
+          197,
+          202,
+          207,
+          212,
+          217,
+          218,
+          223,
+          224
+        ]
+      }
+    }
+  },
+  "finite_repeat_limit": 32,
+  "note": "The other phase half flips materials without changing boundaries. This proves a merge-size limit, not a completed full-road renderer."
+}

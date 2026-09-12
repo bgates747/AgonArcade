@@ -35,7 +35,7 @@ def mask(image,geometry):
             result.putpixel((x,y),label)
     return result
 
-def render(root,track,variant,cases):
+def render(root,track,variant,cases,builder=build):
     buildRoot=TASK/'.work/section-visual'/root.name/(track+'-'+variant)
     (buildRoot/'src').mkdir(parents=True,exist_ok=False)
     shutil.copy2(TASK/'section_loader.cpp',buildRoot/'src/main.cpp')
@@ -45,7 +45,7 @@ def render(root,track,variant,cases):
     (buildRoot/'Makefile').write_text((GOLEM/'examples/native_admission/Makefile').read_text()+f'\nCXXFLAGS += -I{TASK/".work/oracle/include"}{flags}\n')
     with (root/(variant+'-build.txt')).open('w') as log:
         if variant=='candidate':
-            source=build(track,buildRoot)
+            source=builder(track,buildRoot)
             subprocess.run(['make','-C',str(GOLEM/'src')],check=True,stdout=log,stderr=subprocess.STDOUT)
             subprocess.run([str(GOLEM/'build/golemc'),'--hosted',str(source),str(buildRoot/'program.bin')],check=True,stdout=log,stderr=subprocess.STDOUT)
             shutil.copy2(source,root/'kernel.golem');shutil.copy2(buildRoot/'program.bin.map',root/'program.map')
@@ -68,11 +68,16 @@ def render(root,track,variant,cases):
     return images,geometry
 
 def main():
-    p=ArgumentParser(description=__doc__);p.add_argument('name');p.add_argument('--track',choices=['oval','fuji'],default='oval');p.add_argument('--offset',type=int,default=0);p.add_argument('--limit',type=int,default=35);a=p.parse_args()
+    p=ArgumentParser(description=__doc__);p.add_argument('name');p.add_argument('--track',choices=['oval','fuji'],default='oval');p.add_argument('--offset',type=int,default=0);p.add_argument('--limit',type=int,default=35);p.add_argument('--packed',action='store_true');a=p.parse_args()
+    builder=build
+    if a.packed:
+        from build_packed_section import build as builder
     cases=poses(a.track)[a.offset:a.offset+a.limit];assert 0<len(cases)<=40
     root=TASK/'evidence/golem-section-visual'/a.name;root.mkdir(parents=True,exist_ok=False)
-    (root/'inputs.json').write_text(json.dumps({'track':a.track,'cases':cases,'source_hashes':{str(path):sha(path) for path in [Path(__file__),TASK/'section_loader.cpp',TASK/'build_section_kernel.py',TASK/'build_projection_kernel.py',GOLEM/'src/hosted.hpp',GOLEM/'examples/native_admission/main.cpp']}},indent=2)+'\n')
-    expected,eg=render(root,a.track,'oracle',cases);actual,ag=render(root,a.track,'candidate',cases)
+    files=[Path(__file__),TASK/'section_loader.cpp',TASK/'build_section_kernel.py',TASK/'build_projection_kernel.py',GOLEM/'src/hosted.hpp',GOLEM/'examples/native_admission/main.cpp']
+    if a.packed:files.append(TASK/'build_packed_section.py')
+    (root/'inputs.json').write_text(json.dumps({'track':a.track,'packed':a.packed,'cases':cases,'source_hashes':{str(path):sha(path) for path in files}},indent=2)+'\n')
+    expected,eg=render(root,a.track,'oracle',cases);actual,ag=render(root,a.track,'candidate',cases,builder)
     results=[]
     for pose,(ei,em),(ai,am),e,a in zip(cases,expected,actual,eg,ag):
         metric=compare(ei,ai,em,am);geometry=e[2:]==a[2:] and max(abs(e[i]-a[i]) for i in range(2))<=1
