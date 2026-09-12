@@ -186,3 +186,22 @@ bytes steady over each batch, and 32 / 83832 after every cleanup; the initial
 The finite renderer proof doubles admitted position; complete roads/cars and all
 frozen full-scene timing/visual/ten-minute criteria remain R19-06 onward. All work
 was headless in isolated worktrees; no alerts, upstream edits, pushes or SD changes.
+
+## R19-06 — Real-lookup prerequisites checkpoint, still unchecked, 2026-09-12
+
+Golem 67eac1920e8469ac0b462aa21c62f462e8341498 adds typed second-level element
+selection within a resident record buffer, exact bounded byte-offset arithmetic,
+unsigned widening and an unbiased unsigned floor conversion. Native testing
+passes eight cases crossing a byte-offset carry, preserving data on bad indices,
+widening65535 and keeping correct interval floors near6400 and Fuji's last valid
+position3276799. Host sanitizer/golden/negative tests pass. Final compiler output
+matches the qualified element probe and reproduces the previous arithmetic and
+full admission streams exactly. An initial erased-copy-template failure is
+retained with the corrected readbacks under evidence/golem-elements.
+
+SECTION.md records the real coefficient layout/bounds, precise integer oracle,
+accepted material widths and integration constraints. The next work must select
+real interval/lookahead coefficients, derive phase/section boundaries and draw
+all section materials. The helper fixture does not satisfy R19-06 and its box
+remains unchecked. All emulator tests were headless and normal-clock. No changes
+to original worktrees, upstream firmware, SD or remote publication.

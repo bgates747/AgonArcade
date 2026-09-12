@@ -1,0 +1,185 @@
+field index 1000:0 u16 0 65535
+field position 1000:4 s32 0 3276799
+field value 1000:8 f32 0 65534
+field outA 1001:0 s32 -100 100
+field outB 1001:4 s32 -100 100
+field outC 1001:8 s32 -100 100
+field floorValue 1001:12 u16 0 65534
+field interval 1001:14 u16 0 512
+field wideIndex 1001:16 s32 0 65535
+field wideFloor 1001:20 s32 0 65534
+field ok 1002:0 u16 0 1
+field one 1004:0 u16 1 1
+field a0 1500:0 s32 -100 100
+field b0 1500:4 s32 -100 100
+field c0 1500:8 s32 -100 100
+field a1 1500:12 s32 -100 100
+field b1 1500:16 s32 -100 100
+field c1 1500:20 s32 -100 100
+field a2 1500:24 s32 -100 100
+field b2 1500:28 s32 -100 100
+field c2 1500:32 s32 -100 100
+field a3 1500:36 s32 -100 100
+field b3 1500:40 s32 -100 100
+field c3 1500:44 s32 -100 100
+field a4 1500:48 s32 -100 100
+field b4 1500:52 s32 -100 100
+field c4 1500:56 s32 -100 100
+field a5 1500:60 s32 -100 100
+field b5 1500:64 s32 -100 100
+field c5 1500:68 s32 -100 100
+field a6 1500:72 s32 -100 100
+field b6 1500:76 s32 -100 100
+field c6 1500:80 s32 -100 100
+field a7 1500:84 s32 -100 100
+field b7 1500:88 s32 -100 100
+field c7 1500:92 s32 -100 100
+field a8 1500:96 s32 -100 100
+field b8 1500:100 s32 -100 100
+field c8 1500:104 s32 -100 100
+field a9 1500:108 s32 -100 100
+field b9 1500:112 s32 -100 100
+field c9 1500:116 s32 -100 100
+field a10 1500:120 s32 -100 100
+field b10 1500:124 s32 -100 100
+field c10 1500:128 s32 -100 100
+field a11 1500:132 s32 -100 100
+field b11 1500:136 s32 -100 100
+field c11 1500:140 s32 -100 100
+field a12 1500:144 s32 -100 100
+field b12 1500:148 s32 -100 100
+field c12 1500:152 s32 -100 100
+field a13 1500:156 s32 -100 100
+field b13 1500:160 s32 -100 100
+field c13 1500:164 s32 -100 100
+field a14 1500:168 s32 -100 100
+field b14 1500:172 s32 -100 100
+field c14 1500:176 s32 -100 100
+field a15 1500:180 s32 -100 100
+field b15 1500:184 s32 -100 100
+field c15 1500:188 s32 -100 100
+field a16 1500:192 s32 -100 100
+field b16 1500:196 s32 -100 100
+field c16 1500:200 s32 -100 100
+field a17 1500:204 s32 -100 100
+field b17 1500:208 s32 -100 100
+field c17 1500:212 s32 -100 100
+field a18 1500:216 s32 -100 100
+field b18 1500:220 s32 -100 100
+field c18 1500:224 s32 -100 100
+field a19 1500:228 s32 -100 100
+field b19 1500:232 s32 -100 100
+field c19 1500:236 s32 -100 100
+field a20 1500:240 s32 -100 100
+field b20 1500:244 s32 -100 100
+field c20 1500:248 s32 -100 100
+field a21 1500:252 s32 -100 100
+field b21 1500:256 s32 -100 100
+field c21 1500:260 s32 -100 100
+field a22 1500:264 s32 -100 100
+field b22 1500:268 s32 -100 100
+field c22 1500:272 s32 -100 100
+field a23 1500:276 s32 -100 100
+field b23 1500:280 s32 -100 100
+field c23 1500:284 s32 -100 100
+field a24 1500:288 s32 -100 100
+field b24 1500:292 s32 -100 100
+field c24 1500:296 s32 -100 100
+field a25 1500:300 s32 -100 100
+field b25 1500:304 s32 -100 100
+field c25 1500:308 s32 -100 100
+field a26 1500:312 s32 -100 100
+field b26 1500:316 s32 -100 100
+field c26 1500:320 s32 -100 100
+field a27 1500:324 s32 -100 100
+field b27 1500:328 s32 -100 100
+field c27 1500:332 s32 -100 100
+field a28 1500:336 s32 -100 100
+field b28 1500:340 s32 -100 100
+field c28 1500:344 s32 -100 100
+field a29 1500:348 s32 -100 100
+field b29 1500:352 s32 -100 100
+field c29 1500:356 s32 -100 100
+field a30 1500:360 s32 -100 100
+field b30 1500:364 s32 -100 100
+field c30 1500:368 s32 -100 100
+field a31 1500:372 s32 -100 100
+field b31 1500:376 s32 -100 100
+field c31 1500:380 s32 -100 100
+field a 1502:0 s32 -100 100
+field b 1502:4 s32 -100 100
+field c 1502:8 s32 -100 100
+scratch 2 3
+scratch 3 2
+scratch 4 15
+scratch 5 0
+copy 5 2:0 1000:0 2
+copy 5 4:13 2:0 2
+element_lookup 2000 source 1500 count 32 stride 12 instruction 4 source_offset_field 13 guarded_body 5
+copy 2000 1001:0 1502:0 4
+copy 2000 1001:4 1502:4 4
+copy 2000 1001:8 1502:8 4
+copy 2000 1001:16 1000:0 2
+scratch 6 36
+scratch 7 4
+scratch 8 4
+scratch 9 4
+copy 2000 1001:12 9:0 2
+copy 2000 1001:20 1001:12 2
+scratch 10 4
+scratch 11 36
+scratch 12 4
+scratch 13 4
+scratch 14 4
+copy 2000 1001:14 14:0 2
+symbol compute 2000 298 2
+symbol constants 1004 2 0
+symbol fraction 1105 4 1
+symbol input 1000 80 0
+symbol left 1100 4 1
+symbol multiply 2001 41 2
+symbol output 1001 80 0
+symbol product 1102 4 1
+symbol progress 1104 4 1
+symbol rawValue 1103 4 1
+symbol records 1500 384 0
+symbol right 1101 4 1
+symbol selected 1502 12 0
+symbol status 1002 10 0
+symbol untouched 1003 2 0
+bootstrap_bytes 1573
+resident_payload_bytes 1161
+owned_ids 28
+asset_payload_bytes 0
+program_payload_bytes 462
+scratch_payload_bytes 699
+resident_plus_bootstrap_payload_bytes 2734
+owned 2
+owned 3
+owned 4
+owned 5
+owned 6
+owned 7
+owned 8
+owned 9
+owned 10
+owned 11
+owned 12
+owned 13
+owned 14
+owned 1000
+owned 1001
+owned 1002
+owned 1003
+owned 1004
+owned 1100
+owned 1101
+owned 1102
+owned 1103
+owned 1104
+owned 1105
+owned 1500
+owned 1502
+owned 2000
+owned 2001
+cleanup_bytes 168

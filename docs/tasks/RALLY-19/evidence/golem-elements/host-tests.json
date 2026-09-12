@@ -1,0 +1,97 @@
+{
+  "existing": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_existing.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_existing"
+    ],
+    "stdout": "Existing language: print escapes/case, little-endian uint16, addition, loop buffer comparison, ten rejection cases pass.\n"
+  },
+  "hosted": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_hosted.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_hosted"
+    ],
+    "stdout": "Hosted compiler: stock byte goldens, typed load, forward calls, finite repeat, signed-store/PLOT lowering and 26 negative cases pass.\n"
+  },
+  "imports": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_imports.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_imports"
+    ],
+    "stdout": "Resident imports: exact sizes, source-relative assets, typed records, ID collisions, guarded patch lowering and 14 negatives pass.\n"
+  },
+  "admission": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_admission.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_admission"
+    ],
+    "stdout": "Admission compiler: signed-byte normalization, sticky guards, typed record copy, resource caps, syntax depth and 19 negatives pass.\n"
+  },
+  "elements": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_elements.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_elements"
+    ],
+    "stdout": "Element helpers: typed record selection, offset relocation, unsigned floor/widening and ten negatives pass.\n"
+  },
+  "design_cases": {
+    "accepted": 3,
+    "rejected": 12,
+    "failure_preserves_output": true
+  },
+  "source_hashes": {
+    "src/golemc.cpp": "0156bb00e4d4f3f123e7fb012805bd1f85756cbca5849bd1024fdef8db52cdb5",
+    "src/hosted.hpp": "ecf4bfad560b5f3b8ed70557731c3f7e4519cfbd6a9dfa344e61aa5d0ab6d8bd",
+    "tests/test_existing.cpp": "e1a8efdb74b7d78ed886a8606529fdeaa84969d37a0d23ce36caf1756ab5c1d5",
+    "tests/test_hosted.cpp": "1b6392a814598c4abc9fde84913cc912591349202c8dad2e8e02aece575311d6",
+    "tests/test_imports.cpp": "1bcc7f9e3859791d9f9a50687a9af0f99f8e82439f81b3aca14ebfd5e768ce27",
+    "tests/test_admission.cpp": "fe5bed0ece8e0bedb9c4b7031b97c94b4a4c735d57d58731e283a4e46040381c",
+    "tests/test_elements.cpp": "32d72ddff2840e58fad9eade2ac224c2b8c80f20f1dbbf5336b1daf94d197c73",
+    "tests/run_hosted.py": "9d17be69a47f9d831c975fe8c5bd6ac7dc419b267259a064c7592bdde01daca4"
+  }
+}
