@@ -17,7 +17,7 @@ This ordered register owns progress across AgonArcade and Golem.
    deployment files. Build/test the existing compiler examples and exact reviewed
    Rally source locally. Record source/toolchain/runtime/binary/data hashes,
    headless profile locations and how to reproduce. Commit foundation evidence.
-2. [ ] **R19-02 — Freeze and validate the visual/performance oracle.** Adapt the
+2. [x] **R19-02 — Freeze and validate the visual/performance oracle.** Adapt the
    existing capture infrastructure to canonical Linux headless profiles. Freeze
    >=48 poses and per-object/material masks for the final accepted tuning. Prove
    the comparison catches missing cars/markings and tolerates <=1px edges. Record

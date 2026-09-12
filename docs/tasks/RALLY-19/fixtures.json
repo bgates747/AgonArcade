@@ -1,0 +1,2344 @@
+{
+  "version": 1,
+  "oracle": "949f618",
+  "input_layout": "17 little-endian signed int32 words: position,phase,lateralQ8,steering,speed, then 6 position/lane pairs",
+  "perspective": false,
+  "cases": [
+    {
+      "name": "oval-00",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 0,
+        "phase": 0,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "32a041b406df284aaa877155904128df2115d824c3dafc2f8f6b742067cbefc5"
+    },
+    {
+      "name": "oval-01",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 39210,
+        "phase": 1,
+        "lateral": -8960,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 55210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 64210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 73210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 82210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 91210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 100210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "e3ebac9a6a7968419bc3aae4a9e34867775ed70890374550440b2d3770bad9fd"
+    },
+    {
+      "name": "oval-02",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 72000,
+        "phase": 3999,
+        "lateral": 8960,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 88000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 97000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 106000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 115000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 124000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 133000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "5eea24727500ff92464cb938e80fddc6e240500fde66ce234cc21d0f33109145"
+    },
+    {
+      "name": "oval-03",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 111210,
+        "phase": 4000,
+        "lateral": -17920,
+        "steering": -14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 127210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 136210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 145210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 154210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 163210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 172210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "baf73c48aba450328b4aa85b0f87cd95d9dfad00426f6c6112f437b4b259902e"
+    },
+    {
+      "name": "oval-04",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 144000,
+        "phase": 4001,
+        "lateral": 17920,
+        "steering": 14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 160000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 169000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 178000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 187000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 196000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 205000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "2b296afdc928a1bc35a08358764c84d6cedfe8e3ce9be9c48f8ec396bab43177"
+    },
+    {
+      "name": "oval-05",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 183210,
+        "phase": 7999,
+        "lateral": -24320,
+        "steering": -21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 199210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 208210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 217210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 226210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 235210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 244210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "7afff3109c628d71ac7c719673a2c41771777ae09e40b971e1c02d5a90b8b0b8"
+    },
+    {
+      "name": "oval-06",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 216000,
+        "phase": 0,
+        "lateral": 24320,
+        "steering": 21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 232000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 241000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 250000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 259000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 268000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 277000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "fe7de9c187092816fb38fd164b203d879b5d4e364f3c158fdecfa3a2cee0f01b"
+    },
+    {
+      "name": "oval-07",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 255210,
+        "phase": 1,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 271210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 280210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 289210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 298210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 307210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 316210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "76611f6ecf64a2c6e65e621ad15e290d8cedc7318b43f7fdc616d9b798e7d104"
+    },
+    {
+      "name": "oval-08",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 288000,
+        "phase": 3999,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 304000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 313000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 322000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 331000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 340000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 349000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "1689530d75e9666befd6b9c03e460686f802c40f12f8969f7d53f1dab1ef3b6c"
+    },
+    {
+      "name": "oval-09",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 327210,
+        "phase": 4000,
+        "lateral": -38400,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 343210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 352210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 361210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 370210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 379210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 388210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "3fd9381bb3fe917ac209a3102c2988631c725fa489473dcf1aab9a046809bab9"
+    },
+    {
+      "name": "oval-10",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 360000,
+        "phase": 4001,
+        "lateral": 38400,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 376000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 385000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 394000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 403000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 412000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 421000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "b361bd7967e71321cfe5b1a1bf54de143afedd68a4e2c143f9f711033f188d39"
+    },
+    {
+      "name": "oval-11",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 399210,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": -14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 415210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 424210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 433210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 442210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 451210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 460210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "3003a8cab8ea9dbc11e1f1e8cca8d57cc63839562eee545285d3e9ab7497d84e"
+    },
+    {
+      "name": "oval-12",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 432000,
+        "phase": 0,
+        "lateral": 0,
+        "steering": 14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 448000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 457000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 466000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 475000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 484000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 493000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "5e68dbd91bb3213f393baee3c965bb0a77cb2140fd91f8115dedad3bc2aafaba"
+    },
+    {
+      "name": "oval-13",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 471210,
+        "phase": 1,
+        "lateral": -8960,
+        "steering": -21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 487210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 496210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 505210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 514210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 523210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 532210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "d12052d306a4722bc203c3e5e2d1f9ed2075b777c44d4be39ae0b3940f9e90c9"
+    },
+    {
+      "name": "oval-14",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 504000,
+        "phase": 3999,
+        "lateral": 8960,
+        "steering": 21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 520000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 529000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 538000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 547000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 556000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 565000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "979bc75545bba91c07e9d9a723c1b7b55818141e022aa5ed4e125eb011c3a94a"
+    },
+    {
+      "name": "oval-15",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 543210,
+        "phase": 4000,
+        "lateral": -17920,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 559210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 568210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 1210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 10210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 19210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 28210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "0b87c3fc4773a9cabe6513e9de553c1fa697d5311125ad9b347fa97d5f66c015"
+    },
+    {
+      "name": "oval-16",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "lap-seam"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 4001,
+        "lateral": 17920,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 15999,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 24999,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 33999,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 42999,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 51999,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 60999,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "8443fea8ced9caead7d60f2b86df01d75755d6da45663a2366529411a89876be"
+    },
+    {
+      "name": "oval-17",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary",
+        "lap-seam",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 0,
+        "phase": 7999,
+        "lateral": -24320,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "f6f41c5fa52f3730d6a0ef3c191ea5c4c9d614bd9ae1c114f66fddd946962dd6"
+    },
+    {
+      "name": "oval-18",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "interval-seam",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 6399,
+        "phase": 0,
+        "lateral": 24320,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 22399,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 31399,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 40399,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 49399,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 58399,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 67399,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "4df3f9a4075f1b94bdbff9b78cb26cfb20230fce475a17f1401dea1cb750f825"
+    },
+    {
+      "name": "oval-19",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary",
+        "interval-seam"
+      ],
+      "player": {
+        "position": 6400,
+        "phase": 1,
+        "lateral": 0,
+        "steering": -14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 22400,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 31400,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 40400,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 49400,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 58400,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 67400,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "398d7146af8b7605c2a967e7b012aed0c50f3a971609c42da828ded91c58502d"
+    },
+    {
+      "name": "oval-20",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "interval-seam"
+      ],
+      "player": {
+        "position": 569599,
+        "phase": 3999,
+        "lateral": 0,
+        "steering": 14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 9599,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 18599,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 27599,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 36599,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 45599,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 54599,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "6ecf5ac94867a88662eee80f91bfce71c721728b1a52f5fdb0f6173505df0586"
+    },
+    {
+      "name": "oval-21",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary",
+        "interval-seam",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 569600,
+        "phase": 4000,
+        "lateral": -38400,
+        "steering": -21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 9600,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 18600,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 27600,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 36600,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 45600,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 54600,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "be56d086812cd79fdfc57ae65dcb857596cb10f4c092bcfe85573abca560f4b2"
+    },
+    {
+      "name": "oval-22",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "overlap",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 145234,
+        "phase": 4001,
+        "lateral": 38400,
+        "steering": 21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 165234,
+          "lane": 0
+        },
+        {
+          "id": 1,
+          "position": 166434,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 167634,
+          "lane": 0
+        },
+        {
+          "id": 3,
+          "position": 188234,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 197234,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 206234,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "c3b334588dbb02a165ddd0ae8b9da29bf41960080320c01fd49194875058fac8"
+    },
+    {
+      "name": "oval-23",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "overlap"
+      ],
+      "player": {
+        "position": 437678,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 457678,
+          "lane": 0
+        },
+        {
+          "id": 1,
+          "position": 458878,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 460078,
+          "lane": 0
+        },
+        {
+          "id": 3,
+          "position": 480678,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 489678,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 498678,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "3d309b0fbb62b077fbf065dd80b5d6dce7785cb03dda76e0f77272ea1f4d5911"
+    },
+    {
+      "name": "fuji-00",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 0,
+        "phase": 0,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "32a041b406df284aaa877155904128df2115d824c3dafc2f8f6b742067cbefc5"
+    },
+    {
+      "name": "fuji-01",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 208010,
+        "phase": 1,
+        "lateral": -8960,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 224010,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 233010,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 242010,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 251010,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 260010,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 269010,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "36cf0f3d6c2100e36c36aca1d6a05279ada470c7361da4245df8b97b342827cf"
+    },
+    {
+      "name": "fuji-02",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 409600,
+        "phase": 3999,
+        "lateral": 8960,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 425600,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 434600,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 443600,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 452600,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 461600,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 470600,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "b6d5addde6bbec17c771cd0b561f8ae5bc8372bd37cde0e96567cd4f50a648af"
+    },
+    {
+      "name": "fuji-03",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 617610,
+        "phase": 4000,
+        "lateral": -17920,
+        "steering": -14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 633610,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 642610,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 651610,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 660610,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 669610,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 678610,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "49fc37d8ff7d229a78fa731d96bc5f72290b93c8077e43423f644477b2c82593"
+    },
+    {
+      "name": "fuji-04",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 819200,
+        "phase": 4001,
+        "lateral": 17920,
+        "steering": 14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 835200,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 844200,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 853200,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 862200,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 871200,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 880200,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "4c1fdc2a8255bbbbdf1e28d56f7329159905be0f1b0b430662bbe3092413f6e0"
+    },
+    {
+      "name": "fuji-05",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 1027210,
+        "phase": 7999,
+        "lateral": -24320,
+        "steering": -21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 1043210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 1052210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 1061210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 1070210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 1079210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 1088210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "bc771dcd0dd2a06333a0a99e29c4e3c8dc106779ed540a3c3420dabdc7f06bb2"
+    },
+    {
+      "name": "fuji-06",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 1228800,
+        "phase": 0,
+        "lateral": 24320,
+        "steering": 21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 1244800,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 1253800,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 1262800,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 1271800,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 1280800,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 1289800,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "ee941f3f86db242ed7de37ef36aafd2a451a3fc8e41901df8572e3ad688cc06b"
+    },
+    {
+      "name": "fuji-07",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 1436810,
+        "phase": 1,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 1452810,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 1461810,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 1470810,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 1479810,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 1488810,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 1497810,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "4f9db88a696abb5440ab0fbd59df8ccf05eaf7ba91afc43c85f5a18718afba3d"
+    },
+    {
+      "name": "fuji-08",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 1638400,
+        "phase": 3999,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 1654400,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 1663400,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 1672400,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 1681400,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 1690400,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 1699400,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "bb7a457014116fb52aaa204f1f3578df0b7ee7db7145117873c56c2f0e238e01"
+    },
+    {
+      "name": "fuji-09",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 1846410,
+        "phase": 4000,
+        "lateral": -38400,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 1862410,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 1871410,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 1880410,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 1889410,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 1898410,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 1907410,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "d7b919809606c6112e3a320aea92368b5fe77559aa123e4ad0989d8a3ada2517"
+    },
+    {
+      "name": "fuji-10",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 2048000,
+        "phase": 4001,
+        "lateral": 38400,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 2064000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 2073000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 2082000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 2091000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 2100000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 2109000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "0a07fc7a407a29fd87085d93dc03ec329b9878be898dabfbc1440150d935f137"
+    },
+    {
+      "name": "fuji-11",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 2256010,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": -14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 2272010,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 2281010,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 2290010,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 2299010,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 2308010,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 2317010,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "7867793073bf14c262822fc011be326f2e871d41785802729311f1e8f5d8cd59"
+    },
+    {
+      "name": "fuji-12",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 2457600,
+        "phase": 0,
+        "lateral": 0,
+        "steering": 14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 2473600,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 2482600,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 2491600,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 2500600,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 2509600,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 2518600,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "74a70b437a02b8f5b0e1cedd44ebb2180a98a7b345d80911879de3fbb2cc545e"
+    },
+    {
+      "name": "fuji-13",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 2665610,
+        "phase": 1,
+        "lateral": -8960,
+        "steering": -21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 2681610,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 2690610,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 2699610,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 2708610,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 2717610,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 2726610,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "ca072045aea39456c305ac06a2883b0cf55ffc86a7e097391a9a7d2046b671cd"
+    },
+    {
+      "name": "fuji-14",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 2867200,
+        "phase": 3999,
+        "lateral": 8960,
+        "steering": 21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 2883200,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 2892200,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 2901200,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 2910200,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 2919200,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 2928200,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "a81b4bb067aa1165fb6cefa301f6c54bd1e9e9652aa707c4fee03bc9ce207d5f"
+    },
+    {
+      "name": "fuji-15",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 3075210,
+        "phase": 4000,
+        "lateral": -17920,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 3091210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 3100210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 3109210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 3118210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 3127210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 3136210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "2429373e6ff64f486c70050df50edd03d0b4c5f6bdd9f10053a0e1b2596f3dbf"
+    },
+    {
+      "name": "fuji-16",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional",
+        "lap-seam"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 4001,
+        "lateral": 17920,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 15999,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 24999,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 33999,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 42999,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 51999,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 60999,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "56ef0b5969bab3d85527b34cc99028b172e7359152bee6f0ba53b0a9208aca48"
+    },
+    {
+      "name": "fuji-17",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary",
+        "lap-seam",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 0,
+        "phase": 7999,
+        "lateral": -24320,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "f6f41c5fa52f3730d6a0ef3c191ea5c4c9d614bd9ae1c114f66fddd946962dd6"
+    },
+    {
+      "name": "fuji-18",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional",
+        "interval-seam",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 6399,
+        "phase": 0,
+        "lateral": 24320,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 22399,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 31399,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 40399,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 49399,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 58399,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 67399,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "4df3f9a4075f1b94bdbff9b78cb26cfb20230fce475a17f1401dea1cb750f825"
+    },
+    {
+      "name": "fuji-19",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary",
+        "interval-seam"
+      ],
+      "player": {
+        "position": 6400,
+        "phase": 1,
+        "lateral": 0,
+        "steering": -14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 22400,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 31400,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 40400,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 49400,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 58400,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 67400,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "398d7146af8b7605c2a967e7b012aed0c50f3a971609c42da828ded91c58502d"
+    },
+    {
+      "name": "fuji-20",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional",
+        "interval-seam"
+      ],
+      "player": {
+        "position": 3270399,
+        "phase": 3999,
+        "lateral": 0,
+        "steering": 14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 9599,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 18599,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 27599,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 36599,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 45599,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 54599,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "5b3114a686b086bd819fe526ed177dd11fe66c1b788dd7dd0c0563d6ec21c28b"
+    },
+    {
+      "name": "fuji-21",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "sample-boundary",
+        "interval-seam",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 3270400,
+        "phase": 4000,
+        "lateral": -38400,
+        "steering": -21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 9600,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 18600,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 27600,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 36600,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 45600,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 54600,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "a8558ae82edbe14bda135c911ae773293a06fce14eb80cf325c347eb7300e580"
+    },
+    {
+      "name": "fuji-22",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional",
+        "overlap",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 820434,
+        "phase": 4001,
+        "lateral": 38400,
+        "steering": 21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 840434,
+          "lane": 0
+        },
+        {
+          "id": 1,
+          "position": 841634,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 842834,
+          "lane": 0
+        },
+        {
+          "id": 3,
+          "position": 863434,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 872434,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 881434,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "19e210d931b0d0ee954cbac273787f2267c417266dd1b18dd8391473f3e7521b"
+    },
+    {
+      "name": "fuji-23",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "fractional",
+        "overlap"
+      ],
+      "player": {
+        "position": 2463278,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 2483278,
+          "lane": 0
+        },
+        {
+          "id": 1,
+          "position": 2484478,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 2485678,
+          "lane": 0
+        },
+        {
+          "id": 3,
+          "position": 2506278,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 2515278,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 2524278,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "3be0866c70df805cb98d97e5ab9d82662dbd9b94263eb593b44430c02d6859de"
+    }
+  ]
+}

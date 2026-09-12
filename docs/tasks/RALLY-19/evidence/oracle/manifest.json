@@ -1,0 +1,536 @@
+{
+  "plan_sha256": "7097f83743eab6243d47b2c6d930e6187b8614f2662fae04ad92d8936cbc6b9d",
+  "supplement_sha256": "4938f8712b91ca355440110d15109b91164f2d4e2e19f6f8db85e8d79df164a7",
+  "fixture_binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+  "scope": "native frozen snapshot images and exact host/guest scene state; excludes timing",
+  "scenes": [
+    {
+      "case": "oval-00",
+      "input_sha256": "32a041b406df284aaa877155904128df2115d824c3dafc2f8f6b742067cbefc5",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "208b22a86fe7321a38e6f6232dc958a9d8e65d5b0b58e5e5525d1d774d8b4d0e",
+      "image_sha256": "cea31e847ec6d90469e97a225df2fa495c2c7f09ace0374b87d0e6421e48ad91",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-01",
+      "input_sha256": "e3ebac9a6a7968419bc3aae4a9e34867775ed70890374550440b2d3770bad9fd",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "070a28159d03c6986cc71a891e0c869beefd370046ce7559ef22c2fa76ecae30",
+      "image_sha256": "12cfdf3d0118dea3333c5d731b41363ba2de57405b459203cf63956ef780476c",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-02",
+      "input_sha256": "5eea24727500ff92464cb938e80fddc6e240500fde66ce234cc21d0f33109145",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "dc0132290246bf2ea8f69ffa2d0a434f2c9c686bdd41db0f733448d9de3748e8",
+      "image_sha256": "72443f86de41a6ce59b41c34c0aeb1049b1a0551e6f2dcddbe24435c60c80ee2",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-03",
+      "input_sha256": "baf73c48aba450328b4aa85b0f87cd95d9dfad00426f6c6112f437b4b259902e",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "51ff3024607afb7297845b5e2b364070fcd3b467003ddc2f8aa4149480ae6f3d",
+      "image_sha256": "4cd1a3a5fd835ba7f1954640e8553ede072fe0a2a84e068d0dd4f37fbffcc064",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-04",
+      "input_sha256": "2b296afdc928a1bc35a08358764c84d6cedfe8e3ce9be9c48f8ec396bab43177",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "06fdb42e914349fffa1cfec98d06da7795770f7d88a4355f1be9f313c2c7898f",
+      "image_sha256": "1f22365d2b38a55ed5f64a58a0a246cf8a7b90a62da861e442cbbe48df449e26",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-05",
+      "input_sha256": "7afff3109c628d71ac7c719673a2c41771777ae09e40b971e1c02d5a90b8b0b8",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "8ac016dc408a2eedafa3677c31c3a56dc1f297168d3d4dad1d980ba3a9a81f95",
+      "image_sha256": "6f25e9b29bb9b25c535d809b60745c342ebfc9f98737803dc4712f482a5f2544",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-06",
+      "input_sha256": "fe7de9c187092816fb38fd164b203d879b5d4e364f3c158fdecfa3a2cee0f01b",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "060da7bd04d5a438f20e232c5c6e237495be0499596c66851e51844485473f25",
+      "image_sha256": "45b8d1ef62218adaef42d630443ff3a8e96b24bdc0a24ca4785250bc19b6a172",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-07",
+      "input_sha256": "76611f6ecf64a2c6e65e621ad15e290d8cedc7318b43f7fdc616d9b798e7d104",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "67bb08c663b9ef985b827fcd4e7cb68dcf9aceb11ca19eeeba6d028b2429e5f2",
+      "image_sha256": "89ed4aefb9e4e577666d98d07bf9f95065a5d84172d02caaf50e916826a30356",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-08",
+      "input_sha256": "1689530d75e9666befd6b9c03e460686f802c40f12f8969f7d53f1dab1ef3b6c",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "7f4c8cf45e73a29bcf2900533cf24ee18e62970a55a3f58c0f697b51cdb77886",
+      "image_sha256": "fdd6733765157be1eb36cf93c75e35ba6ee6e6b0d5e98d9d3f8c704b5e7393f9",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-09",
+      "input_sha256": "3fd9381bb3fe917ac209a3102c2988631c725fa489473dcf1aab9a046809bab9",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "4e85afd897ae7e841622ca54e6d9c83c846a6a0f8aabee08d84f7fe93e307ce6",
+      "image_sha256": "332c45c82679fdbbb582c708b0140948df5029d8b599c410a54d2e29a0a69ea7",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-10",
+      "input_sha256": "b361bd7967e71321cfe5b1a1bf54de143afedd68a4e2c143f9f711033f188d39",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "8c85cf19ea35c325ee7e086cfa42ba7201d2a4f22d5f092be7906f4e2470ea15",
+      "image_sha256": "87286bca1d1f54969da21290d1f2b6ffe9a8b7cc86c8c9a6d9fd09f0cf63997d",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-11",
+      "input_sha256": "3003a8cab8ea9dbc11e1f1e8cca8d57cc63839562eee545285d3e9ab7497d84e",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "75cc6a739cb0061f574b312337a0b3f12ec25aee250e53da3fdd68e9584e7454",
+      "image_sha256": "64076b56fd719aab2b054f3790e835e3d37b6ac3bb23442e58f95e3303cdc586",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-12",
+      "input_sha256": "5e68dbd91bb3213f393baee3c965bb0a77cb2140fd91f8115dedad3bc2aafaba",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "fc14e54f7c6675c2c280c19c13c1ba277d7953aff69e3668df13cbcf2eca02b3",
+      "image_sha256": "55a379f223323969202b7d82eb57799e3b74392468a3314d3dec8168ed550c31",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-13",
+      "input_sha256": "d12052d306a4722bc203c3e5e2d1f9ed2075b777c44d4be39ae0b3940f9e90c9",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "c729e082e6d7a89e7a44114d9a0762d10c6510e6986b8705b9ef9e565389fe5a",
+      "image_sha256": "1c9f81342ba4def4071bd0b68d62a06c182a088a06e26ab77b079a1709b450a6",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-14",
+      "input_sha256": "979bc75545bba91c07e9d9a723c1b7b55818141e022aa5ed4e125eb011c3a94a",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "e1f8d0909a0e13e1c046bfabb317f08993cb905ea7fa379033e9804fddbc7048",
+      "image_sha256": "48d91d1cd7c48b9eacf5b2d38437350f0edabbc8a11e50ee244b9a0a33ddc4ac",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-15",
+      "input_sha256": "0b87c3fc4773a9cabe6513e9de553c1fa697d5311125ad9b347fa97d5f66c015",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "15e1332c58423ab667e705f2a2dbd636bb5282950ae7ec9a51a6e3686096363c",
+      "image_sha256": "d6adc8b7f06be8d65b9cf64374e19cc29d163d2ecbb23e868ca60dd5c446ee4b",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-16",
+      "input_sha256": "8443fea8ced9caead7d60f2b86df01d75755d6da45663a2366529411a89876be",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "42e426cc18222adb018a98ef025343e19353d57961e170a4708abf77e920d63f",
+      "image_sha256": "afaac4d1f8c0da46f1adcb989f31a2525f52bdca54cec506a1273d6591875d2e",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-17",
+      "input_sha256": "f6f41c5fa52f3730d6a0ef3c191ea5c4c9d614bd9ae1c114f66fddd946962dd6",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "2781825fb69bc1d48c2d333869f19596f952ba6bca6c40f254cbfe09bc013d69",
+      "image_sha256": "215561fe49027e968980d0b39b79da4294978282a055a312b4b02a321eaaf6a7",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-18",
+      "input_sha256": "4df3f9a4075f1b94bdbff9b78cb26cfb20230fce475a17f1401dea1cb750f825",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "edb384474d6c93ac61a88268c1c1adeaa1cd9151f86943107da10842c1d869c7",
+      "image_sha256": "0548cc4379fa054fe54222b89dec2a2b00f21c868fb1a0211898768aabbca157",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-19",
+      "input_sha256": "398d7146af8b7605c2a967e7b012aed0c50f3a971609c42da828ded91c58502d",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "f2b3c860835e46bf4e0f85ac46b0ed49cd854daf34004f1b270d9981cbf6f836",
+      "image_sha256": "8bc059d4c24b726e9c8fd24b9410510c09014198f1b5a6684d0c57d01e923a46",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-20",
+      "input_sha256": "6ecf5ac94867a88662eee80f91bfce71c721728b1a52f5fdb0f6173505df0586",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "8b12ab6d4dfb73259c9c502e14f9133c9bd9c2ed0d51ba7650a122e0a0c9491b",
+      "image_sha256": "9d5589ae314315851db8accbe59f5630b0e232b15e168f46f3752e78fc6e494c",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-21",
+      "input_sha256": "be56d086812cd79fdfc57ae65dcb857596cb10f4c092bcfe85573abca560f4b2",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "612d293448e526f3849585f2f4743fdd3db8ffe46557705146379bed462cf204",
+      "image_sha256": "b118a4cb2cf020ea59bf659f3808220e889ceb7c87bdf6cc2b3fcd0880193db8",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-22",
+      "input_sha256": "c3b334588dbb02a165ddd0ae8b9da29bf41960080320c01fd49194875058fac8",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "1f69ae6d1633d8fbb0f54f3e61f8f29f36e875f39019e8ea7865754666aea9e3",
+      "image_sha256": "fa279f0669dfb2ccab0bff33b254ee195d1ad17bfce960bdf3072a594b40bc4d",
+      "host_guest_exact": true
+    },
+    {
+      "case": "oval-23",
+      "input_sha256": "3d309b0fbb62b077fbf065dd80b5d6dce7785cb03dda76e0f77272ea1f4d5911",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "f89b46baf241ff2da1beb5b7d43b7d335e3ef0863089ec199b4922388a524311",
+      "image_sha256": "96d586a280691ed2d8f69c82e09523f4943d7252b1642c1e5a157f8f58444860",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-00",
+      "input_sha256": "32a041b406df284aaa877155904128df2115d824c3dafc2f8f6b742067cbefc5",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "df3ab3b4a0d49b0734862820d8b5d70cf565627e6d34fef1f05553d2de6a3c8b",
+      "image_sha256": "80a51cea95c47c8e2ece4d12304c8a4eefbcc5fcf867539fc2759d0dd9bb19d3",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-01",
+      "input_sha256": "36cf0f3d6c2100e36c36aca1d6a05279ada470c7361da4245df8b97b342827cf",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "24aadfa47c4bc681cbe4aa85c4f5d5745ae95f20ecdbc451a138ef184717a4aa",
+      "image_sha256": "26a24cdf6b6a1c5b3cb67925e1cb5595671cd8fa751825e331a1ffda49c5f6db",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-02",
+      "input_sha256": "b6d5addde6bbec17c771cd0b561f8ae5bc8372bd37cde0e96567cd4f50a648af",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "cee8bea1b5e2cd939b0925e85a03086ae8f537bc414aea7838c8631c3973096b",
+      "image_sha256": "5cb6a2f48b4f0fe369ae5938f04a699e2e5c1162c1ff995ab37e0af0f31ff777",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-03",
+      "input_sha256": "49fc37d8ff7d229a78fa731d96bc5f72290b93c8077e43423f644477b2c82593",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "7257d7a686666d5ecfaab4d0de8db8415b236cb011043b09e5b7cb7915e3de19",
+      "image_sha256": "d3ef0e5c6565d2cb3c492c77733a5ee839243f202d50e401a05f5176877991d0",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-04",
+      "input_sha256": "4c1fdc2a8255bbbbdf1e28d56f7329159905be0f1b0b430662bbe3092413f6e0",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "395dd3e2904b13dffbba3fe16ad0dcc5b3e98aca5dd4e0746b8622532e4d6d05",
+      "image_sha256": "7abf272f6ca3fcb7d25b3bf79432d8c36d731f9feb418dc16c2896e1589cc3ac",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-05",
+      "input_sha256": "bc771dcd0dd2a06333a0a99e29c4e3c8dc106779ed540a3c3420dabdc7f06bb2",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "b95a4fe86aac010346391fb2a028ee51b95640692c4923fddf8288afd4a43a8f",
+      "image_sha256": "d67ff8dde3f94edb56cb6b2de9dbe3f34781980e656bf84ecfa520c0fc93b3ed",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-06",
+      "input_sha256": "ee941f3f86db242ed7de37ef36aafd2a451a3fc8e41901df8572e3ad688cc06b",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "964f90a322821445b5e70c2d4bff0f9aadaba54bc924816ee07fd386394bd84a",
+      "image_sha256": "50dc61848e19d16abff94419a47e21f72ec201be9eaca161be10f3a83bab1433",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-07",
+      "input_sha256": "4f9db88a696abb5440ab0fbd59df8ccf05eaf7ba91afc43c85f5a18718afba3d",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "b33a7698d8679567adcd59acc96e3e0b3a33da68dd44307d08a37467f0baeac6",
+      "image_sha256": "599f217b8ca6b8f093168b60703247986bbba66257d224f0daeeaa8c54bb5963",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-08",
+      "input_sha256": "bb7a457014116fb52aaa204f1f3578df0b7ee7db7145117873c56c2f0e238e01",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "a2666caff0e6ab6e0ecfa6318bdfaa272c4b6be9f92e2a051d3dd4d15a775c69",
+      "image_sha256": "d24509eda65f633aa63b36e92582a20f2137c0e381f782abb18a2324af258583",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-09",
+      "input_sha256": "d7b919809606c6112e3a320aea92368b5fe77559aa123e4ad0989d8a3ada2517",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "31c00fac46fd1b1ab5394ce2bed3e069f942a635228306293a5b2235c5d17ef3",
+      "image_sha256": "c3a47b91e6f7b9fa90d9994ef5ecf2cb29f93fd1ba41401cdede2d2ecec9b769",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-10",
+      "input_sha256": "0a07fc7a407a29fd87085d93dc03ec329b9878be898dabfbc1440150d935f137",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "3f00cec4fac7ae225db9891b2a512c2cbd7c34dee7ba4ed45d8d53738b63cbcf",
+      "image_sha256": "b3fbcebc6d12c2b5a40420c79f607b92d4b8e81dfe3d2565c4fce44322843c4c",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-11",
+      "input_sha256": "7867793073bf14c262822fc011be326f2e871d41785802729311f1e8f5d8cd59",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "640956626aa933af79f4082d37e7fc138b1fd9b1e3833c3fb3326dfe91e9ef9a",
+      "image_sha256": "e0002193be9d6de5ee8b92bc2569a1e64e56cb1e267827b7db0e1414dee38e5d",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-12",
+      "input_sha256": "74a70b437a02b8f5b0e1cedd44ebb2180a98a7b345d80911879de3fbb2cc545e",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "9cc32829d8adf4eaf174022a6182e2c04389b85db5a2e3c3edd94c7c8b34400c",
+      "image_sha256": "625042ccf7b45ad65ffd614e33d2f93a18372c642801a38be40d1bd427b4ab36",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-13",
+      "input_sha256": "ca072045aea39456c305ac06a2883b0cf55ffc86a7e097391a9a7d2046b671cd",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "f9114e339fa327c18c3167c16fbb05b167dbd79e6e6e4a319a63abac0fc8272c",
+      "image_sha256": "09c7f10999a1700e863c7360165ef4caf3d991343b69f745e5fa2b19b3df6c5c",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-14",
+      "input_sha256": "a81b4bb067aa1165fb6cefa301f6c54bd1e9e9652aa707c4fee03bc9ce207d5f",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "79ed0b5bd94785098bc8ff8c3c2cdaddbea67e0878be32372eb32bfe7a68ae10",
+      "image_sha256": "6866a578fedbe2d11a75004da74fc296bc20c5684a3289a47ee12575f159cdb7",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-15",
+      "input_sha256": "2429373e6ff64f486c70050df50edd03d0b4c5f6bdd9f10053a0e1b2596f3dbf",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "1b1e8e956e47c1073f6808cea10e5a9d52cb80efb5c64d835f7032c133934467",
+      "image_sha256": "55a8c02a79e7c285cd32e3daf8eef0dcab31d63d2c9c9c235b7c7c7aaec555a9",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-16",
+      "input_sha256": "56ef0b5969bab3d85527b34cc99028b172e7359152bee6f0ba53b0a9208aca48",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "3ace375c7fa73962dc28eed1e578fde2ed5f4a39d5e33b2f827f07fa937e9a4a",
+      "image_sha256": "fffa224d303a50d348e4372dfec9b12a279162482c11bec0633e6e43ec8a93a3",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-17",
+      "input_sha256": "f6f41c5fa52f3730d6a0ef3c191ea5c4c9d614bd9ae1c114f66fddd946962dd6",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "bcf5f890d2c3474b97c0d60a540ebf835f9d823f3923e570b8adcbd47fcab813",
+      "image_sha256": "0ad88d89fe85bd3301da6a4eefb9dc978b3ede0e050556a625dc99eaeb5bdb2f",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-18",
+      "input_sha256": "4df3f9a4075f1b94bdbff9b78cb26cfb20230fce475a17f1401dea1cb750f825",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "7e2503011fdc557a474d89f7ffdaa08cc4355e95f34817d5cbfca21496588c53",
+      "image_sha256": "5a0df736f2f33bf0f2a88aff75abb17d8c8b632b4b11c72ad3b03503481298d1",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-19",
+      "input_sha256": "398d7146af8b7605c2a967e7b012aed0c50f3a971609c42da828ded91c58502d",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "1789ceefc0b6c59385d09ba67847aa65484ed757bb8bf45cf5128bb8b9b04595",
+      "image_sha256": "cc9a023222e368b49a34764e5cd6d048bb18dc63aff5a1a0d5cd456255ebefd1",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-20",
+      "input_sha256": "5b3114a686b086bd819fe526ed177dd11fe66c1b788dd7dd0c0563d6ec21c28b",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "f769af043877cbc72e778eba85015b13148595e485fa7aafb9c896807a35e6f7",
+      "image_sha256": "2edfeabb729db0f20a4d9eb5f56bb2a5b0b3ffad79f933033350c8b3031647f6",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-21",
+      "input_sha256": "a8558ae82edbe14bda135c911ae773293a06fce14eb80cf325c347eb7300e580",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "c9776b0fa202bc87d56942d9d1f6fec7e7629dd37feb735d2c3ca784c2201ecf",
+      "image_sha256": "932b33f2e3a5002b7f105bf528bca0e14b87846dc6b50e62d5fc1082328f47e6",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-22",
+      "input_sha256": "19e210d931b0d0ee954cbac273787f2267c417266dd1b18dd8391473f3e7521b",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "80f0468c582ce548b57cdf5d7902e826d5fbdddfba899dcec7b2359654a7d27e",
+      "image_sha256": "b7cd77ca1a1c5f4bed64553c33ebd9250c656b3f80e3e22cda2b38cb9085e49c",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-23",
+      "input_sha256": "3be0866c70df805cb98d97e5ab9d82662dbd9b94263eb593b44430c02d6859de",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "cf0e47c62fdfd9352bb9258cfc8d0c110c2fd25d40327a650c6e2c22354d91ce",
+      "image_sha256": "57faf1fa54c942c2cc610aa059dfe4dc1e4ce2feb03275d4618dcb3719af4455",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-248-300",
+      "input_sha256": "0506de74dfbd30240fd7da5f911b596773d3c43e522dcfaec696b37728f7834d",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "f57797b60abe3b9bd1f53cc80a91fad27c8fa7ac05884e46308ad35e190f74ab",
+      "image_sha256": "9cd3454fadd16d6094c8a177f37b15bd195e6a5d66667795d9354f8348064584",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-248-800",
+      "input_sha256": "d41a397c788c5c5e710693a27ef1e8f4693f45653566731af76daf5de2689cf6",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "0deedcedb8a4844a1dd785d11bec0949ecbfd5627640b60e185a36abf8026895",
+      "image_sha256": "4a4fb46fb8a514fc6868276420f400fc64db9b5ef192b64a37be3a767363aaa2",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-098-300",
+      "input_sha256": "487cbaca70f0c4f4a17fc907dd1e48fce3374c4687e0f3ca4547e7e275ec648b",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "127431a73b427c1e1a0997ceb0bbaf81859b3f55ef05641d484892f51dc9b7f8",
+      "image_sha256": "1775d2df494bce2f283d1aaa333db6058922ad5e1f6ade849aa45c6fdf6f6b75",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-098-800",
+      "input_sha256": "008c2df84e7b0a79270bf714f1d274ee38422538468180b22f22b3c2a23f7d2d",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "1c232f463d65b1f013c4679129d65053b90cdd160de550afdaa3b6e54f7884da",
+      "image_sha256": "9db88b66e704faa1514d23b1d9512cea1fce3b2223cc200d846190219bc81a12",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-188-300",
+      "input_sha256": "02e789785318df844035027ede20e6073f324dfe7cdb233991b79df5934f5577",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "32782bb7cef94182b843b20c943afd1ef547bf6883b69f8b199309d3463be032",
+      "image_sha256": "7f5637f9999c571921694f411cf5c16c9a67632b3079f2e457f3c4be6970ef7b",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-188-800",
+      "input_sha256": "bd1cbf0103cb89bd3cfd6f78324705f047b8b01e2923554520231a7df48d866c",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "e6e8137bb7be3a9f7aa3bd91082c28ecb79585cd1843d099dc96fea421461247",
+      "image_sha256": "6022a961fa1dbe74c782c734fa27e30cc17ce55076e845eb1288ef3ce458b54e",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-421-300",
+      "input_sha256": "280dc52e0a4260d09f4ff628323c0975a364320dfebbcbd65ee875f1a6d11de2",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "b000804d5cc463e6f3f37658b4134cc6060784c7aa7929407d68371669d86bda",
+      "image_sha256": "304fad67275c3ddc1306f5683a9f92a877355cfe4ac1e6ab88c822ea9deba2c7",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-421-800",
+      "input_sha256": "02ac748723e803ec9b6ddc14eddd9ba6b5689e628dfbf53fec552ff921474baa",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "68775e208dcbdfe20aaefde5de109a6c0752a36e675f7df31f682a73e3cdc919",
+      "image_sha256": "558353fbe466d6733097108c529f000ef7a9922d1c428599e17578b3b4f2f5ee",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-146-300",
+      "input_sha256": "8b07d8e690739fba03c0e4853fa283a00b27023d555a3448224e7eb6badfea20",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "e68f46011e2ecc612c2406eaad514d830ab08e40620bec3045bc2a1b60aa1a14",
+      "image_sha256": "6f59b971780a2565103a6957a2e7ae5e1f3b074cce752f0d77093a0b24662b62",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-146-800",
+      "input_sha256": "971b8bcdb7934aa49529809d72a50634809cb884565a41beebbfbb3e2dd2b504",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "d5f37036185ad5cc10ed7803cbca5dd31fdf6a7be2bb844cad4a5aa4f9f473c2",
+      "image_sha256": "c374c12c64bdc9cc4894cee98f21c20db57715031376edc98beb9a13daf1714c",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-303-300",
+      "input_sha256": "1c1bffc9ded2efe32faa6e87a42be7dc365ab03b1e0934239bcae4d65130210a",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "739fd0dea059e641d9a7a3e7e6e2415b2785d2f338516a452d911aab235cab21",
+      "image_sha256": "a338161a3491d2285c04ec45375c7f4becf886105b8c7b39f362b8387518db96",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-303-800",
+      "input_sha256": "bfc4e0f52b60e211abd4b81935190997fee3cb17b22f0adb56b1f6cddb8ccf5f",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "bb1a32fe521575a31648bb6e952f97fecc4d3cdb5c6fdaf7899ed40e18209477",
+      "image_sha256": "eb51257ab398401d08b974dd3408588da21c9b4ab030e0f6d8b95a9618da2340",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-378-300",
+      "input_sha256": "d20fed4a1252aca2663cee46f037a3cb3449c182c76918de34cd0fcc0510c0bb",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "7d79994fe7a1512763cea9451f15b9860f76b7e84fc87751777121881dc22e14",
+      "image_sha256": "8e7451d83285a4fbfb19939be5afa7497b0b28e9b0766b8322d9915b8077034b",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-378-800",
+      "input_sha256": "4efeab48291e32b1d32f87f19804e875efa912e0d37431e13959fa9ce0b9b057",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "a54e4047b79e22ca47416021b43f54f61ff3ab148ef1841dea3fd4991f897bef",
+      "image_sha256": "c7a82a225b825f7aa715d6d2fea1fdfae1878fc938f9373473fa9783b59bcb66",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-213-300",
+      "input_sha256": "72731712f92eb83b6d877776b528607881ff17aa6fba5466def40c6d4b850862",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "327984994bd138aec655ac5049b6dcedb72781675f6d54bb6a56440227b4971d",
+      "image_sha256": "4f2dd5f7b23a2d354740b73ad050d4173f0dd0c222e7298277fe514700c272a9",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-213-800",
+      "input_sha256": "aba4734e6be8f431a4883341b476b5dd6e60186b57b37a55a3db1921683f75a7",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "89e42aeaedf40a8ed05281aa13e4b9f0deb3fe71463e13c6bb878a39227bcac0",
+      "image_sha256": "3467670a9a7e48385f4e550f0ee6571d9d2fc0caa7b76148bafc0c132f506c5a",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-343-300",
+      "input_sha256": "cb677e9cce845315f64c9e2162a1b7077d7cecce244d2ad5f3e800df5595edef",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "128595e38215d72cd0c80d15b0af2ed3af67b4b1d808e5bef193214fb54acb9a",
+      "image_sha256": "f1d313d41174eddb4b0764819af547a02233ce1b3fde58412aaf790b50f01295",
+      "host_guest_exact": true
+    },
+    {
+      "case": "fuji-bend-343-800",
+      "input_sha256": "e6351afd6e51bee87ff62886c75b81a8cc4e0b9ed43e2ce4f88ff0fa9dc23600",
+      "binary_sha256": "9a27f17637dff37a0442c7e4abfe1361d9049798b01050b0910a7fe17d409d41",
+      "scene_sha256": "0255175a5534f741503272294773c77eb089cfae063134563838c07aaef7c3c8",
+      "image_sha256": "7435192b13552baf5218222da703dbabd4f7afc3dcbc0a26574ef5d85922cb56",
+      "host_guest_exact": true
+    }
+  ]
+}

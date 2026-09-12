@@ -1,0 +1,13 @@
+[compiling src/main.cpp]
+In file included from src/main.cpp:1:
+[1m./include/fixture_state.hpp:7:5: [0m[0;1;31merror: [0m[1munknown type name 'FILE'[0m
+    FILE *f=fopen(filename,"rb");if(!f)return false;
+[0;1;32m    ^
+[0m[1m./include/fixture_state.hpp:7:13: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'fopen'[0m
+    FILE *f=fopen(filename,"rb");if(!f)return false;
+[0;1;32m            ^
+[0m[1m./include/fixture_state.hpp:9:58: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'EOF'[0m
+    bool ok=fread(word,sizeof(word),1,f)==1 && fgetc(f)==EOF;fclose(f);
+[0;1;32m                                                         ^
+[0m3 errors generated.
+make: *** [/home/smith/Agon/agondev/release/config/makefile.inc:105: obj/main.o] Error 1

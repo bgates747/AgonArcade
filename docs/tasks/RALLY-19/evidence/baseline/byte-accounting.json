@@ -1,0 +1,52 @@
+{
+  "scope": "Run exact accepted draw control flow with command-length host substitutes.\n\nThis is static/procedural byte accounting, not UART instrumentation or timing.\nFunction bodies are extracted unchanged; libvdp packet lengths are separately\ngrounded in its source and packed eZ80 command types. Native road byte totals\nmust match before the other totals are accepted.\n",
+  "source_sha256": "7a8d3bc387ff86bec36ab0c70bdd476fd959a7128a74381a96a0aabe2b4cec41",
+  "tracks": {
+    "oval": {
+      "batch_bytes": {
+        "road_bytes": 32870,
+        "scenery_bytes": 3986,
+        "vehicle_bytes": 18752,
+        "hud_bytes": 1088,
+        "swap_bytes": 192,
+        "total_bytes": 56888
+      },
+      "mean_bytes": {
+        "road_bytes": 513.59375,
+        "scenery_bytes": 62.28125,
+        "vehicle_bytes": 293.0,
+        "hud_bytes": 17.0,
+        "swap_bytes": 3.0,
+        "total_bytes": 888.875
+      }
+    },
+    "fuji": {
+      "batch_bytes": {
+        "road_bytes": 25595,
+        "scenery_bytes": 3561,
+        "vehicle_bytes": 18752,
+        "hud_bytes": 1088,
+        "swap_bytes": 192,
+        "total_bytes": 49188
+      },
+      "mean_bytes": {
+        "road_bytes": 399.921875,
+        "scenery_bytes": 55.640625,
+        "vehicle_bytes": 293.0,
+        "hud_bytes": 17.0,
+        "swap_bytes": 3.0,
+        "total_bytes": 768.5625
+      }
+    }
+  },
+  "libvdp_sources": {
+    "/home/smith/Agon/agondev/src/lib/libvdp/vdp_select_bitmap.c": "502a0e5bc0038d43d69ac56f87538a33d3bc4e354199c9699aba707d687b2d97",
+    "/home/smith/Agon/agondev/src/lib/libvdp/vdp_adv_use_affine_matrix.c": "e86936023d062e84be9f0d6e5738daefafab8866f9b7d6479df2cf3597bb3d7e",
+    "/home/smith/Agon/agondev/src/lib/libvdp/vdp_draw_bitmap.c": "1088ba3e5fd3560318bf65a0199498e3d668d0ff4297f04b909542b3f09acb73",
+    "/home/smith/Agon/agondev/src/lib/libvdp/vdp_set_graphics_viewport.c": "fd06647febffc6a848e7119a5fab9530ec3e172ce573c4084fc4504066a24cab",
+    "/home/smith/Agon/agondev/src/lib/libvdp/vdp_scroll_screen_extent.c": "7df1bbc015a1f3904fb8a261f387c2c7ac2f1369e90078ba49b49627bb44d9c3",
+    "/home/smith/Agon/agondev/src/lib/libvdp/vdp_cursor_tab.c": "a4ec0ac116d4b13fa60ecea04cf78c8701ea54bbb22c1eb00ac00e9263370fd7",
+    "/home/smith/Agon/agondev/src/lib/libvdp/vdp_swap.c": "a39bfbab129d0854b68e66056dd34460f3fc5b773d730d70442bdae591c1670b",
+    "/home/smith/Agon/agondev/release/include/agon/vdp.h": "401d979e5936a953778915e2b03eebc29b5733d6629195b2af42b087df50ba5d"
+  }
+}
