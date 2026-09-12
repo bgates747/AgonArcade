@@ -320,3 +320,37 @@ full causal impact yet. Sustained measured Golem throughput is30.2042/30.1281FPS
 See DEBRIEF-2026-09-12.md. New build_render_work.py calls require an explicit
 --frontend argument, e.g. --frontend checked-cleanup. The final loader-hardened
 benchmark build is prepared but unrun at this requested stopping point.
+
+
+## Final stack-fix assets — native budgets requalified
+
+`evidence/golem-performance/hardware-inline/qualification.json` passes all frozen
+checks on the exact corrected bootstraps. Each track has serial ABBA with two
+64-pose samples/variant, separate instrumented-oracle bridge runs, raw native
+swap observations and independently calibrated CPU construction cycles. Normal
+18.432MHz guest limiting and real UART waits remain enabled for rendering.
+
+| Final native metric | Oval | Fuji |
+| --- | ---: | ---: |
+| Golem native viewport-swap interval median, ms |31.7114645|31.303662|
+| p95, ms |36.788592|36.092826|
+| Median change versus matched original |+0.01765%|-0.31886%|
+| Conservative eZ80 construction-work reduction |91.96372%|91.00777%|
+| Scene UART reduction,100 bytes including swap |88.53047%|86.69439%|
+
+The native mean intervals remain approximately33.13/33.22ms; do not convert the
+median into an assertion of sustained physical FPS. The exact unchanged
+wrapper/marker calibration bounds184 cycles/span plus324/call, conservatively
+subtracted only from the oracle. The measured object instructions and carry/wrap
+cases are retained. Fixture HUD adds17 bytes; interactive HUD is separate.
+Raw startup scopes, resource ledgers, process memory and all source/runtime
+identities are in the qualifier. No prior pre-inlining timing is substituted.
+
+`audit_final_candidate.py` then passed, rechecking644 source/evidence files and
+binding correctness, long replay, controls, lifecycle, production identity and
+native timing in `evidence/final/qualification.json`. Its explicit
+`physical_performance_accepted` value is false. The initial index attempt used
+an incorrect replay-ledger field name; that script/error is retained in
+`evidence/final-initial-index-failure/`. The fix reads the actual source_hashes
+ledger and checks the independent replay auditor's identity; no test threshold,
+game source, raw result or earlier qualification was changed to obtain a pass.

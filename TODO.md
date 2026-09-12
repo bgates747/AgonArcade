@@ -86,7 +86,7 @@ This ordered register owns progress across AgonArcade and Golem.
     p95<=36.75 ms, negligible oracle regression. Both-track serial ABBA and
     source/runtime/sequence audits in PERFORMANCE.md and golem-performance
     qualification. Golem completion4efba69; hardware/stability remain unproven.
-11. [ ] **R19-11 — Complete stability and independent correctness review.** Run
+11. [x] **R19-11 — Complete stability and independent correctness review.** Run
     >=10 minutes per track of deterministic headless replay, signed extremes,
     overlap, input transitions, reset/reload and shutdown. Verify sequence/memory
     integrity, compiler/loader negative tests and all frozen regional visual

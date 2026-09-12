@@ -1,0 +1,436 @@
+{
+  "scope": "Serial real-rendering measurements against the immutable accepted oracle.\n\nNormal CPU/UART, no sink, no per-frame GP. Native swap observation was qualified\nseparately; raw guest intervals and post-batch admission state remain distinct.\n",
+  "headless": true,
+  "track": "oval",
+  "variant": "oracle",
+  "index": 1,
+  "command": [
+    "./fab-agon-emulator",
+    "--renderer",
+    "sw"
+  ],
+  "runtime_before": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/fab-agon-emulator": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/fab-agon-emulator",
+      "bytes": 1744,
+      "sha256": "161b1dfa57e0cf6923e361dee987a78aead8f7a7389554a4985532c3e13187dd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/fab-agon-emulator.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator",
+      "bytes": 1897192,
+      "sha256": "a96ca0e6f5f51ba6b750bd6fcf96efcaed88e61c431171f79a7db5f29877f17e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/mos_platform.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.bin",
+      "bytes": 108490,
+      "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/mos_platform.map": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/mos_platform.map",
+      "bytes": 167185,
+      "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/firmware/vdp_platform.so": {
+      "target": "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/firmware/vdp_platform.so",
+      "bytes": 10279688,
+      "sha256": "bc7a8a6a28e176c9679c96de4bda16010b765074ec8ba155fccde189c1051955"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/.mos-release": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/.mos-release",
+      "bytes": 14,
+      "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/.mos-release.sha256": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/.mos-release.sha256",
+      "bytes": 166,
+      "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard/autoexec.txt": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard/autoexec.txt",
+      "bytes": 70,
+      "sha256": "2f6d79eb855c8c27617efdf65b9087827222e7b00aafa833b277df7cf4ca7ee1"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard/rally/fuji.clr": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/fuji.clr",
+      "bytes": 5118,
+      "sha256": "999170b235f34c76972739a5c64a208c8ccdb678dc3531c1f6f7af131d4e2ebd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard/rally/fuji.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/fuji.road",
+      "bytes": 116800,
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard/rally/fuji.vdp": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/fuji.vdp",
+      "bytes": 236910,
+      "sha256": "b3e6bf3eb53a8b27c3cbbc74854716a86042db0bd8f1f95b895638c67ba8e8dd"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard/rally/oval.clr": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/oval.clr",
+      "bytes": 5016,
+      "sha256": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard/rally/oval.road": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-18/data/oval.road",
+      "bytes": 20584,
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard/rally/oval.vdp": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/oval.vdp",
+      "bytes": 115526,
+      "sha256": "cad8b8339151262576f9cab237a58b4b5d47e5fc49acb9ea3eb046269ad9d044"
+    },
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard/rally/rally.bin": {
+      "target": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/bin/rally.bin",
+      "bytes": 153284,
+      "sha256": "bf54f5b43e854cf0c6a5a4878a856b503988167cf772b9181eed2514c6701333"
+    }
+  },
+  "build": {
+    "scope": "Build an unwrapped, real-UART benchmark from the qualified Golem frontend.\n\nOnly diagnostics and their entry guard change. Real game and bootstrap bytes stay intact.\n",
+    "source_hashes": {
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_render_work.py": "ff11d95d888817a1c32d9662f9fa75b2ecce86003e286c2c81067061dea24a3a",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend_bridge.py": "ab54b4d72f0f78b64efc9c3d9c53b24bde72954581932aa80a3cd909b087e178",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend.cpp": "ab47ad40096241aabd9d7b875d5b08a9c648a962cf40ebeb02ca89f0f38f61b3",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/render_work.hpp": "e5db779355824d67f560b7237be047c93259e3b9dc8fb515c770579cd29343d0",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/render_readback.hpp": "b73564c5a7220205015dc432d4bd68e2b2beae72ad2a6504b13a1aadce6941f2",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/src/main.cpp": "ca555a60f9316f31158ea112dd10e125e79f1d14a7f2e17585c3f5e1fbf7b2c4",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/checked_asset.hpp": "2185a15f54b3870b6892060fd2301085a786da789b0707c34a60b7ff457621e8",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/frontend_state.hpp": "b819c2faa58e8b2161453e4c57297a236a2435a3a1f4187cf52674414b972017",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/golem_renderer.hpp": "2975d8f0962dc6fffe6efffe47ebd0f1288c21406eeab97319d39bad3ad89afd",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/render_readback.hpp": "b73564c5a7220205015dc432d4bd68e2b2beae72ad2a6504b13a1aadce6941f2",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/render_work.hpp": "e5db779355824d67f560b7237be047c93259e3b9dc8fb515c770579cd29343d0",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/scene_assets.hpp": "e9ad3467164b2230d34c18ee81f060c583f34a03e4a3ac5cb179474f9ff2f827",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/scene_protocol.hpp": "c9dc8a11ce12a04f55382e5d2c1aaf5ffdd028a7d8741b09eadceedbc7068aee",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8"
+    },
+    "outputs": {
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/bin/rally.bin": "bf54f5b43e854cf0c6a5a4878a856b503988167cf772b9181eed2514c6701333",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/bin/rally.map": "4f5ba942ff979eabc940785c690e485db4bcd4c01ed5552411bfb4da19556c60",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/oval.vdp": "cad8b8339151262576f9cab237a58b4b5d47e5fc49acb9ea3eb046269ad9d044",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/oval.clr": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/fuji.vdp": "b3e6bf3eb53a8b27c3cbbc74854716a86042db0bd8f1f95b895638c67ba8e8dd",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/fuji.clr": "999170b235f34c76972739a5c64a208c8ccdb678dc3531c1f6f7af131d4e2ebd",
+      "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "qualified_frontend": {
+      "scope": "Build isolated Golem-default frontend and both resident track bootstraps.",
+      "source_hashes": {
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend.cpp": "68508d158a9810b0ad1f0e5d13fa092de0b2a319171876473ce3c0ccc91d2470",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/golem_renderer.hpp": "32bacb4cdad62bcc825cff113f5a0eeac823ed72dcc13b1feb24726bc829e37a",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend_state.hpp": "b819c2faa58e8b2161453e4c57297a236a2435a3a1f4187cf52674414b972017",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_protocol.hpp": "c9dc8a11ce12a04f55382e5d2c1aaf5ffdd028a7d8741b09eadceedbc7068aee",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_frontend.py": "d9984eafabfaf48788194a73dc3a63e66a2af68d47023ff1b7dd84dfa8842ca7",
+        "/home/smith/Agon/mystuff/golem-rally19/src/golemc.cpp": "0156bb00e4d4f3f123e7fb012805bd1f85756cbca5849bd1024fdef8db52cdb5",
+        "/home/smith/Agon/mystuff/golem-rally19/src/hosted.hpp": "ee4b702c74e4f75d20a44a3b750c35ccffd4b33b549fa94fbe76c973387ae27a",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_projection_kernel.py": "05539997121aef2356c2c02270fd34b2fc1394838d0d970aba3bac0489b4c6ce",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_road_kernel.py": "a48ef88a7536692402355650d3b70ff8fbb5b00651e99558bf7e6eb4bffaa148",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_section_kernel.py": "b5054961a64d0ad55859a2abc7048084c02ee5e108056e0aff3be69258565f2a",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_draw.py": "f49d46d43e1494a27e80fc673314bdf8b6094b743b31ab78a1aa944a5c091921",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_history.py": "2eda44efd11918b22c2f1deb09cae39440465a48d84b3f3f9a2976675427f097",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_heading.py": "b3fb9bc475b02674bbc44a0ce072844f83d9c521689131a5ae796d451f7b1edc",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_draw.py": "f35767c1614dc29691ebd243e8c8b0d5413c26ae7086d2c733592a3c74880eee",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_projection.py": "f57211df39a07a8091385f41ed2fd1d887105cdf456ab89861459f89b1e42dca",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_sort.py": "fa8945bd1334368ec870370a6567db6a270aaf8658ffd090e7fb60c085276080",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_admitted_road.py": "9213142aae0abb8e4c575f58b31bdfa28b1e33d37ae4b395cab4e442d601ecf5",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_packed_section.py": "b4651812dcb429d7c0e23f052221cce85e25eff9c42771fb992ad233e39bb925",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8"
+      },
+      "outputs": {
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/bin/rally.bin": "4ca98475b52277d0899d528425995c5f4bd2428d11677eccc1c873f76d6de84a",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/oval.vdp": "0484e9cd1ed405be276b521045cc54d66e6fa81befec1354f49cc4522df401c6",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/oval.clr": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/fuji.vdp": "a7da9145cd486765a8e20d2b3c68abf484fa850048f340c339c99dad2d8804db",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/fuji.clr": "999170b235f34c76972739a5c64a208c8ccdb678dc3531c1f6f7af131d4e2ebd",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+      },
+      "golem_compiler_sha256": "3510a57fcf91ce4461dce40159cb14cc8c93b6e1377f7aed7f0f6f293b2311ed",
+      "work": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default",
+      "remaining": "Headless frontend/control validation and all frozen performance/stability tests."
+    },
+    "selected_frontend": {
+      "scope": "Build isolated Golem-default frontend and both resident track bootstraps.",
+      "source_hashes": {
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend.cpp": "ab47ad40096241aabd9d7b875d5b08a9c648a962cf40ebeb02ca89f0f38f61b3",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/golem_renderer.hpp": "2975d8f0962dc6fffe6efffe47ebd0f1288c21406eeab97319d39bad3ad89afd",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend_state.hpp": "b819c2faa58e8b2161453e4c57297a236a2435a3a1f4187cf52674414b972017",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_protocol.hpp": "c9dc8a11ce12a04f55382e5d2c1aaf5ffdd028a7d8741b09eadceedbc7068aee",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/checked_asset.hpp": "2185a15f54b3870b6892060fd2301085a786da789b0707c34a60b7ff457621e8",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/asset_integrity.py": "45c02c13b1c6561c633ac5b268a317a92f0e081205130779b3ee823f0b554b71",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_frontend.py": "4cc9688934142021934f8dacaa532f147e27eccf4089a350f39578223a132806",
+        "/home/smith/Agon/mystuff/golem-rally19/src/golemc.cpp": "0156bb00e4d4f3f123e7fb012805bd1f85756cbca5849bd1024fdef8db52cdb5",
+        "/home/smith/Agon/mystuff/golem-rally19/src/hosted.hpp": "930a6f7e1680d3568d2ec82ef3907f8856fc8f87d735364f10a27218bd86445c",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_projection_kernel.py": "05539997121aef2356c2c02270fd34b2fc1394838d0d970aba3bac0489b4c6ce",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_road_kernel.py": "a48ef88a7536692402355650d3b70ff8fbb5b00651e99558bf7e6eb4bffaa148",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_section_kernel.py": "b5054961a64d0ad55859a2abc7048084c02ee5e108056e0aff3be69258565f2a",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_draw.py": "ed2bdb5cd7f696b93026ae7c1ac913ec98a2ceefd3ce3347241e341fcd47a8ff",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_history.py": "2eda44efd11918b22c2f1deb09cae39440465a48d84b3f3f9a2976675427f097",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_heading.py": "b3fb9bc475b02674bbc44a0ce072844f83d9c521689131a5ae796d451f7b1edc",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_draw.py": "f35767c1614dc29691ebd243e8c8b0d5413c26ae7086d2c733592a3c74880eee",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_projection.py": "f57211df39a07a8091385f41ed2fd1d887105cdf456ab89861459f89b1e42dca",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_sort.py": "fa8945bd1334368ec870370a6567db6a270aaf8658ffd090e7fb60c085276080",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_admitted_road.py": "9213142aae0abb8e4c575f58b31bdfa28b1e33d37ae4b395cab4e442d601ecf5",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_packed_section.py": "b4651812dcb429d7c0e23f052221cce85e25eff9c42771fb992ad233e39bb925",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8"
+      },
+      "outputs": {
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/bin/rally.bin": "0401d8af5e895832371b417a12d1a455b0dfb132f772c202328ef11f3f1da64b",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/include/scene_assets.hpp": "e9ad3467164b2230d34c18ee81f060c583f34a03e4a3ac5cb179474f9ff2f827",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/oval.vdp": "cad8b8339151262576f9cab237a58b4b5d47e5fc49acb9ea3eb046269ad9d044",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/oval.clr": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/fuji.vdp": "b3e6bf3eb53a8b27c3cbbc74854716a86042db0bd8f1f95b895638c67ba8e8dd",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/fuji.clr": "999170b235f34c76972739a5c64a208c8ccdb678dc3531c1f6f7af131d4e2ebd",
+        "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+      },
+      "golem_compiler_sha256": "dc432c85c7df0aa3c039de3544ae3e6d382f584209d49701d08c0a3302b8056e",
+      "work": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline",
+      "remaining": "Headless frontend/control validation and all frozen performance/stability tests."
+    },
+    "bridge": {
+      "accepted_frontend": {
+        "scope": "Build isolated Golem-default frontend and both resident track bootstraps.",
+        "source_hashes": {
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend.cpp": "68508d158a9810b0ad1f0e5d13fa092de0b2a319171876473ce3c0ccc91d2470",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/golem_renderer.hpp": "32bacb4cdad62bcc825cff113f5a0eeac823ed72dcc13b1feb24726bc829e37a",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend_state.hpp": "b819c2faa58e8b2161453e4c57297a236a2435a3a1f4187cf52674414b972017",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_protocol.hpp": "c9dc8a11ce12a04f55382e5d2c1aaf5ffdd028a7d8741b09eadceedbc7068aee",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_frontend.py": "d9984eafabfaf48788194a73dc3a63e66a2af68d47023ff1b7dd84dfa8842ca7",
+          "/home/smith/Agon/mystuff/golem-rally19/src/golemc.cpp": "0156bb00e4d4f3f123e7fb012805bd1f85756cbca5849bd1024fdef8db52cdb5",
+          "/home/smith/Agon/mystuff/golem-rally19/src/hosted.hpp": "ee4b702c74e4f75d20a44a3b750c35ccffd4b33b549fa94fbe76c973387ae27a",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_projection_kernel.py": "05539997121aef2356c2c02270fd34b2fc1394838d0d970aba3bac0489b4c6ce",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_road_kernel.py": "a48ef88a7536692402355650d3b70ff8fbb5b00651e99558bf7e6eb4bffaa148",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_section_kernel.py": "b5054961a64d0ad55859a2abc7048084c02ee5e108056e0aff3be69258565f2a",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_draw.py": "f49d46d43e1494a27e80fc673314bdf8b6094b743b31ab78a1aa944a5c091921",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_history.py": "2eda44efd11918b22c2f1deb09cae39440465a48d84b3f3f9a2976675427f097",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_heading.py": "b3fb9bc475b02674bbc44a0ce072844f83d9c521689131a5ae796d451f7b1edc",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_draw.py": "f35767c1614dc29691ebd243e8c8b0d5413c26ae7086d2c733592a3c74880eee",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_projection.py": "f57211df39a07a8091385f41ed2fd1d887105cdf456ab89861459f89b1e42dca",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_sort.py": "fa8945bd1334368ec870370a6567db6a270aaf8658ffd090e7fb60c085276080",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_admitted_road.py": "9213142aae0abb8e4c575f58b31bdfa28b1e33d37ae4b395cab4e442d601ecf5",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_packed_section.py": "b4651812dcb429d7c0e23f052221cce85e25eff9c42771fb992ad233e39bb925",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8"
+        },
+        "outputs": {
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/bin/rally.bin": "4ca98475b52277d0899d528425995c5f4bd2428d11677eccc1c873f76d6de84a",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/oval.vdp": "0484e9cd1ed405be276b521045cc54d66e6fa81befec1354f49cc4522df401c6",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/oval.clr": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/fuji.vdp": "a7da9145cd486765a8e20d2b3c68abf484fa850048f340c339c99dad2d8804db",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/fuji.clr": "999170b235f34c76972739a5c64a208c8ccdb678dc3531c1f6f7af131d4e2ebd",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+        },
+        "golem_compiler_sha256": "3510a57fcf91ce4461dce40159cb14cc8c93b6e1377f7aed7f0f6f293b2311ed",
+        "work": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/fixed-default",
+        "remaining": "Headless frontend/control validation and all frozen performance/stability tests."
+      },
+      "selected_frontend": {
+        "scope": "Build isolated Golem-default frontend and both resident track bootstraps.",
+        "source_hashes": {
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend.cpp": "ab47ad40096241aabd9d7b875d5b08a9c648a962cf40ebeb02ca89f0f38f61b3",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/golem_renderer.hpp": "2975d8f0962dc6fffe6efffe47ebd0f1288c21406eeab97319d39bad3ad89afd",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/frontend_state.hpp": "b819c2faa58e8b2161453e4c57297a236a2435a3a1f4187cf52674414b972017",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_protocol.hpp": "c9dc8a11ce12a04f55382e5d2c1aaf5ffdd028a7d8741b09eadceedbc7068aee",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/checked_asset.hpp": "2185a15f54b3870b6892060fd2301085a786da789b0707c34a60b7ff457621e8",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/asset_integrity.py": "45c02c13b1c6561c633ac5b268a317a92f0e081205130779b3ee823f0b554b71",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_frontend.py": "4cc9688934142021934f8dacaa532f147e27eccf4089a350f39578223a132806",
+          "/home/smith/Agon/mystuff/golem-rally19/src/golemc.cpp": "0156bb00e4d4f3f123e7fb012805bd1f85756cbca5849bd1024fdef8db52cdb5",
+          "/home/smith/Agon/mystuff/golem-rally19/src/hosted.hpp": "930a6f7e1680d3568d2ec82ef3907f8856fc8f87d735364f10a27218bd86445c",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_projection_kernel.py": "05539997121aef2356c2c02270fd34b2fc1394838d0d970aba3bac0489b4c6ce",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_road_kernel.py": "a48ef88a7536692402355650d3b70ff8fbb5b00651e99558bf7e6eb4bffaa148",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_section_kernel.py": "b5054961a64d0ad55859a2abc7048084c02ee5e108056e0aff3be69258565f2a",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_draw.py": "ed2bdb5cd7f696b93026ae7c1ac913ec98a2ceefd3ce3347241e341fcd47a8ff",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_history.py": "2eda44efd11918b22c2f1deb09cae39440465a48d84b3f3f9a2976675427f097",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_scenery_heading.py": "b3fb9bc475b02674bbc44a0ce072844f83d9c521689131a5ae796d451f7b1edc",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_draw.py": "f35767c1614dc29691ebd243e8c8b0d5413c26ae7086d2c733592a3c74880eee",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_projection.py": "f57211df39a07a8091385f41ed2fd1d887105cdf456ab89861459f89b1e42dca",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_sort.py": "fa8945bd1334368ec870370a6567db6a270aaf8658ffd090e7fb60c085276080",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_admitted_road.py": "9213142aae0abb8e4c575f58b31bdfa28b1e33d37ae4b395cab4e442d601ecf5",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_packed_section.py": "b4651812dcb429d7c0e23f052221cce85e25eff9c42771fb992ad233e39bb925",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8"
+        },
+        "outputs": {
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/bin/rally.bin": "0401d8af5e895832371b417a12d1a455b0dfb132f772c202328ef11f3f1da64b",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/include/scene_assets.hpp": "e9ad3467164b2230d34c18ee81f060c583f34a03e4a3ac5cb179474f9ff2f827",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/oval.vdp": "cad8b8339151262576f9cab237a58b4b5d47e5fc49acb9ea3eb046269ad9d044",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/oval.clr": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/fuji.vdp": "b3e6bf3eb53a8b27c3cbbc74854716a86042db0bd8f1f95b895638c67ba8e8dd",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/fuji.clr": "999170b235f34c76972739a5c64a208c8ccdb678dc3531c1f6f7af131d4e2ebd",
+          "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+        },
+        "golem_compiler_sha256": "dc432c85c7df0aa3c039de3544ae3e6d382f584209d49701d08c0a3302b8056e",
+        "work": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/frontend/hardware-inline",
+        "remaining": "Headless frontend/control validation and all frozen performance/stability tests."
+      },
+      "frontend_difference": "Only the explicit initialization-failure cleanup insertion is allowed.",
+      "recurring_prepare_submit_exact": true,
+      "all_simulation_projection_art_headers_exact": true,
+      "bridge_source_sha256": "ab54b4d72f0f78b64efc9c3d9c53b24bde72954581932aa80a3cd909b087e178",
+      "qualified_inline_transition": {
+        "qualification": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/hardware-production/inline-candidate/frozen-qualification.json",
+        "sha256": "b125024eb377e69830f8b63c051b544b4f89f1d113b5911ce83a08e8b5966ab3",
+        "frozen_cases": 66,
+        "bootstraps": {
+          "oval": "cad8b8339151262576f9cab237a58b4b5d47e5fc49acb9ea3eb046269ad9d044",
+          "fuji": "b3e6bf3eb53a8b27c3cbbc74854716a86042db0bd8f1f95b895638c67ba8e8dd"
+        },
+        "integrity_header_recomputed": true
+      },
+      "selected_resident_assets": {
+        "oval.vdp": "cad8b8339151262576f9cab237a58b4b5d47e5fc49acb9ea3eb046269ad9d044",
+        "oval.clr": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f",
+        "oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+        "fuji.vdp": "b3e6bf3eb53a8b27c3cbbc74854716a86042db0bd8f1f95b895638c67ba8e8dd",
+        "fuji.clr": "999170b235f34c76972739a5c64a208c8ccdb678dc3531c1f6f7af131d4e2ebd",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+      },
+      "cleanup_and_road_assets_exact": true
+    },
+    "work": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/render-work/hardware-inline",
+    "remaining": "Native bridge/acceptance and real-rendering ABBA; no performance pass yet."
+  },
+  "runner_sha256": "2839c086559325b89fe8103ad938768998d8f246051f87e8a2d99899d0074bef",
+  "observer_sha256": "af2c2a79da47ba5fb92e9061568ea277178ec71d5ec82fb42c60034c1d3c6dcd",
+  "completed": true,
+  "load_before": [
+    0.82861328125,
+    1.00390625,
+    1.38330078125
+  ],
+  "actual_command": [
+    "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/fab-agon-emulator",
+    "--firmware",
+    "platform",
+    "--mos",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/mos_platform.bin",
+    "--sdcard",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.emulator/render-work-hardware-inline-bridge-oval-1-oracle/sdcard",
+    "--renderer",
+    "sw"
+  ],
+  "warmed_process_memory": {
+    "VmPeak_kB": 379016,
+    "VmSize_kB": 375704,
+    "VmHWM_kB": 15404,
+    "VmRSS_kB": 14800
+  },
+  "go_wall_ns": 88511581690066,
+  "submitted_process_memory": {
+    "VmPeak_kB": 379016,
+    "VmSize_kB": 375704,
+    "VmHWM_kB": 15404,
+    "VmRSS_kB": 14800
+  },
+  "done_wall_ns": 88513708287785,
+  "finished_process_memory": {
+    "VmPeak_kB": 379088,
+    "VmSize_kB": 377352,
+    "VmHWM_kB": 16040,
+    "VmRSS_kB": 15828
+  },
+  "returncode": 0,
+  "wall_seconds_with_startup": 6.037121889006812,
+  "load_after": [
+    0.9228515625,
+    1.0205078125,
+    1.38671875
+  ]
+}

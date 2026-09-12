@@ -140,3 +140,34 @@ poll. The oracle bridge, raw intervals/cycles, copied-header/bootstrap identitie
 startup scopes, process RSS and static ledgers are audited in PERFORMANCE.md and
 evidence/golem-performance/qualification.json. Golem completion4efba69 precedes
 checking R19-10. R19-11 stability/review and R19-12 delivery remain open.
+
+
+## R19-11 completed after physical stack correction
+
+The Author authorized deployment, official firmware restoration and ESP32 serial
+diagnosis after production reset on hardware. Official VDP2.16.0 reported a4096-
+byte processLoop stack-canary failure. Golem f9e7d8d adds compiler-recorded selective
+InlineCalls expansion; all14 host sanitizer suites pass. Observed nesting falls
+from eight to six;120 returns complete on a4096-byte diagnostic stack, minimum
+164-byte headroom including instrumentation. The temporary larger-stack firmware
+was diagnostic only. Official release segments were restored and independently
+verified before the Author confirmed continued slow operation using the reset
+button, without full power-off. H2 checkpoint10b7ecb records that limited success;
+H3 checkpointeb24628 records prepared human review and full headless regression.
+
+The corrected assets pass all66 frozen poses, both602-second independently audited
+replays, both210-event lifecycle suites,834 loader fault cases, eight native
+file-failure cases and12 frontend controls/638 independent host records.
+Final native ABBA passes: medians31.7115/31.3037ms, p9536.7886/36.0928ms,
+conservative CPU construction reductions91.9637%/91.0078% and UART reductions
+88.5305%/86.6944%. `audit_final_candidate.py` binds644 checked source/evidence
+identities and the production/card byte equivalence; REVIEW.md indexes the work.
+
+Hardware performance is explicitly not accepted. Sparse diagnostic timing gives
+about1.186 root-call returns/sec, and the Author sees slow rendering on restored
+official firmware too. The same stock drawing primitive gains no faster rasterizer
+merely by residing in a buffer; this scalar arithmetic lowering adds too much
+interpreter work on ESP32. Native host timing did not predict that cost or its
+stack constraint. No claim of practical hardware acceleration follows from the
+native frozen-criteria pass. Final delivery remains R19-12; no source expansion,
+remote push or additional physical/GUI action is part of this checkpoint.

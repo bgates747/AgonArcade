@@ -173,3 +173,11 @@ The Author also confirmed slow continued rendering after a board reset on restor
 official VDP2.16.0. That physical startup correction is accepted separately from
 native stability and the still-unacceptable physical speed. H2/H3 evidence and
 limits are in HARDWARE-DEBUG.md. Final-asset timing and overall R19-11 review remain.
+
+
+R19-11 completed with REVIEW.md and `evidence/final/qualification.json`.
+The index independently rechecks644 source/evidence identities and binds all
+final-asset correctness, lifecycle, input, production and native timing results.
+All original frozen budgets pass in the native environment. The physical startup
+correction is separately confirmed; physical rendering remains too slow. R19-12
+final documentation/linked-commit delivery is the remaining frozen milestone.

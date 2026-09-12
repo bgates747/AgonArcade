@@ -9,8 +9,9 @@ from native_run import sha
 from frontend_bridge import verify
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('name');p.add_argument('--frontend',required=True);a=p.parse_args()
-    base=TASK/'.work/frontend'/a.frontend;qualified,selected,bridge=verify(base)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('name');p.add_argument('--frontend',required=True)
+    p.add_argument('--inline-qualified',action='store_true');a=p.parse_args()
+    base=TASK/'.work/frontend'/a.frontend;qualified,selected,bridge=verify(base,allow_inline=a.inline_qualified)
     work=TASK/'.work/render-work'/a.name;(work/'src').mkdir(parents=True,exist_ok=False)
     shutil.copytree(base/'include',work/'include');shutil.copy2(base/'Makefile',work/'Makefile')
     for name in ['render_work.hpp','render_readback.hpp']:shutil.copy2(TASK/name,work/'include'/name)
