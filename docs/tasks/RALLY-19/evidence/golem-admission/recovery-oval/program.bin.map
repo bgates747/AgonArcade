@@ -1,0 +1,865 @@
+field version 1000:0 u16 1 1
+field size 1000:2 u16 80 80
+field seq 1000:4 u16 0 65534
+field track 1000:6 u16 0 1
+field position 1000:8 s32 0 3276799
+field phase 1000:12 u16 0 7999
+field steering 1000:14 s16 -21 21
+field lateral 1000:16 s32 -38400 38400
+field speed 1000:20 u16 0 300
+field surface 1000:22 u16 0 2
+field car0Position 1000:24 s32 0 3276799
+field car0Lane 1000:28 s16 -90 90
+field car0Reserved 1000:30 u16 0 0
+field car1Position 1000:32 s32 0 3276799
+field car1Lane 1000:36 s16 -90 90
+field car1Reserved 1000:38 u16 0 0
+field car2Position 1000:40 s32 0 3276799
+field car2Lane 1000:44 s16 -90 90
+field car2Reserved 1000:46 u16 0 0
+field car3Position 1000:48 s32 0 3276799
+field car3Lane 1000:52 s16 -90 90
+field car3Reserved 1000:54 u16 0 0
+field car4Position 1000:56 s32 0 3276799
+field car4Lane 1000:60 s16 -90 90
+field car4Reserved 1000:62 u16 0 0
+field car5Position 1000:64 s32 0 3276799
+field car5Lane 1000:68 s16 -90 90
+field car5Reserved 1000:70 u16 0 0
+field flags 1000:72 u16 0 7
+field grip 1000:74 u16 25 200
+field seqCopy 1000:76 u16 0 65534
+field seal 1000:78 u16 0 65535
+field activeversion 1001:0 u16 1 1
+field activesize 1001:2 u16 80 80
+field activeseq 1001:4 u16 0 65534
+field activetrack 1001:6 u16 0 1
+field activeposition 1001:8 s32 0 3276799
+field activephase 1001:12 u16 0 7999
+field activesteering 1001:14 s16 -21 21
+field activelateral 1001:16 s32 -38400 38400
+field activespeed 1001:20 u16 0 300
+field activesurface 1001:22 u16 0 2
+field activecar0Position 1001:24 s32 0 3276799
+field activecar0Lane 1001:28 s16 -90 90
+field activecar0Reserved 1001:30 u16 0 0
+field activecar1Position 1001:32 s32 0 3276799
+field activecar1Lane 1001:36 s16 -90 90
+field activecar1Reserved 1001:38 u16 0 0
+field activecar2Position 1001:40 s32 0 3276799
+field activecar2Lane 1001:44 s16 -90 90
+field activecar2Reserved 1001:46 u16 0 0
+field activecar3Position 1001:48 s32 0 3276799
+field activecar3Lane 1001:52 s16 -90 90
+field activecar3Reserved 1001:54 u16 0 0
+field activecar4Position 1001:56 s32 0 3276799
+field activecar4Lane 1001:60 s16 -90 90
+field activecar4Reserved 1001:62 u16 0 0
+field activecar5Position 1001:64 s32 0 3276799
+field activecar5Lane 1001:68 s16 -90 90
+field activecar5Reserved 1001:70 u16 0 0
+field activeflags 1001:72 u16 0 7
+field activegrip 1001:74 u16 25 200
+field activeseqCopy 1001:76 u16 0 65534
+field activeseal 1001:78 u16 0 65535
+field valid 1002:0 u16 0 1
+field wrap 1002:2 u16 0 1
+field acceptedCount 1002:4 u16 0 65535
+field lastSequence 1002:6 u16 0 65535
+field error 1002:8 u16 0 1
+field expectedSequence 1003:0 u16 0 65535
+field zero 1004:0 u16 0 0
+field one 1004:2 u16 1 1
+field loadedTrack 1004:4 u16 0 1
+scratch 2 0
+scratch 3 4
+copy 2000 3:0 1000:0 1
+copy 2000 3:2 1000:1 1
+scratch 4 0
+scratch 5 2
+scratch 6 0
+scratch 7 2
+scratch 8 0
+scratch 9 0
+require_range 2000 1000:0 u16 1 1 sticky_status 1002:0
+scratch 10 4
+copy 2000 10:0 1000:2 1
+copy 2000 10:2 1000:3 1
+scratch 11 0
+scratch 12 2
+scratch 13 0
+scratch 14 0
+scratch 15 0
+require_range 2000 1000:2 u16 80 80 sticky_status 1002:0
+scratch 16 4
+copy 2000 16:0 1000:4 1
+copy 2000 16:2 1000:5 1
+scratch 17 0
+scratch 18 0
+scratch 19 0
+scratch 20 2
+scratch 21 0
+scratch 22 2
+require_range 2000 1000:4 u16 0 65534 sticky_status 1002:0
+scratch 23 4
+copy 2000 23:0 1000:6 1
+copy 2000 23:2 1000:7 1
+scratch 24 0
+scratch 25 0
+scratch 26 0
+scratch 27 0
+require_range 2000 1000:6 u16 0 1 sticky_status 1002:0
+scratch 28 8
+copy 2000 28:0 1000:8 1
+copy 2000 28:2 1000:9 1
+copy 2000 28:4 1000:10 1
+copy 2000 28:6 1000:11 1
+scratch 29 0
+scratch 30 0
+scratch 31 0
+scratch 32 0
+scratch 33 2
+scratch 34 0
+scratch 35 0
+scratch 36 0
+scratch 37 2
+scratch 38 0
+require_range 2000 1000:8 s32 0 3276799 sticky_status 1002:0
+scratch 39 4
+copy 2000 39:0 1000:12 1
+copy 2000 39:2 1000:13 1
+scratch 40 0
+scratch 41 0
+scratch 42 0
+scratch 43 2
+scratch 44 0
+scratch 45 2
+require_range 2000 1000:12 u16 0 7999 sticky_status 1002:0
+scratch 46 4
+copy 2000 46:0 1000:14 1
+copy 2000 46:2 1000:15 1
+scratch 47 0
+scratch 48 2
+scratch 49 0
+scratch 50 2
+scratch 51 0
+scratch 52 2
+scratch 53 0
+require_range 2000 1000:14 s16 -21 21 sticky_status 1002:0
+scratch 54 8
+copy 2000 54:0 1000:16 1
+copy 2000 54:2 1000:17 1
+copy 2000 54:4 1000:18 1
+copy 2000 54:6 1000:19 1
+scratch 55 0
+scratch 56 0
+scratch 57 2
+scratch 58 0
+scratch 59 0
+scratch 60 0
+scratch 61 0
+scratch 62 2
+scratch 63 0
+scratch 64 0
+require_range 2000 1000:16 s32 -38400 38400 sticky_status 1002:0
+scratch 65 4
+copy 2000 65:0 1000:20 1
+copy 2000 65:2 1000:21 1
+scratch 66 0
+scratch 67 0
+scratch 68 0
+scratch 69 2
+scratch 70 0
+require_range 2000 1000:20 u16 0 300 sticky_status 1002:0
+scratch 71 4
+copy 2000 71:0 1000:22 1
+copy 2000 71:2 1000:23 1
+scratch 72 0
+scratch 73 0
+scratch 74 0
+scratch 75 2
+scratch 76 0
+require_range 2000 1000:22 u16 0 2 sticky_status 1002:0
+scratch 77 8
+copy 2000 77:0 1000:24 1
+copy 2000 77:2 1000:25 1
+copy 2000 77:4 1000:26 1
+copy 2000 77:6 1000:27 1
+scratch 78 0
+scratch 79 0
+scratch 80 0
+scratch 81 0
+scratch 82 0
+scratch 83 0
+scratch 84 0
+scratch 85 0
+require_range 2000 1000:24 s32 0 3276799 sticky_status 1002:0
+scratch 86 4
+copy 2000 86:0 1000:28 1
+copy 2000 86:2 1000:29 1
+scratch 87 0
+scratch 88 2
+scratch 89 0
+scratch 90 0
+scratch 91 2
+scratch 92 0
+require_range 2000 1000:28 s16 -90 90 sticky_status 1002:0
+scratch 93 4
+copy 2000 93:0 1000:30 1
+copy 2000 93:2 1000:31 1
+scratch 94 0
+scratch 95 0
+scratch 96 0
+scratch 97 0
+require_range 2000 1000:30 u16 0 0 sticky_status 1002:0
+scratch 98 8
+copy 2000 98:0 1000:32 1
+copy 2000 98:2 1000:33 1
+copy 2000 98:4 1000:34 1
+copy 2000 98:6 1000:35 1
+scratch 99 0
+scratch 100 0
+scratch 101 0
+scratch 102 0
+scratch 103 0
+scratch 104 0
+scratch 105 0
+scratch 106 0
+require_range 2000 1000:32 s32 0 3276799 sticky_status 1002:0
+scratch 107 4
+copy 2000 107:0 1000:36 1
+copy 2000 107:2 1000:37 1
+scratch 108 0
+scratch 109 0
+scratch 110 0
+scratch 111 0
+require_range 2000 1000:36 s16 -90 90 sticky_status 1002:0
+scratch 112 4
+copy 2000 112:0 1000:38 1
+copy 2000 112:2 1000:39 1
+scratch 113 0
+scratch 114 0
+scratch 115 0
+scratch 116 0
+require_range 2000 1000:38 u16 0 0 sticky_status 1002:0
+scratch 117 8
+copy 2000 117:0 1000:40 1
+copy 2000 117:2 1000:41 1
+copy 2000 117:4 1000:42 1
+copy 2000 117:6 1000:43 1
+scratch 118 0
+scratch 119 0
+scratch 120 0
+scratch 121 0
+scratch 122 0
+scratch 123 0
+scratch 124 0
+scratch 125 0
+require_range 2000 1000:40 s32 0 3276799 sticky_status 1002:0
+scratch 126 4
+copy 2000 126:0 1000:44 1
+copy 2000 126:2 1000:45 1
+scratch 127 0
+scratch 128 0
+scratch 129 0
+scratch 130 0
+require_range 2000 1000:44 s16 -90 90 sticky_status 1002:0
+scratch 131 4
+copy 2000 131:0 1000:46 1
+copy 2000 131:2 1000:47 1
+scratch 132 0
+scratch 133 0
+scratch 134 0
+scratch 135 0
+require_range 2000 1000:46 u16 0 0 sticky_status 1002:0
+scratch 136 8
+copy 2000 136:0 1000:48 1
+copy 2000 136:2 1000:49 1
+copy 2000 136:4 1000:50 1
+copy 2000 136:6 1000:51 1
+scratch 137 0
+scratch 138 0
+scratch 139 0
+scratch 140 0
+scratch 141 0
+scratch 142 0
+scratch 143 0
+scratch 144 0
+require_range 2000 1000:48 s32 0 3276799 sticky_status 1002:0
+scratch 145 4
+copy 2000 145:0 1000:52 1
+copy 2000 145:2 1000:53 1
+scratch 146 0
+scratch 147 0
+scratch 148 0
+scratch 149 0
+require_range 2000 1000:52 s16 -90 90 sticky_status 1002:0
+scratch 150 4
+copy 2000 150:0 1000:54 1
+copy 2000 150:2 1000:55 1
+scratch 151 0
+scratch 152 0
+scratch 153 0
+scratch 154 0
+require_range 2000 1000:54 u16 0 0 sticky_status 1002:0
+scratch 155 8
+copy 2000 155:0 1000:56 1
+copy 2000 155:2 1000:57 1
+copy 2000 155:4 1000:58 1
+copy 2000 155:6 1000:59 1
+scratch 156 0
+scratch 157 0
+scratch 158 0
+scratch 159 0
+scratch 160 0
+scratch 161 0
+scratch 162 0
+scratch 163 0
+require_range 2000 1000:56 s32 0 3276799 sticky_status 1002:0
+scratch 164 4
+copy 2000 164:0 1000:60 1
+copy 2000 164:2 1000:61 1
+scratch 165 0
+scratch 166 0
+scratch 167 0
+scratch 168 0
+require_range 2000 1000:60 s16 -90 90 sticky_status 1002:0
+scratch 169 4
+copy 2000 169:0 1000:62 1
+copy 2000 169:2 1000:63 1
+scratch 170 0
+scratch 171 0
+scratch 172 0
+scratch 173 0
+require_range 2000 1000:62 u16 0 0 sticky_status 1002:0
+scratch 174 8
+copy 2000 174:0 1000:64 1
+copy 2000 174:2 1000:65 1
+copy 2000 174:4 1000:66 1
+copy 2000 174:6 1000:67 1
+scratch 175 0
+scratch 176 0
+scratch 177 0
+scratch 178 0
+scratch 179 0
+scratch 180 0
+scratch 181 0
+scratch 182 0
+require_range 2000 1000:64 s32 0 3276799 sticky_status 1002:0
+scratch 183 4
+copy 2000 183:0 1000:68 1
+copy 2000 183:2 1000:69 1
+scratch 184 0
+scratch 185 0
+scratch 186 0
+scratch 187 0
+require_range 2000 1000:68 s16 -90 90 sticky_status 1002:0
+scratch 188 4
+copy 2000 188:0 1000:70 1
+copy 2000 188:2 1000:71 1
+scratch 189 0
+scratch 190 0
+scratch 191 0
+scratch 192 0
+require_range 2000 1000:70 u16 0 0 sticky_status 1002:0
+scratch 193 4
+copy 2000 193:0 1000:72 1
+copy 2000 193:2 1000:73 1
+scratch 194 0
+scratch 195 0
+scratch 196 0
+scratch 197 2
+scratch 198 0
+require_range 2000 1000:72 u16 0 7 sticky_status 1002:0
+scratch 199 4
+copy 2000 199:0 1000:74 1
+copy 2000 199:2 1000:75 1
+scratch 200 0
+scratch 201 2
+scratch 202 0
+scratch 203 0
+scratch 204 2
+scratch 205 0
+require_range 2000 1000:74 u16 25 200 sticky_status 1002:0
+scratch 206 4
+copy 2000 206:0 1000:76 1
+copy 2000 206:2 1000:77 1
+scratch 207 0
+scratch 208 0
+scratch 209 0
+scratch 210 0
+require_range 2000 1000:76 u16 0 65534 sticky_status 1002:0
+scratch 211 4
+copy 2000 211:0 1000:78 1
+copy 2000 211:2 1000:79 1
+scratch 212 0
+scratch 213 0
+scratch 214 0
+scratch 215 0
+require_range 2000 1000:78 u16 23065 23065 sticky_status 1002:0
+scratch 216 2
+scratch 217 2
+copy 2000 216:0 1000:4 1
+copy 2000 217:0 1000:76 1
+copy 2000 216:0 1000:5 1
+copy 2000 217:0 1000:77 1
+require_equal 2000 1000:4 1000:76 sticky_status 1002:0
+scratch 218 2
+scratch 219 2
+copy 2000 218:0 1000:4 1
+copy 2000 219:0 1003:0 1
+copy 2000 218:0 1000:5 1
+copy 2000 219:0 1003:1 1
+require_equal 2000 1000:4 1003:0 sticky_status 1002:0
+scratch 220 2
+scratch 221 2
+copy 2000 220:0 1000:6 1
+copy 2000 221:0 1004:4 1
+copy 2000 220:0 1000:7 1
+copy 2000 221:0 1004:5 1
+require_equal 2000 1000:6 1004:4 sticky_status 1002:0
+scratch 222 8
+copy 2001 222:0 1000:8 1
+copy 2001 222:2 1000:9 1
+copy 2001 222:4 1000:10 1
+copy 2001 222:6 1000:11 1
+scratch 223 0
+scratch 224 0
+scratch 225 0
+scratch 226 0
+scratch 227 0
+scratch 228 0
+scratch 229 2
+scratch 230 0
+scratch 231 2
+scratch 232 0
+require_range 2001 1000:8 s32 0 575999 sticky_status 1002:0
+scratch 233 8
+copy 2001 233:0 1000:24 1
+copy 2001 233:2 1000:25 1
+copy 2001 233:4 1000:26 1
+copy 2001 233:6 1000:27 1
+scratch 234 0
+scratch 235 0
+scratch 236 0
+scratch 237 0
+scratch 238 0
+scratch 239 0
+scratch 240 0
+scratch 241 0
+require_range 2001 1000:24 s32 0 575999 sticky_status 1002:0
+scratch 242 8
+copy 2001 242:0 1000:32 1
+copy 2001 242:2 1000:33 1
+copy 2001 242:4 1000:34 1
+copy 2001 242:6 1000:35 1
+scratch 243 0
+scratch 244 0
+scratch 245 0
+scratch 246 0
+scratch 247 0
+scratch 248 0
+scratch 249 0
+scratch 250 0
+require_range 2001 1000:32 s32 0 575999 sticky_status 1002:0
+scratch 251 8
+copy 2001 251:0 1000:40 1
+copy 2001 251:2 1000:41 1
+copy 2001 251:4 1000:42 1
+copy 2001 251:6 1000:43 1
+scratch 252 0
+scratch 253 0
+scratch 254 0
+scratch 255 0
+scratch 256 0
+scratch 257 0
+scratch 258 0
+scratch 259 0
+require_range 2001 1000:40 s32 0 575999 sticky_status 1002:0
+scratch 260 8
+copy 2001 260:0 1000:48 1
+copy 2001 260:2 1000:49 1
+copy 2001 260:4 1000:50 1
+copy 2001 260:6 1000:51 1
+scratch 261 0
+scratch 262 0
+scratch 263 0
+scratch 264 0
+scratch 265 0
+scratch 266 0
+scratch 267 0
+scratch 268 0
+require_range 2001 1000:48 s32 0 575999 sticky_status 1002:0
+scratch 269 8
+copy 2001 269:0 1000:56 1
+copy 2001 269:2 1000:57 1
+copy 2001 269:4 1000:58 1
+copy 2001 269:6 1000:59 1
+scratch 270 0
+scratch 271 0
+scratch 272 0
+scratch 273 0
+scratch 274 0
+scratch 275 0
+scratch 276 0
+scratch 277 0
+require_range 2001 1000:56 s32 0 575999 sticky_status 1002:0
+scratch 278 8
+copy 2001 278:0 1000:64 1
+copy 2001 278:2 1000:65 1
+copy 2001 278:4 1000:66 1
+copy 2001 278:6 1000:67 1
+scratch 279 0
+scratch 280 0
+scratch 281 0
+scratch 282 0
+scratch 283 0
+scratch 284 0
+scratch 285 0
+scratch 286 0
+require_range 2001 1000:64 s32 0 575999 sticky_status 1002:0
+copy 2002 1001:0 1000:0 80
+scratch 287 3
+copy 2002 287:0 1002:4 2
+copy 2002 1002:4 287:0 2
+copy 2002 1002:6 1000:4 2
+copy 2002 1003:0 1000:4 2
+scratch 288 3
+copy 2002 288:0 1003:0 2
+copy 2002 1003:0 288:0 2
+scratch 289 0
+scratch 290 4
+copy 2002 290:0 1003:0 1
+copy 2002 290:2 1003:1 1
+scratch 291 0
+scratch 292 0
+scratch 293 0
+scratch 294 0
+require_range 2002 1003:0 u16 0 65534 sticky_status 1002:2
+scratch 295 4
+symbol active 1001 80 0
+symbol commitState 2002 220 2
+symbol constants 1004 6 0
+symbol inputPosition 1100 4 1
+symbol ovalBounds 2001 588 2
+symbol proofResult 1102 4 1
+symbol renderProof 2004 30 2
+symbol resetSequence 2003 13 2
+symbol sequenceState 1003 2 0
+symbol staging 1000 80 0
+symbol status 1002 10 0
+symbol submit 2000 2103 2
+bootstrap_bytes 13171
+resident_payload_bytes 8854
+owned_ids 306
+asset_payload_bytes 0
+program_payload_bytes 8380
+scratch_payload_bytes 474
+resident_plus_bootstrap_payload_bytes 22025
+owned 2
+owned 3
+owned 4
+owned 5
+owned 6
+owned 7
+owned 8
+owned 9
+owned 10
+owned 11
+owned 12
+owned 13
+owned 14
+owned 15
+owned 16
+owned 17
+owned 18
+owned 19
+owned 20
+owned 21
+owned 22
+owned 23
+owned 24
+owned 25
+owned 26
+owned 27
+owned 28
+owned 29
+owned 30
+owned 31
+owned 32
+owned 33
+owned 34
+owned 35
+owned 36
+owned 37
+owned 38
+owned 39
+owned 40
+owned 41
+owned 42
+owned 43
+owned 44
+owned 45
+owned 46
+owned 47
+owned 48
+owned 49
+owned 50
+owned 51
+owned 52
+owned 53
+owned 54
+owned 55
+owned 56
+owned 57
+owned 58
+owned 59
+owned 60
+owned 61
+owned 62
+owned 63
+owned 64
+owned 65
+owned 66
+owned 67
+owned 68
+owned 69
+owned 70
+owned 71
+owned 72
+owned 73
+owned 74
+owned 75
+owned 76
+owned 77
+owned 78
+owned 79
+owned 80
+owned 81
+owned 82
+owned 83
+owned 84
+owned 85
+owned 86
+owned 87
+owned 88
+owned 89
+owned 90
+owned 91
+owned 92
+owned 93
+owned 94
+owned 95
+owned 96
+owned 97
+owned 98
+owned 99
+owned 100
+owned 101
+owned 102
+owned 103
+owned 104
+owned 105
+owned 106
+owned 107
+owned 108
+owned 109
+owned 110
+owned 111
+owned 112
+owned 113
+owned 114
+owned 115
+owned 116
+owned 117
+owned 118
+owned 119
+owned 120
+owned 121
+owned 122
+owned 123
+owned 124
+owned 125
+owned 126
+owned 127
+owned 128
+owned 129
+owned 130
+owned 131
+owned 132
+owned 133
+owned 134
+owned 135
+owned 136
+owned 137
+owned 138
+owned 139
+owned 140
+owned 141
+owned 142
+owned 143
+owned 144
+owned 145
+owned 146
+owned 147
+owned 148
+owned 149
+owned 150
+owned 151
+owned 152
+owned 153
+owned 154
+owned 155
+owned 156
+owned 157
+owned 158
+owned 159
+owned 160
+owned 161
+owned 162
+owned 163
+owned 164
+owned 165
+owned 166
+owned 167
+owned 168
+owned 169
+owned 170
+owned 171
+owned 172
+owned 173
+owned 174
+owned 175
+owned 176
+owned 177
+owned 178
+owned 179
+owned 180
+owned 181
+owned 182
+owned 183
+owned 184
+owned 185
+owned 186
+owned 187
+owned 188
+owned 189
+owned 190
+owned 191
+owned 192
+owned 193
+owned 194
+owned 195
+owned 196
+owned 197
+owned 198
+owned 199
+owned 200
+owned 201
+owned 202
+owned 203
+owned 204
+owned 205
+owned 206
+owned 207
+owned 208
+owned 209
+owned 210
+owned 211
+owned 212
+owned 213
+owned 214
+owned 215
+owned 216
+owned 217
+owned 218
+owned 219
+owned 220
+owned 221
+owned 222
+owned 223
+owned 224
+owned 225
+owned 226
+owned 227
+owned 228
+owned 229
+owned 230
+owned 231
+owned 232
+owned 233
+owned 234
+owned 235
+owned 236
+owned 237
+owned 238
+owned 239
+owned 240
+owned 241
+owned 242
+owned 243
+owned 244
+owned 245
+owned 246
+owned 247
+owned 248
+owned 249
+owned 250
+owned 251
+owned 252
+owned 253
+owned 254
+owned 255
+owned 256
+owned 257
+owned 258
+owned 259
+owned 260
+owned 261
+owned 262
+owned 263
+owned 264
+owned 265
+owned 266
+owned 267
+owned 268
+owned 269
+owned 270
+owned 271
+owned 272
+owned 273
+owned 274
+owned 275
+owned 276
+owned 277
+owned 278
+owned 279
+owned 280
+owned 281
+owned 282
+owned 283
+owned 284
+owned 285
+owned 286
+owned 287
+owned 288
+owned 289
+owned 290
+owned 291
+owned 292
+owned 293
+owned 294
+owned 295
+owned 1000
+owned 1001
+owned 1002
+owned 1003
+owned 1004
+owned 1100
+owned 1102
+owned 2000
+owned 2001
+owned 2002
+owned 2003
+owned 2004
+cleanup_bytes 1836

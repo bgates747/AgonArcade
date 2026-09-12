@@ -1,0 +1,28 @@
+{
+  "compiler_source_sha256": "0156bb00e4d4f3f123e7fb012805bd1f85756cbca5849bd1024fdef8db52cdb5",
+  "hosted_source_sha256": "1329620c7e37bf00401420f9e3a1f8a13cf35598c245aa88e8882d639dcb119c",
+  "compiler_sha256": "b7e81c12df91f843a8e2f8da1f28f23814b221ebc0b583370d452f31a0ecafe1",
+  "programs": [
+    {
+      "name": "arithmetic",
+      "source": "/home/smith/Agon/mystuff/golem-rally19/examples/native_arithmetic/kernel.golem",
+      "bytes": 2461,
+      "sha256": "33ca6b9031db8e3599f9e9f98efc86e417d674d4651422b496d5f3ff960e54a3",
+      "matches_native_qualified_program": true
+    },
+    {
+      "name": "lookup",
+      "source": "/home/smith/Agon/mystuff/golem-rally19/examples/native_lookup/kernel.golem",
+      "bytes": 66288,
+      "sha256": "5be6e5c8354fb9036e9301f0ae0d0650bacc95f46464dd2340928887433b5ae0",
+      "matches_native_qualified_program": true
+    },
+    {
+      "name": "admission-oval",
+      "source": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/admission.golem",
+      "bytes": 13171,
+      "sha256": "bd46ac4f550fb8ead3286cfd7841e5cefb50204df0fa9c2fbec7d0a037c04d58",
+      "matches_native_qualified_program": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "g++",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-fPIC",
+    "-I/home/smith/.local/include",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/memory_probe_linux.cpp",
+    "-ldl",
+    "-o",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/evidence/golem-lookup/allocation/memory-probe.so"
+  ],
+  "source_sha256": "b40a0d691b96099cf50d43ea37f7d6e10f7b6e13514ec72741f37ccb0c327f66",
+  "library_sha256": "2f73fe054f17469bc43125929c6becee05024699c7e71300208263543369d2ed"
+}

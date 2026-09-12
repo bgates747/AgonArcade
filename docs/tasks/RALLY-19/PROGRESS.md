@@ -159,3 +159,30 @@ measure allocator/metadata balance. Complete signed Rally admission, malformed/
 incomplete transport, sequence policy and live resource evidence remain open;
 R19-05's checkbox is deliberately unchanged. All testing uses normal CPU and
 canonical headless wrappers. No original/upstream changes, alerts, pushes or SD.
+
+## R19-05 — Resident admission/lifecycle qualified, 2026-09-12
+
+Golem af8d91ee65416cde80ab8afb28d8adb7f310c007 completes this milestone. The
+C++ compiler adds sticky signed/full-width guards and complete typed record copy,
+aggregate resource limits and bounded syntax parsing. Both tracks pass 210 native
+admission/fault-injection cases. Dynamic record selection crosses an ID-byte carry,
+large-asset readback and >64 KiB multiblock bootstrap work, nine reloads/three
+owned cleanups preserve foreign resources, and 36,864 additional calls have stable
+tracked live allocations. Headless Escape reaches the guest after finite jobs.
+Host sanitizer/regression tests pass; final compiler reproduces qualified native
+arithmetic, lookup and admission bytes exactly. RESIDENT.md and
+`evidence/golem-resident-qualification.json` map every criterion to raw evidence.
+
+The expanded header-cut test retained a real parser diagnostic failure: stock
+bufferAdjust can incur successive 200 ms waits, so a 500 ms idle before GP was
+insufficient for an incomplete header. Final recovery tests pass with 2000 ms
+for header/trigger cuts and 500 ms for payload cuts. No ordinary frame receives
+that delay. Initial unused-constant and CRLF-sampler failures remain recorded.
+
+Allocation samples cover stock heap_caps_malloc/actual frees, not hardware RAM
+or all host allocations. The large fixture keeps 239 live allocations / 222600
+bytes steady over each batch, and 32 / 83832 after every cleanup; the initial
+232-byte warmed-container increase is stable. GP remains a parser/echo milestone.
+The finite renderer proof doubles admitted position; complete roads/cars and all
+frozen full-scene timing/visual/ten-minute criteria remain R19-06 onward. All work
+was headless in isolated worktrees; no alerts, upstream edits, pushes or SD changes.

@@ -1,0 +1,48 @@
+import samples records.dat 32 fnv1a64 04412d079a7bafce records 4
+import everyByte bytes.dat 256 fnv1a64 4242dc5249c33625 records 1
+field index 1000:0 u16 0 65535
+field ok 1000:2 u16 0 1
+field one 1001:0 u16 1 1
+field a 1500:0 s32 -100 100
+field b 1500:4 s32 1 10
+scratch 2 3
+scratch 3 2
+scratch 4 15
+scratch 5 0
+copy 5 4:11 2:0 2
+lookup 2000 table 4000 count 4 stride 8 instruction 4 source_id_offset 11 guarded_body 5
+symbol constants 1001 2 0
+symbol everyByte 4100 256 4
+symbol fetch 2000 43 2
+symbol left 1100 4 1
+symbol product 1102 4 1
+symbol project 2001 41 2
+symbol record 1500 8 0
+symbol right 1101 4 1
+symbol samples 4000 8 5
+symbol state 1000 4 0
+bootstrap_bytes 739
+resident_payload_bytes 481
+owned_ids 17
+asset_payload_bytes 288
+program_payload_bytes 162
+scratch_payload_bytes 31
+resident_plus_bootstrap_payload_bytes 1220
+owned 2
+owned 3
+owned 4
+owned 5
+owned 1000
+owned 1001
+owned 1100
+owned 1101
+owned 1102
+owned 1500
+owned 2000
+owned 2001
+owned 4000
+owned 4001
+owned 4002
+owned 4003
+owned 4100
+cleanup_bytes 102

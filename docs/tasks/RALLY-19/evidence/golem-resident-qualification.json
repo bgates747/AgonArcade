@@ -1,0 +1,19 @@
+{
+  "milestone": "R19-05",
+  "golem_commit": "af8d91ee65416cde80ab8afb28d8adb7f310c007",
+  "pass": true,
+  "criteria": {
+    "imports_bounded_index_typed_patching": "golem-lookup/large-allocation",
+    "ordered_state_finite_dispatch_malformed_sequence": "golem-admission/recovery-oval and recovery-fuji: 210 cases each",
+    "reload_cleanup_allocation_input_return": "golem-lookup/large-allocation: 9 reloads, 36864 additional calls, 3 cleanups, Escape after jobs",
+    "compiler_sanitizers_resource_limits": "golem-lookup/host-tests-final.json",
+    "unchanged_prior_arithmetic_and_native_programs": "golem-lookup/final-compiler-reproduction.json"
+  },
+  "sources": {
+    "admission.golem": "3d19ecb4e43f2d680255fda86ad2d676c1b23648fd5db08f56c823a1a67e50f3",
+    "probe_admission.py": "febf095ac72ef89b622f5542bed092ada0f27807bfb8b9545d10475ac953a3dd",
+    "probe_lookup.py": "90a494afe1ff92d2caee528a2ce185caa19f0593f920453a95f68efafa5eecac",
+    "memory_probe_linux.cpp": "e283df817c2db2fb06fd1227e7756dbd9dac93306f37d79904d89c151e5ad993"
+  },
+  "notes": "RESIDENT.md gives scope, allocation caveats and retained timeout/CRLF/build failures. Full scene, performance and long replay are not claimed."
+}

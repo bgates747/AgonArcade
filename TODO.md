@@ -35,7 +35,7 @@ This ordered register owns progress across AgonArcade and Golem.
    varying-input product, multiply-add, reciprocal/division, rotation, negative
    conversion and computed PLOT probes; exercise finite loops/indexed operands.
    Record errors, bytes, timings and scratch lifetimes. Commit compiler then evidence.
-5. [ ] **R19-05 — Qualify resident state, lookup and resource lifecycle.** Implement
+5. [x] **R19-05 — Qualify resident state, lookup and resource lifecycle.** Implement
    symbolic asset/table imports, bounded indexing, typed command-field patching,
    atomic-by-order state update and finite render dispatch. Test malformed and
    incomplete packets, track/table bounds, sequence handling, reload, allocation
@@ -81,7 +81,7 @@ This ordered register owns progress across AgonArcade and Golem.
 This is the authoritative task checklist. Details are in `docs/tasks/<ID>.md`;
 task-specific supporting files belong in `docs/tasks/<ID>/`.
 
-18. [ ] [RALLY-19](docs/tasks/RALLY-19.md): Design compact game-state updates for a VDP-resident scene renderer; derive stripes from distance and resident pitch. Discussion only; implementation scope pending.
+18. [ ] [RALLY-19](docs/tasks/RALLY-19.md): Execute the frozen unattended stock-VDP/Golem contract; R19-00 through R19-05 complete. Full scene geometry, integration and performance remain in the execution register above.
 
 17. [ ] [RALLY-18](docs/tasks/RALLY-18.md): Review isolated centreline-camera/road-lookup candidate; headless validation passed. Lookup computation 67.0/71.4 FPS equivalent (oval/Fuji), commands+UART 37.0/41.2; perspective option measured separately. Unfenced 30 Hz review baseline accepted as a working assumption, not a verified guarantee; mainline integration and hardware qualification pending; [results](docs/tasks/RALLY-18/results/README.md).
 

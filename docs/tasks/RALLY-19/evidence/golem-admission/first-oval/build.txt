@@ -1,0 +1,12 @@
+make: Entering directory '/home/smith/Agon/mystuff/golem-rally19/src'
+make: Nothing to be done for 'all'.
+make: Leaving directory '/home/smith/Agon/mystuff/golem-rally19/src'
+wrote 13171 bytes to /home/smith/Agon/mystuff/golem-rally19/build/native-admission/first-oval/program.bin
+make: Entering directory '/home/smith/Agon/mystuff/golem-rally19/build/native-admission/first-oval'
+[compiling src/main.cpp]
+[1msrc/main.cpp:8:34: [0m[0;1;31merror: [0m[1munused variable 'Foreign' [-Werror,-Wunused-const-variable][0m
+constexpr unsigned Query = 1999, Foreign = 55555;
+[0;1;32m                                 ^
+[0m1 error generated.
+make: *** [/home/smith/Agon/agondev/release/config/makefile.inc:105: obj/main.o] Error 1
+make: Leaving directory '/home/smith/Agon/mystuff/golem-rally19/build/native-admission/first-oval'
