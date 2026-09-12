@@ -1,0 +1,24 @@
+{
+  "golem_commit": "696d83084e23e92638129e544b498bdcec819acf",
+  "scope": "Executable host wire-layout contract and specified hosted compiler design; native arithmetic/VDP admission remain pending",
+  "command": [
+    "g++",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "-g",
+    "docs/tasks/RALLY-19/test_scene_protocol.cpp",
+    "-o",
+    "docs/tasks/RALLY-19/.work/test_scene_protocol"
+  ],
+  "output": "R19-03: 80-byte explicit LE state / 97-byte packet, signed bounds, round trip, malformed lengths/fields, non-mutating rejection, sequence wrap pass.\n",
+  "files": {
+    "docs/tasks/RALLY-19/scene_protocol.hpp": "c9dc8a11ce12a04f55382e5d2c1aaf5ffdd028a7d8741b09eadceedbc7068aee",
+    "docs/tasks/RALLY-19/test_scene_protocol.cpp": "dc955bfc55f1bc25e9cc93598e6e2ad254d89f51dc562fca5a3c2d5ddf24c667",
+    "docs/tasks/RALLY-19/ABI.md": "d6e8a475de0c24e38c978527e2f06d062ac924bc7b6d385adf2f830cb6134254",
+    "/home/smith/Agon/mystuff/golem-rally19/docs/design/rally19-hosted-v1.md": "9df94561530b3a460df6e8c49242a4ad117c117a31bf5ff7f9f45271570b3c96",
+    "/home/smith/Agon/mystuff/golem-rally19/tests/hosted-design-cases.json": "ab7f9f4b7a2af31d42885469023144e6258c4987c1f01c403dc7d76402ecccfa"
+  }
+}

@@ -55,3 +55,24 @@ were headless, with no alert. R19-03 now defines the reusable Golem/scene ABI.
 Evidence packaging follow-up: preserve raw MOS CSV CRLF via task-local Git
 attributes instead of rewriting hash-identified data. Explicitly include raw
 capture/debugger logs otherwise hidden by the repository-wide *.log ignore.
+
+## R19-03 — Hosted compiler and scene ABI designed, 2026-09-12
+
+Golem design commit 696d83084e23e92638129e544b498bdcec819acf specifies an opt-in
+typed hosted extension of the existing compiler, finite program/call/repeat
+rules, stock lowering, symbolic relocation/ID ownership, numeric guards and
+resource/alias budgets. Its intended parser acceptance/rejection corpus is
+specified, not yet implemented; ordinary compiler sanitizer regressions pass.
+
+ABI.md and scene_protocol.hpp fix 80 payload bytes / 97 update+call bytes, with
+raw world state, independent phase, six unsorted cars, HUD values and sequence.
+Existing swap adds three scene bytes; HUD remains separately counted. Host codec
+tests pass under ASan/UBSan, including all truncated lengths, invalid fields,
+signed boundaries, non-mutating failure and modulo-65535 sequence wrap.
+Evidence/abi-design.json records source hashes, command and Golem commit.
+
+Pinned stock source requires same-format command41 conversion, checked positive
+bias for negative integer output, and exclusion of conditional-word 0xFFFF's
+missing-value sentinel. The design explicitly accounts for these, matrix inverse
+caches and finite recovery from incomplete raw commands. Native arithmetic,
+admission and performance are still pending; no claim of a running VDP renderer.

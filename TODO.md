@@ -23,7 +23,7 @@ This ordered register owns progress across AgonArcade and Golem.
    the comparison catches missing cars/markings and tolerates <=1px edges. Record
    matched 64-pose baseline batches, bytes and stage timing on both tracks, with
    no unlimited CPU or interactive fence. Commit immutable fixture/metric evidence.
-3. [ ] **R19-03 — Define Golem's renderer-facing types, lowering and ABI.** Specify
+3. [x] **R19-03 — Define Golem's renderer-facing types, lowering and ABI.** Specify
    finite hosted entrypoints, named buffers/fields, relocations, matrix/float and
    integer conversions, alias rules, ID allocation, errors and resource budgets.
    Design only the intrinsics needed by Rally, preserving existing language
