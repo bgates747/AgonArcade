@@ -132,3 +132,30 @@ source identities, raw byte results, pixels, host tests and cost reports. The
 runtime guard covers this arithmetic kernel's denominator; full frame-state
 admission, dynamic asset/table indexing, metadata/memory balance and reset/reload
 are still R19-05/11. All tests were headless; original worktrees and SD untouched.
+
+## R19-05 — Resident lookup/lifecycle checkpoint, still unchecked, 2026-09-12
+
+Golem implementation 8e089e3 and documentation correction
+64e354697caf955a853397b745ef8b737b78ab68 add source-relative Asset/Table imports,
+exact-size/range/ID validation, guarded resident record selection and explicit
+owned cleanup. The existing C++ compiler patches a private copy instruction's
+source ID after checking the index; it never executes data assets as commands.
+Host ordinary/hosted/import sanitizer and frozen design checks pass.
+
+The headless stock `probe_lookup.py initial` run passes 72 selections, nine
+mode-reset/bootstrap reloads and all-256-byte diagnostic readbacks, and three
+owned cleanup cycles. Four resident pairs produce 63/80/-24/62 through VDP matrix
+arithmetic. Indices 4/65534/65535 leave prior record/product intact and status 0.
+All owned buffers become unreadable after cleanup; unrelated canary 55555 survives
+reload and cleanup. Native program SHA256
+bae8c52ecc9bee1b4a5fbfc32de4d9267e7bdd00793e47a9ec6d8cb1c232c91e:
+739 bootstrap bytes, 481 payload bytes, 17 IDs, 102 cleanup bytes.
+
+Two tagged GP nibbles make arbitrary byte readback independent of expected
+answers, including 0xFF. This diagnostic still proves parser/buffer progress,
+not raster completion. A missing-copy tag is qualified against every tested
+owned first byte before clear. Neither those observations nor the static ledger
+measure allocator/metadata balance. Complete signed Rally admission, malformed/
+incomplete transport, sequence policy and live resource evidence remain open;
+R19-05's checkbox is deliberately unchanged. All testing uses normal CPU and
+canonical headless wrappers. No original/upstream changes, alerts, pushes or SD.

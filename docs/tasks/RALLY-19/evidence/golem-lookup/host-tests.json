@@ -1,0 +1,63 @@
+{
+  "existing": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_existing.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_existing"
+    ],
+    "stdout": "Existing language: print escapes/case, little-endian uint16, addition, loop buffer comparison, ten rejection cases pass.\n"
+  },
+  "hosted": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_hosted.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_hosted"
+    ],
+    "stdout": "Hosted compiler: stock byte goldens, typed load, forward calls, finite repeat, signed-store/PLOT lowering and 26 negative cases pass.\n"
+  },
+  "imports": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O1",
+      "-fsanitize=address,undefined",
+      "/home/smith/Agon/mystuff/golem-rally19/tests/test_imports.cpp",
+      "-o",
+      "/home/smith/Agon/mystuff/golem-rally19/build/test_imports"
+    ],
+    "stdout": "Resident imports: exact sizes, source-relative assets, typed records, ID collisions, guarded patch lowering and 13 negatives pass.\n"
+  },
+  "design_cases": {
+    "accepted": 3,
+    "rejected": 12,
+    "failure_preserves_output": true
+  },
+  "source_hashes": {
+    "src/golemc.cpp": "0156bb00e4d4f3f123e7fb012805bd1f85756cbca5849bd1024fdef8db52cdb5",
+    "src/hosted.hpp": "6d57cac67d50e39830dd0dbc63445393979e2fc792426a6a1405164262e9185f",
+    "tests/test_existing.cpp": "e1a8efdb74b7d78ed886a8606529fdeaa84969d37a0d23ce36caf1756ab5c1d5",
+    "tests/test_hosted.cpp": "1b6392a814598c4abc9fde84913cc912591349202c8dad2e8e02aece575311d6",
+    "tests/test_imports.cpp": "2a3c8647f74ec44f8cc95c7b3d779cf1d0c42ea3b770c2e9c99780c193cda9e5",
+    "tests/run_hosted.py": "1bfb765d21bc0804e05551e052f6fcbf670f6cc72e0cfd556f5388d194f190ab"
+  }
+}
