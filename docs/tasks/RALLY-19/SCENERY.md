@@ -325,3 +325,61 @@ Reproduction uses fresh names, from the execution root:
 
 The accepted game and its frozen images remain untouched. History/scenery
 integration and visual comparison are next; R19-09 is still unchecked.
+
+## Numeric retained-page history construction
+
+build_scenery_history.py extends the qualified scene/heading kernel. New buffer
+1740 stores two offsets/valid bits, logical slot, old page state and computed
+delta/repaint/clip/movement/bitmap placement diagnostics.1741 holds four checked
+narrowing flags;1742 contains257/767/512 comparison constants. Programs3020..3029
+use the existing vpM scalar matrices after heading evaluation. The numeric proof
+advances a logical page per admitted call; actual swap and scenery-first ordering
+are deliberately not yet claimed.
+
+Compute raw=offset-old+1536 (513..2559), q=floor(raw/1024), r=raw-q*1024, delta=r-512.
+All these integer/power-of-two operations are exactly representable. Checked
+narrowing validates r0..1023 before deriving the signed delta. Invalid prior page,
+r<257 or r>767 selects a full repaint with delta0. Otherwise positive/negative
+delta selects the appropriate exposed strip, and zero delta leaves repaint false.
+Checked output fields keep viewport endpoints0..319 and movement0..255. Original
+page offsets/validity and alternating slot behavior follow SceneryHistory.
+
+An exhaustive sanitized host proof checks4,194,304 combinations: every old/new
+1024-unit bearing, both pages and both validity states, against the unchanged
+accepted SceneryHistory. Both frozen tracks have reachable positions for all1024
+bearings; the proof records those positions for boundary-focused native fixtures.
+
+The initial source forgot explicit unsigned-to-signed widening and was rejected.
+After widening it exceeded the1024 buffer cap before native execution; both
+failed sources/logs remain under evidence/golem-scenery-history. Golem's subsequent
+opt-in immutable scalar operand pooling is qualified by672 literal records and
+672 conversion regressions plus the full host suite. Default/word-only conversion
+bootstrap bytes remain unchanged. With pooling the full numeric history kernels
+compile at821/838 IDs,77714/198860 resident bytes and89664/211048 bootstrap bytes.
+
+The first two native oval history records match the accepted reference exactly.
+The complete both-track run now combines existing vehicle poses with both-page
+updates around delta -512,-256,-255,-1,0,1,255,256,511 at several wrap bearings.
+Scenery images, real buffer-swap association, rejection behavior and interactive
+frontend integration remain open; this numeric harness is not a completed game.
+
+The complete numeric history run passed all444 native162-byte records:213 oval
+and231 Fuji. Every admitted header, both stored page offsets/valid flags, logical
+slot, intermediate integer and final repaint/strip/movement field agrees with
+the accepted reference. Evidence/qualification is in golem-scenery-history.
+Golem implementation a997437e56829e6297b002e5e7a1c5e4c63f1c46 includes the qualified
+literal pooling. No checkbox is completed by this partial integration result.
+
+Fresh native reproduction:
+
+```sh
+.venv/bin/python docs/tasks/RALLY-19/probe_scenery_history.py NEW-oval --track oval
+.venv/bin/python docs/tasks/RALLY-19/probe_scenery_history.py NEW-fuji --track fuji
+```
+
+The next scene builder moves road_prepareProjection before heading/history,
+draws the original panorama using qualified viewport/scroll primitives, then
+draws the full road and vehicles. It removes the redundant preparation from
+road_fullRoad, retaining the prepared ordinary-field coefficients across calls.
+The host must perform exactly one swap per accepted scene call; subsequent
+image tests must qualify the logical slot against actual double-buffer pages.

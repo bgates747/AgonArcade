@@ -1,0 +1,175 @@
+scalar_word_scratch shared_nonreentrant_expansion
+field signedInput 1000:0 f32 -8388607 8388607
+field positiveInput 1000:4 f32 0 16777215
+field floored 1001:0 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+field truncated 1001:4 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+field rounded 1001:8 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+field positive 1001:12 s32 0 16777215
+field unsignedWord 1001:16 u16 0 65535
+field signedWord 1001:18 s16 -32768 32767
+field count 1001:20 u16 0 65535
+field sentinel 1001:22 u16 65535 65535
+field preserved 1001:24 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+field literalPositiveZero 1001:28 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+field literalNegativeZero 1001:32 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+field literalBefore 1001:36 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+field literalAfter 1001:40 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+field valueField 1100:0 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+field resultField 1101:0 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+scratch 2 4
+copy 2002 1001:28 1100:0 4
+scratch 3 4
+copy 2002 1001:32 1100:0 4
+scratch 4 4
+copy 2002 1001:36 1100:0 4
+scratch 5 4
+scratch 6 1
+copy 2002 5:0 1100:0 4
+copy 2002 6:0 1100:3 1
+scratch 7 36
+scratch 8 4
+scratch 9 4
+scratch 10 4
+scratch 11 8
+scratch 12 8
+copy 2002 1001:8 1101:0 4
+scratch 13 36
+scratch 14 4
+scratch 15 8
+scratch 16 8
+copy 2001 1001:12 16:0 4
+scratch 17 36
+scratch 18 4
+scratch 19 4
+scratch 20 4
+copy 2001 1001:16 19:0 2
+scratch 21 4
+scratch 22 4
+scratch 23 4
+copy 2001 1001:18 19:0 2
+scratch 24 3
+scratch 25 2
+scratch 26 0
+scratch 27 4
+scratch 28 1
+copy 26 27:0 1100:0 4
+copy 26 28:0 1100:3 1
+scratch 29 36
+scratch 30 4
+scratch 31 8
+scratch 32 8
+scratch 33 2
+scratch 34 2
+scratch 35 2
+scratch 36 0
+scratch 37 0
+scratch 38 0
+copy 37 34:0 27:0 1
+copy 37 35:0 1101:0 1
+copy 37 34:0 27:1 1
+copy 37 35:0 1101:1 1
+copy 37 34:0 27:2 1
+copy 37 35:0 1101:2 1
+copy 37 34:0 27:3 1
+copy 37 35:0 1101:3 1
+scratch 39 2
+copy 26 34:0 28:0 1
+scratch 40 2
+mat_floor 26 source 1100 result 1101 negative_fraction_correction
+copy 26 1001:0 1101:0 4
+copy 26 1001:24 1100:0 4
+scratch 41 4
+scratch 42 1
+copy 26 41:0 1100:0 4
+copy 26 42:0 1100:3 1
+scratch 43 36
+scratch 44 4
+scratch 45 8
+scratch 46 8
+copy 26 1001:4 1101:0 4
+scratch 47 4
+copy 26 1001:40 1100:0 4
+scratch 48 4
+copy 26 1001:32 1100:0 4
+scratch 49 4
+copy 26 1001:28 1100:0 4
+scratch 50 3
+copy 26 50:0 1001:20 2
+copy 26 1001:20 50:0 2
+symbol expected 1003 2 0
+symbol inner 2001 234 2
+symbol input 1000 8 0
+symbol leaf 2002 254 2
+symbol output 1001 80 0
+symbol proof 1102 4 0
+symbol result 1101 4 1
+symbol status 1002 10 0
+symbol submit 2000 20 2
+symbol value 1100 4 1
+bootstrap_bytes 2574
+resident_payload_bytes 1728
+owned_ids 59
+asset_payload_bytes 0
+program_payload_bytes 1267
+scratch_payload_bytes 461
+resident_plus_bootstrap_payload_bytes 4302
+owned 2
+owned 3
+owned 4
+owned 5
+owned 6
+owned 7
+owned 8
+owned 9
+owned 10
+owned 11
+owned 12
+owned 13
+owned 14
+owned 15
+owned 16
+owned 17
+owned 18
+owned 19
+owned 20
+owned 21
+owned 22
+owned 23
+owned 24
+owned 25
+owned 26
+owned 27
+owned 28
+owned 29
+owned 30
+owned 31
+owned 32
+owned 33
+owned 34
+owned 35
+owned 36
+owned 37
+owned 38
+owned 39
+owned 40
+owned 41
+owned 42
+owned 43
+owned 44
+owned 45
+owned 46
+owned 47
+owned 48
+owned 49
+owned 50
+owned 1000
+owned 1001
+owned 1002
+owned 1003
+owned 1100
+owned 1101
+owned 1102
+owned 2000
+owned 2001
+owned 2002
+cleanup_bytes 354

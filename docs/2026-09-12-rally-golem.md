@@ -65,3 +65,17 @@ unclipped intermediate smoke images, and a stock native crash for an unsupported
 255-row scroll inside a60-row region. Scroll amount must fit its viewport axis;
 the valid255-horizontal/320-wide Rally case passes. No firmware changes or timing
 claims. R19-09 remains unchecked pending retained history/scenery/frontend work.
+
+R19-09 numeric retained-page checkpoint: all444 complete native records pass
+(213 oval/231 Fuji), matching the accepted two-page offsets/validity, alternating
+logical slot, wrapped delta, repaint strip and scroll amount. Exhaustive host
+proof covers4,194,304 combinations of old/new bearing, validity and page. This
+does not qualify actual buffer swaps or scenery images yet.
+
+The initial history source omitted explicit widening, then the corrected source
+exceeded the1024 ID cap. Both failures are retained. Golem a997437 qualifies
+immutable binary32 operand pooling inside opt-in SharedScalarScratch:672 native
+literal records,672 existing conversion regressions and the full host suite pass;
+default/word-only bootstrap bytes remain unchanged. Combined numeric history now
+fits821/838 IDs. R19-09 remains open for drawing, real page association and the
+accepted interactive frontend, followed by frozen timing and stability criteria.

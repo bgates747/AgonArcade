@@ -1,0 +1,28 @@
+{
+  "scope": "Immutable binary32 literal pooling under SharedScalarScratch only",
+  "pass": true,
+  "runs": [
+    {
+      "variant": "isolated",
+      "cases": 224,
+      "pass": true
+    },
+    {
+      "variant": "word",
+      "cases": 224,
+      "pass": true
+    },
+    {
+      "variant": "scalar",
+      "cases": 224,
+      "pass": true
+    }
+  ],
+  "default_word_bootstrap_unchanged": {
+    "isolated": true,
+    "word": true
+  },
+  "additional_conversion_regression": "golem-shared-scalar/literal-pool-*;672 records",
+  "host_suite": "host-tests.json",
+  "remaining": "Native combined scene/history and full-scene tests remain necessary."
+}

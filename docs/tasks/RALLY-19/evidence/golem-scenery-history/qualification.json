@@ -1,0 +1,33 @@
+{
+  "scope": "Numeric retained-page history only; logical page advance, not actual swap/image qualification",
+  "pass": true,
+  "cases": 444,
+  "runs": [
+    {
+      "track": "oval",
+      "cases": 213,
+      "pass": true,
+      "ledger": {
+        "owned_ids": 821,
+        "resident_payload_bytes": 77714,
+        "bootstrap_bytes": 89664
+      },
+      "result_sha256": "3c41f54a613822842f95f405551703662584e6e61120708addb7ee44e734adec",
+      "readback_sha256": "00bd708a1ed8c950f72521dcb4f3e60a46dcb2d51ba615944200f3641e890763"
+    },
+    {
+      "track": "fuji",
+      "cases": 231,
+      "pass": true,
+      "ledger": {
+        "owned_ids": 838,
+        "resident_payload_bytes": 198860,
+        "bootstrap_bytes": 211048
+      },
+      "result_sha256": "bf6a2254fce71bc02a8b05481955bb9f4937399f76af19d28198c1585595dbba",
+      "readback_sha256": "d9d2b07323b4ef8c0ab65d6b3654a32684c9ea886e0bcf3eb409aa555ad27eb3"
+    }
+  ],
+  "compiler_commit": "a997437e56829e6297b002e5e7a1c5e4c63f1c46",
+  "remaining": "Scenery draw/real page association, rejection/reset, complete frontend, performance and stability."
+}
