@@ -1,0 +1,9 @@
+wrote 84564 bytes to /home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/vehicle-visual/raw-trace-oval/candidate/program.bin
+make: Entering directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/vehicle-visual/raw-trace-oval/candidate'
+[compiling src/main.cpp]
+[1msrc/main.cpp:108:25: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'memcpy'[0m
+            float pixel;memcpy(&pixel,pixelBytes,4);
+[0;1;32m                        ^
+[0m1 error generated.
+make: *** [/home/smith/Agon/agondev/release/config/makefile.inc:105: obj/main.o] Error 1
+make: Leaving directory '/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/vehicle-visual/raw-trace-oval/candidate'

@@ -1,0 +1,9 @@
+initialized actions=7
+ready host_present=220
+capture frame=30 host_present=249 width=640 height=480
+key frame=90 name=right down=1 host_present=309
+key frame=95 name=right down=0 host_present=314
+capture frame=210 host_present=429 width=640 height=480
+key frame=230 name=escape down=1 host_present=449
+key frame=235 name=escape down=0 host_present=454
+quit frame=250 host_present=469

@@ -58,11 +58,15 @@ This ordered register owns progress across AgonArcade and Golem.
    >=97.56% per-material agreement;420 admission/recovery events pass. Finite
    bands<=32,707/731 owned IDs,100-byte state/update/call/swap. See ROAD.md and
    `docs/tasks/RALLY-19/evidence/golem-road/qualification.json`; Golem9eb9fcc.
-8. [ ] **R19-08 — Move vehicle projection and draw ordering to VDP.** Use player
+8. [x] **R19-08 — Move vehicle projection and draw ordering to VDP.** Use player
    and six competitor track/lateral states to derive visibility, depth ordering,
    screen position, scale and yaw/reflection with existing artwork/liveries.
    Preserve optional perspective OFF and all tyre/hub/helmet colours. Pass per-car
    masks, presence and overlap tests across the frozen poses. Commit scene evidence.
+   Qualified:112 native image pairs,156 numeric fixtures, all five views/both
+   reflections and original liveries. Every vehicle pixel exact; road materials
+   >=98.095%.894/913 IDs,100-byte scene packet. See CARS.md and
+   `docs/tasks/RALLY-19/evidence/golem-cars/qualification.json`; Golem c66d0f.
 9. [ ] **R19-09 — Integrate the complete Golem-driven Rally frontend.** Add scenery
    bearing/retained-buffer handling and HUD/state mapping to the resident scene
    path. Preserve accepted simulation/input/manual/demo/settings and old renderer

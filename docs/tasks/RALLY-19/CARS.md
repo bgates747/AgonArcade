@@ -1,7 +1,9 @@
 # R19-08 accepted vehicle computation précis
 
-Reference and implementation progress for R19-08, which remains open in root
-TODO; this is not a separate task list. Authoritative oracle sources are
+R19-08 is qualified:112 native image pairs and156 numeric fixtures pass, with
+pixel-exact vehicles. See evidence/golem-cars/qualification.json and root TODO.
+Earlier checkpoint sections retain their historical status; this is not a
+separate task list. Authoritative oracle sources are
 accepted949f618's `scene.hpp`, `traffic.hpp`, `vehicle.hpp`, `road.hpp` and
 `src/main.cpp`, preserved under `.work/oracle`. Optional perspective is OFF in
 the frozen target; do not substitute perspective-aware yaw.
@@ -229,3 +231,95 @@ All later frontend/performance/stability criteria remain open. Use fresh names:
 .venv/bin/python docs/tasks/RALLY-19/probe_vehicle_projection.py shared-initial-oval
 .venv/bin/python docs/tasks/RALLY-19/probe_vehicle_projection.py shared-initial-fuji --track fuji
 ```
+
+## Bitmap integration and native image harness
+
+Golem7065d0f adds typed DrawBitmap with proved finite affine transforms, signed
+coordinates, external bitmap/owned-ID collision checks and automatic matrix
+reset65535. Its24 native primitive images match independently issued stock
+commands exactly. Host sanitizer/golden/negative tests pass. See
+evidence/golem-bitmap/qualification.json and the compiler design document.
+
+`build_vehicle_draw.py` extends the numeric projection source. It draws the six
+already sorted slots from far to near, skips invisible slots, and then draws the
+player. Each draw reconstructs a typed affine matrix from the computed Q8 scale
+and reflection/translation. Reusing matrix1894 is safe because matrix operations
+replace its storage, invalidating the cached inverse before the next draw.
+Player reflection remains x'=101-x with the original50/51 ground anchors.
+
+New storage is1721 selected16-byte projected car,1722 index/conversion work,
+1723 separate lookup status, and1724 a132-byte unrounded road-pixel trace.
+Matrices1894..1897 support draw programs2960..2965. No per-frame car geometry
+arrives from eZ80. The generator keeps the original80-byte active state and
+admission gate, with100 scene UART bytes including update/call/swap. Diagnostic
+readbacks are separate and are not a production or timing protocol.
+
+`vehicle_loader.cpp` bootstraps exactly the accepted five64x48 CarPixels sources
+with the original102x77 nearest enlargement, then derives the other six liveries
+using stock command72 and the accepted carColour mapping. Original PNG/packed
+assets are unchanged. The native oracle variant directly evaluates accepted
+LookupRoad/prepareScene(false), draws the same original assets and records its
+own scene CSV. The candidate variant submits raw states and records its own VDP
+outputs. It never substitutes oracle geometry for a candidate mask.
+
+`visual_vehicles.py` first checks each fresh direct-command oracle foreground
+against the original frozen native capture, where one exists. It then compares
+native candidate pixels using unchanged scene_masks.py/visual_metric.py. Both
+variants derive their own masks; background is deliberately fixed/excluded for
+this milestone. Per-car RGB checks retain original identity and far-to-near
+occlusion, rather than measuring one aggregate vehicle rectangle. Scenery and
+the actual interactive frontend remain R19-09.
+
+The first two vehicle scenes had exact car pixels, but oval-01 failed the
+shoulder metric at94.10%. Trace1600 stores rounded pixel centres, while the
+existing scene CSV/mask interface expects unrounded Q8 centres. This mislabeled
+some identical red kerb pixels as shoulder. The new1724 trace preserves the
+evaluator's original pixel float at every road boundary; the loader converts
+that diagnostic toQ8 for CSV. Corrected images remain byte-for-byte unchanged
+in the two-case regression, and Q8 diagnostics match the oracle exactly. The
+metric was not altered. Initial failed images/report and the exact-image
+regression are preserved in initial-oval and raw-trace-include-oval. The
+intervening raw-trace-oval run stopped at a missing C++ string.h include and has
+no candidate images. An earlier LoadElement compile rejection correctly required
+moving index/status to separate buffers; that failure is also retained.
+
+The rounded1600 trace remains available for raster-boundary checks. Its final
+paint word is unused because the terminal endpoint has no following band; the
+oracle prints0 while that trace may retain the previous band's value. Compare
+material words only on actual bands, as in the qualified R19-07 harness.
+
+Final qualification is audited by qualify_vehicles.py. The image workload is
+66 frozen poses, four supplemental depth/tie poses, and42 supplemental steering
+poses filling all player view/reflection combinations on both tracks. Each run
+uses fresh canonical profiles, two rendered pages per pose, native image capture
+and explicit headless exit. All proof files carry source/runtime identities;
+this is visual/numeric evidence, not a full-scene performance or hardware claim.
+
+```sh
+.venv/bin/python docs/tasks/RALLY-19/visual_vehicles.py complete-oval --limit 26
+.venv/bin/python docs/tasks/RALLY-19/visual_vehicles.py complete-fuji-a --track fuji --limit 22
+.venv/bin/python docs/tasks/RALLY-19/visual_vehicles.py complete-fuji-b --track fuji --offset 22 --limit 22
+.venv/bin/python docs/tasks/RALLY-19/visual_vehicles.py player-views-oval --offset 37 --limit 21
+.venv/bin/python docs/tasks/RALLY-19/visual_vehicles.py player-views-fuji --track fuji --offset 55 --limit 21
+.venv/bin/python docs/tasks/RALLY-19/qualify_vehicles.py
+```
+
+Names shown identify retained evidence; use fresh names and an explicit new audit
+run list when reproducing, rather than overwriting it. Root TODO remains the
+authoritative completion register.
+
+The final audit passes all112 image pairs, covering66 frozen poses and46 extras.
+All ten logical player view/reflection combinations are visibly exercised; traffic
+also covers all five views with either reflection, and all six opponent liveries.
+Every vehicle's minimum exact-pixel agreement is100%. Road material agreement is
+at least98.095%; original Q8 centres match exactly. Original PNG/packed assets
+reproduce all five accepted CarPixels arrays byte for byte. Source identities,
+independent native masks, image hashes, calibration and preserved failures are
+checked by the audit. Golem implementation is7065d0f; its completion documentation
+commit isc66d0f88490127753519f70ec4d6a66a16b3acfc.
+
+Traced renderer resources are894/913 owned IDs,71722/192876 resident payload
+bytes and84564/205984 bootstrap bytes (oval/Fuji). These meet the frozen ceilings;
+external artwork, cached inverse chunks and actual heap usage are separate.
+R19-09 continues with SCENERY.md and the accepted interactive frontend. R19-10
+performance, R19-11 stability/review and R19-12 delivery remain open.

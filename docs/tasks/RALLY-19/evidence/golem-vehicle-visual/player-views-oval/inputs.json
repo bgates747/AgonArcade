@@ -1,0 +1,1065 @@
+{
+  "scope": "Native admitted road and cars, with independent geometry masks per renderer.\n\nUse the frozen per-object RGB metric. Background/scenery is deliberately fixed\nand excluded here; R19-09 owns that region. Fresh direct-command oracle car/road\nimages must first agree with the original frozen native captures where available.\n",
+  "track": "oval",
+  "cases": [
+    {
+      "name": "oval-steering--10",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": -10,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "0f2bd82cb220067dbc1deef30fef200ab89c70f1803ee4c8f654e493ed676d79"
+    },
+    {
+      "name": "oval-steering--9",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": -9,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "9fb7cdd89485a83c39d39c7c5a206087b0e01742b090a7eb0930c311ced24266"
+    },
+    {
+      "name": "oval-steering--8",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 1,
+        "steering": -8,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "5f3426c2b5465e306a4b4c0ad05fe0e88050453b5991e875c5d3d9123807edbd"
+    },
+    {
+      "name": "oval-steering--7",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 38400,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "ffd27be19abff8dcc957ad379148954bd0b32acb735b7489d389453e3b08a1eb"
+    },
+    {
+      "name": "oval-steering--6",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": -38400,
+        "steering": -6,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "4b26b4b3ef9cc28aa8938878bd3096e1f41560fe21989532adbbc1e63b90552e"
+    },
+    {
+      "name": "oval-steering--5",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": -5,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "09634796cb594f24a3f38c82472f869daff474567d90a246f83a7da964a3b759"
+    },
+    {
+      "name": "oval-steering--4",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": -4,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "ec632e619fedbad4dc320a0cade45f3a617f0c01e74dd155c5cb62aef9223fa4"
+    },
+    {
+      "name": "oval-steering--3",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 1,
+        "steering": -3,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "8375f3062cf37599453837cf467118d526ad8212ca8a61761c79a76105256595"
+    },
+    {
+      "name": "oval-steering--2",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 38400,
+        "steering": -2,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "21c1284b561c318294e5bc250ad1b1e2b47d732f5f0bfd185f43dc36f330e9c3"
+    },
+    {
+      "name": "oval-steering--1",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": -38400,
+        "steering": -1,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "6dac7c6fe85efac447a13033f9dbd596eeb23fbba13b62fac9b3e46b3fdd0ca9"
+    },
+    {
+      "name": "oval-steering-0",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "d0d1d1ce39acab1a4d26ace5668b1e7a29f37c601e8c8e3258d45b21e1925c24"
+    },
+    {
+      "name": "oval-steering-1",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": 1,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "26e64c8f2b132efe165e44723f15072fbabddcd04c48059c3db842839168522e"
+    },
+    {
+      "name": "oval-steering-2",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 1,
+        "steering": 2,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "d6f831fe5ff7ee60d270e89cb4709ffb96c95abde148e8cbfcebe081a59d7151"
+    },
+    {
+      "name": "oval-steering-3",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 38400,
+        "steering": 3,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "80fd81ea9c417ed43a82a342375523a65372cb7a2de7de7aa95a0272a298eeec"
+    },
+    {
+      "name": "oval-steering-4",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": -38400,
+        "steering": 4,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "c287c0304f4ffac5b5b619dcb4290e1354278f70f0ad3676d6d29597410b0321"
+    },
+    {
+      "name": "oval-steering-5",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": 5,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "018826a13bc5c07187da3d366a272c9772afd141312268f5dcc01dd5e124083e"
+    },
+    {
+      "name": "oval-steering-6",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": 6,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "eda8b6989dc4cd98ea0884aa7961eef13b01da0b0e60c805de260197018f7ee1"
+    },
+    {
+      "name": "oval-steering-7",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 1,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "574beb2ec7adaa4d6b04cd78c1f66e38566f38a520e984aca6c6d4980bbbe107"
+    },
+    {
+      "name": "oval-steering-8",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 38400,
+        "steering": 8,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "9a4900078ee74b3ab16dcbb57132b8d18823c665b932cc3c4b25f27b88ad2559"
+    },
+    {
+      "name": "oval-steering-9",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": -38400,
+        "steering": 9,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "b393ccde4036cfac63d0841f8de48e0d1c76d361de1566004275502a5e153e6b"
+    },
+    {
+      "name": "oval-steering-10",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": 10,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "f91f04de6c4b4c573c2e13c90f5474e69859a9227cf0e4e0ce363ea3193f4a59"
+    }
+  ],
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/visual_vehicles.py": "d7f70f08111965c3b8044c40ab7f30bab97ee1d689dd492640553c782efc9572",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/vehicle_loader.cpp": "6b07ef8f3aec9e8b6d0f3cf590c022fd85d91cb60a896d57548b3df70e5ad342",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_masks.py": "d4d15ee695b7d39e653b22a2c19b9a412e81cc697195766c1e36ef603a1a3f58",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/visual_metric.py": "209161b272e8fc58ce68a7db337d2a402a2f2d99f1ac87c828f91b2f9fd7ecd9",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_draw.py": "f35767c1614dc29691ebd243e8c8b0d5413c26ae7086d2c733592a3c74880eee",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_projection.py": "f57211df39a07a8091385f41ed2fd1d887105cdf456ab89861459f89b1e42dca",
+    "/home/smith/Agon/mystuff/golem-rally19/src/hosted.hpp": "f5a8104b3912828df43eea3ccb797b5b6058a80f315d6ca909cc20e8900fa7da",
+    "/home/smith/Agon/mystuff/golem-rally19/examples/native_admission/main.cpp": "0c9d2a08785b712fa833193a0d31e6d548b50c47802d28c0a388b27dc7a3d0d6",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8"
+  }
+}

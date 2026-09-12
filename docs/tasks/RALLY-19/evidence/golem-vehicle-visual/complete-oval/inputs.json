@@ -1,0 +1,1302 @@
+{
+  "scope": "Native admitted road and cars, with independent geometry masks per renderer.\n\nUse the frozen per-object RGB metric. Background/scenery is deliberately fixed\nand excluded here; R19-09 owns that region. Fresh direct-command oracle car/road\nimages must first agree with the original frozen native captures where available.\n",
+  "track": "oval",
+  "cases": [
+    {
+      "name": "oval-00",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 0,
+        "phase": 0,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "32a041b406df284aaa877155904128df2115d824c3dafc2f8f6b742067cbefc5"
+    },
+    {
+      "name": "oval-01",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 39210,
+        "phase": 1,
+        "lateral": -8960,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 55210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 64210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 73210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 82210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 91210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 100210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "e3ebac9a6a7968419bc3aae4a9e34867775ed70890374550440b2d3770bad9fd"
+    },
+    {
+      "name": "oval-02",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 72000,
+        "phase": 3999,
+        "lateral": 8960,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 88000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 97000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 106000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 115000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 124000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 133000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "5eea24727500ff92464cb938e80fddc6e240500fde66ce234cc21d0f33109145"
+    },
+    {
+      "name": "oval-03",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 111210,
+        "phase": 4000,
+        "lateral": -17920,
+        "steering": -14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 127210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 136210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 145210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 154210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 163210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 172210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "baf73c48aba450328b4aa85b0f87cd95d9dfad00426f6c6112f437b4b259902e"
+    },
+    {
+      "name": "oval-04",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 144000,
+        "phase": 4001,
+        "lateral": 17920,
+        "steering": 14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 160000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 169000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 178000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 187000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 196000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 205000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "2b296afdc928a1bc35a08358764c84d6cedfe8e3ce9be9c48f8ec396bab43177"
+    },
+    {
+      "name": "oval-05",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 183210,
+        "phase": 7999,
+        "lateral": -24320,
+        "steering": -21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 199210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 208210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 217210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 226210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 235210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 244210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "7afff3109c628d71ac7c719673a2c41771777ae09e40b971e1c02d5a90b8b0b8"
+    },
+    {
+      "name": "oval-06",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 216000,
+        "phase": 0,
+        "lateral": 24320,
+        "steering": 21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 232000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 241000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 250000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 259000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 268000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 277000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "fe7de9c187092816fb38fd164b203d879b5d4e364f3c158fdecfa3a2cee0f01b"
+    },
+    {
+      "name": "oval-07",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 255210,
+        "phase": 1,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 271210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 280210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 289210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 298210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 307210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 316210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "76611f6ecf64a2c6e65e621ad15e290d8cedc7318b43f7fdc616d9b798e7d104"
+    },
+    {
+      "name": "oval-08",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary"
+      ],
+      "player": {
+        "position": 288000,
+        "phase": 3999,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 304000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 313000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 322000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 331000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 340000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 349000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "1689530d75e9666befd6b9c03e460686f802c40f12f8969f7d53f1dab1ef3b6c"
+    },
+    {
+      "name": "oval-09",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 327210,
+        "phase": 4000,
+        "lateral": -38400,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 343210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 352210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 361210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 370210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 379210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 388210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "3fd9381bb3fe917ac209a3102c2988631c725fa489473dcf1aab9a046809bab9"
+    },
+    {
+      "name": "oval-10",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 360000,
+        "phase": 4001,
+        "lateral": 38400,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 376000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 385000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 394000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 403000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 412000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 421000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "b361bd7967e71321cfe5b1a1bf54de143afedd68a4e2c143f9f711033f188d39"
+    },
+    {
+      "name": "oval-11",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 399210,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": -14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 415210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 424210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 433210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 442210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 451210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 460210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "3003a8cab8ea9dbc11e1f1e8cca8d57cc63839562eee545285d3e9ab7497d84e"
+    },
+    {
+      "name": "oval-12",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 432000,
+        "phase": 0,
+        "lateral": 0,
+        "steering": 14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 448000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 457000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 466000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 475000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 484000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 493000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "5e68dbd91bb3213f393baee3c965bb0a77cb2140fd91f8115dedad3bc2aafaba"
+    },
+    {
+      "name": "oval-13",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 471210,
+        "phase": 1,
+        "lateral": -8960,
+        "steering": -21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 487210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 496210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 505210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 514210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 523210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 532210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "d12052d306a4722bc203c3e5e2d1f9ed2075b777c44d4be39ae0b3940f9e90c9"
+    },
+    {
+      "name": "oval-14",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 504000,
+        "phase": 3999,
+        "lateral": 8960,
+        "steering": 21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 520000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 529000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 538000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 547000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 556000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 565000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "979bc75545bba91c07e9d9a723c1b7b55818141e022aa5ed4e125eb011c3a94a"
+    },
+    {
+      "name": "oval-15",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional"
+      ],
+      "player": {
+        "position": 543210,
+        "phase": 4000,
+        "lateral": -17920,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 559210,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 568210,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 1210,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 10210,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 19210,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 28210,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "0b87c3fc4773a9cabe6513e9de553c1fa697d5311125ad9b347fa97d5f66c015"
+    },
+    {
+      "name": "oval-16",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "lap-seam"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 4001,
+        "lateral": 17920,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 15999,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 24999,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 33999,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 42999,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 51999,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 60999,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "8443fea8ced9caead7d60f2b86df01d75755d6da45663a2366529411a89876be"
+    },
+    {
+      "name": "oval-17",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary",
+        "lap-seam",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 0,
+        "phase": 7999,
+        "lateral": -24320,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "f6f41c5fa52f3730d6a0ef3c191ea5c4c9d614bd9ae1c114f66fddd946962dd6"
+    },
+    {
+      "name": "oval-18",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "interval-seam",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 6399,
+        "phase": 0,
+        "lateral": 24320,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 22399,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 31399,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 40399,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 49399,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 58399,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 67399,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "4df3f9a4075f1b94bdbff9b78cb26cfb20230fce475a17f1401dea1cb750f825"
+    },
+    {
+      "name": "oval-19",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary",
+        "interval-seam"
+      ],
+      "player": {
+        "position": 6400,
+        "phase": 1,
+        "lateral": 0,
+        "steering": -14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 22400,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 31400,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 40400,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 49400,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 58400,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 67400,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "398d7146af8b7605c2a967e7b012aed0c50f3a971609c42da828ded91c58502d"
+    },
+    {
+      "name": "oval-20",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "interval-seam"
+      ],
+      "player": {
+        "position": 569599,
+        "phase": 3999,
+        "lateral": 0,
+        "steering": 14,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 9599,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 18599,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 27599,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 36599,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 45599,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 54599,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "6ecf5ac94867a88662eee80f91bfce71c721728b1a52f5fdb0f6173505df0586"
+    },
+    {
+      "name": "oval-21",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "sample-boundary",
+        "interval-seam",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 569600,
+        "phase": 4000,
+        "lateral": -38400,
+        "steering": -21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 9600,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 18600,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 27600,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 36600,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 45600,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 54600,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "be56d086812cd79fdfc57ae65dcb857596cb10f4c092bcfe85573abca560f4b2"
+    },
+    {
+      "name": "oval-22",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "overlap",
+        "grass-extreme"
+      ],
+      "player": {
+        "position": 145234,
+        "phase": 4001,
+        "lateral": 38400,
+        "steering": 21,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 165234,
+          "lane": 0
+        },
+        {
+          "id": 1,
+          "position": 166434,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 167634,
+          "lane": 0
+        },
+        {
+          "id": 3,
+          "position": 188234,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 197234,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 206234,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "c3b334588dbb02a165ddd0ae8b9da29bf41960080320c01fd49194875058fac8"
+    },
+    {
+      "name": "oval-23",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "fractional",
+        "overlap"
+      ],
+      "player": {
+        "position": 437678,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 457678,
+          "lane": 0
+        },
+        {
+          "id": 1,
+          "position": 458878,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 460078,
+          "lane": 0
+        },
+        {
+          "id": 3,
+          "position": 480678,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 489678,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 498678,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "3d309b0fbb62b077fbf065dd80b5d6dce7785cb03dda76e0f77272ea1f4d5911"
+    },
+    {
+      "name": "oval-depth-edges",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "depth-edges",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 6398,
+          "lane": 0
+        },
+        {
+          "id": 1,
+          "position": 6399,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 6498,
+          "lane": 0
+        },
+        {
+          "id": 3,
+          "position": 110098,
+          "lane": 0
+        },
+        {
+          "id": 4,
+          "position": 110099,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 575998,
+          "lane": 0
+        }
+      ],
+      "input_sha256": "919682773904cd7b4a4e1377427f6b6584d3b0d9a5ca86139a4e87ccdb1a9738"
+    },
+    {
+      "name": "oval-nonstable-ties",
+      "track": "oval",
+      "length": 5760,
+      "tags": [
+        "nonstable-ties",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 575999,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 19999,
+          "lane": 0
+        },
+        {
+          "id": 1,
+          "position": 19999,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 39999,
+          "lane": 0
+        },
+        {
+          "id": 3,
+          "position": 29999,
+          "lane": 0
+        },
+        {
+          "id": 4,
+          "position": 19999,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 49999,
+          "lane": 0
+        }
+      ],
+      "input_sha256": "9dbfc98e635b20607fb3c8a9d502064463ac0d56626519d1368710f569cf953b"
+    }
+  ],
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/visual_vehicles.py": "d7f70f08111965c3b8044c40ab7f30bab97ee1d689dd492640553c782efc9572",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/vehicle_loader.cpp": "6b07ef8f3aec9e8b6d0f3cf590c022fd85d91cb60a896d57548b3df70e5ad342",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_masks.py": "d4d15ee695b7d39e653b22a2c19b9a412e81cc697195766c1e36ef603a1a3f58",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/visual_metric.py": "209161b272e8fc58ce68a7db337d2a402a2f2d99f1ac87c828f91b2f9fd7ecd9",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_draw.py": "f35767c1614dc29691ebd243e8c8b0d5413c26ae7086d2c733592a3c74880eee",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_projection.py": "f57211df39a07a8091385f41ed2fd1d887105cdf456ab89861459f89b1e42dca",
+    "/home/smith/Agon/mystuff/golem-rally19/src/hosted.hpp": "f5a8104b3912828df43eea3ccb797b5b6058a80f315d6ca909cc20e8900fa7da",
+    "/home/smith/Agon/mystuff/golem-rally19/examples/native_admission/main.cpp": "0c9d2a08785b712fa833193a0d31e6d548b50c47802d28c0a388b27dc7a3d0d6",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8"
+  }
+}

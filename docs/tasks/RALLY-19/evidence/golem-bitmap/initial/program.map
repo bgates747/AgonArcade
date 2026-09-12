@@ -1,0 +1,60 @@
+field bitmap 1000:0 u16 0 1
+field x 1000:2 s16 -20 300
+field y 1000:4 s16 0 220
+field scale 1000:6 q8s16 0.0546875 1
+field mirror 1000:8 u16 0 1
+field one 1001:0 u16 1 1
+field zero 1001:2 u16 0 0
+field plainX 1001:4 s16 180 180
+field plainY 1001:6 s16 100 100
+field translationX 1102:0 f32 -3.4028234663852886e+38 3.4028234663852886e+38
+scratch 2 23
+copy 2001 2:3 1000:0 1
+copy 2001 2:13 1000:2 2
+copy 2001 2:15 1000:4 2
+draw_bitmap 2001 index 1000:0 x 1000:2 y 1000:4 matrix 1100 reset65535 external_range 0 1
+scratch 3 4
+scratch 4 4
+scratch 5 4
+scratch 6 4
+scratch 7 23
+copy 2002 7:3 1000:0 1
+copy 2002 7:13 1000:2 2
+copy 2002 7:15 1000:4 2
+draw_bitmap 2002 index 1000:0 x 1000:2 y 1000:4 matrix 1100 reset65535 external_range 0 1
+scratch 8 23
+copy 2000 8:3 1001:0 1
+copy 2000 8:13 1001:4 2
+copy 2000 8:15 1001:6 2
+draw_bitmap 2000 index 1001:0 x 1001:4 y 1001:6 matrix 65535 reset65535 external_range 1 1
+symbol constants 1001 8 0
+symbol reflected 2002 139 2
+symbol scaled 1101 4 1
+symbol state 1000 10 0
+symbol straight 2001 75 2
+symbol submit 2000 81 2
+symbol transform 1100 36 1
+symbol translation 1102 4 1
+bootstrap_bytes 698
+resident_payload_bytes 442
+owned_ids 15
+asset_payload_bytes 0
+program_payload_bytes 364
+scratch_payload_bytes 78
+resident_plus_bootstrap_payload_bytes 1140
+owned 2
+owned 3
+owned 4
+owned 5
+owned 6
+owned 7
+owned 8
+owned 1000
+owned 1001
+owned 1100
+owned 1101
+owned 1102
+owned 2000
+owned 2001
+owned 2002
+cleanup_bytes 90

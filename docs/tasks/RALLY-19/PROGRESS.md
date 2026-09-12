@@ -232,3 +232,32 @@ not full-scene performance or whole-VDP heap measurement.
 R19-08 remains unchecked: typed bitmap drawing, original artwork/liveries and
 native per-car images/material/occlusion qualification are next. All emulator
 work was headless; no GUI alert, original/upstream edit, push or deployment.
+
+## R19-08 — Complete native vehicle renderer qualified
+
+Golem completion documentation commit c66d0f88490127753519f70ec4d6a66a16b3acfc
+(compiler implementation7065d0f) precedes this milestone. CARS.md documents the
+resident car renderer, original-art bootstrap, typed affine draws and independent
+native image/geometry harness. qualify_vehicles.py passes112 image pairs: all66
+frozen poses, four depth/tie cases and42 steering cases. All player/opponent pixels
+match exactly across every view/reflection and original livery. Fresh native
+oracle foregrounds are checked against the original frozen captures. The156
+numeric fixtures,24 primitive bitmap images and full host sanitizer/golden/
+negative suite pass too. PNG and packed source data exactly match accepted art.
+
+An initial shoulder comparison failed because the scene CSV was given rounded
+centres instead of the expected Q8 centres. A separate VDP trace corrects that
+diagnostic with unchanged rendered pixels; failures and exact-image regression
+are retained. No metric was relaxed. Final road material agreement is at least
+98.095%, original Q8 diagnostics are exact, and each vehicle's exact agreement100%.
+
+The traced admitted renderer owns894/913 IDs, with71722/192876 resident payload
+and84564/205984 bootstrap bytes. Raw state/update/call/swap remains100 UART bytes.
+These are static payload/protocol ledgers, not full-scene timing or live heap
+measurements. Original worktrees remain unchanged, including their pre-existing
+untracked handoff/deploy files. No alert, GUI emulator, push or SD deployment.
+
+R19-09 scenery/frontend is next; SCENERY.md records source-based preparation and
+the important fractional-tangent/signed-floor pitfall. Performance, long stability,
+independent review and final delivery remain R19-10 through R19-12. The overall
+goal is still active.

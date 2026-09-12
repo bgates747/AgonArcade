@@ -1,0 +1,1065 @@
+{
+  "scope": "Native admitted road and cars, with independent geometry masks per renderer.\n\nUse the frozen per-object RGB metric. Background/scenery is deliberately fixed\nand excluded here; R19-09 owns that region. Fresh direct-command oracle car/road\nimages must first agree with the original frozen native captures where available.\n",
+  "track": "fuji",
+  "cases": [
+    {
+      "name": "fuji-steering--10",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": -10,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "9c749f4224943a087a8f75633936780eaa7fad16111d7b3aba1b60d62aa92902"
+    },
+    {
+      "name": "fuji-steering--9",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": -9,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "6e5815191de15da716538b930753a9096353f77c997659d858ac1930ba96ac04"
+    },
+    {
+      "name": "fuji-steering--8",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 1,
+        "steering": -8,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "f6f46ec292b7ee32d7d00c56523413b97366df32990d629991f51931a38c2e48"
+    },
+    {
+      "name": "fuji-steering--7",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 38400,
+        "steering": -7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "32bad47bf280313911c1cf3d923dc29e4f04412d7e39c336f2a7ef2ff7d17a7d"
+    },
+    {
+      "name": "fuji-steering--6",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": -38400,
+        "steering": -6,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "6766d44eb4267d1ff2d48f1a262b22583cf9dea92494799239b8b7470c540f12"
+    },
+    {
+      "name": "fuji-steering--5",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": -5,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "1cd2af49c33131a5b9bd1a86275c5dae97335c066d6002d40e0b7aa43d956bc6"
+    },
+    {
+      "name": "fuji-steering--4",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": -4,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "084460f0131108727332cbad627115dd2b416bad49591c9a29552d75407c2041"
+    },
+    {
+      "name": "fuji-steering--3",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 1,
+        "steering": -3,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "ba9e265ca83cb2bb4bdeec73aae6f8869f97ee97a6d03a5a00807f6d401ae1a1"
+    },
+    {
+      "name": "fuji-steering--2",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 38400,
+        "steering": -2,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "4ba130333f191f65c69848e7740bbec17aa67c323746a739ac93477dbf7bb462"
+    },
+    {
+      "name": "fuji-steering--1",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": -38400,
+        "steering": -1,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "201663c7c42a75043a1795346f4af3d1f3fc5e9eb8244c87b17377dec94053c6"
+    },
+    {
+      "name": "fuji-steering-0",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": 0,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "4ed31413bec33c48e3e5d70e803ff6eef806992fe8bdd223748210eed7617630"
+    },
+    {
+      "name": "fuji-steering-1",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": 1,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "a4656df8091dc91edd6956cd6676b069918c67036cb912b9fcc10b0fb8d2f1e5"
+    },
+    {
+      "name": "fuji-steering-2",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 1,
+        "steering": 2,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "778ded2b355532f3f24f8763f1d3d7082ceccee150ee06546facb22aa12d7a49"
+    },
+    {
+      "name": "fuji-steering-3",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 38400,
+        "steering": 3,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "3cda7f1651d8788560cd1eb48fad737468b9bc8f071a62eef84eac2df4825646"
+    },
+    {
+      "name": "fuji-steering-4",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": -38400,
+        "steering": 4,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "66ec07c399349d960100cc6dcaacfffba50cbe2d6d4f1e69cee11714d514914d"
+    },
+    {
+      "name": "fuji-steering-5",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": 5,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "c59565151900fc59dcac6882800b5e9307292583f1a0dc604d98b27ad9d0339d"
+    },
+    {
+      "name": "fuji-steering-6",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 0,
+        "steering": 6,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "56f4490f6b0f40ed9549cfee67888ed59bad8e5fb36f5447b3d85a34aa58f38a"
+    },
+    {
+      "name": "fuji-steering-7",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 1,
+        "steering": 7,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "68e15eb757fd82770c1991b57557ce77be79db0868fa1be4cb9c304400dd4e23"
+    },
+    {
+      "name": "fuji-steering-8",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": 38400,
+        "steering": 8,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "ee1554cf7575d14f0ace77c81fb345837f468ff5c4f4c35225345d6d49705ff1"
+    },
+    {
+      "name": "fuji-steering-9",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": -38400,
+        "steering": 9,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "2f134748118cfe1d6fb3b22cafa2c4304a98c16412abdb7cac2f4d89cc50aecf"
+    },
+    {
+      "name": "fuji-steering-10",
+      "track": "fuji",
+      "length": 32768,
+      "tags": [
+        "every-steering-tick",
+        "supplemental-host-reference"
+      ],
+      "player": {
+        "position": 3276799,
+        "phase": 7999,
+        "lateral": -1,
+        "steering": 10,
+        "speed": 300
+      },
+      "cars": [
+        {
+          "id": 0,
+          "position": 16000,
+          "lane": -45
+        },
+        {
+          "id": 1,
+          "position": 25000,
+          "lane": 0
+        },
+        {
+          "id": 2,
+          "position": 34000,
+          "lane": 45
+        },
+        {
+          "id": 3,
+          "position": 43000,
+          "lane": -45
+        },
+        {
+          "id": 4,
+          "position": 52000,
+          "lane": 0
+        },
+        {
+          "id": 5,
+          "position": 61000,
+          "lane": 45
+        }
+      ],
+      "input_sha256": "ed08fa24df8ab5b84771123f1c86b6ad752c9e6d0b1725ffd47784d4853cbde4"
+    }
+  ],
+  "source_hashes": {
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/visual_vehicles.py": "d7f70f08111965c3b8044c40ab7f30bab97ee1d689dd492640553c782efc9572",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/vehicle_loader.cpp": "6b07ef8f3aec9e8b6d0f3cf590c022fd85d91cb60a896d57548b3df70e5ad342",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/scene_masks.py": "d4d15ee695b7d39e653b22a2c19b9a412e81cc697195766c1e36ef603a1a3f58",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/visual_metric.py": "209161b272e8fc58ce68a7db337d2a402a2f2d99f1ac87c828f91b2f9fd7ecd9",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_draw.py": "f35767c1614dc29691ebd243e8c8b0d5413c26ae7086d2c733592a3c74880eee",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/build_vehicle_projection.py": "f57211df39a07a8091385f41ed2fd1d887105cdf456ab89861459f89b1e42dca",
+    "/home/smith/Agon/mystuff/golem-rally19/src/hosted.hpp": "f5a8104b3912828df43eea3ccb797b5b6058a80f315d6ca909cc20e8900fa7da",
+    "/home/smith/Agon/mystuff/golem-rally19/examples/native_admission/main.cpp": "0c9d2a08785b712fa833193a0d31e6d548b50c47802d28c0a388b27dc7a3d0d6",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+    "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/oracle/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8"
+  }
+}
