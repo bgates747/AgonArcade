@@ -1,0 +1,32 @@
+[
+  {
+    "variant": "live",
+    "track": "either",
+    "binary": 139563,
+    "image_and_bss": 192842,
+    "resident_table": 0,
+    "remaining_heap_and_stack": 265910,
+    "reserved_stack": 32768,
+    "remaining_after_stack_reserve": 233142
+  },
+  {
+    "variant": "lookup",
+    "track": "oval",
+    "binary": 142838,
+    "image_and_bss": 196129,
+    "resident_table": 20520,
+    "remaining_heap_and_stack": 242103,
+    "reserved_stack": 32768,
+    "remaining_after_stack_reserve": 209335
+  },
+  {
+    "variant": "lookup",
+    "track": "fuji",
+    "binary": 142838,
+    "image_and_bss": 196129,
+    "resident_table": 116736,
+    "remaining_heap_and_stack": 145887,
+    "reserved_stack": 32768,
+    "remaining_after_stack_reserve": 113119
+  }
+]

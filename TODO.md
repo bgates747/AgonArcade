@@ -3,7 +3,7 @@
 This is the authoritative task checklist. Details are in `docs/tasks/<ID>.md`;
 task-specific supporting files belong in `docs/tasks/<ID>/`.
 
-17. [ ] [RALLY-18](docs/tasks/RALLY-18.md): Implement accepted centreline-fixed camera and precomputed road experiment, with separately measured perspective vehicle views; code isolated in task bucket.
+17. [ ] [RALLY-18](docs/tasks/RALLY-18.md): Review isolated centreline-camera/road-lookup candidate; headless validation passed. Lookup computation 67.0/71.4 FPS equivalent (oval/Fuji), commands+UART 37.0/41.2; perspective option measured separately. Review checkpoint requested; paused for discussion, mainline integration and hardware qualification pending; [results](docs/tasks/RALLY-18/results/README.md).
 
 16. [ ] [RALLY-17](docs/tasks/RALLY-17.md): Review isolated benchmarks: computation/state only 19.73/17.51 ms versus 32.10/27.94 ms including command construction/UART (oval/Fuji); accepted game unchanged.
 

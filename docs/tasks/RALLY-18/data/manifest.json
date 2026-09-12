@@ -1,0 +1,36 @@
+{
+  "format_version": 1,
+  "generator_command": [
+    "clang++",
+    "-O3",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I",
+    "/Users/bgates/Agon/mystuff/AgonArcade/rally/include",
+    "-I",
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18",
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/generate_road.cpp",
+    "-o",
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/generate_road"
+  ],
+  "inputs": {
+    "rally/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "rally/include/road.hpp": "ec808d57188dda98198e7a0deea59f485596a3be5a0f37529a2ad554a1d107a2",
+    "docs/tasks/RALLY-18/generate_road.cpp": "2d232e246fc0e8765fdb0e1567b8314ff88637ad208f2fa7905713e0bb9e7dab",
+    "docs/tasks/RALLY-18/generate_road.py": "732877baf50c8ef3e8f41860d981fcbfc6472737b4feb54321a0fae7cca47d7c",
+    "docs/tasks/RALLY-18/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce"
+  },
+  "files": {
+    "fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "oval.road": {
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+      "bytes": 20584
+    }
+  },
+  "generation_output": "oval: 1710 records, 20520 payload bytes, 20584 disk bytes, track 472e5918, payload 921ad5e4\nfuji: 9728 records, 116736 payload bytes, 116800 disk bytes, track 7d459af5, payload 5288cc4e\n"
+}

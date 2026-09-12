@@ -1,0 +1,27 @@
+{
+  "guest": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/guest-scene.csv",
+  "variant": "live",
+  "track": "fuji",
+  "perspective": false,
+  "snapshot": [
+    16,
+    -35,
+    0
+  ],
+  "host_command": [
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/host_scene",
+    "--variant",
+    "live",
+    "--track",
+    "fuji",
+    "--data",
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/data",
+    "--snapshot",
+    "16,-35,0"
+  ],
+  "exact_match": true,
+  "guest_sha256": "c12e0e7636c115a14d9f73bbe8a35b07386dd402e2223e0ab8c15e6622480860",
+  "host_sha256": "c12e0e7636c115a14d9f73bbe8a35b07386dd402e2223e0ab8c15e6622480860",
+  "bytes": 449,
+  "host_build": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/host_scene-build.json"
+}

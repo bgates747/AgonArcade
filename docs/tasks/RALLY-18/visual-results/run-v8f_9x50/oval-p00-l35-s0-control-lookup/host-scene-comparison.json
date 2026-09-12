@@ -1,0 +1,27 @@
+{
+  "guest": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/guest-scene.csv",
+  "variant": "lookup",
+  "track": "oval",
+  "perspective": false,
+  "snapshot": [
+    0,
+    35,
+    0
+  ],
+  "host_command": [
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/host_scene",
+    "--variant",
+    "lookup",
+    "--track",
+    "oval",
+    "--data",
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/data",
+    "--snapshot",
+    "0,35,0"
+  ],
+  "exact_match": true,
+  "guest_sha256": "7b0e0bd83a8e4ab91591adbd11352663005ed861c7c9e946aef4636090540c77",
+  "host_sha256": "7b0e0bd83a8e4ab91591adbd11352663005ed861c7c9e946aef4636090540c77",
+  "bytes": 418,
+  "host_build": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/host_scene-build.json"
+}

@@ -1,0 +1,150 @@
+{
+  "purpose": "native visual/input evidence; no performance measurements",
+  "profile": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n",
+  "runtime_before": {
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/fab-agon-emulator": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/fab-agon-emulator",
+      "bytes": 2514,
+      "sha256": "35aba309af69c315b3f5f5bc4a1ea5e1e5b1986447fb78cf53edae7edb6d9512"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/fab-agon-emulator.bin": {
+      "target": "/Users/bgates/Agon/fab-agon-emulator/fab-agon-emulator",
+      "bytes": 1647672,
+      "sha256": "cdf9d21e2db2266e4113982e661138074cae54186e062e63759db6341ffb6c86"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/mos_platform.bin": {
+      "target": "/Users/bgates/Agon/fab-agon-emulator/firmware/mos_platform.bin",
+      "bytes": 108490,
+      "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/mos_platform.map": {
+      "target": "/Users/bgates/Agon/fab-agon-emulator/firmware/mos_platform.map",
+      "bytes": 167185,
+      "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/firmware/vdp_platform.so": {
+      "target": "/Users/bgates/Agon/fab-agon-emulator/firmware/vdp_platform.so",
+      "bytes": 3524392,
+      "sha256": "0d3aeb7a6bb55976fbddb3d6d32bf4a5a7269d075245bf6243dc69fb0bdbbf24"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/.mos-release": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/.mos-release",
+      "bytes": 14,
+      "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/.mos-release.sha256": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/.mos-release.sha256",
+      "bytes": 166,
+      "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/sdcard/autoexec.txt": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/sdcard/autoexec.txt",
+      "bytes": 92,
+      "sha256": "49d869a0df407e5d23d2961460e6a104eaa2f6d21ed1988e5ff696d12d24bb0c"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/sdcard/rally/rally.bin": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-m24p2ufd/live/bin/rally.bin",
+      "bytes": 139092,
+      "sha256": "7066fe202aa8117ddecb2c331ff00f00e4ff7c6049752cd2f605f2cdfee2c92f"
+    }
+  },
+  "headless": true,
+  "capture_source_sha256": "b2a5108c673288430034edf87bb49a849bc797ecc3ea8c6e95faee73cea2dd5d",
+  "capture_harness_sha256": "6af745a8ee3e60cb42daa330a5b3e24d2ce19bc6958f78ae3aa510e9b508e7f8",
+  "interposer_sha256": "5558b22ffb292dd04a86442650bde0ddcf80d035019bb148fff87c5a434644c1",
+  "build_command": [
+    "clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-dynamiclib",
+    "-I/Users/bgates/.local/include",
+    "-L/Users/bgates/.local/lib",
+    "-lSDL3",
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual_capture_macos.c",
+    "-o",
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/anchor-centre/visual-capture.dylib"
+  ],
+  "schedule": "capture 10\nkey 20 escape down\nkey 26 escape up\nquit 60\n",
+  "ready_file": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/sdcard/rally/ready.viz",
+  "frame_definition": "host SDL presents, starting at ready-file detection or the first present",
+  "command": [
+    "./fab-agon-emulator",
+    "--renderer",
+    "sw"
+  ],
+  "actual_process_commands": [
+    "86789 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/fab-agon-emulator.bin --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/mos_platform.bin --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/sdcard --renderer sw"
+  ],
+  "pid": 86789,
+  "timed_out": false,
+  "returncode": -6,
+  "wall_seconds_with_startup": 6.309578990039881,
+  "captures": [
+    {
+      "file": "frame-000010.png",
+      "sha256": "a90dba9c2e7bae942041ebb7f6e2d9a2b2516b96674307c3f22765fdc7ac2a99",
+      "size": [
+        640,
+        480
+      ]
+    }
+  ],
+  "guest_reports": [
+    {
+      "source": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/sdcard/rally/exit.viz",
+      "file": "guest-exit.viz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "runtime_after": {
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/fab-agon-emulator": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/fab-agon-emulator",
+      "bytes": 2514,
+      "sha256": "35aba309af69c315b3f5f5bc4a1ea5e1e5b1986447fb78cf53edae7edb6d9512"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/fab-agon-emulator.bin": {
+      "target": "/Users/bgates/Agon/fab-agon-emulator/fab-agon-emulator",
+      "bytes": 1647672,
+      "sha256": "cdf9d21e2db2266e4113982e661138074cae54186e062e63759db6341ffb6c86"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/mos_platform.bin": {
+      "target": "/Users/bgates/Agon/fab-agon-emulator/firmware/mos_platform.bin",
+      "bytes": 108490,
+      "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/mos_platform.map": {
+      "target": "/Users/bgates/Agon/fab-agon-emulator/firmware/mos_platform.map",
+      "bytes": 167185,
+      "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/firmware/vdp_platform.so": {
+      "target": "/Users/bgates/Agon/fab-agon-emulator/firmware/vdp_platform.so",
+      "bytes": 3524392,
+      "sha256": "0d3aeb7a6bb55976fbddb3d6d32bf4a5a7269d075245bf6243dc69fb0bdbbf24"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/.mos-release": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/.mos-release",
+      "bytes": 14,
+      "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/.mos-release.sha256": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/.mos-release.sha256",
+      "bytes": 166,
+      "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/sdcard/autoexec.txt": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/sdcard/autoexec.txt",
+      "bytes": 92,
+      "sha256": "49d869a0df407e5d23d2961460e6a104eaa2f6d21ed1988e5ff696d12d24bb0c"
+    },
+    "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/anchor-p4vuyy2n/sdcard/rally/rally.bin": {
+      "target": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-m24p2ufd/live/bin/rally.bin",
+      "bytes": 139092,
+      "sha256": "7066fe202aa8117ddecb2c331ff00f00e4ff7c6049752cd2f605f2cdfee2c92f"
+    }
+  },
+  "runtime_inputs_unchanged": true,
+  "status": "captures and scheduled event injection verified; inspect guest reports/images for behavior"
+}

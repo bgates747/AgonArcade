@@ -1,0 +1,48 @@
+{
+  "position_coverage": "every legal hundredth position; every material-phase section interval; explicit track/lap seams",
+  "commands": [
+    [
+      "clang++",
+      "-O3",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "rally/include",
+      "-I",
+      "docs/tasks/RALLY-18",
+      "docs/tasks/RALLY-18/test_lookup_road.cpp",
+      "-o",
+      "docs/tasks/RALLY-18/.work/test_lookup_road"
+    ],
+    [
+      "docs/tasks/RALLY-18/.work/test_lookup_road",
+      "docs/tasks/RALLY-18/data",
+      "docs/tasks/RALLY-18/.work",
+      "1"
+    ]
+  ],
+  "protected_inputs": {
+    "rally/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "rally/include/road.hpp": "ec808d57188dda98198e7a0deea59f485596a3be5a0f37529a2ad554a1d107a2",
+    "rally/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "docs/tasks/RALLY-18.md": "afab634dca234566fb86649a1fb2bcd7b1d1b6a85f6b5180f14eb3be8e9b1bd5"
+  },
+  "inputs": {
+    "docs/tasks/RALLY-18/data/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "docs/tasks/RALLY-18/data/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+    "docs/tasks/RALLY-18/generate_road.cpp": "2d232e246fc0e8765fdb0e1567b8314ff88637ad208f2fa7905713e0bb9e7dab",
+    "docs/tasks/RALLY-18/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "docs/tasks/RALLY-18/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "docs/tasks/RALLY-18/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "docs/tasks/RALLY-18/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "docs/tasks/RALLY-18/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+    "docs/tasks/RALLY-18/size_road_candidates.cpp": "cb086c04b76a66b8f4eb5571b332089a679e9a311e368b82e9519ed3e3edfbaf",
+    "docs/tasks/RALLY-18/test_lookup_road.cpp": "fcc0e61474209ddb1cca09183680e28ace9aa6e544c461661de9257f81cfbbec",
+    "docs/tasks/RALLY-18/verify_road.py": "ea208a31fd93bebaa75671d1bf9cbd0738b382ab1808adfddf209cca9ea3daf1"
+  },
+  "reports": {
+    "geometry-exhaustive.txt": "4a299e991c518c856bf7b322c65ac7c906ed35f5458ade25005c5c2d14791315"
+  }
+}

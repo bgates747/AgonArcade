@@ -1,0 +1,296 @@
+[
+  {
+    "track": "oval",
+    "variant": "live",
+    "perspective": false,
+    "modes": {
+      "compute": {
+        "ms": 19.33215586344401,
+        "fps": 51.72728830988489,
+        "range_ms": [
+          19.330998738606773,
+          19.33331298828125
+        ],
+        "budget_multiple": 1.1599293518066407,
+        "excess_ms": 2.6654891967773438,
+        "time_saved_percent_vs_live": 0.0
+      },
+      "wire": {
+        "ms": 31.431715223524307,
+        "fps": 31.814999368904125,
+        "range_ms": [
+          31.402621799045143,
+          31.46080864800347
+        ],
+        "budget_multiple": 1.8859029134114582,
+        "excess_ms": 14.76504855685764,
+        "time_saved_percent_vs_live": 0.0
+      },
+      "display": {
+        "ms": 34.50520833333333,
+        "fps": 28.981132075471702,
+        "range_ms": [
+          33.854166666666664,
+          35.15625
+        ],
+        "budget_multiple": 2.0703124999999996,
+        "excess_ms": 17.83854166666666,
+        "time_saved_percent_vs_live": 0.0
+      }
+    },
+    "traffic": {
+      "total_bytes_per_frame": 889.65625,
+      "road_bytes_per_frame": 514.375,
+      "total_bytes_per_second_at_wire_fps": 28304.41303229161,
+      "road_bytes_per_second_at_wire_fps": 16364.84030038006,
+      "total_bytes_per_second_at_60fps": 53379.375,
+      "road_bytes_per_second_at_60fps": 30862.5,
+      "average_sections": 19.375
+    }
+  },
+  {
+    "track": "oval",
+    "variant": "lookup",
+    "perspective": false,
+    "modes": {
+      "compute": {
+        "ms": 14.926433987087673,
+        "fps": 66.99523817042063,
+        "range_ms": [
+          14.926166958279081,
+          14.926701015896267
+        ],
+        "budget_multiple": 0.8955860392252604,
+        "excess_ms": -1.7402326795789946,
+        "time_saved_percent_vs_live": 22.789604571145126
+      },
+      "wire": {
+        "ms": 27.008363087972004,
+        "fps": 37.025568589358286,
+        "range_ms": [
+          27.00374094645182,
+          27.012985229492188
+        ],
+        "budget_multiple": 1.6205017852783201,
+        "excess_ms": 10.341696421305336,
+        "time_saved_percent_vs_live": 14.07289454010372
+      },
+      "display": {
+        "ms": 33.984375,
+        "fps": 29.42528735632184,
+        "range_ms": [
+          33.59375,
+          34.375
+        ],
+        "budget_multiple": 2.0390625,
+        "excess_ms": 17.317708333333332,
+        "time_saved_percent_vs_live": 1.5094339622641395
+      }
+    },
+    "traffic": {
+      "total_bytes_per_frame": 889.65625,
+      "road_bytes_per_frame": 514.375,
+      "total_bytes_per_second_at_wire_fps": 32940.028505326285,
+      "road_bytes_per_second_at_wire_fps": 19045.02684315117,
+      "total_bytes_per_second_at_60fps": 53379.375,
+      "road_bytes_per_second_at_60fps": 30862.5,
+      "average_sections": 19.375
+    }
+  },
+  {
+    "track": "oval",
+    "variant": "lookup",
+    "perspective": true,
+    "modes": {
+      "compute": {
+        "ms": 15.361875745985243,
+        "fps": 65.09621718958022,
+        "range_ms": [
+          15.361430697970919,
+          15.362320793999567
+        ],
+        "budget_multiple": 0.9217125447591145,
+        "excess_ms": -1.304790920681425,
+        "time_saved_percent_vs_live": 20.537182430679334
+      },
+      "wire": {
+        "ms": 27.448031107584633,
+        "fps": 36.4324856701169,
+        "range_ms": [
+          27.44347890218099,
+          27.45258331298828
+        ],
+        "budget_multiple": 1.646881866455078,
+        "excess_ms": 10.781364440917965,
+        "time_saved_percent_vs_live": 12.674090763453416
+      },
+      "display": {
+        "ms": 34.24479166666667,
+        "fps": 29.201520912547526,
+        "range_ms": [
+          33.59375,
+          34.895833333333336
+        ],
+        "budget_multiple": 2.0546875,
+        "excess_ms": 17.578125000000004,
+        "time_saved_percent_vs_live": 0.7547169811320531
+      }
+    },
+    "traffic": {
+      "total_bytes_per_frame": 889.65625,
+      "road_bytes_per_frame": 514.375,
+      "total_bytes_per_second_at_wire_fps": 32412.388579454935,
+      "road_bytes_per_second_at_wire_fps": 18739.959816566377,
+      "total_bytes_per_second_at_60fps": 53379.375,
+      "road_bytes_per_second_at_60fps": 30862.5,
+      "average_sections": 19.375
+    }
+  },
+  {
+    "track": "fuji",
+    "variant": "live",
+    "perspective": false,
+    "modes": {
+      "compute": {
+        "ms": 17.42845196194119,
+        "fps": 57.377442482196194,
+        "range_ms": [
+          17.426805284288193,
+          17.430098639594185
+        ],
+        "budget_multiple": 1.0457071177164712,
+        "excess_ms": 0.761785295274521,
+        "time_saved_percent_vs_live": 0.0
+      },
+      "wire": {
+        "ms": 27.678145090738933,
+        "fps": 36.12958876838168,
+        "range_ms": [
+          27.678037007649742,
+          27.678253173828125
+        ],
+        "budget_multiple": 1.660688705444336,
+        "excess_ms": 11.011478424072266,
+        "time_saved_percent_vs_live": 0.0
+      },
+      "display": {
+        "ms": 36.58854166666667,
+        "fps": 27.330960854092524,
+        "range_ms": [
+          33.59375,
+          39.583333333333336
+        ],
+        "budget_multiple": 2.1953125,
+        "excess_ms": 19.921875000000004,
+        "time_saved_percent_vs_live": 0.0
+      }
+    },
+    "traffic": {
+      "total_bytes_per_frame": 770.90625,
+      "road_bytes_per_frame": 402.265625,
+      "total_bytes_per_second_at_wire_fps": 27852.52579147524,
+      "road_bytes_per_second_at_wire_fps": 14533.691606906037,
+      "total_bytes_per_second_at_60fps": 46254.375,
+      "road_bytes_per_second_at_60fps": 24135.9375,
+      "average_sections": 14.890625
+    }
+  },
+  {
+    "track": "fuji",
+    "variant": "lookup",
+    "perspective": false,
+    "modes": {
+      "compute": {
+        "ms": 14.012467702229818,
+        "fps": 71.36501730104747,
+        "range_ms": [
+          14.010999043782553,
+          14.013936360677084
+        ],
+        "budget_multiple": 0.840748062133789,
+        "excess_ms": -2.6541989644368496,
+        "time_saved_percent_vs_live": 19.600044038167674
+      },
+      "wire": {
+        "ms": 24.26371849907769,
+        "fps": 41.21379829056342,
+        "range_ms": [
+          24.24584028455946,
+          24.28159671359592
+        ],
+        "budget_multiple": 1.4558231099446612,
+        "excess_ms": 7.597051832411022,
+        "time_saved_percent_vs_live": 12.336182863654777
+      },
+      "display": {
+        "ms": 35.02604166666667,
+        "fps": 28.550185873605944,
+        "range_ms": [
+          33.333333333333336,
+          36.71875
+        ],
+        "budget_multiple": 2.1015625,
+        "excess_ms": 18.359375000000004,
+        "time_saved_percent_vs_live": 4.270462633451954
+      }
+    },
+    "traffic": {
+      "total_bytes_per_frame": 770.90625,
+      "road_bytes_per_frame": 402.265625,
+      "total_bytes_per_second_at_wire_fps": 31771.974688434653,
+      "road_bytes_per_second_at_wire_fps": 16578.894327977425,
+      "total_bytes_per_second_at_60fps": 46254.375,
+      "road_bytes_per_second_at_60fps": 24135.9375,
+      "average_sections": 14.890625
+    }
+  },
+  {
+    "track": "fuji",
+    "variant": "lookup",
+    "perspective": true,
+    "modes": {
+      "compute": {
+        "ms": 14.447589026557075,
+        "fps": 69.2157008454375,
+        "range_ms": [
+          14.447366502549913,
+          14.447811550564236
+        ],
+        "budget_multiple": 0.8668553415934245,
+        "excess_ms": -2.2190776401095924,
+        "time_saved_percent_vs_live": 17.103429162231244
+      },
+      "wire": {
+        "ms": 24.688638051350914,
+        "fps": 40.50446192779281,
+        "range_ms": [
+          24.68255360921224,
+          24.694722493489586
+        ],
+        "budget_multiple": 1.4813182830810547,
+        "excess_ms": 8.021971384684246,
+        "time_saved_percent_vs_live": 10.80096599532714
+      },
+      "display": {
+        "ms": 34.50520833333333,
+        "fps": 28.981132075471702,
+        "range_ms": [
+          33.854166666666664,
+          35.15625
+        ],
+        "budget_multiple": 2.0703124999999996,
+        "excess_ms": 17.83854166666666,
+        "time_saved_percent_vs_live": 5.693950177935969
+      }
+    },
+    "traffic": {
+      "total_bytes_per_frame": 770.90625,
+      "road_bytes_per_frame": 402.265625,
+      "total_bytes_per_second_at_wire_fps": 31225.142853022528,
+      "road_bytes_per_second_at_wire_fps": 16293.55269267228,
+      "total_bytes_per_second_at_60fps": 46254.375,
+      "road_bytes_per_second_at_60fps": 24135.9375,
+      "average_sections": 14.890625
+    }
+  }
+]

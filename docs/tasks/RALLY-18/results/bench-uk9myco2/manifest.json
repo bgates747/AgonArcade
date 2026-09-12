@@ -1,0 +1,174 @@
+{
+  "headless": true,
+  "cpu_hz": 18432000,
+  "clock_hz": 120,
+  "variants": {
+    "live": {
+      "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-m24p2ufd/live",
+      "sha256": "7066fe202aa8117ddecb2c331ff00f00e4ff7c6049752cd2f605f2cdfee2c92f",
+      "source_sha256": "ae22ba5802afe551eb9be981f636425ed05b7871bf8677f7ad9cf2b294c0aabd",
+      "bytes": 139092,
+      "build_evidence": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.5hKtNr\nSource archive SHA256: 0dfd0e25dc43a9f5f9419367691b7ef65bc172317af7ba0f9ede3d16a1549296\nBinary SHA256: 7066fe202aa8117ddecb2c331ff00f00e4ff7c6049752cd2f605f2cdfee2c92f\n",
+      "log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-m24p2ufd/live-build.txt",
+      "breakpoints": [
+        262625,
+        262627
+      ]
+    }
+  },
+  "sources": {
+    "section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "build.py": "fbf3dae3cfbe0a67ec44e54e8fc3e3fee11ef54c7aa4021948af6e71626498cc",
+    "diagnostic.cpp.inc": "4c0d5a8684622b0256a8dedc76c35c4fe9faed1be4d82eb29d6910c283712391",
+    "lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+    "vehicle-table-evidence.json": "22fa8df27965f04384ed326aeede55d26b587f13b54426fd038a5006aa2a73a3",
+    "lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "visual-harness-validation.json": "c68297b8ea37ea3347854362a10133fc19e359c474f6350be415afa19e780795",
+    "generate_vehicle_tables.py": "b42e5b5dbce4f3aae6bf1e4294f8ccc1d27e4d5211da20f150e82570182dfa0e",
+    "visual-plan.md": "eaa411e7c7ecf471464353e720b8e7375c3398d119f715a8f799a5ee66e30b75",
+    "test_vehicle.cpp": "1c05f3b3cb3b1a1955d8f1f21274238dd62b32d0a80e8e55f6b2ba61405b8d94",
+    "proxy.cpp": "70b9301f2cff4252a71252c84b8163d3d58172218938a5e3a073238289525523",
+    "bench.py": "fe88fde917c7c3951af2df2fd5d2523c0f5084b5566f5f13270d1450d929b925",
+    "README.md": "2fa431884d8978991ca38d4436408e37c6f208fda866f9a66df97bd2a280227a",
+    "section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "capture.py": "6af745a8ee3e60cb42daa330a5b3e24d2ce19bc6958f78ae3aa510e9b508e7f8",
+    ".gitignore": "90e82bc0565ab3f33eaa8c604994384acea85e0ea89952b37c8a79f1b1199f67",
+    "vehicle-notes.md": "84c741072d8e9eacd40707cbef499b229fdfdb1e826502845e9c4d249e04bfa7",
+    "checkpoint-inputs.json": "26086152f5cf94e2a9f1a60f6320713db0df51f4b903aa06995b4dee3669ebd9",
+    "visual_capture_macos.c": "b2a5108c673288430034edf87bb49a849bc797ecc3ea8c6e95faee73cea2dd5d",
+    "scene.hpp": "c5b150ae0bfcb948b0ad18faa612a71f08abb7fedc575e92ccf9ca9261c70d3c",
+    "vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+    "task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+    "section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980"
+  },
+  "data": {},
+  "checkpoint": "182a1d0",
+  "runs": [
+    {
+      "case": "oval-live-control-compute-1",
+      "track": "oval",
+      "variant": "live",
+      "perspective": false,
+      "mode": "compute",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 224,
+        "complete_ticks": 224,
+        "completed": 1,
+        "road_bytes": 0,
+        "cars": 384,
+        "pose_hash": 2560456080,
+        "bands": 1240
+      },
+      "sink": {
+        "bytes": 0,
+        "fnv1a64": "cbf29ce484222325",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "86852 bash ./fab-agon-emulator --renderer sw -d -b 262625 -b 262627",
+        "86852 bash ./fab-agon-emulator --renderer sw -d -b 262625 -b 262627",
+        "86852 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-compute-1/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-compute-1/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-compute-1/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-compute-1/sdcard --verbose -z --renderer sw -d -b 262625 -b 262627"
+      ],
+      "load_before": [
+        4.1201171875,
+        3.85400390625,
+        3.59326171875
+      ],
+      "load_after": [
+        4.1103515625,
+        3.85595703125,
+        3.59521484375
+      ],
+      "wall_seconds_with_startup": 8.546253695967607,
+      "batch_cpu_cycles": 23373928,
+      "ms": 19.81432427300347,
+      "fps": 50.46853913471455,
+      "budget_multiple": 1.1888594563802082
+    },
+    {
+      "case": "oval-live-control-wire-1",
+      "track": "oval",
+      "variant": "live",
+      "perspective": false,
+      "mode": "wire",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 270,
+        "complete_ticks": 270,
+        "completed": 1,
+        "road_bytes": 32920,
+        "cars": 384,
+        "pose_hash": 2560456080,
+        "bands": 1240
+      },
+      "sink": {
+        "bytes": 56938,
+        "fnv1a64": "3d3aeaff0328e04a",
+        "discard": true
+      },
+      "actual_process_commands": [
+        "86890 bash ./fab-agon-emulator --renderer sw -d -b 262625 -b 262627",
+        "86890 bash ./fab-agon-emulator --renderer sw -d -b 262625 -b 262627",
+        "86890 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-wire-1/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-wire-1/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-wire-1/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-wire-1/sdcard --verbose -z --renderer sw -d -b 262625 -b 262627"
+      ],
+      "load_before": [
+        4.18115234375,
+        3.87451171875,
+        3.60302734375
+      ],
+      "load_after": [
+        3.92626953125,
+        3.82666015625,
+        3.58740234375
+      ],
+      "wall_seconds_with_startup": 7.707825949008111,
+      "batch_cpu_cycles": 39118933,
+      "ms": 33.16153038872613,
+      "fps": 30.155423717717454,
+      "budget_multiple": 1.9896918233235674
+    },
+    {
+      "case": "oval-live-control-display-1",
+      "track": "oval",
+      "variant": "live",
+      "perspective": false,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 270,
+        "complete_ticks": 274,
+        "completed": 1,
+        "road_bytes": 32920,
+        "cars": 384,
+        "pose_hash": 2560456080,
+        "bands": 1240
+      },
+      "sink": {
+        "bytes": 56942,
+        "fnv1a64": "b0f268807ebb0cbf",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "86910 bash ./fab-agon-emulator --renderer sw",
+        "86910 bash ./fab-agon-emulator --renderer sw",
+        "86910 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-display-1/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-display-1/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-display-1/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-uk9myco2/oval-live-control-display-1/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        3.92626953125,
+        3.82666015625,
+        3.58740234375
+      ],
+      "load_after": [
+        3.7900390625,
+        3.798828125,
+        3.580078125
+      ],
+      "wall_seconds_with_startup": 7.069850084022619,
+      "ms": 35.677083333333336,
+      "fps": 28.02919708029197,
+      "budget_multiple": 2.140625
+    }
+  ]
+}

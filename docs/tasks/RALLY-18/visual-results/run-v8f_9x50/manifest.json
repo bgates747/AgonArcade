@@ -1,0 +1,447 @@
+{
+  "purpose": "headless native visual/input validation, excluded from performance evidence",
+  "plan": {
+    "scenes": [
+      {
+        "name": "oval-p00-lm35-s0-control",
+        "track": "oval",
+        "pose": 0,
+        "lateral": -35,
+        "steering": 0,
+        "perspective": false
+      },
+      {
+        "name": "oval-p00-l0-s0-control",
+        "track": "oval",
+        "pose": 0,
+        "lateral": 0,
+        "steering": 0,
+        "perspective": false
+      },
+      {
+        "name": "oval-p00-l35-s0-control",
+        "track": "oval",
+        "pose": 0,
+        "lateral": 35,
+        "steering": 0,
+        "perspective": false
+      },
+      {
+        "name": "fuji-p16-lm35-s0-control",
+        "track": "fuji",
+        "pose": 16,
+        "lateral": -35,
+        "steering": 0,
+        "perspective": false
+      },
+      {
+        "name": "fuji-p16-l35-s0-perspective",
+        "track": "fuji",
+        "pose": 16,
+        "lateral": 35,
+        "steering": 0,
+        "perspective": true
+      },
+      {
+        "name": "fuji-p63-l0-s0-control",
+        "track": "fuji",
+        "pose": 63,
+        "lateral": 0,
+        "steering": 0,
+        "perspective": false
+      }
+    ],
+    "controls": [
+      {
+        "track": "oval",
+        "perspective": false
+      },
+      {
+        "track": "fuji",
+        "perspective": true
+      }
+    ],
+    "snapshot_runs": 12,
+    "control_runs": 2
+  },
+  "profiles": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/visuals-imb9z7bu",
+  "builds": {
+    "checkpoint": "182a1d0",
+    "variants": {
+      "live": {
+        "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/live",
+        "sha256": "88e121214037693850ad24e97420399e32ff20b26a722dcb07544847d6d5c6f8",
+        "source_sha256": "0fac9ea28abe81b2d9b985b5d20ba7468453eb65e6b397d39e0ca06b0944acee",
+        "bytes": 139563,
+        "build_evidence": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.doVkad\nSource archive SHA256: 5fad79c26b54508eac73a1066402f21f19441786630502200dd0faed44d4211d\nBinary SHA256: 88e121214037693850ad24e97420399e32ff20b26a722dcb07544847d6d5c6f8\n",
+        "log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/live-build.txt",
+        "breakpoints": [
+          262625,
+          262627
+        ]
+      },
+      "lookup": {
+        "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/lookup",
+        "sha256": "20622e05c82431b58552be533a749779e30a7e2cfdb7b3352e582896fdf2ab70",
+        "source_sha256": "d12445e900922ab3b1e0425f7718587f97ca33868c5d6790f42e751a132253aa",
+        "bytes": 142838,
+        "build_evidence": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.Hue3QQ\nSource archive SHA256: 4455aba8c3995e9fdc6638ca45898d47069660b2e9e1b1827b054512f196f35b\nBinary SHA256: 20622e05c82431b58552be533a749779e30a7e2cfdb7b3352e582896fdf2ab70\n",
+        "log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/lookup-build.txt",
+        "breakpoints": [
+          262625,
+          262627
+        ]
+      }
+    }
+  },
+  "scenes": [
+    {
+      "name": "oval-p00-lm35-s0-control",
+      "track": "oval",
+      "pose": 0,
+      "lateral": -35,
+      "steering": 0,
+      "perspective": false,
+      "captures": {
+        "live": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live",
+        "lookup": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup"
+      },
+      "comparison": {
+        "native_size": [
+          640,
+          480
+        ],
+        "different_pixels": 0,
+        "different_pixel_fraction": 0.0,
+        "maximum_channel_difference": 0,
+        "difference_bounds": null,
+        "unmatched_colors_within_2_native_pixels": 0,
+        "neighborhood_scope": "Exact RGB color existence in either direction within a 5x5 native neighborhood; diagnostic only",
+        "section_boundary_count": 18,
+        "maximum_saved_centre_error_q8": 2,
+        "maximum_saved_centre_error_pixels": 0.0078125,
+        "player_state_live": [
+          0,
+          0,
+          24
+        ],
+        "player_state_lookup": [
+          0,
+          0,
+          24
+        ],
+        "traffic_state_differences": [],
+        "acceptance_scope": "No full-frame exact-pixel requirement. Saved endpoints are checked; exhaustive table/trapezoid geometry validation is separate."
+      }
+    },
+    {
+      "name": "oval-p00-l0-s0-control",
+      "track": "oval",
+      "pose": 0,
+      "lateral": 0,
+      "steering": 0,
+      "perspective": false,
+      "captures": {
+        "live": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live",
+        "lookup": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup"
+      },
+      "comparison": {
+        "native_size": [
+          640,
+          480
+        ],
+        "different_pixels": 0,
+        "different_pixel_fraction": 0.0,
+        "maximum_channel_difference": 0,
+        "difference_bounds": null,
+        "unmatched_colors_within_2_native_pixels": 0,
+        "neighborhood_scope": "Exact RGB color existence in either direction within a 5x5 native neighborhood; diagnostic only",
+        "section_boundary_count": 18,
+        "maximum_saved_centre_error_q8": 2,
+        "maximum_saved_centre_error_pixels": 0.0078125,
+        "player_state_live": [
+          0,
+          0,
+          106
+        ],
+        "player_state_lookup": [
+          0,
+          0,
+          106
+        ],
+        "traffic_state_differences": [],
+        "acceptance_scope": "No full-frame exact-pixel requirement. Saved endpoints are checked; exhaustive table/trapezoid geometry validation is separate."
+      }
+    },
+    {
+      "name": "oval-p00-l35-s0-control",
+      "track": "oval",
+      "pose": 0,
+      "lateral": 35,
+      "steering": 0,
+      "perspective": false,
+      "captures": {
+        "live": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live",
+        "lookup": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup"
+      },
+      "comparison": {
+        "native_size": [
+          640,
+          480
+        ],
+        "different_pixels": 0,
+        "different_pixel_fraction": 0.0,
+        "maximum_channel_difference": 0,
+        "difference_bounds": null,
+        "unmatched_colors_within_2_native_pixels": 0,
+        "neighborhood_scope": "Exact RGB color existence in either direction within a 5x5 native neighborhood; diagnostic only",
+        "section_boundary_count": 18,
+        "maximum_saved_centre_error_q8": 2,
+        "maximum_saved_centre_error_pixels": 0.0078125,
+        "player_state_live": [
+          0,
+          0,
+          188
+        ],
+        "player_state_lookup": [
+          0,
+          0,
+          188
+        ],
+        "traffic_state_differences": [],
+        "acceptance_scope": "No full-frame exact-pixel requirement. Saved endpoints are checked; exhaustive table/trapezoid geometry validation is separate."
+      }
+    },
+    {
+      "name": "fuji-p16-lm35-s0-control",
+      "track": "fuji",
+      "pose": 16,
+      "lateral": -35,
+      "steering": 0,
+      "perspective": false,
+      "captures": {
+        "live": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live",
+        "lookup": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup"
+      },
+      "comparison": {
+        "native_size": [
+          640,
+          480
+        ],
+        "different_pixels": 0,
+        "different_pixel_fraction": 0.0,
+        "maximum_channel_difference": 0,
+        "difference_bounds": null,
+        "unmatched_colors_within_2_native_pixels": 0,
+        "neighborhood_scope": "Exact RGB color existence in either direction within a 5x5 native neighborhood; diagnostic only",
+        "section_boundary_count": 20,
+        "maximum_saved_centre_error_q8": 4,
+        "maximum_saved_centre_error_pixels": 0.015625,
+        "player_state_live": [
+          0,
+          0,
+          25
+        ],
+        "player_state_lookup": [
+          0,
+          0,
+          25
+        ],
+        "traffic_state_differences": [],
+        "acceptance_scope": "No full-frame exact-pixel requirement. Saved endpoints are checked; exhaustive table/trapezoid geometry validation is separate."
+      }
+    },
+    {
+      "name": "fuji-p16-l35-s0-perspective",
+      "track": "fuji",
+      "pose": 16,
+      "lateral": 35,
+      "steering": 0,
+      "perspective": true,
+      "captures": {
+        "live": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live",
+        "lookup": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup"
+      },
+      "comparison": {
+        "native_size": [
+          640,
+          480
+        ],
+        "different_pixels": 0,
+        "different_pixel_fraction": 0.0,
+        "maximum_channel_difference": 0,
+        "difference_bounds": null,
+        "unmatched_colors_within_2_native_pixels": 0,
+        "neighborhood_scope": "Exact RGB color existence in either direction within a 5x5 native neighborhood; diagnostic only",
+        "section_boundary_count": 20,
+        "maximum_saved_centre_error_q8": 4,
+        "maximum_saved_centre_error_pixels": 0.015625,
+        "player_state_live": [
+          4,
+          0,
+          189
+        ],
+        "player_state_lookup": [
+          4,
+          0,
+          189
+        ],
+        "traffic_state_differences": [],
+        "acceptance_scope": "No full-frame exact-pixel requirement. Saved endpoints are checked; exhaustive table/trapezoid geometry validation is separate."
+      }
+    },
+    {
+      "name": "fuji-p63-l0-s0-control",
+      "track": "fuji",
+      "pose": 63,
+      "lateral": 0,
+      "steering": 0,
+      "perspective": false,
+      "captures": {
+        "live": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live",
+        "lookup": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup"
+      },
+      "comparison": {
+        "native_size": [
+          640,
+          480
+        ],
+        "different_pixels": 0,
+        "different_pixel_fraction": 0.0,
+        "maximum_channel_difference": 0,
+        "difference_bounds": null,
+        "unmatched_colors_within_2_native_pixels": 0,
+        "neighborhood_scope": "Exact RGB color existence in either direction within a 5x5 native neighborhood; diagnostic only",
+        "section_boundary_count": 11,
+        "maximum_saved_centre_error_q8": 0,
+        "maximum_saved_centre_error_pixels": 0.0,
+        "player_state_live": [
+          0,
+          0,
+          109
+        ],
+        "player_state_lookup": [
+          0,
+          0,
+          109
+        ],
+        "traffic_state_differences": [],
+        "acceptance_scope": "No full-frame exact-pixel requirement. Saved endpoints are checked; exhaustive table/trapezoid geometry validation is separate."
+      }
+    }
+  ],
+  "controls": [
+    {
+      "track": "oval",
+      "perspective": false,
+      "variant": "lookup",
+      "guest": {
+        "demo": 0,
+        "steering": -15,
+        "speed": 90,
+        "lateral": 24605,
+        "position": 53261,
+        "frames": 80
+      },
+      "capture": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control",
+      "exit_report_verified": true,
+      "scope": "Guest confirms demo takeover, progress and exit; inspect the three images for steering and lateral placement."
+    },
+    {
+      "track": "fuji",
+      "perspective": true,
+      "variant": "lookup",
+      "guest": {
+        "demo": 0,
+        "steering": -21,
+        "speed": 90,
+        "lateral": 19862,
+        "position": 54616,
+        "frames": 102
+      },
+      "capture": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective",
+      "exit_report_verified": true,
+      "scope": "Guest confirms demo takeover, progress and exit; inspect the three images for steering and lateral placement."
+    }
+  ],
+  "sources": {
+    "visual_cases.py": "520c6175368a8588e5460507052849e5140c5423780433710699ffcb373b3dc8",
+    "capture.py": "6af745a8ee3e60cb42daa330a5b3e24d2ce19bc6958f78ae3aa510e9b508e7f8",
+    "visual_capture_macos.c": "b2a5108c673288430034edf87bb49a849bc797ecc3ea8c6e95faee73cea2dd5d"
+  },
+  "data": {
+    "oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+    "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+  },
+  "camera_invariance": [
+    {
+      "track": "oval",
+      "pose": 0,
+      "variant": "live",
+      "scene_count": 3,
+      "road_state_identical": true,
+      "control_lateral_player_x": [
+        [
+          -35,
+          24
+        ],
+        [
+          0,
+          106
+        ],
+        [
+          35,
+          188
+        ]
+      ]
+    },
+    {
+      "track": "oval",
+      "pose": 0,
+      "variant": "lookup",
+      "scene_count": 3,
+      "road_state_identical": true,
+      "control_lateral_player_x": [
+        [
+          -35,
+          24
+        ],
+        [
+          0,
+          106
+        ],
+        [
+          35,
+          188
+        ]
+      ]
+    },
+    {
+      "track": "fuji",
+      "pose": 16,
+      "variant": "live",
+      "scene_count": 2,
+      "road_state_identical": true,
+      "control_lateral_player_x": [
+        [
+          -35,
+          25
+        ]
+      ]
+    },
+    {
+      "track": "fuji",
+      "pose": 16,
+      "variant": "lookup",
+      "scene_count": 2,
+      "road_state_identical": true,
+      "control_lateral_player_x": [
+        [
+          -35,
+          25
+        ]
+      ]
+    }
+  ],
+  "status": "automated capture/state/input checks passed; human image review remains separate"
+}

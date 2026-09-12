@@ -1,0 +1,24 @@
+{
+  "generator": "generate_vehicle_tables.py",
+  "angle_units_per_turn": 65536,
+  "bearing": {
+    "focal_pixels": 160,
+    "max_abs_screen_offset": 512,
+    "step_pixels": 2,
+    "entries": 257,
+    "bytes": 514
+  },
+  "heading": {
+    "input": "signed cross of Q12 tangents divided by4096",
+    "cross_samples": "0..3584 step32;3592..3968 step8;3969..4096 step1",
+    "entries": 289,
+    "bytes": 578
+  },
+  "lookup_bytes": 1092,
+  "source_sha256": {
+    "rally/include/road.hpp": "ec808d57188dda98198e7a0deea59f485596a3be5a0f37529a2ad554a1d107a2",
+    "rally/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "rally/tools/build_car.py": "bf73aab0d740982cde7f166068a797de74fdc4260e3b438c713424d911916f9f",
+    "rally/assets/car/sprites.json": "c026ace6c0e8b21df2f1ab32e23f48328d5f7829776c049b00ced08fdfd2fdb2"
+  }
+}

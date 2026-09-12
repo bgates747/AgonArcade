@@ -1,0 +1,581 @@
+{
+  "headless": true,
+  "cpu_hz": 18432000,
+  "clock_hz": 120,
+  "variants": {
+    "live": {
+      "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/live",
+      "sha256": "88e121214037693850ad24e97420399e32ff20b26a722dcb07544847d6d5c6f8",
+      "source_sha256": "0fac9ea28abe81b2d9b985b5d20ba7468453eb65e6b397d39e0ca06b0944acee",
+      "bytes": 139563,
+      "build_evidence": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.doVkad\nSource archive SHA256: 5fad79c26b54508eac73a1066402f21f19441786630502200dd0faed44d4211d\nBinary SHA256: 88e121214037693850ad24e97420399e32ff20b26a722dcb07544847d6d5c6f8\n",
+      "log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/live-build.txt",
+      "breakpoints": [
+        262625,
+        262627
+      ]
+    },
+    "lookup": {
+      "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/lookup",
+      "sha256": "20622e05c82431b58552be533a749779e30a7e2cfdb7b3352e582896fdf2ab70",
+      "source_sha256": "d12445e900922ab3b1e0425f7718587f97ca33868c5d6790f42e751a132253aa",
+      "bytes": 142838,
+      "build_evidence": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.Hue3QQ\nSource archive SHA256: 4455aba8c3995e9fdc6638ca45898d47069660b2e9e1b1827b054512f196f35b\nBinary SHA256: 20622e05c82431b58552be533a749779e30a7e2cfdb7b3352e582896fdf2ab70\n",
+      "log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/lookup-build.txt",
+      "breakpoints": [
+        262625,
+        262627
+      ]
+    }
+  },
+  "sources": {
+    "IMPLEMENTATION.md": "6b6f32d00cae9783be921ccb6cf83af2f0c68410c85cde3bc1632c8f289a7b47",
+    "section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "size_road_candidates.cpp": "cb086c04b76a66b8f4eb5571b332089a679e9a311e368b82e9519ed3e3edfbaf",
+    "build.py": "1c5f35aa4db215e5363095a5cc22dbf1790270991650bddac175a9c90dcb03b6",
+    "diagnostic.cpp.inc": "9d17be511eb7f414b5d419317b1839eadf9f0b7b1157757ca697904fd2778940",
+    "host_scene.cpp": "f9417ed5c3a6d4386f3f81a03d1d043df20f99671e7fffceb509dee503f13420",
+    "visual_cases.py": "520c6175368a8588e5460507052849e5140c5423780433710699ffcb373b3dc8",
+    "test_lookup_road.cpp": "fcc0e61474209ddb1cca09183680e28ace9aa6e544c461661de9257f81cfbbec",
+    "host-scene-validation.json": "ff33ff7c211d118c05d43cc047ec3eb15f169252db49e2e074df0111adc65228",
+    "lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+    "verify_road.py": "ea208a31fd93bebaa75671d1bf9cbd0738b382ab1808adfddf209cca9ea3daf1",
+    "vehicle-table-evidence.json": "22fa8df27965f04384ed326aeede55d26b587f13b54426fd038a5006aa2a73a3",
+    "lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "visual-harness-validation.json": "c68297b8ea37ea3347854362a10133fc19e359c474f6350be415afa19e780795",
+    "generate_vehicle_tables.py": "b42e5b5dbce4f3aae6bf1e4294f8ccc1d27e4d5211da20f150e82570182dfa0e",
+    "visual-plan.md": "d2000fc05a75ee4cc0ef6ae6497b1714690e1cbe6cfde1ab6e9cc1476f1650d3",
+    "review.py": "9721a7264c6db694d9700142dd7c334e711dd472e24ed949b37c26d3defcb58d",
+    "test_vehicle.cpp": "1c05f3b3cb3b1a1955d8f1f21274238dd62b32d0a80e8e55f6b2ba61405b8d94",
+    "proxy.cpp": "70b9301f2cff4252a71252c84b8163d3d58172218938a5e3a073238289525523",
+    "bench.py": "fe88fde917c7c3951af2df2fd5d2523c0f5084b5566f5f13270d1450d929b925",
+    "README.md": "2fa431884d8978991ca38d4436408e37c6f208fda866f9a66df97bd2a280227a",
+    "section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "capture.py": "6af745a8ee3e60cb42daa330a5b3e24d2ce19bc6958f78ae3aa510e9b508e7f8",
+    ".gitignore": "90e82bc0565ab3f33eaa8c604994384acea85e0ea89952b37c8a79f1b1199f67",
+    "test_scene.cpp": "51d0b57e19619645d9dae8f2ee95b146c4cb7c8088b8c3b73abdf4324dfb8c78",
+    "vehicle-notes.md": "84c741072d8e9eacd40707cbef499b229fdfdb1e826502845e9c4d249e04bfa7",
+    "checkpoint-inputs.json": "26086152f5cf94e2a9f1a60f6320713db0df51f4b903aa06995b4dee3669ebd9",
+    "visual_capture_macos.c": "b2a5108c673288430034edf87bb49a849bc797ecc3ea8c6e95faee73cea2dd5d",
+    "generate_road.py": "732877baf50c8ef3e8f41860d981fcbfc6472737b4feb54321a0fae7cca47d7c",
+    "report.py": "f52d64330a47bd17f9b349dd56650a1b35c5aeb409ba3183ef2b424b164a8c81",
+    "compare_scene.py": "f4cb76695da32e2e85ea0164b461cd49ff740f58f98971948ac8c14a59ff8881",
+    "scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+    "generate_road.cpp": "2d232e246fc0e8765fdb0e1567b8314ff88637ad208f2fa7905713e0bb9e7dab",
+    "vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+    "task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+    "section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980"
+  },
+  "data": {
+    "oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+    "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+  },
+  "checkpoint": "182a1d0",
+  "runs": [
+    {
+      "case": "oval-live-control-display-1",
+      "track": "oval",
+      "variant": "live",
+      "perspective": false,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 256,
+        "complete_ticks": 260,
+        "completed": 1,
+        "road_bytes": 32920,
+        "cars": 384,
+        "pose_hash": 2560456080,
+        "bands": 1240,
+        "load_ticks": 0
+      },
+      "sink": {
+        "bytes": 56942,
+        "fnv1a64": "7e8671fa67b8e6c3",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88485 bash ./fab-agon-emulator --renderer sw",
+        "88485 bash ./fab-agon-emulator --renderer sw",
+        "88485 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-live-control-display-1/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-live-control-display-1/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-live-control-display-1/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-live-control-display-1/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        7.47119140625,
+        10.3720703125,
+        7.89990234375
+      ],
+      "load_after": [
+        6.95263671875,
+        10.21630859375,
+        7.859375
+      ],
+      "wall_seconds_with_startup": 6.981308791029733,
+      "ms": 33.854166666666664,
+      "fps": 29.53846153846154,
+      "budget_multiple": 2.0312499999999996
+    },
+    {
+      "case": "oval-lookup-control-display-1",
+      "track": "oval",
+      "variant": "lookup",
+      "perspective": false,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 260,
+        "complete_ticks": 264,
+        "completed": 1,
+        "road_bytes": 32920,
+        "cars": 384,
+        "pose_hash": 2560456080,
+        "bands": 1240,
+        "load_ticks": 50
+      },
+      "sink": {
+        "bytes": 56942,
+        "fnv1a64": "afaf0e9ad6e62c9e",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88510 bash ./fab-agon-emulator --renderer sw",
+        "88510 bash ./fab-agon-emulator --renderer sw",
+        "88510 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-control-display-1/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-control-display-1/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-control-display-1/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-control-display-1/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        6.95263671875,
+        10.21630859375,
+        7.859375
+      ],
+      "load_after": [
+        6.6357421875,
+        10.09619140625,
+        7.83056640625
+      ],
+      "wall_seconds_with_startup": 6.770286604005378,
+      "ms": 34.375,
+      "fps": 29.09090909090909,
+      "budget_multiple": 2.0625
+    },
+    {
+      "case": "oval-lookup-perspective-display-1",
+      "track": "oval",
+      "variant": "lookup",
+      "perspective": true,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 254,
+        "complete_ticks": 258,
+        "completed": 1,
+        "road_bytes": 32920,
+        "cars": 384,
+        "pose_hash": 2560456080,
+        "bands": 1240,
+        "load_ticks": 58
+      },
+      "sink": {
+        "bytes": 56942,
+        "fnv1a64": "6c618537b50b7ddb",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88530 bash ./fab-agon-emulator --renderer sw",
+        "88530 bash ./fab-agon-emulator --renderer sw",
+        "88530 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-perspective-display-1/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-perspective-display-1/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-perspective-display-1/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-perspective-display-1/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        7.78564453125,
+        10.27685546875,
+        7.90771484375
+      ],
+      "load_after": [
+        7.802734375,
+        10.23876953125,
+        7.908203125
+      ],
+      "wall_seconds_with_startup": 6.779131829971448,
+      "ms": 33.59375,
+      "fps": 29.767441860465116,
+      "budget_multiple": 2.015625
+    },
+    {
+      "case": "oval-lookup-perspective-display-2",
+      "track": "oval",
+      "variant": "lookup",
+      "perspective": true,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 264,
+        "complete_ticks": 268,
+        "completed": 1,
+        "road_bytes": 32920,
+        "cars": 384,
+        "pose_hash": 2560456080,
+        "bands": 1240,
+        "load_ticks": 50
+      },
+      "sink": {
+        "bytes": 56942,
+        "fnv1a64": "6c618537b50b7ddb",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88556 bash ./fab-agon-emulator --renderer sw",
+        "88556 bash ./fab-agon-emulator --renderer sw",
+        "88556 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-perspective-display-2/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-perspective-display-2/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-perspective-display-2/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-perspective-display-2/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        7.802734375,
+        10.23876953125,
+        7.908203125
+      ],
+      "load_after": [
+        7.5185546875,
+        10.09814453125,
+        7.8857421875
+      ],
+      "wall_seconds_with_startup": 7.096882424026262,
+      "ms": 34.895833333333336,
+      "fps": 28.656716417910445,
+      "budget_multiple": 2.09375
+    },
+    {
+      "case": "oval-lookup-control-display-2",
+      "track": "oval",
+      "variant": "lookup",
+      "perspective": false,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 254,
+        "complete_ticks": 258,
+        "completed": 1,
+        "road_bytes": 32920,
+        "cars": 384,
+        "pose_hash": 2560456080,
+        "bands": 1240,
+        "load_ticks": 50
+      },
+      "sink": {
+        "bytes": 56942,
+        "fnv1a64": "afaf0e9ad6e62c9e",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88576 bash ./fab-agon-emulator --renderer sw",
+        "88576 bash ./fab-agon-emulator --renderer sw",
+        "88576 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-control-display-2/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-control-display-2/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-control-display-2/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-lookup-control-display-2/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        7.5185546875,
+        10.09814453125,
+        7.8857421875
+      ],
+      "load_after": [
+        7.396484375,
+        10.02978515625,
+        7.87451171875
+      ],
+      "wall_seconds_with_startup": 6.736797786026727,
+      "ms": 33.59375,
+      "fps": 29.767441860465116,
+      "budget_multiple": 2.015625
+    },
+    {
+      "case": "oval-live-control-display-2",
+      "track": "oval",
+      "variant": "live",
+      "perspective": false,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 266,
+        "complete_ticks": 270,
+        "completed": 1,
+        "road_bytes": 32920,
+        "cars": 384,
+        "pose_hash": 2560456080,
+        "bands": 1240,
+        "load_ticks": 0
+      },
+      "sink": {
+        "bytes": 56942,
+        "fnv1a64": "7e8671fa67b8e6c3",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88601 bash ./fab-agon-emulator --renderer sw",
+        "88601 bash ./fab-agon-emulator --renderer sw",
+        "88601 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-live-control-display-2/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-live-control-display-2/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-live-control-display-2/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/oval-live-control-display-2/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        7.396484375,
+        10.02978515625,
+        7.87451171875
+      ],
+      "load_after": [
+        6.56591796875,
+        9.7646484375,
+        7.80517578125
+      ],
+      "wall_seconds_with_startup": 6.67537234298652,
+      "ms": 35.15625,
+      "fps": 28.444444444444443,
+      "budget_multiple": 2.109375
+    },
+    {
+      "case": "fuji-live-control-display-1",
+      "track": "fuji",
+      "variant": "live",
+      "perspective": false,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 254,
+        "complete_ticks": 258,
+        "completed": 1,
+        "road_bytes": 25745,
+        "cars": 384,
+        "pose_hash": 3622887568,
+        "bands": 953,
+        "load_ticks": 0
+      },
+      "sink": {
+        "bytes": 49342,
+        "fnv1a64": "f60d827a7ae59ed4",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88621 bash ./fab-agon-emulator --renderer sw",
+        "88621 bash ./fab-agon-emulator --renderer sw",
+        "88621 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-live-control-display-1/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-live-control-display-1/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-live-control-display-1/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-live-control-display-1/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        6.56591796875,
+        9.7646484375,
+        7.80517578125
+      ],
+      "load_after": [
+        7.0810546875,
+        9.818359375,
+        7.83544921875
+      ],
+      "wall_seconds_with_startup": 6.593095871037804,
+      "ms": 33.59375,
+      "fps": 29.767441860465116,
+      "budget_multiple": 2.015625
+    },
+    {
+      "case": "fuji-lookup-control-display-1",
+      "track": "fuji",
+      "variant": "lookup",
+      "perspective": false,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 252,
+        "complete_ticks": 256,
+        "completed": 1,
+        "road_bytes": 25745,
+        "cars": 384,
+        "pose_hash": 3622887568,
+        "bands": 953,
+        "load_ticks": 270
+      },
+      "sink": {
+        "bytes": 49342,
+        "fnv1a64": "113834b84e0dfb61",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88653 bash ./fab-agon-emulator --renderer sw",
+        "88653 bash ./fab-agon-emulator --renderer sw",
+        "88653 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-control-display-1/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-control-display-1/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-control-display-1/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-control-display-1/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        7.0810546875,
+        9.818359375,
+        7.83544921875
+      ],
+      "load_after": [
+        12.9873046875,
+        10.97998046875,
+        8.26953125
+      ],
+      "wall_seconds_with_startup": 9.429456194979139,
+      "ms": 33.333333333333336,
+      "fps": 29.999999999999996,
+      "budget_multiple": 2.0
+    },
+    {
+      "case": "fuji-lookup-perspective-display-1",
+      "track": "fuji",
+      "variant": "lookup",
+      "perspective": true,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 266,
+        "complete_ticks": 270,
+        "completed": 1,
+        "road_bytes": 25745,
+        "cars": 384,
+        "pose_hash": 3622887568,
+        "bands": 953,
+        "load_ticks": 276
+      },
+      "sink": {
+        "bytes": 49342,
+        "fnv1a64": "6c0e1b6a46ea424a",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88678 bash ./fab-agon-emulator --renderer sw",
+        "88678 bash ./fab-agon-emulator --renderer sw",
+        "88678 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-perspective-display-1/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-perspective-display-1/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-perspective-display-1/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-perspective-display-1/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        12.9873046875,
+        10.97998046875,
+        8.26953125
+      ],
+      "load_after": [
+        11.60546875,
+        10.74951171875,
+        8.21923828125
+      ],
+      "wall_seconds_with_startup": 9.510749017004855,
+      "ms": 35.15625,
+      "fps": 28.444444444444443,
+      "budget_multiple": 2.109375
+    },
+    {
+      "case": "fuji-lookup-perspective-display-2",
+      "track": "fuji",
+      "variant": "lookup",
+      "perspective": true,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 256,
+        "complete_ticks": 260,
+        "completed": 1,
+        "road_bytes": 25745,
+        "cars": 384,
+        "pose_hash": 3622887568,
+        "bands": 953,
+        "load_ticks": 302
+      },
+      "sink": {
+        "bytes": 49342,
+        "fnv1a64": "6c0e1b6a46ea424a",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88703 bash ./fab-agon-emulator --renderer sw",
+        "88703 bash ./fab-agon-emulator --renderer sw",
+        "88703 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-perspective-display-2/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-perspective-display-2/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-perspective-display-2/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-perspective-display-2/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        11.60546875,
+        10.74951171875,
+        8.21923828125
+      ],
+      "load_after": [
+        15.27978515625,
+        11.63525390625,
+        8.58056640625
+      ],
+      "wall_seconds_with_startup": 12.411551760043949,
+      "ms": 33.854166666666664,
+      "fps": 29.53846153846154,
+      "budget_multiple": 2.0312499999999996
+    },
+    {
+      "case": "fuji-lookup-control-display-2",
+      "track": "fuji",
+      "variant": "lookup",
+      "perspective": false,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 278,
+        "complete_ticks": 282,
+        "completed": 1,
+        "road_bytes": 25745,
+        "cars": 384,
+        "pose_hash": 3622887568,
+        "bands": 953,
+        "load_ticks": 280
+      },
+      "sink": {
+        "bytes": 49342,
+        "fnv1a64": "113834b84e0dfb61",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88739 bash ./fab-agon-emulator --renderer sw",
+        "88739 bash ./fab-agon-emulator --renderer sw",
+        "88739 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-control-display-2/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-control-display-2/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-control-display-2/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-lookup-control-display-2/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        15.27978515625,
+        11.63525390625,
+        8.58056640625
+      ],
+      "load_after": [
+        16.16845703125,
+        11.9306640625,
+        8.72021484375
+      ],
+      "wall_seconds_with_startup": 9.357354281004518,
+      "ms": 36.71875,
+      "fps": 27.23404255319149,
+      "budget_multiple": 2.203125
+    },
+    {
+      "case": "fuji-live-control-display-2",
+      "track": "fuji",
+      "variant": "live",
+      "perspective": false,
+      "mode": "display",
+      "data": {
+        "frames": 64,
+        "submit_ticks": 300,
+        "complete_ticks": 304,
+        "completed": 1,
+        "road_bytes": 25745,
+        "cars": 384,
+        "pose_hash": 3622887568,
+        "bands": 953,
+        "load_ticks": 0
+      },
+      "sink": {
+        "bytes": 49342,
+        "fnv1a64": "f60d827a7ae59ed4",
+        "discard": false
+      },
+      "actual_process_commands": [
+        "88764 bash ./fab-agon-emulator --renderer sw",
+        "88764 bash ./fab-agon-emulator --renderer sw",
+        "88764 /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-live-control-display-2/fab-agon-emulator.bin --renderer sw --firmware platform --mos /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-live-control-display-2/mos_platform.bin --vdp /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-live-control-display-2/vdp_rally_sink.so --sdcard /Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/bench-lttycqb0/fuji-live-control-display-2/sdcard --verbose -z --renderer sw"
+      ],
+      "load_before": [
+        16.16845703125,
+        11.9306640625,
+        8.72021484375
+      ],
+      "load_after": [
+        15.11376953125,
+        11.7822265625,
+        8.6865234375
+      ],
+      "wall_seconds_with_startup": 7.1290090669645,
+      "ms": 39.583333333333336,
+      "fps": 25.26315789473684,
+      "budget_multiple": 2.375
+    }
+  ]
+}

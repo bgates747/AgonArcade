@@ -1,0 +1,36 @@
+{
+  "binary": {
+    "root": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/lookup",
+    "sha256": "20622e05c82431b58552be533a749779e30a7e2cfdb7b3352e582896fdf2ab70",
+    "source_sha256": "d12445e900922ab3b1e0425f7718587f97ca33868c5d6790f42e751a132253aa",
+    "bytes": 142838,
+    "build_evidence": "Host: agon-linux\nBuild directory: /home/smith/Agon/mystuff/rally-mac-build.Hue3QQ\nSource archive SHA256: 4455aba8c3995e9fdc6638ca45898d47069660b2e9e1b1827b054512f196f35b\nBinary SHA256: 20622e05c82431b58552be533a749779e30a7e2cfdb7b3352e582896fdf2ab70\n",
+    "log": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/build-jnylgwv_/lookup-build.txt",
+    "breakpoints": [
+      262625,
+      262627
+    ]
+  },
+  "profiles": [
+    {
+      "track": "oval",
+      "orientation": "control",
+      "profile": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/review-oval-control"
+    },
+    {
+      "track": "oval",
+      "orientation": "perspective",
+      "profile": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/review-oval-perspective"
+    },
+    {
+      "track": "fuji",
+      "orientation": "control",
+      "profile": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/review-fuji-control"
+    },
+    {
+      "track": "fuji",
+      "orientation": "perspective",
+      "profile": "/Users/bgates/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.emulator/review-fuji-perspective"
+    }
+  ]
+}
