@@ -147,6 +147,15 @@ clipped-clear-oval/clear-coverage-failure.json. The next correction uses clear t
 rows. The existing road metrics remain unchanged; these extra clear invariants
 are frozen before evaluating the correction. R19-07 remains open.
 
+The pinned native stock implementation confirms the convention, independently
+of screenshots: `vdp-console8/video/context/graphics.h::plotTriangle` calls
+`Canvas::fillPath`. In `userspace-vdp-gl/src/displaycontroller.cpp::fillPath`,
+an edge contributes only when its smaller y is strictly below the scanline and
+its larger y is at or above it; the final span ends at `nodeX[right]-1`.
+Thus flat top edges are excluded, bottom edges included, and the right edge
+excluded. This is not the inclusive rectangle convention. These upstream files
+were read only; no firmware edits or new compiler intrinsic are needed.
+
 From the execution repository root, the final image commands are:
 
 ```sh
@@ -165,3 +174,42 @@ Run names are immutable; use fresh names and update a new audit invocation when
 reproducing. All visual/native runners generate isolated canonical profiles and
 run headlessly. Image capture uses an external SDL observer, is not a timing
 measurement, and does not establish full-scene/hardware acceptance.
+
+## R19-07 qualified result
+
+`evidence/golem-road/qualification.json` passes the final covered-clear sources.
+Its audit rechecks native image hashes, independently generated masks and raw
+geometry readback, all81 ordered poses, current compiler/generator identities,
+the frozen strict-outline calibration, complete clear rows and matching compiled
+road sources in the admission suite. The66 original frozen poses plus15 boundary/
+seam witnesses have exact rounded centres and at most1px outer-edge difference.
+Minimum same-colour radius-one agreement is100% asphalt, kerb and centreline,
+97.56% shoulder. All expected road material regions remain present.
+
+Both final admitted kernels pass210 events each:27 accepted road jobs,182 other
+nonaccepted events preserving road outputs, and one explicit reload resetting
+them per track. The earlier failed and intermediate runs remain distinguishable
+from these final results. Golem documentation commit9eb9fcc records completion;
+compiler implementation remains f54651a with its unchanged qualified source hash.
+
+| Traced admitted road ledger | Oval | Fuji |
+| --- | ---: | ---: |
+| Owned IDs | 707 | 731 |
+| Asset payload bytes | 35546 | 152776 |
+| Program payload bytes | 18404 | 18899 |
+| Scratch payload bytes | 4049 | 4188 |
+| Total resident payload bytes | 57999 | 175863 |
+| Bootstrap bytes | 68076 | 186276 |
+| Resident plus bootstrap bytes | 126075 | 362139 |
+
+These are compiler payload totals, including tracing and the retained admission
+proof; they exclude existing artwork and native object/allocation overhead. They
+fit all frozen compiler ceilings, leaving293 IDs on Fuji. Whole-runtime heap and
+long-running allocation behavior still require R19-11 evidence.
+
+Recurring road scene traffic is80 raw state bytes+11-byte update header+6-byte
+call+3-byte swap=100 bytes. GP and geometry readback are diagnostic only and are
+not included. This milestone reports packet size, not a measured full-scene UART
+or CPU reduction: vehicles/scenery/HUD integration and matched normal-clock ABBA
+performance remain R19-08 through R19-10. All emulator work was headless through
+isolated stock wrappers; no GUI alert, SD deployment, push or upstream edit.

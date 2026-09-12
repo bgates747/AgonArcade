@@ -75,3 +75,46 @@ bound depth before division, derive every geometry/matrix/bitmap selection on
 VDP and produce its own per-car diagnostics/masks. Generic signed storage,
 comparison and bitmap-command intrinsics may be needed in the existing C++
 compiler; qualify them before relying on an assumed conversion or cache behavior.
+
+## Numeric reference preparation
+
+`vehicle_reference.py` reuses the existing accepted `host_fixture.cpp` with host
+ASan/UBSan. Its66 original outputs match the frozen native guest scene CSV files
+byte for byte. It adds90 host-only cases: every steering tick-21..21 on both
+tracks with signed lateral extremes, depth visibility boundaries6399/6400/6499/
+110099/110100 hundredths and a behind-player case, plus indirect equal-distance
+sort ties. The added cases still need native candidate qualification; this is
+reference preparation, not R19-08 completion.
+
+`evidence/golem-cars/reference.json` records all156 expected player placements,
+ordered visible opponent identities/bitmap/scale/reflection/coordinates, source
+hashes and raw80-byte admitted states. Its `admitted()` helper round-trips all17
+frozen input words and supplies raw states only. No projected geometry, heading
+or depth is transmitted. Use these inputs for numeric kernel probes; retain the
+original66 native images/masks for final scene comparisons.
+
+## Compiler integration considerations (not yet implemented)
+
+The existing small `DivModPositive` cannot directly wrap a relative distance:
+Fuji's lap is3276800, exceeding its65535 divisor/remainder limit. A bounded
+positive32 conversion plus widening that intrinsic to a positive s32 remainder
+is one candidate construction. Then `car-player+lap` stays positive and below
+2^24, its quotient is0/1, and the wrapped distance fits3276799. Division by100
+after wrapping fits the existing32767 quotient limit. Qualify actual emitted
+positive conversion and reciprocal boundaries before adopting this approach.
+
+Sorting needs a full-width distance comparison; compare zero-extended ordered
+bytes, reusing the established avoidance of the VDP's0xffff operand sentinel.
+One shared comparator can serve the15 fixed sort pairs. Keep original car IDs
+through every swap. The prepared tie fixture's visible order is5,2,3,1,4,0 on
+both tracks, illustrating why a stable-sort replacement would be wrong.
+
+Camera/opponent headings discard sub-world-unit position, so tangent interpolation
+can use local whole-world units0..63 and divide by64 instead of multiplying by
+a Q14 fraction. This preserves the accepted signed-floor interpolation with
+smaller exact integer products. It does not apply to road projection or scenery,
+which retain fractional position. Bounds on compiler fields must honestly contain
+the intermediate arithmetic; do not narrow declarations merely to silence a
+range check. A scalar absolute-value operation and typed bitmap/affine selection
+may be useful small additions, subject to native proof. Avoid introducing a
+general renderer or replacing Golem with host-generated command bytes.

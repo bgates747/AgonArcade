@@ -41,9 +41,9 @@ Field markedTop(roadConstants,2,u16,116,116); Field toggle(roadConstants,4,u16,0
 Set(terminal,224); Set(markedTop,116);
 Buffer clearCoordinates(1545,12);
 Field clearLeft(clearCoordinates,0,s16,0,0); Field clearRight(clearCoordinates,2,s16,320,320);
-Field clearRoadTop(clearCoordinates,4,s16,104,104); Field clearRoadBottom(clearCoordinates,6,s16,224,224);
-Field clearFooterTop(clearCoordinates,8,s16,224,224); Field clearFooterBottom(clearCoordinates,10,s16,240,240);
-Set(clearRight,320); Set(clearRoadTop,104); Set(clearRoadBottom,224); Set(clearFooterTop,224); Set(clearFooterBottom,240);
+Field clearRoadTop(clearCoordinates,4,s16,103,103); Field clearRoadBottom(clearCoordinates,6,s16,224,224);
+Field clearFooterTop(clearCoordinates,8,s16,223,223); Field clearFooterBottom(clearCoordinates,10,s16,240,240);
+Set(clearRight,320); Set(clearRoadTop,103); Set(clearRoadBottom,224); Set(clearFooterTop,223); Set(clearFooterBottom,240);
 Program clearRoad(2310) { PlotQuad(2,clearLeft,clearRoadTop,clearRight,clearRoadTop,clearLeft,clearRoadBottom,clearRight,clearRoadBottom); };
 Program clearFooter(2311) { PlotQuad(0,clearLeft,clearFooterTop,clearRight,clearFooterTop,clearLeft,clearFooterBottom,clearRight,clearFooterBottom); };
 Field bandCount(output,60,u16); Field active(output,62,u16,0,1);

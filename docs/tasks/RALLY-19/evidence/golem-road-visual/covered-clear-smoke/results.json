@@ -1,0 +1,1447 @@
+{
+  "scope": "Full native road-only comparisons for frozen poses plus seams/max-band witnesses.\n\nThe road is also checked where cars would normally occlude it. No vehicle or\nbackground acceptance is claimed here. Masks use each renderer's native pixels\nand own complete endpoint trace, with the frozen per-material metric.\n",
+  "cases": 5,
+  "pass": true,
+  "results": [
+    {
+      "pose": [
+        0,
+        0,
+        0
+      ],
+      "expected_geometry": [
+        [
+          104,
+          126,
+          0
+        ],
+        [
+          105,
+          131,
+          0
+        ],
+        [
+          106,
+          134,
+          0
+        ],
+        [
+          108,
+          138,
+          0
+        ],
+        [
+          112,
+          143,
+          0
+        ],
+        [
+          116,
+          145,
+          1
+        ],
+        [
+          117,
+          146,
+          0
+        ],
+        [
+          119,
+          147,
+          1
+        ],
+        [
+          122,
+          148,
+          0
+        ],
+        [
+          125,
+          149,
+          1
+        ],
+        [
+          130,
+          151,
+          0
+        ],
+        [
+          137,
+          152,
+          1
+        ],
+        [
+          141,
+          153,
+          1
+        ],
+        [
+          147,
+          154,
+          0
+        ],
+        [
+          163,
+          155,
+          1
+        ],
+        [
+          166,
+          155,
+          1
+        ],
+        [
+          197,
+          157,
+          0
+        ],
+        [
+          224,
+          158,
+          0
+        ]
+      ],
+      "actual_geometry": [
+        [
+          104,
+          126,
+          0
+        ],
+        [
+          105,
+          131,
+          0
+        ],
+        [
+          106,
+          134,
+          0
+        ],
+        [
+          108,
+          138,
+          0
+        ],
+        [
+          112,
+          143,
+          0
+        ],
+        [
+          116,
+          145,
+          1
+        ],
+        [
+          117,
+          146,
+          0
+        ],
+        [
+          119,
+          147,
+          1
+        ],
+        [
+          122,
+          148,
+          0
+        ],
+        [
+          125,
+          149,
+          1
+        ],
+        [
+          130,
+          151,
+          0
+        ],
+        [
+          137,
+          152,
+          1
+        ],
+        [
+          141,
+          153,
+          1
+        ],
+        [
+          147,
+          154,
+          0
+        ],
+        [
+          163,
+          155,
+          1
+        ],
+        [
+          166,
+          155,
+          1
+        ],
+        [
+          197,
+          157,
+          0
+        ],
+        [
+          224,
+          158,
+          0
+        ]
+      ],
+      "boundaries_pass": true,
+      "materials_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43093,
+            "actual_pixels": 43093,
+            "union_pixels": 43093,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 25742,
+            "actual_pixels": 25748,
+            "union_pixels": 25755,
+            "exact_fraction": 0.9992234517569404,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2122,
+            "actual_pixels": 2122,
+            "union_pixels": 2122,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 411,
+            "actual_pixels": 405,
+            "union_pixels": 418,
+            "exact_fraction": 0.9521531100478469,
+            "one_pixel_fraction": 0.9904306220095693,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 312,
+            "actual_pixels": 312,
+            "union_pixels": 312,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      },
+      "pass": true
+    },
+    {
+      "pose": [
+        39210,
+        1,
+        -8960
+      ],
+      "expected_geometry": [
+        [
+          104,
+          102,
+          0
+        ],
+        [
+          105,
+          113,
+          0
+        ],
+        [
+          106,
+          122,
+          0
+        ],
+        [
+          107,
+          129,
+          0
+        ],
+        [
+          108,
+          134,
+          0
+        ],
+        [
+          109,
+          138,
+          0
+        ],
+        [
+          110,
+          141,
+          0
+        ],
+        [
+          113,
+          146,
+          0
+        ],
+        [
+          115,
+          149,
+          0
+        ],
+        [
+          116,
+          150,
+          1
+        ],
+        [
+          117,
+          151,
+          0
+        ],
+        [
+          119,
+          152,
+          1
+        ],
+        [
+          122,
+          153,
+          0
+        ],
+        [
+          125,
+          154,
+          1
+        ],
+        [
+          130,
+          156,
+          0
+        ],
+        [
+          133,
+          156,
+          0
+        ],
+        [
+          137,
+          157,
+          1
+        ],
+        [
+          147,
+          157,
+          0
+        ],
+        [
+          163,
+          159,
+          1
+        ],
+        [
+          164,
+          159,
+          1
+        ],
+        [
+          197,
+          159,
+          0
+        ],
+        [
+          224,
+          159,
+          0
+        ]
+      ],
+      "actual_geometry": [
+        [
+          104,
+          102,
+          0
+        ],
+        [
+          105,
+          113,
+          0
+        ],
+        [
+          106,
+          122,
+          0
+        ],
+        [
+          107,
+          129,
+          0
+        ],
+        [
+          108,
+          134,
+          0
+        ],
+        [
+          109,
+          138,
+          0
+        ],
+        [
+          110,
+          141,
+          0
+        ],
+        [
+          113,
+          146,
+          0
+        ],
+        [
+          115,
+          149,
+          0
+        ],
+        [
+          116,
+          150,
+          1
+        ],
+        [
+          117,
+          151,
+          0
+        ],
+        [
+          119,
+          152,
+          1
+        ],
+        [
+          122,
+          153,
+          0
+        ],
+        [
+          125,
+          154,
+          1
+        ],
+        [
+          130,
+          156,
+          0
+        ],
+        [
+          133,
+          156,
+          0
+        ],
+        [
+          137,
+          157,
+          1
+        ],
+        [
+          147,
+          157,
+          0
+        ],
+        [
+          163,
+          159,
+          1
+        ],
+        [
+          164,
+          159,
+          1
+        ],
+        [
+          197,
+          159,
+          0
+        ],
+        [
+          224,
+          159,
+          0
+        ]
+      ],
+      "boundaries_pass": true,
+      "materials_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43076,
+            "actual_pixels": 43076,
+            "union_pixels": 43076,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 25788,
+            "actual_pixels": 25797,
+            "union_pixels": 25807,
+            "exact_fraction": 0.9988762738791801,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2124,
+            "actual_pixels": 2119,
+            "union_pixels": 2124,
+            "exact_fraction": 0.9976459510357816,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 389,
+            "actual_pixels": 385,
+            "union_pixels": 399,
+            "exact_fraction": 0.9398496240601504,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 303,
+            "actual_pixels": 303,
+            "union_pixels": 303,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      },
+      "pass": true
+    },
+    {
+      "pose": [
+        72000,
+        3999,
+        8960
+      ],
+      "expected_geometry": [
+        [
+          104,
+          63,
+          0
+        ],
+        [
+          107,
+          86,
+          0
+        ],
+        [
+          109,
+          99,
+          0
+        ],
+        [
+          111,
+          110,
+          0
+        ],
+        [
+          112,
+          114,
+          0
+        ],
+        [
+          114,
+          121,
+          0
+        ],
+        [
+          115,
+          125,
+          0
+        ],
+        [
+          116,
+          127,
+          1
+        ],
+        [
+          118,
+          132,
+          1
+        ],
+        [
+          119,
+          133,
+          0
+        ],
+        [
+          120,
+          135,
+          0
+        ],
+        [
+          121,
+          136,
+          1
+        ],
+        [
+          123,
+          139,
+          1
+        ],
+        [
+          125,
+          140,
+          0
+        ],
+        [
+          130,
+          144,
+          1
+        ],
+        [
+          136,
+          147,
+          0
+        ],
+        [
+          145,
+          150,
+          0
+        ],
+        [
+          146,
+          150,
+          1
+        ],
+        [
+          163,
+          154,
+          0
+        ],
+        [
+          170,
+          155,
+          0
+        ],
+        [
+          180,
+          155,
+          0
+        ],
+        [
+          196,
+          155,
+          1
+        ],
+        [
+          224,
+          156,
+          0
+        ]
+      ],
+      "actual_geometry": [
+        [
+          104,
+          63,
+          0
+        ],
+        [
+          107,
+          86,
+          0
+        ],
+        [
+          109,
+          99,
+          0
+        ],
+        [
+          111,
+          110,
+          0
+        ],
+        [
+          112,
+          114,
+          0
+        ],
+        [
+          114,
+          121,
+          0
+        ],
+        [
+          115,
+          125,
+          0
+        ],
+        [
+          116,
+          127,
+          1
+        ],
+        [
+          118,
+          132,
+          1
+        ],
+        [
+          119,
+          133,
+          0
+        ],
+        [
+          120,
+          135,
+          0
+        ],
+        [
+          121,
+          136,
+          1
+        ],
+        [
+          123,
+          139,
+          1
+        ],
+        [
+          125,
+          140,
+          0
+        ],
+        [
+          130,
+          144,
+          1
+        ],
+        [
+          136,
+          147,
+          0
+        ],
+        [
+          145,
+          150,
+          0
+        ],
+        [
+          146,
+          150,
+          1
+        ],
+        [
+          163,
+          154,
+          0
+        ],
+        [
+          170,
+          155,
+          0
+        ],
+        [
+          180,
+          155,
+          0
+        ],
+        [
+          196,
+          155,
+          1
+        ],
+        [
+          224,
+          156,
+          1
+        ]
+      ],
+      "boundaries_pass": true,
+      "materials_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43134,
+            "actual_pixels": 43120,
+            "union_pixels": 43134,
+            "exact_fraction": 0.9996754300551769,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 25745,
+            "actual_pixels": 25738,
+            "union_pixels": 25750,
+            "exact_fraction": 0.9993398058252427,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2050,
+            "actual_pixels": 2073,
+            "union_pixels": 2073,
+            "exact_fraction": 0.9889049686444766,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 385,
+            "actual_pixels": 383,
+            "union_pixels": 388,
+            "exact_fraction": 0.979381443298969,
+            "one_pixel_fraction": 0.9974226804123711,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 366,
+            "actual_pixels": 366,
+            "union_pixels": 366,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      },
+      "pass": true
+    },
+    {
+      "pose": [
+        111210,
+        4000,
+        -17920
+      ],
+      "expected_geometry": [
+        [
+          104,
+          44,
+          0
+        ],
+        [
+          105,
+          47,
+          0
+        ],
+        [
+          107,
+          55,
+          0
+        ],
+        [
+          110,
+          70,
+          0
+        ],
+        [
+          112,
+          78,
+          0
+        ],
+        [
+          115,
+          88,
+          0
+        ],
+        [
+          116,
+          90,
+          0
+        ],
+        [
+          117,
+          93,
+          1
+        ],
+        [
+          119,
+          98,
+          0
+        ],
+        [
+          122,
+          104,
+          1
+        ],
+        [
+          123,
+          106,
+          1
+        ],
+        [
+          125,
+          109,
+          0
+        ],
+        [
+          130,
+          116,
+          1
+        ],
+        [
+          133,
+          119,
+          1
+        ],
+        [
+          137,
+          123,
+          0
+        ],
+        [
+          142,
+          127,
+          0
+        ],
+        [
+          145,
+          129,
+          0
+        ],
+        [
+          147,
+          130,
+          1
+        ],
+        [
+          163,
+          137,
+          0
+        ],
+        [
+          168,
+          140,
+          0
+        ],
+        [
+          173,
+          142,
+          0
+        ],
+        [
+          178,
+          142,
+          0
+        ],
+        [
+          197,
+          145,
+          1
+        ],
+        [
+          224,
+          148,
+          0
+        ]
+      ],
+      "actual_geometry": [
+        [
+          104,
+          44,
+          0
+        ],
+        [
+          105,
+          47,
+          0
+        ],
+        [
+          107,
+          55,
+          0
+        ],
+        [
+          110,
+          70,
+          0
+        ],
+        [
+          112,
+          78,
+          0
+        ],
+        [
+          115,
+          88,
+          0
+        ],
+        [
+          116,
+          90,
+          0
+        ],
+        [
+          117,
+          93,
+          1
+        ],
+        [
+          119,
+          98,
+          0
+        ],
+        [
+          122,
+          104,
+          1
+        ],
+        [
+          123,
+          106,
+          1
+        ],
+        [
+          125,
+          109,
+          0
+        ],
+        [
+          130,
+          116,
+          1
+        ],
+        [
+          133,
+          119,
+          1
+        ],
+        [
+          137,
+          123,
+          0
+        ],
+        [
+          142,
+          127,
+          0
+        ],
+        [
+          145,
+          129,
+          0
+        ],
+        [
+          147,
+          130,
+          1
+        ],
+        [
+          163,
+          137,
+          0
+        ],
+        [
+          168,
+          140,
+          0
+        ],
+        [
+          173,
+          142,
+          0
+        ],
+        [
+          178,
+          142,
+          0
+        ],
+        [
+          197,
+          145,
+          1
+        ],
+        [
+          224,
+          148,
+          1
+        ]
+      ],
+      "boundaries_pass": true,
+      "materials_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43288,
+            "actual_pixels": 43283,
+            "union_pixels": 43288,
+            "exact_fraction": 0.9998844945481427,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 25536,
+            "actual_pixels": 25537,
+            "union_pixels": 25537,
+            "exact_fraction": 0.9999608411324744,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2053,
+            "actual_pixels": 2058,
+            "union_pixels": 2058,
+            "exact_fraction": 0.9975704567541303,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 431,
+            "actual_pixels": 430,
+            "union_pixels": 431,
+            "exact_fraction": 0.9976798143851509,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 372,
+            "actual_pixels": 372,
+            "union_pixels": 372,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      },
+      "pass": true
+    },
+    {
+      "pose": [
+        144000,
+        4001,
+        17920
+      ],
+      "expected_geometry": [
+        [
+          104,
+          42,
+          0
+        ],
+        [
+          109,
+          67,
+          0
+        ],
+        [
+          112,
+          80,
+          0
+        ],
+        [
+          115,
+          91,
+          0
+        ],
+        [
+          116,
+          94,
+          0
+        ],
+        [
+          117,
+          97,
+          1
+        ],
+        [
+          119,
+          103,
+          0
+        ],
+        [
+          120,
+          105,
+          0
+        ],
+        [
+          122,
+          110,
+          1
+        ],
+        [
+          124,
+          115,
+          1
+        ],
+        [
+          125,
+          116,
+          0
+        ],
+        [
+          126,
+          117,
+          0
+        ],
+        [
+          130,
+          123,
+          1
+        ],
+        [
+          132,
+          126,
+          1
+        ],
+        [
+          135,
+          128,
+          1
+        ],
+        [
+          137,
+          130,
+          0
+        ],
+        [
+          146,
+          137,
+          0
+        ],
+        [
+          147,
+          137,
+          1
+        ],
+        [
+          149,
+          138,
+          1
+        ],
+        [
+          152,
+          139,
+          1
+        ],
+        [
+          163,
+          142,
+          0
+        ],
+        [
+          181,
+          147,
+          0
+        ],
+        [
+          189,
+          148,
+          0
+        ],
+        [
+          197,
+          149,
+          1
+        ],
+        [
+          224,
+          150,
+          0
+        ]
+      ],
+      "actual_geometry": [
+        [
+          104,
+          42,
+          0
+        ],
+        [
+          109,
+          67,
+          0
+        ],
+        [
+          112,
+          80,
+          0
+        ],
+        [
+          115,
+          91,
+          0
+        ],
+        [
+          116,
+          94,
+          0
+        ],
+        [
+          117,
+          97,
+          1
+        ],
+        [
+          119,
+          103,
+          0
+        ],
+        [
+          120,
+          105,
+          0
+        ],
+        [
+          122,
+          110,
+          1
+        ],
+        [
+          124,
+          115,
+          1
+        ],
+        [
+          125,
+          116,
+          0
+        ],
+        [
+          126,
+          117,
+          0
+        ],
+        [
+          130,
+          123,
+          1
+        ],
+        [
+          132,
+          126,
+          1
+        ],
+        [
+          135,
+          128,
+          1
+        ],
+        [
+          137,
+          130,
+          0
+        ],
+        [
+          146,
+          137,
+          0
+        ],
+        [
+          147,
+          137,
+          1
+        ],
+        [
+          149,
+          138,
+          1
+        ],
+        [
+          152,
+          139,
+          1
+        ],
+        [
+          163,
+          142,
+          0
+        ],
+        [
+          181,
+          147,
+          0
+        ],
+        [
+          189,
+          148,
+          0
+        ],
+        [
+          197,
+          149,
+          1
+        ],
+        [
+          224,
+          150,
+          1
+        ]
+      ],
+      "boundaries_pass": true,
+      "materials_pass": true,
+      "geometry": {
+        "max_centerline_error_pixels": 0.0,
+        "pass": true
+      },
+      "pixels": {
+        "pass": true,
+        "regions": {
+          "background": {
+            "expected_pixels": 43233,
+            "actual_pixels": 43227,
+            "union_pixels": 43233,
+            "exact_fraction": 0.9998612171258067,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "asphalt": {
+            "expected_pixels": 25615,
+            "actual_pixels": 25617,
+            "union_pixels": 25619,
+            "exact_fraction": 0.9997657988211874,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "kerb": {
+            "expected_pixels": 2039,
+            "actual_pixels": 2047,
+            "union_pixels": 2047,
+            "exact_fraction": 0.9960918417195896,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          },
+          "shoulder": {
+            "expected_pixels": 408,
+            "actual_pixels": 404,
+            "union_pixels": 408,
+            "exact_fraction": 0.9901960784313726,
+            "one_pixel_fraction": 0.9950980392156863,
+            "pass": true
+          },
+          "centreline": {
+            "expected_pixels": 385,
+            "actual_pixels": 385,
+            "union_pixels": 385,
+            "exact_fraction": 1.0,
+            "one_pixel_fraction": 1.0,
+            "pass": true
+          }
+        },
+        "metric": "symmetric same-semantic-label RGB agreement within one game pixel; >=95% per region; nonzero support on both sides"
+      },
+      "pass": true
+    }
+  ]
+}

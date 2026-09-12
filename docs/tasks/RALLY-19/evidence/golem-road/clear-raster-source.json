@@ -1,0 +1,7 @@
+{
+  "source_sha256": {
+    "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/src/vdp/vdp-console8/video/context/graphics.h": "eba700bc2b988af484784c4d90ebc8233a008687f1e5d5b65ab61cc7e6433d2a",
+    "/home/smith/Agon/mystuff/AgonJukebox/.emulator/runtime/fab-1.2.4/src/vdp/userspace-vdp-gl/src/displaycontroller.cpp": "0a0f41921c2e00d279839aff4941908ecb0bd930ab9ef6a864e450aee5a8b076"
+  },
+  "finding": "Stock native triangle fill excludes flat top and right edges, includes bottom. Clear tops103/223 and right320 cover desired rows104/224 and column319. Firmware unchanged."
+}

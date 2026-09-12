@@ -49,11 +49,15 @@ This ordered register owns progress across AgonArcade and Golem.
    agreement per visible material; shared preparation selected by serial ABBA.
    See `docs/tasks/RALLY-19/SECTION.md` and its qualification.json. Golem980024b
    records completion (implementation f54651a). Full-scene targets remain open.
-7. [ ] **R19-07 — Extend resident road computation to both complete tracks.**
+7. [x] **R19-07 — Extend resident road computation to both complete tracks.**
    Select resident sections, derive all required boundaries/material parity,
    maintain shared edges/finite clipping and lap-independent stripes. Pass the
    frozen road masks and <=1px boundary criterion, no missing material classes;
    report resource and recurring-traffic budgets. Commit full-road evidence.
+   Qualified:81 native road-image pairs, exact centres, <=1px outer edges,
+   >=97.56% per-material agreement;420 admission/recovery events pass. Finite
+   bands<=32,707/731 owned IDs,100-byte state/update/call/swap. See ROAD.md and
+   `docs/tasks/RALLY-19/evidence/golem-road/qualification.json`; Golem9eb9fcc.
 8. [ ] **R19-08 — Move vehicle projection and draw ordering to VDP.** Use player
    and six competitor track/lateral states to derive visibility, depth ordering,
    screen position, scale and yaw/reflection with existing artwork/liveries.

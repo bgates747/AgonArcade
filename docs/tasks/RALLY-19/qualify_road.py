@@ -112,9 +112,11 @@ def main():
                 assert max(abs(a[1]-b[1]) for a,b in zip(entries,want))==row['max_centre_error']
                 last=value[96:]
             else:assert value[96:]==last
-        admission[track]={'events':210,'accepted':27,'rejected_or_missing_preserve_road':183}
+        admission[track]={'events':210,'accepted':27,'nonaccepted_events':183,
+                          'explicit_reload_resets_road':1,'other_nonaccepted_events_preserve_road':182}
     regions={key:min(r['pixels']['regions'][key]['one_pixel_fraction'] for r in all_cases if key in r['pixels']['regions']) for key in ['asphalt','kerb','shoulder','centreline']}
     report={'milestone':'R19-07','pass':True,'scope':__doc__,
+            'audit_source_sha256':digest(Path(__file__)),
             'visual_cases':81,'frozen_poses':66,'supplemental_seam_and_bound_poses':15,
             'maximum_centre_error_pixels':max(r['geometry']['max_centerline_error_pixels'] for r in all_cases),
             'maximum_outer_edge_error_pixels':max(r['outline']['max_edge_error_pixels'] for r in all_cases),
