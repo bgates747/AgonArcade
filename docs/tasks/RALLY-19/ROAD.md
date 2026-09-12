@@ -122,3 +122,46 @@ differ by at most1px; an appearing/disappearing row is allowed only for a single
 clipped border column. Calibration accepts1px translation and rejects2px shifts,
 2px width growth, an erased interior row and a two-column border appearance.
 This strengthens width/outer-edge evidence; it does not relax a failing metric.
+
+## Clear-edge failure and remediation
+
+The admitted-oval and admitted-fuji-a images passed the older regional scores
+but failed the separately frozen strict outline check. In oval frame000570,
+row172 agrees through x318; only candidate x319 retains an old red pixel where
+the oracle is green. This makes the apparent outer boundary17px too wide, even
+though it is a single stale pixel beyond the correct edge. Fuji exhibits the
+same failure. Both failed outline reports and complete captures are preserved.
+
+The resident clear used two filled triangles with inclusive rectangle-style
+coordinates0..319. Unlike the earlier host rectangle clear, this leaves the
+rightmost column untouched. The fix uses right extent320, road bottom224 and
+footer bottom240, letting viewport clipping cover the last physical column/row.
+The shader, coefficient evaluation and frozen acceptance metrics are unchanged.
+Five admitted smoke poses pass the strict one-pixel outline check after the fix.
+All30 clipped-clear oval poses also pass that check. However, the additional
+complete-clear audit in `qualify_road.py` catches a second edge: the triangle
+excludes its top row. Candidate row104 stays black and row224 retains road colour;
+the oracle has green104 and black224. The diagnostic report is preserved as
+clipped-clear-oval/clear-coverage-failure.json. The next correction uses clear tops
+103/223, and the audit explicitly requires the complete green104 and black224..239
+rows. The existing road metrics remain unchanged; these extra clear invariants
+are frozen before evaluating the correction. R19-07 remains open.
+
+From the execution repository root, the final image commands are:
+
+```sh
+.venv/bin/python docs/tasks/RALLY-19/visual_road.py covered-clear-oval --admitted --limit 30
+.venv/bin/python docs/tasks/RALLY-19/check_road_outlines.py covered-clear-oval
+.venv/bin/python docs/tasks/RALLY-19/visual_road.py covered-clear-fuji-a --admitted --track fuji --limit 30
+.venv/bin/python docs/tasks/RALLY-19/check_road_outlines.py covered-clear-fuji-a
+.venv/bin/python docs/tasks/RALLY-19/visual_road.py covered-clear-fuji-b --admitted --track fuji --offset 30 --limit 21
+.venv/bin/python docs/tasks/RALLY-19/check_road_outlines.py covered-clear-fuji-b
+.venv/bin/python docs/tasks/RALLY-19/probe_admitted_road.py covered-clear-oval
+.venv/bin/python docs/tasks/RALLY-19/probe_admitted_road.py covered-clear-fuji --track fuji
+.venv/bin/python docs/tasks/RALLY-19/qualify_road.py
+```
+
+Run names are immutable; use fresh names and update a new audit invocation when
+reproducing. All visual/native runners generate isolated canonical profiles and
+run headlessly. Image capture uses an external SDL observer, is not a timing
+measurement, and does not establish full-scene/hardware acceptance.
