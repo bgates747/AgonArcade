@@ -25,14 +25,14 @@ heading plus the camera-to-car viewing angle. Driving physics is unchanged.
 | [Visual results](visual-results/README.md) | Six exact native image pairs, camera invariance, controls and off-screen behavior |
 
 From the repository root, prepare both tracks and both orientation options and
-launch the oval with perspective-corrected vehicle views:
+launch the oval with the original vehicle-view selection (the default):
 
 ```
 .venv/bin/python docs/tasks/RALLY-18/review.py --prepare-all --launch
 ```
 
-To open Fuji, use `--track fuji --launch`. To compare the original sprite-view
-selection, use `--orientation control --launch`. Each invocation prepares an
+To open Fuji, use `--track fuji --launch`. To enable lateral-position perspective correction,
+use `--orientation perspective --launch`. Each invocation prepares an
 isolated canonical profile and records its path in review-profiles.json. The
 profile's autoexec loads the lookup binary and selected road data. Demo runs
 until a key takes over; arrow keys drive, minus/equal adjust grip, Escape exits.

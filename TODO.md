@@ -16,7 +16,6 @@ task-specific supporting files belong in `docs/tasks/<ID>/`.
 8. [ ] [RALLY-09](docs/tasks/RALLY-09.md): Review kerb/grass handling and inset shoulder lines.
 7. [ ] [RALLY-08](docs/tasks/RALLY-08.md): Complete scenery and road-edge emulator review.
 10. [ ] [RALLY-11](docs/tasks/RALLY-11.md): Qualify implemented retained scenery scrolling; performance remains unaccepted.
-12. [ ] [RALLY-13](docs/tasks/RALLY-13.md): Revisit implicit autosteer — deferred by user.
 2. [ ] [STUNT-01](docs/tasks/STUNT-01.md): Future separate 3D stunt racer.
 
 Completed milestones and acceptance evidence remain in the dated development

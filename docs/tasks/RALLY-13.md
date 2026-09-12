@@ -1,11 +1,18 @@
-# RALLY-13 — Deferred autosteer review
+# RALLY-13
 
-Explicitly deferred by the user. Preserve the current behavior during performance
-work. Track-relative forward movement and camera rotation implicitly follow the
-road tangent; manual steering changes lateral demand rather than an independently
-integrated world heading.
+Resumed by explicit user instruction. Implement manual cornering on the RALLY-18
+lookup candidate, isolated in this task bucket. Preserve autosteer as a launch
+option, off by default for manual driving; demo retains assistance.
 
-When the user resumes this task, agree on the intended handling before separating
-camera/track-frame rotation, vehicle heading and driver steering. Account for the
-current projection's limitations. This document is not authorization to redesign
-handling now. Root TODO.md records the deferral.
+Manual steering must supply cornering demand, subject to existing grip limits.
+Zero steering must produce outward drift in a bend. Use centreline curvature
+across the whole road width; no inside/outside radius adjustment. Retain existing
+steering increments, speed, surfaces, rendering and 30 Hz pacing, without polls.
+Perspective vehicle views remain optional and off by default.
+
+Qualify both bend signs, steering compensation and grip saturation headlessly,
+then launch a stock-emulator review. This is arcade tuning, not a heading/yaw
+simulation. No mainline changes or commits before review and explicit approval.
+
+The user accepted and authorized freezing this tuning checkpoint. See
+[RALLY-13/FREEZE.md](RALLY-13/FREEZE.md) for the final settings and review record.

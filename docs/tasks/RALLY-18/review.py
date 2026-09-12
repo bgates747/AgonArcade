@@ -5,7 +5,7 @@ import build as b
 from bench import prepare
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--track',choices=('oval','fuji'),default='oval');p.add_argument('--orientation',choices=('control','perspective'),default='perspective');p.add_argument('--prepare-all',action='store_true');p.add_argument('--launch',action='store_true');a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--track',choices=('oval','fuji'),default='oval');p.add_argument('--orientation',choices=('control','perspective'),default='control');p.add_argument('--prepare-all',action='store_true');p.add_argument('--launch',action='store_true');a=p.parse_args()
     b.protect();state=json.loads(b.STATE.read_text());info=state['variants']['lookup'];assert b.sha(Path(info['root'])/'bin/rally.bin')==info['sha256']
     base=b.TASK/'.emulator';base.mkdir(exist_ok=True)
     pairs=[(t,o) for t in ('oval','fuji') for o in ('control','perspective')] if a.prepare_all else [(a.track,a.orientation)]
