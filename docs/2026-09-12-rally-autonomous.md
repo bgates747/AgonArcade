@@ -25,3 +25,19 @@ Planning inspected project documentation, source contracts and Git state only.
 No physical connection, firmware operation, SD edit, build or game test was
 performed. Existing uncommitted deployment and QUAL-003 work is preserved.
 The plan-review emulator is notification-only, not candidate validation.
+
+The Author subsequently proposed delaying traffic visibility until its highest
+drawn row lies within the road-span refresh region, to avoid clobbering retained
+background. Added to R20-06 as a measured candidate, with transformed footprint,
+curve coverage, alternating-buffer history and appearance-transition checks.
+The Author explicitly says not to proceed with the goal; no implementation or
+experiment accompanies this documentation amendment.
+
+The Author then made mainboard SD read/write capability the first prerequisite
+before all other development. Created Extender PORT-017 on its existing main
+branch and placed it first in the local TODO, ahead of graphics work. Its local
+task includes Radiotux findings, actor ownership, protocol-first design and
+physical integrity/keyboard/recovery gates. Existing wiring is confirmed by
+the Author; bulk service software is not yet qualified. Rally consumes that
+task's evidence, and no returning Extender agent needs this checkout to proceed.
+Golem development is explicitly excluded. The implementation pause remains.

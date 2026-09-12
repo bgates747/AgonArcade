@@ -87,6 +87,28 @@ qualitative observations, not a measured curve or traffic bottleneck.
 
 ## Work order and decision gates
 
+Priority/ownership amendment from the Author, 2026-09-12: obtaining mainboard SD
+read/write access through Extender is the first gate, before any other work
+continues. The owning task is **PORT-017** in agon-extender, on that project's
+active `main` branch. Its task file contains the complete requirements, research
+précis, protocol-first sequence and physical acceptance; agents must not need
+this Rally worktree to implement the capability. Only backups, identification,
+contract design, bootstrap and other necessary SD-service prerequisites may
+precede acceptance. This supersedes the earlier order where broader product
+reproduction could precede the SD capability. R20-02/03 consume PORT-017 evidence;
+R20-04 adds the subsequent application build/run loop. Do not duplicate or
+independently check off component work here. Implementation remains paused.
+
+The Author confirms existing wiring provides network -> P4 -> UART1 -> eZ80 ->
+MOS -> mainboard SD connectivity. Extra SD wiring or a separate Wi-Fi modem is
+not expected for transfers. This is not yet a qualified bulk protocol; define
+framing, ownership, flow control, integrity, retries and persistence before code.
+Reliable recovery from a hung eZ80 remains a distinct reset-path question.
+See RADIOTUX.md for the public repository/source investigation: GET/ZGET are
+Agon-initiated download clients, and MINICOM offers bidirectional serial examples;
+none is an established EMOS-multiplexed SD service. The Extender task carries
+these findings locally. **All Golem development is explicitly out of scope.**
+
 ### R20-01 — Establish reproducible product and bench identities
 
 Preserve the above executable/data/startup and collect their existing evidence.
@@ -230,6 +252,25 @@ draw cost, and scenery repair. Traffic and curvature are hypotheses, not
 preassigned bottlenecks. The accepted baseline's SDK viewport calls reportedly
 reverse pixel-mode Y endpoints; evaluate that as a separate correctness and
 performance candidate, never silently fold it into the baseline.
+
+Author-requested planning amendment (2026-09-12): evaluate deferring traffic
+rendering until it cannot overwrite retained background pixels. The highest
+drawn row must be within the region refreshed by road spans. Derive the gate
+from the projected bitmap's top edge and transformed footprint, not its ground
+anchor or an arbitrary distance cutoff. Verify actual refresh coverage across
+its width on curves and at the road edges; a Y threshold alone is sufficient
+only if those rows are refreshed across the entire affected width.
+
+Keep traffic simulation active while a car is hidden. Check prior footprints on
+both alternating buffers, heading changes, scale/view transitions and cars
+crossing the visibility threshold, so disappearance cannot leave stale pixels.
+Measure whether the gate permits reducing background repair as well as avoiding
+distant draw calls; do not remove repair still needed by other foreground work.
+Record visible appearance/pop-in changes for human review. This specifically
+authorized visibility experiment is an exception to the blanket prohibition on
+omitting cars below; it does not authorize reducing the traffic population or
+loosening other visual criteria. The task remains paused: this amendment adds
+a candidate, not permission to implement or benchmark it.
 
 Use small changes and matched A/B comparisons. Simple preloaded drawing batches
 may reduce UART traffic; they do not make the same raster primitive inherently
