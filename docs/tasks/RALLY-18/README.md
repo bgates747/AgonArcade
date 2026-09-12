@@ -5,6 +5,10 @@ Centreline-fixed camera and precomputed road experiment. The accepted
 Implementation remains isolated here. The user reviewed the running candidate
 and requested a checkpoint before further discussion; see [freeze note](FREEZE.md).
 
+The current review configuration is accepted as a working 30 Hz baseline,
+supported by measurements and subjective play, not a verified guarantee.
+See the [checkpoint qualification](FREEZE.md#unfenced-30-hz-review-checkpoint).
+
 The road lookup replaces live map projection with compact precomputed screen
 lines and fixed-point interpolation. Steering moves the player across the road;
 it does not move the camera sideways. An optional vehicle-view correction uses
@@ -33,7 +37,9 @@ isolated canonical profile and records its path in review-profiles.json. The
 profile's autoexec loads the lookup binary and selected road data. Demo runs
 until a key takes over; arrow keys drive, minus/equal adjust grip, Escape exits.
 Interactive presentation retains the existing four-tick deadline and elapsed
-time physics, with a stock VDP completion poll after each swap (`fence`).
+time physics. Review now omits `fence`: no startup, per-frame, or exit
+general-poll wait and no performance profiling. The existing startup/exit
+marker files and exit summary remain outside the frame loop.
 No benchmark byte sink or screenshot interposer is in review.
 
 Reproduction uses repository `.venv/bin/python`:

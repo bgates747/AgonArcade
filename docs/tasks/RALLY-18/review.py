@@ -16,7 +16,7 @@ def main():
             # Keep old profiles reviewable and never modify a running profile.
             import tempfile
             profile=Path(tempfile.mkdtemp(prefix=f'review-{track}-{orientation}-',dir=base))
-        prepare(info,profile,track,'demo fence'+(' perspective' if orientation=='perspective' else ''))
+        prepare(info,profile,track,'demo'+(' perspective' if orientation=='perspective' else ''))
         profiles.append({'track':track,'orientation':orientation,'profile':str(profile)});print('Ready:',profile)
     result=b.TASK/'review-profiles.json';result.write_text(json.dumps({'binary':info,'profiles':profiles},indent=2)+'\n')
     if a.launch:
