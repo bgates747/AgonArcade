@@ -1,5 +1,23 @@
 # RALLY-19
 
+## Final bounded experiment
+
+The final corrected candidate and compiler pass the frozen native-emulator
+criteria. The physical startup stack failure is corrected and the Author
+confirmed slow continued operation after the board reset button on restored
+official VDP2.16.0. Hardware rendering remains too slow; no practical acceleration
+or cold power-cycle equivalence is claimed. See [DELIVERY.md](RALLY-19/DELIVERY.md)
+for actual source locations, artifacts, linked checkpoints, commands and limits;
+[REVIEW.md](RALLY-19/REVIEW.md) and [HARDWARE-DEBUG.md](RALLY-19/HARDWARE-DEBUG.md)
+hold final evidence. Root TODO remains the execution register. Earlier design
+and authorization statements below are chronological history.
+
+The Author later explicitly authorized physical deployment, official firmware
+restoration, temporary serial diagnosis and one dedicated graphical bug-review
+emulator. Those amendments are recorded in HARDWARE-DEBUG.md. The current device
+uses official firmware and production oval/demo without game measurement or logs.
+No further optimization, publication or deployment is implied by this delivery.
+
 ## Current authorization
 
 On 2026-09-12 the Author authorized the unattended Golem/Rally goal, detailed

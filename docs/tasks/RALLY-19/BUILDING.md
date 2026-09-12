@@ -1,7 +1,8 @@
 # Building the RALLY-19 candidate
 
 This is an isolated research candidate, not the root `rally/` application.
-R19-11/R19-12 in the root TODO remain open. The current call-inlining candidate
+DELIVERY.md indexes the final bounded result and root TODO owns completion.
+The current call-inlining candidate
 has native regression evidence and now runs after a board reset on restored
 official VDP2.16.0, confirmed by the Author. Physical rendering is still visibly
 slow and is not accepted. HARDWARE-DEBUG.md records the hardware investigation.

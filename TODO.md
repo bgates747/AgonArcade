@@ -103,7 +103,7 @@ This ordered register owns progress across AgonArcade and Golem.
           regression checks, preserve evidence and launch a dedicated review
           emulator only when the bug is identified and the game likely runs.
           Details and authorization: `docs/tasks/RALLY-19/HARDWARE-DEBUG.md`.
-12. [ ] **R19-12 — Deliver and stop at the agreed scope.** Document Golem language
+12. [x] **R19-12 — Deliver and stop at the agreed scope.** Document Golem language
     additions, renderer protocol, ownership, build/run/benchmark commands, resource
     totals, final binary/data/compiler hashes and measured limits. Record linked
     Golem/Rally commits, preserve the oracle and update handoffs. Commit final

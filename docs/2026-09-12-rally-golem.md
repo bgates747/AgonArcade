@@ -171,3 +171,23 @@ interpreter work on ESP32. Native host timing did not predict that cost or its
 stack constraint. No claim of practical hardware acceleration follows from the
 native frozen-criteria pass. Final delivery remains R19-12; no source expansion,
 remote push or additional physical/GUI action is part of this checkpoint.
+
+
+## R19-12 delivery
+
+Golem delivery checkpoint3ac500cfb1733e53d475443bfcb8217817b03603 precedes this
+Rally delivery. DELIVERY.md supplies actual source/generated-kernel locations,
+compiler/language and protocol ownership, reproducible build/run/benchmark
+commands, resource totals, production/compiler/data hashes, environment limits
+and the physical result. `evidence/final/delivery.json` binds artifact identities
+to both repositories' completed validation checkpoints. AGENTS.md, BUILDING.md
+and the task entry point now lead to the final candidate rather than old code.
+
+All frozen native criteria and the authorized observed hardware startup fix are
+complete. The research experiment did not deliver useful physical acceleration:
+the current arithmetic lowering remains visibly slow on official firmware.
+That result is explicit and is not converted into hardware performance acceptance.
+No additional optimization, source scope, remote publication or hardware action
+is undertaken. Original worktrees, local flash/SD backups and the accepted oracle
+are retained. The final experiment closes under the frozen scope; further work
+requires a new task decision.

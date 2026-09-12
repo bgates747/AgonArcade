@@ -3,9 +3,12 @@
 This is the isolated RALLY-19 execution worktree, branch `rally19-golem`, at
 `/home/smith/Agon/mystuff/AgonArcade-rally19`. Root `rally/` is the earlier game;
 `make -C rally` does not build the current Golem candidate. Start RALLY-19 work
-with `docs/tasks/RALLY-19/BUILDING.md`, the frozen CONTRACT.md, and current
-HARDWARE-DEBUG.md/STABILITY.md in that directory. The root TODO owns all execution
-checkboxes; R19-11/R19-12 remain open. The corresponding C++ compiler is in the
+with `docs/tasks/RALLY-19/DELIVERY.md`, BUILDING.md, the frozen CONTRACT.md, and
+HARDWARE-DEBUG.md/REVIEW.md in that directory. The root TODO owns all execution
+checkboxes. Final native criteria pass and the observed physical startup crash
+is corrected, but hardware rendering remains too slow; this is a bounded research
+delivery, not a practical acceleration. Further optimization needs a new task
+decision. The corresponding C++ compiler is in the
 separate `../golem-rally19` worktree. Preserve the original AgonDefender and Golem
 checkouts. Later Author hardware/serial permissions are recorded in HARDWARE-DEBUG.md;
 the original contract's no-hardware wording is not the current complete scope.

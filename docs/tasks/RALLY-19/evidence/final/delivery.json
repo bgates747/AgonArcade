@@ -1,0 +1,179 @@
+{
+  "scope": "Final RALLY-19 bounded research delivery. Native criteria pass; physical acceleration is unsuccessful for this lowering.",
+  "rally_validation_commit": "6d574f1f03325b80cf5fa08bfaf10e3590d88f95",
+  "golem_delivery_commit": "3ac500cfb1733e53d475443bfcb8217817b03603",
+  "golem_implementation_commit": "f9e7d8d0d0d105c26cc2ee8c2f30a2267a905895",
+  "compiler": {
+    "path": "/home/smith/Agon/mystuff/golem-rally19/build/golemc",
+    "sha256": "dc432c85c7df0aa3c039de3544ae3e6d382f584209d49701d08c0a3302b8056e",
+    "bytes": 263408
+  },
+  "production_files": {
+    "rally.bin": {
+      "path": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/production/hardware-inline/bin/rally.bin",
+      "bytes": 95822,
+      "sha256": "64c8b0734bcd253112d162173fc38f343eafbc96894dc1d09b4793766ed59129"
+    },
+    "oval.vdp": {
+      "path": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/production/hardware-inline/oval.vdp",
+      "bytes": 115526,
+      "sha256": "cad8b8339151262576f9cab237a58b4b5d47e5fc49acb9ea3eb046269ad9d044"
+    },
+    "oval.clr": {
+      "path": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/production/hardware-inline/oval.clr",
+      "bytes": 5016,
+      "sha256": "6f686c8b6e4660d8e42c4645e87a1656fd15ad1167a0c5a1710688ee5c37fd3f"
+    },
+    "fuji.vdp": {
+      "path": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/production/hardware-inline/fuji.vdp",
+      "bytes": 236910,
+      "sha256": "b3e6bf3eb53a8b27c3cbbc74854716a86042db0bd8f1f95b895638c67ba8e8dd"
+    },
+    "fuji.clr": {
+      "path": "/home/smith/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/production/hardware-inline/fuji.clr",
+      "bytes": 5118,
+      "sha256": "999170b235f34c76972739a5c64a208c8ccdb678dc3531c1f6f7af131d4e2ebd"
+    }
+  },
+  "default_launch": "load rally.bin; run . oval demo (separate MOS lines)",
+  "no_game_fencing_logging_or_performance_counters": true,
+  "stock_firmware": "Official VDP2.16.0 restored and independently flash-verified; MOS unchanged.",
+  "human_validation": "Author confirms slow continued operation after board reset button, not a cold power cycle.",
+  "native_frozen_criteria_pass": true,
+  "physical_performance_accepted": false,
+  "native_tracks": {
+    "oval": {
+      "stock_visible_frame_ms": {
+        "samples": 126,
+        "minimum": 27.021315,
+        "mean": 33.16993909523809,
+        "median": 31.7058695,
+        "p95": 36.528504,
+        "maximum": 36.795082
+      },
+      "golem_visible_frame_ms": {
+        "samples": 126,
+        "minimum": 17.518876,
+        "mean": 33.1282781984127,
+        "median": 31.711464499999998,
+        "p95": 36.788592,
+        "maximum": 36.879832
+      },
+      "median_change_percent": 0.01764657487157706,
+      "CPU_construction_cycles": {
+        "oracle_raw": {
+          "samples": 128,
+          "minimum": 263278,
+          "mean": 322471.015625,
+          "median": 324867.0,
+          "p95": 360241,
+          "maximum": 370231
+        },
+        "oracle_conservative_lower": {
+          "samples": 128,
+          "minimum": 233286,
+          "mean": 292590.390625,
+          "median": 294713.0,
+          "p95": 330249,
+          "maximum": 339915
+        },
+        "golem_raw_upper": {
+          "samples": 128,
+          "minimum": 23506,
+          "mean": 23513.3828125,
+          "median": 23506.0,
+          "p95": 23611,
+          "maximum": 23611
+        },
+        "conservative_reduction_percent": 91.96372007902472
+      },
+      "UART": {
+        "oracle_mean_scene_including_swap": 871.875,
+        "golem_scene_including_swap": 100,
+        "scene_reduction_percent": 88.5304659498208,
+        "fixture_HUD_bytes": 17,
+        "oracle_mean_total": 888.875,
+        "golem_total": 117
+      }
+    },
+    "fuji": {
+      "stock_visible_frame_ms": {
+        "samples": 126,
+        "minimum": 21.739174,
+        "mean": 33.12733202380952,
+        "median": 31.4037965,
+        "p95": 36.408044,
+        "maximum": 36.726953
+      },
+      "golem_visible_frame_ms": {
+        "samples": 126,
+        "minimum": 24.659888,
+        "mean": 33.21868391269841,
+        "median": 31.303662000000003,
+        "p95": 36.092826,
+        "maximum": 36.546554
+      },
+      "median_change_percent": -0.3188611287810228,
+      "CPU_construction_cycles": {
+        "oracle_raw": {
+          "samples": 128,
+          "minimum": 257219,
+          "mean": 291300.15625,
+          "median": 289549.5,
+          "p95": 339624,
+          "maximum": 354264
+        },
+        "oracle_conservative_lower": {
+          "samples": 128,
+          "minimum": 228523,
+          "mean": 261708.09375,
+          "median": 259557.5,
+          "p95": 310494,
+          "maximum": 323948
+        },
+        "golem_raw_upper": {
+          "samples": 128,
+          "minimum": 23526,
+          "mean": 23533.3828125,
+          "median": 23526.0,
+          "p95": 23631,
+          "maximum": 23631
+        },
+        "conservative_reduction_percent": 91.00777416728252
+      },
+      "UART": {
+        "oracle_mean_scene_including_swap": 751.5625,
+        "golem_scene_including_swap": 100,
+        "scene_reduction_percent": 86.6943866943867,
+        "fixture_HUD_bytes": 17,
+        "oracle_mean_total": 768.5625,
+        "golem_total": 117
+      }
+    }
+  },
+  "resource_ledgers": {
+    "oval": {
+      "bootstrap_bytes": 115526,
+      "resident_payload_bytes": 103275,
+      "owned_ids": 836,
+      "asset_payload_bytes": 36523,
+      "program_payload_bytes": 63451,
+      "scratch_payload_bytes": 3301,
+      "resident_plus_bootstrap_payload_bytes": 218801,
+      "cleanup_bytes": 5016
+    },
+    "fuji": {
+      "bootstrap_bytes": 236910,
+      "resident_payload_bytes": 224421,
+      "owned_ids": 853,
+      "asset_payload_bytes": 157129,
+      "program_payload_bytes": 63946,
+      "scratch_payload_bytes": 3346,
+      "resident_plus_bootstrap_payload_bytes": 461331,
+      "cleanup_bytes": 5118
+    }
+  },
+  "final_qualification_sha256": "9f12061007187ff0603ba419336e66f00bcecdb10b141b5b86123eef21de3efd",
+  "production_manifest_sha256": "faf3654b4c201646bba6420f2851b23b60d685b6b0d42e8a9006313c621365d8",
+  "preservation": "Original worktrees and remotes untouched; physical flash/SD backups stay local and untracked. No new emulator launch or physical action during final delivery."
+}
