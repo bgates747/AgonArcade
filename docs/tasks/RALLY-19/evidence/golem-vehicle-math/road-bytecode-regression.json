@@ -1,0 +1,17 @@
+{
+  "scope": "New vehicle primitives leave both R19-07 traced admitted roads byte-identical. This is a compiler regression, not a new native/full-scene performance result.",
+  "results": [
+    {
+      "track": "oval",
+      "source": "docs/tasks/RALLY-19/.work/road-visual/covered-clear-oval/candidate/oval-admitted-road.golem",
+      "sha256": "20b29b0e340580a309c96925cf32cdaf522077e590cde79e1011e2c52fc56e08",
+      "exact_bytecode_identity": true
+    },
+    {
+      "track": "fuji",
+      "source": "docs/tasks/RALLY-19/.work/road-visual/covered-clear-fuji-a/candidate/fuji-admitted-road.golem",
+      "sha256": "33fa281017d9bfd9c6aebf0e9520ad5e7ed1f2d183303928a1eaac9361cb803b",
+      "exact_bytecode_identity": true
+    }
+  ]
+}

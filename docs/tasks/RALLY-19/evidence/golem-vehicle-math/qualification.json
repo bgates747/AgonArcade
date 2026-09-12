@@ -1,0 +1,30 @@
+{
+  "scope": "Primitive qualification for R19-08; no vehicle renderer/scene completion. Both576-pair slices have exact96-byte output including sentinels. Host sanitizers/negatives pass.",
+  "pass": true,
+  "native_cases": 576,
+  "evidence": [
+    {
+      "run": "wide-primitives-a",
+      "report_sha256": "77bac208364ccfe06f66808083b618999d894854c2b912684bf12cbcbd5ea2fc",
+      "raw_sha256": "6b47667bb7f6f4289bd991e3bae741c61843944bd1ecfd4f3dc2b8d464b9a346"
+    },
+    {
+      "run": "wide-primitives-b",
+      "report_sha256": "b05deb834f8cb2d2fc635506670738abf2029725c49738efba4f63379c539f83",
+      "raw_sha256": "7508f8dd8e6fac2cb199c0d1322013059df73e96153ecba73103d8dbc6d86f78"
+    }
+  ],
+  "source_hashes": {
+    "src/golemc.cpp": "0156bb00e4d4f3f123e7fb012805bd1f85756cbca5849bd1024fdef8db52cdb5",
+    "src/hosted.hpp": "6cc90002190d30fe2e035f000ae6dbaaae8b7e17c2d262e3967cd6d98de5c63b",
+    "tests/test_admission.cpp": "fe5bed0ece8e0bedb9c4b7031b97c94b4a4c735d57d58731e283a4e46040381c",
+    "tests/test_divmod.cpp": "48848f0f3d913afb0775fa75290d98850f5272ab3c44c60143752399dd42ddd7",
+    "tests/test_elements.cpp": "1f592c362822bd50167ca56ea1d6f797009e9e08d845a65b2ce26290c1d7fdcd",
+    "tests/test_existing.cpp": "e1a8efdb74b7d78ed886a8606529fdeaa84969d37a0d23ce36caf1756ab5c1d5",
+    "tests/test_hosted.cpp": "1b6392a814598c4abc9fde84913cc912591349202c8dad2e8e02aece575311d6",
+    "tests/test_imports.cpp": "cd442286844ce55ed164c972891fc2af0624866a9b27838d6a32d5edb56d7fdb",
+    "tests/test_rounding.cpp": "67967a7bb80bf0cf18320f89cc08a052906f07fe23f3a40cba71b88697e19b8b",
+    "tests/test_vehicle_math.cpp": "ab49ac212e887e4c1a9b381797fd864a2ec78d151439407d0d023c62d708630c",
+    "tests/run_hosted.py": "3db68a5b97e84002983aa1a463bc7779711233389c12137fd07f8e3f9beb0d1d"
+  }
+}

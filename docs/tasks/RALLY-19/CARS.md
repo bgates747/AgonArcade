@@ -1,7 +1,7 @@
 # R19-08 accepted vehicle computation précis
 
-Read-only preparation while R19-07 tests run. R19-08 remains open in root TODO;
-this is not an implementation or separate task list. Authoritative sources are
+Reference and implementation progress for R19-08, which remains open in root
+TODO; this is not a separate task list. Authoritative oracle sources are
 accepted949f618's `scene.hpp`, `traffic.hpp`, `vehicle.hpp`, `road.hpp` and
 `src/main.cpp`, preserved under `.work/oracle`. Optional perspective is OFF in
 the frozen target; do not substitute perspective-aware yaw.
@@ -93,21 +93,48 @@ frozen input words and supplies raw states only. No projected geometry, heading
 or depth is transmitted. Use these inputs for numeric kernel probes; retain the
 original66 native images/masks for final scene comparisons.
 
-## Compiler integration considerations (not yet implemented)
+The saved hex records use the global fixture index as a diagnostic sequence.
+A selected-track run must call `admitted(case,sequence)` with its own contiguous
+sequence starting at0; do not replay those global-index hex records unchanged.
+The sorting probe does this and verifies the complete active/admission readback.
 
-The existing small `DivModPositive` cannot directly wrap a relative distance:
-Fuji's lap is3276800, exceeding its65535 divisor/remainder limit. A bounded
-positive32 conversion plus widening that intrinsic to a positive s32 remainder
-is one candidate construction. Then `car-player+lap` stays positive and below
-2^24, its quotient is0/1, and the wrapped distance fits3276799. Division by100
-after wrapping fits the existing32767 quotient limit. Qualify actual emitted
-positive conversion and reciprocal boundaries before adopting this approach.
+## Qualified distance/order implementation
 
-Sorting needs a full-width distance comparison; compare zero-extended ordered
-bytes, reusing the established avoidance of the VDP's0xffff operand sentinel.
-One shared comparator can serve the15 fixed sort pairs. Keep original car IDs
-through every swap. The prepared tie fixture's visible order is5,2,3,1,4,0 on
-both tracks, illustrating why a stable-sort replacement would be wrong.
+Golem1bbf6dc adds StorePositive32Floor, MatAbs, LessThan and large-divisor/s32
+remainder DivModPositive. Native primitive proof passes576 complete output records;
+host sanitizer/golden/negative tests pass. Both R19-07 road byte streams remain
+identical. See `evidence/golem-vehicle-math/qualification.json` and its raw runs.
+The first576-case batch was rejected by the existing512-case loader cap; two288
+case batches pass, preserving that cap and the failed attempt.
+
+`build_vehicle_sort.py` appends resident distance wrapping and the original15-pair
+sort to the admitted full-road job. `car-player+lap` stays positive and below2^24;
+its quotient is0/1 and the wrapped distance fits3276799. One shared comparator
+uses ordered zero-extended bytes and avoids the0xffff sentinel. Full records move
+through every swap. The tie fixture's order is5,2,3,1,4,0, not a stable sort.
+
+All156 native fixtures pass (69 oval,87 Fuji), including complete admission state
+and every ordered position/distance/lane/ID. The host-reference visible order is
+cross-checked too. Source/protocol/runtime identities and readback are retained in
+`evidence/golem-vehicle-sort/initial-oval` and `initial-fuji`. The native probe keeps
+the road active in mode136 with pixel coordinates, but does not draw cars yet.
+
+Vehicle math/working buffers are1700/1701;1702 holds six12-byte sorted records
+(`s32 position, s32 distance, s16 lane, u16 originalID`);1703 is the swap temporary.
+Matrices1800..1804 compute the distance; programs2800/2801 are the shared distance/
+comparison jobs,2802 rebuilds and sorts all six records,2810..2824 swap fixed pairs.
+The traced admitted road+sort uses759/783 IDs and62847/180711 resident payload bytes
+(oval/Fuji). R19-08 remains open: actual projection/bitmap drawing is still absent.
+
+```sh
+.venv/bin/python docs/tasks/RALLY-19/probe_vehicle_sort.py initial-oval
+.venv/bin/python docs/tasks/RALLY-19/probe_vehicle_sort.py initial-fuji --track fuji
+```
+
+Use fresh names when reproducing. Every emulator remains headless; these numeric
+checks do not qualify full-scene images, timing, long-term memory or hardware.
+
+## Projection integration considerations (not yet implemented)
 
 Camera/opponent headings discard sub-world-unit position, so tangent interpolation
 can use local whole-world units0..63 and divide by64 instead of multiplying by
@@ -116,5 +143,32 @@ smaller exact integer products. It does not apply to road projection or scenery,
 which retain fractional position. Bounds on compiler fields must honestly contain
 the intermediate arithmetic; do not narrow declarations merely to silence a
 range check. A scalar absolute-value operation and typed bitmap/affine selection
-may be useful small additions, subject to native proof. Avoid introducing a
+are useful here; MatAbs is now qualified, bitmap/affine selection is still pending.
+Avoid introducing a
 general renderer or replacing Golem with host-generated command bytes.
+
+For projection, select a sorted12-byte record with the already-qualified
+LoadElement. The existing road row evaluator supports103..224, but its unrounded
+pixel-centre matrix1202 must be copied into a bounded ordinary field *inside* the
+row job before returning: Call invalidates mutable matrix bounds. The car path
+then truncates that value toward zero instead of using rounded road endpoints.
+Keep the R19-07 generators unchanged; extend the generated source in an opt-in
+vehicle builder so earlier proof streams remain reproducible.
+
+Clipping must precede reciprocal evaluation. RequireRange/CallIf currently guard
+execution but do not narrow a field's compiler range. Thus z declared0..32767
+cannot simply be loaded into an invertible matrix after a64..1100 guard. A small
+checked fixed-type copy into an initialized64..1100 destination, retaining the
+old destination and returning status0 on failure, is a possible reusable solution.
+Qualify it rather than falsely narrowing the broad source declaration. The
+existing diagonal3x3 InvertAffine+MatExtract path can then compute8000/z.
+
+Heading source data can be compact unchanged `(tx,ty,nextTx-tx,nextTy-ty)` records
+from the accepted TrackPoint arrays. Whole-world local interpolation uses0..63
+and divisor64; its1/64 fractions remain exact through the signed floor store.
+Lane and player lateral divisions must retain truncation toward zero. Actual
+tangent components stay within[-4096,4096], making each determinant product exact
+in binary32; a determinant exceeding2^24 may round by one, but that is already
+beyond the largest yaw threshold1785 after division by4096, where view4 saturates.
+Validate the actual view/handedness and frozen positions rather than requiring
+irrelevant exactness in a saturated internal cross-product diagnostic.

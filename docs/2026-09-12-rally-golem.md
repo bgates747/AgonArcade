@@ -26,3 +26,14 @@ for depth clipping, sort ties and every steering tick. These are reference input
 not a completed VDP vehicle renderer. Vehicles, scenery/frontend, full-scene
 performance and ten-minute stability remain open. No hardware acceptance is
 claimed and no graphical alert, SD deployment or GitHub push was performed.
+
+R19-08 partial checkpoint: Golem1bbf6dc supplies qualified wide positive division/
+conversion, scalar absolute value and full-width fixed comparisons.576 native
+primitive records and all host sanitizer/negative/regression checks pass. The
+R19-07 compiled roads remain byte-identical. New admitted vehicle distance/sort
+code passes all156 fixtures, preserving the original15-pair ordering and IDs.
+Resource use is759/783 IDs and62847/180711 resident payload bytes (oval/Fuji).
+R19-08 stays unchecked pending projection, yaw/reflection, drawing and per-car
+image tests. CARS.md records current storage, evidence, commands and the clipping/
+compiler-bound issue to solve before reciprocal projection. This is progress
+toward the existing full goal, not a reduced completion criterion.
