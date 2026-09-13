@@ -83,3 +83,12 @@ separation checks pass. One physical200%-grip/two-tick attempt qualified and
 finished both Fuji arcade laps, with4crashes and1621road-only observations.
 Raw evidence and limits are in R22-11. Keys released and app exited afterward.
 No commit/publication or broader paused-work resumption.
+
+## Author review and local commit freeze
+
+The Author praised the presentation but judged the game too difficult after
+the attended Fuji arcade race. They explicitly authorized committing all dirty
+AgonArcade and Extender work in separate logical commits. Preserve the candidate
+and evidence as local checkpoints; this does not approve difficulty or publish
+a release. No push, hardware action or graphics-contract change is part of this
+freeze. Further graphics-suite contract work awaits the next instruction.
