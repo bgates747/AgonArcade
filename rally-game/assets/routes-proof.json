@@ -1,0 +1,55 @@
+{
+  "format": 1,
+  "ticks": 600,
+  "records": [
+    [
+      60,
+      180,
+      0,
+      32
+    ],
+    [
+      60,
+      180,
+      1920,
+      -32
+    ],
+    [
+      180,
+      170,
+      0,
+      0
+    ],
+    [
+      60,
+      180,
+      0,
+      -32
+    ],
+    [
+      60,
+      180,
+      -1920,
+      32
+    ],
+    [
+      180,
+      150,
+      0,
+      0
+    ]
+  ],
+  "lateral_q8_extrema": [
+    0,
+    10088
+  ],
+  "max_car_centre_abs_q8": 14260,
+  "longitudinal_period_hundredths": 201600,
+  "track_lengths_hundredths": {
+    "Fuji": 3276800,
+    "TriOval": 576000
+  },
+  "minimum_admitted_gap_hundredths": 9600,
+  "contact_length_hundredths": 3200,
+  "proof": "Common displacement preserves every admitted pair gap for all ticks; periodic heading/lateral replay closes exactly. Symmetric integer sine and matched lobe pace establish indefinite bounded lateral movement."
+}
