@@ -261,3 +261,53 @@ SHA2567eb43e726a7c93c771d55243f5f65c87bbf431a1197c5a608fe6b11a805f50f4.
 It is an uncommitted candidate, not a published release. R22-09 denotes machine
 delivery; Author visual/handling review and explicit commit approval remain
 open. R22-10 now continues under Extender PORT-003's video-throughput increment.
+
+## R22-11 — Attended Fuji arcade host drive
+
+Author requested a live Fuji/arcade race and restart after inspecting the full
+game. This authorizes a bounded attended demonstration, not renewed overnight
+practice or Extender backlog work. The full game currently lacks bench telemetry.
+
+1. [x] Add an opt-in RALLY_HOST_TELEMETRY build using the existing EMOS gateway.
+2. [x] Test the snapshot against the actual retained P4 receiver and host decoder;
+   compile ordinary and instrumented variants, preserve ordinary runtime.
+3. [x] Stage/read back a separate SD binary, restart Fuji arcade and drive one
+   qualifying/race attempt through ordinary keys at explicitly disclosed200% grip.
+4. [x] Release keys and retain telemetry/outcome; leave human review open.
+
+Contract frozen before edits: no firmware changes, direct state control, demo
+assistance during driving, balance/traffic-route changes or automatic restarts.
+Use existing140-byte v2 framing; optional full-game application profile places
+the phase enum in the previously unused upper nibble of flags byte3. Low flags
+retain running/manual/demo/assist/audio meanings; running is set only in driving
+phases outside crash recovery. All reserved bytes remain zero. Non-race/inactive
+traffic slots use signed distance INT32_MIN and zero lane/speed, an explicit
+absent-slot sentinel rejected by the old driver and removed by the new adapter.
+Active slots report exact signed Q8 lanes and route speed; use player station
+(camera+68units), actual crash count and normal physics. Keep monotonically
+advancing frame/clock across phase changes; the host resets only its prediction
+state at an observed phase change, never accepts a new run/keyboard epoch.
+The host profile verifies phase, CRC, freshness, flags and inactive sentinels,
+reuses the existing PassingDriver only for manual phases, releases controls
+during countdown/results/crash, and stops on a result or stale/changed ownership.
+No score-file writes in this instrumented build. Normal binary contains no
+telemetry options/calls; keep both current deployed candidates intact.
+
+Attended outcome: normal build remains byte-identical SHA256
+3ac79285f327bbb0bfe6a56cae7b839f124486a0fbd253647278b8bfa5a40434
+(the authoritative build.json carries the exact identity). Instrumented172643B
+SHA2569ce657cd9df7b2302ec5aa7e975f992c0e2bd93430a25df687ee63de82725cc1
+was independently staged/read back/activated as hostrace.bin beside the isolated
+full-game candidate. QualifyReady→Qualify→Qualified→RaceReady→Race→Finished
+completed in173.65wall seconds at200% grip, two-tick steering.1621observations
+were road-only; the real game counted4crashes. Approximate observed phase
+intervals: qualifying46.68s, two-lap race117.81s. These are host observation
+intervals, not exact in-game lap timer readings. This passes the requested
+attended attempt, not collision-free driving acceptance. The existing controller
+forecasts opponents at their current lateral position; moving-route forecasting
+remains a limitation, not a proven diagnosis of all four crashes. No tuning or
+repeat attempt was performed. Ordinary Escape exit stopped telemetry and left
+the keyboard neutral/released. Extender private evidence is
+agents/video-throughput/author-fuji-race-01; paired deployment/menu/exit journals
+share author-fuji prefixes. All changes remain local/uncommitted. Extender video
+work remains paused. Profile byte81 is unused zero; byte84 counts real crashes.

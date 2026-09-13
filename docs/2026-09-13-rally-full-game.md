@@ -72,3 +72,14 @@ qualification/racing on both tracks, passing/contact recovery and sign artwork.
 Fresh emulator validation and explicit commit approval remain required before
 emulator-coupled changes are committed or pushed. Extender work may proceed
 independently after the machine candidate is complete, under its own queue.
+
+## Attended Fuji arcade drive
+
+R22-11 connects an optional full-game telemetry variant to the existing resident
+EMOS/P4 service without reflashing. Normal build remains byte-identical; host
+variant disables score saving and uses ordinary keyboard control. Full-game
+packet/P4 receiver/host decoder integration, existing game tests and build
+separation checks pass. One physical200%-grip/two-tick attempt qualified and
+finished both Fuji arcade laps, with4crashes and1621road-only observations.
+Raw evidence and limits are in R22-11. Keys released and app exited afterward.
+No commit/publication or broader paused-work resumption.

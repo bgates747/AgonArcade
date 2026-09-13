@@ -2,8 +2,10 @@
 
 This is RALLY-22's stock-VDP game derivative of the accepted pre-Golem renderer.
 The frozen `../rally-production` product and `../rally-bench` telemetry experiment
-remain separate. This candidate is in development; human visual/handling review,
-final physical qualification and publication approval remain pending.
+remain separate. This candidate is in development; human visual/handling review
+and publication approval remain pending.
+Bounded native/hardware launch, qualifier/save, exit and SD recovery checks pass;
+these do not establish physical frame rate or human difficulty.
 
 It starts with a moving title screen, then offers the oval or Fuji and two
 traffic modes. Qualify over one standing-start lap, take your grid position,
@@ -122,3 +124,23 @@ command). It rejects fixture flags and stale inputs. Runtime files and
 readme.txt are at archive root; project_files contains editable sources, build
 inputs, README.md and a base-commit reference explicitly labelled uncommitted.
 The manifest hashes every supplied file. This does not publish the candidate.
+
+## Attended host-driving build
+
+R22-11 adds an explicitly separate `-DRALLY_HOST_TELEMETRY` variant. It requires
+the already-qualified EMOS resident telemetry provider and Extender keyboard
+path. Launch arguments add `grip200`; phase flow and all driving rules remain
+normal. This variant never writes human score records. The normal build is
+byte-identical to the original candidate and excludes the gateway object.
+
+The paired host controller is Extender's `scripts/rally_race.py`; it takes
+`--url`, a fresh `--output` folder, and a bounded `--seconds` deadline. Start
+it in the Fuji qualifying countdown at200% grip after selecting arcade via
+the normal CLI/menu. It stops on a result, stale telemetry or keyboard takeover,
+releasing its keys. Raw telemetry is preserved. The optional application
+profile is specified in RALLY-22's R22-11 section; no firmware change is needed.
+
+To test the packet against the actual P4 receiver, compile
+`tests/host_telemetry_test.cpp` with game/production include paths and the
+Extender `vdp/video/extender/telemetry` include directory. Its stdout is a
+sequence of eleven140-byte snapshots for the paired host decoder tests.
