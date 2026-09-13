@@ -1,5 +1,39 @@
 # AgonArcade TODO
 
+## Full-game checkpoint
+
+- [ ] **[RALLY-22](docs/tasks/RALLY-22.md) — Complete Rally, then continue the Extender port.**
+  Bounded practice is complete. The full-game candidate implements qualifying,
+  races, retained top HUD, deterministic traffic, saves and community signs.
+  Headless and bounded hardware checks pass; the normal candidate and source ZIP
+  are locally committed. The Author reviewed the presentation and judged the
+  gameplay too difficult after the attended Fuji arcade run in R22-11.
+  Development and Extender video work remain paused.
+  Afterwards prioritize Extender video speed, then faithful VDP command coverage.
+  The Author requested the local commit freeze before discussing new contracts.
+
+## Current BENCH-001 component work
+
+- [ ] **BENCH-001 — Rally telemetry and engine sound**
+  - Status: Resident telemetry, CLI driving and engine implemented; the bounded
+    hour is complete with retained evidence. Human review and the recorded
+    native diagnostic limitation remain open.
+  - Details: [BENCH-001](docs/tasks/BENCH-001.md)
+
+## Deferred gameplay work
+
+- [ ] **[RALLY-23](docs/tasks/RALLY-23.md) — Learned driving with batched headless C simulations.**
+  Author scheduled for next week: thousands of independent simulations on the
+  Pi, actual policy learning and transfer back to ordinary Agon controls.
+  Registration only; tonight's work remains RALLY-22/BENCH-001.
+
+- [ ] **[RALLY-21](docs/tasks/RALLY-21.md) — Deterministic traffic move tables.**
+  Python generates coordinated opponent routes; sparse speed/direction/turn-rate/tick-count
+  entries play through per-car countdowns. Prove opponent separation across
+  repeated loops. Implemented in rally-game under RALLY-22; bench stubs are
+  preserved. Human review and approval remain open.
+
+
 ## RALLY-20 execution register — paused for planning review
 
 The Author requested this new goal on 2026-09-12: optimize the hardware-accepted
