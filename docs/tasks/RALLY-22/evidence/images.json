@@ -1,0 +1,37 @@
+[
+  {
+    "image": "title.png",
+    "source_capture": "record-read01/frame-000180.png",
+    "image_sha256": "1683447daf3495f572498a1c251d52f340cb2358e1c9c359dd067c8294d89a87",
+    "binary_sha256": "c32a5c51f354fe6806ab8114f781fede20ba309af5408a57191267e553498546",
+    "scope": "headless machine visual check, not human acceptance"
+  },
+  {
+    "image": "race.png",
+    "source_capture": "signs-oval01/frame-003000.png",
+    "image_sha256": "50446bdebfa32c8bf214cfaf9df261b4160215f89db2ac9acdbcb09e80f0b685",
+    "binary_sha256": "89a0bdddec4bb347b9446278d55a25e8f279f93189bedb6850a7e06293811b24",
+    "scope": "headless machine visual check, not human acceptance"
+  },
+  {
+    "image": "crash-fixture.png",
+    "source_capture": "contact01/frame-001980.png",
+    "image_sha256": "8a5858cfc614bf6927989e3c711df3eb0d9bf87a42ed85792a80db23d8c0b53e",
+    "binary_sha256": "a7e29e1090ad15237179cb332a79ff89fb39a44bb68006c9b5cb6ec08d860d16",
+    "scope": "headless machine visual check, not human acceptance; contact images deliberately inject one overlap"
+  },
+  {
+    "image": "recovered-fixture.png",
+    "source_capture": "contact01/frame-002100.png",
+    "image_sha256": "503ff894514d5b9e5e1d4289de1faba18f7e299eeb5cb5057d578d9ea66ed278",
+    "binary_sha256": "a7e29e1090ad15237179cb332a79ff89fb39a44bb68006c9b5cb6ec08d860d16",
+    "scope": "headless machine visual check, not human acceptance; contact images deliberately inject one overlap"
+  },
+  {
+    "image": "qualifier-failure.png",
+    "source_capture": "final-release01/frame-002200.png",
+    "image_sha256": "faf650264926152fb5a5ecc21a4a1b9eb6b284005fc62d19181d5b001e68a5e5",
+    "binary_sha256": "364e9187a4170abe714a7ca98f7207b3272fa13a97053b929543d9f555f98bf8",
+    "scope": "headless machine visual check, not human acceptance"
+  }
+]

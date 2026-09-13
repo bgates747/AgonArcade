@@ -1,0 +1,38 @@
+{
+  "permission": "Author expressly requested reuse of their game and Extender artwork. Original text tribute plates substitute for third-party game art pending permission.",
+  "sources": {
+    "nurples.png": {
+      "sha256": "da6303933ad3d267aac944824a2d0aeedff623d14fad9bdc777d41849060c133"
+    },
+    "jukebox.rgba2": {
+      "sha256": "6ca611f30d4c8034229ecbffd219bcad506ea9f8dedbb1a2f80b9ec8f680f277"
+    },
+    "extender.png": {
+      "sha256": "3d36c1010e5d8e0e5a093056ff7cba977194c1c550521ec7ebbd309dbbbd7672"
+    }
+  },
+  "ships": {
+    "aginvadors_source": "pygame/pynvaders/art.py",
+    "aginvadors_sha256": "01c8711faf1ec792f23e9c9d21a5a1da2ad7eee3b142f495bf0d9646d9f71c45",
+    "defender_source": "defender/tools/generate_assets.py",
+    "defender_sha256": "8597451153021de9c58ab622a6ef37e1ac333348642f5dea019a350b078a5d97"
+  },
+  "extender": {
+    "url": "https://raw.githubusercontent.com/bgates747/agon-extender/c78807b4c9b2685dc0df8917150372bd8685df9c/social-preview.png",
+    "sha256": "3d36c1010e5d8e0e5a093056ff7cba977194c1c550521ec7ebbd309dbbbd7672"
+  },
+  "jukebox_dimensions": [
+    80,
+    120
+  ],
+  "extender_crop": [
+    530,
+    60,
+    1010,
+    520
+  ],
+  "third_party_pending": [
+    "Richard Turnnidge: Starship Sentinel screenshots have no explicit artwork licence found",
+    "Christian Pinder/Xian: original authors and art permissions require identification for each port"
+  ]
+}
