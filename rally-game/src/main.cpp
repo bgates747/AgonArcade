@@ -25,8 +25,25 @@
 #if defined(RALLY_TEST_CONTACT) && (!defined(RALLY_TEST_DRIVER) || !defined(RALLY_CAPTURE))
 #error Contact fault injection requires an explicitly assisted capture fixture
 #endif
+#ifdef RALLY_HOST_TELEMETRY
+#include "host_telemetry.hpp"
+extern "C" unsigned emos_gateway_call(uint8_t *request);
+#endif
 namespace {
 using namespace rally::game;
+#ifdef RALLY_HOST_TELEMETRY
+uint8_t gateway[66],telemetryInput[141];
+bool telemetryOpen=false;
+uint32_t telemetryRun=0,telemetryFrame=0,physicsTicks=0,hostContacts=0;
+void put24(uint8_t *p,unsigned v){p[0]=v;p[1]=v>>8;p[2]=v>>16;}
+unsigned telemetryCall(uint8_t operation){
+    telemetryInput[0]=operation;memset(gateway,0,sizeof(gateway));
+    gateway[0]=66;gateway[2]=1;gateway[4]=3;gateway[5]=9;gateway[6]=2;
+    memcpy(gateway+25,"ext",3);memcpy(gateway+41,"telemetry",9);
+    put24(gateway+10,(unsigned)telemetryInput);put24(gateway+13,operation==1?141:1);
+    return emos_gateway_call(gateway);
+}
+#endif
 rally::Motion motion;
 rally::LookupRoad road __attribute__((no_destroy));
 rally::Traffic traffic;
@@ -201,7 +218,7 @@ void phaseChanged() {
     if(result(rules.phase)) {
         motion.speed=0; // Result screens stop the vehicle and its engine pitch.
         const unsigned identity=Records::key(selected==&rally::Fuji,rules.policy==Policy::Arcade,steeringStep,rules.maxGrip);
-#ifndef RALLY_TEST_DRIVER
+#if !defined(RALLY_TEST_DRIVER) && !defined(RALLY_HOST_TELEMETRY)
         savePending=records.update(identity,rules.score,rules.bestLap) || savePending;
 #else
         (void)identity; // Assisted fixtures never persist scores as manual play.
@@ -364,7 +381,12 @@ void tick() {
                 motion.lateral=opponent.lateral;
             }
 #endif
-            if(!recovering && !crash.invulnerable && raceTraffic.contactStation(station,motion.lateral))crash.begin(motion);
+            if(!recovering && !crash.invulnerable && raceTraffic.contactStation(station,motion.lateral)) {
+                crash.begin(motion);
+#ifdef RALLY_HOST_TELEMETRY
+                ++hostContacts;
+#endif
+            }
             if(!recovering && !crash.remaining)for(unsigned i=0;i<6;++i) {
                 const auto &car=raceTraffic.cars[i];
                 if(car.active && generations[i]==car.generation && forwardPass(before[i],
@@ -470,11 +492,18 @@ int gameMain(int argc,char **argv) {
         else if(!strcmp(argv[i],"steer2"))steeringStep=2;
         else if(!strcmp(argv[i],"arcade"))rules.policy=Policy::Arcade;
         else if(!strcmp(argv[i],"circuit"))rules.policy=Policy::Circuit;
+        #ifdef RALLY_HOST_TELEMETRY
+        else if(!strcmp(argv[i],"grip200"))motion.grip=200;
+#endif
         else if(!strcmp(argv[i],"demo")){} // Compatibility alias; attract is always the default.
         else {printf("Usage: rally [oval|fuji] [circuit|arcade] [steer1|steer2] [mute]\n");return 1;}
     }
     if(!readRecords("rally.sav",records))readRecords("rally.bak",records);
     if(!loadTrack()) {printf("Road data unavailable: %s\n",road.error());return 30;}
+    #ifdef RALLY_HOST_TELEMETRY
+    if(telemetryCall(0)){printf("Host telemetry unavailable.\n");return 31;}
+    telemetryOpen=true;
+#endif
     if(vdp_mode(136)<0)return 1;
     vdp_set_pixel_coordinates();vdp_reset_sprites();vdp_cursor_enable(false);
     loadCars();loadFont();loadSigns();resetMotion();phaseChanged();
@@ -483,6 +512,9 @@ int gameMain(int argc,char **argv) {
     FILE *ready=fopen("ready.txt","wb");if(ready) {fputs("test fixture ready\n",ready);fclose(ready);}
 #endif
     uint32_t previous=rawClock(),next=previous;
+#ifdef RALLY_HOST_TELEMETRY
+    telemetryRun=previous^UINT32_C(0x522D12E);
+#endif
     while(!quit) {
         const uint32_t now=rawClock();if(!rally::tickDue(now,next))continue;next=now+4;
         const uint32_t elapsed=rally::ticksSince(now,previous);previous=now;
@@ -495,6 +527,17 @@ int gameMain(int argc,char **argv) {
 #endif
         for(uint32_t t=0;t<elapsed;++t)tick();
         engine.update(motion.speed,send);
+#ifdef RALLY_HOST_TELEMETRY
+        physicsTicks+=elapsed;++telemetryFrame;
+        if(telemetryOpen) {
+            host::snapshot(telemetryInput+1,motion,telemetryRun,telemetryFrame,now,
+                physicsTicks,elapsed,rules,crash.remaining!=0,engine.active,
+                (key(26)?1:0)|(key(122)?2:0)|(key(58)?4:0)|(key(42)?8:0),
+                raceTraffic,hostContacts,steeringStep);
+            const unsigned status=telemetryCall(1);
+            if(status && status!=31)quit=true; // Close on error; never drive without a live stream.
+        }
+#endif
         rally::game::prepareGameScene(motion,traffic,raceTraffic,road,sceneryHistory,scene,false);
         billboards.prepare(motion,road);
         if(rules.phase!=Phase::Attract && rules.phase!=Phase::Race)scene.cars=0;
@@ -519,4 +562,8 @@ int gameMain(int argc,char **argv) {
     }
     vdp_mode(0);vdp_set_logical_coordinates();vdp_cursor_enable(true);return 0;
 }
-int main(int argc,char **argv) {const int status=gameMain(argc,argv);engine.stop(send);road.~LookupRoad();return status;}
+int main(int argc,char **argv) {const int status=gameMain(argc,argv);engine.stop(send);
+#ifdef RALLY_HOST_TELEMETRY
+if(telemetryOpen){(void)telemetryCall(2);telemetryOpen=false;}
+#endif
+road.~LookupRoad();return status;}

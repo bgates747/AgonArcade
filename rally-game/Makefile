@@ -8,6 +8,11 @@ ifeq ($(strip $(AGONDEV_MAKEFILE)),)
 $(error Install agondev and put agondev-config on PATH, or set AGONDEV_CONFIG)
 endif
 include $(AGONDEV_MAKEFILE)
+# AgonDev does not garbage-collect ordinary .text; omit the private gateway
+# object from normal links so the stock-compatible image has no resident API.
+ifeq ($(findstring -DRALLY_HOST_TELEMETRY,$(EXTRA_GAME_FLAGS)),)
+OBJS := $(filter-out obj/emos_gateway.o,$(OBJS))
+endif
 CFLAGS += -I../rally-production/include
 CXXFLAGS += -std=c++17 -Wall -Wextra -Werror -fno-exceptions -fno-rtti
 $(OBJS): $(wildcard include/*.hpp ../rally-production/include/*.hpp)
