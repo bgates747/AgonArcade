@@ -8,7 +8,8 @@
   Headless and bounded hardware checks pass; the normal candidate and source ZIP
   are locally committed. The Author reviewed the presentation and judged the
   gameplay too difficult after the attended Fuji arcade run in R22-11.
-  Development and Extender video work remain paused.
+  Default startup on stock Fab 1.2.4 was accepted on 2026-09-14;
+  difficulty remains unresolved. Development and Extender video work remain paused.
   Afterwards prioritize Extender video speed, then faithful VDP command coverage.
   The Author requested the local commit freeze before discussing new contracts.
 

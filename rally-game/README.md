@@ -3,7 +3,8 @@
 This is RALLY-22's stock-VDP game derivative of the accepted pre-Golem renderer.
 The frozen `../rally-production` product and `../rally-bench` telemetry experiment
 remain separate. This is the current game on `main`; integration and publication were authorized
-on 2026-09-14. Further human emulator/handling review remains pending.
+on 2026-09-14. The Author accepted default startup in stock Fab 1.2.4 on 2026-09-14.
+Previously reported difficulty remains an open handling issue.
 Bounded native/hardware launch, qualifier/save, exit and SD recovery checks pass;
 these do not establish physical frame rate or human difficulty.
 

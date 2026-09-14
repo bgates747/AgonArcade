@@ -23,3 +23,17 @@ The rally19-golem branch ends at 5b6e3c3, the closed Golem experiment.
 Only the integration branch is temporary. Historical task records describing
 uncommitted status remain historical; this record supersedes that status.
 The main checkout's pre-existing untracked handoff.md is preserved unchanged.
+
+## Default startup emulator acceptance
+
+On 2026-09-14 the Author tested the current full game from main and confirmed
+“alright that works,” explicitly authorizing closure, commit and push.
+The fresh rally22-main-default-review profile launched the normal 171072-byte
+binary identified above with `RUN .` and no game arguments, official Fab 1.2.4
+and stock platform MOS/VDP. Default startup review passes. The emulator process
+had already exited when closing the review; no other emulator was stopped.
+
+This accepts the reviewed default-startup behavior. It does not establish new
+physical frame-rate measurements, resolve previously noted difficulty, or
+validate the separate optional UART1 transmit-interrupt emulator model.
+The profile and runtime outputs remain ignored; no game source changed.
