@@ -1,5 +1,9 @@
 # RALLY-19
 
+Historical main-branch plan: the completed, abandoned experiment is preserved
+on `rally19-golem` at `5b6e3c3`. Current gameplay is the eZ80-based
+`rally-game/`; see `../2026-09-14-rally-main-promotion.md`.
+
 ## Status and purpose
 
 Design notes opened at the user's request. Explore a VDP-resident scene renderer

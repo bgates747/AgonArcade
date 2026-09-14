@@ -61,12 +61,12 @@ The local checkout lives at `~/Agon/mystuff/AgonDefender`; the repository is nam
 **AgonArcade**. Future games belong in sibling subdirectories beside `defender/`.
 Pynvaders and Aginvadors remain in their separate repository.
 
-## Agon Rally full-game candidate
+## Agon Rally — current version
 
-The local [full game](rally-game/README.md) adds qualifying, timed races, circuit
+The current [full game](rally-game/README.md) adds qualifying, timed races, circuit
 and arcade traffic, saved records, a retained top HUD and community billboards.
-It preserves the separate accepted `rally-production` snapshot. This is an
-locally committed RALLY-22 candidate. The Author reviewed its presentation and
+It preserves the separate accepted `rally-production` snapshot. This is the RALLY-22 candidate on `main`.
+Build with `make -C rally-game`; test with `make -C rally-game test`. The Author reviewed its presentation and
 identified excessive difficulty; headless evidence
 and remaining validation are recorded in [the task](docs/tasks/RALLY-22.md).
 

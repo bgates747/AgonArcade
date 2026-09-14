@@ -1,11 +1,12 @@
 # AgonArcade handoff
 
-Current state: **RALLY-22** and BENCH-001 work frozen in local commits at the
+Current state: **RALLY-22** and BENCH-001 work preserved on main at the
 Author's request. Do not resume unattended development without a new instruction.
 Read `docs/tasks/RALLY-22.md` and `docs/specifications/rally-full-game.md`.
 Bounded BENCH-001 driving practice is complete; no further learning runs.
 Preserve `rally-production` and `rally-bench`; new game lives in `rally-game`.
-Tests are headless; leave experimental changes local pending Author review.
+New emulator behavior still requires human review; integration/publication was
+explicitly authorized on 2026-09-14.
 
 Separate paused task: **RALLY-20**, planning frozen for Author review. Read
 `docs/tasks/RALLY-20.md`, its `CONTRACT.md`, and
@@ -18,18 +19,14 @@ The planning emulator summons is expressly authorized; all later test runs are
 headless except an unavoidable human physical-intervention summons. Root TODO
 owns the cross-project register. Preserve prior dirty production/bench evidence.
 
-This is the isolated RALLY-19 execution worktree, branch `rally19-golem`, at
-`/home/smith/Agon/mystuff/AgonArcade-rally19`. Root `rally/` is the earlier game;
-`make -C rally` does not build the current Golem candidate. Start RALLY-19 work
-with `docs/tasks/RALLY-19/DELIVERY.md`, BUILDING.md, the frozen CONTRACT.md, and
-HARDWARE-DEBUG.md/REVIEW.md in that directory. The root TODO owns all execution
-checkboxes. Final native criteria pass and the observed physical startup crash
-is corrected, but hardware rendering remains too slow; this is a bounded research
-delivery, not a practical acceleration. Further optimization needs a new task
-decision. The corresponding C++ compiler is in the
-separate `../golem-rally19` worktree. Preserve the original AgonDefender and Golem
-checkouts. Later Author hardware/serial permissions are recorded in HARDWARE-DEBUG.md;
-the original contract's no-hardware wording is not the current complete scope.
+Main development now includes the latest eZ80-based full game in `rally-game/`.
+Build with `make -C rally-game`; test with `make -C rally-game test`.
+`rally-production/` supplies its preserved renderer headers and rollback product;
+`rally-bench/` is the earlier telemetry derivative; `rally/` is historical.
+Do not launch `rally/` or the BENCH-001 older binary when asked for current Rally.
+The abandoned Golem experiment is retained on `rally19-golem` at `5b6e3c3`.
+Its full experimental sources/evidence remain on that branch, not main.
+See `docs/2026-09-14-rally-main-promotion.md` for integration provenance.
 
 Follow `/home/smith/Agon/mystuff/agon-dev-env/codex/AGENTS.md` for Agon work.
 Use repository-root `.venv/bin/python` explicitly for Python tooling.
