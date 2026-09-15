@@ -36,7 +36,7 @@ Left/right change steering by two256-circle ticks once per rendered frame
 while held, within±21; simultaneous opposites cancel. Optional steer1 selects
 the Author's finer comparison. This is independent of keyboard repeat. Up
 accelerates, down brakes, and -= adjusts grip25–200 in5-point increments once
-per rendered frame. Default grip60 and maximum speed300 preserve this lineage.
+per rendered frame. Default grip200 eases hardware testing; maximum speed300 is unchanged.
 The candidate records grip with scores so tuned runs are not presented as
 like-for-like records. The existing speed-linked engine sine remains unchanged;
 a mute option and an in-game mute key can silence it.

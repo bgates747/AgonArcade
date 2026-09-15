@@ -35,7 +35,7 @@ are the required runtime; art, fonts and traffic routes are embedded.
 
 Command-line options are `oval`, `fuji`, `circuit`, `arcade`, `steer1`, `steer2`
 and `mute`. Last track/mode/steering choice wins. Defaults are oval, circuit,
-two steering ticks, 60% grip and sound enabled. `demo` is a compatibility alias
+two steering ticks, 200% grip and sound enabled. `demo` is a compatibility alias
 for the default title/attract launch. There are no production telemetry, fencing,
 benchmark or forced-phase switches.
 

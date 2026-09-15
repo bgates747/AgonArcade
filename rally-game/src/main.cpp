@@ -484,6 +484,7 @@ void loadCars() {
 
 }
 int gameMain(int argc,char **argv) {
+    motion.grip=200; // Author-selected default for easier hardware testing.
     for(int i=1;i<argc;++i) {
         if(!strcmp(argv[i],"oval"))selected=&rally::TriOval;
         else if(!strcmp(argv[i],"fuji"))selected=&rally::Fuji;
