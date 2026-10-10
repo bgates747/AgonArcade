@@ -147,7 +147,7 @@ scene/performance criteria pass and present the game for human review.
 
 ## Portability work
 
-RALLY-13 build_review.py currently cross-builds via SSH agon-linux using the
+RALLY-13 build_review.py currently cross-builds via SSH using the [canonical network instructions](https://github.com/bgates747/agon-dev-env/blob/feature/standardized-deployment/codex/environment.md#ssh-between-development-machines) using the
 copied rally/tools/build_linux.py, and its launch environment cleanup is
 Mac-oriented. RALLY-18's build/evidence files contain Mac absolute paths and
 runtime hashes. Do not weaken protection checks merely to make scripts run.
