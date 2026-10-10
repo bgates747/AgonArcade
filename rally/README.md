@@ -26,7 +26,7 @@ make -C rally test
 
 On the Intel Mac, use the repository-root Python 3.13 environment. Without a
 local `agondev-config`, `make -C rally` builds a source snapshot on the configured
-SSH host `agon-linux`, runs its sanitizer tests, and downloads a checksum-verified
+SSH host [canonical network instructions](https://github.com/bgates747/agon-dev-env/blob/feature/standardized-deployment/codex/environment.md#ssh-between-development-machines), runs its sanitizer tests, and downloads a checksum-verified
 binary. Each build uses a fresh directory and preserves the Linux game checkout.
 `make -C rally remote` selects this route explicitly; `make -C rally test` runs
 host tests locally without the cross-compiler. The SSH alias and Linux toolchain
