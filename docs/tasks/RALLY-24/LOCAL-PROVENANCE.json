@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-12",
+  "baseline_commit": "a2355fd",
+  "host_architecture": "aarch64",
+  "qualification": "local only; no physical execution",
+  "sha256": {
+    "docs/tasks/RALLY-24/experiment/test.py": "af752f1afeb66a8db0ecb188d611c4e220d44714cbe9b25f40ed3355ab2a5a63",
+    "docs/tasks/RALLY-24/experiment/Makefile": "723602f189623cad8a8ccd687510578187e7869c6f0f001aaaaf404a79184d8a",
+    "docs/tasks/RALLY-24/experiment/README.md": "2c59aad3bb31fb5f40b2fa9892ee430bf803769161b26cb9b063d8de45879cf3",
+    "docs/tasks/RALLY-24/experiment/module.c": "4edcb031ba5f60ed195ca1d4396fff8aabd285f01cb54dab034755d36604206a",
+    "docs/tasks/RALLY-24/experiment/protocol.py": "a8e4a8857520f2bd13f56dd5c7305e8026b66f70722b8b4b4c8fa118e83b6ad7",
+    "docs/tasks/RALLY-24/experiment/oracle.cpp": "4ac6ed4444d8dbbdfc11afc2d55c968b9929374f4c326d63030aa7f8a29cf9f4",
+    "docs/tasks/RALLY-24/experiment/inspect_native.py": "9b44f6cda7678d6d39438fd639d31974a6f2e6b23c50ee56cfe34b467301a9a8",
+    "docs/tasks/RALLY-24/experiment/.gitignore": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae",
+    "docs/tasks/RALLY-24/experiment/protocol_test.py": "a7b412bd84f3baad41d30c0569ecce98e77d97822274f7e0a675af45a82f6e32",
+    "docs/tasks/RALLY-24/experiment/unit.c": "36e48757707e3bac27edcf4d09f3fe2630597735815deb8b6d8010ef0ff912be",
+    "docs/tasks/RALLY-24/experiment/assets.cpp": "2c817ada698d5c06fe29a7ea0dfd819e89e19d6b8caf747b7f6fc705ab70ef99",
+    "docs/tasks/RALLY-24/experiment/admission.cpp": "060b180cd21659746e594c3eb77fe54c8dee76d5bcf8ac5e8328a6b586bed183",
+    "rally-game/assets/routes-proof.json": "f147c925d5e9eef69a53887ab4691d1ae5f5233453264b4893f0a5bc191b3587",
+    "rally-production/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "rally-production/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+  },
+  "generated_assets": {
+    "oval.r24": {
+      "bytes": 49926,
+      "sha256": "f354608222ffd7a723028aa916917a94dcf16113fce92acd8185bb60881cf40b"
+    },
+    "fuji.r24": {
+      "bytes": 149518,
+      "sha256": "01d9f5d89f163c5ab4152fb502721dcf1ceb5c08480a025a55d31db98612463d"
+    }
+  }
+}

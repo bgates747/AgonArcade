@@ -1,0 +1,79 @@
+{
+  "scope": "host command parity only; no physical DSP or pixel qualification",
+  "rows": [
+    {
+      "variant": "A",
+      "track": "fuji",
+      "poses": 4608,
+      "max_output_bytes": [
+        786,
+        350,
+        141
+      ],
+      "peak_leases": 3,
+      "resident_command_bytes_range": [
+        304,
+        1089
+      ],
+      "current_host_channel_bytes_median": 558.0,
+      "proposed_channel_bytes": 147,
+      "median_channel_reduction_percent": 73.66
+    },
+    {
+      "variant": "A",
+      "track": "oval",
+      "poses": 1232,
+      "max_output_bytes": [
+        896,
+        350,
+        141
+      ],
+      "peak_leases": 3,
+      "resident_command_bytes_range": [
+        352,
+        1274
+      ],
+      "current_host_channel_bytes_median": 710.0,
+      "proposed_channel_bytes": 147,
+      "median_channel_reduction_percent": 79.3
+    },
+    {
+      "variant": "B",
+      "track": "fuji",
+      "poses": 4608,
+      "max_output_bytes": [
+        3762,
+        350,
+        141
+      ],
+      "peak_leases": 3,
+      "resident_command_bytes_range": [
+        1242,
+        3989
+      ],
+      "current_host_channel_bytes_median": null,
+      "proposed_channel_bytes": 147,
+      "median_channel_reduction_percent": null
+    },
+    {
+      "variant": "B",
+      "track": "oval",
+      "poses": 1232,
+      "max_output_bytes": [
+        3411,
+        350,
+        141
+      ],
+      "peak_leases": 3,
+      "resident_command_bytes_range": [
+        1339,
+        3790
+      ],
+      "current_host_channel_bytes_median": null,
+      "proposed_channel_bytes": 147,
+      "median_channel_reduction_percent": null
+    }
+  ],
+  "duration_seconds": 1.267,
+  "negative_cases_per_variant": 35
+}

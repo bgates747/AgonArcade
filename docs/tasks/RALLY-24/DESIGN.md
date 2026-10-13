@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-Propose one buffer-only module, entry0 BIND and entry1 PREPARE. A112-byte world-state update describes all six opponents and the player/camera. PREPARE writes three bounded command lists. Existing VDU wrappers guard them and preserve frame order. This is a proposed contract for review, not implemented behaviour.
+Propose one buffer-only module, entry0 BIND and entry1 PREPARE. A112-byte world-state update describes all six opponents and the player/camera. PREPARE writes three bounded command lists. Existing VDU wrappers guard them and preserve frame order. Implemented and locally checked in experiment/ under LOCAL-CONTRACT.md; physical behaviour remains unqualified. See LOCAL-RESULTS.md for the completed local tranche.
 
 ## 1. IDs, entries and ownership
 
@@ -54,7 +54,7 @@ All multibyte values little-endian; no C struct cast across CPUs. All six slots 
 |50+12i|u8|Active bit0; others zero|
 |51+12i|u8|Reserved zero|
 
-Inactive slots require zero position/lateral/heading for canonical encoding; they emit no car. Active route bounds come from the current generator, validated during implementation before accepting arbitrary external packets. Slot index supplies bitmap/livery identity. No collision outcomes or traffic position integration move here.
+Inactive slots require zero position/lateral/heading for canonical encoding; they emit no car. Local tranche validation uses the current routes proof: active lateral Q8 is -14260..14260 and route heading is -1920..1920. Packets beyond these bounds are rejected; widen the ABI contract explicitly if routes change. Slot index supplies bitmap/livery identity. No collision outcomes or traffic position integration move here.
 
 ## 3. Invocation and command publication
 
