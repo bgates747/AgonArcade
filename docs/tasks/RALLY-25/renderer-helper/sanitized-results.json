@@ -1,0 +1,24 @@
+{
+  "scope": "host C helper/SDK-service mock; no compiler glue, target, pixels or cadence qualification",
+  "label": "sanitized",
+  "rows": [
+    {
+      "track": "fuji",
+      "scenes": 6388,
+      "peak_including_root": 3,
+      "relocated_resource_case": true,
+      "independent_context_case": true
+    },
+    {
+      "track": "oval",
+      "scenes": 2732,
+      "peak_including_root": 3,
+      "relocated_resource_case": true,
+      "independent_context_case": true
+    }
+  ],
+  "failure_lifecycle_metadata_cases": 79,
+  "asan_ubsan": true,
+  "duration_seconds": 1.434,
+  "library_sha256": "274680706912e67d6b8077cc58a00104e342c1bcce8190cceecec1bd390740ce"
+}

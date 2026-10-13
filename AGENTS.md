@@ -38,7 +38,13 @@ stop further parity research. The Author’s own visual confirmation is the fina
 visual gate. Author subsequently authorized commit/push of preparation results
 and TRF-001-23–26 concrete helper negotiation/extraction/host qualification, then
 review. Read `docs/tasks/RALLY-25.md`; combined module linking/game/firmware
-integration remains outside this tranche.
+integration remains outside this tranche. Preparation/scope was then committed
+and pushed as `314efe6`; isolated helper and ordinary/sanitized host qualification
+are delivered under `docs/tasks/RALLY-25/renderer-helper/RESULTS.md`. TRF-001-23/14
+are complete: Golem accepted exact v0.3 ABI/build-hook contract; read
+`docs/tasks/RALLY-25/renderer-helper/ACCEPTANCE.md`. Compiler bindings/combined
+linking remain unimplemented; new helper work is uncommitted.
+Native/composed stack/resource admission and combined linking remain unqualified.
 
 Separate paused task: **RALLY-20**, planning frozen for Author review. Read
 `docs/tasks/RALLY-20.md`, its `CONTRACT.md`, and
@@ -83,3 +89,8 @@ and estimated performance. Root `TODO.md` remains the sole task list.
 ## Network access authority
 
 For access between development machines, read the [canonical network instructions](https://github.com/bgates747/agon-dev-env/blob/feature/standardized-deployment/codex/environment.md#ssh-between-development-machines) in `~/Agon/mystuff/agon-dev-env/codex/environment.md` and its machine-local `.local/ssh-001/CONNECTIONS.md` guide. They own current hostnames, discovery, SSH identities, sudo, and LAN shares. Do not duplicate access recipes or revive old aliases, addresses, or share mappings in this project. Project-specific device/protocol and bench-safety instructions remain local.
+
+Author released TRF-001-27–30 on 2026-10-13: checkpoint current work, then a
+Rally-owned host C invocation/completion-publication harness and portable Fuji
+scene package, returning for review. Read RALLY-25; combined linking and target
+work remain outside this tranche.

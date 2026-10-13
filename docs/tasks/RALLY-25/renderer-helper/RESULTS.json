@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "ordinary": {
+    "scope": "host C helper/SDK-service mock; no compiler glue, target, pixels or cadence qualification",
+    "label": "ordinary",
+    "rows": [
+      {
+        "track": "fuji",
+        "scenes": 6388,
+        "peak_including_root": 3,
+        "relocated_resource_case": true,
+        "independent_context_case": true
+      },
+      {
+        "track": "oval",
+        "scenes": 2732,
+        "peak_including_root": 3,
+        "relocated_resource_case": true,
+        "independent_context_case": true
+      }
+    ],
+    "failure_lifecycle_metadata_cases": 79,
+    "asan_ubsan": false,
+    "duration_seconds": 0.801,
+    "library_sha256": "45a85b8b20cd4da1f5f735fe44328ac8618d615b774e0ad13d8bbe7193172882"
+  },
+  "sanitized": {
+    "scope": "host C helper/SDK-service mock; no compiler glue, target, pixels or cadence qualification",
+    "label": "sanitized",
+    "rows": [
+      {
+        "track": "fuji",
+        "scenes": 6388,
+        "peak_including_root": 3,
+        "relocated_resource_case": true,
+        "independent_context_case": true
+      },
+      {
+        "track": "oval",
+        "scenes": 2732,
+        "peak_including_root": 3,
+        "relocated_resource_case": true,
+        "independent_context_case": true
+      }
+    ],
+    "failure_lifecycle_metadata_cases": 79,
+    "asan_ubsan": true,
+    "duration_seconds": 1.434,
+    "library_sha256": "274680706912e67d6b8077cc58a00104e342c1bcce8190cceecec1bd390740ce"
+  },
+  "total_setup_execution_host_seconds": 8.286,
+  "host_only_static_frames": {
+    "colour": 0,
+    "centre_exact": 0,
+    "asset_ok": 0,
+    "bearing.isra": 0,
+    "tangent.isra": 0,
+    "preflight": 176,
+    "plot": 0,
+    "command": 0,
+    "affine": 0,
+    "viewport": 0,
+    "rally_render_bind_v1": 240,
+    "rally_render_prepare_v1": 496,
+    "rally_render_stop_v1": 0
+  },
+  "context_bytes": 464,
+  "target_stack_admission": "not measured/qualified; includes future generated callers and SDK callbacks",
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "fixtures_sha256": "492b0e093fe4bd59f25012ae60d012f9959c1dbf39e4a6501e2dcf64c168fbc2",
+  "asset_exporter_sha256": "2c817ada698d5c06fe29a7ea0dfd819e89e19d6b8caf747b7f6fc705ab70ef99",
+  "sources": {
+    "rally_render.h": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50",
+    "rally_render.c": "7ae7f03183864e44ffa2488f90fd1e878eb984bd4a2d325313b94a011fcd8001",
+    "render_core.inc": "2f3eb552538a3e2e8c9a450ae49c319540cc9b774ef925ec02f111d1e8f42f2b",
+    "asset_meta.inc": "940a4e51c2f06bb34106c858f690bad34d97ed8ab6994b19bb53a945f4eb6cd5",
+    "verify.py": "68b40e0519c93a534f37e5444f7729329a32463342f3533e5f07f56d0d7985a4"
+  }
+}
