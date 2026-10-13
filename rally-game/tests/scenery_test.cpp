@@ -1,4 +1,4 @@
-#include "lookup_road.hpp"
+#include "direct_road.hpp"
 #include "signs.hpp"
 #include <cassert>
 #include <cstdio>
@@ -7,8 +7,7 @@ using namespace rally;
 using namespace rally::game;
 int main() {
     for(const TrackDef *track:{&TriOval,&Fuji}) {
-        LookupRoad road;road.track=track;road.init();
-        assert(road.load(track==&Fuji?"../rally-production/fuji.road":"../rally-production/oval.road"));
+        DirectRoad road;road.track=track;road.init();
         Motion motion;motion.track=track;Billboards signs;
         unsigned seen=0,frames=0;
         for(int32_t position=0;position<track->length*100;position+=100) {

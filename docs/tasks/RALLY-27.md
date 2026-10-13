@@ -4,7 +4,7 @@
 
 Replace the buffered roadway computation in `rally-game/` with the historical direct eZ80 renderer while preserving the complete RALLY-22 game. The eZ80 will calculate projection and final road, kerb, shoulder and centre-marking vertices and send ordinary VDU drawing commands. This becomes the playable baseline for a later VDPlet comparison. Removing Golem alone did not accomplish this: the current full game retained the older RALLY-15 buffered matrix stage.
 
-**State: plan prepared for Author review, 2026-10-13. No implementation, builds, emulator runs or hardware actions performed under this task.** This task takes priority over further RALLY-24 integration. RALLY-24's sources, measurements and unresolved parity issues remain preserved. Root TODO.md owns task status; the numbered steps below define this task's execution plan and evidence gates.
+**State: R27-01–03 implemented; R27-04 partially qualified; Console8 gameplay accepted, 2026-10-13.** The Author authorized the first tranche after committing/pushing prior dirt, then authorized SD deployment and reported that everything worked as expected. The deployment receipt identifies the exact direct-eZ80 candidate. The Author now reports the Flexe agent fixed keyboard input; validation of Rally with that updated runtime remains pending. See [results](RALLY-27/RESULTS.md) and [baseline](RALLY-27/BASELINE.md). No measured FPS or exhaustive physical phase coverage is claimed. Implementation remains uncommitted; explicit commit/push approval is still required. This task takes priority over further RALLY-24 integration. RALLY-24's sources, measurements and unresolved parity issues remain preserved. Root TODO.md owns task status; the numbered steps below define this task's execution plan and evidence gates.
 
 ## 1. Evidence and selected approach
 
@@ -69,9 +69,11 @@ Capture straight/curve/seam scenes on both tracks, both drawing pages and HUD re
 
 ### R27-05 — Establish the actual eZ80 timing baseline
 
+**2026-10-13 planning amendment:** [TIMING-PLAN.md](RALLY-27/TIMING-PLAN.md) defines the Author-requested fixture and supersedes the initial sequencing below where they differ: current direct renderer only, completed FPS first, Fuji attract-derived workload, a nominal 30-second MOS-tick window and deliberate pacing removed on both processors. Detailed stage timing is subsequent drill-down. The plan is paused for review; implementation and headless Oryx deployment await explicit go-ahead.
+
 Reuse RALLY-24's deterministic world-state cases where applicable, but execute **live eZ80 projection, vertex construction and UART submission**. Do not time a precomputed VDU replay and call it this baseline. Separate geometry CPU time, command bytes/submission, completion waits and whole-frame timing where the available instruments support it.
 
-Run headlessly in an isolated Flexe profile on Oryx with normal eZ80 limiting; record exact MOS/VDP/frontend/engine identities. Include both tracks, straight/curve and traffic controls. Preserve the normal paced game; an unpaced timing fixture must be separately built and labelled. Keep logs within fixture directories for later Author-run hardware collection. No per-frame SD writes or performance hooks in the normal release.
+Run headlessly in an isolated Flexe profile on the review host with normal eZ80 limiting; record exact MOS/VDP/frontend/engine identities. Include both tracks, straight/curve and traffic controls. Preserve the normal paced game; an unpaced timing fixture must be separately built and labelled. Keep logs within fixture directories for later Author-run hardware collection. No per-frame SD writes or performance hooks in the normal release.
 
 Report milliseconds, median/p95 and completed-batch throughput with clock limits. Distinguish emulator, physical, submission and presentation measurements. R24 results may be shown only with their different workload/timing boundaries stated; a claimed speedup requires matched measurements. Do not expand into VDPlet integration to obtain this baseline.
 
@@ -79,7 +81,7 @@ Report milliseconds, median/p95 and completed-batch throughput with clock limits
 
 ### R27-06 — Human review and closeout
 
-Prepare the normal playable candidate on Oryx with an isolated canonical profile, verified assets and startup. Leave it stopped and supply the exact profile-local `cd ...` then `./fab-agon-emulator` commands. Author checks title/selectors, driving on both tracks, road/HUD correctness, traffic/signs, crash behavior and exit.
+Prepare the normal playable candidate on the review host with an isolated canonical profile, verified assets and startup. Leave it stopped and supply the exact profile-local `cd ...` then `./flexe-agon-emulator` commands. Author checks title/selectors, driving on both tracks, road/HUD correctness, traffic/signs, crash behavior and exit.
 
 Stage physical fixtures only under subsequent hardware authority; current R24 physical runs remain Author-controlled. Historical hardware acceptance does not validate this build. Record human findings separately from automated results. After explicit emulator validation and commit approval, commit the scoped work, update the current full-game specification/README and record the new direct baseline for RALLY-24. Push only when authorized. Do not claim physical acceptance without a new physical run.
 
@@ -98,8 +100,8 @@ Pause on ambiguous geometry semantics, unexplained corruption, resource exhausti
 
 ## 5. Sequencing and authority
 
-The Author selected this direct-renderer restoration before continuing VDPlets and requested this formal plan. This turn prepares the task only. Implementation begins after plan review/selection; no new goal tracker was requested for this documentation pass.
+The Author selected this direct-renderer restoration before continuing VDPlets and requested this formal plan. The Author subsequently authorized R27-01–04, using the new Flexe Agon Emulator on the review host, after committing and pushing existing work. No new goal tracker was requested. Further timing work remains R27-05, outside this tranche.
 
-Recommended first implementation tranche: R27-01 through R27-04, delivering a locally validated playable candidate and clear exceptions. R27-05 then produces matched timing evidence; R27-06 is the human acceptance gate. If a gate fails, preserve findings before moving on. Canonical emulator rules prohibit committing coupled emulator changes until explicit human validation and commit approval.
+The R27-01 through R27-04 implementation tranche has delivered the direct candidate with recorded qualification exceptions. Subsequent authorized Console8 deployment and reported gameplay acceptance satisfy a physical review checkpoint, without closing all regression or emulator review gates. The Flexe input repair is reported by the Author; its new runtime identity and Rally results have not yet been recorded here. R27-05 then produces matched timing evidence; R27-06 is the human acceptance gate. If a gate fails, preserve findings before moving on. Canonical emulator rules prohibit committing coupled emulator changes until explicit human validation and commit approval.
 
 The task structure follows Extender's REMOTE-007 and SCAN-001 examples: executive conclusion, evidence, scope, stable work IDs, concrete outputs and distinct acceptance gates. Supporting artifacts belong in `docs/tasks/RALLY-27/`; root TODO.md remains the sole task register.

@@ -61,7 +61,7 @@ simulation frames under AddressSanitizer and UndefinedBehaviorSanitizer.
 Asset generation uses only Python's standard library. Pillow and clang-format
 are optional capture/formatting tools. Normal tooling uses the shared
 repository-root `.venv`. This game lives in `defender/` within the
-AgonArcade checkout at `~/Agon/mystuff/AgonDefender`.
+AgonArcade checkout.
 
 The implementation separates deterministic gameplay from the VDP frontend;
 see [platform notes](docs/platform.md) and [development log](docs/2026-09-11.md).

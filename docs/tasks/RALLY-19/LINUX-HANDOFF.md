@@ -16,8 +16,7 @@ No new goal was created by the Mac agent. No heavy work should return to the Mac
 ## Repositories and delivered state
 
 1. Mac repository: `/Users/bgates/Agon/mystuff/AgonArcade`.
-2. Linux Rally repository: `/home/smith/Agon/mystuff/AgonDefender` (despite its
-   directory name, this is AgonArcade). Last inspected clean at `a981184`.
+2. Linux Rally repository: this AgonArcade checkout. Last inspected clean at `a981184`.
 3. Golem: `/home/smith/Agon/mystuff/golem`, HEAD `a083173`. Last inspection found
    untracked `deploy.py` and `deploy.toml`; preserve them. No Golem files edited.
 4. Canonical cross-agent mailbox: `agon-dev-env/cross-agent/rally_golem/`.

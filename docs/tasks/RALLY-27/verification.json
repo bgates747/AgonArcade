@@ -1,0 +1,65 @@
+{
+  "binary_bytes": 164315,
+  "binary_sha256": "7f1620ed8139ee779e7d50e333ef572aeaf612a154e41ec574e63a57da760293",
+  "flags": "",
+  "baseline_binary_sha256": "4be88dd1c8efbb6f7cddbdce1b98ee8805572f47550cda5d8c0ef3207189395b",
+  "host_pose_cases": 34005,
+  "max_sampled_road_bytes": 1947,
+  "normal_build": "pass",
+  "telemetry_build": "pass",
+  "sanitizers": "pass",
+  "interactive": "blocked: Flexe adapter lacks held-key-map delivery",
+  "physical": "not run",
+  "timing": "not run",
+  "final_oval": {
+    "seconds": 25.067215863993624,
+    "exit": 0,
+    "stats": {
+      "engine": "jit",
+      "frames": 1428,
+      "cycles": 5968110000,
+      "retired": 4238447372,
+      "uart_rx": 242644,
+      "uart_tx": 4883,
+      "uart_delivered": 4883,
+      "isync": 11,
+      "code_invalidations": 1,
+      "keys": 0,
+      "failed": false,
+      "unhandled": 0,
+      "unregistered": 0,
+      "unmapped": 0
+    }
+  },
+  "runtime": {
+    "fab-agon-emulator": "56de68b2f36ccab16e22eb3a881f345f86519fbc1184c1fc0fa5e8eabc0e8121",
+    "fab-agon-emulator.bin": "412089a89a5adccb3c1c0fc4b121472da28f2d3d48c435c88a660028d7cd84d9",
+    "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+    "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+    "flexe-vdp.so": "77b3cbf76564d54628c2bb876aa96ef3834c6b363d53df4892b8a3ab4248e5cd",
+    "esp32-firmware.bin": "31d25eec03a531b336d78d453f0720bbd1312c7c8516fdfa80130769ab15e49f",
+    "esp32-firmware.elf": "51f196eb7b84ed79394a9fde1dff832ad479417c360525c69582fd093c3a0a3a",
+    "sdcard/rally/rally.bin": "7f1620ed8139ee779e7d50e333ef572aeaf612a154e41ec574e63a57da760293",
+    "sdcard/autoexec.txt": "bdbaacf3a4f907638d2e24d43d590307e7b0229b2c56015e2dff23ddee587ec1"
+  },
+  "final_fuji": {
+    "seconds": 25.116327251002076,
+    "exit": 0,
+    "stats": {
+      "engine": "jit",
+      "frames": 1427,
+      "cycles": 5961840000,
+      "retired": 4284458718,
+      "uart_rx": 181133,
+      "uart_tx": 2423,
+      "uart_delivered": 2423,
+      "isync": 11,
+      "code_invalidations": 1,
+      "keys": 0,
+      "failed": false,
+      "unhandled": 0,
+      "unregistered": 0,
+      "unmapped": 0
+    }
+  }
+}

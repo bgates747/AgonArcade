@@ -1,6 +1,6 @@
 # Agon Rally — full game candidate
 
-This is RALLY-22's stock-VDP game derivative of the accepted pre-Golem renderer.
+This is the RALLY-22 full game with RALLY-27's direct eZ80 roadway renderer (candidate awaiting review). All road vertices are computed on eZ80; road matrix programs are no longer used.
 The frozen `../rally-production` product and `../rally-bench` telemetry experiment
 remain separate. This is the current game on `main`; integration and publication were authorized
 on 2026-09-14. The Author accepted default startup in stock Fab 1.2.4 on 2026-09-14.
@@ -17,9 +17,8 @@ recovery in a clear lane and temporary invulnerability.
 
 ## Playing
 
-Put `rally.bin`, `oval.road` and `fuji.road` in the same SD directory, change to
-that directory at MOS, then `LOAD rally.bin` and `RUN . oval`. The three files
-are the required runtime; art, fonts and traffic routes are embedded.
+Put `rally.bin` in an SD directory, change to
+that directory at MOS, then `LOAD rally.bin` and `RUN . oval`. The binary is the complete runtime; tracks, art, fonts and traffic routes are embedded. Existing `.road` files are no longer required.
 
 | Input | Action |
 | --- | --- |

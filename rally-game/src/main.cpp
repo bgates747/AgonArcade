@@ -14,7 +14,7 @@
 #include "demo.hpp"
 #include "pacing.hpp"
 #include "game_scene.hpp"
-#include "lookup_road.hpp"
+#include "direct_road.hpp"
 #include <agon/mos.h>
 #include <agon/vdp.h>
 #include <stdio.h>
@@ -45,7 +45,7 @@ unsigned telemetryCall(uint8_t operation){
 }
 #endif
 rally::Motion motion;
-rally::LookupRoad road __attribute__((no_destroy));
+rally::DirectRoad road;
 rally::Traffic traffic;
 rally::DemoDriver demoDriver;
 rally::SceneryHistory sceneryHistory;
@@ -200,9 +200,8 @@ void resetMotion() {
 #endif
     raceTraffic.view(traffic,motion.position);
 }
-bool loadTrack() {
+void loadTrack() {
     road.track=selected;road.init();
-    return road.load(selected==&rally::Fuji?"fuji.road":"oval.road");
 }
 void phaseChanged() {
     if(shownRevision==rules.revision)return;
@@ -308,7 +307,7 @@ void input() {
     else if(rules.phase==Phase::Select) {
         if(pressed(26) || pressed(122)) {
             selected=selected==&rally::Fuji?&rally::TriOval:&rally::Fuji;
-            if(!loadTrack())quit=true;
+            loadTrack();
             resetMotion();sceneryHistory.valid[0]=sceneryHistory.valid[1]=false;
         }
         if(pressed(58) || pressed(42))rules.policy=rules.policy==Policy::Circuit?Policy::Arcade:Policy::Circuit;
@@ -476,7 +475,6 @@ void loadCars() {
         0xff,0xff,0,0,101,0,0,0,1,0,0,0};
     mos_puts((char *)mirrorCommands,sizeof(mirrorCommands),0);
     loadScenery();
-    mos_puts((char*)rally::section::Startup,rally::section::StartupSize,0);
     vdp_set_text_colour(15);
     vdp_set_text_bg_colour(0);
 
@@ -500,7 +498,7 @@ int gameMain(int argc,char **argv) {
         else {printf("Usage: rally [oval|fuji] [circuit|arcade] [steer1|steer2] [mute]\n");return 1;}
     }
     if(!readRecords("rally.sav",records))readRecords("rally.bak",records);
-    if(!loadTrack()) {printf("Road data unavailable: %s\n",road.error());return 30;}
+    loadTrack();
     #ifdef RALLY_HOST_TELEMETRY
     if(telemetryCall(0)){printf("Host telemetry unavailable.\n");return 31;}
     telemetryOpen=true;
@@ -542,7 +540,7 @@ int gameMain(int argc,char **argv) {
         rally::game::prepareGameScene(motion,traffic,raceTraffic,road,sceneryHistory,scene,false);
         billboards.prepare(motion,road);
         if(rules.phase!=Phase::Attract && rules.phase!=Phase::Race)scene.cars=0;
-        drawScenery();road.emit(stream,false);if(stream.overflow)break;flush();finishLine();
+        drawScenery();road.emitTo(stream,send);finishLine();
         viewport(stream,0,panelVisible()?88:HudHeight,319,223);flush();drawTraffic();
         drawPlayer();
         viewport(stream,0,0,319,239);flush();drawPanel();drawHud(elapsed);bottom();
@@ -567,4 +565,4 @@ int main(int argc,char **argv) {const int status=gameMain(argc,argv);engine.stop
 #ifdef RALLY_HOST_TELEMETRY
 if(telemetryOpen){(void)telemetryCall(2);telemetryOpen=false;}
 #endif
-road.~LookupRoad();return status;}
+return status;}

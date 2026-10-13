@@ -1,8 +1,16 @@
 # AgonArcade handoff
 
-Current state: **RALLY-22** and BENCH-001 work preserved on main at the
-Author's request. Do not resume unattended development without a new instruction.
-Read `docs/tasks/RALLY-22.md` and `docs/specifications/rally-full-game.md`.
+Current state: **RALLY-27** direct-eZ80 full-game restoration is implemented
+and uncommitted. Read `TODO.md`, `docs/tasks/RALLY-27.md`,
+`docs/tasks/RALLY-27/RESULTS.md` and `docs/specifications/rally-full-game.md`.
+The Author reported Console8 gameplay acceptance of the exact deployed candidate
+and, on 2026-10-13, that the Flexe agent fixed keyboard input. Updated-Flexe
+Rally validation remains pending; R27-05 timing has not started. No measured FPS
+or exhaustive phase coverage is established. Preserve all existing dirt; no
+commit/push without explicit approval. Do not resume unattended development
+without a new instruction. This checkout is now `/Agon/mystuff/AgonArcade`;
+disregard the pasted handoff's old directory name and prohibition on renaming.
+RALLY-22 and BENCH-001 evidence remain preserved.
 Bounded BENCH-001 driving practice is complete; no further learning runs.
 Preserve `rally-production` and `rally-bench`; new game lives in `rally-game`.
 New emulator behavior still requires human review; integration/publication was
@@ -38,8 +46,7 @@ and `make -C defender test`. Prepare its isolated profile with
 `.venv/bin/python defender/tools/prepare_emulator.py`, then launch with
 `./defender/run.sh`, which delegates to the generated profile-local entry point.
 
-Keep new games in sibling subdirectories. This checkout is AgonArcade even
-though its existing local directory is named AgonDefender. Pynvaders is separate.
+Keep new games in sibling subdirectories. This checkout is AgonArcade. Pynvaders is separate.
 Leave emulator-related changes uncommitted until human validation and explicit
 commit approval, as required by the canonical workflow.
 

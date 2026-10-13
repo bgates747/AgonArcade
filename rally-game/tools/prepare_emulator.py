@@ -1,4 +1,4 @@
-"""Fresh isolated stock-Fab profile; copies only the selected binary/road inputs."""
+"""Fresh isolated stock-Fab profile; copies only the selected standalone game binary."""
 import argparse
 from pathlib import Path
 import shutil
@@ -19,7 +19,6 @@ subprocess.run([str(environment/'.venv/bin/python'),str(environment/'scripts/set
     'everyday','--everyday-profile',str(profile),'--emulator',str(args.runtime)],check=True,cwd=environment)
 target=profile/'sdcard/rally';target.mkdir()
 shutil.copy2(args.binary,target/'rally.bin')
-for name in ('oval.road','fuji.road'):shutil.copy2(ROOT/'rally-production'/name,target/name)
 assert '\n' not in args.args and '\r' not in args.args
 (profile/'sdcard/autoexec.txt').write_bytes(
     ('SET KEYBOARD 1\r\nCD /rally\r\nLOAD rally.bin\r\nRUN . '+args.args+'\r\n').encode('ascii'))

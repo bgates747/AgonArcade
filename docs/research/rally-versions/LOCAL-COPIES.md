@@ -2,7 +2,7 @@
 
 Read-only scan on 2026-10-13: 218 source copies, including ignored build archives. These are copies, not 218 independently designed games. Classification follows the instantiated renderer in main.cpp; full_game identifies rules.hpp/GameState use. Binary hashes identify files on disk, not freshly reproduced builds.
 
-Scanned AgonDefender, AgonArcade-rally19 and sibling rally-* scratch directories; excluded .git, .venv, node_modules, .emulator and Python caches. Native RALLY-24 modules are separately catalogued in README because they have no src/main.cpp.
+Scanned AgonArcade, AgonArcade-rally19 and sibling rally-* scratch directories; excluded .git, .venv, node_modules, .emulator and Python caches. Native RALLY-24 modules are separately catalogued in README because they have no src/main.cpp.
 
 ## GolemRenderer
 
@@ -50,10 +50,10 @@ Scanned AgonDefender, AgonArcade-rally19 and sibling rally-* scratch directories
 
 | Source copy | Full game | Binary SHA256 (if present) |
 | --- | --- | --- |
-| `~/Agon/mystuff/AgonDefender/.research-cache/rally22/builds/4be88dd1c8efbb6f7cddbdce1b98ee8805572f47550cda5d8c0ef3207189395b/source/rally-game/src/main.cpp` | yes | `absent` |
-| `~/Agon/mystuff/AgonDefender/rally-production/src/main.cpp` | no | `absent` |
-| `~/Agon/mystuff/AgonDefender/rally-game/src/main.cpp` | yes | `4be88dd1c8efbb6f7cddbdce1b98ee8805572f47550cda5d8c0ef3207189395b` |
-| `~/Agon/mystuff/AgonDefender/rally-bench/src/main.cpp` | no | `absent` |
+| `.research-cache/rally22/builds/4be88dd1c8efbb6f7cddbdce1b98ee8805572f47550cda5d8c0ef3207189395b/source/rally-game/src/main.cpp` | yes | `absent` |
+| `rally-production/src/main.cpp` | no | `absent` |
+| `rally-game/src/main.cpp` | yes | `4be88dd1c8efbb6f7cddbdce1b98ee8805572f47550cda5d8c0ef3207189395b` |
+| `rally-bench/src/main.cpp` | no | `absent` |
 | `~/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/road-visual/covered-clear-smoke/oracle/src/main.cpp` | no | `absent` |
 | `~/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/road-visual/covered-clear-smoke/candidate/src/main.cpp` | no | `absent` |
 | `~/Agon/mystuff/AgonArcade-rally19/docs/tasks/RALLY-19/.work/road-visual/covered-clear-oval/oracle/src/main.cpp` | no | `absent` |
@@ -219,7 +219,7 @@ Scanned AgonDefender, AgonArcade-rally19 and sibling rally-* scratch directories
 
 | Source copy | Full game | Binary SHA256 (if present) |
 | --- | --- | --- |
-| `~/Agon/mystuff/AgonDefender/rally/src/main.cpp` | no | `d08300dc7c0b4ab9b55dbbafc7cf3ba02c1f6e9cb42b8b828385751e1e6aa920` |
+| `rally/src/main.cpp` | no | `d08300dc7c0b4ab9b55dbbafc7cf3ba02c1f6e9cb42b8b828385751e1e6aa920` |
 | `~/Agon/mystuff/AgonArcade-rally19/rally/src/main.cpp` | no | `absent` |
 | `~/Agon/mystuff/rally-mac-build.043dYu/src/main.cpp` | no | `10a2068f71972e58da77d1407d5f1fc3963a32edeec57ae536fd50bde94e90c1` |
 | `~/Agon/mystuff/rally-mac-build.0zXKEy/src/main.cpp` | no | `2f683dc2ff412b7aadc828fd6778e70f6ba765f0b5810213de5f46fcadbeed84` |
@@ -252,3 +252,6 @@ Scanned AgonDefender, AgonArcade-rally19 and sibling rally-* scratch directories
 | `~/Agon/mystuff/rally-mac-build.DMq8Qy/src/main.cpp` | no | `df01a0835e5b2f9378441f71379d6c504619a9516045e182889b61860f0a6446` |
 | `~/Agon/mystuff/rally-mac-build.iiQgl7/src/main.cpp` | no | `2903e1e58a8ff272b606d19fda1b300b5dafb840e5260fdc61ba7992faaa70a7` |
 
+
+Paths within this checkout are relative to the repository root. Renaming the
+checkout does not change the historical inventory hashes or revision identities.

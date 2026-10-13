@@ -249,3 +249,7 @@ rollback completes the machine game phase. Human validation and explicit commit
 approval remain pending; no emulator-coupled changes are committed or published
 until that approval. Independent Extender port work may then continue under
 its authoritative ownership/queue, with video throughput ahead of coverage.
+
+## RALLY-27 direct-road candidate — 2026-10-13
+
+This candidate supersedes the lookup-renderer and ancillary `.road` requirements above for the maintained full game. A game-owned DirectRoad adapter uses the preserved Road's live eZ80 projection, greedy bands and direct VDU/PLOT vertex emission, with bounded output chunks. Tracks are embedded and rally.bin is the sole required runtime file; save files remain optional. Physics, controls, rules and assets are unchanged. The Author reported Console8 gameplay acceptance of this exact candidate after hash-verified SD deployment on 2026-10-13. The Author also reports that the Flexe agent fixed held-key input; Rally qualification with the updated runtime remains pending. See ../tasks/RALLY-27/RESULTS.md for evidence and remaining coverage. No measured FPS or exhaustive physical phase coverage is claimed. Explicit commit/publication approval remains pending. Historical RALLY-22 acceptance applies to its original build.

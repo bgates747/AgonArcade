@@ -25,7 +25,7 @@ The SDK firmware export must already exist under
 On Oryx, after staging:
 
 ```bash
-~/Agon/mystuff/AgonDefender/.venv/bin/python ~/Agon/mystuff/AgonDefender/docs/tasks/RALLY-24/flexe/remote.py --case oval-b --engine jit --timeout 180
+.venv/bin/python docs/tasks/RALLY-24/flexe/remote.py --case oval-b --engine jit --timeout 180
 ```
 
 Cases: `fuji-replay`, `fuji-a`, `fuji-b`, `oval-replay`, `oval-a`, `oval-b`,
@@ -133,3 +133,7 @@ using buffered equality (`0x22`). A literal comparison fails in the pinned VDP
 because its one-byte operand read preserves upper bytes of an int32 initialized
 to-1. See the source-backed findings in RESULTS.md. The three draw wrappers
 remain six-byte recurring CALLs; their slightly larger installation is untimed.
+
+Run the commands above from the checkout root. The staging script requires
+`--remote-root` with the destination checkout path; it does not assume a local
+directory name on the remote machine.

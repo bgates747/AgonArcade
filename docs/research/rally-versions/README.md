@@ -38,7 +38,7 @@ RALLY-20 is a paused optimization **plan**, not an additional renderer implement
 
 ## 3. Checkouts, branches, and misleading leftovers
 
-1. `AgonDefender`: actual AgonArcade checkout, main at 4f2bb15. Maintained complete-game source is `rally-game/`. Existing R24 dirty work was preserved; this audit changed no game code.
+1. `AgonArcade`: actual AgonArcade checkout, main at 4f2bb15. Maintained complete-game source is `rally-game/`. Existing R24 dirty work was preserved; this audit changed no game code.
 2. `AgonArcade-rally19`: branch `rally19-golem`, HEAD cea0120. Last experiment commit 5b6e3c3, followed by documentation commits 47f7f91 and cea0120. Its tracked `rally/src/main.cpp` still instantiates ordinary `Road`; Golem candidates are task-local, not inferred from the root directory.
 3. Its `rally-game/`, `rally-production/`, and `rally-bench/` directories now contain ignored build outputs, **no tracked sources on that branch**. They survived moving the post-Golem work to main.
 4. `archive/rally-before-main-promotion` preserves the old full-game tip cc88f6a. Original commits a1d83e5/904edd7/c3f2478 correspond to standalone production/full-game/telemetry work subsequently cherry-picked as 4b1579a/91f8337/bd7b7e0.
@@ -70,7 +70,7 @@ Preserved Extender documents provide more precise evidence than checkout names:
 
 1. `agon-extender/docs/tasks/QUAL-003/rally-excom/PLAN.md` pins main commit9e75196 and full-game SHA2564be88dd1… .
 2. `QUAL-003/rally-excom/fixture-r03/provenance.json` identifies the resident `rally-production/include/section_protocol.hpp` protocol directly.
-3. `PORT-004/audio-framing/results/rally-observation.json`, `BENCH-002/DEPLOYMENT.json`, and `SCAN-001/S01-BASELINE.md` also identify 4be88dd1… . The last explicitly names `AgonDefender/rally-game` as its source.
+3. `PORT-004/audio-framing/results/rally-observation.json`, `BENCH-002/DEPLOYMENT.json`, and `SCAN-001/S01-BASELINE.md` also identify 4be88dd1… . The last explicitly names `rally-game/` as its source.
 
 These establish use of the main full game in those tests. They do not establish what a newer agent currently launches, or what is installed on the physical SD card today. No bench/network session, rebuild, launch, branch update, or deployment was performed for this catalogue.
 
@@ -85,3 +85,6 @@ The latest R24 replay numbers are not that comparison: replay excludes live eZ80
 [LOCAL-COPIES.md](LOCAL-COPIES.md) and [local-inventory.json](local-inventory.json) enumerate 218 local source copies and available binary identities across both checkouts and sibling rally-* scratch directories, including ignored task/build caches. All full-game source copies identified by rules.hpp/GameState use LookupRoad. The two small initially unclassified programs were manually identified as section comparison probes.
 
 This is a family catalogue plus a per-copy filesystem inventory, not fresh validation of every historic binary. Git history and the archive tag were inspected for lineage. Remote-only branches, other machines, mounted physical SD contents, and copies outside the stated scan roots were not exhaustively searched. No claim is made that an undiscovered private copy cannot exist. No fresh builds or timing tests were run. Existing R24 changes remain uncommitted; this catalogue is also uncommitted for review.
+
+Paths within this checkout are relative to the repository root. Renaming the
+checkout does not change the historical inventory hashes or revision identities.

@@ -12,10 +12,10 @@ sha=lambda data:hashlib.sha256(data).hexdigest()
 for path,digest in manifest['inputs'].items():assert sha((ROOT/path).read_bytes())==digest, 'Stale source: '+path
 binary=(ROOT/'rally-game/bin/rally.bin').read_bytes();assert sha(binary)==manifest['sha256']
 base=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
-files={'rally.bin':binary,**{name:(ROOT/'rally-production'/name).read_bytes() for name in ('oval.road','fuji.road')}}
+files={'rally.bin':binary}
 for pattern in ('rally-game/src/*','rally-game/include/*','rally-game/tests/*','rally-game/tools/*',
                 'rally-game/assets/**/*','rally-game/Makefile','rally-game/README.md',
-                'rally-production/include/*','rally-production/*.road','rally/assets/**/*',
+                'rally-production/include/*','rally/assets/**/*',
                 'rally/tools/build_car.py','rally/tools/export_car.py','rally/tools/generate_track.py',
                 'rally/tools/generate_scenery.py','docs/specifications/*.md'):
  for path in ROOT.glob(pattern):
@@ -40,7 +40,7 @@ make -C rally-game assets
 ```
 
 The rebuilt executable is rally-game/bin/rally.bin. Copy it to the runtime
-folder with both .road files. The accepted renderer headers/road data live in
+folder. Shared physics, track and graphics headers live in
 rally-production; generated inputs are supplied, so Blender is not needed to
 build the game. Older editable car, track and scenery sources/tools are under
 rally/ for reference; the complete repository documents their regeneration.
@@ -54,8 +54,7 @@ respective rights. This candidate has not been approved for publication.
 '''
 files['readme.txt']=b'''AGON RALLY - full-game review candidate
 
-Copy rally.bin, oval.road and fuji.road together to a directory on your Agon SD
-card. At MOS, CD to that directory, then:
+Copy rally.bin to a directory on your Agon SD card. At MOS, CD to that directory, then:
   LOAD rally.bin
   RUN . oval
 
@@ -74,7 +73,7 @@ Optional RUN arguments (all optional, space-separated):
   steer1 / steer2   Held steering increments per frame; default two.
   mute              Start with sound disabled.
   demo              Compatibility alias for the default title/demo launch.
-Last track, traffic-mode or steering choice wins. Default grip is 60%; adjustable
+Last track, traffic-mode or steering choice wins. Default grip is 200%; adjustable
 25-200%. Best scores/laps are separated by track, mode, steering step and highest
 grip used. Optional rally.sav holds records; rally.bak preserves a previous copy.
 Missing saves or save errors do not stop play.

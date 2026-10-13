@@ -2,7 +2,7 @@
 
 ## Current priority — direct eZ80 full-game renderer
 
-- [ ] **[RALLY-27](docs/tasks/RALLY-27.md) — Restore direct eZ80 roadway computation in the full game.** Plan prepared for review. Preserve RALLY-22 gameplay while replacing lookup/buffered-matrix road rendering with the historical direct eZ80 approach. Work sequence R27-01–06, acceptance and review gates live in the task document. No implementation started; this precedes further RALLY-24 integration.
+- [ ] **[RALLY-27](docs/tasks/RALLY-27.md) — Restore direct eZ80 roadway computation in the full game.** R27-01–03 implemented; R27-04 host checks and both-track Flexe demo checks pass. Author reports Console8 gameplay acceptance of the exact direct-eZ80 candidate. On 2026-10-13 the Author reported that the Flexe agent fixed keyboard input; Rally validation with the updated runtime remains pending. [Results](docs/tasks/RALLY-27/RESULTS.md). Remaining regression coverage and emulator review are open; R27-05 timing fixture [plan](docs/tasks/RALLY-27/TIMING-PLAN.md) is written and paused for Author review: Fuji attract-derived workload, 30-second MOS-clock window, both processors unpaced, completed FPS first, reusable timing hooks and guest-created results. Implementation/deployment awaits explicit go-ahead. Implementation remains uncommitted; explicit commit/push approval is pending. VDPlet integration remains later.
 
 ## Native VDPlet investigation
 

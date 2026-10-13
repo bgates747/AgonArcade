@@ -57,8 +57,7 @@ profile; local environments, emulator state and build output are ignored.
 make -C defender test
 ```
 
-The local checkout lives at `~/Agon/mystuff/AgonDefender`; the repository is named
-**AgonArcade**. Future games belong in sibling subdirectories beside `defender/`.
+This repository is **AgonArcade**. Future games belong in sibling subdirectories beside `defender/`.
 Pynvaders and Aginvadors remain in their separate repository.
 
 ## Agon Rally — current version

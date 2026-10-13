@@ -29,6 +29,9 @@ check-image: $(BINARY)
 .PHONY: test assets
 test:
 	@mkdir -p bin
+	$(CXX_HOST) -std=c++17 -Wall -Wextra -Werror -Iinclude -I../rally-production/include tests/direct_road_test.cpp -o bin/direct-road-test
+	./bin/direct-road-test
+	@mkdir -p bin
 	$(CXX_HOST) -std=c++17 -Wall -Wextra -Werror -Iinclude -I../rally-production/include tests/rules_test.cpp -o bin/rules-test
 	./bin/rules-test
 	$(CXX_HOST) -std=c++17 -Wall -Wextra -Werror -Iinclude -I../rally-production/include tests/traffic_test.cpp -o bin/traffic-test

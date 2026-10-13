@@ -1,0 +1,10 @@
+# Rally handoff reconciliation — 2026-10-13
+
+RALLY-27 remains the current direct-eZ80 full-game task. The Author requested local task reconciliation with the handoff, corrected the checkout name to AgonArcade, and reported that the Flexe agent fixed keyboard input. Console8 gameplay acceptance is now recorded; updated-emulator Rally validation, remaining phase coverage and explicit commit/push approval remain open. No development, emulator launch, build or timing run was performed in this reconciliation.
+
+1. R27-01–03 implementation and existing R27-04 host/demo evidence are preserved. The handoff records 34,005 donor cases, sanitizer and stream stress checks, normal/telemetry builds and empty CRT tables; these were not rerun here.
+2. The existing Console8 deployment receipt identifies Rally SHA256 `7f1620ed8139ee779e7d50e333ef572aeaf612a154e41ec574e63a57da760293`, 164315 bytes, plus Defender and Aginvadors. The handoff records the Author's report that everything worked as expected. Results now distinguish this physical acceptance from exhaustive phase coverage and measured FPS.
+3. The Author reports the Flexe agent fixed key input. Earlier runtime hashes and failure receipts remain historical evidence; no repaired runtime identity or new Rally input result is inferred. Correct MOS held-key controls remain unchanged.
+4. R27-05 benchmarking was not started and remains outside the authorized R27-01–04 tranche. RALLY-24 experiments and parity exceptions remain preserved; RALLY-20 stays paused, Golem stays on hold, and bounded BENCH-001 practice is complete.
+5. Prior commits `067f88c`, `e33da22` and `19d54c9` cleared earlier work before restoration. New implementation and existing dirty evidence remain uncommitted. This documentation request does not authorize commit, push, further development or publication.
+6. `TODO.md` remains the sole authoritative task register. RALLY-27 plan/results, the current specification and AGENTS.md now reflect this status; older test evidence is retained.
