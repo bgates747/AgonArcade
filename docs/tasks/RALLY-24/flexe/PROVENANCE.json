@@ -1,0 +1,668 @@
+{
+  "scope": "Actual native Xtensa on Oryx Fab/Flexe; physical hardware untouched",
+  "runs": {
+    "fuji-a-interp": {
+      "runtime_identities": [
+        "280dd8e9e75f390ee112238c10355ab8fb58ad52a2539d472b7672bfa880a16e  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 704,
+        "cycles": 2974470000,
+        "retired": 993482123,
+        "uart_rx": 257401,
+        "uart_tx": 7674,
+        "uart_delivered": 7674,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 14.732035320004798,
+      "artifacts": {
+        "esp32-uart0.log": "51222886bac59eefb03b9f5f891c9687c0fb38e34a9cae50d1f22e95465671cf",
+        "expected.json": "b5fe3ddfee426edd695cfd0d1fbe1fddf1b7d429bf75e142809ea8227adeb3b3",
+        "final.ppm": "1958e3c0c0a58b79e1ead9b240953db30f35a0945b7b85265f4b8a4c7c4ade4e",
+        "frontend.log": "0c998815f185d79f85b639a9267e6e144f7db3475fcfc8bec0f54597ed3be923",
+        "mos-to-vdp.bin": "7cb094fbed08117105185cb59769f72f2517d7a68b3c1ea1b87dbd1cdb0af44c",
+        "replies.log": "36c369cd23da840d432fb95f2e5d1ceb44c4d2b346b28741990fb7c0b0359117",
+        "result.json": "ce5394b05f37230d2944e81e2fbf8b3b4e3382a480e14cd897dcaa40a023c961",
+        "stats.json": "979cb2e3473282c85ba5c4d06c66522c6d40f6d49fe7de9417c33420cea1cc6f",
+        "ticks.log": "8e5934ed112e324f9152623a390f6241171c45017bc52f34581d91e8746d747e",
+        "vdp-to-mos-delivered.bin": "c9119b7b258a12ae2b42bfdc497cc7f665845382bfca5a15a1a49940a70fe8b6",
+        "vdp-to-mos.bin": "c9119b7b258a12ae2b42bfdc497cc7f665845382bfca5a15a1a49940a70fe8b6"
+      }
+    },
+    "fuji-a-jit": {
+      "runtime_identities": [
+        "56de68b2f36ccab16e22eb3a881f345f86519fbc1184c1fc0fa5e8eabc0e8121  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "jit",
+        "frames": 769,
+        "cycles": 3241633050,
+        "retired": 1306842668,
+        "uart_rx": 257405,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 13.736339477000001,
+      "artifacts": {
+        "esp32-uart0.log": "4a6a55404fb6b8bd5a8e3b0d74e6c1b531bd789037c04ea802d637a59b13220f",
+        "expected.json": "b5fe3ddfee426edd695cfd0d1fbe1fddf1b7d429bf75e142809ea8227adeb3b3",
+        "final.ppm": "032a5e69e556c605fa039b862edfde8df6c40f56a722d8c9b8777eb973056e99",
+        "frontend.log": "59aebac9c6646830e62a83612ab2c8e1d4b54b660afe155283d68d8ed44d5b60",
+        "mos-to-vdp.bin": "b33cfb079a45bacffd098e832b1053f407e5dbba514618675c4bc53e6379dd53",
+        "replies.log": "ec62c8532ded7f3283100d17f399e8a017d184afcfadc9c0221e927e250d1a5e",
+        "result.json": "9dfb2006652186834f1a0f5e63f15e9982e123dc477f2c8c7c2ef3a1e2ea02ec",
+        "stats.json": "3294c83cd81e7f98ab1213a02a9394beda7c75f8eef655842ab911085f06e2ef",
+        "ticks.log": "79951d40bf0b0ae713fe20e82ad9efc7ede7384b7e8b3b536e5c1711eb431ff2",
+        "vdp-to-mos-delivered.bin": "baf352c72e2c1702deda31e8688a9f3814f496ccd99b1cff7910e60d36460e5c",
+        "vdp-to-mos.bin": "baf352c72e2c1702deda31e8688a9f3814f496ccd99b1cff7910e60d36460e5c"
+      }
+    },
+    "fuji-b-interp": {
+      "runtime_identities": [
+        "280dd8e9e75f390ee112238c10355ab8fb58ad52a2539d472b7672bfa880a16e  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 688,
+        "cycles": 2909250000,
+        "retired": 926481849,
+        "uart_rx": 257709,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 13.932230512000388,
+      "artifacts": {
+        "esp32-uart0.log": "7378b5bdcfa0c59154d5ce722c99bfb98a23c5a868ccd16eb27d2fd8aed5a040",
+        "expected.json": "9b3c29a79371593455a9dd06f90272d53d750411abba47f06adac5d6bf3fdbe2",
+        "final.ppm": "ab92f940638c7cce0989573c1e54595ca9e34eeb0d08e7899f5d9609a6c44530",
+        "frontend.log": "e8a84e1635a8bee76e6460ee2078ea03c438508e3479dd4da04858bc92700e66",
+        "mos-to-vdp.bin": "36eb8b1d63c6aa7d558fa2c70df26ae3087f55f7dd320663e8306e4a3f7a8d2d",
+        "replies.log": "08545da4b7f2f6080259e86671280e5aac22a5dd840f0b415c315a1bafa9b01c",
+        "result.json": "13f0edd8b2946bf110ba3aab198981dfa9978c28a5572587bf5453385c492b75",
+        "stats.json": "45a23a6168a661904a743b910c22e46dcfdf3ca4c1a1c928a2ee74a6fd700d45",
+        "ticks.log": "2762034b458e19d1212f8fd583bc950fdc341458a6ae0ad1a92bbb6cc613abe1",
+        "vdp-to-mos-delivered.bin": "4eb45d4164911d2f5f8329ebec6c7e0e7be99a447d3edc95c542b156c5ea57df",
+        "vdp-to-mos.bin": "4eb45d4164911d2f5f8329ebec6c7e0e7be99a447d3edc95c542b156c5ea57df"
+      }
+    },
+    "fuji-b-jit": {
+      "runtime_identities": [
+        "56de68b2f36ccab16e22eb3a881f345f86519fbc1184c1fc0fa5e8eabc0e8121  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "jit",
+        "frames": 757,
+        "cycles": 3193710000,
+        "retired": 1201408595,
+        "uart_rx": 257709,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 13.531963082998118,
+      "artifacts": {
+        "esp32-uart0.log": "7378b5bdcfa0c59154d5ce722c99bfb98a23c5a868ccd16eb27d2fd8aed5a040",
+        "expected.json": "9b3c29a79371593455a9dd06f90272d53d750411abba47f06adac5d6bf3fdbe2",
+        "final.ppm": "25aeecec36e661ed9c21c7c5428341204accef0e554ac4fb1fe7edfa4b645349",
+        "frontend.log": "724c8ed5e89b7baab13404e1755dac61fe1d9f55ac0f648682a2d07b2266d74c",
+        "mos-to-vdp.bin": "36eb8b1d63c6aa7d558fa2c70df26ae3087f55f7dd320663e8306e4a3f7a8d2d",
+        "replies.log": "fb99a943477dea78003a5211af11ba71ee816b4d2a523c5e187fa12546f774f6",
+        "result.json": "9f3ba5994758ed557a1f364082659a9a6e9c4b6ed4313c76e7b8cd1b37b64252",
+        "stats.json": "0366b2c250242586aebe65cc43c8ed930f79aeba934bd4656669e0d203d80921",
+        "ticks.log": "f0be0e7524bedee4b2df169e1a96df52acf5ba3702e29196a734109d26c94cfc",
+        "vdp-to-mos-delivered.bin": "14fa245ef385a4e0d1fce8fc5092e41824e042892baee4a14dca048e16011f6c",
+        "vdp-to-mos.bin": "14fa245ef385a4e0d1fce8fc5092e41824e042892baee4a14dca048e16011f6c"
+      }
+    },
+    "fuji-replay-interp": {
+      "runtime_identities": [
+        "280dd8e9e75f390ee112238c10355ab8fb58ad52a2539d472b7672bfa880a16e  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 717,
+        "cycles": 3026380000,
+        "retired": 1038251750,
+        "uart_rx": 277217,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 15.084200376004446,
+      "artifacts": {
+        "esp32-uart0.log": "f9901113550aa44aca1d3dcb5de4e651e4f41971783f7df8bb3553434b42b06b",
+        "expected.json": "b3030272a6cb237c2d6ec2165d856e6bc04eff47f70814fa7b93ead85af6c14c",
+        "final.ppm": "1958e3c0c0a58b79e1ead9b240953db30f35a0945b7b85265f4b8a4c7c4ade4e",
+        "frontend.log": "aab48c6425005a9b5bd9fa0da170d1570f7fadff69f136398a361e09d1ef4190",
+        "mos-to-vdp.bin": "e0d306a12b5219c3b61be62a1cef3c60c49c2676c69fe5236f27cb1b53c8fdc5",
+        "replies.log": "3a31a5188d82d22e4a0c2e902becfb84bb478c8728d6155a01eeaa83abbd00ca",
+        "result.json": "179e8a2575e35641bbddba6b8d2ecb61491e79056265744fea06a1f7aeffb5ab",
+        "stats.json": "9c2602910a6281dd389aad0932cb0c86e7c0585e28091d08cd09cd31285f7116",
+        "ticks.log": "866613e310cbc892c8f0d829979c135de5ac2ea4a3d314c9f7b307fcc427f78d",
+        "vdp-to-mos-delivered.bin": "179c28cadf8791efd21a4c84347615336772a2a025015ce4c4bec38c3d9e2761",
+        "vdp-to-mos.bin": "179c28cadf8791efd21a4c84347615336772a2a025015ce4c4bec38c3d9e2761"
+      }
+    },
+    "fuji-replay-jit": {
+      "runtime_identities": [
+        "56de68b2f36ccab16e22eb3a881f345f86519fbc1184c1fc0fa5e8eabc0e8121  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "jit",
+        "frames": 780,
+        "cycles": 3289670000,
+        "retired": 1344607923,
+        "uart_rx": 277217,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 13.931706196002779,
+      "artifacts": {
+        "esp32-uart0.log": "f9901113550aa44aca1d3dcb5de4e651e4f41971783f7df8bb3553434b42b06b",
+        "expected.json": "b3030272a6cb237c2d6ec2165d856e6bc04eff47f70814fa7b93ead85af6c14c",
+        "final.ppm": "aa5543d7ea32902aa1af0febe042a422318d8d37b3b23926d57a69d6a1361452",
+        "frontend.log": "7cd7e2fcd751508b4886bfd52e34a8dde9a6593d55e087e598be0e99073e1278",
+        "mos-to-vdp.bin": "e0d306a12b5219c3b61be62a1cef3c60c49c2676c69fe5236f27cb1b53c8fdc5",
+        "replies.log": "cc107caa079e689465befb94b1460ed706cc0b9c496ebeb4b27456d038fabdb7",
+        "result.json": "6498bc5aba687bd5fc86abf96a4b819e115b8dd764ed01935b1703baf86a16b8",
+        "stats.json": "5897a3d82c30b315c1024f83418b00280e83efed0463d3caa6df5a03430c7e54",
+        "ticks.log": "51279010c0fa954d5215ec3f0b1a7b3c9d663b76c5aa8af808b6f25b26521c01",
+        "vdp-to-mos-delivered.bin": "5f2dfb7e122a953e5f6ad82aea1297a84575dede291d2048386af9360ac52243",
+        "vdp-to-mos.bin": "5f2dfb7e122a953e5f6ad82aea1297a84575dede291d2048386af9360ac52243"
+      }
+    },
+    "matrix-interp": {
+      "runtime_identities": [
+        "280dd8e9e75f390ee112238c10355ab8fb58ad52a2539d472b7672bfa880a16e  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 486,
+        "cycles": 2077780000,
+        "retired": 695649503,
+        "uart_rx": 10002,
+        "uart_tx": 5873,
+        "uart_delivered": 5873,
+        "isync": 11,
+        "code_invalidations": 1,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 9.880389300000388,
+      "artifacts": {
+        "esp32-uart0.log": "18956c39f55ba42dd33f2d81834cd3e7bbf557461d242da1cfe9589e15d77d4c",
+        "expected.json": "480a1a5e285f3e7ec12022a51e9e2413904d9b137be08130df5483b56f319a50",
+        "final.ppm": "2c091c304ee61781b74bfe70b0222444614532ea98a9f03e83a2a9c19c431ab4",
+        "frontend.log": "fb52944834a8b15f143462722a78f2ea4c3dfa2f2694c958c1de8a1fac33c0ce",
+        "mos-to-vdp.bin": "4d25ce1f7e7f5eed3d008c4f005eb538f58cd14dde394c41345595acc7753956",
+        "replies.log": "2b7ad3b471edec2a6635a31c803996e138128609e3db21a5640739f582ea9ac3",
+        "result.json": "3198c45fd445e64f64cfcc1cecf7512559df80452c46e953eeeaba79f26f3e1d",
+        "stats.json": "630279a1dbbee8370885d771463d631a14fbb2c19d6d71eafab357a7d683ffb8",
+        "ticks.log": "42db70fde337d2c1c91a5949300f9f85480bb40949cc531be236b2e2ff35b207",
+        "vdp-to-mos-delivered.bin": "cacbe924b7244e01453746939a89c8a17e32108e50f5345cd5d45ea1737fb53c",
+        "vdp-to-mos.bin": "cacbe924b7244e01453746939a89c8a17e32108e50f5345cd5d45ea1737fb53c"
+      }
+    },
+    "matrix-jit": {
+      "runtime_identities": [
+        "56de68b2f36ccab16e22eb3a881f345f86519fbc1184c1fc0fa5e8eabc0e8121  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "jit",
+        "frames": 547,
+        "cycles": 2329840000,
+        "retired": 953594230,
+        "uart_rx": 10002,
+        "uart_tx": 5873,
+        "uart_delivered": 5873,
+        "isync": 11,
+        "code_invalidations": 1,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 9.928214585997921,
+      "artifacts": {
+        "esp32-uart0.log": "18956c39f55ba42dd33f2d81834cd3e7bbf557461d242da1cfe9589e15d77d4c",
+        "expected.json": "480a1a5e285f3e7ec12022a51e9e2413904d9b137be08130df5483b56f319a50",
+        "failure.log": "7d2c95147969a7fe0e5d9b59c7ba55552f900eef7b0c6d2eec2712dbc339822f",
+        "final.ppm": "aec019177213674ef99aee8e1bd17c652b15b677c0e2900b89aa35d5dfa9904e",
+        "frontend.log": "d356b539640be82a4efcfe6e09796e37f5a91197fc064aab3161115bd37a6be0",
+        "mos-to-vdp.bin": "4d25ce1f7e7f5eed3d008c4f005eb538f58cd14dde394c41345595acc7753956",
+        "replies.log": "2b7ad3b471edec2a6635a31c803996e138128609e3db21a5640739f582ea9ac3",
+        "result.json": "799f6fbdaf9ae49f4bf4a0d7094d87ea9928c43bec2e53668c810d470e528b42",
+        "stats.json": "cd1ebc651c675304a8ca76ed775c6ac2eeb75b4c26a90fcb357c4c175c60d7ba",
+        "ticks.log": "dfe6ea6534cd11cfa222c71f2249591067ffea1bd00751923e5e01e64cf9a866",
+        "vdp-to-mos-delivered.bin": "cacbe924b7244e01453746939a89c8a17e32108e50f5345cd5d45ea1737fb53c",
+        "vdp-to-mos.bin": "cacbe924b7244e01453746939a89c8a17e32108e50f5345cd5d45ea1737fb53c"
+      }
+    },
+    "oval-a-interp": {
+      "runtime_identities": [
+        "280dd8e9e75f390ee112238c10355ab8fb58ad52a2539d472b7672bfa880a16e  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 659,
+        "cycles": 2788660000,
+        "retired": 1014698510,
+        "uart_rx": 157791,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 14.333887164000771,
+      "artifacts": {
+        "esp32-uart0.log": "ef797c7d5006e2658026e0f4987b80a03fb7284c4d6ef2a4aa206a88958a96a0",
+        "expected.json": "dd2583998f858c1a509580c379536f9aa2f88a0e8387ceee6b9c0fc11327a77d",
+        "final.ppm": "2a75338776b34fd8b80427ba0ee15c749e7792c1bebc6293881d1030750957ee",
+        "frontend.log": "cb5d3cca4a61fd757a1ee9c0cdf828e719cb7da9a9cab42ecad87feb82f545c2",
+        "mos-to-vdp.bin": "fa37bc5dca94c2ecee3b47c293349364087f2c33bcfa97ec31dad835c26a5f65",
+        "replies.log": "605655ae13017f660445dcd108263be6f167352deb5be561b245959cd93f68b9",
+        "result.json": "cfb9848cda4d87646ccab6a943632caac7b275993ff4a3e2dada4be5f91aa7f6",
+        "stats.json": "2e7c9066d52ff30dc23f86ab91805d34b0601f585d84ccb3dbf31b2daa62a5f8",
+        "ticks.log": "485d3ae75ce6b96c66d421f233916659c77bed88cb4e8224ae8684b7a00df5ff",
+        "vdp-to-mos-delivered.bin": "0a115f394b7596b9b22644c0f1c204384c1235426a701cbcc22209130044ee61",
+        "vdp-to-mos.bin": "0a115f394b7596b9b22644c0f1c204384c1235426a701cbcc22209130044ee61"
+      }
+    },
+    "oval-a-jit": {
+      "runtime_identities": [
+        "56de68b2f36ccab16e22eb3a881f345f86519fbc1184c1fc0fa5e8eabc0e8121  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "jit",
+        "frames": 733,
+        "cycles": 3093020000,
+        "retired": 1352331072,
+        "uart_rx": 157791,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 13.129164756996033,
+      "artifacts": {
+        "esp32-uart0.log": "ef797c7d5006e2658026e0f4987b80a03fb7284c4d6ef2a4aa206a88958a96a0",
+        "expected.json": "dd2583998f858c1a509580c379536f9aa2f88a0e8387ceee6b9c0fc11327a77d",
+        "final.ppm": "aaadcd944c1221777821ec3c526764d82a94752979e18279c936a6626fe19dbe",
+        "frontend.log": "b193f7d06f023e9cb3303c09f97308c61878707c0b536302ca091a88af172bc9",
+        "mos-to-vdp.bin": "fa37bc5dca94c2ecee3b47c293349364087f2c33bcfa97ec31dad835c26a5f65",
+        "replies.log": "839ad404f395cae43ff95760c7e4312405060e68aa4636393a0f0d038b484cac",
+        "result.json": "b14bcbd28c11c26be9cc77ec73d896c492a10805806fde9e4031e35637f7fca1",
+        "stats.json": "04491c0473ad73c68b8de458eefd5bbf6db223d5332ef793504debccca4bcfd9",
+        "ticks.log": "337225773dfae5c132811b0e1d22403d3ab22281e9be3a26465cb36c5f5ff75e",
+        "vdp-to-mos-delivered.bin": "2dc98bd7da2883ea2547dd0b9ef9f71a45300d857fa958495338848c9d2a5720",
+        "vdp-to-mos.bin": "2dc98bd7da2883ea2547dd0b9ef9f71a45300d857fa958495338848c9d2a5720"
+      }
+    },
+    "oval-b-interp": {
+      "runtime_identities": [
+        "280dd8e9e75f390ee112238c10355ab8fb58ad52a2539d472b7672bfa880a16e  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 647,
+        "cycles": 2739880000,
+        "retired": 916936007,
+        "uart_rx": 158095,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 13.335767345000932,
+      "artifacts": {
+        "esp32-uart0.log": "e5aeeac95247948936b132bab202f5a8c8a189b967dc008dc0841ec26ee276a0",
+        "expected.json": "726190fda31b637187d4b0cd5dae8bce71c7b9865cb5e90d0b183542c3bf51a3",
+        "final.ppm": "22e12a874f3de091393980bf718fff1796563ade28123742a29de614e145cab4",
+        "frontend.log": "ce10fcada1e6c7fca818fcbf744558afe0341d1d2a91346822b56cfe989e6ca7",
+        "mos-to-vdp.bin": "3328eb9e19a668367567bb0e8502f23f2aa066d7e0d8968bdc03f508a22fb3e4",
+        "replies.log": "5c517b9fb42731be14251e17648f5eaaae95b230069e006e2129a2a730ea2d31",
+        "result.json": "e2eb8ab6db55fbd3c48e55e7e9fe0c4a4983ea05f69e1a9591fe55b94fe68d64",
+        "stats.json": "b64d759100defa8c2ca8365b3db305a997e58464ba21f6ffa44356cdc9193425",
+        "ticks.log": "fdc459676f7ad064a4f53144dbb54b517b5f1870a1d510c01932907847ce643b",
+        "vdp-to-mos-delivered.bin": "e8871417c474c01c2aaffcdef3ff1be3fac4e834b3e1297949c442bae8bd849f",
+        "vdp-to-mos.bin": "e8871417c474c01c2aaffcdef3ff1be3fac4e834b3e1297949c442bae8bd849f"
+      }
+    },
+    "oval-b-jit": {
+      "runtime_identities": [
+        "56de68b2f36ccab16e22eb3a881f345f86519fbc1184c1fc0fa5e8eabc0e8121  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "jit",
+        "frames": 698,
+        "cycles": 2949860000,
+        "retired": 1207461575,
+        "uart_rx": 158095,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 12.53295868999703,
+      "artifacts": {
+        "esp32-uart0.log": "e5aeeac95247948936b132bab202f5a8c8a189b967dc008dc0841ec26ee276a0",
+        "expected.json": "726190fda31b637187d4b0cd5dae8bce71c7b9865cb5e90d0b183542c3bf51a3",
+        "final.ppm": "2f22accd702d3dcb99718d227f3363e0ba0fbf721bc78a571fea49dfaecd1742",
+        "frontend.log": "bbb998b059d3662b816ecf5d63d70dcd4ac8372718855a050078a34b59099568",
+        "mos-to-vdp.bin": "3328eb9e19a668367567bb0e8502f23f2aa066d7e0d8968bdc03f508a22fb3e4",
+        "replies.log": "01259e057c52ab77cbfb49fe705aa1d1ce72ab85a1e780fbdfbb12d3d7ff0ab3",
+        "result.json": "e7632ed1736fdc18900d3a1544323335972658d83754e3d027c7e830365f208a",
+        "stats.json": "a9648f63122f86b4a8ffd986016a40bfd4b615df6b1accad95b613b12ea177f5",
+        "ticks.log": "32769c55aabc3ab93b35f5b5276839d6d2ea604b7d493a1668ca48fc884432e0",
+        "vdp-to-mos-delivered.bin": "8b9735f671dde27f67039287f0c89ee79ac64e53a6925a7d1f5de55b1e378eab",
+        "vdp-to-mos.bin": "8b9735f671dde27f67039287f0c89ee79ac64e53a6925a7d1f5de55b1e378eab"
+      }
+    },
+    "oval-replay-interp": {
+      "runtime_identities": [
+        "280dd8e9e75f390ee112238c10355ab8fb58ad52a2539d472b7672bfa880a16e  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 676,
+        "cycles": 2859790000,
+        "retired": 1056956872,
+        "uart_rx": 182993,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 14.731224324998038,
+      "artifacts": {
+        "esp32-uart0.log": "81b97a68d84bbbf66dfe5c42ea7d324ba0f1cc1f51f6c555f6d5d8073ab07fbc",
+        "expected.json": "e26ddf1f89252badafb7acd8c3ffcec6cf758962dbe49ad03cb8e6ac3461c7d3",
+        "final.ppm": "2a75338776b34fd8b80427ba0ee15c749e7792c1bebc6293881d1030750957ee",
+        "frontend.log": "b665aee6e131d3c87c8ea66b711d2c5a2c55567eecac9ef887c3f2b60e99b1b1",
+        "mos-to-vdp.bin": "59994c18157e3c064cb6fdea575e287595c8f251f0258f9ad7c901cf7e15dc66",
+        "replies.log": "0dc9af027b187130d046bd11c6fd21e706f9ceb515a19001cce784f34c1d9771",
+        "result.json": "7e5d70ba571f7521efb7a634c460c4de714e77e4b0e4a090ff1190ebe2173449",
+        "stats.json": "68f0a980fed0cc41b469ebb8234ec50fb2f92926b18c440b04999e8a74d04d3a",
+        "ticks.log": "246e9b516e0815aa757342b626ed43f74ef59f44793aec56574c7fadfe7eaaf0",
+        "vdp-to-mos-delivered.bin": "438f7596d1724135c05229a6577a98c8438f738abaf70d85dce2bd5b8b4fe571",
+        "vdp-to-mos.bin": "438f7596d1724135c05229a6577a98c8438f738abaf70d85dce2bd5b8b4fe571"
+      }
+    },
+    "oval-replay-jit": {
+      "runtime_identities": [
+        "56de68b2f36ccab16e22eb3a881f345f86519fbc1184c1fc0fa5e8eabc0e8121  fab-agon-emulator",
+        "a0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin",
+        "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin",
+        "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map",
+        "817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so",
+        "65d81aaf49b88dc39414cf458f3c8b465efa5a84f4ae59921a97431a3d748946  esp32-firmware.bin",
+        "bc1ab788b5890e4dfb68b1439e8264f911cec43f17bc466c110a05e23392fe3b  esp32-firmware.elf"
+      ],
+      "backend_stats": {
+        "engine": "jit",
+        "frames": 732,
+        "cycles": 3089590000,
+        "retired": 1349628764,
+        "uart_rx": 182993,
+        "uart_tx": 7677,
+        "uart_delivered": 7677,
+        "isync": 78,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "host_elapsed_seconds": 13.132753890000458,
+      "artifacts": {
+        "esp32-uart0.log": "81b97a68d84bbbf66dfe5c42ea7d324ba0f1cc1f51f6c555f6d5d8073ab07fbc",
+        "expected.json": "e26ddf1f89252badafb7acd8c3ffcec6cf758962dbe49ad03cb8e6ac3461c7d3",
+        "final.ppm": "880986728cdb392b91b06a5388191e8521959d5ee3679660087cf41b455448a8",
+        "frontend.log": "c39ce79a8679081fef41dc6b1339a58720c7f4766be6cb80a5e7445d11dc0ed9",
+        "mos-to-vdp.bin": "59994c18157e3c064cb6fdea575e287595c8f251f0258f9ad7c901cf7e15dc66",
+        "replies.log": "e04e0f271c53f917a9b2fa5f81c426dd1f4d78faf959d7a1035e1b5a0e163fb0",
+        "result.json": "db47516e9686240158e3c4d2b1b13823e499217f32f14529690f2c1a401a5722",
+        "stats.json": "8c4441d6ce600e2d21e8277752ae64b0cab3317f6da8e061aa1c9c268470151e",
+        "ticks.log": "47f80e944ad468665389ea36b56376f48332bd051ed9b83a02eb965f24f73db0",
+        "vdp-to-mos-delivered.bin": "46d18c74d83ef2f9cba213da490a8e92de9aeb32a477bfe915cc941074a43774",
+        "vdp-to-mos.bin": "46d18c74d83ef2f9cba213da490a8e92de9aeb32a477bfe915cc941074a43774"
+      }
+    }
+  },
+  "sources": {
+    "experiment/module.c": "8f37b406b2cc6ec2770548e041653fd39b5aeba8bd3003c6dd647530199e3473",
+    "experiment/oracle.cpp": "4ac6ed4444d8dbbdfc11afc2d55c968b9929374f4c326d63030aa7f8a29cf9f4",
+    "experiment/protocol.py": "39cd32c3ad94345c2e6e7b049fa522d33cf41b78fafacd9b5be314795a3e6f84",
+    "flexe/artwork.cpp": "bafd40b2452e456dff3a4e0f0642f7a462842295944537e492bdcb6e9cd6b5ef",
+    "flexe/build.py": "2d3946c22b5dc27b6505447176ac3b94e56f332bdfb27564a9d300f79c048c1e",
+    "flexe/decode.py": "6613f8d5a2d1326f88941c82f15972ec47aafbc9b22f68fe4a5b809cfea40740",
+    "flexe/diagnostic.c": "c4e1c70c064e7d2efd464335fdf556e583a762c2d3910c3a691ef649911ae193",
+    "flexe/package.py": "b964b9ac41f8e718e1618fc19e31c24e7c0bdaed36dd9cf9adc2bfdc9d852bdb",
+    "flexe/probe.asm": "90b4488bb03545f011f62463ef71b8da2f6ede75d080af9a5fa491fd90a60310",
+    "flexe/remote.py": "faf3ce041c910086bf5f66ff78ae5aa9b458218fc5c6f2189ebc0209a419d1c1",
+    "flexe/report.py": "f284da2b4f1de140a47d16af53e064742d96e45e1d185f8f8cdb310381459f2d",
+    "flexe/stage.py": "4376aca9c894481925f836c56dccc00325aeb7c3198f29352eb5868ef5ff6749"
+  },
+  "modules": {
+    "A": {
+      "build_id": "0x52324441",
+      "package_bytes": 8712,
+      "sha256": "f00cc35c2c7feacba62c630fbb0f26ef14223f7a34c73e56b31bf400b02a4624",
+      "resident_text_bytes": 7316,
+      "resident_data_bytes": 532,
+      "relative_relocations": 43,
+      "stack": {
+        "module_source_bound_bytes": 496,
+        "frames": {
+          "u32": 32,
+          "w32": 32,
+          "byte": 32,
+          "word": 32,
+          "command": 32,
+          "plot": 32,
+          "rect": 32,
+          "viewport": 32,
+          "affine": 32,
+          "bitmap": 32,
+          "centre_exact": 48,
+          "cx": 32,
+          "tangent": 32,
+          "acquire": 32,
+          "bearing$isra$0": 32,
+          "release$isra$2": 32,
+          "finish": 112,
+          "rally_entry": 336,
+          "memset": 32,
+          "memcpy": 32,
+          "vdplet_entry": 32
+        },
+        "excludes": "host callbacks, interrupt and window spill overhead"
+      },
+      "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0"
+    },
+    "B": {
+      "build_id": "0x52324442",
+      "package_bytes": 9016,
+      "sha256": "a2b023651e943ada9920ed658a846ea6f733547825dfca613509a607dfd416a3",
+      "resident_text_bytes": 7556,
+      "resident_data_bytes": 572,
+      "relative_relocations": 45,
+      "stack": {
+        "module_source_bound_bytes": 512,
+        "frames": {
+          "u32": 32,
+          "w32": 32,
+          "byte": 32,
+          "word": 32,
+          "command": 32,
+          "plot": 32,
+          "rect": 32,
+          "viewport": 32,
+          "affine": 32,
+          "bitmap": 32,
+          "centre_exact": 48,
+          "cx": 32,
+          "tangent": 32,
+          "acquire": 32,
+          "bearing$isra$0": 32,
+          "release$isra$2": 32,
+          "finish": 112,
+          "rally_entry": 352,
+          "memset": 32,
+          "memcpy": 32,
+          "vdplet_entry": 32
+        },
+        "excludes": "host callbacks, interrupt and window spill overhead"
+      },
+      "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0"
+    }
+  }
+}

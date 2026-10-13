@@ -28,7 +28,10 @@ def wrappers(handle):
     # Clear readiness even if silent RUN fails before entering the native module.
     result={PREPARE:command(STATUS,5)+b'\x02'+word(0)+b'\0'+run(handle)}
     for wrapper,target in zip(DRAW,(ROAD,ACTORS,PLAYER)):
-        result[wrapper]=command(target,6)+b'\x02'+word(STATUS)+word(0)+b'\x01'
+        # Firmware reads byte operands into int32 initialized to -1. Compare
+        # two buffer bytes so both have the same high-byte representation.
+        # ARGS.version low byte is immutable 1 for this bound ABI.
+        result[wrapper]=command(target,6)+b'\x22'+word(STATUS)+word(0)+word(ARGS)+word(4)
     return result
 def submit_parts(state):
     if len(state)!=112:raise ValueError('112-byte state required')

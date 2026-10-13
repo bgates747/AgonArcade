@@ -44,8 +44,12 @@ def dispatch(b,bench,buffers,called):
                 at+=n
         elif op==1:dispatch(buffers[id],bench,buffers,called)
         elif op==6:
-            assert b[at]==2;check=u16(b,at+1);offset=u16(b,at+3);value=b[at+5];at+=6
-            if bench.data[check][offset]==value:
+            assert b[at]==34;check=u16(b,at+1);offset=u16(b,at+3)
+            operand=u16(b,at+5);operand_offset=u16(b,at+7);at+=9
+            # Actual firmware preserves 0xFFFFFF in each int32 operand.
+            source=bench.data[check][offset]|0xffffff00
+            value=bench.data[operand][operand_offset]|0xffffff00
+            if source==value and source!=0xffffffff:
                 data=bytes(bench.data[id]);used=check_list(data);called.append((id,used))
         else:raise AssertionError(op)
 

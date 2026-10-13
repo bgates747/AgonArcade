@@ -417,7 +417,10 @@ static int state_valid(const Assets *a) {
     }
     return 1;
 }
-__attribute__((visibility("default"))) int32_t vdplet_entry(const vdplet_host_v1 *h,
+#ifndef R24_ENTRY_VISIBILITY
+#define R24_ENTRY_VISIBILITY __attribute__((visibility("default")))
+#endif
+R24_ENTRY_VISIBILITY int32_t vdplet_entry(const vdplet_host_v1 *h,
                                                             const vdplet_request_v1 *r) {
     if (!h || !r || h->struct_bytes < sizeof(*h) || r->struct_bytes < sizeof(*r) ||
         h->abi_major != 1 || !(h->capabilities & 1) || !h->buffer_acquire || !h->buffer_release)
