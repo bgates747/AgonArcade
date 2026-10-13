@@ -1,0 +1,51 @@
+CPU paused at breakpoint":state
+
+triggers                      List triggers
+
+The previous command can be repeated by pressing return.
+
+CPU running. Press <CTRL-C> to pause
+
+
+CPU paused
+* 001532: BIT 4, A             AF:0042 BC:000286 DE:068500 HL:068881 SPS:0000 SPL:0aeee2 IX:0aeeef IY:0695be ADL:1
+>> * 001532: BIT 4, A             AF:0042 BC:000286 DE:068500 HL:068881 SPS:0000 SPL:0aeee2 IX:0aeeef IY:0695be IR:0146 MB:00 ADL:1 MADL:1 IFF1:1
+                               Cycles since last break: 509930426   Cycles per instruction: 3.0
+                               SPL top $0aeee2: c5 15 00 80 dc 00 1d 19 00 03 31 aa 04 fe ee 0a
+>> 0aeee2: c5 15 00 80 dc 00 1d 19 00 03 31 aa 04 fe ee 0a |           1     
+0aeef2: b4 39 04 be 85 06 49 05 00 00 00 00 16 ef 0a 87 |  9    I         
+0aef02: 4b 04 be 85 06 49 05 00 2f 81 06 be 95 06 e0 00 | K    I  /       
+>> 	.assume adl=1
+  001510: AND A, $10           | e6 10
+  001512: JR NZ, $150d         | 20 f9
+  001514: XOR A, A             | af
+  001515: OUT0 ($cb), A        | ed 39 cb
+  001518: LD HL, $bc430        | 21 30 c4 0b
+  00151c: LD A, $0             | 3e 00
+  00151e: LD (HL), A           | 77
+  00151f: POP DE               | d1
+  001520: POP HL               | e1
+  001521: POP AF               | f1
+  001522: EI                   | fb
+  001523: RETI.LIL             | 5b ed 4d
+  001526: PUSH AF              | f5
+  001527: LD A, $1             | 3e 01
+  001529: LD ($bc3e7), A       | 32 e7 c3 0b
+  00152d: POP AF               | f1
+  00152e: RET                  | c9
+  00152f: IN0 A, ($c6)         | ed 38 c6
+* 001532: BIT 4, A             | cb 67
+  001534: JR Z, $152f          | 28 f9
+  001536: RET                  | c9
+  001537: IN0 A, ($9e)         | ed 38 9e
+  00153a: TST A, $8            | ed 64 08
+  00153d: JR NZ, $1537         | 20 f8
+  00153f: RET                  | c9
+  001540: PUSH BC              | c5
+  001541: PUSH AF              | f5
+  001542: LD BC, $4000         | 01 00 40 00
+>> CPU running
+
+CPU paused
+* 001532: BIT 4, A             AF:0042 BC:000286 DE:068500 HL:068881 SPS:0000 SPL:0aeee2 IX:0aeeef IY:0695be ADL:1
+>> 

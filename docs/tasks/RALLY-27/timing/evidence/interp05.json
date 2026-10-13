@@ -1,0 +1,32 @@
+{
+  "status": "guest-result",
+  "host_elapsed_seconds": 88.30522957499488,
+  "runtime": {
+    "flexe-agon-emulator": "e0fb53c1aae9369c7c1263596951dcc95e0383414b087a57c1d2e5b3b613ab18",
+    "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+    "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+    "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+    "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+    "esp32-firmware.bin": "75388e4e59fee8177551d626b13029a5428788c4dbec61e3fe98d01d6569ba7c",
+    "esp32-firmware.elf": "2f92b25b334bf9251911f02af1464f3bda505d9230a3d2cc5881872a49817ddd",
+    "sdcard/rally/rally.bin": "c2436c9f33b321fc157700efed518553c478e10c4c7723a8d67cec3ecce9a53c",
+    "sdcard/autoexec.txt": "d5eb90d17135ad0031fb5b777177876e8a3700ae308e53781b1f67aae53f5e5e"
+  },
+  "guest": {
+    "schema": "1",
+    "track": "fuji",
+    "pacing": "both-unpaced",
+    "clock_hz": "120",
+    "submitted": "366",
+    "completed": "366",
+    "window_ticks": "3604",
+    "drain_ticks": "0",
+    "total_ticks": "3604",
+    "simulation_ticks": "3594",
+    "collision_checks": "3594",
+    "contacts": "0",
+    "valid": "1"
+  },
+  "completed_fps_nominal": 12.18645948945616,
+  "csv_sha256": "d9f7625bd3dc10199fdc5103710f082b0d342f5f400d20b045e72e09afe21239"
+}

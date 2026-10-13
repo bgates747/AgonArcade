@@ -1,6 +1,6 @@
 # RALLY-27 first-tranche results
 
-The full game now computes its road entirely on the eZ80 and emits ordinary colour/PLOT commands. Host geometry and existing gameplay tests pass, and the new Flexe runtime renders both tracks' title/demo scenes. **Update, 2026-10-13:** after authorized Console8 SD deployment, the Author reported that all three deployed games worked as expected, establishing reported physical gameplay acceptance of this exact Rally candidate. The Author also reports that the Flexe agent fixed keyboard input. The earlier input failure below is historical evidence; Rally has not yet been requalified with the updated emulator. No measured game FPS or exhaustive physical phase coverage is claimed. New implementation remains uncommitted pending explicit commit/push direction.
+The full game now computes its road entirely on the eZ80 and emits ordinary colour/PLOT commands. Host geometry and existing gameplay tests pass, and the new Flexe runtime renders both tracks' title/demo scenes. **Update, 2026-10-13:** after authorized Console8 SD deployment, the Author reported that all three deployed games worked as expected, establishing reported physical gameplay acceptance of this exact Rally candidate. The Author also reports that the Flexe agent fixed keyboard input. The earlier input failure below is historical evidence; Rally has not yet been requalified with the updated emulator. No measured game FPS or exhaustive physical phase coverage is claimed. The restoration and prior dirt were subsequently committed/pushed as `a2a613f` on explicit Author instruction. R27-05 was then authorized; see [timing fixture results](timing/RESULTS.md) for 12.19–12.40 nominal completed FPS in Flexe interpreter mode and unresolved JIT transport stalls. New diagnostic work remains uncommitted for review.
 
 ## 1. Work delivered
 
@@ -10,7 +10,7 @@ The full game now computes its road entirely on the eZ80 and emits ordinary colo
 | R27-02 | Complete | direct_road.hpp; 34,005 exact donor-command cases; sanitizer and multi-chunk stress |
 | R27-03 | Implemented | Normal full game uses DirectRoad, no section startup or lookup load/destruction; standalone binary |
 | R27-04 | Partial | Host tests/builds and both-track demo captures pass; Console8 gameplay accepted by Author; remaining phase coverage and updated-Flexe input validation pending |
-| R27-05 | Not started | No frame-rate claim or live-eZ80 benchmark in this tranche |
+| R27-05 | Implemented; partial qualification | Separate unpaced live-game fixture, guest-created results and optional timing hooks; interpreter completed twice, JIT stalls; Fab/physical/detailed timing remain open |
 | R27-06 | Partial | Console8 gameplay accepted; Flexe input fix reported, updated-runtime review and explicit commit/push approval pending |
 
 Prior work was committed and pushed before editing:067f88c (VDPlet/Flexe evidence), e33da22 (version catalogue),19d54c9 (restoration plan). Clean tracked-tree state was verified before this tranche. New implementation remains uncommitted for review. Production, bench, historical renderer and R24 source files were not changed.
@@ -56,7 +56,7 @@ The normal Flexe review candidate was prepared and left stopped, displaying the 
 
 After the initial results, the Author authorized Console8 SD deployment. The receipt at `.work/console8-deployment.json` records copied, synced and hash-verified Rally (164315 bytes, SHA256 `7f1620ed8139ee779e7d50e333ef572aeaf612a154e41ec574e63a57da760293`), Defender and Aginvadors binaries. The Author then reported: “everything worked as expected, though Rally is the one we really wanted to work.” This establishes reported Console8 gameplay acceptance of the direct-eZ80 full game. Defender and Aginvadors were rebuilt from existing source without source changes; Aginvadors belongs to separate Pynvaders. This acceptance does not establish measured FPS, telemetry hardware qualification or an exhaustive game-phase matrix.
 
-Machine-specific profile locations and launch instructions are provided privately in chat. The public record retains runtime identities, results and acceptance limits. Detailed timing remains unstarted R27-05 work, outside the authorized first tranche. Console8 acceptance does not imply emulator review or commit/publication approval.
+Machine-specific profile locations and launch instructions are provided privately in chat. The public record retains runtime identities, results and acceptance limits. The later authorized R27-05 fixture now supplies completed-frame FPS; detailed timer qualification remains open. Console8 acceptance does not imply emulator review or commit/publication approval.
 
 ## 6. Final candidate identity
 

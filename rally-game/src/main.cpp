@@ -29,7 +29,13 @@
 #include "host_telemetry.hpp"
 extern "C" unsigned emos_gateway_call(uint8_t *request);
 #endif
+#ifdef RALLY_TIMING_FIXTURE
+#include "timing_fixture.hpp"
+#endif
 namespace {
+#ifdef RALLY_TIMING_FIXTURE
+r27::Measurement measurement;
+#endif
 using namespace rally::game;
 #ifdef RALLY_HOST_TELEMETRY
 uint8_t gateway[66],telemetryInput[141];
@@ -47,7 +53,7 @@ unsigned telemetryCall(uint8_t operation){
 rally::Motion motion;
 rally::DirectRoad road;
 rally::Traffic traffic;
-rally::DemoDriver demoDriver;
+[[maybe_unused]] rally::DemoDriver demoDriver;
 rally::SceneryHistory sceneryHistory;
 rally::r18::SceneState scene{};
 rally::Stream stream;
@@ -295,7 +301,7 @@ void bottom() {
         if(rules.extensionNotice)text(23,28,"TIME EXTENDED!",11,0);
     }
 }
-void input() {
+[[maybe_unused]] void input() {
     bool any=false;for(auto b:heldKeys)any=any || b!=0;
     if(!any)inputArmed=true;
     if(pressed(102)) {muted=!muted;if(muted)engine.stop(send);else engine.start(send);}
@@ -326,9 +332,25 @@ void tick() {
 #endif
     uint32_t advance=0;
     if(rules.phase==Phase::Attract) {
+        #ifdef RALLY_TIMING_FIXTURE
+        // Share the traffic pace phase exactly; centerline lock is fixture-only.
+        const auto &pace=raceTraffic.pace;
+        const unsigned index=pace.remaining?pace.record:(pace.record+1)%6;
+        motion.speed=Route[index].speed;
+        motion.lateral=0;motion.lateralVelocity=0;motion.steering=0;
+        motion.position=(motion.position+motion.speed*rally::WorldSpeedMultiplier)%(selected->length*100);
+        motion.phase=(motion.phase+motion.speed*rally::WorldSpeedMultiplier)%(rally::Period*100);
+        ++measurement.simulation;
+#else
         motion.cornerAssist=true;demoDriver.tick(motion);
+#endif
         attractProgress+=motion.speed*rally::WorldSpeedMultiplier;
         raceTraffic.tick(attractProgress,rules.phaseTicks+1);
+#ifdef RALLY_TIMING_FIXTURE
+        ++measurement.checks;
+        if(raceTraffic.contactStation(wrap(motion.position+6800,selected->length*100),motion.lateral))
+            ++measurement.contacts;
+#endif
         // Attract may run overnight indefinitely. Its unused race totals
         // need no lifetime accumulation; preserve bounded on-track positions.
         const uint32_t lap=uint32_t(selected->length)*100;
@@ -497,7 +519,11 @@ int gameMain(int argc,char **argv) {
         else if(!strcmp(argv[i],"demo")){} // Compatibility alias; attract is always the default.
         else {printf("Usage: rally [oval|fuji] [circuit|arcade] [steer1|steer2] [mute]\n");return 1;}
     }
+    #ifdef RALLY_TIMING_FIXTURE
+    selected=&rally::Fuji;
+#else
     if(!readRecords("rally.sav",records))readRecords("rally.bak",records);
+#endif
     loadTrack();
     #ifdef RALLY_HOST_TELEMETRY
     if(telemetryCall(0)){printf("Host telemetry unavailable.\n");return 31;}
@@ -510,17 +536,42 @@ int gameMain(int argc,char **argv) {
     #ifdef RALLY_CAPTURE
     FILE *ready=fopen("ready.txt","wb");if(ready) {fputs("test fixture ready\n",ready);fclose(ready);}
 #endif
-    uint32_t previous=rawClock(),next=previous;
+    #ifdef RALLY_TIMING_FIXTURE
+    if(!measurement.enable(send)) {
+        measurement.end=measurement.done=measurement.start=rawClock();measurement.save();
+        printf("R27 stopped: %s; callback retained for late reply safety\n",measurement.failure);
+        for(;;){} // Never return with an undrained interrupt callback.
+    }
+    // Two complete pages warm retained HUD/scenery before timed submission.
+    unsigned warmFrames=2;
+#endif
+    uint32_t previous=rawClock();[[maybe_unused]] uint32_t next=previous;
 #ifdef RALLY_HOST_TELEMETRY
     telemetryRun=previous^UINT32_C(0x522D12E);
 #endif
     while(!quit) {
-        const uint32_t now=rawClock();if(!rally::tickDue(now,next))continue;next=now+4;
-        const uint32_t elapsed=rally::ticksSince(now,previous);previous=now;
+        const uint32_t now=rawClock();
+#ifdef RALLY_TIMING_FIXTURE
+        if(!warmFrames && now-measurement.start>=r27::Duration)break;
+#else
+        if(!rally::tickDue(now,next))continue;
+#endif
+        next=now+4;
+        #ifdef RALLY_TIMING_FIXTURE
+        measurement.mark(r27::HotLoop,true);
+#endif
+        #ifdef RALLY_TIMING_FIXTURE
+        const uint32_t elapsed=warmFrames?0:rally::ticksSince(now,previous);
+#else
+        const uint32_t elapsed=rally::ticksSince(now,previous);
+#endif
+        previous=now;
         memcpy(previousKeys,heldKeys,sizeof(heldKeys));
         for(unsigned i=0;i<16;++i)heldKeys[i]=vdp_getKeyMap(i);
+        #ifndef RALLY_TIMING_FIXTURE
         input();if(quit)break;
         if(rules.phase==Phase::Attract)demoDriver.frame(motion);
+#endif
 #ifdef RALLY_TEST_DRIVER
         if(driving(rules.phase))demoDriver.frame(motion);
 #endif
@@ -537,20 +588,41 @@ int gameMain(int argc,char **argv) {
             if(status && status!=31)quit=true; // Close on error; never drive without a live stream.
         }
 #endif
+        #ifdef RALLY_TIMING_FIXTURE
+        measurement.mark(r27::Geometry,true);
+#endif
         rally::game::prepareGameScene(motion,traffic,raceTraffic,road,sceneryHistory,scene,false);
         billboards.prepare(motion,road);
+#ifdef RALLY_TIMING_FIXTURE
+        measurement.mark(r27::Geometry,false);measurement.mark(r27::Submission,true);
+#endif
         if(rules.phase!=Phase::Attract && rules.phase!=Phase::Race)scene.cars=0;
         drawScenery();road.emitTo(stream,send);finishLine();
         viewport(stream,0,panelVisible()?88:HudHeight,319,223);flush();drawTraffic();
         drawPlayer();
         viewport(stream,0,0,319,239);flush();drawPanel();drawHud(elapsed);bottom();
         vdp_swap();sceneryHistory.swapped();
+#ifdef RALLY_TIMING_FIXTURE
+        measurement.mark(r27::Submission,false);measurement.mark(r27::HotLoop,false);
+        if(warmFrames) {
+            if(!--warmFrames) {
+                measurement.contacts=measurement.checks=measurement.simulation=0;
+                for(auto &value:measurement.stage)value=0;
+                if(!measurement.begin(send))break;
+                previous=measurement.start;
+            }
+        } else ++measurement.frames;
+#endif
         if(savePending && result(rules.phase)) {
             (void)saveRecords(records);savePending=false;
             // Save I/O happens only on a stopped result screen, outside timing.
             previous=rawClock();next=previous+4;
         }
     }
+    #ifdef RALLY_TIMING_FIXTURE
+    measurement.finish(send);measurement.save();measurement.disable(send);
+    if(measurement.installed){printf("R27 undrained callback; stopped resident\n");for(;;){}}
+#endif
     engine.stop(send);font(65535);
 #ifdef RALLY_CAPTURE
     report();

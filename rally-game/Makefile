@@ -13,6 +13,9 @@ include $(AGONDEV_MAKEFILE)
 ifeq ($(findstring -DRALLY_HOST_TELEMETRY,$(EXTRA_GAME_FLAGS)),)
 OBJS := $(filter-out obj/emos_gateway.o,$(OBJS))
 endif
+ifeq ($(findstring -DRALLY_TIMING_FIXTURE,$(EXTRA_GAME_FLAGS)),)
+OBJS := $(filter-out obj/timing_callback.o obj/timing_prt.o,$(OBJS))
+endif
 CFLAGS += -I../rally-production/include
 CXXFLAGS += -std=c++17 -Wall -Wextra -Werror -fno-exceptions -fno-rtti
 $(OBJS): $(wildcard include/*.hpp ../rally-production/include/*.hpp)

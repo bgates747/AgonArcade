@@ -15,8 +15,10 @@ for name in ('init_array', 'ctors', 'dtors', 'fini_array'):
     match = re.search(r'^\.'+name+r'\s+0x[0-9a-f]+\s+(0x[0-9a-f]+)', mapping, re.M)
     assert match and int(match[1],16) == 0, f'Unsupported dynamic startup/finalizer table: {name}'
 assert ('_emos_gateway_call' in mapping) == ('RALLY_HOST_TELEMETRY' in args.flags), 'Private gateway leaked across build variants'
+assert ('_r27_callback' in mapping) == ('RALLY_TIMING_FIXTURE' in args.flags), 'Timing callback leaked across variants'
 data = (root/'bin/rally.bin').read_bytes()
-for flag, sentinel in [('RALLY_CAPTURE', b'test fixture ready'),
+for flag, sentinel in [('RALLY_TIMING_FIXTURE', b'R27 TIMING SAVED'),
+                       ('RALLY_CAPTURE', b'test fixture ready'),
                        ('RALLY_DEVELOPMENT', b'W%+03d G%03d%%'),
                        ('RALLY_HOST_TELEMETRY', b'Host telemetry unavailable.')]:
     assert (sentinel in data) == (flag in args.flags), f'Stale/mismatched build: {flag}'

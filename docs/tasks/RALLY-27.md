@@ -69,7 +69,7 @@ Capture straight/curve/seam scenes on both tracks, both drawing pages and HUD re
 
 ### R27-05 — Establish the actual eZ80 timing baseline
 
-**2026-10-13 planning amendment:** [TIMING-PLAN.md](RALLY-27/TIMING-PLAN.md) defines the Author-requested fixture and supersedes the initial sequencing below where they differ: current direct renderer only, completed FPS first, Fuji attract-derived workload, a nominal 30-second MOS-tick window and deliberate pacing removed on both processors. Detailed stage timing is subsequent drill-down. The plan is paused for review; implementation and headless Oryx deployment await explicit go-ahead.
+**2026-10-13 planning amendment:** [TIMING-PLAN.md](RALLY-27/TIMING-PLAN.md) defines the Author-requested fixture and supersedes the initial sequencing below where they differ: current direct renderer only, completed FPS first, Fuji attract-derived workload, a nominal 30-second MOS-tick window and deliberate pacing removed on both processors. Detailed stage timing is subsequent drill-down. The Author released the plan, requested commit/push of existing dirt, and authorized implementation/headless Oryx deployment. See [timing results](RALLY-27/timing/RESULTS.md) for implementation, provisional FPS and unresolved JIT transport stalls.
 
 Reuse RALLY-24's deterministic world-state cases where applicable, but execute **live eZ80 projection, vertex construction and UART submission**. Do not time a precomputed VDU replay and call it this baseline. Separate geometry CPU time, command bytes/submission, completion waits and whole-frame timing where the available instruments support it.
 

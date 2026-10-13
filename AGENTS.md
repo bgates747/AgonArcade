@@ -1,11 +1,12 @@
 # AgonArcade handoff
 
 Current state: **RALLY-27** direct-eZ80 full-game restoration is implemented
-and uncommitted. Read `TODO.md`, `docs/tasks/RALLY-27.md`,
+and preserved in commit `a2a613f`, pushed on Author instruction. Read `TODO.md`, `docs/tasks/RALLY-27.md`,
 `docs/tasks/RALLY-27/RESULTS.md` and `docs/specifications/rally-full-game.md`.
 The Author reported Console8 gameplay acceptance of the exact deployed candidate
 and, on 2026-10-13, that the Flexe agent fixed keyboard input. Updated-Flexe
-Rally validation remains pending; R27-05 timing has not started. No measured FPS
+Rally diagnostic validation remains pending; R27-05 is now authorized and in progress.
+Read `docs/tasks/RALLY-27/timing/RESULTS.md` for provisional FPS and transport stalls. No qualified hardware FPS
 or exhaustive phase coverage is established. Preserve all existing dirt; no
 commit/push without explicit approval. Do not resume unattended development
 without a new instruction. This checkout is now `/Agon/mystuff/AgonArcade`;
