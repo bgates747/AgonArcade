@@ -4,7 +4,7 @@
 
 **First-pass scope: native road and car projection from compact world-state updates.** The eZ80 supplies player/camera and opponent positions plus necessary steering/orientation and control state; it does not send road spans, projected car coordinates/scales, or per-car drawing commands. A classic-ESP32 VDPlet reads resident track/projection data and assets, then generates resident VDU commands for the road and cars. Rally would execute that buffer using ordinary VDP drawing commands. Candidate A retains current buffered section arithmetic as a compatibility control; candidate B replaces it with native endpoint calculation. Neither eliminates graphics dispatch, rasterization or presentation costs. Speedup remains a hypothesis.
 
-**Status: research/design tranche completed; implementation awaits Author review, 2026-10-12.** Read the [review recommendation](RALLY-24/REVIEW.md), [proposed ABI](RALLY-24/DESIGN.md), and [measurement/implementation gates](RALLY-24/MEASUREMENTS.md). No application/runtime development, builds, emulator runs, flashing, deployment, commits or merges are authorized by this task's creation. No existing paused task is resumed. TODO.md remains the sole task register; this document owns the proposed work breakdown.
+**Status: local implementation/build/check tranche approved, 2026-10-12.** Read the [review recommendation](RALLY-24/REVIEW.md), [proposed ABI](RALLY-24/DESIGN.md), and [measurement/implementation gates](RALLY-24/MEASUREMENTS.md). The Author subsequently approved the local tranche and committing/pushing outstanding work. Local task-silo source development, compilation and deterministic host checks are authorized; emulator changes, hardware deployment and physical qualification remain outside this tranche. No existing paused task is resumed. TODO.md remains the sole task register; this document owns the proposed work breakdown.
 
 ## Scope and preserved baselines
 
@@ -66,7 +66,7 @@ The Author approved this research/design tranche after reviewing the roadmap. Re
 ### PLN — Author decision gate
 
 - [x] PLN-001 — Present the hot-path map, exact proposed ABI, unsupported dependencies, memory estimate, measurement matrix and recommendation. Name unresolved runtime-service requirements separately.
-- [ ] PLN-002 — Obtain Author review before implementation/build/flash/test work. If accepted, freeze the implementation contract and precise rollback/bench ownership separately. Human visual acceptance remains necessary for new output; publication is not implied.
+- [x] PLN-002 — Author approved local implementation/build/checks on 2026-10-12. Contract frozen in LOCAL-CONTRACT.md. Hardware scope remains a separate gate. Human visual acceptance remains necessary for new output.
 
 ## Questions the research must settle
 
@@ -95,4 +95,4 @@ Multiple VDPlets are in scope if needed, but current runtime admits one active m
 
 ## Review boundary
 
-This task records a proposed investigation and experiment. No success, speedup or hardware readiness is asserted. Changes are confined to planning/research documents and root TODO registration. Implementation remains gated at PLN-002. Existing unrelated `choplifter/` work is untouched.
+This task records a proposed investigation and experiment. No success, speedup or hardware readiness is asserted. Changes are confined to planning/research documents and root TODO registration. Local implementation is authorized under LOCAL-CONTRACT.md; hardware remains gated. Choplifter was preserved in a separate commit under the Author’s commit-all instruction.
