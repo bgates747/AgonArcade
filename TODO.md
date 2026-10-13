@@ -1,5 +1,13 @@
 # AgonArcade TODO
 
+## Native VDPlet investigation — planning review
+
+- [ ] **[RALLY-24](docs/tasks/RALLY-24.md) — Native VDPlet road and car projection.** First pass sends compact world state, not spans or projected cars; replace both eZ80 visual projection and buffered road matrix arithmetic with native computation. Candidate A is a control only; B is the objective. Research/design tranche complete: [recommendation](docs/tasks/RALLY-24/REVIEW.md). Next proposed tranche is local implementation/build/checks, awaiting Author approval; no hardware work. Preserve current Rally and all paused tasks.
+
+- [ ] **[RALLY-25](docs/tasks/RALLY-25.md) — Native traffic simulation and collision callbacks.** Later feasibility stage after RALLY-24; planning only, pending review.
+
+- [ ] **[RALLY-26](docs/tasks/RALLY-26.md) — Resident crash effects and VDPlet state machine.** Multiple stored modules, persistent state and measured switching costs; planning only, pending review.
+
 ## Full-game checkpoint
 
 - [ ] **[RALLY-22](docs/tasks/RALLY-22.md) — Complete Rally, then continue the Extender port.**
