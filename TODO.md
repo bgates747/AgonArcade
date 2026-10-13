@@ -1,8 +1,12 @@
 # AgonArcade TODO
 
+## Current priority — direct eZ80 full-game renderer
+
+- [ ] **[RALLY-27](docs/tasks/RALLY-27.md) — Restore direct eZ80 roadway computation in the full game.** Plan prepared for review. Preserve RALLY-22 gameplay while replacing lookup/buffered-matrix road rendering with the historical direct eZ80 approach. Work sequence R27-01–06, acceptance and review gates live in the task document. No implementation started; this precedes further RALLY-24 integration.
+
 ## Native VDPlet investigation
 
-- [ ] **[RALLY-24](docs/tasks/RALLY-24.md) — Native VDPlet road and car projection.** First pass sends compact world state, not spans or projected cars; replace both eZ80 visual projection and buffered road matrix arithmetic with native computation. Candidate A is a control only; B is the objective. Research/design tranche complete: [recommendation](docs/tasks/RALLY-24/REVIEW.md). Local tranche complete: [results](docs/tasks/RALLY-24/LOCAL-RESULTS.md). Both candidates pass 5,840 host poses each; B fits one module. Await review before physical runtime/visual qualification or game integration. No hardware work performed. Preserve current Rally and all paused tasks.
+- [ ] **[RALLY-24](docs/tasks/RALLY-24.md) — Native VDPlet road and car projection.** First pass sends compact world state, not spans or projected cars; replace both eZ80 visual projection and buffered road matrix arithmetic with native computation. Candidate A is a control only; B is the objective. Research/design tranche complete: [recommendation](docs/tasks/RALLY-24/REVIEW.md). Local tranche complete: [results](docs/tasks/RALLY-24/LOCAL-RESULTS.md). Both candidates pass 5,840 host poses each; B fits one module. Headless Oryx tranche complete: [results/portable hardware fixtures](docs/tasks/RALLY-24/flexe/RESULTS.md). Native execution/log checks pass; B has a documented pixel-parity exception and startup upload stalls remain an emulator follow-up. Author physical runs and game integration remain pending. No hardware work performed. Preserve current Rally and all paused tasks.
 
 - [ ] **[RALLY-25](docs/tasks/RALLY-25.md) — Native traffic simulation and collision callbacks.** Later feasibility stage after RALLY-24; planning only, pending review.
 
