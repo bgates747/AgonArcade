@@ -23,16 +23,22 @@ D0/independent-D1 Rally tranche at high effort on 2026-10-13. Read
 `INTEGRATION-MAP.md` and `NUMERIC-REQUIREMENTS.md`. Historical R22 source lineage,
 independent route/contact/numeric references and host-only adapter/stubs are
 ready; no product/firmware/deployment changes were made. Golem compiler pin is
-committed GOLEM-032 `25901e5`; scalar/toolchain/generated manifest/native/buffered
-delivery remains pending (TRF-001-07/09). Coordinate through canonical agentcoms
+committed GOLEM-032 `25901e5`; immutable D0 scalar/toolchain/manifest/native/buffered
+delivery is verified and consumed (TRF-001-07/09). Read the current
+`docs/tasks/RALLY-25/renderer-prep/RESULTS.md` for later evidence. Coordinate through canonical agentcoms
 as `rally`, thread `rally25-golem-native`; Golem owns its files. Keep R27 as the
 current direct baseline. Later arrays/wide integration, renderer composition,
 scheduler/snapshot/recovery choices and firmware work require their scoped
 release. The Author authorized committing/pushing the reviewed state and proceeding with
-TRF-001-18–22 renderer preparation on 2026-10-13. This is host-only mapping,
-helper negotiation, fixtures and parity diagnosis, then review. D0 delivery has
-arrived; verification/manifest adapter remains within prior released scope.
-Later game/firmware integration is not released; preserve new dirt for review.
+TRF-001-18–22 renderer preparation on 2026-10-13, frozen at pushed `d250f43`.
+Host mapping/architecture negotiation,9,120 scene fixtures and bounded parity
+diagnosis are complete; new preparation results are uncommitted for review.
+Author accepts current approximately 99% scene agreement for continued development;
+stop further parity research. The Author’s own visual confirmation is the final
+visual gate. Author subsequently authorized commit/push of preparation results
+and TRF-001-23–26 concrete helper negotiation/extraction/host qualification, then
+review. Read `docs/tasks/RALLY-25.md`; combined module linking/game/firmware
+integration remains outside this tranche.
 
 Separate paused task: **RALLY-20**, planning frozen for Author review. Read
 `docs/tasks/RALLY-20.md`, its `CONTRACT.md`, and

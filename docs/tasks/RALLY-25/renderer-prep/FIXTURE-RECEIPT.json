@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "pins": {
+    "docs/tasks/RALLY-24/experiment/module.c": "8f37b406b2cc6ec2770548e041653fd39b5aeba8bd3003c6dd647530199e3473",
+    "docs/tasks/RALLY-24/experiment/oracle.cpp": "4ac6ed4444d8dbbdfc11afc2d55c968b9929374f4c326d63030aa7f8a29cf9f4",
+    "docs/tasks/RALLY-24/experiment/assets.cpp": "2c817ada698d5c06fe29a7ea0dfd819e89e19d6b8caf747b7f6fc705ab70ef99",
+    "docs/tasks/RALLY-24/experiment/test.py": "af752f1afeb66a8db0ecb188d611c4e220d44714cbe9b25f40ed3355ab2a5a63",
+    "docs/tasks/RALLY-24/experiment/unit.c": "36e48757707e3bac27edcf4d09f3fe2630597735815deb8b6d8010ef0ff912be"
+  },
+  "rows": [
+    {
+      "track": "fuji",
+      "poses": 6388,
+      "preserved_poses": 4608,
+      "new_poses": 1780,
+      "max_command_lengths": [
+        3762,
+        350,
+        141
+      ],
+      "bands": [
+        10,
+        30
+      ],
+      "cars": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "signs": [
+        0,
+        1
+      ],
+      "peak_leases": 3,
+      "full_output_sha256": "00a056fb1e45f2b338dc8b4faa49cc486b45db6f78401a75cb5a34318d0d534e",
+      "asset_sha256": "01d9f5d89f163c5ab4152fb502721dcf1ceb5c08480a025a55d31db98612463d"
+    },
+    {
+      "track": "oval",
+      "poses": 2732,
+      "preserved_poses": 1232,
+      "new_poses": 1500,
+      "max_command_lengths": [
+        3411,
+        350,
+        141
+      ],
+      "bands": [
+        10,
+        28
+      ],
+      "cars": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "signs": [
+        0,
+        1
+      ],
+      "peak_leases": 3,
+      "full_output_sha256": "8016a9dea5c0a5f1c0a45f46b1ab45dbd59c8f85cba73f4e5997b105f389f191",
+      "asset_sha256": "f354608222ffd7a723028aa916917a94dcf16113fce92acd8185bb60881cf40b"
+    }
+  ],
+  "page_history_steps": 20,
+  "sanitizers": "ASan/UBSan for retained histories and candidate capacity/rounding leaf; command comparisons use ordinary host shared library",
+  "elapsed_host_seconds": 7.049,
+  "scene_cases_sha256": "492b0e093fe4bd59f25012ae60d012f9959c1dbf39e4a6501e2dcf64c168fbc2",
+  "files": {
+    "common.py": "b6958bbadd20a31bbdb5603b45c322717237eff17adcd761948c4bc993bf9e0b",
+    "fixtures.py": "63bab1a10b00cb22df42e4022d10b2e3cce7ace2a1293cc85650a63a4b1f19dd",
+    "history.cpp": "4acd9467c9202e0d01bdd8151d216634bbde5ceb75998583dfd965ab20840a85"
+  }
+}
