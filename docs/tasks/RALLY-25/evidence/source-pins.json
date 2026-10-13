@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "audit_date": "2026-10-13",
+  "method": "read-only source and existing qualification receipts; no new compile/emulator/hardware runs",
+  "repositories": {
+    "golem": {
+      "head": "b37aa3c1ef2c1ce7330ad684117a6f50feb6eb8e",
+      "branch": "feature/standardized-deployment",
+      "status": "M AGENTS.md\n M TODO.md\n M docs/design/backend-portability.md\n?? docs/devlog/2026-10-13-portable-floats.md\n?? docs/tasks/GOLEM-032.md\n?? docs/tasks/GOLEM-032/",
+      "sources": {
+        "src/golemc.cpp": "a7b30dacaa79523d7e31cde654bcc0f8de0167316932465636c659d55062c1f4",
+        "src/resident_table.hpp": "6c40b1b620b74c15c2cc17aef2d3a5eb42b5ad3393738c4b2c0440ab3a24d546",
+        "src/resident_drawing.hpp": "8daf1a0199b6a38c6b023397d8288439492cf73e7156c20167487aa2ccfe139d",
+        "docs/design/backend-portability.md": "5555fcc691daff5ac5eacebb9fd32dca4a55f3c8c05424dc2c0d3aced1eaa700",
+        "docs/tasks/GOLEM-025/README.md": "37656eea9f897af1a520b50a1ea66ca8d2649584ded894590bf95e18eb126d06",
+        "docs/tasks/GOLEM-027/README.md": "60a690dee023df8bbb2a4ee110a13fa90f270cfb14fea2ff65a2b41666fe20c8",
+        "docs/tasks/GOLEM-031/portable.hpp": "7d6a93465fa1db781928a41c6ffb4632ddeaa0d5468d7f78df5cb8c6f95b6cc7",
+        "docs/tasks/GOLEM-031/backends.hpp": "660a245aace7d5d6252ad616ad725a56c97325e2f9f9523850f7a6b6ea2ff634",
+        "docs/tasks/GOLEM-031/README.md": "5ca0b9f7b592ffdfcd73076dbb7b99fd7384c383f14c23a5a64ab473a45d1616",
+        "docs/tasks/GOLEM-031/evidence/hybrid-jit.json": "50d897377e9bc2e2a221636c549d2a1001a6a12557530add4326481fbb7a88c8",
+        "docs/tasks/GOLEM-031/evidence/hybrid-interp.json": "411efb7873e98ef1d6513c64a34d6b280333cb1741e409045dbd7a836615d8c5",
+        "docs/tasks/GOLEM-032/portable.hpp": "6e055d6c9013c8a0740256dc25626d3c3f84372d78dc6f7e1a86de88457bd2ee",
+        "docs/tasks/GOLEM-032/backends.hpp": "40bf05879176aebccbd989c3dcc298c9b9bdb632ccf199bfb8e2dacf514afa4d",
+        "docs/tasks/GOLEM-032/compiler.cpp": "6153b39e1f2d47f7dfa22abbfa907cca8d15487b03400ce8a3e335b3d772b402",
+        "docs/tasks/GOLEM-032/README.md": "e491a53a3bbc2f8b85d7aeb846d965a2934748b0769679c116d65de8aef0394b",
+        "docs/tasks/GOLEM-032/evidence/hybrid-jit.json": "febbde0efc176a7436d47490e027fdae6109f6df7ad31a01060b66e71e0e57cd",
+        "docs/tasks/GOLEM-032/evidence/hybrid-interp.json": "4d7e5594de95d5f61dfb1e0f9c63ab67f19781cdf27d58c9f65e62f4563a834a"
+      }
+    },
+    "agon-vdplet": {
+      "head": "33a554c82377b10d428f0d2ec258d1b48f27ed22",
+      "branch": "codex/initial-runtime",
+      "status": "",
+      "sources": {
+        "include/vdplet.h": "fa8385e2906f07d37372d80c40f73d419defdbefe7a3458461ac9d5fe0820d38",
+        "src/vdplet_runtime.h": "af049fe93f1e64b0ec1135e5c0e55c1938adf022669dc35d906f5fcb6c58d91b",
+        "tools/build_module.py": "c2353057f2b00545378bc6727752a247df8254dbe51a44c5b99d1478de96bd62",
+        "docs/API-reference.md": "0b335cb9c5b15e7cc5d61c6ed26c88a79c7b53656ff4d15ea156c6dc948855e7"
+      }
+    },
+    "AgonArcade": {
+      "head": "f3196b9498274eed01dfbdd1fcf232367681b775",
+      "branch": "main",
+      "status": "?? docs/tasks/RALLY-25/",
+      "sources": {
+        "docs/tasks/RALLY-25.md": "c99bcf7d3e859731d8ae95e4fc090140a4feabc2f5161558f3de2b091d1a739a",
+        "rally-game/include/race_traffic.hpp": "8511e4ac3db6e2e7fdcadf2b098fe1fc8ba3c3586ae960a7a6933d14f0ab299d",
+        "rally-game/include/routes_data.hpp": "7304601093871c7f5cdbe824f6d4b99608c3df97cd94bc51e95ad6db25ce807c",
+        "rally-production/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+        "rally-production/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+        "docs/tasks/RALLY-24/experiment/module.c": "8f37b406b2cc6ec2770548e041653fd39b5aeba8bd3003c6dd647530199e3473",
+        "docs/tasks/RALLY-24/LOCAL-RESULTS.md": "bea821cfe659af1401e211af3e09eed63c30e59dc4a7519b425107abebbb2e51"
+      }
+    }
+  }
+}

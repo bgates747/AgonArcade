@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "source_commit": "19d54c9ede0a671cf84e5a017e4180d522188082",
+  "route_ticks": 1800,
+  "sine_inputs": 65536,
+  "contact_cases": 504,
+  "spawn_cases": 6,
+  "scenario_count": 10,
+  "scenario_ticks": 192000,
+  "lookup_cases": 460,
+  "events": {
+    "spawn": 146,
+    "despawn": 130,
+    "finish": 36,
+    "slot_reuse": 128
+  },
+  "sanitizers": "ASan + UBSan",
+  "elapsed_host_seconds": 7.182,
+  "vectors_sha256": "22b13751f6fb22a78d59b8d60e208993a445e8d9a815749b1fe13bdb29b91ada",
+  "numeric_vectors_sha256": "71147b1fdacca46ac95b44ea930bc067e8cc52ce4c0e3c23929fb724e9a6a169",
+  "files": {
+    "model.py": "cfc69b0e32b5f07d0c008ddbf18759a606f1fa6fc268fa1a9fcd575d4cb4446b",
+    "oracle.cpp": "d4d88ffaacc0dff9b547d018f74dda235a1a3179515e96148b1099ca18c95c06",
+    "verify.py": "42187ce543dc1cae9c49d4d2aabebe2956af3bc66777fac77bae5b46cbe7f76c",
+    "numeric.py": "bffb4bd049d0f4dfa9cb73dd11501bd39e2caa2f16f6350bc38d2287a2aaa39d",
+    "tables.json": "8b2fdf71f7db7a804b0994266f034cc42c99197881aeb495bcc16cc75bb3f3bb"
+  }
+}

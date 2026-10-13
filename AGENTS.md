@@ -17,6 +17,23 @@ Preserve `rally-production` and `rally-bench`; new game lives in `rally-game`.
 New emulator behavior still requires human review; integration/publication was
 explicitly authorized on 2026-09-14.
 
+Active native planning/integration task: **RALLY-25**. Author released the first
+D0/independent-D1 Rally tranche at high effort on 2026-10-13. Read
+`docs/tasks/RALLY-25.md`, its `PROTOTYPE-CONTRACT.md`, `ROOT-V1.md`,
+`INTEGRATION-MAP.md` and `NUMERIC-REQUIREMENTS.md`. Historical R22 source lineage,
+independent route/contact/numeric references and host-only adapter/stubs are
+ready; no product/firmware/deployment changes were made. Golem compiler pin is
+committed GOLEM-032 `25901e5`; scalar/toolchain/generated manifest/native/buffered
+delivery remains pending (TRF-001-07/09). Coordinate through canonical agentcoms
+as `rally`, thread `rally25-golem-native`; Golem owns its files. Keep R27 as the
+current direct baseline. Later arrays/wide integration, renderer composition,
+scheduler/snapshot/recovery choices and firmware work require their scoped
+release. The Author authorized committing/pushing the reviewed state and proceeding with
+TRF-001-18–22 renderer preparation on 2026-10-13. This is host-only mapping,
+helper negotiation, fixtures and parity diagnosis, then review. D0 delivery has
+arrived; verification/manifest adapter remains within prior released scope.
+Later game/firmware integration is not released; preserve new dirt for review.
+
 Separate paused task: **RALLY-20**, planning frozen for Author review. Read
 `docs/tasks/RALLY-20.md`, its `CONTRACT.md`, and
 `docs/2026-09-12-rally-autonomous.md` first. Optimize the accepted stripped

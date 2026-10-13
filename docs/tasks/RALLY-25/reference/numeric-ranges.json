@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "source_commit": "19d54c9ede0a671cf84e5a017e4180d522188082",
+  "classification": "conservative bounds except explicitly enumerated route extrema",
+  "tracks": {
+    "Fuji": {
+      "lap_hundredths": 3276800,
+      "finish_distance": 6553600,
+      "position_q8_max": 8388605,
+      "adjacent_interpolation_product_abs": [
+        1048512,
+        1048512,
+        16464915,
+        19905345
+      ],
+      "coefficient_abs_max": [
+        20605,
+        13748,
+        77934,
+        9570,
+        2287
+      ],
+      "lookup_line_a_abs_bound": 96168,
+      "lookup_line_b_abs_bound": 89791,
+      "lookup_center_q8_abs_bound": 814496,
+      "lookup_product_abs_bound": 56298060,
+      "direct_full_map_cross_abs_bound": 16821256192,
+      "sign_station_product_max": 222822400,
+      "coefficient_sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "TriOval": {
+      "lap_hundredths": 576000,
+      "finish_distance": 3456000,
+      "position_q8_max": 1474557,
+      "adjacent_interpolation_product_abs": [
+        1048512,
+        1048512,
+        10222992,
+        7863840
+      ],
+      "coefficient_abs_max": [
+        10272,
+        7058,
+        66929,
+        8964,
+        1315
+      ],
+      "lookup_line_a_abs_bound": 48146,
+      "lookup_line_b_abs_bound": 77208,
+      "lookup_center_q8_abs_bound": 665810,
+      "lookup_product_abs_bound": 36707580,
+      "direct_full_map_cross_abs_bound": 3570401280,
+      "sign_station_product_max": 6912000,
+      "coefficient_sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+    }
+  },
+  "route_product_actual_min": -2159280,
+  "route_product_actual_max": 2159280,
+  "route_product_conservative_abs": 11796120,
+  "route_lateral_actual_min": 0,
+  "route_lateral_actual_max": 10088,
+  "division_cases": 100,
+  "arithmetic_cases": 14,
+  "conversion_cases": 31,
+  "lookup_cases": 460,
+  "vectors_sha256": "71147b1fdacca46ac95b44ea930bc067e8cc52ce4c0e3c23929fb724e9a6a169",
+  "generator_sha256": "bffb4bd049d0f4dfa9cb73dd11501bd39e2caa2f16f6350bc38d2287a2aaa39d",
+  "target_qualification": false,
+  "overflow_status_code": "pending Golem agreement; semantic labels only"
+}
