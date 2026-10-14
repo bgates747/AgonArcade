@@ -167,3 +167,107 @@ host simulation-to-renderer integration with deterministic Fuji command replay,
 four physics ticks per frame and completion/error checks, returning for review.
 Read RALLY-25; real generated D2 glue/target linking/runtime work is excluded.
 Golem Stage A is separately authorized through mail twenty-nine.
+
+TRF-001-41–45 completed after pushed `90919ad`; read
+`docs/tasks/RALLY-25/scene-replay/RESULTS.md`/`README.md`. Actual generated
+simulation and accepted helper joined by host-only metadata adapter/modeled
+renderer wrapper pass900 independent command frames/3600ticks/30failure cases
+per ordinary/sanitized/default/relocated variant. Raw shared heading mapping
+is resolved; actual D2 glue/one target module remains undelivered. New scene
+source/results uncommitted; stopped for Author review. Golem capacity Stage A
+has returned its fuller resource measurements/numerical proposals; read the
+latest PROTOTYPE-CONTRACT.md section. SDK policy remains unchanged; Stage B
+awaits Author review/release. Receipt-thirty-one supplies heading/presentation
+map clarification, with no new execution or publication authority.
+
+Latest Author release (2026-10-14): build the real composed Fuji demo and stage
+it on Oryx; recoverable VDP crashes are acceptable experiments. TRF-001-46–49
+is now released, superseding the stop before Stage B. Golem mail thirty-two
+releases SDK/bindings/runtime work; Rally owns driver/assets/profile. Read
+`docs/tasks/RALLY-25/native-demo/README.md`: source physics passes3600 ticks,
+assets/driver build, unpaced Oryx driver-only smoke passes. Real Golem binding/
+enlarged-runtime delivery is still pending, so no native Rally demo is ready.
+Old GOLEM-021 hybrid MOS clock stalls at static frames; paced driver smoke
+fails, reported in thirty-five. All launched profiles are headless/stopped;
+no physical action or commit/push. Do not mistake driver smoke for the game.
+
+Golem twenty now confirms SDK/real bindings/firmware/narrow clock fix in progress;
+concrete GOLEM-037/binding/native-bindings.json matches final Rally source and
+50300–50305 retained IDs. Mail thirty-six accepts maps/ownership; no new user
+question required. TRF-001-50 independent PRT stopwatch fixture is qualified;
+read native-demo/PRT-RESULTS.json and README.md. Guest now saves prt.log and
+clock.log alongside previous logs, restores idle PRT1's prior vector, and reports
+nominal emulated CPU ticks separately. Frozen demo.golem unchanged. Thirty-seven
+supplies results to Golem. Actual combined module/demo still awaits delivery.
+Author preference: use the attention dialog when a nudge to another agent is
+needed; for a blocking Author question, stop and ask one question in chat.
+
+LATEST: actual native Fuji demo is ready for Author visual review on Oryx.
+Read docs/tasks/RALLY-25/native-demo/RESULTS.md and README.md. TRF-001-46–50
+complete: real candidate48eac7..., enlarged firmware8da2..., corrected-clock
+Flexe frontend28f50.../adapter200f...;900 renders/3600ticks pass full diagnostic
+and viewing controls, final source/arrays match independent model. Viewing
+28.85FPS misses30 target; full controls25.58FPS. PRT/MOS/host clocks separate;
+no full-game/autonomous cadence/hardware claim. Profile is stopped:
+~/Agon/mystuff/AgonArcade/.emulator/rally25-native-demo on Oryx, launch via
+./flexe-agon-emulator (Author naming preference relayed in Golem twenty-two;
+no Fab compatibility aliases). Human visual review and explicit commit/push
+remain pending. All baselines/manifests preserved. No graphical/physical launch.
+
+AUTHOR VISUAL ACCEPTANCE (2026-10-14): native Fuji demo looked good; flat/missing
+background is explicitly understood as outside this fixture. Retrieved human
+logs verify900frames/3600ticks/2913 retained replies, exact independent final
+world, PRT teardown and unchanged runtime identity. Read native-demo/
+HUMAN-REVIEW.json; human nominal MOS elapsed30.7167s/29.30FPS. Do not infer separate
+keyboard acceptance, full-scene/game/hardware/cadence acceptance or publication
+permission. No commit/push or next implementation scope from this comment.
+
+CONSOLE8 STAGING (2026-10-14): TRF-001-51 complete; unpaced900-frame/3600-tick
+fixture and vdp_rally.bin deployed to /test/arcade/rally (test singular) on Oryx
+card UUID8658-1C23, writes flushed. Read native-demo/HARDWARE.md and
+HARDWARE-DEPLOYMENT.json. Author flashes/runs; TRF-001-52 awaits returned logs.
+TIMING-CORRECTION.json supersedes old100Hz receipt interpretations: nominal
+120MOS units/s gives human29.30FPS, viewing28.85, full25.58. Raw receipts unchanged.
+Current pacer uses4MOS units; old reviewed3/3/4 requested36Hz; hardware is unpaced.
+No physical run, flash, unmount, commit or push performed.
+
+CONSOLE8 RETURN VERIFIED (2026-10-14): TRF-001-52 complete. Read native-demo/
+HARDWARE-RESULTS.json and RESULTS.md.900frames/3600ticks/2913reply records pass;
+final source globals/five mutable arrays match independent model. Aggregate
+unpaced hardware fixture23.45FPS/38.3833s at nominal120MOS units/s; PRT23.49FPS/
+38.313s agrees within0.19%, prior vector restored. INFO17 minfree2260 unchanged;
+StopRace/UNLOAD0. Includes checks/transport/drawing/swap submission, not isolated
+VDP completion or an autonomous scheduler. Raw hardware returns saved in
+evidence/hardware-*. Card files untouched. No further implementation release
+or commit/push inferred. D3 ownership/design remains proposed, not implemented.
+
+IDENTICAL UNPACED COMPARISON (2026-10-14): Author required the exact same bytes
+on both platforms. TRF-001-53 complete; read native-demo/IDENTICAL-COMPARISON.md
+and JSON. All ten returned-card input files plus supplied firmware match SHA256
+before/after isolated headless Flexe run; no rebuild/metadata edit. Same MOS
+directory /test/arcade/rally.900frames/3600ticks/2913reply records and full final
+state match Console8 and independent model. Flexe29.0167FPS/31.0167s vs physical
+23.4477FPS/38.3833s, nominal120MOS units/s. Flexe backend errors zero/clean exit.
+Profile .emulator/rally25-native-hardware-identical stopped; accepted visual
+profile and physical card untouched. Results are aggregate fixture timing,
+not separate VDP completion/phase timings. No commit/push/new implementation.
+
+CURRENT NEXT PRIORITY (2026-10-14): Author moved headroom/phase measurements
+ahead of D3 scheduler implementation. Read RALLY-25.md current-priority section:
+TRF-001-54 inventory complete;55 actual eZ80 player/input/rules CPU versus
+8.333ms budget,56 native VDP physics/geometry/draw/swap and transport costs.
+Existing R27-05 full-scene Fuji fixture has scrolling panorama/traffic/signs/
+HUD/audio, contact checks without damage, PRT detail and VDP microsecond markers.
+Detailed runtime unqualified; simplified attract player is not actual player
+physics. Reuse facilities without labelling old direct renderer as native.
+Same exact fixture bytes across platforms. Current turn changed priorities/
+researched sources only; no new build/run/firmware delegation/publication.
+
+FULL-SCENE TRANCHE RELEASED (2026-10-14): Author clarifies modifying the VDPlet
+fixture to reproduce R27-05 full-scene workload with new processor split. Read
+docs/tasks/RALLY-25/FULL-SCENE-PLAN.md (FS-001-01–06). Write task, commit/push all
+Rally dirt, then execute authorized application/peer-coordination/headless Oryx
+work. Preserve R27-05/current native benchmark bytes and evidence. eZ80 owns
+player/control/rules/scenery/HUD/audio; VDP opponents/contact/native projection.
+No autonomous scheduler/gameplay-policy/effect tranche inferred. New full-scene
+profile must stop for human review; later implementation publication separate.

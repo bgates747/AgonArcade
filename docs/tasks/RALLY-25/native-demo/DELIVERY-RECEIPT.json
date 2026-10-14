@@ -1,0 +1,41 @@
+{
+  "status": "actual native candidate qualified on Oryx; export omission accounted by appended owner receipt",
+  "candidate": "/Agon/mystuff/golem/docs/tasks/GOLEM-037/binding/delivery/candidate-48eac7efe8fa51f4",
+  "manifest_sha256": "fbbeb8d5ec7d2003c7f4f9e4c1993bd0475b7e47811785e56df7c2a933a26f34",
+  "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+  "source_sha256": "8a103582970dcf7a9c57ab57fe3e9272e60eb18b3ac345361e002fc6b2f82089",
+  "binding_sha256": "543022321154595027a0543271fc2656620c90976b0d0a23a8882db546e43d81",
+  "verified_files": [
+    "array-active.bin",
+    "array-contacts.bin",
+    "array-lateral.bin",
+    "array-position.bin",
+    "array-progress.bin",
+    "array-routes.bin",
+    "array-sine.bin",
+    "arrays-install.bin",
+    "backends.json",
+    "calls.inc",
+    "common-install.bin",
+    "interface.json",
+    "layout.inc",
+    "native-cleanup.bin",
+    "native-install.bin",
+    "native.c",
+    "program.json",
+    "rally-render.disassembly.txt",
+    "rally-render.elf",
+    "rally-render.json",
+    "rally-render.readelf.txt",
+    "rally-render.su",
+    "rally-render.upload.elf",
+    "rally-render.vdpl",
+    "root.json",
+    "state.bin"
+  ],
+  "missing_manifest_artifacts": [
+    "rally-render.o"
+  ],
+  "export_receipt_sha256": "413eabd9b0e6d8afa33bb36cab879c57186741640e028c1a368340e85292ffb5",
+  "export_receipt_verified_files": 32
+}

@@ -1,0 +1,860 @@
+{
+  "schema": 1,
+  "checkpoint": "90919ad",
+  "scope": "actual generated simulation/helper with host-only metadata marshaling/renderer wrapper/publication; no generated D2 or target/resource/cadence qualification",
+  "inputs": {
+    "manifests": {
+      "reference/handoff-manifest-v2.json": "0754c7f20f40da9aa02b14ac707eec3cf8224627519dcad68f675bfb5a85387e",
+      "renderer-prep/MANIFEST.json": "d90d1ff344ad2658dc13c5db9ca24154e3eedb577d15acba607259778797c790",
+      "renderer-helper/MANIFEST.json": "3fc5d32f16d84f8ecc53aabe2d418e317a5323aee1ea2543c85fd657b1d6f62c",
+      "integration-harness/MANIFEST.json": "e9aa7f4da46f76b65375de699f272cb243a618f18e5d3ab1ed3d8e81f0e89694",
+      "generated-state/MANIFEST.json": "866f4d13384ea1c3a8369aa7cfbba651a116e439524f55b365a7ddf9fef1e6b7",
+      "route-kernels/MANIFEST.json": "d9e5238859d6faa402dd069f145834cd3eabb47f46db5b91e1d276ad359e8296"
+    },
+    "compiler_sha256": "36514ecf48d9a785a3e01504e3fc1145876fb41960f458dd866b06ce95aa6f3b",
+    "compiler_source_sha256": "1be2c0181257aaa71305498791c8b09a9ec2c6f86d9fe20e8999cce4c9691c69",
+    "packages": {
+      "default": {
+        "native_c_sha256": "160178613d024594d7e53994f55e166bbac70af6dba8e589568f55ef42aecf2d",
+        "interface_sha256": "3c2695ebe31b243058b8392700e8adace962316fed719b02e657ad2b581d0b95"
+      },
+      "relocated": {
+        "native_c_sha256": "4f322bcb6056700036531810cbfa644c6905371f895add259d11eba57e335836",
+        "interface_sha256": "ff64ce2ada5120d3947b0f8539a93aeeaebaa9081aeadae2aca6df58d755caf2"
+      }
+    },
+    "oracle_source_sha256": "4ac6ed4444d8dbbdfc11afc2d55c968b9929374f4c326d63030aa7f8a29cf9f4"
+  },
+  "results": {
+    "ordinary": [
+      {
+        "label": "ordinary",
+        "relocated": false,
+        "simulation_ticks": 3600,
+        "rendered_frames": 900,
+        "simulated_seconds": 30,
+        "wall_clock_pacing": false,
+        "contact_ticks": 2568,
+        "lap_seams": 1,
+        "renderer_rebinds": 1,
+        "peak_mock_views": 3,
+        "normal_cleanup_leases": 0,
+        "granted_leases": 241930,
+        "releases": 241930,
+        "failures": [
+          {
+            "name": "stale-source-generation",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "stale-source-tick",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "wrong-source-session",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "observed-source-failure",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-12",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-14",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-16",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-24",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-32",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "invalid-mapped-offset",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "missing-source-array",
+            "result": 2,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "short-source-array",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "long-source-array",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "invalid-presentation",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "helper-output-capacity",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "completion-copy-after-ready",
+            "result": 3,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-acquire",
+            "result": 2,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-release",
+            "result": 8,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-refused-release",
+            "result": 8,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 1
+          },
+          {
+            "name": "resident-completion-mismatch-12",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-16",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-20",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-44",
+            "result": "draw rejected"
+          },
+          {
+            "name": "modeled-render-success-generation-mismatch",
+            "result": "draw rejected"
+          },
+          {
+            "name": "one-tick-early-render",
+            "result": 1
+          },
+          {
+            "name": "stop-render-reject-reset-rebind",
+            "result": "pass"
+          },
+          {
+            "name": "source-render-generation-and-request-wrap",
+            "result": "pass"
+          },
+          {
+            "name": "actual-source-arithmetic-failure",
+            "result": 1
+          },
+          {
+            "name": "invalid-active-enum",
+            "result": 1
+          },
+          {
+            "name": "inactive-slot-canonicalization",
+            "result": "pass"
+          }
+        ],
+        "artifacts": {
+          "commands.bin": {
+            "bytes": 1809527,
+            "sha256": "be2a18d5d2e4b6a1b381da9f78bdd529d8980a28df83b56216b6c252957c3f1a"
+          },
+          "reference.bin": {
+            "bytes": 100800,
+            "sha256": "5a92e3c923ca7c4652eae1070afa5cb55b114893343ee7fd29ddba5696befca9"
+          },
+          "states.bin": {
+            "bytes": 97200,
+            "sha256": "e162d74dae7e5fdf058a7a6d0c52efd82eca59f3721b31aa9dcaa5bc742817bb"
+          },
+          "simulation.jsonl": {
+            "bytes": 795985,
+            "sha256": "e392d1590f422b07f0b717641fcd382858795c54f9faf8fe231cbe565536a92d"
+          }
+        },
+        "host_seconds": 2.379,
+        "mapping": "default",
+        "independent_command_frames": 900,
+        "sim_library_sha256": "fa4d694950e1827f5698a6580edde3bfc0418598aca9d7e88ff89047192c0071",
+        "render_library_sha256": "2c091e782170de5ea61b5c511f52e872868ee9211afb5033d484bf3a95d95920",
+        "oracle_command_sha256": "be2a18d5d2e4b6a1b381da9f78bdd529d8980a28df83b56216b6c252957c3f1a"
+      },
+      {
+        "label": "ordinary",
+        "relocated": true,
+        "simulation_ticks": 3600,
+        "rendered_frames": 900,
+        "simulated_seconds": 30,
+        "wall_clock_pacing": false,
+        "contact_ticks": 2568,
+        "lap_seams": 1,
+        "renderer_rebinds": 1,
+        "peak_mock_views": 3,
+        "normal_cleanup_leases": 0,
+        "granted_leases": 241930,
+        "releases": 241930,
+        "failures": [
+          {
+            "name": "stale-source-generation",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "stale-source-tick",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "wrong-source-session",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "observed-source-failure",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-12",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-14",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-16",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-24",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-32",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "invalid-mapped-offset",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "missing-source-array",
+            "result": 2,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "short-source-array",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "long-source-array",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "invalid-presentation",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "helper-output-capacity",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "completion-copy-after-ready",
+            "result": 3,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-acquire",
+            "result": 2,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-release",
+            "result": 8,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-refused-release",
+            "result": 8,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 1
+          },
+          {
+            "name": "resident-completion-mismatch-12",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-16",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-20",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-44",
+            "result": "draw rejected"
+          },
+          {
+            "name": "modeled-render-success-generation-mismatch",
+            "result": "draw rejected"
+          },
+          {
+            "name": "one-tick-early-render",
+            "result": 1
+          },
+          {
+            "name": "stop-render-reject-reset-rebind",
+            "result": "pass"
+          },
+          {
+            "name": "source-render-generation-and-request-wrap",
+            "result": "pass"
+          },
+          {
+            "name": "actual-source-arithmetic-failure",
+            "result": 1
+          },
+          {
+            "name": "invalid-active-enum",
+            "result": 1
+          },
+          {
+            "name": "inactive-slot-canonicalization",
+            "result": "pass"
+          }
+        ],
+        "artifacts": {
+          "commands.bin": {
+            "bytes": 1809527,
+            "sha256": "7bb5c67adc355d992fb6fb9a0b9641fead2775557487c4e82eec3e024f8291d6"
+          },
+          "reference.bin": {
+            "bytes": 100800,
+            "sha256": "5a92e3c923ca7c4652eae1070afa5cb55b114893343ee7fd29ddba5696befca9"
+          },
+          "states.bin": {
+            "bytes": 97200,
+            "sha256": "e162d74dae7e5fdf058a7a6d0c52efd82eca59f3721b31aa9dcaa5bc742817bb"
+          },
+          "simulation.jsonl": {
+            "bytes": 795985,
+            "sha256": "e392d1590f422b07f0b717641fcd382858795c54f9faf8fe231cbe565536a92d"
+          }
+        },
+        "host_seconds": 2.47,
+        "mapping": "relocated",
+        "independent_command_frames": 900,
+        "sim_library_sha256": "725a70240f10e4f9628dd097ddfc8e96e8cf20a4434aef14dff2899ebee48d32",
+        "render_library_sha256": "2c091e782170de5ea61b5c511f52e872868ee9211afb5033d484bf3a95d95920",
+        "oracle_command_sha256": "be2a18d5d2e4b6a1b381da9f78bdd529d8980a28df83b56216b6c252957c3f1a"
+      }
+    ],
+    "sanitized": [
+      {
+        "label": "sanitized",
+        "relocated": false,
+        "simulation_ticks": 3600,
+        "rendered_frames": 900,
+        "simulated_seconds": 30,
+        "wall_clock_pacing": false,
+        "contact_ticks": 2568,
+        "lap_seams": 1,
+        "renderer_rebinds": 1,
+        "peak_mock_views": 3,
+        "normal_cleanup_leases": 0,
+        "granted_leases": 241930,
+        "releases": 241930,
+        "failures": [
+          {
+            "name": "stale-source-generation",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "stale-source-tick",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "wrong-source-session",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "observed-source-failure",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-12",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-14",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-16",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-24",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-32",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "invalid-mapped-offset",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "missing-source-array",
+            "result": 2,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "short-source-array",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "long-source-array",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "invalid-presentation",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "helper-output-capacity",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "completion-copy-after-ready",
+            "result": 3,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-acquire",
+            "result": 2,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-release",
+            "result": 8,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-refused-release",
+            "result": 8,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 1
+          },
+          {
+            "name": "resident-completion-mismatch-12",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-16",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-20",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-44",
+            "result": "draw rejected"
+          },
+          {
+            "name": "modeled-render-success-generation-mismatch",
+            "result": "draw rejected"
+          },
+          {
+            "name": "one-tick-early-render",
+            "result": 1
+          },
+          {
+            "name": "stop-render-reject-reset-rebind",
+            "result": "pass"
+          },
+          {
+            "name": "source-render-generation-and-request-wrap",
+            "result": "pass"
+          },
+          {
+            "name": "actual-source-arithmetic-failure",
+            "result": 1
+          },
+          {
+            "name": "invalid-active-enum",
+            "result": 1
+          },
+          {
+            "name": "inactive-slot-canonicalization",
+            "result": "pass"
+          }
+        ],
+        "artifacts": {
+          "commands.bin": {
+            "bytes": 1809527,
+            "sha256": "be2a18d5d2e4b6a1b381da9f78bdd529d8980a28df83b56216b6c252957c3f1a"
+          },
+          "reference.bin": {
+            "bytes": 100800,
+            "sha256": "5a92e3c923ca7c4652eae1070afa5cb55b114893343ee7fd29ddba5696befca9"
+          },
+          "states.bin": {
+            "bytes": 97200,
+            "sha256": "e162d74dae7e5fdf058a7a6d0c52efd82eca59f3721b31aa9dcaa5bc742817bb"
+          },
+          "simulation.jsonl": {
+            "bytes": 795985,
+            "sha256": "e392d1590f422b07f0b717641fcd382858795c54f9faf8fe231cbe565536a92d"
+          }
+        },
+        "host_seconds": 3.272,
+        "mapping": "default",
+        "independent_command_frames": 900,
+        "sim_library_sha256": "5d1efc47d1b8390d0c796537a830f5df0e253c2b61e7f02dfd52e44d84f1ddca",
+        "render_library_sha256": "114087e47613a4df5e4eab5abd76e5cac3525ebefa790fa37b75936ebcd11994",
+        "oracle_command_sha256": "be2a18d5d2e4b6a1b381da9f78bdd529d8980a28df83b56216b6c252957c3f1a"
+      },
+      {
+        "label": "sanitized",
+        "relocated": true,
+        "simulation_ticks": 3600,
+        "rendered_frames": 900,
+        "simulated_seconds": 30,
+        "wall_clock_pacing": false,
+        "contact_ticks": 2568,
+        "lap_seams": 1,
+        "renderer_rebinds": 1,
+        "peak_mock_views": 3,
+        "normal_cleanup_leases": 0,
+        "granted_leases": 241930,
+        "releases": 241930,
+        "failures": [
+          {
+            "name": "stale-source-generation",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "stale-source-tick",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "wrong-source-session",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "observed-source-failure",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-12",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-14",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-16",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-24",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "source-status-or-success-32",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "invalid-mapped-offset",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "missing-source-array",
+            "result": 2,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "short-source-array",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "long-source-array",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "invalid-presentation",
+            "result": 1,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "helper-output-capacity",
+            "result": 3,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "completion-copy-after-ready",
+            "result": 3,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-acquire",
+            "result": 2,
+            "resident_ready": 0,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-release",
+            "result": 8,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 0
+          },
+          {
+            "name": "publication-refused-release",
+            "result": 8,
+            "resident_ready": 1,
+            "entry_cleanup_leases": 1
+          },
+          {
+            "name": "resident-completion-mismatch-12",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-16",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-20",
+            "result": "draw rejected"
+          },
+          {
+            "name": "resident-completion-mismatch-44",
+            "result": "draw rejected"
+          },
+          {
+            "name": "modeled-render-success-generation-mismatch",
+            "result": "draw rejected"
+          },
+          {
+            "name": "one-tick-early-render",
+            "result": 1
+          },
+          {
+            "name": "stop-render-reject-reset-rebind",
+            "result": "pass"
+          },
+          {
+            "name": "source-render-generation-and-request-wrap",
+            "result": "pass"
+          },
+          {
+            "name": "actual-source-arithmetic-failure",
+            "result": 1
+          },
+          {
+            "name": "invalid-active-enum",
+            "result": 1
+          },
+          {
+            "name": "inactive-slot-canonicalization",
+            "result": "pass"
+          }
+        ],
+        "artifacts": {
+          "commands.bin": {
+            "bytes": 1809527,
+            "sha256": "7bb5c67adc355d992fb6fb9a0b9641fead2775557487c4e82eec3e024f8291d6"
+          },
+          "reference.bin": {
+            "bytes": 100800,
+            "sha256": "5a92e3c923ca7c4652eae1070afa5cb55b114893343ee7fd29ddba5696befca9"
+          },
+          "states.bin": {
+            "bytes": 97200,
+            "sha256": "e162d74dae7e5fdf058a7a6d0c52efd82eca59f3721b31aa9dcaa5bc742817bb"
+          },
+          "simulation.jsonl": {
+            "bytes": 795985,
+            "sha256": "e392d1590f422b07f0b717641fcd382858795c54f9faf8fe231cbe565536a92d"
+          }
+        },
+        "host_seconds": 3.253,
+        "mapping": "relocated",
+        "independent_command_frames": 900,
+        "sim_library_sha256": "bfaf424ab82ca93d89213071ec1a760c5008305641b3f5fa744869a3877a90bb",
+        "render_library_sha256": "114087e47613a4df5e4eab5abd76e5cac3525ebefa790fa37b75936ebcd11994",
+        "oracle_command_sha256": "be2a18d5d2e4b6a1b381da9f78bdd529d8980a28df83b56216b6c252957c3f1a"
+      }
+    ]
+  },
+  "source_sha256": {
+    "replay.py": "c514e4a4e471927d3bb5fcdc6fb8bc469fdafaba6b4eba700706f11e90b64448",
+    "pipeline.py": "bd26488ab580fe248b4568bcaa8ec31ef6721b2060580adb2174dfebe7844701",
+    "bridge.h": "857da448d1e9684cc01a55a49100d986b9265def8588154ff9f94de87a004ab9",
+    "verify.py": "495269d2c9e5018c2d5041f13eb2987dca25651adaa674715576c03da49f0609",
+    "bridge.c": "3b7499adedd6bd9511916617e5bbb4ebe46a736246d3e45839a58c1edb634c9a"
+  },
+  "dependency_sha256": {
+    "docs/tasks/RALLY-25/route-kernels/kernels.golem": "a19313d01e7f6d255b261c842293bcea27af7394eec03888eec8c8a83d9da431",
+    "docs/tasks/RALLY-25/route-kernels/routes.bin": "899bc1c3676004731f4751cd50cfe3e363ad19ffe6ab0ac33bd2cfc04f61d561",
+    "docs/tasks/RALLY-25/route-kernels/sine.bin": "6062d337f69ac6ae99b7da9cdf95f87aea1ee04a9110f26839f0a85f74efff68",
+    "docs/tasks/RALLY-25/route-kernels/RESULTS.json": "fac78150fd126433c1191be9ea62bb1a7a05816a140901a23c5a3655c0508723",
+    "docs/tasks/RALLY-25/reference/model.py": "cfc69b0e32b5f07d0c008ddbf18759a606f1fa6fc268fa1a9fcd575d4cb4446b",
+    "docs/tasks/RALLY-25/reference/tables.json": "8b2fdf71f7db7a804b0994266f034cc42c99197881aeb495bcc16cc75bb3f3bb",
+    "docs/tasks/RALLY-25/generated-state/adapter.py": "30aab373ab72b0f9a8982cc0dfc8b396dd93a59b124571b164155cdf5042ba2b",
+    "docs/tasks/RALLY-25/generated-state/host.py": "3735e1a04cb2db5780b5fe3ed8230d40164c7d5b912898bd7c2e2143bf9df546",
+    "docs/tasks/RALLY-25/generated-state/bindings.json": "5f59e6e4c0297f5b3446c8c3fabf3c60b364d5aa85d08aa8cde0c87555d0eca6",
+    "docs/tasks/RALLY-25/renderer-helper/rally_render.h": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50",
+    "docs/tasks/RALLY-25/renderer-helper/rally_render.c": "7ae7f03183864e44ffa2488f90fd1e878eb984bd4a2d325313b94a011fcd8001",
+    "docs/tasks/RALLY-25/renderer-helper/render_core.inc": "2f3eb552538a3e2e8c9a450ae49c319540cc9b774ef925ec02f111d1e8f42f2b",
+    "docs/tasks/RALLY-25/renderer-helper/asset_meta.inc": "940a4e51c2f06bb34106c858f690bad34d97ed8ab6994b19bb53a945f4eb6cd5",
+    "docs/tasks/RALLY-25/renderer-helper/verify.py": "68b40e0519c93a534f37e5444f7729329a32463342f3533e5f07f56d0d7985a4",
+    "docs/tasks/RALLY-25/integration-harness/integration_model.h": "fe5f7db0c20d86b3fb1debe117cae3b93b73dfbd59e52e18ecd4d5d213ecea27",
+    "docs/tasks/RALLY-25/integration-harness/integration_model.c": "7ffabdd4ca0ffcfb10b7ecd6d47387712319c815edbc42249040cd71db4886b4",
+    "docs/tasks/RALLY-25/integration-harness/fuji/fuji.r24": "01d9f5d89f163c5ab4152fb502721dcf1ceb5c08480a025a55d31db98612463d",
+    "/Agon/mystuff/agon-vdplet/include/vdplet.h": "fa8385e2906f07d37372d80c40f73d419defdbefe7a3458461ac9d5fe0820d38"
+  },
+  "total_setup_execution_host_seconds": 83.466,
+  "field_maps_sha256": "84b6766abb0ff3eb0bcd58fa1af9cd428d09b5ab5220672207dbe2249fc9f3e1",
+  "replay_sha256": "4d0924e3008179daa4c88205fb5e8828ab6b860d309b5d2eb973e0c50c93a302"
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "platform": "Console8",
+  "mount": {
+    "source": "/dev/sda1",
+    "target": "/run/media/smith/AGON1",
+    "fstype": "vfat",
+    "uuid": "8658-1C23"
+  },
+  "card_path": "/test/arcade/rally",
+  "target": "/run/media/smith/AGON1/test/arcade/rally",
+  "source_files": {
+    "probe.bin": "0bdedfa1a8573158d6510d868928bb747d7c8de797e7a650ed8147a6d0c11994",
+    "script.bin": "8e4bbeb6a5443cd4184023a5df29370ff607909a15ade5e4a95176b9d27cdfbc",
+    "artwork.vdu": "927315f99e130d05463c4ab11b75eec2eeb433f2ccd21a564d018ff8e2d548ef",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "expected.json": "575a265ecbbf24351734d52e8474513709e91abc169e88f43393de5c87c11e8d",
+    "readme.txt": "9fcabbb190bac179dd22000821ed3bca996506590aed6f654012b85a997848d0",
+    "vdp_rally.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473"
+  },
+  "firmware_sha256": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+  "mode": "unpaced900frames/3600physics steps",
+  "firmware_flashing": "Author manual; not performed",
+  "hardware_run": "not performed",
+  "stale_logs_removed": [
+    "replies.log",
+    "ticks.log",
+    "prt.log",
+    "clock.log",
+    "failure.log",
+    "verified.json"
+  ]
+}

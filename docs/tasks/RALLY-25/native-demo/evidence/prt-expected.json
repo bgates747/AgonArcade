@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "frames": 3,
+  "physics_ticks": 0,
+  "reply_bytes": 30,
+  "tick_samples": 5,
+  "checks": [
+    {
+      "token": 1,
+      "kind": 4,
+      "value": null,
+      "label": "stack information",
+      "flags": 2,
+      "repeats": 3,
+      "loop": true
+    },
+    {
+      "token": 2,
+      "kind": 4,
+      "value": 1,
+      "label": "buffer read",
+      "flags": 4,
+      "repeats": 3,
+      "loop": true
+    }
+  ],
+  "prt_instrumented": true,
+  "require_prt_progress": true,
+  "minimum_prt_interval": 10
+}

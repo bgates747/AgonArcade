@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "status": "supersedes earlier100Hz FPS interpretations without changing saved raw runs",
+  "mos_units_per_vblank": 2,
+  "nominal_vblank_hz": 60,
+  "nominal_mos_tick_hz": 120,
+  "evidence": [
+    "MOS v3.0.2 interrupts.asm _vblank_handler adds BC=2; exact deployed ROM bytes verified at0x13b7",
+    "VDP mode136 uses QVGA_320x240_60Hz",
+    "earlier RALLY-24 measurements already use nominal120Hz"
+  ],
+  "runs": {
+    "HUMAN-REVIEW.json": {
+      "raw_receipt_sha256": "7814ff4ff8d7248ac0398521a2d794e5ee183a579080be5de40cba735eb986be",
+      "frames": 900,
+      "elapsed_mos_units": 3686,
+      "old_assumed_hz": 100,
+      "corrected_nominal_seconds": 30.716666666666665,
+      "corrected_nominal_fps": 29.30005425935974
+    },
+    "REVIEW-RESULTS.json": {
+      "raw_receipt_sha256": "39ea8e0a5f2bdc44a211358138c50d479cb438eaece9aff09a5c4555fe7c9c26",
+      "frames": 900,
+      "elapsed_mos_units": 3744,
+      "old_assumed_hz": 100,
+      "corrected_nominal_seconds": 31.2,
+      "corrected_nominal_fps": 28.846153846153847
+    },
+    "NATIVE-RESULTS.json": {
+      "raw_receipt_sha256": "af68ccc1d403e4ad43522a15733c2504c6ab7edc937cd91487ed9659c3e3fc7a",
+      "frames": 900,
+      "elapsed_mos_units": 4222,
+      "old_assumed_hz": 100,
+      "corrected_nominal_seconds": 35.18333333333333,
+      "corrected_nominal_fps": 25.580293699668406
+    }
+  }
+}

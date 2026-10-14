@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "heading": "same shared routeHeading per active slot; renderer applies alternating sign",
+  "inactive": "all four renderer opponent fields zero",
+  "mappings": {
+    "default": {
+      "scope": "actual compiler source metadata to host SceneLayout; modeled render wrapper remains separate",
+      "source_root": 1,
+      "root_bytes": 292,
+      "tick_entry": 3,
+      "globals": {
+        "worldTick": {
+          "name": "worldTick",
+          "type": "uint32",
+          "offset": 136,
+          "bytes": 4,
+          "bounds": [
+            0,
+            4294967295
+          ]
+        },
+        "routeHeading": {
+          "name": "routeHeading",
+          "type": "sint32",
+          "offset": 120,
+          "bytes": 4,
+          "bounds": [
+            -2147483648,
+            2147483647
+          ]
+        },
+        "playerStation": {
+          "name": "playerStation",
+          "type": "uint32",
+          "offset": 198,
+          "bytes": 4,
+          "bounds": [
+            0,
+            4294967295
+          ]
+        },
+        "playerLateral": {
+          "name": "playerLateral",
+          "type": "sint32",
+          "offset": 202,
+          "bytes": 4,
+          "bounds": [
+            -38400,
+            38400
+          ]
+        }
+      },
+      "arrays": {
+        "active": {
+          "name": "active",
+          "type": "uint16",
+          "buffer": 2,
+          "offset": 0,
+          "bytes": 12,
+          "lower": 0,
+          "upper": 5,
+          "count": 6,
+          "element_bytes": 2,
+          "access": 3,
+          "owner": "application_retained",
+          "initial_data": "array-active.bin"
+        },
+        "position": {
+          "name": "position",
+          "type": "uint32",
+          "buffer": 4,
+          "offset": 0,
+          "bytes": 24,
+          "lower": 0,
+          "upper": 5,
+          "count": 6,
+          "element_bytes": 4,
+          "access": 3,
+          "owner": "application_retained",
+          "initial_data": "array-position.bin"
+        },
+        "lateral": {
+          "name": "lateral",
+          "type": "sint32",
+          "buffer": 5,
+          "offset": 0,
+          "bytes": 24,
+          "lower": 0,
+          "upper": 5,
+          "count": 6,
+          "element_bytes": 4,
+          "access": 3,
+          "owner": "application_retained",
+          "initial_data": "array-lateral.bin"
+        }
+      },
+      "host_layout_le_hex": "440000000100240103000f008800000078000000c6000000ca0000000000320002000100000000000c000000040001000000000018000000050001000000000018000000"
+    },
+    "relocated": {
+      "scope": "actual compiler source metadata to host SceneLayout; modeled render wrapper remains separate",
+      "source_root": 501,
+      "root_bytes": 292,
+      "tick_entry": 3,
+      "globals": {
+        "worldTick": {
+          "name": "worldTick",
+          "type": "uint32",
+          "offset": 136,
+          "bytes": 4,
+          "bounds": [
+            0,
+            4294967295
+          ]
+        },
+        "routeHeading": {
+          "name": "routeHeading",
+          "type": "sint32",
+          "offset": 120,
+          "bytes": 4,
+          "bounds": [
+            -2147483648,
+            2147483647
+          ]
+        },
+        "playerStation": {
+          "name": "playerStation",
+          "type": "uint32",
+          "offset": 198,
+          "bytes": 4,
+          "bounds": [
+            0,
+            4294967295
+          ]
+        },
+        "playerLateral": {
+          "name": "playerLateral",
+          "type": "sint32",
+          "offset": 202,
+          "bytes": 4,
+          "bounds": [
+            -38400,
+            38400
+          ]
+        }
+      },
+      "arrays": {
+        "active": {
+          "name": "active",
+          "type": "uint16",
+          "buffer": 502,
+          "offset": 0,
+          "bytes": 12,
+          "lower": 0,
+          "upper": 5,
+          "count": 6,
+          "element_bytes": 2,
+          "access": 3,
+          "owner": "application_retained",
+          "initial_data": "array-active.bin"
+        },
+        "position": {
+          "name": "position",
+          "type": "uint32",
+          "buffer": 504,
+          "offset": 0,
+          "bytes": 24,
+          "lower": 0,
+          "upper": 5,
+          "count": 6,
+          "element_bytes": 4,
+          "access": 3,
+          "owner": "application_retained",
+          "initial_data": "array-position.bin"
+        },
+        "lateral": {
+          "name": "lateral",
+          "type": "sint32",
+          "buffer": 505,
+          "offset": 0,
+          "bytes": 24,
+          "lower": 0,
+          "upper": 5,
+          "count": 6,
+          "element_bytes": 4,
+          "access": 3,
+          "owner": "application_retained",
+          "initial_data": "array-lateral.bin"
+        }
+      },
+      "host_layout_le_hex": "44000000f501240103000f008800000078000000c6000000ca00000000003200f6010100000000000c000000f80101000000000018000000f90101000000000018000000"
+    }
+  }
+}

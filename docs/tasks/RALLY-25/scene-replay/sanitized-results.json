@@ -1,0 +1,402 @@
+{
+  "rows": [
+    {
+      "label": "sanitized",
+      "relocated": false,
+      "simulation_ticks": 3600,
+      "rendered_frames": 900,
+      "simulated_seconds": 30,
+      "wall_clock_pacing": false,
+      "contact_ticks": 2568,
+      "lap_seams": 1,
+      "renderer_rebinds": 1,
+      "peak_mock_views": 3,
+      "normal_cleanup_leases": 0,
+      "granted_leases": 241930,
+      "releases": 241930,
+      "failures": [
+        {
+          "name": "stale-source-generation",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "stale-source-tick",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "wrong-source-session",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "observed-source-failure",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-12",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-14",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-16",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-24",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-32",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "invalid-mapped-offset",
+          "result": 3,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "missing-source-array",
+          "result": 2,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "short-source-array",
+          "result": 3,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "long-source-array",
+          "result": 3,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "invalid-presentation",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "helper-output-capacity",
+          "result": 3,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "completion-copy-after-ready",
+          "result": 3,
+          "resident_ready": 1,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "publication-acquire",
+          "result": 2,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "publication-release",
+          "result": 8,
+          "resident_ready": 1,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "publication-refused-release",
+          "result": 8,
+          "resident_ready": 1,
+          "entry_cleanup_leases": 1
+        },
+        {
+          "name": "resident-completion-mismatch-12",
+          "result": "draw rejected"
+        },
+        {
+          "name": "resident-completion-mismatch-16",
+          "result": "draw rejected"
+        },
+        {
+          "name": "resident-completion-mismatch-20",
+          "result": "draw rejected"
+        },
+        {
+          "name": "resident-completion-mismatch-44",
+          "result": "draw rejected"
+        },
+        {
+          "name": "modeled-render-success-generation-mismatch",
+          "result": "draw rejected"
+        },
+        {
+          "name": "one-tick-early-render",
+          "result": 1
+        },
+        {
+          "name": "stop-render-reject-reset-rebind",
+          "result": "pass"
+        },
+        {
+          "name": "source-render-generation-and-request-wrap",
+          "result": "pass"
+        },
+        {
+          "name": "actual-source-arithmetic-failure",
+          "result": 1
+        },
+        {
+          "name": "invalid-active-enum",
+          "result": 1
+        },
+        {
+          "name": "inactive-slot-canonicalization",
+          "result": "pass"
+        }
+      ],
+      "artifacts": {
+        "commands.bin": {
+          "bytes": 1809527,
+          "sha256": "be2a18d5d2e4b6a1b381da9f78bdd529d8980a28df83b56216b6c252957c3f1a"
+        },
+        "reference.bin": {
+          "bytes": 100800,
+          "sha256": "5a92e3c923ca7c4652eae1070afa5cb55b114893343ee7fd29ddba5696befca9"
+        },
+        "states.bin": {
+          "bytes": 97200,
+          "sha256": "e162d74dae7e5fdf058a7a6d0c52efd82eca59f3721b31aa9dcaa5bc742817bb"
+        },
+        "simulation.jsonl": {
+          "bytes": 795985,
+          "sha256": "e392d1590f422b07f0b717641fcd382858795c54f9faf8fe231cbe565536a92d"
+        }
+      },
+      "host_seconds": 3.272,
+      "mapping": "default",
+      "independent_command_frames": 900,
+      "sim_library_sha256": "5d1efc47d1b8390d0c796537a830f5df0e253c2b61e7f02dfd52e44d84f1ddca",
+      "render_library_sha256": "114087e47613a4df5e4eab5abd76e5cac3525ebefa790fa37b75936ebcd11994",
+      "oracle_command_sha256": "be2a18d5d2e4b6a1b381da9f78bdd529d8980a28df83b56216b6c252957c3f1a"
+    },
+    {
+      "label": "sanitized",
+      "relocated": true,
+      "simulation_ticks": 3600,
+      "rendered_frames": 900,
+      "simulated_seconds": 30,
+      "wall_clock_pacing": false,
+      "contact_ticks": 2568,
+      "lap_seams": 1,
+      "renderer_rebinds": 1,
+      "peak_mock_views": 3,
+      "normal_cleanup_leases": 0,
+      "granted_leases": 241930,
+      "releases": 241930,
+      "failures": [
+        {
+          "name": "stale-source-generation",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "stale-source-tick",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "wrong-source-session",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "observed-source-failure",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-12",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-14",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-16",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-24",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "source-status-or-success-32",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "invalid-mapped-offset",
+          "result": 3,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "missing-source-array",
+          "result": 2,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "short-source-array",
+          "result": 3,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "long-source-array",
+          "result": 3,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "invalid-presentation",
+          "result": 1,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "helper-output-capacity",
+          "result": 3,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "completion-copy-after-ready",
+          "result": 3,
+          "resident_ready": 1,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "publication-acquire",
+          "result": 2,
+          "resident_ready": 0,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "publication-release",
+          "result": 8,
+          "resident_ready": 1,
+          "entry_cleanup_leases": 0
+        },
+        {
+          "name": "publication-refused-release",
+          "result": 8,
+          "resident_ready": 1,
+          "entry_cleanup_leases": 1
+        },
+        {
+          "name": "resident-completion-mismatch-12",
+          "result": "draw rejected"
+        },
+        {
+          "name": "resident-completion-mismatch-16",
+          "result": "draw rejected"
+        },
+        {
+          "name": "resident-completion-mismatch-20",
+          "result": "draw rejected"
+        },
+        {
+          "name": "resident-completion-mismatch-44",
+          "result": "draw rejected"
+        },
+        {
+          "name": "modeled-render-success-generation-mismatch",
+          "result": "draw rejected"
+        },
+        {
+          "name": "one-tick-early-render",
+          "result": 1
+        },
+        {
+          "name": "stop-render-reject-reset-rebind",
+          "result": "pass"
+        },
+        {
+          "name": "source-render-generation-and-request-wrap",
+          "result": "pass"
+        },
+        {
+          "name": "actual-source-arithmetic-failure",
+          "result": 1
+        },
+        {
+          "name": "invalid-active-enum",
+          "result": 1
+        },
+        {
+          "name": "inactive-slot-canonicalization",
+          "result": "pass"
+        }
+      ],
+      "artifacts": {
+        "commands.bin": {
+          "bytes": 1809527,
+          "sha256": "7bb5c67adc355d992fb6fb9a0b9641fead2775557487c4e82eec3e024f8291d6"
+        },
+        "reference.bin": {
+          "bytes": 100800,
+          "sha256": "5a92e3c923ca7c4652eae1070afa5cb55b114893343ee7fd29ddba5696befca9"
+        },
+        "states.bin": {
+          "bytes": 97200,
+          "sha256": "e162d74dae7e5fdf058a7a6d0c52efd82eca59f3721b31aa9dcaa5bc742817bb"
+        },
+        "simulation.jsonl": {
+          "bytes": 795985,
+          "sha256": "e392d1590f422b07f0b717641fcd382858795c54f9faf8fe231cbe565536a92d"
+        }
+      },
+      "host_seconds": 3.253,
+      "mapping": "relocated",
+      "independent_command_frames": 900,
+      "sim_library_sha256": "bfaf424ab82ca93d89213071ec1a760c5008305641b3f5fa744869a3877a90bb",
+      "render_library_sha256": "114087e47613a4df5e4eab5abd76e5cac3525ebefa790fa37b75936ebcd11994",
+      "oracle_command_sha256": "be2a18d5d2e4b6a1b381da9f78bdd529d8980a28df83b56216b6c252957c3f1a"
+    }
+  ]
+}

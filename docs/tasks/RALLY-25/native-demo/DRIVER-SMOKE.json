@@ -1,0 +1,51 @@
+{
+  "error": null,
+  "host_seconds": 8.737,
+  "process_exit": 0,
+  "result": {
+    "scope": "MOS centisecond elapsed demo including foreground round-trip checks/drawing; emulator timing, not physical FPS",
+    "frames": 3,
+    "physics_ticks": 0,
+    "elapsed_seconds": 0.14,
+    "observed_fps": 21.428571428571427,
+    "validated_reply_records": 3,
+    "guest_validates_suppressed_checks": true,
+    "reply_sha256": "9bb1ad99830436f55864dbc65d9c94936aec95cc8f8f325178b39beba4cd2f94",
+    "final_buffers": {},
+    "observations": [
+      {
+        "label": "stack information",
+        "frame": 1,
+        "value": 2260
+      },
+      {
+        "label": "stack information",
+        "frame": 2,
+        "value": 2260
+      },
+      {
+        "label": "stack information",
+        "frame": 3,
+        "value": 2260
+      }
+    ]
+  },
+  "runtime_identities": "a5be80c95ee9c5508ac2d7de4e25eea91d95616d26ff58061057662685e5f53f  fab-agon-emulator\na0e2aebfc6f299ec9905b989841ba000a1471f685078b76004480211c0396812  fab-agon-emulator.bin\nd564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin\nd69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map\n817da2e320c206fcb7e423b39434c6452319d71a2f54fac451aa9b7a10fa5a0d  flexe-vdp.so\n31d25eec03a531b336d78d453f0720bbd1312c7c8516fdfa80130769ab15e49f  esp32-firmware.bin\n51f196eb7b84ed79394a9fde1dff832ad479417c360525c69582fd093c3a0a3a  esp32-firmware.elf\nbd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1  sdcard/autoexec.txt\n00d0fe5e88fb5c1a082536f85e58e0df4172520dcd25a786f5964a4aa3835ba0  sdcard/rally25/probe.bin\n435d5a61165375c74ed74dac0cfb211e314cee8973cececbc1c6e34c2cf61669  sdcard/rally25/expected.json\n31b63f750f215d1597fd5fe109fa4f0b3b14002b0d8539c528d1017b1ee3a981  sdcard/rally25/script.bin\n3af339823482f0ce48acdcd19260654da9d20ba9bd21c920935b3eb738766896  sdcard/rally25/verified.json\n",
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 478,
+    "cycles": 2041830000,
+    "retired": 650961625,
+    "uart_rx": 688,
+    "uart_tx": 425,
+    "uart_delivered": 425,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "scope": "Driver-only actual-Xtensa old-runtime Oryx smoke, no Golem Rally module loaded; unpaced"
+}
