@@ -1,0 +1,98 @@
+{
+  "ordinary": {
+    "c_assertions": 29499,
+    "failure_lifecycle_groups": 138,
+    "scene_renders": 144,
+    "peak_mock_views": 3,
+    "failures": 0,
+    "label": "ordinary",
+    "scene_package_cases": 72,
+    "command_oracle_matches": 72,
+    "relocated_command_matches": 72,
+    "asan_ubsan": false,
+    "compile_and_run_host_seconds": 1.677,
+    "executable_sha256": "c255a10ceb985a964ddd595a05c058e537a90a183b302756a7a4f022d8d0d645",
+    "output_sha256": [
+      "5fd70f205be4720ba19286a45c59dc8e4f3414aef880c136de4ba24b9d2811b5",
+      "d7c96949343380506b82d6b6be751be5872fb81c3a0d2429f547cdec8a7b110c"
+    ],
+    "compile_command": [
+      "cc",
+      "-std=c11",
+      "-O2",
+      "-ffp-contract=off",
+      "-fno-builtin",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I/Agon/mystuff/agon-vdplet/include",
+      "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/renderer-helper",
+      "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/integration-harness",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/integration-harness/integration_model.c",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/integration-harness/host_tests.c",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/renderer-helper/rally_render.c",
+      "-o",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/integration-harness/ordinary/harness"
+    ]
+  },
+  "sanitized": {
+    "c_assertions": 29499,
+    "failure_lifecycle_groups": 138,
+    "scene_renders": 144,
+    "peak_mock_views": 3,
+    "failures": 0,
+    "label": "sanitized",
+    "scene_package_cases": 72,
+    "command_oracle_matches": 72,
+    "relocated_command_matches": 72,
+    "asan_ubsan": true,
+    "compile_and_run_host_seconds": 6.393,
+    "executable_sha256": "ffe758fa4d655fb8fb7d668196cce228b2b38e182847740b3a71cb4594d5a001",
+    "output_sha256": [
+      "5fd70f205be4720ba19286a45c59dc8e4f3414aef880c136de4ba24b9d2811b5",
+      "d7c96949343380506b82d6b6be751be5872fb81c3a0d2429f547cdec8a7b110c"
+    ],
+    "compile_command": [
+      "cc",
+      "-std=c11",
+      "-O2",
+      "-ffp-contract=off",
+      "-fno-builtin",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-I/Agon/mystuff/agon-vdplet/include",
+      "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/renderer-helper",
+      "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/integration-harness",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/integration-harness/integration_model.c",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/integration-harness/host_tests.c",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/renderer-helper/rally_render.c",
+      "-o",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/integration-harness/sanitized/harness"
+    ]
+  },
+  "schema": 1,
+  "scope": "host C model of accepted glue/owner; no generated compiler, SDK entry, target, pixel, timing or concurrency qualification",
+  "total_setup_execution_host_seconds": 8.128,
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "source_sha256": {
+    "docs/tasks/RALLY-25/integration-harness/integration_model.h": "fe5f7db0c20d86b3fb1debe117cae3b93b73dfbd59e52e18ecd4d5d213ecea27",
+    "docs/tasks/RALLY-25/integration-harness/integration_model.c": "7ffabdd4ca0ffcfb10b7ecd6d47387712319c815edbc42249040cd71db4886b4",
+    "docs/tasks/RALLY-25/integration-harness/host_tests.c": "091c8b3e5fa0b98c1e5055b3df346c7accba0699170edc3c19c05f7119161436",
+    "docs/tasks/RALLY-25/integration-harness/verify.py": "d725616ce431ef8d3324b909b1c2c0068a03b44634f2c81e87469e950a4dc9b2",
+    "docs/tasks/RALLY-25/renderer-helper/verify.py": "68b40e0519c93a534f37e5444f7729329a32463342f3533e5f07f56d0d7985a4",
+    "docs/tasks/RALLY-25/renderer-helper/rally_render.h": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50",
+    "docs/tasks/RALLY-25/renderer-helper/rally_render.c": "7ae7f03183864e44ffa2488f90fd1e878eb984bd4a2d325313b94a011fcd8001",
+    "docs/tasks/RALLY-25/renderer-helper/render_core.inc": "2f3eb552538a3e2e8c9a450ae49c319540cc9b774ef925ec02f111d1e8f42f2b",
+    "docs/tasks/RALLY-25/renderer-helper/asset_meta.inc": "940a4e51c2f06bb34106c858f690bad34d97ed8ab6994b19bb53a945f4eb6cd5",
+    "/Agon/mystuff/agon-vdplet/include/vdplet.h": "fa8385e2906f07d37372d80c40f73d419defdbefe7a3458461ac9d5fe0820d38"
+  },
+  "package_sha256": {
+    "fuji.r24": "01d9f5d89f163c5ab4152fb502721dcf1ceb5c08480a025a55d31db98612463d",
+    "mappings.json": "1b5acaf4c716a4e6d92712674c676b8a748af239b9c68d00626f1e9e6a0fb950",
+    "scenes.json": "8b2ad58006f7f1083760c229c518a47a3a4b0098513583504f4a381ac22519cd"
+  }
+}

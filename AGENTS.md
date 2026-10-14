@@ -43,7 +43,8 @@ and pushed as `314efe6`; isolated helper and ordinary/sanitized host qualificati
 are delivered under `docs/tasks/RALLY-25/renderer-helper/RESULTS.md`. TRF-001-23/14
 are complete: Golem accepted exact v0.3 ABI/build-hook contract; read
 `docs/tasks/RALLY-25/renderer-helper/ACCEPTANCE.md`. Compiler bindings/combined
-linking remain unimplemented; new helper work is uncommitted.
+linking remain unimplemented; helper results/accepted contract are frozen at
+pushed checkpoint `e94f0aa`.
 Native/composed stack/resource admission and combined linking remain unqualified.
 
 Separate paused task: **RALLY-20**, planning frozen for Author review. Read
@@ -94,3 +95,28 @@ Author released TRF-001-27–30 on 2026-10-13: checkpoint current work, then a
 Rally-owned host C invocation/completion-publication harness and portable Fuji
 scene package, returning for review. Read RALLY-25; combined linking and target
 work remain outside this tranche.
+
+TRF-001-27–30 completed after pushed checkpoint `e94f0aa`; read
+`docs/tasks/RALLY-25/integration-harness/RESULTS.md` and `README.md`. Ordinary and
+ASan/UBSan host C models pass144 scene renders/two mappings and138 failure
+groups each; exact helper/published manifests preserved. New harness results
+remain uncommitted; stopped for Author review. D1b foundation candidate-nine
+was received/identity-checked and acknowledged, not integrated or accepted.
+
+Next concrete scope TRF-001-31–35 is written for Author review before execution:
+accepted D1a/foundation bundle qualification, actual generated array adapter,
+six-slot/full-range Fuji fixture and independent generated-C host checks.
+Golem foundation human acceptance/publication4a62c1d is confirmed by its mail;
+multiplication candidate-eleven is identity checked only and pending human
+review/publication. Do not silently adopt its live compiler or close deferred
+divmod/shift/full replay work. No new compile/run or commit/push has occurred.
+
+Latest mailbox status (twenty-two receipt): multiplication human accepted and
+published `1ddfd64`; division candidate-thirteen bundle identity verified,
+uncommitted/pending Author visual review. Planned TRF-001-31–35 scope and
+foundation baseline remain unchanged; no independent multiplication/division
+qualification or new execution is implied.
+
+Author released TRF-001-31–35 with commit/push of all current dirt before
+execution. Qualify the accepted immutable D1a/foundation deliveries in Rally-owned
+host workspaces, then return for review. No candidate pin expansion or target work.

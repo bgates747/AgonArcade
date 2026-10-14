@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "scope": "host-only generated-style binding inputs; not Golem D2 JSON schema",
+  "mappings": [
+    {
+      "label": "default-fixture",
+      "root": {
+        "buffer": 1000,
+        "access": 3,
+        "offset": 4,
+        "bytes": 128
+      },
+      "argument": {
+        "buffer": 1001,
+        "access": 1,
+        "offset": 3,
+        "bytes": 2
+      },
+      "completion": {
+        "buffer": 1002,
+        "access": 2,
+        "offset": 5,
+        "bytes": 48
+      },
+      "bindings": {
+        "struct_bytes": 76,
+        "schema": 1,
+        "session": 7,
+        "asset": {
+          "buffer": 1003,
+          "access": 1,
+          "offset": 3,
+          "bytes": 149518
+        },
+        "output": [
+          {
+            "buffer": 1004,
+            "access": 2,
+            "offset": 9,
+            "bytes": 20480
+          },
+          {
+            "buffer": 1005,
+            "access": 2,
+            "offset": 9,
+            "bytes": 2048
+          },
+          {
+            "buffer": 1006,
+            "access": 2,
+            "offset": 9,
+            "bytes": 256
+          }
+        ],
+        "track_identity": 2101713653,
+        "asset_checksum": 3635234752,
+        "resources": [
+          0,
+          5,
+          120,
+          63970,
+          63984,
+          63930
+        ]
+      },
+      "entries": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "entry_count": 6,
+      "globals_bytes": 16,
+      "descriptors": [
+        {
+          "role": 1,
+          "buffer": 1007,
+          "access": 1,
+          "offset": 0,
+          "bytes": 8
+        },
+        {
+          "role": 2,
+          "buffer": 1008,
+          "access": 3,
+          "offset": 1,
+          "bytes": 8
+        },
+        {
+          "role": 3,
+          "buffer": 1009,
+          "access": 1,
+          "offset": 2,
+          "bytes": 8
+        },
+        {
+          "role": 4,
+          "buffer": 1010,
+          "access": 1,
+          "offset": 3,
+          "bytes": 8
+        }
+      ]
+    },
+    {
+      "label": "relocated-permuted-fixture",
+      "root": {
+        "buffer": 53000,
+        "access": 3,
+        "offset": 4,
+        "bytes": 128
+      },
+      "argument": {
+        "buffer": 53001,
+        "access": 1,
+        "offset": 3,
+        "bytes": 2
+      },
+      "completion": {
+        "buffer": 53002,
+        "access": 2,
+        "offset": 5,
+        "bytes": 48
+      },
+      "bindings": {
+        "struct_bytes": 76,
+        "schema": 1,
+        "session": 7,
+        "asset": {
+          "buffer": 53003,
+          "access": 1,
+          "offset": 3,
+          "bytes": 149518
+        },
+        "output": [
+          {
+            "buffer": 53004,
+            "access": 2,
+            "offset": 9,
+            "bytes": 20480
+          },
+          {
+            "buffer": 53005,
+            "access": 2,
+            "offset": 9,
+            "bytes": 2048
+          },
+          {
+            "buffer": 53006,
+            "access": 2,
+            "offset": 9,
+            "bytes": 256
+          }
+        ],
+        "track_identity": 2101713653,
+        "asset_checksum": 3635234752,
+        "resources": [
+          40,
+          50,
+          100,
+          60010,
+          60100,
+          60001
+        ]
+      },
+      "entries": [
+        4,
+        2,
+        0,
+        5,
+        1
+      ],
+      "entry_count": 6,
+      "globals_bytes": 16,
+      "descriptors": [
+        {
+          "role": 1,
+          "buffer": 53007,
+          "access": 1,
+          "offset": 0,
+          "bytes": 8
+        },
+        {
+          "role": 2,
+          "buffer": 53008,
+          "access": 3,
+          "offset": 1,
+          "bytes": 8
+        },
+        {
+          "role": 3,
+          "buffer": 53009,
+          "access": 1,
+          "offset": 2,
+          "bytes": 8
+        },
+        {
+          "role": 4,
+          "buffer": 53010,
+          "access": 1,
+          "offset": 3,
+          "bytes": 8
+        }
+      ]
+    }
+  ]
+}

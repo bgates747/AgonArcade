@@ -1,0 +1,36 @@
+{
+  "c_assertions": 29499,
+  "failure_lifecycle_groups": 138,
+  "scene_renders": 144,
+  "peak_mock_views": 3,
+  "failures": 0,
+  "label": "ordinary",
+  "scene_package_cases": 72,
+  "command_oracle_matches": 72,
+  "relocated_command_matches": 72,
+  "asan_ubsan": false,
+  "compile_and_run_host_seconds": 1.677,
+  "executable_sha256": "c255a10ceb985a964ddd595a05c058e537a90a183b302756a7a4f022d8d0d645",
+  "output_sha256": [
+    "5fd70f205be4720ba19286a45c59dc8e4f3414aef880c136de4ba24b9d2811b5",
+    "d7c96949343380506b82d6b6be751be5872fb81c3a0d2429f547cdec8a7b110c"
+  ],
+  "compile_command": [
+    "cc",
+    "-std=c11",
+    "-O2",
+    "-ffp-contract=off",
+    "-fno-builtin",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I/Agon/mystuff/agon-vdplet/include",
+    "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/renderer-helper",
+    "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/integration-harness",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/integration-harness/integration_model.c",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/integration-harness/host_tests.c",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/renderer-helper/rally_render.c",
+    "-o",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/integration-harness/ordinary/harness"
+  ]
+}
