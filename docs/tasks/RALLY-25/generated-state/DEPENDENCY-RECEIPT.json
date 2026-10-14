@@ -1,0 +1,30 @@
+{
+  "scope": "independent hashes/Git/source/metadata/initialization/tool identity; owner human/target evidence not rerun",
+  "rows": [
+    {
+      "task": "GOLEM-035",
+      "bundle_sha256": "2156756263f8baffa52e3c14a57e7838d90336bc9ee3d5bbde78566ed722ff8f",
+      "published_commit": "93bf1e452cc4c57b9aaf412ae016e318c7be6ceb",
+      "bundle_files": 139,
+      "exported_sources_matched_to_commit": 26,
+      "packages": 3
+    },
+    {
+      "task": "GOLEM-036",
+      "bundle_sha256": "94e72ff56649079472a59b33ae9ba1514b49dcb5c8c919ace369de6e46fb2c6a",
+      "published_commit": "4a62c1d",
+      "bundle_files": 122,
+      "exported_sources_matched_to_commit": 18,
+      "packages": 3
+    }
+  ],
+  "packages_verified": 6,
+  "matched_tool_hashes": {
+    "g++": "ac4f48ec03aa3988b0c087fd8a0ae681c2922354b321065ff49911b8ab20db73",
+    "gcc": "fb051a6c58961fb6aec758acf50d7d0375eecff740d0706388092829e3fb7a41",
+    "xtensa-esp32-elf-gcc": "e091761ac142b87be663aa36c8dc9af10044a9769a540ee0337ebc97ea56a22d",
+    "xtensa-esp32-elf-ld": "fd641bedc57930941b7b7d9e3d51ece550bf663fb4d9d13ec0a2188082c47245",
+    "xtensa-esp32-elf-strip": "cef0e79caf472d12d87063c8cbc6ed21880ab41dce99fab12671d50e02adcaae"
+  },
+  "duration_host_seconds": 0.25
+}

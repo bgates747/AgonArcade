@@ -120,3 +120,19 @@ qualification or new execution is implied.
 Author released TRF-001-31–35 with commit/push of all current dirt before
 execution. Qualify the accepted immutable D1a/foundation deliveries in Rally-owned
 host workspaces, then return for review. No candidate pin expansion or target work.
+
+TRF-001-31–35 completed after pushed checkpoint `4489f58`; read
+`docs/tasks/RALLY-25/generated-state/RESULTS.md` and `README.md`. Immutable
+D1a/foundation files and exported Git lineage verified;2,924 actual generated-C
+host checks pass across two layouts/ordinary+ASan/UBSan, full root/array states
+match and granted leases balance. New generated-state results are uncommitted;
+stopped for Author review. Broader indexed/complete numeric target integration,
+D2 combined linking and firmware remain open. Latest division human-accepted-
+fourteen records Author acceptance with commit/push approval pending; fixed
+foundation compiler pin was preserved.
+
+Author released TRF-001-36–40: write scope, commit/push current dirt, then
+Rally-owned historical route/contact Golem kernels and deterministic host replay
+using accepted multiplication/division/right-shift exports. Read RALLY-25.
+Golem supplies primitives/fixes; Rally owns game-specific replay. Keep actual
+spawn/removal/recovery/scheduling/renderer/target integration separately gated.

@@ -1,0 +1,438 @@
+{
+  "schema": 1,
+  "scope": "actual pinned generated C, host SDK mocks and independent Rally expectations; no stock/Xtensa/renderer/firmware qualification",
+  "checkpoint": "4489f58",
+  "foundation_bundle_sha256": "94e72ff56649079472a59b33ae9ba1514b49dcb5c8c919ace369de6e46fb2c6a",
+  "compiler_executable_sha256": "f6b7fb288b70adaf98d7d0762d49d8e975d651a5d6cf7757230aef184ef20c81",
+  "compiler_source_sha256": "1be2c0181257aaa71305498791c8b09a9ec2c6f86d9fe20e8999cce4c9691c69",
+  "host_compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "malformed_metadata_rejections": 40,
+  "repeated_generation_identical": true,
+  "results": {
+    "ordinary": [
+      {
+        "label": "ordinary",
+        "cases": 731,
+        "categories": {
+          "lifecycle": 3,
+          "six-slot-read": 12,
+          "six-slot-write": 78,
+          "index-failure": 4,
+          "index-before-overflow": 4,
+          "failed-store-prior-effects": 2,
+          "exact-table-read": 281,
+          "table-index-failure": 4,
+          "inclusive-bounds": 15,
+          "published-arithmetic": 8,
+          "published-conversion": 23,
+          "published-identity": 6,
+          "widening-order": 6,
+          "comparison": 168,
+          "persistent-tick": 64,
+          "private-cleanup-persistence": 2,
+          "reset-persistence": 6,
+          "root-generation-wrap": 1,
+          "tick-overflow": 1,
+          "physical-array": 24,
+          "physical-bound-role": 4,
+          "physical-root": 1,
+          "pre-entry-rejection": 2,
+          "metadata-rejection": 12
+        },
+        "published_arithmetic_vectors": 8,
+        "published_conversion_identity_vectors": 29,
+        "deferred_outside_source_domain_conversion_inputs": 2,
+        "peak_mock_views": 3,
+        "acquire_attempts": 8997,
+        "granted_leases": 8981,
+        "releases": 8981,
+        "leaks": 0,
+        "asan_ubsan": false,
+        "full_root_array_result_sha256": "a60877eb595bbef693c1247e136866177b90bed3cc00d181b3e55600c145f6b3",
+        "duration_host_seconds": 0.094,
+        "mapping": "default",
+        "library_sha256": "0ec7fb722217522921dced200247280b0c278037071991dc75d18521e224d065",
+        "compile_command": [
+          "cc",
+          "-std=c11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-ffp-contract=off",
+          "-shared",
+          "-fPIC",
+          "-I/Agon/mystuff/agon-vdplet/include",
+          "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/generated-state/default/native.c",
+          "-o",
+          "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/generated-state/default/ordinary.so"
+        ]
+      },
+      {
+        "label": "ordinary",
+        "cases": 731,
+        "categories": {
+          "lifecycle": 3,
+          "six-slot-read": 12,
+          "six-slot-write": 78,
+          "index-failure": 4,
+          "index-before-overflow": 4,
+          "failed-store-prior-effects": 2,
+          "exact-table-read": 281,
+          "table-index-failure": 4,
+          "inclusive-bounds": 15,
+          "published-arithmetic": 8,
+          "published-conversion": 23,
+          "published-identity": 6,
+          "widening-order": 6,
+          "comparison": 168,
+          "persistent-tick": 64,
+          "private-cleanup-persistence": 2,
+          "reset-persistence": 6,
+          "root-generation-wrap": 1,
+          "tick-overflow": 1,
+          "physical-array": 24,
+          "physical-bound-role": 4,
+          "physical-root": 1,
+          "pre-entry-rejection": 2,
+          "metadata-rejection": 12
+        },
+        "published_arithmetic_vectors": 8,
+        "published_conversion_identity_vectors": 29,
+        "deferred_outside_source_domain_conversion_inputs": 2,
+        "peak_mock_views": 3,
+        "acquire_attempts": 8997,
+        "granted_leases": 8981,
+        "releases": 8981,
+        "leaks": 0,
+        "asan_ubsan": false,
+        "full_root_array_result_sha256": "9fdfe3cc6207acdb860bb65a732c934e4f16e94815b4b36119384a64342a09e9",
+        "duration_host_seconds": 0.095,
+        "mapping": "relocated",
+        "library_sha256": "bf6697c9602338ff6afcb68054f772bdfeb6647a3c997fb01cc03e595b270055",
+        "compile_command": [
+          "cc",
+          "-std=c11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-ffp-contract=off",
+          "-shared",
+          "-fPIC",
+          "-I/Agon/mystuff/agon-vdplet/include",
+          "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/generated-state/relocated/native.c",
+          "-o",
+          "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/generated-state/relocated/ordinary.so"
+        ]
+      }
+    ],
+    "sanitized": [
+      {
+        "label": "sanitized",
+        "cases": 731,
+        "categories": {
+          "lifecycle": 3,
+          "six-slot-read": 12,
+          "six-slot-write": 78,
+          "index-failure": 4,
+          "index-before-overflow": 4,
+          "failed-store-prior-effects": 2,
+          "exact-table-read": 281,
+          "table-index-failure": 4,
+          "inclusive-bounds": 15,
+          "published-arithmetic": 8,
+          "published-conversion": 23,
+          "published-identity": 6,
+          "widening-order": 6,
+          "comparison": 168,
+          "persistent-tick": 64,
+          "private-cleanup-persistence": 2,
+          "reset-persistence": 6,
+          "root-generation-wrap": 1,
+          "tick-overflow": 1,
+          "physical-array": 24,
+          "physical-bound-role": 4,
+          "physical-root": 1,
+          "pre-entry-rejection": 2,
+          "metadata-rejection": 12
+        },
+        "published_arithmetic_vectors": 8,
+        "published_conversion_identity_vectors": 29,
+        "deferred_outside_source_domain_conversion_inputs": 2,
+        "peak_mock_views": 3,
+        "acquire_attempts": 8997,
+        "granted_leases": 8981,
+        "releases": 8981,
+        "leaks": 0,
+        "asan_ubsan": true,
+        "full_root_array_result_sha256": "a60877eb595bbef693c1247e136866177b90bed3cc00d181b3e55600c145f6b3",
+        "duration_host_seconds": 0.118,
+        "mapping": "default",
+        "library_sha256": "cbef304da242c96d685c213315c9caa31e711002a68db90373fb563cf82176f8",
+        "compile_command": [
+          "cc",
+          "-std=c11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-ffp-contract=off",
+          "-shared",
+          "-fPIC",
+          "-g",
+          "-fsanitize=address,undefined",
+          "-fno-omit-frame-pointer",
+          "-I/Agon/mystuff/agon-vdplet/include",
+          "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/generated-state/default/native.c",
+          "-o",
+          "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/generated-state/default/sanitized.so"
+        ]
+      },
+      {
+        "label": "sanitized",
+        "cases": 731,
+        "categories": {
+          "lifecycle": 3,
+          "six-slot-read": 12,
+          "six-slot-write": 78,
+          "index-failure": 4,
+          "index-before-overflow": 4,
+          "failed-store-prior-effects": 2,
+          "exact-table-read": 281,
+          "table-index-failure": 4,
+          "inclusive-bounds": 15,
+          "published-arithmetic": 8,
+          "published-conversion": 23,
+          "published-identity": 6,
+          "widening-order": 6,
+          "comparison": 168,
+          "persistent-tick": 64,
+          "private-cleanup-persistence": 2,
+          "reset-persistence": 6,
+          "root-generation-wrap": 1,
+          "tick-overflow": 1,
+          "physical-array": 24,
+          "physical-bound-role": 4,
+          "physical-root": 1,
+          "pre-entry-rejection": 2,
+          "metadata-rejection": 12
+        },
+        "published_arithmetic_vectors": 8,
+        "published_conversion_identity_vectors": 29,
+        "deferred_outside_source_domain_conversion_inputs": 2,
+        "peak_mock_views": 3,
+        "acquire_attempts": 8997,
+        "granted_leases": 8981,
+        "releases": 8981,
+        "leaks": 0,
+        "asan_ubsan": true,
+        "full_root_array_result_sha256": "9fdfe3cc6207acdb860bb65a732c934e4f16e94815b4b36119384a64342a09e9",
+        "duration_host_seconds": 0.119,
+        "mapping": "relocated",
+        "library_sha256": "36cfdf8915ed880bf39b2696b8be08f994b8f0b6781ac9d82aa2fb793c8bb4f3",
+        "compile_command": [
+          "cc",
+          "-std=c11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-ffp-contract=off",
+          "-shared",
+          "-fPIC",
+          "-g",
+          "-fsanitize=address,undefined",
+          "-fno-omit-frame-pointer",
+          "-I/Agon/mystuff/agon-vdplet/include",
+          "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/generated-state/relocated/native.c",
+          "-o",
+          "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/generated-state/relocated/sanitized.so"
+        ]
+      }
+    ]
+  },
+  "generated_artifacts": {
+    "default": {
+      "array-active.bin": {
+        "bytes": 12,
+        "sha256": "9279aba84b65c836059f143f595b35fa7ff78a64c750da958a15319d1a333f2f"
+      },
+      "array-headings.bin": {
+        "bytes": 12,
+        "sha256": "bab601550de32a454b5326099cadf479766fc1253a4d2defdf2d8bcfccf31934"
+      },
+      "array-laterals.bin": {
+        "bytes": 24,
+        "sha256": "c75624268a28b73a9ae2aa5980cd28a6a9f97c8d690c487f868fe5f199be6775"
+      },
+      "array-routes.bin": {
+        "bytes": 48,
+        "sha256": "899bc1c3676004731f4751cd50cfe3e363ad19ffe6ab0ac33bd2cfc04f61d561"
+      },
+      "array-sine.bin": {
+        "bytes": 514,
+        "sha256": "6062d337f69ac6ae99b7da9cdf95f87aea1ee04a9110f26839f0a85f74efff68"
+      },
+      "array-stations.bin": {
+        "bytes": 24,
+        "sha256": "6fed18b1c39d07ff1480ff900fe27c7955377229341356045f2d152ee8ce93c0"
+      },
+      "arrays-install.bin": {
+        "bytes": 718,
+        "sha256": "70814c5498f47847d93c6cf7ed1be1a7ae2cd85dc21728cea60a844bbd47a6fd"
+      },
+      "backends.json": {
+        "bytes": 75672,
+        "sha256": "867982b128e8daaaa80882d673c7b985ea6dbbe6d80845892b2004137017b746"
+      },
+      "buffered-cleanup.bin": {
+        "bytes": 2856,
+        "sha256": "045caa0a93c18365da2a94e7efc453a1d75672da4e6205caddf970fc276175f6"
+      },
+      "buffered-install.bin": {
+        "bytes": 34828,
+        "sha256": "3c690cd8a5285314d02f88a4664cb89f07a9a6ea464ba9a110be8dc51c63d865"
+      },
+      "calls.inc": {
+        "bytes": 11957,
+        "sha256": "1754ceef1eb41559a726a0c30ed5aeff1c8238cd176b2b3f1af245563198b677"
+      },
+      "common-install.bin": {
+        "bytes": 928,
+        "sha256": "ca8e5f0e20ede62ef62ee35ca0b945cd3ee6a8ce24b2381dfa855f180e29783b"
+      },
+      "interface.json": {
+        "bytes": 8949,
+        "sha256": "94a6e47fea80574051989226dcbb7585a380b2852b0e2ea32da18605e36ffc47"
+      },
+      "layout.inc": {
+        "bytes": 7041,
+        "sha256": "e5d0f080a6320db46c199ddae7db1daac28160d7210fd1ab0a269f282555d66d"
+      },
+      "native-cleanup.bin": {
+        "bytes": 234,
+        "sha256": "83966e9a2ab60189518873174ba34f70ef2813e06f1e16ea11e19433ae6019d8"
+      },
+      "native-install.bin": {
+        "bytes": 1688,
+        "sha256": "658891df94b117e1d948872ce14ccf2962842a51d0e6cc611a0b94e6851333db"
+      },
+      "native.c": {
+        "bytes": 17833,
+        "sha256": "839a78e6f14952d55094243898e3091542c895401517982ae8ccca7fbfb09ffd"
+      },
+      "program.json": {
+        "bytes": 11058,
+        "sha256": "4a114db09ed9918367a1c39267891760b04d7182d0d14decce899f20d557a811"
+      },
+      "root.json": {
+        "bytes": 1041,
+        "sha256": "ea325d716798c5f9e5fbe886fa8ceb751c4fbfe9c81957e95a5d4bb938704b9b"
+      },
+      "state.bin": {
+        "bytes": 196,
+        "sha256": "4a6b3bb00d6024fd674fef8687178cd9501e5e3e1d7ee1ec6c496f65ee237731"
+      }
+    },
+    "relocated": {
+      "array-active.bin": {
+        "bytes": 12,
+        "sha256": "9279aba84b65c836059f143f595b35fa7ff78a64c750da958a15319d1a333f2f"
+      },
+      "array-headings.bin": {
+        "bytes": 12,
+        "sha256": "bab601550de32a454b5326099cadf479766fc1253a4d2defdf2d8bcfccf31934"
+      },
+      "array-laterals.bin": {
+        "bytes": 24,
+        "sha256": "c75624268a28b73a9ae2aa5980cd28a6a9f97c8d690c487f868fe5f199be6775"
+      },
+      "array-routes.bin": {
+        "bytes": 48,
+        "sha256": "899bc1c3676004731f4751cd50cfe3e363ad19ffe6ab0ac33bd2cfc04f61d561"
+      },
+      "array-sine.bin": {
+        "bytes": 514,
+        "sha256": "6062d337f69ac6ae99b7da9cdf95f87aea1ee04a9110f26839f0a85f74efff68"
+      },
+      "array-stations.bin": {
+        "bytes": 24,
+        "sha256": "6fed18b1c39d07ff1480ff900fe27c7955377229341356045f2d152ee8ce93c0"
+      },
+      "arrays-install.bin": {
+        "bytes": 718,
+        "sha256": "3a1a1cfb4463ca345884659c7cebc0264549466e20078d9a30e39a196597be3a"
+      },
+      "backends.json": {
+        "bytes": 76217,
+        "sha256": "8db7fb9708a0c20d6566ce64882852e5ef692061d4ef3d673b512a8ce3f34143"
+      },
+      "buffered-cleanup.bin": {
+        "bytes": 2856,
+        "sha256": "22bbb7418378eb4cfb7a91620ee059b86ec597b021d503b434100f54440333ef"
+      },
+      "buffered-install.bin": {
+        "bytes": 34828,
+        "sha256": "ce8a635a21e351daba097668c4898c8568100ea4180e9149e3beb4bba95de908"
+      },
+      "calls.inc": {
+        "bytes": 11978,
+        "sha256": "6742e6dd1f5a900a5b7f594c81f8dd78dc5288fc00f641005692786a3fff7869"
+      },
+      "common-install.bin": {
+        "bytes": 928,
+        "sha256": "a7d1bd263d09cc9eb80156215b4db1c635b9183e1c1b14bd3905b0795a11d7ff"
+      },
+      "interface.json": {
+        "bytes": 8986,
+        "sha256": "992d9e8a2840643174b5d4ff35b29aff39db497153376f2f2370d48792074bc7"
+      },
+      "layout.inc": {
+        "bytes": 7111,
+        "sha256": "48151db7f6ecad80a9311c702a93eb7555b09d7f5f05481fc40512637827fbd6"
+      },
+      "native-cleanup.bin": {
+        "bytes": 234,
+        "sha256": "47efd6e50b25cbd60ddf41fd9aac7dd30fb0af1b55a510866f370098f28ca252"
+      },
+      "native-install.bin": {
+        "bytes": 1688,
+        "sha256": "481517510096b67b7cfcc2a8d56b472182874e9b9c9bb82ed2bc97a46f1dec54"
+      },
+      "native.c": {
+        "bytes": 17879,
+        "sha256": "98b1baa7aa06f2723b25bcdf67c7fb6914c2849afc0c846459859e1b9170fc18"
+      },
+      "program.json": {
+        "bytes": 11058,
+        "sha256": "4a114db09ed9918367a1c39267891760b04d7182d0d14decce899f20d557a811"
+      },
+      "root.json": {
+        "bytes": 1042,
+        "sha256": "5248936ff2dbf316d0c4cf66a3a2e49712c6a107aa11f3e03e643842ea865516"
+      },
+      "state.bin": {
+        "bytes": 196,
+        "sha256": "b384b5bd28de2f6d8f1bf18b4b909e4a97f19593cf649a6e6a77bcc64e0269d0"
+      }
+    }
+  },
+  "source_sha256": {
+    "sine.bin": "6062d337f69ac6ae99b7da9cdf95f87aea1ee04a9110f26839f0a85f74efff68",
+    "bindings.json": "5f59e6e4c0297f5b3446c8c3fabf3c60b364d5aa85d08aa8cde0c87555d0eca6",
+    "fixture.golem": "86fc7cf76555320e604ab507e8e794364260a616902739204224f28d627be0f8",
+    "host.py": "3735e1a04cb2db5780b5fe3ed8230d40164c7d5b912898bd7c2e2143bf9df546",
+    "routes.bin": "899bc1c3676004731f4751cd50cfe3e363ad19ffe6ab0ac33bd2cfc04f61d561",
+    "verify.py": "3e9173143cb6261e8d5ca638fdb7dee98adabacea22583331785cce538c9a892",
+    "delivery.py": "efcc6947b0a236eeb4643219f880d0f2ca1f08e18fb3346870bd252781ff382c",
+    "adapter.py": "30aab373ab72b0f9a8982cc0dfc8b396dd93a59b124571b164155cdf5042ba2b",
+    "oracle.py": "a06697da09221e900ad8a8a759fcd9facf74f899030c84aa8d9093c098628f1f"
+  },
+  "reference_sha256": {
+    "tables.json": "8b2fdf71f7db7a804b0994266f034cc42c99197881aeb495bcc16cc75bb3f3bb",
+    "numeric-vectors.json": "71147b1fdacca46ac95b44ea930bc067e8cc52ce4c0e3c23929fb724e9a6a169"
+  },
+  "total_setup_execution_host_seconds": 22.775,
+  "dependency_receipt_sha256": "d7cab37d3a2fd1848180504943d6aa64bb47cdca3e453aff886cfbb640758b28"
+}

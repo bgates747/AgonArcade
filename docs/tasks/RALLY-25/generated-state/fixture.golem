@@ -1,0 +1,160 @@
+// Finite host qualification entries, not game physics or autonomous scheduling.
+uint16 slot = 0
+uint16 tableIndex = 0
+uint32 inputStation = 3200000
+uint32 increment = 0
+sint32 inputLateral = 0
+sint32 lateralDelta = 0
+sint16 inputHeading = 0
+uint16 inputActive = 1
+uint32 selectedStation = 17
+sint32 selectedLateral = 17
+sint16 selectedHeading = 17
+uint16 selectedActive = 17
+sint16 selectedTable = 17
+uint32 boundedStation Bounds(0,3276799) = 0
+sint32 boundedLateral Bounds(-38400,38400) = 0
+uint32 worldTick = 65535
+uint16 priorEffect = 0
+bool running = false
+Array uint32 stations(0:5) = Values(0,65535,65536,3200000,3276798,3276799)
+Array sint32 laterals(0:5) = Values(-38400,-1,0,1,14260,38400)
+Array sint16 headings(0:5) = Values(-1920,-1,0,1,1919,1920)
+Array uint16 active(0:5) = Fill(1)
+ReadOnly Array sint16 routes(0:23)
+ReadOnly Array sint16 sine(0:256)
+uint32 ua = 0
+uint32 ub = 0
+uint32 ur = 17
+sint32 sa = 0
+sint32 sb = 0
+sint32 sr = 17
+uint16 un = 17
+sint16 sn = 17
+bool comparison = false
+Sub InitRace
+    running = true
+EndSub
+Sub Tick120
+    worldTick = worldTick + 1
+EndSub
+Sub Render30
+    selectedStation = stations(slot)
+    selectedLateral = laterals(slot)
+    selectedHeading = headings(slot)
+    selectedActive = active(slot)
+EndSub
+Sub ResetRace
+    running = true
+    For slot In Range(0:5)
+        stations(slot) = inputStation
+        laterals(slot) = inputLateral
+        headings(slot) = inputHeading
+        active(slot) = inputActive
+    Next slot
+EndSub
+Sub StopRace
+    running = false
+EndSub
+Sub StoreStation
+    priorEffect = priorEffect + 1
+    stations(slot) = inputStation + increment
+EndSub
+Sub StoreLateral
+    priorEffect = priorEffect + 1
+    laterals(slot) = inputLateral + lateralDelta
+EndSub
+Sub StoreNarrow
+    headings(slot) = inputHeading
+    active(slot) = inputActive
+EndSub
+Sub ReadRoute
+    selectedTable = routes(tableIndex)
+EndSub
+Sub ReadSine
+    selectedTable = sine(tableIndex)
+EndSub
+Sub CheckStation
+    boundedStation = inputStation
+EndSub
+Sub CheckLateral
+    boundedLateral = inputLateral
+EndSub
+Sub AddUnsigned
+    ur = ua + ub
+EndSub
+Sub SubtractUnsigned
+    ur = ua - ub
+EndSub
+Sub AddSigned
+    sr = sa + sb
+EndSub
+Sub SubtractSigned
+    sr = sa - sb
+EndSub
+Sub UnsignedToSigned
+    sr = sint32(ua)
+EndSub
+Sub SignedToUnsigned
+    ur = uint32(sa)
+EndSub
+Sub NarrowUnsigned
+    un = uint16(ua)
+EndSub
+Sub NarrowSigned
+    sn = sint16(sa)
+EndSub
+Sub SignedToNarrowUnsigned
+    un = uint16(sa)
+EndSub
+Sub UnsignedToNarrowSigned
+    sn = sint16(ua)
+EndSub
+Sub WidenBefore
+    ur = uint32(un) + 1
+EndSub
+Sub WidenAfter
+    ur = uint32(un + 1)
+EndSub
+Sub CompareEqualUnsigned
+    comparison = ua == ub
+EndSub
+Sub CompareNotEqualUnsigned
+    comparison = ua != ub
+EndSub
+Sub CompareLessUnsigned
+    comparison = ua < ub
+EndSub
+Sub CompareGreaterUnsigned
+    comparison = ua > ub
+EndSub
+Sub CompareLessEqualUnsigned
+    comparison = ua <= ub
+EndSub
+Sub CompareGreaterEqualUnsigned
+    comparison = ua >= ub
+EndSub
+Sub CompareEqualSigned
+    comparison = sa == sb
+EndSub
+Sub CompareNotEqualSigned
+    comparison = sa != sb
+EndSub
+Sub CompareLessSigned
+    comparison = sa < sb
+EndSub
+Sub CompareGreaterSigned
+    comparison = sa > sb
+EndSub
+Sub CompareLessEqualSigned
+    comparison = sa <= sb
+EndSub
+Sub CompareGreaterEqualSigned
+    comparison = sa >= sb
+EndSub
+Sub IdentityUnsigned
+    ur = uint32(ua)
+EndSub
+Sub IdentitySigned
+    sr = sint32(sa)
+EndSub
