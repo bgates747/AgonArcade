@@ -1,0 +1,19 @@
+    headingChecked = headingInput
+    magnitude = headingChecked
+    If magnitude < 0 Then
+        magnitude = 0 - magnitude
+    EndIf
+    If magnitude > 16384 Then
+        magnitude = 32768 - magnitude
+    EndIf
+    (sineQuotient,sineFraction) = divmod(magnitude,64)
+    sineIndex = uint16(sineQuotient)
+    sineValue = sint32(sine(sineIndex))
+    If sineIndex < 256 Then
+        work = (sint32(sine(sineIndex + 1)) - sineValue) * sineFraction
+        (quotient,remainder) = divmod(work,64)
+        sineValue = sineValue + quotient
+    EndIf
+    If headingChecked < 0 Then
+        sineValue = 0 - sineValue
+    EndIf

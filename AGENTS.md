@@ -136,3 +136,34 @@ Rally-owned historical route/contact Golem kernels and deterministic host replay
 using accepted multiplication/division/right-shift exports. Read RALLY-25.
 Golem supplies primitives/fixes; Rally owns game-specific replay. Keep actual
 spawn/removal/recovery/scheduling/renderer/target integration separately gated.
+
+TRF-001-36–40 completed after pushed `a31c2ce`; read
+`docs/tasks/RALLY-25/route-kernels/RESULTS.md`/`README.md`. Actual generated C
+passes319,072 host invocations with accepted published right-shift compiler:
+full sine domain, exact route cycles, six-slot motion and contact/reference
+replay, primitive failure semantics. New route source/results uncommitted;
+stopped for Author review. Golem D2 was separately released and its resource
+gate fails before real glue: tiny combined text8224/8192, stack576/512 before
+callbacks. Owner evidence identity-checked only; see D2-RESOURCE-RECEIPT.json.
+SDK budget review/helper reduction needs separate release; no limit/source
+change is implied. Right-shift publicationb32c596 supersedes pending status.
+
+Latest Author decision: raising max allowable size is agreed. Mail twenty-five
+asks Golem for exact text/data/image terms, separate stack allowance coverage
+and policy/build/runtime delivery identities. No values were supplied here;
+do not infer them or reopen the agreed size-increase decision. Prior fit failure
+is historical evidence; implementation and full-workload qualification remain
+pending. No helper rewrite or new Rally execution is implied.
+
+Golem seventeen clarifies the agreed increase covers both text AND stack.
+Numerical limits are not selected/implemented; data/image require assessment.
+GOLEM-002 CAP-001–009 records future capacity/service protocol work only.
+SDK pin remains33a554c; four advertised source/header/builder hashes match.
+Rally acknowledged in twenty-six; no helper rewrite, new execution/pin adoption
+or reopening of the agreed increase-versus-reduction decision.
+
+Author released TRF-001-41–45: commit/push all dirt and the formal scope, then
+host simulation-to-renderer integration with deterministic Fuji command replay,
+four physics ticks per frame and completion/error checks, returning for review.
+Read RALLY-25; real generated D2 glue/target linking/runtime work is excluded.
+Golem Stage A is separately authorized through mail twenty-nine.

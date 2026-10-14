@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "scope": "peer message/report and fit.json identity checked only; no Rally build/target/resource rerun",
+  "message_id": "2026-10-13_21-04-47_golem_rally25-d2-resource-gate-sixteen",
+  "peer_fit_path": "/Agon/mystuff/golem/docs/tasks/GOLEM-037/evidence/fit.json",
+  "peer_fit_sha256": "2b7cd7b2a0fdec10ecf60feeed70533b0193ba8bd9975f461e03f6553d070097",
+  "current_policies": {
+    "text": 8192,
+    "data": 4096,
+    "image": 16384,
+    "declared_stack": 512
+  },
+  "owner_reported_builds": [
+    {
+      "kind": "unchanged helper and minimal dispatcher",
+      "text": 7600,
+      "data": 864,
+      "image": 9796,
+      "relative_relocations": 36,
+      "resolved_module_stack_before_callbacks": 544,
+      "packaging": "structurally passes; stack not qualified"
+    },
+    {
+      "kind": "tiny generated program and unchanged helper; no real D2 glue",
+      "text": 8224,
+      "data": 1132,
+      "would_be_image": 10776,
+      "relative_relocations": 42,
+      "resolved_module_stack_before_callbacks": 576,
+      "packaging": "text rejected; no combined vdpl"
+    }
+  ],
+  "accepted_shift_publication": "b32c596",
+  "outcome": "D2 resource gate failed; owner returns for Author decision before binding implementation",
+  "excluded": "real Rally source/glue/resources, service/firmware caller frames, execution high-water, emulator/hardware/capacity evidence",
+  "scope_action": "record and return; no limit change, split, helper rewrite or ABI change authorized"
+}

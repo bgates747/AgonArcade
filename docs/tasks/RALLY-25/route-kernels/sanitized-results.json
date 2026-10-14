@@ -1,0 +1,314 @@
+{
+  "rows": [
+    {
+      "label": "sanitized",
+      "asan_ubsan": true,
+      "groups": [
+        {
+          "calls": 68964,
+          "categories": {
+            "exhaustive-sine": 65536,
+            "sine-domain-rejection": 4,
+            "route-reset": 1,
+            "route-cycle": 1800,
+            "contact-boundary": 504,
+            "signed-lap-normalization": 20,
+            "invalid-lap": 1,
+            "published-multiplication": 6,
+            "published-divmod": 100,
+            "published-route-division": 600,
+            "published-floor-shift": 20,
+            "shift-extrema-counts": 352,
+            "shift-invalid-count": 6,
+            "paired-bounds-failure": 7,
+            "paired-input-output-alias": 4,
+            "paired-alias-failure": 2,
+            "route-index-before-heading": 1
+          },
+          "complete_output_sha256": "c45f2cc8bc7ae27e5e381ce3631a1efab858bf5f881c7024287f16987f63f02f",
+          "peak_views": 3,
+          "granted_leases": 1034836,
+          "releases": 1034836
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-Fuji-grid1": 1800
+          },
+          "complete_output_sha256": "0a75cc3cd22c3b77ca0d4713d9a06d5646a4eafef7cc1916badaa8a46433d907",
+          "peak_views": 3,
+          "granted_leases": 127834,
+          "releases": 127834
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-Fuji-grid4": 1800
+          },
+          "complete_output_sha256": "aa8c5daa0598463dddf795f8a154046d1733520142109046c592c1d2e9dc2767",
+          "peak_views": 3,
+          "granted_leases": 90034,
+          "releases": 90034
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-Fuji-grid7": 1800
+          },
+          "complete_output_sha256": "d33d51efd9fbbc49cb43dc41cc66c59d0d1bbb6e43782b496cf913a5f2852fb7",
+          "peak_views": 3,
+          "granted_leases": 64854,
+          "releases": 64854
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-TriOval-grid1": 1800
+          },
+          "complete_output_sha256": "276784dd02d3c52094556df81536b13116fcb720ea1ae291fe83d0d558bd0190",
+          "peak_views": 3,
+          "granted_leases": 127834,
+          "releases": 127834
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-TriOval-grid4": 1800
+          },
+          "complete_output_sha256": "935e4997e432ba30cf49c84d3bf50fc03c80246a44b5508ea96acc5881f1e5a7",
+          "peak_views": 3,
+          "granted_leases": 90034,
+          "releases": 90034
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-TriOval-grid7": 1800
+          },
+          "complete_output_sha256": "a04051c4b1031ba395351eca4b7270181d41e6f458501d1c89683bc7f1c07e2a",
+          "peak_views": 3,
+          "granted_leases": 64854,
+          "releases": 64854
+        },
+        {
+          "calls": 1,
+          "categories": {
+            "partial-tick-active": 1
+          },
+          "complete_output_sha256": "65818d1e21543771fc8767e14d00c9ee8f58b221d843facc8c1d5bd2d67075f8",
+          "peak_views": 3,
+          "granted_leases": 18,
+          "releases": 18
+        },
+        {
+          "calls": 1,
+          "categories": {
+            "partial-tick-lap": 1
+          },
+          "complete_output_sha256": "c627263c9a0459e91d8cdc13fe016286db82a19c8bb4f12cd8726517b06b517e",
+          "peak_views": 3,
+          "granted_leases": 17,
+          "releases": 17
+        },
+        {
+          "calls": 1,
+          "categories": {
+            "partial-tick-progress": 1
+          },
+          "complete_output_sha256": "f23342c146d1b24e4f6fe722d90e14e8440fd43fa214b215461ad59e23794112",
+          "peak_views": 3,
+          "granted_leases": 47,
+          "releases": 47
+        },
+        {
+          "calls": 1,
+          "categories": {
+            "partial-tick-tick": 1
+          },
+          "complete_output_sha256": "2838b005f5ef5182ec6df2c2f1d12b1817f656362ed198231c0c07463856b60d",
+          "peak_views": 3,
+          "granted_leases": 71,
+          "releases": 71
+        }
+      ],
+      "total_calls": 79768,
+      "peak_mock_views": 3,
+      "host_seconds": 21.21,
+      "mapping": "default",
+      "library_sha256": "d1d679f99602cde1d09f06f2881525f37fce94a8a0e3f114254d82544b6980b9",
+      "compile_command": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-ffp-contract=off",
+        "-shared",
+        "-fPIC",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/Agon/mystuff/agon-vdplet/include",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/route-kernels/default/native.c",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/route-kernels/default/sanitized.so"
+      ]
+    },
+    {
+      "label": "sanitized",
+      "asan_ubsan": true,
+      "groups": [
+        {
+          "calls": 68964,
+          "categories": {
+            "exhaustive-sine": 65536,
+            "sine-domain-rejection": 4,
+            "route-reset": 1,
+            "route-cycle": 1800,
+            "contact-boundary": 504,
+            "signed-lap-normalization": 20,
+            "invalid-lap": 1,
+            "published-multiplication": 6,
+            "published-divmod": 100,
+            "published-route-division": 600,
+            "published-floor-shift": 20,
+            "shift-extrema-counts": 352,
+            "shift-invalid-count": 6,
+            "paired-bounds-failure": 7,
+            "paired-input-output-alias": 4,
+            "paired-alias-failure": 2,
+            "route-index-before-heading": 1
+          },
+          "complete_output_sha256": "4945be0f721abb5574aa8c69ea02ce6d55e3687603a942d1cc5d053d85140e0b",
+          "peak_views": 3,
+          "granted_leases": 1034836,
+          "releases": 1034836
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-Fuji-grid1": 1800
+          },
+          "complete_output_sha256": "921a761725e04b93e2c069eff527c96b324c9beeb60366b2e9c5b6f0390aa6dc",
+          "peak_views": 3,
+          "granted_leases": 127834,
+          "releases": 127834
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-Fuji-grid4": 1800
+          },
+          "complete_output_sha256": "f89fce1beea7cf7d8551559c49ec1c256d94ed708aa8d6803cd49afa1c6cf3ae",
+          "peak_views": 3,
+          "granted_leases": 90034,
+          "releases": 90034
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-Fuji-grid7": 1800
+          },
+          "complete_output_sha256": "e266dc40e4577df99c4baa61729cde6200fd36aee77fe2ce0c381f4c0ab9238d",
+          "peak_views": 3,
+          "granted_leases": 64854,
+          "releases": 64854
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-TriOval-grid1": 1800
+          },
+          "complete_output_sha256": "c15666c2f606d832b900a234050f6cfb0978ceae53ba10f534e4b4a31434a952",
+          "peak_views": 3,
+          "granted_leases": 127834,
+          "releases": 127834
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-TriOval-grid4": 1800
+          },
+          "complete_output_sha256": "222bdd83c3a69aa9c06b6fe3f00328b46680b5fb8d12fdcb7279d3fd0f96e4d3",
+          "peak_views": 3,
+          "granted_leases": 90034,
+          "releases": 90034
+        },
+        {
+          "calls": 1800,
+          "categories": {
+            "six-slot-TriOval-grid7": 1800
+          },
+          "complete_output_sha256": "990d27a13c7415e142ab94780c2df0968a46906d665de91dc738763a1a5407d2",
+          "peak_views": 3,
+          "granted_leases": 64854,
+          "releases": 64854
+        },
+        {
+          "calls": 1,
+          "categories": {
+            "partial-tick-active": 1
+          },
+          "complete_output_sha256": "ad8d4c622174942a883b50bab621282d5521c7748a952edfa6a9866990a197c2",
+          "peak_views": 3,
+          "granted_leases": 18,
+          "releases": 18
+        },
+        {
+          "calls": 1,
+          "categories": {
+            "partial-tick-lap": 1
+          },
+          "complete_output_sha256": "93374ed387e77cc40480e6ddc964b79423b9733a8e3c91e0a78de369ed8cbb94",
+          "peak_views": 3,
+          "granted_leases": 17,
+          "releases": 17
+        },
+        {
+          "calls": 1,
+          "categories": {
+            "partial-tick-progress": 1
+          },
+          "complete_output_sha256": "51905866d8d91fe05c2d89d73e5fffc9b738b0c62b94ffafbd465f6fbb9659cf",
+          "peak_views": 3,
+          "granted_leases": 47,
+          "releases": 47
+        },
+        {
+          "calls": 1,
+          "categories": {
+            "partial-tick-tick": 1
+          },
+          "complete_output_sha256": "b618ed618d3e712aed71515b92974faa595aef30c759afa501de5b294e9a664a",
+          "peak_views": 3,
+          "granted_leases": 71,
+          "releases": 71
+        }
+      ],
+      "total_calls": 79768,
+      "peak_mock_views": 3,
+      "host_seconds": 21.091,
+      "mapping": "relocated",
+      "library_sha256": "ee6a5a01f14918cd6fd4eba7c9eb7317716dd2f9859813794df4760155c3c025",
+      "compile_command": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-ffp-contract=off",
+        "-shared",
+        "-fPIC",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/Agon/mystuff/agon-vdplet/include",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/route-kernels/relocated/native.c",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/.work/route-kernels/relocated/sanitized.so"
+      ]
+    }
+  ]
+}

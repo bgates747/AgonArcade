@@ -1,0 +1,20 @@
+    If routeRemaining == 0 Then
+        routeRecord = routeRecord + 1
+        If routeRecord >= 6 Then
+            routeRecord = 0
+        EndIf
+        routeIndex = routeRecord * 4
+        routeRemaining = uint16(routes(routeIndex))
+        routeHeading = sint32(routes(routeIndex + 2))
+    EndIf
+    routeIndex = routeRecord * 4
+    routeHeading = routeHeading + sint32(routes(routeIndex + 3))
+    headingInput = routeHeading
+@SINE@
+    speed = sint32(routes(routeIndex + 1))
+    work = speed * 2 * sineValue
+    (quotient,remainder) = divmod(work,12800)
+    routeLateral = routeLateral + quotient
+    forwardAdvance = uint32(speed * 2)
+    routeForward = routeForward + forwardAdvance
+    routeRemaining = routeRemaining - 1

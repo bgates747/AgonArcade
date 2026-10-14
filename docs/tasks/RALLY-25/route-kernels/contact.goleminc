@@ -1,0 +1,20 @@
+    lap = lapInput
+    work = sint32(opponentStation) - sint32(playerStation)
+    (quotient,remainder) = divmod(work,lap)
+    separation = remainder
+    If separation < 0 Then
+        separation = separation + lap
+    EndIf
+    (halfLap,remainder) = divmod(lap,2)
+    If separation > halfLap Then
+        separation = separation - lap
+    EndIf
+    work = separation
+    If work < 0 Then
+        work = 0 - work
+    EndIf
+    lateralSeparation = opponentLateral - playerLateral
+    If lateralSeparation < 0 Then
+        lateralSeparation = 0 - lateralSeparation
+    EndIf
+    contactResult = work < 3200 And lateralSeparation < 6144

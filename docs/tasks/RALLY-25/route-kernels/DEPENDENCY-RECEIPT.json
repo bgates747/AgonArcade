@@ -1,0 +1,37 @@
+{
+  "scope": "independent file/Git/metadata/installation/SDK/tool identity; owner target/human results not rerun",
+  "rows": [
+    {
+      "feature": "multiplication",
+      "bundle_sha256": "964c43f564dfdca6165702f3d40da4d6e581a7202c7ce4c084c60418ce3477fc",
+      "published_commit": "1ddfd64",
+      "bundle_files": 127,
+      "exported_sources_vs_commit": 22,
+      "packages": 3
+    },
+    {
+      "feature": "division",
+      "bundle_sha256": "cd0e922475d08ad4848ec6c044f4c4851cf0148a7b209b8f5fd095f75ec8ed5e",
+      "published_commit": "df7a647",
+      "bundle_files": 131,
+      "exported_sources_vs_commit": 26,
+      "packages": 3
+    },
+    {
+      "feature": "right-shift",
+      "bundle_sha256": "f78de85c7decc6a056d9450dd7ea2b3aca47733b9919c121bb0c47cfd720f600",
+      "published_commit": "b32c596",
+      "bundle_files": 135,
+      "exported_sources_vs_commit": 30,
+      "packages": 3
+    }
+  ],
+  "matched_tool_hashes": {
+    "g++": "ac4f48ec03aa3988b0c087fd8a0ae681c2922354b321065ff49911b8ab20db73",
+    "gcc": "fb051a6c58961fb6aec758acf50d7d0375eecff740d0706388092829e3fb7a41",
+    "xtensa-esp32-elf-gcc": "e091761ac142b87be663aa36c8dc9af10044a9769a540ee0337ebc97ea56a22d",
+    "xtensa-esp32-elf-ld": "fd641bedc57930941b7b7d9e3d51ece550bf663fb4d9d13ec0a2188082c47245",
+    "xtensa-esp32-elf-strip": "cef0e79caf472d12d87063c8cbc6ed21880ab41dce99fab12671d50e02adcaae"
+  },
+  "host_seconds": 0.284
+}

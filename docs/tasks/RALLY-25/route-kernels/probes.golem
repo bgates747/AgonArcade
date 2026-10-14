@@ -1,0 +1,46 @@
+Sub Normalize
+    lap = lapInput
+    (quotient,remainder) = divmod(normalizeInput,lap)
+    If remainder < 0 Then
+        remainder = remainder + lap
+    EndIf
+    normalPosition = uint32(remainder)
+EndSub
+Sub MultiplySigned
+    sq = sa * sb
+EndSub
+Sub MultiplyUnsigned
+    uq = ua * ub
+EndSub
+Sub DivideSigned
+    effect = effect + 1
+    (sq,sr) = divmod(sa,sb)
+EndSub
+Sub DivideUnsigned
+    effect = effect + 1
+    (uq,ur) = divmod(ua,ub)
+EndSub
+Sub BoundedPair
+    effect = effect + 1
+    (boundedQ,boundedR) = divmod(sa,sb)
+EndSub
+Sub AliasPair
+    (sa,sb) = divmod(sa,sb)
+EndSub
+Sub ShiftSigned
+    signedShift = sa >> shiftCount
+EndSub
+Sub ShiftUnsigned
+    unsignedShift = ua >> shiftCount
+EndSub
+Sub ResetRace
+    routeRecord = 0
+    routeRemaining = 60
+    routeHeading = 0
+    routeLateral = 0
+    routeForward = 0
+    worldTick = 0
+EndSub
+Sub StopRace
+    contactAny = false
+EndSub
