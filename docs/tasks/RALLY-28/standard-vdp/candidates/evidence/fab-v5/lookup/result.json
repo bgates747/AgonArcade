@@ -1,0 +1,64 @@
+{
+  "variant": "lookup",
+  "mode": 1,
+  "reason": "guest-files",
+  "summary": {
+    "schema": "1",
+    "candidate": "1",
+    "buffered": "0",
+    "mode": "1",
+    "frames": "900",
+    "planned": "900",
+    "mos_units": "7634",
+    "prt_ticks": "63636",
+    "bytes": "2085419",
+    "wire_calls": "93211",
+    "uart_chunks": "118448",
+    "send_prt": "19935",
+    "position": "1202800",
+    "phase": "1600",
+    "shadow_calls": "0",
+    "shadow_debt": "7634",
+    "max_shadow_debt": "0",
+    "vector_restored": "1",
+    "callback_restored": "1",
+    "failure": "none"
+  },
+  "host_seconds": 73.03090505200089,
+  "host_window_seconds": 63.61483136899915,
+  "host_suspend_seconds": -2.5600002118153498e-06,
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "identities_unchanged": true,
+  "identity": {
+    "variant": "lookup",
+    "mode": 1,
+    "runtime": "Fab 1.2.5 stock platform host module",
+    "files": {
+      "fab-agon-emulator": "2b9f1b1b44746743218fe0bd9e873dc9f5b25fc81135a078a30118d7d3eeb107",
+      "fab-agon-emulator.bin": "aec5f8c266117d5bf864c6124d3c8986d042802ed5cbaaf8813e04a9fb8d0bea",
+      "vdp_platform.so": "14338aaeead48cb3df5987bf7fcc1b350d9e08d4a0ee0fcfc1a4a89cf79fae97",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "79ee82246534588cfdfa50a1961f415d07e9ec0bc6a969e15b80fc14bda5310e",
+      "sdcard/test/arcade/rally28/candidate/mode.txt": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "sdcard/test/arcade/rally28/candidate/candidate.bin": "865bc385c1defa77bdb8f262d68fabce20afec58cd1de2f08883be647dfa43de",
+      "sdcard/test/arcade/rally28/candidate/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "setup_helper_sha256": "23432375e90170f6d855282dc984516ef3b623e842827cccc65feccd81276b02"
+  },
+  "outputs": {
+    "done.txt": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+    "ended.txt": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+    "summary.txt": "e08f2aa38cd52e8cbb235dbf49deb0f78be0f953be6431284066e36b561a6a72",
+    "frames.csv": "df014f6d54e53ac0fd1cd08c1d37d3527e0af6d5fb4a7120c9822ddb011e3412",
+    "started.txt": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5"
+  },
+  "verified_guest_outputs": true,
+  "input_matches_portable_v5": true,
+  "expected_application_and_fence_bytes": 2085419,
+  "nominal_prt_seconds": 63.636,
+  "completed_fps_host": 14.147644199188885
+}

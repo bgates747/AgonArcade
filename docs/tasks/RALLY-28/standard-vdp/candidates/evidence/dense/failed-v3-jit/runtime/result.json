@@ -1,0 +1,46 @@
+{
+  "reason": "no-command-progress",
+  "host_seconds": 69.21091602199999,
+  "exit": 0,
+  "kind": "candidate",
+  "identity": {
+    "kind": "candidate",
+    "files": {
+      "flexe-agon-emulator": "4ce4579ced9bff648ab8fd5c4341db26c09f0453b78518020fdb6bd0ef89caeb",
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "79ee82246534588cfdfa50a1961f415d07e9ec0bc6a969e15b80fc14bda5310e",
+      "sdcard/test/arcade/rally28/candidate/candidate.bin": "dea2d8232b0296a085702a501ede77d7a199e36946eb6a8730abca9a7fb09c06",
+      "sdcard/test/arcade/rally28/candidate/mode.txt": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "setup_helper_sha256": "23432375e90170f6d855282dc984516ef3b623e842827cccc65feccd81276b02",
+    "stock_release": "https://github.com/AgonPlatform/agon-vdp/releases/tag/v2.16.0",
+    "variant": "dense",
+    "mode": 1
+  },
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "outputs": {},
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 3981,
+    "cycles": 16554864348,
+    "retired": 16030331726,
+    "uart_rx": 137533,
+    "uart_tx": 836,
+    "uart_delivered": 836,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "identities_unchanged": true
+}

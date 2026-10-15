@@ -1,0 +1,82 @@
+{
+  "reason": "guest-files",
+  "host_seconds": 40.73506137200002,
+  "exit": 0,
+  "kind": "candidate",
+  "identity": {
+    "kind": "candidate",
+    "files": {
+      "flexe-agon-emulator": "731a17317b18def77de1704a3384b35acf3e6fea312967400ca047ef94511961",
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "108ec5b02122381e6c3ae851508188ec0a96240ca5f74be804fd2201b141e6e9",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "79ee82246534588cfdfa50a1961f415d07e9ec0bc6a969e15b80fc14bda5310e",
+      "sdcard/test/arcade/rally28/candidate/candidate.bin": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+      "sdcard/test/arcade/rally28/candidate/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "sdcard/test/arcade/rally28/candidate/mode.txt": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "setup_helper_sha256": "23432375e90170f6d855282dc984516ef3b623e842827cccc65feccd81276b02",
+    "stock_release": "https://github.com/AgonPlatform/agon-vdp/releases/tag/v2.16.0",
+    "variant": "lookup-buffer",
+    "mode": 1,
+    "adapter_delivery": "eof-fixed",
+    "engine": "interp",
+    "adapter_publication": "bbd0343"
+  },
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "host_window_seconds": 29.62243348300001,
+  "host_marker_poll_seconds": 0.05,
+  "host_boot_id": "a3dd7f95-fdf0-4f24-bc7b-1899176f8a98",
+  "host_suspend_seconds": -1.5599999869664316e-06,
+  "summary": {
+    "schema": "1",
+    "candidate": "1",
+    "buffered": "1",
+    "mode": "1",
+    "frames": "167",
+    "planned": "900",
+    "mos_units": "1938",
+    "prt_ticks": "29611",
+    "bytes": "185053",
+    "wire_calls": "19034",
+    "uart_chunks": "19038",
+    "send_prt": "4400",
+    "position": "220720",
+    "phase": "3520",
+    "shadow_calls": "0",
+    "shadow_debt": "1938",
+    "max_shadow_debt": "0",
+    "vector_restored": "1",
+    "callback_restored": "1",
+    "failure": "callback timeout"
+  },
+  "outputs": {
+    "summary.txt": "fa643e232e0b008709f138a1fb3bbc31ba50f53fcbdb8e00b7707ddc95ea91ef",
+    "frames.csv": "c65499538cd74b381b32254301fc061791e240773d173da98cf994387d37fcc6",
+    "started.txt": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+    "ended.txt": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+    "done.txt": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1"
+  },
+  "backend_stats": {
+    "engine": "interp",
+    "frames": 1610,
+    "cycles": 6735581908,
+    "retired": 5149999863,
+    "uart_rx": 311442,
+    "uart_tx": 10758,
+    "uart_delivered": 10758,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "identities_unchanged": true
+}

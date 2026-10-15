@@ -1,0 +1,65 @@
+{
+  "variant": "lookup-buffer",
+  "mode": 2,
+  "reason": "guest-files",
+  "host_window_seconds": null,
+  "note": "Post-run reference check failed on absent Oryx reference source; local check below. Host interval was not saved; do not reconstruct it.",
+  "identity": {
+    "variant": "lookup-buffer",
+    "mode": 2,
+    "runtime": "Fab 1.2.5 stock platform host module",
+    "files": {
+      "fab-agon-emulator": "2b9f1b1b44746743218fe0bd9e873dc9f5b25fc81135a078a30118d7d3eeb107",
+      "fab-agon-emulator.bin": "aec5f8c266117d5bf864c6124d3c8986d042802ed5cbaaf8813e04a9fb8d0bea",
+      "vdp_platform.so": "14338aaeead48cb3df5987bf7fcc1b350d9e08d4a0ee0fcfc1a4a89cf79fae97",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "79ee82246534588cfdfa50a1961f415d07e9ec0bc6a969e15b80fc14bda5310e",
+      "sdcard/test/arcade/rally28/candidate/mode.txt": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "sdcard/test/arcade/rally28/candidate/candidate.bin": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+      "sdcard/test/arcade/rally28/candidate/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "setup_helper_sha256": "23432375e90170f6d855282dc984516ef3b623e842827cccc65feccd81276b02"
+  },
+  "summary": {
+    "schema": "1",
+    "candidate": "1",
+    "buffered": "1",
+    "mode": "2",
+    "frames": "900",
+    "planned": "900",
+    "mos_units": "9456",
+    "prt_ticks": "78823",
+    "bytes": "1236209",
+    "wire_calls": "107684",
+    "uart_chunks": "107688",
+    "send_prt": "38646",
+    "position": "1202800",
+    "phase": "1600",
+    "shadow_calls": "9456",
+    "shadow_debt": "0",
+    "max_shadow_debt": "4",
+    "vector_restored": "1",
+    "callback_restored": "1",
+    "failure": "none"
+  },
+  "physics_reference": {
+    "scenario": 1,
+    "steps_in_current_block": 240,
+    "fields_checked": 105,
+    "coverage_current_block": {
+      "motion": 240,
+      "recovery": 0,
+      "contacts": 0,
+      "road": 183,
+      "kerb": 39,
+      "grass": 18,
+      "passes": 0
+    }
+  },
+  "verified_guest_outputs": true,
+  "input_matches_portable_v5": true,
+  "expected_application_and_fence_bytes": 1236209,
+  "nominal_prt_seconds": 78.823,
+  "completed_fps_host": null
+}

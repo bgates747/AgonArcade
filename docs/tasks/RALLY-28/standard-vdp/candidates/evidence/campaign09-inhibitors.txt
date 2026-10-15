@@ -1,0 +1,11 @@
+WHO                 UID  USER  PID   COMM            WHAT                                                                       WHY                                              MODE
+ModemManager        0    root  1098  ModemManager    sleep                                                                      ModemManager needs to reset devices              delay
+NetworkManager      0    root  1075  NetworkManager  sleep                                                                      NetworkManager needs to turn off networks        delay
+Rally               0    root  24883 systemd-inhibit sleep:idle                                                                 Temporary boost-off headless Rally qualification block
+Realtime Kit        0    root  1454  rtkit-daemon    sleep                                                                      Demote realtime scheduling and stop canary.      delay
+UPower              0    root  1795  upowerd         sleep                                                                      Pause device polling                             delay
+Codex               1000 smith 8312  ChatGPT         shutdown                                                                   Saving browser state                             delay
+xfce4-power-manager 1000 smith 5382  xfce4-power-man handle-power-key:handle-suspend-key:handle-hibernate-key:handle-lid-switch xfce4-power-manager handles these events         block
+xfce4-screensaver   1000 smith 5385  xfce4-screensav sleep                                                                      Locking screen before sleep                      delay
+
+8 inhibitors listed.

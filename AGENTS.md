@@ -473,3 +473,55 @@ resident road-template prototype and matched PACE-001-02 CPU/actual transfer/
 completion diagnostics. Preserve product/old fixtures/SDK/firmware, use only
 headless silent Oryx runs; leave promising review profiles stopped. No native/
 physical deployment or PACE-001-03 gameplay scheduler. Return with results.
+
+RALLY-28 CURRENT RETURN — 2026-10-15: Author released thermal pause with
+Oryx CPU boost disabled (read/monitored0); heavy compile work also belongs
+on Oryx. Read docs/tasks/RALLY-28/standard-vdp/candidates/RESULTS.md, README.md
+and RANGES-AND-COVERAGE.md. Prior dirt/contract119edcd/c811998 pushed; new
+implementation/results uncommitted for review. No product/firmware/SDK change.
+
+Five matched boost-off09CPU cases independently pass900frames/counts/final
+state/restoration/identities/backend checks. Wall ms/frame: dense150.665,
+lookup38.725, fine-buffer32.066, coarse35.361, coarse-buffer30.773. Fine-buffer
+CPU capacity4.70x/time79%lower; command bytes26.5%lower, coarse-buffer41.2%.
+These are CPU-only frame construction, not game/render FPS or hardware timing.
+All five real-transfer variants and separate physics-service attempt stall
+inside next-frame submission; complete request/reply counts respectively
+30dense/247lookup/80fine-buffer/716coarse/23coarse-buffer/463physics-service.
+Exact setup/frame prefixes and unchanged delivered replies verified; backend
+errors0, root cause unproven. No final900-frame FPS or target physics-service
+snapshot/debt/cadence qualified. Do not adopt private UART/firmware workarounds.
+
+Unchanged8192-step actual-game physics binary separately passes420independent
+state fields in24.476435host seconds =334.69steps/s,2.988ms/step. PRT24.469s
+agrees0.031%; MOS only558units,22.80units/s. No timed application wire, prior
+timer restored. Host UART marker clock uses250ms nominal trace flush/50ms
+polling; no physical calibration or integrated120Hz headroom claim. Current
+PRT/host basis supersedes nominal MOS-rate inferences for these experiments.
+
+All final candidate cases and physics calibration share one host boot, boost0
+and no suspension. All automated sessions force BOTH SDL dummy drivers.
+All owned processes STOPPED, Rally inhibitor released; see STOPPED.json. No
+graphical/audio or physical launch. New tools flush completed outputs before
+reporting success. Guard rejects used review profiles and boost enabled.
+
+Fresh Oryx profiles rally28-fine-v5-review and rally28-coarse-v5-review are
+staged/stopped, explicitly UNQUALIFIED/NOT READY FOR NORMAL MOTION REVIEW.
+No Author launch requested while stock submission stalls remain. Portable
+PORTABLE-V5.zip contains eleven exact input sets; no card copy/flash. Next
+useful decision is owner diagnosis or release a byte-identical hardware
+comparison. STD-002-01/02 delivered;03/04 pipeline/Author gates stay open.
+
+Current build is BUILD-V5.json/binaries-v5/generated. Shared v4 was rejected
+for a flag-clobbering generated conditional panorama call; v5 helper restores
+correct bytes, all five CPU cases verify. Codegen evidence retained; no compiler
+repair. Earlier v1/v3 complete buffered runs have exact900-frame stream/reply
+proof but lack independent host rendering-window timing, so cannot substitute
+for current failed comparison. Historical power/pause/corrupt07records remain
+under candidates/HISTORY.md and evidence; preserved product SHA7f1620ed... .
+
+All compatible positioning consumers share appropriate projection/tangent/
+depth/edge/sign state.9632host poses/two tracks,10677object cases,1037depth
+values, ten ordinary/sanitized serializers and3780partial-physics fields pass.
+Coarse differs up to28centre pixels; retain for Author motion choice, no
+accuracy-only rejection. Other partial-optimization families remain pending.

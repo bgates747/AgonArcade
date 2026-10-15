@@ -1,0 +1,132 @@
+{
+  "v1": {
+    "receipt": "BUILD-V1.json",
+    "description": "exploratory; lookup-buffer/live-v1 independently verified",
+    "binaries": {
+      "dense": {
+        "sha256": "6b2d331605cf3067bff7fa933d87004ea5f58d5b824ca1866a7e81f855ff485b",
+        "bytes": 192916
+      },
+      "lookup": {
+        "sha256": "8ee3aa6ff5a655aadecda2cd4356d9243a5e899674321835acd606ee4902c529",
+        "bytes": 204595
+      },
+      "lookup-buffer": {
+        "sha256": "311b1105fa930ce424cae603fdf0e3539084fa67425b0ab36ebb4ec877606836",
+        "bytes": 206501
+      },
+      "coarse": {
+        "sha256": "669460a488137d7f0c0ae4850edffdebdae4e9afdbd7e32e30b32645a5775b1f",
+        "bytes": 204627
+      },
+      "coarse-buffer": {
+        "sha256": "2b2d2a30822b31f50dc300e9a087b5e4415609928552b20d2f93471ae437b843",
+        "bytes": 206529
+      }
+    }
+  },
+  "v2": {
+    "receipt": "BUILD-FINAL.json",
+    "description": "historical endpoint/debt build; binaries/ preserves these exact executables",
+    "binaries": {
+      "dense": {
+        "sha256": "6b2d331605cf3067bff7fa933d87004ea5f58d5b824ca1866a7e81f855ff485b",
+        "bytes": 192916
+      },
+      "lookup": {
+        "sha256": "dac9a62b50e879aa689401457d2022905604178aca9dc1bb726b21da63473458",
+        "bytes": 204609
+      },
+      "lookup-buffer": {
+        "sha256": "4c208fc3aeeba11a725e9a1c96e199bc8fb24c779843ece73169332c49654656",
+        "bytes": 206513
+      },
+      "coarse": {
+        "sha256": "739216d7f14ee8dd4a7de87a1748467faa949000b81b3a551b6b3dc783c605d5",
+        "bytes": 204641
+      },
+      "coarse-buffer": {
+        "sha256": "d205c5da0df368d146b0253464b075b43c856b89352adea8ba4319f6cf024c52",
+        "bytes": 206541
+      }
+    }
+  },
+  "v3": {
+    "receipt": "BUILD-V3.json",
+    "description": "bounded64-byte writer/service hook; five CPU passes, live-v3-interp full pass, JIT failures",
+    "binaries": {
+      "dense": {
+        "sha256": "dea2d8232b0296a085702a501ede77d7a199e36946eb6a8730abca9a7fb09c06",
+        "bytes": 193238
+      },
+      "lookup": {
+        "sha256": "6e858bd2fb816e7ef8857106e57a10a039ab122a4da71df7347fc0b2067d9174",
+        "bytes": 204931
+      },
+      "lookup-buffer": {
+        "sha256": "b91f756cae50ce061c8760673e26bbc5375ce77c0ad1f35dc5333de194cd27eb",
+        "bytes": 206835
+      },
+      "coarse": {
+        "sha256": "8abee7cd173aafc5b8955bcc77a53a40e728e0dfab4ff92ba1d85402f32c95f2",
+        "bytes": 204967
+      },
+      "coarse-buffer": {
+        "sha256": "070276d33330cd7ad6cc4378ecd94083b105078d95edf203f8d1b99bef74e898",
+        "bytes": 206867
+      }
+    }
+  },
+  "v4": {
+    "receipt": "BUILD-V4.json",
+    "description": "host witnesses; dense independently verified; shared variants REJECTED for generated conditional-call flag clobber",
+    "binaries": {
+      "dense": {
+        "sha256": "a26988718250af8c639042842cd35466a6e300ffaa1ccaaed3b5bfdfdadc2ce8",
+        "bytes": 193417
+      },
+      "lookup": {
+        "sha256": "c17b11eb388b4790bd1cf9de5b8568460f529a61bcc9a078fdee627806a32157",
+        "bytes": 205152
+      },
+      "lookup-buffer": {
+        "sha256": "36d441e906fac1ff13e9b41c1083f8627582f4d4c99c9d66ab6cb949ed46a516",
+        "bytes": 207056
+      },
+      "coarse": {
+        "sha256": "a306ba092a75d981812ed0f03c4d4648ef3ce8f55f275d9b59fbd5e57238563f",
+        "bytes": 205184
+      },
+      "coarse-buffer": {
+        "sha256": "2c19b0cb7fc6bcce9aebe567797fbae0f66d1181c211cc9e8eae26ee13931fcf",
+        "bytes": 207084
+      }
+    }
+  },
+  "v5": {
+    "receipt": "BUILD-V5.json",
+    "description": "Corrected panorama helper; five matched boost-off CPU cases and unchanged physics wall calibration independently pass. Five live cases/service diagnostic stall; no full FPS. Fresh review profiles staged/stopped/unqualified; portable inputs undeployed.",
+    "binaries": {
+      "dense": {
+        "sha256": "a26988718250af8c639042842cd35466a6e300ffaa1ccaaed3b5bfdfdadc2ce8",
+        "bytes": 193417
+      },
+      "lookup": {
+        "sha256": "865bc385c1defa77bdb8f262d68fabce20afec58cd1de2f08883be647dfa43de",
+        "bytes": 205155
+      },
+      "lookup-buffer": {
+        "sha256": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+        "bytes": 207059
+      },
+      "coarse": {
+        "sha256": "8b5f72fd3ee51b66aa641a0b6006fe7c87af7e9047d8bdf70f05327a6b9a34db",
+        "bytes": 205187
+      },
+      "coarse-buffer": {
+        "sha256": "c1db40e646ae650c16a7af70838897c7d26c0b3ae62b917487f5b8a9b4eead0d",
+        "bytes": 207087
+      }
+    }
+  }
+}

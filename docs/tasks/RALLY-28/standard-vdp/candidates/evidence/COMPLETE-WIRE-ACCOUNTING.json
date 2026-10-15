@@ -1,0 +1,16 @@
+{
+  "source": "complete v3 interpreter run, distinct from final boost-off failures",
+  "initial_application_config_bytes": 12,
+  "asset_template_setup_bytes": 125910,
+  "setup_fence_command_bytes": 7,
+  "timed_upstream_bytes_including900completion_requests": 1236209,
+  "post_timing_mute_bytes": 6,
+  "complete_application_upstream_bytes": 1362144,
+  "primary_frame_callback_bytes": 5400,
+  "all_reply_bytes_between_setup_fence_and_last_frame_callback": 63696,
+  "reply_packet_types": {
+    "(5, 2)": 24,
+    "(6, 8)": 5820,
+    "(1, 4)": 900
+  }
+}

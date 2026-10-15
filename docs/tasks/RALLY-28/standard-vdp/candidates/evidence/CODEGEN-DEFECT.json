@@ -1,0 +1,15 @@
+{
+  "compiler_repository_commit": "b67ab2444a63267a42193f204889d466765d8dd2",
+  "affected": "shared v4; dense v4 matches host",
+  "expected_extra_panorama_draws": 399,
+  "extra_bytes": 2793,
+  "first_frame_mismatch_byte": 39,
+  "fix": "one-argument noinline panorama helper; y=0 materialized unconditionally inside helper",
+  "v4_accepted_for_comparison": false,
+  "v5_target_summary_reports_correct_byte_count": true,
+  "v5_raw_return_verification_pending": false,
+  "v5_verified_correct_cpu_variants": [
+    "lookup-buffer",
+    "coarse-buffer"
+  ]
+}

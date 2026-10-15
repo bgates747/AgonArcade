@@ -1,0 +1,22 @@
+RUN rally28-lookup-buffer-cpu08
+{"profile": "rally28-lookup-buffer-cpu08", "reason": "guest-files", "window": 28.919595206999986, "host_suspend_seconds": -6.320000011328375e-06, "summary": {"schema": "1", "candidate": "1", "buffered": "1", "mode": "0", "frames": "900", "planned": "900", "mos_units": "1588", "prt_ticks": "28904", "bytes": "1229909", "wire_calls": "106784", "uart_chunks": "0", "send_prt": "0", "position": "1202800", "phase": "1600", "shadow_calls": "0", "shadow_debt": "1588", "max_shadow_debt": "0", "vector_restored": "1", "callback_restored": "1", "failure": "none"}}
+RUN rally28-coarse-buffer-cpu08
+{"profile": "rally28-coarse-buffer-cpu08", "reason": "guest-files", "window": 27.68819108499997, "host_suspend_seconds": -2.4400000029345392e-06, "summary": {"schema": "1", "candidate": "2", "buffered": "1", "mode": "0", "frames": "900", "planned": "900", "mos_units": "1516", "prt_ticks": "27710", "bytes": "984876", "wire_calls": "102323", "uart_chunks": "0", "send_prt": "0", "position": "1202800", "phase": "1600", "shadow_calls": "0", "shadow_debt": "1516", "max_shadow_debt": "0", "vector_restored": "1", "callback_restored": "1", "failure": "none"}}
+RUN rally28-lookup-cpu08
+{"profile": "rally28-lookup-cpu08", "reason": "guest-files", "window": 34.88330518800001, "host_suspend_seconds": -1.740000016070553e-06, "summary": {"schema": "1", "candidate": "1", "buffered": "0", "mode": "0", "frames": "900", "planned": "900", "mos_units": "1912", "prt_ticks": "34908", "bytes": "2079119", "wire_calls": "92311", "uart_chunks": "0", "send_prt": "0", "position": "1202800", "phase": "1600", "shadow_calls": "0", "shadow_debt": "1912", "max_shadow_debt": "0", "vector_restored": "1", "callback_restored": "1", "failure": "none"}}
+RUN rally28-coarse-cpu08
+{"profile": "rally28-coarse-cpu08", "reason": "guest-files", "window": 31.819768947000057, "host_suspend_seconds": -1.850000046488276e-06, "summary": {"schema": "1", "candidate": "2", "buffered": "0", "mode": "0", "frames": "900", "planned": "900", "mos_units": "1696", "prt_ticks": "31823", "bytes": "1568306", "wire_calls": "92311", "uart_chunks": "0", "send_prt": "0", "position": "1202800", "phase": "1600", "shadow_calls": "0", "shadow_debt": "1696", "max_shadow_debt": "0", "vector_restored": "1", "callback_restored": "1", "failure": "none"}}
+RUN rally28-lookup-buffer-live08
+{"profile": "rally28-lookup-buffer-live08", "reason": "guest-files", "window": 29.62243348300001, "host_suspend_seconds": -1.5599999869664316e-06, "summary": {"schema": "1", "candidate": "1", "buffered": "1", "mode": "1", "frames": "167", "planned": "900", "mos_units": "1938", "prt_ticks": "29611", "bytes": "185053", "wire_calls": "19034", "uart_chunks": "19038", "send_prt": "4400", "position": "220720", "phase": "3520", "shadow_calls": "0", "shadow_debt": "1938", "max_shadow_debt": "0", "vector_restored": "1", "callback_restored": "1", "failure": "callback timeout"}}
+RUN rally28-coarse-buffer-live08
+{"profile": "rally28-coarse-buffer-live08", "reason": "no-uart-progress", "window": null, "host_suspend_seconds": -2.1700001298086136e-06, "summary": null}
+RUN rally28-dense-live08
+Traceback (most recent call last):
+  File "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/candidates/batch_finish.py", line 22, in <module>
+    with contextlib.redirect_stdout(io.StringIO()):run(profile,360,stall_seconds=60 if mode else None)
+                                                   ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/candidates/run.py", line 32, in run
+    time.sleep(.05)
+    ~~~~~~~~~~^^^^^
+KeyboardInterrupt
+sudo terminated by signal INT.

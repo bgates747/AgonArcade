@@ -1,0 +1,73 @@
+{
+  "reason": "guest-files",
+  "host_seconds": 40.210700839999845,
+  "exit": 0,
+  "kind": "candidate",
+  "identity": {
+    "kind": "candidate",
+    "files": {
+      "flexe-agon-emulator": "4ce4579ced9bff648ab8fd5c4341db26c09f0453b78518020fdb6bd0ef89caeb",
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "79ee82246534588cfdfa50a1961f415d07e9ec0bc6a969e15b80fc14bda5310e",
+      "sdcard/test/arcade/rally28/candidate/candidate.bin": "070276d33330cd7ad6cc4378ecd94083b105078d95edf203f8d1b99bef74e898",
+      "sdcard/test/arcade/rally28/candidate/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "sdcard/test/arcade/rally28/candidate/mode.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "setup_helper_sha256": "23432375e90170f6d855282dc984516ef3b623e842827cccc65feccd81276b02",
+    "stock_release": "https://github.com/AgonPlatform/agon-vdp/releases/tag/v2.16.0",
+    "variant": "coarse-buffer",
+    "mode": 0
+  },
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "summary": {
+    "schema": "1",
+    "candidate": "2",
+    "buffered": "1",
+    "mode": "0",
+    "frames": "900",
+    "planned": "900",
+    "mos_units": "3092",
+    "prt_ticks": "27711",
+    "bytes": "984876",
+    "wire_calls": "102323",
+    "uart_chunks": "0",
+    "send_prt": "0",
+    "position": "1202800",
+    "phase": "1600",
+    "shadow_calls": "0",
+    "shadow_debt": "3092",
+    "max_shadow_debt": "0",
+    "vector_restored": "1",
+    "callback_restored": "1",
+    "failure": "none"
+  },
+  "outputs": {
+    "summary.txt": "b0a17e221d9230b1f7df786136b40e6807f891ffe1d1256d695d53d7f9b3d1f7",
+    "frames.csv": "b83cc82c77d979c324812272862b12267dee79353b883901b704c277f592c8a0",
+    "done.txt": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1"
+  },
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 2342,
+    "cycles": 9608359406,
+    "retired": 11028592156,
+    "uart_rx": 489,
+    "uart_tx": 333,
+    "uart_delivered": 333,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "identities_unchanged": true
+}

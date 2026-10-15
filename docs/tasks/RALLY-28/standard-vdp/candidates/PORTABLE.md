@@ -1,0 +1,11 @@
+# Portable candidate inputs
+
+The [archive](evidence/PORTABLE-V5.zip) preserves the same v5 application/table/mode bytes as the emulator fixtures. It is prepared for later comparative testing; it has not been deployed to physical media or hardware-qualified. [Per-file identities](evidence/PORTABLE-V5.json) describe all eleven input sets. Current emulator transfer failures remain failures; the package is not a corrected transport or a ready human review announcement.
+
+Each directory contains `candidate.bin`, `mode.txt`, and (except dense) `fuji.road`. Five CPU-only sets isolate900frames of construction without application command transmission; five live sets submit the same scene with stock flush/key-zero completion; fine `shadow` adds a separate actual-game physics world against the MOS reference clock. The picture always follows the original3,600scripted ticks. No mode chooses a new physics cadence.
+
+The qualified firmware/MOS pins are official stock VDP2.16.0 and MOS3.0.2, with hashes in the manifest. The native/Golem `vdp_rally.bin` and old benchmark/card directories are preserved. A physical comparison needs its own release/staging decision and Author launch; no flash, card copy or physical invocation is authorized by this artifact's existence.
+
+Run from the selected input directory so the application finds its table and mode. A fresh output directory is required every time. Guest creates `started.txt`, `ended.txt`, `summary.txt`, `frames.csv`, optional `state.csv`, then `done.txt`. Outputs use create-new semantics; do not relaunch a consumed directory. PRT and prior callback/vector restoration are checked in completed-run summaries. Preserve failed/partial returns too.
+
+The final09emulator campaign used CPU boost disabled, the pinned108ec5b0… adapter and interpreter engine. Its profile input identities can be compared directly with this manifest. Host monotonic file-witness timing is only available on the emulator host. Physical runs retain guest MOS/PRT counts and self-created files; their timing and completion qualification must be established separately, using the exact same inputs. Emulator raw UART captures provide stronger stream/reply evidence than ordinary card returns alone. No artificial pacing or renderer catch-up is added to these inputs.

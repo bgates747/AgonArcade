@@ -1,0 +1,58 @@
+{
+  "verified": true,
+  "unchanged_baseline_binary": true,
+  "steps": 8192,
+  "host_window_seconds": 24.4764352659995,
+  "host_steps_per_second": 334.6892597297288,
+  "host_ms_per_step": 2.9878461018065794,
+  "nominal_prt_seconds": 24.469,
+  "host_prt_difference_pct": -0.03037724210529502,
+  "raw_mos_units": 558,
+  "mos_units_per_host_second": 22.797437369285728,
+  "state_fields_checked": 420,
+  "application_wire_bytes_inside_window": 0,
+  "coverage_per_round": {
+    "0": {
+      "motion": 1024,
+      "recovery": 0,
+      "contacts": 0,
+      "road": 1024,
+      "kerb": 0,
+      "grass": 0,
+      "passes": 1
+    },
+    "1": {
+      "motion": 1024,
+      "recovery": 0,
+      "contacts": 0,
+      "road": 232,
+      "kerb": 108,
+      "grass": 684,
+      "passes": 0
+    },
+    "2": {
+      "motion": 1024,
+      "recovery": 0,
+      "contacts": 0,
+      "road": 0,
+      "kerb": 0,
+      "grass": 1024,
+      "passes": 0
+    },
+    "3": {
+      "motion": 874,
+      "recovery": 150,
+      "contacts": 1,
+      "road": 579,
+      "kerb": 77,
+      "grass": 218,
+      "passes": 0
+    }
+  },
+  "timing_limits": {
+    "host_poll_seconds": 0.05,
+    "adapter_trace_nominal_flush_seconds": 0.25,
+    "unsubtracted_instrumentation": true
+  },
+  "qualifies_integrated_120_hz": false
+}

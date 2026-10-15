@@ -1,0 +1,3351 @@
+{
+  "checkpoint": "c8119983d73ee8d86a3d24eaeda086b5f611b7d7",
+  "status": "STD-002-01/02 delivered; five matched CPU cases and actual physics wall calibration pass; five live cases/service diagnostic stall. No completed FPS; review profiles staged/unqualified, all stopped, no physical deployment. New work uncommitted.",
+  "protected_product": {
+    "path": "rally-game/bin/rally.bin",
+    "sha256": "7f1620ed8139ee779e7d50e333ef572aeaf612a154e41ec574e63a57da760293"
+  },
+  "source_files": {
+    ".gitignore": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae",
+    "CODEGEN-DEFECT.md": "47620502c14826987978cad4ab6b842810ba050b15e1e670d7f0d9e2d19a41a9",
+    "HISTORY.md": "d57089836171300bdb9eb4907dc02e35b709bea993660af19956f652affb759b",
+    "PORTABLE.md": "cac1f22071db618d497191d19882139bd0198b8053431f8fbc5b6a266362a8b7",
+    "RANGES-AND-COVERAGE.md": "813b2a6e8731b4694472baf8c81ce17d411cf8acb9ea9c2f2a7d7ce1278601fb",
+    "README.md": "cff3315edd987593010d14dca26b9041fc4e40de057fed98ff9c1d397c218cc2",
+    "RESULTS.md": "f1a47f2af70ac2bc47a3c1dd97a21f2c4b6668ad31ff1da0992593d52b9cd7c8",
+    "batch.py": "e268d2ee2e33868804d5a6fffb42a549ddd415dc3e7ea21e46ed47e188d9ba92",
+    "batch_boostoff.py": "e11bb5dcadbe5a36782646b286977e5331f6afae8b96af3296723eae485b2f89",
+    "batch_final.py": "03b97d795d6423764088748c3ebf084e79ec6b5871febb004173a4f59ba96de5",
+    "batch_finish.py": "36e2ae2ad9d73ad19b3bc1f8a3e19872caaef6a4d8dcbad330c8855495109fec",
+    "batch_qualified.py": "66cdef5f136d633212ba640e03b4be64c55180c934792c77f82c340ffefb79f6",
+    "batch_resume.py": "dea2a6dd514378301fa2733bb43ebffc818f9b2c973f8c3aaacd3e1c1632520c",
+    "batch_wall.py": "7af93b5e9f8a6ce0c6aad90cb2c78a2717b0856c2a9d939170de27debb34ec25",
+    "buffered.hpp": "e5d586e7c57990df55ea03afc59e207f9317ad538f4f49d119ff9b52559a7986",
+    "build.py": "aa5f105f44d55a3028ddf88755cc38b6ff84739306f3d5289fc8690de5b04062",
+    "check_failure.py": "c1e67e037ec7241ebca55a34d7f0249df6978bafcc0426934d774d140b98a0be",
+    "collect.py": "562cd86921c0e2b4d4eae0acc73eb728c4fb9a96219179b93142ea21bbdf292b",
+    "host_checks.cpp": "8b753e340e43fad65ee18fd8840fe0989cb8a380b5330bb846659e3ad853bece",
+    "package.py": "39dcf9185bd6355af0076e04cf3cc6e74c8b0f7fdd9170359289b56d89b07198",
+    "physics_clock.py": "416ab79f60ed80cfc554668a905d694c06814d422c7a2328066105d8d24cfe9c",
+    "profile.py": "ee36887dd414614b6fec9e31fa475a6c8befa38b951417026fb16b4ced4f738e",
+    "projection.hpp": "c0bb2108b48e31fe2f73a27083a340f9ed3fcc2f340798628a8cb5e5a3e9c00c",
+    "qualify_host.py": "b4b4673820eaa803029e1065d1dc4c6970e26a2c6f448fb8e760e7940968a613",
+    "run.py": "28216f9fa38c348a69efa9fb78dbe582c49b3759f7178c3af04b616ba95576af",
+    "shadow_check.py": "3179c0ae9bd62d664e329dc3b28bc5ff3c0f9496d0a5acc527c4eebbfbe58f8f",
+    "shared_scene.hpp": "cfac8ff7ade0d7e6b4c14a353fcdd81cc779b6869c6d17e0f9811b8c1eb0617c",
+    "src/completion.asm": "e98cc5d84fdc4e8ca14178422ebe36bf25889b159efa8bd6b9f570e33bb3ddb5",
+    "src/driver.cpp": "debf45eb7ac64f0614c0800088d7c8f93b447ed2db9d0d16a654d257b359e196",
+    "src/physics.cpp": "f83414042163fddacc22025ea55aa3b1297f7b6ba6965bd9469b09b87548627a",
+    "src/sink.cpp": "756174204bc2b70f80fda2ee1a968a580420ab0c5258cee1cedd81dba5883ec0",
+    "src/uart.asm": "ef7af9e054cd6a44e4531b85c58f205a6ded0e15084e7e2ca7d64588408add0a",
+    "stall_watch.py": "deddb3c4876b0f770f7c45da9373fe52c07c16878f3d1933a84759846275db4c",
+    "verify.py": "1b01a22cbf74d5cf17cc119e4ebf53f00fca9a93e102ebb6cddcc9fd77e68c06",
+    "verify_physics_clock.py": "6df3ad59e098202739a2566450284ee6951b6892d87377f9839ee35b44cc328c"
+  },
+  "artifacts": {
+    "BOOSTOFF-CPU-COMPARISON.json": {
+      "sha256": "183b8dd96142b3c3bed95c3a7412c2d6a5c78fada37053ea4f51c13b02b6cacc",
+      "bytes": 6169
+    },
+    "BOOSTOFF-CPU-PARTIAL.json": {
+      "sha256": "cec64cf308b10eb686f21a175dcfaadcf0fa1a34b009f4ca5ca3d454d6ece573",
+      "bytes": 4729
+    },
+    "BOOSTOFF09-STDOUT.txt": {
+      "sha256": "f97d5842a2c14afa711a9c218f81bc8e116ae0f9afb46a9aa155f2b1e8fe8c3c",
+      "bytes": 3986
+    },
+    "BUILD-FINAL.json": {
+      "sha256": "5d1007915750cb63fb0f073737e55f65002bdf62574cef5f9ac870a459bae694",
+      "bytes": 10750
+    },
+    "BUILD-V1.json": {
+      "sha256": "0cc96d96d643e0421b46974c52900980cbb5e42c806a8b4e2c54a16ff83cc01b",
+      "bytes": 10750
+    },
+    "BUILD-V3.json": {
+      "sha256": "7e7e15ac3cb0a5ddcfdabf22995c212e58f82052349ac49278367936532e47a5",
+      "bytes": 10750
+    },
+    "BUILD-V4.json": {
+      "sha256": "711201e60111380be9b46707fc52952eb051010d6b33548bd42fd1426baa5a97",
+      "bytes": 10750
+    },
+    "BUILD-V5.json": {
+      "sha256": "7b31e7d1558b02d57327963472507120f11005b85aafb0926f4a9ebb20d88294",
+      "bytes": 10750
+    },
+    "CODEGEN-DEFECT.json": {
+      "sha256": "a7815b8777fe5b270a942e006b6b3f2cb20ef447d0a3276f674435c4bf159ff3",
+      "bytes": 553
+    },
+    "COMPLETE-WIRE-ACCOUNTING.json": {
+      "sha256": "adb20a6e1b81b48c791966164afd86e12d71d94f99b57f8ba05042f257d7d901",
+      "bytes": 549
+    },
+    "CPU-V3-COMPARISON.json": {
+      "sha256": "afba0f0231247ec40509bc556286d7733f64e8cb12116d913e238565a6392584",
+      "bytes": 5330
+    },
+    "EXPLORATORY-V1.json": {
+      "sha256": "34c6315e301ad5b371ae68fcc1a6451d1889668c01eb112392ad096c4f086d21",
+      "bytes": 4078
+    },
+    "FINAL-COMPARISON.json": {
+      "sha256": "98364cee482a955fbfc691dca814628d6d5ebd8623dc51ad09360d8f5a384213",
+      "bytes": 14509
+    },
+    "MANIFEST-INTERIM.json": {
+      "sha256": "51dafe15bd2dc5c8932f8caeb15751a5ff94e0d7139d9d59602edd93c117a404",
+      "bytes": 11925
+    },
+    "PACKED-TRACES.json": {
+      "sha256": "2f3d1be2b129542b11231c8d8a4d738da9a3fb1806d4434c425e027ee3e694ea",
+      "bytes": 56517
+    },
+    "PAUSE.json": {
+      "sha256": "41ef4a116bd62330ca731c881878b38c8888971282c501464b27e5f29cf3dbfa",
+      "bytes": 312
+    },
+    "PAUSED08-STDOUT.txt": {
+      "sha256": "ac2af67f80bc1ec1bb32596d934291ba96418a14ee650679fb73fc2e2aef078c",
+      "bytes": 3720
+    },
+    "PORTABLE-V5.json": {
+      "sha256": "0139868e86322d179db75b6838f1c8c1cdc1db545a5eb4a241ea5fc692a5e60a",
+      "bytes": 5045
+    },
+    "PORTABLE-V5.zip": {
+      "sha256": "4eb3867259b599aae3a793aa9382ee4eade345fbd0797a1469e32eea25ec3371",
+      "bytes": 1112259
+    },
+    "QUALIFIED07-PARTIAL.txt": {
+      "sha256": "a6a073e37fb2ac46e837d363985baca1e1094900289292445376662041237e89",
+      "bytes": 675
+    },
+    "RESUME.json": {
+      "sha256": "4c96ff26bd3809dec708659de8f18fcee73cd79f50175dfe06cf0d951494e5dd",
+      "bytes": 313
+    },
+    "RESUME06-STDOUT.txt": {
+      "sha256": "12cf19aca3b323feac74ecb89e06b1bea22d87523c6ecaef8f5e934ec3763a9f",
+      "bytes": 3469
+    },
+    "REVIEW-STAGING.json": {
+      "sha256": "8a5cc263d32cad09d66b80e6b3697e81207279698e6027c3b4fcd0768c71209f",
+      "bytes": 3139
+    },
+    "STALL-WATCH-PARTIAL.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "STOPPED.json": {
+      "sha256": "c34c99d6edf3fe49cc05ce8b88555ec552565082da240e1f44fd5b01183da26f",
+      "bytes": 275
+    },
+    "V3-QUALIFICATION.json": {
+      "sha256": "d77e769ce0e897906843523facf1ab1bce2235aa7b52ad4ed3331c4ddf631fbe",
+      "bytes": 28809
+    },
+    "VERSIONS.json": {
+      "sha256": "e9687379eee97937a772133dfd71d774492041bbcf10b78d3d8e5652d547ef6e",
+      "bytes": 4549
+    },
+    "WALL-BATCH-PARTIAL.txt": {
+      "sha256": "d4855f62eb092bc04281e55232199f746cf52eb93b211f4c679ff79dc7c02630",
+      "bytes": 579
+    },
+    "binaries/coarse/candidate.bin": {
+      "sha256": "739216d7f14ee8dd4a7de87a1748467faa949000b81b3a551b6b3dc783c605d5",
+      "bytes": 204641
+    },
+    "binaries/coarse-buffer/candidate.bin": {
+      "sha256": "d205c5da0df368d146b0253464b075b43c856b89352adea8ba4319f6cf024c52",
+      "bytes": 206541
+    },
+    "binaries/dense/candidate.bin": {
+      "sha256": "6b2d331605cf3067bff7fa933d87004ea5f58d5b824ca1866a7e81f855ff485b",
+      "bytes": 192916
+    },
+    "binaries/lookup/candidate.bin": {
+      "sha256": "dac9a62b50e879aa689401457d2022905604178aca9dc1bb726b21da63473458",
+      "bytes": 204609
+    },
+    "binaries/lookup-buffer/candidate.bin": {
+      "sha256": "4c208fc3aeeba11a725e9a1c96e199bc8fb24c779843ece73169332c49654656",
+      "bytes": 206513
+    },
+    "binaries-v4/coarse/candidate.bin": {
+      "sha256": "a306ba092a75d981812ed0f03c4d4648ef3ce8f55f275d9b59fbd5e57238563f",
+      "bytes": 205184
+    },
+    "binaries-v4/coarse-buffer/candidate.bin": {
+      "sha256": "2c19b0cb7fc6bcce9aebe567797fbae0f66d1181c211cc9e8eae26ee13931fcf",
+      "bytes": 207084
+    },
+    "binaries-v4/dense/candidate.bin": {
+      "sha256": "a26988718250af8c639042842cd35466a6e300ffaa1ccaaed3b5bfdfdadc2ce8",
+      "bytes": 193417
+    },
+    "binaries-v4/lookup/candidate.bin": {
+      "sha256": "c17b11eb388b4790bd1cf9de5b8568460f529a61bcc9a078fdee627806a32157",
+      "bytes": 205152
+    },
+    "binaries-v4/lookup-buffer/candidate.bin": {
+      "sha256": "36d441e906fac1ff13e9b41c1083f8627582f4d4c99c9d66ab6cb949ed46a516",
+      "bytes": 207056
+    },
+    "binaries-v5/coarse/candidate.bin": {
+      "sha256": "8b5f72fd3ee51b66aa641a0b6006fe7c87af7e9047d8bdf70f05327a6b9a34db",
+      "bytes": 205187
+    },
+    "binaries-v5/coarse-buffer/candidate.bin": {
+      "sha256": "c1db40e646ae650c16a7af70838897c7d26c0b3ae62b917487f5b8a9b4eead0d",
+      "bytes": 207087
+    },
+    "binaries-v5/dense/candidate.bin": {
+      "sha256": "a26988718250af8c639042842cd35466a6e300ffaa1ccaaed3b5bfdfdadc2ce8",
+      "bytes": 193417
+    },
+    "binaries-v5/lookup/candidate.bin": {
+      "sha256": "865bc385c1defa77bdb8f262d68fabce20afec58cd1de2f08883be647dfa43de",
+      "bytes": 205155
+    },
+    "binaries-v5/lookup-buffer/candidate.bin": {
+      "sha256": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+      "bytes": 207059
+    },
+    "campaign09-inhibitors.txt": {
+      "sha256": "26bd75c6f1d91369cddd38bcffa638fe276bd44843117f0c9c621979b2ebc855",
+      "bytes": 1668
+    },
+    "coarse/cpu-v3-jit/candidate.bin": {
+      "sha256": "8abee7cd173aafc5b8955bcc77a53a40e728e0dfab4ff92ba1d85402f32c95f2",
+      "bytes": 204967
+    },
+    "coarse/cpu-v3-jit/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "coarse/cpu-v3-jit/frames.csv": {
+      "sha256": "d79147e0e7fb6e29ff93fe7908a10372d7f80ac346cbadfafa352c7c19fb144f",
+      "bytes": 38628
+    },
+    "coarse/cpu-v3-jit/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse/cpu-v3-jit/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "coarse/cpu-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "coarse/cpu-v3-jit/runtime/final.png": {
+      "sha256": "6be247c165a7aa4d1efe87bb117feab6bd1594b5fc9e9d8c5e4d80900c3d5539",
+      "bytes": 2105
+    },
+    "coarse/cpu-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "coarse/cpu-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse/cpu-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "coarse/cpu-v3-jit/runtime/profile-identity.json": {
+      "sha256": "f344379359058d75416b5bc6280a7f132e3105830ef8da1febc5c7b33dd1d113",
+      "bytes": 1280
+    },
+    "coarse/cpu-v3-jit/runtime/result.json": {
+      "sha256": "1ced98ae740a3e181ff3687d387413e0e082c6a77f24dbcfb91886e5f16a1b3a",
+      "bytes": 2638
+    },
+    "coarse/cpu-v3-jit/runtime/stats.json": {
+      "sha256": "ae16bab09114da50a9ceaded06ba2d8fa35272e8fccda3f066d1312b0dca2faf",
+      "bytes": 225
+    },
+    "coarse/cpu-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse/cpu-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse/cpu-v3-jit/summary.txt": {
+      "sha256": "ad644b0e5941a105999c57390ed746e12576276e20a549fba30804d05624e4e9",
+      "bytes": 298
+    },
+    "coarse/cpu-v3-jit/verified.json": {
+      "sha256": "0b7f18d6ce2a3762f4082dca2f4d4feb9e8ac005893febbf3978a47c065e540a",
+      "bytes": 1003
+    },
+    "coarse/cpu-v4-interp/REJECTED.json": {
+      "sha256": "3be0725bc38038c4b387c794a8f8b4111ea12b58a159af86dca9d3b86ad1d4f5",
+      "bytes": 175
+    },
+    "coarse/cpu-v4-interp/candidate.bin": {
+      "sha256": "a306ba092a75d981812ed0f03c4d4648ef3ce8f55f275d9b59fbd5e57238563f",
+      "bytes": 205184
+    },
+    "coarse/cpu-v4-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "coarse/cpu-v4-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "coarse/cpu-v4-interp/frames.csv": {
+      "sha256": "cc7e0cc68883abc70ad5ead93a42341056d885652047a1befb3584c8e5d51540",
+      "bytes": 37973
+    },
+    "coarse/cpu-v4-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse/cpu-v4-interp/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "coarse/cpu-v4-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "coarse/cpu-v4-interp/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "coarse/cpu-v4-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse/cpu-v4-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "coarse/cpu-v4-interp/runtime/profile-identity.json": {
+      "sha256": "c816efc494fe9daf0431715ea3e697407be8d5cbc802828f73ed093decac1c8d",
+      "bytes": 1373
+    },
+    "coarse/cpu-v4-interp/runtime/result.json": {
+      "sha256": "dbe4db7f933cee1b53c93eb0f15af6c8dc93e7f80bd08cfae2e75287ac308a43",
+      "bytes": 3099
+    },
+    "coarse/cpu-v4-interp/runtime/stats.json": {
+      "sha256": "12e779724e528e904fedfdbe33c5df0440d9897d5faa7cfaf686b3dbe8b00798",
+      "bytes": 226
+    },
+    "coarse/cpu-v4-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse/cpu-v4-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse/cpu-v4-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse/cpu-v4-interp/summary.txt": {
+      "sha256": "af345eb965a8863fb3c25267f64c281f591a47fe3df73497395deb9aac9e0bd9",
+      "bytes": 298
+    },
+    "coarse/cpu-v5-boostoff/candidate.bin": {
+      "sha256": "8b5f72fd3ee51b66aa641a0b6006fe7c87af7e9047d8bdf70f05327a6b9a34db",
+      "bytes": 205187
+    },
+    "coarse/cpu-v5-boostoff/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "coarse/cpu-v5-boostoff/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "coarse/cpu-v5-boostoff/frames.csv": {
+      "sha256": "c680f536c76e76bc95c4267463425a57c53ddaaf596e9797285ee1847d7f835a",
+      "bytes": 36476
+    },
+    "coarse/cpu-v5-boostoff/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse/cpu-v5-boostoff/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "coarse/cpu-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "coarse/cpu-v5-boostoff/runtime/final.png": {
+      "sha256": "6be247c165a7aa4d1efe87bb117feab6bd1594b5fc9e9d8c5e4d80900c3d5539",
+      "bytes": 2105
+    },
+    "coarse/cpu-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "coarse/cpu-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse/cpu-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "coarse/cpu-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "5c55505e28bbb833ae1baf184c8df5c7e8f8175251882e061e54e44cb651ece3",
+      "bytes": 1373
+    },
+    "coarse/cpu-v5-boostoff/runtime/result.json": {
+      "sha256": "2fac92144f9fabbdda4bada5cc2ab97902636e7c5140c3bc4ff52faa6ab463fa",
+      "bytes": 3153
+    },
+    "coarse/cpu-v5-boostoff/runtime/stats.json": {
+      "sha256": "9ba69b3f62f75c175c2221dc1e7a98f01902c2956563d6fe68536850a5b3e608",
+      "bytes": 225
+    },
+    "coarse/cpu-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse/cpu-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse/cpu-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse/cpu-v5-boostoff/summary.txt": {
+      "sha256": "3caa34db25159a9d8ad8d82fa5424c4f4b60ba1adc6d72f3aaebf3b89f8e700a",
+      "bytes": 296
+    },
+    "coarse/cpu-v5-boostoff/verified.json": {
+      "sha256": "cc196eb63f40e3ef82a88f834a74ef48af8ac64081e71b6a70b3d12a65fd139b",
+      "bytes": 1098
+    },
+    "coarse/cpu-v5-interp/candidate.bin": {
+      "sha256": "8b5f72fd3ee51b66aa641a0b6006fe7c87af7e9047d8bdf70f05327a6b9a34db",
+      "bytes": 205187
+    },
+    "coarse/cpu-v5-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "coarse/cpu-v5-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "coarse/cpu-v5-interp/frames.csv": {
+      "sha256": "47bddd5983e6f2dd5ac9c870e0e40d3904f948bb320b7e2762bea267ffc36160",
+      "bytes": 37941
+    },
+    "coarse/cpu-v5-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse/cpu-v5-interp/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "coarse/cpu-v5-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "coarse/cpu-v5-interp/runtime/final.png": {
+      "sha256": "6be247c165a7aa4d1efe87bb117feab6bd1594b5fc9e9d8c5e4d80900c3d5539",
+      "bytes": 2105
+    },
+    "coarse/cpu-v5-interp/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "coarse/cpu-v5-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse/cpu-v5-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "coarse/cpu-v5-interp/runtime/profile-identity.json": {
+      "sha256": "5c55505e28bbb833ae1baf184c8df5c7e8f8175251882e061e54e44cb651ece3",
+      "bytes": 1373
+    },
+    "coarse/cpu-v5-interp/runtime/result.json": {
+      "sha256": "459f1941a99e44b6fcca7ad15e33c861d4ae5a953ac9356dcd5e12a0493a1a0a",
+      "bytes": 3098
+    },
+    "coarse/cpu-v5-interp/runtime/stats.json": {
+      "sha256": "4976685f8e28d80e74fd6298382ce0a6933b888de8c16da02b50b218c37ac783",
+      "bytes": 226
+    },
+    "coarse/cpu-v5-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse/cpu-v5-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse/cpu-v5-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse/cpu-v5-interp/summary.txt": {
+      "sha256": "6d0d69313dd0bee507116f5a3a654fbfee42ce4e232d32f6efd5aa473d0e405e",
+      "bytes": 298
+    },
+    "coarse/cpu-v5-interp/verified.json": {
+      "sha256": "397612f42bd25389999407f2b8aebdfa75b24404d3d3d047543fac58b2d3f2c9",
+      "bytes": 1113
+    },
+    "coarse/failed-v3-jit/candidate.bin": {
+      "sha256": "8abee7cd173aafc5b8955bcc77a53a40e728e0dfab4ff92ba1d85402f32c95f2",
+      "bytes": 204967
+    },
+    "coarse/failed-v3-jit/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse/failed-v3-jit/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "coarse/failed-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "3c2d981ca869a0cf92b5a76d20608558c34811b3e4badeb62cfb62186eab19cf",
+      "bytes": 162
+    },
+    "coarse/failed-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "0cf04005498dac31c774ef6753f78b20273ce3f4aea517ada9c6567e8aeb3259",
+      "bytes": 274
+    },
+    "coarse/failed-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse/failed-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "eb5502c653609455d3ba794d695ae771a08ebc762e21d98273a35ff5fd93d27d",
+      "bytes": 2266
+    },
+    "coarse/failed-v3-jit/runtime/profile-identity.json": {
+      "sha256": "fd07a209d9196f3a7574702693e286bb2277cd913a5b2dbbe1d2ecf6240b579b",
+      "bytes": 1280
+    },
+    "coarse/failed-v3-jit/runtime/result.json": {
+      "sha256": "c0cf652754ee61b3e77ebdeae2bdc10c755d4c2c466ecbdd65816eb00170b527",
+      "bytes": 1889
+    },
+    "coarse/failed-v3-jit/runtime/stats.json": {
+      "sha256": "9e896026550aaa2582f337a728c3029246e8845325484bb3a641b4c56382e9fe",
+      "bytes": 230
+    },
+    "coarse/failed-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "58a728035c93844515660297cbefe13535c822d707bdcd049202dab05bb848ec",
+      "bytes": 64
+    },
+    "coarse/failed-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "58a728035c93844515660297cbefe13535c822d707bdcd049202dab05bb848ec",
+      "bytes": 64
+    },
+    "coarse/failed-v5-boostoff/FAILURE-CHECK.json": {
+      "sha256": "c86190d4abb620b5c3400c696a351dd2cf98589315ff5c8fc4cd7e67ba40ca12",
+      "bytes": 946
+    },
+    "coarse/failed-v5-boostoff/candidate.bin": {
+      "sha256": "8b5f72fd3ee51b66aa641a0b6006fe7c87af7e9047d8bdf70f05327a6b9a34db",
+      "bytes": 205187
+    },
+    "coarse/failed-v5-boostoff/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse/failed-v5-boostoff/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "coarse/failed-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "45cbc71bffa6e3e7ad68b8030ac50c933f37a0afc791d78632a7f58eb70a2711",
+      "bytes": 1747
+    },
+    "coarse/failed-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "30932dfd86f51aa40a29fa26287a2a7c9b446dd426edaea6bc3f2480913f9710",
+      "bytes": 3230
+    },
+    "coarse/failed-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse/failed-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "719373985a9bcb8b59e104c380e73ba59debdac0d5ffb2e3ebf121aa2814a3da",
+      "bytes": 219968
+    },
+    "coarse/failed-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "ad50a40e5a979d6805b4c59aaf579dc3d67fd844d45e5aade56bc876ff1bc226",
+      "bytes": 1373
+    },
+    "coarse/failed-v5-boostoff/runtime/result.json": {
+      "sha256": "42b5c8510dead4471384f57c43ad9a9c1fddacc967cbef5961070b83e6c3eccb",
+      "bytes": 2317
+    },
+    "coarse/failed-v5-boostoff/runtime/stats.json": {
+      "sha256": "b1acdee4585742f268e89418af49391f973f9c5cd9db351639daa25e8755e887",
+      "bytes": 235
+    },
+    "coarse/failed-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "09d14382759de556e0e94ebfb2a1d2bf802b53b8566d9c094dac87f0b72faba8",
+      "bytes": 391
+    },
+    "coarse/failed-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "09d14382759de556e0e94ebfb2a1d2bf802b53b8566d9c094dac87f0b72faba8",
+      "bytes": 391
+    },
+    "coarse/failed-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse-buffer/cpu-v3-jit/candidate.bin": {
+      "sha256": "070276d33330cd7ad6cc4378ecd94083b105078d95edf203f8d1b99bef74e898",
+      "bytes": 206867
+    },
+    "coarse-buffer/cpu-v3-jit/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "coarse-buffer/cpu-v3-jit/frames.csv": {
+      "sha256": "b83cc82c77d979c324812272862b12267dee79353b883901b704c277f592c8a0",
+      "bytes": 38657
+    },
+    "coarse-buffer/cpu-v3-jit/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse-buffer/cpu-v3-jit/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/final.png": {
+      "sha256": "6be247c165a7aa4d1efe87bb117feab6bd1594b5fc9e9d8c5e4d80900c3d5539",
+      "bytes": 2105
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/profile-identity.json": {
+      "sha256": "6aba17cd70bccf5071e48af1f30c980c8f70f120d864e4376cc5eb883464b16c",
+      "bytes": 1287
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/result.json": {
+      "sha256": "e578b8261a298fd823cde41b25c6f2c6848871e7cf2d1817ad3b7db6b70eaa52",
+      "bytes": 2644
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/stats.json": {
+      "sha256": "63518166f3a44036dc614c6e346a17f706f7ade17ecbca4278342c34b04f07fa",
+      "bytes": 224
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse-buffer/cpu-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse-buffer/cpu-v3-jit/summary.txt": {
+      "sha256": "b0a17e221d9230b1f7df786136b40e6807f891ffe1d1256d695d53d7f9b3d1f7",
+      "bytes": 298
+    },
+    "coarse-buffer/cpu-v3-jit/verified.json": {
+      "sha256": "3fcef175032a36eb73aca708baa16428cad8939a8f5cecada1be95f9646e3540",
+      "bytes": 1008
+    },
+    "coarse-buffer/cpu-v4-interp/REJECTED.json": {
+      "sha256": "71267a56490ac78ebe80b0f31a06ae96e37937963918e61dd8ba2711da72c15d",
+      "bytes": 174
+    },
+    "coarse-buffer/cpu-v4-interp/candidate.bin": {
+      "sha256": "2c19b0cb7fc6bcce9aebe567797fbae0f66d1181c211cc9e8eae26ee13931fcf",
+      "bytes": 207084
+    },
+    "coarse-buffer/cpu-v4-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "coarse-buffer/cpu-v4-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "coarse-buffer/cpu-v4-interp/frames.csv": {
+      "sha256": "f474d2bc2cbb6f2ea4c3e5d5d4f847dc4331435d449720c35194c76d49b4c267",
+      "bytes": 37844
+    },
+    "coarse-buffer/cpu-v4-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse-buffer/cpu-v4-interp/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "coarse-buffer/cpu-v4-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "coarse-buffer/cpu-v4-interp/runtime/final.ppm.gz": {
+      "sha256": "e5ed77ab3b532d1f783283a6cabd19cfea5ca1f080ee8f37f1b65feb270d8fc1",
+      "bytes": 1828
+    },
+    "coarse-buffer/cpu-v4-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/cpu-v4-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "coarse-buffer/cpu-v4-interp/runtime/profile-identity.json": {
+      "sha256": "23f7b0dfe90faf7ef691acb445291b9e72af623bc16dbce6295a56a2847041c3",
+      "bytes": 1380
+    },
+    "coarse-buffer/cpu-v4-interp/runtime/result.json": {
+      "sha256": "e56fc113f8d62890ac144f2b2c8e46ca2d4372a0c53d23d883a550bce6c4e524",
+      "bytes": 3106
+    },
+    "coarse-buffer/cpu-v4-interp/runtime/stats.json": {
+      "sha256": "1b8d372e9865673e571896dfba9a39612f459abf5f8391d4687eb19be54a63b0",
+      "bytes": 226
+    },
+    "coarse-buffer/cpu-v4-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse-buffer/cpu-v4-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse-buffer/cpu-v4-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse-buffer/cpu-v4-interp/summary.txt": {
+      "sha256": "a012907eff0930ee5f2fc73ac2c5198c5d864723e0b16b231f9645779fddad61",
+      "bytes": 298
+    },
+    "coarse-buffer/cpu-v5-boostoff/candidate.bin": {
+      "sha256": "c1db40e646ae650c16a7af70838897c7d26c0b3ae62b917487f5b8a9b4eead0d",
+      "bytes": 207087
+    },
+    "coarse-buffer/cpu-v5-boostoff/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "coarse-buffer/cpu-v5-boostoff/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "coarse-buffer/cpu-v5-boostoff/frames.csv": {
+      "sha256": "bc927c9b34c7c114918a8bd0f425522c943d184a46d5b61e1cf08bb4abb90a4c",
+      "bytes": 36149
+    },
+    "coarse-buffer/cpu-v5-boostoff/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse-buffer/cpu-v5-boostoff/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/final.png": {
+      "sha256": "d3ea788af844e40b982305dfa14a33f2fbe721ba35b862eed4b3e41b9a3dad21",
+      "bytes": 2091
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "e5ed77ab3b532d1f783283a6cabd19cfea5ca1f080ee8f37f1b65feb270d8fc1",
+      "bytes": 1828
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "dbbed1aac8c30b2b28102229bb4ede74caed29c0246614023d67f997974768dd",
+      "bytes": 1380
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/result.json": {
+      "sha256": "37e8c73549e68fa60ba8baa4191b4ddbe654c087d4ff7303df7f8be12996a7c5",
+      "bytes": 3160
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/stats.json": {
+      "sha256": "3060cb19f8358bf89b647d35c26444040783bc600dd5df919bcd4a5d38ec9b8c",
+      "bytes": 225
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse-buffer/cpu-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse-buffer/cpu-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse-buffer/cpu-v5-boostoff/summary.txt": {
+      "sha256": "36ca1ae85ecb635904068266c55b40ad76ffdcd12e8af042e4e53d9f41ce0413",
+      "bytes": 296
+    },
+    "coarse-buffer/cpu-v5-boostoff/verified.json": {
+      "sha256": "b1dfd42c7e44266e525af1ea8b971854d1d263358b845ecf5e7dc3da17b84687",
+      "bytes": 1108
+    },
+    "coarse-buffer/cpu-v5-interp/candidate.bin": {
+      "sha256": "c1db40e646ae650c16a7af70838897c7d26c0b3ae62b917487f5b8a9b4eead0d",
+      "bytes": 207087
+    },
+    "coarse-buffer/cpu-v5-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "coarse-buffer/cpu-v5-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "coarse-buffer/cpu-v5-interp/frames.csv": {
+      "sha256": "17a3f2da36d9f3909fb64e11712248f3bb15eaf69b833d933d9c6cdc9ecb1731",
+      "bytes": 37893
+    },
+    "coarse-buffer/cpu-v5-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse-buffer/cpu-v5-interp/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/final.png": {
+      "sha256": "6be247c165a7aa4d1efe87bb117feab6bd1594b5fc9e9d8c5e4d80900c3d5539",
+      "bytes": 2105
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/profile-identity.json": {
+      "sha256": "dbbed1aac8c30b2b28102229bb4ede74caed29c0246614023d67f997974768dd",
+      "bytes": 1380
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/result.json": {
+      "sha256": "3ba6e1dab3b3aeac2e35dd918ae1f9a823978f336e9f5fe9fe2b22b56adcf2e2",
+      "bytes": 3099
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/stats.json": {
+      "sha256": "1d2c1b59fb5d6813641dbb6fb932e095a08a91b1a5d2b663abdc7b4899e9f2f4",
+      "bytes": 226
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse-buffer/cpu-v5-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "coarse-buffer/cpu-v5-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse-buffer/cpu-v5-interp/summary.txt": {
+      "sha256": "a4be03b49f6808c122b463df01b1713ca832e367031b51517d31b4e3341218b0",
+      "bytes": 298
+    },
+    "coarse-buffer/cpu-v5-interp/verified.json": {
+      "sha256": "53d15ac715353dbb97e41563958b4103162c077838ba174e9c26d92277e2d001",
+      "bytes": 1112
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/candidate.bin": {
+      "sha256": "070276d33330cd7ad6cc4378ecd94083b105078d95edf203f8d1b99bef74e898",
+      "bytes": 206867
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/mode.txt": {
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "66e21098b70b84a027e761fc323f8d9f92c8d2512aea35b3d94c73405db82cf3",
+      "bytes": 2414
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/runtime/final.ppm.gz": {
+      "sha256": "ef43a2efdd4ae31b9f9c79d92e2837cce529af341c8e41fd3211bea1298fb397",
+      "bytes": 3227
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "ebe93c02c709bb6607073eab96f27e9a184d7f50f70ad88701774ca4a3bb6eb1",
+      "bytes": 54067
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/runtime/profile-identity.json": {
+      "sha256": "f6144fba9483f5e2231a53e4133e655b069a5810c91f41c6a2a0d0252aa73f52",
+      "bytes": 1358
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/runtime/result.json": {
+      "sha256": "e95ee0d3dffd79a6ee58675af1a434e672809974d8392ca4895f692999f20451",
+      "bytes": 1979
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/runtime/stats.json": {
+      "sha256": "a29509217822355b95d72a2bd683b1b7333140d348c4eefbc19b95c4ee8fd54b",
+      "bytes": 232
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "d4fe8ceff070d13efa6bed8d7ed91afef7d38063af996cabd92873f3daedd177",
+      "bytes": 275
+    },
+    "coarse-buffer/failed-shadow-v3-eof-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "d4fe8ceff070d13efa6bed8d7ed91afef7d38063af996cabd92873f3daedd177",
+      "bytes": 275
+    },
+    "coarse-buffer/failed-v3-jit/candidate.bin": {
+      "sha256": "070276d33330cd7ad6cc4378ecd94083b105078d95edf203f8d1b99bef74e898",
+      "bytes": 206867
+    },
+    "coarse-buffer/failed-v3-jit/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse-buffer/failed-v3-jit/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "coarse-buffer/failed-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "15ddc87b1ff8b89089609fcd54d41d67774b837c55ed6ff24ea3cfe17a7e4fd7",
+      "bytes": 1111
+    },
+    "coarse-buffer/failed-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "4242a9bb90b0d64a12418d7a8547d2af091f398536b15acdc85ca671d31ac9c5",
+      "bytes": 3194
+    },
+    "coarse-buffer/failed-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/failed-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "f5d7402715bd2e3cd5e285f6833effc08354c00fd3d8e219744755c64ce108c7",
+      "bytes": 21079
+    },
+    "coarse-buffer/failed-v3-jit/runtime/profile-identity.json": {
+      "sha256": "10f7a83726c0aff23c8bcb1ae7219099646ed78bc32bd62046e52f36be1dbd4a",
+      "bytes": 1287
+    },
+    "coarse-buffer/failed-v3-jit/runtime/result.json": {
+      "sha256": "4c3097bdf4a8189b842bc717200ad15517b7a39b5e5eca08ce068f46702c8f2f",
+      "bytes": 1903
+    },
+    "coarse-buffer/failed-v3-jit/runtime/stats.json": {
+      "sha256": "fa149f19afde1471c1eff0f58b4a1201ecb641f9d74c9aee97de3abec7ede07e",
+      "bytes": 232
+    },
+    "coarse-buffer/failed-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "7e29a39d29bcc3687404106127de78d9abeffa491eae56224833a70173606793",
+      "bytes": 178
+    },
+    "coarse-buffer/failed-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "7e29a39d29bcc3687404106127de78d9abeffa491eae56224833a70173606793",
+      "bytes": 178
+    },
+    "coarse-buffer/failed-v4-interp/candidate.bin": {
+      "sha256": "2c19b0cb7fc6bcce9aebe567797fbae0f66d1181c211cc9e8eae26ee13931fcf",
+      "bytes": 207084
+    },
+    "coarse-buffer/failed-v4-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse-buffer/failed-v4-interp/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "coarse-buffer/failed-v4-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "cdd5b4f68c6bd342a4a1995cf3cde35b922e82fb8e7228982ae1496edfbb269f",
+      "bytes": 1235
+    },
+    "coarse-buffer/failed-v4-interp/runtime/final.ppm.gz": {
+      "sha256": "3403b5cbd0722c3d162f273d4ce28187e7dfbba95f33a56318ed573b6dc127fa",
+      "bytes": 3098
+    },
+    "coarse-buffer/failed-v4-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/failed-v4-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "ffc9d82172ba28da8eaa4b7540caa040ae20329e3901b2289dd98d3583eb0a7a",
+      "bytes": 23010
+    },
+    "coarse-buffer/failed-v4-interp/runtime/profile-identity.json": {
+      "sha256": "9854fc0f22e182ac663036558357f9580843f7c69449e728253a893d97e3a573",
+      "bytes": 1380
+    },
+    "coarse-buffer/failed-v4-interp/runtime/result.json": {
+      "sha256": "8c8df36ea192628a8bb1ca172d0aa09f5577572dcae39a4e7add3d388506afe2",
+      "bytes": 2161
+    },
+    "coarse-buffer/failed-v4-interp/runtime/stats.json": {
+      "sha256": "1df52d446e47116667b973b93b84b801ba13f13b42577242a5f2c43147543f99",
+      "bytes": 235
+    },
+    "coarse-buffer/failed-v4-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "77f65aefe296d9913700c3ce9b2042bbee7eafcc294f4eecc505ec903935fff7",
+      "bytes": 186
+    },
+    "coarse-buffer/failed-v4-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "77f65aefe296d9913700c3ce9b2042bbee7eafcc294f4eecc505ec903935fff7",
+      "bytes": 186
+    },
+    "coarse-buffer/failed-v4-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse-buffer/failed-v5-boostoff/FAILURE-CHECK.json": {
+      "sha256": "087f0276aa46e1d57661aa0aecca8e01ed2ed8ae52a90ffb97a421741e717956",
+      "bytes": 943
+    },
+    "coarse-buffer/failed-v5-boostoff/candidate.bin": {
+      "sha256": "c1db40e646ae650c16a7af70838897c7d26c0b3ae62b917487f5b8a9b4eead0d",
+      "bytes": 207087
+    },
+    "coarse-buffer/failed-v5-boostoff/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse-buffer/failed-v5-boostoff/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "coarse-buffer/failed-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "e458e43ed017112f7ed0dc7b6466768217ff37536b14c5aa1b7f4fd245a98b92",
+      "bytes": 480
+    },
+    "coarse-buffer/failed-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "5baf570a0808f9f5287f2075dfdc35bd25c906ca97807087d812e9a39ea9d199",
+      "bytes": 3192
+    },
+    "coarse-buffer/failed-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/failed-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "a25b72ada9317df0fa7570a22cab11237111ae315385109ebadeaf3cc22db119",
+      "bytes": 11785
+    },
+    "coarse-buffer/failed-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "351d10cf6851d709599a3ead9832cf66faa7b2fe397d43e04799cdc52b1eed80",
+      "bytes": 1380
+    },
+    "coarse-buffer/failed-v5-boostoff/runtime/result.json": {
+      "sha256": "bb9dcfd041b419335740a353e9eaf13a545c04666c20a1d26820feeabfd75f78",
+      "bytes": 2319
+    },
+    "coarse-buffer/failed-v5-boostoff/runtime/stats.json": {
+      "sha256": "eb164cee1aa92a039f007947046aa4856a3c1a8e8b31b447d7a0222aa9306980",
+      "bytes": 231
+    },
+    "coarse-buffer/failed-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "58308feeedbf80be859490ac149cc3d215291cfb4ca0f9abc24130e11a31fa3a",
+      "bytes": 107
+    },
+    "coarse-buffer/failed-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "58308feeedbf80be859490ac149cc3d215291cfb4ca0f9abc24130e11a31fa3a",
+      "bytes": 107
+    },
+    "coarse-buffer/failed-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse-buffer/failed-v5-interp/candidate.bin": {
+      "sha256": "c1db40e646ae650c16a7af70838897c7d26c0b3ae62b917487f5b8a9b4eead0d",
+      "bytes": 207087
+    },
+    "coarse-buffer/failed-v5-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "coarse-buffer/failed-v5-interp/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "coarse-buffer/failed-v5-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "5d50abcaf946f586c777d25cde085fd888527ea555e32d641c44175e3a2c9133",
+      "bytes": 1318
+    },
+    "coarse-buffer/failed-v5-interp/runtime/final.ppm.gz": {
+      "sha256": "bda47c15eb621d6ec7f14baeae359a707518a26a9475ad38d94db3620e90eb77",
+      "bytes": 3185
+    },
+    "coarse-buffer/failed-v5-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/failed-v5-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "ed0f563b3d5799d3817aa45d9ffdc01339773c846f84cd80fbb7a602c3b4da2a",
+      "bytes": 24861
+    },
+    "coarse-buffer/failed-v5-interp/runtime/profile-identity.json": {
+      "sha256": "351d10cf6851d709599a3ead9832cf66faa7b2fe397d43e04799cdc52b1eed80",
+      "bytes": 1380
+    },
+    "coarse-buffer/failed-v5-interp/runtime/result.json": {
+      "sha256": "17c79eddd01acf5ee08d121e52a9cc23aa056b61fb6ad4fbd870098745b2d18d",
+      "bytes": 2267
+    },
+    "coarse-buffer/failed-v5-interp/runtime/stats.json": {
+      "sha256": "0be97c83863322088b8521d63a50a250e71b41d6626c0d3f8933f6b22246338f",
+      "bytes": 235
+    },
+    "coarse-buffer/failed-v5-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "c9edb8ba91c1372a9f7e6469448f53d1afe612fb6a4ae0da8cab983436fe515b",
+      "bytes": 193
+    },
+    "coarse-buffer/failed-v5-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "c9edb8ba91c1372a9f7e6469448f53d1afe612fb6a4ae0da8cab983436fe515b",
+      "bytes": 193
+    },
+    "coarse-buffer/failed-v5-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "coarse-buffer/power-interrupted-v5/INTERRUPTION.json": {
+      "sha256": "e36e62cba66014189887859ef7491942ddf16bba572f30baff4b86781ada2b24",
+      "bytes": 107
+    },
+    "coarse-buffer/power-interrupted-v5/candidate.bin": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/power-interrupted-v5/fuji.road": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/power-interrupted-v5/mode.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/power-interrupted-v5/runtime/esp32-uart0.log.gz": {
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20
+    },
+    "coarse-buffer/power-interrupted-v5/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "coarse-buffer/power-interrupted-v5/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20
+    },
+    "coarse-buffer/power-interrupted-v5/runtime/profile-identity.json": {
+      "sha256": "dbbed1aac8c30b2b28102229bb4ede74caed29c0246614023d67f997974768dd",
+      "bytes": 1380
+    },
+    "coarse-buffer/power-interrupted-v5/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20
+    },
+    "coarse-buffer/power-interrupted-v5/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20
+    },
+    "coarse-buffer/power-interrupted-v5/started.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "data/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "data/oval.road": {
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+      "bytes": 20584
+    },
+    "dense/author-interrupted-v5-interp/INTERRUPTION.json": {
+      "sha256": "eb59d3d7254e352863b29add4db07658d5002fdf16fd349ab8a4c3e396ca3506",
+      "bytes": 117
+    },
+    "dense/author-interrupted-v5-interp/candidate.bin": {
+      "sha256": "a26988718250af8c639042842cd35466a6e300ffaa1ccaaed3b5bfdfdadc2ce8",
+      "bytes": 193417
+    },
+    "dense/author-interrupted-v5-interp/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "dense/author-interrupted-v5-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "5c21d97fe6db4345840c605ee852574f61f15d7dfe6f3e69fa1342730ca91a6b",
+      "bytes": 451
+    },
+    "dense/author-interrupted-v5-interp/runtime/final.ppm.gz": {
+      "sha256": "aa695cef8102dd995df01fef998c4d09c8885d553fa1d413bb72d9893f8d1742",
+      "bytes": 3212
+    },
+    "dense/author-interrupted-v5-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "dense/author-interrupted-v5-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "c8c15caf2d6a2db9f0294f47eef654024842b6b4b10915046413bd7138031190",
+      "bytes": 16503
+    },
+    "dense/author-interrupted-v5-interp/runtime/profile-identity.json": {
+      "sha256": "d9651f9680c23f2ce835a4bf1f8998bf72a822e81fc762f01b3fce710b954482",
+      "bytes": 1250
+    },
+    "dense/author-interrupted-v5-interp/runtime/stats.json": {
+      "sha256": "ff8a5364e1ac96fef35338300a08d81f889f0d89b4dbb7785575dd0485da491c",
+      "bytes": 230
+    },
+    "dense/author-interrupted-v5-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "b1829059e3df37abcf0eea8ede39d041d232d56560bdfc37e832d97dc7f074a0",
+      "bytes": 122
+    },
+    "dense/author-interrupted-v5-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "b1829059e3df37abcf0eea8ede39d041d232d56560bdfc37e832d97dc7f074a0",
+      "bytes": 122
+    },
+    "dense/author-interrupted-v5-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "dense/cpu-v3-jit/candidate.bin": {
+      "sha256": "dea2d8232b0296a085702a501ede77d7a199e36946eb6a8730abca9a7fb09c06",
+      "bytes": 193238
+    },
+    "dense/cpu-v3-jit/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "dense/cpu-v3-jit/frames.csv": {
+      "sha256": "84d6fbf4df87a191e51c05414845cc3c5a42733a11fc02a41ad2c9cecaf133f9",
+      "bytes": 40108
+    },
+    "dense/cpu-v3-jit/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "dense/cpu-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "dense/cpu-v3-jit/runtime/final.png": {
+      "sha256": "6be247c165a7aa4d1efe87bb117feab6bd1594b5fc9e9d8c5e4d80900c3d5539",
+      "bytes": 2105
+    },
+    "dense/cpu-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "dense/cpu-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "dense/cpu-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "dense/cpu-v3-jit/runtime/profile-identity.json": {
+      "sha256": "cce93e4d1f9608689af9652a80a8017521a77fd3fae33c354e72bc08de0e104a",
+      "bytes": 1157
+    },
+    "dense/cpu-v3-jit/runtime/result.json": {
+      "sha256": "4544ec3a82d941ecf6900146eebdb9b17b1da12517d69ce0f5d361988e2c0490",
+      "bytes": 2516
+    },
+    "dense/cpu-v3-jit/runtime/stats.json": {
+      "sha256": "32f620e0b1e0f7ce94656342471c2b519e943dd47a8b4438c54b3f28951b6a45",
+      "bytes": 225
+    },
+    "dense/cpu-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "dense/cpu-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "dense/cpu-v3-jit/summary.txt": {
+      "sha256": "eefd99dc6ab031cb4830af19838e9584a936a59c39096f78d80c79b62f86a6dc",
+      "bytes": 301
+    },
+    "dense/cpu-v3-jit/verified.json": {
+      "sha256": "8957a6e1b43104eb2ab309822faaaa4651549e67ae4c3c574d2e302fbebb7b0d",
+      "bytes": 978
+    },
+    "dense/cpu-v4-interp/candidate.bin": {
+      "sha256": "a26988718250af8c639042842cd35466a6e300ffaa1ccaaed3b5bfdfdadc2ce8",
+      "bytes": 193417
+    },
+    "dense/cpu-v4-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "dense/cpu-v4-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "dense/cpu-v4-interp/frames.csv": {
+      "sha256": "9a57ee189d2f66c03c7cfb9db9d469dd6383bc57d800d43813877632bdfaa8e7",
+      "bytes": 38587
+    },
+    "dense/cpu-v4-interp/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "dense/cpu-v4-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "dense/cpu-v4-interp/runtime/final.png": {
+      "sha256": "d3ea788af844e40b982305dfa14a33f2fbe721ba35b862eed4b3e41b9a3dad21",
+      "bytes": 2091
+    },
+    "dense/cpu-v4-interp/runtime/final.ppm.gz": {
+      "sha256": "e5ed77ab3b532d1f783283a6cabd19cfea5ca1f080ee8f37f1b65feb270d8fc1",
+      "bytes": 1828
+    },
+    "dense/cpu-v4-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "dense/cpu-v4-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "dense/cpu-v4-interp/runtime/profile-identity.json": {
+      "sha256": "4d5a97d110244fe823c3a46dfe2a8c155b53e0d0cdb0133cbda663e2d8b3fb96",
+      "bytes": 1250
+    },
+    "dense/cpu-v4-interp/runtime/result.json": {
+      "sha256": "d955cdc2a76008f7ec0fea6250b129201a098a46a35dc80e4cdaa0d60067a879",
+      "bytes": 2977
+    },
+    "dense/cpu-v4-interp/runtime/stats.json": {
+      "sha256": "799a237f5e0fa5b0d530ff08cca8d26b02af8f4964b314a6f75f49b4c4cad8aa",
+      "bytes": 228
+    },
+    "dense/cpu-v4-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "dense/cpu-v4-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "dense/cpu-v4-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "dense/cpu-v4-interp/summary.txt": {
+      "sha256": "1a78baf3b51f4a4949f77c6a8969cba55f087508e2e3f958f0f784c68b8ca4c1",
+      "bytes": 299
+    },
+    "dense/cpu-v4-interp/verified.json": {
+      "sha256": "571e57448d2402a567bc60d987dd9a48e874db57f3a170dbadc5499f8d74c1b6",
+      "bytes": 1086
+    },
+    "dense/cpu-v5-boostoff/candidate.bin": {
+      "sha256": "a26988718250af8c639042842cd35466a6e300ffaa1ccaaed3b5bfdfdadc2ce8",
+      "bytes": 193417
+    },
+    "dense/cpu-v5-boostoff/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "dense/cpu-v5-boostoff/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "dense/cpu-v5-boostoff/frames.csv": {
+      "sha256": "84309575c38c6040b604efebfdfe4415fbeb1c4eb1ab1b5c6161f32c61a797c7",
+      "bytes": 38246
+    },
+    "dense/cpu-v5-boostoff/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "dense/cpu-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "dense/cpu-v5-boostoff/runtime/final.png": {
+      "sha256": "6be247c165a7aa4d1efe87bb117feab6bd1594b5fc9e9d8c5e4d80900c3d5539",
+      "bytes": 2105
+    },
+    "dense/cpu-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "dense/cpu-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "dense/cpu-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "dense/cpu-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "4d5a97d110244fe823c3a46dfe2a8c155b53e0d0cdb0133cbda663e2d8b3fb96",
+      "bytes": 1250
+    },
+    "dense/cpu-v5-boostoff/runtime/result.json": {
+      "sha256": "aedd6951f038873dd8fe71a0c864ab98aa0f90202913dba061af8559dbe3f889",
+      "bytes": 3031
+    },
+    "dense/cpu-v5-boostoff/runtime/stats.json": {
+      "sha256": "36ff4dfd8a3a619ce186618d9644ab5db1769da93b31cfb344f23866102588fa",
+      "bytes": 226
+    },
+    "dense/cpu-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "dense/cpu-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "dense/cpu-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "dense/cpu-v5-boostoff/summary.txt": {
+      "sha256": "f0b21b3e838223196dd0d4e49458b90afc24fe59dca7f4c47776b47ac1990dc9",
+      "bytes": 299
+    },
+    "dense/cpu-v5-boostoff/verified.json": {
+      "sha256": "54e0f1002d532da5097428ee1e09a9344a49496bd5637925f6447b608320816b",
+      "bytes": 1098
+    },
+    "dense/failed-v3-eof-jit/candidate.bin": {
+      "sha256": "dea2d8232b0296a085702a501ede77d7a199e36946eb6a8730abca9a7fb09c06",
+      "bytes": 193238
+    },
+    "dense/failed-v3-eof-jit/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "dense/failed-v3-eof-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "1f4f9b5184d6dce260ca46ac6aa595977ff9fc28f8af5e3b28ba14d5e9e44122",
+      "bytes": 666
+    },
+    "dense/failed-v3-eof-jit/runtime/final.ppm.gz": {
+      "sha256": "f610f91f729634348768fc5d65163bc18e4d285538509341963f3e6459c8a749",
+      "bytes": 3230
+    },
+    "dense/failed-v3-eof-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "dense/failed-v3-eof-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "30761ac119bbfd93d387b72a8dce18f121c3735d4b9d11546d7378c2b7844ac7",
+      "bytes": 32754
+    },
+    "dense/failed-v3-eof-jit/runtime/profile-identity.json": {
+      "sha256": "a3df097e6dcbe8c3b534d84c4441094935f767a808cb2a8f1a8df30dbb32cd37",
+      "bytes": 1228
+    },
+    "dense/failed-v3-eof-jit/runtime/result.json": {
+      "sha256": "f35921e65f63d0d5520069fb4ef745bc1941440339422d87966e43146a250c54",
+      "bytes": 1839
+    },
+    "dense/failed-v3-eof-jit/runtime/stats.json": {
+      "sha256": "bbce253f33c5b643caf0477c45ae0263b38427a784806f1a1eec5d3d8706fc70",
+      "bytes": 230
+    },
+    "dense/failed-v3-eof-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "baad5540d1bb18b94a18a065aa3ff7cfcb8898ccf21f5201ac0f43e23b8ea229",
+      "bytes": 169
+    },
+    "dense/failed-v3-eof-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "baad5540d1bb18b94a18a065aa3ff7cfcb8898ccf21f5201ac0f43e23b8ea229",
+      "bytes": 169
+    },
+    "dense/failed-v3-jit/candidate.bin": {
+      "sha256": "dea2d8232b0296a085702a501ede77d7a199e36946eb6a8730abca9a7fb09c06",
+      "bytes": 193238
+    },
+    "dense/failed-v3-jit/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "dense/failed-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "8bccf741b1ed4b0d8e2c3a74e62a133aa76b5aa276ccea9444d73089af93c71b",
+      "bytes": 354
+    },
+    "dense/failed-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "4403833ff2da0c032649095f790cd64a7afadbd7d655a8fc83a7439b5c4777d9",
+      "bytes": 3255
+    },
+    "dense/failed-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "dense/failed-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "e54a9a8d8eb907bd040c48e632f7fc84e81d409944fd9f9ad8102b912eff486b",
+      "bytes": 10587
+    },
+    "dense/failed-v3-jit/runtime/profile-identity.json": {
+      "sha256": "1232ab2d5f12dfc6600b44dc6703ae7e9c43fc114c570b8acb8ce08b176bc645",
+      "bytes": 1157
+    },
+    "dense/failed-v3-jit/runtime/result.json": {
+      "sha256": "03453026ea2a83d91488c4ac13512d7babf93448b338f7108c2a22ab82dfdecc",
+      "bytes": 1767
+    },
+    "dense/failed-v3-jit/runtime/stats.json": {
+      "sha256": "0f2f62929ba1f2fd00824ccce2ed7a463de77c48aa3f9f83896e6ca3de956a93",
+      "bytes": 228
+    },
+    "dense/failed-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "f5b97fe20fd59b855cd0d3d9b2a5c30a8b72b5391c138292666f2e627f8fd537",
+      "bytes": 96
+    },
+    "dense/failed-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "f5b97fe20fd59b855cd0d3d9b2a5c30a8b72b5391c138292666f2e627f8fd537",
+      "bytes": 96
+    },
+    "dense/failed-v4-interp/candidate.bin": {
+      "sha256": "a26988718250af8c639042842cd35466a6e300ffaa1ccaaed3b5bfdfdadc2ce8",
+      "bytes": 193417
+    },
+    "dense/failed-v4-interp/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "dense/failed-v4-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "c37fee1124271289cd0160de9bb1ddebda1fe077bde1c42f8ce9da0b1fd40c59",
+      "bytes": 732
+    },
+    "dense/failed-v4-interp/runtime/final.ppm.gz": {
+      "sha256": "5ee1ba5955510b9f3a141ac045a301c64549173e09dce24e95127262d168ef61",
+      "bytes": 3198
+    },
+    "dense/failed-v4-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "dense/failed-v4-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "f23e997010cabde89b8e6ddc0ac1e4f4450d0b58e5daf677ee5d21449f0f35eb",
+      "bytes": 38592
+    },
+    "dense/failed-v4-interp/runtime/profile-identity.json": {
+      "sha256": "d9651f9680c23f2ce835a4bf1f8998bf72a822e81fc762f01b3fce710b954482",
+      "bytes": 1250
+    },
+    "dense/failed-v4-interp/runtime/result.json": {
+      "sha256": "a51c7cefd9ebf8edf30df777b00f8421e64d8c1c9e160306a11a599a70241805",
+      "bytes": 2030
+    },
+    "dense/failed-v4-interp/runtime/stats.json": {
+      "sha256": "835969638fd728a3ffa9696085b2eb281ba0706e6968573c40ae85c11e4ab1e9",
+      "bytes": 235
+    },
+    "dense/failed-v4-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "febc88e9706c9a004f4ee33e04b7dd0d498544503ed330bd428c0834d438379d",
+      "bytes": 184
+    },
+    "dense/failed-v4-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "febc88e9706c9a004f4ee33e04b7dd0d498544503ed330bd428c0834d438379d",
+      "bytes": 184
+    },
+    "dense/failed-v4-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "dense/failed-v5-boostoff/FAILURE-CHECK.json": {
+      "sha256": "a28b9967b5fd3fe3715be1e9176fee76730a0106e1386c8c36df82890e480fb0",
+      "bytes": 936
+    },
+    "dense/failed-v5-boostoff/candidate.bin": {
+      "sha256": "a26988718250af8c639042842cd35466a6e300ffaa1ccaaed3b5bfdfdadc2ce8",
+      "bytes": 193417
+    },
+    "dense/failed-v5-boostoff/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "dense/failed-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "3f4d17168dce82de6a3b95996fcd84a7b3c0d2e5df65e33599a23cb819767aaa",
+      "bytes": 427
+    },
+    "dense/failed-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "630363b401b63959a62490cce42385ba1085806bf9b15c7ac4cc8d9ea934456c",
+      "bytes": 3150
+    },
+    "dense/failed-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "dense/failed-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "ef769d4a9557b120aa355698ef7f8cd9120ecff4aae75d229c7840ebba357dd2",
+      "bytes": 15501
+    },
+    "dense/failed-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "d9651f9680c23f2ce835a4bf1f8998bf72a822e81fc762f01b3fce710b954482",
+      "bytes": 1250
+    },
+    "dense/failed-v5-boostoff/runtime/result.json": {
+      "sha256": "002dbdfcd3975742c8c3858b21cb1a3ba8f5aca72de62eb5c89b8ab141d2a640",
+      "bytes": 2187
+    },
+    "dense/failed-v5-boostoff/runtime/stats.json": {
+      "sha256": "a89ce28a1eeed761ec5b9c6fdf4393cf594136bcf2a180022f30c1be0ebbce7e",
+      "bytes": 231
+    },
+    "dense/failed-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "21b7cd4986c034f111c8773275542fe92fa11ebc046a6f40e9f5ad952ebf5af3",
+      "bytes": 115
+    },
+    "dense/failed-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "21b7cd4986c034f111c8773275542fe92fa11ebc046a6f40e9f5ad952ebf5af3",
+      "bytes": 115
+    },
+    "dense/failed-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "dense/live-failed/runtime/final.png": {
+      "sha256": "62e53a92593c5155c9c80ed39c3b6881e128dc1518aa4a67593311310fa83075",
+      "bytes": 4265
+    },
+    "dense/live-failed/runtime/final.ppm.gz": {
+      "sha256": "42fafadc6f693edd44c9bc59540255c35dbb0bbb8af30ab7dd03b2f0e7b9743f",
+      "bytes": 3246
+    },
+    "dense/live-failed/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7b55e8497fad0c23296425c0a951d144970539d88d190d621fbbbede6421dff4",
+      "bytes": 39149
+    },
+    "dense/live-failed/runtime/result.json": {
+      "sha256": "56ceafa124a95cc24a9e2f10b886edfbfa205e2f2b2fc9aded4663e430307354",
+      "bytes": 1758
+    },
+    "dense/live-failed/runtime/stats.json": {
+      "sha256": "e289321b6a0c3f8f55d7c8477723fd0b7df5d27006b8c7ecb6102601e39f0773",
+      "bytes": 235
+    },
+    "dense/live-failed/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "cd7abcad1ad5bdabb715ec4fd896d16bf7e4b35b8085b5ddd418a95212bda833",
+      "bytes": 184
+    },
+    "dense/live-failed/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "cd7abcad1ad5bdabb715ec4fd896d16bf7e4b35b8085b5ddd418a95212bda833",
+      "bytes": 184
+    },
+    "generated/buffered.hpp": {
+      "sha256": "e5d586e7c57990df55ea03afc59e207f9317ad538f4f49d119ff9b52559a7986",
+      "bytes": 2873
+    },
+    "generated/physics_product.cpp": {
+      "sha256": "840e1e4c0e0278ea2357a7437a0f73bec490290b58e574ad1c8e59fd104849ab",
+      "bytes": 24400
+    },
+    "generated/product_main.cpp": {
+      "sha256": "987ff8990f218d73c3f8c90ff892a37806394c9ad8d6c91ec330b07b4395eddd",
+      "bytes": 26570
+    },
+    "generated/projection.hpp": {
+      "sha256": "c0bb2108b48e31fe2f73a27083a340f9ed3fcc2f340798628a8cb5e5a3e9c00c",
+      "bytes": 3590
+    },
+    "generated/projection_tables.hpp": {
+      "sha256": "b802f82ecfa1ddbe752cbd57a6742a24ad847dbc5e3468b21998c472cf462e5d",
+      "bytes": 7934
+    },
+    "generated/scene_workload.hpp": {
+      "sha256": "cbdce736663ce6f8ac8c0ac75694bc8f1e1634ef2dcde10b978b960791819527",
+      "bytes": 1923
+    },
+    "generated/shared_scene.hpp": {
+      "sha256": "cfac8ff7ade0d7e6b4c14a353fcdd81cc779b6869c6d17e0f9811b8c1eb0617c",
+      "bytes": 3606
+    },
+    "generated/workload.hpp": {
+      "sha256": "33b4feab3eaac4f147442d0369595ad4ff119c235454523a3579e8d32073525e",
+      "bytes": 3388
+    },
+    "generated-v4/buffered.hpp": {
+      "sha256": "e5d586e7c57990df55ea03afc59e207f9317ad538f4f49d119ff9b52559a7986",
+      "bytes": 2873
+    },
+    "generated-v4/physics_product.cpp": {
+      "sha256": "840e1e4c0e0278ea2357a7437a0f73bec490290b58e574ad1c8e59fd104849ab",
+      "bytes": 24400
+    },
+    "generated-v4/product_main.cpp": {
+      "sha256": "64e0d6beee0c0a1837f7bd8d4943afe7cd93a11a388f4026ef8c3fef264e2366",
+      "bytes": 25602
+    },
+    "generated-v4/projection.hpp": {
+      "sha256": "c0bb2108b48e31fe2f73a27083a340f9ed3fcc2f340798628a8cb5e5a3e9c00c",
+      "bytes": 3590
+    },
+    "generated-v4/projection_tables.hpp": {
+      "sha256": "b802f82ecfa1ddbe752cbd57a6742a24ad847dbc5e3468b21998c472cf462e5d",
+      "bytes": 7934
+    },
+    "generated-v4/scene_workload.hpp": {
+      "sha256": "cbdce736663ce6f8ac8c0ac75694bc8f1e1634ef2dcde10b978b960791819527",
+      "bytes": 1923
+    },
+    "generated-v4/shared_scene.hpp": {
+      "sha256": "cfac8ff7ade0d7e6b4c14a353fcdd81cc779b6869c6d17e0f9811b8c1eb0617c",
+      "bytes": 3606
+    },
+    "generated-v4/workload.hpp": {
+      "sha256": "33b4feab3eaac4f147442d0369595ad4ff119c235454523a3579e8d32073525e",
+      "bytes": 3388
+    },
+    "host/coarse/frames.csv": {
+      "sha256": "048f27f9f6d64cbc44e5008c4f93e89bdef1f2af7deaa7b7731401c2a8b4546a",
+      "bytes": 39399
+    },
+    "host/coarse/setup.bin.gz": {
+      "sha256": "5c80ff1ddd1a1e23f07a86c5bf7427ddd0026749dc37b4b855ecb490dacad22c",
+      "bytes": 7084
+    },
+    "host/coarse/wire-audio.bin.gz": {
+      "sha256": "ed56d966dc637b2c75094f2b23423950412517515640164296e354194a8c8314",
+      "bytes": 39
+    },
+    "host/coarse/wire-bottom.bin.gz": {
+      "sha256": "1f569eb0fa5a5ffe7f8cbb40a36cf0d9b0c34a2f0ef1e7cbb25a1d5981606220",
+      "bytes": 178
+    },
+    "host/coarse/wire-hud.bin.gz": {
+      "sha256": "9412396a602dfae33420ee12873b6b079c7bac17d30ef1a47953765b99f2bd6f",
+      "bytes": 136
+    },
+    "host/coarse/wire-panel.bin.gz": {
+      "sha256": "46526e134c881c4d8038fd53e9d782d5696fb61bf5f409c0be413dc152df0dac",
+      "bytes": 122
+    },
+    "host/coarse/wire-player.bin.gz": {
+      "sha256": "58d4b3a5d7ad71e7fabd4430e64d17579f8278889a86e572ec9c0906b0d16cfc",
+      "bytes": 421
+    },
+    "host/coarse/wire-road.bin.gz": {
+      "sha256": "2884674d15bd7f2441039f2ea6061880a39ded6bf7aa3bbef8b465049a5ed19f",
+      "bytes": 239245
+    },
+    "host/coarse/wire-scenery.bin.gz": {
+      "sha256": "f971b66ee03bbbb0887316894ab21ddf276fb295bf8026a8f9b7d700e157805b",
+      "bytes": 2393
+    },
+    "host/coarse/wire-swap.bin.gz": {
+      "sha256": "e0fdea984468b90cc12607ba7a7be24866edc5432b47e89a0d9d35a94e495ce3",
+      "bytes": 42
+    },
+    "host/coarse/wire-traffic_signs.bin.gz": {
+      "sha256": "a4979a49efbdfdf5163b9868dc8179e7c9626332b5130b256d2cf622a069a810",
+      "bytes": 14193
+    },
+    "host/coarse/wire-viewport.bin.gz": {
+      "sha256": "459a08760206b8a008382fe6ac52e5a9209d6bdce29a96f515b8cb6e6a6fa899",
+      "bytes": 124
+    },
+    "host/coarse-buffer/frames.csv": {
+      "sha256": "856b2b71b8bf00715ff2cd2c2ea4c71b6b506f1cb0a1668eb0fcd130f4fd3c9c",
+      "bytes": 38499
+    },
+    "host/coarse-buffer/setup.bin.gz": {
+      "sha256": "7d8838ec52b9645ec2557d8148b0b6aadb3e5fa324066d75bb2bcd7377e3a6f1",
+      "bytes": 7461
+    },
+    "host/coarse-buffer/wire-audio.bin.gz": {
+      "sha256": "ed56d966dc637b2c75094f2b23423950412517515640164296e354194a8c8314",
+      "bytes": 39
+    },
+    "host/coarse-buffer/wire-bottom.bin.gz": {
+      "sha256": "1f569eb0fa5a5ffe7f8cbb40a36cf0d9b0c34a2f0ef1e7cbb25a1d5981606220",
+      "bytes": 178
+    },
+    "host/coarse-buffer/wire-hud.bin.gz": {
+      "sha256": "9412396a602dfae33420ee12873b6b079c7bac17d30ef1a47953765b99f2bd6f",
+      "bytes": 136
+    },
+    "host/coarse-buffer/wire-panel.bin.gz": {
+      "sha256": "46526e134c881c4d8038fd53e9d782d5696fb61bf5f409c0be413dc152df0dac",
+      "bytes": 122
+    },
+    "host/coarse-buffer/wire-player.bin.gz": {
+      "sha256": "58d4b3a5d7ad71e7fabd4430e64d17579f8278889a86e572ec9c0906b0d16cfc",
+      "bytes": 421
+    },
+    "host/coarse-buffer/wire-road.bin.gz": {
+      "sha256": "a4079279b9d1db5b75f7a685ac4df008228fb314c81cd5b7ade7130b91d25225",
+      "bytes": 107999
+    },
+    "host/coarse-buffer/wire-scenery.bin.gz": {
+      "sha256": "f971b66ee03bbbb0887316894ab21ddf276fb295bf8026a8f9b7d700e157805b",
+      "bytes": 2393
+    },
+    "host/coarse-buffer/wire-swap.bin.gz": {
+      "sha256": "e0fdea984468b90cc12607ba7a7be24866edc5432b47e89a0d9d35a94e495ce3",
+      "bytes": 42
+    },
+    "host/coarse-buffer/wire-traffic_signs.bin.gz": {
+      "sha256": "a4979a49efbdfdf5163b9868dc8179e7c9626332b5130b256d2cf622a069a810",
+      "bytes": 14193
+    },
+    "host/coarse-buffer/wire-viewport.bin.gz": {
+      "sha256": "459a08760206b8a008382fe6ac52e5a9209d6bdce29a96f515b8cb6e6a6fa899",
+      "bytes": 124
+    },
+    "host/dense/frames.csv": {
+      "sha256": "2cdb057787227582e2c2035afac9c4dc0ae6ddf4fd156221e8ee880688b429eb",
+      "bytes": 39495
+    },
+    "host/dense/setup.bin.gz": {
+      "sha256": "5c80ff1ddd1a1e23f07a86c5bf7427ddd0026749dc37b4b855ecb490dacad22c",
+      "bytes": 7084
+    },
+    "host/dense/wire-audio.bin.gz": {
+      "sha256": "ed56d966dc637b2c75094f2b23423950412517515640164296e354194a8c8314",
+      "bytes": 39
+    },
+    "host/dense/wire-bottom.bin.gz": {
+      "sha256": "1f569eb0fa5a5ffe7f8cbb40a36cf0d9b0c34a2f0ef1e7cbb25a1d5981606220",
+      "bytes": 178
+    },
+    "host/dense/wire-hud.bin.gz": {
+      "sha256": "9412396a602dfae33420ee12873b6b079c7bac17d30ef1a47953765b99f2bd6f",
+      "bytes": 136
+    },
+    "host/dense/wire-panel.bin.gz": {
+      "sha256": "46526e134c881c4d8038fd53e9d782d5696fb61bf5f409c0be413dc152df0dac",
+      "bytes": 122
+    },
+    "host/dense/wire-player.bin.gz": {
+      "sha256": "6789e4d26552098320e1fd97b5511d3e1c8f8528f433a578fa96a03ad927afa5",
+      "bytes": 387
+    },
+    "host/dense/wire-road.bin.gz": {
+      "sha256": "832a931215789d60575d30d8885e3417769c00123aaa9a7fc21c4f44cbbef70c",
+      "bytes": 266054
+    },
+    "host/dense/wire-scenery.bin.gz": {
+      "sha256": "f971b66ee03bbbb0887316894ab21ddf276fb295bf8026a8f9b7d700e157805b",
+      "bytes": 2393
+    },
+    "host/dense/wire-swap.bin.gz": {
+      "sha256": "e0fdea984468b90cc12607ba7a7be24866edc5432b47e89a0d9d35a94e495ce3",
+      "bytes": 42
+    },
+    "host/dense/wire-traffic_signs.bin.gz": {
+      "sha256": "444bd366d9e0169f6e01fa094e72ad9e7180feb86cb1efdc9f66b8b5f9bcb0f3",
+      "bytes": 13577
+    },
+    "host/dense/wire-viewport.bin.gz": {
+      "sha256": "459a08760206b8a008382fe6ac52e5a9209d6bdce29a96f515b8cb6e6a6fa899",
+      "bytes": 124
+    },
+    "host/lookup/frames.csv": {
+      "sha256": "61e51ae27bc3a1bcb3d68eb00f035d99a5c8399e7e0e11cdb594a25a45cb89d6",
+      "bytes": 39607
+    },
+    "host/lookup/setup.bin.gz": {
+      "sha256": "5c80ff1ddd1a1e23f07a86c5bf7427ddd0026749dc37b4b855ecb490dacad22c",
+      "bytes": 7084
+    },
+    "host/lookup/wire-audio.bin.gz": {
+      "sha256": "ed56d966dc637b2c75094f2b23423950412517515640164296e354194a8c8314",
+      "bytes": 39
+    },
+    "host/lookup/wire-bottom.bin.gz": {
+      "sha256": "1f569eb0fa5a5ffe7f8cbb40a36cf0d9b0c34a2f0ef1e7cbb25a1d5981606220",
+      "bytes": 178
+    },
+    "host/lookup/wire-hud.bin.gz": {
+      "sha256": "9412396a602dfae33420ee12873b6b079c7bac17d30ef1a47953765b99f2bd6f",
+      "bytes": 136
+    },
+    "host/lookup/wire-panel.bin.gz": {
+      "sha256": "46526e134c881c4d8038fd53e9d782d5696fb61bf5f409c0be413dc152df0dac",
+      "bytes": 122
+    },
+    "host/lookup/wire-player.bin.gz": {
+      "sha256": "0b7525dcee65f88995a4d4be0f25ab86ca4384fe5063729a1b6f2dfa3d093ca8",
+      "bytes": 377
+    },
+    "host/lookup/wire-road.bin.gz": {
+      "sha256": "35afedf676dbaa7f52cc19fe42f97d10a61fadf904972e7eade939db3158ffde",
+      "bytes": 374960
+    },
+    "host/lookup/wire-scenery.bin.gz": {
+      "sha256": "f971b66ee03bbbb0887316894ab21ddf276fb295bf8026a8f9b7d700e157805b",
+      "bytes": 2393
+    },
+    "host/lookup/wire-swap.bin.gz": {
+      "sha256": "e0fdea984468b90cc12607ba7a7be24866edc5432b47e89a0d9d35a94e495ce3",
+      "bytes": 42
+    },
+    "host/lookup/wire-traffic_signs.bin.gz": {
+      "sha256": "03746aab029be37b9cc2f83bb779611031e5f610ffac725c0141245317a94cc9",
+      "bytes": 13541
+    },
+    "host/lookup/wire-viewport.bin.gz": {
+      "sha256": "459a08760206b8a008382fe6ac52e5a9209d6bdce29a96f515b8cb6e6a6fa899",
+      "bytes": 124
+    },
+    "host/lookup-buffer/frames.csv": {
+      "sha256": "fdc3d4a392b6c7a76db6e2a5c2501442a58810729e21d87b2ecaa0d0a711d150",
+      "bytes": 38989
+    },
+    "host/lookup-buffer/setup.bin.gz": {
+      "sha256": "7d8838ec52b9645ec2557d8148b0b6aadb3e5fa324066d75bb2bcd7377e3a6f1",
+      "bytes": 7461
+    },
+    "host/lookup-buffer/wire-audio.bin.gz": {
+      "sha256": "ed56d966dc637b2c75094f2b23423950412517515640164296e354194a8c8314",
+      "bytes": 39
+    },
+    "host/lookup-buffer/wire-bottom.bin.gz": {
+      "sha256": "1f569eb0fa5a5ffe7f8cbb40a36cf0d9b0c34a2f0ef1e7cbb25a1d5981606220",
+      "bytes": 178
+    },
+    "host/lookup-buffer/wire-hud.bin.gz": {
+      "sha256": "9412396a602dfae33420ee12873b6b079c7bac17d30ef1a47953765b99f2bd6f",
+      "bytes": 136
+    },
+    "host/lookup-buffer/wire-panel.bin.gz": {
+      "sha256": "46526e134c881c4d8038fd53e9d782d5696fb61bf5f409c0be413dc152df0dac",
+      "bytes": 122
+    },
+    "host/lookup-buffer/wire-player.bin.gz": {
+      "sha256": "0b7525dcee65f88995a4d4be0f25ab86ca4384fe5063729a1b6f2dfa3d093ca8",
+      "bytes": 377
+    },
+    "host/lookup-buffer/wire-road.bin.gz": {
+      "sha256": "1f31dffce1f95d3c1c55c4f15a30c2de5869d3902d4569e7ab5d74414267de80",
+      "bytes": 181375
+    },
+    "host/lookup-buffer/wire-scenery.bin.gz": {
+      "sha256": "f971b66ee03bbbb0887316894ab21ddf276fb295bf8026a8f9b7d700e157805b",
+      "bytes": 2393
+    },
+    "host/lookup-buffer/wire-swap.bin.gz": {
+      "sha256": "e0fdea984468b90cc12607ba7a7be24866edc5432b47e89a0d9d35a94e495ce3",
+      "bytes": 42
+    },
+    "host/lookup-buffer/wire-traffic_signs.bin.gz": {
+      "sha256": "03746aab029be37b9cc2f83bb779611031e5f610ffac725c0141245317a94cc9",
+      "bytes": 13541
+    },
+    "host/lookup-buffer/wire-viewport.bin.gz": {
+      "sha256": "459a08760206b8a008382fe6ac52e5a9209d6bdce29a96f515b8cb6e6a6fa899",
+      "bytes": 124
+    },
+    "host-checks.json": {
+      "sha256": "4a94be9e7add13db99af8e9508ad7aa1c013c05864f8e004359ab27758580f38",
+      "bytes": 175
+    },
+    "lookup/cpu-v3-jit/candidate.bin": {
+      "sha256": "6e858bd2fb816e7ef8857106e57a10a039ab122a4da71df7347fc0b2067d9174",
+      "bytes": 204931
+    },
+    "lookup/cpu-v3-jit/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup/cpu-v3-jit/frames.csv": {
+      "sha256": "fe019f19541c6512a39a41f9e78aa1ef4749739ab4e4d70a6cf547853bdb78ae",
+      "bytes": 38617
+    },
+    "lookup/cpu-v3-jit/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup/cpu-v3-jit/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "lookup/cpu-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "lookup/cpu-v3-jit/runtime/final.png": {
+      "sha256": "6be247c165a7aa4d1efe87bb117feab6bd1594b5fc9e9d8c5e4d80900c3d5539",
+      "bytes": 2105
+    },
+    "lookup/cpu-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "lookup/cpu-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup/cpu-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "lookup/cpu-v3-jit/runtime/profile-identity.json": {
+      "sha256": "22344f4d7ca0ca0c5cf4aac9990880697686ad9bacadac4ebdbec46480d97e80",
+      "bytes": 1280
+    },
+    "lookup/cpu-v3-jit/runtime/result.json": {
+      "sha256": "e3d8055170ea44b1ff2469f0c7c7866ed7d333be809cdb7e8a7ba5663e9d1085",
+      "bytes": 2637
+    },
+    "lookup/cpu-v3-jit/runtime/stats.json": {
+      "sha256": "910037c6c3ac2dd441735a5834ac959b52b24d1b705be9e71882068247b0a64b",
+      "bytes": 225
+    },
+    "lookup/cpu-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup/cpu-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup/cpu-v3-jit/summary.txt": {
+      "sha256": "ebd6a4704b732a1fad9038d894b7bcd6b87251dc88b57eb32d6d798f043dc14f",
+      "bytes": 298
+    },
+    "lookup/cpu-v3-jit/verified.json": {
+      "sha256": "fab245d5ff3e22bff71a41288712aaaaf9a50fc1e884c3bc41ed13cfd690176b",
+      "bytes": 987
+    },
+    "lookup/cpu-v4-interp/REJECTED.json": {
+      "sha256": "b82a27a4d27b5a1ae97285d4f0faed16109997cb8ce7eb21d9b5f828f4db0f7f",
+      "bytes": 175
+    },
+    "lookup/cpu-v4-interp/candidate.bin": {
+      "sha256": "c17b11eb388b4790bd1cf9de5b8568460f529a61bcc9a078fdee627806a32157",
+      "bytes": 205152
+    },
+    "lookup/cpu-v4-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup/cpu-v4-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "lookup/cpu-v4-interp/frames.csv": {
+      "sha256": "fd454d2f23546998e8c02eaf5cfc2dde2ce0943f5187a1e25097d47f9c520a90",
+      "bytes": 38017
+    },
+    "lookup/cpu-v4-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup/cpu-v4-interp/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "lookup/cpu-v4-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "lookup/cpu-v4-interp/runtime/final.ppm.gz": {
+      "sha256": "e5ed77ab3b532d1f783283a6cabd19cfea5ca1f080ee8f37f1b65feb270d8fc1",
+      "bytes": 1828
+    },
+    "lookup/cpu-v4-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup/cpu-v4-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "lookup/cpu-v4-interp/runtime/profile-identity.json": {
+      "sha256": "c668eb1d7cebf15d1af01b08ffb5f0420de8ec57757ee834249afa47fa35e3ef",
+      "bytes": 1373
+    },
+    "lookup/cpu-v4-interp/runtime/result.json": {
+      "sha256": "1ad12e0bcac05638f8a2735e2fed33a1149787f4e2542f6d7998c66638025704",
+      "bytes": 3098
+    },
+    "lookup/cpu-v4-interp/runtime/stats.json": {
+      "sha256": "0e2ccb8f8d42bd9025dda7e71cf86dfbed53a7c7a4163917a7cef04a1ad851f9",
+      "bytes": 226
+    },
+    "lookup/cpu-v4-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup/cpu-v4-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup/cpu-v4-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup/cpu-v4-interp/summary.txt": {
+      "sha256": "541c9db4426cc63123513294be7827a550013f2570934a69a3136122eeeb22f3",
+      "bytes": 298
+    },
+    "lookup/cpu-v5-boostoff/candidate.bin": {
+      "sha256": "865bc385c1defa77bdb8f262d68fabce20afec58cd1de2f08883be647dfa43de",
+      "bytes": 205155
+    },
+    "lookup/cpu-v5-boostoff/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup/cpu-v5-boostoff/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "lookup/cpu-v5-boostoff/frames.csv": {
+      "sha256": "08813d135ed0ff08cb51a8a6286879111c1d292a3192ef2b3ecc00c5731cce63",
+      "bytes": 36693
+    },
+    "lookup/cpu-v5-boostoff/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup/cpu-v5-boostoff/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "lookup/cpu-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "lookup/cpu-v5-boostoff/runtime/final.png": {
+      "sha256": "d3ea788af844e40b982305dfa14a33f2fbe721ba35b862eed4b3e41b9a3dad21",
+      "bytes": 2091
+    },
+    "lookup/cpu-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "e5ed77ab3b532d1f783283a6cabd19cfea5ca1f080ee8f37f1b65feb270d8fc1",
+      "bytes": 1828
+    },
+    "lookup/cpu-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup/cpu-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "lookup/cpu-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "63e1ef9f47225828d701a3500b14dca8e0d50623c89dd0a80818297daef7c10b",
+      "bytes": 1373
+    },
+    "lookup/cpu-v5-boostoff/runtime/result.json": {
+      "sha256": "05c69a4ed618490edddc6128cb19084c97896c799c87b0fb71bcf15e7a682eb3",
+      "bytes": 3153
+    },
+    "lookup/cpu-v5-boostoff/runtime/stats.json": {
+      "sha256": "f7b3059061bd487c1093ae300f1b2c437c531eb8f1b28d1cf75e1f93039081a9",
+      "bytes": 225
+    },
+    "lookup/cpu-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup/cpu-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup/cpu-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup/cpu-v5-boostoff/summary.txt": {
+      "sha256": "44c4814e8f53a2908045095a6b0eb3cc25e2a5080b77eba74746f7ea3012d91b",
+      "bytes": 296
+    },
+    "lookup/cpu-v5-boostoff/verified.json": {
+      "sha256": "e75f7de4a2d37a84913b71efc54f66bad0195508adb21a4dd539ce1d471fa4c2",
+      "bytes": 1112
+    },
+    "lookup/cpu-v5-interp/candidate.bin": {
+      "sha256": "865bc385c1defa77bdb8f262d68fabce20afec58cd1de2f08883be647dfa43de",
+      "bytes": 205155
+    },
+    "lookup/cpu-v5-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup/cpu-v5-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "lookup/cpu-v5-interp/frames.csv": {
+      "sha256": "cd6bc6f1eb3825d3f0374b7a5fbe78c8531a37c196388db4a16c62b210ca4bc0",
+      "bytes": 38028
+    },
+    "lookup/cpu-v5-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup/cpu-v5-interp/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "lookup/cpu-v5-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "lookup/cpu-v5-interp/runtime/final.png": {
+      "sha256": "d3ea788af844e40b982305dfa14a33f2fbe721ba35b862eed4b3e41b9a3dad21",
+      "bytes": 2091
+    },
+    "lookup/cpu-v5-interp/runtime/final.ppm.gz": {
+      "sha256": "e5ed77ab3b532d1f783283a6cabd19cfea5ca1f080ee8f37f1b65feb270d8fc1",
+      "bytes": 1828
+    },
+    "lookup/cpu-v5-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup/cpu-v5-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "lookup/cpu-v5-interp/runtime/profile-identity.json": {
+      "sha256": "63e1ef9f47225828d701a3500b14dca8e0d50623c89dd0a80818297daef7c10b",
+      "bytes": 1373
+    },
+    "lookup/cpu-v5-interp/runtime/result.json": {
+      "sha256": "10993dc0e16822c3fada3356b6cb2b25ce5565de256038776cc8e05bd7a066ab",
+      "bytes": 3092
+    },
+    "lookup/cpu-v5-interp/runtime/stats.json": {
+      "sha256": "3b2510d376e1b82637bd18e3f1a306f4777cf20465a24e2c8213634f70356db4",
+      "bytes": 226
+    },
+    "lookup/cpu-v5-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup/cpu-v5-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup/cpu-v5-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup/cpu-v5-interp/summary.txt": {
+      "sha256": "ef5680bc7ad72f1d6643aaeb813f16a842908f18481105017d3a937635ee57cb",
+      "bytes": 298
+    },
+    "lookup/cpu-v5-interp/verified.json": {
+      "sha256": "cbd2615d85572303c6fa78a1deccf7f0f64f3eeaca4e08b8c0a8eef990b15305",
+      "bytes": 1090
+    },
+    "lookup/failed-v3-jit/candidate.bin": {
+      "sha256": "6e858bd2fb816e7ef8857106e57a10a039ab122a4da71df7347fc0b2067d9174",
+      "bytes": 204931
+    },
+    "lookup/failed-v3-jit/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup/failed-v3-jit/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup/failed-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "45a1ca943c6390f98d4810021ee0da46f97a5690efd9f1d17412b0448af4850b",
+      "bytes": 1063
+    },
+    "lookup/failed-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "d7441628c22c7be6b6725acee591dc8fdfe3664f7e68f40512557acf0bd459ba",
+      "bytes": 3192
+    },
+    "lookup/failed-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup/failed-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "f6012a1d24e9fcbd317c44f1400db5e153ef2f624b8bf693feea46976fcd44d2",
+      "bytes": 68216
+    },
+    "lookup/failed-v3-jit/runtime/profile-identity.json": {
+      "sha256": "eea684453854d026dba006844e710a151b8ef9f53f5b81b1a1f469123ee1d113",
+      "bytes": 1280
+    },
+    "lookup/failed-v3-jit/runtime/result.json": {
+      "sha256": "906ebdd82ee7f545db5b92757543f66c59f49e2c6b73bd2b44a21c3df232df5e",
+      "bytes": 1896
+    },
+    "lookup/failed-v3-jit/runtime/stats.json": {
+      "sha256": "f2413103af1ca169257461df5293cb3ab9ae87abe9cb973c2e28d02e081961e6",
+      "bytes": 232
+    },
+    "lookup/failed-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "d6d35386006cc2c03dbca93791359ae23a218940d961b44e37dfa9f7d37cfd8c",
+      "bytes": 236
+    },
+    "lookup/failed-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "d6d35386006cc2c03dbca93791359ae23a218940d961b44e37dfa9f7d37cfd8c",
+      "bytes": 236
+    },
+    "lookup/failed-v5-boostoff/FAILURE-CHECK.json": {
+      "sha256": "45cf0f5654fd7156ffbdc2c7367cac41b4584f9f84e31a28e4fa64d7b2c34ec2",
+      "bytes": 943
+    },
+    "lookup/failed-v5-boostoff/candidate.bin": {
+      "sha256": "865bc385c1defa77bdb8f262d68fabce20afec58cd1de2f08883be647dfa43de",
+      "bytes": 205155
+    },
+    "lookup/failed-v5-boostoff/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup/failed-v5-boostoff/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup/failed-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "89cb419d2f993cc8e37b36016ce5b754f39ed74e052a730e6d37235e2a00d42e",
+      "bytes": 854
+    },
+    "lookup/failed-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "1bf99aa184e99cfe899c07e29084d50b66150b03264e6730f14637a1399710e9",
+      "bytes": 3201
+    },
+    "lookup/failed-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup/failed-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "958d45df9039ad2504972e8b61776528826a34a38003bd88dfce22f1b8a9910c",
+      "bytes": 49966
+    },
+    "lookup/failed-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "c09f65470d4b2d1a8f97d02c38e20062390b3b4a43c76db37b7b1e67020dc7c3",
+      "bytes": 1373
+    },
+    "lookup/failed-v5-boostoff/runtime/result.json": {
+      "sha256": "f89050f9c13e34efbf64411c24dbbd28ed479809bc8fa87c9395f311f71a3a37",
+      "bytes": 2314
+    },
+    "lookup/failed-v5-boostoff/runtime/stats.json": {
+      "sha256": "dbd8128ed01e0610a48db30a7800bdabf07fabdd4f69d2f469540f9065b87f19",
+      "bytes": 233
+    },
+    "lookup/failed-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "2760971ba5f5758aa1c63914361986bb9f995678a5352bdf3432568dc5058771",
+      "bytes": 203
+    },
+    "lookup/failed-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "2760971ba5f5758aa1c63914361986bb9f995678a5352bdf3432568dc5058771",
+      "bytes": 203
+    },
+    "lookup/failed-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup/interrupted-v4-interp/candidate.bin": {
+      "sha256": "c17b11eb388b4790bd1cf9de5b8568460f529a61bcc9a078fdee627806a32157",
+      "bytes": 205152
+    },
+    "lookup/interrupted-v4-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup/interrupted-v4-interp/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup/interrupted-v4-interp/runtime/INTERRUPTION.json": {
+      "sha256": "de39360558915e82802621958ad9bdc22d756dd11bd494d5dd53bf31d264c8de",
+      "bytes": 151
+    },
+    "lookup/interrupted-v4-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "a6a3474492a5294a95ab69e410dda80efcdca5bde51dd668981b0ab4fed8761c",
+      "bytes": 1100
+    },
+    "lookup/interrupted-v4-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup/interrupted-v4-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "623a3bb184a8aaaf9f97c7a2a8e4546e8314c65727aa23fcd338f78cb65879de",
+      "bytes": 74120
+    },
+    "lookup/interrupted-v4-interp/runtime/profile-identity.json": {
+      "sha256": "f2056f13707fdc79e90528d50761f30be7e61d68ebcfe768052c15339c2f0f7d",
+      "bytes": 1373
+    },
+    "lookup/interrupted-v4-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "04b98e423e9aaf0f945f050aa8c912818cbc6be36c4374724d2a75b4e5189dbd",
+      "bytes": 238
+    },
+    "lookup/interrupted-v4-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "04b98e423e9aaf0f945f050aa8c912818cbc6be36c4374724d2a75b4e5189dbd",
+      "bytes": 238
+    },
+    "lookup/interrupted-v4-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup/interrupted-v4-interp06/candidate.bin": {
+      "sha256": "c17b11eb388b4790bd1cf9de5b8568460f529a61bcc9a078fdee627806a32157",
+      "bytes": 205152
+    },
+    "lookup/interrupted-v4-interp06/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup/interrupted-v4-interp06/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup/interrupted-v4-interp06/runtime/esp32-uart0.log.gz": {
+      "sha256": "882b424c6c64307efc80395c8b69356ba165c600d45ca44aed58335397b7a81f",
+      "bytes": 853
+    },
+    "lookup/interrupted-v4-interp06/runtime/final.ppm.gz": {
+      "sha256": "652b0151013d7b07f06af540706d40fa3a03db53d76cf5767cc2623991d401e2",
+      "bytes": 3190
+    },
+    "lookup/interrupted-v4-interp06/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup/interrupted-v4-interp06/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "92562655259380f7915148b2a7c16b5a94d5b60eaca87767e1331a9a82310961",
+      "bytes": 49562
+    },
+    "lookup/interrupted-v4-interp06/runtime/profile-identity.json": {
+      "sha256": "f2056f13707fdc79e90528d50761f30be7e61d68ebcfe768052c15339c2f0f7d",
+      "bytes": 1373
+    },
+    "lookup/interrupted-v4-interp06/runtime/stats.json": {
+      "sha256": "f1241b942197f14ade8d55d8bda78456658904d203bd0e6a7d4e0db98d9d2f1a",
+      "bytes": 235
+    },
+    "lookup/interrupted-v4-interp06/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "522cb7283a9c38fef980294dde9647b5f0cb621b6b7f1175c715f28b86271aca",
+      "bytes": 201
+    },
+    "lookup/interrupted-v4-interp06/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "522cb7283a9c38fef980294dde9647b5f0cb621b6b7f1175c715f28b86271aca",
+      "bytes": 201
+    },
+    "lookup/interrupted-v4-interp06/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup-buffer/cpu-v3-jit/candidate.bin": {
+      "sha256": "b91f756cae50ce061c8760673e26bbc5375ce77c0ad1f35dc5333de194cd27eb",
+      "bytes": 206835
+    },
+    "lookup-buffer/cpu-v3-jit/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup-buffer/cpu-v3-jit/frames.csv": {
+      "sha256": "bc2e14e526eacd668fb3e074cb693cbde94c058fd6bf029797d2886f68f8adcd",
+      "bytes": 38601
+    },
+    "lookup-buffer/cpu-v3-jit/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/cpu-v3-jit/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/final.png": {
+      "sha256": "6be247c165a7aa4d1efe87bb117feab6bd1594b5fc9e9d8c5e4d80900c3d5539",
+      "bytes": 2105
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "af8dd27c36ff64b598c49b54a630f6e667a431ff4e5d12f1585704eb580663fd",
+      "bytes": 1841
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/profile-identity.json": {
+      "sha256": "1e48e098076ccdd6346c3582087872b543e83afefaba4cbcaa272155c4679ffb",
+      "bytes": 1287
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/result.json": {
+      "sha256": "47bf0927a6736be07daf5cbfb535bd1806e8964b4c124a8c580840625fad2688",
+      "bytes": 2644
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/stats.json": {
+      "sha256": "1c5af89d107203d92218584ad60aee5e6a437171019b3973d9b7734a1ff732a3",
+      "bytes": 224
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/cpu-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/cpu-v3-jit/summary.txt": {
+      "sha256": "4c43bda183c88472841cd1c5318ccbfe4c01f6f8197a5f4b7312b2b31c1a41c9",
+      "bytes": 299
+    },
+    "lookup-buffer/cpu-v3-jit/verified.json": {
+      "sha256": "349472a9a31570538b90c27c615cf424e0c19ee69f2be31a5a1f1fb60b7fb56b",
+      "bytes": 996
+    },
+    "lookup-buffer/cpu-v4-interp/REJECTED.json": {
+      "sha256": "4b30e2f3c01115f3647a35b2a620604063cafc4e711ab195c65eeb54b7821b63",
+      "bytes": 175
+    },
+    "lookup-buffer/cpu-v4-interp/candidate.bin": {
+      "sha256": "36d441e906fac1ff13e9b41c1083f8627582f4d4c99c9d66ab6cb949ed46a516",
+      "bytes": 207056
+    },
+    "lookup-buffer/cpu-v4-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup-buffer/cpu-v4-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "lookup-buffer/cpu-v4-interp/frames.csv": {
+      "sha256": "3d878ad71393fe77795da5a795e53f060cebfa6d6414a75a55bf3baf12185a18",
+      "bytes": 37880
+    },
+    "lookup-buffer/cpu-v4-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/cpu-v4-interp/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "lookup-buffer/cpu-v4-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "lookup-buffer/cpu-v4-interp/runtime/final.ppm.gz": {
+      "sha256": "e5ed77ab3b532d1f783283a6cabd19cfea5ca1f080ee8f37f1b65feb270d8fc1",
+      "bytes": 1828
+    },
+    "lookup-buffer/cpu-v4-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/cpu-v4-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "lookup-buffer/cpu-v4-interp/runtime/profile-identity.json": {
+      "sha256": "5c747873b1515f90cdc533612aab730f428147d96d82a7589d873e92f10124b7",
+      "bytes": 1380
+    },
+    "lookup-buffer/cpu-v4-interp/runtime/result.json": {
+      "sha256": "41b4ba6a32ccae884eef76932618b518a1aa71b19f44c7848742681c16a07ea7",
+      "bytes": 3101
+    },
+    "lookup-buffer/cpu-v4-interp/runtime/stats.json": {
+      "sha256": "5f73acedb018fd893f645f39dcfd9868bb347a5d50576c729edc75dbc193635e",
+      "bytes": 226
+    },
+    "lookup-buffer/cpu-v4-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/cpu-v4-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/cpu-v4-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup-buffer/cpu-v4-interp/summary.txt": {
+      "sha256": "6e57b0f75940fe6549cc4d7834da65c6aabaef5d1e5fcc07eacdcca4f36d1906",
+      "bytes": 299
+    },
+    "lookup-buffer/cpu-v5-boostoff/candidate.bin": {
+      "sha256": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+      "bytes": 207059
+    },
+    "lookup-buffer/cpu-v5-boostoff/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup-buffer/cpu-v5-boostoff/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "lookup-buffer/cpu-v5-boostoff/frames.csv": {
+      "sha256": "434e38abb5f38a21001312a893437e6d8123c1d85468b7f785fb1822b0710bb7",
+      "bytes": 36228
+    },
+    "lookup-buffer/cpu-v5-boostoff/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/cpu-v5-boostoff/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/final.png": {
+      "sha256": "d3ea788af844e40b982305dfa14a33f2fbe721ba35b862eed4b3e41b9a3dad21",
+      "bytes": 2091
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "e5ed77ab3b532d1f783283a6cabd19cfea5ca1f080ee8f37f1b65feb270d8fc1",
+      "bytes": 1828
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "cf4dbbf2d4d1432a417bb0bbf01bf7f360b8dfb7ed27e37c7d521640bcaea3a2",
+      "bytes": 1380
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/result.json": {
+      "sha256": "149459fa8985a365499a589bb19dce8518762ea167dc5dbf620f9ec31c4e703b",
+      "bytes": 3161
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/stats.json": {
+      "sha256": "e98fba4203d9fa93f0a42c7516eeb2de49d3aea0e796da85052b827784b90ccb",
+      "bytes": 225
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/cpu-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/cpu-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup-buffer/cpu-v5-boostoff/summary.txt": {
+      "sha256": "dd27538955b2379c77205f51ee5b919d0f9a29532e08bcd68dc51d940b24b7e4",
+      "bytes": 297
+    },
+    "lookup-buffer/cpu-v5-boostoff/verified.json": {
+      "sha256": "c2f85fdfb852ea4a395b408082b3e592a10bc18fb994512e42ef1784dd111050",
+      "bytes": 1108
+    },
+    "lookup-buffer/cpu-v5-interp/candidate.bin": {
+      "sha256": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+      "bytes": 207059
+    },
+    "lookup-buffer/cpu-v5-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup-buffer/cpu-v5-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "lookup-buffer/cpu-v5-interp/frames.csv": {
+      "sha256": "974d0e1adc56e82c0eac9b46d167d9f423b913cc9bd2190ca8bb46a43c253767",
+      "bytes": 37905
+    },
+    "lookup-buffer/cpu-v5-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/cpu-v5-interp/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/final.png": {
+      "sha256": "d3ea788af844e40b982305dfa14a33f2fbe721ba35b862eed4b3e41b9a3dad21",
+      "bytes": 2091
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/final.ppm.gz": {
+      "sha256": "e5ed77ab3b532d1f783283a6cabd19cfea5ca1f080ee8f37f1b65feb270d8fc1",
+      "bytes": 1828
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/profile-identity.json": {
+      "sha256": "cf4dbbf2d4d1432a417bb0bbf01bf7f360b8dfb7ed27e37c7d521640bcaea3a2",
+      "bytes": 1380
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/result.json": {
+      "sha256": "5d7417a871d64f50e06ca1589c7d72ddb588251601df744eeb44e3761355dd17",
+      "bytes": 3106
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/stats.json": {
+      "sha256": "37bc538800c6e8d6572982fe7abc82d1c5f0646d535159875dc868711f930340",
+      "bytes": 226
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/cpu-v5-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/cpu-v5-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup-buffer/cpu-v5-interp/summary.txt": {
+      "sha256": "c2756254ff45ba25cd75aa0ff674150d7d549158e33a47d44a07ce70d17dee35",
+      "bytes": 299
+    },
+    "lookup-buffer/cpu-v5-interp/verified.json": {
+      "sha256": "2f9d83478c809baa1c7c556af97bec360d31adaa87003f694f5a5208e88c3b92",
+      "bytes": 1119
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/FAILURE-CHECK.json": {
+      "sha256": "f9d082ecf23229a01a4b365cc43a4802d061297e1226a0c282ed0ef41f54895c",
+      "bytes": 949
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/candidate.bin": {
+      "sha256": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+      "bytes": 207059
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/mode.txt": {
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "3ee2715999d4ae5cb1ac50dcc7884827332577d38e5b1d060061de7be9ef0c1c",
+      "bytes": 3427
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "22dc6b0c63c006ed445783ef9bbf6d65154d4f96124714c2fd08456d55781736",
+      "bytes": 3185
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "dd219ffb99e43b8c2aad4bdfb020c1014804ebf457d6f89f5f76956addecae72",
+      "bytes": 79984
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "1e40b634d15746c54ba58562f353f8a20d7fcb6be4f4ec1a336a80c930298f1e",
+      "bytes": 1380
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/runtime/result.json": {
+      "sha256": "720b24cb045eaf16d4569e33a868d8c2b754baadb37e2d132633b541d4d0abde",
+      "bytes": 2323
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/runtime/stats.json": {
+      "sha256": "ed7fd73fb406356d756a7c69189f516b397517c95d938063cba88e38db70bbb3",
+      "bytes": 233
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "69197b47d05c2a57bb5c4dd0b38e40e6417325c754df3097f5a633c17bbca25d",
+      "bytes": 278
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "69197b47d05c2a57bb5c4dd0b38e40e6417325c754df3097f5a633c17bbca25d",
+      "bytes": 278
+    },
+    "lookup-buffer/failed-shadow-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup-buffer/failed-v3-jit/candidate.bin": {
+      "sha256": "b91f756cae50ce061c8760673e26bbc5375ce77c0ad1f35dc5333de194cd27eb",
+      "bytes": 206835
+    },
+    "lookup-buffer/failed-v3-jit/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup-buffer/failed-v3-jit/frames.csv": {
+      "sha256": "a200efd9e96026486d3ad6410357ed798ffb537921e1483b2cb9687ff6f8c2cd",
+      "bytes": 15760
+    },
+    "lookup-buffer/failed-v3-jit/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/failed-v3-jit/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup-buffer/failed-v3-jit/runtime/esp32-uart0.log.gz": {
+      "sha256": "7a74a3437b16806675579304cd2f517663d62cecaa557d3bac19b579dc35c274",
+      "bytes": 2004
+    },
+    "lookup-buffer/failed-v3-jit/runtime/final.ppm.gz": {
+      "sha256": "17b0bcf635a75a12f3958e63eb0c4cfb4bfaff5b0ded7e1833bde14321633057",
+      "bytes": 3200
+    },
+    "lookup-buffer/failed-v3-jit/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/failed-v3-jit/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "97f1ab07c29ff6a7b01d6f772d4c1c17ad86b4699cf1915de97cd101ca333c3d",
+      "bytes": 33155
+    },
+    "lookup-buffer/failed-v3-jit/runtime/profile-identity.json": {
+      "sha256": "4b5d4f06ce43e4db87091a51b26f2196e47448cea69c17d44834b8a92e7cc667",
+      "bytes": 1287
+    },
+    "lookup-buffer/failed-v3-jit/runtime/result.json": {
+      "sha256": "cfcf57fd11e5642b360dd918eb35b153775965ea18e3bb257ffb62b6ed1b79e8",
+      "bytes": 2667
+    },
+    "lookup-buffer/failed-v3-jit/runtime/stats.json": {
+      "sha256": "9b989cb5d54fdf808995a5be9ad45141c6b240f54872a4b6c7b6c0010c9f32b9",
+      "bytes": 230
+    },
+    "lookup-buffer/failed-v3-jit/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "99998c713335f393d44674516b6c15ebd69ec4922283538de6e117cf1972bcea",
+      "bytes": 231
+    },
+    "lookup-buffer/failed-v3-jit/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "99998c713335f393d44674516b6c15ebd69ec4922283538de6e117cf1972bcea",
+      "bytes": 231
+    },
+    "lookup-buffer/failed-v3-jit/summary.txt": {
+      "sha256": "8d7c7216b17c05115275f0bf76d423cab925a3710bef347995dc5dfae48c349b",
+      "bytes": 315
+    },
+    "lookup-buffer/failed-v4-interp/candidate.bin": {
+      "sha256": "36d441e906fac1ff13e9b41c1083f8627582f4d4c99c9d66ab6cb949ed46a516",
+      "bytes": 207056
+    },
+    "lookup-buffer/failed-v4-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/failed-v4-interp/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup-buffer/failed-v4-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "faa2bedffb4c945091ecbc62743d1e583cbd35edce33f785e56d6bb5d28d4bb7",
+      "bytes": 196
+    },
+    "lookup-buffer/failed-v4-interp/runtime/final.ppm.gz": {
+      "sha256": "0cf04005498dac31c774ef6753f78b20273ce3f4aea517ada9c6567e8aeb3259",
+      "bytes": 274
+    },
+    "lookup-buffer/failed-v4-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/failed-v4-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "b97009b136d0faff7b5f9609e1e05e475d26606f95ea9d489b0cc656849ace87",
+      "bytes": 7813
+    },
+    "lookup-buffer/failed-v4-interp/runtime/profile-identity.json": {
+      "sha256": "e32e956d0a7937776c9ee9db3bb49880fb88fc283cb29b005fc4eadcf83b6931",
+      "bytes": 1380
+    },
+    "lookup-buffer/failed-v4-interp/runtime/result.json": {
+      "sha256": "0bfa1204e81d0da919fc3822392919a824059f50c9d490c1b83ecd499b24ec11",
+      "bytes": 2152
+    },
+    "lookup-buffer/failed-v4-interp/runtime/stats.json": {
+      "sha256": "919197c118e8562b25363b3c146e03a88a57e0add154e0054d1f4c2f7bd980a9",
+      "bytes": 231
+    },
+    "lookup-buffer/failed-v4-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "cbd529d839dba8121739bb9a6679fa4f5265e37895d89682d5c206b6896dcf2c",
+      "bytes": 79
+    },
+    "lookup-buffer/failed-v4-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "cbd529d839dba8121739bb9a6679fa4f5265e37895d89682d5c206b6896dcf2c",
+      "bytes": 79
+    },
+    "lookup-buffer/failed-v4-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup-buffer/failed-v5-boostoff/FAILURE-CHECK.json": {
+      "sha256": "4378816011049aa1b2b817fbfd505f8f59dc86f061597d03430ecc8fdb9cca06",
+      "bytes": 943
+    },
+    "lookup-buffer/failed-v5-boostoff/candidate.bin": {
+      "sha256": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+      "bytes": 207059
+    },
+    "lookup-buffer/failed-v5-boostoff/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/failed-v5-boostoff/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup-buffer/failed-v5-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "37e7affada2506899af2ed36ade459570961c15c50654ee0e4202c60d1edd944",
+      "bytes": 801
+    },
+    "lookup-buffer/failed-v5-boostoff/runtime/final.ppm.gz": {
+      "sha256": "7c443176f8f04e140e67a63fea62b28e9cb74ba09fdc9dbaed29b31316b9c7cd",
+      "bytes": 3346
+    },
+    "lookup-buffer/failed-v5-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/failed-v5-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "e8c0e79782a76bb090be9652b8594bbadf7f451598fc73fca301de4ba0160cfa",
+      "bytes": 16514
+    },
+    "lookup-buffer/failed-v5-boostoff/runtime/profile-identity.json": {
+      "sha256": "a443957c84f516310485a0532654632daa145cc380a1af7a437f455220e8d2f4",
+      "bytes": 1380
+    },
+    "lookup-buffer/failed-v5-boostoff/runtime/result.json": {
+      "sha256": "79fc591529564b13d7ac76571859e85d38667055f4552e9886287fb8a94c0f1b",
+      "bytes": 2320
+    },
+    "lookup-buffer/failed-v5-boostoff/runtime/stats.json": {
+      "sha256": "ec1febd4c722f349ae046f5d80b5f0a9b6b93311d3b030631793198911bb7d1a",
+      "bytes": 231
+    },
+    "lookup-buffer/failed-v5-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "d30eee3febc6f076bd770687bbb54c5a41aef6223c36bc1bfe549e4217e66318",
+      "bytes": 146
+    },
+    "lookup-buffer/failed-v5-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "d30eee3febc6f076bd770687bbb54c5a41aef6223c36bc1bfe549e4217e66318",
+      "bytes": 146
+    },
+    "lookup-buffer/failed-v5-boostoff/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup-buffer/failed-v5-interp/FAILURE-CHECK.json": {
+      "sha256": "1b7353bb83e2f566edec37e6bdd43502f3bc7127a528fb124f8f9de6564ec52f",
+      "bytes": 938
+    },
+    "lookup-buffer/failed-v5-interp/candidate.bin": {
+      "sha256": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+      "bytes": 207059
+    },
+    "lookup-buffer/failed-v5-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup-buffer/failed-v5-interp/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4
+    },
+    "lookup-buffer/failed-v5-interp/frames.csv": {
+      "sha256": "c65499538cd74b381b32254301fc061791e240773d173da98cf994387d37fcc6",
+      "bytes": 7777
+    },
+    "lookup-buffer/failed-v5-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/failed-v5-interp/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup-buffer/failed-v5-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "07de3736deed1e231a089cd8d5fdebe4841d0a877dcf3f4f8d76dfeda8e777d5",
+      "bytes": 1201
+    },
+    "lookup-buffer/failed-v5-interp/runtime/final.ppm.gz": {
+      "sha256": "db7ce95f2edc7e218fcea5000b79ec3a05910dd791ae877ec477664d205bf46e",
+      "bytes": 3172
+    },
+    "lookup-buffer/failed-v5-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/failed-v5-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "b7ae0cd4cc5439e4c934e67088247e1ca55fd1a4a1208876f7c896e41fbc1bcb",
+      "bytes": 21357
+    },
+    "lookup-buffer/failed-v5-interp/runtime/profile-identity.json": {
+      "sha256": "a443957c84f516310485a0532654632daa145cc380a1af7a437f455220e8d2f4",
+      "bytes": 1380
+    },
+    "lookup-buffer/failed-v5-interp/runtime/result.json": {
+      "sha256": "8a160e46a4e83cf86cbde8f876764fe95c30802ac1267da1752fc3810b75957f",
+      "bytes": 3129
+    },
+    "lookup-buffer/failed-v5-interp/runtime/stats.json": {
+      "sha256": "908b3cef1279e5abda572d2ba38c56f237dfc2b09440c7522210d2a6a5416be6",
+      "bytes": 233
+    },
+    "lookup-buffer/failed-v5-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "6bd1f1ad9348c0faacbcf9884b891aec65217f32f51503a4a05fb44846363d29",
+      "bytes": 179
+    },
+    "lookup-buffer/failed-v5-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "6bd1f1ad9348c0faacbcf9884b891aec65217f32f51503a4a05fb44846363d29",
+      "bytes": 179
+    },
+    "lookup-buffer/failed-v5-interp/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup-buffer/failed-v5-interp/summary.txt": {
+      "sha256": "fa643e232e0b008709f138a1fb3bbc31ba50f53fcbdb8e00b7707ddc95ea91ef",
+      "bytes": 315
+    },
+    "lookup-buffer/live-v1/candidate.bin": {
+      "sha256": "311b1105fa930ce424cae603fdf0e3539084fa67425b0ab36ebb4ec877606836",
+      "bytes": 206501
+    },
+    "lookup-buffer/live-v1/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup-buffer/live-v1/frames.csv": {
+      "sha256": "cf0db0ed41f13054b6d9ed942273a4661c30fb1156e24f9df74ec8ed01a39e6f",
+      "bytes": 42363
+    },
+    "lookup-buffer/live-v1/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/live-v1/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup-buffer/live-v1/runtime/final.png": {
+      "sha256": "3deda6b3b2389a39ce48f53b5736a0f8ea7f96bdd619d21a8569f9c7b7827f07",
+      "bytes": 4324
+    },
+    "lookup-buffer/live-v1/runtime/final.ppm.gz": {
+      "sha256": "54ea54878041e9a43efbcd50856f55621381d3504c956246394db9bede286f3a",
+      "bytes": 3279
+    },
+    "lookup-buffer/live-v1/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "fa2e944139a47e9e1608a393efe065e94dfb5a4661dea13ee310b859c9ebdcfe",
+      "bytes": 224033
+    },
+    "lookup-buffer/live-v1/runtime/result.json": {
+      "sha256": "78746803ef849fbb8c0238cf3f1114149514a92e3fa4e0700b929301cb5901cd",
+      "bytes": 2633
+    },
+    "lookup-buffer/live-v1/runtime/stats.json": {
+      "sha256": "f11917bfc47411da6c7841ba759385e778bbec006c1d780d724609de512529c1",
+      "bytes": 233
+    },
+    "lookup-buffer/live-v1/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "95fb0f22d91a72d7d4fb092369770d6f944c9c349a53b9b09a6b8cf2b2c4532f",
+      "bytes": 479
+    },
+    "lookup-buffer/live-v1/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "95fb0f22d91a72d7d4fb092369770d6f944c9c349a53b9b09a6b8cf2b2c4532f",
+      "bytes": 479
+    },
+    "lookup-buffer/live-v1/summary.txt": {
+      "sha256": "8bd00958e29df77dda19e2d3c805edd4acac741596f99915043ffab36bc9dfec",
+      "bytes": 288
+    },
+    "lookup-buffer/live-v1/verified.json": {
+      "sha256": "58e80b8e05d494db98f6c3a3176945e75cde40477c8356f05a08e94a589f16e6",
+      "bytes": 884
+    },
+    "lookup-buffer/live-v3-interp/candidate.bin": {
+      "sha256": "b91f756cae50ce061c8760673e26bbc5375ce77c0ad1f35dc5333de194cd27eb",
+      "bytes": 206835
+    },
+    "lookup-buffer/live-v3-interp/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "lookup-buffer/live-v3-interp/frames.csv": {
+      "sha256": "f3d6b193496cc0f9ab261db1afd3ef94f6dc166141d6739cd19cd770dd08869c",
+      "bytes": 42552
+    },
+    "lookup-buffer/live-v3-interp/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/live-v3-interp/mode.txt": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "lookup-buffer/live-v3-interp/runtime/esp32-uart0.log.gz": {
+      "sha256": "1cb0cce975a72b9969b164fe550bb135c022c317b61fd01c95637db67bb25932",
+      "bytes": 7196
+    },
+    "lookup-buffer/live-v3-interp/runtime/final.png": {
+      "sha256": "3deda6b3b2389a39ce48f53b5736a0f8ea7f96bdd619d21a8569f9c7b7827f07",
+      "bytes": 4324
+    },
+    "lookup-buffer/live-v3-interp/runtime/final.ppm.gz": {
+      "sha256": "54ea54878041e9a43efbcd50856f55621381d3504c956246394db9bede286f3a",
+      "bytes": 3279
+    },
+    "lookup-buffer/live-v3-interp/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/live-v3-interp/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "fa2e944139a47e9e1608a393efe065e94dfb5a4661dea13ee310b859c9ebdcfe",
+      "bytes": 224033
+    },
+    "lookup-buffer/live-v3-interp/runtime/profile-identity.json": {
+      "sha256": "4caee59ad1db0451bd50cc04c71c7fd79c7fb9d43fa65c6908ac2034c3d8b408",
+      "bytes": 1380
+    },
+    "lookup-buffer/live-v3-interp/runtime/result.json": {
+      "sha256": "5ce9fd787c388c1ce992960828901572b1c374b0dcff9092795036e2b03bc9d7",
+      "bytes": 2764
+    },
+    "lookup-buffer/live-v3-interp/runtime/stats.json": {
+      "sha256": "c3a129e1273046747acb3c0f34b6cf2f8b1887b95f1b3a5d6d8ad3d8d05c5349",
+      "bytes": 236
+    },
+    "lookup-buffer/live-v3-interp/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "95fb0f22d91a72d7d4fb092369770d6f944c9c349a53b9b09a6b8cf2b2c4532f",
+      "bytes": 479
+    },
+    "lookup-buffer/live-v3-interp/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "95fb0f22d91a72d7d4fb092369770d6f944c9c349a53b9b09a6b8cf2b2c4532f",
+      "bytes": 479
+    },
+    "lookup-buffer/live-v3-interp/summary.txt": {
+      "sha256": "fc3902abe7f34803f3ba3f45b082687d1cb29ea13559ee585f45abe6ceffce35",
+      "bytes": 308
+    },
+    "lookup-buffer/live-v3-interp/verified.json": {
+      "sha256": "35cdb411136f75d192dae3940f009f2c74dde755d3e74b08fe21abd0986bcb38",
+      "bytes": 1011
+    },
+    "lookup-buffer/power-interrupted-v5/INTERRUPTION.json": {
+      "sha256": "e36e62cba66014189887859ef7491942ddf16bba572f30baff4b86781ada2b24",
+      "bytes": 107
+    },
+    "lookup-buffer/power-interrupted-v5/candidate.bin": {
+      "sha256": "c6551f2318168f8edb3f0f0377d3b58458cc198a8fccce790d90000bd56c4e98",
+      "bytes": 207059
+    },
+    "lookup-buffer/power-interrupted-v5/done.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/power-interrupted-v5/ended.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/power-interrupted-v5/frames.csv": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/power-interrupted-v5/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "lookup-buffer/power-interrupted-v5/mode.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "lookup-buffer/power-interrupted-v5/runtime/esp32-uart0.log.gz": {
+      "sha256": "744bbc4b28c3c9c786b81913a7d969a9439f04b96733d873092256cb054072b2",
+      "bytes": 181
+    },
+    "lookup-buffer/power-interrupted-v5/runtime/final.ppm.gz": {
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20
+    },
+    "lookup-buffer/power-interrupted-v5/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/power-interrupted-v5/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "7d4759accc11ecd704ecb13ece4db913cf58bbf2ab343f590ce7f2229fe2c295",
+      "bytes": 126
+    },
+    "lookup-buffer/power-interrupted-v5/runtime/profile-identity.json": {
+      "sha256": "cf4dbbf2d4d1432a417bb0bbf01bf7f360b8dfb7ed27e37c7d521640bcaea3a2",
+      "bytes": 1380
+    },
+    "lookup-buffer/power-interrupted-v5/runtime/result.json": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/power-interrupted-v5/runtime/stats.json": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "lookup-buffer/power-interrupted-v5/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/power-interrupted-v5/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "lookup-buffer/power-interrupted-v5/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6
+    },
+    "lookup-buffer/power-interrupted-v5/summary.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "main-v4.dis.gz": {
+      "sha256": "401839128649d9cd0dbf1265da8c92269dab8f768f4e13ce12b7b9b78e70358e",
+      "bytes": 84260
+    },
+    "main-v5.dis.gz": {
+      "sha256": "1ac3281befd0381a095eff2fc62ece9e942bbf0abcc6e6ec77a3ebe6127051e8",
+      "bytes": 84270
+    },
+    "physics-wall-boostoff/capacity.bin": {
+      "sha256": "12fa08e3217db0f03cafefeae3743d260d380a6cd5696d26e8658c53799e40c6",
+      "bytes": 168615
+    },
+    "physics-wall-boostoff/count.txt": {
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2
+    },
+    "physics-wall-boostoff/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9
+    },
+    "physics-wall-boostoff/phases.csv": {
+      "sha256": "124590d704763b258cbc11a706095b9c8e26f543ce3be2cc5c3b40bdb0fda44e",
+      "bytes": 48
+    },
+    "physics-wall-boostoff/runtime/esp32-uart0.log.gz": {
+      "sha256": "1a929985ce0910c4a1873819cea9862555f5fb2b60bfe8cfb6ee2530a6470c09",
+      "bytes": 198
+    },
+    "physics-wall-boostoff/runtime/final.ppm.gz": {
+      "sha256": "f89eb8a76552e4c8fd32f9006a1a4bbbf91cd5066cafc3c520bdf75cdaa5234a",
+      "bytes": 1954
+    },
+    "physics-wall-boostoff/runtime/frontend.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "physics-wall-boostoff/runtime/mos-to-vdp.bin.gz": {
+      "sha256": "92a45dcccee1b83dc6bdcb8cf7ec77a073f18d84e55dee11ddaad464e3a13204",
+      "bytes": 139
+    },
+    "physics-wall-boostoff/runtime/result.json": {
+      "sha256": "6dbf73abe55d4730ec81ed6932173835c80c7749913bc159c4f977f89c706eda",
+      "bytes": 2750
+    },
+    "physics-wall-boostoff/runtime/stats.json": {
+      "sha256": "cd2c353d1c2b15592b2a72455e36b1b808f95846a7f5a211ed269148fff3d8ec",
+      "bytes": 225
+    },
+    "physics-wall-boostoff/runtime/vdp-to-mos-delivered.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "physics-wall-boostoff/runtime/vdp-to-mos.bin.gz": {
+      "sha256": "90fe4a99724b6888ee4a3d7f9aab4a877e1a57fa147ab2dc476bc5682c45353e",
+      "bytes": 56
+    },
+    "physics-wall-boostoff/state.csv": {
+      "sha256": "a1681351277be379335a2c41b4ec6464863756a35d6120aa95249108c58c7781",
+      "bytes": 4071
+    },
+    "physics-wall-boostoff/summary.txt": {
+      "sha256": "d720006032d5e546372c39df565a5694af4100b64fb7bff4d84b9bb92dd717ec",
+      "bytes": 212
+    },
+    "physics-wall-boostoff/verified.json": {
+      "sha256": "c2f57526eba1888ce17026443ce339ef6ce44eaa626ed1db6aaec7ec15acc996",
+      "bytes": 1286
+    },
+    "reconstruction-attempt/README.md": {
+      "sha256": "e47dab543a6fcf13779e5743f1bf8fe4b701ff65fb311fad97ac28e84168859b",
+      "bytes": 157
+    },
+    "reconstruction-attempt/driver.cpp": {
+      "sha256": "a3468f59de4685e999c7ccbf75f97264c6a6dcb6aa189ac9549e9f585e9526f7",
+      "bytes": 7419
+    },
+    "shadow-host.json": {
+      "sha256": "9c1ebf4a8bc74d31b613661bec289292ad5967fef2594c66f3375e3aa4f88095",
+      "bytes": 84
+    }
+  }
+}
