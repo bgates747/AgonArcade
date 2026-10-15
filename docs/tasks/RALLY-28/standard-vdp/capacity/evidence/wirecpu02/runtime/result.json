@@ -1,0 +1,61 @@
+{
+  "reason": "guest-files",
+  "host_seconds": 141.53570443100034,
+  "exit": 0,
+  "kind": "wirecpu",
+  "identity": {
+    "kind": "wirecpu",
+    "files": {
+      "flexe-agon-emulator": "4ce4579ced9bff648ab8fd5c4341db26c09f0453b78518020fdb6bd0ef89caeb",
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "61add984a3f9bc45ae125b715c56f9cd832ae603f534aaa0d9383512d2d2eeef",
+      "sdcard/test/arcade/rally28/wirecpu/capacity.bin": "0eef9c01af1667a7b1fc29e7c7cd176ed00d37042e5403cc0fcdf04fca9035a3",
+      "sdcard/test/arcade/rally28/wirecpu/count.txt": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+    },
+    "setup_helper_sha256": "23432375e90170f6d855282dc984516ef3b623e842827cccc65feccd81276b02",
+    "stock_release": "https://github.com/AgonPlatform/agon-vdp/releases/tag/v2.16.0",
+    "rounds": 2
+  },
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "summary": {
+    "schema": "1",
+    "frames": "900",
+    "mos_units": "15286",
+    "prt_ticks": "134771",
+    "advance_prt": "3804",
+    "geometry_prt": "51468",
+    "emission_prt": "79461",
+    "bytes": "1673633",
+    "position": "1202800",
+    "phase": "1600",
+    "vector_restored": "1"
+  },
+  "outputs": {
+    "summary.txt": "ee1aadfa506ee3a4f36fb5e43b8e87cf2f48fb677dfded06f1dd73350bb5b282",
+    "done.txt": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1"
+  },
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 9164,
+    "cycles": 37298920339,
+    "retired": 45741788888,
+    "uart_rx": 487,
+    "uart_tx": 333,
+    "uart_delivered": 333,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "identities_unchanged": true
+}

@@ -1,0 +1,63 @@
+{
+  "reason": "guest-files",
+  "host_seconds": 42.20950111599814,
+  "exit": 0,
+  "kind": "capacity",
+  "identity": {
+    "kind": "capacity",
+    "files": {
+      "flexe-agon-emulator": "4ce4579ced9bff648ab8fd5c4341db26c09f0453b78518020fdb6bd0ef89caeb",
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "024fc3a032fa739d761381c4578e2f615092f0882a8b5bbd6658916a3643f7e1",
+      "sdcard/test/arcade/rally28/capacity/capacity.bin": "dd8d58d71edc2cf1f93e3c6f2b31c5b81db6a01a0e3d930ee2b77e6b78225184",
+      "sdcard/test/arcade/rally28/capacity/count.txt": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+    },
+    "setup_helper_sha256": "23432375e90170f6d855282dc984516ef3b623e842827cccc65feccd81276b02",
+    "stock_release": "https://github.com/AgonPlatform/agon-vdp/releases/tag/v2.16.0",
+    "rounds": 2
+  },
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "summary": {
+    "schema": "1",
+    "rounds": "2",
+    "steps": "8192",
+    "mos_begin": "438",
+    "mos_end": "3162",
+    "mos_units": "2724",
+    "prt_ticks": "24474",
+    "vector_restored": "1",
+    "nominal_mos_hz": "120",
+    "nominal_prt_hz": "1000",
+    "numerical_tick": "original-120-unit-clock-and-100-integrator"
+  },
+  "outputs": {
+    "summary.txt": "b9ed4ec722fe4b72f93028da7cd46e7e918150776c4733344e661c6950dbb948",
+    "state.csv": "a1681351277be379335a2c41b4ec6464863756a35d6120aa95249108c58c7781",
+    "phases.csv": "7362d2ec2e96f486bbe3e29a170c7af8cee860d25f6263617f112ba78fc0c59a",
+    "done.txt": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1"
+  },
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 2462,
+    "cycles": 10093414562,
+    "retired": 11636285040,
+    "uart_rx": 504,
+    "uart_tx": 333,
+    "uart_delivered": 333,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "identities_unchanged": true
+}

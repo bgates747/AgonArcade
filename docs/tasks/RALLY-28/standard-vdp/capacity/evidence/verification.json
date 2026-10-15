@@ -1,0 +1,172 @@
+{
+  "physics": {
+    "verified": true,
+    "steps": 8192,
+    "mos_seconds": 22.416666666666668,
+    "prt_nominal_seconds": 24.476,
+    "mos_steps_per_second": 365.4423791821561,
+    "prt_nominal_steps_per_second": 334.69521163588826,
+    "clock_difference_pct": 9.186617100371741,
+    "scenarios": [
+      {
+        "scenario": 0,
+        "steps": 2048,
+        "mos_units": 826,
+        "prt_ticks": 7476,
+        "mos_ms_per_step": 3.361002604166667,
+        "prt_nominal_ms_per_step": 3.650390625
+      },
+      {
+        "scenario": 1,
+        "steps": 2048,
+        "mos_units": 628,
+        "prt_ticks": 5828,
+        "mos_ms_per_step": 2.5553385416666665,
+        "prt_nominal_ms_per_step": 2.845703125
+      },
+      {
+        "scenario": 2,
+        "steps": 2048,
+        "mos_units": 478,
+        "prt_ticks": 4350,
+        "mos_ms_per_step": 1.9449869791666667,
+        "prt_nominal_ms_per_step": 2.1240234375
+      },
+      {
+        "scenario": 3,
+        "steps": 2048,
+        "mos_units": 758,
+        "prt_ticks": 6820,
+        "mos_ms_per_step": 3.084309895833333,
+        "prt_nominal_ms_per_step": 3.330078125
+      }
+    ],
+    "coverage_per_round": {
+      "0": {
+        "motion": 1024,
+        "recovery": 0,
+        "contacts": 0,
+        "road": 1024,
+        "kerb": 0,
+        "grass": 0,
+        "passes": 1
+      },
+      "1": {
+        "motion": 1024,
+        "recovery": 0,
+        "contacts": 0,
+        "road": 232,
+        "kerb": 108,
+        "grass": 684,
+        "passes": 0
+      },
+      "2": {
+        "motion": 1024,
+        "recovery": 0,
+        "contacts": 0,
+        "road": 0,
+        "kerb": 0,
+        "grass": 1024,
+        "passes": 0
+      },
+      "3": {
+        "motion": 874,
+        "recovery": 150,
+        "contacts": 1,
+        "road": 579,
+        "kerb": 77,
+        "grass": 218,
+        "passes": 0
+      }
+    },
+    "state_fields_checked": 420,
+    "application_wire_bytes_inside_window": 0,
+    "host_total_seconds": 30.03985739199925
+  },
+  "wire": {
+    "verified": true,
+    "frames": 900,
+    "bytes": {
+      "road": 1233333,
+      "traffic_signs": 295614,
+      "player": 20700,
+      "scenery": 58974,
+      "hud": 722,
+      "panel": 222,
+      "bottom": 34200,
+      "viewport": 27000,
+      "swap": 2700,
+      "audio": 168
+    },
+    "total": 1673633,
+    "mean_bytes_per_frame": 1859.5922222222223,
+    "min_bytes_per_frame": 1521,
+    "max_bytes_per_frame": 2339,
+    "shares_pct": {
+      "road": 73.6919623358287,
+      "traffic_signs": 17.663012141849496,
+      "player": 1.2368302967257456,
+      "scenery": 3.5237115902948855,
+      "hud": 0.04313968474569992,
+      "panel": 0.01326455680546452,
+      "bottom": 2.0434587511121016,
+      "viewport": 1.6132569087727118,
+      "swap": 0.1613256908772712,
+      "audio": 0.010038042987919096
+    },
+    "setup_bytes": 124461,
+    "bands": 10093,
+    "painted_bands": 4307,
+    "quads": 44679,
+    "rectangles_including_finish": 1800,
+    "mean_road_bytes": 1370.37,
+    "mean_road_template_model_bytes": 662.65,
+    "road_template_model_saving_pct": 51.64444639039092,
+    "mean_link_floor_ms_at_1152000_8N1": 16.142293595679014,
+    "scroll_frames": 397,
+    "repaint_frames": 399,
+    "visible_cars": 5400,
+    "visible_signs": 711,
+    "existing_frame_completion_requests": 0,
+    "proposed_completion_upstream_bytes_per_frame": 7,
+    "proposed_keyboard_reply_downstream_bytes_per_frame": 6,
+    "host_sdk_wire_identity": {
+      "setup.bin": "da294bce6bd258298b049cc563afd7c6062b5e8a0d4f4ddf8fd05f5e1440e309",
+      "wire-audio.bin": "e563d4a19c639793cbd57969c639fddaee7e33397fb50239b58cdf574eedfe3b",
+      "wire-bottom.bin": "1e3fadbba86af89378ccb4de59e0953e0efc00d9acd4537015536e5afc7eafdb",
+      "wire-hud.bin": "7d3825964e040f1e5036e5ec265fde370cef02bc3395297f6c4817ebc5765a48",
+      "wire-panel.bin": "e5bd880901995e87da1e6a04377c3a4e48af8b24030735ff382a497a5a784c33",
+      "wire-player.bin": "4a4091ccf224e98308e4cfb2e97bf2cadf8d12cfcef428af4763de45663a0c61",
+      "wire-road.bin": "2e798a549653f5692a46e7b5555b37e5627bf585d67a92e04d7678ca8bf510ff",
+      "wire-scenery.bin": "e883b683aba7a9a5c6aff7cb6378a0735354333a65e78763aa353597da1bfac5",
+      "wire-swap.bin": "1f996342b3c00d759cbcf71cf613f13621c0dda5346e95d1ea24b9480222592e",
+      "wire-traffic_signs.bin": "0c66cb61b761dcd90c1919847f4eab4fcb40e606fed9d792cb1351e94912df5c",
+      "wire-viewport.bin": "f09d3476266fe93ace6f822da447aecdb3b486411e9ce65044369dc3dd8f1f98"
+    },
+    "limitations": [
+      "Stock buffered template figures are a complete upstream byte model, not a tested speedup.",
+      "Setup excludes mode/keyboard/MOS boot handshakes; includes assets/fonts/mirror/audio setup.",
+      "No real UART/CTS blocking or VDP completed-drawing timing in the CPU sink benchmark."
+    ]
+  },
+  "cpu": {
+    "verified": true,
+    "frames": 900,
+    "bytes": 1673633,
+    "mos_seconds": 127.38333333333334,
+    "prt_nominal_seconds": 134.771,
+    "mos_mean_ms_per_frame": 141.53703703703704,
+    "prt_nominal_mean_ms_per_frame": 149.74555555555557,
+    "stage_nominal_prt_ms_per_frame": {
+      "advance_prt": 4.226666666666667,
+      "geometry_prt": 57.18666666666667,
+      "emission_prt": 88.29
+    },
+    "host_total_seconds": 141.53570443100034,
+    "limitations": [
+      "This is CPU construction with a separate opaque sink, not rendered FPS.",
+      "No live UART transfer, CTS stall or VDP raster/swap/completion cost.",
+      "Advance uses the preserved simplified centerline wire workload, not actual-player physics."
+    ]
+  }
+}
