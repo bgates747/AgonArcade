@@ -307,3 +307,45 @@ commit/push of ALL current dirt in logical groups before lookup-engine research.
 This includes the unfinished full-scene native fixture and strict silent-headless
 policy. FS-001-07 remains failed/pending correction; publication is a checkpoint,
 not visual acceptance or a release of further native implementation.
+
+RENDERER EXPLORATION (2026-10-14): Author requested new RALLY-28 task document
+and reading Lou Gorenfeld https://www.extentofthejam.com/pseudo/ after supplying
+POLE26.S/AtariAge references. Task/research notes in docs/tasks/RALLY-28.md; root
+TODO registers it. Research/documentation only, no implementation/run release.
+Separate geometry preparation from dispatch/raster cost; initial candidate is
+specializing current bilinear section corners, then filler A/B on same geometry.
+Existing depth/stripe tables already cover much tutorial advice. Direct mode136
+span service unverified; no new track/camera/physics semantics. Preserve all
+old fixture inputs; silent headless constraints remain. FS-001-07 black startup
+review failure still unresolved and is not fixed by this exploration task.
+
+OPTIMIZATION ORGANIZATION (2026-10-14): Author supersedes separate29/30 tasks:
+ALL optimization falls under RALLY-28. Read docs/tasks/RALLY-28.md. Subdirectories
+RALLY-28/research, standard-vdp and custom-vdp separate shared findings and each
+version's code/fixtures/results. Standard VDP/eZ80 version FIRST; custom
+Golem/VDPlet version SECOND. Existing MATH/FAST/STD/NATIVE IDs retained in parent
+task. Single root TODO entry; no independent29/30 task docs/register entries.
+Standard projection is an active target. Native startup FS-001-07 does not block
+standard research/planning. Current changes are documentation/structure only;
+no implementation/runs/peer edits/commit/push. Silent-headless policy unchanged.
+
+RALLY-28 HOT-LOOP REVIEW (2026-10-14): Author released first research item with
+“go”; MATH-001-01 complete. Read RALLY-28/research/HOT-LOOP-REVIEW.md and
+AUDIT.json. Unchanged-source standard/native eZ80 inspection objects reproduce
+preserved objects byte for byte;226 protected files unchanged. int/pointers24,
+short16,long32; narrowing storage does not guarantee narrower arithmetic.
+Standard dense rows847 software-wide multiplies/frame,242 for unused tangents;
+endpoint/edge reuse and other candidates documented. Costs are static evidence,
+not measured cycles/speedup/headroom. Actual manual Motion and simplified fixture
+player are distinguished; native Xtensa responsibilities mapped separately.
+Next research MATH-001-02 bounds/rounding. No game implementation, emulator run,
+firmware/profile/deployment/peer change, commit or push. Silent headless authority
+and separate FS-001-07 visual failure remain in force.
+
+RALLY-28 LOOKUP PRIORITY RELEASE (2026-10-14): Author requests preserving lookup
+assessment as LOOKUP-001-01, checkpointing/pushing all dirt in logical groups,
+then execution. Read RALLY-28.md immediate subtask. Assess R16/R18/R22 lineage,
+source/tables/codegen/performance evidence and a stock-compatible direct-emission
+reuse path before live-path micro-optimization/MATH-001-02. Bounded host research
+is within scope; preserve controls, no full-game replacement or emulator/hardware
+launch inferred. Existing native visual defect remains separate.

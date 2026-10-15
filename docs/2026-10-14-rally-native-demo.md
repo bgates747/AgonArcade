@@ -83,3 +83,31 @@ Author graphical review reported black screen/no scene at30seconds and closed it
 ## Author authorizes checkpoint of unfinished native fixture
 
 On2026-10-14 the Author explicitly directs committing/pushing all current dirt in logical groups before the lookup-engine assessment. This includes the native full-scene fixture, failed graphical-launch evidence and silent-headless correction. Checkpoint publication is now authorized; FS-001-07 remains failed/pending correction and no human visual acceptance is inferred.
+
+## Faster-renderer research task recorded
+
+Author supplied2600 POLE26.S, AtariAge road discussion and Lou Gorenfeld article, then requested a new exploration task and further reading. Created RALLY-28.md and registered it in authoritative TODO. Read Lou's road/depth/curvature/segment/drawing/case-study material and compared with current helper code. Recorded proposed independent axes: specialize existing bilinear corner geometry and compare alternative filling/dispatch using the same geometry. Lookup depth/stripe/sprite scaling already exists; cheap curve formulas alone may not address rasterization/VDU costs. Preserve camera/track/physics and old fixtures; direct mode136 spans need interface investigation. Research/documentation only; no emulator run, source implementation, peer edit, commit or push. FS-001-07 remains unresolved separately.
+
+## Arithmetic hot-loop review added to RALLY-28
+
+Author requests a subtask header reviewing current hot-loop32-bit arithmetic, narrower16/24-bit integer/fixed-point alternatives and rendering-accuracy tradeoffs; suggests agon-maths partial hand-coded Berkeley SoftFloat binary16 assembly and converting ez80asm routines to AgonDev wrappers. Added MATH-001-01–06 before renderer candidates: processor/call-frequency/generated-code audit; intermediate bounds/promotions; approximate rendering; library provenance/coverage; ABI/toolchain integration; total-cost/precision comparison. Initial `/Agon/mystuff/agon-maths` reference was not present; discovery is explicitly pending. No unsupported library capabilities, speed gain, actual port, new benchmark or publication claimed.
+
+## Optimization split: shared research, standard first, native second
+
+Author intends optimizing both maintained standard VDP/eZ80 computation and custom Golem/VDPlet versions; standard goes first. Refactored RALLY-28 to common research, added RALLY-29 standard application and RALLY-30 custom application, registered ordering at top of authoritative TODO. Retained existing research/math identifiers and explicitly disposed FAST-001-06 into separate application execution items without claiming code completion. Source/measurement/acceptance controls stay platform-specific; native shader/helper observations are labelled native, standard projection is an active target. No custom visual-defect dependency imposed on standard planning/research; no new build/run/code/peer edit/publication.
+
+## Optimization consolidation under RALLY-28
+
+Author prefers one RALLY-28 aegis with code subsilos. Consolidated the transient uncommitted29/30 planning documents into RALLY-28 standard/custom application sections, preserving all STD/NATIVE IDs and scope. Added research/,standard-vdp/,custom-vdp/ areas with parent-document references and ignored local build folders; no secondary task lists. Root TODO now has one optimization entry, standard first/custom second. Original task split above is superseded; no implementation/run/commit/push.
+
+## RALLY-28 first research item completed
+
+Author's “go” released MATH-001-01. Traced actual standard frame/physics/presentation path and native fixture processor split. Compiled unchanged standard/native eZ80 sources to isolated research assembly/LLVM IR/objects, reproducing both preserved objects byte for byte;226 existing inputs/artifacts hash-unchanged. ABI probes confirm24-bit int/pointers,16-bit short and32-bit long; unsigned16 multiplication promotes to24-bit int. Linked multiply/division core text matches installed sources/archive and preserved standard binary. No floating arithmetic/conversions appear in inspected eZ80 units; native helper binary32 remains Xtensa work.
+
+Dense standard road rows execute847 software-wide multiplies/frame,242 of them computing unused ahead tangents, plus242 wide divides/109 stripe remainders. Repeated full-fraction camera samples, endpoint divisions/edge arithmetic, nested greedy scans, static sign/wrap work, ordinary attract look-ahead and pre-cache HUD formatting are documented candidates. Compiler already shares some quotient/remainder work and narrows visible-range sign math. Stage review also establishes R27 “Geometry” excludes band search/strip vertices, “Submission” includes transport waits, and simplified fixture player is not actual Motion physics. AgonDev swap sends a command without explicit CPU-side VBlank wait/completion acknowledgement. No measured cycle gain, FPS/headroom claim, gameplay change, emulator launch, deployment or publication. MATH-001-01 closed with evidence under RALLY-28/research; MATH-001-02 bounds/rounding remains next. FS-001-07 unchanged.
+
+## Lookup-engine assessment promoted before further optimization
+
+Author recalls the preserved lookup engine and requests a subtask, logical-group commit/push of all dirt, then execution. Registered LOOKUP-001-01 under the same RALLY-28 umbrella before further live-path micro-optimization: trace R16/R18/R22/R27 lineage, separate lookup centres/bands from buffered matrix output, inspect actual eZ80 code/table costs and comparable historical measurements, and perform bounded host feasibility checks where useful for direct standard-VDP emission. Production controls remain unchanged; no emulator/hardware run or full-game adoption implied. Existing identifiers are immutable and MATH-001-02 remains open behind this priority.
+
+Native fixture/evidence/silent-headless policy checkpoint committed as `26bff68`; the following logical group freezes RALLY-28 research and LOOKUP-001-01 before execution.
