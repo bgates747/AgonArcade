@@ -1,0 +1,60 @@
+{
+  "error": null,
+  "host_seconds": 43.426,
+  "process_exit": 0,
+  "result": {
+    "scope": "Full-scene native fixture aggregate MOS timing including transport/checks/drawing/swap submission; no separate VDP completion timestamp",
+    "frames": 900,
+    "physics_ticks": 3600,
+    "elapsed_mos_ticks": 3788,
+    "elapsed_seconds": 31.566666666666666,
+    "observed_fps": 28.511087645195353,
+    "independent_final_world_match": true,
+    "state_sha256": "4156f3ffc82afb6476c7182f5c0c5c852472918b1798563acdd5ec5beadbcad3",
+    "player_driver": "R27 centerline pace; simplified, not interactive Motion.tick headroom",
+    "timer_restored": true,
+    "unloaded": true,
+    "scene_counters": {
+      "scroll_calls": 397,
+      "repaint_calls": 399,
+      "audio_changes": 24
+    },
+    "stack_before": 2260,
+    "stack_after": 2260,
+    "stages": {
+      "player_rules_prt_ms": "550",
+      "scenery_math_prt_ms": "510",
+      "hud_cpu_estimate_prt_ms": "5438",
+      "submission_prt_ms": "8827",
+      "reply_wait_prt_ms": "14020",
+      "loop_prt_ms": "32661",
+      "wire_bytes": "380564"
+    },
+    "raw_files": {
+      "state.bin": "4156f3ffc82afb6476c7182f5c0c5c852472918b1798563acdd5ec5beadbcad3",
+      "player.csv": "b230590bf118bea56776152d8fe12c4f86a4a735669e82bf12baa241f2902576",
+      "ticks.bin": "c076d8d99a8a7474c6ffa31fa07ef804e900d91f07999ea02eb3e5cd039c82a3",
+      "prt.bin": "4a9c5e8238933a132dea8a5042ad68a4133e0b863eb35a2b06ae1afc29449ba3",
+      "replies.bin": "8c773d91ef3c5009a13c039470ceb3e423798244cd85bf76ac456b7d21d7ff05",
+      "result.json": "84906157c9e6ea5cd047562fb90632022b87f055c8173d99cc8963331bb21ae6",
+      "stages.csv": "3137f55ed5efd7a9a51c3ff57da48a423dc61e7a97a8b4bcef7ea8786856c527"
+    }
+  },
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 2405,
+    "cycles": 10006153641,
+    "retired": 6921161404,
+    "uart_rx": 749584,
+    "uart_tx": 106401,
+    "uart_delivered": 106401,
+    "isync": 4517,
+    "code_invalidations": 2,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "runtime_identities": "3f03551dc7b1bdae4162f6e52ba4051abbd5fc53c0705473e2fcd55c40f9556e  flexe-agon-emulator\n28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670  flexe-agon-emulator.bin\nd564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin\nd69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map\n200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30  flexe-vdp.so\n8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473  esp32-firmware.bin\nb41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567  esp32-firmware.elf\n018f3ddf7329c883c0e19055b23daa8200cd3c5f54c9331d9f78b01ce4089bcd  sdcard/autoexec.txt\n3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7  sdcard/test/arcade/rally/native.vdu\ne1cd71190a5c3bdc9020a09e617e055d6235adea8b889cfe75da64ba93283767  sdcard/test/arcade/rally/probe.bin\ne53293780fc51461cb46636319c04b9dc4a364edf0013ce47d192697bcc2df66  sdcard/test/arcade/rally/expected.json\n2fcaecce2b63f1cdc297ddf4c6976ed4c1aa674d44c38d87731f54b8499fea0a  sdcard/test/arcade/rally/module.vdu\n36e95fee720342c4f996064cf5393d719ed35a46d641b264920dcc488af5755a  sdcard/test/arcade/rally/common.vdu\ne0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24  sdcard/test/arcade/rally/run.txt\n2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2  sdcard/test/arcade/rally/assets.vdu\n1e076e389d12065b3fc1a0bb844b9f367dcbe682588d8907407eda1b380ad18e  sdcard/test/arcade/rally/readme.txt\n8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473  sdcard/test/arcade/rally/vdp_rally.bin\n84c28581586e84d0a1ed26de070cbec8b8947b9924b05bad346cf210c15cc59c  sdcard/test/arcade/rally/probe.map\n"
+}

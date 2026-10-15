@@ -1,0 +1,38 @@
+{
+  "scope": "Full-scene native fixture aggregate MOS timing including transport/checks/drawing/swap submission; no separate VDP completion timestamp",
+  "frames": 900,
+  "physics_ticks": 3600,
+  "elapsed_mos_ticks": 3712,
+  "elapsed_seconds": 30.933333333333334,
+  "observed_fps": 29.094827586206897,
+  "independent_final_world_match": true,
+  "state_sha256": "4156f3ffc82afb6476c7182f5c0c5c852472918b1798563acdd5ec5beadbcad3",
+  "player_driver": "R27 centerline pace; simplified, not interactive Motion.tick headroom",
+  "timer_restored": true,
+  "unloaded": true,
+  "scene_counters": {
+    "scroll_calls": 397,
+    "repaint_calls": 399,
+    "audio_changes": 24
+  },
+  "stack_before": 2260,
+  "stack_after": 2260,
+  "stages": {
+    "player_rules_prt_ms": "598",
+    "scenery_math_prt_ms": "512",
+    "hud_cpu_estimate_prt_ms": "5433",
+    "submission_prt_ms": "8646",
+    "reply_wait_prt_ms": "13509",
+    "loop_prt_ms": "32019",
+    "wire_bytes": "380564"
+  },
+  "raw_files": {
+    "state.bin": "4156f3ffc82afb6476c7182f5c0c5c852472918b1798563acdd5ec5beadbcad3",
+    "player.csv": "b230590bf118bea56776152d8fe12c4f86a4a735669e82bf12baa241f2902576",
+    "ticks.bin": "8fe55214ac5e70ef40abe9c8a7ba7ffb9703409075a8388835c23bf118405534",
+    "prt.bin": "c947609cac3530747285ce8d2ef4629d9c75f9d1e2d1e229a9a00f6f4272ec16",
+    "replies.bin": "8c773d91ef3c5009a13c039470ceb3e423798244cd85bf76ac456b7d21d7ff05",
+    "result.json": "4a1aa42c88843a38c1b7c6ba9d01bd06281f2865e425751e0afa39161c3f9e34",
+    "stages.csv": "e1dde6f6b5fbf555929286a9c2d17c48c0b31def0d08d68ef3f55c29b663cc95"
+  }
+}

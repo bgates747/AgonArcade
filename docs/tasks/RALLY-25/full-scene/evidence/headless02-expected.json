@@ -1,0 +1,1043 @@
+{
+  "schema": 1,
+  "frames": 900,
+  "physics_ticks": 3600,
+  "warm_frames": 2,
+  "paced": false,
+  "mos_tick_hz": 120,
+  "buffers": [
+    {
+      "id": 1,
+      "offset": 0,
+      "bytes": 310
+    },
+    {
+      "id": 2,
+      "offset": 0,
+      "bytes": 12
+    },
+    {
+      "id": 3,
+      "offset": 0,
+      "bytes": 24
+    },
+    {
+      "id": 4,
+      "offset": 0,
+      "bytes": 24
+    },
+    {
+      "id": 5,
+      "offset": 0,
+      "bytes": 24
+    },
+    {
+      "id": 6,
+      "offset": 0,
+      "bytes": 12
+    }
+  ],
+  "interface": {
+    "schema": 1,
+    "profile": "portable-scalar-foundation",
+    "experimental": true,
+    "execution_contract": "r25-g0-root-v1-dual-backend",
+    "state_buffer": 1,
+    "state_bytes": 310,
+    "state_owner": "application_shared",
+    "initialization": "explicit_install_or_reset",
+    "error": {
+      "offset": 14,
+      "bytes": 2,
+      "codes": {
+        "ok": 0,
+        "uint16_add_overflow": 1,
+        "uint16_sub_underflow": 2,
+        "uint16_mul_overflow": 3,
+        "array_index": 5,
+        "zero_divisor": 4,
+        "signed_division_overflow": 6,
+        "bounds_failure": 32,
+        "nonfinite_float": 33
+      }
+    },
+    "globals": [
+      {
+        "name": "slot",
+        "type": "uint16",
+        "offset": 112,
+        "bytes": 2,
+        "bounds": [
+          0,
+          65535
+        ]
+      },
+      {
+        "name": "routeRecord",
+        "type": "uint16",
+        "offset": 114,
+        "bytes": 2,
+        "bounds": [
+          0,
+          65535
+        ]
+      },
+      {
+        "name": "routeRemaining",
+        "type": "uint16",
+        "offset": 116,
+        "bytes": 2,
+        "bounds": [
+          0,
+          65535
+        ]
+      },
+      {
+        "name": "routeIndex",
+        "type": "uint16",
+        "offset": 118,
+        "bytes": 2,
+        "bounds": [
+          0,
+          65535
+        ]
+      },
+      {
+        "name": "routeHeading",
+        "type": "sint32",
+        "offset": 120,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "routeLateral",
+        "type": "sint32",
+        "offset": 124,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "routeForward",
+        "type": "uint32",
+        "offset": 128,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "forwardAdvance",
+        "type": "uint32",
+        "offset": 132,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "worldTick",
+        "type": "uint32",
+        "offset": 136,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "headingInput",
+        "type": "sint32",
+        "offset": 140,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "headingChecked",
+        "type": "sint32",
+        "offset": 144,
+        "bytes": 4,
+        "bounds": [
+          -32768,
+          32767
+        ]
+      },
+      {
+        "name": "magnitude",
+        "type": "sint32",
+        "offset": 148,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "sineQuotient",
+        "type": "sint32",
+        "offset": 152,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "sineFraction",
+        "type": "sint32",
+        "offset": 156,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "sineIndex",
+        "type": "uint16",
+        "offset": 160,
+        "bytes": 2,
+        "bounds": [
+          0,
+          65535
+        ]
+      },
+      {
+        "name": "sineValue",
+        "type": "sint32",
+        "offset": 162,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "work",
+        "type": "sint32",
+        "offset": 166,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "quotient",
+        "type": "sint32",
+        "offset": 170,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "remainder",
+        "type": "sint32",
+        "offset": 174,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "speed",
+        "type": "sint32",
+        "offset": 178,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "lapInput",
+        "type": "sint32",
+        "offset": 182,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "lap",
+        "type": "sint32",
+        "offset": 186,
+        "bytes": 4,
+        "bounds": [
+          1,
+          3276800
+        ]
+      },
+      {
+        "name": "normalizeInput",
+        "type": "sint32",
+        "offset": 190,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "normalPosition",
+        "type": "uint32",
+        "offset": 194,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "playerStation",
+        "type": "uint32",
+        "offset": 198,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "playerLateral",
+        "type": "sint32",
+        "offset": 202,
+        "bytes": 4,
+        "bounds": [
+          -38400,
+          38400
+        ]
+      },
+      {
+        "name": "opponentStation",
+        "type": "uint32",
+        "offset": 206,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "opponentLateral",
+        "type": "sint32",
+        "offset": 210,
+        "bytes": 4,
+        "bounds": [
+          -14260,
+          14260
+        ]
+      },
+      {
+        "name": "separation",
+        "type": "sint32",
+        "offset": 214,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "lateralSeparation",
+        "type": "sint32",
+        "offset": 218,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "halfLap",
+        "type": "sint32",
+        "offset": 222,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "contactResult",
+        "type": "bool",
+        "offset": 226,
+        "bytes": 2,
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "contactAny",
+        "type": "bool",
+        "offset": 228,
+        "bytes": 2,
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "laneQuotient",
+        "type": "uint16",
+        "offset": 230,
+        "bytes": 2,
+        "bounds": [
+          0,
+          65535
+        ]
+      },
+      {
+        "name": "laneRemainder",
+        "type": "uint16",
+        "offset": 232,
+        "bytes": 2,
+        "bounds": [
+          0,
+          65535
+        ]
+      },
+      {
+        "name": "placedLateral",
+        "type": "sint32",
+        "offset": 234,
+        "bytes": 4,
+        "bounds": [
+          -14260,
+          14260
+        ]
+      },
+      {
+        "name": "activeChecked",
+        "type": "uint16",
+        "offset": 238,
+        "bytes": 2,
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "sa",
+        "type": "sint32",
+        "offset": 240,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "sb",
+        "type": "sint32",
+        "offset": 244,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "sq",
+        "type": "sint32",
+        "offset": 248,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "sr",
+        "type": "sint32",
+        "offset": 252,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "ua",
+        "type": "uint32",
+        "offset": 256,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "ub",
+        "type": "uint32",
+        "offset": 260,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "uq",
+        "type": "uint32",
+        "offset": 264,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "ur",
+        "type": "uint32",
+        "offset": 268,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "boundedQ",
+        "type": "sint32",
+        "offset": 272,
+        "bytes": 4,
+        "bounds": [
+          -10,
+          10
+        ]
+      },
+      {
+        "name": "boundedR",
+        "type": "sint32",
+        "offset": 276,
+        "bytes": 4,
+        "bounds": [
+          -3,
+          3
+        ]
+      },
+      {
+        "name": "effect",
+        "type": "uint16",
+        "offset": 280,
+        "bytes": 2,
+        "bounds": [
+          0,
+          65535
+        ]
+      },
+      {
+        "name": "shiftCount",
+        "type": "uint16",
+        "offset": 282,
+        "bytes": 2,
+        "bounds": [
+          0,
+          65535
+        ]
+      },
+      {
+        "name": "signedShift",
+        "type": "sint32",
+        "offset": 284,
+        "bytes": 4,
+        "bounds": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      {
+        "name": "unsignedShift",
+        "type": "uint32",
+        "offset": 288,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "renderSession",
+        "type": "uint32",
+        "offset": 292,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "renderRequest",
+        "type": "uint32",
+        "offset": 296,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "playerUnwrapped",
+        "type": "uint32",
+        "offset": 300,
+        "bytes": 4,
+        "bounds": [
+          0,
+          4294967295
+        ]
+      },
+      {
+        "name": "renderPhase",
+        "type": "uint16",
+        "offset": 304,
+        "bytes": 2,
+        "bounds": [
+          0,
+          7999
+        ]
+      },
+      {
+        "name": "renderSteering",
+        "type": "sint16",
+        "offset": 306,
+        "bytes": 2,
+        "bounds": [
+          -21,
+          21
+        ]
+      },
+      {
+        "name": "renderFlags",
+        "type": "uint16",
+        "offset": 308,
+        "bytes": 2,
+        "bounds": [
+          0,
+          7
+        ]
+      }
+    ],
+    "arrays": [
+      {
+        "name": "active",
+        "type": "uint16",
+        "buffer": 2,
+        "offset": 0,
+        "bytes": 12,
+        "lower": 0,
+        "upper": 5,
+        "count": 6,
+        "element_bytes": 2,
+        "access": 3,
+        "owner": "application_retained",
+        "initial_data": "array-active.bin"
+      },
+      {
+        "name": "progress",
+        "type": "sint32",
+        "buffer": 3,
+        "offset": 0,
+        "bytes": 24,
+        "lower": 0,
+        "upper": 5,
+        "count": 6,
+        "element_bytes": 4,
+        "access": 3,
+        "owner": "application_retained",
+        "initial_data": "array-progress.bin"
+      },
+      {
+        "name": "position",
+        "type": "uint32",
+        "buffer": 4,
+        "offset": 0,
+        "bytes": 24,
+        "lower": 0,
+        "upper": 5,
+        "count": 6,
+        "element_bytes": 4,
+        "access": 3,
+        "owner": "application_retained",
+        "initial_data": "array-position.bin"
+      },
+      {
+        "name": "lateral",
+        "type": "sint32",
+        "buffer": 5,
+        "offset": 0,
+        "bytes": 24,
+        "lower": 0,
+        "upper": 5,
+        "count": 6,
+        "element_bytes": 4,
+        "access": 3,
+        "owner": "application_retained",
+        "initial_data": "array-lateral.bin"
+      },
+      {
+        "name": "contacts",
+        "type": "uint16",
+        "buffer": 6,
+        "offset": 0,
+        "bytes": 12,
+        "lower": 0,
+        "upper": 5,
+        "count": 6,
+        "element_bytes": 2,
+        "access": 3,
+        "owner": "application_retained",
+        "initial_data": "array-contacts.bin"
+      },
+      {
+        "name": "routes",
+        "type": "sint16",
+        "buffer": 7,
+        "offset": 0,
+        "bytes": 48,
+        "lower": 0,
+        "upper": 23,
+        "count": 24,
+        "element_bytes": 2,
+        "access": 1,
+        "owner": "application_retained",
+        "initial_data": "array-routes.bin"
+      },
+      {
+        "name": "sine",
+        "type": "sint16",
+        "buffer": 8,
+        "offset": 0,
+        "bytes": 514,
+        "lower": 0,
+        "upper": 256,
+        "count": 257,
+        "element_bytes": 2,
+        "access": 1,
+        "owner": "application_retained",
+        "initial_data": "array-sine.bin"
+      }
+    ],
+    "entries": [
+      {
+        "name": "Sine",
+        "logical_id": 0,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 15
+      },
+      {
+        "name": "RouteTick",
+        "logical_id": 1,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 32
+      },
+      {
+        "name": "Contact",
+        "logical_id": 2,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 16
+      },
+      {
+        "name": "Tick120",
+        "logical_id": 3,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 258
+      },
+      {
+        "name": "Normalize",
+        "logical_id": 4,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 5
+      },
+      {
+        "name": "MultiplySigned",
+        "logical_id": 5,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 1
+      },
+      {
+        "name": "MultiplyUnsigned",
+        "logical_id": 6,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 1
+      },
+      {
+        "name": "DivideSigned",
+        "logical_id": 7,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 2
+      },
+      {
+        "name": "DivideUnsigned",
+        "logical_id": 8,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 2
+      },
+      {
+        "name": "BoundedPair",
+        "logical_id": 9,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 2
+      },
+      {
+        "name": "AliasPair",
+        "logical_id": 10,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 1
+      },
+      {
+        "name": "ShiftSigned",
+        "logical_id": 11,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 1
+      },
+      {
+        "name": "ShiftUnsigned",
+        "logical_id": 12,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 1
+      },
+      {
+        "name": "InitRace",
+        "logical_id": 13,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 47
+      },
+      {
+        "name": "ResetRace",
+        "logical_id": 14,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 47
+      },
+      {
+        "name": "Render30",
+        "logical_id": 15,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 1
+      },
+      {
+        "name": "StopRace",
+        "logical_id": 16,
+        "parameter_bytes": 0,
+        "result_bytes": 0,
+        "worst_case_visits": 1
+      }
+    ],
+    "external_reservations": [
+      {
+        "first": 60000,
+        "last": 60031
+      },
+      {
+        "first": 50300,
+        "last": 50300
+      },
+      {
+        "first": 50301,
+        "last": 50301
+      },
+      {
+        "first": 50302,
+        "last": 50302
+      },
+      {
+        "first": 50303,
+        "last": 50303
+      },
+      {
+        "first": 50304,
+        "last": 50304
+      },
+      {
+        "first": 50305,
+        "last": 50305
+      }
+    ],
+    "native_bindings": {
+      "configuration": {
+        "schema": 1,
+        "profile": "rally-render-v1",
+        "phase": "after_source_before_success",
+        "hooks": {
+          "InitRace": "bind",
+          "ResetRace": "bind",
+          "Render30": "prepare",
+          "StopRace": "stop"
+        },
+        "state": {
+          "session": "renderSession",
+          "request_generation": "renderRequest",
+          "simulation_tick": "worldTick",
+          "player_station": "playerStation",
+          "player_lateral_q8": "playerLateral",
+          "phase": "renderPhase",
+          "steering": "renderSteering",
+          "flags": "renderFlags"
+        },
+        "opponents": {
+          "station": "position",
+          "lateral_q8": "lateral",
+          "active": "active",
+          "heading_turn16": "routeHeading"
+        },
+        "constants": {
+          "presentation_profile": 0,
+          "reference_crash_remaining": 0,
+          "reference_invulnerable": 0
+        },
+        "bindings": {
+          "asset": {
+            "buffer": 50300,
+            "offset": 0,
+            "bytes": 149518
+          },
+          "outputs": [
+            {
+              "buffer": 50301,
+              "offset": 0,
+              "bytes": 20480
+            },
+            {
+              "buffer": 50302,
+              "offset": 0,
+              "bytes": 2048
+            },
+            {
+              "buffer": 50303,
+              "offset": 0,
+              "bytes": 256
+            }
+          ],
+          "track_identity": 2101713653,
+          "asset_checksum": 3635234752,
+          "resources": {
+            "player_bitmap_base": 0,
+            "traffic_bitmap_base": 5,
+            "sign_bitmap_base": 120,
+            "traffic_matrix_base": 63970,
+            "player_mirror_matrix": 63984,
+            "sign_matrix": 63930
+          }
+        },
+        "completion": {
+          "buffer": 50304,
+          "offset": 0,
+          "bytes": 48
+        },
+        "reserve": [
+          {
+            "first": 50300,
+            "last": 50305
+          }
+        ]
+      },
+      "context_bytes": 464,
+      "state_struct_bytes": 108,
+      "completion_bytes": 48,
+      "required_capabilities": 1,
+      "phase": "after_source_before_success",
+      "native_only": true,
+      "helper_header_sha256": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50",
+      "helper_symbols": [
+        "rally_render_bind_v1",
+        "rally_render_prepare_v1",
+        "rally_render_stop_v1"
+      ],
+      "context_owner": "module_private_value_only",
+      "completion_owner": "application_retained",
+      "completion": {
+        "buffer": 50304,
+        "offset": 0,
+        "bytes": 48
+      },
+      "configuration_sha256": "543022321154595027a0543271fc2656620c90976b0d0a23a8882db546e43d81"
+    }
+  },
+  "source_sha256": "c62aee2851a3ac39c859a61bc45684a1ce9e384aab623b3c7730a0f97d39d6b4",
+  "module_sha256": "5a3ef7b3e8c3bf6a040eb2e55c605fce83e93f3868b296b245738f14a1e69400",
+  "package": "/Agon/mystuff/golem/docs/tasks/GOLEM-039/delivery/candidate-5a3ef7b3e8c3bf6a",
+  "ownership": {
+    "ez80": "centerline player/input/rules/scenery/HUD/audio/control",
+    "vdp": "opponent simulation/contact/native geometry and drawing"
+  },
+  "reference_sources": {
+    "rally-game/src/main.cpp": "0bba6d246b57cb578fdd483d13c4bb695f596c0c92d372e63b14da1a1a8e4a7a",
+    "rally-game/include/timing_fixture.hpp": "fc8c36ebaaa1e901ad4261727803dee5410633b6dedac8e9f005bc44a34a6153",
+    "rally-game/src/timing_prt.asm": "20055feeef1cbe34d11cbe8a567cc8454a55666c5f11b7f7e3442a6002572fd3",
+    "rally-game/include/controls.hpp": "a535d9b999e0aa410fb5125bbd71cf3462603c81ad2f6d03463881d3d873d466",
+    "rally-game/include/crash.hpp": "98aea4118ec1715a108419a8cefffbef26b3fb0848e8f6f4148b3b573accb720",
+    "rally-game/include/direct_road.hpp": "755ef701de16f598adfb3aebec08753159b1d0a81bc70655f475d654a52af321",
+    "rally-game/include/engine.hpp": "4d677f2c89e5b87c0ea60d9df013af55a11c2c1b8abfc6b21d0595fd7f29fa8f",
+    "rally-game/include/font_data.hpp": "a140339b1ae36e5a36f711c5e9d5c0d3bdfd22d43e32dd33a836bdbe6223ef15",
+    "rally-game/include/game_scene.hpp": "8bd00d29e6898f63ab31ed1a8274d3204023a12b4fee923843b52abcc4cefc0a",
+    "rally-game/include/host_telemetry.hpp": "1b1d25f468beff5bc7ee54ca72ce122e2c9b3f7ff7a6892608d492b0ff38c0a6",
+    "rally-game/include/hud.hpp": "63a8a4b92912e813be4f227bec71b8f21563e9cf8352e7ac34979bda83ed42ee",
+    "rally-game/include/race_traffic.hpp": "8511e4ac3db6e2e7fdcadf2b098fe1fc8ba3c3586ae960a7a6933d14f0ab299d",
+    "rally-game/include/record_file.hpp": "e0a12fe82868325b252f2428a5e77dfb583b9eacd507d5b25911e81752ff8ccf",
+    "rally-game/include/records.hpp": "e400f0c7560b4a2c9ef6316e9e31f61df72818ad3e7fc4f0a7363aea0b24ff81",
+    "rally-game/include/routes_data.hpp": "7304601093871c7f5cdbe824f6d4b99608c3df97cd94bc51e95ad6db25ce807c",
+    "rally-game/include/rules.hpp": "fd6f888f2ef27c00e3d262d41201fdecd59fe6fe9b6e1b39064ab3d815a1aff0",
+    "rally-game/include/signs.hpp": "e090cbfb7fcb326b3bfdb74d7ecfc020737bef86dff225da91e6d63af6a5c3a9",
+    "rally-game/include/signs_data.hpp": "25a315ca87898c874741dacef6c8a6f9a7a1312e43702554d33b2db0dfda03e1",
+    "rally-production/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "rally-production/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+    "rally-production/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "rally-production/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+    "rally-production/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "rally-production/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "rally-production/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+    "rally-production/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+    "rally-production/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+    "rally-production/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "rally-production/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "rally-production/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "rally-production/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "rally-production/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+    "rally-production/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "rally-production/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+    "rally-production/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+    "rally-production/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070"
+  },
+  "files": {
+    "module.vdu": "2fcaecce2b63f1cdc297ddf4c6976ed4c1aa674d44c38d87731f54b8499fea0a",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "probe.bin": "e1cd71190a5c3bdc9020a09e617e055d6235adea8b889cfe75da64ba93283767",
+    "common.vdu": "36e95fee720342c4f996064cf5393d719ed35a46d641b264920dcc488af5755a",
+    "vdp_rally.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+    "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+    "readme.txt": "1e076e389d12065b3fc1a0bb844b9f367dcbe682588d8907407eda1b380ad18e",
+    "probe.map": "84c28581586e84d0a1ed26de070cbec8b8947b9924b05bad346cf210c15cc59c",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+  }
+}

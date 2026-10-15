@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "owner_package": "/Agon/mystuff/golem/docs/tasks/GOLEM-039/delivery/candidate-5a3ef7b3e8c3bf6a",
+  "export_manifest_sha256": "f12f915170c07bc8da646dbc9bc21a578e6203fe1fdb5738562c66045f2ff6b5",
+  "verified_files": 33,
+  "source_sha256": "c62aee2851a3ac39c859a61bc45684a1ce9e384aab623b3c7730a0f97d39d6b4",
+  "module_sha256": "5a3ef7b3e8c3bf6a040eb2e55c605fce83e93f3868b296b245738f14a1e69400",
+  "client_module_identical_to_owner": true,
+  "firmware": {
+    "firmware.bin": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/build/esp32dev/firmware.bin",
+      "bytes": 1086192,
+      "sha256": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473"
+    },
+    "firmware.elf": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/build/esp32dev/firmware.elf",
+      "bytes": 24866420,
+      "sha256": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567"
+    }
+  },
+  "owner_host_evidence": "Golem twenty-eight bounded host smoke; not relabelled as Rally rerun",
+  "owner_publication_commit": "4beafb0",
+  "exported_files_match_committed_git": true
+}

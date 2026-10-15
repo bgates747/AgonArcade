@@ -1,3 +1,13 @@
+# Standing emulator authorization —2026-10-14
+
+Only truly headless automated emulator sessions are authorized: no graphical
+window and NO sound output. Force both SDL_VIDEODRIVER=dummy and
+SDL_AUDIODRIVER=dummy for every unattended run; never inherit a real audio
+backend, even for diagnosis. If visible/audible reproduction is required,
+stop dependent work and ask the Author to launch it. No hidden session may
+play sound through Oryx speakers. This overrides any earlier inference that
+headless real-audio testing is permitted. See failed review FS-001-07.
+
 # AgonArcade handoff
 
 Current state: **RALLY-27** direct-eZ80 full-game restoration is implemented
@@ -271,3 +281,29 @@ work. Preserve R27-05/current native benchmark bytes and evidence. eZ80 owns
 player/control/rules/scenery/HUD/audio; VDP opponents/contact/native projection.
 No autonomous scheduler/gameplay-policy/effect tranche inferred. New full-scene
 profile must stop for human review; later implementation publication separate.
+
+FULL-SCENE NATIVE FIXTURE READY (2026-10-14): pre-implementation all-dirt/task
+checkpointc96a55d pushed; FS-001-01–06 executed. Read RALLY-25/full-scene/README.md.
+R27 presentation functions reused separately: scrolling panorama/fonts/title/
+HUD/audio; eZ80 centerline player/control/rules and snapshot producer; VDP
+opponents/contact/native road/car/sign/finish rendering. Golem sourcec62aee...,
+module5a3ef7...;33export files verified against published4beafb0; client package
+byte-identical. Firmware8da2ebf... unchanged, no compiler/SDK/helper edits.
+60-frame smoke and two900-frame/3600-tick headless runs pass independent final
+world/player/arrays, timer restoration/stop/unload/backend checks. Final candidate
+28.51FPS/31.5667nominal MOS seconds,397scrolls/399repaints/24engine changes; prior
+run29.09FPS. Input/runtime hashes verified; INFO17 minfree2260 unchanged.
+Oryx stopped review profile .emulator/rally25-full-scene-review, launch via
+./flexe-agon-emulator from profile. Ten candidate input files/firmware prepared
+under full-scene/.work/fixture-900 on Pi/Oryx, not copied to physical SD.
+New work uncommitted pending Author visual review and publication instruction.
+R27-05 and old native benchmark sources/bytes/evidence unchanged. PRT stage
+outputs are nominal emulator intervals, not qualified physical or interactive
+player CPU headroom. Native phase isolation/real player measurement55/56 and
+autonomous120/30Hz scheduling remain later work.
+
+NATIVE CHECKPOINT PUBLICATION AUTHORIZED (2026-10-14): Author explicitly asks
+commit/push of ALL current dirt in logical groups before lookup-engine research.
+This includes the unfinished full-scene native fixture and strict silent-headless
+policy. FS-001-07 remains failed/pending correction; publication is a checkpoint,
+not visual acceptance or a release of further native implementation.

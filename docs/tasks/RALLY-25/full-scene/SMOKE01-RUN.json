@@ -1,0 +1,55 @@
+{
+  "error": null,
+  "host_seconds": 12.644,
+  "process_exit": 0,
+  "result": {
+    "scope": "Full-scene native fixture aggregate MOS timing including transport/checks/drawing/swap submission; no separate VDP completion timestamp",
+    "frames": 60,
+    "physics_ticks": 240,
+    "elapsed_mos_ticks": 234,
+    "elapsed_seconds": 1.95,
+    "observed_fps": 30.76923076923077,
+    "independent_final_world_match": true,
+    "state_sha256": "b1558e07aa50c56cfb25e20aeb1a0d65115255e9147b7f1cf1a32416afcafce5",
+    "player_driver": "R27 centerline pace; simplified, not interactive Motion.tick headroom",
+    "timer_restored": true,
+    "unloaded": true,
+    "stack_before": 2260,
+    "stack_after": 2260,
+    "stages": {
+      "player_rules_prt_ms": "39",
+      "scenery_math_prt_ms": "33",
+      "hud_cpu_estimate_prt_ms": "363",
+      "submission_prt_ms": "220",
+      "reply_wait_prt_ms": "1157",
+      "loop_prt_ms": "2026",
+      "wire_bytes": "24588"
+    },
+    "raw_files": {
+      "state.bin": "b1558e07aa50c56cfb25e20aeb1a0d65115255e9147b7f1cf1a32416afcafce5",
+      "player.csv": "775968512a6084500454a8328b8353a0e56536dce88026f4bbb5cb2fa2d9f8d6",
+      "ticks.bin": "8f5e5eff6636e666081651cf22fdca3650d58dfffbea785e0779528f97c4395e",
+      "prt.bin": "7423edbca4983ad330d6fca19a4d6d670f4e7964a35147c7c310b0e7c4cc030a",
+      "replies.bin": "113456eae836e1fdabeadde085b0a18eb8717b8d2a065a430c9b6492b822e6f7",
+      "result.json": "b784ea049d824215f748ef47eb5240bee1395c8ea527db8738e97bec34969241",
+      "stages.csv": "6fcf9ec8329f2e110a27620bf666444c98149d5b4a988017a55ca86f5c2f83f6"
+    }
+  },
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 699,
+    "cycles": 2973621341,
+    "retired": 1394317910,
+    "uart_rx": 363375,
+    "uart_tx": 9453,
+    "uart_delivered": 9453,
+    "isync": 317,
+    "code_invalidations": 2,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "runtime_identities": "3f03551dc7b1bdae4162f6e52ba4051abbd5fc53c0705473e2fcd55c40f9556e  flexe-agon-emulator\n28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670  flexe-agon-emulator.bin\nd564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin\nd69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map\n200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30  flexe-vdp.so\n8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473  esp32-firmware.bin\nb41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567  esp32-firmware.elf\nbd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1  sdcard/autoexec.txt\n3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7  sdcard/rally25/native.vdu\naf51801fc06403510c5ff65711ac1588998ac25553b12ab8312b81d755f8a4e8  sdcard/rally25/probe.bin\nc13724189be315ad9d63b7704255dd56968b2bb4418df1d3d97f62c0fa464fc6  sdcard/rally25/expected.json\n2fcaecce2b63f1cdc297ddf4c6976ed4c1aa674d44c38d87731f54b8499fea0a  sdcard/rally25/module.vdu\n36e95fee720342c4f996064cf5393d719ed35a46d641b264920dcc488af5755a  sdcard/rally25/common.vdu\n2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2  sdcard/rally25/assets.vdu\n3cd552afe41b67b99ea2b714fe0cf9bba3a0668a1dec3788730d57666a83d488  sdcard/rally25/probe.map\n"
+}

@@ -67,3 +67,19 @@ Updated authoritative TODO and current task: TRF-001-54 inventory complete;55 ac
 ## Full-scene native fixture execution released
 
 Author clarified that the found fuller R27-05 remains unchanged; our VDPlet-enabled fixture must do the same workload except VDP-owned opponent/contact/projection work. Author directs formal task first, commit/push all dirt, then execute. FULL-SCENE-PLAN.md/FS-001-01–06 records bounded application/peer-package coordination/headless Oryx scope, output/timing/identical-byte rules, preservation and human review. Registered in root TODO before checkpoint.
+
+## Full-scene native tranche executed after c96a55d
+
+All current Rally dirt/formal task committed and pushedc96a55d before implementation. Git identity was missing; used the same per-command author identity as prior approved repository commits, without changing global settings. Implemented separate full-scene source/build/player/transport/callback/profile/verification tooling; maintained R27 and old native fixtures untouched. Existing Golem build tool consumed as client into Rally workspace while peer build pending; exact module5a3ef7... matched Golem39 owner candidate.33export files verified against published4beafb0 (peer also published runtime review003b5ae/packagef6225cb); no shared implementation edited.
+
+Separate eZ80 C++ driver reuses original scenery/fonts/title/HUD/audio functions and centerline pace/rules controller, sends complete player snapshots before finite native Tick120, validates fresh Render30 completion/generation, consumes native road/actors/player lists. All opponent/contact/projection work on VDP. Host3600-step player parity passes;60frame/240tick smoke passes with captured full scene; first900 run29.0948FPS and final startup-output-clearing candidate900 run28.5111FPS pass independent final source/array/player state. Final397scrolls/399repaints/24audio changes, INFO17minfree2260before/after, restored PRT vector/Stop/UNLOAD0, clear backend faults/clean exit.
+
+Stage outputs split simplified player/rules CPU, scenery math, estimated HUD CPU, submission and reply waits; nominal emulator PRT sums are not physical calibration or isolated native costs. Actual interactive physics55/native phase56 remain open. Candidate ten input files/firmware and qualified/stopped profile runtime hashes match. Staged stopped Oryx rally25-full-scene-review for Author launch; no graphical instance or physical card update/run. Evidence/results/receipt hashes retained in full-scene/. Old protected inputs verified unchanged againstc96a55d. New implementation remains uncommitted for human visual review and later publication approval.
+
+## Failed graphical review; strict silent-headless authorization
+
+Author graphical review reported black screen/no scene at30seconds and closed it. Preserved startup stream121112bytes, exactly passing prefix, stopping416bytes into a2048-byte sign upload starting120688; scan4372frames with no backend faults. Golem fifty-two requests runtime UART/backpressure diagnosis. No visual acceptance. Narrow video-dummy/real-PulseAudio diagnostic completed900frames/3600ticks, but Author heard sound without a window and explicitly forbids such runs. That session had already ended at the stop check. Reverted runner to forced SDL_AUDIODRIVER=dummy and recorded standing requirement: automated sessions require BOTH video/audio dummy, no sound; if visible/audible diagnosis is needed, stop and ask Author to run it. No new emulator launch after this correction.
+
+## Author authorizes checkpoint of unfinished native fixture
+
+On2026-10-14 the Author explicitly directs committing/pushing all current dirt in logical groups before the lookup-engine assessment. This includes the native full-scene fixture, failed graphical-launch evidence and silent-headless correction. Checkpoint publication is now authorized; FS-001-07 remains failed/pending correction and no human visual acceptance is inferred.
