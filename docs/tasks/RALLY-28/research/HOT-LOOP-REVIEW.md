@@ -4,6 +4,10 @@ The standard game's road preparation contains substantial software 32-bit arithm
 
 Author released this first research item with “go” on 2026-10-14. MATH-001-01 is complete. No game implementation, emulator session, firmware change, deployment, commit or push occurred. The standard version remains first; the native version's failed human startup review remains separate.
 
+Subsequent priority: [LOOKUP-001-01](LOOKUP-ENGINE-REVIEW.md) recovered the existing coefficient and endpoint-table engines and qualified isolated direct-emission feasibility. That result supersedes polishing dense live projection as the first standard implementation choice. The audit findings below remain evidence about the unchanged R27 control.
+
+Author steering,2026-10-14: the initial exact-control/precision recommendations here do not rank fidelity above pacing. The parent task now requires viable approximate methods in the first candidate shortlist and a source/decision record; historical one-pixel bounds and this proof's tolerances do not become universal gates. Present faster alternatives and their moving-image tradeoffs for Author selection, including coarser methods previously rejected under older contracts.
+
 ## Evidence and reproduction
 
 [AUDIT.json](AUDIT.json) records source/build/toolchain hashes, commands, per-function assembly transfer sites, optimized LLVM integer operations, ABI probes and preservation checks. [audit_hot_loop.py](audit_hot_loop.py) compiles unchanged source to this directory's ignored `.work/`; it neither links nor launches a program. Run from the repository root:
@@ -93,7 +97,7 @@ The two divisions in a full-fraction position conversion are quotient `/100` and
 | **AUD-05 — controller/player work** | Reuse adjacent look-ahead samples in ordinary attract and use tangent-only samples for bend/physics. Derive player intermediate bounds before choosing 24-bit/local Q formats | 20 attract sample calls cover only ten distinct stations. Normal attract/controller work is missing from the simplified timing fixture. Keep physics/rules semantics separate from allowed rendering approximation |
 | **AUD-06 — formatting and shared caches** | Cache field values before HUD formatting; replace panel string signature with directly comparable state if measurements justify it | Pixel emission is already cached per retained page. Formatting is not. Preserve both pages' redraw behavior; formatting speed is unmeasured |
 
-I would start a bounded implementation with AUD-01, then AUD-02. This isolates readily removable work without first redesigning track geometry, changing physics or introducing a half-float library. AUD-03 needs actual test-count evidence to decide its place relative to the exact candidates. Lower-precision projection/curvature remains an explicitly welcome later experiment if these savings are insufficient.
+Initial audit recommendation, superseded by lookup recovery and the Author's explicit first-class approximation priority: start a bounded implementation with AUD-01, then AUD-02. This isolates readily removable work without first redesigning track geometry, changing physics or introducing a half-float library. AUD-03 needs actual test-count evidence to decide its place relative to the exact candidates. Lower-precision projection/curvature remains an explicitly welcome later experiment if these savings are insufficient.
 
 ## Initial range cautions for the next research item
 

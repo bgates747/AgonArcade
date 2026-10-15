@@ -349,3 +349,52 @@ source/tables/codegen/performance evidence and a stock-compatible direct-emissio
 reuse path before live-path micro-optimization/MATH-001-02. Bounded host research
 is within scope; preserve controls, no full-game replacement or emulator/hardware
 launch inferred. Existing native visual defect remains separate.
+
+RALLY-28 LOOKUP ASSESSMENT COMPLETE (2026-10-14): all pre-execution dirt committed
+and pushed in logical groups26bff68(native fixture/evidence/silent policy) and
+038d27a(research/audit/lookup scope), clean tree verified before execution.
+LOOKUP-001-01 now complete: read RALLY-28/research/LOOKUP-ENGINE-REVIEW.md and
+LOOKUP-STUDY.json. R18 original headers/data preserved; generator reproduces exact
+bytes with -ffp-contract=off (default ARM contraction changed14oval payload bytes).
+Isolated direct integer emitter works with LookupRoad or live endpoint-only
+SectionRoad;9,930 ordinary/sanitized host poses pass, eZ80 codegen inspected,
+627 protected files unchanged. Fuji900-frame centre math57.79wide multiplies/frame
+versus847dense row multiplies; conservative bands add32.88%road command bytes.
+No target timing/FPS gain established. Next range workMATH-001-02 targets recovered
+projection and residual player/scene arithmetic; proposed STD tranche is separate
+full-scene lookup/live-section A/B, current R27 control preserved. New research/
+proof/results uncommitted; no product/profile/firmware/deployment change or
+emulator launch. FS-001-07 visual startup defect remains open separately.
+
+RALLY-28 SHARED OPTIMIZATION TASK AMENDMENT (2026-10-14): Author requests the
+positioning audit prominently and explicit identification/rectification of partial
+optimizations. RALLY-28.md now opens with POS-001-01 and REUSE-001-01–04; root TODO
+prioritizes them. Audit all road/traffic/sign/player/finish/background consumers,
+then broader sampling/invariant/wrap/formatting/command families. Apply selected
+fixes to every compatible active standard consumer, document concrete exceptions,
+then independently apply suitable native findings and verify coverage/performance.
+Preserve prior wins through backend changes; only requested rows need shared
+projection results. MATH-001-02 supports range/rounding proofs. Existing IDs and
+single RALLY-28 umbrella retained. This turn edits task/handoff documentation;
+no implementation, test/emulator run, commit or push.
+
+AUTHOR PERFORMANCE/COMMUNICATION STEERING (2026-10-14): use explicit numbered
+items in future human discussions/recommendations; immutable ID/checkbox task
+paragraphs remain. All five frame/architecture/physics/memory/motion considerations
+are recorded near the top of RALLY-28.md. Faster coherent motion may beat more
+accurate frames. In POLE26.S/AtariAge/Lou review, retain deliberate speed/accuracy
+shortcuts as first-class initial candidates, including coarse/low-precision/fewer
+band/approximate depth or curvature options. Record candidates/dispositions and
+reasons; do not silently reject for inaccurate pixels, jitter or historical
+one-pixel/99% thresholds. Author selects visible motion tradeoffs. Exact controls
+and unchanged world/contact checks remain comparison/behavior evidence. Previous
+exact-first/defer-approximation recommendation superseded. Task/evidence notes
+updated only; no new code/build/emulator run, commit or push.
+
+RALLY-28 STOCK COMPLETION PROBE PROPOSED (2026-10-14): Author requests a minimal
+standalone test of the stock buffered-command notification mechanism, then pause
+for review. SYNC-001-01 is recorded in RALLY-28.md and root TODO: simple drawing,
+flush plus key-state request, existing MOS keyboard callback and independent
+foreground clock counter; self-created logs, input/ordering checks and general-
+poll fallback. No custom firmware or game integration. Planning only: stop for
+Author review; no implementation/build/emulator/hardware run, commit or push.
