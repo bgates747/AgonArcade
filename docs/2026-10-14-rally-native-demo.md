@@ -169,3 +169,7 @@ Author released thermal pause and reports boost disabled; read/monitored0. Five 
 ### 2026-10-15 — Author-requested Fab comparison
 
 Exact RALLY-28 v5 guest inputs were run silently/headlessly on Oryx Fab1.2.5 stock host VDP, no rebuild. All five900-frame render cases and independent-physics diagnostic complete; reference/byte totals pass. Dense5.60FPS, fine/direct14.15, fine/buffered18.06, coarse/direct15.67, coarse/buffered19.93 provisional host-window FPS. Physics9456steps/zero final debt/max4;105fields independently match. See candidates/FAB-RESULTS.md. Native host VDP differs from Flexe ESP32 image; no root-cause/hardware claim. All owned sessions stopped; no upstream/physical/commit/push action.
+
+### 2026-10-15 — SPAN-001-02 pattern catalogue complete
+
+Author-released scope/current dirt committed and pushed38fa5f4 before enumeration. Current standard renderer needs two coupled base patterns; optional finish conversion adds two checker overlays (or four flattened composites). Source evidence,200×8PNG previews and reproduction/source hashes recorded in RALLY-28/standard-vdp/bitmap-spans/PROPOSAL.md. No renderer/game assets/build/emulator/deployment changes. New findings uncommitted; stopped for review. SPAN-001-02 removed from active root TODO on completion.
