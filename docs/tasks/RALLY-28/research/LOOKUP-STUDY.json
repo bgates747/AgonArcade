@@ -1,0 +1,2781 @@
+{
+  "schema": 1,
+  "task": "LOOKUP-001-01",
+  "date": "2026-10-14",
+  "checkpoint": "038d27ab4c54f2ce8e975d65b2629587e4acdcbc",
+  "kind": "source/codegen and host feasibility; no eZ80 timing or FPS measurement",
+  "host_compiler": "c++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "host_results": {
+    "ordinary": [
+      {
+        "track": "fuji",
+        "workload": "track_seams_five_phases",
+        "poses": 7680,
+        "bands": 117043,
+        "road_bytes": 14131026,
+        "live_road_bytes": 10665873,
+        "centre_queries": 140818,
+        "unique_lines": 76510,
+        "row_lookup_wide_multiplies": 370348,
+        "max_bands": 30,
+        "max_road_bytes": 3756,
+        "max_chunks": 1,
+        "max_point_error_q8": 35,
+        "max_pixel_difference": 1
+      },
+      {
+        "track": "fuji",
+        "workload": "900_frame_centerline_pace",
+        "poses": 900,
+        "bands": 13573,
+        "road_bytes": 1638819,
+        "live_road_bytes": 1233333,
+        "centre_queries": 21593,
+        "unique_lines": 10140,
+        "row_lookup_wide_multiplies": 52013,
+        "max_bands": 26,
+        "max_road_bytes": 3189,
+        "max_chunks": 1,
+        "max_point_error_q8": 25,
+        "max_pixel_difference": 1
+      },
+      {
+        "track": "oval",
+        "workload": "track_seams_five_phases",
+        "poses": 1350,
+        "bands": 26339,
+        "road_bytes": 3157596,
+        "live_road_bytes": 2027187,
+        "centre_queries": 31754,
+        "unique_lines": 15490,
+        "row_lookup_wide_multiplies": 78224,
+        "max_bands": 28,
+        "max_road_bytes": 3405,
+        "max_chunks": 1,
+        "max_point_error_q8": 31,
+        "max_pixel_difference": 1
+      }
+    ],
+    "sanitized": [
+      {
+        "track": "fuji",
+        "workload": "track_seams_five_phases",
+        "poses": 7680,
+        "bands": 117043,
+        "road_bytes": 14131026,
+        "live_road_bytes": 10665873,
+        "centre_queries": 140818,
+        "unique_lines": 76510,
+        "row_lookup_wide_multiplies": 370348,
+        "max_bands": 30,
+        "max_road_bytes": 3756,
+        "max_chunks": 1,
+        "max_point_error_q8": 35,
+        "max_pixel_difference": 1
+      },
+      {
+        "track": "fuji",
+        "workload": "900_frame_centerline_pace",
+        "poses": 900,
+        "bands": 13573,
+        "road_bytes": 1638819,
+        "live_road_bytes": 1233333,
+        "centre_queries": 21593,
+        "unique_lines": 10140,
+        "row_lookup_wide_multiplies": 52013,
+        "max_bands": 26,
+        "max_road_bytes": 3189,
+        "max_chunks": 1,
+        "max_point_error_q8": 25,
+        "max_pixel_difference": 1
+      },
+      {
+        "track": "oval",
+        "workload": "track_seams_five_phases",
+        "poses": 1350,
+        "bands": 26339,
+        "road_bytes": 3157596,
+        "live_road_bytes": 2027187,
+        "centre_queries": 31754,
+        "unique_lines": 15490,
+        "row_lookup_wide_multiplies": 78224,
+        "max_bands": 28,
+        "max_road_bytes": 3405,
+        "max_chunks": 1,
+        "max_point_error_q8": 31,
+        "max_pixel_difference": 1
+      }
+    ]
+  },
+  "default_fp_contraction_regeneration": {
+    "fuji.road": {
+      "different_bytes": 0,
+      "different_payload_bytes": 0,
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e"
+    },
+    "oval.road": {
+      "different_bytes": 17,
+      "different_payload_bytes": 14,
+      "sha256": "f48991bb0a5ef28ed944cfbc8d073cc8aead9c36a12e22410d9fa65570eb7fd8"
+    }
+  },
+  "matching_regeneration_flag": "-ffp-contract=off",
+  "generated_tables": {
+    "fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800
+    },
+    "oval.road": {
+      "sha256": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+      "bytes": 20584
+    }
+  },
+  "historical_headers_identical": [
+    "lookup_road.hpp",
+    "lookup_format.hpp",
+    "section_road.hpp",
+    "section_protocol.hpp",
+    "section_phase.hpp"
+  ],
+  "target_layout": {
+    "LookupRoad": 938,
+    "DirectRoad": 2191,
+    "BandOffsets": 4816,
+    "BandEnds": 16803,
+    "PhaseIndex": 4000,
+    "PhaseOffsets": 202,
+    "PhaseRows": 1060,
+    "DepthQ8": 516,
+    "SectionRoad": 759
+  },
+  "target_functions": [
+    {
+      "symbol": "_r28_project",
+      "assembly_line": 5,
+      "instructions": 21,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset0",
+          "line": 7
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally10LookupRoad7projectElll",
+          "line": 24
+        }
+      ],
+      "name": "_r28_project",
+      "helper_sites": {
+        "__frameset0": 1
+      },
+      "llvm_operations": {}
+    },
+    {
+      "symbol": "__ZN5rally10LookupRoad7projectElll",
+      "assembly_line": 33,
+      "instructions": 489,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 36
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 69
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmps",
+          "line": 78
+        },
+        {
+          "kind": "call",
+          "condition": "pe",
+          "target": "__setflag",
+          "line": 79
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmps",
+          "line": 85
+        },
+        {
+          "kind": "call",
+          "condition": "pe",
+          "target": "__setflag",
+          "line": 86
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lrems",
+          "line": 107
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpzero",
+          "line": 111
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 133
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpu",
+          "line": 143
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lrems",
+          "line": 149
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpzero",
+          "line": 152
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 170
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 195
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 197
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lsub",
+          "line": 204
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__sdivs",
+          "line": 209
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshl",
+          "line": 231
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__smulu",
+          "line": 237
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshl",
+          "line": 261
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 267
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 270
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 281
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 291
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshru",
+          "line": 296
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 307
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpu",
+          "line": 337
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 360
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 375
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 392
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZNK5rally10LookupRoad10centerQ8AtEi",
+          "line": 411
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpu",
+          "line": 436
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZNK5rally10LookupRoad10centerQ8AtEi",
+          "line": 486
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 496
+        }
+      ],
+      "name": "rally::LookupRoad::project(long, long, long)",
+      "helper_sites": {
+        "__frameset": 1,
+        "__imulu": 1,
+        "__ishl": 3,
+        "__ladd": 3,
+        "__lcmps": 2,
+        "__lcmpu": 3,
+        "__lcmpzero": 2,
+        "__ldivs": 4,
+        "__lmulu": 3,
+        "__lrems": 2,
+        "__lshl": 2,
+        "__lshru": 1,
+        "__lsub": 1,
+        "__sdivs": 1,
+        "__setflag": 2,
+        "__smulu": 1
+      },
+      "llvm_operations": {
+        "add i24": 6,
+        "add i32": 3,
+        "and i8": 1,
+        "lshr i32": 1,
+        "mul i16": 1,
+        "mul i24": 1,
+        "mul i32": 3,
+        "sdiv i16": 1,
+        "sdiv i32": 4,
+        "shl i32": 2,
+        "srem i32": 2,
+        "sub i16": 1,
+        "sub i32": 1,
+        "xor i1": 1
+      }
+    },
+    {
+      "symbol": "_r28_center",
+      "assembly_line": 571,
+      "instructions": 7,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset0",
+          "line": 573
+        },
+        {
+          "kind": "jp",
+          "condition": null,
+          "target": "__ZNK5rally10LookupRoad8centerAtEi",
+          "line": 579
+        }
+      ],
+      "name": "_r28_center",
+      "helper_sites": {
+        "__frameset0": 1
+      },
+      "llvm_operations": {}
+    },
+    {
+      "symbol": "__ZNK5rally10LookupRoad8centerAtEi",
+      "assembly_line": 585,
+      "instructions": 13,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset0",
+          "line": 587
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZNK5rally10LookupRoad10centerQ8AtEi",
+          "line": 592
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 597
+        }
+      ],
+      "name": "rally::LookupRoad::centerAt(int) const",
+      "helper_sites": {
+        "__frameset0": 1,
+        "__ldivs": 1
+      },
+      "llvm_operations": {
+        "sdiv i32": 1
+      }
+    },
+    {
+      "symbol": "_r28_emit",
+      "assembly_line": 605,
+      "instructions": 14,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset0",
+          "line": 607
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZNK5rally3r2814DirectSectionsINS_10LookupRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_b",
+          "line": 617
+        }
+      ],
+      "name": "_r28_emit",
+      "helper_sites": {
+        "__frameset0": 1
+      },
+      "llvm_operations": {}
+    },
+    {
+      "symbol": "__ZNK5rally3r2814DirectSectionsINS_10LookupRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_b",
+      "assembly_line": 626,
+      "instructions": 341,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 629
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4rectEiiiii",
+          "line": 655
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4rectEiiiii",
+          "line": 676
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmps",
+          "line": 702
+        },
+        {
+          "kind": "call",
+          "condition": "pe",
+          "target": "__setflag",
+          "line": 703
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 711
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshru",
+          "line": 716
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lsub",
+          "line": 722
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 725
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__indcallhl",
+          "line": 767
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmps",
+          "line": 786
+        },
+        {
+          "kind": "call",
+          "condition": "pe",
+          "target": "__setflag",
+          "line": 787
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 794
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshru",
+          "line": 799
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lsub",
+          "line": 805
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 808
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_10LookupRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 851
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_10LookupRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 864
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_10LookupRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 883
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_10LookupRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 896
+        },
+        {
+          "kind": "call",
+          "condition": "z",
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_10LookupRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 910
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__indcallhl",
+          "line": 940
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4rectEiiiii",
+          "line": 962
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__indcallhl",
+          "line": 979
+        }
+      ],
+      "name": "void rally::r28::DirectSections<rally::LookupRoad>::emitTo<void (*)(unsigned char const*, unsigned int)>(rally::Stream&, void (*)(unsigned char const*, unsigned int), bool) const",
+      "helper_sites": {
+        "__frameset": 1,
+        "__indcallhl": 3,
+        "__ladd": 2,
+        "__lcmps": 2,
+        "__ldivs": 2,
+        "__lshru": 2,
+        "__lsub": 2,
+        "__setflag": 2
+      },
+      "llvm_operations": {
+        "add i24": 3,
+        "add i32": 2,
+        "lshr i32": 2,
+        "sdiv i32": 2,
+        "sub i32": 2
+      }
+    },
+    {
+      "symbol": "_r28_live_project",
+      "assembly_line": 1000,
+      "instructions": 21,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset0",
+          "line": 1002
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally11SectionRoad7projectElll",
+          "line": 1019
+        }
+      ],
+      "name": "_r28_live_project",
+      "helper_sites": {
+        "__frameset0": 1
+      },
+      "llvm_operations": {}
+    },
+    {
+      "symbol": "__ZN5rally11SectionRoad7projectElll",
+      "assembly_line": 1028,
+      "instructions": 394,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 1031
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 1041
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmps",
+          "line": 1050
+        },
+        {
+          "kind": "call",
+          "condition": "pe",
+          "target": "__setflag",
+          "line": 1051
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmps",
+          "line": 1057
+        },
+        {
+          "kind": "call",
+          "condition": "pe",
+          "target": "__setflag",
+          "line": 1058
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lrems",
+          "line": 1071
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpzero",
+          "line": 1075
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 1096
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpu",
+          "line": 1107
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lrems",
+          "line": 1113
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpzero",
+          "line": 1116
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 1132
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpu",
+          "line": 1154
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 1182
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 1196
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 1213
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 1230
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshl",
+          "line": 1236
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 1243
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lsub",
+          "line": 1249
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshl",
+          "line": 1254
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 1260
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 1263
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally11trackSampleElRKNS_8TrackDefE",
+          "line": 1278
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZNK5rally11SectionRoad10centerQ8AtEi",
+          "line": 1306
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmpu",
+          "line": 1332
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZNK5rally11SectionRoad10centerQ8AtEi",
+          "line": 1384
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 1394
+        }
+      ],
+      "name": "rally::SectionRoad::project(long, long, long)",
+      "helper_sites": {
+        "__frameset": 1,
+        "__ishl": 3,
+        "__ladd": 3,
+        "__lcmps": 2,
+        "__lcmpu": 3,
+        "__lcmpzero": 2,
+        "__ldivs": 3,
+        "__lmulu": 2,
+        "__lrems": 2,
+        "__lshl": 2,
+        "__lsub": 1,
+        "__setflag": 2
+      },
+      "llvm_operations": {
+        "add i24": 6,
+        "add i32": 3,
+        "and i8": 1,
+        "mul i32": 2,
+        "sdiv i32": 3,
+        "shl i32": 2,
+        "srem i32": 2,
+        "sub i32": 1,
+        "xor i1": 1
+      }
+    },
+    {
+      "symbol": "_r28_live_emit",
+      "assembly_line": 1467,
+      "instructions": 14,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset0",
+          "line": 1469
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZNK5rally3r2814DirectSectionsINS_11SectionRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_b",
+          "line": 1479
+        }
+      ],
+      "name": "_r28_live_emit",
+      "helper_sites": {
+        "__frameset0": 1
+      },
+      "llvm_operations": {}
+    },
+    {
+      "symbol": "__ZNK5rally3r2814DirectSectionsINS_11SectionRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_b",
+      "assembly_line": 1488,
+      "instructions": 341,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 1491
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4rectEiiiii",
+          "line": 1517
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4rectEiiiii",
+          "line": 1538
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmps",
+          "line": 1564
+        },
+        {
+          "kind": "call",
+          "condition": "pe",
+          "target": "__setflag",
+          "line": 1565
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 1573
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshru",
+          "line": 1578
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lsub",
+          "line": 1584
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 1587
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__indcallhl",
+          "line": 1629
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lcmps",
+          "line": 1648
+        },
+        {
+          "kind": "call",
+          "condition": "pe",
+          "target": "__setflag",
+          "line": 1649
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 1656
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshru",
+          "line": 1661
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lsub",
+          "line": 1667
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 1670
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_11SectionRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 1713
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_11SectionRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 1726
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_11SectionRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 1745
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_11SectionRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 1758
+        },
+        {
+          "kind": "call",
+          "condition": "z",
+          "target": "__ZZNK5rally3r2814DirectSectionsINS_11SectionRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+          "line": 1772
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__indcallhl",
+          "line": 1802
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4rectEiiiii",
+          "line": 1824
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__indcallhl",
+          "line": 1841
+        }
+      ],
+      "name": "void rally::r28::DirectSections<rally::SectionRoad>::emitTo<void (*)(unsigned char const*, unsigned int)>(rally::Stream&, void (*)(unsigned char const*, unsigned int), bool) const",
+      "helper_sites": {
+        "__frameset": 1,
+        "__indcallhl": 3,
+        "__ladd": 2,
+        "__lcmps": 2,
+        "__ldivs": 2,
+        "__lshru": 2,
+        "__lsub": 2,
+        "__setflag": 2
+      },
+      "llvm_operations": {
+        "add i24": 3,
+        "add i32": 2,
+        "lshr i32": 2,
+        "sdiv i32": 2,
+        "sub i32": 2
+      }
+    },
+    {
+      "symbol": "__ZNK5rally10LookupRoad10centerQ8AtEi",
+      "assembly_line": 1862,
+      "instructions": 277,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 1865
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 1909
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 1918
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshrs",
+          "line": 1923
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 1940
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshl",
+          "line": 1964
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 1995
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 1998
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2001
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 2007
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2048
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 2051
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2054
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2083
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 2086
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2092
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 2115
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2140
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 2143
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2146
+        }
+      ],
+      "name": "rally::LookupRoad::centerQ8At(int) const",
+      "helper_sites": {
+        "__frameset": 1,
+        "__imulu": 1,
+        "__ishl": 3,
+        "__ladd": 5,
+        "__ldivs": 4,
+        "__lmulu": 4,
+        "__lshl": 1,
+        "__lshrs": 1
+      },
+      "llvm_operations": {
+        "add i24": 2,
+        "add i32": 5,
+        "and i1": 1,
+        "ashr i32": 1,
+        "mul i32": 4,
+        "sdiv i32": 4,
+        "shl i32": 1
+      }
+    },
+    {
+      "symbol": "__ZN5rally11trackSampleElRKNS_8TrackDefE",
+      "assembly_line": 2154,
+      "instructions": 288,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 2157
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshrs",
+          "line": 2162
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__iremu",
+          "line": 2174
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__land",
+          "line": 2183
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 2191
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 2209
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshl",
+          "line": 2238
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2262
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshrs",
+          "line": 2267
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2273
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshl",
+          "line": 2299
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2323
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshrs",
+          "line": 2328
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2334
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2375
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshrs",
+          "line": 2380
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2387
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2428
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lshrs",
+          "line": 2433
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2440
+        }
+      ],
+      "name": "rally::trackSample(long, rally::TrackDef const&)",
+      "helper_sites": {
+        "__frameset": 1,
+        "__iremu": 1,
+        "__ishl": 2,
+        "__ladd": 4,
+        "__land": 1,
+        "__lmulu": 4,
+        "__lshl": 2,
+        "__lshrs": 5
+      },
+      "llvm_operations": {
+        "add i24": 1,
+        "add i32": 4,
+        "and i32": 1,
+        "ashr i32": 5,
+        "mul i32": 4,
+        "shl i32": 2,
+        "sub i24": 4,
+        "urem i24": 1
+      }
+    },
+    {
+      "symbol": "__ZNK5rally11SectionRoad10centerQ8AtEi",
+      "assembly_line": 2453,
+      "instructions": 124,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 2456
+        },
+        {
+          "kind": "call",
+          "condition": "pe",
+          "target": "__setflag",
+          "line": 2467
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ishl",
+          "line": 2481
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__idivu",
+          "line": 2492
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2506
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally11trackSampleElRKNS_8TrackDefE",
+          "line": 2513
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lsub",
+          "line": 2526
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lsub",
+          "line": 2537
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2548
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2559
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2562
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 2566
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lsub",
+          "line": 2573
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__lmulu",
+          "line": 2576
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ldivs",
+          "line": 2579
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ladd",
+          "line": 2581
+        }
+      ],
+      "name": "rally::SectionRoad::centerQ8At(int) const",
+      "helper_sites": {
+        "__frameset": 1,
+        "__idivu": 1,
+        "__ishl": 1,
+        "__ladd": 3,
+        "__ldivs": 2,
+        "__lmulu": 3,
+        "__lsub": 3,
+        "__setflag": 1
+      },
+      "llvm_operations": {
+        "add i24": 1,
+        "add i32": 3,
+        "mul i32": 3,
+        "sdiv i32": 2,
+        "sub i32": 3,
+        "udiv i24": 1
+      }
+    },
+    {
+      "symbol": "__ZN5rally6Stream4rectEiiiii",
+      "assembly_line": 2592,
+      "instructions": 42,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 2595
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream5colorEi",
+          "line": 2609
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4plotEiii",
+          "line": 2620
+        },
+        {
+          "kind": "jp",
+          "condition": null,
+          "target": "__ZN5rally6Stream4plotEiii",
+          "line": 2635
+        }
+      ],
+      "name": "rally::Stream::rect(int, int, int, int, int)",
+      "helper_sites": {
+        "__frameset": 1
+      },
+      "llvm_operations": {}
+    },
+    {
+      "symbol": "__ZZNK5rally3r2814DirectSectionsINS_10LookupRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+      "assembly_line": 2641,
+      "instructions": 66,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 2644
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 2657
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__idivs",
+          "line": 2659
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 2664
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__idivs",
+          "line": 2666
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 2679
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__idivs",
+          "line": 2681
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 2686
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__idivs",
+          "line": 2688
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4quadEiiiiiii",
+          "line": 2705
+        }
+      ],
+      "name": "rally::r28::DirectSections<rally::LookupRoad>::emitTo<void (*)(unsigned char const*, unsigned int)>(rally::Stream&, void (*)(unsigned char const*, unsigned int), bool) const::{lambda(int, int, int)#1}::operator()(int, int, int) const",
+      "helper_sites": {
+        "__frameset": 1,
+        "__idivs": 4,
+        "__imulu": 4
+      },
+      "llvm_operations": {
+        "add i24": 6,
+        "mul i24": 4,
+        "sdiv i24": 4
+      }
+    },
+    {
+      "symbol": "__ZN5rally6Stream5colorEi",
+      "assembly_line": 2714,
+      "instructions": 45,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset0",
+          "line": 2716
+        }
+      ],
+      "name": "rally::Stream::color(int)",
+      "helper_sites": {
+        "__frameset0": 1
+      },
+      "llvm_operations": {
+        "add i24": 3
+      }
+    },
+    {
+      "symbol": "__ZN5rally6Stream4plotEiii",
+      "assembly_line": 2770,
+      "instructions": 63,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 2773
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4wordEi",
+          "line": 2829
+        },
+        {
+          "kind": "jp",
+          "condition": null,
+          "target": "__ZN5rally6Stream4wordEi",
+          "line": 2838
+        }
+      ],
+      "name": "rally::Stream::plot(int, int, int)",
+      "helper_sites": {
+        "__frameset": 1
+      },
+      "llvm_operations": {
+        "add i24": 2
+      }
+    },
+    {
+      "symbol": "__ZN5rally6Stream4wordEi",
+      "assembly_line": 2844,
+      "instructions": 37,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset0",
+          "line": 2846
+        }
+      ],
+      "name": "rally::Stream::word(int)",
+      "helper_sites": {
+        "__frameset0": 1
+      },
+      "llvm_operations": {
+        "add i24": 2,
+        "lshr i24": 1
+      }
+    },
+    {
+      "symbol": "__ZN5rally6Stream4quadEiiiiiii",
+      "assembly_line": 2892,
+      "instructions": 72,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 2895
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream5colorEi",
+          "line": 2913
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4plotEiii",
+          "line": 2924
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4plotEiii",
+          "line": 2937
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4plotEiii",
+          "line": 2950
+        },
+        {
+          "kind": "jp",
+          "condition": null,
+          "target": "__ZN5rally6Stream4plotEiii",
+          "line": 2965
+        }
+      ],
+      "name": "rally::Stream::quad(int, int, int, int, int, int, int)",
+      "helper_sites": {
+        "__frameset": 1
+      },
+      "llvm_operations": {}
+    },
+    {
+      "symbol": "__ZZNK5rally3r2814DirectSectionsINS_11SectionRoadEE6emitToIPFvPKhjEEEvRNS_6StreamET_bENKUliiiE_clEiii",
+      "assembly_line": 2971,
+      "instructions": 66,
+      "transfers": [
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__frameset",
+          "line": 2974
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 2987
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__idivs",
+          "line": 2989
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 2994
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__idivs",
+          "line": 2996
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 3009
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__idivs",
+          "line": 3011
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__imulu",
+          "line": 3016
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__idivs",
+          "line": 3018
+        },
+        {
+          "kind": "call",
+          "condition": null,
+          "target": "__ZN5rally6Stream4quadEiiiiiii",
+          "line": 3035
+        }
+      ],
+      "name": "rally::r28::DirectSections<rally::SectionRoad>::emitTo<void (*)(unsigned char const*, unsigned int)>(rally::Stream&, void (*)(unsigned char const*, unsigned int), bool) const::{lambda(int, int, int)#1}::operator()(int, int, int) const",
+      "helper_sites": {
+        "__frameset": 1,
+        "__idivs": 4,
+        "__imulu": 4
+      },
+      "llvm_operations": {
+        "add i24": 6,
+        "mul i24": 4,
+        "sdiv i24": 4
+      }
+    }
+  ],
+  "target_artifacts": {
+    "s": "bd2b79bfd6e164e8918403d42c7d0370f03093c721ca52a8ef9a8bdc8a3bae48",
+    "ll": "6dbfe357ec45b00e17a96e590f8733529b1789dd04e56ecb0bb54d20005b3176",
+    "o": "c1d4e0272e6c380a287f7e4dc150959432e3bc873300d76cf17653618e19dc64"
+  },
+  "study_sources": {
+    "docs/tasks/RALLY-28/research/study_lookup.py": "e78a14712d40f542e0bc92843207e91fd8a364d7bd512986253e9b52cbeedc17",
+    "docs/tasks/RALLY-28/standard-vdp/lookup_direct.hpp": "dcac631fdaa2c00ac972a36e7e627deab95f1f9e50ff632f0d56f580e5a47e3a",
+    "docs/tasks/RALLY-28/standard-vdp/lookup_probe.cpp": "c2c57d197811564185cc178372db7d19d37581fe0740f391b152c5f369648fd2",
+    "docs/tasks/RALLY-28/standard-vdp/lookup_study.cpp": "750f1f826aedd20c1dc01b71adc728576e11aeedd7ff4de12e1a2d22d0579ffb"
+  },
+  "protected_files_unchanged": true,
+  "protected_files": {
+    "docs/tasks/RALLY-16/.gitignore": "3ab5287b402ad54961d471a47f81ae3ae17f0f58beff1c1d50323a604a71f0b1",
+    "docs/tasks/RALLY-16/README.md": "470f715f5c0832bc708afe839382f5b63ff8a7d3a45ddce1ebeca6e98c526bf5",
+    "docs/tasks/RALLY-16/batch.cpp.inc": "a3f40abd3a6dd05377b5fc654b51b3b3736d9f8c2c06157e9688af6a2eedeea2",
+    "docs/tasks/RALLY-16/experiment.py": "78a86813f3d0be8dcbf580f2fab4bfb9a4308b04afeec4d74e0418a588f066fb",
+    "docs/tasks/RALLY-16/pavement.hpp": "1e0a13568e68ddd5cd765ff46f841abe5037136875096343e0e5c6de933602eb",
+    "docs/tasks/RALLY-16/results/README.md": "04f2ffa5867fb8ec790c7f88d8fc0e6d864cdc14758849f7dc7f3e048e3e52e2",
+    "docs/tasks/RALLY-16/results/fuji-01-full.csv": "4c61dcfbf9e105bcc36f74c6ff8984ff54a9ac1a61e1dd444bd9cd1e7e362cee",
+    "docs/tasks/RALLY-16/results/fuji-02-pavement.csv": "00fb5424f33e4f248e0d9379d704e6b60747745ac55a24a5c77131f27d491629",
+    "docs/tasks/RALLY-16/results/fuji-03-sections.csv": "5b332489c7a099849b91837fc41ab0310bdb76fa88f5511f4063dc746ed96d18",
+    "docs/tasks/RALLY-16/results/fuji-04-sections.csv": "8506b83121eed1e561211a134aad4edde4db83fc5548b82ed602cba0fa7ad8e2",
+    "docs/tasks/RALLY-16/results/fuji-05-pavement.csv": "4677f1ab76db74faf8c6042a2169b41d4f944217f3d15688164dfd5d3f704114",
+    "docs/tasks/RALLY-16/results/fuji-06-full.csv": "94431d540509e16f21011c75a4f15aa6391cdcbd3702f7954b5143544b431b81",
+    "docs/tasks/RALLY-16/results/full-build.txt": "1fba2149a4c7b653154df95ed870c8a861450a36cbb20d83a4c2d1978abcef77",
+    "docs/tasks/RALLY-16/results/manifest.json": "9bd400f3e054fa29bef52ed284ce390c3a6d63ee2f7828f8a32d977649a96c74",
+    "docs/tasks/RALLY-16/results/oval-01-full.csv": "34286375083ffc7629e3dc09d1f8035f5108a33468ea4e7eec2277fc0553e59a",
+    "docs/tasks/RALLY-16/results/oval-02-pavement.csv": "659fefbe5d305390d5ede21f7d0700e3b9ef719a2a5f542c1ade9ff629707d1f",
+    "docs/tasks/RALLY-16/results/oval-03-sections.csv": "ea9409b36cf89944342f9eb9e74c37400463a5d200e22642dbdd5d06ea4d801f",
+    "docs/tasks/RALLY-16/results/oval-04-sections.csv": "ec6234188a1402a985a69463d3f03f5028697bea6fe1925503433cb42c144780",
+    "docs/tasks/RALLY-16/results/oval-05-pavement.csv": "f938ba8185297a043d31b3b91c274f179a691bed43069fbf7b19bcfab8e5424f",
+    "docs/tasks/RALLY-16/results/oval-06-full.csv": "53105cb26d9d25ffc9491c33292703101aa18cdc78220cdae89abbc0f384dd5e",
+    "docs/tasks/RALLY-16/results/pavement-build.txt": "6eba7c3db8f66eb60e836d405ba6738308acaa9be23d3431ea434a43bc0da361",
+    "docs/tasks/RALLY-16/results/sections-build.txt": "0d75f9d5ba7c74e78fbf85bd10decf060f5e6c547afc42c64d4e3b57093ec45f",
+    "docs/tasks/RALLY-16/results/summary.json": "92b2fc7608c488f6832c2fdb47dd2f3545ca68f65257f3e4adfc84318e0b9c98",
+    "docs/tasks/RALLY-16/results/table.md": "0642dd9ea870b5e9531a09722d5cf4eb3876863b9871ad4216ade61f841b4166",
+    "docs/tasks/RALLY-16/results/validation.json": "8e49fb9ab94668e368a337b9d0e35f18fe972115e6ae1144eaa1a71da8dce8c3",
+    "docs/tasks/RALLY-16/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "docs/tasks/RALLY-16/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "docs/tasks/RALLY-16/section_road.hpp": "60a28b1a79fd36d7bfe5a1bc96880b09f73d91f798e7544c77b1fc8675d8292a",
+    "docs/tasks/RALLY-16/summarize.py": "03ac2e460d97ae1d6d4bc8c9b1a85a4cbe4f3d3a9b16f4d209bbaa11f80dfa58",
+    "docs/tasks/RALLY-16/test_pavement.cpp": "b69bd14c36e1cb9b1b99ad918725e7273af18d8222f3bd72414ce0a72a53007c",
+    "docs/tasks/RALLY-16/test_sections.cpp": "a7a2f8887f97df4b74e2458d197517d5c4de6c49d2fa3102df8e304ec6fc1803",
+    "docs/tasks/RALLY-18/.gitignore": "90e82bc0565ab3f33eaa8c604994384acea85e0ea89952b37c8a79f1b1199f67",
+    "docs/tasks/RALLY-18/FREEZE.md": "e98bdcf8ce17ed90a9d00ecd47ab7b677728f42c1eac419638f76884052bfa68",
+    "docs/tasks/RALLY-18/IMPLEMENTATION.md": "8f962d5c1002338dfdaf4c5a8801de293b53db2c1961ba9851e4ed1dc268f9ae",
+    "docs/tasks/RALLY-18/README.md": "a72bd0a5847ebbfb06bcf6f008de29e0a9226da20955d9bff212ffcb80e9015a",
+    "docs/tasks/RALLY-18/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+    "docs/tasks/RALLY-18/bench.py": "fe88fde917c7c3951af2df2fd5d2523c0f5084b5566f5f13270d1450d929b925",
+    "docs/tasks/RALLY-18/build.py": "1c5f35aa4db215e5363095a5cc22dbf1790270991650bddac175a9c90dcb03b6",
+    "docs/tasks/RALLY-18/capture.py": "6af745a8ee3e60cb42daa330a5b3e24d2ce19bc6958f78ae3aa510e9b508e7f8",
+    "docs/tasks/RALLY-18/checkpoint-inputs.json": "26086152f5cf94e2a9f1a60f6320713db0df51f4b903aa06995b4dee3669ebd9",
+    "docs/tasks/RALLY-18/compare_scene.py": "f4cb76695da32e2e85ea0164b461cd49ff740f58f98971948ac8c14a59ff8881",
+    "docs/tasks/RALLY-18/data/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "docs/tasks/RALLY-18/data/manifest.json": "b76fd1d6ea5aeedca0d87aa6f4255ced459e8c5309c7edce8a9962ddbb83a09e",
+    "docs/tasks/RALLY-18/data/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+    "docs/tasks/RALLY-18/diagnostic.cpp.inc": "9d17be511eb7f414b5d419317b1839eadf9f0b7b1157757ca697904fd2778940",
+    "docs/tasks/RALLY-18/final-scene-validation.json": "6ee36123363b8f40311ceef51492384bb1d057b2fb69dfa5ef39360638d13c42",
+    "docs/tasks/RALLY-18/final-verification.json": "9861bb113348ca5ec9068e40b450633f6aaa8679e2e58d25d24bd0dc8cd5e872",
+    "docs/tasks/RALLY-18/generate_road.cpp": "2d232e246fc0e8765fdb0e1567b8314ff88637ad208f2fa7905713e0bb9e7dab",
+    "docs/tasks/RALLY-18/generate_road.py": "732877baf50c8ef3e8f41860d981fcbfc6472737b4feb54321a0fae7cca47d7c",
+    "docs/tasks/RALLY-18/generate_vehicle_tables.py": "b42e5b5dbce4f3aae6bf1e4294f8ccc1d27e4d5211da20f150e82570182dfa0e",
+    "docs/tasks/RALLY-18/host-scene-validation.json": "ff33ff7c211d118c05d43cc047ec3eb15f169252db49e2e074df0111adc65228",
+    "docs/tasks/RALLY-18/host_scene.cpp": "f9417ed5c3a6d4386f3f81a03d1d043df20f99671e7fffceb509dee503f13420",
+    "docs/tasks/RALLY-18/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "docs/tasks/RALLY-18/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "docs/tasks/RALLY-18/memory.json": "e626d702a610e7cc43e3e3472848c5283a735260a6bc574a59016b8858893c66",
+    "docs/tasks/RALLY-18/memory.md": "863d15df8acea28b9fbee06838bea441558d90b4349a23b1cd5b42302fc41ee5",
+    "docs/tasks/RALLY-18/proxy.cpp": "70b9301f2cff4252a71252c84b8163d3d58172218938a5e3a073238289525523",
+    "docs/tasks/RALLY-18/report.py": "b918d4bf04275a6a988a305654ac24dc48db8bf1ae19f56f027e81a9048754df",
+    "docs/tasks/RALLY-18/results/README.md": "1113f635ed03d76c521c3c55439341128ff94c7ec5f05880df7a5eae647cb134",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-1-measurement.csv": "3b7a85b8446439c2cdfc7a2a3c6d67d747d35456d4c35a40d788f43377739cd1",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-1-run.txt.gz": "9a03389f0eb51922b626e6095bbba5f6b0e0026d5933bffd9a1b602ff16f693d",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-1-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-1-sink.json": "940b02706d025bf151cc31552c1314ddfa26994363dbf98a13f1e858d711ef45",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-2-measurement.csv": "b0ce0e1a0057db47ec9929c857da36093d4b19703a7865ccdfa4c30b05afe48f",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-2-run.txt.gz": "1a1ba58580073cca1dea188f863ac5ffedd17c1503be6306658fe2ee180d38ef",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-2-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-2-sink.json": "940b02706d025bf151cc31552c1314ddfa26994363dbf98a13f1e858d711ef45",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-1-measurement.csv": "35214df5b5b54b1f7e87e753114ff5859b3a789f24d549464bc016dde5ba74b8",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-1-run.txt.gz": "0611c44a1ec9d0aa00d101e5b7cdf62df1d93d640fa2ac01f1803d2e1437868e",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-1-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-1-sink.json": "37ee5dbe17c664c9a69495553071bcecce0d396d5200aa354be71674d8e0db83",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-2-measurement.csv": "f9e28e01a5648e43289ac09908fbe05ba2d340540b2567094f093c52653334d1",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-2-run.txt.gz": "c82773be3d6ab3abb93204c562f58dd73f90c0ab0776a3dd897fd1010255ca61",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-2-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-2-sink.json": "37ee5dbe17c664c9a69495553071bcecce0d396d5200aa354be71674d8e0db83",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-1-measurement.csv": "02ce51d020d58142b22d6d186ee5092cd22901a6adb0113cae9051cf7ca09491",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-1-run.txt.gz": "0a4636e52164bd1288f1efc8908440d0001fb4067c389d83518a7008fa61a4dc",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-1-scene.csv": "3defd3b1fba76cfb40465d7f7a4d8947e94368ac930ec05b3553f1fbab42630f",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-1-sink.json": "2be0f5e53812fa1d542b3d46076dd72d9c42a21bbade609027d0b11db6b6b69a",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-2-measurement.csv": "859b17e5c4200c9f8c3aee11dd5fda82a61a7bc3f66bb9499edbcf3294f1b9a1",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-2-run.txt.gz": "d47c54869a9fea872c99b1d27e1f6496422cfc7e2d6d067c5a8a1329d42cd7d6",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-2-scene.csv": "3defd3b1fba76cfb40465d7f7a4d8947e94368ac930ec05b3553f1fbab42630f",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-2-sink.json": "2be0f5e53812fa1d542b3d46076dd72d9c42a21bbade609027d0b11db6b6b69a",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/live-build.txt": "493a92b2d8c38786d42f2b8877741cafbd1a35295e158dbba2d30fb1b23429eb",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/live.map": "7091483a53e1af0045178a3a7c0bfbc0891c3056469c42068f1dad560b8f2b24",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/lookup-build.txt": "e42eb20cd224aa611cd0abb7a3e0de4cea3b03f8a5ba8eb1fdedd6793a89aca8",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/lookup.map": "5c2824d3b21059808b2df65bd1d39a7c8c60f8c68ca9d88a52a700bad174cc38",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/manifest.json": "246ce5990304ae7c54fdc87d191d082003ae487263de9549f7c93de53a5023b8",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-1-measurement.csv": "51aa43a919af57e80080c719375679dd6b4bfc6ff0fd1765c1f3fe4e867e7eee",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-1-run.txt.gz": "c895e345ac325ea45919532a4a462b310f39d4dbeb4d68e8a94e778a2b69441b",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-1-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-1-sink.json": "cef4082ee2eb5fdeee5e5c3eab1bc3f84a4c9bfa1259b8a3d0b7f1b9b41b1bbb",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-2-measurement.csv": "1a7bf97a6eeac7badfe792e78c4852a2fa563683909d98f2fa0a4907fbfbe428",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-2-run.txt.gz": "e49c6229247d84e8761d188ddd271a646d9741ffcca4e6dbcbf15d0941cb142c",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-2-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-2-sink.json": "cef4082ee2eb5fdeee5e5c3eab1bc3f84a4c9bfa1259b8a3d0b7f1b9b41b1bbb",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-1-measurement.csv": "43f0d1ba4fb7bddff8048f566ca3a34868375ddbc458d892b6d6ee2c5aa974c7",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-1-run.txt.gz": "8dd9fe2b6f2b3d77112d36f47380c2d83db7a766faf25745305fa45472fc3731",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-1-scene.csv": "7b39b14a7ba7214013c71d19f2cc1411d900e02ddb8f82927a7d074bf7cd0a89",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-1-sink.json": "c233f0bdc0a4044b51ef07b81901e655411c206962fb14c39bf0c8a391fd4aa3",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-2-measurement.csv": "02c261b888cf809718bd05ee8cc949182843729607c831ddfac44db94cd56aa7",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-2-run.txt.gz": "0397d24231029c591a62115526ff9a3f31cac57a246951384ca1dcbbfe86c9f7",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-2-scene.csv": "7b39b14a7ba7214013c71d19f2cc1411d900e02ddb8f82927a7d074bf7cd0a89",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-2-sink.json": "c233f0bdc0a4044b51ef07b81901e655411c206962fb14c39bf0c8a391fd4aa3",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-1-measurement.csv": "fe357dd5af7755b1eb9bc19b7626c56a7dbad4f6319407758e3853e33234d853",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-1-run.txt.gz": "48a104075a5635aada91b39db254b461c590315769731d1ac77d77b9d8514fcd",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-1-scene.csv": "75e84e5020046f1602a4acb05fdeb3aebada4ac4bbf6244172c85aa9775a6091",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-1-sink.json": "ea46254d50c92407dc0de0952af1cfda360d1179d1470127f9ca614e8980269d",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-2-measurement.csv": "eeda8d8e65d0febb648731a267153a9f1a1b3d3c8d2edb5ba3e44668f8d74431",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-2-run.txt.gz": "16d1435f2bc533b363f234db4b15cd7d3fa34446b990f6cc6c7bd719163c09b5",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-2-scene.csv": "75e84e5020046f1602a4acb05fdeb3aebada4ac4bbf6244172c85aa9775a6091",
+    "docs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-2-sink.json": "ea46254d50c92407dc0de0952af1cfda360d1179d1470127f9ca614e8980269d",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-1-measurement.csv": "f9fd853841533c9d14a11d6b7e79cad23f2d775be39caba57dea981f6f465fc4",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-1-run.txt.gz": "6c6af92d833eb7a36ba105f9175b59424c545e7dfc4b5ed997e393ff7e4d054e",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-1-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-1-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-2-measurement.csv": "fbb55ea86f8f8f80cc95eef92665cc21de0bba5e6ee26ffa620cd268717aa246",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-2-run.txt.gz": "3d570596b08c716ab14081aa7d7716beed7fd54b9be15891290968a194fbb970",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-2-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-2-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-1-measurement.csv": "b8ad4bd3a90163f88a3e82d879697279155d30c3e6de1f00eb7dc33a0bc96d76",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-1-run.txt.gz": "d1e7a26e2e4b20f83514555f26cac6e8fe0502f7db01ccf5295e2583cc5d2dac",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-1-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-1-sink.json": "940b02706d025bf151cc31552c1314ddfa26994363dbf98a13f1e858d711ef45",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-2-measurement.csv": "f16c86b47be3884a9a39670fc57af26fd04d04d0cb7d10376cadb4cbbbd6570d",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-2-run.txt.gz": "04061604a82e63da9a6ee332531819e9921ccd2552a29deb559abe437e20c94d",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-2-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-2-sink.json": "940b02706d025bf151cc31552c1314ddfa26994363dbf98a13f1e858d711ef45",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-1-measurement.csv": "865e44d4e368b4fbae337290407ee49841fc4823aa7ce16dadec34386c45dafc",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-1-run.txt.gz": "d592dcd1b0afd3eec79dcac6188ac998d48bd94227537b3f4e85ea61e2553c67",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-1-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-1-sink.json": "559be2131ca0d77e9531bc73b4cb618aea4d4c2791aba1c838c0044023928dea",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-2-measurement.csv": "e36fcbdc032872b922d61eb4c0e030a9923d4caf9cede6c42541fa101880cc6f",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-2-run.txt.gz": "41fe9b54bd03a795bbe005477d4de518e72930e03b771e72934bd337380e864b",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-2-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-2-sink.json": "559be2131ca0d77e9531bc73b4cb618aea4d4c2791aba1c838c0044023928dea",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-1-measurement.csv": "ddc925af817a68b031ea385d9a66717ccdfd2db2d65d0c96fcf1e04b84052906",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-1-run.txt.gz": "ca1a8b0232eb99b2be759502c9e2db575cbfe7b3a69baa2ace306ecdb77d8ee7",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-1-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-1-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-2-measurement.csv": "f261f4628e70aa8f8d18dad720f633e3335ee8dd602454002b91b6c22acd84fe",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-2-run.txt.gz": "a154a57131050a14fd90af23cec4ef9a79c2d39de0d0ea72c0c58478e086d186",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-2-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-2-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-1-measurement.csv": "066b7ddc96739690b5a0e16b20f9df0e129aa16139ffa4395b2b86635470823a",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-1-run.txt.gz": "11f64b76b3e2d5d6115dd5e05f052ea8c2fe59594d9181b18decb8999245c1e5",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-1-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-1-sink.json": "37ee5dbe17c664c9a69495553071bcecce0d396d5200aa354be71674d8e0db83",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-2-measurement.csv": "209644f4680efe3a2e9279176ebe78da1db494398cdbd5a9a0e8c8703a02b129",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-2-run.txt.gz": "04679cdce45cb288ccd199c69f4e15ab62f665731518ab3ba1fa42f4ff0bb640",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-2-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-2-sink.json": "37ee5dbe17c664c9a69495553071bcecce0d396d5200aa354be71674d8e0db83",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-1-measurement.csv": "3a0f2d03fe9f938153ac05145501b34f235b56e4fb65d7744dc2d4a95b4b6b59",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-1-run.txt.gz": "2ec7a92eb56a1d00d1c9f7b54209812e9466f308e719efafe1286fde446c8150",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-1-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-1-sink.json": "ad4170e2dec13b861262055120cd39fbbae8a173e58952bd990292b1c9f88494",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-2-measurement.csv": "cbcf8f4b74798367adcef737aa807508d77676fb4a6c09c69ef4acbb251c4405",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-2-run.txt.gz": "ef1dd5a98789c4e6fa1ad6b2872ee6e42f1d60106023f143b09062af44aff5f2",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-2-scene.csv": "320c145dec2eeda65b198987ff8d7f28274ec3cc9ff01fad4f7100598067866c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-2-sink.json": "ad4170e2dec13b861262055120cd39fbbae8a173e58952bd990292b1c9f88494",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-1-measurement.csv": "933461af3c04accdb1160b55f71840d73b2b5e16efae88eed944e62235349169",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-1-run.txt.gz": "ec3d81a0ef1331eb9634a52e64ed91ae57d6ab1403c7ab6313fe72a524fefc8c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-1-scene.csv": "3defd3b1fba76cfb40465d7f7a4d8947e94368ac930ec05b3553f1fbab42630f",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-1-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-2-measurement.csv": "0d6037f90a98554dcbd07b834dd8cef59f3c38aec3ef1412b6704257743b16fa",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-2-run.txt.gz": "674122b74398acb1c5bd26690a6541df462f2cad24f7195bb51fd6947a601c7c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-2-scene.csv": "3defd3b1fba76cfb40465d7f7a4d8947e94368ac930ec05b3553f1fbab42630f",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-2-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-1-measurement.csv": "2368d26f394c6fb15350eb0a9af6061a974daf95fcb5e091a81d4da2c99e94e5",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-1-run.txt.gz": "b3747839c9b1977f492221a43472d07302f7ca14325e6fdb03731fee6768290b",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-1-scene.csv": "3defd3b1fba76cfb40465d7f7a4d8947e94368ac930ec05b3553f1fbab42630f",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-1-sink.json": "2be0f5e53812fa1d542b3d46076dd72d9c42a21bbade609027d0b11db6b6b69a",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-2-measurement.csv": "27e21d39a2ef93e67333549fca413e29d50a18aa7b0ebc30ad8cab50a97a25f8",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-2-run.txt.gz": "e030aebcca591a697a75c1efabe179f580af019dac76c1fbd46d077e41c697e7",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-2-scene.csv": "3defd3b1fba76cfb40465d7f7a4d8947e94368ac930ec05b3553f1fbab42630f",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-2-sink.json": "2be0f5e53812fa1d542b3d46076dd72d9c42a21bbade609027d0b11db6b6b69a",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-1-measurement.csv": "49ac99429d411d80cfd4a2da666d4293f0eec7762d8943d041d8fa881bc3bd12",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-1-run.txt.gz": "537c145cd3963f92696501360d71c6a3bda2deadf9eeb5beb6dd41edb88f6358",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-1-scene.csv": "3defd3b1fba76cfb40465d7f7a4d8947e94368ac930ec05b3553f1fbab42630f",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-1-sink.json": "f9bde552a26a39bc67348b9aab30dddcbd8a00c8b6c6d51def00a0b1d4e01ca6",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-2-measurement.csv": "7358e1b6b3ff88935f6e6c5c6c62b88771073014da2fc69469e5536a10d5da7a",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-2-run.txt.gz": "16e353e58d949572e6efb06f29b27adfc1efb92a9b8a0b7fcf928d938fa8e2f5",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-2-scene.csv": "3defd3b1fba76cfb40465d7f7a4d8947e94368ac930ec05b3553f1fbab42630f",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-2-sink.json": "f9bde552a26a39bc67348b9aab30dddcbd8a00c8b6c6d51def00a0b1d4e01ca6",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/live-build.txt": "493a92b2d8c38786d42f2b8877741cafbd1a35295e158dbba2d30fb1b23429eb",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/live.map": "7091483a53e1af0045178a3a7c0bfbc0891c3056469c42068f1dad560b8f2b24",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/lookup-build.txt": "e42eb20cd224aa611cd0abb7a3e0de4cea3b03f8a5ba8eb1fdedd6793a89aca8",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/lookup.map": "5c2824d3b21059808b2df65bd1d39a7c8c60f8c68ca9d88a52a700bad174cc38",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/manifest.json": "658b163e6f4796ac2b61603c20244fd5188127ce839c2408c9470d970dc9e105",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-1-measurement.csv": "f7a9c48eee16f63d00769725c125e2a56484fa6f9e958c1038913d7f27eac9be",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-1-run.txt.gz": "02faba1f390eebccf62cce317b7f48056256423fc7a5c858b4b496ba183d4a73",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-1-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-1-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-2-measurement.csv": "6d93d3df4277bde20333167779a13161aa51df531cae4147c406be64c8ea0b62",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-2-run.txt.gz": "861ecbb9b4c1a0945ea9cfec4dea7da318d3a11a4ae5283a004265ad718873f6",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-2-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-2-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-1-measurement.csv": "8a804d473a9d22fec0810bfd9b41a870c07b2959979ec0317688342dc75859e1",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-1-run.txt.gz": "2e09ddfcfb3d6f6c0bccdfd99c5d21c0d8aad43d3b9d032c0c1c741c044f2fa8",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-1-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-1-sink.json": "cef4082ee2eb5fdeee5e5c3eab1bc3f84a4c9bfa1259b8a3d0b7f1b9b41b1bbb",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-2-measurement.csv": "5b02742ef7ff9a67a7c3ea2917ffb0710941decedec0027b7d11dad27648d431",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-2-run.txt.gz": "0bcc639541c6f447c2953ca1c760e02464ed3b48611c8f7a0a0cd48fbfda48bb",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-2-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-2-sink.json": "cef4082ee2eb5fdeee5e5c3eab1bc3f84a4c9bfa1259b8a3d0b7f1b9b41b1bbb",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-1-measurement.csv": "f29382ed34744525d21d3b6bb99102cb240ff2fba7d5286f5635d514250cd5fb",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-1-run.txt.gz": "78eebe18a3a3f3461b97277b9c890837688e4ed0715323741c59970749fbfeb2",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-1-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-1-sink.json": "c78471d2204a057ebd8623150265f6bdbda6fcaa71d4e134a877ba893ad95098",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-2-measurement.csv": "8199bf97b7b90a3e6b9d7a88215dcab5cbd886feafbeb8990f23c17615021efb",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-2-run.txt.gz": "4a36b0c64c7e22826f8078f8ed50bdeb4914dfa57cab060927af38060760dcf0",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-2-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-2-sink.json": "c78471d2204a057ebd8623150265f6bdbda6fcaa71d4e134a877ba893ad95098",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-1-measurement.csv": "9c539b4226bd6bd3483725a55d75699aeafebb6aad2a44cd66c37c0b57a1fb6a",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-1-run.txt.gz": "e573bbf37ca2934cca0c711bf3cff8d0e43744472cc833ea3ec3a650c8785d90",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-1-scene.csv": "7b39b14a7ba7214013c71d19f2cc1411d900e02ddb8f82927a7d074bf7cd0a89",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-1-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-2-measurement.csv": "7cc9a33c6defabd68aed893cc6f862c46e91834af9aaf17d29af4631ad2ca6ad",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-2-run.txt.gz": "82a27684aa01a6bf2b697b83ab1325728bf4a55f66004fd773cd584b40f6d411",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-2-scene.csv": "7b39b14a7ba7214013c71d19f2cc1411d900e02ddb8f82927a7d074bf7cd0a89",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-2-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-1-measurement.csv": "2efd31b99214c46241d47e08efe0744364603e5f1469b05ad342a205cac8f7b1",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-1-run.txt.gz": "8af975b25209a996fe4a3ae2c0daa1f81f03e14620752104e90a954e5e417aca",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-1-scene.csv": "7b39b14a7ba7214013c71d19f2cc1411d900e02ddb8f82927a7d074bf7cd0a89",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-1-sink.json": "c233f0bdc0a4044b51ef07b81901e655411c206962fb14c39bf0c8a391fd4aa3",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-2-measurement.csv": "9728b342745cee238b0b7527c9042dd8db6d41a556f55942914448fe3691fabc",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-2-run.txt.gz": "deffaa830dab0025fa179874a615834457301e0669de6dc4a782af5c42b3fb87",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-2-scene.csv": "7b39b14a7ba7214013c71d19f2cc1411d900e02ddb8f82927a7d074bf7cd0a89",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-2-sink.json": "c233f0bdc0a4044b51ef07b81901e655411c206962fb14c39bf0c8a391fd4aa3",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-1-measurement.csv": "67633aa59f59672402cf6882d41bb1f26d78934901fdb282e3af0c679d224b0c",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-1-run.txt.gz": "11e8852232d6c1533c8ef999d91b35201bd102afa4ddfa5fb2c69149ba4edfc2",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-1-scene.csv": "7b39b14a7ba7214013c71d19f2cc1411d900e02ddb8f82927a7d074bf7cd0a89",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-1-sink.json": "3fe656dfac71d9d95f33e00903db20fa052eebf13bb6ffa6f1605eabdfed2e46",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-2-measurement.csv": "2117f421eaee57e1c16b0d427af0e9239bfffc086749a83bd52329c1df8735f9",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-2-run.txt.gz": "54c58b869e58252487d5d1b873f49d0f9f83841b84cf34a4534bae011418dfb8",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-2-scene.csv": "7b39b14a7ba7214013c71d19f2cc1411d900e02ddb8f82927a7d074bf7cd0a89",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-2-sink.json": "3fe656dfac71d9d95f33e00903db20fa052eebf13bb6ffa6f1605eabdfed2e46",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-1-measurement.csv": "18c6e7d32996ad972a445b3b833d38a576148c87c500f20cd49762c18efaf8c3",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-1-run.txt.gz": "73c1b162284c291fc90ac61c1f1e74d62dd3326706f8c3b408f18b150fe37d21",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-1-scene.csv": "75e84e5020046f1602a4acb05fdeb3aebada4ac4bbf6244172c85aa9775a6091",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-1-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-2-measurement.csv": "ad7d85af9239cd129473481260f9d337b334e496cfdd7eab5e23b528efa0f881",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-2-run.txt.gz": "cfd9934ac9e7f275a5a0dd9fa6a37b352cb4a7ca79c151fd62c4bc3dd7fa356a",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-2-scene.csv": "75e84e5020046f1602a4acb05fdeb3aebada4ac4bbf6244172c85aa9775a6091",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-2-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-1-measurement.csv": "6a73e8603e833a4eb6958b2ef7635b566955239d24a52e5219e1d0033aedee33",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-1-run.txt.gz": "ecb14226e1bdc5027df8bfe7ed288b2d171128090020ef205e6b22dd99468429",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-1-scene.csv": "75e84e5020046f1602a4acb05fdeb3aebada4ac4bbf6244172c85aa9775a6091",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-1-sink.json": "ea46254d50c92407dc0de0952af1cfda360d1179d1470127f9ca614e8980269d",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-2-measurement.csv": "6ae6edd93d11e2eac72299e3d6fb453f1c84fc9b59a5bf5abae2506810b665c1",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-2-run.txt.gz": "ce9d36ad5c8d9b0b88e7eb99c17e333401c3c44268f762d3c05be9fbe082cd22",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-2-scene.csv": "75e84e5020046f1602a4acb05fdeb3aebada4ac4bbf6244172c85aa9775a6091",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-2-sink.json": "ea46254d50c92407dc0de0952af1cfda360d1179d1470127f9ca614e8980269d",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-1-measurement.csv": "4e886cb5f1892553e2b12010f3ccf71f69bf37634c548702db49c5b05fe33e91",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-1-run.txt.gz": "fd1d80e4f6914a9d02ea64d12b7f2e82fe5fba3151d5f28f0e5496cb81f4d224",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-1-scene.csv": "75e84e5020046f1602a4acb05fdeb3aebada4ac4bbf6244172c85aa9775a6091",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-1-sink.json": "1695315bfe4fa48fe36c8fd1d2b0a53c32858d39d89cfcc0fbbf6f51db8fc685",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-2-measurement.csv": "1b62fc3958b98d2aa426ba0bd3e2c623d484ac13e1054c5d322d6792fcf817cd",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-2-run.txt.gz": "c847e96223168a2c4553d87e373c03fcd9b7e56b7e86a09bc5c6eff67f1ea8c8",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-2-scene.csv": "75e84e5020046f1602a4acb05fdeb3aebada4ac4bbf6244172c85aa9775a6091",
+    "docs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-2-sink.json": "1695315bfe4fa48fe36c8fd1d2b0a53c32858d39d89cfcc0fbbf6f51db8fc685",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/live-build.txt": "74332d8f4954d74175705664e83c09d41c78652d58df4ad9dafc4be37d8903d5",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/live.map": "6c0db678c8a808d1f01ac3c587d96ca73d46f556270ba5195144b97708ef1817",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/manifest.json": "53c4c65f05c679d556b6be49d748a62cf2a8f9641b7ac1d87fc8a5fe2998c6cd",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-compute-1-measurement.csv": "d86989bda76a989043e3a0b43ed35cc1b24d560a0ebecc89dae0cf302183e8b1",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-compute-1-run.txt.gz": "6a1172d304b6f317be2cf02bb19e8767bcb161c627d77a51444528c5663cfc5c",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-compute-1-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-compute-1-sink.json": "4c14de32241909279c724e960231c5d1bfc31fca8cb1a44569b41fcf57562694",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-display-1-measurement.csv": "9a38a75cbbf82659e7ba12e935d6417e93315c039f93785b5d3bf28c81632bf9",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-display-1-run.txt.gz": "43edfd2b54b43a1591e262be1dc4e81a3f51b0229880913703bb26607c4c6f3b",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-display-1-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-display-1-sink.json": "a8838e29a87b55f867d93a66195978948a5a41ceaabfb9f3ca6107c280d9d019",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-wire-1-measurement.csv": "afb5f418915202abb16ac260d2198a500e5327fd3bfbe1b5f9239a071889be62",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-wire-1-run.txt.gz": "2497d6ff2e7ee29dc5c55cf12b3c54ff36507cf65c84127c35efdb10e3747b0a",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-wire-1-scene.csv": "20c59b537ac038c35d85f0ec8b90a444bdb6730438a0f0bf8733f7575c4d75ae",
+    "docs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-wire-1-sink.json": "5c6b3d134ab1eb545e2a41458e3740322fe2a653e14b51fa311fc64ef7b423e9",
+    "docs/tasks/RALLY-18/results/summary.json": "651a9ed922a5987d4f7676f715109c8e5ba6692de6ea19bdbd9dc348d3255f14",
+    "docs/tasks/RALLY-18/review-profiles.json": "4a40b666ee191018a434fd95983540f7c521517dec181f60cf4bbe46d11e48cd",
+    "docs/tasks/RALLY-18/review.py": "a5cbfea133a21c15d3323a1877a549c119225332009d32c0ea633b904f609bcf",
+    "docs/tasks/RALLY-18/road-results/README.md": "5bbfbd9126f7ffc110e6c739f629b50e2f794fc4b8478ec9824fc90a02bd252c",
+    "docs/tasks/RALLY-18/road-results/geometry-exhaustive.txt": "4a299e991c518c856bf7b322c65ac7c906ed35f5458ade25005c5c2d14791315",
+    "docs/tasks/RALLY-18/road-results/geometry-quick.txt": "e991a7803dcc89eb1a074009456b1c7310256c909534a68dc5bcbed08b54d9f1",
+    "docs/tasks/RALLY-18/road-results/geometry-sampled.txt": "26ec6ba6ee073f17f7be1156eee19bdff26b916546c513d65465003d452fa5f5",
+    "docs/tasks/RALLY-18/road-results/manifest.json": "0f3b7f60e77316641b843def0752d0e77b908b637d13ba9dfc759f1cdefcf692",
+    "docs/tasks/RALLY-18/road-results/quick-manifest.json": "3de5f39eb84dafc1cae983419a89c853ad467ebbe78c02be781f813b1dc07a1a",
+    "docs/tasks/RALLY-18/road-results/sanitizers.txt": "e991a7803dcc89eb1a074009456b1c7310256c909534a68dc5bcbed08b54d9f1",
+    "docs/tasks/RALLY-18/road-results/sizing.txt": "8a6e2c9598a3fc544e4e32c2fd1e846ef1f73c9097ee56057da80690565fa12f",
+    "docs/tasks/RALLY-18/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+    "docs/tasks/RALLY-18/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "docs/tasks/RALLY-18/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "docs/tasks/RALLY-18/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+    "docs/tasks/RALLY-18/size_road_candidates.cpp": "cb086c04b76a66b8f4eb5571b332089a679e9a311e368b82e9519ed3e3edfbaf",
+    "docs/tasks/RALLY-18/task_workload.hpp": "5f38de36b3315bf82cce5c9535e294a0c04e49d9cb34b306a2807f2e0cd13777",
+    "docs/tasks/RALLY-18/test_lookup_road.cpp": "fcc0e61474209ddb1cca09183680e28ace9aa6e544c461661de9257f81cfbbec",
+    "docs/tasks/RALLY-18/test_scene.cpp": "51d0b57e19619645d9dae8f2ee95b146c4cb7c8088b8c3b73abdf4324dfb8c78",
+    "docs/tasks/RALLY-18/test_vehicle.cpp": "1c05f3b3cb3b1a1955d8f1f21274238dd62b32d0a80e8e55f6b2ba61405b8d94",
+    "docs/tasks/RALLY-18/vehicle-notes.md": "84c741072d8e9eacd40707cbef499b229fdfdb1e826502845e9c4d249e04bfa7",
+    "docs/tasks/RALLY-18/vehicle-table-evidence.json": "22fa8df27965f04384ed326aeede55d26b587f13b54426fd038a5006aa2a73a3",
+    "docs/tasks/RALLY-18/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+    "docs/tasks/RALLY-18/verify_road.py": "ea208a31fd93bebaa75671d1bf9cbd0738b382ab1808adfddf209cca9ea3daf1",
+    "docs/tasks/RALLY-18/visual-harness-validation.json": "c68297b8ea37ea3347854362a10133fc19e359c474f6350be415afa19e780795",
+    "docs/tasks/RALLY-18/visual-plan.md": "eebd3e3182090ee8e50be4374a28158a9b6030a7554daf52d59cf755537bfb51",
+    "docs/tasks/RALLY-18/visual-results/README.md": "5d2a63ff9c055e08686dd8375584a045d504414a78308227afbd320908285ecc",
+    "docs/tasks/RALLY-18/visual-results/anchor-centre/actions.txt": "afcba1b72a766a7ce935df53d2984738e0b69556556e7300afb9888344e32feb",
+    "docs/tasks/RALLY-18/visual-results/anchor-centre/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/anchor-centre/events.txt": "8718d7b79dd7a791e0b34c25fb64abce1eb73aaea10277fe1d8bbceb532181bf",
+    "docs/tasks/RALLY-18/visual-results/anchor-centre/frame-000010.png": "a90dba9c2e7bae942041ebb7f6e2d9a2b2516b96674307c3f22765fdc7ac2a99",
+    "docs/tasks/RALLY-18/visual-results/anchor-centre/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/anchor-centre/manifest.json": "e33eac04a89c64c84d5622547577bb088d798440d62976d9943c531db04e02a7",
+    "docs/tasks/RALLY-18/visual-results/anchor-centre/visual-capture.dylib": "5558b22ffb292dd04a86442650bde0ddcf80d035019bb148fff87c5a434644c1",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/actions.txt": "a263959446d91a980c79f7db9d99c101533eeba84ca74a7f23a2f8bda1f35f6a",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/control-result.json": "6ea798430b9542c0d55aa933763dec6625646614442519258053ea21f522d79c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/events.txt": "d3c9c4f7042c1977f6a9453f4aea5fdea6edc894ac71cad443b864da3daab0f8",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/frame-000030.png": "8b4df196c763e5d8e77689d1955bb51b63ecc2fe5879ce1342a996f66baea520",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/frame-000090.png": "636264ea6d031fae67b3628bb265c3f1733c2582b084f439fec09fe3b6d60bb0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/frame-000170.png": "f86eb8fafdb35fe03ff34dc1f5fa6d5ee1a05287215642e0df2551e8f38909ca",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/guest-play-result.csv": "ce6266277ee2f076601ffef96abf49379df54ab0c5ef01c9f9e688ddcd741ddb",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/manifest.json": "ead9b3e5d172e085d724073716f15a8cba5af606b38863ee4c30cbc1383b995c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/visual-capture.dylib": "05b736686bde8063ccdd840c6659258a4622359407141975cf0dc714b08efe4b",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/actions.txt": "a263959446d91a980c79f7db9d99c101533eeba84ca74a7f23a2f8bda1f35f6a",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/control-result.json": "aaf3f9b49374a92a7fe7ee91e95ce778b4c52240ba71610fd829fa90e1bdb629",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/events.txt": "b673703f0d841d82eee6ed9d962f3d3a6fa041b40c951419a29e9574f945e640",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/frame-000030.png": "e378de2fb13c454e34fe41a5ce7860d1b143e79f399d188580c15eb6d61c1393",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/frame-000090.png": "00e3e5cd0c0e6d8043bfece32ffd48b3362fa3397c87dc127e35a73a5de092e0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/frame-000170.png": "01b61e747411d8d9631eb57a018a6d8991053a9f7420cc68f4bb70a8a32345f4",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/guest-play-result.csv": "ff5d971290c4f8504ea3b1134e1d16210e8afad620bc6550033297afc0596664",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/manifest.json": "c5609d703e19c57e52ca1478b30d4b6b298356b6cb6d91a7bc6b78b696d2319c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/visual-capture.dylib": "2b210a60eacd6afa0052f20a7bad7a440bc88797aaa86b4fa8d90ecf33708db6",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-comparison/changed-mask.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-comparison/comparison.json": "5a73b254f7c6db3bc142669736c7ba1ad57f6096fb6243817f539623ea0ec773",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-comparison/difference.png": "9347fe86f6b448518e30d671057b4ece3e7f2cf3906488168f63736a4c990bc0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-comparison/unmatched-within-2-native-pixels.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/events.txt": "0b6d3bc1c74274533c47335fdae30f189f7eded1f3b920c30beb37d5dc4cf7b1",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/frame-000010.png": "f5a4e25ba025f0073cc6d4764a73398063fdf4593d057e879e4528752c30048c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/guest-scene.csv": "eebd430127d5a374e8b2fa98b583f2aad17d252f04978e167979fd15cda6c658",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/host-scene-comparison.json": "653709bfe671a6cd637d0de81f12e117ee8520868c4f81d54eb8ff4e81185da0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/manifest.json": "38723b30ef41a49ab13e268acf8086e616ac9f32428552deb2fad09bb52e189a",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/visual-capture.dylib": "dda2887adfbb8826417c92bb50fbe4a041daee0b1e194eafeb8f546ba8883d4d",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/events.txt": "79312a6013382c1da33d32da8b1e918a79d02aa4d2d49d1051711ae9a2a9f54d",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/frame-000010.png": "f5a4e25ba025f0073cc6d4764a73398063fdf4593d057e879e4528752c30048c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/guest-scene.csv": "ab4427548feef34d9d54f04010b60892bd046ddb01783888383f12925dfc587c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/host-scene-comparison.json": "25ef305c1c3c13dc35e61cd6dadf0fe5a0cc518b98450c545474cec4d233c07c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/manifest.json": "4ca2ca02b2b03811c4725360facb75e993245cbcef747b19badb8a3e1efeb2a7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/visual-capture.dylib": "88d8d2365aef1c3d7594f6223b372e540307583e9a920458b3752af2fe40c128",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-comparison/changed-mask.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-comparison/comparison.json": "207604fa21a09ede5cb819e69e45ee1b90604856c7cf1b041a84b0d0d72fb5c8",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-comparison/difference.png": "9347fe86f6b448518e30d671057b4ece3e7f2cf3906488168f63736a4c990bc0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-comparison/unmatched-within-2-native-pixels.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/events.txt": "c4e405c2c92d1e0c47c82c806e97b09b769365c72d453de58c20f861d3f5f5ad",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/frame-000010.png": "349040e674a40c830a3709411eee6de634fd5e59215ecf529672ae89187c6e5d",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/guest-scene.csv": "c12e0e7636c115a14d9f73bbe8a35b07386dd402e2223e0ab8c15e6622480860",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/host-scene-comparison.json": "110367e74e3867ad57dee3f51ac8494e1635fd2d1f3109478541e30d81443e20",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/manifest.json": "02ccfcea84c1c748da3fcafd1aedde73f25a3b7b5ed2244933e61a9682d4ef70",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/visual-capture.dylib": "f1447046868b8f4b271e779f6a9676a2b4b3fcdf20791f2a020f13c7a2a9d42f",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/events.txt": "3d6036d4a3b6f6519eb418d1a88be9cadde9ca46f459cf87d6c07815e4653faa",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/frame-000010.png": "349040e674a40c830a3709411eee6de634fd5e59215ecf529672ae89187c6e5d",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/guest-scene.csv": "bc29925e8acfc50cfbdd8675a47922e7bccab6084290578240f7df1023f3237e",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/host-scene-comparison.json": "5b7062cd9493d6122628633e7f45fac4b9a50a6cdbaf2991aa53e5cec4ca43ba",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/manifest.json": "f94bde301b0edc222effc0964c67e13ff648c6b2080db3cef865f6756071bb8c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/visual-capture.dylib": "8bfecc045d980ecbe4f008ec3314819b856bea7a62f51a5f2ebcc9415acfd6bd",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-comparison/changed-mask.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-comparison/comparison.json": "03b0b82b55264dddbe628e73bd83e99cad7ad9716f616d01a094bdbadbeb6f3d",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-comparison/difference.png": "9347fe86f6b448518e30d671057b4ece3e7f2cf3906488168f63736a4c990bc0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-comparison/unmatched-within-2-native-pixels.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/events.txt": "976d61949be2d9047406388faa26fe552681cdc4f6e023f09fcf8882f861c022",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/frame-000010.png": "3c00aba8f7067f6661c8056142d01ae7811144a54b8b99539cb18e3163d97704",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/guest-scene.csv": "6f054145a79a62d1eea4975513e64dd1429f38085e4da1737e3b0f00d9190098",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/host-scene-comparison.json": "e6b1f059a53b3188f313679bdc2f2d23a4fd23902a005d8bd78a86918c134235",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/manifest.json": "74e9537dc3ca0e669aa9b74233e84660ac3eff2055e9a47a728016b5bf0eac6a",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/visual-capture.dylib": "732736ed62604571d982aa6498ae18a6b12bd5b37596ad9b0303eacae69276f5",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/events.txt": "264b557463f3095fed2a1d4bc30419932ed6ab781ff577d102c44900be4aceff",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/frame-000010.png": "3c00aba8f7067f6661c8056142d01ae7811144a54b8b99539cb18e3163d97704",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/guest-scene.csv": "6f054145a79a62d1eea4975513e64dd1429f38085e4da1737e3b0f00d9190098",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/host-scene-comparison.json": "84a570ac3eec180f7cbaa1751cc41b759e791bbc84447220d5ddbc88c3b5d5f3",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/manifest.json": "0c630336d772f383b12f7733269098824b7949790153a51a1c8540080e598706",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/visual-capture.dylib": "df16c9232e9e465af212854f507c5ada85d992f2e4d686e56577d8a93919a466",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/manifest.json": "43d14ad4d77d20314e6eaf3d4b25161bd982b3edd90a150afe1d1b0e2aefdaab",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-comparison/changed-mask.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-comparison/comparison.json": "e92386d2ca6784700f49423ba0fb639196ad1e412f1f50c73b1d74f34401707f",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-comparison/difference.png": "9347fe86f6b448518e30d671057b4ece3e7f2cf3906488168f63736a4c990bc0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-comparison/unmatched-within-2-native-pixels.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/events.txt": "f74bf805a2c30dca273be687e72b2331be22ba32c8434b9ec3a5521c0018e16f",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/frame-000010.png": "708a02fb922eb2ad73681e70373d7cee37b1e3044dd0b68e72467368cbf4aa36",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/guest-scene.csv": "8c185ed3c15683b991459fc970a4ef44f4174b62d9533e6de15dd804990aacb7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/host-scene-comparison.json": "c62112bcc36f7790d0d26fe646aa320e2f47948cddc68e17b9d41795a7fff1f6",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/manifest.json": "fed057f939dd7697d7a8ecdf353975c23a878c5907dadef0767a7a4da41ad012",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/visual-capture.dylib": "d76725ced461b805b8b2c5576697926bfd9661a56276099b2114b6e77ab43beb",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/events.txt": "0b0ce5d2be565b956fdccdb4cb735b0f47b811d3a2604b0509b411a7251fb84b",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/frame-000010.png": "708a02fb922eb2ad73681e70373d7cee37b1e3044dd0b68e72467368cbf4aa36",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/guest-scene.csv": "208b22a86fe7321a38e6f6232dc958a9d8e65d5b0b58e5e5525d1d774d8b4d0e",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/host-scene-comparison.json": "f2e5cccbc07dcb3b44f0b315c37543167e9f01a3e09155134ea6812b7a93b9c6",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/manifest.json": "659f361a4fd798bf1e0beadebdd4245d01c8a2ddbe1a905d1dcda4bfde9eaaa4",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/visual-capture.dylib": "441e21606c504c699dd4132dcdf1897dfbe50d33ec56cad2fda627a1cdaec82b",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-comparison/changed-mask.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-comparison/comparison.json": "dda6e37e459d61545ebc4d7ed00d01ca36774db710875fe8d3bb5eca5680ed33",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-comparison/difference.png": "9347fe86f6b448518e30d671057b4ece3e7f2cf3906488168f63736a4c990bc0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-comparison/unmatched-within-2-native-pixels.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/events.txt": "f74bf805a2c30dca273be687e72b2331be22ba32c8434b9ec3a5521c0018e16f",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/frame-000010.png": "fab45346e1f2def6fd5a42e235e224f2809bba3a8ee053c45ea4135dd75dcb34",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/guest-scene.csv": "eb8a6aaa0d6679edb9f532a348ba73e32c6d598ceb4b40281cd34a761de3198c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/host-scene-comparison.json": "fd0f64b22ae0476df5bb585ddacf40ec723913293b6a84c92a7c0e406ab17833",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/manifest.json": "5a609e2ad845c30f0ef9cc629fb838c9144ec6b6f4585c45d80817fd813e86a0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/visual-capture.dylib": "7c6808cfe54949b338dc640159ac1418cc9926e5f07a566f77e3805d4ec6ab24",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/events.txt": "d58d7e13ca7861afa82227c15ca9daae38d2149b6a59509745c9f4db06556112",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/frame-000010.png": "fab45346e1f2def6fd5a42e235e224f2809bba3a8ee053c45ea4135dd75dcb34",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/guest-scene.csv": "7b0e0bd83a8e4ab91591adbd11352663005ed861c7c9e946aef4636090540c77",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/host-scene-comparison.json": "a8ace14596b56e786eefdf089589a66ab9977706082aee03925ead6cb30138ee",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/manifest.json": "9a5f1d20d94f02ba9d0aa091b8ce019f8a9d30426841db5ac29ee1a2f2989e92",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/visual-capture.dylib": "b9debd95e75659002eccecd0a789d82cb425a476a6da579f45d3da0fde3a9a14",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-comparison/changed-mask.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-comparison/comparison.json": "54c4087dcd8f34c60007e8874bb4cb8508f21aa5a8f7a6d3f9e65e32ab54bd9a",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-comparison/difference.png": "9347fe86f6b448518e30d671057b4ece3e7f2cf3906488168f63736a4c990bc0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-comparison/unmatched-within-2-native-pixels.png": "d84d6f2dd66fc03d4c003ec2f918872d0b0f6f408227911e4eda79da6920f64c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/events.txt": "f74bf805a2c30dca273be687e72b2331be22ba32c8434b9ec3a5521c0018e16f",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/frame-000010.png": "e0bc4d67e0e7dcf35b2265fd0d9412b9295bdd99ef533fd4ee60f299d1030cbf",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/guest-scene.csv": "3da1c90c92c9e4a0bf958bb260a26b0a0b6b9cf25d21d1c08cd3f728409d3fed",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/host-scene-comparison.json": "e88d5607974f56c95606a185b934077833ec9fe8b20cdbfc8ebaf688c58bb617",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/manifest.json": "55e60fd59c4c775041c762086d2ec6d9b00a30fcc2413098b2efce148d29e584",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/visual-capture.dylib": "f413ffff120802f8ffe3e168ca45a169094cba25321d1a7dfd5369df6df88922",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/actions.txt": "08a0fa070b19993e65713762df2fc4a7f513b734c351e7e2ccb7b5146a7658d7",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/capture-env.sh": "2a216cd7f14d87a671a1d184d8b47c976279e6c9bf3f59df6624377eed08c0d0",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/events.txt": "86734e437e53a5351e0af1b69b94a5435e2d20ca3e67c431be7b627f29673cf8",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/frame-000010.png": "e0bc4d67e0e7dcf35b2265fd0d9412b9295bdd99ef533fd4ee60f299d1030cbf",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/guest-exit.viz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/guest-scene.csv": "b00f6032529f2603c06de9898ecfc3ad07f9b72441046d0f1bae74399a057806",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/host-scene-comparison.json": "982106c17a126d791a30c9bd39e4d2ba3aae06d6c988d1eb7316e26eb757cdad",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/manifest.json": "bcceff7f0101fe28b45d43d88dbce1d7277ae4a51cd1635020eb3463ff774b2c",
+    "docs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/visual-capture.dylib": "41f988a3bac567d0261027e9c8d59558fb179350cf763c8370f1faf7388375b4",
+    "docs/tasks/RALLY-18/visual_capture_macos.c": "b2a5108c673288430034edf87bb49a849bc797ecc3ea8c6e95faee73cea2dd5d",
+    "docs/tasks/RALLY-18/visual_cases.py": "520c6175368a8588e5460507052849e5140c5423780433710699ffcb373b3dc8",
+    "rally-bench/Makefile": "6367a7009c2d3c51f9a590f88344b1e84533a8f2e4f6c234319f9908f9af38b4",
+    "rally-bench/README.md": "70483f7b93311cc959a0f23099769b2f77dca6113982aa17a2c16633b62ff52a",
+    "rally-bench/include/controls.hpp": "35718669e414b9afa575f00cb53f97d4bca4a7a9bf4ecacd32e5f42c074e4f0e",
+    "rally-bench/include/engine.hpp": "07c8883173b7c47a40ed2ac0c06c8d7e9c83043b8daa3475991bf81f1f943894",
+    "rally-bench/include/telemetry.hpp": "0d6f968aa279917603cc8b6f8c2a01ced1b5dae029d75e3d21721d088316623c",
+    "rally-bench/include/traffic_observation.hpp": "dd9912866e763da47d29af7f253e3cb1ac9f5574fd9fb05fa4e19f0149cc77d3",
+    "rally-bench/include/traffic_policy.hpp": "ea28da2fe825d63fac2e2d45796b22c0b2bd84f0ec828c306eb341f2f9c37e41",
+    "rally-bench/src/emos_gateway.asm": "8e9537635a31c46392c245b99e735ba3b14513d7301e4f42960246f6d99b1f62",
+    "rally-bench/src/main.cpp": "74f00908a7f4fdf6aa788739d859631221aa536a9e24efbd147a53da8f2f6337",
+    "rally-bench/tests/motion_bridge.cpp": "36120b0318aebd5d95874569e436b75c13a7bcf13376efc853620a0794af4142",
+    "rally-game/Makefile": "734b65cbe731afd605703467bba14bb06e6fa052f7d94b26b51db20a1963b226",
+    "rally-game/README.md": "af795b208d6bf0ed7a0d231aae956ad28cb9f516f625854d72337d1e323c0bfd",
+    "rally-game/assets/CREDITS.md": "626311d98a81d8e55b66a2ce82565f9ab12386b8130bb985491820aa627e48f8",
+    "rally-game/assets/font.json": "cb96870a9fb20a50f7a62a7dca57876584186bc7fe8fed3e34469b06a22454f3",
+    "rally-game/assets/routes-proof.json": "f147c925d5e9eef69a53887ab4691d1ae5f5233453264b4893f0a5bc191b3587",
+    "rally-game/assets/signs/aginvadors.png": "fb61054558ee404e384cac447ad5b63c2a47bad153c76a7253f5fdcc02239fda",
+    "rally-game/assets/signs/agon.png": "ab8f5b218e066b8fc7fcc51f502c7d130fda95055715abf4f7e7af743defef0b",
+    "rally-game/assets/signs/defender.png": "7db8c32458a7976a57cd92ea9601a16074e0fa700f9451a253874658448e7680",
+    "rally-game/assets/signs/extender.png": "1d857dd8e2e2e5d980afce920bef9a68388a5f7fcd371a6c4f2f70a01365767b",
+    "rally-game/assets/signs/jukebox.png": "99f489db8ccf6409c3b09b49b0b27860fccec5156b98f633e98a49cf3d051e68",
+    "rally-game/assets/signs/nurples.png": "9f171b59f6fb9b19906a3a30ea3788af8826b3747afa0efb7069c13d81809f68",
+    "rally-game/assets/signs/preview.png": "4ace45177a447c6386caa8e46e9de2b4c7908a37e95a3aa5b015c04f4c8d0413",
+    "rally-game/assets/signs/source/extender.png": "3d36c1010e5d8e0e5a093056ff7cba977194c1c550521ec7ebbd309dbbbd7672",
+    "rally-game/assets/signs/source/jukebox.rgba2": "6ca611f30d4c8034229ecbffd219bcad506ea9f8dedbb1a2f80b9ec8f680f277",
+    "rally-game/assets/signs/source/nurples.png": "da6303933ad3d267aac944824a2d0aeedff623d14fad9bdc777d41849060c133",
+    "rally-game/assets/signs/source/ships.json": "a5bdc03acdce23d11d98815fdae05b349c3fe0b65ac888b3f2c6ab75961641ef",
+    "rally-game/assets/signs/sources.json": "482fad66afecba7c29682700ca24843176d0c122ac90d328db5dc2d775e8aedd",
+    "rally-game/assets/signs/turnnidge-tribute.png": "3021e0372b2da3417ab8b957b8d28d116d18bc2939215f4ec8ec37609d62e2c9",
+    "rally-game/assets/signs/xian-tribute.png": "9f9667ced51c42ec6bbdfc7a752a68a394b888527fc7e123cdb3aff385d897bb",
+    "rally-game/bin/rally.bin": "7f1620ed8139ee779e7d50e333ef572aeaf612a154e41ec574e63a57da760293",
+    "rally-game/bin/rally.map": "7687a8c558d2f642fc8a3e9f6b5ba2b7e238adfe7c23cc5dd0e5a9732502cc44",
+    "rally-game/bin/rally.noname.bin": "b74e6215c9528cacb8ecaa359283b9b42a21814841ebbf9dec955a4158214831",
+    "rally-game/include/controls.hpp": "a535d9b999e0aa410fb5125bbd71cf3462603c81ad2f6d03463881d3d873d466",
+    "rally-game/include/crash.hpp": "98aea4118ec1715a108419a8cefffbef26b3fb0848e8f6f4148b3b573accb720",
+    "rally-game/include/direct_road.hpp": "755ef701de16f598adfb3aebec08753159b1d0a81bc70655f475d654a52af321",
+    "rally-game/include/engine.hpp": "4d677f2c89e5b87c0ea60d9df013af55a11c2c1b8abfc6b21d0595fd7f29fa8f",
+    "rally-game/include/font_data.hpp": "a140339b1ae36e5a36f711c5e9d5c0d3bdfd22d43e32dd33a836bdbe6223ef15",
+    "rally-game/include/game_scene.hpp": "8bd00d29e6898f63ab31ed1a8274d3204023a12b4fee923843b52abcc4cefc0a",
+    "rally-game/include/host_telemetry.hpp": "1b1d25f468beff5bc7ee54ca72ce122e2c9b3f7ff7a6892608d492b0ff38c0a6",
+    "rally-game/include/hud.hpp": "63a8a4b92912e813be4f227bec71b8f21563e9cf8352e7ac34979bda83ed42ee",
+    "rally-game/include/race_traffic.hpp": "8511e4ac3db6e2e7fdcadf2b098fe1fc8ba3c3586ae960a7a6933d14f0ab299d",
+    "rally-game/include/record_file.hpp": "e0a12fe82868325b252f2428a5e77dfb583b9eacd507d5b25911e81752ff8ccf",
+    "rally-game/include/records.hpp": "e400f0c7560b4a2c9ef6316e9e31f61df72818ad3e7fc4f0a7363aea0b24ff81",
+    "rally-game/include/routes_data.hpp": "7304601093871c7f5cdbe824f6d4b99608c3df97cd94bc51e95ad6db25ce807c",
+    "rally-game/include/rules.hpp": "fd6f888f2ef27c00e3d262d41201fdecd59fe6fe9b6e1b39064ab3d815a1aff0",
+    "rally-game/include/signs.hpp": "e090cbfb7fcb326b3bfdb74d7ecfc020737bef86dff225da91e6d63af6a5c3a9",
+    "rally-game/include/signs_data.hpp": "25a315ca87898c874741dacef6c8a6f9a7a1312e43702554d33b2db0dfda03e1",
+    "rally-game/include/timing_fixture.hpp": "fc8c36ebaaa1e901ad4261727803dee5410633b6dedac8e9f005bc44a34a6153",
+    "rally-game/obj/emos_gateway.o": "a69a93f2c8ceb1f846ac4918c0615bc5b5e12c3363b86d8d476800e23742f621",
+    "rally-game/obj/main.o": "e259110570d5240ffbba6506e3958af41e1fa021f92c2d24cde5a9f89f71f1a3",
+    "rally-game/obj/timing_callback.o": "8ba12d757738df77dd7454cabc4add39ab6bbb8eb292a65ebeab859e7fdbd80a",
+    "rally-game/obj/timing_prt.o": "8550f3048c3425ad4e8ee73fc44bb43450c059cc9633272f537311bc736ae8bd",
+    "rally-game/src/emos_gateway.asm": "8e9537635a31c46392c245b99e735ba3b14513d7301e4f42960246f6d99b1f62",
+    "rally-game/src/main.cpp": "0bba6d246b57cb578fdd483d13c4bb695f596c0c92d372e63b14da1a1a8e4a7a",
+    "rally-game/src/timing_callback.asm": "686fb1e58b3396282235389a1210651cf20f2fb1994f1ebe017a65b3588def3a",
+    "rally-game/src/timing_prt.asm": "20055feeef1cbe34d11cbe8a567cc8454a55666c5f11b7f7e3442a6002572fd3",
+    "rally-game/tests/direct_road_test.cpp": "600e94bc30204501339eaf5ff50d8704dffaeabf04246125a8448125d75a8980",
+    "rally-game/tests/host_telemetry_test.cpp": "4542a29d7825d3192ab5fdb94ce550cab42adcf58df81032e12a437e2bd2089c",
+    "rally-game/tests/records_test.cpp": "b54353a09ba39308fc4e58a573ab6b65104f28ffc9d76e110ab6ad6b1396ae95",
+    "rally-game/tests/rules_test.cpp": "1931aa43e8b8557e21068a82bc6460eee831978df6c3aac71f948f98b7115e62",
+    "rally-game/tests/scenery_test.cpp": "22f3e22ae54e24ec3f732081b4480a63f598eb99402ae7f9273e29f858b00cdd",
+    "rally-game/tests/traffic_test.cpp": "788c09981c7864af87cb512d9245dcdc75a0b97cffc6d7dde7c880e46f138621",
+    "rally-game/tools/capture.py": "a52388c35f3c46a9f5b87790ecc849ab300d647659adcb0a41138760184b9125",
+    "rally-game/tools/check_build.py": "8c945e83e9923b83124f5d48815f9edf5412f7b3099454993bd1212cc50aa7f9",
+    "rally-game/tools/generate_font.py": "d143ef444ff48fd4dec06cfabeacd2995fa49a7c3b19c5ac0cfe7331efa73a4c",
+    "rally-game/tools/generate_routes.py": "4a7342a86a8eeea34d0a71b234ccd0d80f5972c77d42a29bd605ebfbce002cdd",
+    "rally-game/tools/generate_signs.py": "261b118e468887e264bd6d1023e81d9fc6195c8a8b96f15b7e11a0aee42f374f",
+    "rally-game/tools/package.py": "bcfff22ce599f7e85e93db9ef32942dbac8c98b2f84afd0288060980cc8ea971",
+    "rally-game/tools/prepare_emulator.py": "e23689455d03d77eef134baa47da0f0920a4c1399b3635c344010233e99feb01",
+    "rally-game/tools/requirements.txt": "41b54a6fb2918667ca47a61d73b522629d84490f3d78f0f20b21135faba10d35",
+    "rally-game/tools/test_host_telemetry.py": "ae6a8a9fa3aa341839a18b91cd8446a1bf6fe729c6a9af02c5b6644a188f3606",
+    "rally-game/tools/test_route_replay.py": "910ebb3f161311c8eb39e252713a9f399ce62290ddce70293d54767e4c195c58",
+    "rally-game/tools/visual_capture_frontend.c": "19aaf4da2fb28c4811700582fd1eb41d71c916719d59c850578c1640cf71f325",
+    "rally-production/.gitignore": "bed6308a89cccf01b2576cade9bc0e84c47e1b496ad8fc21750722966ce27692",
+    "rally-production/Makefile": "f175c620409ccad87eef76bfa5023c69fc7cc2319a33f3bc35ef6d4321a71664",
+    "rally-production/README.md": "5f0234d8c785b83fde1a3ca19b540c453d2bb27e751236a121c3a08f04c13b54",
+    "rally-production/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "rally-production/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "rally-production/include/bearing_table.hpp": "beba6c321e992990f4a10400151c3b7e569610303c382d7a97c52a1e618b5e8c",
+    "rally-production/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "rally-production/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+    "rally-production/include/lookup_format.hpp": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce",
+    "rally-production/include/lookup_road.hpp": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f",
+    "rally-production/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+    "rally-production/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+    "rally-production/include/scene.hpp": "570e4e80bfe927ed7824083ae9e9c29062817ab88b2b1c54753a12652f819ccd",
+    "rally-production/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "rally-production/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "rally-production/include/section_phase.hpp": "dfa9b4722777172a80790eee31a535702064f24fd0dd76b35b5e548a62832180",
+    "rally-production/include/section_protocol.hpp": "9a4e63cae119df3b6681e81939228fb08fd780899e4bc2d225ce71a2e7f1387d",
+    "rally-production/include/section_road.hpp": "442e53ddeb4c9d9b00f2427863b8be09465d4be4f470d4947f0c05b04fc8b980",
+    "rally-production/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "rally-production/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+    "rally-production/include/tuning.hpp": "9b4782b1f7da3caae91ab5a9b28cb63213a224366c6127d7c0493de8cde70c93",
+    "rally-production/include/vehicle.hpp": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070",
+    "rally-production/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+    "rally-production/provenance.json": "aa46c483350f87f6876e3fcfc4abdcfb81a0e2124ec740a9cccd8c595d5f7d81",
+    "rally-production/readme.txt": "81418619f5507ba0f671461d2abd9d2097b8c0b714884257f572e64629860a59",
+    "rally-production/src/main.cpp": "c641e8925b2d1fd0e20565e7f1806a4363bfbd2889c70b2229ec67cd8e1ee62c",
+    "rally/AGENTS.md": "f3029751a3bc4ad1dc96d28eaf62dd46f4cdeceeff634b2d8a204085369fa487",
+    "rally/Makefile": "c93547e65aa2126eaf33fc860aabd2e282381521e529cb68ecad3a11fc4c6244",
+    "rally/README.md": "509669128eda3265aadc312e19f2cc2679c5c76f26efc7e0d1235438d7974141",
+    "rally/assets/car/README.md": "ce1652e4672ecadff22c61fa5bd9a8d6fc2e5a3e35745d92b0ae054199cc7163",
+    "rally/assets/car/car-00.png": "b7623b6217676ac703a8b991343119db42674776439579f5c8adddb7e9fbb5df",
+    "rally/assets/car/car-00.rgba2222": "043194aa2bd550d3ad1a8974577b1d9a8ef00dc1350a2207a316fea44b841d14",
+    "rally/assets/car/car-01.png": "6e107aa1c80b427b2d815f2d6bec2c86858f5fbf9948e0ed17c76aa65357a9ee",
+    "rally/assets/car/car-01.rgba2222": "b0a798dfc03698fc2d463c85eec7bef1e8cd1b2100a93256f43a689d573c354d",
+    "rally/assets/car/car-02.png": "43d0ccc17ac80f73b40074f3bb8cd8e3ed09e676252d987daa5d6d2b103a6222",
+    "rally/assets/car/car-02.rgba2222": "0295d05f9a63841b3a1125f4784b1ace55b9a598abd2328375fe44a28dfbca8a",
+    "rally/assets/car/car-03.png": "5fcc867b060f40ba18c75a406fc39b66e454aaa2892a746dd8adbd75ec6c2f1d",
+    "rally/assets/car/car-03.rgba2222": "92f58f82287f180372f42ad51528403d60fef30a9bd66ef41a7b9e3d09ece4d1",
+    "rally/assets/car/car-04.png": "8f8a1fd1b5523fbd21b0617a8d1d8b85aced42e3e363a3a4b70540b889a3caf2",
+    "rally/assets/car/car-04.rgba2222": "24697dba67713161e9524d392075eee15b9a43148f00b5d74a65fe66a9e571b2",
+    "rally/assets/car/rally-car.blend": "3d991158329d654c2b0be2a9128722f529d4a41d8ad4d2786c182589a3220094",
+    "rally/assets/car/road-mockup.png": "fdd665bcd850e8097d5b43a38645cf7cdafc493f5fe65f1724e73ee584c703c8",
+    "rally/assets/car/sprites.json": "c026ace6c0e8b21df2f1ab32e23f48328d5f7829776c049b00ced08fdfd2fdb2",
+    "rally/assets/car/yaw-sheet.png": "ea0be5b8f69ebbbb64d248ff5575711f6751abbd0d3bcc0fd772abd7820c0677",
+    "rally/assets/scenery/README.md": "a4d0f50e8027ed7ec89db27211620ff5da06afe72a679caa0f492ebc7920b86b",
+    "rally/assets/scenery/panorama.idx4": "ee42c8bc3e50ef3b0ad3e96f088a7b86560f8d9f19ccd6f567104c619e64b4af",
+    "rally/assets/scenery/panorama.png": "de12e05d6e7d035f71b93fa08b8c1e77ca18cc3c5f985b89bd49b052c2490140",
+    "rally/assets/scenery/scenery.gpl": "7e0bac2bf8df2ea753330c8162bc01afef8872802017f368979ad1430958b451",
+    "rally/assets/track.csv": "a82cfbbe8586f51731538d45ce51b3edd6547abef3994434b4ab004e8d0a711d",
+    "rally/assets/track.svg": "11c8835952a6b849a0a3f31814c1d75a06519aa36ca91d302309982ac7ef3fb4",
+    "rally/assets/tracks/README.md": "36eada2c9e918567353839c6ccbf4a8170501d040d571459fbe02a84b68e1574",
+    "rally/assets/tracks/drawing-radius-comparison.json": "5ddde864b03828413161eb1a9d987a4ca228ae4bd482caeb5e026bbf20d3de2d",
+    "rally/assets/tracks/fuji-stats.json": "2e315220f4ba897aeb9da93d112179136e0549689756ed05b9f57f3a2e53d10a",
+    "rally/assets/tracks/fuji.csv": "491008bb91b69c0ce658c6de94dfd358c0b4b07045a6a5b9518731b5160e966f",
+    "rally/assets/tracks/fuji.json": "5916fb21af5b01211518f324c109d92c535fe2fca1ae6b8052e07e51b5d251df",
+    "rally/assets/tracks/fuji.svg": "b53ac59dd78b34ede1a96eb43dee0860802d5c4f8b7ef580895c2c07870b5cf9",
+    "rally/assets/tracks/tri-oval-stats.json": "b2c2e3caf14287a6ada923091fb7d53d110609f4bc6f70936fc85615f86158d6",
+    "rally/assets/tracks/tri-oval.csv": "a82cfbbe8586f51731538d45ce51b3edd6547abef3994434b4ab004e8d0a711d",
+    "rally/assets/tracks/tri-oval.json": "ae99a58428351bc598784afa1d6872d2044df273a7bb05ce9506472aa94f3378",
+    "rally/assets/tracks/tri-oval.svg": "11c8835952a6b849a0a3f31814c1d75a06519aa36ca91d302309982ac7ef3fb4",
+    "rally/docs/curve-left.png": "84e10688e1927326d7ceb060a062907b6f756856b15bafc03fe1dc0e2012bacb",
+    "rally/docs/curve-right.png": "efd149f70f2187fe9a2830ef7c950361b920171f355edb3866df087d8504da24",
+    "rally/docs/driving.png": "8bb73bfb7f172fcd7f1457d5c5f191ff1b3633e8963ca868bf43c1b3002a6cc0",
+    "rally/docs/straight-road.png": "0ad4de88bbd1b508332856f09cbfb1b7e936e89f605432b07ecbc310cc3b4dbc",
+    "rally/include/band_table.hpp": "6d0e2e737e0acc416f26b95a911edef3868d4be89ec062a2bbd9c66d29aad6af",
+    "rally/include/car.hpp": "a6eee9515dec9eeed62dda907f7ab3810b1d8fa878e55fb65cc95f82cb40bebe",
+    "rally/include/demo.hpp": "f4254d78bacfad87c7c8d70e45ef5afc65d9bc2c7b8188e4b3f1e7c9c77147c0",
+    "rally/include/pacing.hpp": "d64bd954bdc818c6d614f5860a47649e85d2c2eaa3d51e8ef713734765c3a58f",
+    "rally/include/road.hpp": "ec808d57188dda98198e7a0deea59f485596a3be5a0f37529a2ad554a1d107a2",
+    "rally/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "rally/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "rally/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946",
+    "rally/include/traffic.hpp": "7e418a934c7caa5f2766b8c4ff35519535a012083919eeead0588ca0495560a1",
+    "rally/include/workload.hpp": "f570fbfa44bbc50e09b2009182f0e47585c043425e1ba27a0af3102e3210c4a8",
+    "rally/run.sh": "9fe1b93fc45e67c040c794b0cd585c27b2c304b8fe73d601bfdde831cb1d5ce3",
+    "rally/src/main.cpp": "2f8c084fc4be5eb11b6c785a47ba8cf654c20664b4c91c34d8fcf9c223c1bd49",
+    "rally/tests/preview_track.cpp": "134d04152111e084ab6a0a51bbfc9a3504f4b3a6eb4f283bb2adb4be77506a25",
+    "rally/tests/test_bands.cpp": "5fb235460a1d2f2e38d2c39f75f80e6c6534721fbb84d9ed4bdef758e21ad7b2",
+    "rally/tests/test_pacing.cpp": "6f91f950ac00b89534ea1bec1375981d9a256dba7fe31f7b631a7ba42ad0df30",
+    "rally/tests/test_road.cpp": "57d0f4f205153e732b8599662e095b8dd68cd84c654e67fa79fbb98fe5e1da40",
+    "rally/tools/build_car.py": "bf73aab0d740982cde7f166068a797de74fdc4260e3b438c713424d911916f9f",
+    "rally/tools/build_linux.py": "eb274b8b8d472855c6bca5f40ad40213054060624655601a7107b5ce2089c074",
+    "rally/tools/deploy.py": "17bbf66ee044c70f0b759eb0b9b61f07823c43f0eb9723bb41581130837c11b5",
+    "rally/tools/export_car.py": "b000e49da774b1a916bfce89cd812aabf18dd7f275430a5cd654c06a7cf821df",
+    "rally/tools/generate_scenery.py": "bdf757fc16408f8af1fba6dab3e5fb6fcde2e9961e05ac17512e6b6be6a7b457",
+    "rally/tools/generate_track.py": "02ffd42608f111dd87d9a8edd7044277dbc051c0997fcbd6f4aa36d8e3e63acc",
+    "rally/tools/prepare_emulator.py": "b23c8cc2489cb040684383d61d4d5a038c6d4017c3bfcb07c760280d8d9481df"
+  },
+  "host_durations_are_not_target_performance": true,
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "rally",
+        "rally-game",
+        "rally-production",
+        "rally-bench",
+        "docs/tasks/RALLY-16",
+        "docs/tasks/RALLY-18"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 0.0021151090040802956,
+      "stdout": "docs/tasks/RALLY-16/.gitignore\ndocs/tasks/RALLY-16/README.md\ndocs/tasks/RALLY-16/batch.cpp.inc\ndocs/tasks/RALLY-16/experiment.py\ndocs/tasks/RALLY-16/pavement.hpp\ndocs/tasks/RALLY-16/results/README.md\ndocs/tasks/RALLY-16/results/fuji-01-full.csv\ndocs/tasks/RALLY-16/results/fuji-02-pavement.csv\ndocs/tasks/RALLY-16/results/fuji-03-sections.csv\ndocs/tasks/RALLY-16/results/fuji-04-sections.csv\ndocs/tasks/RALLY-16/results/fuji-05-pavement.csv\ndocs/tasks/RALLY-16/results/fuji-06-full.csv\ndocs/tasks/RALLY-16/results/full-build.txt\ndocs/tasks/RALLY-16/results/manifest.json\ndocs/tasks/RALLY-16/results/oval-01-full.csv\ndocs/tasks/RALLY-16/results/oval-02-pavement.csv\ndocs/tasks/RALLY-16/results/oval-03-sections.csv\ndocs/tasks/RALLY-16/results/oval-04-sections.csv\ndocs/tasks/RALLY-16/results/oval-05-pavement.csv\ndocs/tasks/RALLY-16/results/oval-06-full.csv\ndocs/tasks/RALLY-16/results/pavement-build.txt\ndocs/tasks/RALLY-16/results/sections-build.txt\ndocs/tasks/RALLY-16/results/summary.json\ndocs/tasks/RALLY-16/results/table.md\ndocs/tasks/RALLY-16/results/validation.json\ndocs/tasks/RALLY-16/section_phase.hpp\ndocs/tasks/RALLY-16/section_protocol.hpp\ndocs/tasks/RALLY-16/section_road.hpp\ndocs/tasks/RALLY-16/summarize.py\ndocs/tasks/RALLY-16/test_pavement.cpp\ndocs/tasks/RALLY-16/test_sections.cpp\ndocs/tasks/RALLY-18/.gitignore\ndocs/tasks/RALLY-18/FREEZE.md\ndocs/tasks/RALLY-18/IMPLEMENTATION.md\ndocs/tasks/RALLY-18/README.md\ndocs/tasks/RALLY-18/bearing_table.hpp\ndocs/tasks/RALLY-18/bench.py\ndocs/tasks/RALLY-18/build.py\ndocs/tasks/RALLY-18/capture.py\ndocs/tasks/RALLY-18/checkpoint-inputs.json\ndocs/tasks/RALLY-18/compare_scene.py\ndocs/tasks/RALLY-18/data/fuji.road\ndocs/tasks/RALLY-18/data/manifest.json\ndocs/tasks/RALLY-18/data/oval.road\ndocs/tasks/RALLY-18/diagnostic.cpp.inc\ndocs/tasks/RALLY-18/final-scene-validation.json\ndocs/tasks/RALLY-18/final-verification.json\ndocs/tasks/RALLY-18/generate_road.cpp\ndocs/tasks/RALLY-18/generate_road.py\ndocs/tasks/RALLY-18/generate_vehicle_tables.py\ndocs/tasks/RALLY-18/host-scene-validation.json\ndocs/tasks/RALLY-18/host_scene.cpp\ndocs/tasks/RALLY-18/lookup_format.hpp\ndocs/tasks/RALLY-18/lookup_road.hpp\ndocs/tasks/RALLY-18/memory.json\ndocs/tasks/RALLY-18/memory.md\ndocs/tasks/RALLY-18/proxy.cpp\ndocs/tasks/RALLY-18/report.py\ndocs/tasks/RALLY-18/results/README.md\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-live-control-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-control-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/fuji-lookup-perspective-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/live-build.txt\ndocs/tasks/RALLY-18/results/bench-lttycqb0/live.map\ndocs/tasks/RALLY-18/results/bench-lttycqb0/lookup-build.txt\ndocs/tasks/RALLY-18/results/bench-lttycqb0/lookup.map\ndocs/tasks/RALLY-18/results/bench-lttycqb0/manifest.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-live-control-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-control-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-lttycqb0/oval-lookup-perspective-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-compute-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-live-control-wire-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-compute-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-control-wire-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-compute-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/fuji-lookup-perspective-wire-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/live-build.txt\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/live.map\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/lookup-build.txt\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/lookup.map\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/manifest.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-compute-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-live-control-wire-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-compute-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-control-wire-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-compute-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-display-2-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-1-sink.json\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-2-measurement.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-2-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-2-scene.csv\ndocs/tasks/RALLY-18/results/bench-ui1ehkre/oval-lookup-perspective-wire-2-sink.json\ndocs/tasks/RALLY-18/results/bench-uk9myco2/live-build.txt\ndocs/tasks/RALLY-18/results/bench-uk9myco2/live.map\ndocs/tasks/RALLY-18/results/bench-uk9myco2/manifest.json\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-compute-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-compute-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-compute-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-compute-1-sink.json\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-display-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-display-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-display-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-display-1-sink.json\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-wire-1-measurement.csv\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-wire-1-run.txt.gz\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-wire-1-scene.csv\ndocs/tasks/RALLY-18/results/bench-uk9myco2/oval-live-control-wire-1-sink.json\ndocs/tasks/RALLY-18/results/summary.json\ndocs/tasks/RALLY-18/review-profiles.json\ndocs/tasks/RALLY-18/review.py\ndocs/tasks/RALLY-18/road-results/README.md\ndocs/tasks/RALLY-18/road-results/geometry-exhaustive.txt\ndocs/tasks/RALLY-18/road-results/geometry-quick.txt\ndocs/tasks/RALLY-18/road-results/geometry-sampled.txt\ndocs/tasks/RALLY-18/road-results/manifest.json\ndocs/tasks/RALLY-18/road-results/quick-manifest.json\ndocs/tasks/RALLY-18/road-results/sanitizers.txt\ndocs/tasks/RALLY-18/road-results/sizing.txt\ndocs/tasks/RALLY-18/scene.hpp\ndocs/tasks/RALLY-18/section_phase.hpp\ndocs/tasks/RALLY-18/section_protocol.hpp\ndocs/tasks/RALLY-18/section_road.hpp\ndocs/tasks/RALLY-18/size_road_candidates.cpp\ndocs/tasks/RALLY-18/task_workload.hpp\ndocs/tasks/RALLY-18/test_lookup_road.cpp\ndocs/tasks/RALLY-18/test_scene.cpp\ndocs/tasks/RALLY-18/test_vehicle.cpp\ndocs/tasks/RALLY-18/vehicle-notes.md\ndocs/tasks/RALLY-18/vehicle-table-evidence.json\ndocs/tasks/RALLY-18/vehicle.hpp\ndocs/tasks/RALLY-18/verify_road.py\ndocs/tasks/RALLY-18/visual-harness-validation.json\ndocs/tasks/RALLY-18/visual-plan.md\ndocs/tasks/RALLY-18/visual-results/README.md\ndocs/tasks/RALLY-18/visual-results/anchor-centre/actions.txt\ndocs/tasks/RALLY-18/visual-results/anchor-centre/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/anchor-centre/events.txt\ndocs/tasks/RALLY-18/visual-results/anchor-centre/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/anchor-centre/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/anchor-centre/manifest.json\ndocs/tasks/RALLY-18/visual-results/anchor-centre/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/control-result.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/frame-000030.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/frame-000090.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/frame-000170.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/guest-play-result.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-fuji-perspective/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/control-result.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/frame-000030.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/frame-000090.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/frame-000170.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/guest-play-result.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/controls-oval-control/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-comparison/changed-mask.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-comparison/comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-comparison/difference.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-comparison/unmatched-within-2-native-pixels.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-live/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-l35-s0-perspective-lookup/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-comparison/changed-mask.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-comparison/comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-comparison/difference.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-comparison/unmatched-within-2-native-pixels.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-live/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p16-lm35-s0-control-lookup/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-comparison/changed-mask.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-comparison/comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-comparison/difference.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-comparison/unmatched-within-2-native-pixels.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-live/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/fuji-p63-l0-s0-control-lookup/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-comparison/changed-mask.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-comparison/comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-comparison/difference.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-comparison/unmatched-within-2-native-pixels.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-live/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l0-s0-control-lookup/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-comparison/changed-mask.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-comparison/comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-comparison/difference.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-comparison/unmatched-within-2-native-pixels.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-live/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-l35-s0-control-lookup/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-comparison/changed-mask.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-comparison/comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-comparison/difference.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-comparison/unmatched-within-2-native-pixels.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-live/visual-capture.dylib\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/actions.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/capture-env.sh\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/events.txt\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/frame-000010.png\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/guest-exit.viz\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/guest-scene.csv\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/host-scene-comparison.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/manifest.json\ndocs/tasks/RALLY-18/visual-results/run-v8f_9x50/oval-p00-lm35-s0-control-lookup/visual-capture.dylib\ndocs/tasks/RALLY-18/visual_capture_macos.c\ndocs/tasks/RALLY-18/visual_cases.py\nrally-bench/Makefile\nrally-bench/README.md\nrally-bench/include/controls.hpp\nrally-bench/include/engine.hpp\nrally-bench/include/telemetry.hpp\nrally-bench/include/traffic_observation.hpp\nrally-bench/include/traffic_policy.hpp\nrally-bench/src/emos_gateway.asm\nrally-bench/src/main.cpp\nrally-bench/tests/motion_bridge.cpp\nrally-game/Makefile\nrally-game/README.md\nrally-game/assets/CREDITS.md\nrally-game/assets/font.json\nrally-game/assets/routes-proof.json\nrally-game/assets/signs/aginvadors.png\nrally-game/assets/signs/agon.png\nrally-game/assets/signs/defender.png\nrally-game/assets/signs/extender.png\nrally-game/assets/signs/jukebox.png\nrally-game/assets/signs/nurples.png\nrally-game/assets/signs/preview.png\nrally-game/assets/signs/source/extender.png\nrally-game/assets/signs/source/jukebox.rgba2\nrally-game/assets/signs/source/nurples.png\nrally-game/assets/signs/source/ships.json\nrally-game/assets/signs/sources.json\nrally-game/assets/signs/turnnidge-tribute.png\nrally-game/assets/signs/xian-tribute.png\nrally-game/include/controls.hpp\nrally-game/include/crash.hpp\nrally-game/include/direct_road.hpp\nrally-game/include/engine.hpp\nrally-game/include/font_data.hpp\nrally-game/include/game_scene.hpp\nrally-game/include/host_telemetry.hpp\nrally-game/include/hud.hpp\nrally-game/include/race_traffic.hpp\nrally-game/include/record_file.hpp\nrally-game/include/records.hpp\nrally-game/include/routes_data.hpp\nrally-game/include/rules.hpp\nrally-game/include/signs.hpp\nrally-game/include/signs_data.hpp\nrally-game/include/timing_fixture.hpp\nrally-game/src/emos_gateway.asm\nrally-game/src/main.cpp\nrally-game/src/timing_callback.asm\nrally-game/src/timing_prt.asm\nrally-game/tests/direct_road_test.cpp\nrally-game/tests/host_telemetry_test.cpp\nrally-game/tests/records_test.cpp\nrally-game/tests/rules_test.cpp\nrally-game/tests/scenery_test.cpp\nrally-game/tests/traffic_test.cpp\nrally-game/tools/capture.py\nrally-game/tools/check_build.py\nrally-game/tools/generate_font.py\nrally-game/tools/generate_routes.py\nrally-game/tools/generate_signs.py\nrally-game/tools/package.py\nrally-game/tools/prepare_emulator.py\nrally-game/tools/requirements.txt\nrally-game/tools/test_host_telemetry.py\nrally-game/tools/test_route_replay.py\nrally-game/tools/visual_capture_frontend.c\nrally-production/.gitignore\nrally-production/Makefile\nrally-production/README.md\nrally-production/fuji.road\nrally-production/include/band_table.hpp\nrally-production/include/bearing_table.hpp\nrally-production/include/car.hpp\nrally-production/include/demo.hpp\nrally-production/include/lookup_format.hpp\nrally-production/include/lookup_road.hpp\nrally-production/include/pacing.hpp\nrally-production/include/road.hpp\nrally-production/include/scene.hpp\nrally-production/include/scenery.hpp\nrally-production/include/scenery_data.hpp\nrally-production/include/section_phase.hpp\nrally-production/include/section_protocol.hpp\nrally-production/include/section_road.hpp\nrally-production/include/track.hpp\nrally-production/include/traffic.hpp\nrally-production/include/tuning.hpp\nrally-production/include/vehicle.hpp\nrally-production/oval.road\nrally-production/provenance.json\nrally-production/readme.txt\nrally-production/src/main.cpp\nrally/AGENTS.md\nrally/Makefile\nrally/README.md\nrally/assets/car/README.md\nrally/assets/car/car-00.png\nrally/assets/car/car-00.rgba2222\nrally/assets/car/car-01.png\nrally/assets/car/car-01.rgba2222\nrally/assets/car/car-02.png\nrally/assets/car/car-02.rgba2222\nrally/assets/car/car-03.png\nrally/assets/car/car-03.rgba2222\nrally/assets/car/car-04.png\nrally/assets/car/car-04.rgba2222\nrally/assets/car/rally-car.blend\nrally/assets/car/road-mockup.png\nrally/assets/car/sprites.json\nrally/assets/car/yaw-sheet.png\nrally/assets/scenery/README.md\nrally/assets/scenery/panorama.idx4\nrally/assets/scenery/panorama.png\nrally/assets/scenery/scenery.gpl\nrally/assets/track.csv\nrally/assets/track.svg\nrally/assets/tracks/README.md\nrally/assets/tracks/drawing-radius-comparison.json\nrally/assets/tracks/fuji-stats.json\nrally/assets/tracks/fuji.csv\nrally/assets/tracks/fuji.json\nrally/assets/tracks/fuji.svg\nrally/assets/tracks/tri-oval-stats.json\nrally/assets/tracks/tri-oval.csv\nrally/assets/tracks/tri-oval.json\nrally/assets/tracks/tri-oval.svg\nrally/docs/curve-left.png\nrally/docs/curve-right.png\nrally/docs/driving.png\nrally/docs/straight-road.png\nrally/include/band_table.hpp\nrally/include/car.hpp\nrally/include/demo.hpp\nrally/include/pacing.hpp\nrally/include/road.hpp\nrally/include/scenery.hpp\nrally/include/scenery_data.hpp\nrally/include/track.hpp\nrally/include/traffic.hpp\nrally/include/workload.hpp\nrally/run.sh\nrally/src/main.cpp\nrally/tests/preview_track.cpp\nrally/tests/test_bands.cpp\nrally/tests/test_pacing.cpp\nrally/tests/test_road.cpp\nrally/tools/build_car.py\nrally/tools/build_linux.py\nrally/tools/deploy.py\nrally/tools/export_car.py\nrally/tools/generate_scenery.py\nrally/tools/generate_track.py\nrally/tools/prepare_emulator.py\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "c++",
+        "-O3",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally/include",
+        "-I",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/generate_road.cpp",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/generate-default"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 0.9106323928572237,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/generate-default",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/default-data"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 0.0024638487957417965,
+      "stdout": "oval: 1710 records, 20520 payload bytes, 20584 disk bytes, track 472e5918, payload 923a5fbe\nfuji: 9728 records, 116736 payload bytes, 116800 disk bytes, track 7d459af5, payload 5288cc4e\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "c++",
+        "-O3",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally/include",
+        "-I",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/generate_road.cpp",
+        "-ffp-contract=off",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/generate-strict"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 0.9046483440324664,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/generate-strict",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/data"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 0.0025568492710590363,
+      "stdout": "oval: 1710 records, 20520 payload bytes, 20584 disk bytes, track 472e5918, payload 921ad5e4\nfuji: 9728 records, 116736 payload bytes, 116800 disk bytes, track 7d459af5, payload 5288cc4e\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "-I",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-game/include",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-production/include",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/lookup_study.cpp",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/ordinary"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 2.3341433866880834,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/ordinary",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/data"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 0.2459571911022067,
+      "stdout": "{\"track\":\"fuji\",\"workload\":\"track_seams_five_phases\",\"poses\":7680,\"bands\":117043,\"road_bytes\":14131026,\"live_road_bytes\":10665873,\"centre_queries\":140818,\"unique_lines\":76510,\"row_lookup_wide_multiplies\":370348,\"max_bands\":30,\"max_road_bytes\":3756,\"max_chunks\":1,\"max_point_error_q8\":35,\"max_pixel_difference\":1}\n{\"track\":\"fuji\",\"workload\":\"900_frame_centerline_pace\",\"poses\":900,\"bands\":13573,\"road_bytes\":1638819,\"live_road_bytes\":1233333,\"centre_queries\":21593,\"unique_lines\":10140,\"row_lookup_wide_multiplies\":52013,\"max_bands\":26,\"max_road_bytes\":3189,\"max_chunks\":1,\"max_point_error_q8\":25,\"max_pixel_difference\":1}\n{\"track\":\"oval\",\"workload\":\"track_seams_five_phases\",\"poses\":1350,\"bands\":26339,\"road_bytes\":3157596,\"live_road_bytes\":2027187,\"centre_queries\":31754,\"unique_lines\":15490,\"row_lookup_wide_multiplies\":78224,\"max_bands\":28,\"max_road_bytes\":3405,\"max_chunks\":1,\"max_point_error_q8\":31,\"max_pixel_difference\":1}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-game/include",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-production/include",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/lookup_study.cpp",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/sanitized"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 7.455314692109823,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/sanitized",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/data"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 3.144673954229802,
+      "stdout": "{\"track\":\"fuji\",\"workload\":\"track_seams_five_phases\",\"poses\":7680,\"bands\":117043,\"road_bytes\":14131026,\"live_road_bytes\":10665873,\"centre_queries\":140818,\"unique_lines\":76510,\"row_lookup_wide_multiplies\":370348,\"max_bands\":30,\"max_road_bytes\":3756,\"max_chunks\":1,\"max_point_error_q8\":35,\"max_pixel_difference\":1}\n{\"track\":\"fuji\",\"workload\":\"900_frame_centerline_pace\",\"poses\":900,\"bands\":13573,\"road_bytes\":1638819,\"live_road_bytes\":1233333,\"centre_queries\":21593,\"unique_lines\":10140,\"row_lookup_wide_multiplies\":52013,\"max_bands\":26,\"max_road_bytes\":3189,\"max_chunks\":1,\"max_point_error_q8\":25,\"max_pixel_difference\":1}\n{\"track\":\"oval\",\"workload\":\"track_seams_five_phases\",\"poses\":1350,\"bands\":26339,\"road_bytes\":3157596,\"live_road_bytes\":2027187,\"centre_queries\":31754,\"unique_lines\":15490,\"row_lookup_wide_multiplies\":78224,\"max_bands\":28,\"max_road_bytes\":3405,\"max_chunks\":1,\"max_point_error_q8\":31,\"max_pixel_difference\":1}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Agon/agondev/release/bin/ez80-none-elf-clang",
+        "-mllvm",
+        "-z80-gas-style",
+        "-mllvm",
+        "-z80-print-zero-offset",
+        "-nostdinc",
+        "-I./include",
+        "-isystem",
+        "/Agon/agondev/release/include",
+        "-target",
+        "ez80-none-elf",
+        "-DAGONDEV",
+        "-Oz",
+        "-Wa,-march=ez80+full",
+        "-fno-threadsafe-statics",
+        "-fcolor-diagnostics",
+        "-isystem",
+        "/Agon/agondev/release/include/c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-I",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-game/include",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-production/include",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/lookup_probe.cpp",
+        "-S",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/lookup.s"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp",
+      "returncode": 0,
+      "host_seconds": 0.17140108300372958,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Agon/agondev/release/bin/ez80-none-elf-clang",
+        "-mllvm",
+        "-z80-gas-style",
+        "-mllvm",
+        "-z80-print-zero-offset",
+        "-nostdinc",
+        "-I./include",
+        "-isystem",
+        "/Agon/agondev/release/include",
+        "-target",
+        "ez80-none-elf",
+        "-DAGONDEV",
+        "-Oz",
+        "-Wa,-march=ez80+full",
+        "-fno-threadsafe-statics",
+        "-fcolor-diagnostics",
+        "-isystem",
+        "/Agon/agondev/release/include/c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-I",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-game/include",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-production/include",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/lookup_probe.cpp",
+        "-S",
+        "-emit-llvm",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/lookup.ll"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp",
+      "returncode": 0,
+      "host_seconds": 0.1284078867174685,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Agon/agondev/release/bin/ez80-none-elf-clang",
+        "-mllvm",
+        "-z80-gas-style",
+        "-mllvm",
+        "-z80-print-zero-offset",
+        "-nostdinc",
+        "-I./include",
+        "-isystem",
+        "/Agon/agondev/release/include",
+        "-target",
+        "ez80-none-elf",
+        "-DAGONDEV",
+        "-Oz",
+        "-Wa,-march=ez80+full",
+        "-fno-threadsafe-statics",
+        "-fcolor-diagnostics",
+        "-isystem",
+        "/Agon/agondev/release/include/c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-I",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-game/include",
+        "-I",
+        "/Agon/mystuff/AgonArcade/rally-production/include",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/lookup_probe.cpp",
+        "-c",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/.work/lookup-study/lookup.o"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp",
+      "returncode": 0,
+      "host_seconds": 0.305736037902534,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 0.001568460837006569,
+      "stdout": "038d27ab4c54f2ce8e975d65b2629587e4acdcbc\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "c++",
+        "--version"
+      ],
+      "cwd": "/Agon/mystuff/AgonArcade",
+      "returncode": 0,
+      "host_seconds": 0.0012092404067516327,
+      "stdout": "c++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    }
+  ]
+}
