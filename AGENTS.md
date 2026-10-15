@@ -398,3 +398,56 @@ flush plus key-state request, existing MOS keyboard callback and independent
 foreground clock counter; self-created logs, input/ordering checks and general-
 poll fallback. No custom firmware or game integration. Planning only: stop for
 Author review; no implementation/build/emulator/hardware run, commit or push.
+
+RALLY-28 STOCK COMPLETION PROBES BUILT (2026-10-14): Author released all-dirt
+commit/push then implementation. Checkpoint aee0aad/01f6333 pushed; clean tree
+verified before execution. Read RALLY-28/standard-vdp/completion-probe/RESULTS.md
+and README.md. Two standalone applications pass 52/52 completions against the
+exact official stock VDP 2.16.0 binary and official MOS 3.0.2, no firmware edits.
+Seven stored bytes flush drawing then request VK_NONE zero (callback) or a GP
+token (polled control). Foreground sends verification pixel/poll commands only
+AFTER primary completion; raw UART order/readbacks pass. Key run preserves eight
+SDL/PS2 input events, 48 zero-key callbacks/four F12 comparison replies; no idle
+marker, empty before/after maps, prior callback restored, own summary/CSV/done
+files. Both counters advance 120 nominal MOS units while heavy drawing is pending;
+not actual Rally physics/headroom or hardware timing. Final apps/evidence pinned;
+all automated runs forced BOTH dummy SDL drivers and stopped cleanly. Fresh Oryx
+.emulator/rally28-completion-review and rally28-completion-poll-review are STOPPED
+for Author launch; audio always dummy. Human/input/Console8 acceptance open.
+MOS callback-slot read is pinned to official 3.0.2 map; marker zero has no token
+and console-mode serial input can also use zero. One request outstanding. F12 is
+only a comparison, inherently ambiguous with real F12 events. Existing games,
+fixtures and upstream trees untouched. New probe work uncommitted for review;
+no card/flash/physical run or game/scheduler integration.
+
+RALLY-28 PACING/TRANSPORT PLANNING AMENDMENT (2026-10-15): Author requests all
+recent scheduling/benchmark/wire considerations recorded, then next-work advice.
+Read RALLY-28.md measured-pacing/transport section; RALLY-25/26 and root TODO
+cross-reference it. 120 Hz is unqualified. Benchmark each actual physics candidate
+flat out at a fixed count lasting >=10 wall-clock seconds on the fastest tested
+platform; raw PRT/MOS counts, timestep, calibration and instrumentation limits.
+Then include real command generation, UART/CTS stalls and completed pipeline/CPU-
+VDP overlap before selecting fixed physics cadence with headroom and matching dt.
+Render opportunistically, one frame outstanding, fresh snapshots, skipped visual
+states, no catch-up renders or physics blocking on completion. Geometry and
+blocking MOS/UART writes also need bounded/cooperative work. Old mandatory 30 Hz
+cap superseded for new candidates; historical fixtures/contracts stay unchanged.
+WIRE-001-01 inventories resident assets/simple drawing templates, changed-parameter
+patches and batched calls; count all headers/payloads/CALLs/replies/fences, setup
+amortization, memory and page/buffer lifetimes. Keep complex math on its assigned
+processor and retain POS/REUSE family-wide optimization requirements.
+Next PROPOSED tranche: PACE-001-01 actual standard physics benchmark plus WIRE-001-01
+census alongside POS-001-01/REUSE-001-01 audits. PACE-001-02 integrated measurement
+and PACE-001-03 scheduler are later scoped work; native qualification follows
+standard independently, with owner coordination before changing native contracts.
+Author ran the callback probe; returned data previously read shows 52/52, no
+failure, callback restored and counter/elapsed both578 MOS units. It is mechanism
+evidence, not a physics/saturation benchmark or exhaustive human input acceptance.
+This turn changes task/handoff/log documentation only. Preserve all probe dirt;
+no new implementation/build/emulator run, peer mail, commit or push authorized.
+
+AUTHOR RELEASE — 2026-10-15: commit/push all current dirt, then execute
+RALLY-28 PACE-001-01 actual standard physics capacity and WIRE-001-01 wire
+census, with POS-001-01/REUSE-001-01 discovery. Extra-high reasoning; preserve
+game/old fixture bytes. PACE-001-02/03 and selected optimization implementation
+remain later work. Every automated session forces both SDL dummy drivers.
