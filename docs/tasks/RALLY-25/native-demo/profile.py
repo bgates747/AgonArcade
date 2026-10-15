@@ -13,7 +13,7 @@ def prepare(fixture,firmware,elf,name='rally25-native-demo',runtime=None):
     profile=ROOT/'.emulator'/name
     sd=m.link_shared_runtime(profile,golem/'.emulator/runtime/fab-1.2.5')
     modern=(runtime/'flexe-agon-emulator').exists()
-    frontend='flexe-agon-emulator' if modern else 'fab-agon-emulator'
+    frontend='flexe-agon-emulator'
     m.replace_symlink(profile/'fab-agon-emulator.bin',runtime/'flexe-agon-emulator' if modern else runtime/'fab-source/target/release/fab-agon-emulator')
     for dest,source in [('flexe-vdp.so',runtime/'flexe-vdp.so'),('esp32-firmware.bin',firmware),('esp32-firmware.elf',elf)]:shutil.copyfile(source,profile/dest)
     app=sd/'rally25';app.mkdir(exist_ok=True)
@@ -32,12 +32,11 @@ export AGON_FLEXE_ARTIFACTS="$profile_dir/last-run"
 mkdir -p "$AGON_FLEXE_ARTIFACTS"
 '''
     assert s.count('\nvdp_name=')==1;s=s.replace('\nvdp_name=',env+'\nvdp_name=',1);launch.write_text(s)
-    if modern:
-        # Author's Flexe naming overrides canonical Fab filenames for this runtime.
-        s=s.replace('fab-agon-emulator.bin','flexe-agon-emulator.bin')
-        launch.write_text(s)
-        launch.rename(profile/'flexe-agon-emulator')
-        (profile/'fab-agon-emulator.bin').rename(profile/'flexe-agon-emulator.bin')
+    # Author's Flexe naming overrides canonical Fab filenames for this runtime.
+    s=s.replace('fab-agon-emulator.bin','flexe-agon-emulator.bin')
+    launch.write_text(s)
+    launch.rename(profile/'flexe-agon-emulator')
+    (profile/'fab-agon-emulator.bin').rename(profile/'flexe-agon-emulator.bin')
     files=['fab-agon-emulator','fab-agon-emulator.bin','mos_platform.bin','mos_platform.map','flexe-vdp.so','esp32-firmware.bin','esp32-firmware.elf','sdcard/autoexec.txt']
     files=[n.replace('fab-agon-emulator',frontend) for n in files]
     files+=['sdcard/rally25/'+p.name for p in app.iterdir() if p.is_file() and p.suffix!='.log' and p.name!='verified.json']

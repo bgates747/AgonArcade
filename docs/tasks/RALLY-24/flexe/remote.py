@@ -1,5 +1,6 @@
 """Oryx-side isolated canonical profile setup and bounded headless qualification."""
 from pathlib import Path
+from runpy import run_path
 import struct
 import argparse,hashlib,importlib.util,json,os,shutil,signal,subprocess,time
 from decode import decode
@@ -34,6 +35,9 @@ mkdir -p "$AGON_FLEXE_ARTIFACTS"
     launch.write_text(s.replace('\nvdp_name=',env+'\nvdp_name=',1))
     names=['fab-agon-emulator','fab-agon-emulator.bin','mos_platform.bin','mos_platform.map','flexe-vdp.so','esp32-firmware.bin','esp32-firmware.elf']
     (profile/'.runtime.sha256').write_text(''.join(sha(profile/n)+'  '+n+'\n' for n in names))
+    # Apply current product naming after the frozen template and pins.
+    naming = run_path(str(Path.home() / 'Agon/mystuff/agon-dev-env/scripts/setup_emulator.py'))
+    naming['name_flexe_profile'](profile)
     return profile,dest
 
 def run(case,engine,timeout):
@@ -46,7 +50,7 @@ def run(case,engine,timeout):
     started=time.monotonic();error=None;proc=None
     try:
         with (art/'frontend.log').open('w') as log:
-            proc=subprocess.Popen(['./fab-agon-emulator','--renderer','sw','-z'],cwd=profile,env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+            proc=subprocess.Popen(['./flexe-agon-emulator','--renderer','sw','-z'],cwd=profile,env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
             while True:
                 if (dest/'failure.log').exists():raise RuntimeError('Guest fixture failed; failure.log retained')
                 if (dest/'replies.log').exists() and (dest/'replies.log').stat().st_size==len(json.loads((dest/'expected.json').read_text())['checks'])*10:
@@ -59,7 +63,7 @@ def run(case,engine,timeout):
         if proc and proc.poll() is None:
             for p in Path('/proc').glob('[0-9]*'):
                 try:
-                    if os.getpgid(int(p.name))==proc.pid and (p/'exe').resolve()==(profile/'fab-agon-emulator.bin').resolve():os.kill(int(p.name),signal.SIGTERM)
+                    if os.getpgid(int(p.name))==proc.pid and (p/'exe').resolve()==(profile/'flexe-agon-emulator.bin').resolve():os.kill(int(p.name),signal.SIGTERM)
                 except (OSError,PermissionError):pass
             try:proc.wait(timeout=15)
             except subprocess.TimeoutExpired:os.killpg(proc.pid,signal.SIGKILL);proc.wait()

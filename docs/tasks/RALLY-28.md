@@ -249,3 +249,13 @@ SPAN-001-03 is delivered for Author visual review: [straight-road sample](RALLY-
 ### Latest bitmap-span planning amendment — 2026-10-15
 
 [Proposal update](RALLY-28/standard-vdp/bitmap-spans/PROPOSAL.md) records the symmetric35pixel layout, current six-byte span records/three-write737byte envelope, and Author's preferred application-binary resident envelope with only its middle patched and one MOS submission. Root TODO registers proposed SPAN-001-04 and SPAN-001-05: packaging change, then compiler-emitted assembly investigation coordinated with the existing hot-loop audit. Use real build flags and verify comment/source annotation support; inspect both sample and actual game without confusing their workloads. Linked code inspection remains available for library/linker questions; static assembly is not throughput evidence. Documentation only; both steps remain unreleased, paused for Author review.
+
+
+### SPAN-001-04/05 high-effort tranche returned — 2026-10-15
+
+Author released packaging, compiler-assembly review and silent qualification. [Results/ranked candidates](RALLY-28/standard-vdp/bitmap-spans/assembly-review/RESULTS.md): embedded writable737byte envelope submitted with one MOS write; only bitmap/centre payload fields change, fixed matrix IDs remain initialized. Six views/64pixel records identical to previous35pixel demo; saved command/linked initialization verify. Source-comment capability is limited to compiler function/block/spill comments; line-table flag provides no usable mapping and changes game code. Ordinary sample/game inspection text matches current objects;98protected files unchanged. Root TODO owns pending Author review of the stopped single-write profile; SPAN-001-05 research complete. Additional row-phase/packing/wire/startup-frame/HUD ideas are recommendations, not execution releases. New work uncommitted; stop for review.
+
+
+### Largest independent benchmark tranche released — 2026-10-15
+
+Author accepts the single-write demo, requests lifecycle documents updated/all dirt committed and pushed, then the largest tranche needing no attention. [SPAN-001-06–10 plan](RALLY-28/standard-vdp/bitmap-spans/BENCHMARK-PLAN.md) covers exact stripe table, matched finite road/physics preparation and completed rendering, true VDP-side brackets, fail-closed chained fixtures and portable inputs. Mainboard hardware on Olimex is final authority; use Extender remote input/Legacy rendering, never startup autorun, conditionally select/restore modes with >=1second settling, verify terminal state/results and stop dispatch after reset. No hardware operations while bench owned elsewhere, no firmware flash or peer change inferred. New results return for review.

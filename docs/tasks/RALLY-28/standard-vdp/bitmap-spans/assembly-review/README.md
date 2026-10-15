@@ -1,0 +1,5 @@
+# Bitmap-span compiler assembly review
+
+[Results and ranked candidates](RESULTS.md) record the single-write buffer proof, successful compiler-comment support, unsupported source-line mapping and actual-game findings. [Exact excerpts](EXCERPTS.md) show before/after sample code.
+
+Reproduce from project root with `.venv/bin/python docs/tasks/RALLY-28/standard-vdp/bitmap-spans/assembly-review/audit.py`. It emits assembly/IR and inspection objects with actual build flags, checks existing sample/game object text and protected product files, verifies initialized command bytes in writable linked data, and records hashes/commands. It does not link/run a game or modify an SDK. Baseline sample comes from immutable50acc3c; current sample must already have its standalone object/binary/map from build.py. Generated inspection objects stay in `.work`; evidence listings/IR/receipts are retained here. Avoid treating source debug flags as equivalent to production code: the installed backend emitted no usable line tables and changed game text.

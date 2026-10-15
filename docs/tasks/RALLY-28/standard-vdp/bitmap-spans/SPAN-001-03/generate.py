@@ -39,7 +39,14 @@ run.extend(prefix(DRAW,1)+bytes([23,0,150,1,255,255,23,0,202,23,0,128,224]))
 upload(DRAW,draw);upload(RUN,run)
 header='#pragma once\n#include <stdint.h>\n'
 for name,data in [('Setup',setup)]:header+='static const uint8_t '+name+'[]={'+','.join(map(str,data))+'};\n'
+# Writable initialized complete envelope lives in application .data.
+params=b''.join(word(BITMAP)+word(160)+word(MATRIX+i) for i in range(120))
+command=prefix(P,5)+bytes([0xc2])+word(0)+word(len(params))+params+prefix(RUN,1)
+assert len(command)==737
+header+='static uint8_t RoadCommand[]={'+','.join(map(str,command))+'};\n'
+header+='static constexpr unsigned ParameterOffset=11;\n'
 (HERE/'src/generated.hpp').write_text(header)
+(HERE/'INITIAL-COMMAND.bin').write_bytes(command)
 cases=[]
 for phase in (0,4000):
  bands=[];prev=None

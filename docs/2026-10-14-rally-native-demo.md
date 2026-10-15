@@ -185,3 +185,13 @@ SPAN-001-03 follow-up: Author selects35pixel symmetric canvas,12asphalt pixels o
 ### 2026-10-15 — Bitmap-span packaging/assembly planning
 
 Author requests documenting latest discussion then pause. RALLY-28 proposal/root TODO now record proposed SPAN-001-04(single initialized writable737byte command array, hot-loop patch of middle only, one MOS write) and SPAN-001-05(compiler-emitted assembly with real flags, annotation support verification, sample and actual-game audit coordinated with MATH/POS/REUSE). Current sample remains three-write; no source/build/run/publication work performed in this turn. Symmetric35pixel layout retained. Stopped for Author review; individual implementation releases still required.
+
+### 2026-10-15 — SPAN-001-04/05 high-effort tranche complete
+
+Author released single-buffer implementation and emitted-assembly review, then qualification/review. Demo now embeds initialized writable737byte RoadCommand at0x457b2, patches bitmap/centre fields only and sends it once. Headless Oryx Fab six views/64pixel readbacks exactly match prior35pixel sample; final command independently matches all737bytes, constant envelope/matrix IDs preserved. Fresh rally28-span03-single-write-review staged/stopped, exact binary40a992b9…23266bytes. No observed FPS/speedup claim.
+
+SPAN-001-05 research complete, removed from active TODO; code listings/IR/pins/commands and ranked findings in bitmap-spans/assembly-review. Same ordinary build text reproduced;98protected files unchanged. `-fverbose-asm` supports comments but line-table option gives no usable source mapping and changes game text; use ordinary listings. Sample stripe helper executes108wide remainders per road update; actual game's4264byte frame contains inlined startup Stream scratch with4096byte data storage. No extra optimization or benchmark campaign. SPAN-001-04 remains open for Author visual review. Unrelated concurrent AGENTS.md/defender/rally instruction updates preserved, not authored here. No commit/push or physical/upstream change; stopped for review.
+
+### 2026-10-15 — Benchmark/lifecycle tranche release
+
+Author visually accepts single-write demo. Read Extender appliance/test-execution/bench rules; largest independent tranche SPAN-001-06–10 planned under RALLY-28. Actual VDP-local frame brackets mandatory; Flexe preliminary, identical Olimex hardware final. Pi coordinator/finite standalone cases restore mode/route/CLI, settle >=1second on switches, never alter autoexec or resume after reset. Current bench belongs elsewhere/live adapter unqualified: no hardware operations in this tranche. Author requests all-dirt checkpoint/push before execution.

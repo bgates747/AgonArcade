@@ -5,7 +5,7 @@ A working isolated proof of two resident35×1road bitmaps, one parameter buffer 
 ## Run on Oryx
 
 ```bash
-cd ~/Agon/mystuff/AgonArcade/.emulator/rally28-span03-review03
+cd ~/Agon/mystuff/AgonArcade/.emulator/rally28-span03-single-write-review
 ./fab-agon-emulator
 ```
 
@@ -48,9 +48,11 @@ On Oryx, with the source and exact `.work/bin/spans.bin` staged, use a **fresh**
 
 The profile generator uses the canonical setup helper; launch goes through generated `./fab-agon-emulator`, strict module/MOS/input hashes and no fallback. The automated runner always forces both SDL dummy drivers, bounds its run and stops only its owned process group. Never automate a graphical/audible launch.
 
-The previous all-dirt/scope checkpoint is pushed9a2e3e8. New demo work is uncommitted for Author visual review. No further benchmark/integration/physical/firmware work is inferred.
+The previous all-dirt/scope checkpoint was9a2e3e8; demo/planning was subsequently checkpointed at50acc3c before this tranche. New demo work is uncommitted for Author visual review. No further benchmark/integration/physical/firmware work is inferred.
 
 
-## Proposed packaging and assembly follow-up
+## Single-write implementation and assembly review — current candidate
 
-The [parent proposal](../PROPOSAL.md) now records Author's preferred737byte application-resident command array: patch only its720byte middle and write the complete header/payload/CALL in one MOS invocation. The current implementation still uses three writes. Proposed SPAN-001-04/05 cover that packaging change and compiler-emitted assembly review with actual build flags and verified annotation support. Neither is implemented or released; sample and actual-game hot-loop analysis must remain clearly distinguished. Paused for review.
+SPAN-001-04/05 were released and are delivered in [results](../assembly-review/RESULTS.md). The sample now embeds a writable initialized737byte RoadCommand, patches bitmap/centre fields in its middle, leaves matrix IDs/header/CALL untouched and sends the whole envelope in one MOS call. Current binary is23266bytes, SHA25640a992b93bc6c164877859ed3beab6b90d559a486a098f8a96d47399485b2e75; linked array0x457b2in.data, constructor tables empty. Current evidence is `evidence/rally28-span03-single-write-test01/`, including command.bin: six views/64pixel readbacks match test04exactly, expected737byte envelope verified, six road writes, both SDL dummy and runtime identities intact. The historical qualification paragraphs above describe test04; the launch command now selects the new fresh stopped single-write profile.
+
+The compiler emitted assembly with comments under real flags, exposing remaining stripe arithmetic and actual-game stack/addressing costs. No additional optimization or throughput benchmark has been applied. No commit/push or game change; stopped for Author review.

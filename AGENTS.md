@@ -525,3 +525,15 @@ depth/edge/sign state.9632host poses/two tracks,10677object cases,1037depth
 values, ten ordinary/sanitized serializers and3780partial-physics fields pass.
 Coarse differs up to28centre pixels; retain for Author motion choice, no
 accuracy-only rejection. Other partial-optimization families remain pending.
+
+## Emulator product names
+
+Select the name from the runtime and VDP backend: Fab uses a native host VDP;
+Flexe executes actual ESP32 VDP firmware. From the profile directory, launch
+Fab with `./fab-agon-emulator` and raw link `fab-agon-emulator.bin`, or Flexe
+with `./flexe-agon-emulator` and raw link `flexe-agon-emulator.bin`.
+Each entry must be a real generated wrapper with its existing host-library,
+MOS/runtime identity and backend guards. Flexe must have no Fab-named launcher,
+symlink or compatibility shim. Existing Fab launch instructions apply only to
+Fab profiles. For Flexe, call the canonical setup tool's `name_flexe_profile`
+after customization and before recording deployment checksums.
