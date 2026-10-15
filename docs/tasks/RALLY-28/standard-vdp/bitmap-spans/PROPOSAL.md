@@ -1,6 +1,6 @@
 # RALLY-28 — Resident bitmap spans with stock VDP transforms
 
-Explore whether preloaded one-pixel-high road bitmaps, horizontally scaled by the stock VDP and driven by one uploaded parameter buffer, can outperform the current buffered polygon renderer. The central question is whether reduced eZ80 work and wire traffic outweigh buffered-command interpretation and transformed-bitmap drawing costs. This document captures the discussion only. The Author will release individual small steps one at a time; no implementation or testing is currently authorized.
+Explore whether preloaded one-pixel-high road bitmaps, horizontally scaled by the stock VDP and driven by one uploaded parameter buffer, can outperform the current buffered polygon renderer. The central question is whether reduced eZ80 work and wire traffic outweigh buffered-command interpretation and transformed-bitmap drawing costs. This document captures the discussion only. The Author will release individual small steps one at a time; implementation/testing was initially unreleased; subsequent scoped Author releases are recorded below.
 
 ## Motivation and current evidence
 
@@ -31,7 +31,7 @@ Stock bitmap PLOT supports affine transforms, including scale: [PLOT commands](h
 
 ## Execution boundary
 
-Root TODO.md owns the actionable register, under immutable ID **SPAN-001-01**. This proposal is the discussion/specification record, not a second task list. No sequence of later subtasks is frozen: agree and execute one small step at a time. Stop after this documentation change. No build, emulator run, deployment, peer modification, commit or push is authorized by this request. Any future unattended run must force both SDL_VIDEODRIVER=dummy and SDL_AUDIODRIVER=dummy; visible/audible review belongs to the Author.
+Root TODO.md owns the actionable register, under immutable ID **SPAN-001-01**. This proposal is the discussion/specification record, not a second task list. No sequence of later subtasks is frozen: agree and execute one small step at a time. At the initial proposal gate, stop after documentation; subsequent releases below supersede that gate only within their stated scope. Any future unattended run must force both SDL_VIDEODRIVER=dummy and SDL_AUDIODRIVER=dummy; visible/audible review belongs to the Author.
 
 ## First released subtask — 2026-10-15
 
@@ -107,3 +107,47 @@ Reproduction: run repository `.venv/bin/python docs/tasks/RALLY-28/standard-vdp/
 ## SPAN-001-03 — straight-road sample demo, released 2026-10-15
 
 Build an isolated sample in `bitmap-spans/SPAN-001-03/`, using the normal renderer's straight-road vertical span boundaries, perspective widths and stripe phase. Preload two one-pixel-high road patterns, a single mutable parameter buffer and a resident command buffer which fetches/patches parameters and plots transformed bitmaps. Demonstrate normal centred road plus bounded left/right clipping cases, with clear labels. Preserve all game/fixture inputs and keep finish/physics/full-scene integration outside this proof. Record actual command/data bytes and any representation/API limitations; this is mechanism/visual proof, not a speed benchmark. Headlessly qualify with both SDL dummy drivers on Oryx Fab and leave a fresh stopped visual profile for Author launch. Write scope and commit/push all existing dirt before implementation; return for review with new work uncommitted.
+
+
+## SPAN-001-03 finding — demo ready for visual review
+
+The isolated [sample and results](SPAN-001-03/README.md) demonstrate the proposed mechanism: two32×1road bitmaps, one720byte parameter plane and resident commands selecting preloaded per-row horizontal scale/centering matrices and plotting120one-pixel rows. Current straight-road stripe boundaries/perspective widths are retained; thin lines are deliberately quantized by the small source width. Both centre positions and scale selectors are fetched from the parameter buffer; y coordinates stay resident. Recurring road patch+CALL costs737upstream bytes before separate clear/labels/diagnostic traffic. This is not a speed measurement.
+
+Final headless Oryx Fab test02 passes six views and64centre/edge/background pixel checks; exact input/runtime identities preserved, both SDL dummy drivers forced, owned process stopped. Fresh profile `.emulator/rally28-span03-review` is staged/stopped for Author launch via `./fab-agon-emulator`; audio always dummy. Prior dirt/scope pushed9a2e3e8. New demo/findings uncommitted; Author visual gate remains open. No further substep is started.
+
+Author visual amendment: source bitmaps now34×1; each kerb gains one pixel outward (three pixels per side), and the centre dash is one pixel wide like each shoulder line. Original asphalt/shoulder positions and scale reference are preserved. Final silent Fab test03 passes all six views/64checks; fresh stopped review profile is rally28-span03-review02. Prior profiles/evidence preserved; no commit/push.
+
+Author selects odd-width symmetric source: now35×1, with12asphalt pixels on both sides of the single centre dash; three-pixel kerbs and one-pixel shoulders retained. Canvas is centred about the centre pixel. Silent test04 passes6views/64checks; fresh stopped Oryx review profile rally28-span03-review03. No commit/push or further substep.
+
+
+## Latest design discussion and proposed next steps — 2026-10-15
+
+The Author approves the direction of the symmetric35×1source layout. Keep the two-pattern design and source widths:3kerb,1asphalt gap,1shoulder line,12asphalt,1centre dash,12asphalt,1shoulder line,1asphalt gap,3kerb. The unpainted bitmap replaces the centre dash with asphalt. Source symmetry removes the old built-in12/11imbalance; final scaling/placement can still produce pixel-rounding differences on the screen. Do not infer performance qualification or exhaustive visual acceptance from this discussion.
+
+### Actual current wire representation
+
+Each of120scanlines contributes three little-endian16bit fields: bitmap ID, centre X and scale-matrix ID. Y and the matrix coefficients are resident. Example for row104at centre160, unpainted: `3C D7 A0 00 A0 D7` (55100,160,55200). All records form one720byte parameter payload.
+
+The current application sends three MOS writes: an11byte buffer-update header, the720byte payload in one write, then a6byte resident-buffer CALL. Header and CALL are constant, but must still be transmitted to delimit the update and trigger rendering in the current protocol. Only the payload changes. Road update+CALL totals737bytes; separate clearing/labels/completion/diagnostic traffic remains additional. Buffered commands are the rendering mechanism; C++ or Golem can produce them, and using Golem to generate equivalent blocks would not by itself change their runtime cost. The current sample and actual game are C++ compiled with AgonDev; Python generates the sample's asset/command header, while some existing fixtures use assembly timing/callback/UART helpers.
+
+### SPAN-001-04 — proposed single application-resident submission buffer
+
+Author's preferred implementation is one writable737byte command array embedded in the application binary:
+
+```text
+[constant11byte update header][mutable720byte span parameters][constant6byte CALL]
+```
+
+Initialize the complete array at build time. During the hot loop patch only the middle payload, then submit the whole array with **one MOS write**. Do not regenerate/copy the constant prefix/suffix each frame or construct the envelope on the stack. Keep one frame outstanding so parameter-buffer reuse remains safe. This changes application packaging/writer-call overhead, not wire bytes or VDP drawing semantics. Ensure the writable initialized array is present in the binary and its final memory placement is understood; a const array or compiler-inserted runtime initialization is not the intended design. Preserve the current sample as comparison evidence. This step is proposed for review, **not released for implementation**.
+
+### SPAN-001-05 — proposed compiler-emitted assembly review
+
+Inspect generated eZ80 instructions in the sample's recurring parameter-update/submission path and the actual standard game's hot loop. Keep those workloads clearly separate: six static demonstration views do not constitute an integrated gameplay hot-loop benchmark. Coordinate this review with RALLY-28's existing MATH/POS/REUSE audit rather than creating an independent optimization project.
+
+1. Emit assembly with AgonDev's underlying Clang `-S`, retaining the actual build's optimization flags, target/ABI settings, defines and include paths. Verify the installed compiler's support for `-fverbose-asm` and useful debug/source annotations before promising a particular comment format. Preserve assembly and the exact invocation/toolchain/source identities as evidence. The current discussion has not performed that compiler capability check.
+2. Trace parameter generation, packing and MOS submission back to source. Inspect repeated loads/stores, address/index calculations, sign/zero extensions, wide arithmetic helper calls, register spills and unnecessary function calls. Check that the proposed constant envelope remains static and only parameter bytes are rewritten, with one submission call.
+3. Assess table/loop-invariant reuse and bounded16/24bit arithmetic opportunities across compatible consumers. Preserve existing range/rounding proofs, actual physics semantics and shared-positioning requirements. Identify potential gains; do not silently implement each observation or reject approximate-rendering candidates on accuracy alone.
+4. Compiler-emitted assembly is the first inspection artifact, avoiding a mandatory disassembly step. Use the linked map/binary when final placement, called library implementations, linker effects or suspicious code generation need confirmation; emitted source assembly alone does not establish what every linked routine does.
+5. Static instruction observations are not cycle measurements or FPS. Record selected changes and expected costs before any separately released implementation/comparison. Any eventual performance test must include real wire traffic and completed rendering, retain independent physics service, and avoid treating diagnostic pauses/readbacks as useful render work.
+
+Root TODO owns proposed SPAN-001-04/05 checkboxes. Both await Author review/release; the one-small-step-at-a-time workflow remains in force. This update is documentation only. No source changes, compile/assembly emission, benchmark/emulator run, deployment, peer mail, commit or push is authorized by this documentation request. Stop for review.

@@ -242,3 +242,10 @@ Fresh stopped fine/coarse review profiles are staged but NOT READY for normal mo
 ## Resident bitmap-span proposal — 2026-10-15
 
 Author proposes preloaded one-pixel-high road spans expanded horizontally with stock VDP transforms, driven by one uploaded parameter buffer and resident drawing commands. [Discussion and proposal](RALLY-28/standard-vdp/bitmap-spans/PROPOSAL.md) records the approach, original arcade inspiration, open API/performance questions and comparison criteria. Root TODO owns SPAN-001-01. Documentation only; stopped for review. Individual small steps require Author release, with no implementation/test/commit/push inferred.
+
+SPAN-001-03 is delivered for Author visual review: [straight-road sample](RALLY-28/standard-vdp/bitmap-spans/SPAN-001-03/README.md). Two35×1patterns and one parameter plane drive resident transformed plots at normal stripe boundaries/perspective widths; six headless Fab views and64pixel readbacks pass.737byte road update+CALL; no speed benchmark. Fresh stopped Oryx review profile ready; new work uncommitted, next substep unreleased.
+
+
+### Latest bitmap-span planning amendment — 2026-10-15
+
+[Proposal update](RALLY-28/standard-vdp/bitmap-spans/PROPOSAL.md) records the symmetric35pixel layout, current six-byte span records/three-write737byte envelope, and Author's preferred application-binary resident envelope with only its middle patched and one MOS submission. Root TODO registers proposed SPAN-001-04 and SPAN-001-05: packaging change, then compiler-emitted assembly investigation coordinated with the existing hot-loop audit. Use real build flags and verify comment/source annotation support; inspect both sample and actual game without confusing their workloads. Linked code inspection remains available for library/linker questions; static assembly is not throughput evidence. Documentation only; both steps remain unreleased, paused for Author review.

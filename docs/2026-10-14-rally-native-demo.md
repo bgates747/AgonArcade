@@ -173,3 +173,15 @@ Exact RALLY-28 v5 guest inputs were run silently/headlessly on Oryx Fab1.2.5 sto
 ### 2026-10-15 — SPAN-001-02 pattern catalogue complete
 
 Author-released scope/current dirt committed and pushed38fa5f4 before enumeration. Current standard renderer needs two coupled base patterns; optional finish conversion adds two checker overlays (or four flattened composites). Source evidence,200×8PNG previews and reproduction/source hashes recorded in RALLY-28/standard-vdp/bitmap-spans/PROPOSAL.md. No renderer/game assets/build/emulator/deployment changes. New findings uncommitted; stopped for review. SPAN-001-02 removed from active root TODO on completion.
+
+### 2026-10-15 — SPAN-001-03 straight-road demo
+
+Author released task/checkpoint then isolated sample. Scope and all prior dirt pushed9a2e3e8 before implementation. Demo in bitmap-spans/SPAN-001-03 uses two32×1assets,120preloaded scale/centering matrices and one720byte plane; resident commands fetch bitmap/centre/scale selector.737byte road patch+CALL, separate clear/fence/verification costs disclosed. Final Oryx silent Fab test02 passes six centred/clipped/phase views and64centre/edge/background readbacks. Review profile rally28-span03-review staged/stopped with exact final binary/runtime; no graphical/audio launch. No timing/cadence/game/hardware claim. New work uncommitted; stopped for Author visual review.
+
+Author review amendment to SPAN-001-03: widen kerbs by one source pixel outward, narrow centre dash to one source pixel matching shoulders. Two34×1patterns preserve original32pixel scale reference/interior placement. Test03 passes6views/64readbacks silently; fresh rally28-span03-review02 staged/stopped. Exact binary4454ca16…22471bytes. New work remains uncommitted.
+
+SPAN-001-03 follow-up: Author selects35pixel symmetric canvas,12asphalt pixels on each side of one-pixel centre dash. Source scale retained; matrix origin centred about middle pixel. Final silent test04 passes6views/64checks; binaryf101a201…22473bytes, fresh stopped rally28-span03-review03. Work uncommitted.
+
+### 2026-10-15 — Bitmap-span packaging/assembly planning
+
+Author requests documenting latest discussion then pause. RALLY-28 proposal/root TODO now record proposed SPAN-001-04(single initialized writable737byte command array, hot-loop patch of middle only, one MOS write) and SPAN-001-05(compiler-emitted assembly with real flags, annotation support verification, sample and actual-game audit coordinated with MATH/POS/REUSE). Current sample remains three-write; no source/build/run/publication work performed in this turn. Symmetric35pixel layout retained. Stopped for Author review; individual implementation releases still required.
