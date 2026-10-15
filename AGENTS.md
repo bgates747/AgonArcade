@@ -451,3 +451,25 @@ RALLY-28 PACE-001-01 actual standard physics capacity and WIRE-001-01 wire
 census, with POS-001-01/REUSE-001-01 discovery. Extra-high reasoning; preserve
 game/old fixture bytes. PACE-001-02/03 and selected optimization implementation
 remain later work. Every automated session forces both SDL dummy drivers.
+
+RALLY-28 MEASUREMENT TRANCHE RETURNED — 2026-10-15: prior dirt pushed
+7576ceb/552d2df, then actual standard physics/census discovery delivered. Read
+docs/tasks/RALLY-28/standard-vdp/capacity/RESULTS.md and research/PROJECTION-AND-REUSE.md.
+8192actual ticks/420actual state fields pass independent model; nominal PRT
+334.70ticks/s vs MOS365.44,9.19%clock mismatch; no cadence/hardware claim.
+Dense CPU sink57.19ms/frame preparation+88.29ms construction/greedy fitting
+(nominal PRT);900frame census1859.59B/frame,74%road/18%traffic-signs.
+Simple resident road byte model saves51.64%, unimplemented. Actual UART/CTS
+durations/completed pipeline remain PACE-001-02. New results uncommitted for
+review; next proposed shared lookup/sparse/coarse + bounded buffer prototype
+needs its scoped release. No new scheduler/native adoption/product change.
+Every run forced BOTH SDL dummy drivers; final baseline02 profiles stopped.
+Product/old fixtures/SDK/firmware unchanged. Physics02 uses actual timed-block
+snapshots; physics01's untimed replay snapshots are superseded diagnostic data.
+
+AUTHOR RELEASE — 2026-10-15: commit/push measurement/audit dirt, then
+RALLY-28 STD-002-01–04 shared lookup/sparse/coarse positioning, simple
+resident road-template prototype and matched PACE-001-02 CPU/actual transfer/
+completion diagnostics. Preserve product/old fixtures/SDK/firmware, use only
+headless silent Oryx runs; leave promising review profiles stopped. No native/
+physical deployment or PACE-001-03 gameplay scheduler. Return with results.
