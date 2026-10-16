@@ -1,0 +1,42 @@
+{
+  "reason": "guest-files",
+  "identity": {
+    "backend": "fab",
+    "variant": 0,
+    "live": 0,
+    "diagnostic": 0,
+    "frames": 1,
+    "files": {
+      "fab-agon-emulator": "a61e03d12a41fb108032e22a534c5eb8ecc0793fef0ac22f79bf5094c2b05d9d",
+      "fab-agon-emulator.bin": "aec5f8c266117d5bf864c6124d3c8986d042802ed5cbaaf8813e04a9fb8d0bea",
+      "vdp_platform.so": "14338aaeead48cb3df5987bf7fcc1b350d9e08d4a0ee0fcfc1a4a89cf79fae97",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "c522be5ab85b502c02d8683a2a5d3c692a6c8dd8eb0814bd2ef19e4a0edea1bf",
+      "sdcard/test/arcade/rally28/road/count.txt": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "sdcard/test/arcade/rally28/road/physics.bin": "9833f3a75f77c8a7e8eec1ca8451b4b0255a4049aa22e2e81bbf57e7b5a0b0ca"
+    },
+    "kind": "physics"
+  },
+  "summary": {
+    "schema": "1",
+    "rounds": "2",
+    "steps": "8192",
+    "mos_begin": "218",
+    "mos_end": "3150",
+    "mos_units": "2932",
+    "prt_ticks": "24431",
+    "vector_restored": "1",
+    "nominal_mos_hz": "120",
+    "nominal_prt_hz": "1000",
+    "numerical_tick": "original-120-unit-clock-and-100-integrator"
+  },
+  "host_seconds": 28.208099929997843,
+  "host_window_seconds": 24.423611768997944,
+  "host_suspend_seconds": -9.510000381851569e-06,
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "identities_unchanged": true
+}

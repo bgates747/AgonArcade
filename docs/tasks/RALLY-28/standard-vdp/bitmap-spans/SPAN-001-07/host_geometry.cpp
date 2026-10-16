@@ -1,0 +1,3 @@
+#include "projection.hpp"
+#include <cstdio>
+int main(int argc,char**argv){if(argc!=2)return 1;rally::r28::SharedRoad road;road.track=&rally::Fuji;if(!road.load(argv[1]))return 2;puts("[");for(unsigned i=0;i<128;++i){unsigned position=(i*25600UL+1360)%(rally::Fuji.length*100),phase=((i+1)*1360UL)%8000;road.project(position,phase);int shift=i<32?0:i<64?-100:i<96?100:0;printf("{\"frame\":%u,\"position\":%u,\"phase\":%u,\"centres\":[",i,position,phase);for(unsigned y=104;y<=224;++y)printf("%s%d",y>104?",":"",road.centerAt(y)+shift);printf("],\"rows\":[");for(unsigned b=0;b<=road.bands;++b)printf("%s%u",b?",":"",road.rows[b]);printf("],\"materials\":[");for(unsigned b=0;b<road.bands;++b)printf("%s%u",b?",":"",road.materials[b]);printf("]}%s\n",i<127?",":"");}puts("]");}

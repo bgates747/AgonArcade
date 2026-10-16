@@ -1,0 +1,55 @@
+{
+  "reason": "guest-files",
+  "identity": {
+    "backend": "fab",
+    "variant": 0,
+    "live": 1,
+    "diagnostic": 0,
+    "frames": 512,
+    "files": {
+      "fab-agon-emulator": "a61e03d12a41fb108032e22a534c5eb8ecc0793fef0ac22f79bf5094c2b05d9d",
+      "fab-agon-emulator.bin": "aec5f8c266117d5bf864c6124d3c8986d042802ed5cbaaf8813e04a9fb8d0bea",
+      "vdp_platform.so": "14338aaeead48cb3df5987bf7fcc1b350d9e08d4a0ee0fcfc1a4a89cf79fae97",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "bae239eb81801b21d2c335639d8fe0beae6326f7336fd8ce4b95cfa14d2663d0",
+      "sdcard/test/arcade/rally28/road/roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+      "sdcard/test/arcade/rally28/road/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "sdcard/test/arcade/rally28/road/config.txt": "29ff50d052c87fbbbb09fbb3c50b2731b44089e806536517e3fd4d9ab0977be7"
+    }
+  },
+  "summary": {
+    "variant": "0",
+    "live": "1",
+    "diagnostic": "0",
+    "frames": "512",
+    "planned": "512",
+    "prt_ticks": "25836",
+    "mos_units": "3100",
+    "explicit_bytes": "467796",
+    "explicit_calls": "3072",
+    "restored": "1",
+    "failure": "none"
+  },
+  "host_seconds": 32.94619768700068,
+  "host_window_seconds": 25.796394801000133,
+  "host_suspend_seconds": -2.239998138975352e-06,
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "identities_unchanged": true,
+  "row_count": 512,
+  "sums": {
+    "frame": 130816,
+    "geometry": 12936,
+    "packing": 8449,
+    "submission": 4128,
+    "wait": 300,
+    "mos": 3100,
+    "bytes": 467796,
+    "vdp_submit_us": 0,
+    "vdp_complete_us": 0,
+    "vdp_drain_us": 0
+  }
+}

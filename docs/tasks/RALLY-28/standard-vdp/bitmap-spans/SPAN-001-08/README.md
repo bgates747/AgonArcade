@@ -1,0 +1,15 @@
+# VDP-local frame timing diagnostic
+
+An isolated stock-derived ESP32mainboard diagnostic was built on Oryx, then exercised under Flexe. It retains the existing normal-worker GraphicsFence and frame-recorder logic from the exact scrolling diagnostic61bdfede…; the sole protocol extension is a read-only snapshot mailbox via ordinary GP replies. No owner source, stock firmware checkout or physical board was changed.
+
+Source provenance is in SOURCE.json; the frozen donor derives from official VDP2.16.0commitc7ac293d… and vdp-glac2dd598…. prepare.py creates a private source export in ignored.work and adds the mailbox. Oryx built it with PlatformIO6.1.19/espressif32platform6.6.0, Arduino ESP32toolchain from that pin. firmware.bin is the exact emulator/hardware-intended artifact; its hash is in the portable package. No claim of reproducibility against the donor's older PlatformIO6.1.18build is made.
+
+## Ordered timing and transport
+
+The application uploads all mutable data and frame-wrapper commands first. The resident wrapper executes EFoperation6(begin record), complete road drawing, EFoperation7(end submission and wait for normal-worker fence), then ordinary GP232. Thus upload/UART delivery precedes the VDP-local bracket. Reset/preceding frame end owns the entry fence. End waits for the existing GraphicsFence and final software-sprite housekeeping in the normal worker; it does **not** call waitCompletion(false) or force foreground primitive execution.
+
+VDP records local microseconds: parser-submission interval, total interval through normal drawing completion, and completion-minus-submission drain. These are VDP-local elapsed intervals, including interpretation, parameter copies, transforms/drawing, preemption and normal queue/worker scheduling. They are not exclusive raster CPU cycles or physical scanout. Empty controls retain marker/fence overhead; do not subtract them as a constant. One frame outstanding; no catch-up queue.
+
+Existing QTG/A1reply packet0x0C is retained for Legacy EMOS. Official MOS3.0.2ignores that extension, so the same16byte reply is also latched in the read-only mailbox. Private command `23,0,EB,index` returns an ordinary one-byte GP packet: indices0–31select low/high nibbles of16latched bytes, index32returns capability7. Nibbles are0–15; the client sets GP to255before requesting, so a real response always changes the sentinel. Fields include signature, token, source, metric, value and count. The client retrieves stopped records after each bounded capture block and validates identity/count. No timer data is carried as keyboard input; no custom MOS is required for the emulator.
+
+The early smoke demonstrates16completed records and exact sum identities. Subsequent empty/full-pose controls and comparison use the final fixture; early calibration candidates have known different coverage/padding and must not be pooled. Hardware remains final truth. Existing selected/installed production firmware is untouched; no bench queries, SD operations or flash occurred.

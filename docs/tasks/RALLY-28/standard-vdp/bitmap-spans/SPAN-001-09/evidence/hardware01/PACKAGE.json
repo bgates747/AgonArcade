@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "status": "prepared-not-deployed",
+  "hardware": "Olimex mainboard Legacy; Extender remote input",
+  "jobs": [
+    {
+      "id": "physics",
+      "kind": "physics",
+      "directory": "/test/arcade/rally/r28-road/physics",
+      "binary": "physics.bin",
+      "timeout_seconds": 180,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/physics",
+      "inputs": {
+        "physics.bin": "9833f3a75f77c8a7e8eec1ca8451b4b0255a4049aa22e2e81bbf57e7b5a0b0ca",
+        "count.txt": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+      }
+    },
+    {
+      "id": "polygons-cpu",
+      "kind": "road",
+      "directory": "/test/arcade/rally/r28-road/polygons-cpu",
+      "binary": "roadbench.bin",
+      "variant": 0,
+      "live": 0,
+      "diagnostic": 0,
+      "frames": 1024,
+      "timeout_seconds": 600,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/polygons-cpu",
+      "inputs": {
+        "config.txt": "820127967e7d26d90ed67b885f544e9a25c75310f3934867c1264dc84cb48fc8",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+        "roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a"
+      }
+    },
+    {
+      "id": "polygons-live",
+      "kind": "road",
+      "directory": "/test/arcade/rally/r28-road/polygons-live",
+      "binary": "roadbench.bin",
+      "variant": 0,
+      "live": 1,
+      "diagnostic": 1,
+      "frames": 128,
+      "timeout_seconds": 600,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/polygons-live",
+      "inputs": {
+        "config.txt": "bcbd1f6f7fe72bde43b79e53ab5c51d6da2ba7fdbebdb3a9f5d1cfe31574e3d9",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+        "roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a"
+      }
+    },
+    {
+      "id": "bitmap-arithmetic-cpu",
+      "kind": "road",
+      "directory": "/test/arcade/rally/r28-road/bitmap-arithmetic-cpu",
+      "binary": "roadbench.bin",
+      "variant": 1,
+      "live": 0,
+      "diagnostic": 0,
+      "frames": 1024,
+      "timeout_seconds": 600,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/bitmap-arithmetic-cpu",
+      "inputs": {
+        "config.txt": "6faf509647bd2733e94edeef3972f28b9eb487ed09aad5548e2b88b3523a6a74",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+        "roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a"
+      }
+    },
+    {
+      "id": "bitmap-arithmetic-live",
+      "kind": "road",
+      "directory": "/test/arcade/rally/r28-road/bitmap-arithmetic-live",
+      "binary": "roadbench.bin",
+      "variant": 1,
+      "live": 1,
+      "diagnostic": 1,
+      "frames": 128,
+      "timeout_seconds": 600,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/bitmap-arithmetic-live",
+      "inputs": {
+        "config.txt": "a6852b709725fd7e7111ef977f86e074bf0ec945d964647fe79e1c3fc9f6fde3",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+        "roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a"
+      }
+    },
+    {
+      "id": "bitmap-lookup-cpu",
+      "kind": "road",
+      "directory": "/test/arcade/rally/r28-road/bitmap-lookup-cpu",
+      "binary": "roadbench.bin",
+      "variant": 2,
+      "live": 0,
+      "diagnostic": 0,
+      "frames": 1024,
+      "timeout_seconds": 600,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/bitmap-lookup-cpu",
+      "inputs": {
+        "config.txt": "98138cc484ff100ce3c9a98ae370e5f9998d7cdfa977348744c7b90a33402010",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+        "roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a"
+      }
+    },
+    {
+      "id": "bitmap-lookup-live",
+      "kind": "road",
+      "directory": "/test/arcade/rally/r28-road/bitmap-lookup-live",
+      "binary": "roadbench.bin",
+      "variant": 2,
+      "live": 1,
+      "diagnostic": 1,
+      "frames": 128,
+      "timeout_seconds": 600,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/bitmap-lookup-live",
+      "inputs": {
+        "config.txt": "78e881ec7129827eabb7ee6e8fd0016dd4e8e0c7795b4a4b43951cba687032c9",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+        "roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a"
+      }
+    },
+    {
+      "id": "empty-live",
+      "kind": "road",
+      "directory": "/test/arcade/rally/r28-road/empty-live",
+      "binary": "roadbench.bin",
+      "variant": 3,
+      "live": 1,
+      "diagnostic": 1,
+      "frames": 32,
+      "timeout_seconds": 600,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/empty-live",
+      "inputs": {
+        "config.txt": "4969a887a28304f29cd48d37a80b2dee9aa9cf2301a642822c5516be7a21eb25",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+        "roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a"
+      }
+    },
+    {
+      "id": "polygons-sparse-cpu",
+      "kind": "road",
+      "directory": "/test/arcade/rally/r28-road/polygons-sparse-cpu",
+      "binary": "roadbench.bin",
+      "variant": 0,
+      "live": 0,
+      "diagnostic": 0,
+      "frames": 1024,
+      "timeout_seconds": 600,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/polygons-sparse-cpu",
+      "inputs": {
+        "config.txt": "820127967e7d26d90ed67b885f544e9a25c75310f3934867c1264dc84cb48fc8",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+        "roadbench.bin": "2036282d9324515217cd9429b1faa3cb717f60056b91c9ddcb7b96819c74a11e"
+      }
+    },
+    {
+      "id": "polygons-sparse-live",
+      "kind": "road",
+      "directory": "/test/arcade/rally/r28-road/polygons-sparse-live",
+      "binary": "roadbench.bin",
+      "variant": 0,
+      "live": 1,
+      "diagnostic": 1,
+      "frames": 128,
+      "timeout_seconds": 600,
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/package/polygons-sparse-live",
+      "inputs": {
+        "config.txt": "bcbd1f6f7fe72bde43b79e53ab5c51d6da2ba7fdbebdb3a9f5d1cfe31574e3d9",
+        "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+        "roadbench.bin": "2036282d9324515217cd9429b1faa3cb717f60056b91c9ddcb7b96819c74a11e"
+      }
+    }
+  ],
+  "firmware_sha256": "36edc736c992502367489c8ccea677d7aebb11d20371cd58cb0b91ef61df9f99",
+  "startup_files_included": false,
+  "source_commit": "94cf665fcc9e73d32c010568556c8f04dce5f8a2",
+  "files": {
+    "polygons-sparse-live.txt": "29b3088b61931823a32373bfc5142074f7127120a842fdebd3ac603b3e303191",
+    "polygons-live.txt": "960cf4237be8bee58a232f41118a7e4a1d7509d4ef65cbc57c1f8d78aa4463b4",
+    "bitmap-arithmetic-cpu.txt": "090fbdba19a7b31b4f3b157e622a1657daf2744e76ab93d9c0a16cb77cb80c2b",
+    "polygons-cpu.txt": "55440a7bfbd04794ef1d5e67483f9ac1cd4fda134d183393baf1d863d9a66ac1",
+    "bitmap-lookup-cpu.txt": "c54ead1ac36a99f19f0a41c68ea674aaf8519e3f7bd2acf1778d28a7c149f91b",
+    "empty-live.txt": "728a9e00fea8994fba2855a182dcb896e228e664a096a23766154acff3a6107c",
+    "physics.txt": "7b151fef4cf66e0b087b4eada4258a138d6a1a2ce44801d761d9b7aaa1e5def0",
+    "polygons-sparse-cpu.txt": "7f1d4b613b46f5013287a5a44adf7d19c28c324114d77dec737377eee95e074f",
+    "vdp_rally_benchmark.bin": "36edc736c992502367489c8ccea677d7aebb11d20371cd58cb0b91ef61df9f99",
+    "bitmap-lookup-live.txt": "d897f0f9cea7ad276b3522436f5343d8223805bacca01ac89545d689f246e570",
+    "bitmap-arithmetic-live.txt": "c116af52fa83a8e70eb0ee950876c3a299ed7720fb0642f92a36cd65b2740db8",
+    "polygons-sparse-live/config.txt": "bcbd1f6f7fe72bde43b79e53ab5c51d6da2ba7fdbebdb3a9f5d1cfe31574e3d9",
+    "polygons-sparse-live/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "polygons-sparse-live/roadbench.bin": "2036282d9324515217cd9429b1faa3cb717f60056b91c9ddcb7b96819c74a11e",
+    "bitmap-lookup-live/config.txt": "78e881ec7129827eabb7ee6e8fd0016dd4e8e0c7795b4a4b43951cba687032c9",
+    "bitmap-lookup-live/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "bitmap-lookup-live/roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+    "polygons-sparse-cpu/config.txt": "820127967e7d26d90ed67b885f544e9a25c75310f3934867c1264dc84cb48fc8",
+    "polygons-sparse-cpu/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "polygons-sparse-cpu/roadbench.bin": "2036282d9324515217cd9429b1faa3cb717f60056b91c9ddcb7b96819c74a11e",
+    "bitmap-arithmetic-cpu/config.txt": "6faf509647bd2733e94edeef3972f28b9eb487ed09aad5548e2b88b3523a6a74",
+    "bitmap-arithmetic-cpu/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "bitmap-arithmetic-cpu/roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+    "bitmap-arithmetic-live/config.txt": "a6852b709725fd7e7111ef977f86e074bf0ec945d964647fe79e1c3fc9f6fde3",
+    "bitmap-arithmetic-live/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "bitmap-arithmetic-live/roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+    "polygons-live/config.txt": "bcbd1f6f7fe72bde43b79e53ab5c51d6da2ba7fdbebdb3a9f5d1cfe31574e3d9",
+    "polygons-live/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "polygons-live/roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+    "empty-live/config.txt": "4969a887a28304f29cd48d37a80b2dee9aa9cf2301a642822c5516be7a21eb25",
+    "empty-live/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "empty-live/roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+    "physics/physics.bin": "9833f3a75f77c8a7e8eec1ca8451b4b0255a4049aa22e2e81bbf57e7b5a0b0ca",
+    "physics/count.txt": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+    "bitmap-lookup-cpu/config.txt": "98138cc484ff100ce3c9a98ae370e5f9998d7cdfa977348744c7b90a33402010",
+    "bitmap-lookup-cpu/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "bitmap-lookup-cpu/roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+    "polygons-cpu/config.txt": "820127967e7d26d90ed67b885f544e9a25c75310f3934867c1264dc84cb48fc8",
+    "polygons-cpu/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "polygons-cpu/roadbench.bin": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a"
+  }
+}

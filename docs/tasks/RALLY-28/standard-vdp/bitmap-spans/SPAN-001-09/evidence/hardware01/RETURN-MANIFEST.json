@@ -1,0 +1,493 @@
+{
+  "filesystem": {
+    "target": "/run/media/smith/AGONEX",
+    "source": "/dev/sda1",
+    "fstype": "vfat",
+    "uuid": "746D-53DB"
+  },
+  "directory": "/run/media/smith/AGONEX/test/arcade/rally/r28-road",
+  "autoexec_sha256": "91428508c4a8192afb4706057bec28f071b45488294752c70b753bfb73b9f542",
+  "files": {
+    "polygons-sparse-live.txt": {
+      "sha256": "29b3088b61931823a32373bfc5142074f7127120a842fdebd3ac603b3e303191",
+      "bytes": 108,
+      "mtime_ns": 1792114586000000000
+    },
+    "polygons-live.txt": {
+      "sha256": "960cf4237be8bee58a232f41118a7e4a1d7509d4ef65cbc57c1f8d78aa4463b4",
+      "bytes": 101,
+      "mtime_ns": 1792114586000000000
+    },
+    "bitmap-arithmetic-cpu.txt": {
+      "sha256": "090fbdba19a7b31b4f3b157e622a1657daf2744e76ab93d9c0a16cb77cb80c2b",
+      "bytes": 109,
+      "mtime_ns": 1792114586000000000
+    },
+    "polygons-cpu.txt": {
+      "sha256": "55440a7bfbd04794ef1d5e67483f9ac1cd4fda134d183393baf1d863d9a66ac1",
+      "bytes": 100,
+      "mtime_ns": 1792114586000000000
+    },
+    "bitmap-lookup-cpu.txt": {
+      "sha256": "c54ead1ac36a99f19f0a41c68ea674aaf8519e3f7bd2acf1778d28a7c149f91b",
+      "bytes": 105,
+      "mtime_ns": 1792114586000000000
+    },
+    "empty-live.txt": {
+      "sha256": "728a9e00fea8994fba2855a182dcb896e228e664a096a23766154acff3a6107c",
+      "bytes": 98,
+      "mtime_ns": 1792114586000000000
+    },
+    "physics.txt": {
+      "sha256": "7b151fef4cf66e0b087b4eada4258a138d6a1a2ce44801d761d9b7aaa1e5def0",
+      "bytes": 93,
+      "mtime_ns": 1792114586000000000
+    },
+    "polygons-sparse-cpu.txt": {
+      "sha256": "7f1d4b613b46f5013287a5a44adf7d19c28c324114d77dec737377eee95e074f",
+      "bytes": 107,
+      "mtime_ns": 1792114586000000000
+    },
+    "vdp_rally_benchmark.bin": {
+      "sha256": "36edc736c992502367489c8ccea677d7aebb11d20371cd58cb0b91ef61df9f99",
+      "bytes": 1085168,
+      "mtime_ns": 1792114586000000000
+    },
+    "bitmap-lookup-live.txt": {
+      "sha256": "d897f0f9cea7ad276b3522436f5343d8223805bacca01ac89545d689f246e570",
+      "bytes": 106,
+      "mtime_ns": 1792114586000000000
+    },
+    "bitmap-arithmetic-live.txt": {
+      "sha256": "c116af52fa83a8e70eb0ee950876c3a299ed7720fb0642f92a36cd65b2740db8",
+      "bytes": 110,
+      "mtime_ns": 1792114586000000000
+    },
+    "suite.txt": {
+      "sha256": "7b3cfe6d2771edb9b8e463e86f9b7970e60e4d18b86192a52f56d62b1af8d832",
+      "bytes": 549,
+      "mtime_ns": 1792114590000000000
+    },
+    "PACKAGE.json": {
+      "sha256": "5613462ca3defa0bcc2cae2cad73c8713eb9c48f7772eef911ac70769ec2bbd7",
+      "bytes": 11326,
+      "mtime_ns": 1792114590000000000
+    },
+    "readme.txt": {
+      "sha256": "3036cc09f74bbc4a294ee260e180d092616ed5105aa0a89497b5c3633cfe1efa",
+      "bytes": 3198,
+      "mtime_ns": 1792114590000000000
+    },
+    "polygons-sparse-live/config.txt": {
+      "sha256": "bcbd1f6f7fe72bde43b79e53ab5c51d6da2ba7fdbebdb3a9f5d1cfe31574e3d9",
+      "bytes": 10,
+      "mtime_ns": 1792114586000000000
+    },
+    "polygons-sparse-live/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800,
+      "mtime_ns": 1792114586000000000
+    },
+    "polygons-sparse-live/roadbench.bin": {
+      "sha256": "2036282d9324515217cd9429b1faa3cb717f60056b91c9ddcb7b96819c74a11e",
+      "bytes": 80836,
+      "mtime_ns": 1792114586000000000
+    },
+    "polygons-sparse-live/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758676000000000
+    },
+    "polygons-sparse-live/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758694000000000
+    },
+    "polygons-sparse-live/summary.txt": {
+      "sha256": "4415792235dc898a6977bc28fb52e54b8c2b01c5214906b88caadfc95824318b",
+      "bytes": 162,
+      "mtime_ns": 2082758694000000000
+    },
+    "polygons-sparse-live/frames.csv": {
+      "sha256": "f5d6b0a81ac46d57e64e1a2932e25f14bd7f73578de7286cf7c729252246bae5",
+      "bytes": 5177,
+      "mtime_ns": 2082758694000000000
+    },
+    "polygons-sparse-live/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758694000000000
+    },
+    "bitmap-lookup-live/config.txt": {
+      "sha256": "78e881ec7129827eabb7ee6e8fd0016dd4e8e0c7795b4a4b43951cba687032c9",
+      "bytes": 10,
+      "mtime_ns": 1792114586000000000
+    },
+    "bitmap-lookup-live/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800,
+      "mtime_ns": 1792114586000000000
+    },
+    "bitmap-lookup-live/roadbench.bin": {
+      "sha256": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+      "bytes": 80831,
+      "mtime_ns": 1792114588000000000
+    },
+    "bitmap-lookup-live/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758780000000000
+    },
+    "bitmap-lookup-live/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758832000000000
+    },
+    "bitmap-lookup-live/summary.txt": {
+      "sha256": "7ce556da7090630ad5a74c28b18e4806a410c20959c1a9e66db389f0ed17e465",
+      "bytes": 162,
+      "mtime_ns": 2082758832000000000
+    },
+    "bitmap-lookup-live/frames.csv": {
+      "sha256": "0091db0736f2e5aaba3afd9ef951d78c8951a4c7a236eafb8a0271179e73e7dd",
+      "bytes": 5543,
+      "mtime_ns": 2082758832000000000
+    },
+    "bitmap-lookup-live/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758832000000000
+    },
+    "polygons-sparse-cpu/config.txt": {
+      "sha256": "820127967e7d26d90ed67b885f544e9a25c75310f3934867c1264dc84cb48fc8",
+      "bytes": 11,
+      "mtime_ns": 1792114588000000000
+    },
+    "polygons-sparse-cpu/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800,
+      "mtime_ns": 1792114588000000000
+    },
+    "polygons-sparse-cpu/roadbench.bin": {
+      "sha256": "2036282d9324515217cd9429b1faa3cb717f60056b91c9ddcb7b96819c74a11e",
+      "bytes": 80836,
+      "mtime_ns": 1792114588000000000
+    },
+    "polygons-sparse-cpu/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758640000000000
+    },
+    "polygons-sparse-cpu/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758664000000000
+    },
+    "polygons-sparse-cpu/summary.txt": {
+      "sha256": "3a118039accb641be7a136dccfabf6958c8d25923b07bbb076975b12d8893d6d",
+      "bytes": 163,
+      "mtime_ns": 2082758664000000000
+    },
+    "polygons-sparse-cpu/frames.csv": {
+      "sha256": "daa34f7ed6c9d143e5a153ce8c95cd979d34032fb7bb1e04572729f84c6001ab",
+      "bytes": 26967,
+      "mtime_ns": 2082758666000000000
+    },
+    "polygons-sparse-cpu/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758666000000000
+    },
+    "bitmap-arithmetic-cpu/config.txt": {
+      "sha256": "6faf509647bd2733e94edeef3972f28b9eb487ed09aad5548e2b88b3523a6a74",
+      "bytes": 11,
+      "mtime_ns": 1792114588000000000
+    },
+    "bitmap-arithmetic-cpu/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800,
+      "mtime_ns": 1792114588000000000
+    },
+    "bitmap-arithmetic-cpu/roadbench.bin": {
+      "sha256": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+      "bytes": 80831,
+      "mtime_ns": 1792114588000000000
+    },
+    "bitmap-arithmetic-cpu/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758564000000000
+    },
+    "bitmap-arithmetic-cpu/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758598000000000
+    },
+    "bitmap-arithmetic-cpu/summary.txt": {
+      "sha256": "9f6906db94d244bfd612a45b0c63ae536abdb17f93f1b6f0c2440f3fd71873b8",
+      "bytes": 163,
+      "mtime_ns": 2082758598000000000
+    },
+    "bitmap-arithmetic-cpu/frames.csv": {
+      "sha256": "1a9b5f89d43af3e732fa6ed808c77bf761cdddcdab789afee11643cca2de5154",
+      "bytes": 26631,
+      "mtime_ns": 2082758600000000000
+    },
+    "bitmap-arithmetic-cpu/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758600000000000
+    },
+    "bitmap-arithmetic-live/config.txt": {
+      "sha256": "a6852b709725fd7e7111ef977f86e074bf0ec945d964647fe79e1c3fc9f6fde3",
+      "bytes": 10,
+      "mtime_ns": 1792114588000000000
+    },
+    "bitmap-arithmetic-live/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800,
+      "mtime_ns": 1792114588000000000
+    },
+    "bitmap-arithmetic-live/roadbench.bin": {
+      "sha256": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+      "bytes": 80831,
+      "mtime_ns": 1792114588000000000
+    },
+    "bitmap-arithmetic-live/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758722000000000
+    },
+    "bitmap-arithmetic-live/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758774000000000
+    },
+    "bitmap-arithmetic-live/summary.txt": {
+      "sha256": "7f1f2e8b85422313f2a136b3596e350ff86f04c2f6296e98797d478f5acc4970",
+      "bytes": 162,
+      "mtime_ns": 2082758774000000000
+    },
+    "bitmap-arithmetic-live/frames.csv": {
+      "sha256": "ffbbd6c7980472c92a7a037595d72293dd368e5b205afd85f543714afea20a3e",
+      "bytes": 5549,
+      "mtime_ns": 2082758776000000000
+    },
+    "bitmap-arithmetic-live/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758776000000000
+    },
+    "polygons-live/config.txt": {
+      "sha256": "bcbd1f6f7fe72bde43b79e53ab5c51d6da2ba7fdbebdb3a9f5d1cfe31574e3d9",
+      "bytes": 10,
+      "mtime_ns": 1792114588000000000
+    },
+    "polygons-live/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800,
+      "mtime_ns": 1792114588000000000
+    },
+    "polygons-live/roadbench.bin": {
+      "sha256": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+      "bytes": 80831,
+      "mtime_ns": 1792114588000000000
+    },
+    "polygons-live/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758698000000000
+    },
+    "polygons-live/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758718000000000
+    },
+    "polygons-live/summary.txt": {
+      "sha256": "205aaddd16cba18315bb2de01f2ca6cd2a241c5ab9d38953c5d0179dbeb33b89",
+      "bytes": 162,
+      "mtime_ns": 2082758718000000000
+    },
+    "polygons-live/frames.csv": {
+      "sha256": "ac95c884f7a19b83c145bc2d9f1be439ee763b5f26c5b16b4750f25e21fc04a3",
+      "bytes": 5322,
+      "mtime_ns": 2082758718000000000
+    },
+    "polygons-live/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758718000000000
+    },
+    "empty-live/config.txt": {
+      "sha256": "4969a887a28304f29cd48d37a80b2dee9aa9cf2301a642822c5516be7a21eb25",
+      "bytes": 9,
+      "mtime_ns": 1792114588000000000
+    },
+    "empty-live/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800,
+      "mtime_ns": 1792114588000000000
+    },
+    "empty-live/roadbench.bin": {
+      "sha256": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+      "bytes": 80831,
+      "mtime_ns": 1792114588000000000
+    },
+    "empty-live/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758670000000000
+    },
+    "empty-live/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758672000000000
+    },
+    "empty-live/summary.txt": {
+      "sha256": "45248b3c7b2fb79d409224be7b9b205573c751d3c6a9d58dc889d34d0ee50286",
+      "bytes": 156,
+      "mtime_ns": 2082758672000000000
+    },
+    "empty-live/frames.csv": {
+      "sha256": "d1aebf4c3c900770bbff63adc11de17709bfa7868d72a6e56bc1b4f871c6e86d",
+      "bytes": 1137,
+      "mtime_ns": 2082758672000000000
+    },
+    "empty-live/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758672000000000
+    },
+    "physics/physics.bin": {
+      "sha256": "9833f3a75f77c8a7e8eec1ca8451b4b0255a4049aa22e2e81bbf57e7b5a0b0ca",
+      "bytes": 50597,
+      "mtime_ns": 1792114588000000000
+    },
+    "physics/count.txt": {
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "mtime_ns": 1792114588000000000
+    },
+    "physics/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758486000000000
+    },
+    "physics/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758510000000000
+    },
+    "physics/summary.txt": {
+      "sha256": "49e9714ff6d26f6743d709281720e94b2a9a51c88dd27503225f2b5ac9b73dea",
+      "bytes": 216,
+      "mtime_ns": 2082758510000000000
+    },
+    "physics/state.csv": {
+      "sha256": "a1681351277be379335a2c41b4ec6464863756a35d6120aa95249108c58c7781",
+      "bytes": 4071,
+      "mtime_ns": 2082758510000000000
+    },
+    "physics/phases.csv": {
+      "sha256": "b396fa68c37880e80c055b82eb9b85ecead29519bf87ac7834fea194256534f8",
+      "bytes": 48,
+      "mtime_ns": 2082758510000000000
+    },
+    "physics/physics-done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758512000000000
+    },
+    "physics/lifecycle.txt": {
+      "sha256": "654c3fbdd465823445f01f0f21103208761a53288574ce123decc4804d6fed5b",
+      "bytes": 11,
+      "mtime_ns": 2082758512000000000
+    },
+    "physics/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758512000000000
+    },
+    "bitmap-lookup-cpu/config.txt": {
+      "sha256": "98138cc484ff100ce3c9a98ae370e5f9998d7cdfa977348744c7b90a33402010",
+      "bytes": 11,
+      "mtime_ns": 1792114590000000000
+    },
+    "bitmap-lookup-cpu/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800,
+      "mtime_ns": 1792114590000000000
+    },
+    "bitmap-lookup-cpu/roadbench.bin": {
+      "sha256": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+      "bytes": 80831,
+      "mtime_ns": 1792114590000000000
+    },
+    "bitmap-lookup-cpu/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758604000000000
+    },
+    "bitmap-lookup-cpu/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758634000000000
+    },
+    "bitmap-lookup-cpu/summary.txt": {
+      "sha256": "44292b1e0d4d90c1ef32f0dbc84901dd1be1ce437baf5ca64db260b7608d850f",
+      "bytes": 163,
+      "mtime_ns": 2082758634000000000
+    },
+    "bitmap-lookup-cpu/frames.csv": {
+      "sha256": "1312f80e90aa3a878445e9272c3773812ff06122777ad5e8681c9f46a4b6ebc6",
+      "bytes": 26631,
+      "mtime_ns": 2082758636000000000
+    },
+    "bitmap-lookup-cpu/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758636000000000
+    },
+    "polygons-cpu/config.txt": {
+      "sha256": "820127967e7d26d90ed67b885f544e9a25c75310f3934867c1264dc84cb48fc8",
+      "bytes": 11,
+      "mtime_ns": 1792114590000000000
+    },
+    "polygons-cpu/fuji.road": {
+      "sha256": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "bytes": 116800,
+      "mtime_ns": 1792114590000000000
+    },
+    "polygons-cpu/roadbench.bin": {
+      "sha256": "d84319c8bec76d74b2de0deea2604180200c32b9473dafec28251e48c0e0f58a",
+      "bytes": 80831,
+      "mtime_ns": 1792114590000000000
+    },
+    "polygons-cpu/started.txt": {
+      "sha256": "46210dddc66714c3d8d226711510cf8421774214016c508c72a833a05370f6b5",
+      "bytes": 6,
+      "mtime_ns": 2082758514000000000
+    },
+    "polygons-cpu/ended.txt": {
+      "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
+      "bytes": 4,
+      "mtime_ns": 2082758558000000000
+    },
+    "polygons-cpu/summary.txt": {
+      "sha256": "fdc7a51b7742b9a1ecfb731761b49ffc027c9290e35ba5575e8b1cd05f691f62",
+      "bytes": 163,
+      "mtime_ns": 2082758558000000000
+    },
+    "polygons-cpu/frames.csv": {
+      "sha256": "35f28d8e6fd08411c70bed45b40f64865352426bb16c87ae624e888524a78fab",
+      "bytes": 27991,
+      "mtime_ns": 2082758560000000000
+    },
+    "polygons-cpu/done.txt": {
+      "sha256": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "bytes": 9,
+      "mtime_ns": 2082758560000000000
+    }
+  },
+  "card_writes": false
+}

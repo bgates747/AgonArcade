@@ -1,0 +1,45 @@
+{
+  "status": "flashed-independently-readback-verified-and-reset",
+  "utc": "20261016T014314Z",
+  "mainboard_mac": "10:06:1c:0b:46:e0",
+  "port": "/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0",
+  "tool": "/Agon/mystuff/agon-extender/.venv/bin/esptool",
+  "tool_version": "5.1.0",
+  "image": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-08/firmware.bin",
+  "image_sha256": "36edc736c992502367489c8ccea677d7aebb11d20371cd58cb0b91ef61df9f99",
+  "image_bytes": 1085168,
+  "offset": "0x10000",
+  "selected_app": {
+    "type": 0,
+    "subtype": 16,
+    "offset": 65536,
+    "bytes": 1310720,
+    "label": "app0"
+  },
+  "ota_entries": [
+    {
+      "seq": 1,
+      "state": 2,
+      "crc": 1195612314,
+      "valid": true
+    },
+    {
+      "seq": 4294967295,
+      "state": 4294967295,
+      "crc": 4294967295,
+      "valid": false
+    }
+  ],
+  "bootloader_partition_nvs_ota_unchanged": true,
+  "unwritten_tail_unchanged": true,
+  "backup": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/mainboard-flash-20261016T014314Z/before-prefix.bin",
+  "backup_sha256": "b383705220e3989ccce17f68f754b6a2739841c3ad2ed9c55e76c36d66010209",
+  "readback_sha256": "f152e7f58f44af5cc98ceeaca20ed77772615bdb84fca1a256ba72bbdb079608",
+  "normal_common_reset": true,
+  "p4_flashed": false,
+  "emos_changed": false,
+  "startup_written": false,
+  "tests_invoked": false,
+  "cli_execution_verified": false,
+  "evidence": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/standard-vdp/bitmap-spans/SPAN-001-09/.work/mainboard-flash-20261016T014314Z"
+}

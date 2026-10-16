@@ -1,0 +1,72 @@
+{
+  "reason": "guest-files",
+  "identity": {
+    "backend": "flexe",
+    "variant": 0,
+    "live": 1,
+    "diagnostic": 1,
+    "frames": 16,
+    "files": {
+      "flexe-agon-emulator": "9d1fdc99fe75fae8c93196be5123e8d3894976cb5d24d2cab18f627a0a66d853",
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "108ec5b02122381e6c3ae851508188ec0a96240ca5f74be804fd2201b141e6e9",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "sdcard/autoexec.txt": "bae239eb81801b21d2c335639d8fe0beae6326f7336fd8ce4b95cfa14d2663d0",
+      "sdcard/test/arcade/rally28/road/roadbench.bin": "2036282d9324515217cd9429b1faa3cb717f60056b91c9ddcb7b96819c74a11e",
+      "sdcard/test/arcade/rally28/road/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "sdcard/test/arcade/rally28/road/config.txt": "a862bb64e6c47eac6e7c34875edf65ad2b0dd348e20404d5205a9c40d0a6fc5f",
+      "esp32-firmware.bin": "36edc736c992502367489c8ccea677d7aebb11d20371cd58cb0b91ef61df9f99"
+    }
+  },
+  "summary": {
+    "variant": "0",
+    "live": "1",
+    "diagnostic": "1",
+    "frames": "16",
+    "planned": "16",
+    "prt_ticks": "3944",
+    "mos_units": "140",
+    "explicit_bytes": "17736",
+    "explicit_calls": "1746",
+    "restored": "1",
+    "failure": "none"
+  },
+  "host_seconds": 25.707008083998517,
+  "host_window_seconds": 3.974907707000966,
+  "host_suspend_seconds": -2.140001015504822e-06,
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "identities_unchanged": true,
+  "row_count": 16,
+  "sums": {
+    "frame": 120,
+    "geometry": 75,
+    "packing": 193,
+    "submission": 99,
+    "wait": 1917,
+    "mos": 96,
+    "bytes": 10986,
+    "vdp_submit_us": 466094,
+    "vdp_complete_us": 716887,
+    "vdp_drain_us": 250793
+  },
+  "backend_stats": {
+    "engine": "interp",
+    "frames": 507,
+    "cycles": 2184998918,
+    "retired": 1465232188,
+    "uart_rx": 31537,
+    "uart_tx": 6167,
+    "uart_delivered": 6167,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  }
+}

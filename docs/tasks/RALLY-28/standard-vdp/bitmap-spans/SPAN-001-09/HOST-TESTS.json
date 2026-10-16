@@ -1,0 +1,159 @@
+[
+  {
+    "scenario": "pass",
+    "verified": true,
+    "actions": [
+      "snapshot",
+      "select_route",
+      "select_mode",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion",
+      "select_mode",
+      "snapshot",
+      "select_route",
+      "snapshot",
+      "snapshot",
+      "notify"
+    ]
+  },
+  {
+    "scenario": "timeout",
+    "verified": true,
+    "actions": [
+      "snapshot",
+      "select_route",
+      "select_mode",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion"
+    ]
+  },
+  {
+    "scenario": "cancel",
+    "verified": true,
+    "actions": [
+      "snapshot",
+      "select_route",
+      "select_mode",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion"
+    ]
+  },
+  {
+    "scenario": "reset",
+    "verified": true,
+    "actions": [
+      "snapshot",
+      "select_route",
+      "select_mode",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion"
+    ]
+  },
+  {
+    "scenario": "startup",
+    "verified": true,
+    "actions": [
+      "snapshot",
+      "select_route",
+      "select_mode",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion"
+    ]
+  },
+  {
+    "scenario": "hash",
+    "verified": true,
+    "actions": [
+      "snapshot",
+      "select_route",
+      "select_mode",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion",
+      "select_mode",
+      "snapshot",
+      "select_route",
+      "snapshot",
+      "snapshot",
+      "notify"
+    ]
+  },
+  {
+    "scenario": "foreground",
+    "verified": true,
+    "actions": [
+      "snapshot",
+      "select_route",
+      "select_mode",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion"
+    ]
+  },
+  {
+    "scenario": "receipt",
+    "verified": true,
+    "actions": [
+      "snapshot",
+      "select_route",
+      "select_mode",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion"
+    ]
+  },
+  {
+    "scenario": "unready",
+    "verified": true,
+    "actions": []
+  },
+  {
+    "scenario": "double-buffer",
+    "verified": true,
+    "actions": [
+      "snapshot"
+    ]
+  },
+  {
+    "scenario": "capabilities",
+    "verified": true,
+    "actions": [
+      "snapshot"
+    ]
+  },
+  {
+    "scenario": "restore-timeout",
+    "verified": true,
+    "actions": [
+      "snapshot",
+      "select_route",
+      "select_mode",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion",
+      "snapshot",
+      "notify",
+      "launch",
+      "completion",
+      "select_mode"
+    ]
+  }
+]

@@ -163,3 +163,11 @@ SPAN-001-05 research is complete and recorded in the development log; root TODO 
 
 
 Author accepts single-write demo and releases [SPAN-001-06–10 independent benchmark plan](BENCHMARK-PLAN.md). Required separation: actual physics capacity, eZ80 preparation/transmission, VDP-local fenced frame execution/completion, and overlapped completed throughput. Final truth on Olimex mainboard using admitted Extender input and Legacy route; follow normative test lifecycle/coordinator rules. Commit/push all dirt first, then independent work without hardware takeover or Author attention. No graphical/audio launch.
+
+## Independent benchmark findings — 2026-10-15
+
+Checkpoint94cf665pushed before execution. [Complete results](BENCHMARK-RESULTS.md) preserve separate actual physics, eZ80 geometry/packing/submission, normal-worker VDP intervals and completed Fab road throughput. Sparse/on-demand buffered polygons currently beat this bitmap implementation:31.98Fab completed road FPS versus27.74lookup bitmap spans. The exact phase table helps packing, but all120centres remain costly. Common-geometry polygons are deliberately redundant; only the separately compiled on-demand control is a fair total CPU comparison. No game backend change follows automatically.
+
+Short16frame Flexe probes show about42–45nominal emulated VDP milliseconds through polygon completion versus347for bitmap spans, including parser/buffer/matrix/worker scheduling. Full128frame Flexe cases fail; exact partial wire streams are retained. These are concrete warnings, not a physical hardware verdict or a reason to reject an approximation for its pixels. Cold-cache effects, different emulator clocks and post-capture record retrieval are disclosed. Actual isolated physics verifies420fields at335.41host ticks/s without timed render traffic; integrated headroom remains unmeasured.
+
+Ten exact-input standalone Olimex cases and12scenario offline coordinator are prepared in SPAN-001-09. No autoexec/deployment/flash or bench query. Live adapter/bench/installed identities need commissioning; root TODO proposes SPAN-001-11 for physical qualification. New results/source are uncommitted for review, all sessions stopped and silent. Further backend selection should use identical physical inputs and Author motion judgement.

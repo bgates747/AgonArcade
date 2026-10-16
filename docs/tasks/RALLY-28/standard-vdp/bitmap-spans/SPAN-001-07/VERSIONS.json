@@ -1,0 +1,19 @@
+{
+  "diagnostic_run_tail_override": {
+    "buffer": 55002,
+    "offset": 5412,
+    "length": 7,
+    "replacement": "seven NULs; removes forced stock flush and its GP"
+  },
+  "stock_poly_completion": "explicit VDU23,0,CA before GP232",
+  "pose_source_sha256": "fe40fdf48ce0ce00973b87e07016bfc77fdf51aedc10c533dbeb2e7fb2de3ef9",
+  "calibration_versions": {
+    "smoke01": "invalid copied review outputs, rejected",
+    "smoke02": "16frame transport proof, opening straight/padded frame buffer; not performance comparison",
+    "final01": "initial opening section, abandoned for coverage",
+    "final02": "full poses, oversized frame command padding; rejected",
+    "final03": "exact command lengths, control endpoint shift incomplete; rejected",
+    "final04": "control endpoint corrected; bitmap still retained forced stock flush and stock polygon lacked flush; rejected",
+    "final05": "correct coverage/length/offset and separate stock-vs-normal-worker completion; final comparison"
+  }
+}

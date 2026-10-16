@@ -1,0 +1,1084 @@
+{
+  "schema": 1,
+  "checkpoint": "94cf665",
+  "cpu": {
+    "polygons_sparse": {
+      "profile": "rally28-road-sparse-fab-0-final05",
+      "frames": 1024,
+      "host_window_seconds": 23.378417163999984,
+      "host_completed_or_cpu_frames_per_second": 43.801083401695806,
+      "host_ms_per_frame": 22.830485511718734,
+      "nominal_prt_ms": 23349,
+      "mos_units": 2802,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 5.6015625,
+          "median": 6.0,
+          "p95": 7,
+          "minimum": 4,
+          "maximum": 9
+        },
+        "packing": {
+          "mean": 17.0107421875,
+          "median": 17.0,
+          "p95": 25,
+          "minimum": 11,
+          "maximum": 31
+        },
+        "submission": {
+          "mean": 0.138671875,
+          "median": 0.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "wait": {
+          "mean": 0.0068359375,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "frame_bytes": {
+        "mean": 913.6640625,
+        "median": 913.0,
+        "p95": 1328,
+        "minimum": 636,
+        "maximum": 1622
+      },
+      "all_explicit_bytes": 935592,
+      "bytes_outside_frame_spans": 0,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_complete_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_drain_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "polygons_common_geometry": {
+      "profile": "rally28-road-v0-fab-0-final05",
+      "frames": 1024,
+      "host_window_seconds": 43.00145664199954,
+      "host_completed_or_cpu_frames_per_second": 23.813146808609705,
+      "host_ms_per_frame": 41.993610001952675,
+      "nominal_prt_ms": 42981,
+      "mos_units": 5156,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 25.2763671875,
+          "median": 25.0,
+          "p95": 26,
+          "minimum": 24,
+          "maximum": 26
+        },
+        "packing": {
+          "mean": 16.515625,
+          "median": 16.0,
+          "p95": 25,
+          "minimum": 11,
+          "maximum": 31
+        },
+        "submission": {
+          "mean": 0.12890625,
+          "median": 0.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "wait": {
+          "mean": 0.0107421875,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "frame_bytes": {
+        "mean": 913.6640625,
+        "median": 913.0,
+        "p95": 1328,
+        "minimum": 636,
+        "maximum": 1622
+      },
+      "all_explicit_bytes": 935592,
+      "bytes_outside_frame_spans": 0,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_complete_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_drain_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "bitmap_arithmetic": {
+      "profile": "rally28-road-v1-fab-0-final05",
+      "frames": 1024,
+      "host_window_seconds": 33.53897187599796,
+      "host_completed_or_cpu_frames_per_second": 30.531645507381274,
+      "host_ms_per_frame": 32.75290222265426,
+      "nominal_prt_ms": 33536,
+      "mos_units": 4024,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 25.283203125,
+          "median": 25.0,
+          "p95": 26,
+          "minimum": 24,
+          "maximum": 26
+        },
+        "packing": {
+          "mean": 7.333984375,
+          "median": 7.0,
+          "p95": 8,
+          "minimum": 7,
+          "maximum": 8
+        },
+        "submission": {
+          "mean": 0.083984375,
+          "median": 0.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "wait": {
+          "mean": 0.0068359375,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "frame_bytes": {
+        "mean": 788,
+        "median": 788.0,
+        "p95": 788,
+        "minimum": 788,
+        "maximum": 788
+      },
+      "all_explicit_bytes": 806912,
+      "bytes_outside_frame_spans": 0,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_complete_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_drain_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "bitmap_lookup": {
+      "profile": "rally28-road-v2-fab-0-final05",
+      "frames": 1024,
+      "host_window_seconds": 29.119568465001066,
+      "host_completed_or_cpu_frames_per_second": 35.16535628715618,
+      "host_ms_per_frame": 28.437078579102604,
+      "nominal_prt_ms": 29103,
+      "mos_units": 3488,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 25.279296875,
+          "median": 25.0,
+          "p95": 26,
+          "minimum": 24,
+          "maximum": 26
+        },
+        "packing": {
+          "mean": 3.001953125,
+          "median": 3.0,
+          "p95": 3,
+          "minimum": 3,
+          "maximum": 4
+        },
+        "submission": {
+          "mean": 0.083984375,
+          "median": 0.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "wait": {
+          "mean": 0.0146484375,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "frame_bytes": {
+        "mean": 788,
+        "median": 788.0,
+        "p95": 788,
+        "minimum": 788,
+        "maximum": 788
+      },
+      "all_explicit_bytes": 806912,
+      "bytes_outside_frame_spans": 0,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_complete_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_drain_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "vdp_sum_identities_pass": true
+    }
+  },
+  "fab_stock_completed": {
+    "polygons_sparse": {
+      "profile": "rally28-road-sparse-fab-1-final05",
+      "frames": 512,
+      "host_window_seconds": 16.011787280000135,
+      "host_completed_or_cpu_frames_per_second": 31.976442794710653,
+      "host_ms_per_frame": 31.273022031250264,
+      "nominal_prt_ms": 16001,
+      "mos_units": 1920,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 5.6171875,
+          "median": 6.0,
+          "p95": 7,
+          "minimum": 4,
+          "maximum": 8
+        },
+        "packing": {
+          "mean": 17.009765625,
+          "median": 17.0,
+          "p95": 25,
+          "minimum": 11,
+          "maximum": 31
+        },
+        "submission": {
+          "mean": 8.06640625,
+          "median": 8.0,
+          "p95": 12,
+          "minimum": 5,
+          "maximum": 15
+        },
+        "wait": {
+          "mean": 0.50390625,
+          "median": 1.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 2
+        }
+      },
+      "frame_bytes": {
+        "mean": 913.6640625,
+        "median": 913.0,
+        "p95": 1328,
+        "minimum": 636,
+        "maximum": 1622
+      },
+      "all_explicit_bytes": 467796,
+      "bytes_outside_frame_spans": 0,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_complete_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_drain_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "polygons_common_geometry": {
+      "profile": "rally28-road-v0-fab-long05",
+      "frames": 512,
+      "host_window_seconds": 25.796394801000133,
+      "host_completed_or_cpu_frames_per_second": 19.847734691211564,
+      "host_ms_per_frame": 50.383583595703385,
+      "nominal_prt_ms": 25836,
+      "mos_units": 3100,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 25.265625,
+          "median": 25.0,
+          "p95": 26,
+          "minimum": 24,
+          "maximum": 26
+        },
+        "packing": {
+          "mean": 16.501953125,
+          "median": 16.0,
+          "p95": 25,
+          "minimum": 11,
+          "maximum": 31
+        },
+        "submission": {
+          "mean": 8.0625,
+          "median": 8.0,
+          "p95": 12,
+          "minimum": 5,
+          "maximum": 15
+        },
+        "wait": {
+          "mean": 0.5859375,
+          "median": 1.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 2
+        }
+      },
+      "frame_bytes": {
+        "mean": 913.6640625,
+        "median": 913.0,
+        "p95": 1328,
+        "minimum": 636,
+        "maximum": 1622
+      },
+      "all_explicit_bytes": 467796,
+      "bytes_outside_frame_spans": 0,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_complete_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_drain_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "bitmap_arithmetic": {
+      "profile": "rally28-road-v1-fab-long05",
+      "frames": 512,
+      "host_window_seconds": 20.660464746997604,
+      "host_completed_or_cpu_frames_per_second": 24.78163033938548,
+      "host_ms_per_frame": 40.352470208979696,
+      "nominal_prt_ms": 20682,
+      "mos_units": 2480,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 25.2890625,
+          "median": 25.0,
+          "p95": 26,
+          "minimum": 24,
+          "maximum": 26
+        },
+        "packing": {
+          "mean": 7.3359375,
+          "median": 7.0,
+          "p95": 8,
+          "minimum": 7,
+          "maximum": 8
+        },
+        "submission": {
+          "mean": 6.943359375,
+          "median": 7.0,
+          "p95": 7,
+          "minimum": 6,
+          "maximum": 7
+        },
+        "wait": {
+          "mean": 0.791015625,
+          "median": 1.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 2
+        }
+      },
+      "frame_bytes": {
+        "mean": 788,
+        "median": 788.0,
+        "p95": 788,
+        "minimum": 788,
+        "maximum": 788
+      },
+      "all_explicit_bytes": 403456,
+      "bytes_outside_frame_spans": 0,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_complete_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_drain_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "bitmap_lookup": {
+      "profile": "rally28-road-v2-fab-long05",
+      "frames": 512,
+      "host_window_seconds": 18.45909942599974,
+      "host_completed_or_cpu_frames_per_second": 27.73699779084809,
+      "host_ms_per_frame": 36.05292856640574,
+      "nominal_prt_ms": 18490,
+      "mos_units": 2218,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 25.294921875,
+          "median": 25.0,
+          "p95": 26,
+          "minimum": 24,
+          "maximum": 26
+        },
+        "packing": {
+          "mean": 3.0078125,
+          "median": 3.0,
+          "p95": 3,
+          "minimum": 3,
+          "maximum": 4
+        },
+        "submission": {
+          "mean": 6.94921875,
+          "median": 7.0,
+          "p95": 7,
+          "minimum": 6,
+          "maximum": 7
+        },
+        "wait": {
+          "mean": 0.822265625,
+          "median": 1.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 2
+        }
+      },
+      "frame_bytes": {
+        "mean": 788,
+        "median": 788.0,
+        "p95": 788,
+        "minimum": 788,
+        "maximum": 788
+      },
+      "all_explicit_bytes": 403456,
+      "bytes_outside_frame_spans": 0,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_complete_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "vdp_drain_us": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "vdp_sum_identities_pass": true
+    }
+  },
+  "flexe_short_diagnostic": {
+    "polygons_sparse": {
+      "profile": "rally28-road-sparse-flexe-1-final05",
+      "frames": 16,
+      "host_window_seconds": 3.974907707000966,
+      "host_completed_or_cpu_frames_per_second": 4.025250692442332,
+      "host_ms_per_frame": 248.4317316875604,
+      "nominal_prt_ms": 3944,
+      "mos_units": 140,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 4.6875,
+          "median": 5.0,
+          "p95": 5,
+          "minimum": 4,
+          "maximum": 5
+        },
+        "packing": {
+          "mean": 12.0625,
+          "median": 12.0,
+          "p95": 13,
+          "minimum": 11,
+          "maximum": 13
+        },
+        "submission": {
+          "mean": 6.1875,
+          "median": 6.0,
+          "p95": 7,
+          "minimum": 6,
+          "maximum": 7
+        },
+        "wait": {
+          "mean": 119.8125,
+          "median": 119.0,
+          "p95": 145,
+          "minimum": 113,
+          "maximum": 145
+        }
+      },
+      "frame_bytes": {
+        "mean": 686.625,
+        "median": 708.0,
+        "p95": 708,
+        "minimum": 647,
+        "maximum": 708
+      },
+      "all_explicit_bytes": 17736,
+      "bytes_outside_frame_spans": 6750,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 29130.875,
+          "median": 28514.5,
+          "p95": 39185,
+          "minimum": 27402,
+          "maximum": 39185
+        },
+        "vdp_complete_us": {
+          "mean": 44805.4375,
+          "median": 44247.0,
+          "p95": 54560,
+          "minimum": 42944,
+          "maximum": 54560
+        },
+        "vdp_drain_us": {
+          "mean": 15674.5625,
+          "median": 15596.5,
+          "p95": 16038,
+          "minimum": 15333,
+          "maximum": 16038
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "polygons_common_geometry": {
+      "profile": "rally28-road-v0-fenced-probe05",
+      "frames": 16,
+      "host_window_seconds": 4.182503173997247,
+      "host_completed_or_cpu_frames_per_second": 3.825460336640627,
+      "host_ms_per_frame": 261.40644837482796,
+      "nominal_prt_ms": 4186,
+      "mos_units": 142,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 24.875,
+          "median": 25.0,
+          "p95": 25,
+          "minimum": 24,
+          "maximum": 25
+        },
+        "packing": {
+          "mean": 12.375,
+          "median": 12.5,
+          "p95": 13,
+          "minimum": 11,
+          "maximum": 13
+        },
+        "submission": {
+          "mean": 5.875,
+          "median": 6.0,
+          "p95": 7,
+          "minimum": 5,
+          "maximum": 7
+        },
+        "wait": {
+          "mean": 113.9375,
+          "median": 108.5,
+          "p95": 152,
+          "minimum": 104,
+          "maximum": 152
+        }
+      },
+      "frame_bytes": {
+        "mean": 686.625,
+        "median": 708.0,
+        "p95": 708,
+        "minimum": 647,
+        "maximum": 708
+      },
+      "all_explicit_bytes": 17736,
+      "bytes_outside_frame_spans": 6750,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 26262.75,
+          "median": 24665.5,
+          "p95": 39106,
+          "minimum": 23751,
+          "maximum": 39106
+        },
+        "vdp_complete_us": {
+          "mean": 41939.125,
+          "median": 40315.0,
+          "p95": 54773,
+          "minimum": 39414,
+          "maximum": 54773
+        },
+        "vdp_drain_us": {
+          "mean": 15676.375,
+          "median": 15646.0,
+          "p95": 16000,
+          "minimum": 15208,
+          "maximum": 16000
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "bitmap_arithmetic": {
+      "profile": "rally28-road-v1-fenced-probe05",
+      "frames": 16,
+      "host_window_seconds": 20.34626060699884,
+      "host_completed_or_cpu_frames_per_second": 0.7863852876481989,
+      "host_ms_per_frame": 1271.6412879374275,
+      "nominal_prt_ms": 20365,
+      "mos_units": 708,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 25,
+          "median": 25.0,
+          "p95": 25,
+          "minimum": 25,
+          "maximum": 25
+        },
+        "packing": {
+          "mean": 7.375,
+          "median": 7.0,
+          "p95": 8,
+          "minimum": 7,
+          "maximum": 8
+        },
+        "submission": {
+          "mean": 13.6875,
+          "median": 14.0,
+          "p95": 18,
+          "minimum": 10,
+          "maximum": 18
+        },
+        "wait": {
+          "mean": 1122,
+          "median": 1127.0,
+          "p95": 1167,
+          "minimum": 1101,
+          "maximum": 1167
+        }
+      },
+      "frame_bytes": {
+        "mean": 802,
+        "median": 802.0,
+        "p95": 802,
+        "minimum": 802,
+        "maximum": 802
+      },
+      "all_explicit_bytes": 19582,
+      "bytes_outside_frame_spans": 6750,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 330637.0625,
+          "median": 330978.0,
+          "p95": 331420,
+          "minimum": 326323,
+          "maximum": 331420
+        },
+        "vdp_complete_us": {
+          "mean": 347382.125,
+          "median": 347833.0,
+          "p95": 348237,
+          "minimum": 341532,
+          "maximum": 348237
+        },
+        "vdp_drain_us": {
+          "mean": 16745.0625,
+          "median": 16834.0,
+          "p95": 16877,
+          "minimum": 15209,
+          "maximum": 16877
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "bitmap_lookup": {
+      "profile": "rally28-road-v2-fenced-probe05",
+      "frames": 16,
+      "host_window_seconds": 20.466326726997067,
+      "host_completed_or_cpu_frames_per_second": 0.7817719424411637,
+      "host_ms_per_frame": 1279.1454204373167,
+      "nominal_prt_ms": 20500,
+      "mos_units": 708,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 25,
+          "median": 25.0,
+          "p95": 25,
+          "minimum": 25,
+          "maximum": 25
+        },
+        "packing": {
+          "mean": 3,
+          "median": 3.0,
+          "p95": 3,
+          "minimum": 3,
+          "maximum": 3
+        },
+        "submission": {
+          "mean": 14.8125,
+          "median": 14.0,
+          "p95": 20,
+          "minimum": 12,
+          "maximum": 20
+        },
+        "wait": {
+          "mean": 1133.125,
+          "median": 1128.5,
+          "p95": 1196,
+          "minimum": 1065,
+          "maximum": 1196
+        }
+      },
+      "frame_bytes": {
+        "mean": 802,
+        "median": 802.0,
+        "p95": 802,
+        "minimum": 802,
+        "maximum": 802
+      },
+      "all_explicit_bytes": 19582,
+      "bytes_outside_frame_spans": 6750,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 330728.3125,
+          "median": 331848.5,
+          "p95": 332392,
+          "minimum": 315623,
+          "maximum": 332392
+        },
+        "vdp_complete_us": {
+          "mean": 347426.6875,
+          "median": 348695.5,
+          "p95": 349209,
+          "minimum": 332456,
+          "maximum": 349209
+        },
+        "vdp_drain_us": {
+          "mean": 16698.375,
+          "median": 16833.0,
+          "p95": 16875,
+          "minimum": 15208,
+          "maximum": 16875
+        }
+      },
+      "vdp_sum_identities_pass": true
+    },
+    "empty": {
+      "profile": "rally28-road-v3-flexe-1-final05",
+      "frames": 32,
+      "host_window_seconds": 3.72599148199879,
+      "host_completed_or_cpu_frames_per_second": 8.58831807710783,
+      "host_ms_per_frame": 116.43723381246218,
+      "nominal_prt_ms": 3724,
+      "mos_units": 132,
+      "frame_prt_ms": {
+        "geometry": {
+          "mean": 0.9375,
+          "median": 1.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "packing": {
+          "mean": 0,
+          "median": 0.0,
+          "p95": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "submission": {
+          "mean": 0.78125,
+          "median": 1.0,
+          "p95": 1,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "wait": {
+          "mean": 12.25,
+          "median": 12.0,
+          "p95": 15,
+          "minimum": 8,
+          "maximum": 16
+        }
+      },
+      "frame_bytes": {
+        "mean": 56,
+        "median": 56.0,
+        "p95": 56,
+        "minimum": 56,
+        "maximum": 56
+      },
+      "all_explicit_bytes": 15022,
+      "bytes_outside_frame_spans": 13230,
+      "vdp_us": {
+        "vdp_submit_us": {
+          "mean": 39.25,
+          "median": 42.0,
+          "p95": 42,
+          "minimum": 0,
+          "maximum": 83
+        },
+        "vdp_complete_us": {
+          "mean": 16105.46875,
+          "median": 16180.0,
+          "p95": 17181,
+          "minimum": 9083,
+          "maximum": 17208
+        },
+        "vdp_drain_us": {
+          "mean": 16066.21875,
+          "median": 16128.0,
+          "p95": 17140,
+          "minimum": 9042,
+          "maximum": 17167
+        }
+      },
+      "vdp_sum_identities_pass": true
+    }
+  },
+  "flexe_full_diagnostic_failures": {
+    "rally28-road-v0-flexe-1-final05": {
+      "reason": "timeout",
+      "summary": {},
+      "rows_saved": 0,
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 4443,
+        "cycles": 18466932647,
+        "retired": 17743642562,
+        "uart_rx": 122568,
+        "uart_tx": 812,
+        "uart_delivered": 812,
+        "isync": 11,
+        "code_invalidations": 1,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "wire": {
+        "frames_uploaded_verified": 113,
+        "command_bytes_verified": 102092,
+        "planned_frames": 128,
+        "partial_upload": {
+          "offset": 122183,
+          "advertised_bytes": 600,
+          "received_bytes": 377
+        },
+        "complete_frame_replies": 113,
+        "capture_sha256": "048cf4a2016de9096a24bcb8b7207589ebe2ff079c260ce691225286ef9a45c4",
+        "evidence_only": true
+      },
+      "host_bound_seconds": 300.04239050600154
+    },
+    "rally28-road-v1-flexe-1-final05": {
+      "reason": "timeout",
+      "summary": {},
+      "rows_saved": 0,
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 4541,
+        "cycles": 18995369476,
+        "retired": 18703683809,
+        "uart_rx": 60220,
+        "uart_tx": 644,
+        "uart_delivered": 644,
+        "isync": 11,
+        "code_invalidations": 1,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "wire": {
+        "frames_uploaded_verified": 57,
+        "parameter_bytes_verified": 41040,
+        "stream_sha256": "7d228c09eacac669690527dabe8f1f3cdfa888b663ae8b6ac47a99961fea4cb6",
+        "planned_frames": 128,
+        "partial_upload": {
+          "offset": 59614,
+          "advertised_bytes": 720,
+          "received_bytes": 595
+        },
+        "complete_frame_replies": 57,
+        "capture_sha256": "cbc6534e8f32b32c1c37b8b61b2a046b588a91f90dfee72dbeabdac4eca1b3d8",
+        "evidence_only": true
+      },
+      "host_bound_seconds": 300.0222059279986
+    },
+    "rally28-road-v2-flexe-1-final05": {
+      "reason": "timeout",
+      "summary": {
+        "variant": "2",
+        "live": "1",
+        "diagnostic": "1",
+        "frames": "83",
+        "planned": "128",
+        "prt_ticks": "140458",
+        "mos_units": "4628",
+        "explicit_bytes": "67503",
+        "explicit_calls": "285",
+        "restored": "0",
+        "failure": "mode/CLI restore"
+      },
+      "rows_saved": 83,
+      "backend_stats": {
+        "engine": "interp",
+        "frames": 4635,
+        "cycles": 19439720957,
+        "retired": 19070337043,
+        "uart_rx": 81255,
+        "uart_tx": 722,
+        "uart_delivered": 722,
+        "isync": 11,
+        "code_invalidations": 1,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "wire": {
+        "frames_uploaded_verified": 84,
+        "parameter_bytes_verified": 60480,
+        "stream_sha256": "2694486b28b8e9df7a0ff909d17172f4279a633bce8fe5a0618c055737502a96",
+        "planned_frames": 128,
+        "partial_upload": null,
+        "complete_frame_replies": 83,
+        "capture_sha256": "49997ee5f8a41811afe1ff7b9de320f7eb8a36e02125c5cd908627f0ba0b6016",
+        "evidence_only": true
+      },
+      "host_bound_seconds": 300.01009065299877
+    }
+  },
+  "physics": {
+    "profile": "rally28-road-physics-lifecycle02",
+    "steps": 8192,
+    "fields": 420,
+    "host_window_seconds": 24.423611768997944,
+    "host_steps_per_second": 335.4131271607624,
+    "nominal_prt_ticks": 24431,
+    "mos_units": 2932,
+    "lifecycle_and_independent_state_pass": true
+  },
+  "protected_files_unchanged": 101,
+  "product_sha256": "7f1620ed8139ee779e7d50e333ef572aeaf612a154e41ec574e63a57da760293",
+  "limits": [
+    "Road-only fixtures, separate actual physics capacity; no integrated game cadence.",
+    "Common geometry polygons redundantly compute all rows; sparse polygons are the fair CPU control.",
+    "VDP intervals include parser/buffer/matrix/normal-worker scheduling and completion, not exclusive raster or scanout.",
+    "Short Flexe probes cover 16 opening-section poses; no sustained/full-track qualification.",
+    "VDP record retrieval is outside frame spans and inside diagnostic whole windows.",
+    "Fab native and Flexe ESP32 diagnostic cases differ; not identical-byte cross-backend comparison.",
+    "PRT milliseconds and VDP microseconds are emulator-local nominal scales; no physical calibration claim."
+  ]
+}
