@@ -1,0 +1,32 @@
+{
+  "status": "fresh-stopped",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally18-flexe-review01",
+  "identity": {
+    "version": "RALLY-18 exact unfenced review binary",
+    "track": "fuji",
+    "options": "demo",
+    "firmware": "official stock VDP 2.16.0",
+    "files": {
+      "flexe-agon-emulator": "9d1fdc99fe75fae8c93196be5123e8d3894976cb5d24d2cab18f627a0a66d853",
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "108ec5b02122381e6c3ae851508188ec0a96240ca5f74be804fd2201b141e6e9",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "sdcard/autoexec.txt": "08348d8ad6f7b75b1f82cda0177fe7168079bf6318d7b2a04947de754f853abd",
+      "sdcard/rally/rally.bin": "20622e05c82431b58552be533a749779e30a7e2cfdb7b3352e582896fdf2ab70",
+      "sdcard/rally/fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+      "sdcard/rally/oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625"
+    },
+    "audio": "dummy"
+  },
+  "headless_smoke": {
+    "reason": "startup-ready",
+    "host_seconds": 15.646794241998577,
+    "ready_after_seconds": 10.627362503997574,
+    "inputs_unchanged": true,
+    "sdl_video": "dummy",
+    "sdl_audio": "dummy",
+    "stopped": true
+  }
+}

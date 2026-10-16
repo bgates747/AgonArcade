@@ -1,0 +1,40 @@
+{
+  "frames": 900,
+  "physics_ticks": 3600,
+  "elapsed_mos_ticks": 3652,
+  "elapsed_seconds": 30.433333333333334,
+  "observed_fps": 29.572836801752466,
+  "validated_reply_records": 2913,
+  "reply_sha256": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+  "final_buffers_match_prior": true,
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 2805,
+    "cycles": 11663189048,
+    "retired": 8502919708,
+    "uart_rx": 493996,
+    "uart_tx": 89089,
+    "uart_delivered": 89089,
+    "isync": 4515,
+    "code_invalidations": 2,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "prt": {
+    "elapsed_ticks": 31483,
+    "cycles_per_tick": 18432,
+    "nominal_seconds_at_18432000_hz": 31.483,
+    "nominal_fps_at_18432000_hz": 28.586856398691356,
+    "timer_borrowed": true,
+    "previous_vector_restored": true,
+    "clock_limit": "nominal PRT IRQ ticks; emulator instruction-clock driven, interrupt coalescing possible; not calibrated physical/host wall-clock FPS"
+  },
+  "boost_after_run": 1,
+  "boost_during_run": "Author believes enabled; no in-run monitoring",
+  "prior_boost_off_fps": 14.365522745411013,
+  "speed_ratio": 2.058598028477547,
+  "timing_limit": "Nominal guest MOS clock; independent host wall duration not captured"
+}

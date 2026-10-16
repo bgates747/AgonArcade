@@ -1,0 +1,32 @@
+{
+  "status": "deployed-verified-not-invoked-not-flashed",
+  "utc": "20261016T032229Z",
+  "filesystem": {
+    "target": "/run/media/smith/AGONC8",
+    "source": "/dev/sda1",
+    "fstype": "vfat",
+    "uuid": "8658-1C23",
+    "options": "rw,nosuid,nodev,relatime,uid=1000,gid=1000,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,showexec,utf8,flush,errors=remount-ro"
+  },
+  "card_path": "/test/rally-18",
+  "files": {
+    "rally.bin": "20622e05c82431b58552be533a749779e30a7e2cfdb7b3352e582896fdf2ab70",
+    "fuji.road": "72f835b888a79f3130e2d8c73c9ab8a80e3dcdc04991ea223038e43ce0d4269e",
+    "oval.road": "a433e692f75e086bc0b20f80442cb55f5dda2b445a291fd3537bf951e02cf625",
+    "vdp_rally.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+    "run-fuji.txt": "4a33f747f2d0c743ceb0674c7958dadbba5ac2b2737bac6324277ca168a13fa4",
+    "run-oval.txt": "6b850acbd428d3f473f40a7117c9c09794c4d04f57583204edd38d32085ff5a5",
+    "readme.txt": "4a545cfd77dad154a45d21a3ca52936abf23b507f8cfe6104e5314516673941d",
+    "manifest.json": "33b5a5e6c333fd5fdb81d0d60c43066a7a3ac6276b7a31982f050d8b811774fe"
+  },
+  "identical_r19_vdp": true,
+  "r19_files_unchanged": true,
+  "protected_startup_sha256": {
+    "autoexec.txt": "7d80465fe605473784e6985a3804879638aec8eefa54de7461167b252317c737",
+    "!boot.obey": null
+  },
+  "startup_unchanged": true,
+  "writes_flushed": true,
+  "backup": "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-18/.work/c8-before-20261016T032229Z",
+  "mounted": true
+}

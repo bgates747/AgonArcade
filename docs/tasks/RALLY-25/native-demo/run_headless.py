@@ -5,6 +5,9 @@ from verify_run import verify
 
 def run(profile,timeout=180):
     profile=Path(profile).resolve();app=profile/'sdcard/rally25';art=profile/'last-run'
+    boost=Path('/sys/devices/system/cpu/cpufreq/boost')
+    if boost.exists() and boost.read_text().strip()!='0':
+        raise RuntimeError('CPU boost enabled; unattended emulator run refused before changing logs')
     if art.exists():
         history=profile/'history';history.mkdir(exist_ok=True);art.rename(history/str(time.time_ns()))
     art.mkdir();env=os.environ.copy();env.update(SDL_VIDEODRIVER='dummy',SDL_AUDIODRIVER='dummy')
