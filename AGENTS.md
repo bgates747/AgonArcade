@@ -528,6 +528,12 @@ accuracy-only rejection. Other partial-optimization families remain pending.
 
 ## Emulator product names
 
+Author preference (2026-10-16): every launch guard must print a clear rejection
+reason to the console/stderr before exiting, with the needed correction when
+known. Never silently reject a launch with only an exit status. Human R25
+review launches permit enabled boost on Author instruction; automated runs
+retain their separately enforced boost-off/silent-headless requirements.
+
 Select the name from the runtime and VDP backend: Fab uses a native host VDP;
 Flexe executes actual ESP32 VDP firmware. From the profile directory, launch
 Fab with `./fab-agon-emulator` and raw link `fab-agon-emulator.bin`, or Flexe
@@ -537,3 +543,35 @@ MOS/runtime identity and backend guards. Flexe must have no Fab-named launcher,
 symlink or compatibility shim. Existing Fab launch instructions apply only to
 Fab profiles. For Flexe, call the canonical setup tool's `name_flexe_profile`
 after customization and before recording deployment checksums.
+
+RALLY-28 BITMAP BENCHMARK RETURN (2026-10-15): Author released the largest
+independent tranche after task/all-dirt commit/push; checkpoint94cf665pushed.
+Read bitmap-spans/BENCHMARK-RESULTS.md under docs/tasks/RALLY-28/standard-vdp.
+SPAN-001-06–10independent delivery complete:960,000phase cases; road CPU1024/
+stockFab512windows>=10s; fair on-demand polygons22.83wall ms/31.98completed
+road FPS beat lookup bitmaps28.44ms/27.74FPS. Redundant all-row polygon control
+is labelled. Short16frame Flexe normal-worker timing probes pass; nominal local
+VDP complete42–45ms polygons/347ms bitmap, not calibrated hardware time/raster.
+Three long128frame Flexe cases fail after113/57/83replies; exact prefixes and
+raw logs retained, no sustained qualification. Actual isolated physics wrapper
+passes8192ticks/420fields at335.41host ticks/s with mode/PRT restored; no integrated
+cadence claim. Ten hardware cases/exact archive and12scenario offline chain
+prepared; PLAN.ready=false, live adapter/bench/installed identities unqualified.
+Proposed SPAN-001-11requires separate physical commissioning/operational scope.
+No hardware/flash/startup/peer/mail/product/scheduler changes;101protected inputs
+unchanged. All owned sessions stopped, both SDL dummy drivers, boost0.
+New results/source uncommitted for Author review; no further test campaign or
+optimization adoption is implied. Prior native/full-scene visual issues remain.
+
+RALLY-28 PHYSICAL SUITE RETURN (2026-10-15): subsequent Author releases staged
+ten cases on Olimex SD746D-53DBat/test/arcade/rally/r28-road, preserved startup,
+then installed/readback-verified exact diagnostic36edc736atapp0/0x10000fromPi.
+Author manually ran suite and returned card to Oryx. Read
+bitmap-spans/SPAN-001-09/HARDWARE-RESULTS.md: all10cases/4640frame records and
+8192physics ticks/all420fields pass;96returned files preserved,43deployment and
+startup hashes unchanged. Sparse polygons9.761active frame-span nominal PRT
+FPS versus lookup bitmaps2.614; VDP-local mean70.883/340.984ms. Whole diagnostic
+windows include readout and give7.588/2.429FPS. Isolated physics334.91ticks/s;
+CPU matches Fab wall observations within0.14%. No full-game/cadence/motion
+acceptance or backend adoption. Card retrieval read-only; live Pi coordinator
+still unqualified. New source/receipts/results uncommitted for Author review.
