@@ -1,0 +1,36 @@
+{
+  "completed": [
+    "NATIVE-AB-001-01",
+    "NATIVE-AB-001-02",
+    "NATIVE-AB-001-03",
+    "NATIVE-AB-001-04"
+  ],
+  "human_gate": "NATIVE-AB-001-05; staged and stopped",
+  "variants": 11,
+  "completed_headless_runs": 13,
+  "target_frames": 11700,
+  "target_physics_ticks": 46800,
+  "headless_drivers": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "boost_setting_during_runs": 0,
+  "host_power_setting_changed": false,
+  "preserved_startup_failure": "STARTUP-FAILURE.json; same bytes passed bounded fresh retry",
+  "baseline_immutable_files_verified": 61,
+  "all_final_world_states_equal": true,
+  "repeated_gain_percent": 6.217838765008565,
+  "headless_nominal_pooled_fps": {
+    "control": 14.533710133225677,
+    "float-quad-layered": 15.437392795883362
+  },
+  "stock_quad_source": "Uses existing firmware; no SDK/compiler/runtime edits",
+  "physical_candidate_run": false,
+  "recommended_review_profiles": [
+    "rally28-native-review01",
+    "rally28-native-aligned-review01",
+    "rally28-native-control-review01"
+  ],
+  "current_game_sha256": "7f1620ed8139ee779e7d50e333ef572aeaf612a154e41ec574e63a57da760293",
+  "new_rally_work_committed": false
+}

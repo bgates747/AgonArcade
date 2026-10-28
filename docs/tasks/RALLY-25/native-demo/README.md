@@ -1,5 +1,7 @@
 # Real composed Fuji demo — visual accepted; hardware staged
 
+**2026-10-16 review correction:** the preserved human/C8 review binary still uses the older3/3/4MOS-unit pacer, requesting nominal36FPS at120units/s despite its30-Hz label. Current guest source uses4units/30FPS. [Recovered-byte evidence and comparison policy](../../RALLY-28/custom-vdp/paced-road/PACER-CORRECTION.md). Latest preserved paced returns are29.57FPS Flexe/26.84FPS Console8; their120-unit clock conversions remain correct. The older unpaced comparison below is a separate fixture.
+
 Latest matched benchmark: **Flexe29.02FPS / Console823.45FPS**, using byte-identical unpaced fixtures/firmware.900frames/3600ticks and complete final state pass. [Comparison/evidence](IDENTICAL-COMPARISON.md). These supersede the earlier comparison of paced Flexe versus unpaced hardware.
 
 The real composed Fuji demo is built, qualified headlessly and staged stopped on Oryx. Actual Golem physics and the accepted native renderer pass900 rendered frames/3,600 physics ticks; final source globals and all five mutable arrays match the independent model. The viewing configuration averages28.85 nominal MOS-clock FPS in Flexe JIT, below its30-FPS target. This is experimental fixture evidence, not hardware FPS or a full playable game. The Author accepted this fixture's appearance, including the intentionally flat background; the saved human run is verified. No commit/push has occurred.

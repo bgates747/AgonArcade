@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "firmware_sha256": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+  "stock_graphics_byte_identical": true,
+  "vdp_pin": "1056ee38ec1cc68ed327bd32ee47d04b1c30597c",
+  "graphics_pin": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+  "files": {
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/context/graphics.h": "eba700bc2b988af484784c4d90ebc8233a008687f1e5d5b65ab61cc7e6433d2a",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/vdu.h": "24923b53a83d77ebf729795d7ecb7343e6f2fed0e9d748d48fc83c8b75e805cb",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/vdu_buffered.h": "b9d9d93295ddc5fb05c802071057e32ed9755837f029ce381340072352c262f0",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/agon_screen.h": "648dbc7d0ba9d98a3115a4ba307ff7585c6c5e28189c1e8961eff7a3c3d60343",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/canvas.cpp": "3626baa0df539ed5a8fde03d67d236c5a38636cd914764eca702b5310bde3271",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/displaycontroller.cpp": "f3588a684647ef258c024251d17b029e2877c8363b28a570432376f353232902"
+  },
+  "extracted_functions_sha256": "b023563d49baebdfa4f12d61cca0bdce2cc36f9ecdf25ae74f2ee60e4317ec7e",
+  "probes": {
+    "ordinary": {
+      "raster_and_point_order_cases": 360,
+      "triangles_per_shape": 2,
+      "quad_fills_per_shape": 1,
+      "coverage_equal_in_sampled_cases": true
+    },
+    "sanitized": {
+      "raster_and_point_order_cases": 360,
+      "triangles_per_shape": 2,
+      "quad_fills_per_shape": 1,
+      "coverage_equal_in_sampled_cases": true
+    }
+  },
+  "emulator_launched": false,
+  "firmware_modified": false,
+  "disposition": "Use stock filled path PLOT221 for a four-corner tapered band; PLOT117 is a three-corner parallelogram",
+  "counts": {
+    "current_vdu_bytes_per_material": 27,
+    "proposed_vdu_bytes_per_material": 27,
+    "current_fill_path_calls_per_material": 2,
+    "proposed_fill_path_calls_per_material": 1
+  },
+  "caveat": "Host probe executes extracted point-stack/path/raster functions with stubs; no firmware integration, target speed or visual acceptance claimed"
+}

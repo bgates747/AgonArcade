@@ -1,0 +1,32 @@
+{
+  "completed": [
+    "NATIVE-AB-001-01",
+    "NATIVE-AB-001-02"
+  ],
+  "frozen_files_verified": 61,
+  "runtime_files_verified": 16,
+  "source_and_binary_pacer_agree": true,
+  "native_rebuild_byte_identical": true,
+  "stock_path_probes": {
+    "ordinary": {
+      "raster_and_point_order_cases": 360,
+      "triangles_per_shape": 2,
+      "quad_fills_per_shape": 1,
+      "coverage_equal_in_sampled_cases": true
+    },
+    "sanitized": {
+      "raster_and_point_order_cases": 360,
+      "triangles_per_shape": 2,
+      "quad_fills_per_shape": 1,
+      "coverage_equal_in_sampled_cases": true
+    }
+  },
+  "protected_current_game_sha256": "7f1620ed8139ee779e7d50e333ef572aeaf612a154e41ec574e63a57da760293",
+  "new_renderer_candidate": false,
+  "new_emulator_runs": 0,
+  "physical_changes": false,
+  "peer_files_changed": false,
+  "rally_results_committed": false,
+  "upstream_docs_pr": "https://github.com/AgonPlatform/agon-docs/pull/86",
+  "next_step": "NATIVE-AB-001-03 isolated paced renderer candidates"
+}

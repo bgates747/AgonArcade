@@ -1,0 +1,291 @@
+{
+  "control": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-control-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "7ba74852ce81cbe1cfd8d1b0ec3c44256734c88a201c3cc4127db765ad24d2bb",
+      "sdcard/rally25/script.bin": "1771781e986eb956ef684164ab3e62c002164e8c644ada7fd5aed72fa809c17e",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  },
+  "float-tri-layered": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-float-tri-layered-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "7ccd34a5e21ed4a682e364180e1aa749f16ea1764b6f9b3fecd060a50e67e3c2",
+      "sdcard/rally25/script.bin": "26d240ab7d6dfff36710ebf034564a7b91ff8d614880607f3e48422a413e11f2",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json",
+      "sdcard/rally25/script.bin"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  },
+  "integer-tri-layered": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-integer-tri-layered-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "bd3d62baf0eae9b66c3d18b96b1b785aa3a90d6a0f81320f1eb081e708cd06a6",
+      "sdcard/rally25/script.bin": "8a11ca923355095c4af50bffe38820ad7871ed007bf22189b73ce92254a85077",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json",
+      "sdcard/rally25/script.bin"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  },
+  "float-quad-layered": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-float-quad-layered-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "876730b258054dd08ebb6d05ffb9a7bbb0af19135d800bcc6f9296a7076cb9a3",
+      "sdcard/rally25/script.bin": "7bf333c02ff97e9afc061ee4ab44e2d1ef726f58666a0a3f6dfe5d3812644ee8",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json",
+      "sdcard/rally25/script.bin"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  },
+  "integer-quad-layered": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-integer-quad-layered-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "557cb86db5bb7d78c6a50fb32e5eb3dbafd075b46ca575c8f2c611ebf82de41e",
+      "sdcard/rally25/script.bin": "76f3d1802839a1a8b3cdfed77a4e8484f81eca18ce3345b6cf805e8bae994b32",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json",
+      "sdcard/rally25/script.bin"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  },
+  "float-tri-strips": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-float-tri-strips-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "f597fc83cb2701e36a6f0aa6b8cf234ef2ac22fa8828b7191f17cf59274e0fae",
+      "sdcard/rally25/script.bin": "15ddb2600970d8ad1d3d5b73cc58759957e2d781eb3d27e7ba82eba4cfaf31fa",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json",
+      "sdcard/rally25/script.bin"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  },
+  "integer-tri-strips": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-integer-tri-strips-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "d77907c24986e6774c4f22c87095f60827892bf00691318460b6ea0af378913f",
+      "sdcard/rally25/script.bin": "a2f4b7b02996d93d291ff8acf7a7dbfc1e8181636bf78f15a9230be802f9be39",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json",
+      "sdcard/rally25/script.bin"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  },
+  "float-quad-strips": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-float-quad-strips-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "30b3bd1ae56e2daccc039b34b97225c4802580334dd90bd09934703ea2c3d514",
+      "sdcard/rally25/script.bin": "27b617a676ded66774179bb46cf7ab32a9b371589a2fe4e1c5e7ba7559f2c552",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json",
+      "sdcard/rally25/script.bin"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  },
+  "integer-quad-strips": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-integer-quad-strips-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "4344af13a6f949bc060a2e731a1fecf807e0f910f944e2a84bb32ffbc941f7ef",
+      "sdcard/rally25/script.bin": "cbdf597a81c120313286ce16e17be160c41039ea859d08a4d46bc12afd8841db",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json",
+      "sdcard/rally25/script.bin"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  },
+  "integer-quad-segments": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-integer-quad-segments-auto01",
+    "input_sha256": {
+      "flexe-agon-emulator": "d4ae27cae54eced74e8ad39a5b1b43c6b6671a4f8a1f3f17c49af8e6f12e79ba",
+      "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+      "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+      "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+      "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+      "sdcard/rally25/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "sdcard/rally25/artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "sdcard/rally25/expected.json": "c57923eabe5b740f9cc826b78ae999369bb3965f29899b5fe46e913c96b9ba45",
+      "sdcard/rally25/script.bin": "f9b3c929be3d57a845476519b020756fec8976cd06b88de986ecbda613ebf02b",
+      "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "changed_files": [
+      "flexe-agon-emulator",
+      "sdcard/rally25/expected.json",
+      "sdcard/rally25/script.bin"
+    ],
+    "stopped": true,
+    "audio_driver": "dummy",
+    "power_settings_changed": false
+  }
+}

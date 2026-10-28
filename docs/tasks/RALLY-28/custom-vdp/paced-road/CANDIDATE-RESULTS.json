@@ -1,0 +1,384 @@
+{
+  "scope": "Matched silent headless Flexe with boost disabled; paced900frames/3600steps per case; nominal120MOS units/s",
+  "rows": [
+    {
+      "candidate": "control",
+      "fps": 14.83924154987634,
+      "ratio_to_control": 1.0,
+      "average_bands": 14.794444444444444,
+      "average_material_shapes": 65.07,
+      "average_polygon_fills": 130.14,
+      "average_resident_road_bytes": 1799.29,
+      "average_sampled_material_writes": 55673.0,
+      "maximum_sampled_pixel_difference": 0,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "float-tri-layered",
+      "fps": 14.559180372067942,
+      "ratio_to_control": 0.9811269884065785,
+      "average_bands": 14.794444444444444,
+      "average_material_shapes": 65.07,
+      "average_polygon_fills": 130.14,
+      "average_resident_road_bytes": 1799.29,
+      "average_sampled_material_writes": 55673.0,
+      "maximum_sampled_pixel_difference": 0,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "integer-tri-layered",
+      "fps": 14.484978540772532,
+      "ratio_to_control": 0.9761266094420601,
+      "average_bands": 14.794444444444444,
+      "average_material_shapes": 65.07,
+      "average_polygon_fills": 130.14,
+      "average_resident_road_bytes": 1799.29,
+      "average_sampled_material_writes": 55673.1,
+      "maximum_sampled_pixel_difference": 10,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "float-quad-layered",
+      "fps": 15.661252900232018,
+      "ratio_to_control": 1.0553944315545243,
+      "average_bands": 14.794444444444444,
+      "average_material_shapes": 65.07,
+      "average_polygon_fills": 65.07,
+      "average_resident_road_bytes": 1799.29,
+      "average_sampled_material_writes": 55673.0,
+      "maximum_sampled_pixel_difference": 0,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "integer-quad-layered",
+      "fps": 15.181332583637898,
+      "ratio_to_control": 1.0230531346640428,
+      "average_bands": 14.794444444444444,
+      "average_material_shapes": 65.07,
+      "average_polygon_fills": 65.07,
+      "average_resident_road_bytes": 1799.29,
+      "average_sampled_material_writes": 55673.1,
+      "maximum_sampled_pixel_difference": 10,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "float-tri-strips",
+      "fps": 10.575793184488838,
+      "ratio_to_control": 0.7126909518213866,
+      "average_bands": 14.794444444444444,
+      "average_material_shapes": 115.34555555555555,
+      "average_polygon_fills": 230.6911111111111,
+      "average_resident_road_bytes": 3156.73,
+      "average_sampled_material_writes": 28557.0,
+      "maximum_sampled_pixel_difference": 0,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "integer-tri-strips",
+      "fps": 10.830324909747294,
+      "ratio_to_control": 0.729843561973526,
+      "average_bands": 14.794444444444444,
+      "average_material_shapes": 115.34555555555555,
+      "average_polygon_fills": 230.6911111111111,
+      "average_resident_road_bytes": 3156.73,
+      "average_sampled_material_writes": 28557.6,
+      "maximum_sampled_pixel_difference": 10,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "float-quad-strips",
+      "fps": 11.558219178082192,
+      "ratio_to_control": 0.7788955479452055,
+      "average_bands": 14.794444444444444,
+      "average_material_shapes": 115.34555555555555,
+      "average_polygon_fills": 115.34555555555555,
+      "average_resident_road_bytes": 3156.73,
+      "average_sampled_material_writes": 28557.0,
+      "maximum_sampled_pixel_difference": 0,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "integer-quad-strips",
+      "fps": 11.665586519766688,
+      "ratio_to_control": 0.7861309138042774,
+      "average_bands": 14.794444444444444,
+      "average_material_shapes": 115.34555555555555,
+      "average_polygon_fills": 115.34555555555555,
+      "average_resident_road_bytes": 3156.73,
+      "average_sampled_material_writes": 28557.6,
+      "maximum_sampled_pixel_difference": 10,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "integer-quad-segments",
+      "fps": 9.299121749612537,
+      "ratio_to_control": 0.6266574823488893,
+      "average_bands": 22.072222222222223,
+      "average_material_shapes": 167.80555555555554,
+      "average_polygon_fills": 167.80555555555554,
+      "average_resident_road_bytes": 4573.15,
+      "average_sampled_material_writes": 28562.7,
+      "maximum_sampled_pixel_difference": 142,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    },
+    {
+      "candidate": "float-quad-segments",
+      "fps": 13.629480060575467,
+      "ratio_to_control": 0.9184755174154468,
+      "average_bands": 22.072222222222223,
+      "average_material_shapes": 94.93888888888888,
+      "average_polygon_fills": 94.93888888888888,
+      "average_resident_road_bytes": 2605.75,
+      "average_sampled_material_writes": 55674.5,
+      "maximum_sampled_pixel_difference": 140,
+      "stack": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ]
+    }
+  ],
+  "best_observed": "float-quad-layered",
+  "driver_and_hot_loop_tape_unchanged": true,
+  "firmware_and_runtime_unchanged": true,
+  "recurring_ez80_wire_bytes_per_frame": 248,
+  "requested_pacer_fps": 36,
+  "physics_steps_per_frame": 4,
+  "identical_final_world": true,
+  "physical_candidate_run": false,
+  "limitations": [
+    "Control/best repeated in reverse order; other variants have one completed measurement",
+    "Aggregate fixture timing; native physics/geometry/raster phase timings not isolated",
+    "Host raster samples do not replace Author motion review",
+    "Emulator VDP throughput does not predict hardware gain",
+    "Unpaced measurements remain deferred"
+  ],
+  "repeat": {
+    "float-quad-layered": {
+      "fps": 15.219842164599775,
+      "elapsed_mos_units": 7096,
+      "nominal_mos_seconds": 59.13333333333333,
+      "prt": 61.207,
+      "host_seconds_including_startup": 69.41,
+      "backend_stats": {
+        "engine": "jit",
+        "frames": 2157,
+        "cycles": 8981672708,
+        "retired": 5026185386,
+        "uart_rx": 493980,
+        "uart_tx": 89089,
+        "uart_delivered": 89089,
+        "isync": 4515,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "reply_sha256": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+      "final_buffers": {
+        "1": "5247010070003601070000000000000000000000951100000f0004000f000000070000001100c60000000000303532520100000000000000000000000000000002000000000000000000000000000000030000000000000000000000000000000400000000000000000000000000000005000500000014000000000000000000007512002c010000100e000000000000000000000000000000000000000000000000000000008038010000000000000000009600000000003200000032000000000000000000d0ff11000000000050381300b437000080380100b4370000000019000000010002000100b437000001000000000001000000110000001300000000000000010000002d0200009001000001000000020000000500060011000000110000000700000084030000d0ff4300900100000300",
+        "2": "010001000100010001000100",
+        "3": "d0ff43004f0c4400500c4400d01844002046440050384500",
+        "4": "d0ff11004f0c1200500c1200d01812002046120050381300",
+        "5": "4cc8ffffb41300004c100000b4efffff4cecffffb4370000",
+        "6": "000001000000000000000000"
+      },
+      "stack_observations": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ],
+      "boost_after": "0",
+      "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-float-quad-layered-repeat01"
+    },
+    "control": {
+      "fps": 14.240506329113924,
+      "elapsed_mos_units": 7584,
+      "nominal_mos_seconds": 63.2,
+      "prt": 65.413,
+      "host_seconds_including_startup": 73.607,
+      "backend_stats": {
+        "engine": "jit",
+        "frames": 2210,
+        "cycles": 9198687986,
+        "retired": 5318983288,
+        "uart_rx": 493996,
+        "uart_tx": 89089,
+        "uart_delivered": 89089,
+        "isync": 4515,
+        "code_invalidations": 2,
+        "keys": 0,
+        "failed": false,
+        "unhandled": 0,
+        "unregistered": 0,
+        "unmapped": 0
+      },
+      "reply_sha256": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+      "final_buffers": {
+        "1": "5247010070003601070000000000000000000000951100000f0004000f000000070000001100c60000000000303532520100000000000000000000000000000002000000000000000000000000000000030000000000000000000000000000000400000000000000000000000000000005000500000014000000000000000000007512002c010000100e000000000000000000000000000000000000000000000000000000008038010000000000000000009600000000003200000032000000000000000000d0ff11000000000050381300b437000080380100b4370000000019000000010002000100b437000001000000000001000000110000001300000000000000010000002d0200009001000001000000020000000500060011000000110000000700000084030000d0ff4300900100000300",
+        "2": "010001000100010001000100",
+        "3": "d0ff43004f0c4400500c4400d01844002046440050384500",
+        "4": "d0ff11004f0c1200500c1200d01812002046120050381300",
+        "5": "4cc8ffffb41300004c100000b4efffff4cecffffb4370000",
+        "6": "000001000000000000000000"
+      },
+      "stack_observations": [
+        {
+          "label": "stack before",
+          "frame": null,
+          "value": 2260
+        },
+        {
+          "label": "stack after",
+          "frame": null,
+          "value": 2260
+        }
+      ],
+      "boost_after": "0",
+      "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-native-control-repeat01"
+    }
+  },
+  "paired_repeat": {
+    "first_order": [
+      "control",
+      "float-quad-layered"
+    ],
+    "repeat_order": [
+      "float-quad-layered",
+      "control"
+    ],
+    "first_ratio": 1.0553944315545243,
+    "repeat_ratio": 1.0687711386696732,
+    "pooled_fps": {
+      "control": 14.533710133225677,
+      "float-quad-layered": 15.437392795883362
+    },
+    "pooled_ratio": 1.0621783876500857
+  }
+}

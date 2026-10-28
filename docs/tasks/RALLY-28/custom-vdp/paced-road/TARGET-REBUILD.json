@@ -1,0 +1,53 @@
+{
+  "byte_identical": true,
+  "compared": {
+    "rally-render.vdpl": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+    "rally-render.elf": "4cb7c86a5a25e5b4ea57da7daa8f0149adfde6230a652ad5b55afef2ded55c6a",
+    "rally-render.upload.elf": "3b748c9395d5ffd1b1972e1ba4eadab77f7eb53e39c9c6844d480349ed42b260"
+  },
+  "generated_c_changed": false,
+  "helper_changed": false,
+  "sdk_revision": "9fbb21d",
+  "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0",
+  "resources": {
+    "name": "rally-render",
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/paced-road/control/package/native.c",
+    "source_sha256": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992",
+    "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+    "declared_limits": {
+      "text": 32768,
+      "data": 4096,
+      "stack": 2048,
+      "image": 65536
+    },
+    "build_id": "0x474c3731",
+    "capabilities": 1,
+    "envelope_bytes": 64,
+    "elf_bytes": 32900,
+    "package_bytes": 32964,
+    "sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+    "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/paced-road/.work/native-rebuild/rally-render.vdpl",
+    "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/paced-road/.work/native-rebuild/rally-render.elf",
+    "entry_virtual": 8080,
+    "resident_text_bytes": 30428,
+    "resident_data_bytes": 980,
+    "relative_relocations": 43,
+    "allocated_sections": {
+      ".text": {
+        "virtual_address": 824,
+        "bytes": 30428,
+        "type": 1
+      },
+      ".rodata": {
+        "virtual_address": 31252,
+        "bytes": 436,
+        "type": 1
+      },
+      ".data": {
+        "virtual_address": 36028,
+        "bytes": 544,
+        "type": 1
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 # AgonArcade TODO
 
-- **NATIVE-AB-001-01–07** [ ] — **Awaiting Author review:** paced Rally-25 control/candidate road-renderer comparison under RALLY-28; same workload/physics/pacing/diagnostics, revised edge arithmetic/material drawing only. Unpaced version deferred. [Marching orders](docs/tasks/RALLY-28.md#next-tranche--paced-native-rally-25-renderer-comparison-awaiting-author-review). Stop before execution.
+- **HZ60-001-01–07** [ ] — Author released2026-10-28: document/freeze/push all current dirt, fresh current-native baseline and separate unpaced comparison, phase/fence cost accounting, existing-ABI native span-to-bitmap road candidate, host qualification and finite silent Oryx A/B. Target60Hz; Flexe optimistic relative to hardware. [Work contract](docs/tasks/RALLY-28/custom-vdp/throughput/PLAN.md). Preserve prior controls/visual gates; hardware testing follows a strong candidate and Author release. Existing boost-off thermal guard remains mandatory; no host-power change.
+
+- **NATIVE-AB-001-01–07** [ ] — **Candidates ready for Author motion review:**01–04complete;05headless/staging delivered, human gate open. Eleven variants/13successful silent boost-off Flexe runs: stock quad/layered15.44pooled FPS versus14.53control (+6.22%); integer/strips slower. Fast-path segment-aligned13.63FPS; same final world throughout. One startup upload stall preserved, unchanged fresh retry passed. Exact driver/pacer/physics/assets/firmware retained; C8/unpaced work deferred. [Results](docs/tasks/RALLY-28/custom-vdp/paced-road/CANDIDATE-RESULTS.md), [review commands](docs/tasks/RALLY-28/custom-vdp/paced-road/HUMAN-REVIEW.md).
 
 - **ROAD-OPT-001-01–05** [ ] — RALLY-28 native follow-ups: stock trapezoids, reduced material overdraw, shared fixed-point edge calculations, and separate physics/render/one-step-one-render unpaced tests. Preserve the paced R25 control; see [scope](docs/tasks/RALLY-28.md#native-road-optimization-and-unpaced-tests--2026-10-16).
 

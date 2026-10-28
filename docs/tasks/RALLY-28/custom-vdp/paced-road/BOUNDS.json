@@ -1,0 +1,32 @@
+{
+  "frozen_fuji_coefficients": 9728,
+  "q_range": [
+    8,
+    128
+  ],
+  "material_u_range": [
+    -106,
+    106
+  ],
+  "fraction_q12_range": [
+    0,
+    4095
+  ],
+  "squared_fraction_q12_range": [
+    0,
+    4094
+  ],
+  "conservative_abs_aa": 96168,
+  "conservative_abs_bb": 89791,
+  "conservative_abs_centre_q8": 814496,
+  "conservative_abs_centre_pixel": 3183,
+  "conservative_abs_endpoint_numerator": 172718,
+  "signed32_safe": true,
+  "int16_plot_coordinates_safe": true,
+  "maximum_legacy_curve_bands": 23,
+  "maximum_stripe_bands": 11,
+  "conservative_segment_band_count": 17,
+  "conservative_maximum_road_bytes": 8662,
+  "road_capacity": 20480,
+  "rounding": "(centre*50+(y-96)*u)/50, signed truncation toward zero after translation"
+}

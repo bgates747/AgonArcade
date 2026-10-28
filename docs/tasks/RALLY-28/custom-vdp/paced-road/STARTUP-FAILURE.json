@@ -1,0 +1,25 @@
+{
+  "uart_bytes": 209315,
+  "fixture_prefix_offset": 454,
+  "matched_fixture_prefix_bytes": 208861,
+  "received_tail_bytes": 208861,
+  "phases": [
+    [
+      "artwork.vdu",
+      0,
+      58879
+    ],
+    [
+      "assets.vdu",
+      58879,
+      149554
+    ],
+    [
+      "module upload",
+      208433,
+      32906
+    ]
+  ],
+  "stop_phase": "module upload",
+  "evidence": "No guest log; backend failure counters zero. Partial exact fixture prefix, no rendering started."
+}
