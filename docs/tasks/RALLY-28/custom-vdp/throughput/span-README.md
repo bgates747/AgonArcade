@@ -1,0 +1,27 @@
+# Rally-owned native span bitmap candidate
+
+This candidate replaces road-material polygon commands with native horizontal spans written into a resident RGBA2222 bitmap, then one ordinary stock bitmap plot. It uses the frozen ABI 1.0, SDK builder and firmware. The generated simulation source, public helper ABI, float endpoint expressions, legacy band partition, actor/player commands, HUD/finish commands, foreground pacer and swap remain unchanged. Its additional application-owned buffer is 50700, one 38400-byte block for 320×120 pixels at screen y=104..223.
+
+`span-BUILD.json` records the exact target module, setup/fixture hashes and resource census. `span-HOST-ordinary.json` and `span-HOST-sanitized.json` both pass 900 frames/3600 ticks against the actual generated simulation plus independent world model. All 900 road images match the stock four-corner raster exactly. There are 490 independent edge cases, 598 section raster cases, six invalid-input cases and 126 helper/failure/lifetime cases per build. Exact pixel agreement here establishes the initial comparison; it is not a new visual acceptance requirement. No emulator, hardware or performance result is claimed by these host checks.
+
+The road list averages 45.4 resident bytes/frame, maximum 399 when finish rectangles are included, versus 1799.29 in the prior float-quad control. Four authoritative physics calls per frame and 248 recurring eZ80 UART bytes/frame are retained. Removing local command bytes is an architectural change to measure, not a demonstrated throughput gain. The bitmap adds 38400 bytes of persistent image storage and a complete image write/read pass. Setup adds 38427 wire bytes outside timing. The short list disables the affine transform with 65535, selects bitmap 50700 by its 16-bit ID and plots it at 0,104. Existing finish rectangles follow the bitmap; existing actors/player follow the road list.
+
+`span.inc` keeps the original binary32 endpoint expression order. Its integer edge DDA reproduces stock `fillPath` intersections: each edge uses a mathematical ceiling, the top boundary is excluded, the bottom included, and the right boundary excluded. The initial row 104 is grass; row 224 is excluded from the image and the unchanged HUD rectangle overwrites the lower screen. Each included row is filled as disjoint grass/kerb/asphalt/line intervals, writing every image pixel once. The RGBA values come from the exact source's default 64-colour palette: logical 2=c8, 8=d5, 9=c3, 11=cf, 15=ff. These are opaque AABBGGRR values, not native VGA/sync bytes.
+
+The helper's private preflight validates the extra image range and checks overlap against assets, ordinary outputs and native arguments/context/completion. The image is acquired for writing only around road preparation and released before command publication. Peak service usage is four leases, exactly the frozen runtime's allowance: generated root, asset, road output and image. No pointer persists in module state. The tests cover missing/truncated/malformed/aliased image views, partial acquisition errors and failed releases; a release failure clears binding and cannot be hidden by a simultaneous command-capacity failure.
+
+Stock bitmap creation references the buffer directly with `copy=false`. The existing mode 136 path executes drawing synchronously. The next native update occurs after the earlier bitmap plot and swap in the single-owner command stream, so one image allocation suffices. The application must preserve that sequencing and allocation identity. The setup appends a buffer clear/write and bitmap association to `native.vdu`; the script patches that external-file length. A stock buffer clear after UNLOAD removes the bitmap/user association before freeing storage. No new resources are created per frame.
+
+Reproduce from repository root, using the existing frozen prerequisites:
+
+```bash
+.venv/bin/python docs/tasks/RALLY-28/custom-vdp/throughput/span_build.py
+.venv/bin/python docs/tasks/RALLY-28/custom-vdp/throughput/span_check.py
+.venv/bin/python docs/tasks/RALLY-28/custom-vdp/throughput/span_package.py
+```
+
+The builder writes `.work/span-candidate/package`, `target` and `fixture`. The fixture remains paced, with every timed tape record byte-identical to the frozen driver. The parent-owned `fixtures.py::unpace()` can remove only the foreground deadline for its separately named unpaced comparison. Keep the stock swap and its VSync ceiling. The parent staging/runner owns remote testing; this worker neither accessed Oryx nor launched an emulator.
+
+For phase interpretation, native road preparation now includes the span raster into the image; stock road execution becomes an ordinary bitmap blit. Baseline road preparation constructed polygon lists, with polygon raster during execution. Compare the combined road preparation/execution cost and complete frames; an isolated preparation number compares different amounts of work. The final compiler stack frames are recorded separately and do not qualify runtime stack use. Actual INFO17/cleanup checks and the Author's motion review remain required.
+
+The target package and fixture/source copies are preserved in `span-PACKAGE.zip`; hashes and members are in `span-PACKAGE.json`. Old paced-road files, control binaries, generated source, compiler, SDK and firmware are unchanged. New results remain an experimental candidate pending target testing and review.

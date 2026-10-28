@@ -1,0 +1,16 @@
+{
+  "cases": 9,
+  "passed": [
+    "valid_host_stub_records",
+    "incomplete_count",
+    "bad_row_bytes",
+    "zero_counter_progress",
+    "stale_frame",
+    "nested_time_exceeds_parent",
+    "zero_stage_interval",
+    "ambiguous_stage_interval",
+    "single_wrap_delta"
+  ],
+  "synthetic_only": true,
+  "emulator_run": false
+}

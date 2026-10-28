@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "positions": {
+    "center": {
+      "tile": [
+        34,
+        33
+      ],
+      "position": [
+        34.5,
+        33.5
+      ],
+      "degrees": 360,
+      "unique_rendered_headings": 120,
+      "completed_frame_intervals": 120,
+      "host_seconds": 4.137017085,
+      "completed_renderer_fps": 29.006406677675105,
+      "frame_interval_ms": {
+        "min": 27.399402,
+        "mean": 34.475142375,
+        "max": 41.993119
+      },
+      "request_to_delivered_completion_ms": {
+        "min": 18.892025,
+        "mean": 21.5604179,
+        "max": 30.309787
+      },
+      "latency_scope": "Host submission trace to delivered callback; includes transport/queues/drawing/readout, not isolated VDP CPU time",
+      "raw_and_timestamped_events_match": true,
+      "all_completions_presented": true,
+      "full_capture_completions": 129,
+      "full_capture_requests": 130,
+      "unmeasured_shutdown_request_in_flight": 1,
+      "no_translation": true,
+      "no_fizzle": true,
+      "backend_errors": 0,
+      "inputs_preserved": true,
+      "boost_restored": true,
+      "max_sampled_temperature": 56.0
+    },
+    "southretry": {
+      "tile": [
+        34,
+        36
+      ],
+      "position": [
+        34.5,
+        36.5
+      ],
+      "degrees": 360,
+      "unique_rendered_headings": 120,
+      "completed_frame_intervals": 120,
+      "host_seconds": 4.136099554,
+      "completed_renderer_fps": 29.012841309380143,
+      "frame_interval_ms": {
+        "min": 25.053786,
+        "mean": 34.46749628333333,
+        "max": 43.002057
+      },
+      "request_to_delivered_completion_ms": {
+        "min": 19.678783,
+        "mean": 23.018678733333335,
+        "max": 28.021451
+      },
+      "latency_scope": "Host submission trace to delivered callback; includes transport/queues/drawing/readout, not isolated VDP CPU time",
+      "raw_and_timestamped_events_match": true,
+      "all_completions_presented": true,
+      "full_capture_completions": 129,
+      "full_capture_requests": 129,
+      "unmeasured_shutdown_request_in_flight": 0,
+      "no_translation": true,
+      "no_fizzle": true,
+      "backend_errors": 0,
+      "inputs_preserved": true,
+      "boost_restored": true,
+      "max_sampled_temperature": 57.0
+    }
+  },
+  "game_policy_cap_nominal_hz": 30,
+  "same_application_firmware_assets_runtime_and_trace_shim": true,
+  "only_between_position_input_change": "Isolated medium-state player coordinates",
+  "preserved_startup_failure": {
+    "case": "south",
+    "outbound_prefix_bytes": 1422695,
+    "exact_successful_control_prefix": true,
+    "before_game_rendering": true,
+    "identical_retry_passed": true
+  },
+  "silent_headless": true,
+  "all_owned_emulators_stopped": true,
+  "boost_restored": true,
+  "limits": [
+    "One full turn per position; normal AI/combat active",
+    "Extra host timestamp observer overhead included; game/wire bytes unchanged",
+    "Capped actual application, not flat-out maximum renderer capacity",
+    "Completion and C3 submission, not physical monitor scanout or hardware timing"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "frontend_base_commit": "1f7ea21d41a7e1f11fe89848a559e27ce7828423",
+  "pinned_flexe_vendor": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+  "source_files": {
+    "src/xtensa.c": {
+      "sha256": "7cb3d058a595bc70fff4eea4865d69e71e7e219e99fff2e73faec70a180fb849",
+      "checks": [
+        "case XT_SR_CCOUNT:      return cpu->ccount;"
+      ]
+    },
+    "src/jit.c": {
+      "sha256": "1f609d01e16e3300e6f97d71e31bc74cee8353fc9c5631e828e725f5606ca437",
+      "checks": [
+        "case XT_SR_CCOUNT:   off = CPU_OFF_CCOUNT;",
+        "emit_add_reg32_imm32(e, RAX, insn_idx);",
+        "CPU_OFF_JIT_TIME_ACCOUNTED"
+      ]
+    }
+  },
+  "pinned_graphics_files_unchanged": {
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/context/graphics.h": "eba700bc2b988af484784c4d90ebc8233a008687f1e5d5b65ab61cc7e6433d2a",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/vdu.h": "24923b53a83d77ebf729795d7ecb7343e6f2fed0e9d748d48fc83c8b75e805cb",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/vdu_buffered.h": "b9d9d93295ddc5fb05c802071057e32ed9755837f029ce381340072352c262f0",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/agon_screen.h": "648dbc7d0ba9d98a3115a4ba307ff7585c6c5e28189c1e8961eff7a3c3d60343",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/canvas.cpp": "3626baa0df539ed5a8fde03d67d236c5a38636cd914764eca702b5310bde3271",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/displaycontroller.cpp": "f3588a684647ef258c024251d17b029e2877c8363b28a570432376f353232902"
+  },
+  "flush_selector": 202,
+  "vdu_sys_sha256": "35fff838a0942826fd8b63a69bbde9bae17a0d428e6a9289dd03607b225817ef",
+  "target_counter_instructions": {
+    "control": {
+      "disassembly_sha256": "8cdf3c3d93f86487baf755d05a1e78196a4165d628f397fca8f01d643d19ac8a",
+      "ccount_instruction_sites": 7,
+      "prid_instruction_sites": 4
+    },
+    "float-quad-layered": {
+      "disassembly_sha256": "529741d3dfbd6daf4fd681ee9b8c13ce83aac4ed8323f7e7118b07bdcf246813",
+      "ccount_instruction_sites": 7,
+      "prid_instruction_sites": 4
+    }
+  },
+  "ccount_semantics": "Raw per-core counter. Pinned interpreter exposesCCOUNT; JIT adds chained-block/instruction prefix and subtracts time already charged. Abstract guest instruction accounting is not calibrated ESP32 cycles.",
+  "swap_boundary": "In double buffering, stock swap queues its controller primitive and waits for the executing task notification; worker notifies after swapBuffers. Resident final marker follows swap then stockCA drain. This is controller swap completion, not full monitor scanout.",
+  "emulator_run": false,
+  "ccount_runtime_progress_qualified": false,
+  "firmware_changed": false
+}

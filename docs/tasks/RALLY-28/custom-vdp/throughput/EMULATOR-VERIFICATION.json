@@ -1,0 +1,58 @@
+{
+  "checkpoint": "39a546a6e4ac836e59de1d499ffaedac3cbdd43b",
+  "checkpoint_pushed": true,
+  "new_implementation_committed": false,
+  "protected_control_files": 61,
+  "protected_control_hashes_unchanged": true,
+  "prior_archive_unchanged": true,
+  "production_game_unchanged": true,
+  "archives": {
+    "PORTABLE.zip": {
+      "sha256": "cb38303131dca8f5e940d39dede36cae647cb593d902aa1421f54932e3bc5d2e",
+      "verified_payload_members": 114,
+      "manifest_verified": true
+    },
+    "NATIVE-PORTABLE.zip": {
+      "sha256": "2fe3c8afdb13f0bfe406a24cb4649c7510c7e429d3b2a333026acdd92897c315",
+      "verified_payload_members": 30,
+      "manifest_verified": true
+    }
+  },
+  "fixture_input_sets_verified": 14,
+  "successful_900_frame_runs": 15,
+  "phase_128_frame_runs": 2,
+  "phase_analysis_status": "qualified_returned_phase_data",
+  "best_completion_fenced_mos_fps": 25.911708253358924,
+  "best_vs_quad_gain_percent": 69.04990403071018,
+  "review": {
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzview01-native-span-native-fenced-unpaced",
+    "stopped": true,
+    "profile_count_checked": 20,
+    "all_profile_inputs_preserved": true,
+    "review_only_changed_fixture_files": [
+      "artwork.vdu",
+      "expected.json"
+    ],
+    "startup_status_blanked": true,
+    "timed_script_and_driver_unchanged": true,
+    "sound_driver": "dummy",
+    "review_launched": false,
+    "boost_restored": "1",
+    "owned_emulators_after": [],
+    "physical_card_or_flash_operations": false
+  },
+  "emulator_runs_complete": true,
+  "boost_restored": true,
+  "all_owned_emulators_stopped": true,
+  "all_automated_video_audio_dummy": true,
+  "firmware_sdk_compiler_changed": false,
+  "physical_testing_performed": false,
+  "card_or_flash_operations": false,
+  "author_motion_accepted": false,
+  "final_screenshot": "NATIVE-FINAL.png",
+  "historical_prelaunch_receipts_preserved": [
+    "FINAL-VERIFICATION.json",
+    "ORYX-PREFLIGHT.json",
+    "BLOCKED-hzbase01.json"
+  ]
+}

@@ -1,0 +1,19 @@
+# Wolf3D runs at about 29 FPS in the capped Flexe test
+
+The previously deployed playable Wolf3D application delivers **29.0 completed renderer frames per host second** on Oryx Flexe while continuously turning at the original E1L1 start. Both 30-second windows return 870 frames. The application caps render submission and simulation at nominal 30 Hz; this establishes near-cap operation for this workload, not its maximum unpaced capacity or hardware speed.
+
+| Window | Completed frames | Host seconds | Completed FPS |
+| --- | ---: | ---: | ---: |
+| First | 870 | 30.006 | 29.0 |
+| Second | 870 | 30.008 | 29.0 |
+| Combined | 1,740 | 60.014 | 29.0 |
+
+1. **Workload.** Medium-difficulty E1L1, player stationary at original position (29.5,57.5), holding Right. The camera covers all 120 three-degree headings repeatedly, with ordinary game simulation/AI active. Walls, textures, weapon and HUD are present in the final screenshot. Active 3D view is 256×160 inside a 320×240 double-buffered display. This does not exercise a complete map traversal or a crowded combat scene. [Final image](FINAL.png).
+2. **What was measured.** Existing W3DR event-one packets report completed hidden-buffer rendering after drawing drains. Two contiguous host CLOCK_MONOTONIC windows exclude loading, menus and four seconds of turning warmup. All 1,876 completions in the complete gameplay capture are consecutive and match exactly 1,876 render requests and 1,876 foreground C3 presentation commands; the larger count includes warmup/cleanup. No death-fizzle events occurred. Matching C3 proves submission of presentation, not monitor scanout. UART captures flush every 250 ms and were polled every 25 ms, so report approximately one decimal place. [Raw measurements](RUN.json), [verified summary](RESULTS.json), [analysis](analyze.py).
+3. **Exact version.** Used the already deployed 105,122-byte application, SHA256 `4cd70b101282370da113b47b3fadea8309307804747613c886562a25ede91e73`, with existing Wolf custom VDP firmware `fa1625cb…` and matching ELF. The newer 106,434-byte intermission candidate was not substituted. Current level files contain a diagnostic elevator spawn; only offsets 18 and 22 in the isolated medium state copy were changed to restore the original start. Original source/generated/deployed files remain unchanged. [Input provenance](INPUTS.json), [profile/runtime pins](PROFILE.json).
+4. **Environment and teardown.** Same pinned Flexe frontend `28f50e87…`, adapter `200f28cb…` and official MOS 3.0.2 used by the Rally comparison. Both SDL drivers were forced to dummy; ordinary SDL events entered the modeled PS/2 keyboard. CPU boost was temporarily disabled and restored to its original enabled value after the emulator stopped. Highest sampled temperature was 60°C. All input hashes pass; backend reports zero unhandled/unregistered/unmapped operations, no failure, and clean process exit. No Wolf source, firmware build, physical card or host runtime was changed.
+5. **Interpretation.** The remembered playable experience is consistent with this result: the capped application sustains about 29 FPS during this scene. The README's 30 Hz statement describes scheduling policy, rather than a preexisting measured FPS claim. This test uses host seconds; Rally's headline 25.91 figure uses nominal MOS seconds. Do not calculate a direct performance percentage between those different clocks and workloads. A separate unpaced Wolf fixture would be needed to determine spare rendering capacity; it is not part of this request.
+
+No graphical window or sound output was used. The new profile at `~/Agon/mystuff/Wolf3dOrig/.emulator/fps01` is stopped and remains strictly headless. New benchmark artifacts are uncommitted; no publication is implied.
+
+Subsequent Author-selected larger-room full-turn tests are recorded separately in [positions/RESULTS.md](positions/RESULTS.md). The original starting-room evidence above remains unchanged.

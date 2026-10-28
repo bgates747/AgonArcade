@@ -1,0 +1,128 @@
+{
+  "control": {
+    "module": {
+      "name": "phase-render",
+      "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/phase-build/control/package/native.c",
+      "source_sha256": "9a05d6aaac2ec65fcad8f9304277906bda2b84931907affd8b1deb7bd2de8155",
+      "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+      "declared_limits": {
+        "text": 32768,
+        "data": 4096,
+        "stack": 2048,
+        "image": 65536
+      },
+      "build_id": "0x52323850",
+      "capabilities": 1,
+      "envelope_bytes": 64,
+      "elf_bytes": 34212,
+      "package_bytes": 34276,
+      "sha256": "630118eb42a3c8d4383e46652eadd1fd6e5e89d5aafa4ed6e08e1d6f4d109fc0",
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/phase-build/control/target/phase-render.vdpl",
+      "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/phase-build/control/target/phase-render.elf",
+      "entry_virtual": 31152,
+      "resident_text_bytes": 31548,
+      "resident_data_bytes": 1064,
+      "relative_relocations": 54,
+      "allocated_sections": {
+        ".text": {
+          "virtual_address": 956,
+          "bytes": 31548,
+          "type": 1
+        },
+        ".rodata": {
+          "virtual_address": 32504,
+          "bytes": 436,
+          "type": 1
+        },
+        ".data": {
+          "virtual_address": 37296,
+          "bytes": 544,
+          "type": 1
+        },
+        ".bss": {
+          "virtual_address": 37840,
+          "bytes": 84,
+          "type": 8
+        }
+      }
+    },
+    "fixture": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/phase-build/control/fixture",
+    "fixture_files": {
+      "script.bin": "457498136c9665edebf74fa51aaeeacfdf9e8e4471f364c68b6a2cecb1fed916",
+      "expected.json": "571841118d8841dfafd6a2b6c67c775022fd58f327e14315dc334bbdee0f50f1",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "frames": 128,
+    "marks": 130,
+    "reply_bytes": 39430,
+    "driver_unchanged": true
+  },
+  "float-quad-layered": {
+    "module": {
+      "name": "phase-render",
+      "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/phase-build/float-quad-layered/package/native.c",
+      "source_sha256": "9a05d6aaac2ec65fcad8f9304277906bda2b84931907affd8b1deb7bd2de8155",
+      "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+      "declared_limits": {
+        "text": 32768,
+        "data": 4096,
+        "stack": 2048,
+        "image": 65536
+      },
+      "build_id": "0x52323850",
+      "capabilities": 1,
+      "envelope_bytes": 64,
+      "elf_bytes": 34212,
+      "package_bytes": 34276,
+      "sha256": "c7bb6056c2f01bdf62cf24e11a565476e26e9dc409e31cb7852532c36f231c9d",
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/phase-build/float-quad-layered/target/phase-render.vdpl",
+      "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/phase-build/float-quad-layered/target/phase-render.elf",
+      "entry_virtual": 31108,
+      "resident_text_bytes": 31496,
+      "resident_data_bytes": 1104,
+      "relative_relocations": 55,
+      "allocated_sections": {
+        ".text": {
+          "virtual_address": 968,
+          "bytes": 31496,
+          "type": 1
+        },
+        ".rodata": {
+          "virtual_address": 32464,
+          "bytes": 476,
+          "type": 1
+        },
+        ".data": {
+          "virtual_address": 37296,
+          "bytes": 544,
+          "type": 1
+        },
+        ".bss": {
+          "virtual_address": 37840,
+          "bytes": 84,
+          "type": 8
+        }
+      }
+    },
+    "fixture": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/phase-build/float-quad-layered/fixture",
+    "fixture_files": {
+      "script.bin": "1b5dc4dee1420e50758af52d2581a8407df0e2f72c318d316c8d908d3eefe098",
+      "expected.json": "2650966229a387a3597caf1555e345a6fd753eea157038314f5c42541605d82d",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "frames": 128,
+    "marks": 130,
+    "reply_bytes": 39430,
+    "driver_unchanged": true
+  }
+}

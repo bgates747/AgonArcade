@@ -1,0 +1,383 @@
+{
+  "hzbase01/control-paced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+      "ticks.bin": "fdafb0d013e9aa49150190eb5184e5d092e77914952b959c01eb8d1ccf65c07a",
+      "prt.bin": "c020d03cfed13afa80169f768d2fcf1e12d0d304de8d7639852851d568a5cebe",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "4cded4c066d3fa21e3e22dc4ba42c9f48ea07df3c661c4fced3a12d7ee6ec027",
+      "run.json": "7f6b9e7d8eb633c95d8cc0d3eb713c382abef6cce69b56e0d119830fa8371e1c",
+      "esp32-uart0.txt": "236c1f0cb8d8fa0b6673488f1cdfc6130a8df226df2b16fdceb3cd80e912338c",
+      "vdp-to-mos-delivered.bin": "ed37960645e00c1762291f76de4729d7938b07d496fa074add48c08982e2c9f5",
+      "vdp-to-mos.bin": "ed37960645e00c1762291f76de4729d7938b07d496fa074add48c08982e2c9f5",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "674cc2233189708dc32aa0f42a33dd32daee3c1e946a886ef6bc9ac37c5ec71c",
+      "verified.json": "9fb8423f8edf0ead1b4e719b0c73df553bb096b533b86e8976d439734bd7dee8"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzbase01-control-paced",
+    "evidence": "evidence/hzbase01/control-paced"
+  },
+  "hzbase01/float-quad-layered-paced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+      "ticks.bin": "5fc889996ddb6526905f7ae2f0b43fd0a9d3a8bf43c99cf70ee332f941c39adf",
+      "prt.bin": "1ada6912bcfade284fa7a6458971ee15fb3435d51eaabdeb4e387d6592cd2b5d",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "d19f66cade24c09e90957580660081c43274ee99b7e7b9f734f7b66649e84d48",
+      "run.json": "eba73a773575a6b27b26f7a8a54ba6b8d6e5087cc37fd0769d66502892565e61",
+      "esp32-uart0.txt": "04d22c20206f435691fa5e9abe569231d2b993acc55808c4c70d8688f639dc74",
+      "vdp-to-mos-delivered.bin": "ed37960645e00c1762291f76de4729d7938b07d496fa074add48c08982e2c9f5",
+      "vdp-to-mos.bin": "ed37960645e00c1762291f76de4729d7938b07d496fa074add48c08982e2c9f5",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "1bf9d412cc41525094eeb052f9aa62fb2cda823057e66feb2fc2c41c516dd3ee",
+      "verified.json": "3c416953f1e8e637aaf4cbe8d9fc864e1fab486bddf514b5822b860ab55d5392"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzbase01-float-quad-layered-paced",
+    "evidence": "evidence/hzbase01/float-quad-layered-paced"
+  },
+  "hzbase01/control-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "final.ppm": "12c810bd25efe1a7484387cd3d5a8503ce7cc341d61768b99a85c39a0ecca884",
+      "stats.json": "47bb0d4c37f5ad7525d9d117ce8e4b749d1d1ead4d701984b353cf7a9badb208",
+      "run.json": "a32d53dfdf2a2fdf2291b37c8d72211588c913d548fb4f97f22077b11eae9db4",
+      "esp32-uart0.txt": "13daae208737a6d4fd93e0eb33f979eccb91015cf8db6c80bc2ba31bf9afbfcf",
+      "vdp-to-mos-delivered.bin": "5294da480ec95df22bdc5515afd2937a9ef5f46110550b17c2ccd03cd4a26634",
+      "vdp-to-mos.bin": "5294da480ec95df22bdc5515afd2937a9ef5f46110550b17c2ccd03cd4a26634",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "4c1f292fb1f8f0dccc8b3498b3a8d4e076357859ef22180d610d90e41a2758ff"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzbase01-control-unpaced",
+    "evidence": "evidence/hzbase01/control-unpaced"
+  },
+  "hzbase01/float-quad-layered-unpaced": {
+    "started": false,
+    "input_hashes_preserved": true
+  },
+  "hzcandidate01/native-span-rgba2222-paced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "3c398c1b29e9d849c5f63cf1cd25bc928c4dc3b531537ffec3bd6a060e80e874",
+      "ticks.bin": "eb3c4daa81ce27593af246ac276ff264854feefc85bf82d67a4700a31ace27e5",
+      "prt.bin": "bda0da513f5fa8f67696e795639e43e1e36307084c6d21208de753ca05a62c09",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "0085cab37cb816f85076e99d2bf3cb9eb9c017b217298716b99b0b733d990d62",
+      "run.json": "c3669d1f57e64cd024f8013d2a5cad33e2e798d1485ed763fee48675159cdbcd",
+      "esp32-uart0.txt": "0cb181aa0208beed81e817e7fe29faa681600f641c4980a9a91506f8f0af5566",
+      "vdp-to-mos-delivered.bin": "d9fc1766a67f0fda5dea0646c2c9f1aab0614fae1167f4fd388b0d7ee1a7ba5e",
+      "vdp-to-mos.bin": "d9fc1766a67f0fda5dea0646c2c9f1aab0614fae1167f4fd388b0d7ee1a7ba5e",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "7891c6d5eb24da99d65df9c8a39e69a4954fee450b4230953052e57350ac6bfb",
+      "verified.json": "68911a36732295fdb3522b2e63d32cfe3c167fac9b1058c2d3efe0d7f581b825"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzcandidate01-native-span-rgba2222-paced",
+    "evidence": "evidence/hzcandidate01/native-span-rgba2222-paced"
+  },
+  "hzcandidate01/native-span-rgba2222-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "3c398c1b29e9d849c5f63cf1cd25bc928c4dc3b531537ffec3bd6a060e80e874",
+      "ticks.bin": "13c2c636bf91f084a645ad58fcef353231e917bb291380f09fadccad119897d6",
+      "prt.bin": "d24948203bb7aa340f71571a491932486b48ea8cef15fbcf7a724a945ea8dee2",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "b74299b0ea82c5ea17904def4491887c0aa24b4eb95eae2f62950d16275e05d4",
+      "run.json": "7c4ecf7e9371d4709a4618a02eb17718ce44a68b38a6b7ef5b68394a28c61c23",
+      "esp32-uart0.txt": "0cb181aa0208beed81e817e7fe29faa681600f641c4980a9a91506f8f0af5566",
+      "vdp-to-mos-delivered.bin": "d9fc1766a67f0fda5dea0646c2c9f1aab0614fae1167f4fd388b0d7ee1a7ba5e",
+      "vdp-to-mos.bin": "d9fc1766a67f0fda5dea0646c2c9f1aab0614fae1167f4fd388b0d7ee1a7ba5e",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "7891c6d5eb24da99d65df9c8a39e69a4954fee450b4230953052e57350ac6bfb",
+      "verified.json": "7a055b60fea913ab4f2b69d55cf6c88bc95b2dac3ea8b271886ed160e14caf1b"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzcandidate01-native-span-rgba2222-unpaced",
+    "evidence": "evidence/hzcandidate01/native-span-rgba2222-unpaced"
+  },
+  "hzcandidate01/phase-control": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "fd231c76202aba3bf430463b55a30e93282fd999835a3e23e3980d1a3e896868",
+      "ticks.bin": "2573b8b58e741e426fcb313716701dbbb980d7180b5a8417b0dbfaeee46fde4d",
+      "prt.bin": "0e28693a153bf40503342813ca540f8ce9fca9f8055f84dd7fcc887b78d1ac5c",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "bd16c509f27ebb62831dfa6157f5d2446c4a7ef4c258b26bd44f6fa43e2a313f",
+      "stats.json": "fbf338f17afa976b3d8aaf911aa71111f7b4cee9fa17de8d17766e6b8954c243",
+      "run.json": "cb3a47bceac06832b189c61116ea5b5d63e56061267d25b302a7007c44f1770f",
+      "phase-verified.json": "dc995031a4eb2541d50e60d5f340e3a9f1d15ff239c2637669027deb055bfb73",
+      "esp32-uart0.txt": "e142fad72f5c134e212622d79b42f8d0ccaed0009b9f293f046050ad84fe3af5",
+      "vdp-to-mos-delivered.bin": "3d4d5f1062cd280ecd303e7bc2f049b10c32c1a9fd5ee16221058a7a3867a136",
+      "vdp-to-mos.bin": "3d4d5f1062cd280ecd303e7bc2f049b10c32c1a9fd5ee16221058a7a3867a136",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "00205ed43e06ad1aa77d7bcfd19b3d5c5d5b83e59b7a8ebf7d1941b9243ff76d",
+      "verified.json": "de3bc68a84898dce3c9e4264eef1d2986771ea89af6aff92621639371ccd62f7",
+      "guest-phase-verified.json": "b3387121d45ac7201fb84bbd317cd0b5b617ae70cd4b276f17ee58a910285a91"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzcandidate01-phase-control",
+    "evidence": "evidence/hzcandidate01/phase-control"
+  },
+  "hzcandidate01/phase-float-quad-layered": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "328b8d883b1b6d256661852b412d8aeaa592b005bb4ea00deadf10505d169719",
+      "ticks.bin": "e74a8031ba7c0cd07a7b36abec8350aa1cafc82b19f3da43661a850e4469758a",
+      "prt.bin": "b8a38e89a2ec7e46c25e805e2b0b1eb7cbb0435c1106dc0b8901a946fc344fd4",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "bd16c509f27ebb62831dfa6157f5d2446c4a7ef4c258b26bd44f6fa43e2a313f",
+      "stats.json": "0e18ba9a65700882e7162b63a8c72feb7fa42695db38d7ecaa84fcc890988fb6",
+      "run.json": "9aa21176bbf55fa1f1a23b5b4e28e3e73eaa3441a03b065f36c92a4b2d45e22d",
+      "phase-verified.json": "6e54eec73d9990bf96d9da64d4caa5b2f5d53da482d9a4a6ce8a0ba7cbd0f3a1",
+      "esp32-uart0.txt": "936dc107c3e5e7090f5ae157714580e04c955538918bb62f752b4d97a2e1ab64",
+      "vdp-to-mos-delivered.bin": "c6fcbfb9a342af01fe3e65c6e0a26e4c1f424ecf7714c0184501eac95b48abbb",
+      "vdp-to-mos.bin": "c6fcbfb9a342af01fe3e65c6e0a26e4c1f424ecf7714c0184501eac95b48abbb",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "8baa104662e1312472dcfa8c8dfb2821cd833f1d828e1383a1caae573f8967ad",
+      "verified.json": "c8f13837dcfe1a755a5bb6db110f8bb4fdd1611a481c41f2ff065efd5736cd46",
+      "guest-phase-verified.json": "8c32a81ff6b5527ddc52ec18c42924bfcd80135f798cb7a57e8054373c07b8d8"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzcandidate01-phase-float-quad-layered",
+    "evidence": "evidence/hzcandidate01/phase-float-quad-layered"
+  },
+  "hzcandidate01/control-fenced-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+      "ticks.bin": "69f6bd1c0f042a6620130ce4d3ac8038df4b10cfbecbeff616538c161239b851",
+      "prt.bin": "9edf5fe4e7fcfdbff427432a89fb64f04a1cf2e0c5900525252b9d6f9786b965",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "777da73584f7e26669eb89d585f50a7aa525126e028ca53328a9c90e1ff0b2ac",
+      "run.json": "6c234b5c46b46fc06e8d21e9f83d4df99024dcdac1bae185699fd017cd6d6318",
+      "esp32-uart0.txt": "12252526ee890b04e026a85ec0935e1c97a1130bf8acb4ee8516c6b2ba05c9b1",
+      "vdp-to-mos-delivered.bin": "965b051689862156e66ab6e6080b55e65b8f683a6adc5c37c6c0450abdaefd76",
+      "vdp-to-mos.bin": "965b051689862156e66ab6e6080b55e65b8f683a6adc5c37c6c0450abdaefd76",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "e854a03f38c13250916e340736af9a02ee1cd3603b72d9c993c51dcd4f7d2ea2",
+      "verified.json": "1a98483a735be7236ca165d00b3cb734eda7ade733f34df239264db04e4f0152"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzcandidate01-control-fenced-unpaced",
+    "evidence": "evidence/hzcandidate01/control-fenced-unpaced"
+  },
+  "hzcandidate01/float-quad-layered-fenced-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+      "ticks.bin": "e3777f94d2fc3e8bc061105a7f1f73215c0de48007772419944471d920c6ba35",
+      "prt.bin": "cbd6cc6cdef494708bcb72a1f9aeed2f63a7474325134d95b9ba0728e84eb318",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "e528daeae54c3a128449281e77455e8194733bc732a78b4ac4d7c287554280c4",
+      "run.json": "f9801d3ac802e425758f57623fdd14183aae29d8e0bad3312895938ef2c835c0",
+      "esp32-uart0.txt": "c62e4745588c337ca401555f29f37b7dd65a3231ea23563bf1f8e0d3baa5c8c1",
+      "vdp-to-mos-delivered.bin": "965b051689862156e66ab6e6080b55e65b8f683a6adc5c37c6c0450abdaefd76",
+      "vdp-to-mos.bin": "965b051689862156e66ab6e6080b55e65b8f683a6adc5c37c6c0450abdaefd76",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "c919abe38bdca668ec715086fbd99df4a40b384232ff3d963b3aacab764ffea2",
+      "verified.json": "a54beaf5e9ed1215d8e5ddf95ab1ada5e3523cf777420d5994850a0a390c24fa"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzcandidate01-float-quad-layered-fenced-unpaced",
+    "evidence": "evidence/hzcandidate01/float-quad-layered-fenced-unpaced"
+  },
+  "hzcandidate01/native-span-rgba2222-fenced-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "3c398c1b29e9d849c5f63cf1cd25bc928c4dc3b531537ffec3bd6a060e80e874",
+      "ticks.bin": "7b48c6dba67512bb2022efed67deca79ec836bac3b70db9dc3d56b0ce845e1e2",
+      "prt.bin": "1cd4baa15070db3adc134b9bd5067c9002d7baa654363174e654013f47edae23",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "b3e5a1a04b85d69bd69556b8a5826cf4cd8faf99044ed4631eab42a687caf5e1",
+      "run.json": "3be9c61fc079dd678925d2e63d768a05abc9e9e1ea1a1ab3c9418efb2da78fde",
+      "esp32-uart0.txt": "39ed52f94e934b0764337e89b2a3a5b0a3fc7e0b038867db915d4be47abc9438",
+      "vdp-to-mos-delivered.bin": "65ab39a4c5a58a5ca810d25d7f159f0786ef7e123d48acb9983a2d92e7be867e",
+      "vdp-to-mos.bin": "65ab39a4c5a58a5ca810d25d7f159f0786ef7e123d48acb9983a2d92e7be867e",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "a9894a366060f42cb239a92c6184b8ca1c710a74d79b2d287bd081b889cbefc3",
+      "verified.json": "d1ea2ebd12e708087113c07514129aef724b2dd7e3dcb7d1d42455127c6bc636"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzcandidate01-native-span-rgba2222-fenced-unpaced",
+    "evidence": "evidence/hzcandidate01/native-span-rgba2222-fenced-unpaced"
+  },
+  "hzretry01/control-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+      "ticks.bin": "6c6b541c5170933ecd58a537b926028c5c007741a4de333cd80d2522b9c412c6",
+      "prt.bin": "74cba981126db767080f4e08be5b5ff0ed5fa40f907787a8657074ad515437eb",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "4f9c22a9530553a2d19911b4c9249de5c78e459392d597d749fab0413091e3c7",
+      "run.json": "f2b046a8bc232c85e9bd7e58d6c7bdbf32d93dea0df46be6b2a61c90d7b7abf1",
+      "esp32-uart0.txt": "236c1f0cb8d8fa0b6673488f1cdfc6130a8df226df2b16fdceb3cd80e912338c",
+      "vdp-to-mos-delivered.bin": "ed37960645e00c1762291f76de4729d7938b07d496fa074add48c08982e2c9f5",
+      "vdp-to-mos.bin": "ed37960645e00c1762291f76de4729d7938b07d496fa074add48c08982e2c9f5",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "674cc2233189708dc32aa0f42a33dd32daee3c1e946a886ef6bc9ac37c5ec71c",
+      "verified.json": "e1a6270bd76e946edeba1589e60224e6f5777dd23c35fb63d41bc24098d88254"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzretry01-control-unpaced",
+    "evidence": "evidence/hzretry01/control-unpaced"
+  },
+  "hzretry01/float-quad-layered-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+      "ticks.bin": "2e3945cbe53aa4fc94fc94c2d678166aef60eb3e1752c02edd622258a3ea6629",
+      "prt.bin": "e649445964cd784de1cb1a5c2d689d913fbd78a9b55af7304236b423a20e17ed",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "41400e8440e2143bbd9d8c0d8c1344e70259ab1731572ece9fc4fa21a3049b3e",
+      "run.json": "9e7604ecf2fda32d4e49812ffd82617b205ba28f602d448d69a5924f0d2becd6",
+      "esp32-uart0.txt": "04d22c20206f435691fa5e9abe569231d2b993acc55808c4c70d8688f639dc74",
+      "vdp-to-mos-delivered.bin": "ed37960645e00c1762291f76de4729d7938b07d496fa074add48c08982e2c9f5",
+      "vdp-to-mos.bin": "ed37960645e00c1762291f76de4729d7938b07d496fa074add48c08982e2c9f5",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "1bf9d412cc41525094eeb052f9aa62fb2cda823057e66feb2fc2c41c516dd3ee",
+      "verified.json": "78d971a224f1a368dcaea024253383e554e08fe5682ccb8ecc5f7575e0d6b398"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzretry01-float-quad-layered-unpaced",
+    "evidence": "evidence/hzretry01/float-quad-layered-unpaced"
+  },
+  "hznative01/native-span-native-paced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "3c398c1b29e9d849c5f63cf1cd25bc928c4dc3b531537ffec3bd6a060e80e874",
+      "ticks.bin": "a0943f773fc63f22db9984d5c8aa38507e33ced23cf19d9d82657f7672c5789b",
+      "prt.bin": "e2b7e7df9f051f94c36893c3237bab327f963c856c05c739c27356fd2749e8d9",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "f866b81e6d6f8bfd1276a597753c0286d8e5c38fa7a15c2499e02f5406f7ffc7",
+      "run.json": "9d82849335c0bfe8a79949396b53ff0382e212088fa6ac4e99384f17038787dd",
+      "esp32-uart0.txt": "0cb181aa0208beed81e817e7fe29faa681600f641c4980a9a91506f8f0af5566",
+      "vdp-to-mos-delivered.bin": "d9fc1766a67f0fda5dea0646c2c9f1aab0614fae1167f4fd388b0d7ee1a7ba5e",
+      "vdp-to-mos.bin": "d9fc1766a67f0fda5dea0646c2c9f1aab0614fae1167f4fd388b0d7ee1a7ba5e",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "2bbf08454d09e5072363afe7c47bbfda4685fcbadc58c6e2999b82cf6a6be7d9",
+      "verified.json": "284bd4caab2d5befa30018c1a2b7b310467a49a25a2b6c3e9bd6c90629be8a71"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hznative01-native-span-native-paced",
+    "evidence": "evidence/hznative01/native-span-native-paced"
+  },
+  "hznative01/native-span-native-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "3c398c1b29e9d849c5f63cf1cd25bc928c4dc3b531537ffec3bd6a060e80e874",
+      "ticks.bin": "b1feb3c26e45bc31510d92f62fd6fe8b1d7b07cae346830e05648ccfef86bf45",
+      "prt.bin": "1f4cf1cb4f46b730620cfd244cfc145348889ef5a7f0b1bfa19c21acd927542d",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "4c2c1eccbe2b11905367a5062738a34c36fb85f2b72061a30044a44f67ddad38",
+      "run.json": "0d4602f6cf949c0e01fd67fd248baf3f6f07e75f515a53389e9d143e8eb7247c",
+      "esp32-uart0.txt": "0cb181aa0208beed81e817e7fe29faa681600f641c4980a9a91506f8f0af5566",
+      "vdp-to-mos-delivered.bin": "d9fc1766a67f0fda5dea0646c2c9f1aab0614fae1167f4fd388b0d7ee1a7ba5e",
+      "vdp-to-mos.bin": "d9fc1766a67f0fda5dea0646c2c9f1aab0614fae1167f4fd388b0d7ee1a7ba5e",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "2bbf08454d09e5072363afe7c47bbfda4685fcbadc58c6e2999b82cf6a6be7d9",
+      "verified.json": "d2deb257478cd8cdd567641819cf5a7b320ba465c3df0559496c47b645d71668"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hznative01-native-span-native-unpaced",
+    "evidence": "evidence/hznative01/native-span-native-unpaced"
+  },
+  "hznative01/native-span-native-fenced-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "1fe7a54d708e6b9469efcfc07240d526c0e15a006e6690b730ed2b4136e0e108",
+      "ticks.bin": "ba6e8e0aa006d9b5c3b561a3ff42aa08a13c60642e42b5793f9468f19daf4f4a",
+      "prt.bin": "520cf7af82111f17ba032477707a73cdb1e1dd5aafd15b864c602c4fe078aadf",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "3a2395d67aa705cb7632d134baaa6c5ed38be67bb0fdecd4dd4cbada4904fb8e",
+      "run.json": "a6457faf3e10dc65dd74913792e735180ff8f5523f3c5d63ca2f2e4b8a95e372",
+      "esp32-uart0.txt": "39ed52f94e934b0764337e89b2a3a5b0a3fc7e0b038867db915d4be47abc9438",
+      "vdp-to-mos-delivered.bin": "dbbdf54f14d7671f4b5384697b80e1e4deeea872b9b5dc27d897f364ce882c17",
+      "vdp-to-mos.bin": "dbbdf54f14d7671f4b5384697b80e1e4deeea872b9b5dc27d897f364ce882c17",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "501470b1e2e20ac709de3bb5d62a3f2f5f6f3234b8109188e8e36faf7858f300",
+      "verified.json": "adc4a63b46e5a545c3d19a3a7ee02c2c2c97bdcf538116e2ab9cbd104d61944e"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hznative01-native-span-native-fenced-unpaced",
+    "evidence": "evidence/hznative01/native-span-native-fenced-unpaced"
+  },
+  "hzrepeat01/native-span-native-fenced-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "1fe7a54d708e6b9469efcfc07240d526c0e15a006e6690b730ed2b4136e0e108",
+      "ticks.bin": "6e06f1bbba388fac54f2435bee765012923f814576c0fe25077958ed868a3d06",
+      "prt.bin": "fa0497fe9208587b453c9ca8c99769f60971811868cd4156885f7d7a90e9005e",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "7fc6aa4fde2069fc3e0bae56eb59983d8dc31034051afb7d2ee862eab4a39a12",
+      "run.json": "10e7805d14c4f85c312726e02c06c305a34258ea4af3d4e7795fa6744a2483e6",
+      "esp32-uart0.txt": "39ed52f94e934b0764337e89b2a3a5b0a3fc7e0b038867db915d4be47abc9438",
+      "vdp-to-mos-delivered.bin": "dbbdf54f14d7671f4b5384697b80e1e4deeea872b9b5dc27d897f364ce882c17",
+      "vdp-to-mos.bin": "dbbdf54f14d7671f4b5384697b80e1e4deeea872b9b5dc27d897f364ce882c17",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "501470b1e2e20ac709de3bb5d62a3f2f5f6f3234b8109188e8e36faf7858f300",
+      "verified.json": "3c0537f390d25a7a67a95b38b47d4e46b5f53d96c2f122cf82b98f597ed2130d"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzrepeat01-native-span-native-fenced-unpaced",
+    "evidence": "evidence/hzrepeat01/native-span-native-fenced-unpaced"
+  },
+  "hzrepeat01/native-span-rgba2222-fenced-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "3c398c1b29e9d849c5f63cf1cd25bc928c4dc3b531537ffec3bd6a060e80e874",
+      "ticks.bin": "412035275fe2c0d5060b91e416b523879a729fae5e440a544f83244aece0ca71",
+      "prt.bin": "d84530522f91f3f028232335b3f3627f5487ef1cd3e115ad7b3695ebd749ed6f",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "f0a23d397fb4dbf2680e147ab2ca93904068e2d780ac5ea46b90645426b358b2",
+      "run.json": "d1d7946e6e3fbfcee47f5c5190c47f172701835d61121a27fd8944f078fe5dbd",
+      "esp32-uart0.txt": "39ed52f94e934b0764337e89b2a3a5b0a3fc7e0b038867db915d4be47abc9438",
+      "vdp-to-mos-delivered.bin": "65ab39a4c5a58a5ca810d25d7f159f0786ef7e123d48acb9983a2d92e7be867e",
+      "vdp-to-mos.bin": "65ab39a4c5a58a5ca810d25d7f159f0786ef7e123d48acb9983a2d92e7be867e",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "a9894a366060f42cb239a92c6184b8ca1c710a74d79b2d287bd081b889cbefc3",
+      "verified.json": "6a41ec21b0b27ae40e68f0b99c259c28700316b004458079b35a4de789bcb542"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzrepeat01-native-span-rgba2222-fenced-unpaced",
+    "evidence": "evidence/hzrepeat01/native-span-rgba2222-fenced-unpaced"
+  },
+  "hzrepeat01/float-quad-layered-fenced-unpaced": {
+    "started": true,
+    "input_hashes_preserved": true,
+    "files": {
+      "replies.bin": "4ae79d93fb14b49f872b926dec0ebc006079020f2f6098ee028425936c94c922",
+      "ticks.bin": "42283a53dbad941d6765a0cb50b31fcc82a28c0a1c4a0cf5332076d36194a3be",
+      "prt.bin": "8efb3cdf9328f2e9444dc06329407787d2562cdd212e38dcf6c3e9a5a618728f",
+      "clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+      "final.ppm": "d0fdd8e339362a124c91193c8170bff62ac2a384d2a8c8a74fa1cbab4bfafc1b",
+      "stats.json": "6410e42e571215ee8d792ea26bee569ba991bdadf0628d032dd5c29ba824725a",
+      "run.json": "47cd9a95206d1b2b9ae73051ecc3843e0e345e5078e079d0809d603bce41077a",
+      "esp32-uart0.txt": "c62e4745588c337ca401555f29f37b7dd65a3231ea23563bf1f8e0d3baa5c8c1",
+      "vdp-to-mos-delivered.bin": "965b051689862156e66ab6e6080b55e65b8f683a6adc5c37c6c0450abdaefd76",
+      "vdp-to-mos.bin": "965b051689862156e66ab6e6080b55e65b8f683a6adc5c37c6c0450abdaefd76",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "c919abe38bdca668ec715086fbd99df4a40b384232ff3d963b3aacab764ffea2",
+      "verified.json": "944e6570e97ee2f473c2f579025e159d24f89a9f64e3a1e5675085df6cfc2321"
+    },
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hzrepeat01-float-quad-layered-fenced-unpaced",
+    "evidence": "evidence/hzrepeat01/float-quad-layered-fenced-unpaced"
+  }
+}

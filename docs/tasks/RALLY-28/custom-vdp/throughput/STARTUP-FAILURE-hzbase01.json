@@ -1,0 +1,16 @@
+{
+  "case": "hzbase01/control-unpaced",
+  "timeout_seconds": 180,
+  "uart_bytes": 51294,
+  "artwork_stream_offset": 454,
+  "artwork_bytes_sent": 50840,
+  "artwork_bytes_expected": 58879,
+  "stopped_before_native_module_load": true,
+  "stopped_before_any_physics_or_render": true,
+  "exact_fixture_prefix": true,
+  "wire_sha256": "4c1f292fb1f8f0dccc8b3498b3a8d4e076357859ef22180d610d90e41a2758ff",
+  "backend_errors_zero": true,
+  "process_exit": 0,
+  "classification": "Startup artwork transfer stall; unrelated to foreground pacer removal",
+  "next_action": "One explicitly recorded fresh-profile retry of exact bytes; old profile/evidence preserved"
+}

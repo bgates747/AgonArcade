@@ -1,0 +1,204 @@
+{
+  "schema": 1,
+  "module": {
+    "name": "rally-render",
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/span-candidate/package/native.c",
+    "source_sha256": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992",
+    "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+    "declared_limits": {
+      "text": 32768,
+      "data": 4096,
+      "stack": 2048,
+      "image": 65536
+    },
+    "build_id": "0x52385331",
+    "capabilities": 1,
+    "envelope_bytes": 64,
+    "elf_bytes": 33876,
+    "package_bytes": 33940,
+    "sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/span-candidate/target/rally-render.vdpl",
+    "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/span-candidate/target/rally-render.elf",
+    "entry_virtual": 8636,
+    "resident_text_bytes": 30928,
+    "resident_data_bytes": 1004,
+    "relative_relocations": 45,
+    "allocated_sections": {
+      ".text": {
+        "virtual_address": 848,
+        "bytes": 30928,
+        "type": 1
+      },
+      ".rodata": {
+        "virtual_address": 31776,
+        "bytes": 460,
+        "type": 1
+      },
+      ".data": {
+        "virtual_address": 32908,
+        "bytes": 544,
+        "type": 1
+      }
+    }
+  },
+  "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0",
+  "abi_header_sha256": "fa8385e2906f07d37372d80c40f73d419defdbefe7a3458461ac9d5fe0820d38",
+  "resource": {
+    "buffer": 50700,
+    "known_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      50300,
+      50301,
+      50302,
+      50303,
+      50304,
+      63930,
+      63970,
+      63971,
+      63972,
+      63973,
+      63974,
+      63975,
+      63984,
+      64000,
+      64001,
+      64002,
+      64003,
+      64004,
+      64005,
+      64006,
+      64007,
+      64008,
+      64009,
+      64010,
+      64011,
+      64012,
+      64013,
+      64014,
+      64015,
+      64016,
+      64017,
+      64018,
+      64019,
+      64020,
+      64021,
+      64022,
+      64023,
+      64024,
+      64025,
+      64026,
+      64027,
+      64028,
+      64029,
+      64030,
+      64031,
+      64032,
+      64033,
+      64034,
+      64120,
+      64121,
+      64122,
+      64123,
+      64124,
+      64125,
+      64126,
+      64127
+    ],
+    "external_reservations": [
+      {
+        "first": 60000,
+        "last": 60031
+      },
+      {
+        "first": 50300,
+        "last": 50300
+      },
+      {
+        "first": 50301,
+        "last": 50301
+      },
+      {
+        "first": 50302,
+        "last": 50302
+      },
+      {
+        "first": 50303,
+        "last": 50303
+      },
+      {
+        "first": 50304,
+        "last": 50304
+      },
+      {
+        "first": 50305,
+        "last": 50305
+      }
+    ],
+    "collision_free": true,
+    "ownership": "Rally-only fixture setup/teardown; not an adopted Golem resource contract"
+  },
+  "fixture": {
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "5ad03902628bc1e4f2b580a8517c602bf9bae7ae28b963c4d6becc19dde0b366",
+      "native.vdu": "6421da5659765be5c12c55131c0f81887e07e5b7e17bc9135be9d74ccf393229",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "f4546e6bfab69892be6a412ad869ab428b43b1b8ed2fac00116145f41d98a23c"
+    },
+    "timed_tape_records_byte_identical": true,
+    "unchanged_driver": true,
+    "setup_added_bytes": 38427,
+    "cleanup_bytes": 6,
+    "per_frame_uart_pixels": 0,
+    "modifications": [
+      "setup module/image length",
+      "native.vdu extra buffer/bitmap setup and external length",
+      "post-UNLOAD buffer clear",
+      "expected metadata"
+    ]
+  },
+  "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/span-candidate/package",
+  "source_files": {
+    "span.inc": "380cce4c17dfbc18d4ffd202172d79eb4257674bb504493c3dd42184b8a3964d",
+    "span_build.py": "dd15455a872c0ae670cb35f02f4a427683cf78988c975dcf28441f6f7f818751"
+  },
+  "helper_files": {
+    "helper/asset_meta.inc": "940a4e51c2f06bb34106c858f690bad34d97ed8ab6994b19bb53a945f4eb6cd5",
+    "helper/rally_render.c": "7d17ffdfefcc5e22dd730f7a2cf3b07131cc748f9f496b237aa10388c2d33567",
+    "helper/rally_render.h": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50",
+    "helper/render_core.inc": "80f3816b2fc9a085be168999472273f07941504f673fbdd917fc836b412a0875"
+  },
+  "generated_native_c_byte_identical": true,
+  "public_helper_abi_byte_identical": true,
+  "firmware_changed": false,
+  "sdk_changed": false,
+  "emulator_run": false
+}

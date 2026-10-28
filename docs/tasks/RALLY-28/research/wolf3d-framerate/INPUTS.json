@@ -1,0 +1,50 @@
+{
+  "source_file_sha256": {
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/wolf3d.bin": "4cd70b101282370da113b47b3fadea8309307804747613c886562a25ede91e73",
+    "/Agon/mystuff/agon-vdp-wolf3d/.pio/build/esp32dev/firmware.bin": "fa1625cb3e901410593cd44a30d5934cc38ba998bcda16d3d5ff20de45f497ed",
+    "/Agon/mystuff/agon-vdp-wolf3d/.pio/build/esp32dev/firmware.elf": "4bc8731fe63876aa0098c1b6026964f97d3c94b1fc730616d86e10549774c302",
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/hud.agnb": "1848900559fe9f684dbfc8ae80b0416132db5414bc1ab41f9dad47a5ab26a74d",
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/sfx.agnb": "f294c1152bedca56e726e115ce1d1dc2f5aa6191e340a96a79b1e845296f1cd4",
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/shell.agnb": "4b4dd70295dc792cac55dbbd3652b92709d93fc9002ad81f92676d4c2f506ea3",
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/level_00/sprites.agnb": "7bf0f04a6fad56d5a83b26b30f5c0ea3bbafb4c8727a3c5f9d266c30c0e058f9",
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/level_00/state_baby.w3l": "df2b93315063853c02185bb1bb5058c810c703033f50b0c33b4ed7f063a50521",
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/level_00/state_easy.w3l": "21e6015f92ac246b8db61cdfe0b1f37687274c85a85d14159fd2ae7c23f9892a",
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/level_00/state_hard.w3l": "eef232dc0d987ef66a940097502ebf82dd6dbe7c29df572c0e21483cdcb46d03",
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/level_00/state_medium.w3l": "18c88ab760ae0ba0225e6c2cd22c3868478c341c2cfa65b6573325a6a402f0d7",
+    "/Agon/mystuff/Wolf3dOrig/agonport/emulator/sdcard/mystuff/Wolf3dOrig/level_00/tiles.agnb": "9990d79e3ae47d0c940e072f70f821d505d9e39ce21f713b38f5d8c7237502c8"
+  },
+  "payload_sha256": {
+    "esp32-firmware.bin": "fa1625cb3e901410593cd44a30d5934cc38ba998bcda16d3d5ff20de45f497ed",
+    "esp32-firmware.elf": "4bc8731fe63876aa0098c1b6026964f97d3c94b1fc730616d86e10549774c302",
+    "app/wolf3d.bin": "4cd70b101282370da113b47b3fadea8309307804747613c886562a25ede91e73",
+    "app/hud.agnb": "1848900559fe9f684dbfc8ae80b0416132db5414bc1ab41f9dad47a5ab26a74d",
+    "app/sfx.agnb": "f294c1152bedca56e726e115ce1d1dc2f5aa6191e340a96a79b1e845296f1cd4",
+    "app/shell.agnb": "4b4dd70295dc792cac55dbbd3652b92709d93fc9002ad81f92676d4c2f506ea3",
+    "app/level_00/tiles.agnb": "9990d79e3ae47d0c940e072f70f821d505d9e39ce21f713b38f5d8c7237502c8",
+    "app/level_00/state_easy.w3l": "21e6015f92ac246b8db61cdfe0b1f37687274c85a85d14159fd2ae7c23f9892a",
+    "app/level_00/state_medium.w3l": "fc9e314d8ef1eea97acd53882a18ac263b71f88b804e6908522c67ca40896986",
+    "app/level_00/sprites.agnb": "7bf0f04a6fad56d5a83b26b30f5c0ea3bbafb4c8727a3c5f9d266c30c0e058f9",
+    "app/level_00/state_baby.w3l": "df2b93315063853c02185bb1bb5058c810c703033f50b0c33b4ed7f063a50521",
+    "app/level_00/state_hard.w3l": "eef232dc0d987ef66a940097502ebf82dd6dbe7c29df572c0e21483cdcb46d03"
+  },
+  "application": "Previously deployed 105122-byte playable reference, before intermission candidate",
+  "isolated_state_change": {
+    "file": "app/level_00/state_medium.w3l",
+    "offsets": [
+      18,
+      22
+    ],
+    "before_pose": [
+      25.5,
+      47.5,
+      0
+    ],
+    "after_pose": [
+      29.5,
+      57.5,
+      0
+    ]
+  },
+  "source_project_modified": false,
+  "firmware_built": false
+}

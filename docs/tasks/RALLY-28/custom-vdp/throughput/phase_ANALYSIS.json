@@ -1,0 +1,1700 @@
+{
+  "status": "qualified_returned_phase_data",
+  "runs": [
+    {
+      "path": "docs/tasks/RALLY-28/custom-vdp/throughput/evidence/hzcandidate01/phase-control/phase-verified.json",
+      "phase_sha256": "dc995031a4eb2541d50e60d5f340e3a9f1d15ff239c2637669027deb055bfb73",
+      "run_sha256": "cb3a47bceac06832b189c61116ea5b5d63e56061267d25b302a7007c44f1770f",
+      "candidate": "control",
+      "frames": 128,
+      "physics_ticks": 512,
+      "unit": "raw per-core CCOUNT delta modulo2^32; no Hz calibration",
+      "cpu_prid": 52685,
+      "calibration": {
+        "min": 1,
+        "max": 1
+      },
+      "complete_records": 128,
+      "all_row_telescope_checks_pass": true,
+      "runtime_fingerprint": "f6b2f5602655470cf7c330be1240dda505a0a47e399cae455d2d3ef517410404",
+      "runtime_identities": {
+        "flexe-agon-emulator": "c8407990aa3f374471752c861f4b0f831bf215f226c6c54699f48f981fab07b4",
+        "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+        "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+        "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+        "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+        "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+        "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+        "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25"
+      },
+      "backend_engine": "jit",
+      "stages": {
+        "physics4_call_cycles": {
+          "total": 12660086,
+          "min": 96340,
+          "median": 97428.0,
+          "mean": 98906.921875,
+          "p95_nearest_rank": 102313,
+          "max": 106164,
+          "percent_of_measured_work": 1.386129786729111
+        },
+        "prepare_call_cycles": {
+          "total": 6270366,
+          "min": 43865,
+          "median": 48448.5,
+          "mean": 48987.234375,
+          "p95_nearest_rank": 55512,
+          "max": 60477,
+          "percent_of_measured_work": 0.6865309671903863
+        },
+        "clear_title_dispatch_draw_flush": {
+          "total": 59801839,
+          "min": 455660,
+          "median": 466023.0,
+          "mean": 467201.8671875,
+          "p95_nearest_rank": 474076,
+          "max": 475099,
+          "percent_of_measured_work": 6.547594569190022
+        },
+        "road_dispatch_draw_flush": {
+          "total": 213168864,
+          "min": 1521777,
+          "median": 1647640.0,
+          "mean": 1665381.75,
+          "p95_nearest_rank": 1934724,
+          "max": 2033564,
+          "percent_of_measured_work": 23.339471153166485
+        },
+        "actors_dispatch_draw_flush": {
+          "total": 148799240,
+          "min": 929017,
+          "median": 1173604.5,
+          "mean": 1162494.0625,
+          "p95_nearest_rank": 1278507,
+          "max": 1324788,
+          "percent_of_measured_work": 16.291758113385153
+        },
+        "player_dispatch_draw_flush": {
+          "total": 18439496,
+          "min": 140113,
+          "median": 145017.0,
+          "mean": 144058.5625,
+          "p95_nearest_rank": 148941,
+          "max": 151743,
+          "percent_of_measured_work": 2.018906874556168
+        },
+        "empty_marker_control": {
+          "total": 368098,
+          "min": 2738,
+          "median": 2739.0,
+          "mean": 2875.765625,
+          "p95_nearest_rank": 2739,
+          "max": 7681,
+          "percent_of_measured_work": 0.04030238042896488
+        },
+        "swap_dispatch_and_flush": {
+          "total": 453832603,
+          "min": 15633,
+          "median": 3842765.5,
+          "mean": 3545567.2109375,
+          "p95_nearest_rank": 4086224,
+          "max": 4124202,
+          "percent_of_measured_work": 49.689306155353705
+        }
+      },
+      "nested_prepare": {
+        "road_build_cycles": {
+          "total": 4061096,
+          "min": 28256,
+          "median": 31351.0,
+          "mean": 31727.3125,
+          "p95_nearest_rank": 38406,
+          "max": 43349,
+          "percent_of_prepare": 64.766490504701
+        },
+        "actors_build_cycles": {
+          "total": 699405,
+          "min": 4119,
+          "median": 5607.0,
+          "mean": 5464.1015625,
+          "p95_nearest_rank": 5627,
+          "max": 10557,
+          "percent_of_prepare": 11.154133586460503
+        },
+        "player_build_cycles": {
+          "total": 87036,
+          "min": 650,
+          "median": 650.0,
+          "mean": 679.96875,
+          "p95_nearest_rank": 650,
+          "max": 4486,
+          "percent_of_prepare": 1.3880529461916578
+        },
+        "prepare_other_cycles": {
+          "total": 1422829,
+          "min": 10838,
+          "median": 10840.0,
+          "mean": 11115.8515625,
+          "p95_nearest_rank": 15732,
+          "max": 15847,
+          "percent_of_prepare": 22.691322962646836
+        }
+      },
+      "measured_work": {
+        "total": 913340592,
+        "min": 3263169,
+        "median": 7436714.5,
+        "mean": 7135473.375,
+        "p95_nearest_rank": 7544544,
+        "max": 7699607
+      },
+      "broad_counter_progress": {
+        "first_clear": 1738816172,
+        "last_swap_end": 2753654629,
+        "observed_wraps": 0,
+        "unwrapped_delta": 1014838457,
+        "tail_total": 894410140,
+        "between_tail_total": 120428317,
+        "start_to_start": {
+          "total": 1007596377,
+          "min": 4014076,
+          "median": 8230555,
+          "mean": 7933829.74015748,
+          "p95_nearest_rank": 8443006,
+          "max": 8900166
+        },
+        "nondecreasing_modulo_half_range": true,
+        "telescoping_pass": true
+      },
+      "separate_clocks": {
+        "nominal_mos_seconds": 7.833333333333333,
+        "mos_units": 940,
+        "nominal_prt_seconds": 8.106,
+        "prt_timing_usable": true,
+        "host_seconds_including_startup": 19.783
+      },
+      "row_checks": [
+        {
+          "frame": 1,
+          "tail_cycles": 5650912,
+          "measured_work_cycles": 5805332
+        },
+        {
+          "frame": 2,
+          "tail_cycles": 7339960,
+          "measured_work_cycles": 7499289
+        },
+        {
+          "frame": 3,
+          "tail_cycles": 7176922,
+          "measured_work_cycles": 7326393
+        },
+        {
+          "frame": 4,
+          "tail_cycles": 7342483,
+          "measured_work_cycles": 7494468
+        },
+        {
+          "frame": 5,
+          "tail_cycles": 7271605,
+          "measured_work_cycles": 7425459
+        },
+        {
+          "frame": 6,
+          "tail_cycles": 7242187,
+          "measured_work_cycles": 7397275
+        },
+        {
+          "frame": 7,
+          "tail_cycles": 7322026,
+          "measured_work_cycles": 7474012
+        },
+        {
+          "frame": 8,
+          "tail_cycles": 7368437,
+          "measured_work_cycles": 7517912
+        },
+        {
+          "frame": 9,
+          "tail_cycles": 7251007,
+          "measured_work_cycles": 7400592
+        },
+        {
+          "frame": 10,
+          "tail_cycles": 7309800,
+          "measured_work_cycles": 7461935
+        },
+        {
+          "frame": 11,
+          "tail_cycles": 7210207,
+          "measured_work_cycles": 7359246
+        },
+        {
+          "frame": 12,
+          "tail_cycles": 7301530,
+          "measured_work_cycles": 7463605
+        },
+        {
+          "frame": 13,
+          "tail_cycles": 7259867,
+          "measured_work_cycles": 7412003
+        },
+        {
+          "frame": 14,
+          "tail_cycles": 7288074,
+          "measured_work_cycles": 7437698
+        },
+        {
+          "frame": 15,
+          "tail_cycles": 7330840,
+          "measured_work_cycles": 7491832
+        },
+        {
+          "frame": 16,
+          "tail_cycles": 7319972,
+          "measured_work_cycles": 7469545
+        },
+        {
+          "frame": 17,
+          "tail_cycles": 7161707,
+          "measured_work_cycles": 7313740
+        },
+        {
+          "frame": 18,
+          "tail_cycles": 7245401,
+          "measured_work_cycles": 7395602
+        },
+        {
+          "frame": 19,
+          "tail_cycles": 7320691,
+          "measured_work_cycles": 7468414
+        },
+        {
+          "frame": 20,
+          "tail_cycles": 7306742,
+          "measured_work_cycles": 7454741
+        },
+        {
+          "frame": 21,
+          "tail_cycles": 7240282,
+          "measured_work_cycles": 7396356
+        },
+        {
+          "frame": 22,
+          "tail_cycles": 7283504,
+          "measured_work_cycles": 7426182
+        },
+        {
+          "frame": 23,
+          "tail_cycles": 7120531,
+          "measured_work_cycles": 7263208
+        },
+        {
+          "frame": 24,
+          "tail_cycles": 7327239,
+          "measured_work_cycles": 7482991
+        },
+        {
+          "frame": 25,
+          "tail_cycles": 7320267,
+          "measured_work_cycles": 7467423
+        },
+        {
+          "frame": 26,
+          "tail_cycles": 7255972,
+          "measured_work_cycles": 7401753
+        },
+        {
+          "frame": 27,
+          "tail_cycles": 7280276,
+          "measured_work_cycles": 7426057
+        },
+        {
+          "frame": 28,
+          "tail_cycles": 7281661,
+          "measured_work_cycles": 7424346
+        },
+        {
+          "frame": 29,
+          "tail_cycles": 7260521,
+          "measured_work_cycles": 7411160
+        },
+        {
+          "frame": 30,
+          "tail_cycles": 7236882,
+          "measured_work_cycles": 7388723
+        },
+        {
+          "frame": 31,
+          "tail_cycles": 3206973,
+          "measured_work_cycles": 3349417
+        },
+        {
+          "frame": 32,
+          "tail_cycles": 3251129,
+          "measured_work_cycles": 3399429
+        },
+        {
+          "frame": 33,
+          "tail_cycles": 3278185,
+          "measured_work_cycles": 3419509
+        },
+        {
+          "frame": 34,
+          "tail_cycles": 3133713,
+          "measured_work_cycles": 3279779
+        },
+        {
+          "frame": 35,
+          "tail_cycles": 7242152,
+          "measured_work_cycles": 7395331
+        },
+        {
+          "frame": 36,
+          "tail_cycles": 7029146,
+          "measured_work_cycles": 7179737
+        },
+        {
+          "frame": 37,
+          "tail_cycles": 7289537,
+          "measured_work_cycles": 7437745
+        },
+        {
+          "frame": 38,
+          "tail_cycles": 7021718,
+          "measured_work_cycles": 7177469
+        },
+        {
+          "frame": 39,
+          "tail_cycles": 7328027,
+          "measured_work_cycles": 7480681
+        },
+        {
+          "frame": 40,
+          "tail_cycles": 7296426,
+          "measured_work_cycles": 7442989
+        },
+        {
+          "frame": 41,
+          "tail_cycles": 7292163,
+          "measured_work_cycles": 7437930
+        },
+        {
+          "frame": 42,
+          "tail_cycles": 3358838,
+          "measured_work_cycles": 3502094
+        },
+        {
+          "frame": 43,
+          "tail_cycles": 7274363,
+          "measured_work_cycles": 7427556
+        },
+        {
+          "frame": 44,
+          "tail_cycles": 7369542,
+          "measured_work_cycles": 7520191
+        },
+        {
+          "frame": 45,
+          "tail_cycles": 7160560,
+          "measured_work_cycles": 7309496
+        },
+        {
+          "frame": 46,
+          "tail_cycles": 7159341,
+          "measured_work_cycles": 7302013
+        },
+        {
+          "frame": 47,
+          "tail_cycles": 7289964,
+          "measured_work_cycles": 7435731
+        },
+        {
+          "frame": 48,
+          "tail_cycles": 7259738,
+          "measured_work_cycles": 7409236
+        },
+        {
+          "frame": 49,
+          "tail_cycles": 7381521,
+          "measured_work_cycles": 7526105
+        },
+        {
+          "frame": 50,
+          "tail_cycles": 7302848,
+          "measured_work_cycles": 7448616
+        },
+        {
+          "frame": 51,
+          "tail_cycles": 7347724,
+          "measured_work_cycles": 7490396
+        },
+        {
+          "frame": 52,
+          "tail_cycles": 7360090,
+          "measured_work_cycles": 7502761
+        },
+        {
+          "frame": 53,
+          "tail_cycles": 7289686,
+          "measured_work_cycles": 7435453
+        },
+        {
+          "frame": 54,
+          "tail_cycles": 7249624,
+          "measured_work_cycles": 7397855
+        },
+        {
+          "frame": 55,
+          "tail_cycles": 7282617,
+          "measured_work_cycles": 7434627
+        },
+        {
+          "frame": 56,
+          "tail_cycles": 7313044,
+          "measured_work_cycles": 7458812
+        },
+        {
+          "frame": 57,
+          "tail_cycles": 7370358,
+          "measured_work_cycles": 7513030
+        },
+        {
+          "frame": 58,
+          "tail_cycles": 7201327,
+          "measured_work_cycles": 7352047
+        },
+        {
+          "frame": 59,
+          "tail_cycles": 7379921,
+          "measured_work_cycles": 7525688
+        },
+        {
+          "frame": 60,
+          "tail_cycles": 7470502,
+          "measured_work_cycles": 7613758
+        },
+        {
+          "frame": 61,
+          "tail_cycles": 7331554,
+          "measured_work_cycles": 7486181
+        },
+        {
+          "frame": 62,
+          "tail_cycles": 7553824,
+          "measured_work_cycles": 7699607
+        },
+        {
+          "frame": 63,
+          "tail_cycles": 7231435,
+          "measured_work_cycles": 7379097
+        },
+        {
+          "frame": 64,
+          "tail_cycles": 7257090,
+          "measured_work_cycles": 7412833
+        },
+        {
+          "frame": 65,
+          "tail_cycles": 3281226,
+          "measured_work_cycles": 3429520
+        },
+        {
+          "frame": 66,
+          "tail_cycles": 3116374,
+          "measured_work_cycles": 3263169
+        },
+        {
+          "frame": 67,
+          "tail_cycles": 7340915,
+          "measured_work_cycles": 7490222
+        },
+        {
+          "frame": 68,
+          "tail_cycles": 3210804,
+          "measured_work_cycles": 3365235
+        },
+        {
+          "frame": 69,
+          "tail_cycles": 3260616,
+          "measured_work_cycles": 3410613
+        },
+        {
+          "frame": 70,
+          "tail_cycles": 7281090,
+          "measured_work_cycles": 7425371
+        },
+        {
+          "frame": 71,
+          "tail_cycles": 7240708,
+          "measured_work_cycles": 7387431
+        },
+        {
+          "frame": 72,
+          "tail_cycles": 7392235,
+          "measured_work_cycles": 7545474
+        },
+        {
+          "frame": 73,
+          "tail_cycles": 7331802,
+          "measured_work_cycles": 7477570
+        },
+        {
+          "frame": 74,
+          "tail_cycles": 6672189,
+          "measured_work_cycles": 6819743
+        },
+        {
+          "frame": 75,
+          "tail_cycles": 7360488,
+          "measured_work_cycles": 7503160
+        },
+        {
+          "frame": 76,
+          "tail_cycles": 7312822,
+          "measured_work_cycles": 7469306
+        },
+        {
+          "frame": 77,
+          "tail_cycles": 7330434,
+          "measured_work_cycles": 7473909
+        },
+        {
+          "frame": 78,
+          "tail_cycles": 7431248,
+          "measured_work_cycles": 7574723
+        },
+        {
+          "frame": 79,
+          "tail_cycles": 7273891,
+          "measured_work_cycles": 7419878
+        },
+        {
+          "frame": 80,
+          "tail_cycles": 7276206,
+          "measured_work_cycles": 7419097
+        },
+        {
+          "frame": 81,
+          "tail_cycles": 7399642,
+          "measured_work_cycles": 7542533
+        },
+        {
+          "frame": 82,
+          "tail_cycles": 7390151,
+          "measured_work_cycles": 7541131
+        },
+        {
+          "frame": 83,
+          "tail_cycles": 7300689,
+          "measured_work_cycles": 7444172
+        },
+        {
+          "frame": 84,
+          "tail_cycles": 6893051,
+          "measured_work_cycles": 7043999
+        },
+        {
+          "frame": 85,
+          "tail_cycles": 7163853,
+          "measured_work_cycles": 7314073
+        },
+        {
+          "frame": 86,
+          "tail_cycles": 7359820,
+          "measured_work_cycles": 7501719
+        },
+        {
+          "frame": 87,
+          "tail_cycles": 7142183,
+          "measured_work_cycles": 7293375
+        },
+        {
+          "frame": 88,
+          "tail_cycles": 7219942,
+          "measured_work_cycles": 7362425
+        },
+        {
+          "frame": 89,
+          "tail_cycles": 7377384,
+          "measured_work_cycles": 7519867
+        },
+        {
+          "frame": 90,
+          "tail_cycles": 7315180,
+          "measured_work_cycles": 7464066
+        },
+        {
+          "frame": 91,
+          "tail_cycles": 7240572,
+          "measured_work_cycles": 7389230
+        },
+        {
+          "frame": 92,
+          "tail_cycles": 7292179,
+          "measured_work_cycles": 7434081
+        },
+        {
+          "frame": 93,
+          "tail_cycles": 7283039,
+          "measured_work_cycles": 7433022
+        },
+        {
+          "frame": 94,
+          "tail_cycles": 7396061,
+          "measured_work_cycles": 7543461
+        },
+        {
+          "frame": 95,
+          "tail_cycles": 7273716,
+          "measured_work_cycles": 7427424
+        },
+        {
+          "frame": 96,
+          "tail_cycles": 7338347,
+          "measured_work_cycles": 7488335
+        },
+        {
+          "frame": 97,
+          "tail_cycles": 7330243,
+          "measured_work_cycles": 7472160
+        },
+        {
+          "frame": 98,
+          "tail_cycles": 7372682,
+          "measured_work_cycles": 7517694
+        },
+        {
+          "frame": 99,
+          "tail_cycles": 7242716,
+          "measured_work_cycles": 7383855
+        },
+        {
+          "frame": 100,
+          "tail_cycles": 7329062,
+          "measured_work_cycles": 7477975
+        },
+        {
+          "frame": 101,
+          "tail_cycles": 7189294,
+          "measured_work_cycles": 7332945
+        },
+        {
+          "frame": 102,
+          "tail_cycles": 7170132,
+          "measured_work_cycles": 7323192
+        },
+        {
+          "frame": 103,
+          "tail_cycles": 7340719,
+          "measured_work_cycles": 7486110
+        },
+        {
+          "frame": 104,
+          "tail_cycles": 7436475,
+          "measured_work_cycles": 7579986
+        },
+        {
+          "frame": 105,
+          "tail_cycles": 7250713,
+          "measured_work_cycles": 7391658
+        },
+        {
+          "frame": 106,
+          "tail_cycles": 7383721,
+          "measured_work_cycles": 7531486
+        },
+        {
+          "frame": 107,
+          "tail_cycles": 7339742,
+          "measured_work_cycles": 7484530
+        },
+        {
+          "frame": 108,
+          "tail_cycles": 7341206,
+          "measured_work_cycles": 7487780
+        },
+        {
+          "frame": 109,
+          "tail_cycles": 7425401,
+          "measured_work_cycles": 7567094
+        },
+        {
+          "frame": 110,
+          "tail_cycles": 7346717,
+          "measured_work_cycles": 7491505
+        },
+        {
+          "frame": 111,
+          "tail_cycles": 7240403,
+          "measured_work_cycles": 7395174
+        },
+        {
+          "frame": 112,
+          "tail_cycles": 7343339,
+          "measured_work_cycles": 7490591
+        },
+        {
+          "frame": 113,
+          "tail_cycles": 7319629,
+          "measured_work_cycles": 7464418
+        },
+        {
+          "frame": 114,
+          "tail_cycles": 7283427,
+          "measured_work_cycles": 7428216
+        },
+        {
+          "frame": 115,
+          "tail_cycles": 7280596,
+          "measured_work_cycles": 7422289
+        },
+        {
+          "frame": 116,
+          "tail_cycles": 7371862,
+          "measured_work_cycles": 7513555
+        },
+        {
+          "frame": 117,
+          "tail_cycles": 7349846,
+          "measured_work_cycles": 7499493
+        },
+        {
+          "frame": 118,
+          "tail_cycles": 7329943,
+          "measured_work_cycles": 7477162
+        },
+        {
+          "frame": 119,
+          "tail_cycles": 7339134,
+          "measured_work_cycles": 7486351
+        },
+        {
+          "frame": 120,
+          "tail_cycles": 7359480,
+          "measured_work_cycles": 7504269
+        },
+        {
+          "frame": 121,
+          "tail_cycles": 7260893,
+          "measured_work_cycles": 7410541
+        },
+        {
+          "frame": 122,
+          "tail_cycles": 7320358,
+          "measured_work_cycles": 7465920
+        },
+        {
+          "frame": 123,
+          "tail_cycles": 7394781,
+          "measured_work_cycles": 7544544
+        },
+        {
+          "frame": 124,
+          "tail_cycles": 6861147,
+          "measured_work_cycles": 7005935
+        },
+        {
+          "frame": 125,
+          "tail_cycles": 7331943,
+          "measured_work_cycles": 7474220
+        },
+        {
+          "frame": 126,
+          "tail_cycles": 7321960,
+          "measured_work_cycles": 7469212
+        },
+        {
+          "frame": 127,
+          "tail_cycles": 7269454,
+          "measured_work_cycles": 7419135
+        },
+        {
+          "frame": 128,
+          "tail_cycles": 7242080,
+          "measured_work_cycles": 7383772
+        }
+      ]
+    },
+    {
+      "path": "docs/tasks/RALLY-28/custom-vdp/throughput/evidence/hzcandidate01/phase-float-quad-layered/phase-verified.json",
+      "phase_sha256": "6e54eec73d9990bf96d9da64d4caa5b2f5d53da482d9a4a6ce8a0ba7cbd0f3a1",
+      "run_sha256": "9aa21176bbf55fa1f1a23b5b4e28e3e73eaa3441a03b065f36c92a4b2d45e22d",
+      "candidate": "float-quad-layered",
+      "frames": 128,
+      "physics_ticks": 512,
+      "unit": "raw per-core CCOUNT delta modulo2^32; no Hz calibration",
+      "cpu_prid": 52685,
+      "calibration": {
+        "min": 1,
+        "max": 1
+      },
+      "complete_records": 128,
+      "all_row_telescope_checks_pass": true,
+      "runtime_fingerprint": "f6b2f5602655470cf7c330be1240dda505a0a47e399cae455d2d3ef517410404",
+      "runtime_identities": {
+        "flexe-agon-emulator": "c8407990aa3f374471752c861f4b0f831bf215f226c6c54699f48f981fab07b4",
+        "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+        "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+        "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+        "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+        "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+        "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+        "sdcard/rally25/probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25"
+      },
+      "backend_engine": "jit",
+      "stages": {
+        "physics4_call_cycles": {
+          "total": 12675324,
+          "min": 96340,
+          "median": 97320.0,
+          "mean": 99025.96875,
+          "p95_nearest_rank": 104800,
+          "max": 106186,
+          "percent_of_measured_work": 1.870512920225553
+        },
+        "prepare_call_cycles": {
+          "total": 5982887,
+          "min": 42272,
+          "median": 46633.0,
+          "mean": 46741.3046875,
+          "p95_nearest_rank": 53674,
+          "max": 58662,
+          "percent_of_measured_work": 0.8829018835139439
+        },
+        "clear_title_dispatch_draw_flush": {
+          "total": 59814678,
+          "min": 455997,
+          "median": 466442.5,
+          "mean": 467302.171875,
+          "p95_nearest_rank": 474280,
+          "max": 475163,
+          "percent_of_measured_work": 8.826924504504275
+        },
+        "road_dispatch_draw_flush": {
+          "total": 180826682,
+          "min": 1284467,
+          "median": 1392887.5,
+          "mean": 1412708.453125,
+          "p95_nearest_rank": 1676777,
+          "max": 1758695,
+          "percent_of_measured_work": 26.684812554102557
+        },
+        "actors_dispatch_draw_flush": {
+          "total": 146744376,
+          "min": 905251,
+          "median": 1152104.5,
+          "mean": 1146440.4375,
+          "p95_nearest_rank": 1265016,
+          "max": 1305975,
+          "percent_of_measured_work": 21.65524536322989
+        },
+        "player_dispatch_draw_flush": {
+          "total": 18456649,
+          "min": 140103,
+          "median": 145078.0,
+          "mean": 144192.5703125,
+          "p95_nearest_rank": 148980,
+          "max": 151636,
+          "percent_of_measured_work": 2.723670055185022
+        },
+        "empty_marker_control": {
+          "total": 354572,
+          "min": 2737,
+          "median": 2739.0,
+          "mean": 2770.09375,
+          "p95_nearest_rank": 2739,
+          "max": 5405,
+          "percent_of_measured_work": 0.052324619642875776
+        },
+        "swap_dispatch_and_flush": {
+          "total": 252783776,
+          "min": 20393,
+          "median": 371960.5,
+          "mean": 1974873.25,
+          "p95_nearest_rank": 4102000,
+          "max": 4125371,
+          "percent_of_measured_work": 37.303608099595884
+        }
+      },
+      "nested_prepare": {
+        "road_build_cycles": {
+          "total": 3783313,
+          "min": 26681,
+          "median": 29568.0,
+          "mean": 29557.1328125,
+          "p95_nearest_rank": 36601,
+          "max": 41566,
+          "percent_of_prepare": 63.23557506601746
+        },
+        "actors_build_cycles": {
+          "total": 694573,
+          "min": 4085,
+          "median": 5559.0,
+          "mean": 5426.3515625,
+          "p95_nearest_rank": 5579,
+          "max": 10500,
+          "percent_of_prepare": 11.609328406169128
+        },
+        "player_build_cycles": {
+          "total": 90836,
+          "min": 651,
+          "median": 651.0,
+          "mean": 709.65625,
+          "p95_nearest_rank": 651,
+          "max": 8159,
+          "percent_of_prepare": 1.5182636743766011
+        },
+        "prepare_other_cycles": {
+          "total": 1414165,
+          "min": 10853,
+          "median": 10855.0,
+          "mean": 11048.1640625,
+          "p95_nearest_rank": 10877,
+          "max": 15817,
+          "percent_of_prepare": 23.63683285343681
+        }
+      },
+      "measured_work": {
+        "total": 677638944,
+        "min": 3223627,
+        "median": 3472350.0,
+        "mean": 5294054.25,
+        "p95_nearest_rank": 7519963,
+        "max": 7608761
+      },
+      "broad_counter_progress": {
+        "first_clear": 1734065314,
+        "last_swap_end": 2511359385,
+        "observed_wraps": 0,
+        "unwrapped_delta": 777294071,
+        "tail_total": 658980733,
+        "between_tail_total": 118313338,
+        "start_to_start": {
+          "total": 770191965,
+          "min": 3930434,
+          "median": 4313154,
+          "mean": 6064503.661417323,
+          "p95_nearest_rank": 8405753,
+          "max": 8817925
+        },
+        "nondecreasing_modulo_half_range": true,
+        "telescoping_pass": true
+      },
+      "separate_clocks": {
+        "nominal_mos_seconds": 7.166666666666667,
+        "mos_units": 860,
+        "nominal_prt_seconds": 7.413,
+        "prt_timing_usable": true,
+        "host_seconds_including_startup": 19.079
+      },
+      "row_checks": [
+        {
+          "frame": 1,
+          "tail_cycles": 6790924,
+          "measured_work_cycles": 6944478
+        },
+        {
+          "frame": 2,
+          "tail_cycles": 7460088,
+          "measured_work_cycles": 7608761
+        },
+        {
+          "frame": 3,
+          "tail_cycles": 7363750,
+          "measured_work_cycles": 7515447
+        },
+        {
+          "frame": 4,
+          "tail_cycles": 7188150,
+          "measured_work_cycles": 7343157
+        },
+        {
+          "frame": 5,
+          "tail_cycles": 7271787,
+          "measured_work_cycles": 7431575
+        },
+        {
+          "frame": 6,
+          "tail_cycles": 7365860,
+          "measured_work_cycles": 7513121
+        },
+        {
+          "frame": 7,
+          "tail_cycles": 7359930,
+          "measured_work_cycles": 7514960
+        },
+        {
+          "frame": 8,
+          "tail_cycles": 7389291,
+          "measured_work_cycles": 7537055
+        },
+        {
+          "frame": 9,
+          "tail_cycles": 7251079,
+          "measured_work_cycles": 7409064
+        },
+        {
+          "frame": 10,
+          "tail_cycles": 7377312,
+          "measured_work_cycles": 7527610
+        },
+        {
+          "frame": 11,
+          "tail_cycles": 7370504,
+          "measured_work_cycles": 7517914
+        },
+        {
+          "frame": 12,
+          "tail_cycles": 7270503,
+          "measured_work_cycles": 7422152
+        },
+        {
+          "frame": 13,
+          "tail_cycles": 7360504,
+          "measured_work_cycles": 7510803
+        },
+        {
+          "frame": 14,
+          "tail_cycles": 7279919,
+          "measured_work_cycles": 7431745
+        },
+        {
+          "frame": 15,
+          "tail_cycles": 7350964,
+          "measured_work_cycles": 7506250
+        },
+        {
+          "frame": 16,
+          "tail_cycles": 7389085,
+          "measured_work_cycles": 7543226
+        },
+        {
+          "frame": 17,
+          "tail_cycles": 7330618,
+          "measured_work_cycles": 7475964
+        },
+        {
+          "frame": 18,
+          "tail_cycles": 7420418,
+          "measured_work_cycles": 7563828
+        },
+        {
+          "frame": 19,
+          "tail_cycles": 7208622,
+          "measured_work_cycles": 7357282
+        },
+        {
+          "frame": 20,
+          "tail_cycles": 7209435,
+          "measured_work_cycles": 7350758
+        },
+        {
+          "frame": 21,
+          "tail_cycles": 7329519,
+          "measured_work_cycles": 7483778
+        },
+        {
+          "frame": 22,
+          "tail_cycles": 3180821,
+          "measured_work_cycles": 3321892
+        },
+        {
+          "frame": 23,
+          "tail_cycles": 3141931,
+          "measured_work_cycles": 3290457
+        },
+        {
+          "frame": 24,
+          "tail_cycles": 7224216,
+          "measured_work_cycles": 7368170
+        },
+        {
+          "frame": 25,
+          "tail_cycles": 3217669,
+          "measured_work_cycles": 3364230
+        },
+        {
+          "frame": 26,
+          "tail_cycles": 3249975,
+          "measured_work_cycles": 3407749
+        },
+        {
+          "frame": 27,
+          "tail_cycles": 7315617,
+          "measured_work_cycles": 7459583
+        },
+        {
+          "frame": 28,
+          "tail_cycles": 3144247,
+          "measured_work_cycles": 3290206
+        },
+        {
+          "frame": 29,
+          "tail_cycles": 3240671,
+          "measured_work_cycles": 3389611
+        },
+        {
+          "frame": 30,
+          "tail_cycles": 3180113,
+          "measured_work_cycles": 3329207
+        },
+        {
+          "frame": 31,
+          "tail_cycles": 3259831,
+          "measured_work_cycles": 3400599
+        },
+        {
+          "frame": 32,
+          "tail_cycles": 3270847,
+          "measured_work_cycles": 3413466
+        },
+        {
+          "frame": 33,
+          "tail_cycles": 3153440,
+          "measured_work_cycles": 3298146
+        },
+        {
+          "frame": 34,
+          "tail_cycles": 3278228,
+          "measured_work_cycles": 3417820
+        },
+        {
+          "frame": 35,
+          "tail_cycles": 3151622,
+          "measured_work_cycles": 3300321
+        },
+        {
+          "frame": 36,
+          "tail_cycles": 3253618,
+          "measured_work_cycles": 3395061
+        },
+        {
+          "frame": 37,
+          "tail_cycles": 3212879,
+          "measured_work_cycles": 3354444
+        },
+        {
+          "frame": 38,
+          "tail_cycles": 3261150,
+          "measured_work_cycles": 3405103
+        },
+        {
+          "frame": 39,
+          "tail_cycles": 3319466,
+          "measured_work_cycles": 3460531
+        },
+        {
+          "frame": 40,
+          "tail_cycles": 3080626,
+          "measured_work_cycles": 3226699
+        },
+        {
+          "frame": 41,
+          "tail_cycles": 7195970,
+          "measured_work_cycles": 7346186
+        },
+        {
+          "frame": 42,
+          "tail_cycles": 3260952,
+          "measured_work_cycles": 3407342
+        },
+        {
+          "frame": 43,
+          "tail_cycles": 3161376,
+          "measured_work_cycles": 3302942
+        },
+        {
+          "frame": 44,
+          "tail_cycles": 7221062,
+          "measured_work_cycles": 7369896
+        },
+        {
+          "frame": 45,
+          "tail_cycles": 3225460,
+          "measured_work_cycles": 3366525
+        },
+        {
+          "frame": 46,
+          "tail_cycles": 3224827,
+          "measured_work_cycles": 3370784
+        },
+        {
+          "frame": 47,
+          "tail_cycles": 3249511,
+          "measured_work_cycles": 3393463
+        },
+        {
+          "frame": 48,
+          "tail_cycles": 3243977,
+          "measured_work_cycles": 3385543
+        },
+        {
+          "frame": 49,
+          "tail_cycles": 3077180,
+          "measured_work_cycles": 3223627
+        },
+        {
+          "frame": 50,
+          "tail_cycles": 3267644,
+          "measured_work_cycles": 3416572
+        },
+        {
+          "frame": 51,
+          "tail_cycles": 3356668,
+          "measured_work_cycles": 3506577
+        },
+        {
+          "frame": 52,
+          "tail_cycles": 3248317,
+          "measured_work_cycles": 3389382
+        },
+        {
+          "frame": 53,
+          "tail_cycles": 7258029,
+          "measured_work_cycles": 7401981
+        },
+        {
+          "frame": 54,
+          "tail_cycles": 3220265,
+          "measured_work_cycles": 3361831
+        },
+        {
+          "frame": 55,
+          "tail_cycles": 7211933,
+          "measured_work_cycles": 7364741
+        },
+        {
+          "frame": 56,
+          "tail_cycles": 3299884,
+          "measured_work_cycles": 3443837
+        },
+        {
+          "frame": 57,
+          "tail_cycles": 3203796,
+          "measured_work_cycles": 3348774
+        },
+        {
+          "frame": 58,
+          "tail_cycles": 3265639,
+          "measured_work_cycles": 3409591
+        },
+        {
+          "frame": 59,
+          "tail_cycles": 3201306,
+          "measured_work_cycles": 3350233
+        },
+        {
+          "frame": 60,
+          "tail_cycles": 7206493,
+          "measured_work_cycles": 7348059
+        },
+        {
+          "frame": 61,
+          "tail_cycles": 3222268,
+          "measured_work_cycles": 3376151
+        },
+        {
+          "frame": 62,
+          "tail_cycles": 3324567,
+          "measured_work_cycles": 3473359
+        },
+        {
+          "frame": 63,
+          "tail_cycles": 3132774,
+          "measured_work_cycles": 3277712
+        },
+        {
+          "frame": 64,
+          "tail_cycles": 3231093,
+          "measured_work_cycles": 3375060
+        },
+        {
+          "frame": 65,
+          "tail_cycles": 3356590,
+          "measured_work_cycles": 3504189
+        },
+        {
+          "frame": 66,
+          "tail_cycles": 3171508,
+          "measured_work_cycles": 3311746
+        },
+        {
+          "frame": 67,
+          "tail_cycles": 3178944,
+          "measured_work_cycles": 3321569
+        },
+        {
+          "frame": 68,
+          "tail_cycles": 3182216,
+          "measured_work_cycles": 3333696
+        },
+        {
+          "frame": 69,
+          "tail_cycles": 3259129,
+          "measured_work_cycles": 3403603
+        },
+        {
+          "frame": 70,
+          "tail_cycles": 3320180,
+          "measured_work_cycles": 3467635
+        },
+        {
+          "frame": 71,
+          "tail_cycles": 3231209,
+          "measured_work_cycles": 3380169
+        },
+        {
+          "frame": 72,
+          "tail_cycles": 3269403,
+          "measured_work_cycles": 3415911
+        },
+        {
+          "frame": 73,
+          "tail_cycles": 7224512,
+          "measured_work_cycles": 7368465
+        },
+        {
+          "frame": 74,
+          "tail_cycles": 3325394,
+          "measured_work_cycles": 3471341
+        },
+        {
+          "frame": 75,
+          "tail_cycles": 3131300,
+          "measured_work_cycles": 3281232
+        },
+        {
+          "frame": 76,
+          "tail_cycles": 7195530,
+          "measured_work_cycles": 7350155
+        },
+        {
+          "frame": 77,
+          "tail_cycles": 3239988,
+          "measured_work_cycles": 3387971
+        },
+        {
+          "frame": 78,
+          "tail_cycles": 3224227,
+          "measured_work_cycles": 3366012
+        },
+        {
+          "frame": 79,
+          "tail_cycles": 3281060,
+          "measured_work_cycles": 3425232
+        },
+        {
+          "frame": 80,
+          "tail_cycles": 3296289,
+          "measured_work_cycles": 3437573
+        },
+        {
+          "frame": 81,
+          "tail_cycles": 3191794,
+          "measured_work_cycles": 3339276
+        },
+        {
+          "frame": 82,
+          "tail_cycles": 3251002,
+          "measured_work_cycles": 3395181
+        },
+        {
+          "frame": 83,
+          "tail_cycles": 3240363,
+          "measured_work_cycles": 3382156
+        },
+        {
+          "frame": 84,
+          "tail_cycles": 7371998,
+          "measured_work_cycles": 7516178
+        },
+        {
+          "frame": 85,
+          "tail_cycles": 7121324,
+          "measured_work_cycles": 7269762
+        },
+        {
+          "frame": 86,
+          "tail_cycles": 3267008,
+          "measured_work_cycles": 3407300
+        },
+        {
+          "frame": 87,
+          "tail_cycles": 7290233,
+          "measured_work_cycles": 7433412
+        },
+        {
+          "frame": 88,
+          "tail_cycles": 7209378,
+          "measured_work_cycles": 7350171
+        },
+        {
+          "frame": 89,
+          "tail_cycles": 3271461,
+          "measured_work_cycles": 3413604
+        },
+        {
+          "frame": 90,
+          "tail_cycles": 7294576,
+          "measured_work_cycles": 7437756
+        },
+        {
+          "frame": 91,
+          "tail_cycles": 7090972,
+          "measured_work_cycles": 7231803
+        },
+        {
+          "frame": 92,
+          "tail_cycles": 3231444,
+          "measured_work_cycles": 3371739
+        },
+        {
+          "frame": 93,
+          "tail_cycles": 7101576,
+          "measured_work_cycles": 7249755
+        },
+        {
+          "frame": 94,
+          "tail_cycles": 7219776,
+          "measured_work_cycles": 7365431
+        },
+        {
+          "frame": 95,
+          "tail_cycles": 7214529,
+          "measured_work_cycles": 7357727
+        },
+        {
+          "frame": 96,
+          "tail_cycles": 7411114,
+          "measured_work_cycles": 7558203
+        },
+        {
+          "frame": 97,
+          "tail_cycles": 7372049,
+          "measured_work_cycles": 7512359
+        },
+        {
+          "frame": 98,
+          "tail_cycles": 7309772,
+          "measured_work_cycles": 7452969
+        },
+        {
+          "frame": 99,
+          "tail_cycles": 6736973,
+          "measured_work_cycles": 6876436
+        },
+        {
+          "frame": 100,
+          "tail_cycles": 3162539,
+          "measured_work_cycles": 3306955
+        },
+        {
+          "frame": 101,
+          "tail_cycles": 3160761,
+          "measured_work_cycles": 3302611
+        },
+        {
+          "frame": 102,
+          "tail_cycles": 3148277,
+          "measured_work_cycles": 3287239
+        },
+        {
+          "frame": 103,
+          "tail_cycles": 3209402,
+          "measured_work_cycles": 3348225
+        },
+        {
+          "frame": 104,
+          "tail_cycles": 3291836,
+          "measured_work_cycles": 3433546
+        },
+        {
+          "frame": 105,
+          "tail_cycles": 3139786,
+          "measured_work_cycles": 3283914
+        },
+        {
+          "frame": 106,
+          "tail_cycles": 7251704,
+          "measured_work_cycles": 7392826
+        },
+        {
+          "frame": 107,
+          "tail_cycles": 7241593,
+          "measured_work_cycles": 7384566
+        },
+        {
+          "frame": 108,
+          "tail_cycles": 7161322,
+          "measured_work_cycles": 7301408
+        },
+        {
+          "frame": 109,
+          "tail_cycles": 3323178,
+          "measured_work_cycles": 3468145
+        },
+        {
+          "frame": 110,
+          "tail_cycles": 7372015,
+          "measured_work_cycles": 7519963
+        },
+        {
+          "frame": 111,
+          "tail_cycles": 7201983,
+          "measured_work_cycles": 7344956
+        },
+        {
+          "frame": 112,
+          "tail_cycles": 7090967,
+          "measured_work_cycles": 7236413
+        },
+        {
+          "frame": 113,
+          "tail_cycles": 7261535,
+          "measured_work_cycles": 7404509
+        },
+        {
+          "frame": 114,
+          "tail_cycles": 3290300,
+          "measured_work_cycles": 3434624
+        },
+        {
+          "frame": 115,
+          "tail_cycles": 7271333,
+          "measured_work_cycles": 7416287
+        },
+        {
+          "frame": 116,
+          "tail_cycles": 3209796,
+          "measured_work_cycles": 3354763
+        },
+        {
+          "frame": 117,
+          "tail_cycles": 7301068,
+          "measured_work_cycles": 7452907
+        },
+        {
+          "frame": 118,
+          "tail_cycles": 7309294,
+          "measured_work_cycles": 7449881
+        },
+        {
+          "frame": 119,
+          "tail_cycles": 3269880,
+          "measured_work_cycles": 3410466
+        },
+        {
+          "frame": 120,
+          "tail_cycles": 7321667,
+          "measured_work_cycles": 7464641
+        },
+        {
+          "frame": 121,
+          "tail_cycles": 7291159,
+          "measured_work_cycles": 7444093
+        },
+        {
+          "frame": 122,
+          "tail_cycles": 7239878,
+          "measured_work_cycles": 7379964
+        },
+        {
+          "frame": 123,
+          "tail_cycles": 7299310,
+          "measured_work_cycles": 7442283
+        },
+        {
+          "frame": 124,
+          "tail_cycles": 7209972,
+          "measured_work_cycles": 7357920
+        },
+        {
+          "frame": 125,
+          "tail_cycles": 7236399,
+          "measured_work_cycles": 7376986
+        },
+        {
+          "frame": 126,
+          "tail_cycles": 3240621,
+          "measured_work_cycles": 3381208
+        },
+        {
+          "frame": 127,
+          "tail_cycles": 7300011,
+          "measured_work_cycles": 7451445
+        },
+        {
+          "frame": 128,
+          "tail_cycles": 7102106,
+          "measured_work_cycles": 7246092
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "runtime_fingerprint": "f6b2f5602655470cf7c330be1240dda505a0a47e399cae455d2d3ef517410404",
+      "cpu_prid": 52685,
+      "backend_engine": "jit",
+      "pooled": {
+        "control": {
+          "runs": 1,
+          "frames": 128,
+          "raw_measured_work_per_frame": 7135473.375,
+          "raw_stage_per_frame": {
+            "physics4_call_cycles": 98906.921875,
+            "prepare_call_cycles": 48987.234375,
+            "clear_title_dispatch_draw_flush": 467201.8671875,
+            "road_dispatch_draw_flush": 1665381.75,
+            "actors_dispatch_draw_flush": 1162494.0625,
+            "player_dispatch_draw_flush": 144058.5625,
+            "empty_marker_control": 2875.765625,
+            "swap_dispatch_and_flush": 3545567.2109375
+          }
+        },
+        "float-quad-layered": {
+          "runs": 1,
+          "frames": 128,
+          "raw_measured_work_per_frame": 5294054.25,
+          "raw_stage_per_frame": {
+            "physics4_call_cycles": 99025.96875,
+            "prepare_call_cycles": 46741.3046875,
+            "clear_title_dispatch_draw_flush": 467302.171875,
+            "road_dispatch_draw_flush": 1412708.453125,
+            "actors_dispatch_draw_flush": 1146440.4375,
+            "player_dispatch_draw_flush": 144192.5703125,
+            "empty_marker_control": 2770.09375,
+            "swap_dispatch_and_flush": 1974873.25
+          }
+        }
+      },
+      "raw_measured_work_reduction_percent": 25.806544684920784,
+      "raw_stage_reduction_percent": {
+        "physics4_call_cycles": -0.12036253150256027,
+        "prepare_call_cycles": 4.58472440045764,
+        "clear_title_dispatch_draw_flush": -0.021469239432581055,
+        "road_dispatch_draw_flush": 15.172094738938991,
+        "actors_dispatch_draw_flush": 1.3809640425582859,
+        "player_dispatch_draw_flush": -0.09302314987351679,
+        "empty_marker_control": 3.6745649256447965,
+        "swap_dispatch_and_flush": 44.30021679160851
+      },
+      "scope": "Short instrumented measured-work counters only; not a 900-frame throughput improvement or hardware prediction"
+    }
+  ],
+  "rejected": [],
+  "limits": [
+    "Short diagnostic workload only: 128 renders / 512 simulation ticks, distinct from 900-frame headline comparisons.",
+    "Raw per-core CCOUNT values are uncalibrated; no assumed ESP32 MHz or conversion into milliseconds.",
+    "Native intervals include interrupt/scheduler time. Drawing intervals include resident dispatch, flush and marker overhead; they are not exclusive raster time.",
+    "The measured-work denominator omits time between separate native-call brackets and other unmeasured transport/foreground intervals; shares are not complete-frame budget shares.",
+    "Road/actor/player list construction is nested inside prepare and is counted only once in measured-work totals.",
+    "Swap interval ends after the ordered controller-swap/drain fence, not completion of physical monitor scanout.",
+    "Broad CCOUNT progress is an ordering/continuity check, with the first frame simulation/preparation outside its first clear timestamp; it is not used as the measured-work denominator.",
+    "MOS/PRT and host durations remain separate clocks; host duration includes startup/teardown."
+  ],
+  "headline_throughput_included": false,
+  "hardware_prediction": false,
+  "output_written": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/phase_ANALYSIS.json"
+}

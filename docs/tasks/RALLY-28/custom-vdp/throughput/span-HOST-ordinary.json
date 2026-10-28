@@ -1,0 +1,61 @@
+{
+  "scope": "Host actual generated C plus native helper; no target runtime or performance claim",
+  "mode": "ordinary",
+  "units": {
+    "edge_cases": 490,
+    "section_stock_raster_cases": 598,
+    "invalid_untouched_cases": 6,
+    "clipping_and_one_row_cases": true,
+    "top_104_grass_and_224_exclusion": true,
+    "guard_bytes_unchanged": true,
+    "palette": {
+      "logical_to_rgba": {
+        "2": 200,
+        "8": 213,
+        "9": 195,
+        "11": 207,
+        "15": 255
+      },
+      "palette_source_sha256": "f4bfef2510e8dec9bd29a4352edb76cd3c22276c77b92798eabcefbdbc2dd5e7",
+      "graphics_source_sha256": "eba700bc2b988af484784c4d90ebc8233a008687f1e5d5b65ab61cc7e6433d2a",
+      "affine_65535_disable_verified": true
+    }
+  },
+  "failures": {
+    "inherited_helper_failure_cases": 79,
+    "additional_pixel_lifetime_alias_cases": 47,
+    "failed_or_malformed_grants_released": true,
+    "failed_release_unbinds": true
+  },
+  "replay": {
+    "frames": 900,
+    "ticks": 3600,
+    "independent_world_model_pass": true,
+    "final_arrays_exact": true,
+    "world_digest": "3fb431bfcdafb0a8138e481150d596bcd8442664a8b405b6a40bf822af58ad32",
+    "road_pixel_digest": "4736f1f03fcd3b2d7e23cb698366e8daeb53bb88471fe3296a301cc1123327af",
+    "stock_quad_rasters_equal": 900,
+    "unchanged_actor_player_commands": true,
+    "unchanged_HUD_finish_commands": true,
+    "average_bands": 14.794444444444444,
+    "average_road_list_bytes": 45.4,
+    "maximum_road_list_bytes": 399,
+    "opaque_pixel_values": [
+      195,
+      200,
+      207,
+      213,
+      255
+    ],
+    "balanced_leases": true,
+    "peak_leases": 4,
+    "authoritative_state_matches_float_quad_control": true
+  },
+  "source_files": {
+    "span.inc": "380cce4c17dfbc18d4ffd202172d79eb4257674bb504493c3dd42184b8a3964d",
+    "span_build.py": "dd15455a872c0ae670cb35f02f4a427683cf78988c975dcf28441f6f7f818751",
+    "span-host.c": "fd657aaaeadefd4b3c3fcc74e1dbd7596ac5d3d8211a6e8bdbd5180a527a46f4",
+    "span_check.py": "0eb42adb1eecd2c49a6057a95f20f45ba7b96d09d9ff44a2555ec0254031c48a"
+  },
+  "host_library_sha256": "23ee934f86d91a7701171880becf390182deff90f915c22c4cffd168ad4dffdf"
+}

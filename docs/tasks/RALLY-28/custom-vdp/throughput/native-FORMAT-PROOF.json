@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "producer_sha256": "70e1c330057a0d12528ba5263d85ce3d0b5d26365331939d314faa0410278873",
+  "static": {
+    "pins": {
+      "video/agon_screen.h": {
+        "git_pin": "1056ee38ec1cc68ed327bd32ee47d04b1c30597c",
+        "sha256": "648dbc7d0ba9d98a3115a4ba307ff7585c6c5e28189c1e8961eff7a3c3d60343",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/agon_screen.h"
+      },
+      "video/agon_palette.h": {
+        "git_pin": "1056ee38ec1cc68ed327bd32ee47d04b1c30597c",
+        "sha256": "f4bfef2510e8dec9bd29a4352edb76cd3c22276c77b92798eabcefbdbc2dd5e7",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/agon_palette.h"
+      },
+      "video/vdu_sprites.h": {
+        "git_pin": "1056ee38ec1cc68ed327bd32ee47d04b1c30597c",
+        "sha256": "53b0fe1474ba20565cfc31afae993f88eb44084ab8b3c4181d5261a59db3c1eb",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/vdu_sprites.h"
+      },
+      "video/context/graphics.h": {
+        "git_pin": "1056ee38ec1cc68ed327bd32ee47d04b1c30597c",
+        "sha256": "eba700bc2b988af484784c4d90ebc8233a008687f1e5d5b65ab61cc7e6433d2a",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/context/graphics.h"
+      },
+      "src/displaycontroller.cpp": {
+        "git_pin": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+        "sha256": "f3588a684647ef258c024251d17b029e2877c8363b28a570432376f353232902",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/displaycontroller.cpp"
+      },
+      "src/displaycontroller.h": {
+        "git_pin": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+        "sha256": "603bac727fd1ab61d6f36a8d1a0e533471b849d6c30159b5f95ed4260e9d5c23",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/displaycontroller.h"
+      },
+      "src/fabglconf.h": {
+        "git_pin": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+        "sha256": "244afe581be47a3ef0dd21fbe8025f4da6e01ce8e53edc595d3188ef4d3a0ee3",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/fabglconf.h"
+      },
+      "src/dispdrivers/vga64controller.cpp": {
+        "git_pin": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+        "sha256": "8a6e3a11daced6d380da7a5cc4f83295bd8ee6bb44d9f821e5bad532976c707b",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/dispdrivers/vga64controller.cpp"
+      },
+      "src/dispdrivers/vgabasecontroller.cpp": {
+        "git_pin": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+        "sha256": "443e24bbd568d9eb75fc069a0001275b6959c88dc941ff4fef7fbe2f3f8264aa",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/dispdrivers/vgabasecontroller.cpp"
+      },
+      "src/dispdrivers/vgabasecontroller.h": {
+        "git_pin": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+        "sha256": "b57445969deda2e43f118ee633abb5645a0e932b75f1b22ded04c407f3bc7b3b",
+        "local": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/dispdrivers/vgabasecontroller.h"
+      }
+    },
+    "mode": 136,
+    "controller": "VGA64Controller",
+    "modeline": "#define QVGA_320x240_60Hz \"\\\"320x240@60Hz\\\" 12.6 320 328 376 400 240 245 246 262 -HSync -VSync DoubleScan\"",
+    "visible_sync_mask": 192,
+    "logical_palette_to_native": [
+      192,
+      194,
+      200,
+      202,
+      224,
+      226,
+      232,
+      234,
+      213,
+      195,
+      204,
+      207,
+      240,
+      243,
+      252,
+      255,
+      208,
+      196,
+      212,
+      228,
+      244,
+      216,
+      248,
+      220,
+      236,
+      193,
+      209,
+      225,
+      241,
+      197,
+      229,
+      245,
+      201,
+      217,
+      233,
+      249,
+      205,
+      221,
+      237,
+      253,
+      210,
+      242,
+      198,
+      214,
+      230,
+      246,
+      218,
+      250,
+      206,
+      222,
+      238,
+      254,
+      211,
+      227,
+      199,
+      215,
+      231,
+      247,
+      203,
+      219,
+      235,
+      251,
+      223,
+      239
+    ],
+    "all_64_opaque_codes_equivalent": true,
+    "source_row_major": true,
+    "destination_xor_2_performed_by_stock_copy": true,
+    "ordinary_Set_plot_required": true,
+    "affine_65535_disabled_required": true,
+    "exclusions": [
+      "Transparency",
+      "non-Set paint semantics",
+      "transformed Native bitmaps",
+      "different mode/modeline/polarity"
+    ]
+  },
+  "host": {
+    "extracted_function_sha256": {
+      "pack_sync": "6e77c800a6a234a69084ee774a54d844bd65f2e1beabab3b4744aef01534f632",
+      "native_copy": "54f11c8c51047ff2c54c990c73b4e5e3d67d18bf580832caa644170a3385fb6e",
+      "rgba_copy": "901af14e6f64292b0a214047a005edae258a8816b8be96aa277d8de53bff85b7",
+      "native_dispatch": "33227f3785742c37a400be624d9fa48127108e783e0e1051d2529e8885c640e9",
+      "rgba_dispatch": "36cfc5f4711f10b6ab9fab0093346d3c166306391b93f7056bafc46afbe9e926",
+      "paint_setter": "1624b17cc2eb219c9e215143119e25211b4ecbaaed46f900606b1e43df06b177",
+      "clip_and_dispatch": "26e5e9bb4bdf3757386cbb69a4345744f0eac0ca2b14755ca49302a3fdede2fc"
+    },
+    "compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+    "results": {
+      "ordinary": {
+        "ordinary_and_clipped_copy_cases": 270,
+        "opaque_pixel_codes": 64,
+        "polarity_cases": 4,
+        "native_equals_rgba": true,
+        "source_row_major_verified": true,
+        "guards_unchanged": true
+      },
+      "sanitized": {
+        "ordinary_and_clipped_copy_cases": 270,
+        "opaque_pixel_codes": 64,
+        "polarity_cases": 4,
+        "native_equals_rgba": true,
+        "source_row_major_verified": true,
+        "guards_unchanged": true
+      }
+    },
+    "scope": "Extracted exact pinned clipping/dispatch/copy/paint/sync functions with host memory scaffolding; no target timing claim"
+  }
+}

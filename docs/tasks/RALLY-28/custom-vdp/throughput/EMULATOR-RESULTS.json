@@ -1,0 +1,404 @@
+{
+  "checkpoint": "39a546a",
+  "workload": "Finite native Fuji fixture, flat background, 900 frames/3600 ticks",
+  "successful_900_frame_runs": 15,
+  "rows": [
+    {
+      "campaign": "hzbase01",
+      "case": "control-paced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 61.85,
+      "nominal_mos_fps": 14.551333872271625,
+      "nominal_prt_seconds": 64.005,
+      "nominal_prt_fps": 14.061401453011484,
+      "host_seconds_including_startup": 72.206,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2260
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzbase01",
+      "case": "float-quad-layered-paced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 57.266666666666666,
+      "nominal_mos_fps": 15.715948777648428,
+      "nominal_prt_seconds": 59.248,
+      "nominal_prt_fps": 15.190386173372941,
+      "host_seconds_including_startup": 67.385,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2260
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzcandidate01",
+      "case": "native-span-rgba2222-paced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 43.21666666666667,
+      "nominal_mos_fps": 20.82529888160432,
+      "nominal_prt_seconds": 44.734,
+      "nominal_prt_fps": 20.11892520230697,
+      "host_seconds_including_startup": 53.269,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2084
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzcandidate01",
+      "case": "native-span-rgba2222-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 42.5,
+      "nominal_mos_fps": 21.176470588235293,
+      "nominal_prt_seconds": 43.97,
+      "nominal_prt_fps": 20.468501250852853,
+      "host_seconds_including_startup": 52.563,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2084
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzcandidate01",
+      "case": "control-fenced-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 64.1,
+      "nominal_mos_fps": 14.0405616224649,
+      "nominal_prt_seconds": 66.325,
+      "nominal_prt_fps": 13.569543912551827,
+      "host_seconds_including_startup": 74.408,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2260
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzcandidate01",
+      "case": "float-quad-layered-fenced-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 59.18333333333333,
+      "nominal_mos_fps": 15.20698394818361,
+      "nominal_prt_seconds": 61.25,
+      "nominal_prt_fps": 14.693877551020408,
+      "host_seconds_including_startup": 69.306,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2260
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzcandidate01",
+      "case": "native-span-rgba2222-fenced-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 43.46666666666667,
+      "nominal_mos_fps": 20.705521472392636,
+      "nominal_prt_seconds": 44.984,
+      "nominal_prt_fps": 20.00711364040548,
+      "host_seconds_including_startup": 53.46,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2084
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzretry01",
+      "case": "control-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 62.333333333333336,
+      "nominal_mos_fps": 14.43850267379679,
+      "nominal_prt_seconds": 64.508,
+      "nominal_prt_fps": 13.951757921498109,
+      "host_seconds_including_startup": 72.706,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2260
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzretry01",
+      "case": "float-quad-layered-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 57.95,
+      "nominal_mos_fps": 15.530629853321829,
+      "nominal_prt_seconds": 59.974,
+      "nominal_prt_fps": 15.006502817887752,
+      "host_seconds_including_startup": 68.222,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2260
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hznative01",
+      "case": "native-span-native-paced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 34.71666666666667,
+      "nominal_mos_fps": 25.924147863658185,
+      "nominal_prt_seconds": 35.929,
+      "nominal_prt_fps": 25.049402989228756,
+      "host_seconds_including_startup": 44.435,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2084
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hznative01",
+      "case": "native-span-native-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 33.5,
+      "nominal_mos_fps": 26.865671641791046,
+      "nominal_prt_seconds": 34.671,
+      "nominal_prt_fps": 25.958293674829108,
+      "host_seconds_including_startup": 43.237,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2084
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hznative01",
+      "case": "native-span-native-fenced-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 34.55,
+      "nominal_mos_fps": 26.04920405209841,
+      "nominal_prt_seconds": 35.742,
+      "nominal_prt_fps": 25.18045996306866,
+      "host_seconds_including_startup": 44.244,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2052
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzrepeat01",
+      "case": "native-span-native-fenced-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 34.916666666666664,
+      "nominal_mos_fps": 25.77565632458234,
+      "nominal_prt_seconds": 36.141,
+      "nominal_prt_fps": 24.902465344069064,
+      "host_seconds_including_startup": 44.638,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2052
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzrepeat01",
+      "case": "native-span-rgba2222-fenced-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 44.266666666666666,
+      "nominal_mos_fps": 20.33132530120482,
+      "nominal_prt_seconds": 45.809,
+      "nominal_prt_fps": 19.6467942980637,
+      "host_seconds_including_startup": 54.259,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2084
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    },
+    {
+      "campaign": "hzrepeat01",
+      "case": "float-quad-layered-fenced-unpaced",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 58.25,
+      "nominal_mos_fps": 15.450643776824034,
+      "nominal_prt_seconds": 60.282,
+      "nominal_prt_fps": 14.929829799940281,
+      "host_seconds_including_startup": 68.391,
+      "stack_minfree_observations": {
+        "stack before": 2260,
+        "stack after": 2260
+      },
+      "retained_reply_records": 2913,
+      "final_world_exact": true,
+      "inputs_preserved": true,
+      "prt_vector_restored": true,
+      "backend_errors": 0
+    }
+  ],
+  "preserved_failures": [
+    {
+      "campaign": "hzbase01",
+      "case": "control-unpaced",
+      "error": "RuntimeError(\"TimeoutError('No complete demo before 180 seconds')\")"
+    }
+  ],
+  "completion_fenced_pooled": {
+    "control-fenced-unpaced": {
+      "runs": 1,
+      "frames": 900,
+      "nominal_mos_seconds": 64.1,
+      "nominal_mos_fps": 14.0405616224649,
+      "nominal_prt_seconds": 66.325,
+      "nominal_prt_fps": 13.569543912551827,
+      "individual_nominal_mos_fps": [
+        14.0405616224649
+      ]
+    },
+    "float-quad-layered-fenced-unpaced": {
+      "runs": 2,
+      "frames": 1800,
+      "nominal_mos_seconds": 117.43333333333334,
+      "nominal_mos_fps": 15.327845586148168,
+      "nominal_prt_seconds": 121.532,
+      "nominal_prt_fps": 14.810913997959386,
+      "individual_nominal_mos_fps": [
+        15.20698394818361,
+        15.450643776824034
+      ]
+    },
+    "native-span-rgba2222-fenced-unpaced": {
+      "runs": 2,
+      "frames": 1800,
+      "nominal_mos_seconds": 87.73333333333333,
+      "nominal_mos_fps": 20.51671732522796,
+      "nominal_prt_seconds": 90.793,
+      "nominal_prt_fps": 19.82531692971925,
+      "individual_nominal_mos_fps": [
+        20.705521472392636,
+        20.33132530120482
+      ]
+    },
+    "native-span-native-fenced-unpaced": {
+      "runs": 2,
+      "frames": 1800,
+      "nominal_mos_seconds": 69.46666666666667,
+      "nominal_mos_fps": 25.911708253358924,
+      "nominal_prt_seconds": 71.883,
+      "nominal_prt_fps": 25.040691123075,
+      "individual_nominal_mos_fps": [
+        26.04920405209841,
+        25.77565632458234
+      ]
+    }
+  },
+  "best_vs_quad_nominal_mos_gain_percent": 69.04990403071018,
+  "best_vs_quad_nominal_prt_gain_percent": 69.06918186497504,
+  "best_vs_rgba_nominal_mos_gain_percent": 26.295585412667943,
+  "sessions": [
+    {
+      "session": "hzsession01",
+      "host_boot_id": "8d880fe8-75c2-4c60-9dc1-60a1786a24a8",
+      "error": "RuntimeError('Campaign stopped after preserved failed case: control-unpaced')",
+      "boost_restored": true,
+      "original_boost": "1",
+      "final_boost": "1",
+      "max_temperature_celsius": 63.0,
+      "owned_emulator_processes_after": []
+    },
+    {
+      "session": "hzsession02",
+      "host_boot_id": "8d880fe8-75c2-4c60-9dc1-60a1786a24a8",
+      "error": null,
+      "boost_restored": true,
+      "original_boost": "1",
+      "final_boost": "1",
+      "max_temperature_celsius": 63.0,
+      "owned_emulator_processes_after": []
+    },
+    {
+      "session": "hzsession03",
+      "host_boot_id": "8d880fe8-75c2-4c60-9dc1-60a1786a24a8",
+      "error": null,
+      "boost_restored": true,
+      "original_boost": "1",
+      "final_boost": "1",
+      "max_temperature_celsius": 61.0,
+      "owned_emulator_processes_after": []
+    }
+  ],
+  "pooling": "Sum completed frames / sum elapsed seconds; do not average FPS",
+  "clock_limits": "MOS nominal120 units/s; PRT nominal18.432MHz instruction-driven emulator timer. Host durations include startup/teardown. No physical ESP32/hardware calibration.",
+  "fence_limit": "Prior ordered drawing and controller swap completed; includes extra transaction/transport. Does not observe physical monitor scanout.",
+  "hardware_qualified": false,
+  "author_motion_accepted": false,
+  "new_implementation_committed": false
+}

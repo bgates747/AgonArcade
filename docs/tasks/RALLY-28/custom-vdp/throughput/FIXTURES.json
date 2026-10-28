@@ -1,0 +1,258 @@
+{
+  "control-paced": {
+    "directory": ".work/fixtures/control-paced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "77d841d5e728b65ab613a2f3d5da6978fd9add1785169350ee5fd7e0d567f900",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "1771781e986eb956ef684164ab3e62c002164e8c644ada7fd5aed72fa809c17e"
+    },
+    "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+    "foreground_paced": true,
+    "only_runtime_tape_change": null,
+    "physics_and_drawing_records_unchanged": true,
+    "emulator_launched": false
+  },
+  "control-unpaced": {
+    "directory": ".work/fixtures/control-unpaced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "ce21845e3442a9c2f3a844d4250c41d165efb69512a381394cb7e615d7cb5f32",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "b4f2c461d277dab6a57daa34a39f80ba9fa7e9779a68988a5601614a62730219"
+    },
+    "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+    "foreground_paced": false,
+    "only_runtime_tape_change": "Removed single opcode11 foreground deadline",
+    "physics_and_drawing_records_unchanged": true,
+    "emulator_launched": false
+  },
+  "float-quad-layered-paced": {
+    "directory": ".work/fixtures/float-quad-layered-paced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "d7e450dcd2a7f17287d19901723ad4992b9b2bfa4f69b9af5c95639e22553372",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "7bf333c02ff97e9afc061ee4ab44e2d1ef726f58666a0a3f6dfe5d3812644ee8"
+    },
+    "module_sha256": "cb3e7072fa6a4d20c575fc27ba9333a34d59529fa653cd9327ff823d1f5b49a8",
+    "foreground_paced": true,
+    "only_runtime_tape_change": null,
+    "physics_and_drawing_records_unchanged": true,
+    "emulator_launched": false
+  },
+  "float-quad-layered-unpaced": {
+    "directory": ".work/fixtures/float-quad-layered-unpaced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "73de68aa3a86601582e273d84555b58d966e77f8165fcf6ab8d92ade5eecfa18",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "6fee8088d0819f90298c38d3cdd1a84f907074f7c81673ea81b09f4249c37251"
+    },
+    "module_sha256": "cb3e7072fa6a4d20c575fc27ba9333a34d59529fa653cd9327ff823d1f5b49a8",
+    "foreground_paced": false,
+    "only_runtime_tape_change": "Removed single opcode11 foreground deadline",
+    "physics_and_drawing_records_unchanged": true,
+    "emulator_launched": false
+  },
+  "native-span-rgba2222-paced": {
+    "directory": ".work/fixtures/native-span-rgba2222-paced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "20b7b51a43dc232c1903da8fcca5785f9a1f56ba02a7839ee71ab582b4d12a49",
+      "native.vdu": "6421da5659765be5c12c55131c0f81887e07e5b7e17bc9135be9d74ccf393229",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "f4546e6bfab69892be6a412ad869ab428b43b1b8ed2fac00116145f41d98a23c"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "foreground_paced": true,
+    "physics_and_drawing_records_unchanged": true,
+    "emulator_launched": false
+  },
+  "native-span-rgba2222-unpaced": {
+    "directory": ".work/fixtures/native-span-rgba2222-unpaced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "9251ec3f919f99255b56fc4d3a349ee48e338ccbced04bdbaef5d532a0fb4236",
+      "native.vdu": "6421da5659765be5c12c55131c0f81887e07e5b7e17bc9135be9d74ccf393229",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "e086c3991dc95962bcacda26d7a1743032ef6041cd33e7ad5f43c0f9fc482034"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "foreground_paced": false,
+    "physics_and_drawing_records_unchanged": true,
+    "emulator_launched": false
+  },
+  "phase-control": {
+    "directory": ".work/phase-build/control/fixture",
+    "files": {
+      "script.bin": "457498136c9665edebf74fa51aaeeacfdf9e8e4471f364c68b6a2cecb1fed916",
+      "expected.json": "571841118d8841dfafd6a2b6c67c775022fd58f327e14315dc334bbdee0f50f1",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "630118eb42a3c8d4383e46652eadd1fd6e5e89d5aafa4ed6e08e1d6f4d109fc0",
+    "foreground_paced": false,
+    "diagnostic": true,
+    "frames": 128,
+    "emulator_launched": false
+  },
+  "phase-float-quad-layered": {
+    "directory": ".work/phase-build/float-quad-layered/fixture",
+    "files": {
+      "script.bin": "1b5dc4dee1420e50758af52d2581a8407df0e2f72c318d316c8d908d3eefe098",
+      "expected.json": "2650966229a387a3597caf1555e345a6fd753eea157038314f5c42541605d82d",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "c7bb6056c2f01bdf62cf24e11a565476e26e9dc409e31cb7852532c36f231c9d",
+    "foreground_paced": false,
+    "diagnostic": true,
+    "frames": 128,
+    "emulator_launched": false
+  },
+  "control-fenced-unpaced": {
+    "directory": ".work/fixtures/control-fenced-unpaced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "ecc3125176fa5f894047645d47cbd0a56b9ce753a58397c241e9c90fe0d925c2",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "4e80fa439803977c298c6297098d088004e7bd7e633e7fd61ec3d388d08ebb6b"
+    },
+    "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+    "foreground_paced": false,
+    "completion_fenced": true,
+    "extra_outbound_bytes_per_frame": 17,
+    "extra_reply_payload_bytes_per_frame": 10,
+    "emulator_launched": false
+  },
+  "float-quad-layered-fenced-unpaced": {
+    "directory": ".work/fixtures/float-quad-layered-fenced-unpaced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "f205fba65340826b4a9ae693c909da266738f7485929dd5996630c17282de818",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "9460f0d48cfaf43aec72501da76ceeb3b104dbd4148d1d0374d9f1e54f927fad"
+    },
+    "module_sha256": "cb3e7072fa6a4d20c575fc27ba9333a34d59529fa653cd9327ff823d1f5b49a8",
+    "foreground_paced": false,
+    "completion_fenced": true,
+    "extra_outbound_bytes_per_frame": 17,
+    "extra_reply_payload_bytes_per_frame": 10,
+    "emulator_launched": false
+  },
+  "native-span-rgba2222-fenced-unpaced": {
+    "directory": ".work/fixtures/native-span-rgba2222-fenced-unpaced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "a1446fb232484ce7956c3227d47e7f9166f65f4a04bcc9b5a45614d4bf3491c4",
+      "native.vdu": "6421da5659765be5c12c55131c0f81887e07e5b7e17bc9135be9d74ccf393229",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "56f07db952410d4f2d4348c7bea8a8e724e6c4a65db9ff5bdb0e4de574b17ce0"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "foreground_paced": false,
+    "completion_fenced": true,
+    "extra_outbound_bytes_per_frame": 17,
+    "extra_reply_payload_bytes_per_frame": 10,
+    "emulator_launched": false
+  },
+  "native-span-native-paced": {
+    "directory": ".work/fixtures/native-span-native-paced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "055c6209b1f0da4129fdb5f15cb15b85c4bcf0ee1a52357e61ae2c81715a5bb9",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "f4546e6bfab69892be6a412ad869ab428b43b1b8ed2fac00116145f41d98a23c"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "foreground_paced": true,
+    "completion_fenced": false,
+    "bitmap_format": 3,
+    "module_and_pixel_bytes_unchanged": true,
+    "emulator_launched": false
+  },
+  "native-span-native-unpaced": {
+    "directory": ".work/fixtures/native-span-native-unpaced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "ab2d641e2ae913ed6e93938a1357b869bbbbe21b9a808c1074a967ed6a05f4bc",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "e086c3991dc95962bcacda26d7a1743032ef6041cd33e7ad5f43c0f9fc482034"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "foreground_paced": false,
+    "completion_fenced": false,
+    "bitmap_format": 3,
+    "module_and_pixel_bytes_unchanged": true,
+    "emulator_launched": false
+  },
+  "native-span-native-fenced-unpaced": {
+    "directory": ".work/fixtures/native-span-native-fenced-unpaced",
+    "files": {
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "expected.json": "bd02506eaedc52e8baf6655552ea7c3d1bff65160d09bc981c3481b9f160bc7e",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "script.bin": "56f07db952410d4f2d4348c7bea8a8e724e6c4a65db9ff5bdb0e4de574b17ce0"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "foreground_paced": false,
+    "completion_fenced": true,
+    "bitmap_format": 3,
+    "module_and_pixel_bytes_unchanged": true,
+    "emulator_launched": false
+  }
+}

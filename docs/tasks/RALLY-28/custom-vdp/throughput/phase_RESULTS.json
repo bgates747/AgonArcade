@@ -1,0 +1,62 @@
+{
+  "status": "Built and host-qualified; not emulator-qualified",
+  "diagnostic_frames_per_variant": 128,
+  "physics_ticks_per_variant": 512,
+  "variants": [
+    "control",
+    "float-quad-layered"
+  ],
+  "host_modes": [
+    "ordinary",
+    "ASan/UBSan"
+  ],
+  "independent_world_contact_checks": true,
+  "complete_state_output_match_own_uninstrumented_control": true,
+  "protocol_negative_groups": 24,
+  "decoder_synthetic_cases": 9,
+  "record_bytes": 52,
+  "log_bytes": 6688,
+  "guest_marks": 130,
+  "retained_transcript_bytes": 39430,
+  "unchanged_frozen_files": 61,
+  "target_resources": {
+    "control": {
+      "sha256": "630118eb42a3c8d4383e46652eadd1fd6e5e89d5aafa4ed6e08e1d6f4d109fc0",
+      "resident_text_bytes": 31548,
+      "resident_data_bytes": 1064,
+      "package_bytes": 34276
+    },
+    "float-quad-layered": {
+      "sha256": "c7bb6056c2f01bdf62cf24e11a565476e26e9dc409e31cb7852532c36f231c9d",
+      "resident_text_bytes": 31496,
+      "resident_data_bytes": 1104,
+      "package_bytes": 34276
+    }
+  },
+  "timing_available": "Source-supported raw per-coreCCOUNT only; no runtime observations yet",
+  "firmware_changed": false,
+  "sdk_changed": false,
+  "emulator_launched": false,
+  "remote_action": false,
+  "committed": false,
+  "integration": {
+    "manifest": "phase_BUILD.json",
+    "fixture_pattern": ".work/phase-build/<variant>/fixture",
+    "runner": "phase_run.py",
+    "verifier": "phase_verify.py",
+    "expected_world": "phase_HOST-ordinary.json",
+    "source_evidence": "phase_SOURCE.json"
+  },
+  "limitations": [
+    "Actual CCOUNT progress, new marker execution and rendering await silent Flexe qualification.",
+    "Stage intervals include dispatch/flush/marker overhead and interrupts; not exclusive raster cost.",
+    "Controller-swap completion fence is distinct from physical monitor scanout.",
+    "No MOS/PRT/host/native clock conversion or hardware FPS claim."
+  ],
+  "runtime_imports_independent_of_historical_sources": true,
+  "pinned_runtime_support": "RUNNER-PINS.json + support/",
+  "phase_owned_wire_encoder": "phase_tape.py",
+  "module_and_fixture_bytes_unchanged_after_import_refactor": true,
+  "import_proof": "phase_IMPORT-tests.json",
+  "encoder_reproduction": "phase_ENCODER-PROOF.json"
+}

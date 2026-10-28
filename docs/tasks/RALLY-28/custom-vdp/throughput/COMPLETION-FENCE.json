@@ -1,0 +1,50 @@
+{
+  "cases": {
+    "control-fenced-unpaced": {
+      "script_sha256": "4e80fa439803977c298c6297098d088004e7bd7e633e7fd61ec3d388d08ebb6b",
+      "outbound_bytes_per_frame": 265,
+      "retained_reply_bytes": 29130,
+      "marks": 902,
+      "transaction_token": 219,
+      "root_buffer": 1,
+      "offset": 20,
+      "expected_generation": "frame*5+1",
+      "swap_then_checked_reply_then_mark": true,
+      "logged_reply_suppressed_only_after_validation": true,
+      "module_unchanged": true
+    },
+    "float-quad-layered-fenced-unpaced": {
+      "script_sha256": "9460f0d48cfaf43aec72501da76ceeb3b104dbd4148d1d0374d9f1e54f927fad",
+      "outbound_bytes_per_frame": 265,
+      "retained_reply_bytes": 29130,
+      "marks": 902,
+      "transaction_token": 219,
+      "root_buffer": 1,
+      "offset": 20,
+      "expected_generation": "frame*5+1",
+      "swap_then_checked_reply_then_mark": true,
+      "logged_reply_suppressed_only_after_validation": true,
+      "module_unchanged": true
+    },
+    "native-span-rgba2222-fenced-unpaced": {
+      "script_sha256": "56f07db952410d4f2d4348c7bea8a8e724e6c4a65db9ff5bdb0e4de574b17ce0",
+      "outbound_bytes_per_frame": 265,
+      "retained_reply_bytes": 29130,
+      "marks": 902,
+      "transaction_token": 219,
+      "root_buffer": 1,
+      "offset": 20,
+      "expected_generation": "frame*5+1",
+      "swap_then_checked_reply_then_mark": true,
+      "logged_reply_suppressed_only_after_validation": true,
+      "module_unchanged": true
+    }
+  },
+  "source_review": "Frozen guest flag36 and serial native READ16 dispatch; pinned mode136 synchronous draw and blocking controller swap.",
+  "limitations": [
+    "Extra roundtrip changes overlap; fenced figures are separate from prior unfenced fixtures.",
+    "Controller swap/worker completion is fenced, not a physical scanout timestamp.",
+    "Runtime proof still pending Oryx guard release."
+  ],
+  "emulator_launched": false
+}

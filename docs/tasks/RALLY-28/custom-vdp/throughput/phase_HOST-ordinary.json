@@ -1,0 +1,74 @@
+{
+  "control": {
+    "frames": 128,
+    "ticks": 512,
+    "independent_world_contact_pass": true,
+    "complete_state_and_output_match_uninstrumented_module": true,
+    "state_sha256": "c6383f159b0f1085d05a0b61c3d7f32b1624fd9f652c56040730b7e5fc1fb715",
+    "drawing_output_sha256": "a8c438d3c7115f6a892a6c0bf3f26012eb7d390a9c46ead810141c15aa30c54e",
+    "final_buffers": {
+      "1": "5247010070003601070000000000000000000000810200000f0004000f000000070000001100c6000000000030353252010000000000000000000000000000000200000000000000000000000000000003000000000000000000000000000000040000000000000000000000000000000500050058001400000000000000000060ac02002c01000000020000000000000000000000000000000000000000000000000000000080380100000000000000000096000000000032000000320000000000000000003037020000000000b06f0300b437000080380100b4370000000019000000010002000100b43700000100000000000100000011000000130000000000000001000000ab010000701700000100000002000000050006001100000011000000070000008000000030373400701700000300",
+      "2": "010001000100010001000100",
+      "3": "30373400af433400b043340030503400807d3400b06f3500",
+      "4": "30370200af430200b043020030500200807d0200b06f0300",
+      "5": "4cc8ffffb41300004c100000b4efffff4cecffffb4370000",
+      "6": "000001000000000000000000"
+    },
+    "phase_frames": 128,
+    "phase_clock": "HOST STUB; protocol/state proof only, not timing",
+    "peak_leases": 3,
+    "balanced_leases": true,
+    "tail": {
+      "seven_silent_private_markers": true,
+      "resident_order": "clear+flush / road+flush / actors+flush / player+flush / empty / swap+flush",
+      "no_uart_replies_inside_tail": true,
+      "quad_path_closed_before_road_end_marker": true,
+      "swap_submitted_then_worker_flush_before_final_marker": true,
+      "record_commit_acknowledged_before_foreground_timestamp": true
+    },
+    "negative_cases": {
+      "missing": 2,
+      "short": 3,
+      "order": 1,
+      "capacity": 13,
+      "unsupported": 9,
+      "argument": 1
+    }
+  },
+  "float-quad-layered": {
+    "frames": 128,
+    "ticks": 512,
+    "independent_world_contact_pass": true,
+    "complete_state_and_output_match_uninstrumented_module": true,
+    "state_sha256": "c6383f159b0f1085d05a0b61c3d7f32b1624fd9f652c56040730b7e5fc1fb715",
+    "drawing_output_sha256": "9de24a9df3210152ec8c0161200cb217ba92993adede8b4d1d2ddfa6cc729f9b",
+    "final_buffers": {
+      "1": "5247010070003601070000000000000000000000810200000f0004000f000000070000001100c6000000000030353252010000000000000000000000000000000200000000000000000000000000000003000000000000000000000000000000040000000000000000000000000000000500050058001400000000000000000060ac02002c01000000020000000000000000000000000000000000000000000000000000000080380100000000000000000096000000000032000000320000000000000000003037020000000000b06f0300b437000080380100b4370000000019000000010002000100b43700000100000000000100000011000000130000000000000001000000ab010000701700000100000002000000050006001100000011000000070000008000000030373400701700000300",
+      "2": "010001000100010001000100",
+      "3": "30373400af433400b043340030503400807d3400b06f3500",
+      "4": "30370200af430200b043020030500200807d0200b06f0300",
+      "5": "4cc8ffffb41300004c100000b4efffff4cecffffb4370000",
+      "6": "000001000000000000000000"
+    },
+    "phase_frames": 128,
+    "phase_clock": "HOST STUB; protocol/state proof only, not timing",
+    "peak_leases": 3,
+    "balanced_leases": true,
+    "tail": {
+      "seven_silent_private_markers": true,
+      "resident_order": "clear+flush / road+flush / actors+flush / player+flush / empty / swap+flush",
+      "no_uart_replies_inside_tail": true,
+      "quad_path_closed_before_road_end_marker": true,
+      "swap_submitted_then_worker_flush_before_final_marker": true,
+      "record_commit_acknowledged_before_foreground_timestamp": true
+    },
+    "negative_cases": {
+      "missing": 2,
+      "short": 3,
+      "order": 1,
+      "capacity": 13,
+      "unsupported": 9,
+      "argument": 1
+    }
+  }
+}

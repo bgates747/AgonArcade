@@ -1,0 +1,25 @@
+{
+  "checkpoint": "39a546a",
+  "original_script_sha256": "1771781e986eb956ef684164ab3e62c002164e8c644ada7fd5aed72fa809c17e",
+  "frames": 900,
+  "physics_ticks": 3600,
+  "recurring_mos_to_vdp_command_bytes_per_frame": 248,
+  "recurring_checked_native_transactions_per_frame": 5,
+  "recurring_vdplet_reply_payload_bytes_per_frame": 50,
+  "reply_envelope_bytes_not_counted": true,
+  "nominal_uart_baud": 1152000,
+  "serial_bits_per_byte": 10,
+  "outbound_serialization_floor_ms": 2.1527777777777777,
+  "serialization_limit": "Theoretical transmit-only floor; excludes CTS/MOS/parser delays; full-duplex directions are not summed",
+  "source": "Pinned-compatible UART_BR in Agon VDP agon.h, independently recorded in prior capacity wire census",
+  "foreground_pacer": [
+    3,
+    3,
+    4
+  ],
+  "nominal_requested_paced_fps_at_120_mos_units_per_second": 36,
+  "swap_retained_in_unpaced_cases": true,
+  "controls_frozen": true,
+  "fresh_emulator_timing_available": false,
+  "pending_condition": "Oryx CPU boost1; standing unattended thermal guard refused launch"
+}

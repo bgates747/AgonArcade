@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "clock": "Host CLOCK_MONOTONIC",
+  "measured_completed_frames": 1740,
+  "measured_host_seconds": 60.01404433700009,
+  "completed_renderer_fps": 28.99321349231664,
+  "windows": [
+    {
+      "completed_frames": 870,
+      "host_seconds": 30.00584762300059,
+      "completed_fps": 28.99434839938042,
+      "first_count": 123,
+      "last_count": 993,
+      "start_since_launch": 28.80457592499988,
+      "end_since_launch": 58.81042354800047
+    },
+    {
+      "completed_frames": 870,
+      "host_seconds": 30.008196713999496,
+      "completed_fps": 28.992078674095254,
+      "first_count": 993,
+      "last_count": 1863,
+      "start_since_launch": 58.81042354800047,
+      "end_since_launch": 88.81862026199997
+    }
+  ],
+  "full_capture_render_completions": 1876,
+  "full_capture_presentation_commands": 1876,
+  "full_capture_render_requests": 1876,
+  "consecutive_sequence_checks": true,
+  "fizzle_events": 0,
+  "player_pose_updates": 1859,
+  "unique_angles": 120,
+  "position_world_units": [
+    29.5,
+    57.5
+  ],
+  "clockwise_angle_step_multiples": [
+    3
+  ],
+  "active_viewport": [
+    256,
+    160
+  ],
+  "display": [
+    320,
+    240
+  ],
+  "difficulty": "medium",
+  "simulation_and_render_submission_cap_nominal_hz": 30,
+  "application_sha256": "4cd70b101282370da113b47b3fadea8309307804747613c886562a25ede91e73",
+  "firmware_sha256": "fa1625cb3e901410593cd44a30d5934cc38ba998bcda16d3d5ff20de45f497ed",
+  "original_sources_preserved": true,
+  "profile_inputs_preserved": true,
+  "power": {
+    "boost_during_run": 0,
+    "original_and_final_boost": 1,
+    "max_sampled_temperature_celsius": 60.0
+  },
+  "backend_errors": 0,
+  "emulator_stopped": true,
+  "audio_video_drivers": "dummy",
+  "limits": [
+    "30 Hz capped actual application; no unpaced maximum-capacity claim",
+    "Stationary E1L1 original-start rotation with normal AI, textures, weapon and HUD; not a full-map traversal",
+    "250 ms capture flush batches plus25 ms polling; report about0.1 FPS precision",
+    "W3DR drains drawing; matching C3 proves presentation submission, not physical monitor scanout",
+    "Host timing differs from nominal MOS/PRT timing in Rally reports; no direct cross-clock percentage",
+    "Flexe preliminary estimate, not hardware performance"
+  ]
+}
