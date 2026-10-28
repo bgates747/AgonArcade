@@ -1,5 +1,17 @@
 # Standing emulator authorization —2026-10-14
 
+Latest RALLY-28 tranche (2026-10-28): all prior dirt and incremental plan pushed
+as b0bf5e7, then INC-001-01 clear-only comparison completed. Read
+docs/tasks/RALLY-28/custom-vdp/incremental/RESULTS.md and PLAN.md. Four silent
+Oryx Flexe runs,900frames/3600ticks/2913retained replies each, pass exact final
+state/runtime/timer/backend checks; shutdown images pixel-identical. Clear saves
+38400writes/frame,+12wire bytes; pooled25.96→26.33nominal MOS FPS(+1.41%),
+PRT+1.45%,pairwise0.15–2.69%variable. Small preliminary gain only. Boost restored1,
+max60°C,all emulators stopped. New implementation/evidence uncommitted; no product
+adoption/hardware/later implementation release. Next proposed INC-001-02 is
+phase measurement and specialized car/sign sampling. Root TODO owns unfinished
+INC-001-02–06; findings preserved in RALLY-28/research/RENDERER-COST-FINDINGS.md.
+
 Only truly headless automated emulator sessions are authorized: no graphical
 window and NO sound output. Force both SDL_VIDEODRIVER=dummy and
 SDL_AUDIODRIVER=dummy for every unattended run; never inherit a real audio

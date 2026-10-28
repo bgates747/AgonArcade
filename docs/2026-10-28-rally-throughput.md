@@ -1,5 +1,19 @@
 # 2026-10-28 — Rally native throughput investigation
 
+INC-001-01 completed after all-dirt/scope checkpoint **b0bf5e7** was pushed. The
+new [incremental plan](tasks/RALLY-28/custom-vdp/incremental/PLAN.md) prioritizes
+redundant clears, specialized sprite sampling, wider span fills, caches/static
+drawing, synchronization and composition. First modification only: retain sky
+and bottom clears, omit the opaque road area;38,400clear writes saved,+12wire
+bytes/frame. Four reversed-order900-frame/3600-tick Oryx Flexe runs pass2913reply
+records each, independent final state, input hashes, PRT restoration, backend and
+exit checks. All shutdown captures are pixel-identical. Pooled nominal MOS
+25.9615→26.3286FPS(+1.41%),PRT25.0850→25.4489(+1.45%),0.537nominal MOSms/frame
+saved; pairwise gains0.15%/2.69% are small/variable, not a stable gain guarantee.
+Both SDLdriversdummy;boost1→0→1,max60°C,all emulators stopped. INC-001-01 removed
+from unfinished root TODO with this disposition; later implementation/hardware
+not released. New code/evidence uncommitted for review. [Results](tasks/RALLY-28/custom-vdp/incremental/RESULTS.md).
+
 The Author releases a fresh baseline and an isolated native road renderer experiment toward60Hz. Existing renderer evidence and the new work contract will be committed/pushed before implementation. No prior visual/hardware gate is accepted by this checkpoint. Scope: [RALLY-28 HZ60-001](tasks/RALLY-28/custom-vdp/throughput/PLAN.md).
 
 Initial read-only checks find Oryx reachable with the canonical SSH identity, the preserved native review runtime present, no emulator running, and CPU boost enabled (`1`). Existing thermal safeguards require boost disabled for unattended runs; no power setting has been changed and no emulator has been launched. Continue independent source/host work; actual timing remains conditional on the guard.

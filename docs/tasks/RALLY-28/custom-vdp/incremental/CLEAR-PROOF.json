@@ -1,0 +1,34 @@
+{
+  "source_case": "native-span-native-fenced-unpaced",
+  "source_files": {
+    "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "expected.json": "bd02506eaedc52e8baf6655552ea7c3d1bff65160d09bc981c3481b9f160bc7e",
+    "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+    "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "script.bin": "56f07db952410d4f2d4348c7bea8a8e724e6c4a65db9ff5bdb0e4de574b17ce0"
+  },
+  "source_registry_unchanged": true,
+  "patch": {
+    "changed_record": 42,
+    "other_records_exact": true,
+    "additional_wire_bytes_per_frame": 12,
+    "old_paint_bytes": 110,
+    "new_paint_bytes": 122
+  },
+  "coverage": {
+    "removed_clear_pixels": 38400,
+    "retained_clear_pixels": 30720,
+    "two_page_dirty_patterns_passed": 6,
+    "equality_after_opaque_road": true,
+    "existing_900_frame_raster_proofs": {
+      "ordinary_sha256": "dac2f81565b30f3b4e0cdaf8fc0bd821884dfc88da7573cd61b11655cf65e34d",
+      "sanitized_sha256": "10a1a467ec307552178d2623a6242fb15e9859a78bbb2c5eed4c01ee879675ae"
+    },
+    "drawing_order": "unchanged title, sky/bottom clear, opaque road, actors/player, swap, fence",
+    "comparison_basis": "All prior span-raster qualifications retained; no module or pixels changed"
+  },
+  "emulator_launched": false
+}

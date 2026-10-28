@@ -1,0 +1,134 @@
+{
+  "checkpoint": "b0bf5e7",
+  "task": "INC-001-01",
+  "rows": [
+    {
+      "campaign": "incab01",
+      "case": "clear-control",
+      "frames": 900,
+      "nominal_mos_seconds": 34.35,
+      "nominal_mos_fps": 26.200873362445414,
+      "nominal_prt_seconds": 35.555,
+      "nominal_prt_fps": 25.312895513992405,
+      "host_seconds_including_startup": 44.023
+    },
+    {
+      "campaign": "incab01",
+      "case": "clear-split",
+      "frames": 900,
+      "nominal_mos_seconds": 34.3,
+      "nominal_mos_fps": 26.239067055393587,
+      "nominal_prt_seconds": 35.488,
+      "nominal_prt_fps": 25.36068530207394,
+      "host_seconds_including_startup": 44.013
+    },
+    {
+      "campaign": "incba01",
+      "case": "clear-split",
+      "frames": 900,
+      "nominal_mos_seconds": 34.06666666666667,
+      "nominal_mos_fps": 26.418786692759294,
+      "nominal_prt_seconds": 35.242,
+      "nominal_prt_fps": 25.53771068611316,
+      "host_seconds_including_startup": 43.633
+    },
+    {
+      "campaign": "incba01",
+      "case": "clear-control",
+      "frames": 900,
+      "nominal_mos_seconds": 34.983333333333334,
+      "nominal_mos_fps": 25.72653644592663,
+      "nominal_prt_seconds": 36.201,
+      "nominal_prt_fps": 24.86119167978785,
+      "host_seconds_including_startup": 44.651
+    }
+  ],
+  "pooled": {
+    "clear-control": {
+      "frames": 1800,
+      "runs": 2,
+      "nominal_mos_seconds": 69.33333333333334,
+      "nominal_mos_fps": 25.961538461538456,
+      "nominal_prt_seconds": 71.756,
+      "nominal_prt_fps": 25.08501031272646,
+      "individual_mos_fps": [
+        26.200873362445414,
+        25.72653644592663
+      ]
+    },
+    "clear-split": {
+      "frames": 1800,
+      "runs": 2,
+      "nominal_mos_seconds": 68.36666666666667,
+      "nominal_mos_fps": 26.328620185275472,
+      "nominal_prt_seconds": 70.72999999999999,
+      "nominal_prt_fps": 25.44889014562421,
+      "individual_mos_fps": [
+        26.239067055393587,
+        26.418786692759294
+      ]
+    }
+  },
+  "nominal_mos_fps_change_percent": 1.4139444173574045,
+  "nominal_prt_fps_change_percent": 1.4505867383006077,
+  "nominal_mos_ms_saved_per_frame": 0.5370370370370381,
+  "identical_runtime_and_nonpatch_inputs": true,
+  "clear_pixels_saved_per_frame": 38400,
+  "additional_outbound_bytes_per_frame": 12,
+  "outbound_bytes_per_frame": {
+    "control": 265,
+    "candidate": 277
+  },
+  "all_final_states_exact": true,
+  "all_prt_vectors_restored": true,
+  "backend_errors": 0,
+  "image_comparisons": [
+    {
+      "reference": "incab01/clear-control",
+      "case": "incab01/clear-split",
+      "size": [
+        320,
+        240
+      ],
+      "full_image_difference_bbox": null,
+      "road_difference_bbox": null,
+      "road_changed_pixels": 0,
+      "full_image_changed_pixels": 0
+    },
+    {
+      "reference": "incab01/clear-control",
+      "case": "incba01/clear-split",
+      "size": [
+        320,
+        240
+      ],
+      "full_image_difference_bbox": null,
+      "road_difference_bbox": null,
+      "road_changed_pixels": 0,
+      "full_image_changed_pixels": 0
+    },
+    {
+      "reference": "incab01/clear-control",
+      "case": "incba01/clear-control",
+      "size": [
+        320,
+        240
+      ],
+      "full_image_difference_bbox": null,
+      "road_difference_bbox": null,
+      "road_changed_pixels": 0,
+      "full_image_changed_pixels": 0
+    }
+  ],
+  "image_limit": "Shutdown snapshots after saving/DONE text and MOS return, not frame-900 instrumentation; inspect difference locations.",
+  "session": {
+    "host_boot_id": "8d880fe8-75c2-4c60-9dc1-60a1786a24a8",
+    "original_boost": "1",
+    "final_boost": "1",
+    "boost_restored": true,
+    "max_temperature_celsius": 60.0,
+    "owned_emulator_processes_after": [],
+    "elapsed_host_seconds": 176.761
+  },
+  "timing_limit": "Completion-fenced finite native fixture including checks/UART/swap; MOS nominal120Hz and PRT nominal18.432MHz reported separately. Host durations include startup/teardown. Not hardware or isolated VDP CPU timing."
+}

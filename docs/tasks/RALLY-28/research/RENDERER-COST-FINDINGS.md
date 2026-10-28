@@ -144,6 +144,12 @@ Expand the compositor region or retain an upper layer. The helper's HUD black
 rectangle at y=224..239 is outside the active y=24..223 viewport; inspect its
 dispatch cost rather than count it as visible fill work.
 
+**Measured follow-up INC-001-01, 2026-10-28:** the isolated split clear passes
+four900-frame Flexe runs with exact final state and identical shutdown captures.
+Pooled25.96→26.33nominal MOS FPS (+1.41%), with pairwise0.15–2.69%variation:
+a small preliminary effect, not a stable or substantial gain. The extra12wire
+bytes/frame are included. [Results](../custom-vdp/incremental/RESULTS.md).
+
 ### RCF-006 — Native span filling is a byte loop
 
 The isolated native module's custom `memset` is a byte store/increment/branch

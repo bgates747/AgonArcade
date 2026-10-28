@@ -15,6 +15,35 @@ The ordered work below describes those items; only INC-001-01 is released for
 implementation in this tranche. [Findings](../../research/RENDERER-COST-FINDINGS.md)
 distinguish confirmed costs, Wolf precedents and proposed experiments.
 
+**Subsequent release, 2026-10-28:** Author requests commit/push of the completed
+clear experiment and continuation with INC-001-02. The current split-clear
+Native-span fixture is the new comparison control; retain the original controls.
+Profile that current actor path in a separate short diagnostic, implement a
+restricted additive traffic/sign sampler using existing retained buffers and
+ordinary stock bitmap drawing, then qualify it against the same 900-frame
+completion-fenced workload in reversed-order silent Oryx Flexe runs. Keep the
+player, road raster, physics, split clear, firmware/SDK and scheduler unchanged.
+No opaque-run compression, size buckets, wider fill or protocol changes are
+combined with this modification. New work is isolated in `sprites/` below this
+directory and returns for Author motion review/publication; no physical test.
+
+Source and destination sprite storage must remain stable until each frame is
+consumed. Use distinct retained images for queued objects, validate resource
+IDs/bounds and the actual four-slot lease limit (root, asset and command-output
+already consume three). Sequence sampling outside the command-output lease or
+use an equally bounded strategy; do not exceed the service limit. Count added
+setup memory, recurring sampled bytes/commands, allocation/dispatch and acquire/
+release overhead. Include moved sampling work in preparation as well as draw
+timing; the old quad phase shares do not describe the new control.
+
+The independent raster reference must cover scale, reflection, clipping,
+transparency, painter order and edge/size rounding. Preserve authoritative final
+world checks and test failure cleanup/resource lifetimes with actual generated
+C on the host. Record visible approximations rather than silently reject them
+or spend excessive time pursuing pixel identity. Build against the frozen SDK,
+check emitted code and declared/actual capacity, and use only already accepted
+runtime limits. Any genuinely missing service needs owner coordination.
+
 ## Order and rationale
 
 1. **INC-001-01 — Remove redundant road clearing.** Preserve sky and bottom-strip

@@ -1,7 +1,6 @@
 # AgonArcade TODO
 
-- **INC-001-01** [ ] — **Released:** checkpoint/push all current dirt and the [incremental RALLY-28 plan](docs/tasks/RALLY-28/custom-vdp/incremental/PLAN.md), remove only redundant road clearing, then compare the accepted Native-span fixture/control in reversed-order silent Oryx Flexe runs. Preserve physics/assets/firmware/final fence and validate state/pixels. Return after this modification; no hardware or implementation publication implied.
-- **INC-001-02** [ ] — Proposed next: phase-profile and specialize native car/sign scale/mirror sampling; check every compatible caller and stock-cache alternative. [Order/scope](docs/tasks/RALLY-28/custom-vdp/incremental/PLAN.md).
+- **INC-001-02** [ ] — **Released:** commit/push the clear experiment, phase-profile the current Native-span/split-clear fixture and specialize car/sign scale/mirror sampling through existing buffers/ordinary plots. Preserve road/player/physics/firmware/fence; prove clipping, alpha, painter order and four-slot lease/resource lifetimes, then reversed-order silent Oryx Flexe A/B. Return for Author review; later optimizations/hardware remain separate. [Order/scope](docs/tasks/RALLY-28/custom-vdp/incremental/PLAN.md).
 - **INC-001-03** [ ] — Proposed: compare wider aligned native span fills with the byte-loop control, keeping exact output and measuring complete frames.
 - **INC-001-04** [ ] — Proposed: cache static drawing on both pages and evaluate bounded pre-scaled/mirrored sprite sizes with explicit ID/memory/visual budgets.
 - **INC-001-05** [ ] — Proposed: consolidate diagnostic round trips into sequenced completion/status while retaining errors, publication checks and the final rendering fence.
