@@ -1,0 +1,266 @@
+{
+  "sprite-affine": {
+    "directory": ".work/fixtures/sprite-affine",
+    "files": {
+      "script.bin": "4aebeca069fc20143cd93977cfdd96b74982cc24a0b72275b60910733e87f490",
+      "expected.json": "11b49d18284cd5173aebe002847ba859f2bf1ef878f4bca13ee0b5ac80af2af8",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "diagnostic": false,
+    "foreground_paced": false
+  },
+  "sprite-additive": {
+    "directory": ".work/fixtures/sprite-additive",
+    "files": {
+      "script.bin": "96b1e48f21bdbc1ec495377b658de73738eb301ace3efe95a2b86fc897ed0f95",
+      "expected.json": "d70408bbde87064d2b03c92a5ddd58fbba857feb3264adaf089a1cae304840d3",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "f4aa508baf0c0808003166bdd4ae7615fe05bc7974b05481e9e7132a24c43bd8",
+    "diagnostic": false,
+    "foreground_paced": false
+  },
+  "phase-affine": {
+    "directory": ".work/phase-native-affine/fixture",
+    "files": {
+      "script.bin": "0e78243285cc0b2b9a817a865754411e4c515526cad594899c9ef4b95aa34daf",
+      "expected.json": "3de9412d2caf8ad09843f8e964ee39807baeca897375e2e715f6c3d5b72ab06e",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "25172a300030f381a9bae62984491b8f850d5b8280687d8475d7d91c3ffa9c26",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "host_expected": ".work/phase-native-affine/HOST-EXPECTED.json",
+    "host_expected_sha256": "354e80c22ebf71c7d15d5e674259f54a4e5dd647c2e9260b6b605a87bb0ee9cf",
+    "phase_candidate": "native-affine",
+    "frames": 128,
+    "physics_ticks": 512
+  },
+  "phase-additive": {
+    "directory": ".work/phase-native-additive/fixture",
+    "files": {
+      "script.bin": "e7db73cc68da8fe6f7b6fc6b03e72b0bbddbbb58b57564ddb1aeb40c5da90461",
+      "expected.json": "64149de8b123a3f5066b8da1b44e94a4e3f429f069bc6726927a068b61bc4f34",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "c1943cd511f6b0dfcf894bf198e07e99908e1cbb7ee39b1282dde00387da0701",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "host_expected": ".work/phase-native-additive/HOST-EXPECTED.json",
+    "host_expected_sha256": "1bf433dcdd6a76f2df7d90804c16c4b0f0c48c604e43bbd1cd26d23335d1744f",
+    "phase_candidate": "native-additive",
+    "frames": 128,
+    "physics_ticks": 512
+  },
+  "early-affine": {
+    "directory": ".work/fixtures/early-affine",
+    "files": {
+      "script.bin": "4f77113e1d9c9e2397ad6ee69f318c46de3a4a40244756ee8554b6025494e09e",
+      "expected.json": "8a6562061aaae5d9ca9696ebaf8dcb737b7159afcb01d87a406386bb79aa2a99",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "diagnostic": false,
+    "foreground_paced": false
+  },
+  "early-additive": {
+    "directory": ".work/fixtures/early-additive",
+    "files": {
+      "script.bin": "49c2d4dd33af0b9e9cd53b667d681ba9f7cd950d84d50742f8b471f91ffa7bc7",
+      "expected.json": "c55edf810896d9a4cd2c25f5e1148446aa8adaee6b29a04d1be46c0b316d83f7",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "f4aa508baf0c0808003166bdd4ae7615fe05bc7974b05481e9e7132a24c43bd8",
+    "diagnostic": false,
+    "foreground_paced": false
+  },
+  "phase-early-affine": {
+    "directory": ".work/phase-early-affine/fixture",
+    "files": {
+      "script.bin": "28bfbc18aa86fdd68c55192c8bb0382a31cc495b4592dbc9493b429270dfcbc8",
+      "expected.json": "d26790dc7525fac4c2fc79d3da452234577757cd953a41d8cdd027bcfdd405ff",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "25172a300030f381a9bae62984491b8f850d5b8280687d8475d7d91c3ffa9c26",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "host_expected": ".work/phase-early-affine/HOST-EXPECTED.json",
+    "host_expected_sha256": "01f3da0246a4467a84be626d897cf2651b1075083d32fc7431ee22c4f778c5ba",
+    "phase_candidate": "early-affine",
+    "frames": 128,
+    "physics_ticks": 512
+  },
+  "phase-early-additive": {
+    "directory": ".work/phase-early-additive/fixture",
+    "files": {
+      "script.bin": "80f07c180b518903ae29f6c77fd91c4de554a2c890e285dfef64245503bf5cc2",
+      "expected.json": "96c0cec313f0b0364b468ab48302b232fe8e5737c824e2241386bafcff75fc0f",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "c1943cd511f6b0dfcf894bf198e07e99908e1cbb7ee39b1282dde00387da0701",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "host_expected": ".work/phase-early-additive/HOST-EXPECTED.json",
+    "host_expected_sha256": "5b974565bd3e83334c2da2533bc4d1f0c1e02da37602517dfaf21ad936b79764",
+    "phase_candidate": "early-additive",
+    "frames": 128,
+    "physics_ticks": 512
+  },
+  "clipfix-affine": {
+    "directory": ".work/fixtures/clipfix-affine",
+    "files": {
+      "script.bin": "4f77113e1d9c9e2397ad6ee69f318c46de3a4a40244756ee8554b6025494e09e",
+      "expected.json": "8a6562061aaae5d9ca9696ebaf8dcb737b7159afcb01d87a406386bb79aa2a99",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "diagnostic": false,
+    "foreground_paced": false
+  },
+  "clipfix-additive": {
+    "directory": ".work/fixtures/clipfix-additive",
+    "files": {
+      "script.bin": "288cdac96f134c349995a3ab5fb3184dc232a22d9d2eea26e4bd7de77e6dd400",
+      "expected.json": "421ef860ed6f274207fe83c8c3b149b0022bb5e76be04763cab100338e7ec1ed",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "diagnostic": false,
+    "foreground_paced": false
+  },
+  "phase-compact-affine": {
+    "directory": ".work/phase-compact-affine/fixture",
+    "files": {
+      "script.bin": "b8729db14d87a7b90ba92ea4e3b25a6990ca183495ad7ec86a6c08a238731325",
+      "expected.json": "e82ea4d5351b90f7a3b3a25ffcb22a39e0c852be475487159bf48e9389e5c9fa",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "dda8d8b36c7c5934c663237bdd8168afe5bdc2ace1e9b3e9ee8e0e1d46be1246",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "host_expected": ".work/phase-compact-affine/HOST-EXPECTED.json",
+    "host_expected_sha256": "3d3aebdaeaa162a0e63d036c622b41d8cc2b8843e1dfe956785b661d6dd4e1eb",
+    "phase_candidate": "compact-affine",
+    "frames": 128,
+    "physics_ticks": 512
+  },
+  "phase-compact-additive": {
+    "directory": ".work/phase-compact-additive/fixture",
+    "files": {
+      "script.bin": "c70ad9961984babf591ef3a7a960265911d76b3b1eca4e9f3f3496c9043cb88b",
+      "expected.json": "dfb365225ae19341b6f8d8a646faec85b558dd59dccc7362f7026574d8a8cd0e",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "a7c2ee2149046d7ac5d62c5d9b45bda05caeb76b9feec89e8c935ad6a446ee00",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "host_expected": ".work/phase-compact-additive/HOST-EXPECTED.json",
+    "host_expected_sha256": "577f41a5874133ce97adfb3e28e7edb63902caa063336351d11ab32c5bdf4bb7",
+    "phase_candidate": "compact-additive",
+    "frames": 128,
+    "physics_ticks": 512
+  },
+  "phase-actor-affine": {
+    "directory": ".work/phase-actor-affine/fixture",
+    "files": {
+      "script.bin": "a4a0a76bc5831b27903dcf11b05d7228868ebe2c962d423d19b72ec0656b97a6",
+      "expected.json": "3ca4ec2b64de5ba23cdf55bd45d35f315bb57b5b8f3b3aece85b3085b4632296",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "33328cf73f8a3f66f567ef33d14ffd5d744c5e06f821fc027e8d507c54da9020",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "host_expected": ".work/phase-actor-affine/HOST-EXPECTED.json",
+    "host_expected_sha256": "647619dc8caa3a80571f3775b9ac090de4fcc27b440a02500c5e2cd4901144e9",
+    "phase_candidate": "actor-affine",
+    "frames": 128,
+    "physics_ticks": 512
+  },
+  "phase-actor-additive": {
+    "directory": ".work/phase-actor-additive/fixture",
+    "files": {
+      "script.bin": "dee7e3b4a85a74f9415241f9a628ae088e6bfed74a866311a20faa7b41fe28f1",
+      "expected.json": "e9d590f5b66e9781a5c3e992b81ca7df1a2596c0e084a82534153cb721f176a5",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "a7e86af68f055c1806857bef8f156ddd001163cc3460ffe8fe03ffcdf8b3ba5f",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "host_expected": ".work/phase-actor-additive/HOST-EXPECTED.json",
+    "host_expected_sha256": "6bc1c6d7f72dfd61d41a62acb0975ed4bed7a9c4dd08fdde46306b7390bd47cc",
+    "phase_candidate": "actor-additive",
+    "frames": 128,
+    "physics_ticks": 512
+  }
+}

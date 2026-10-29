@@ -4,11 +4,44 @@ Research cheaper arithmetic, geometry and drawing for both Rally implementations
 
 ## Incremental renderer improvements — first modification released 2026-10-28
 
+**INC-001-03 released2026-10-29:** Author requests all-dirt commit/push, then the
+next modification: [aligned wider span fills](RALLY-28/custom-vdp/incremental/wide-fill/README.md).
+Use the accepted additive moving-pattern fixture as control; preserve exact
+pixels, source physics/geometry/actors/runtime and timed UART. Qualify host bounds,
+inspect target stores, compare completed frames in both orders and measure isolated
+fill work. Return for review; affine audit/hardware/later optimizations remain separate.
+
+**Matched moving-pattern comparison returned:** after the blocking jobs finished,
+four clean unpaced runs give affine28.46→additive35.35nominal MOS FPS (+24.22%),
+PRT+24.26%,6.85nominal ms/frame saved. Both orders improve and all states/checks
+pass. Actual312300-byte timed UART streams are identical on every run, including
+all900motion packets. Old startup-stalled/thermal-aborted attempts are preserved
+and excluded. Max56°C/boost restored1/all emulators stopped. [Results](RALLY-28/custom-vdp/incremental/sprites/motion-comparison/RESULTS.md).
+Visuals/clean MOS exit accepted; hardware/publication remain open. This moving
+pattern's24.2%gain is distinct from the earlier constant-gap42.4%measurement.
+
+**Moving review accepted; matched baseline requested:** the Author accepts the
+sampler visuals and clean MOS exit, then requires the same deterministic traffic
+pattern against the affine baseline before further work. [Comparison scope](RALLY-28/custom-vdp/incremental/sprites/motion-comparison/README.md)
+releases two matched unpaced900-frame pairs in reversed order with identical
+motion/driver/runtime/fences and full final-state checks. Prior benchmark and
+paced review inputs remain preserved. Publication/hardware gates remain open.
+
+**Author review correction:** equal-speed traffic made changing car sizes hard to
+judge, and the fixture left MOS in a double-buffered/narrow text viewport. A
+[separate motion review](RALLY-28/custom-vdp/incremental/sprites/review/README.md)
+now scripts approaching/passing traffic and restores normal text mode on return.
+The benchmark fixtures and their measurements remain unchanged. Final silent
+900-frame checks pass; the Author accepts moving visuals and clean exit. No commit/push or
+next optimization is inferred from this correction.
+
 The Author requests a sensible sequence, commit/push of all current dirt, then the first modification and Oryx Flexe comparison. [Incremental work contract](RALLY-28/custom-vdp/incremental/PLAN.md) orders redundant road-clear removal, specialized sprite scaling, wider span fills, static/cache work, consolidated synchronization and composition/copy removal. INC-001-01 is released; later items require their own tranche. Root TODO owns the immutable task checkboxes. Preserve the accepted Native-span control, physics, firmware and complete rendering fence; automated runs remain windowless and silent. [Source/data findings](RALLY-28/research/RENDERER-COST-FINDINGS.md).
 
 **INC-001-01 returned:** all prior dirt/scope pushed as `b0bf5e7`; four silent Oryx Flexe runs pass state/timer/input/backend checks and have pixel-identical final captures. Split clear saves38,400writes/frame and adds12outbound bytes. Pooled25.96→26.33nominal MOS FPS (+1.41%), PRT+1.45%; pairwise gain0.15–2.69% is small/variable. [Results and limits](RALLY-28/custom-vdp/incremental/RESULTS.md). Boost restored1, max60°C, all emulators stopped. New implementation/evidence uncommitted; no product adoption/hardware or later tranche implied. INC-001-02 remains the proposed next modification.
 
 **INC-001-02 now released:** Author requests commit/push then the next tranche. The [scope amendment](RALLY-28/custom-vdp/incremental/PLAN.md) releases current-candidate phase profiling and additive traffic/sign scale/mirror sampling, host correctness/lifetime qualification and matched silent Oryx Flexe comparison. Use split-clear control on both sides; preserve player/road/physics/runtime and fence. Return after this change; no hardware or unrelated optimization.
+
+**INC-001-02 returned:** checkpoint `32a7cb4` pushed; corrected additive sampler delivers matched 26.98→38.42 nominal MOS FPS (+42.40%), PRT +42.42%, and 60.67% less combined actor preparation/execution in raw emulated CCOUNT. All four final captures are pixel-identical. Ordinary/sanitized independent 900-frame host replay, 110 fault cases and full sampler scale/clip domain pass. Both comparison fixtures load before mode setup; old LOAD-memory failures, rejected stale-clip images and oversized phase diagnostics are preserved. An admitted actor-only probe measures moved preparation work. [Results and exact artifacts](RALLY-28/custom-vdp/incremental/sprites/RESULTS.md), [stopped Author review](RALLY-28/custom-vdp/incremental/sprites/HUMAN-REVIEW.md). New code/evidence uncommitted; motion/hardware remain separate gates. Firmware, SDK, road, player, physics, timed tape and fence remain unchanged. Next proposed INC-001-03 is still a separate release.
 
 ## Native 60 Hz investigation — released 2026-10-28
 

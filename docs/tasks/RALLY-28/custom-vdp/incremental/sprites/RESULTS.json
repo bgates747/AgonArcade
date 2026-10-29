@@ -1,0 +1,155 @@
+{
+  "task": "INC-001-02",
+  "checkpoint": "32a7cb4",
+  "rows": [
+    {
+      "campaign": "sprcab01",
+      "case": "clipfix-affine",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 33.5,
+      "nominal_mos_fps": 26.865671641791046,
+      "nominal_prt_seconds": 34.673,
+      "nominal_prt_fps": 25.956796354512157,
+      "host_seconds_including_startup": 43.139,
+      "stack_minfree_bytes": {
+        "stack before": 2260,
+        "stack after": 2116
+      }
+    },
+    {
+      "campaign": "sprcab01",
+      "case": "clipfix-additive",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 23.083333333333332,
+      "nominal_mos_fps": 38.98916967509025,
+      "nominal_prt_seconds": 23.894,
+      "nominal_prt_fps": 37.66635975558717,
+      "host_seconds_including_startup": 32.916,
+      "stack_minfree_bytes": {
+        "stack before": 2260,
+        "stack after": 1972
+      }
+    },
+    {
+      "campaign": "sprcba01",
+      "case": "clipfix-additive",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 23.766666666666666,
+      "nominal_mos_fps": 37.86816269284713,
+      "nominal_prt_seconds": 24.584,
+      "nominal_prt_fps": 36.60917670029287,
+      "host_seconds_including_startup": 33.518,
+      "stack_minfree_bytes": {
+        "stack before": 2260,
+        "stack after": 2004
+      }
+    },
+    {
+      "campaign": "sprcba01",
+      "case": "clipfix-affine",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_seconds": 33.21666666666667,
+      "nominal_mos_fps": 27.094831911690918,
+      "nominal_prt_seconds": 34.369,
+      "nominal_prt_fps": 26.186388896971106,
+      "host_seconds_including_startup": 42.837,
+      "stack_minfree_bytes": {
+        "stack before": 2260,
+        "stack after": 2052
+      }
+    }
+  ],
+  "pooled": {
+    "clipfix-affine": {
+      "runs": 2,
+      "frames": 1800,
+      "nominal_mos_seconds": 66.71666666666667,
+      "nominal_mos_fps": 26.979765176117912,
+      "nominal_mos_ms_per_frame": 37.06481481481482,
+      "nominal_prt_seconds": 69.042,
+      "nominal_prt_fps": 26.071087164334752,
+      "individual_mos_fps": [
+        26.865671641791046,
+        27.094831911690918
+      ]
+    },
+    "clipfix-additive": {
+      "runs": 2,
+      "frames": 1800,
+      "nominal_mos_seconds": 46.849999999999994,
+      "nominal_mos_fps": 38.420490928495205,
+      "nominal_mos_ms_per_frame": 26.027777777777775,
+      "nominal_prt_seconds": 48.477999999999994,
+      "nominal_prt_fps": 37.1302446470564,
+      "individual_mos_fps": [
+        38.98916967509025,
+        37.86816269284713
+      ]
+    }
+  },
+  "nominal_mos_gain_percent": 42.40483813589473,
+  "nominal_prt_gain_percent": 42.41924171789266,
+  "nominal_mos_ms_saved_per_frame": 11.037037037037042,
+  "pair_changes": [
+    {
+      "campaign": "sprcab01",
+      "nominal_mos_gain_percent": 45.12635379061371
+    },
+    {
+      "campaign": "sprcba01",
+      "nominal_mos_gain_percent": 39.7615708274895
+    }
+  ],
+  "pixel_comparisons": [
+    {
+      "reference": "sprcab01/clipfix-affine",
+      "case": "sprcab01/clipfix-additive",
+      "full_image_difference_bbox": null,
+      "road_difference_bbox": null,
+      "road_changed_pixels": 0,
+      "full_image_changed_pixels": 0
+    },
+    {
+      "reference": "sprcab01/clipfix-affine",
+      "case": "sprcba01/clipfix-additive",
+      "full_image_difference_bbox": null,
+      "road_difference_bbox": null,
+      "road_changed_pixels": 0,
+      "full_image_changed_pixels": 0
+    },
+    {
+      "reference": "sprcab01/clipfix-affine",
+      "case": "sprcba01/clipfix-affine",
+      "full_image_difference_bbox": null,
+      "road_difference_bbox": null,
+      "road_changed_pixels": 0,
+      "full_image_changed_pixels": 0
+    }
+  ],
+  "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+  "extra_retained_scratch_bytes": 52238,
+  "per_frame_outbound_bytes": 277,
+  "firmware_sdk_driver_artwork_physics_unchanged": true,
+  "startup": "Both modules LOAD before artwork/mode136; exact same timed tape on both sides.",
+  "session": {
+    "host_boot_id": "8d880fe8-75c2-4c60-9dc1-60a1786a24a8",
+    "original_boost": "1",
+    "final_boost": "1",
+    "boost_restored": true,
+    "max_temperature_celsius": 57.0,
+    "elapsed_host_seconds": 152.858,
+    "owned_emulator_processes_after": []
+  },
+  "rejected_trials": [
+    "sprab01 late-LOAD candidate MEMORY6 before physics/rendering",
+    "spreab01/spreba01 preclip sampler stale pixels; timings excluded",
+    "sprphaseEarly01 full additive diagnostic MEMORY6",
+    "sprcompact01 compact additive diagnostic MEMORY6"
+  ],
+  "clocks": "Completion-fenced finite900frame/3600tick fixture; MOS nominal120units/s, PRT nominal18.432MHz emulated instruction clock. Host durations include startup/teardown. Not hardware or an independently scheduled gameplay rate.",
+  "visual_limit": "All four final shutdown captures identical, not an exhaustive moving-frame comparison; Author motion gate remains."
+}

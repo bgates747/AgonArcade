@@ -1,0 +1,27 @@
+{
+  "protocol_failures": {
+    "start-before-render": 1,
+    "end-before-start": 1,
+    "repeated-start": 1,
+    "unsupported": 9,
+    "arguments": 1,
+    "reserved": 1,
+    "missing-log": 2,
+    "short-log": 3,
+    "read-only-log": 1,
+    "partial-error": 2,
+    "null-view": 3,
+    "read-view": 3,
+    "release-error": 8,
+    "capacity": 13
+  },
+  "error_latches": true,
+  "guards_unchanged": true,
+  "all_grants_released": true,
+  "source_files": {
+    "phase_lite_proof.py": "9e75215e21df5ec26ad1f7d821fa4ea06c71a14ce12e1b4596f3383d410db08e",
+    "phase_lite.py": "c0ad09cf72a9f2654427213d2506ad70a98eb3ac50655f0520fcca4f6a48d8e1",
+    "phase_lite.inc": "84d7657619b35968ecb05983f34e79e99c10fa572d634fc32fb851e8c3775533"
+  },
+  "scope": "Actual generated C with host fake counters: protocol/failure evidence only; no timing"
+}

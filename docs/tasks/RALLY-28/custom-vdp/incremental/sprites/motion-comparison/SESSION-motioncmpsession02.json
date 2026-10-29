@@ -1,0 +1,39 @@
+{
+  "session": "motioncmpsession02",
+  "author_approved_temporary_boost_disable": true,
+  "original_boost": "1",
+  "campaigns": [
+    "motionab02",
+    "motionba02"
+  ],
+  "phases": [],
+  "host_boot_id": "8d880fe8-75c2-4c60-9dc1-60a1786a24a8",
+  "video_driver": "dummy",
+  "audio_driver": "dummy",
+  "samples": [
+    {
+      "elapsed_seconds": 0.01,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 95.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        4.38671875,
+        7.392578125,
+        7.46435546875
+      ]
+    }
+  ],
+  "completed": [],
+  "thermal_stop_celsius": 95,
+  "error": "SessionAbort('Session interrupted by signal 10')",
+  "boost_restored": true,
+  "boost_during_session": "0",
+  "monitor_abort_reason": "Boost changed or thermal stop reached",
+  "cleanup_stopped_pids": [],
+  "final_boost": "1",
+  "owned_emulator_processes_after": [],
+  "elapsed_host_seconds": 0.134,
+  "max_temperature_celsius": 95.0
+}

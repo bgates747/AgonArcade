@@ -1,0 +1,149 @@
+{
+  "scope": "Rally-owned isolated fixture resource map, not an adopted compiler/SDK contract",
+  "road_bitmap": 50700,
+  "sprite_scratch": {
+    "first": 50710,
+    "last": 50717,
+    "cars": {
+      "slots": 6,
+      "width": 99,
+      "height": 75
+    },
+    "signs": {
+      "slots": 2,
+      "width": 62,
+      "height": 62
+    },
+    "bytes": 52238,
+    "format": "RGBA2222"
+  },
+  "known_other_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    50300,
+    50301,
+    50302,
+    50303,
+    50304,
+    50306,
+    50700,
+    63930,
+    63970,
+    63971,
+    63972,
+    63973,
+    63974,
+    63975,
+    63984,
+    64000,
+    64001,
+    64002,
+    64003,
+    64004,
+    64005,
+    64006,
+    64007,
+    64008,
+    64009,
+    64010,
+    64011,
+    64012,
+    64013,
+    64014,
+    64015,
+    64016,
+    64017,
+    64018,
+    64019,
+    64020,
+    64021,
+    64022,
+    64023,
+    64024,
+    64025,
+    64026,
+    64027,
+    64028,
+    64029,
+    64030,
+    64031,
+    64032,
+    64033,
+    64034,
+    64120,
+    64121,
+    64122,
+    64123,
+    64124,
+    64125,
+    64126,
+    64127
+  ],
+  "published_external_reservations": [
+    {
+      "first": 60000,
+      "last": 60031
+    },
+    {
+      "first": 50300,
+      "last": 50300
+    },
+    {
+      "first": 50301,
+      "last": 50301
+    },
+    {
+      "first": 50302,
+      "last": 50302
+    },
+    {
+      "first": 50303,
+      "last": 50303
+    },
+    {
+      "first": 50304,
+      "last": 50304
+    },
+    {
+      "first": 50305,
+      "last": 50305
+    }
+  ],
+  "disjoint": true,
+  "source_bitmaps": {
+    "traffic": [
+      64005,
+      64034
+    ],
+    "signs": [
+      64120,
+      64127
+    ]
+  },
+  "retained_until": "final drawing/swap fence before next Render30; buffers cleared after UNLOAD",
+  "future_integration": "Reserve50710..50717 plus50700 in the eventual generated resource contract before regeneration; current frozen owner manifests unchanged."
+}

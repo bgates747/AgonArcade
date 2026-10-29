@@ -1,0 +1,29 @@
+{
+  "accepted_review_files": {
+    "script.bin": "ab82b327c209b54935a7407703d3c76634d1c4da3832409fda6ff54cca4ef62b",
+    "expected.json": "9462b8877b81eb7a833aa174cdb8cb4d9bc3fde80e694e0adb4e7700af872f4f",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "probe.bin": "a9effac2f7b45560d8003af6add587998cbafedf128ff2dbf070fdb7f68f2f07",
+    "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+    "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "artwork.vdu": "124dfd413f1b2d1902547bcc18a1a74a4ade35c6a771a66f990cd1312966cca9",
+    "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+  },
+  "original_baseline_case": "clipfix-affine",
+  "original_additive_case": "clipfix-additive",
+  "same_timed_records": true,
+  "same_scripted_motion_bytes": true,
+  "same_driver_artwork_assets_and_common": true,
+  "additive_matches_accepted_review_except_deadline": true,
+  "frames": 900,
+  "physics_ticks": 3600,
+  "outbound_uart_bytes_per_frame": 347,
+  "review_extra_motion_uart_bytes": 70,
+  "retained_stock_swap_and_post_swap_fence": true,
+  "firmware_or_sdk_changed": false,
+  "modules": {
+    "affine": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "additive": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702"
+  }
+}

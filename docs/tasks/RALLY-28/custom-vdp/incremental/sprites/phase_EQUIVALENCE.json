@@ -1,0 +1,38 @@
+{
+  "frames": 128,
+  "ticks": 512,
+  "public_counter_fields": 13,
+  "complete_receipt_bytes_equal": true,
+  "receipt_sha256": "fe71d02da4d476ea01828d65e6ca15348b64dd0a74c6385c2c3e666c86cb3550",
+  "equivalent_rejections": {
+    "missing": 2,
+    "short": 3,
+    "zero-capacity": 3,
+    "odd-bytes": 3,
+    "overlarge": 3,
+    "unsupported": 9,
+    "argument": 1,
+    "reserved": 1,
+    "marker-before-render": 1,
+    "repeat-marker": 1,
+    "early-complete": 1,
+    "capacity": 13,
+    "fifth-tick": 1,
+    "second-render": 1,
+    "abi-host": 5,
+    "abi-request": 5
+  },
+  "guards_unchanged": true,
+  "balanced_leases": true,
+  "clock": "HOST FAKE COUNTER: exact format/protocol comparison only; no timing evidence",
+  "source_files": {
+    "phase_equivalence.py": "2fbecaee9c35f64dd278cea1ea029c7fe1a0eb87b6b4905d60c3e366939a90f5",
+    "phase_clock_compact.inc": "d78e8b2ce08a5757da8b289dd277c5fa6e7c283031bee1671e4fc13242633c30",
+    "phase_entry_compact.inc": "d06600c04fafd6742df1eb63f1c81482fb5517d7f773908ef5ba2d1e4c3a3a99",
+    "phase_entry_v1.inc": "d8d670e717cc239c311a28c2ec2a7513a1bb4cdc41fe7d8487f495c3560dfa9c"
+  },
+  "original_modules_preserved": true,
+  "headline_modules_changed": false,
+  "firmware_changed": false,
+  "sdk_changed": false
+}

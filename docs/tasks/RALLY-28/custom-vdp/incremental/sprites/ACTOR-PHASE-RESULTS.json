@@ -1,0 +1,22 @@
+{
+  "unit": "Raw emulated per-core CCOUNT deltas, uncalibrated; not physical cycles or milliseconds",
+  "frames_per_variant": 128,
+  "rows": {
+    "phase-actor-affine": {
+      "actors_build_cycles": 5550.4453125,
+      "actors_dispatch_draw_and_flush": 1163846.953125,
+      "actors_preparation_and_execution": 1169397.3984375
+    },
+    "phase-actor-additive": {
+      "actors_build_cycles": 86262.7890625,
+      "actors_dispatch_draw_and_flush": 373676.4921875,
+      "actors_preparation_and_execution": 459939.28125
+    }
+  },
+  "combined_actor_reduction_percent": 60.66869296403843,
+  "draw_reduction_percent": 67.892987030283,
+  "moved_work": "Preparation includes deferred sampling; compare combined preparation+execution, not drawing alone.",
+  "independent_worlds_exact": true,
+  "full_and_compact_candidate_probes": "Preserved LOAD_MEMORY6; actor-only probe is the admitted comparable instrument.",
+  "hardware_qualified": false
+}

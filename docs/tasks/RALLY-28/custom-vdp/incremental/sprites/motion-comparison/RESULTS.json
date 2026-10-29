@@ -1,0 +1,114 @@
+{
+  "task": "INC-001-02-CMP01\u201303",
+  "rows": [
+    {
+      "campaign": "motionab02",
+      "case": "affine",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 3832,
+      "nominal_mos_seconds": 31.933333333333334,
+      "nominal_mos_fps": 28.183716075156575,
+      "nominal_prt_ticks": 33065,
+      "nominal_prt_seconds": 33.065,
+      "nominal_prt_fps": 27.21911386662634,
+      "host_seconds_including_startup": 41.534,
+      "completed_frame_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "all_900_motion_packets_exact": true,
+      "final_state_exact": true,
+      "clean_mos_return": true
+    },
+    {
+      "campaign": "motionab02",
+      "case": "additive",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 3062,
+      "nominal_mos_seconds": 25.516666666666666,
+      "nominal_mos_fps": 35.27106466361855,
+      "nominal_prt_ticks": 26397,
+      "nominal_prt_seconds": 26.397,
+      "nominal_prt_fps": 34.094783498124784,
+      "host_seconds_including_startup": 35.414,
+      "completed_frame_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "all_900_motion_packets_exact": true,
+      "final_state_exact": true,
+      "clean_mos_return": true
+    },
+    {
+      "campaign": "motionba02",
+      "case": "additive",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 3048,
+      "nominal_mos_seconds": 25.4,
+      "nominal_mos_fps": 35.43307086614173,
+      "nominal_prt_ticks": 26286,
+      "nominal_prt_seconds": 26.286,
+      "nominal_prt_fps": 34.23875827436658,
+      "host_seconds_including_startup": 35.212,
+      "completed_frame_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "all_900_motion_packets_exact": true,
+      "final_state_exact": true,
+      "clean_mos_return": true
+    },
+    {
+      "campaign": "motionba02",
+      "case": "affine",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 3758,
+      "nominal_mos_seconds": 31.316666666666666,
+      "nominal_mos_fps": 28.738690792974985,
+      "nominal_prt_ticks": 32400,
+      "nominal_prt_seconds": 32.4,
+      "nominal_prt_fps": 27.77777777777778,
+      "host_seconds_including_startup": 40.919,
+      "completed_frame_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "all_900_motion_packets_exact": true,
+      "final_state_exact": true,
+      "clean_mos_return": true
+    }
+  ],
+  "pooled": {
+    "affine": {
+      "frames": 1800,
+      "nominal_mos_seconds": 63.25,
+      "nominal_mos_fps": 28.458498023715414,
+      "nominal_mos_ms_per_frame": 35.138888888888886,
+      "nominal_prt_seconds": 65.465,
+      "nominal_prt_fps": 27.495608340334527
+    },
+    "additive": {
+      "frames": 1800,
+      "nominal_mos_seconds": 50.916666666666664,
+      "nominal_mos_fps": 35.3518821603928,
+      "nominal_mos_ms_per_frame": 28.287037037037035,
+      "nominal_prt_seconds": 52.683,
+      "nominal_prt_fps": 34.16661921302887
+    }
+  },
+  "nominal_mos_gain_percent": 24.22258592471358,
+  "nominal_prt_gain_percent": 24.262095932274196,
+  "nominal_mos_ms_saved_per_frame": 6.851851851851851,
+  "identical_complete_frame_uart_stream": true,
+  "completed_frame_uart_bytes_per_run": 312300,
+  "identical_motion_table_driver_assets_and_runtime": true,
+  "full_final_worlds_equal": true,
+  "clocks": "MOS nominal120units/s; PRT nominal18.432MHz/18432clocks per interrupt; host time includes startup/teardown. Emulator estimates, not physical timing.",
+  "snapshot_limit": "Final captures are the MOS prompt, not a per-frame rendering parity proof; Author accepted moving sampler visuals.",
+  "session": {
+    "host_boot_id": "8d880fe8-75c2-4c60-9dc1-60a1786a24a8",
+    "original_boost": "1",
+    "final_boost": "1",
+    "boost_restored": true,
+    "max_temperature_celsius": 56.0,
+    "elapsed_host_seconds": 153.53
+  },
+  "modules": {
+    "affine": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "additive": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702"
+  },
+  "hardware_tested": false,
+  "excluded_attempt": "motionab01 incomplete pair: affine passed, additive startup stalled before timed frames; guarded abort preserved. Session02 thermal abort95C before launching. Identical-byte fresh02profiles reserved for qualified pairs in session03."
+}

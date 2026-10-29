@@ -1,0 +1,63 @@
+{
+  "session": "motionsession01",
+  "author_approved_temporary_boost_disable": true,
+  "original_boost": "1",
+  "campaigns": [
+    "motiontest01"
+  ],
+  "phases": [],
+  "host_boot_id": "8d880fe8-75c2-4c60-9dc1-60a1786a24a8",
+  "video_driver": "dummy",
+  "audio_driver": "dummy",
+  "samples": [
+    {
+      "elapsed_seconds": 0.01,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 82.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        3.47412109375,
+        2.31494140625,
+        1.75537109375
+      ]
+    },
+    {
+      "elapsed_seconds": 2.014,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 82.0,
+        "iwlwifi_1:thermal_zone1": 35.0
+      },
+      "load_average": [
+        3.47412109375,
+        2.31494140625,
+        1.75537109375
+      ]
+    },
+    {
+      "elapsed_seconds": 4.016,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 79.0,
+        "iwlwifi_1:thermal_zone1": 35.0
+      },
+      "load_average": [
+        3.5166015625,
+        2.34326171875,
+        1.767578125
+      ]
+    }
+  ],
+  "completed": [],
+  "thermal_stop_celsius": 95,
+  "error": "RuntimeError(\"RuntimeError('Guest reported failure')\")",
+  "boost_restored": true,
+  "boost_during_session": "0",
+  "cleanup_stopped_pids": [],
+  "final_boost": "1",
+  "owned_emulator_processes_after": [],
+  "elapsed_host_seconds": 4.916,
+  "max_temperature_celsius": 82.0
+}

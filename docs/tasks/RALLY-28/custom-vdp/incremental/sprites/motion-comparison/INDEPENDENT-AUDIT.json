@@ -1,0 +1,23 @@
+{
+  "method": "Independent read-only reconstruction from raw ticks/prt binaries and every timed tape command with captured module handle; no emulator or source mutation",
+  "qualified_runs": 4,
+  "nominal_mos_fps": {
+    "affine": 28.458498023715414,
+    "additive": 35.3518821603928
+  },
+  "nominal_mos_gain_percent": 24.22258592471358,
+  "nominal_prt_gain_percent": 24.262095932274196,
+  "nominal_mos_ms_saved_per_frame": 6.851851851851851,
+  "pairwise_nominal_mos_gain_percent": [
+    25.146962769432,
+    23.293963254593
+  ],
+  "complete_actual_uart_equals_independent_template": true,
+  "uart_bytes_per_run": 312300,
+  "uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+  "all_3600_motion_and_lane_packets_exact": true,
+  "full_final_state_timer_and_mos_exit_pass": true,
+  "clocks": "Nominal MOS durations3.3\u20133.4%shorter than PRT; gain agrees within0.03951percentage points. Keep clocks separate, no physical claim.",
+  "numeric_discrepancies": [],
+  "excluded_old_attempts_confirmed": true
+}

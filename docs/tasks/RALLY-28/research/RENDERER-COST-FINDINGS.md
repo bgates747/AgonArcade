@@ -113,14 +113,25 @@ and mirrored variants for stock-compatible ordinary plots. Opaque-run skipping
 is our additional proposal, not a claim about Wolf's existing implementation.
 Prepare the player's five mirrored views at startup where worthwhile.
 
-Stock caches must budget PSRAM, setup cost and the standard bitmap ID range of
-256 entries. Do not assume every view/livery/size/mirror combination fits. Avoid
+Stock caches must budget PSRAM, setup cost and selector/binding limits. The
+current helper's short bitmap selectors and base-resource validation use 256
+entries; the stock long-ID selector also supports retained buffer bitmap IDs
+above255 (as used by road50700 and the new scratch50710–50717). Thus256 is not a
+universal stock-VDP bitmap ceiling. Do not assume every view/livery/size/mirror combination fits. Avoid
 per-frame pixel uploads from eZ80. Size buckets deliberately trade visual size
 smoothness for speed and must be offered for Author motion review.
 
 Wolf still allocates/copies scratch images and dispatches many column plots;
 it is not a zero-copy ideal. Its fixed-point helpers also include wide arithmetic.
 The transferable finding is specialization, not a universal fixed-point speedup.
+
+**INC-001-02 follow-up:** the isolated native implementation uses an additive
+sampled image per queued traffic/sign object and ordinary plots, with fixed
+retained backing buffers and explicitly activated canvas clipping. Sampling
+occurs after releasing the command-output lease, fitting the actual four-slot
+limit including the generated root lease. Player drawing remains unchanged.
+The standard-VDP cache alternative remains separate work. See
+[implementation and qualification](../custom-vdp/incremental/sprites/RESULTS.md).
 
 ### RCF-005 — The frame clear redundantly covers the opaque road image
 

@@ -1,16 +1,73 @@
 # Standing emulator authorization —2026-10-14
 
-Latest RALLY-28 tranche (2026-10-28): all prior dirt and incremental plan pushed
-as b0bf5e7, then INC-001-01 clear-only comparison completed. Read
-docs/tasks/RALLY-28/custom-vdp/incremental/RESULTS.md and PLAN.md. Four silent
-Oryx Flexe runs,900frames/3600ticks/2913retained replies each, pass exact final
-state/runtime/timer/backend checks; shutdown images pixel-identical. Clear saves
-38400writes/frame,+12wire bytes; pooled25.96→26.33nominal MOS FPS(+1.41%),
-PRT+1.45%,pairwise0.15–2.69%variable. Small preliminary gain only. Boost restored1,
-max60°C,all emulators stopped. New implementation/evidence uncommitted; no product
-adoption/hardware/later implementation release. Next proposed INC-001-02 is
-phase measurement and specialized car/sign sampling. Root TODO owns unfinished
-INC-001-02–06; findings preserved in RALLY-28/research/RENDERER-COST-FINDINGS.md.
+AUTHOR RELEASE2026-10-29: commit/push all current dirt, then INC-001-03 aligned
+32-bit road-fill experiment against accepted additive moving-pattern control.
+Read incremental/wide-fill/README.md. Only fill implementation changes; same
+geometry/physics/actors/runtime/347byte frames, exact host pixels/alignment/bounds,
+target assembly inspection, whole-frame paired timing and isolated fill evidence.
+Silent guarded Oryx only. Return for review with new work uncommitted; no later
+optimization/hardware release inferred. INC-001-02/review/comparison accepted
+items are removed from unfinished TODO and preserved in the dated log.
+
+AUTHOR FOLLOW-UP: INC-001-02-AFF01 flags an audit of our built-in affine command
+usage and isolated setup/format/alpha/clipping/dispatch/draw costs. Do not call
+the stock API generally inefficient from this fixture's sampler gain. Baseline
+already uses built-in affine bitmap plotting, not VDP sprites. Current scaler
+loads original full-size artwork once and generates resized images within VDP;
+no pre-scaled files or hot-loop scaled-pixel uploads. Author accepts that current
+arrangement. Cache variants remain a separate proposal. Read incremental/PLAN.md;
+this is documentation only, not a new implementation/test/publication release.
+
+MATCHED MOVING-PATTERN COMPARISON COMPLETE: Author reported jobs finished;
+read-only checks confirmed absent jobs/49°C/no emulators. Session03 completed
+motionab02/motionba02 under the original guard: affine28.46→additive35.35nominal
+MOS FPS (+24.22%),PRT+24.26%,6.85nominal ms/frame saved. All four900-frame/3600-tick/
+2913reply runs pass full final state/scene/player/timer/input/backend/MOS-exit;
+actual312300-byte frame UART streams identical,347bytes/frame. Independent raw
+audit agrees. Max56°C,boost restored1/all emulators stopped. Prior startup-stalled
+pair and95°C prelaunch abort preserved/excluded. Human moving visuals/clean exit
+accepted; no hardware/publication/next optimization release. Old42.4%gain belongs
+to the constant-gap fixture and is preserved separately. Read incremental/sprites/
+motion-comparison/RESULTS.md; all new work remains uncommitted.
+
+AUTHOR ACCEPTANCE / NEXT REQUEST: moving sampler visuals and clean MOS exit are
+accepted; see incremental/sprites/review/HUMAN-ACCEPTANCE.json. Before further
+work, Author requests the same deterministic motion against the affine baseline.
+INC-001-02-CMP01–03 is released under incremental/sprites/motion-comparison/:
+matched unpaced900frame/3600tick fixtures, same exact motion/driver/runtime/fence,
+baseline/candidate then reversed order, both SDL dummy drivers and boost guard.
+No publication/hardware/next optimization release inferred. Prior benchmarks and
+the accepted paced review are preserved separately; do not pool their timings.
+
+Latest Author feedback: equal-speed traffic did not reveal car scaling and MOS
+return was obscured. Separate correction is ready under incremental/sprites/review/:
+read docs/tasks/RALLY-28/custom-vdp/incremental/sprites/review/README.md. Six cars
+approach/recede through62sizes each, driver restores single-buffered mode8/full
+text viewport/cursor. Final silent900-frame/3600-tick/2913reply run passes scripted
+positions/lanes/player/timer/input/backend checks and emits the MOS prompt. Old
+benchmark bytes/42.4%comparison unchanged; review timing excluded. Fresh stopped
+Oryx profile .emulator/rally28-hz60-motionreview02-motion, audio dummy, received
+Author visual/clean-exit acceptance. First motion-table startup failure preserved;
+lower placement qualified, exact failure cause unqualified. Boost restored1,
+all emulators stopped. New work uncommitted; no new optimization/hardware release.
+
+Latest RALLY-28 tranche (2026-10-28): all prior clear-only dirt and released
+INC-001-02 scope committed/pushed as32a7cb4, then additive car/sign sampling
+completed. Read docs/tasks/RALLY-28/custom-vdp/incremental/sprites/RESULTS.md
+and HUMAN-REVIEW.md. Qualified reversed-order pairs give26.98→38.42nominal MOS
+FPS(+42.40%),PRT+42.42%,11.04nominal MOSms/frame saved. Four silent Oryx Flexe
+runs,900frames/3600ticks/2913retained replies each, pass independent final state,
+runtime/input/timer/backend checks; all final captures are pixel-identical.
+Separate admitted128-frame actor diagnostics include deferred sampling and show
+60.67%lower preparation+execution raw emulated CCOUNT, not physical cycles.
+Late LOAD and larger diagnostic admission failures, and preclip-bug timings,
+are preserved/excluded. Scratch52238B, corrected text31844B, unchanged firmware/
+SDK/generated physics/road/player/timed UART; early LOAD applied to both cases.
+Boost restored1,all emulators stopped. Fresh stopped Oryx review profile:
+.emulator/rally28-hz60-sprreview01-clipfix-additive; sound forceddummy. New work
+uncommitted for Author moving visual review/publication; hardware untested.
+No next optimization release inferred. Root TODO owns INC-001-02–06; findings
+preserved in RALLY-28/research/RENDERER-COST-FINDINGS.md.
 
 Only truly headless automated emulator sessions are authorized: no graphical
 window and NO sound output. Force both SDL_VIDEODRIVER=dummy and

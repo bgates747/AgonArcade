@@ -1,5 +1,63 @@
 # 2026-10-28 — Rally native throughput investigation
 
+Author requests follow-up on the built-in affine path after clarifying the
+scaling approaches. INC-001-02-AFF01 records isolation of matrix setup, format,
+alpha, clipping, dispatch and transformed drawing; no general inefficiency claim
+is justified by the current A/B alone. Current artwork loads full-size once;
+resizing occurs inside VDP with no scaled-bitmap uploads during the hot loop.
+Author accepts that arrangement. Future cached-size proposals are separate.
+Documentation only; no new build/run or publication.
+
+Matched motion comparison completed after Author reports other jobs done:
+jobs absent/host49°C, then session03runs both orders unchanged. Affine baseline
+28.4585→additive35.3519nominal MOS FPS (+24.2226%); PRT+24.2621%;6.8519nominal
+ms/frame saved. Four900-frame/3600-tick/2913reply runs pass independent scene/player,
+full final-state, timer/input/backend/clean-exit checks. Their actual312300-byte
+timed UART streams are identical,347bytes/frame, including all motion packets.
+Independent raw audit agrees. Max56°C/boost restored1/all emulators stopped.
+Earlier incomplete startup pair and95°C prelaunch abort preserved/excluded;
+older42.4%gain belongs to constant-gap workload. Human visual/exit acceptance
+recorded; hardware/publication/new optimization remain open. [Results](tasks/RALLY-28/custom-vdp/incremental/sprites/motion-comparison/RESULTS.md).
+
+Author accepts moving sampler visuals/clean MOS return, then requests the same
+deterministic pattern against the affine baseline before proceeding. Matched
+unpaced900-frame fixtures reuse exact motion table/driver/artwork/runtime and
+347UARTbytes/frame; both orders staged. First affine run passes27.68nominal MOS
+FPS; its sampler partner stalls during startup, preserved after guarded abort.
+Fresh identical02profiles staged, but next session thermally aborts at95°C before
+launch. Other CPU-heavy agon-6502 target experiments remain untouched. Boost1
+restored/no owned emulators. Await Author host coordination; no matched-pattern
+gain yet, no code publication/hardware/next optimization. [Scope/receipts](tasks/RALLY-28/custom-vdp/incremental/sprites/motion-comparison/README.md).
+
+Author review found traffic kept player pace, concealing changing car sizes,
+and exit did not visibly return to MOS. A separate900-frame scripted-motion
+review exercises six cars over62scales each, approaching/passing in three lanes.
+The review driver restores single-buffered mode8/full text viewport/cursor;
+the final silent run emits DONE then the MOS prompt. All2913reply, final
+scripted position/lane/player, timer and backend checks pass. First startup
+failure and intermediate narrow-window run preserved; final inputs are fresh
+and stopped for Author launch. Benchmark bytes/results unchanged. Both SDL
+driversdummy; boost restored1/all emulators stopped. New work uncommitted.
+[Review instructions](tasks/RALLY-28/custom-vdp/incremental/sprites/review/README.md).
+
+INC-001-02 completed after the Author's all-dirt commit/push checkpoint
+**32a7cb4**. Restricted integer additive sampling replaces actor affine scaling;
+road/player/physics and the timed UART tape remain unchanged. Two reversed-order
+900-frame pairs give **26.98→38.42 nominal MOS FPS (+42.40%)**, saving
+**11.04 nominal ms/frame**; independent PRT gain is42.42%. All four runs pass
+3600ticks/2913retained replies, independent state/input/timer/backend checks;
+all final captures are byte-identical. Separate admitted128-frame actor probes
+show preparation plus drawing reduced60.67% in raw emulated CCOUNT, including
+sampling moved into preparation. Uncalibrated counters are not physical cycles.
+The initial late-load candidate and larger diagnostic modules failed memory
+admission; equal early LOAD solves headline admission. Four preclip timings are
+excluded after stale sign pixels exposed an inactive canvas viewport; corrected
+PLOT4 activation is covered by host regression checks. Exact inputs and rejected
+attempts are preserved. Both SDL driversdummy, boost restored1, all emulators
+stopped. New work is uncommitted; Author motion review and byte-identical hardware
+testing remain open. [Results](tasks/RALLY-28/custom-vdp/incremental/sprites/RESULTS.md)
+and [review launch](tasks/RALLY-28/custom-vdp/incremental/sprites/HUMAN-REVIEW.md).
+
 INC-001-01 completed after all-dirt/scope checkpoint **b0bf5e7** was pushed. The
 new [incremental plan](tasks/RALLY-28/custom-vdp/incremental/PLAN.md) prioritizes
 redundant clears, specialized sprite sampling, wider span fills, caches/static

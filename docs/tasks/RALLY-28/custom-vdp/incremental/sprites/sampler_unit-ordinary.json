@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "mode": "ordinary",
+  "scope": "Pure actual candidate planner/sampler on host; no emulator or timing claim",
+  "passed": true,
+  "total_cases": 16940,
+  "visible_cases": 9460,
+  "sampled_pixels": 13662237,
+  "cases_by_kind": {
+    "normal_car": 6776,
+    "mirrored_car": 6776,
+    "sign": 3388
+  },
+  "scale_domain": {
+    "first": 14,
+    "last": 250,
+    "step": 2
+  },
+  "alpha_patterns_observed": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "guard_bytes_each_side": 32,
+  "unsampled_scratch_unchanged": true,
+  "sources": {
+    "sprite.inc": "7aeb37a5dca29dba52925b3d9afe593e93c3d13c1037151732f9fa43bdcea1ca",
+    "sampler_unit_host.c": "351521ede16155bd0607e2e275efc2fc8b5dbc4a630c5bdd417ff41ad9393d90",
+    "sampler_units.py": "6913dfe264bb02ec9b5c59a4a6e1d92be82f46e2320973fa0243e4265c78c6a4"
+  },
+  "host_library_sha256": "6843d17121e3fc1ccbaee8c383d55696af900b23870ab6dd4f2a9b12f6b62802",
+  "float_boundary_observations": {
+    "scope": "Binary32 reciprocal/multiply model only; not actual Mat inverse/DSP parity",
+    "coordinate_observations": 16235,
+    "differing_coordinates": 15,
+    "maximum_source_displacement": 1,
+    "examples": [
+      {
+        "scale": 56,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 21,
+        "rational": 5,
+        "binary32": 4
+      },
+      {
+        "scale": 112,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 21,
+        "rational": 53,
+        "binary32": 52
+      },
+      {
+        "scale": 112,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 42,
+        "rational": 5,
+        "binary32": 4
+      },
+      {
+        "scale": 120,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 45,
+        "rational": 5,
+        "binary32": 4
+      },
+      {
+        "scale": 164,
+        "width": 102,
+        "mirror": false,
+        "destination_x": 41,
+        "rational": 64,
+        "binary32": 63
+      },
+      {
+        "scale": 188,
+        "width": 102,
+        "mirror": false,
+        "destination_x": 47,
+        "rational": 64,
+        "binary32": 63
+      },
+      {
+        "scale": 220,
+        "width": 102,
+        "mirror": false,
+        "destination_x": 55,
+        "rational": 64,
+        "binary32": 63
+      },
+      {
+        "scale": 224,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 42,
+        "rational": 53,
+        "binary32": 52
+      },
+      {
+        "scale": 224,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 49,
+        "rational": 45,
+        "binary32": 44
+      },
+      {
+        "scale": 224,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 77,
+        "rational": 13,
+        "binary32": 12
+      },
+      {
+        "scale": 224,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 84,
+        "rational": 5,
+        "binary32": 4
+      },
+      {
+        "scale": 240,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 45,
+        "rational": 53,
+        "binary32": 52
+      },
+      {
+        "scale": 240,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 75,
+        "rational": 21,
+        "binary32": 20
+      },
+      {
+        "scale": 240,
+        "width": 102,
+        "mirror": true,
+        "destination_x": 90,
+        "rational": 5,
+        "binary32": 4
+      },
+      {
+        "scale": 244,
+        "width": 102,
+        "mirror": false,
+        "destination_x": 61,
+        "rational": 64,
+        "binary32": 63
+      }
+    ],
+    "acceptance_gate": false
+  }
+}

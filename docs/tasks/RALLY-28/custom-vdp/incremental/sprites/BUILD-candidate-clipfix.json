@@ -1,0 +1,70 @@
+{
+  "module": {
+    "name": "rally-render",
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/sprites/.work/candidate-clipfix/package/native.c",
+    "source_sha256": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992",
+    "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+    "declared_limits": {
+      "text": 32768,
+      "data": 4096,
+      "stack": 2048,
+      "image": 65536
+    },
+    "build_id": "0x52385332",
+    "capabilities": 1,
+    "envelope_bytes": 64,
+    "elf_bytes": 34352,
+    "package_bytes": 34416,
+    "sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/sprites/.work/candidate-clipfix/target/rally-render.vdpl",
+    "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/sprites/.work/candidate-clipfix/target/rally-render.elf",
+    "entry_virtual": 9340,
+    "resident_text_bytes": 31844,
+    "resident_data_bytes": 1004,
+    "relative_relocations": 44,
+    "allocated_sections": {
+      ".text": {
+        "virtual_address": 836,
+        "bytes": 31844,
+        "type": 1
+      },
+      ".rodata": {
+        "virtual_address": 32680,
+        "bytes": 460,
+        "type": 1
+      },
+      ".data": {
+        "virtual_address": 37480,
+        "bytes": 544,
+        "type": 1
+      }
+    }
+  },
+  "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0",
+  "source_package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/.work/span-candidate/package",
+  "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/sprites/.work/candidate-clipfix/package",
+  "fixture": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/sprites/.work/candidate-clipfix/fixture",
+  "firmware_changed": false,
+  "sdk_changed": false,
+  "per_frame_uart_unchanged": true,
+  "extra_vdp_pixel_bytes": 52238,
+  "max_service_leases": 4,
+  "files": {
+    "script.bin": "792ace3a30c804ee2c024188b601edef7b6a372402b405721aed46b5e4ed102a",
+    "expected.json": "109fd95b7b505280b6fe5ec4036d236ca23d540411a9342a4ede36852f599c25",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "probe.bin": "7ca030245515a9aeff8949831e399d7a1baa4250237bed6f7e213477e9d8ac25",
+    "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "artwork.vdu": "264d16eb3215b169bcf8277599fdf50c79823a3c4e894620434e9c93963ee25d",
+    "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+  },
+  "helper_files": {
+    "helper/sprite_io.inc": "4f46073cd7191173e89db20bade665266c52f974b3c8567ae4ad0f9d6f771e76",
+    "helper/rally_render.h": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50",
+    "helper/render_core.inc": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+    "helper/asset_meta.inc": "940a4e51c2f06bb34106c858f690bad34d97ed8ab6994b19bb53a945f4eb6cd5",
+    "helper/rally_render.c": "f1195f04d78afcb65778c579bb829e796c46fc68809af9dd9d2e1313eed03668",
+    "helper/sprite.inc": "7aeb37a5dca29dba52925b3d9afe593e93c3d13c1037151732f9fa43bdcea1ca"
+  }
+}

@@ -27,6 +27,17 @@ No opaque-run compression, size buckets, wider fill or protocol changes are
 combined with this modification. New work is isolated in `sprites/` below this
 directory and returns for Author motion review/publication; no physical test.
 
+**INC-001-02 returned:** prior dirt/scope pushed `32a7cb4`; corrected additive
+sampling passes host qualification and four matched 900-frame Flexe runs.
+Completed nominal MOS throughput improves26.98→38.42FPS (+42.40%); actor
+preparation+execution falls60.67% in raw emulated CCOUNT. Final captures are
+pixel-identical; subsequent moving visuals/clean exit are Author accepted. The
+same moving pattern was then compared:28.46→35.35nominal MOS FPS (+24.22%),
+full matched frame UART streams identical. [Matched results](sprites/motion-comparison/RESULTS.md).
+Hardware timing remains open. New
+work is uncommitted. See [results](sprites/RESULTS.md) and the
+[stopped review profile](sprites/HUMAN-REVIEW.md). INC-001-03–06 remain proposed.
+
 Source and destination sprite storage must remain stable until each frame is
 consumed. Use distinct retained images for queued objects, validate resource
 IDs/bounds and the actual four-slot lease limit (root, asset and command-output
@@ -45,6 +56,31 @@ check emitted code and declared/actual capacity, and use only already accepted
 runtime limits. Any genuinely missing service needs owner coordination.
 
 ## Order and rationale
+
+### INC-001-02-AFF01 — Audit built-in affine usage
+
+The Author flags this for follow-up after questioning why Rally's built-in
+affine path costs more than expected from other applications. The matched24.2%
+sampler gain establishes a difference in this fixture; it does not establish
+that built-in affine commands are generally inefficient or identify the cause.
+Audit the actual pinned implementation and our command usage before drawing
+that conclusion. Separate matrix creation/update, bitmap format/conversion,
+transparency, clipping, command dispatch and transformed drawing costs. Include
+a stock full-size-source downscaling/plotting control and separately investigate
+the stock transform-to-bitmap command followed by ordinary plotting. Measure
+completed work with equal scenes/fences and include allocation/copy overhead.
+This records future work, without releasing implementation or emulator runs.
+
+The affine baseline already uses built-in commands to plot full-size bitmaps
+scaled down, not the VDP sprite engine. The current alternative loads the same
+original full-size artwork once, generates scaled images inside VDP memory
+each frame, then plots them normally. It does not load pre-scaled artwork files
+or upload scaled pixel data from eZ80 in the hot loop. Cached size variants are
+a separate unimplemented proposal. Keep these distinctions explicit in reports.
+Per-page sky restoration and static drawing remain under INC-001-04; inspect
+old actor/sign bounds before removing clears.
+
+### Existing implementation sequence
 
 1. **INC-001-01 — Remove redundant road clearing.** Preserve sky and bottom-strip
    clearing, every road/actor/title command, physics, module, assets, swap and
