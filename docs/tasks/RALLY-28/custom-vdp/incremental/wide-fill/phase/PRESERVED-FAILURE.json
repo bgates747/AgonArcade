@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "excluded": true,
+  "stage": "Initial host-only sanitized probe qualification",
+  "cause": "LeakSanitizer fatal startup/exit restriction under ptrace in managed sandbox",
+  "evidence": "PRESERVED-FAILURE.txt",
+  "source_workspace": "../.work/phase-probe01",
+  "correction": "Qualified phase-probe02 disables LeakSanitizer only; AddressSanitizer and UndefinedBehaviorSanitizer remain enabled",
+  "timing_result": false,
+  "target_emulator_was_not_run": true,
+  "qualified_host_report": "host/phase_HOST.json"
+}

@@ -1,0 +1,128 @@
+0000092c <memset>:
+ 92c:	004136        	entry	a1, 32
+ 92f:	080c      	movi.n	a8, 0
+ 931:	000186        	j	93b <memset+0xf>
+ 934:	928a      	add.n	a9, a2, a8
+ 936:	004932        	s8i	a3, a9, 0
+ 939:	881b      	addi.n	a8, a8, 1
+ 93b:	f59847        	bne	a8, a4, 934 <memset+0x8>
+ 93e:	f01d      	retw.n
+
+
+00000204 <phase_byte>:
+ 204:	004136        	entry	a1, 32
+ 207:	74b050        	extui	a11, a5, 0, 8
+ 20a:	0aa347        	bge	a3, a4, 218 <phase_byte+0x14>
+ 20d:	c0c430        	sub	a12, a4, a3
+ 210:	a23a      	add.n	a10, a2, a3
+ 212:	fffb31        	l32r	a3, 200 <phase_crc+0x38>
+ 215:	0003e0        	callx8	a3
+ 218:	f01d      	retw.n
+ 21a:	00          	.byte 00
+ 21b:	00          	.byte 00
+ 21c:	f0 19 00 00 	
+ 220:	ec 19 00 00 	
+ 224:	e8 19 00 00 	
+ 228:	e4 19 00 00 	
+ 22c:	02 00 01 00 	
+ 230:	2c 09 00 00 	
+ 234:	d4 c6 ff ff 	
+ 238:	d5 c6 ff ff 	
+ 23c:	d6 c6 ff ff 	
+ 240:	d7 c6 ff ff 	
+ 244:	b8 08 00 00 	
+ 248:	50 32 38 53 	
+ 24c:	00 96 00 00 	
+ 250:	80 3e 00 00 	
+ 254:	20 96 00 00 	
+ 258:	c8 01 00 00 	
+ 25c:	ff 95 ff ff 	
+ 260:	cd cc cc cc 	
+ 264:	04 02 00 00 	
+ 268:	dc 08 00 00 	
+ 26c:	4c 08 00 00 	
+ 270:	b0 08 00 00 	
+ 274:	08 96 00 00 	
+ 278:	50 32 38 46 	
+
+0000084c <phase_wide>:
+ 84c:	004136        	entry	a1, 32
+ 84f:	c08430        	sub	a8, a4, a3
+ 852:	745050        	extui	a5, a5, 0, 8
+ 855:	223a      	add.n	a2, a2, a3
+ 857:	08ad      	mov.n	a10, a8
+ 859:	132347        	blt	a3, a4, 870 <phase_wide+0x24>
+ 85c:	001306        	j	8ac <phase_wide+0x60>
+ 85f:	00          	.byte 00
+ 860:	221b      	addi.n	a2, a2, 1
+ 862:	004452        	s8i	a5, a4, 0
+ 865:	029d      	mov.n	a9, a2
+ 867:	880b      	addi.n	a8, a8, -1
+ 869:	aa0b      	addi.n	a10, a10, -1
+ 86b:	1acc      	bnez.n	a10, 870 <phase_wide+0x24>
+ 86d:	000246        	j	87a <phase_wide+0x2e>
+ 870:	143020        	extui	a3, a2, 0, 2
+ 873:	024d      	mov.n	a4, a2
+ 875:	fe7356        	bnez	a3, 860 <phase_wide+0x14>
+ 878:	029d      	mov.n	a9, a2
+ 87a:	11a580        	slli	a10, a5, 8
+ 87d:	aa5a      	add.n	a10, a10, a5
+ 87f:	113a00        	slli	a3, a10, 16
+ 882:	41b280        	srli	a11, a8, 2
+ 885:	aa3a      	add.n	a10, a10, a3
+ 887:	113be0        	slli	a3, a11, 2
+ 88a:	223a      	add.n	a2, a2, a3
+ 88c:	000106        	j	894 <phase_wide+0x48>
+ 88f:	00          	.byte 00
+ 890:	09a9      	s32i.n	a10, a9, 0
+ 892:	994b      	addi.n	a9, a9, 4
+ 894:	f89927        	bne	a9, a2, 890 <phase_wide+0x44>
+ 897:	11bbe0        	slli	a11, a11, 2
+ 89a:	c088b0        	sub	a8, a8, a11
+ 89d:	020c      	movi.n	a2, 0
+ 89f:	000186        	j	8a9 <phase_wide+0x5d>
+ 8a2:	392a      	add.n	a3, a9, a2
+ 8a4:	004352        	s8i	a5, a3, 0
+ 8a7:	221b      	addi.n	a2, a2, 1
+ 8a9:	f59287        	bne	a2, a8, 8a2 <phase_wide+0x56>
+ 8ac:	f01d      	retw.n
+	...
+
+000008dc <phase_replay>:
+ 8dc:	006136        	entry	a1, 48
+ 8df:	02ed      	mov.n	a14, a2
+ 8e1:	820c      	movi.n	a2, 8
+ 8e3:	000f06        	j	923 <phase_replay+0x47>
+ 8e6:	00          	.byte 00
+ 8e7:	00          	.byte 00
+ 8e8:	0106a2        	l8ui	a10, a6, 1
+ 8eb:	0006d2        	l8ui	a13, a6, 0
+ 8ee:	050692        	l8ui	a9, a6, 5
+ 8f1:	030682        	l8ui	a8, a6, 3
+ 8f4:	0406c2        	l8ui	a12, a6, 4
+ 8f7:	0206b2        	l8ui	a11, a6, 2
+ 8fa:	11aa80        	slli	a10, a10, 8
+ 8fd:	119980        	slli	a9, a9, 8
+ 900:	118880        	slli	a8, a8, 8
+ 903:	20ada0        	or	a10, a13, a10
+ 906:	0606d2        	l8ui	a13, a6, 6
+ 909:	20cc90        	or	a12, a12, a9
+ 90c:	01e9      	s32i.n	a14, a1, 0
+ 90e:	20bb80        	or	a11, a11, a8
+ 911:	a3aa      	add.n	a10, a3, a10
+ 913:	000ee0        	callx8	a14
+ 916:	01e8      	l32i.n	a14, a1, 0
+ 918:	771b      	addi.n	a7, a7, 1
+ 91a:	668b      	addi.n	a6, a6, 8
+ 91c:	c89757        	bne	a7, a5, 8e8 <phase_replay+0xc>
+ 91f:	220b      	addi.n	a2, a2, -1
+ 921:	528c      	beqz.n	a2, 92a <phase_replay+0x4e>
+ 923:	046d      	mov.n	a6, a4
+ 925:	070c      	movi.n	a7, 0
+ 927:	fffc46        	j	91c <phase_replay+0x40>
+ 92a:	f01d      	retw.n
+
+000008b0 <phase_empty>:
+ 8b0:	004136        	entry	a1, 32
+ 8b3:	745050        	extui	a5, a5, 0, 8
+ 8b6:	f01d      	retw.n

@@ -1,0 +1,104 @@
+{
+  "session": "fillphasesession01",
+  "author_approved_temporary_boost_disable": true,
+  "original_boost": "1",
+  "campaigns": [
+    "fillphase01"
+  ],
+  "phases": [],
+  "host_boot_id": "d8e4d3c8-0288-4512-a15d-0be9cc5641f1",
+  "video_driver": "dummy",
+  "audio_driver": "dummy",
+  "samples": [
+    {
+      "elapsed_seconds": 0.01,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 94.0,
+        "iwlwifi_1:thermal_zone1": 39.0
+      },
+      "load_average": [
+        1.8251953125,
+        1.130859375,
+        0.9775390625
+      ]
+    },
+    {
+      "elapsed_seconds": 2.016,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 93.0,
+        "iwlwifi_1:thermal_zone1": 36.0
+      },
+      "load_average": [
+        1.8251953125,
+        1.130859375,
+        0.9775390625
+      ]
+    },
+    {
+      "elapsed_seconds": 4.019,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 93.0,
+        "iwlwifi_1:thermal_zone1": 36.0
+      },
+      "load_average": [
+        1.91943359375,
+        1.162109375,
+        0.98876953125
+      ]
+    },
+    {
+      "elapsed_seconds": 6.021,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 94.0,
+        "iwlwifi_1:thermal_zone1": 36.0
+      },
+      "load_average": [
+        1.91943359375,
+        1.162109375,
+        0.98876953125
+      ]
+    },
+    {
+      "elapsed_seconds": 8.022,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 94.0,
+        "iwlwifi_1:thermal_zone1": 36.0
+      },
+      "load_average": [
+        2.16650390625,
+        1.22607421875,
+        1.0107421875
+      ]
+    },
+    {
+      "elapsed_seconds": 10.024,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 92.0,
+        "iwlwifi_1:thermal_zone1": 36.0
+      },
+      "load_average": [
+        2.16650390625,
+        1.22607421875,
+        1.0107421875
+      ]
+    }
+  ],
+  "completed": [
+    "campaign:fillphase01"
+  ],
+  "thermal_stop_celsius": 95,
+  "error": null,
+  "boost_restored": true,
+  "boost_during_session": "0",
+  "cleanup_stopped_pids": [],
+  "final_boost": "1",
+  "owned_emulator_processes_after": [],
+  "elapsed_host_seconds": 12.004,
+  "max_temperature_celsius": 94.0
+}

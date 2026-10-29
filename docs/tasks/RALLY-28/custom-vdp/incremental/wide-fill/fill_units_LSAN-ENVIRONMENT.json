@@ -1,0 +1,12 @@
+{
+  "scope": "Host test-runner environment; no candidate code change",
+  "initial_sanitized_attempt": "Returned exit status 1 with detect_leaks=1; initial runner did not preserve captured stderr",
+  "same_binary_diagnostic_attempt": {
+    "command": "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1 docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/fill-units/fill-units-sanitized",
+    "exit_status": 1,
+    "diagnostic": "==2==LeakSanitizer has encountered a fatal error.\n==2==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1\n==2==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)\n"
+  },
+  "correction": "Use detect_leaks=0 as in existing host replay runners. AddressSanitizer and UndefinedBehaviorSanitizer remain enabled; candidate fill makes no allocations. Runner now preserves stdout/stderr before checking status.",
+  "candidate_changed": false,
+  "timing_or_emulator_evidence": false
+}

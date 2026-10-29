@@ -1,0 +1,75 @@
+{
+  "module": {
+    "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0",
+    "abi_header_sha256": "fa8385e2906f07d37372d80c40f73d419defdbefe7a3458461ac9d5fe0820d38",
+    "module": {
+      "name": "fill-phase",
+      "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/phase-probe02/package/phase_probe.c",
+      "source_sha256": "989faa174d44d28c5f2e428463203b08a5f14d242ec8e12ef940988c8f62fd36",
+      "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+      "declared_limits": {
+        "text": 8192,
+        "data": 1024,
+        "stack": 512,
+        "image": 16384
+      },
+      "build_id": "0x52324631",
+      "capabilities": 1,
+      "envelope_bytes": 64,
+      "elf_bytes": 2744,
+      "package_bytes": 2808,
+      "sha256": "98eb19d61d25590c56b1e4b4eb0100ff542681fcf0354eebd22475260e0732e5",
+      "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/phase-probe02/target/fill-phase.vdpl",
+      "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/phase-probe02/target/fill-phase.elf",
+      "entry_virtual": 636,
+      "resident_text_bytes": 1916,
+      "resident_data_bytes": 16,
+      "relative_relocations": 12,
+      "allocated_sections": {
+        ".text": {
+          "virtual_address": 452,
+          "bytes": 1916,
+          "type": 1
+        },
+        ".bss": {
+          "virtual_address": 6628,
+          "bytes": 16,
+          "type": 8
+        }
+      }
+    }
+  },
+  "fixture": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/phase-probe02/fixture",
+  "fixture_files": {
+    "script.bin": "fdd57d711d041675eda7ca67344a3d15a43d2fe037694f64da47b7fdf5001be0",
+    "expected.json": "4f490a56a0d1899e435cc1dff26c115a4723219c2917aaa02d6713799dfaca26",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "probe.bin": "a9effac2f7b45560d8003af6add587998cbafedf128ff2dbf070fdb7f68f2f07",
+    "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+    "phase_spans.vdu": "82ba1bcdf3aecb6973593d8a08944bf59b02933987c17fcd35e645ea275b2958"
+  },
+  "exact_frozen_byte_bodies_verified": true,
+  "both_fill_functions_noinline": true,
+  "indirect_dispatch_shared": true,
+  "target_byte_memset_has_only_byte_stores": true,
+  "target_wide_has_aligned_word_stores_and_no_helper_calls": true,
+  "source_files": {
+    "phase_probe.c": "989faa174d44d28c5f2e428463203b08a5f14d242ec8e12ef940988c8f62fd36",
+    "phase_host.c": "f849d997601b72ecd456b0f21ce3fdea08148a8a9cb925b3d8304501d97794b8",
+    "phase_probe.py": "557762a509f09095f83d81647b2f643ff2fb0e9d1b0eda4eb2e8bd9b4a999bb6",
+    "wide_fill.inc": "34e8845ec7e3d550fcc99dbcd47474c58a41a3ebde9c2a149440e3e9f04601c8",
+    "span-inputs.bin": "12bc72f453c33f26dcfbc1c802bebd57c865d76c0913f8e7a15e91acb4af5378",
+    "span-inputs.json": "6a48005346ef395b7b5d456d1f3115d2bbfe180415c0a9c38bec2839c5fd40ff"
+  },
+  "frozen_byte_render_core_sha256": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+  "frozen_byte_native_sha256": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992",
+  "sample_windows": 80,
+  "physics_ticks": 0,
+  "retained_reply_bytes": 23400,
+  "target_stack_usage": "phase_wide.inc:8:39:phase_wide\t32\tstatic\nphase_probe.c:45:39:phase_empty\t32\tstatic\nphase_probe.c:54:17:get32\t32\tstatic\nphase_probe.c:56:17:phase_crc\t32\tstatic\nphase_probe.c:62:39:phase_replay\t48\tstatic\nphase_probe.c:33:7:memset\t32\tstatic\nphase_probe.c:36:39:phase_byte\t32\tstatic\nphase_probe.c:142:9:vdplet_entry\t288\tstatic\n",
+  "firmware_changed": false,
+  "sdk_changed": false,
+  "host_ordinary_and_sanitized_passed": true,
+  "host_sanitizers": "AddressSanitizer and UndefinedBehaviorSanitizer; LeakSanitizer disabled because ptraced sandbox rejects it",
+  "emulator_launched": false
+}

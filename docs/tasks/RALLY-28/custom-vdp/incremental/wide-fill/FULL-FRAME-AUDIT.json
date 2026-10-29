@@ -1,0 +1,579 @@
+{
+  "schema": 1,
+  "task": "INC-001-03",
+  "scope": "Independent read-only reconstruction from raw fixture/UART/reply/clock/log bytes; no rerun and no report.py/verify_run.py import",
+  "passed": true,
+  "method": "Decode every raw native 81/0A/VDPL response against expanded fixture check order, independently reconstruct final buffers and retained transcript, sum first 900 clock intervals, extract 347-byte frames and actual uploaded module, compare fixture hashes and runtime manifests.",
+  "rows": [
+    {
+      "campaign": "wideab01",
+      "case": "byte",
+      "retained_reply_records": 2913,
+      "all_raw_reply_records": 5613,
+      "independently_checked_suppressed_replies": 2700,
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 2888,
+      "nominal_mos_fps": 37.39612188365651,
+      "nominal_prt_ticks": 24910,
+      "nominal_prt_fps": 36.13006824568446,
+      "window_sample_indices": [
+        0,
+        900
+      ],
+      "extra_teardown_sample_excluded": 901,
+      "mos_first": 956,
+      "mos_last_in_window": 3844,
+      "mos_teardown_sample": 3844,
+      "prt_first": 3645,
+      "prt_last_in_window": 28555,
+      "prt_teardown_sample": 28556,
+      "per_frame_mos_units_min_max": [
+        2,
+        6
+      ],
+      "per_frame_prt_ticks_min_max": [
+        23,
+        65
+      ],
+      "zero_mos_intervals": 0,
+      "nominal_prt_seconds_exceed_mos_percent": 3.5041551246537406,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "actual_upload_module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+      "final_root_arrays_exact": true,
+      "ready_generation_and_post_swap_fence_all900_exact": true,
+      "stop_unload_zero": true,
+      "clock_prior_vector_restored": true,
+      "clean_mos_prompt": true,
+      "backend_zero_errors": true,
+      "stack_minfree_before": 2260,
+      "stack_minfree_after": 2004,
+      "final_ppm_sha256": "294a662803b7fec4bc456bae73cbcc65dd105c9b7eeff778fee570166f10f06b",
+      "zero_mos_interval_frames": [],
+      "zero_mos_interval_evidence": [],
+      "info17_raw": {
+        "before": {
+          "token": 3,
+          "field": 17,
+          "request_hex": "1700d808000104030001001100",
+          "response_hex": "5644504c01040300d408",
+          "minimum_free_stack_bytes": 2260
+        },
+        "after": {
+          "token": 9,
+          "field": 17,
+          "request_hex": "1700d808000104090001001100",
+          "response_hex": "5644504c01040900d407",
+          "minimum_free_stack_bytes": 2004
+        }
+      },
+      "capacity_and_error_checks": {
+        "load_admitted": true,
+        "load_handle": 1,
+        "build_id": "52385332",
+        "resident_text_bytes": 31844,
+        "resident_data_bytes": 1004,
+        "relocations": 44,
+        "render30_success_replies": 900,
+        "completion_ready_success_replies": 900,
+        "source_generations_exact": 900,
+        "post_swap_fence_generations_exact": 900,
+        "full_final_header_status_zero": true,
+        "stop_success": true,
+        "unload_success": true,
+        "uart0_unload_status_zero": true,
+        "failure_artifact_absent": true,
+        "backend_failed_false": true,
+        "backend_unhandled_unregistered_unmapped_all_zero": true
+      },
+      "minimum_free_stack_observed_decrease_bytes": 256
+    },
+    {
+      "campaign": "wideab01",
+      "case": "word",
+      "retained_reply_records": 2913,
+      "all_raw_reply_records": 5613,
+      "independently_checked_suppressed_replies": 2700,
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 3076,
+      "nominal_mos_fps": 35.110533159947984,
+      "nominal_prt_ticks": 26558,
+      "nominal_prt_fps": 33.88809398298065,
+      "window_sample_indices": [
+        0,
+        900
+      ],
+      "extra_teardown_sample_excluded": 901,
+      "mos_first": 952,
+      "mos_last_in_window": 4028,
+      "mos_teardown_sample": 4028,
+      "prt_first": 3628,
+      "prt_last_in_window": 30186,
+      "prt_teardown_sample": 30187,
+      "per_frame_mos_units_min_max": [
+        2,
+        8
+      ],
+      "per_frame_prt_ticks_min_max": [
+        23,
+        68
+      ],
+      "zero_mos_intervals": 0,
+      "nominal_prt_seconds_exceed_mos_percent": 3.6072821846554026,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "actual_upload_module_sha256": "af6e8a137f65d52434649c0886f005274316a8983a126c1711b3fb638b010303",
+      "final_root_arrays_exact": true,
+      "ready_generation_and_post_swap_fence_all900_exact": true,
+      "stop_unload_zero": true,
+      "clock_prior_vector_restored": true,
+      "clean_mos_prompt": true,
+      "backend_zero_errors": true,
+      "stack_minfree_before": 2260,
+      "stack_minfree_after": 1972,
+      "final_ppm_sha256": "294a662803b7fec4bc456bae73cbcc65dd105c9b7eeff778fee570166f10f06b",
+      "zero_mos_interval_frames": [],
+      "zero_mos_interval_evidence": [],
+      "info17_raw": {
+        "before": {
+          "token": 3,
+          "field": 17,
+          "request_hex": "1700d808000104030001001100",
+          "response_hex": "5644504c01040300d408",
+          "minimum_free_stack_bytes": 2260
+        },
+        "after": {
+          "token": 9,
+          "field": 17,
+          "request_hex": "1700d808000104090001001100",
+          "response_hex": "5644504c01040900b407",
+          "minimum_free_stack_bytes": 1972
+        }
+      },
+      "capacity_and_error_checks": {
+        "load_admitted": true,
+        "load_handle": 1,
+        "build_id": "52385731",
+        "resident_text_bytes": 31916,
+        "resident_data_bytes": 1004,
+        "relocations": 45,
+        "render30_success_replies": 900,
+        "completion_ready_success_replies": 900,
+        "source_generations_exact": 900,
+        "post_swap_fence_generations_exact": 900,
+        "full_final_header_status_zero": true,
+        "stop_success": true,
+        "unload_success": true,
+        "uart0_unload_status_zero": true,
+        "failure_artifact_absent": true,
+        "backend_failed_false": true,
+        "backend_unhandled_unregistered_unmapped_all_zero": true
+      },
+      "minimum_free_stack_observed_decrease_bytes": 288
+    },
+    {
+      "campaign": "wideba01",
+      "case": "word",
+      "retained_reply_records": 2913,
+      "all_raw_reply_records": 5613,
+      "independently_checked_suppressed_replies": 2700,
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 2870,
+      "nominal_mos_fps": 37.63066202090592,
+      "nominal_prt_ticks": 24755,
+      "nominal_prt_fps": 36.35629165825086,
+      "window_sample_indices": [
+        0,
+        900
+      ],
+      "extra_teardown_sample_excluded": 901,
+      "mos_first": 948,
+      "mos_last_in_window": 3818,
+      "mos_teardown_sample": 3818,
+      "prt_first": 3601,
+      "prt_last_in_window": 28356,
+      "prt_teardown_sample": 28357,
+      "per_frame_mos_units_min_max": [
+        2,
+        8
+      ],
+      "per_frame_prt_ticks_min_max": [
+        24,
+        68
+      ],
+      "zero_mos_intervals": 0,
+      "nominal_prt_seconds_exceed_mos_percent": 3.505226480836221,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "actual_upload_module_sha256": "af6e8a137f65d52434649c0886f005274316a8983a126c1711b3fb638b010303",
+      "final_root_arrays_exact": true,
+      "ready_generation_and_post_swap_fence_all900_exact": true,
+      "stop_unload_zero": true,
+      "clock_prior_vector_restored": true,
+      "clean_mos_prompt": true,
+      "backend_zero_errors": true,
+      "stack_minfree_before": 2260,
+      "stack_minfree_after": 1972,
+      "final_ppm_sha256": "294a662803b7fec4bc456bae73cbcc65dd105c9b7eeff778fee570166f10f06b",
+      "zero_mos_interval_frames": [],
+      "zero_mos_interval_evidence": [],
+      "info17_raw": {
+        "before": {
+          "token": 3,
+          "field": 17,
+          "request_hex": "1700d808000104030001001100",
+          "response_hex": "5644504c01040300d408",
+          "minimum_free_stack_bytes": 2260
+        },
+        "after": {
+          "token": 9,
+          "field": 17,
+          "request_hex": "1700d808000104090001001100",
+          "response_hex": "5644504c01040900b407",
+          "minimum_free_stack_bytes": 1972
+        }
+      },
+      "capacity_and_error_checks": {
+        "load_admitted": true,
+        "load_handle": 1,
+        "build_id": "52385731",
+        "resident_text_bytes": 31916,
+        "resident_data_bytes": 1004,
+        "relocations": 45,
+        "render30_success_replies": 900,
+        "completion_ready_success_replies": 900,
+        "source_generations_exact": 900,
+        "post_swap_fence_generations_exact": 900,
+        "full_final_header_status_zero": true,
+        "stop_success": true,
+        "unload_success": true,
+        "uart0_unload_status_zero": true,
+        "failure_artifact_absent": true,
+        "backend_failed_false": true,
+        "backend_unhandled_unregistered_unmapped_all_zero": true
+      },
+      "minimum_free_stack_observed_decrease_bytes": 288
+    },
+    {
+      "campaign": "wideba01",
+      "case": "byte",
+      "retained_reply_records": 2913,
+      "all_raw_reply_records": 5613,
+      "independently_checked_suppressed_replies": 2700,
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 2950,
+      "nominal_mos_fps": 36.610169491525426,
+      "nominal_prt_ticks": 25453,
+      "nominal_prt_fps": 35.359289671158606,
+      "window_sample_indices": [
+        0,
+        900
+      ],
+      "extra_teardown_sample_excluded": 901,
+      "mos_first": 950,
+      "mos_last_in_window": 3900,
+      "mos_teardown_sample": 3900,
+      "prt_first": 3598,
+      "prt_last_in_window": 29051,
+      "prt_teardown_sample": 29052,
+      "per_frame_mos_units_min_max": [
+        0,
+        6
+      ],
+      "per_frame_prt_ticks_min_max": [
+        24,
+        65
+      ],
+      "zero_mos_intervals": 1,
+      "nominal_prt_seconds_exceed_mos_percent": 3.537627118644071,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "actual_upload_module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+      "final_root_arrays_exact": true,
+      "ready_generation_and_post_swap_fence_all900_exact": true,
+      "stop_unload_zero": true,
+      "clock_prior_vector_restored": true,
+      "clean_mos_prompt": true,
+      "backend_zero_errors": true,
+      "stack_minfree_before": 2260,
+      "stack_minfree_after": 2004,
+      "final_ppm_sha256": "294a662803b7fec4bc456bae73cbcc65dd105c9b7eeff778fee570166f10f06b",
+      "zero_mos_interval_frames": [
+        258
+      ],
+      "zero_mos_interval_evidence": [
+        {
+          "frame": 258,
+          "mos_sample_before": 1846,
+          "mos_sample_after": 1846,
+          "prt_sample_before": 11320,
+          "prt_sample_after": 11347,
+          "prt_delta": 27
+        }
+      ],
+      "info17_raw": {
+        "before": {
+          "token": 3,
+          "field": 17,
+          "request_hex": "1700d808000104030001001100",
+          "response_hex": "5644504c01040300d408",
+          "minimum_free_stack_bytes": 2260
+        },
+        "after": {
+          "token": 9,
+          "field": 17,
+          "request_hex": "1700d808000104090001001100",
+          "response_hex": "5644504c01040900d407",
+          "minimum_free_stack_bytes": 2004
+        }
+      },
+      "capacity_and_error_checks": {
+        "load_admitted": true,
+        "load_handle": 1,
+        "build_id": "52385332",
+        "resident_text_bytes": 31844,
+        "resident_data_bytes": 1004,
+        "relocations": 44,
+        "render30_success_replies": 900,
+        "completion_ready_success_replies": 900,
+        "source_generations_exact": 900,
+        "post_swap_fence_generations_exact": 900,
+        "full_final_header_status_zero": true,
+        "stop_success": true,
+        "unload_success": true,
+        "uart0_unload_status_zero": true,
+        "failure_artifact_absent": true,
+        "backend_failed_false": true,
+        "backend_unhandled_unregistered_unmapped_all_zero": true
+      },
+      "minimum_free_stack_observed_decrease_bytes": 256
+    }
+  ],
+  "pooled": {
+    "byte": {
+      "frames": 1800,
+      "nominal_mos_units": 5838,
+      "nominal_mos_seconds": 48.65,
+      "nominal_mos_fps": 36.99897225077081,
+      "nominal_mos_ms_per_frame": 27.027777777777775,
+      "nominal_prt_ticks": 50363,
+      "nominal_prt_seconds": 50.363,
+      "nominal_prt_fps": 35.74052379723209
+    },
+    "word": {
+      "frames": 1800,
+      "nominal_mos_units": 5946,
+      "nominal_mos_seconds": 49.55,
+      "nominal_mos_fps": 36.32694248234107,
+      "nominal_mos_ms_per_frame": 27.527777777777775,
+      "nominal_prt_ticks": 51313,
+      "nominal_prt_seconds": 51.313,
+      "nominal_prt_fps": 35.078829926139576
+    }
+  },
+  "pairs": [
+    {
+      "campaign": "wideab01",
+      "nominal_mos_gain_percent": -6.111833550065027,
+      "nominal_prt_gain_percent": -6.205286542661337
+    },
+    {
+      "campaign": "wideba01",
+      "nominal_mos_gain_percent": 2.7874564459930307,
+      "nominal_prt_gain_percent": 2.819632397495453
+    }
+  ],
+  "nominal_mos_gain_percent": -1.816347124117057,
+  "nominal_prt_gain_percent": -1.8513826905462438,
+  "nominal_mos_ms_saved_per_frame": -0.5,
+  "conclusions": {
+    "correctness_and_protocol_pass": true,
+    "qualified_whole_frame_speedup": false,
+    "confident_whole_frame_slowdown": false,
+    "explanation": "Pooled MOS 36.999 to 36.327 FPS is -1.816%, but reversed-order pairs have opposite signs (-6.112% and +2.787%). Four runs/two pairs do not establish a stable directional whole-frame effect. PRT yields the same opposite-sign pattern and -1.851% pooled.",
+    "relationship_to_isolated_fill": "This audit makes no isolated-fill claim; faster isolated fill does not establish a whole-frame gain."
+  },
+  "same_347_times900_completed_uart_bytes_all4runs": true,
+  "timed_uart_bytes_per_run": 312300,
+  "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+  "all3600_motion_lane_packets_exact": true,
+  "all22452_raw_native_replies_independently_checked": true,
+  "all10800_suppressed_ready_generation_fence_replies_independently_checked": true,
+  "all11652_retained_replies_independently_checked": true,
+  "full_final_root_and5mutable_arrays_exact_to_accepted_moving_control": true,
+  "uploaded_modules_exact_to_fixtures": true,
+  "only_script_upload_load_bytes_and_expected_metadata_differ_between_fixtures": true,
+  "unchanged_inputs_and_runtime_manifest": {
+    "flexe-agon-emulator": "c8407990aa3f374471752c861f4b0f831bf215f226c6c54699f48f981fab07b4",
+    "flexe-agon-emulator.bin": "28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670",
+    "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+    "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+    "flexe-vdp.so": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+    "esp32-firmware.bin": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+    "esp32-firmware.elf": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+    "sdcard/autoexec.txt": "bd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1",
+    "sdcard/rally25/native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+    "sdcard/rally25/probe.bin": "a9effac2f7b45560d8003af6add587998cbafedf128ff2dbf070fdb7f68f2f07",
+    "sdcard/rally25/artwork.vdu": "124dfd413f1b2d1902547bcc18a1a74a4ade35c6a771a66f990cd1312966cca9",
+    "sdcard/rally25/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "sdcard/rally25/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "sdcard/rally25/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "sdcard/rally25/motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9"
+  },
+  "profile_orders": {
+    "wideab01": [
+      "byte",
+      "word"
+    ],
+    "wideba01": [
+      "word",
+      "byte"
+    ]
+  },
+  "session": {
+    "video_driver": "dummy",
+    "audio_driver": "dummy",
+    "boost_during_session": "0",
+    "boost_restored": true,
+    "original_boost": "1",
+    "final_boost": "1",
+    "maximum_temperature_celsius": 55,
+    "no_owned_emulators_after": true
+  },
+  "limits": [
+    "MOS assumes 120 units/s; PRT assumes 18.432MHz/18,432 clocks per IRQ. PRT nominal elapsed durations exceed MOS by roughly 3.5-3.6%; neither is calibrated physical FPS.",
+    "Reverse-order byte run frame 258 has zero MOS delta while PRT advances; raw before/after samples are preserved in its row. Aggregate endpoints retain the full 900-frame window.",
+    "Whole-frame window includes physics/scripted motion UART/drawing/swap/fence; frame 901 teardown sample excluded. Ordered native read after swap does not measure physical scanout.",
+    "Live remote binaries were not rehashed during this audit. Local fixtures, actual uploaded module bytes, logged runtime identities and pre/post-hash runner receipts agree; stopped/headless/boost facts are corroborated by saved session evidence.",
+    "Final PPMs show the MOS prompt; per-frame pixel identity comes from separate ordinary/sanitized host replay, not these captures.",
+    "INFO17 minimum free stack changes from 2,260 before to 2,004 byte/1,972 word after; this is an observed fixture resource value, not exhaustive native/composed stack qualification.",
+    "Two reversed-order pairs give opposing signs; no confidence interval or stable speedup/slowdown inference. No hardware or human visual acceptance inferred."
+  ],
+  "input_and_evidence_sha256": {
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/FIXTURES.json": "ba94382340cf051070e403ae433da95ff41bb0bd6b884c828ce4baf7f1f1a9b0",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/RESULTS.json": "ec62c2747cc4f442ab5598b5466332da9aa2031d3f4369adafb4ce6067a931b7",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/BUILD.json": "36fe8a495ead1c6f31abddaaa51024a4059a6dc816b4f8b3e3c264796c20d221",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/CONTROL-FINAL.json": "0e2bb4cb29f07d5624fc6e8275fff367da25632f0fd5d4b43d6e761dbedc981d",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/sprites/motion-comparison/CONTROL-FINAL.json": "0e2bb4cb29f07d5624fc6e8275fff367da25632f0fd5d4b43d6e761dbedc981d",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/replay-ordinary.json": "276db6574e2997a9ebaaf549f5947eff3da3445585739736d825ed04e073ab1f",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/byte/script.bin": "9a15efed15f60dd7330448cd89cfb24624e8178ac4d997969cdd85c41ba3a3f0",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/byte/expected.json": "b40be79b5e64d0923c92c025def956bc72dfb073e351e30812ae07c5c6bce8ad",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/byte/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/byte/probe.bin": "a9effac2f7b45560d8003af6add587998cbafedf128ff2dbf070fdb7f68f2f07",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/byte/motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/byte/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/byte/artwork.vdu": "124dfd413f1b2d1902547bcc18a1a74a4ade35c6a771a66f990cd1312966cca9",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/byte/native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/byte/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/word/script.bin": "7c343274a97272a81d92d38f1086718cf99c0a421bfd0d3361ec85c2827280e7",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/word/expected.json": "6275e6211f0e1898ce95c02554e1e3ca636dfda504ddd5dca7d461e77a567553",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/word/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/word/probe.bin": "a9effac2f7b45560d8003af6add587998cbafedf128ff2dbf070fdb7f68f2f07",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/word/motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/word/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/word/artwork.vdu": "124dfd413f1b2d1902547bcc18a1a74a4ade35c6a771a66f990cd1312966cca9",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/word/native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fixtures/word/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/sprites/motion-comparison/fixtures/additive/motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/PROFILES-wideab01.json": "ee93297fb14af8160de0c30d01fdeaebfe7855d82d05dc059a19423576a5607f",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/CAMPAIGN-wideab01.json": "f5d42579fe3930ba14e10144b2f3c7a2dac3c0cb998d69c867971096ff9764e0",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/run.json": "1ed23a8dd75fa7b3cc2ca93a28957ab79e8ae6b532abcb535e89227437813846",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/stats.json": "d9520c701e224247bbc3160d80fd685057c14d8556ee1cab046752811210225e",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/vdp-to-mos.bin": "7cadb6a2cb44abc3003c69f8dac7535476f7341bf2c38bcd9d357032f1cae7a5",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/vdp-to-mos-delivered.bin": "7cadb6a2cb44abc3003c69f8dac7535476f7341bf2c38bcd9d357032f1cae7a5",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/replies.bin": "ed398286524e6dc65510a826d7a7b040710a65d2555e61fcd2093ed208bbe5b8",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/ticks.bin": "f89660dd3cc055fe029b1753abbc8d5ce6527419277ce3230ae5b920728e097a",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/prt.bin": "393090c34a435ffdb57c6c7e4237e6c05a680f098bcdc5b03dbad7ff533acc82",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/mos-to-vdp.bin": "aca1d7a2a3b059b8cac571b1be192f0815155651f2e0250b0d353b70c7ed4a8f",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/final.ppm": "294a662803b7fec4bc456bae73cbcc65dd105c9b7eeff778fee570166f10f06b",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/run.json": "9575e9eba0078ce51afd34cd4636cd5141c02360fb9698683c56d15522f741ca",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/stats.json": "b06f2dbb1f63670d7763e17d60de369ffa9b843df9ee83407983c36965bc4165",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/vdp-to-mos.bin": "e395f452bf99b11189a538800095a46cfcaf68fbc5e2cf87e111faf262579ae4",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/vdp-to-mos-delivered.bin": "e395f452bf99b11189a538800095a46cfcaf68fbc5e2cf87e111faf262579ae4",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/replies.bin": "bd0f75710db868912ee1ff7f614ce9de1976d42a610ac87afd8549bd21f5f7b7",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/ticks.bin": "abc7787f0422e2a64df03ce3cf3ee333b88c1bd08bca54e5fa091d6c50a18f29",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/prt.bin": "3459766d3480b1b1627e3678abea812f945ae931b062f29477527ae1a8c5fc89",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/mos-to-vdp.bin": "85a29dd8f7185c844dec43e2c19192a2fc0fed409ddf94d0fce4ba31bbe22c14",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/final.ppm": "294a662803b7fec4bc456bae73cbcc65dd105c9b7eeff778fee570166f10f06b",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/PROFILES-wideba01.json": "8012c07b1f48f394cf5916d736d0d5ed536533790c4a3e7528533f5161e04d7d",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/CAMPAIGN-wideba01.json": "bb7b1bfa335219ed5ceb8234b0d1416d73e3192e144d580e15b4d4a4dd15b214",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/run.json": "888979983c192f97239bf6f21e52af36f894c5072e9588cc8e520307e85fd9b1",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/stats.json": "5fbcf551de5c6258ba21650c91f66df94ba4412e487faf1dfe92bf3bcfc48007",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/vdp-to-mos.bin": "e395f452bf99b11189a538800095a46cfcaf68fbc5e2cf87e111faf262579ae4",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/vdp-to-mos-delivered.bin": "e395f452bf99b11189a538800095a46cfcaf68fbc5e2cf87e111faf262579ae4",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/replies.bin": "bd0f75710db868912ee1ff7f614ce9de1976d42a610ac87afd8549bd21f5f7b7",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/ticks.bin": "c263771d031026efd934a09e306b22479999926beb0d038a1ca910b9b7d64152",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/prt.bin": "cfc97ba8a24d095d0b6f814b7bd2c696266372aa2cb1daa9b2bb9a248d3e7171",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/mos-to-vdp.bin": "85a29dd8f7185c844dec43e2c19192a2fc0fed409ddf94d0fce4ba31bbe22c14",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/final.ppm": "294a662803b7fec4bc456bae73cbcc65dd105c9b7eeff778fee570166f10f06b",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/run.json": "84f01ba2a1f1b1b6a91b544cf59d868f08c0cfb7ad12037f01423244d85fa50e",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/stats.json": "ff3d0e03744114a272ee4a1ceb0dfaa3651a0a5b0aedc85774b81961d55fae23",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/vdp-to-mos.bin": "7df17c892e5dbc362c91e983f4f45f03928473859feb45d7f56ba6f116fe4d1c",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/vdp-to-mos-delivered.bin": "7df17c892e5dbc362c91e983f4f45f03928473859feb45d7f56ba6f116fe4d1c",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/replies.bin": "ed398286524e6dc65510a826d7a7b040710a65d2555e61fcd2093ed208bbe5b8",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/ticks.bin": "ab8e13518990446d053b099a5c1b9532b9e45c47db5bbf7630645464f33552e5",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/prt.bin": "9b917c9c62bc9b4443450f818a8eea6faf3f229af24ddedb234a8e54f08e6683",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/clock.bin": "9cf04ffa4464ae1ab5b8f1c9f0b32bf39b2398e37666fb0b4323d3195af7c6ab",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/mos-to-vdp.bin": "7d11b382ca9ea8bb5614dd8029e686f9229a5a13d145c61326260df47e94de80",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/final.ppm": "294a662803b7fec4bc456bae73cbcc65dd105c9b7eeff778fee570166f10f06b",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/SESSION-widesession01.json": "b96c4531baba648c352d86417bf83e9e6874a25d0115f14bddd1c0987a12f1e0",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/byte/esp32-uart0.txt": "0e98f3aaceaf8a20abdc0d2d865a433b86d25fd6d6583ff866fb62cc8e413e01",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideab01/word/esp32-uart0.txt": "ee79f09f9767ed8604394139431496cfa971095344ea8aefca69d61a3e6ea3ce",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/word/esp32-uart0.txt": "ee79f09f9767ed8604394139431496cfa971095344ea8aefca69d61a3e6ea3ce",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/evidence/wideba01/byte/esp32-uart0.txt": "19092f3cd0198051a1f079afc33bab7f62a356536c15761599b0c56b609a75f7",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/replay-sanitized.json": "ea08c5ff828d0637a4384f6faa64924f3c5b33869df6bd561c529c7ebc64f4fe",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/vdplet_runtime.h": "986814817a790541aaa8d395e61720c357290b7d63979e63dfc659a4bf6a265a",
+    "/Agon/mystuff/agon-vdplet/build/firmware/firmware-artifacts.json": "535b887d9c099fa15c8c291ab7295ae3906608ea14648eef8d74f9fa0c981869",
+    "docs/tasks/RALLY-25/native-demo/build.py": "12c4e3ed0ee637ef16f50f9a30a42c206e55b36df3daf7aa7c033806edd24c3d",
+    "docs/tasks/RALLY-25/native-demo/README.md": "8925eb812d2a86eefd00d57e1a78427dbce2a6576a629162283c6c836932a205"
+  },
+  "capacity_and_error_scope": {
+    "candidate_declared_limits": {
+      "text": 32768,
+      "data": 4096,
+      "stack": 2048,
+      "image": 65536
+    },
+    "candidate_target_builder_admitted": true,
+    "candidate_package_bytes": 34500,
+    "resident_text_bytes": 31916,
+    "resident_data_bytes": 1004,
+    "whole_frame_all900_successful_preparations_and_fences_each_run": true,
+    "road_output_bytes": 20480,
+    "actor_output_bytes": 2048,
+    "player_output_bytes": 256,
+    "completion_bytes": 48,
+    "road_pixels_bytes": 38400,
+    "source_metadata_and_all_allocations_unchanged": true,
+    "four_slot_host_service_checks": {
+      "control": {
+        "peak": 4,
+        "grants": 278575,
+        "releases": 278575,
+        "balanced": true,
+        "canaries_intact": true
+      },
+      "candidate": {
+        "peak": 4,
+        "grants": 278575,
+        "releases": 278575,
+        "balanced": true,
+        "canaries_intact": true
+      }
+    },
+    "ordinary_and_sanitizer_output_allocations_and_canaries_exact": true,
+    "limitation": "Admission, successful bounded workload and host four-slot/canary checks are explicit. This is not a proof of exhaustive target stack/heap/lease behaviour across all scenes or firmware paths; INFO17 is an observed task stack minimum, not a leak test."
+  },
+  "info17_semantics": {
+    "interpretation": "Minimum remaining stack high-water mark for the current task, in bytes; not instantaneous current free stack or free heap. A lower after value records a deeper historical stack watermark and does not itself show a leak.",
+    "corroborating_source": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/vdplet_runtime.h",
+    "source_sha256": "986814817a790541aaa8d395e61720c357290b7d63979e63dfc659a4bf6a265a",
+    "line": 259,
+    "code": "case 17: value=uxTaskGetStackHighWaterMark(nullptr); break; // ESP-IDF reports bytes.",
+    "exact_8da2_firmware_source_identity_verified": false,
+    "identity_limit": "The local built runtime header corroborates the known INFO17 definition. Its current firmware-artifacts.json advertises a25477..., not the run binary8da2eb..., so this audit does not claim this header is the exact byte-matched source of the run firmware. The accepted native-demo documentation independently names INFO17 minimum-free-stack bytes."
+  }
+}

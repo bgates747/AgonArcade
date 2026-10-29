@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "origin": "Host-only capture clone of accepted additive control; selected actual moving-world Render30 calls",
+  "format": "Little-endian8-byte <HHHBB: road-row byte offset,left,right,colour,zero padding",
+  "row_stride": 320,
+  "road_bytes": 38400,
+  "count": 11788,
+  "bytes": 94304,
+  "sha256": "12bc72f453c33f26dcfbc1c802bebd57c865d76c0913f8e7a15e91acb4af5378",
+  "frames": [
+    {
+      "frame": 1,
+      "first_record": 0,
+      "count": 1179,
+      "sha256": "e3447176ae30845f948808af61024c70675b5c72bc885f6782dd1991fe703af3"
+    },
+    {
+      "frame": 60,
+      "first_record": 1179,
+      "count": 1201,
+      "sha256": "2fa8923c930966839a0958aadcc9117c9b1a405c0b2ff0ca7dbfaf8367d63619"
+    },
+    {
+      "frame": 120,
+      "first_record": 2380,
+      "count": 1171,
+      "sha256": "ff61d66f2930f7ab94e5f3a8a62c60f5bd292570d79333366c20bffb77cc4c1d"
+    },
+    {
+      "frame": 180,
+      "first_record": 3551,
+      "count": 1191,
+      "sha256": "84de94fee5cf72b6e61e99faedcff7d1c6a59e43f90f9de2ade4e747c5ad7ce4"
+    },
+    {
+      "frame": 240,
+      "first_record": 4742,
+      "count": 1149,
+      "sha256": "2679544a87fd3b835c6c0dd05748fcd120759f50829c1af2ddfdc623b8bdc868"
+    },
+    {
+      "frame": 300,
+      "first_record": 5891,
+      "count": 1211,
+      "sha256": "46637c37ef5e4ecee34c4a75ba98b2ade529c451a11768cbd4e9517c71dcd2a6"
+    },
+    {
+      "frame": 450,
+      "first_record": 7102,
+      "count": 1191,
+      "sha256": "911fdd1918e28cdd3de56175cf8240198b989385673ab1d9fee50e50e64b6d44"
+    },
+    {
+      "frame": 600,
+      "first_record": 8293,
+      "count": 1155,
+      "sha256": "f16dbabdc77896723a3c5c4282f2b9c11afa591ea3614721b50f51957678ce10"
+    },
+    {
+      "frame": 750,
+      "first_record": 9448,
+      "count": 1155,
+      "sha256": "e491a70c1fdd0393a2a585ee251fb4114b7e44b95e1ceab6e932a9f770937283"
+    },
+    {
+      "frame": 900,
+      "first_record": 10603,
+      "count": 1185,
+      "sha256": "36fbff20a760d3f49ab1b1baee43a0cec3d069b2d7b77e7ba0728c592bd1c288"
+    }
+  ],
+  "includes_empty_calls": true,
+  "initial_grass_memset_included": false,
+  "instrumented_outputs_exact_to_uninstrumented_control": true,
+  "frozen_control_render_core_sha256": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+  "instrumented_render_core_sha256": "99c7fc24d650558d2b378157c2c9ceabaaf9fcf123b4e3231eb19bf6b9d2500e"
+}

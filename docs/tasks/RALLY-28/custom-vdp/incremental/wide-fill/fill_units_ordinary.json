@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "exhaustive_endpoint_cases": 2060820,
+  "all_colour_boundary_cases": 622592,
+  "clipped_endpoint_cases": 36980,
+  "clip_values": 43,
+  "null_empty_reversed_cases": 7,
+  "total_guarded_cases": 2720392,
+  "bytes_compared_per_implementation": 1052791704,
+  "empty_guarded_cases": 61400,
+  "reversed_guarded_cases": 1043800,
+  "actual_base_alignments": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "colours": 256,
+  "expected_scalar_prefix_bytes": 2367118,
+  "expected_word_stores": 33686030,
+  "expected_scalar_tail_bytes": 2312010,
+  "row_boundaries_and_guards_unchanged": true,
+  "baseline_and_independent_oracle_exact": true,
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "compile_command": [
+    "cc",
+    "-std=c11",
+    "-fstrict-aliasing",
+    "-Wstrict-aliasing=2",
+    "-fno-builtin",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill",
+    "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/fill-units",
+    "-O3",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/fill_units.c",
+    "-o",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/fill-units/fill-units-ordinary"
+  ],
+  "binary_sha256": "8a77f8e66eacdaf7ce1aff08047c5141f5c4e238381e63a2fc399c9f4ff3e1ca",
+  "sources": {
+    "wide_fill.inc": "34e8845ec7e3d550fcc99dbcd47474c58a41a3ebde9c2a149440e3e9f04601c8",
+    "fill_units.c": "72b701de2b7c196735cb879b024d52c7898f664b467bb2dab7343afec3edaedb",
+    "fill_units.py": "9fd705112331e2a8cff3d4285198b13d38c5ff6b86f38f9930827e897e2a12ac"
+  },
+  "baseline_core_sha256": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+  "extracted_baseline_sha256": "4821de1964a222942f5c596ed993ee571b9197ac6a8698f4c9165bf127166490",
+  "sanitizer_environment": {
+    "ASAN_OPTIONS": "detect_leaks=0:halt_on_error=1",
+    "UBSAN_OPTIONS": "halt_on_error=1:print_stacktrace=1"
+  }
+}

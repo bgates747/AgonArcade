@@ -172,6 +172,14 @@ prefix/tail handling. Preserve exact span endpoints and output bytes. Do not
 predict a fourfold speedup from store width; PSRAM/cache/alignment and complete
 frame costs require measurement.
 
+**INC-001-03 measured2026-10-29:** aligned word stores preserve exact output and
+reduce a separate fill replay's raw emulated CCOUNT52.65%, but fresh completed
+frames give36.999→36.327nominal MOS FPS with opposite-sign pairwise changes.
+No whole-frame gain is established; keep the byte-fill/additive control. The
+phase result has competing-host-work/thermal limits and is not physical timing.
+Preserve this negative outcome before proposing wider fills again.
+[Exact fixtures, codegen, results and limits](../custom-vdp/incremental/wide-fill/RESULTS.md).
+
 Sources: [native support functions](../custom-vdp/paced-road/control/package/native.c:20),
 [span fill](../custom-vdp/throughput/span.inc:37), target disassembly under
 `throughput/.work/span-candidate/target/rally-render.disassembly.txt` (`memset`).

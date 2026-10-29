@@ -1,0 +1,315 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-29T17:10:42.734667+00:00",
+  "passed": true,
+  "scope": "Independent read-only inspection of existing artifacts; no build/run, emulator, SSH or source mutation",
+  "sources": {
+    "changed_existing_files": [
+      "helper/render_core.inc"
+    ],
+    "added_files": [
+      "helper/wide_fill.inc"
+    ],
+    "only_original_fill_replaced_by_include": true,
+    "native_c_and_global_memory_functions_unchanged": true,
+    "renderer_resource_and_lifetime_source_unchanged": true,
+    "include_matches_unit_qualified_source": true,
+    "control_package_sha256": {
+      "rally-render.json": "4c2e5c4e70bfddd2979d65f8a0644af69e210e3dcd8fd49deaa1a9a0d5366c17",
+      "rally-render.disassembly.txt": "239921eea5a34d3e50d794e3ae9ed19f60d276d86edfda6292e723a2f1263501",
+      "rally-render.vdpl": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+      "array-lateral.bin": "9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0",
+      "root.json": "83d74662c81f6cf321cd24269fe2c26dee79bc0cf356fcbe01f57dbd79d435a2",
+      "native-install.bin": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "state.bin": "dc2187929eee56076d40e5e55c1eb574432aa98e17b554962cad6d1057b223c2",
+      "rally-render.upload.elf": "3b748c9395d5ffd1b1972e1ba4eadab77f7eb53e39c9c6844d480349ed42b260",
+      "native-bindings.json": "543022321154595027a0543271fc2656620c90976b0d0a23a8882db546e43d81",
+      "program.json": "68c00f6151c3e54f2f92e542a6065d18ad39e8498673e3d59f0aa704f675d7fa",
+      "backends.json": "e48626eb71d7a4be0af7bfb25998bbee6a63d0d2fabee8a057786f89b711dfe5",
+      "rally-render.elf": "4cb7c86a5a25e5b4ea57da7daa8f0149adfde6230a652ad5b55afef2ded55c6a",
+      "array-contacts.bin": "15ec7bf0b50732b49f8228e07d24365338f9e3ab994b00af08e5a3bffe55fd8b",
+      "calls.inc": "d0fce46192f9d63000db46f87f981a7f807416620301a504bf30d33874033e3f",
+      "array-sine.bin": "6062d337f69ac6ae99b7da9cdf95f87aea1ee04a9110f26839f0a85f74efff68",
+      "arrays-install.bin": "2eac936d70092510e029d1cb9d030a734736c3c4eaee140891027eabfce5d465",
+      "layout.inc": "4825d4d407ce195a531ac425a3aa6c9fc1c140089df8645363e2623cd03e5bb4",
+      "array-active.bin": "9279aba84b65c836059f143f595b35fa7ff78a64c750da958a15319d1a333f2f",
+      "export-receipt.json": "413eabd9b0e6d8afa33bb36cab879c57186741640e028c1a368340e85292ffb5",
+      "rally-render.readelf.txt": "cf172aabf6c76e77645af33cfd32e919a63e3751b9b33adfc695a534f36fb55a",
+      "delivery-manifest.json": "fbbeb8d5ec7d2003c7f4f9e4c1993bd0475b7e47811785e56df7c2a933a26f34",
+      "native.c": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992",
+      "native-cleanup.bin": "01215d3ae806cd2c4ba7717c14b3e32415c9ed694c3d5eb941250d2a7d802de1",
+      "array-routes.bin": "899bc1c3676004731f4751cd50cfe3e363ad19ffe6ab0ac33bd2cfc04f61d561",
+      "array-position.bin": "8fb5224a9f8a0c7aee4d96d7209b99446a9dcc6e5626e13f2609835d623d7997",
+      "array-progress.bin": "b791541c28cb6757574c12ecc5d20d17abc7677be0aba5c025b2d302229eef15",
+      "interface.json": "e8d04756bb3abfe212635ea39ce8ccc27fb1d6d69ac08ab98d190b9f7c989491",
+      "common-install.bin": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "rally-render.su": "f793afdb4666ddf8bb7902465452d0c1d111de6a3abe5a0c94b400b076b69a7f",
+      "helper/sprite_io.inc": "4f46073cd7191173e89db20bade665266c52f974b3c8567ae4ad0f9d6f771e76",
+      "helper/rally_render.h": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50",
+      "helper/render_core.inc": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+      "helper/asset_meta.inc": "940a4e51c2f06bb34106c858f690bad34d97ed8ab6994b19bb53a945f4eb6cd5",
+      "helper/rally_render.c": "f1195f04d78afcb65778c579bb829e796c46fc68809af9dd9d2e1313eed03668",
+      "helper/sprite.inc": "7aeb37a5dca29dba52925b3d9afe593e93c3d13c1037151732f9fa43bdcea1ca"
+    },
+    "candidate_package_sha256": {
+      "rally-render.json": "4c2e5c4e70bfddd2979d65f8a0644af69e210e3dcd8fd49deaa1a9a0d5366c17",
+      "rally-render.disassembly.txt": "239921eea5a34d3e50d794e3ae9ed19f60d276d86edfda6292e723a2f1263501",
+      "rally-render.vdpl": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+      "array-lateral.bin": "9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0",
+      "root.json": "83d74662c81f6cf321cd24269fe2c26dee79bc0cf356fcbe01f57dbd79d435a2",
+      "native-install.bin": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "state.bin": "dc2187929eee56076d40e5e55c1eb574432aa98e17b554962cad6d1057b223c2",
+      "rally-render.upload.elf": "3b748c9395d5ffd1b1972e1ba4eadab77f7eb53e39c9c6844d480349ed42b260",
+      "native-bindings.json": "543022321154595027a0543271fc2656620c90976b0d0a23a8882db546e43d81",
+      "program.json": "68c00f6151c3e54f2f92e542a6065d18ad39e8498673e3d59f0aa704f675d7fa",
+      "backends.json": "e48626eb71d7a4be0af7bfb25998bbee6a63d0d2fabee8a057786f89b711dfe5",
+      "rally-render.elf": "4cb7c86a5a25e5b4ea57da7daa8f0149adfde6230a652ad5b55afef2ded55c6a",
+      "array-contacts.bin": "15ec7bf0b50732b49f8228e07d24365338f9e3ab994b00af08e5a3bffe55fd8b",
+      "calls.inc": "d0fce46192f9d63000db46f87f981a7f807416620301a504bf30d33874033e3f",
+      "array-sine.bin": "6062d337f69ac6ae99b7da9cdf95f87aea1ee04a9110f26839f0a85f74efff68",
+      "arrays-install.bin": "2eac936d70092510e029d1cb9d030a734736c3c4eaee140891027eabfce5d465",
+      "layout.inc": "4825d4d407ce195a531ac425a3aa6c9fc1c140089df8645363e2623cd03e5bb4",
+      "array-active.bin": "9279aba84b65c836059f143f595b35fa7ff78a64c750da958a15319d1a333f2f",
+      "export-receipt.json": "413eabd9b0e6d8afa33bb36cab879c57186741640e028c1a368340e85292ffb5",
+      "rally-render.readelf.txt": "cf172aabf6c76e77645af33cfd32e919a63e3751b9b33adfc695a534f36fb55a",
+      "delivery-manifest.json": "fbbeb8d5ec7d2003c7f4f9e4c1993bd0475b7e47811785e56df7c2a933a26f34",
+      "native.c": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992",
+      "native-cleanup.bin": "01215d3ae806cd2c4ba7717c14b3e32415c9ed694c3d5eb941250d2a7d802de1",
+      "array-routes.bin": "899bc1c3676004731f4751cd50cfe3e363ad19ffe6ab0ac33bd2cfc04f61d561",
+      "array-position.bin": "8fb5224a9f8a0c7aee4d96d7209b99446a9dcc6e5626e13f2609835d623d7997",
+      "array-progress.bin": "b791541c28cb6757574c12ecc5d20d17abc7677be0aba5c025b2d302229eef15",
+      "interface.json": "e8d04756bb3abfe212635ea39ce8ccc27fb1d6d69ac08ab98d190b9f7c989491",
+      "common-install.bin": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "rally-render.su": "f793afdb4666ddf8bb7902465452d0c1d111de6a3abe5a0c94b400b076b69a7f",
+      "helper/sprite_io.inc": "4f46073cd7191173e89db20bade665266c52f974b3c8567ae4ad0f9d6f771e76",
+      "helper/rally_render.h": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50",
+      "helper/render_core.inc": "db23c7cd14d767631884d81b5f2cecf8a741db588cd518573bf2df86de0707d7",
+      "helper/asset_meta.inc": "940a4e51c2f06bb34106c858f690bad34d97ed8ab6994b19bb53a945f4eb6cd5",
+      "helper/wide_fill.inc": "34e8845ec7e3d550fcc99dbcd47474c58a41a3ebde9c2a149440e3e9f04601c8",
+      "helper/rally_render.c": "f1195f04d78afcb65778c579bb829e796c46fc68809af9dd9d2e1313eed03668",
+      "helper/sprite.inc": "7aeb37a5dca29dba52925b3d9afe593e93c3d13c1037151732f9fa43bdcea1ca"
+    }
+  },
+  "artifacts": {
+    "control": {
+      "directory": "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/control/target",
+      "files_sha256": {
+        "rally-render.json": "b1cb766bba0e98696f2a91a9b90d9c198f3e48577bb5d3850795aa069cc3d49d",
+        "rally-render.disassembly.txt": "cc00e2a766f6cbe5e6bddc3bc129e5a127b15e2765b55bbd57e74673261e3889",
+        "rally-render.vdpl": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+        "rally-render.upload.elf": "316f62b5d6233252d8252d5ec3715c3ed98fc65093a0e26fcf1987e491768a2d",
+        "rally-render.elf": "6be42cdf0640792d66203ce392428c900ad44c2597315dd6ed99e5f3fcb6c6bb",
+        "rally-render.o": "eeacffdb5d4fbc119f9c65825e35f580ea843ddb50da7efd0c9352736a591770",
+        "rally-render.readelf.txt": "a0ff735c6bc0341d0e5bd2343d771f0427242348b3b2d29e131105d6d02f1a29",
+        "rally-render.su": "43016c53004a012b3267c9f4ad7177714da3ea1506eb26b7f1b13730211abe24"
+      },
+      "build_id": "0x52385332",
+      "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0"
+    },
+    "candidate": {
+      "directory": "docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/candidate/target",
+      "files_sha256": {
+        "rally-render.json": "cacad62b92ed192de6a64e6adc059a90424b002726d308f8ec9351eaceb68387",
+        "rally-render.disassembly.txt": "3e5868bfb58b872f44162dcb309ee4b3f9ac2f168892b5d32798b188c806658e",
+        "rally-render.vdpl": "af6e8a137f65d52434649c0886f005274316a8983a126c1711b3fb638b010303",
+        "rally-render.upload.elf": "ac7dea94a1841fab3c5a42d710f025b086a6aa6c7399e32e6ea4125e7d09fb90",
+        "rally-render.elf": "f706927573b006cd7bcd731e8df3355837efede3abe1c3aca0cfa8c90e3f0f8f",
+        "rally-render.o": "ed95375409a2f81124854b6e676ed47ee5bc65e0b4636bf77ab05c1b4a6cc791",
+        "rally-render.readelf.txt": "2e65e413294750f97ff9df2ce64e156ed008d7786b4dad3a66b3a10464ab23ad",
+        "rally-render.su": "8f1275049a26396ecf9020780c42ac17bd5aa0c38724adac45cd4748ba8d9884"
+      },
+      "build_id": "0x52385731",
+      "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0"
+    }
+  },
+  "fill": {
+    "symbol": "r28_span_fill$part$0",
+    "address": "0x7f00",
+    "bytes": 80,
+    "code_sha256": "fd97e852e6b1fcfc6ff00d463e621f3a35f5082b95a7777e6a57bbc012f8ee3b",
+    "entry": "0x7f00: entry a1, 32",
+    "static_frame_bytes": 32,
+    "prefix": {
+      "store": "0x7f0c: s8i a5, a2, 0",
+      "decrement": "0x7f0f: addi.n a4, a4, -1",
+      "advance": "0x7f11: addi.n a2, a2, 1",
+      "remaining_zero_guard": "0x7f15: beqz.n a4, 0x7f1d",
+      "alignment_guard": "0x7f17: extui a3, a2, 0, 2; 0x7f1a: bnez a3, 0x7f0c"
+    },
+    "replicated_colour": "0x7f1d..0x7f25 use shifts/adds; no multiply helper",
+    "word_loop": {
+      "count": "0x7f27: srli a9, a4, 2",
+      "store": "0x7f32: s32i.n a3, a8, 0",
+      "advance": "0x7f34: addi.n a8, a8, 4",
+      "branch": "0x7f36: bne a8, a2, 0x7f32"
+    },
+    "tail": {
+      "remainder": "0x7f39..0x7f3c subtract four times word count",
+      "store": "0x7f46: s8i a5, a3, 0",
+      "guard": "0x7f41 jumps to comparison at 0x7f4b"
+    },
+    "helper_calls": [],
+    "strict_aliasing": "GCC __may_alias__ uint32_t lvalue after actual-address alignment; compiler aliasing settings unchanged",
+    "assembly_or_binary_shortcut": false
+  },
+  "caller": {
+    "clip_source_unchanged": true,
+    "range": [
+      0,
+      320
+    ],
+    "clip_code": "0x14c3 min 320; 0x14c6 max 0",
+    "half_open_endpoints_unchanged": true,
+    "row_224_exclusion": "0x14d0..0x14d8",
+    "pointer_literal": "0x0d04 contains 0x00007f00; loaded at all three fill call sites",
+    "calls": [
+      {
+        "call": "0x1502",
+        "guard": "0x14f1 skips right < 1; left is 0"
+      },
+      {
+        "call": "0x155e",
+        "guard": "0x1552 skips left >= right"
+      },
+      {
+        "call": "0x1583",
+        "guard": "0x156f..0x1572 skips left > 319; right is 320"
+      }
+    ],
+    "empty_reversed_short_semantics": "Caller guards preserve empty/reversed no-ops; zero-to-three remaining bytes use scalar stores. Exhaustive host evidence is in fill_units reports.",
+    "initial_row_clear": "Unchanged 320-byte memset at 0x1299; only span primitive is replaced",
+    "new_allocations_or_leases": false
+  },
+  "global_functions": {
+    "memset": {
+      "control_address": "0x7f94",
+      "candidate_address": "0x7fe8",
+      "bytes": 20,
+      "emitted_bytes_identical": true,
+      "code_sha256": "2b01577677c3da495459b6c6f816422bd1c197f6b7b6dec2e3bfde62dae98065"
+    },
+    "memcpy": {
+      "control_address": "0x7f78",
+      "candidate_address": "0x7fcc",
+      "bytes": 25,
+      "emitted_bytes_identical": true,
+      "code_sha256": "8cbcfee1193ce7f65e7d32784bd3084a34e73ec0c696be2eb6576d6f034fdc45"
+    }
+  },
+  "resources": {
+    "metrics": {
+      "resident_text_bytes": {
+        "control": 31844,
+        "candidate": 31916,
+        "delta": 72
+      },
+      "resident_data_bytes": {
+        "control": 1004,
+        "candidate": 1004,
+        "delta": 0
+      },
+      "elf_bytes": {
+        "control": 34352,
+        "candidate": 34436,
+        "delta": 84
+      },
+      "package_bytes": {
+        "control": 34416,
+        "candidate": 34500,
+        "delta": 84
+      },
+      "relative_relocations": {
+        "control": 44,
+        "candidate": 45,
+        "delta": 1
+      }
+    },
+    "unchanged_declared_limits": {
+      "text": 32768,
+      "data": 4096,
+      "stack": 2048,
+      "image": 65536
+    },
+    "candidate_headroom_bytes": {
+      "text": 852,
+      "data": 3092,
+      "image": 31036
+    },
+    "stack": {
+      "all_preexisting_function_frames_unchanged": true,
+      "prepare_static_frame_bytes": {
+        "control": 672,
+        "candidate": 672
+      },
+      "new_fill_static_frame_bytes": 32,
+      "replaced_baseline_memset_frame_bytes": 32,
+      "max_single_function_frame_bytes": 672,
+      "vdplet_entry_static_frame_bytes": 336,
+      "declared_allowance_bytes": 2048,
+      "qualification_limit": "Static per-function records do not independently establish full composed maximum stack; runtime admission/watermark evidence remains separate."
+    },
+    "allocated_sections": {
+      "control": {
+        ".text": {
+          "virtual_address": 836,
+          "bytes": 31844,
+          "type": 1
+        },
+        ".rodata": {
+          "virtual_address": 32680,
+          "bytes": 460,
+          "type": 1
+        },
+        ".data": {
+          "virtual_address": 37480,
+          "bytes": 544,
+          "type": 1
+        }
+      },
+      "candidate": {
+        ".text": {
+          "virtual_address": 848,
+          "bytes": 31916,
+          "type": 1
+        },
+        ".rodata": {
+          "virtual_address": 32764,
+          "bytes": 460,
+          "type": 1
+        },
+        ".data": {
+          "virtual_address": 37564,
+          "bytes": 544,
+          "type": 1
+        }
+      }
+    },
+    "capacity_policy_changed": false,
+    "runtime_buffer_layout_or_lifetime_changes": false
+  },
+  "frozen_sdk": {
+    "files_sha256": {
+      "docs/tasks/RALLY-28/custom-vdp/paced-road/control/sdk/tools/build_module.py": "a5e8fe550b7906fbd897ec7045d550a20b374d9df4379e80ecb8a2641627ad22",
+      "docs/tasks/RALLY-28/custom-vdp/paced-road/control/sdk/include/vdplet.h": "fa8385e2906f07d37372d80c40f73d419defdbefe7a3458461ac9d5fe0820d38",
+      "docs/tasks/RALLY-28/custom-vdp/paced-road/control/sdk/src/vdplet_policy.h": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419"
+    },
+    "observed_flags": [
+      "-Os",
+      "-fPIC",
+      "-mlongcalls",
+      "-mtext-section-literals",
+      "-fvisibility=hidden",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fno-builtin",
+      "-ffp-contract=off",
+      "-fstack-usage",
+      "-fno-common"
+    ]
+  },
+  "snippets": {
+    "path": "CODEGEN-SNIPPETS.txt",
+    "sha256": "a1110d43e45f8204c00d7e8284b498cdf377150261773b1875371a907498d38d"
+  },
+  "limits": "Static code/resource evidence; no predicted physical-cycle, complete-frame speedup or dynamic-stack claim."
+}

@@ -3,8 +3,12 @@
 - **INC-001-02-AFF01** [ ] — Follow up on Rally's use of built-in affine bitmap commands: isolate matrix setup/update, bitmap format/conversion, transparency, clipping, command dispatch and transformed drawing; compare stock affine plotting with stock transform-to-bitmap then ordinary plotting on the same downscaling workload. The measured sampler gain does not establish that the stock API is generally inefficient. Current artwork is loaded full-size once; scaled images are generated inside VDP, with no scaled-bitmap uploads in the hot loop. [Audit scope](docs/tasks/RALLY-28/custom-vdp/incremental/PLAN.md#inc-001-02-aff01--audit-built-in-affine-usage). Planning only; no new test/implementation release.
 
 
-- **INC-001-03** [ ] — Released2026-10-29: checkpoint/push all prior dirt and scope, then compare aligned32-bit native road-span fills with the accepted additive sampler/byte-fill control. Preserve exact pixels/geometry/simulation/runtime and347byte moving-traffic frames; inspect assembly, qualify alignment/bounds and measure full frames plus isolated fill work. [Scope](docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/README.md). Silent guarded Oryx Flexe only; return for review with new work uncommitted.
-- **INC-001-04** [ ] — Proposed: cache static drawing on both pages and evaluate bounded pre-scaled/mirrored sprite sizes with explicit ID/memory/visual budgets.
+- **INC-001-04** [ ] — Static-drawing tranche released2026-10-29: checkpoint/push all dirt, retain invariant text/lower strip on both pages, audit required sky restoration and compare exact moving completed frames. [Scope](docs/tasks/RALLY-28/custom-vdp/incremental/static-drawing/README.md). Bitmap-size caching remains proposed separately.
+- **INC-001-04-01** [ ] — Freeze accepted byte-fill/additive control and audit invariant commands/page ownership.
+- **INC-001-04-02** [ ] — Derive tape-only two-page static setup; preserve moving clears/state/swap phase.
+- **INC-001-04-03** [ ] — Qualify exact two-page motion/first-use/dirty-content behavior and command-byte accounting.
+- **INC-001-04-04** [ ] — Fresh silent guarded Oryx completed-frame pairs in both orders; full raw state/clock/transport audit.
+- **INC-001-04-05** [ ] — Preserve portable inputs/results, prepare stopped visual review and return uncommitted.
 - **INC-001-05** [ ] — Proposed: consolidate diagnostic round trips into sequenced completion/status while retaining errors, publication checks and the final rendering fence.
 - **INC-001-06** [ ] — Proposed: evaluate composition/transparent runs/copy removal only where phase costs justify it; coordinate any mode-136 framebuffer service extension with its owner.
 

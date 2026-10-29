@@ -1,0 +1,150 @@
+{
+  "task": "INC-001-03",
+  "checkpoint": "84fa64d",
+  "rows": [
+    {
+      "campaign": "wideab01",
+      "case": "byte",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 2888,
+      "nominal_mos_seconds": 24.066666666666666,
+      "nominal_mos_fps": 37.39612188365651,
+      "nominal_prt_ticks": 24910,
+      "nominal_prt_seconds": 24.91,
+      "nominal_prt_fps": 36.13006824568446,
+      "host_seconds_including_startup": 33.91,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "all900motion_packets_exact": true,
+      "final_state_exact": true,
+      "clean_mos_return": true
+    },
+    {
+      "campaign": "wideab01",
+      "case": "word",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 3076,
+      "nominal_mos_seconds": 25.633333333333333,
+      "nominal_mos_fps": 35.110533159947984,
+      "nominal_prt_ticks": 26558,
+      "nominal_prt_seconds": 26.558,
+      "nominal_prt_fps": 33.88809398298065,
+      "host_seconds_including_startup": 35.528,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "all900motion_packets_exact": true,
+      "final_state_exact": true,
+      "clean_mos_return": true
+    },
+    {
+      "campaign": "wideba01",
+      "case": "word",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 2870,
+      "nominal_mos_seconds": 23.916666666666668,
+      "nominal_mos_fps": 37.63066202090592,
+      "nominal_prt_ticks": 24755,
+      "nominal_prt_seconds": 24.755,
+      "nominal_prt_fps": 36.35629165825086,
+      "host_seconds_including_startup": 33.714,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "all900motion_packets_exact": true,
+      "final_state_exact": true,
+      "clean_mos_return": true
+    },
+    {
+      "campaign": "wideba01",
+      "case": "byte",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 2950,
+      "nominal_mos_seconds": 24.583333333333332,
+      "nominal_mos_fps": 36.610169491525426,
+      "nominal_prt_ticks": 25453,
+      "nominal_prt_seconds": 25.453,
+      "nominal_prt_fps": 35.359289671158606,
+      "host_seconds_including_startup": 34.423,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "all900motion_packets_exact": true,
+      "final_state_exact": true,
+      "clean_mos_return": true
+    }
+  ],
+  "pooled": {
+    "byte": {
+      "frames": 1800,
+      "nominal_mos_seconds": 48.65,
+      "nominal_mos_fps": 36.99897225077081,
+      "nominal_mos_ms_per_frame": 27.027777777777775,
+      "nominal_prt_seconds": 50.363,
+      "nominal_prt_fps": 35.74052379723209
+    },
+    "word": {
+      "frames": 1800,
+      "nominal_mos_seconds": 49.55,
+      "nominal_mos_fps": 36.326942482341074,
+      "nominal_mos_ms_per_frame": 27.527777777777775,
+      "nominal_prt_seconds": 51.313,
+      "nominal_prt_fps": 35.078829926139576
+    }
+  },
+  "pairs": [
+    {
+      "campaign": "wideab01",
+      "nominal_mos_gain_percent": -6.111833550065027,
+      "nominal_prt_gain_percent": -6.205286542661337
+    },
+    {
+      "campaign": "wideba01",
+      "nominal_mos_gain_percent": 2.7874564459930307,
+      "nominal_prt_gain_percent": 2.819632397495453
+    }
+  ],
+  "nominal_mos_gain_percent": -1.816347124117046,
+  "nominal_prt_gain_percent": -1.8513826905462438,
+  "nominal_mos_ms_saved_per_frame": -0.5,
+  "entire_timed_uart_identical": true,
+  "bytes_per_frame": 347,
+  "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+  "all_full_final_worlds_exact_to_accepted_control": true,
+  "actor_player_road_command_and_runtime_unchanged": true,
+  "clocks": "MOS nominal120units/s; PRT nominal18.432MHz emulated instruction clock; host durations include startup/teardown. Not physical FPS or isolated phase measurements.",
+  "session": {
+    "host_boot_id": "d8e4d3c8-0288-4512-a15d-0be9cc5641f1",
+    "original_boost": "1",
+    "final_boost": "1",
+    "boost_restored": true,
+    "max_temperature_celsius": 55.0,
+    "elapsed_host_seconds": 138.005
+  },
+  "modules": {
+    "byte": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "word": "af6e8a137f65d52434649c0886f005274316a8983a126c1711b3fb638b010303"
+  },
+  "isolated_phase": {
+    "raw_emulated_counter_only": true,
+    "quiet_host_qualification": false,
+    "physics_ticks": 0,
+    "sample_windows": 80,
+    "byte_total": 123639649,
+    "wide_total": 58540570,
+    "raw_ccount_reduction_percent": 52.65226772036533,
+    "median_window_reduction_percent": 52.62258436819991,
+    "maximum_window_raw_ccount": 1559640,
+    "empty_dispatch_total": 17829473,
+    "competing_host_jobs": true,
+    "max_temperature_celsius": 94.0,
+    "boost_restored": true,
+    "owned_emulators_stopped": true
+  },
+  "independent_audits": {
+    "FULL-FRAME-AUDIT.json": "1a4612f091bb586d9cd45f7c44e053229cdb9917e68ece6a7e37c0899ed5c6eb",
+    "phase/TARGET-AUDIT.json": "3c03034a1e8d266f5a1e483e62cb01638cec5c69ee7e3e44e80858ea4082b2ea"
+  },
+  "disposition": "No demonstrated whole-frame gain; retain accepted additive sampler with byte fills. Preserve wider fills as an unadopted experiment.",
+  "candidate_promoted": false,
+  "hardware_tested": false,
+  "human_visual_review_performed": false,
+  "results_review_pending": true
+}

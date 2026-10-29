@@ -1,0 +1,40 @@
+{
+  "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0",
+  "abi_header_sha256": "fa8385e2906f07d37372d80c40f73d419defdbefe7a3458461ac9d5fe0820d38",
+  "module": {
+    "name": "fill-phase",
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/phase-probe02/package/phase_probe.c",
+    "source_sha256": "989faa174d44d28c5f2e428463203b08a5f14d242ec8e12ef940988c8f62fd36",
+    "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+    "declared_limits": {
+      "text": 8192,
+      "data": 1024,
+      "stack": 512,
+      "image": 16384
+    },
+    "build_id": "0x52324631",
+    "capabilities": 1,
+    "envelope_bytes": 64,
+    "elf_bytes": 2744,
+    "package_bytes": 2808,
+    "sha256": "98eb19d61d25590c56b1e4b4eb0100ff542681fcf0354eebd22475260e0732e5",
+    "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/phase-probe02/target/fill-phase.vdpl",
+    "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/phase-probe02/target/fill-phase.elf",
+    "entry_virtual": 636,
+    "resident_text_bytes": 1916,
+    "resident_data_bytes": 16,
+    "relative_relocations": 12,
+    "allocated_sections": {
+      ".text": {
+        "virtual_address": 452,
+        "bytes": 1916,
+        "type": 1
+      },
+      ".bss": {
+        "virtual_address": 6628,
+        "bytes": 16,
+        "type": 8
+      }
+    }
+  }
+}

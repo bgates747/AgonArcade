@@ -4,6 +4,22 @@ Research cheaper arithmetic, geometry and drawing for both Rally implementations
 
 ## Incremental renderer improvements — first modification released 2026-10-28
 
+**INC-001-04 first part released2026-10-29:** commit/push all dirt, then retain
+static drawing on both pages with exact moving-scene proof and fresh completed-
+frame comparisons. Keep accepted byte fills; bitmap caching is separate.
+[Bounded contract](RALLY-28/custom-vdp/incremental/static-drawing/README.md).
+
+**INC-001-03 returned2026-10-29:** checkpoint `84fa64d` pushed before work.
+Aligned word fills match exact pixels/state/347byte frame traffic and emit
+genuine32-bit stores; full ordinary/sanitizer host qualification passes. Fresh
+matched completed frames give36.999→36.327nominal MOS FPS(-1.82%), with opposite
+pair directions(-6.11/+2.79%), so no full-frame gain is established. Keep the
+accepted byte-fill/additive renderer. Separate fill replay uses52.65% fewer raw
+emulated CCOUNT units, with competing-host-work/thermal limits preserved.
+[Results and disposition](RALLY-28/custom-vdp/incremental/wide-fill/RESULTS.md).
+Both silent guarded sessions complete/boostrestored/ownedemulatorsstopped; new
+experiment/evidence uncommitted for review. No hardware or later work released.
+
 **INC-001-03 released2026-10-29:** Author requests all-dirt commit/push, then the
 next modification: [aligned wider span fills](RALLY-28/custom-vdp/incremental/wide-fill/README.md).
 Use the accepted additive moving-pattern fixture as control; preserve exact

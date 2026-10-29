@@ -1,5 +1,27 @@
 # Standing emulator authorization —2026-10-14
 
+AUTHOR RELEASE2026-10-29: commit/push all current dirt, then INC-001-04 first
+static-drawing tranche. Read incremental/static-drawing/README.md. Keep accepted
+byte-fill/additive renderer; initialize invariant text/lower-strip on both pages,
+audit moving sky bounds, preserve exact scene/world/fences and benchmark fresh
+matched motion in both orders. No bitmap caching. Silent guarded Oryx only;
+new work uncommitted for Author review, no hardware/later optimization release.
+
+AUTHOR DECISION: keep the previous accepted additive sampler/byte-fill renderer.
+Wider-fill experiment is not adopted. Author asks what comes next; INC-001-04
+static drawing/caching remains proposed, not released by that question.
+
+INC-001-03 COMPLETE2026-10-29: all prior dirt/scope pushed84fa64d, then aligned
+road fills qualified in isolated wide-fill/. Read incremental/wide-fill/RESULTS.md.
+Exact pixels/state/wire pass, real target s32i.n confirmed. Fresh full-frame
+byte36.999→word36.327nominal MOS FPS(-1.82%); opposite-sign pairs(-6.11/+2.79%)
+establish no gain. Keep accepted byte-fill/additive renderer; candidate not adopted.
+Separate80window no-physics/no-drawing probe shows52.65% fewer raw emulated
+CCOUNT units, under competing hostCPU work/92–94°C; not physical or whole-frame
+timing. Full-frame sessionmax55°C. Both original95°C guards intact, bothSDLdummy,
+boostrestored1/ownedemulatorsstopped. New work uncommitted for review; no hardware,
+visual acceptance, affine audit or next optimization release inferred.
+
 AUTHOR RELEASE2026-10-29: commit/push all current dirt, then INC-001-03 aligned
 32-bit road-fill experiment against accepted additive moving-pattern control.
 Read incremental/wide-fill/README.md. Only fill implementation changes; same

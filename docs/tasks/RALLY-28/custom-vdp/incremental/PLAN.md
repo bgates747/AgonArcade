@@ -15,6 +15,20 @@ The ordered work below describes those items; only INC-001-01 is released for
 implementation in this tranche. [Findings](../../research/RENDERER-COST-FINDINGS.md)
 distinguish confirmed costs, Wolf precedents and proposed experiments.
 
+**INC-001-04 first part released2026-10-29:** checkpoint/push all current dirt,
+then [static drawing on both pages](static-drawing/README.md). Initialize
+invariant text/lower-strip once per page and preserve moving-region restoration;
+measure against accepted additive/byte-fill moving control. Bitmap caching,
+AFF01, hardware and later optimizations remain separate. Root TODO owns01–05.
+
+**Current disposition,2026-10-29:** the Author subsequently released INC-001-02
+and03. All sampler/motion evidence and03 scope were checkpointed/pushed84fa64d.
+The wider-fill experiment is complete: exact output, genuine32-bit stores and
+lower isolated raw fill-counter cost, but no demonstrated full-frame gain
+(36.999→36.327nominal MOS FPS; opposite-sign pairs). Keep accepted additive
+sampling with byte fills. [Evidence and limits](wide-fill/RESULTS.md). New03
+work remains uncommitted for review. INC-001-04–06 and AFF01 remain proposed.
+
 **Subsequent release, 2026-10-28:** Author requests commit/push of the completed
 clear experiment and continuation with INC-001-02. The current split-clear
 Native-span fixture is the new comparison control; retain the original controls.
@@ -35,8 +49,9 @@ pixel-identical; subsequent moving visuals/clean exit are Author accepted. The
 same moving pattern was then compared:28.46→35.35nominal MOS FPS (+24.22%),
 full matched frame UART streams identical. [Matched results](sprites/motion-comparison/RESULTS.md).
 Hardware timing remains open. New
-work is uncommitted. See [results](sprites/RESULTS.md) and the
-[stopped review profile](sprites/HUMAN-REVIEW.md). INC-001-03–06 remain proposed.
+work was subsequently committed/pushed84fa64d. See [results](sprites/RESULTS.md)
+and the [stopped review profile](sprites/HUMAN-REVIEW.md). The current wider-fill
+disposition appears above; INC-001-04–06 remain proposed.
 
 Source and destination sprite storage must remain stable until each frame is
 consumed. Use distinct retained images for queued objects, validate resource

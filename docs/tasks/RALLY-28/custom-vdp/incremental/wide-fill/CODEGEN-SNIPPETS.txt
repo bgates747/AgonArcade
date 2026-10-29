@@ -1,0 +1,206 @@
+INC-001-03 independent emitted-code review
+
+Aligned word stores, scalar prefix/tail, and the bounded source diff are
+confirmed below. These are static observations, without a timing or complete
+composed-stack claim.
+
+1. Complete candidate fill; no call instructions
+00007f00 <r28_span_fill$part$0>:
+    7f00:	004136        	entry	a1, 32
+    7f03:	c04430        	sub	a4, a4, a3
+    7f06:	223a      	add.n	a2, a2, a3
+    7f08:	0001c6        	j	7f13 <r28_span_fill$part$0+0x13>
+    7f0b:	00          	.byte 00
+    7f0c:	004252        	s8i	a5, a2, 0
+    7f0f:	440b      	addi.n	a4, a4, -1
+    7f11:	221b      	addi.n	a2, a2, 1
+    7f13:	028d      	mov.n	a8, a2
+    7f15:	448c      	beqz.n	a4, 7f1d <r28_span_fill$part$0+0x1d>
+    7f17:	143020        	extui	a3, a2, 0, 2
+    7f1a:	fee356        	bnez	a3, 7f0c <r28_span_fill$part$0+0xc>
+    7f1d:	113580        	slli	a3, a5, 8
+    7f20:	335a      	add.n	a3, a3, a5
+    7f22:	119300        	slli	a9, a3, 16
+    7f25:	339a      	add.n	a3, a3, a9
+    7f27:	419240        	srli	a9, a4, 2
+    7f2a:	11a9e0        	slli	a10, a9, 2
+    7f2d:	22aa      	add.n	a2, a2, a10
+    7f2f:	0000c6        	j	7f36 <r28_span_fill$part$0+0x36>
+    7f32:	0839      	s32i.n	a3, a8, 0
+    7f34:	884b      	addi.n	a8, a8, 4
+    7f36:	f89827        	bne	a8, a2, 7f32 <r28_span_fill$part$0+0x32>
+    7f39:	1199e0        	slli	a9, a9, 2
+    7f3c:	c04490        	sub	a4, a4, a9
+    7f3f:	020c      	movi.n	a2, 0
+    7f41:	000186        	j	7f4b <r28_span_fill$part$0+0x4b>
+    7f44:	382a      	add.n	a3, a8, a2
+    7f46:	004352        	s8i	a5, a3, 0
+    7f49:	221b      	addi.n	a2, a2, 1
+    7f4b:	f59427        	bne	a4, a2, 7f44 <r28_span_fill$part$0+0x44>
+    7f4e:	f01d      	retw.n
+
+2. Candidate clipping, row exclusion and three guarded call sites
+    1488:	2ca192        	movi	a9, 0x12c
+    148b:	719a      	add.n	a7, a1, a9
+    148d:	10c142        	addi	a4, a1, 16
+    1490:	090c      	movi.n	a9, 0
+    1492:	40a1b2        	movi	a11, 0x140
+    1495:	a80c      	movi.n	a8, 10
+    1497:	358876        	loop	a8, 14d0 <rally_render_prepare_v1+0x764>
+    149a:	0468      	l32i.n	a6, a4, 0
+    149c:	1458      	l32i.n	a5, a4, 4
+    149e:	34a8      	l32i.n	a10, a4, 12
+    14a0:	665a      	add.n	a6, a6, a5
+    14a2:	2458      	l32i.n	a5, a4, 8
+    14a4:	0469      	s32i.n	a6, a4, 0
+    14a6:	5a5a      	add.n	a5, a10, a5
+    14a8:	44a8      	l32i.n	a10, a4, 16
+    14aa:	3459      	s32i.n	a5, a4, 12
+    14ac:	0825a7        	blt	a5, a10, 14b8 <rally_render_prepare_v1+0x74c>
+    14af:	661b      	addi.n	a6, a6, 1
+    14b1:	c055a0        	sub	a5, a5, a10
+    14b4:	0469      	s32i.n	a6, a4, 0
+    14b6:	3459      	s32i.n	a5, a4, 12
+    14b8:	3458      	l32i.n	a5, a4, 12
+    14ba:	0468      	l32i.n	a6, a4, 0
+    14bc:	1a0c      	movi.n	a10, 1
+    14be:	83a950        	moveqz	a10, a9, a5
+    14c1:	5a6a      	add.n	a5, a10, a6
+    14c3:	4355b0        	min	a5, a5, a11
+    14c6:	535590        	max	a5, a5, a9
+    14c9:	0759      	s32i.n	a5, a7, 0
+    14cb:	14c442        	addi	a4, a4, 20
+    14ce:	774b      	addi.n	a7, a7, 4
+    14d0:	e0a0d2        	movi	a13, 224
+    14d3:	0592d7        	bne	a2, a13, 14dc <rally_render_prepare_v1+0x770>
+    14d6:	221b      	addi.n	a2, a2, 1
+    14d8:	002c06        	j	158c <rally_render_prepare_v1+0x820>
+    14db:	00          	.byte 00
+    14dc:	fe0941        	l32r	a4, d00 <rally_render_stop_v1+0xa4>
+    14df:	8f2162        	l32i	a6, a1, 0x23c
+    14e2:	4b21c2        	l32i	a12, a1, 0x12c
+    14e5:	564a      	add.n	a5, a6, a4
+    14e7:	1142e0        	slli	a4, a2, 2
+    14ea:	442a      	add.n	a4, a4, a2
+    14ec:	1144a0        	slli	a4, a4, 6
+    14ef:	454a      	add.n	a4, a5, a4
+    14f1:	131ca6        	blti	a12, 1, 1508 <rally_render_prepare_v1+0x79c>
+    14f4:	fe0451        	l32r	a5, d04 <rally_render_stop_v1+0xa8>
+    14f7:	9a61e2        	s32i	a14, a1, 0x268
+    14fa:	c8a0d2        	movi	a13, 200
+    14fd:	0b0c      	movi.n	a11, 0
+    14ff:	20a440        	or	a10, a4, a4
+    1502:	0005e0        	callx8	a5
+    1505:	9a21e2        	l32i	a14, a1, 0x268
+    1508:	10c182        	addi	a8, a1, 16
+    150b:	822172        	l32i	a7, a1, 0x208
+    150e:	03dd      	mov.n	a13, a3
+    1510:	01d862        	addmi	a6, a8, 0x100
+    1513:	0007c6        	j	1536 <rally_render_prepare_v1+0x7ca>
+    1516:	777c      	movi.n	a7, -9
+    1518:	03dd      	mov.n	a13, a3
+    151a:	160577        	bnone	a5, a7, 1534 <rally_render_prepare_v1+0x7c8>
+    151d:	b77c      	movi.n	a7, -5
+    151f:	107570        	and	a7, a5, a7
+    1522:	9021d2        	l32i	a13, a1, 0x240
+    1525:	0b2726        	beqi	a7, 2, 1534 <rally_render_prepare_v1+0x7c8>
+    1528:	054566        	bnei	a5, 4, 1531 <rally_render_prepare_v1+0x7c5>
+    152b:	932192        	l32i	a9, a1, 0x24c
+    152e:	002916        	beqz	a9, 1534 <rally_render_prepare_v1+0x7c8>
+    1531:	d5a0d2        	movi	a13, 213
+    1534:	057d      	mov.n	a7, a5
+    1536:	083766        	bnei	a7, 3, 1542 <rally_render_prepare_v1+0x7d6>
+    1539:	932182        	l32i	a8, a1, 0x24c
+    153c:	06a052        	movi	a5, 6
+    153f:	001856        	bnez	a8, 1544 <rally_render_prepare_v1+0x7d8>
+    1542:	571b      	addi.n	a5, a7, 1
+    1544:	1177e0        	slli	a7, a7, 2
+    1547:	767a      	add.n	a7, a6, a7
+    1549:	77b8      	l32i.n	a11, a7, 28
+    154b:	1175e0        	slli	a7, a5, 2
+    154e:	767a      	add.n	a7, a6, a7
+    1550:	77c8      	l32i.n	a12, a7, 28
+    1552:	0eabc7        	bge	a11, a12, 1564 <rally_render_prepare_v1+0x7f8>
+    1555:	fdeb71        	l32r	a7, d04 <rally_render_stop_v1+0xa8>
+    1558:	9a61e2        	s32i	a14, a1, 0x268
+    155b:	20a440        	or	a10, a4, a4
+    155e:	0007e0        	callx8	a7
+    1561:	9a21e2        	l32i	a14, a1, 0x268
+    1564:	970c      	movi.n	a7, 9
+    1566:	ac9577        	bne	a5, a7, 1516 <rally_render_prepare_v1+0x7aa>
+    1569:	5421b2        	l32i	a11, a1, 0x150
+    156c:	3fa152        	movi	a5, 0x13f
+    156f:	02a5b7        	bge	a5, a11, 1575 <rally_render_prepare_v1+0x809>
+    1572:	ffd806        	j	14d6 <rally_render_prepare_v1+0x76a>
+    1575:	04ad      	mov.n	a10, a4
+    1577:	fde341        	l32r	a4, d04 <rally_render_stop_v1+0xa8>
+    157a:	9a61e2        	s32i	a14, a1, 0x268
+    157d:	c8a0d2        	movi	a13, 200
+    1580:	40a1c2        	movi	a12, 0x140
+    1583:	0004e0        	callx8	a4
+    1586:	9a21e2        	l32i	a14, a1, 0x268
+    1589:	ffd246        	j	14d6 <rally_render_prepare_v1+0x76a>
+
+3. Candidate unchanged initial 320-byte row clear
+    128e:	fe9321        	l32r	a2, cdc <rally_render_stop_v1+0x80>
+    1291:	40a1c2        	movi	a12, 0x140
+    1294:	c8a0b2        	movi	a11, 200
+    1297:	03ad      	mov.n	a10, a3
+    1299:	0002e0        	callx8	a2
+
+4. Control global memset
+00007f94 <memset>:
+    7f94:	004136        	entry	a1, 32
+    7f97:	080c      	movi.n	a8, 0
+    7f99:	000186        	j	7fa3 <memset+0xf>
+    7f9c:	928a      	add.n	a9, a2, a8
+    7f9e:	004932        	s8i	a3, a9, 0
+    7fa1:	881b      	addi.n	a8, a8, 1
+    7fa3:	f59847        	bne	a8, a4, 7f9c <memset+0x8>
+    7fa6:	f01d      	retw.n
+
+5. Candidate global memset; identical function bytes
+00007fe8 <memset>:
+    7fe8:	004136        	entry	a1, 32
+    7feb:	080c      	movi.n	a8, 0
+    7fed:	000186        	j	7ff7 <memset+0xf>
+    7ff0:	928a      	add.n	a9, a2, a8
+    7ff2:	004932        	s8i	a3, a9, 0
+    7ff5:	881b      	addi.n	a8, a8, 1
+    7ff7:	f59847        	bne	a8, a4, 7ff0 <memset+0x8>
+    7ffa:	f01d      	retw.n
+
+6. Existing clip source and unchanged section caller
+static int r28_span_clip(int x) { return x < 0 ? 0 : x > R28_SPAN_WIDTH ? R28_SPAN_WIDTH : x; }
+#include "wide_fill.inc"
+
+static int r28_span_section(uint8_t *pixels, int ct, int cb, int yt, int yb, int marked) {
+    if (!pixels || yt < R28_SPAN_TOP || yb > R28_SPAN_TOP + R28_SPAN_HEIGHT || yt >= yb)
+        return 0;
+    int top[10], bottom[10];
+    R28SpanEdge edge[10];
+    r28_span_edges(ct, cb, yt, yb, top, bottom);
+    for (int i = 0; i < 10; ++i) {
+        if (i && (top[i] < top[i-1] || bottom[i] < bottom[i-1])) return 0;
+        edge[i] = r28_span_edge(top[i], bottom[i], yb - yt);
+    }
+    uint8_t kerb = r28_span_colour(marked ? 9 : 15);
+    uint8_t line = r28_span_colour(marked ? 11 : 15);
+    for (int y = yt + 1; y <= yb; ++y) {
+        int x[10];
+        for (int i = 0; i < 10; ++i) x[i] = r28_span_clip(r28_span_step(&edge[i]));
+        if (y >= R28_SPAN_TOP + R28_SPAN_HEIGHT) continue;
+        uint8_t *row = pixels + (y - R28_SPAN_TOP) * R28_SPAN_WIDTH;
+        r28_span_fill(row, 0, x[0], r28_span_colour(2));
+        for (int i = 0; i < 9; ++i) {
+            uint8_t colour = i == 0 || i == 8 ? kerb :
+                             i == 2 || i == 6 || (i == 4 && marked) ? line : r28_span_colour(8);
+            int next = i + 1;
+            if (i == 3 && !marked) next = 6;
+            r28_span_fill(row, x[i], x[next], colour);
+            i = next - 1;
+        }
+        r28_span_fill(row, x[9], R28_SPAN_WIDTH, r28_span_colour(2));
+    }
+    return 1;
+}
