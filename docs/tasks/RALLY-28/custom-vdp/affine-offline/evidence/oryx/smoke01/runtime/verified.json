@@ -1,0 +1,356 @@
+{
+  "schema": 1,
+  "passed": true,
+  "fixture": "smoke",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-affine-oryx-smoke01",
+  "mode": 136,
+  "swaps": 0,
+  "completed_batches": 11,
+  "source_sha256": "1c034b6e8e58bdda82dde2ebd8b1e38d3987a6100535f6e2fde42c1049a49258",
+  "build_sha256": "64f80143955575f16c4191a52fdae91f7872364cd1340aa0bb2d3f95665f9123",
+  "fixture_sha256": "ac26f9c0268a3a7758902eaea2dc145ef60d9cac30bacaa3000ab555ff7cb799",
+  "guest_sha256": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+  "runtime_build": {
+    "name": "ORYX-RUNTIME-BUILD.json",
+    "sha256": "38f726dbee2ff006e81793e3146d4106987b0643cd45be96d2dfd617c7a763b2",
+    "architecture": "x86_64",
+    "frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+    "core_commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+    "files": {
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "faed8f1c612bf93219b49359337f65457165532465f2ab8006b25059151ff60b"
+    },
+    "actual_elf_architecture_verified": true
+  },
+  "workload_sha256": "93f47c09a3a0440a7c3f592849494f754fc06641a51d9de15fe573c1e0a83f21",
+  "raw_tx_sha256": "8a2f28304b237b84743a35523b3ddce03e9e16d7eaf86c60fe8ac02b59d6bb03",
+  "raw_rx_sha256": "ff1b8a6b3d058b2ea64d56448e5b5ce10266ed99c19a4a42c6e2c393be012844",
+  "application_tx_offset": 454,
+  "application_tx_bytes": 45923,
+  "application_packet_start": 103,
+  "application_packet_count": 87,
+  "checked_completion_packet_count": 45,
+  "auxiliary_modeinfo_packets": [
+    {
+      "packet_index": 104,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 106,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 110,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 111,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 113,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 114,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 118,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 119,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 121,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 122,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 126,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 127,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 129,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 130,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 134,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 135,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 137,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 138,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 142,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 143,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 145,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 146,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 150,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 151,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 153,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 154,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 158,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 159,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 161,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 162,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 166,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 167,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 169,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 170,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 174,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 175,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 177,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 178,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 182,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 183,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 185,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 186,
+      "payload": "4001f000281e4088"
+    }
+  ],
+  "timed_calls": [
+    {
+      "row": 0,
+      "offset": 44530,
+      "bytes": 6,
+      "hex": "1700a053d301",
+      "case_index": 6,
+      "method": "empty"
+    },
+    {
+      "row": 1,
+      "offset": 44614,
+      "bytes": 6,
+      "hex": "1700a0f0d201",
+      "case_index": 0,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 2,
+      "offset": 44698,
+      "bytes": 6,
+      "hex": "1700a0f1d201",
+      "case_index": 0,
+      "method": "cached-affine"
+    },
+    {
+      "row": 3,
+      "offset": 44782,
+      "bytes": 6,
+      "hex": "1700a0f2d201",
+      "case_index": 0,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 4,
+      "offset": 44866,
+      "bytes": 6,
+      "hex": "1700a0f3d201",
+      "case_index": 0,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 5,
+      "offset": 44950,
+      "bytes": 6,
+      "hex": "1700a0f4d201",
+      "case_index": 0,
+      "method": "matrix-only"
+    },
+    {
+      "row": 6,
+      "offset": 45034,
+      "bytes": 6,
+      "hex": "1700a009d301",
+      "case_index": 5,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 7,
+      "offset": 45118,
+      "bytes": 6,
+      "hex": "1700a00ad301",
+      "case_index": 5,
+      "method": "cached-affine"
+    },
+    {
+      "row": 8,
+      "offset": 45202,
+      "bytes": 6,
+      "hex": "1700a00bd301",
+      "case_index": 5,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 9,
+      "offset": 45286,
+      "bytes": 6,
+      "hex": "1700a00cd301",
+      "case_index": 5,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 10,
+      "offset": 45370,
+      "bytes": 6,
+      "hex": "1700a00dd301",
+      "case_index": 5,
+      "method": "matrix-only"
+    }
+  ],
+  "timed_submit_bytes_each": 6,
+  "all_resident_operations_and_batches_exact": true,
+  "full_foreground_command_schedule_exact": true,
+  "all_csv_rows_match_exact_plan": true,
+  "exact_primary_pixel_validation_response_order": true,
+  "zero_key_callbacks": 11,
+  "marker_indices": [
+    12
+  ],
+  "pixel_payloads": [
+    "0000ff0c"
+  ],
+  "no_timed_swap_or_pixel_upload": true,
+  "input_and_runtime_identities_unchanged": true,
+  "guest_callback_and_prt_restore_reports": true,
+  "clean_mos_return": true,
+  "summary": {
+    "schema": 1,
+    "valid": true,
+    "completed_batches": 11,
+    "planned_batches": 11,
+    "mode": 136,
+    "timed_swaps": 0,
+    "draw_repeats": 4,
+    "setup_repeats": 16,
+    "samples": 1,
+    "case_mask": 33,
+    "primary_completion": "key-zero",
+    "fallback_used": false,
+    "callback_restored": true,
+    "prt_restored": true,
+    "setup_mos_ticks": 42,
+    "keyboard_packets": 11,
+    "mos_hz_nominal": 120,
+    "prt_hz_nominal": 1000,
+    "failure": "none"
+  },
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 320,
+    "cycles": 1417539326,
+    "retired": 553297080,
+    "uart_rx": 46456,
+    "uart_tx": 994,
+    "uart_delivered": 994,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "output_sha256": {
+    "summary.json": "b1fc700afd06aa2599c0a152c73c1cd1a8df48697f0b9ee6c5b8310827a6fa10",
+    "timings.csv": "7686132eb4d1e8a358a71a52525316fdec411603e4072ce30fd70b7b483316b7",
+    "done.txt": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431"
+  },
+  "limitations": [
+    "Direction capture files contain no cross-direction timestamps; exact request/response order is interpreted with pinned guest wait/readback source.",
+    "PRT/callback restoration is the pinned guest vector-comparison report; UART alone does not inspect MOS memory.",
+    "Synchronous hidden-page raster completion; no swap, scanout, host-window or physical ESP32 timing claim."
+  ]
+}

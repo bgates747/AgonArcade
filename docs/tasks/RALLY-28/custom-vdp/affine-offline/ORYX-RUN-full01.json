@@ -1,0 +1,523 @@
+{
+  "schema": 1,
+  "name": "full01",
+  "fixture": "full",
+  "identity": {
+    "schema": 1,
+    "name": "full01",
+    "fixture": "full",
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-affine-oryx-full01",
+    "app": "sdcard/test/arcade/rally28/affine",
+    "files": {
+      "flexe-agon-emulator": "da988d26f5907bf239a4fbaecd9360c680d950898b247f0ca8d45822e27a2fa9",
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "faed8f1c612bf93219b49359337f65457165532465f2ab8006b25059151ff60b",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "sdcard/autoexec.txt": "80c1c19bc817eb57ac9b698df5f12055721a83572904f6d350b540edb5afb87c",
+      "sdcard/test/arcade/rally28/affine/artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "sdcard/test/arcade/rally28/affine/config.bin": "acd1307d63838d203cab0450222b29e8d446fd56c56062b4d8d7c23e1e35bf89",
+      "sdcard/test/arcade/rally28/affine/expected.json": "df49a7b3aa1268b018d5997d9b1fe02ad26d686a4bb8d24e284e8346ea7f5e2d",
+      "sdcard/test/arcade/rally28/affine/probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "sdcard/test/arcade/rally28/affine/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "expected_batches": 124,
+    "stopped": true,
+    "setup_helper_sha256": "229c66f63a24b4a20822810e6f771c506dff0f25a179df905ea815770277b92e",
+    "sound": "dummy",
+    "video": "dummy",
+    "platform": {
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 56.0,
+        "iwlwifi_1:thermal_zone1": 39.0
+      },
+      "load_average": [
+        1.4296875,
+        1.35107421875,
+        1.29541015625
+      ],
+      "boost": "1"
+    },
+    "runtime_build_manifest": "ORYX-RUNTIME-BUILD.json",
+    "runtime_build_sha256": "38f726dbee2ff006e81793e3146d4106987b0643cd45be96d2dfd617c7a763b2",
+    "controller_sha256": "b413d1edb1936a013b12b7ab86f632252ad06317543af0ecac4edbf7e9f0d231",
+    "original_guard_sha256": "f2c51dcc61c422b4bf0bc3f9442e50fdc0f1193a2e5655ea7b0713fefc4637bd",
+    "frozen_target_registry_sha256": "64dfa117bcabc659ce6650f23c75eac5ef741953fc1156e36eec06cbba479c11",
+    "source_fixture": "target/fixtures/full",
+    "fixture_files": {
+      "artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "config.bin": "acd1307d63838d203cab0450222b29e8d446fd56c56062b4d8d7c23e1e35bf89",
+      "expected.json": "df49a7b3aa1268b018d5997d9b1fe02ad26d686a4bb8d24e284e8346ea7f5e2d",
+      "probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    }
+  },
+  "host_before": {
+    "host": "oryx-linuxlite",
+    "architecture": "x86_64",
+    "temperatures_celsius": {
+      "acpitz:thermal_zone0": 57.0,
+      "iwlwifi_1:thermal_zone1": 38.0
+    },
+    "load_average": [
+      1.39501953125,
+      1.34521484375,
+      1.29345703125
+    ],
+    "boost": "0"
+  },
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "preflight": {
+    "temperatures_celsius": {
+      "acpitz:thermal_zone0": 57.0,
+      "iwlwifi_1:thermal_zone1": 38.0
+    },
+    "other_emulators": []
+  },
+  "samples": [
+    {
+      "elapsed": 0.0011864010002682335,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 57.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.39501953125,
+        1.34521484375,
+        1.29345703125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 2.003067812000154,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 60.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.39501953125,
+        1.34521484375,
+        1.29345703125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 4.004916818000311,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 62.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.36328125,
+        1.33935546875,
+        1.29150390625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 6.006938575000277,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 62.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.36328125,
+        1.33935546875,
+        1.29150390625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 8.00892489700027,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 62.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.36328125,
+        1.33935546875,
+        1.29150390625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 10.01110639000035,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 62.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.333984375,
+        1.33349609375,
+        1.28955078125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 12.013159619000362,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 62.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.333984375,
+        1.33349609375,
+        1.28955078125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 14.015134621000016,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 59.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.3876953125,
+        1.3447265625,
+        1.29345703125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 16.017517434000183,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 58.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.3876953125,
+        1.3447265625,
+        1.29345703125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 18.019786232000115,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 59.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.3876953125,
+        1.3447265625,
+        1.29345703125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 20.022029454000403,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 60.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.43701171875,
+        1.35595703125,
+        1.29736328125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 22.023972542000138,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 61.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.43701171875,
+        1.35595703125,
+        1.29736328125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 24.026967316000082,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 61.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.642578125,
+        1.39990234375,
+        1.31201171875
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 26.0289602820003,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 62.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.642578125,
+        1.39990234375,
+        1.31201171875
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 28.031594876000327,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 61.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.642578125,
+        1.39990234375,
+        1.31201171875
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 30.03338586200016,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 60.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.67138671875,
+        1.41015625,
+        1.31591796875
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 32.035197041000174,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 60.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.67138671875,
+        1.41015625,
+        1.31591796875
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 34.03688537500011,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 60.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.77783203125,
+        1.43701171875,
+        1.3251953125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 36.03893762000007,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 60.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.77783203125,
+        1.43701171875,
+        1.3251953125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 38.04092542100034,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 59.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.77783203125,
+        1.43701171875,
+        1.3251953125
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 40.04175173400017,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 59.0,
+        "iwlwifi_1:thermal_zone1": 40.0
+      },
+      "load_average": [
+        1.8759765625,
+        1.46337890625,
+        1.33447265625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 42.04415636900012,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 59.0,
+        "iwlwifi_1:thermal_zone1": 39.0
+      },
+      "load_average": [
+        1.8759765625,
+        1.46337890625,
+        1.33447265625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 44.04599545300016,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 58.0,
+        "iwlwifi_1:thermal_zone1": 39.0
+      },
+      "load_average": [
+        1.88623046875,
+        1.47265625,
+        1.33837890625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 46.047736742000325,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 58.0,
+        "iwlwifi_1:thermal_zone1": 39.0
+      },
+      "load_average": [
+        1.88623046875,
+        1.47265625,
+        1.33837890625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 48.04955972400012,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 58.0,
+        "iwlwifi_1:thermal_zone1": 38.0
+      },
+      "load_average": [
+        1.88623046875,
+        1.47265625,
+        1.33837890625
+      ],
+      "boost": "0"
+    }
+  ],
+  "passed": true,
+  "reason": "guest-files",
+  "summary": {
+    "schema": 1,
+    "valid": true,
+    "completed_batches": 124,
+    "planned_batches": 124,
+    "mode": 136,
+    "timed_swaps": 0,
+    "draw_repeats": 128,
+    "setup_repeats": 1024,
+    "samples": 4,
+    "case_mask": 63,
+    "primary_completion": "key-zero",
+    "fallback_used": false,
+    "callback_restored": true,
+    "prt_restored": true,
+    "setup_mos_ticks": 138,
+    "keyboard_packets": 124,
+    "mos_hz_nominal": 120,
+    "prt_hz_nominal": 1000,
+    "failure": "none"
+  },
+  "elapsed_host_seconds": 49.1681659310002,
+  "process_exit": 0,
+  "exit": 0,
+  "input_identities_unchanged": true,
+  "host_after": {
+    "host": "oryx-linuxlite",
+    "architecture": "x86_64",
+    "temperatures_celsius": {
+      "acpitz:thermal_zone0": 57.0,
+      "iwlwifi_1:thermal_zone1": 38.0
+    },
+    "load_average": [
+      1.8955078125,
+      1.4814453125,
+      1.34228515625
+    ],
+    "boost": "0"
+  },
+  "identities_unchanged": true,
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 1401,
+    "cycles": 5872397187,
+    "retired": 4996538199,
+    "uart_rx": 110775,
+    "uart_tx": 7488,
+    "uart_delivered": 7488,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "outputs": {
+    "summary.json": "fbb33abb46d8ef9073b1b176835b40eac5e92c05412cc5f719be661cccfe99f4",
+    "timings.csv": "8ffced13878d2e2e7d70eb10dbdd0664c09ca9a45341d9b0d9472b929c626182",
+    "done.txt": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431"
+  }
+}

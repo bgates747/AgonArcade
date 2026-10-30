@@ -2,7 +2,62 @@
 
 Research cheaper arithmetic, geometry and drawing for both Rally implementations. Apply the research first to the standard-VDP game, where pseudo3D computation runs on eZ80; then to the custom-VDP game using Golem/VDPlets. RALLY-28 owns the entire effort: shared findings, separate application work and independent acceptance evidence for both versions. The Author requests one task with separate code areas and the standard version first. Author's2026-10-14 “go” released the first hot-loop research item: completed review below. No candidate implementation, benchmark, emulator run or publication release is inferred.
 
+## Isolated affine cost investigation — released2026-10-29
+
+The Author requests offline costs of stock affine transforms on the actual Rally
+artwork. [AFF01 scope](RALLY-28/custom-vdp/affine-offline/README.md) preserves
+source routes, original art and observed command usage, extracted-code host
+checks and a standalone stock-VDP completion-fenced fixture. Pi5 host checks and
+all124 target batches pass functional audits; its raw MOS/PRT clocks disagree,
+so no calibrated VDP milliseconds are claimed. The Author subsequently releases
+the **same tests on Oryx**, superseding the temporary shutdown restriction.
+The returned Oryx checks pass all124 full batches/497 replies and640 host
+samples; exact110240-byte application streams and all pixels/checksums match Pi.
+[Oryx results](RALLY-28/custom-vdp/affine-offline/ORYX-RESULTS.md) preserve its
+separate host times and raw clocks: nominal PRT/MOS ratio2.4091versus Pi4.4988,
+so calibrated VDP milliseconds remain unqualified. Both SDL dummy drivers and
+the original95°C/temporary-boost guard were used; boost restored1/max62°C/all
+emulators stopped. Root TODO owns review and unresolved physical timing. No game optimization, hardware or publication release.
+
+## Complete race-view comparison — released2026-10-29
+
+The Author requests replacing the flat-background fixture with the actual racing
+view, then rerunning every preserved native renderer variant from the baseline
+through the latest static-drawing case. [RACE-001 contract](RALLY-28/custom-vdp/full-race/README.md)
+owns the common real-eZ80 presentation,17-case forward/reverse comparison,
+independent state/UART/fence validation and stopped moving visual review.
+
+**Returned:** all34 selected900-frame/3600-tick runs pass independent raw checks.
+Equivalent repeats give14.45baseline,25.73native spans and31.76additive nominal
+MOS FPS; PRT clocks remain separate. The full17-case table and original per-run
+provenance are in [results](RALLY-28/custom-vdp/full-race/RESULTS.md). Word fills
+show no gain beyond observed repeat variation. [Completed scope and limits](../2026-10-29-rally-full-race.md)
+record RACE-001-01–06; rootTODO retains RACE-001-07for Author moving review and
+explicit publication approval. Oryx is free; all owned emulators are stopped.
+
+Production panorama scrolling/repair and HUD caching are common to all cases.
+The old split-clear and static cases become input-identical aliases of the
+span-native and additive cases. Their historical gains are fixture-only and
+must not be promoted as full-race improvements. All prior source/input/results
+remain preserved. The current work stays uncommitted for Author review; no
+hardware or new native optimization is inferred.
+
 ## Incremental renderer improvements — first modification released 2026-10-28
+
+**Author visual acceptance:** the retained-static drawing candidate “looks good.”
+[Acceptance receipt](RALLY-28/custom-vdp/incremental/static-drawing/HUMAN-ACCEPTANCE.json).
+The new work remains uncommitted pending publication approval; benchmark/archive
+bytes are preserved, and no next implementation is released by this feedback.
+
+**INC-001-04 static work returned2026-10-29:** checkpoint `aab566d` pushed;
+two-page static title/sky/lower retention gives35.95→42.77nominal MOS FPS
+(+18.97%), PRT+18.97%, both matched orders about19%. Exact module/physics/
+driver/artwork/runtime/fences retained; UART347→274B/frame. Actual30/31frame
+scene pairs pixel-identical and900frame retained-page proof passes. Full raw
+replies/state/teardown independently audited. New work uncommitted, hardware
+untested; [results](RALLY-28/custom-vdp/incremental/static-drawing/RESULTS.md),
+[stopped Author review](RALLY-28/custom-vdp/incremental/static-drawing/HUMAN-REVIEW.md).
+Bitmap caching, affine investigation and later work remain separately proposed.
 
 **INC-001-04 first part released2026-10-29:** commit/push all dirt, then retain
 static drawing on both pages with exact moving-scene proof and fresh completed-

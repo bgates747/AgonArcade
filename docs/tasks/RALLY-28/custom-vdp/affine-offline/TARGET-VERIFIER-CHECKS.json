@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "passed": true,
+  "purpose": "Synthetic malformed-capture audit checks only; no emulator or timing evidence",
+  "verifier_sha256": "1c034b6e8e58bdda82dde2ebd8b1e38d3987a6100535f6e2fde42c1049a49258",
+  "cases": [
+    {
+      "name": "accept-smoke",
+      "passed": true,
+      "synthetic_input": true
+    },
+    {
+      "name": "resident-setup-byte",
+      "passed": true,
+      "rejected": "Exact application transmit schedule absent/ambiguous"
+    },
+    {
+      "name": "timed-call-byte",
+      "passed": true,
+      "rejected": "Exact application transmit schedule absent/ambiguous"
+    },
+    {
+      "name": "pixel-before-primary",
+      "passed": true,
+      "rejected": "('Exact completion/readback response schedule absent/ambiguous', [])"
+    },
+    {
+      "name": "wrong-marker-index",
+      "passed": true,
+      "rejected": "('Exact completion/readback response schedule absent/ambiguous', [])"
+    },
+    {
+      "name": "wrong-marker-rgb",
+      "passed": true,
+      "rejected": "('Exact completion/readback response schedule absent/ambiguous', [])"
+    },
+    {
+      "name": "wrong-operation-count",
+      "passed": true,
+      "rejected": "('Guest row mismatch', 1, 'operations', 5, 4)"
+    },
+    {
+      "name": "wrong-method",
+      "passed": true,
+      "rejected": "('Guest row mismatch', 1, 'method', 'empty', 'ordinary-sized')"
+    },
+    {
+      "name": "inconsistent-prt-split",
+      "passed": true,
+      "rejected": "('PRT split', 1)"
+    },
+    {
+      "name": "timer-not-restored",
+      "passed": true,
+      "rejected": ""
+    },
+    {
+      "name": "backend-unhandled",
+      "passed": true,
+      "rejected": ""
+    },
+    {
+      "name": "accept-valid-modeinfo",
+      "passed": true,
+      "synthetic_input": true
+    },
+    {
+      "name": "unexpected-mode8-in-batch",
+      "passed": true,
+      "rejected": "('Exact completion/readback response schedule absent/ambiguous', [])"
+    },
+    {
+      "name": "unexpected-dimensions-in-batch",
+      "passed": true,
+      "rejected": "('Exact completion/readback response schedule absent/ambiguous', [])"
+    },
+    {
+      "name": "accept-explicit-pi-runtime",
+      "passed": true,
+      "synthetic_input": true
+    },
+    {
+      "name": "wrong-runtime-build-hash",
+      "passed": true,
+      "rejected": "('Runtime build hash mismatch', 'flexe-vdp.so')"
+    },
+    {
+      "name": "wrong-runtime-file-hash",
+      "passed": true,
+      "rejected": "('Runtime file hash mismatch', 'flexe-vdp.so')"
+    },
+    {
+      "name": "wrong-runtime-elf-architecture",
+      "passed": true,
+      "rejected": "('ELF/runtime architecture mismatch', 'flexe-agon-emulator.bin', 'x86_64')"
+    },
+    {
+      "name": "wrong-runtime-manifest-reference",
+      "passed": true,
+      "rejected": "Profile references a different runtime build manifest"
+    },
+    {
+      "name": "unqualified-runtime-build",
+      "passed": true,
+      "rejected": "Unqualified or modified runtime build"
+    },
+    {
+      "name": "accept-full",
+      "passed": true,
+      "synthetic_input": true
+    },
+    {
+      "name": "accept-smoke-poll",
+      "passed": true,
+      "synthetic_input": true
+    }
+  ]
+}

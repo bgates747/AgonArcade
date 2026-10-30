@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "host_only": true,
+  "inputs": {
+    "displaycontroller.h": {
+      "repository": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl",
+      "commit": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+      "path": "src/displaycontroller.h",
+      "sha256": "603bac727fd1ab61d6f36a8d1a0e533471b849d6c30159b5f95ed4260e9d5c23"
+    },
+    "displaycontroller.cpp": {
+      "repository": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl",
+      "commit": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+      "path": "src/displaycontroller.cpp",
+      "sha256": "f3588a684647ef258c024251d17b029e2877c8363b28a570432376f353232902"
+    },
+    "vga64controller.cpp": {
+      "repository": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl",
+      "commit": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+      "path": "src/dispdrivers/vga64controller.cpp",
+      "sha256": "8a6e3a11daced6d380da7a5cc4f83295bd8ee6bb44d9f821e5bad532976c707b"
+    },
+    "fabutils.cpp": {
+      "repository": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl",
+      "commit": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+      "path": "src/fabutils.cpp",
+      "sha256": "0906c9b846ea60a710f4301c3972d883ce3986600408d35f9ad718c56c8a0aec"
+    },
+    "vdu_buffered.h": {
+      "repository": "/Agon/mystuff/agon-vdplet/build/firmware/upstream.git",
+      "commit": "1056ee38ec1cc68ed327bd32ee47d04b1c30597c",
+      "path": "video/vdu_buffered.h",
+      "sha256": "b9d9d93295ddc5fb05c802071057e32ed9755837f029ce381340072352c262f0"
+    },
+    "dsp_ansi": {
+      "path": "/Agon/mystuff/agon-extender/vdp/managed_components/espressif__esp-dsp/modules/matrix/mul/float/dspm_mult_f32_ansi.c",
+      "sha256": "f11bfbd2f8700fbf709f46f784c43114dd7dd1c9819a4c0ed16e3df5d1178820",
+      "component_commit": "196825deaa4848b2c8e87b6126491cd7fc87e5bf",
+      "component_version": "1.8.0"
+    },
+    "installed_sdk_mat_header": {
+      "path": "/home/smith/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/espressif__esp-dsp/modules/matrix/include/mat.h",
+      "sha256": "4f2314911fc1687d20ea7e11affe36cb7f1e64256a523c7c7cb3d4b875976152"
+    },
+    "installed_sdk_dsp_archive": {
+      "path": "/home/smith/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/lib/libespressif__esp-dsp.a",
+      "sha256": "4a5443537e60ec05c8cdaf72b5cfbf24c87d80ff03ee952a2a40d54bc8bc148b",
+      "source_available": false
+    }
+  },
+  "extracted": {
+    "pixel_templates.inc": {
+      "sha256": "c2eec1fcf61f37e04a6debcf4d6ae7561871024d1c749307b3838aa8f1c0f507",
+      "source": "displaycontroller.h",
+      "description": "Complete unchanged ordinary and transformed RGBA2222 templates",
+      "algorithm_text_unchanged": true
+    },
+    "display_methods.inc": {
+      "sha256": "0dfd0b636cae4df074391fdb1dbcbb258e7360d68b75e79212087d5b028ade69",
+      "source": "displaycontroller.cpp + fabutils.cpp",
+      "description": "Complete unchanged bounds, clipping, dispatch and bitmap pixel lookup",
+      "algorithm_text_unchanged": true
+    },
+    "vga_methods.inc": {
+      "sha256": "dc65a1bfb6742dcb8683c879a3fcdac6f33aecf36624b44714decd1ee2d29503",
+      "source": "vga64controller.cpp",
+      "description": "Unchanged VGA64 setter factory/std::function and ordinary/transformed dispatch",
+      "algorithm_text_unchanged": true
+    },
+    "command40.reference.inc": {
+      "sha256": "209f0d46cda774253d77c8086597d421b8d448b3ca3d6019b351a48b6426ef15",
+      "source": "vdu_buffered.h",
+      "description": "Complete stock buffered0x28 implementation; reference only",
+      "algorithm_text_unchanged": true
+    },
+    "command40_pixels.inc": {
+      "sha256": "a64ff1a727053d8a661923d9d21342d78e5f59df89f9bcd37aa744967c41b4b1",
+      "source": "vdu_buffered.h",
+      "description": "Unchanged command40 pixel kernel; surrounding host allocation is a shim",
+      "algorithm_text_unchanged": true
+    },
+    "command40_bounds.inc": {
+      "sha256": "e2bc7d26f45f0180c99f0058e89e173339318df68b3d0ba470f4a1a1605372f8",
+      "source": "vdu_buffered.h",
+      "description": "Unchanged natural command40 bounds/resize/translation block",
+      "algorithm_text_unchanged": true
+    },
+    "dsp_ansi.inc": {
+      "sha256": "0271c989311c496a5cfd438cd3a32da9029e5db672e379ab460192a40b2437b0",
+      "source": "dsp_ansi",
+      "description": "Unchanged official ANSI multiplication function; not Xtensa optimized assembly",
+      "algorithm_text_unchanged": true
+    }
+  },
+  "support": {
+    "stock.hpp": {
+      "sha256": "f3fc266fbf01374243b102253a3fb678396bf6e6873a6b8065c380cfeaede834",
+      "algorithm_text_unchanged": false
+    },
+    "stock.cpp": {
+      "sha256": "a7c3f958b47fa0d70b74638af19d2fb0baff32d451709896f90d10e345c94af0",
+      "algorithm_text_unchanged": false
+    }
+  },
+  "licenses": {
+    "LICENSE-vdp-gl.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "LICENSE-esp-dsp.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "extraction_script_sha256": "da8c4a33261bcf425b68c73d7f6116fba7d87f64cc895e207e9f7e84cfee2f98",
+  "vdp_pin": "1056ee38ec1cc68ed327bd32ee47d04b1c30597c",
+  "vdp_gl_pin": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+  "qualified_firmware_reference": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+  "correspondence": "Graphics functions copied from qualified source commits; this does not reproduce or byte-match a new firmware binary",
+  "live_command40_function_identical_to_committed": false,
+  "command40_opcode": {
+    "decimal": 40,
+    "hex": "0x28",
+    "natural_options": 5
+  },
+  "cached_raster_source_exact": true,
+  "std_function_pixel_dispatch_preserved": true,
+  "compile": {
+    "language": "C++17",
+    "required_flags": [
+      "-ffp-contract=off"
+    ],
+    "translation_units": [
+      "stock/stock.cpp"
+    ],
+    "preserved_source_warning_policy": [
+      "-Wno-unused-parameter",
+      "-Wno-switch",
+      "-Wno-unused-but-set-variable"
+    ]
+  },
+  "matrix_multiply": "Exact official ANSI C routine compiled for host; firmware uses target-selected DSP implementation",
+  "inverse": "Analytic diagonal host model; old firmware Mat source unavailable locally. No firmware-faithful cold inverse timing claim.",
+  "shims": [
+    "IRAM placement omitted",
+    "No sprites in this fixture; hideSprites is a no-op",
+    "Host vector/framebuffer allocation; no ESP PSRAM, queue or VSync",
+    "VGA64 x^2 byte address macro retained; raw exposed rows are swizzled",
+    "PaintMode Set with sync bits0xc0; source artwork is RGBA2222 alpha0/3",
+    "Command40 surrounding buffer service/bitmap allocation is not emulated",
+    "Transform-to-buffer includes host vector allocation, not target PSRAM allocation",
+    "Natural command40 resize+translate has a different edge footprint from direct affine",
+    "Host make_affine uses exact ANSI operation-times-identity multiplication plus an analytic diagonal inverse model"
+  ],
+  "source_repositories_modified": false,
+  "emulator_launched": false
+}

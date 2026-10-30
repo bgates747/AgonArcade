@@ -14,6 +14,27 @@ or a release of new work. `TODO.md` remains the sole authoritative task list.
 Existing controls, evidence and source files are preserved. No emulator run,
 firmware change, hardware action, commit or push was performed for this writeup.
 
+## Race-view correction —2026-10-29
+
+The Author identifies a real limitation in the static-drawing experiment: the
+flat sky and diagnostic text are fixture features. Its19% measured gain is not
+a full-race gain. [The replacement fixture](../custom-vdp/full-race/README.md)
+executes the actual per-frame panorama, HUD/footer and engine command work with
+native road/traffic/player/sign/finish drawing. Existing production panorama/HUD
+retention is shared by every variant. Corrected static and split-clear rows
+are explicit executable aliases, so repeat variation cannot be credited as a
+new optimization. Faster renderer comparisons must preserve these drawing tasks
+rather than optimize a blank scene. Root TODO owns the released fair rerun.
+
+The completed34-run rerun gives14.45baseline,25.73native spans and31.76additive
+pooled nominal MOS FPS, with separate PRT13.96/24.86/30.68. All17 renderer cases
+share the actual race presentation and identical timed UART streams. Static and
+split-clear are input-identical aliases, so they add no separate full-race gain.
+Word fills differ only+0.35%from accepted additive byte fills against up to7.07%
+identical-input variation; keep byte fills. [Full table and limitations](../custom-vdp/full-race/RESULTS.md).
+These are emulated completed-frame results; moving Author review and hardware
+truth remain open. The built-in affine API audit remains separate.
+
 ## Evidence and comparison limits
 
 1. The Rally control is the accepted Native-format span-bitmap candidate under
@@ -161,6 +182,13 @@ Pooled25.96→26.33nominal MOS FPS (+1.41%), with pairwise0.15–2.69%variation:
 a small preliminary effect, not a stable or substantial gain. The extra12wire
 bytes/frame are included. [Results](../custom-vdp/incremental/RESULTS.md).
 
+**Measured follow-up INC-001-04,2026-10-29:** both-page title/sky/lower retention
+with100–103 sky restoration gives35.95→42.77nominal MOS FPS(+18.97%), PRT+18.97%,
+both matched moving pairs about19%. Same accepted byte-fill/additive module;
+recurring UART347→274B,184B setup before initialmark. Actual30/31scenes match
+on both parities and900frame page-history proof passes. Author moving review
+and hardware timing remain open. [Evidence](../custom-vdp/incremental/static-drawing/RESULTS.md).
+
 ### RCF-006 — Native span filling is a byte loop
 
 The isolated native module's custom `memset` is a byte store/increment/branch
@@ -248,3 +276,40 @@ Source: [current service restrictions](/Agon/mystuff/agon-vdplet/build/firmware/
 These are proposed experiments, not new task releases or measured gains. The
 Author's motion review chooses acceptable approximation tradeoffs; identical
 physics/world checks and complete rendering fences remain comparison evidence.
+
+
+## RCF-009 — Isolated stock affine source/workload and two-host checks
+
+The released [AFF01 investigation](../custom-vdp/affine-offline/README.md)
+executes real Rally artwork through both extracted stock host code and an
+unmodified official-stock-VDP standalone command fixture. The same exact guest,
+artwork, config, firmware, MOS and110240-byte application command stream pass
+124batches/497ordered replies on Pi5 and Oryx;128host method groups/640samples
+per machine have identical pixel/checksums. [Oryx results and limits](../custom-vdp/affine-offline/ORYX-RESULTS.md).
+
+1. Matrix replacement invalidates its retained inverse. The old actor helper
+   rebuilds identical coefficients in3129of4867measured actor calls(64.29%):
+   traffic72.51%, signs16.08%. Position/artwork changes still require drawing.
+   Reusing unchanged matrices is a concrete baseline/standard-path candidate;
+   the accepted additive native actor renderer already avoids these calls.
+   The84483potentially omitted bytes are resident command bytes, not UART bytes.
+2. On Oryx's host CPU, a near traffic car takes38.522µs with cached direct affine,
+   63.386µs to generate a transformed bitmap and ordinarily plot it, or8.663µs
+   to plot an already prepared image. Prepared plotting excludes generation;
+   host inverse setup is an analytic model. No pre-scaled artwork is uploaded.
+   Both hosts support the same relative interpretation, not an ESP32 time claim.
+3. Direct affine clips before sampling; transform-to-bitmap generates its natural
+   full rectangle before the final plot clips it, including a natural extra
+   border. Transparent pixels still cost sampling. The offscreen near sign
+   exposes this difference. The forced player mirror is synthetic;900actual
+   recorded player draws use ordinary identity plotting.
+4. Emulated raw timer ratios are host-sensitive: Pi72880PRT/1944MOS versus
+   Oryx39309PRT/1958MOS. Nominal conversions disagree4.4988×/2.4091×; per-method
+   differences and zero-MOS batches reject a universal rescale. Runtime source
+   proves separately paced eZ80 PRT and native-raster/MOS paths. Exact physical
+   rendering milliseconds still require separately authorized hardware testing.
+
+All Oryx sessions were silent/headless, guarded at the original95°C, reached
+62°C maximum and restored initial boost1. Every emulator is stopped; all81frozen
+inputs/Pi evidence files are unchanged. This is isolated mechanism evidence,
+not a new game FPS result, cache adoption or a general judgment against affine.

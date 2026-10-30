@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "passed": true,
+  "host_only": true,
+  "emulator_launched": false,
+  "remote_contacted": false,
+  "power_action": false,
+  "controller_sha256": "b413d1edb1936a013b12b7ab86f632252ad06317543af0ecac4edbf7e9f0d231",
+  "original_guard_sha256": "f2c51dcc61c422b4bf0bc3f9442e50fdc0f1193a2e5655ea7b0713fefc4637bd",
+  "checks": [
+    {
+      "name": "valid name smoke01",
+      "passed": true,
+      "rejected": false
+    },
+    {
+      "name": "valid name full01",
+      "passed": true,
+      "rejected": false
+    },
+    {
+      "name": "valid name valid-name",
+      "passed": true,
+      "rejected": false
+    },
+    {
+      "name": "reject name '../old'",
+      "passed": true,
+      "rejected": true,
+      "reason": "Use lowercase letters, digits and hyphens"
+    },
+    {
+      "name": "reject name ''",
+      "passed": true,
+      "rejected": true,
+      "reason": "Use lowercase letters, digits and hyphens"
+    },
+    {
+      "name": "reject name 'UPPER'",
+      "passed": true,
+      "rejected": true,
+      "reason": "Use lowercase letters, digits and hyphens"
+    },
+    {
+      "name": "reject name 'a/b'",
+      "passed": true,
+      "rejected": true,
+      "reason": "Use lowercase letters, digits and hyphens"
+    },
+    {
+      "name": "reject name 'a b'",
+      "passed": true,
+      "rejected": true,
+      "reason": "Use lowercase letters, digits and hyphens"
+    },
+    {
+      "name": "accept explicit pinned x86 runtime",
+      "passed": true,
+      "rejected": false
+    },
+    {
+      "name": "reject manifest architecture",
+      "passed": true,
+      "rejected": true,
+      "reason": ""
+    },
+    {
+      "name": "reject manifest source_changes",
+      "passed": true,
+      "rejected": true,
+      "reason": ""
+    },
+    {
+      "name": "reject manifest passed",
+      "passed": true,
+      "rejected": true,
+      "reason": ""
+    },
+    {
+      "name": "reject manifest frontend_commit",
+      "passed": true,
+      "rejected": true,
+      "reason": ""
+    },
+    {
+      "name": "reject manifest core_commit",
+      "passed": true,
+      "rejected": true,
+      "reason": ""
+    },
+    {
+      "name": "reject changed runtime plugin",
+      "passed": true,
+      "rejected": true,
+      "reason": "('Runtime build mismatch', 'flexe-vdp.so')"
+    },
+    {
+      "name": "prelaunch under original 95C threshold",
+      "passed": true,
+      "rejected": false
+    },
+    {
+      "name": "reject original 95C threshold",
+      "passed": true,
+      "rejected": true,
+      "reason": "('Original 95 C prelaunch guard', {'fake': 95.0})"
+    },
+    {
+      "name": "reject boost enabled before child",
+      "passed": true,
+      "rejected": true,
+      "reason": "Use the guarded session action"
+    },
+    {
+      "name": "reject competing emulator without stopping it",
+      "passed": true,
+      "rejected": true,
+      "reason": "('An emulator is already running; no unowned process was stopped', [{'pid': 1234, 'executable': '/tmp/tmpwmm2zxcf/flexe-agon-emulator.bin', 'cwd': '/tmp/tmpwmm2zxcf'}])"
+    }
+  ],
+  "frozen_inputs_unchanged": {
+    "TARGET-BUILD.json": "64f80143955575f16c4191a52fdae91f7872364cd1340aa0bb2d3f95665f9123",
+    "TARGET-FIXTURES.json": "64dfa117bcabc659ce6650f23c75eac5ef741953fc1156e36eec06cbba479c11",
+    "target/fixtures/full/probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+    "target/fixtures/full/config.bin": "acd1307d63838d203cab0450222b29e8d446fd56c56062b4d8d7c23e1e35bf89",
+    "target_control.py": "e982d065880876ea590bc690f232b496ebe1e42a6c210d9a0e3126a7ea1c1d35",
+    "PI-RUNTIME-BUILD.json": "49e77cea8c84eb58b985ba3b4c3407118c85e5c6e70205bcc15d07bf9d153486"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "full": {
+    "directory": "target/fixtures/full",
+    "files": {
+      "artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "config.bin": "acd1307d63838d203cab0450222b29e8d446fd56c56062b4d8d7c23e1e35bf89",
+      "expected.json": "df49a7b3aa1268b018d5997d9b1fe02ad26d686a4bb8d24e284e8346ea7f5e2d",
+      "probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "planned_batches": 124,
+    "diagnostic": true,
+    "foreground_paced": false
+  },
+  "smoke": {
+    "directory": "target/fixtures/smoke",
+    "files": {
+      "artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "config.bin": "4cbcd11f1a0354a56515d0967a896e9d2d2531bc39a12a6a2aa6871426b81e9a",
+      "expected.json": "ac26f9c0268a3a7758902eaea2dc145ef60d9cac30bacaa3000ab555ff7cb799",
+      "probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "planned_batches": 11,
+    "diagnostic": true,
+    "foreground_paced": false
+  },
+  "smoke-poll": {
+    "directory": "target/fixtures/smoke-poll",
+    "files": {
+      "artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "config.bin": "141105222edad10bf695fafe74d33bdb362a6444bb76c4e17fd9f0db9d92d1f3",
+      "expected.json": "41fb0f5a0a41c8cabd08d579346d7bed23e653bd1be07576108afea3560a122f",
+      "probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "planned_batches": 11,
+    "diagnostic": true,
+    "foreground_paced": false
+  }
+}

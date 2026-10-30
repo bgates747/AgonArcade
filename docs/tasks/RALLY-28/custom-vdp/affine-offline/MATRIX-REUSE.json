@@ -1,0 +1,418 @@
+{
+  "schema": 1,
+  "analysis_only": true,
+  "actual_implementation_changed": false,
+  "emulator_run": false,
+  "trace_source": "Frozen full-race affine baseline; two warm renders then900measured renders in original command order",
+  "measured_frames": 900,
+  "warm_renders": 2,
+  "measured_actor_draws": 4867,
+  "per_matrix_state": "One persistent last-written six-coefficient Q8 tuple per matrix_id; unknown initially; retains entries across invisible frames",
+  "overall": {
+    "writes": 4873,
+    "first_or_changed": 1741,
+    "identical": 3132,
+    "identical_percent": 64.27252206033245,
+    "matrix_command_bytes": 131571,
+    "potential_omitted_resident_bytes": 84564
+  },
+  "phase": {
+    "warm": {
+      "writes": 6,
+      "first_or_changed": 3,
+      "identical": 3,
+      "identical_percent": 50.0,
+      "matrix_command_bytes": 162,
+      "potential_omitted_resident_bytes": 81
+    },
+    "measured": {
+      "writes": 4867,
+      "first_or_changed": 1738,
+      "identical": 3129,
+      "identical_percent": 64.29011711526607,
+      "matrix_command_bytes": 131409,
+      "potential_omitted_resident_bytes": 84483
+    }
+  },
+  "measured_by_kind": {
+    "traffic": {
+      "writes": 4158,
+      "first_or_changed": 1143,
+      "identical": 3015,
+      "identical_percent": 72.51082251082252,
+      "matrix_command_bytes": 112266,
+      "potential_omitted_resident_bytes": 81405
+    },
+    "sign": {
+      "writes": 709,
+      "first_or_changed": 595,
+      "identical": 114,
+      "identical_percent": 16.07898448519041,
+      "matrix_command_bytes": 19143,
+      "potential_omitted_resident_bytes": 3078
+    }
+  },
+  "by_matrix_id_including_warm": {
+    "63970": {
+      "writes": 693,
+      "first_or_changed": 189,
+      "identical": 504,
+      "identical_percent": 72.72727272727273,
+      "matrix_command_bytes": 18711,
+      "potential_omitted_resident_bytes": 13608
+    },
+    "63971": {
+      "writes": 693,
+      "first_or_changed": 189,
+      "identical": 504,
+      "identical_percent": 72.72727272727273,
+      "matrix_command_bytes": 18711,
+      "potential_omitted_resident_bytes": 13608
+    },
+    "63972": {
+      "writes": 693,
+      "first_or_changed": 194,
+      "identical": 499,
+      "identical_percent": 72.005772005772,
+      "matrix_command_bytes": 18711,
+      "potential_omitted_resident_bytes": 13473
+    },
+    "63973": {
+      "writes": 695,
+      "first_or_changed": 191,
+      "identical": 504,
+      "identical_percent": 72.5179856115108,
+      "matrix_command_bytes": 18765,
+      "potential_omitted_resident_bytes": 13608
+    },
+    "63974": {
+      "writes": 695,
+      "first_or_changed": 191,
+      "identical": 504,
+      "identical_percent": 72.5179856115108,
+      "matrix_command_bytes": 18765,
+      "potential_omitted_resident_bytes": 13608
+    },
+    "63975": {
+      "writes": 695,
+      "first_or_changed": 192,
+      "identical": 503,
+      "identical_percent": 72.37410071942446,
+      "matrix_command_bytes": 18765,
+      "potential_omitted_resident_bytes": 13581
+    },
+    "63930": {
+      "writes": 709,
+      "first_or_changed": 595,
+      "identical": 114,
+      "identical_percent": 16.07898448519041,
+      "matrix_command_bytes": 19143,
+      "potential_omitted_resident_bytes": 3078
+    }
+  },
+  "measured_identical_with_changed_bitmap": 129,
+  "measured_identical_with_changed_position": 989,
+  "measured_identical_after_invisible_frame_gap": 0,
+  "measured_potential_omitted_resident_bytes_per_frame": 93.87,
+  "current_native_ez80_uart_savings_claim": 0,
+  "current_accepted_additive_actor_matrix_rebuilds": 0,
+  "ownership": {
+    "traffic_matrix_ids": [
+      63970,
+      63971,
+      63972,
+      63973,
+      63974,
+      63975
+    ],
+    "sign_matrix_id": 63930,
+    "sign_matrix_shared": true,
+    "player_mirror_id": 63984,
+    "player_mirror_loaded_once": true,
+    "measured_player_uses_affine": false,
+    "panorama_hud_change_matrix_selector_only": true,
+    "scope": "Pinned isolated baseline fixture only; not a general global-ID reservation proof"
+  },
+  "invalidation_conditions": [
+    "Any identity/replacement/composition/write/clear of one of the seven matrix buffers outside the tracked emission path",
+    "VDP reset/reflash/restart, clear-all-buffers, application/profile reload or uncertain delivery",
+    "Resource rebinding or another consumer reusing an ID; explicitly invalidate before InitRace/recovery/re-admission until buffer state is known",
+    "A read-only bitmap plot, clip/viewport/selector change, or bitmap view change does not by itself alter matrix buffer contents or its inverse block"
+  ],
+  "boundaries": [
+    "Every draw still needs bitmap selection, placement, clipping and rendering; identical matrices do not imply identical pixels or static actors",
+    "The sign ID is shared: compare the last write to that ID across all signs, never only the previous state of each sign object",
+    "Counts include equal-coefficient matrices only; no angle/depth approximation and no table of all possible precomputed matrices",
+    "Omitted27-byte matrix emitters would shorten resident VDP command buffers in the custom native path, not the eZ80-to-VDP UART frame stream",
+    "The accepted additive sampler already avoids traffic/sign stock affine calls; this baseline analysis does not establish another gain for that candidate",
+    "No game patch, target rerun, timing extrapolation orFPS estimate is supplied"
+  ],
+  "official_vdp_commit": "1056ee38ec1cc68ed327bd32ee47d04b1c30597c",
+  "official_vdp_source": {
+    "video/buffers.h": {
+      "sha256": "f04f4da7521192d05725a7f54a52200c0b7cd9ed067335feaf20baf32ec62751",
+      "functions": {
+        "bool checkTransformBuffer(": "17b242725a6056d220ecda97fe3b7cb0476c84b897366983caa1b126e366a787"
+      }
+    },
+    "video/context/graphics.h": {
+      "sha256": "eba700bc2b988af484784c4d90ebc8233a008687f1e5d5b65ab61cc7e6433d2a",
+      "functions": {
+        "void Context::drawBitmap(": "a40fb0840eb8064c22991e1122dd7880bce2ad1e042fb357cd233f1399872d75",
+        "void Context::setAffineTransform(": "0abe24776bb6d765fdcc1885799792090ab45a0d183a92b8e406524e39be36e4"
+      }
+    },
+    "video/vdu_buffered.h": {
+      "sha256": "b9d9d93295ddc5fb05c802071057e32ed9755837f029ce381340072352c262f0",
+      "functions": {
+        "void VDUStreamProcessor::bufferAffineTransform(": "087f96ad5adf4b48346b659c65a41b225f242e601683c89e1ee3f9c82ed12d64",
+        "void VDUStreamProcessor::bufferClear(": "3e4318e53debcfdc9e4d8516898cd758cf38013926459bb9968ea8f0bc67b5d5"
+      }
+    }
+  },
+  "source_sha256": {
+    "docs/tasks/RALLY-28/custom-vdp/affine-offline/matrix_reuse.py": "83d57ec72753e9a4a5b12290e878cee4c56ee464d47873867159e98d9480d2c9",
+    "docs/tasks/RALLY-28/custom-vdp/affine-offline/WORKLOAD.json": "93f47c09a3a0440a7c3f592849494f754fc06641a51d9de15fe573c1e0a83f21",
+    "docs/tasks/RALLY-28/custom-vdp/affine-offline/OBSERVED-DRAWS.jsonl": "fffd50fae0aa2082ab4d34350fb35c86493ba619f828359a1c03afa9ef9d3d1c",
+    "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/baseline/helper/render_core.inc": "2f3eb552538a3e2e8c9a450ae49c319540cc9b774ef925ec02f111d1e8f42f2b",
+    "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/additive/helper/render_core.inc": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+    "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/baseline/native-bindings.json": "543022321154595027a0543271fc2656620c90976b0d0a23a8882db546e43d81",
+    "docs/tasks/RALLY-28/custom-vdp/full-race/guest/main.cpp": "3631d46206e267b46217300b57da65469e2cbfd6c7789f78f5b912bc570a5e66",
+    "docs/tasks/RALLY-28/custom-vdp/full-race/guest/native.hpp": "174b547042e44a2143617e16d102020bf592c456f335374d28f1cbcae1a822d3",
+    "rally-game/src/main.cpp": "0bba6d246b57cb578fdd483d13c4bb695f596c0c92d372e63b14da1a1a8e4a7a",
+    "rally-game/include/signs.hpp": "e090cbfb7fcb326b3bfdb74d7ecfc020737bef86dff225da91e6d63af6a5c3a9",
+    "rally-production/include/traffic.hpp": "ab2d7c85223d9df1029e63d926d434d0dd6fde00bcd58e128e3f17a8f9677c6e",
+    "docs/tasks/RALLY-28/custom-vdp/full-race/fixtures/baseline/artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+    "docs/tasks/RALLY-28/custom-vdp/full-race/fixtures/baseline/presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363"
+  },
+  "example_identical_events": [
+    {
+      "trace_index": 4,
+      "phase": "warm",
+      "frame": 0,
+      "warm_index": 2,
+      "kind": "traffic",
+      "matrix_id": 63975,
+      "matrix_q8": [
+        20,
+        0,
+        0,
+        0,
+        20,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 0,
+      "previous_phase": "warm"
+    },
+    {
+      "trace_index": 5,
+      "phase": "warm",
+      "frame": 0,
+      "warm_index": 2,
+      "kind": "traffic",
+      "matrix_id": 63974,
+      "matrix_q8": [
+        88,
+        0,
+        0,
+        0,
+        88,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 0,
+      "previous_phase": "warm"
+    },
+    {
+      "trace_index": 6,
+      "phase": "warm",
+      "frame": 0,
+      "warm_index": 2,
+      "kind": "traffic",
+      "matrix_id": 63973,
+      "matrix_q8": [
+        250,
+        0,
+        0,
+        0,
+        250,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 0,
+      "previous_phase": "warm"
+    },
+    {
+      "trace_index": 15,
+      "phase": "measured",
+      "frame": 2,
+      "warm_index": 0,
+      "kind": "traffic",
+      "matrix_id": 63970,
+      "matrix_q8": [
+        -14,
+        0,
+        1414,
+        0,
+        14,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 1,
+      "previous_phase": "measured"
+    },
+    {
+      "trace_index": 16,
+      "phase": "measured",
+      "frame": 2,
+      "warm_index": 0,
+      "kind": "traffic",
+      "matrix_id": 63971,
+      "matrix_q8": [
+        18,
+        0,
+        0,
+        0,
+        18,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 1,
+      "previous_phase": "measured"
+    },
+    {
+      "trace_index": 17,
+      "phase": "measured",
+      "frame": 2,
+      "warm_index": 0,
+      "kind": "traffic",
+      "matrix_id": 63975,
+      "matrix_q8": [
+        18,
+        0,
+        0,
+        0,
+        18,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 1,
+      "previous_phase": "measured"
+    },
+    {
+      "trace_index": 18,
+      "phase": "measured",
+      "frame": 2,
+      "warm_index": 0,
+      "kind": "traffic",
+      "matrix_id": 63972,
+      "matrix_q8": [
+        -22,
+        0,
+        2222,
+        0,
+        22,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 1,
+      "previous_phase": "measured"
+    },
+    {
+      "trace_index": 19,
+      "phase": "measured",
+      "frame": 2,
+      "warm_index": 0,
+      "kind": "traffic",
+      "matrix_id": 63974,
+      "matrix_q8": [
+        -26,
+        0,
+        2626,
+        0,
+        26,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 1,
+      "previous_phase": "measured"
+    },
+    {
+      "trace_index": 20,
+      "phase": "measured",
+      "frame": 2,
+      "warm_index": 0,
+      "kind": "traffic",
+      "matrix_id": 63973,
+      "matrix_q8": [
+        40,
+        0,
+        0,
+        0,
+        40,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 1,
+      "previous_phase": "measured"
+    },
+    {
+      "trace_index": 22,
+      "phase": "measured",
+      "frame": 3,
+      "warm_index": 0,
+      "kind": "traffic",
+      "matrix_id": 63970,
+      "matrix_q8": [
+        -14,
+        0,
+        1414,
+        0,
+        14,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 2,
+      "previous_phase": "measured"
+    },
+    {
+      "trace_index": 23,
+      "phase": "measured",
+      "frame": 3,
+      "warm_index": 0,
+      "kind": "traffic",
+      "matrix_id": 63971,
+      "matrix_q8": [
+        18,
+        0,
+        0,
+        0,
+        18,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 2,
+      "previous_phase": "measured"
+    },
+    {
+      "trace_index": 24,
+      "phase": "measured",
+      "frame": 3,
+      "warm_index": 0,
+      "kind": "traffic",
+      "matrix_id": 63975,
+      "matrix_q8": [
+        18,
+        0,
+        0,
+        0,
+        18,
+        0
+      ],
+      "identical": true,
+      "previous_frame": 2,
+      "previous_phase": "measured"
+    }
+  ]
+}

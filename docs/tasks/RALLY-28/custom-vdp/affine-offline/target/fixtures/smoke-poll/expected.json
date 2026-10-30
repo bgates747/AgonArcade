@@ -1,0 +1,382 @@
+{
+  "schema": 1,
+  "standalone_stock_commands": true,
+  "mode": 136,
+  "double_buffered": true,
+  "timed_swaps": 0,
+  "timed_drawing_on_hidden_page": true,
+  "source_workload_sha256": "93f47c09a3a0440a7c3f592849494f754fc06641a51d9de15fe573c1e0a83f21",
+  "guest_sha256": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+  "draw_repeats": 4,
+  "samples": 1,
+  "setup_repeats": 16,
+  "case_mask": 33,
+  "planned_batches": 11,
+  "primary_completion": "general-poll",
+  "config_contract": "16B little endian <4sHHHHHBB: R28A,schema1,draw repeats,samples,setup repeats,case mask,poll selector,reserved0",
+  "timed_batch_uart_bytes": 6,
+  "buffered_repeat_call_bytes": 6,
+  "method_names": [
+    "ordinary-sized",
+    "cached-affine",
+    "rebuilt-affine",
+    "transform40-plot",
+    "matrix-only",
+    "empty"
+  ],
+  "affine_feature_enable": [
+    23,
+    0,
+    248,
+    1,
+    0,
+    1,
+    0
+  ],
+  "matrix_only_repeat_body_has_no_drawing_or_inverse_generation": true,
+  "constant_batch_tail": "One marker pixel plus flush/completion after every batch, including empty and matrix-only; no timed swap",
+  "command40_options": 5,
+  "command40_dimensions": "Natural resize+autoTranslate: max-min+1; differs from direct transformed exclusive edge loops",
+  "ordinary_sized_control": "Stock command40 output prepared once before timing; no pre-scaled files or timed pixel uploads",
+  "warm_operation_before_each_batch": true,
+  "warm_completion_excluded": true,
+  "source_artwork": [
+    {
+      "bitmap_id": 0,
+      "buffer": 64000,
+      "bytes": 7854,
+      "source_path": "assets/bitmap-000.rgba2222",
+      "source_sha256": "19c14fa3fed9268c7dd49b5996a8db2e4444105eec52792e42641ec9b67c7809"
+    },
+    {
+      "bitmap_id": 5,
+      "buffer": 64005,
+      "bytes": 7854,
+      "source_path": "assets/bitmap-005.rgba2222",
+      "source_sha256": "1d5cc0777252529df61b960e64af9090ae4c1863cdfb1c26e87f307e7d7bf6cf"
+    },
+    {
+      "bitmap_id": 15,
+      "buffer": 64015,
+      "bytes": 7854,
+      "source_path": "assets/bitmap-015.rgba2222",
+      "source_sha256": "093d9fcadf503370803696a1cd469456bb030f6386b5cc81cd8ad19b01363a73"
+    },
+    {
+      "bitmap_id": 30,
+      "buffer": 64030,
+      "bytes": 7854,
+      "source_path": "assets/bitmap-030.rgba2222",
+      "source_sha256": "f9f5e89bfd85eeaabf64eaef42be3f3805ca7607b4eda30752b760fee24f1c08"
+    },
+    {
+      "bitmap_id": 120,
+      "buffer": 64120,
+      "bytes": 4096,
+      "source_path": "assets/bitmap-120.rgba2222",
+      "source_sha256": "13373ef7eea3d3c80874bcf1f045abf56fabaef341c2966f1f0cef051e32e7b5"
+    },
+    {
+      "bitmap_id": 123,
+      "buffer": 64123,
+      "bytes": 4096,
+      "source_path": "assets/bitmap-123.rgba2222",
+      "source_sha256": "831c7996e477cdf05ac532e8705c29ddd3bd2fa4e92a161ef70c0a81a2f4cf4d"
+    }
+  ],
+  "target_cases": [
+    {
+      "phase": "measured",
+      "frame": 1,
+      "kind": "traffic",
+      "bitmap_id": 5,
+      "matrix_id": 63970,
+      "matrix_q8": [
+        -14,
+        0,
+        1414,
+        0,
+        14,
+        0
+      ],
+      "x": 153,
+      "y": 100,
+      "clip": [
+        0,
+        24,
+        319,
+        223
+      ],
+      "source_width": 102,
+      "source_height": 77,
+      "affine_enabled": true,
+      "scale_q8": 14,
+      "mirrored": true,
+      "name": "traffic-far",
+      "provenance": "observed",
+      "observed_frame": 1,
+      "actual_bitmap_key": 64005,
+      "natural_command40_bounds": [
+        0,
+        0,
+        5,
+        4
+      ],
+      "natural_command40_size": [
+        6,
+        5
+      ],
+      "natural_command40_plot": [
+        153,
+        100
+      ]
+    },
+    {
+      "phase": "measured",
+      "frame": 105,
+      "kind": "traffic",
+      "bitmap_id": 15,
+      "matrix_id": 63972,
+      "matrix_q8": [
+        76,
+        0,
+        0,
+        0,
+        76,
+        0
+      ],
+      "x": 172,
+      "y": 114,
+      "clip": [
+        0,
+        24,
+        319,
+        223
+      ],
+      "source_width": 102,
+      "source_height": 77,
+      "affine_enabled": true,
+      "scale_q8": 76,
+      "mirrored": false,
+      "name": "traffic-middle",
+      "provenance": "observed",
+      "observed_frame": 105,
+      "actual_bitmap_key": 64015,
+      "natural_command40_bounds": [
+        0,
+        0,
+        30,
+        22
+      ],
+      "natural_command40_size": [
+        31,
+        23
+      ],
+      "natural_command40_plot": [
+        172,
+        114
+      ]
+    },
+    {
+      "phase": "measured",
+      "frame": 135,
+      "kind": "traffic",
+      "bitmap_id": 30,
+      "matrix_id": 63975,
+      "matrix_q8": [
+        246,
+        0,
+        0,
+        0,
+        246,
+        0
+      ],
+      "x": 199,
+      "y": 152,
+      "clip": [
+        0,
+        88,
+        319,
+        223
+      ],
+      "source_width": 102,
+      "source_height": 77,
+      "affine_enabled": true,
+      "scale_q8": 246,
+      "mirrored": false,
+      "name": "traffic-near",
+      "provenance": "observed",
+      "observed_frame": 135,
+      "actual_bitmap_key": 64030,
+      "natural_command40_bounds": [
+        0,
+        0,
+        98,
+        73
+      ],
+      "natural_command40_size": [
+        99,
+        74
+      ],
+      "natural_command40_plot": [
+        199,
+        152
+      ]
+    },
+    {
+      "phase": "measured",
+      "frame": 3,
+      "kind": "sign",
+      "bitmap_id": 120,
+      "matrix_id": 63930,
+      "matrix_q8": [
+        32,
+        0,
+        0,
+        0,
+        32,
+        0
+      ],
+      "x": 198,
+      "y": 104,
+      "clip": [
+        0,
+        104,
+        319,
+        223
+      ],
+      "source_width": 64,
+      "source_height": 64,
+      "affine_enabled": true,
+      "scale_q8": 32,
+      "mirrored": false,
+      "name": "sign-far",
+      "provenance": "observed",
+      "observed_frame": 3,
+      "actual_bitmap_key": 64120,
+      "natural_command40_bounds": [
+        0,
+        0,
+        8,
+        8
+      ],
+      "natural_command40_size": [
+        9,
+        9
+      ],
+      "natural_command40_plot": [
+        198,
+        104
+      ]
+    },
+    {
+      "phase": "measured",
+      "frame": 423,
+      "kind": "sign",
+      "bitmap_id": 123,
+      "matrix_id": 63930,
+      "matrix_q8": [
+        136,
+        0,
+        0,
+        0,
+        136,
+        0
+      ],
+      "x": -23,
+      "y": 130,
+      "clip": [
+        0,
+        104,
+        319,
+        223
+      ],
+      "source_width": 64,
+      "source_height": 64,
+      "affine_enabled": true,
+      "scale_q8": 136,
+      "mirrored": false,
+      "name": "sign-near",
+      "provenance": "observed",
+      "observed_frame": 423,
+      "actual_bitmap_key": 64123,
+      "natural_command40_bounds": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "natural_command40_size": [
+        35,
+        35
+      ],
+      "natural_command40_plot": [
+        -23,
+        130
+      ]
+    },
+    {
+      "phase": "measured",
+      "frame": null,
+      "kind": "player",
+      "bitmap_id": 0,
+      "matrix_id": 63984,
+      "matrix_q8": [
+        -256,
+        0,
+        25856,
+        0,
+        256,
+        0
+      ],
+      "x": 110,
+      "y": 154,
+      "clip": [
+        0,
+        24,
+        319,
+        223
+      ],
+      "source_width": 102,
+      "source_height": 77,
+      "affine_enabled": true,
+      "scale_q8": 256,
+      "mirrored": true,
+      "name": "player-fixed-mirror",
+      "provenance": "synthetic-coverage",
+      "observed_frame": null,
+      "reason": "Exercise full-size player reflection irrespective of replay yaw",
+      "actual_bitmap_key": 64000,
+      "natural_command40_bounds": [
+        -1,
+        0,
+        101,
+        77
+      ],
+      "natural_command40_size": [
+        103,
+        78
+      ],
+      "natural_command40_plot": [
+        109,
+        154
+      ]
+    }
+  ],
+  "completion": "Stored flush+key0 callback or explicit GP control; verify final marker only after primary completion",
+  "completion_limit": "Ordered raster completion in synchronous mode136; no swap, physical scanout or host-window presentation claim",
+  "output_files": [
+    "summary.json",
+    "timings.csv",
+    "done.txt"
+  ],
+  "mos_clock_hz_nominal": 120,
+  "prt_clock_hz_nominal": 1000,
+  "mos_required_version": "3.0.2 official; saved keyboard vector at sysvars+0x6c",
+  "files": {
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+    "artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+    "config.bin": "141105222edad10bf695fafe74d33bdb362a6444bb76c4e17fd9f0db9d92d1f3"
+  }
+}

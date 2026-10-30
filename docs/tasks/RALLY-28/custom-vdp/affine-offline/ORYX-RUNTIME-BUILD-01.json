@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+  "core_commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+  "architecture": "x86_64",
+  "host": "oryx-linuxlite",
+  "source_changes": false,
+  "archives": {
+    "frontend": {
+      "filename": "frontend-a35b17d7dddb83d127ef4bb75f33a5808d9d8515.tar",
+      "commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+      "sha256": "eff797d9665f8be348b8ef2a1726505adcfb1a079df60c31ad5128292d3eff76"
+    },
+    "core": {
+      "filename": "core-fbda8e905ccff36a090e4e33b0ffc2337dd79c52.tar",
+      "commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+      "sha256": "c053dc1dbb35621cf16ad7208efc02800f264f8e30eab2ec921e4a0a86711026"
+    }
+  },
+  "preparation_sha256": "c53caf6b7e715f010448503663bcd602eeac93e494636bbcf934da477e046443",
+  "attempt": "01",
+  "warning_policy": "Only stringop-truncation remains a warning; no source change",
+  "tools": {
+    "cc": {
+      "path": "/usr/bin/cc",
+      "version": "cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0"
+    },
+    "cargo": {
+      "path": "/home/smith/.cargo/bin/cargo",
+      "version": "cargo 1.97.1 (c980f4866 2026-06-30)"
+    },
+    "rustc": {
+      "path": "/home/smith/.cargo/bin/rustc",
+      "version": "rustc 1.97.1 (8bab26f4f 2026-07-14)"
+    },
+    "cmake": {
+      "path": "/usr/bin/cmake",
+      "version": "cmake version 4.2.3"
+    }
+  },
+  "python_version": "3.14.4",
+  "offline_policy": {
+    "cargo_flags": [
+      "--offline",
+      "--locked"
+    ],
+    "CARGO_NET_OFFLINE": "true"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/cmake",
+        "-S",
+        "build/flexe-source",
+        "-B",
+        "build/flexe-core",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_POSITION_INDEPENDENT_CODE=ON",
+        "-DFLEXE_LTO=OFF",
+        "-DCMAKE_C_FLAGS=-Wno-error=stringop-truncation",
+        "-DCMAKE_C_COMPILER=/usr/bin/cc"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cmake",
+        "--build",
+        "build/flexe-core",
+        "--target",
+        "xtensa-emu-lib",
+        "--parallel",
+        "2"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c17",
+        "-O2",
+        "-fPIC",
+        "-shared",
+        "-Wall",
+        "-Wextra",
+        "-Ibuild/flexe-source/src",
+        "adapter/flexe_vdp.c",
+        "adapter/ulp.c",
+        "adapter/ps2.c",
+        "build/flexe-core/libxtensa-emu-lib.a",
+        "-o",
+        "build/flexe-vdp.so",
+        "-lssl",
+        "-lcrypto",
+        "-lz",
+        "-lm",
+        "-lpthread"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Iadapter",
+        "-Ibuild/flexe-source/src",
+        "tests/ulp_ps2.c",
+        "adapter/ulp.c",
+        "adapter/ps2.c",
+        "build/flexe-core/libxtensa-emu-lib.a",
+        "-o",
+        "build/ulp-ps2-tests",
+        "-lssl",
+        "-lcrypto",
+        "-lz",
+        "-lm",
+        "-lpthread"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "build/ulp-ps2-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Ibuild/flexe-source/src",
+        "tests/i2s_eof.c",
+        "build/flexe-core/libxtensa-emu-lib.a",
+        "-o",
+        "build/i2s-eof-tests",
+        "-lssl",
+        "-lcrypto",
+        "-lz",
+        "-lm",
+        "-lpthread"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "build/i2s-eof-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Iadapter",
+        "tests/clock.c",
+        "-o",
+        "build/clock-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "build/clock-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/home/smith/.cargo/bin/rustc",
+        "--edition",
+        "2021",
+        "--test",
+        "agon-ez80-emulator/src/uart.rs",
+        "-o",
+        "build/uart-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "build/uart-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/home/smith/.cargo/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--release",
+        "--jobs",
+        "2",
+        "-p",
+        "flexe-agon-emulator"
+      ],
+      "returncode": 0
+    }
+  ],
+  "emulator_launched": false,
+  "network_used": false,
+  "source_tree": "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/.work/oryx-flexe-source",
+  "output_directory": "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/.work/oryx-flexe-source/build",
+  "passed": true,
+  "source_hashes_unchanged": true,
+  "files": {
+    "flexe-agon-emulator": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+    "flexe-vdp.so": "faed8f1c612bf93219b49359337f65457165532465f2ab8006b25059151ff60b"
+  },
+  "elapsed_host_seconds": 56.51258707600027,
+  "build_log": ".work/oryx-runtime-build-01.log",
+  "build_log_sha256": "dea22c5c3b37a5a9d98e47b34a87300b900bcbf94cf010abdbd3cd4431ed685e"
+}

@@ -1,0 +1,829 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "Independent read-only Oryx HOST-oryx01 arithmetic, source/hash and saved machine-code audit",
+  "inputs": {
+    "HOST-oryx01.json": "7892a8e8b6cd9b27de785d858601162ab5bb810f92b61ede65b0850a63b3af8c",
+    "HOST-oryx01.csv": "57dc2d1d81f9d0df1a22bd61f7a5feed24ea463f80ebc1ec51b3cc2ebcce3b38",
+    "HOST-oryx01-checks.csv": "f01078aa12c725b7288dcf175af895f92598a69cc613e80f8f2236f229c93e09",
+    "HOST-oryx01-build.log": "0fa77e10cd17117d34db322b38bb2f8a7d265dc5938857d464e38d8956a7c414",
+    "HOST-oryx01-assembly.txt": "93bfaf0a2e1d4e40eb2c48d42ea819415d1b6bc8fe34cf1d6e3ced8770cb955f",
+    "HOST-CASES.json": "9645812121a63302dfdd5b8a75962b2ce1a9ab0e31a7f1d7d8f8efa7abe181a7",
+    "SOURCE-MANIFEST.json": "5ce9e0471f1af86ede067443d86709c131eb447201d010ccd61346e2e0f7ea36",
+    "HOST-AUDIT.json": "f80001b8893f33ef945c4caad042d53075c12a954efd5a94413fd5f1716d25a8",
+    "ORYX-FROZEN-INPUTS.json": "7f861de9054b45c5ccd8ab7df9f27db963a9f598fda8689757cd551f59e1e80e",
+    "ORYX-HOST-oryxhost01.json": "e88d366b3e9b8b2e59195e38c5336836eabb55a67c63de46895b62e9e0121c0a",
+    "ORYX-HOST-oryxhost01.txt": "d79dbc27511befff5bf37d520306382a1d7ec944108767f8ff1fe912f43827de",
+    "SESSION-oryxhost01.json": "23ee63da9086fdc9776ef0b68ef110e48ca871e1601fc5657cddbe0ffefcbc2d"
+  },
+  "checks": {
+    "source_pins": {
+      "passed": true,
+      "all81_frozen_inputs_unchanged": true,
+      "all12_host_source_pins_match_pi_and_current_files": true,
+      "case_manifest_matches_pi": true,
+      "unchanged_source_correspondence_audit": "HOST-AUDIT.json"
+    },
+    "arithmetic": {
+      "passed": true,
+      "raw_rows": 640,
+      "cases": 16,
+      "operations": 8,
+      "trials": 5,
+      "summary_rows_recomputed": 128,
+      "raw_order_and_duration_arithmetic_exact": true,
+      "all_group_checksums_stable": true,
+      "all_cached_rebuilt_and_prepared_rebuilt_group_checksums_equal": true,
+      "pixel_checks_byte_identical_to_pi": true,
+      "natural_buffer_vs_direct_differences": {
+        "traffic-clipped-right": 11,
+        "traffic-clipped-bottom": 15,
+        "synthetic-all-opaque": 53
+      },
+      "empty_control_cpu_ms_range": [
+        8.370705,
+        9.090508
+      ],
+      "nonempty_cpu_ms_range": [
+        37.319254,
+        83.900215
+      ],
+      "empty_control_iteration_cap": 16777216,
+      "sample_range_pct_by_group": [
+        {
+          "case": "traffic-far",
+          "operation": "empty",
+          "sample_range_over_median_pct": 0.5158930926097629
+        },
+        {
+          "case": "traffic-far",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 0.3469772651505193
+        },
+        {
+          "case": "traffic-far",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 0.7290522702904323
+        },
+        {
+          "case": "traffic-far",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 0.06841599047311464
+        },
+        {
+          "case": "traffic-far",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 0.1675804695791605
+        },
+        {
+          "case": "traffic-far",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 0.5292189120955659
+        },
+        {
+          "case": "traffic-far",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 0.7214108411741471
+        },
+        {
+          "case": "traffic-far",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 5.028203645569988
+        },
+        {
+          "case": "traffic-middle",
+          "operation": "empty",
+          "sample_range_over_median_pct": 5.212507832523543
+        },
+        {
+          "case": "traffic-middle",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 3.4292122541875694
+        },
+        {
+          "case": "traffic-middle",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 3.2211991324384828
+        },
+        {
+          "case": "traffic-middle",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 2.618937277836566
+        },
+        {
+          "case": "traffic-middle",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 1.290680994968256
+        },
+        {
+          "case": "traffic-middle",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 1.1701769181610984
+        },
+        {
+          "case": "traffic-middle",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 2.0644496081868398
+        },
+        {
+          "case": "traffic-middle",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 1.8785693728837212
+        },
+        {
+          "case": "traffic-near",
+          "operation": "empty",
+          "sample_range_over_median_pct": 6.560536448931206
+        },
+        {
+          "case": "traffic-near",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 2.7909564083112364
+        },
+        {
+          "case": "traffic-near",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 2.8756426215659694
+        },
+        {
+          "case": "traffic-near",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 1.766450540366997
+        },
+        {
+          "case": "traffic-near",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 3.3404463189729983
+        },
+        {
+          "case": "traffic-near",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 2.5526597931221007
+        },
+        {
+          "case": "traffic-near",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 1.8853086694486976
+        },
+        {
+          "case": "traffic-near",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 2.3608644736289253
+        },
+        {
+          "case": "sign-far",
+          "operation": "empty",
+          "sample_range_over_median_pct": 1.33833776365668
+        },
+        {
+          "case": "sign-far",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 0.7733280512220264
+        },
+        {
+          "case": "sign-far",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 2.364821304893755
+        },
+        {
+          "case": "sign-far",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 2.561859699167055
+        },
+        {
+          "case": "sign-far",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 2.463839920681214
+        },
+        {
+          "case": "sign-far",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 3.6522284086187566
+        },
+        {
+          "case": "sign-far",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 2.606880244893274
+        },
+        {
+          "case": "sign-far",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 2.303479757199651
+        },
+        {
+          "case": "sign-middle",
+          "operation": "empty",
+          "sample_range_over_median_pct": 4.136683186798628
+        },
+        {
+          "case": "sign-middle",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 6.404378234240503
+        },
+        {
+          "case": "sign-middle",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 4.603438830426284
+        },
+        {
+          "case": "sign-middle",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 3.7900534039882237
+        },
+        {
+          "case": "sign-middle",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 3.996708019780737
+        },
+        {
+          "case": "sign-middle",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 2.1577904992409267
+        },
+        {
+          "case": "sign-middle",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 6.414224118802754
+        },
+        {
+          "case": "sign-middle",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 3.1996834382660917
+        },
+        {
+          "case": "sign-near",
+          "operation": "empty",
+          "sample_range_over_median_pct": 2.9785390243123504
+        },
+        {
+          "case": "sign-near",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 0.9667718874687783
+        },
+        {
+          "case": "sign-near",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 1.6624202745274856
+        },
+        {
+          "case": "sign-near",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 0.736986808402859
+        },
+        {
+          "case": "sign-near",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 1.088853056193843
+        },
+        {
+          "case": "sign-near",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 14.342732587834083
+        },
+        {
+          "case": "sign-near",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 11.89822579563922
+        },
+        {
+          "case": "sign-near",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 1.8579781541185094
+        },
+        {
+          "case": "player-fixed",
+          "operation": "empty",
+          "sample_range_over_median_pct": 7.706577023920515
+        },
+        {
+          "case": "player-fixed",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 4.5400432986383015
+        },
+        {
+          "case": "player-fixed",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 5.206119700859242
+        },
+        {
+          "case": "player-fixed",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 4.648778916898273
+        },
+        {
+          "case": "player-fixed",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 5.049648462470876
+        },
+        {
+          "case": "player-fixed",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 5.663102273421035
+        },
+        {
+          "case": "player-fixed",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 4.770597585149502
+        },
+        {
+          "case": "player-fixed",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 6.149692921147666
+        },
+        {
+          "case": "player-fixed-mirror",
+          "operation": "empty",
+          "sample_range_over_median_pct": 2.2712166172106896
+        },
+        {
+          "case": "player-fixed-mirror",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 0.9386163894277006
+        },
+        {
+          "case": "player-fixed-mirror",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 7.45643260525737
+        },
+        {
+          "case": "player-fixed-mirror",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 2.374041834137363
+        },
+        {
+          "case": "player-fixed-mirror",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 1.44796204491789
+        },
+        {
+          "case": "player-fixed-mirror",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 1.3791390797772198
+        },
+        {
+          "case": "player-fixed-mirror",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 3.4993247048236524
+        },
+        {
+          "case": "player-fixed-mirror",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 3.0307365489046028
+        },
+        {
+          "case": "traffic-fullsize",
+          "operation": "empty",
+          "sample_range_over_median_pct": 2.1680546794528706
+        },
+        {
+          "case": "traffic-fullsize",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 0.8357161096538005
+        },
+        {
+          "case": "traffic-fullsize",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 1.1642966710040958
+        },
+        {
+          "case": "traffic-fullsize",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 0.4924432836995734
+        },
+        {
+          "case": "traffic-fullsize",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 0.3206751024891451
+        },
+        {
+          "case": "traffic-fullsize",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 3.0673474190179144
+        },
+        {
+          "case": "traffic-fullsize",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 2.7536039189218644
+        },
+        {
+          "case": "traffic-fullsize",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 2.175463821402442
+        },
+        {
+          "case": "sign-fullsize",
+          "operation": "empty",
+          "sample_range_over_median_pct": 1.3932938603424332
+        },
+        {
+          "case": "sign-fullsize",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 0.5215670377443283
+        },
+        {
+          "case": "sign-fullsize",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 0.6932333562367112
+        },
+        {
+          "case": "sign-fullsize",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 1.4536365042051869
+        },
+        {
+          "case": "sign-fullsize",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 0.1911069711247531
+        },
+        {
+          "case": "sign-fullsize",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 0.6132574183003547
+        },
+        {
+          "case": "sign-fullsize",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 1.1805506791589457
+        },
+        {
+          "case": "sign-fullsize",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 2.0089501229952886
+        },
+        {
+          "case": "traffic-clipped-left",
+          "operation": "empty",
+          "sample_range_over_median_pct": 6.085229432473784
+        },
+        {
+          "case": "traffic-clipped-left",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 0.4072630443030638
+        },
+        {
+          "case": "traffic-clipped-left",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 1.2009718987354345
+        },
+        {
+          "case": "traffic-clipped-left",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 0.7453607411300746
+        },
+        {
+          "case": "traffic-clipped-left",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 0.6916386565584667
+        },
+        {
+          "case": "traffic-clipped-left",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 0.9159783671106256
+        },
+        {
+          "case": "traffic-clipped-left",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 0.9780080228361172
+        },
+        {
+          "case": "traffic-clipped-left",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 1.619152925566589
+        },
+        {
+          "case": "traffic-clipped-right",
+          "operation": "empty",
+          "sample_range_over_median_pct": 0.5278716638250908
+        },
+        {
+          "case": "traffic-clipped-right",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 3.1201190732922433
+        },
+        {
+          "case": "traffic-clipped-right",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 2.379380570521592
+        },
+        {
+          "case": "traffic-clipped-right",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 0.4003838719464547
+        },
+        {
+          "case": "traffic-clipped-right",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 1.5252227428148204
+        },
+        {
+          "case": "traffic-clipped-right",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 2.128898098370298
+        },
+        {
+          "case": "traffic-clipped-right",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 3.4703524775052847
+        },
+        {
+          "case": "traffic-clipped-right",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 1.4061347326908702
+        },
+        {
+          "case": "traffic-clipped-top",
+          "operation": "empty",
+          "sample_range_over_median_pct": 2.149266901447303
+        },
+        {
+          "case": "traffic-clipped-top",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 4.581536766343418
+        },
+        {
+          "case": "traffic-clipped-top",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 0.7451214520014636
+        },
+        {
+          "case": "traffic-clipped-top",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 2.745463708338945
+        },
+        {
+          "case": "traffic-clipped-top",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 3.275121420576746
+        },
+        {
+          "case": "traffic-clipped-top",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 0.5603696832988039
+        },
+        {
+          "case": "traffic-clipped-top",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 3.7771975174025014
+        },
+        {
+          "case": "traffic-clipped-top",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 3.3449423885754634
+        },
+        {
+          "case": "traffic-clipped-bottom",
+          "operation": "empty",
+          "sample_range_over_median_pct": 2.708444927686857
+        },
+        {
+          "case": "traffic-clipped-bottom",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 1.1734293941805967
+        },
+        {
+          "case": "traffic-clipped-bottom",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 1.4050754940674266
+        },
+        {
+          "case": "traffic-clipped-bottom",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 1.8557295532040916
+        },
+        {
+          "case": "traffic-clipped-bottom",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 2.089839905432651
+        },
+        {
+          "case": "traffic-clipped-bottom",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 1.5324745140714495
+        },
+        {
+          "case": "traffic-clipped-bottom",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 4.255758095594473
+        },
+        {
+          "case": "traffic-clipped-bottom",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 3.399354337173646
+        },
+        {
+          "case": "synthetic-all-opaque",
+          "operation": "empty",
+          "sample_range_over_median_pct": 2.0147620178349293
+        },
+        {
+          "case": "synthetic-all-opaque",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 0.6849673449407295
+        },
+        {
+          "case": "synthetic-all-opaque",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 0.3235457937765705
+        },
+        {
+          "case": "synthetic-all-opaque",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 0.2609103220144565
+        },
+        {
+          "case": "synthetic-all-opaque",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 0.1319986423340602
+        },
+        {
+          "case": "synthetic-all-opaque",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 0.19322497304339506
+        },
+        {
+          "case": "synthetic-all-opaque",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 0.5102038755066876
+        },
+        {
+          "case": "synthetic-all-opaque",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 1.004579186923195
+        },
+        {
+          "case": "synthetic-all-transparent",
+          "operation": "empty",
+          "sample_range_over_median_pct": 0.5136504502922418
+        },
+        {
+          "case": "synthetic-all-transparent",
+          "operation": "matrix_setup_host_model",
+          "sample_range_over_median_pct": 1.424982782216985
+        },
+        {
+          "case": "synthetic-all-transparent",
+          "operation": "cached_affine",
+          "sample_range_over_median_pct": 8.485499291992047
+        },
+        {
+          "case": "synthetic-all-transparent",
+          "operation": "rebuilt_affine_host_model",
+          "sample_range_over_median_pct": 5.003730588122398
+        },
+        {
+          "case": "synthetic-all-transparent",
+          "operation": "transform_bitmap_kernel",
+          "sample_range_over_median_pct": 1.7613444077215565
+        },
+        {
+          "case": "synthetic-all-transparent",
+          "operation": "transform_then_plot",
+          "sample_range_over_median_pct": 0.48618407852964945
+        },
+        {
+          "case": "synthetic-all-transparent",
+          "operation": "ordinary_pretransformed",
+          "sample_range_over_median_pct": 4.096110358506707
+        },
+        {
+          "case": "synthetic-all-transparent",
+          "operation": "ordinary_original_size",
+          "sample_range_over_median_pct": 14.177374841051101
+        }
+      ]
+    },
+    "sanitizers": {
+      "passed_report_and_guarded_exit": true,
+      "stdout_completed_case_sequences": 2,
+      "cases_per_sequence": 16,
+      "no_sanitizer_error_in_supplied_stdout": true,
+      "separate_sanitizer_csv_fetched": false
+    },
+    "compiler": {
+      "passed": true,
+      "saved_assembly_sha256": "93bfaf0a2e1d4e40eb2c48d42ea819415d1b6bc8fe34cf1d6e3ced8770cb955f",
+      "format": "elf64-x86-64",
+      "compiler": "g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+      "lto_disabled": true,
+      "fp_contraction_off": true,
+      "no_hoisting_found": true,
+      "loop_proof": [
+        {
+          "operation": "ordinary_original_size",
+          "loop_start": "0x5940",
+          "backedge": "0x5986",
+          "unroll_factor": 2,
+          "required_calls": [
+            "5956:\te8 d5 28 00 00       \tcall   8230 <stock::StockSurface::draw_plain(stock::Bitmap const&, stock::Rect, int, int)>",
+            "597e:\te8 ad 28 00 00       \tcall   8230 <stock::StockSurface::draw_plain(stock::Bitmap const&, stock::Rect, int, int)>"
+          ],
+          "backedge_and_per_iteration_calls_present": true
+        },
+        {
+          "operation": "matrix_setup_host_model",
+          "loop_start": "0x59a0",
+          "backedge": "0x5a6d",
+          "unroll_factor": 2,
+          "required_calls": [
+            "59e0:\te8 8b 29 00 00       \tcall   8370 <stock::make_affine(float, float, float, float)>",
+            "5a4b:\te8 20 29 00 00       \tcall   8370 <stock::make_affine(float, float, float, float)>"
+          ],
+          "backedge_and_per_iteration_calls_present": true
+        },
+        {
+          "operation": "cached_affine",
+          "loop_start": "0x5a90",
+          "backedge": "0x5ae8",
+          "unroll_factor": 2,
+          "required_calls": [
+            "5aad:\te8 8e 26 00 00       \tcall   8140 <stock::StockSurface::draw_affine(stock::Bitmap const&, stock::Affine const&, stock::Rect, int, int)>",
+            "5ae0:\te8 5b 26 00 00       \tcall   8140 <stock::StockSurface::draw_affine(stock::Bitmap const&, stock::Affine const&, stock::Rect, int, int)>"
+          ],
+          "backedge_and_per_iteration_calls_present": true
+        },
+        {
+          "operation": "rebuilt_affine_host_model",
+          "loop_start": "0x5b10",
+          "backedge": "0x5bef",
+          "unroll_factor": 2,
+          "required_calls": [
+            "5b50:\te8 1b 28 00 00       \tcall   8370 <stock::make_affine(float, float, float, float)>",
+            "5bc4:\te8 a7 27 00 00       \tcall   8370 <stock::make_affine(float, float, float, float)>"
+          ],
+          "backedge_and_per_iteration_calls_present": true
+        },
+        {
+          "operation": "transform_bitmap_kernel",
+          "loop_start": "0x5c07",
+          "backedge": "0x5cf7",
+          "unroll_factor": 2,
+          "required_calls": [
+            "5c39:\te8 a2 2a 00 00       \tcall   86e0 <stock::transform_buffer(stock::Bitmap const&, stock::Affine const&, int, int, int, int)>",
+            "5cb6:\te8 25 2a 00 00       \tcall   86e0 <stock::transform_buffer(stock::Bitmap const&, stock::Affine const&, int, int, int, int)>"
+          ],
+          "backedge_and_per_iteration_calls_present": true
+        },
+        {
+          "operation": "transform_then_plot",
+          "loop_start": "0x5d26",
+          "backedge": "0x5e72",
+          "unroll_factor": 2,
+          "required_calls": [
+            "5d5a:\te8 81 29 00 00       \tcall   86e0 <stock::transform_buffer(stock::Bitmap const&, stock::Affine const&, int, int, int, int)>",
+            "5e06:\te8 d5 28 00 00       \tcall   86e0 <stock::transform_buffer(stock::Bitmap const&, stock::Affine const&, int, int, int, int)>"
+          ],
+          "backedge_and_per_iteration_calls_present": true
+        },
+        {
+          "operation": "ordinary_pretransformed",
+          "loop_start": "0x5e90",
+          "backedge": "0x5ef7",
+          "unroll_factor": 2,
+          "required_calls": [
+            "5eb4:\te8 77 23 00 00       \tcall   8230 <stock::StockSurface::draw_plain(stock::Bitmap const&, stock::Rect, int, int)>",
+            "5eef:\te8 3c 23 00 00       \tcall   8230 <stock::StockSurface::draw_plain(stock::Bitmap const&, stock::Rect, int, int)>"
+          ],
+          "backedge_and_per_iteration_calls_present": true
+        }
+      ],
+      "per_pixel_float_math_conversion_and_indirect_dispatch_retained": true,
+      "host_analytic_inverse_divisions_retained": true,
+      "native_source_or_emulator_recompiled_by_auditor": false
+    },
+    "guard": {
+      "passed": true,
+      "session": "oryxhost01",
+      "thermal_stop_celsius": 95,
+      "sampled_max_temperature_celsius": 60,
+      "boost_during": "0",
+      "original_and_restored_boost": "1",
+      "owned_emulators_remaining": []
+    }
+  },
+  "limitations": [
+    "Oryx x86_64 host CPU timing only: no ESP32, PSRAM, UART, VDP command service, scanout or full-game frame-rate claim.",
+    "make_affine/rebuilt_affine_host_model use a diagonal analytic inverse and an exact separately identified ESP-DSP 1.8.0 ANSI multiply; neither measures the old firmware Mat inverse, target-selected optimized DSP, allocations or cold matrix command cost.",
+    "Transform-to-buffer methods include host vector allocation, initialization and destruction; surrounding stock command40 buffer-service allocation/lookup/registration is absent. The kernel label does not mean allocation-free.",
+    "natural_buffer_size is prepared outside timing: transform_bitmap_kernel/transform_then_plot omit command40 natural bounds computation, matrix cache checks and command parser overhead. Full direct affine retains draw-time transformed bounds/clipping dispatch.",
+    "ordinary_pretransformed prepares stock command40 output once outside timing; it illustrates reuse after preparation and is not an adoption or new scaled-asset file path.",
+    "ordinary_original_size draws a different unscaled footprint; it is a control, not an equal-work scaling comparison.",
+    "All timed draws reuse the same source, transform, destination and framebuffer in Set mode, with one clear outside each timed batch. This is a warm repeated-draw test without scene motion, background repaint, queue contention, VSync or realistic framebuffer working-set churn.",
+    "Source alpha 0/3 and synthetic all-opaque/all-transparent are covered; partial alpha 1/2, blend modes, sprites and other source pixel formats are outside this fixture.",
+    "Direct affine clipping excludes its drawingRect X2/Y2 while natural command40 fills all resized pixels. The three observed footprint differences are retained, not treated as correctness failures or equal-pixel comparisons.",
+    "The observed player uses ordinary/no-transform plotting in all 900 replay frames. Affine/identity and mirror player cases deliberately probe alternate stock paths and do not imply those affine costs occur in the current player hot loop.",
+    "Fourteen selected workload/coverage cases plus two alpha controls are timed, not every observed artwork/matrix combination. Case order is fixed and method order reverses on alternate trials; there is no process affinity or fixed-frequency enforcement.",
+    "The 40 ms setting is a calibration target. Capped Oryx empty controls measure 8.37\u20139.09 ms and later samples can vary slightly from calibration. No empty baseline is subtracted.",
+    "Run records final source hashes rather than an automatic before/after source-immutability check; separate agreed source freeze and this audit match every final pin. Original runtime snapshots are not byte-rebuilt firmware proofs.",
+    "Sanitizers cover the 16 selected cases and checksum checks; they do not prove the correctness of all affine matrices or make target hardware performance claims.",
+    "Compiler and CPU differ from Pi: Oryx uses GCC15.2.0/x86_64, Pi uses GCC14.2.0/aarch64. The same source does not imply the same machine code or ESP32 behavior.",
+    "Saved x86_64 assembly is the inspected compiler artifact; the Oryx executable itself was not supplied in this local host evidence set, so no independent ELF-to-assembly byte comparison was performed.",
+    "The successful sanitizer subprocess is established by the guarded exit 0, two 16-case stdout sequences and the host report. Oryx sanitizer CSV files were not supplied locally; no independent sanitizer replay was performed.",
+    "The existing Oryx guard sampled temperature and boost about every 2 seconds; it reached 60 \u00b0C and restored boost 1. This does not enforce CPU affinity or a fixed operating frequency."
+  ],
+  "host_only": true,
+  "physical_performance_claim": false,
+  "firmware_cold_inverse_claim": false,
+  "new_compile_or_run": false,
+  "remote_action": false,
+  "pi_evidence_modified": false
+}

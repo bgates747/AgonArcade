@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "name": "smoke04",
+  "fixture": "smoke",
+  "identity": {
+    "schema": 1,
+    "name": "smoke04",
+    "fixture": "smoke",
+    "profile": "/Agon/mystuff/AgonArcade/.emulator/rally28-affine-pi-smoke04",
+    "app": "sdcard/test/arcade/rally28/affine",
+    "files": {
+      "flexe-agon-emulator": "6c032d0cfa731f096f38725f0850f3749fb0bf6ca1a6f3ebf40145eb370a66fa",
+      "flexe-agon-emulator.bin": "ffa4e66ac661896952c020cc1e5cad3de719688375adde8889cd82217d5fec98",
+      "flexe-vdp.so": "c1acfd2201ead6fed425d4affe3d396885e16485c33092ee176019d471eecbe4",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "sdcard/autoexec.txt": "80c1c19bc817eb57ac9b698df5f12055721a83572904f6d350b540edb5afb87c",
+      "sdcard/test/arcade/rally28/affine/artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "sdcard/test/arcade/rally28/affine/config.bin": "4cbcd11f1a0354a56515d0967a896e9d2d2531bc39a12a6a2aa6871426b81e9a",
+      "sdcard/test/arcade/rally28/affine/expected.json": "ac26f9c0268a3a7758902eaea2dc145ef60d9cac30bacaa3000ab555ff7cb799",
+      "sdcard/test/arcade/rally28/affine/probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "sdcard/test/arcade/rally28/affine/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "expected_batches": 11,
+    "stopped": true,
+    "setup_helper_sha256": "844ab629cb604daf2469c2c1c9c5dab89d8e9abc9c62f0a19c3eceb6f960a98a",
+    "sound": "dummy",
+    "platform": {
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.0,
+      "cpu_frequency_khz": 1900000,
+      "load_average": [
+        1.49609375,
+        1.1845703125,
+        2.56494140625
+      ]
+    },
+    "runtime_build_sha256": "49e77cea8c84eb58b985ba3b4c3407118c85e5c6e70205bcc15d07bf9d153486"
+  },
+  "host_before": {
+    "host": "raspberrypi",
+    "architecture": "aarch64",
+    "temperature_celsius": 54.55,
+    "cpu_frequency_khz": 2400000,
+    "load_average": [
+      1.49609375,
+      1.1845703125,
+      2.56494140625
+    ]
+  },
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "samples": [
+    {
+      "elapsed": 0.0008297759995912202,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.55,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.49609375,
+        1.1845703125,
+        2.56494140625
+      ]
+    },
+    {
+      "elapsed": 2.001291252003284,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.1,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.4560546875,
+        1.18115234375,
+        2.55615234375
+      ]
+    },
+    {
+      "elapsed": 4.001771283998096,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.4560546875,
+        1.18115234375,
+        2.55615234375
+      ]
+    },
+    {
+      "elapsed": 6.002240280002297,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.4560546875,
+        1.18115234375,
+        2.55615234375
+      ]
+    }
+  ],
+  "passed": true,
+  "reason": "guest-files",
+  "summary": {
+    "schema": 1,
+    "valid": true,
+    "completed_batches": 11,
+    "planned_batches": 11,
+    "mode": 136,
+    "timed_swaps": 0,
+    "draw_repeats": 4,
+    "setup_repeats": 16,
+    "samples": 1,
+    "case_mask": 33,
+    "primary_completion": "key-zero",
+    "fallback_used": false,
+    "callback_restored": true,
+    "prt_restored": true,
+    "setup_mos_ticks": 38,
+    "keyboard_packets": 11,
+    "mos_hz_nominal": 120,
+    "prt_hz_nominal": 1000,
+    "failure": "none"
+  },
+  "elapsed_host_seconds": 7.116956855003082,
+  "process_exit": 0,
+  "exit": 0,
+  "input_identities_unchanged": true,
+  "host_after": {
+    "host": "raspberrypi",
+    "architecture": "aarch64",
+    "temperature_celsius": 56.2,
+    "cpu_frequency_khz": 2400000,
+    "load_average": [
+      1.41943359375,
+      1.177734375,
+      2.54736328125
+    ]
+  },
+  "identities_unchanged": true,
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 280,
+    "cycles": 1250773628,
+    "retired": 431120712,
+    "uart_rx": 46456,
+    "uart_tx": 994,
+    "uart_delivered": 994,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "outputs": {
+    "summary.json": "53b8fe9c8afffcdfb7bd14e4c3f3093950fc75fc8bab56181603403a4a2302e0",
+    "timings.csv": "5b813168a69a0131ec885b0e633210b5693c9c8c940ded736fa4db539208a0ef",
+    "done.txt": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431"
+  }
+}

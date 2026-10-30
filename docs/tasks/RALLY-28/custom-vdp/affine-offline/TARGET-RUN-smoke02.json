@@ -1,0 +1,862 @@
+{
+  "schema": 1,
+  "name": "smoke02",
+  "fixture": "smoke",
+  "identity": {
+    "schema": 1,
+    "name": "smoke02",
+    "fixture": "smoke",
+    "profile": "/Agon/mystuff/AgonArcade/.emulator/rally28-affine-pi-smoke02",
+    "app": "sdcard/test/arcade/rally28/affine",
+    "files": {
+      "flexe-agon-emulator": "6c032d0cfa731f096f38725f0850f3749fb0bf6ca1a6f3ebf40145eb370a66fa",
+      "flexe-agon-emulator.bin": "ffa4e66ac661896952c020cc1e5cad3de719688375adde8889cd82217d5fec98",
+      "flexe-vdp.so": "c1acfd2201ead6fed425d4affe3d396885e16485c33092ee176019d471eecbe4",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "sdcard/autoexec.txt": "80c1c19bc817eb57ac9b698df5f12055721a83572904f6d350b540edb5afb87c",
+      "sdcard/test/arcade/rally28/affine/artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "sdcard/test/arcade/rally28/affine/config.bin": "4cbcd11f1a0354a56515d0967a896e9d2d2531bc39a12a6a2aa6871426b81e9a",
+      "sdcard/test/arcade/rally28/affine/expected.json": "ac26f9c0268a3a7758902eaea2dc145ef60d9cac30bacaa3000ab555ff7cb799",
+      "sdcard/test/arcade/rally28/affine/probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "sdcard/test/arcade/rally28/affine/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "expected_batches": 11,
+    "stopped": true,
+    "setup_helper_sha256": "844ab629cb604daf2469c2c1c9c5dab89d8e9abc9c62f0a19c3eceb6f960a98a",
+    "sound": "dummy",
+    "platform": {
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 49.05,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        0.7265625,
+        0.5419921875,
+        2.9638671875
+      ]
+    },
+    "runtime_build_sha256": "49e77cea8c84eb58b985ba3b4c3407118c85e5c6e70205bcc15d07bf9d153486"
+  },
+  "host_before": {
+    "host": "raspberrypi",
+    "architecture": "aarch64",
+    "temperature_celsius": 50.7,
+    "cpu_frequency_khz": 2400000,
+    "load_average": [
+      0.7265625,
+      0.5419921875,
+      2.9638671875
+    ]
+  },
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "samples": [
+    {
+      "elapsed": 0.0008174989998224191,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 50.7,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        0.7265625,
+        0.5419921875,
+        2.9638671875
+      ]
+    },
+    {
+      "elapsed": 2.001279636999243,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 51.25,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        0.7265625,
+        0.5419921875,
+        2.9638671875
+      ]
+    },
+    {
+      "elapsed": 4.00177172000258,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 51.8,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        0.82861328125,
+        0.56640625,
+        2.95849609375
+      ]
+    },
+    {
+      "elapsed": 6.002230748999864,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 52.9,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        0.82861328125,
+        0.56640625,
+        2.95849609375
+      ]
+    },
+    {
+      "elapsed": 8.002688946005946,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.55,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        0.9228515625,
+        0.59033203125,
+        2.953125
+      ]
+    },
+    {
+      "elapsed": 10.003170404001139,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.0,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        0.9228515625,
+        0.59033203125,
+        2.953125
+      ]
+    },
+    {
+      "elapsed": 12.003647493002063,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.0,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        0.9228515625,
+        0.59033203125,
+        2.953125
+      ]
+    },
+    {
+      "elapsed": 14.004184139004792,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.55,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.00927734375,
+        0.61376953125,
+        2.94775390625
+      ]
+    },
+    {
+      "elapsed": 16.004710972003522,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.55,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.00927734375,
+        0.61376953125,
+        2.94775390625
+      ]
+    },
+    {
+      "elapsed": 18.00519278700085,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.0,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.0888671875,
+        0.63720703125,
+        2.9423828125
+      ]
+    },
+    {
+      "elapsed": 20.005683419003617,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.0888671875,
+        0.63720703125,
+        2.9423828125
+      ]
+    },
+    {
+      "elapsed": 22.006175053000334,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.65,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.0888671875,
+        0.63720703125,
+        2.9423828125
+      ]
+    },
+    {
+      "elapsed": 24.00666654000088,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.55,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.162109375,
+        0.66015625,
+        2.93701171875
+      ]
+    },
+    {
+      "elapsed": 26.007159954002418,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.1,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.162109375,
+        0.66015625,
+        2.93701171875
+      ]
+    },
+    {
+      "elapsed": 28.007668795005884,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.65,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.2294921875,
+        0.6826171875,
+        2.931640625
+      ]
+    },
+    {
+      "elapsed": 30.00849211899913,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.1,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.2294921875,
+        0.6826171875,
+        2.931640625
+      ]
+    },
+    {
+      "elapsed": 32.009006204003526,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.65,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.2294921875,
+        0.6826171875,
+        2.931640625
+      ]
+    },
+    {
+      "elapsed": 34.01291739700537,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.65,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.29150390625,
+        0.70458984375,
+        2.92626953125
+      ]
+    },
+    {
+      "elapsed": 36.01341178200528,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.65,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.29150390625,
+        0.70458984375,
+        2.92626953125
+      ]
+    },
+    {
+      "elapsed": 38.013869741000235,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.1,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.3486328125,
+        0.7265625,
+        2.9208984375
+      ]
+    },
+    {
+      "elapsed": 40.0143356280023,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.1,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.3486328125,
+        0.7265625,
+        2.9208984375
+      ]
+    },
+    {
+      "elapsed": 42.014794943002926,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 54.55,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.3486328125,
+        0.7265625,
+        2.9208984375
+      ]
+    },
+    {
+      "elapsed": 44.01525479600241,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.65,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.40087890625,
+        0.748046875,
+        2.91552734375
+      ]
+    },
+    {
+      "elapsed": 46.015720704999694,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.2,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.40087890625,
+        0.748046875,
+        2.91552734375
+      ]
+    },
+    {
+      "elapsed": 48.01641163500608,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.44921875,
+        0.76904296875,
+        2.91015625
+      ]
+    },
+    {
+      "elapsed": 50.01699008400465,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.44921875,
+        0.76904296875,
+        2.91015625
+      ]
+    },
+    {
+      "elapsed": 52.01746533100231,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.44921875,
+        0.76904296875,
+        2.91015625
+      ]
+    },
+    {
+      "elapsed": 54.017934562005394,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.2,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.4130859375,
+        0.77294921875,
+        2.8994140625
+      ]
+    },
+    {
+      "elapsed": 56.01842012600537,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.4130859375,
+        0.77294921875,
+        2.8994140625
+      ]
+    },
+    {
+      "elapsed": 58.01889745200606,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.46044921875,
+        0.79345703125,
+        2.89453125
+      ]
+    },
+    {
+      "elapsed": 60.01942194500589,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.46044921875,
+        0.79345703125,
+        2.89453125
+      ]
+    },
+    {
+      "elapsed": 62.01989186600258,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.46044921875,
+        0.79345703125,
+        2.89453125
+      ]
+    },
+    {
+      "elapsed": 64.02036099199904,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.50390625,
+        0.81396484375,
+        2.8896484375
+      ]
+    },
+    {
+      "elapsed": 66.02080371100601,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.50390625,
+        0.81396484375,
+        2.8896484375
+      ]
+    },
+    {
+      "elapsed": 68.02126824700099,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 55.65,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.46337890625,
+        0.8173828125,
+        2.87939453125
+      ]
+    },
+    {
+      "elapsed": 70.02172782100388,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.46337890625,
+        0.8173828125,
+        2.87939453125
+      ]
+    },
+    {
+      "elapsed": 72.0221753970036,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.2,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.46337890625,
+        0.8173828125,
+        2.87939453125
+      ]
+    },
+    {
+      "elapsed": 74.02263682500052,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.42626953125,
+        0.82080078125,
+        2.869140625
+      ]
+    },
+    {
+      "elapsed": 76.0231128670057,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.2,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.42626953125,
+        0.82080078125,
+        2.869140625
+      ]
+    },
+    {
+      "elapsed": 78.02359020500444,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.85,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.47265625,
+        0.8408203125,
+        2.8642578125
+      ]
+    },
+    {
+      "elapsed": 80.02435461900313,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.47265625,
+        0.8408203125,
+        2.8642578125
+      ]
+    },
+    {
+      "elapsed": 82.02481753400207,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.85,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.47265625,
+        0.8408203125,
+        2.8642578125
+      ]
+    },
+    {
+      "elapsed": 84.02528259900282,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.51513671875,
+        0.8603515625,
+        2.859375
+      ]
+    },
+    {
+      "elapsed": 86.02592596100294,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.85,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.51513671875,
+        0.8603515625,
+        2.859375
+      ]
+    },
+    {
+      "elapsed": 88.02652297299937,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.63427734375,
+        0.89599609375,
+        2.8603515625
+      ]
+    },
+    {
+      "elapsed": 90.02700989400182,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.63427734375,
+        0.89599609375,
+        2.8603515625
+      ]
+    },
+    {
+      "elapsed": 92.02750344500237,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.85,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.63427734375,
+        0.89599609375,
+        2.8603515625
+      ]
+    },
+    {
+      "elapsed": 94.02799201600283,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.66357421875,
+        0.91455078125,
+        2.85546875
+      ]
+    },
+    {
+      "elapsed": 96.02845399600483,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.66357421875,
+        0.91455078125,
+        2.85546875
+      ]
+    },
+    {
+      "elapsed": 98.02894916200603,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.69091796875,
+        0.9326171875,
+        2.8505859375
+      ]
+    },
+    {
+      "elapsed": 100.02942727399932,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 56.75,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.69091796875,
+        0.9326171875,
+        2.8505859375
+      ]
+    },
+    {
+      "elapsed": 102.02990499900625,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 58.4,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.69091796875,
+        0.9326171875,
+        2.8505859375
+      ]
+    },
+    {
+      "elapsed": 104.03039289099979,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.7158203125,
+        0.95068359375,
+        2.845703125
+      ]
+    },
+    {
+      "elapsed": 106.03087570999924,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 58.4,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.7158203125,
+        0.95068359375,
+        2.845703125
+      ]
+    },
+    {
+      "elapsed": 108.0313511600034,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.3,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.73876953125,
+        0.96826171875,
+        2.8408203125
+      ]
+    },
+    {
+      "elapsed": 110.03181777900318,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 58.4,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.73876953125,
+        0.96826171875,
+        2.8408203125
+      ]
+    },
+    {
+      "elapsed": 112.03227258300467,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 59.5,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.73876953125,
+        0.96826171875,
+        2.8408203125
+      ]
+    },
+    {
+      "elapsed": 114.03275079699961,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 59.5,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.67919921875,
+        0.96923828125,
+        2.83056640625
+      ]
+    },
+    {
+      "elapsed": 116.03321934400446,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.85,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.67919921875,
+        0.96923828125,
+        2.83056640625
+      ]
+    },
+    {
+      "elapsed": 118.03368461500213,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.85,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.705078125,
+        0.98681640625,
+        2.82568359375
+      ]
+    },
+    {
+      "elapsed": 120.0341673139992,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.85,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.705078125,
+        0.98681640625,
+        2.82568359375
+      ]
+    },
+    {
+      "elapsed": 122.03461905000586,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 58.4,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.705078125,
+        0.98681640625,
+        2.82568359375
+      ]
+    },
+    {
+      "elapsed": 124.03509025100357,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 58.4,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.72900390625,
+        1.00390625,
+        2.82080078125
+      ]
+    },
+    {
+      "elapsed": 126.03555252700608,
+      "host": "raspberrypi",
+      "architecture": "aarch64",
+      "temperature_celsius": 57.85,
+      "cpu_frequency_khz": 2400000,
+      "load_average": [
+        1.72900390625,
+        1.00390625,
+        2.82080078125
+      ]
+    }
+  ],
+  "passed": false,
+  "error": "TimeoutError('No UART progress for120host seconds')",
+  "elapsed_host_seconds": 126.1498419960044,
+  "process_exit": 0,
+  "exit": 0,
+  "input_identities_unchanged": true,
+  "host_after": {
+    "host": "raspberrypi",
+    "architecture": "aarch64",
+    "temperature_celsius": 56.75,
+    "cpu_frequency_khz": 2400000,
+    "load_average": [
+      1.72900390625,
+      1.00390625,
+      2.82080078125
+    ]
+  },
+  "identities_unchanged": true,
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 2154,
+    "cycles": 8999963886,
+    "retired": 8338125595,
+    "uart_rx": 8742,
+    "uart_tx": 343,
+    "uart_delivered": 343,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "outputs": {}
+}

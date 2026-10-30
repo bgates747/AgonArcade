@@ -1,0 +1,3044 @@
+{
+  "schema": 1,
+  "passed": true,
+  "fixture": "full",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-affine-oryx-full01",
+  "mode": 136,
+  "swaps": 0,
+  "completed_batches": 124,
+  "source_sha256": "1c034b6e8e58bdda82dde2ebd8b1e38d3987a6100535f6e2fde42c1049a49258",
+  "build_sha256": "64f80143955575f16c4191a52fdae91f7872364cd1340aa0bb2d3f95665f9123",
+  "fixture_sha256": "df49a7b3aa1268b018d5997d9b1fe02ad26d686a4bb8d24e284e8346ea7f5e2d",
+  "guest_sha256": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+  "runtime_build": {
+    "name": "ORYX-RUNTIME-BUILD.json",
+    "sha256": "38f726dbee2ff006e81793e3146d4106987b0643cd45be96d2dfd617c7a763b2",
+    "architecture": "x86_64",
+    "frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+    "core_commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+    "files": {
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "faed8f1c612bf93219b49359337f65457165532465f2ab8006b25059151ff60b"
+    },
+    "actual_elf_architecture_verified": true
+  },
+  "workload_sha256": "93f47c09a3a0440a7c3f592849494f754fc06641a51d9de15fe573c1e0a83f21",
+  "raw_tx_sha256": "f2ac5587f73687944202d553294e45cee98beeb48ab79b7c66ee501c2dfea63b",
+  "raw_rx_sha256": "27291d57b1a925597e6b2219acf3fb33170905d274ae5890b4939e4e7ddbeb80",
+  "application_tx_offset": 454,
+  "application_tx_bytes": 110240,
+  "application_packet_start": 103,
+  "application_packet_count": 985,
+  "checked_completion_packet_count": 497,
+  "auxiliary_modeinfo_packets": [
+    {
+      "packet_index": 104,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 106,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 110,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 111,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 113,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 114,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 118,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 119,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 121,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 122,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 126,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 127,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 129,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 130,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 134,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 135,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 137,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 138,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 142,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 143,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 145,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 146,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 150,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 151,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 153,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 154,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 158,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 159,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 161,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 162,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 166,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 167,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 169,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 170,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 174,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 175,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 177,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 178,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 182,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 183,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 185,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 186,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 190,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 191,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 193,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 194,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 198,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 199,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 201,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 202,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 206,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 207,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 209,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 210,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 214,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 215,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 217,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 218,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 222,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 223,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 225,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 226,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 230,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 231,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 233,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 234,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 238,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 239,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 241,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 242,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 246,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 247,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 249,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 250,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 254,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 255,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 257,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 258,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 262,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 263,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 265,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 266,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 270,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 271,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 273,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 274,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 278,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 279,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 281,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 282,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 286,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 287,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 289,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 290,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 294,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 295,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 297,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 298,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 302,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 303,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 305,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 306,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 310,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 311,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 313,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 314,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 318,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 319,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 321,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 322,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 326,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 327,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 329,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 330,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 334,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 335,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 337,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 338,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 342,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 343,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 345,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 346,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 350,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 352,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 356,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 357,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 359,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 360,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 364,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 365,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 367,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 368,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 372,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 373,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 375,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 376,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 380,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 381,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 383,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 384,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 388,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 389,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 391,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 392,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 396,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 397,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 399,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 400,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 404,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 405,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 407,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 408,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 412,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 413,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 415,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 416,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 420,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 421,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 423,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 424,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 428,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 429,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 431,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 432,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 436,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 437,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 439,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 440,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 444,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 445,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 447,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 448,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 452,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 453,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 455,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 456,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 460,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 461,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 463,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 464,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 468,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 469,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 471,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 472,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 476,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 477,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 479,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 480,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 484,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 485,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 487,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 488,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 492,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 493,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 495,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 496,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 500,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 501,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 503,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 504,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 508,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 509,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 511,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 512,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 516,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 517,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 519,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 520,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 524,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 525,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 527,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 528,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 532,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 533,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 535,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 536,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 540,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 541,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 543,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 544,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 548,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 549,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 551,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 552,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 556,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 557,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 559,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 560,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 564,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 565,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 567,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 568,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 572,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 573,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 575,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 576,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 580,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 581,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 583,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 584,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 588,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 589,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 591,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 592,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 596,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 598,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 602,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 603,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 605,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 606,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 610,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 611,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 613,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 614,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 618,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 619,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 621,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 622,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 626,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 627,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 629,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 630,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 634,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 635,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 637,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 638,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 642,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 643,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 645,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 646,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 650,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 651,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 653,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 654,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 658,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 659,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 661,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 662,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 666,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 667,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 669,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 670,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 674,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 675,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 677,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 678,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 682,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 683,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 685,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 686,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 690,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 691,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 693,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 694,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 698,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 699,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 701,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 702,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 706,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 707,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 709,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 710,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 714,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 715,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 717,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 718,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 722,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 723,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 725,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 726,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 730,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 731,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 733,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 734,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 738,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 739,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 741,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 742,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 746,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 747,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 749,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 750,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 754,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 755,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 757,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 758,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 762,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 763,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 765,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 766,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 770,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 771,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 773,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 774,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 778,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 779,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 781,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 782,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 786,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 787,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 789,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 790,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 794,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 795,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 797,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 798,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 802,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 803,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 805,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 806,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 810,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 811,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 813,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 814,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 818,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 819,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 821,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 822,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 826,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 827,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 829,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 830,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 834,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 835,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 837,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 838,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 842,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 844,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 848,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 849,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 851,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 852,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 856,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 857,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 859,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 860,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 864,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 865,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 867,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 868,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 872,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 873,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 875,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 876,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 880,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 881,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 883,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 884,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 888,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 889,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 891,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 892,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 896,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 897,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 899,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 900,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 904,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 905,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 907,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 908,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 912,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 913,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 915,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 916,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 920,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 921,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 923,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 924,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 928,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 929,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 931,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 932,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 936,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 937,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 939,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 940,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 944,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 945,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 947,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 948,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 952,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 953,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 955,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 956,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 960,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 961,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 963,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 964,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 968,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 969,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 971,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 972,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 976,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 977,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 979,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 980,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 984,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 985,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 987,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 988,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 992,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 993,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 995,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 996,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1000,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1001,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1003,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1004,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1008,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1009,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1011,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1012,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1016,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1017,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1019,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1020,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1024,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1025,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1027,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1028,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1032,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1033,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1035,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1036,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1040,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1041,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1043,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1044,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1048,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1049,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1051,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1052,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1056,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1057,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1059,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1060,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1064,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1065,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1067,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1068,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1072,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1073,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1075,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1076,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1080,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1081,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1083,
+      "payload": "4001f000281e4088"
+    },
+    {
+      "packet_index": 1084,
+      "payload": "4001f000281e4088"
+    }
+  ],
+  "timed_calls": [
+    {
+      "row": 0,
+      "offset": 99418,
+      "bytes": 6,
+      "hex": "1700a053d301",
+      "case_index": 6,
+      "method": "empty"
+    },
+    {
+      "row": 1,
+      "offset": 99502,
+      "bytes": 6,
+      "hex": "1700a0f0d201",
+      "case_index": 0,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 2,
+      "offset": 99586,
+      "bytes": 6,
+      "hex": "1700a0f1d201",
+      "case_index": 0,
+      "method": "cached-affine"
+    },
+    {
+      "row": 3,
+      "offset": 99670,
+      "bytes": 6,
+      "hex": "1700a0f2d201",
+      "case_index": 0,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 4,
+      "offset": 99754,
+      "bytes": 6,
+      "hex": "1700a0f3d201",
+      "case_index": 0,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 5,
+      "offset": 99838,
+      "bytes": 6,
+      "hex": "1700a0f4d201",
+      "case_index": 0,
+      "method": "matrix-only"
+    },
+    {
+      "row": 6,
+      "offset": 99922,
+      "bytes": 6,
+      "hex": "1700a0f5d201",
+      "case_index": 1,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 7,
+      "offset": 100006,
+      "bytes": 6,
+      "hex": "1700a0f6d201",
+      "case_index": 1,
+      "method": "cached-affine"
+    },
+    {
+      "row": 8,
+      "offset": 100090,
+      "bytes": 6,
+      "hex": "1700a0f7d201",
+      "case_index": 1,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 9,
+      "offset": 100174,
+      "bytes": 6,
+      "hex": "1700a0f8d201",
+      "case_index": 1,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 10,
+      "offset": 100258,
+      "bytes": 6,
+      "hex": "1700a0f9d201",
+      "case_index": 1,
+      "method": "matrix-only"
+    },
+    {
+      "row": 11,
+      "offset": 100342,
+      "bytes": 6,
+      "hex": "1700a0fad201",
+      "case_index": 2,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 12,
+      "offset": 100426,
+      "bytes": 6,
+      "hex": "1700a0fbd201",
+      "case_index": 2,
+      "method": "cached-affine"
+    },
+    {
+      "row": 13,
+      "offset": 100510,
+      "bytes": 6,
+      "hex": "1700a0fcd201",
+      "case_index": 2,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 14,
+      "offset": 100594,
+      "bytes": 6,
+      "hex": "1700a0fdd201",
+      "case_index": 2,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 15,
+      "offset": 100678,
+      "bytes": 6,
+      "hex": "1700a0fed201",
+      "case_index": 2,
+      "method": "matrix-only"
+    },
+    {
+      "row": 16,
+      "offset": 100762,
+      "bytes": 6,
+      "hex": "1700a0ffd201",
+      "case_index": 3,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 17,
+      "offset": 100846,
+      "bytes": 6,
+      "hex": "1700a000d301",
+      "case_index": 3,
+      "method": "cached-affine"
+    },
+    {
+      "row": 18,
+      "offset": 100930,
+      "bytes": 6,
+      "hex": "1700a001d301",
+      "case_index": 3,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 19,
+      "offset": 101014,
+      "bytes": 6,
+      "hex": "1700a002d301",
+      "case_index": 3,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 20,
+      "offset": 101098,
+      "bytes": 6,
+      "hex": "1700a003d301",
+      "case_index": 3,
+      "method": "matrix-only"
+    },
+    {
+      "row": 21,
+      "offset": 101182,
+      "bytes": 6,
+      "hex": "1700a004d301",
+      "case_index": 4,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 22,
+      "offset": 101266,
+      "bytes": 6,
+      "hex": "1700a005d301",
+      "case_index": 4,
+      "method": "cached-affine"
+    },
+    {
+      "row": 23,
+      "offset": 101350,
+      "bytes": 6,
+      "hex": "1700a006d301",
+      "case_index": 4,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 24,
+      "offset": 101434,
+      "bytes": 6,
+      "hex": "1700a007d301",
+      "case_index": 4,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 25,
+      "offset": 101518,
+      "bytes": 6,
+      "hex": "1700a008d301",
+      "case_index": 4,
+      "method": "matrix-only"
+    },
+    {
+      "row": 26,
+      "offset": 101602,
+      "bytes": 6,
+      "hex": "1700a009d301",
+      "case_index": 5,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 27,
+      "offset": 101686,
+      "bytes": 6,
+      "hex": "1700a00ad301",
+      "case_index": 5,
+      "method": "cached-affine"
+    },
+    {
+      "row": 28,
+      "offset": 101770,
+      "bytes": 6,
+      "hex": "1700a00bd301",
+      "case_index": 5,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 29,
+      "offset": 101854,
+      "bytes": 6,
+      "hex": "1700a00cd301",
+      "case_index": 5,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 30,
+      "offset": 101938,
+      "bytes": 6,
+      "hex": "1700a00dd301",
+      "case_index": 5,
+      "method": "matrix-only"
+    },
+    {
+      "row": 31,
+      "offset": 102001,
+      "bytes": 6,
+      "hex": "1700a053d301",
+      "case_index": 6,
+      "method": "empty"
+    },
+    {
+      "row": 32,
+      "offset": 102085,
+      "bytes": 6,
+      "hex": "1700a0f0d201",
+      "case_index": 0,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 33,
+      "offset": 102169,
+      "bytes": 6,
+      "hex": "1700a0f1d201",
+      "case_index": 0,
+      "method": "cached-affine"
+    },
+    {
+      "row": 34,
+      "offset": 102253,
+      "bytes": 6,
+      "hex": "1700a0f2d201",
+      "case_index": 0,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 35,
+      "offset": 102337,
+      "bytes": 6,
+      "hex": "1700a0f3d201",
+      "case_index": 0,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 36,
+      "offset": 102421,
+      "bytes": 6,
+      "hex": "1700a0f4d201",
+      "case_index": 0,
+      "method": "matrix-only"
+    },
+    {
+      "row": 37,
+      "offset": 102505,
+      "bytes": 6,
+      "hex": "1700a0f5d201",
+      "case_index": 1,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 38,
+      "offset": 102589,
+      "bytes": 6,
+      "hex": "1700a0f6d201",
+      "case_index": 1,
+      "method": "cached-affine"
+    },
+    {
+      "row": 39,
+      "offset": 102673,
+      "bytes": 6,
+      "hex": "1700a0f7d201",
+      "case_index": 1,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 40,
+      "offset": 102757,
+      "bytes": 6,
+      "hex": "1700a0f8d201",
+      "case_index": 1,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 41,
+      "offset": 102841,
+      "bytes": 6,
+      "hex": "1700a0f9d201",
+      "case_index": 1,
+      "method": "matrix-only"
+    },
+    {
+      "row": 42,
+      "offset": 102925,
+      "bytes": 6,
+      "hex": "1700a0fad201",
+      "case_index": 2,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 43,
+      "offset": 103009,
+      "bytes": 6,
+      "hex": "1700a0fbd201",
+      "case_index": 2,
+      "method": "cached-affine"
+    },
+    {
+      "row": 44,
+      "offset": 103093,
+      "bytes": 6,
+      "hex": "1700a0fcd201",
+      "case_index": 2,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 45,
+      "offset": 103177,
+      "bytes": 6,
+      "hex": "1700a0fdd201",
+      "case_index": 2,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 46,
+      "offset": 103261,
+      "bytes": 6,
+      "hex": "1700a0fed201",
+      "case_index": 2,
+      "method": "matrix-only"
+    },
+    {
+      "row": 47,
+      "offset": 103345,
+      "bytes": 6,
+      "hex": "1700a0ffd201",
+      "case_index": 3,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 48,
+      "offset": 103429,
+      "bytes": 6,
+      "hex": "1700a000d301",
+      "case_index": 3,
+      "method": "cached-affine"
+    },
+    {
+      "row": 49,
+      "offset": 103513,
+      "bytes": 6,
+      "hex": "1700a001d301",
+      "case_index": 3,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 50,
+      "offset": 103597,
+      "bytes": 6,
+      "hex": "1700a002d301",
+      "case_index": 3,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 51,
+      "offset": 103681,
+      "bytes": 6,
+      "hex": "1700a003d301",
+      "case_index": 3,
+      "method": "matrix-only"
+    },
+    {
+      "row": 52,
+      "offset": 103765,
+      "bytes": 6,
+      "hex": "1700a004d301",
+      "case_index": 4,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 53,
+      "offset": 103849,
+      "bytes": 6,
+      "hex": "1700a005d301",
+      "case_index": 4,
+      "method": "cached-affine"
+    },
+    {
+      "row": 54,
+      "offset": 103933,
+      "bytes": 6,
+      "hex": "1700a006d301",
+      "case_index": 4,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 55,
+      "offset": 104017,
+      "bytes": 6,
+      "hex": "1700a007d301",
+      "case_index": 4,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 56,
+      "offset": 104101,
+      "bytes": 6,
+      "hex": "1700a008d301",
+      "case_index": 4,
+      "method": "matrix-only"
+    },
+    {
+      "row": 57,
+      "offset": 104185,
+      "bytes": 6,
+      "hex": "1700a009d301",
+      "case_index": 5,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 58,
+      "offset": 104269,
+      "bytes": 6,
+      "hex": "1700a00ad301",
+      "case_index": 5,
+      "method": "cached-affine"
+    },
+    {
+      "row": 59,
+      "offset": 104353,
+      "bytes": 6,
+      "hex": "1700a00bd301",
+      "case_index": 5,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 60,
+      "offset": 104437,
+      "bytes": 6,
+      "hex": "1700a00cd301",
+      "case_index": 5,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 61,
+      "offset": 104521,
+      "bytes": 6,
+      "hex": "1700a00dd301",
+      "case_index": 5,
+      "method": "matrix-only"
+    },
+    {
+      "row": 62,
+      "offset": 104584,
+      "bytes": 6,
+      "hex": "1700a053d301",
+      "case_index": 6,
+      "method": "empty"
+    },
+    {
+      "row": 63,
+      "offset": 104668,
+      "bytes": 6,
+      "hex": "1700a0f0d201",
+      "case_index": 0,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 64,
+      "offset": 104752,
+      "bytes": 6,
+      "hex": "1700a0f1d201",
+      "case_index": 0,
+      "method": "cached-affine"
+    },
+    {
+      "row": 65,
+      "offset": 104836,
+      "bytes": 6,
+      "hex": "1700a0f2d201",
+      "case_index": 0,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 66,
+      "offset": 104920,
+      "bytes": 6,
+      "hex": "1700a0f3d201",
+      "case_index": 0,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 67,
+      "offset": 105004,
+      "bytes": 6,
+      "hex": "1700a0f4d201",
+      "case_index": 0,
+      "method": "matrix-only"
+    },
+    {
+      "row": 68,
+      "offset": 105088,
+      "bytes": 6,
+      "hex": "1700a0f5d201",
+      "case_index": 1,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 69,
+      "offset": 105172,
+      "bytes": 6,
+      "hex": "1700a0f6d201",
+      "case_index": 1,
+      "method": "cached-affine"
+    },
+    {
+      "row": 70,
+      "offset": 105256,
+      "bytes": 6,
+      "hex": "1700a0f7d201",
+      "case_index": 1,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 71,
+      "offset": 105340,
+      "bytes": 6,
+      "hex": "1700a0f8d201",
+      "case_index": 1,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 72,
+      "offset": 105424,
+      "bytes": 6,
+      "hex": "1700a0f9d201",
+      "case_index": 1,
+      "method": "matrix-only"
+    },
+    {
+      "row": 73,
+      "offset": 105508,
+      "bytes": 6,
+      "hex": "1700a0fad201",
+      "case_index": 2,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 74,
+      "offset": 105592,
+      "bytes": 6,
+      "hex": "1700a0fbd201",
+      "case_index": 2,
+      "method": "cached-affine"
+    },
+    {
+      "row": 75,
+      "offset": 105676,
+      "bytes": 6,
+      "hex": "1700a0fcd201",
+      "case_index": 2,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 76,
+      "offset": 105760,
+      "bytes": 6,
+      "hex": "1700a0fdd201",
+      "case_index": 2,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 77,
+      "offset": 105844,
+      "bytes": 6,
+      "hex": "1700a0fed201",
+      "case_index": 2,
+      "method": "matrix-only"
+    },
+    {
+      "row": 78,
+      "offset": 105928,
+      "bytes": 6,
+      "hex": "1700a0ffd201",
+      "case_index": 3,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 79,
+      "offset": 106012,
+      "bytes": 6,
+      "hex": "1700a000d301",
+      "case_index": 3,
+      "method": "cached-affine"
+    },
+    {
+      "row": 80,
+      "offset": 106096,
+      "bytes": 6,
+      "hex": "1700a001d301",
+      "case_index": 3,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 81,
+      "offset": 106180,
+      "bytes": 6,
+      "hex": "1700a002d301",
+      "case_index": 3,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 82,
+      "offset": 106264,
+      "bytes": 6,
+      "hex": "1700a003d301",
+      "case_index": 3,
+      "method": "matrix-only"
+    },
+    {
+      "row": 83,
+      "offset": 106348,
+      "bytes": 6,
+      "hex": "1700a004d301",
+      "case_index": 4,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 84,
+      "offset": 106432,
+      "bytes": 6,
+      "hex": "1700a005d301",
+      "case_index": 4,
+      "method": "cached-affine"
+    },
+    {
+      "row": 85,
+      "offset": 106516,
+      "bytes": 6,
+      "hex": "1700a006d301",
+      "case_index": 4,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 86,
+      "offset": 106600,
+      "bytes": 6,
+      "hex": "1700a007d301",
+      "case_index": 4,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 87,
+      "offset": 106684,
+      "bytes": 6,
+      "hex": "1700a008d301",
+      "case_index": 4,
+      "method": "matrix-only"
+    },
+    {
+      "row": 88,
+      "offset": 106768,
+      "bytes": 6,
+      "hex": "1700a009d301",
+      "case_index": 5,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 89,
+      "offset": 106852,
+      "bytes": 6,
+      "hex": "1700a00ad301",
+      "case_index": 5,
+      "method": "cached-affine"
+    },
+    {
+      "row": 90,
+      "offset": 106936,
+      "bytes": 6,
+      "hex": "1700a00bd301",
+      "case_index": 5,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 91,
+      "offset": 107020,
+      "bytes": 6,
+      "hex": "1700a00cd301",
+      "case_index": 5,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 92,
+      "offset": 107104,
+      "bytes": 6,
+      "hex": "1700a00dd301",
+      "case_index": 5,
+      "method": "matrix-only"
+    },
+    {
+      "row": 93,
+      "offset": 107167,
+      "bytes": 6,
+      "hex": "1700a053d301",
+      "case_index": 6,
+      "method": "empty"
+    },
+    {
+      "row": 94,
+      "offset": 107251,
+      "bytes": 6,
+      "hex": "1700a0f0d201",
+      "case_index": 0,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 95,
+      "offset": 107335,
+      "bytes": 6,
+      "hex": "1700a0f1d201",
+      "case_index": 0,
+      "method": "cached-affine"
+    },
+    {
+      "row": 96,
+      "offset": 107419,
+      "bytes": 6,
+      "hex": "1700a0f2d201",
+      "case_index": 0,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 97,
+      "offset": 107503,
+      "bytes": 6,
+      "hex": "1700a0f3d201",
+      "case_index": 0,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 98,
+      "offset": 107587,
+      "bytes": 6,
+      "hex": "1700a0f4d201",
+      "case_index": 0,
+      "method": "matrix-only"
+    },
+    {
+      "row": 99,
+      "offset": 107671,
+      "bytes": 6,
+      "hex": "1700a0f5d201",
+      "case_index": 1,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 100,
+      "offset": 107755,
+      "bytes": 6,
+      "hex": "1700a0f6d201",
+      "case_index": 1,
+      "method": "cached-affine"
+    },
+    {
+      "row": 101,
+      "offset": 107839,
+      "bytes": 6,
+      "hex": "1700a0f7d201",
+      "case_index": 1,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 102,
+      "offset": 107923,
+      "bytes": 6,
+      "hex": "1700a0f8d201",
+      "case_index": 1,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 103,
+      "offset": 108007,
+      "bytes": 6,
+      "hex": "1700a0f9d201",
+      "case_index": 1,
+      "method": "matrix-only"
+    },
+    {
+      "row": 104,
+      "offset": 108091,
+      "bytes": 6,
+      "hex": "1700a0fad201",
+      "case_index": 2,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 105,
+      "offset": 108175,
+      "bytes": 6,
+      "hex": "1700a0fbd201",
+      "case_index": 2,
+      "method": "cached-affine"
+    },
+    {
+      "row": 106,
+      "offset": 108259,
+      "bytes": 6,
+      "hex": "1700a0fcd201",
+      "case_index": 2,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 107,
+      "offset": 108343,
+      "bytes": 6,
+      "hex": "1700a0fdd201",
+      "case_index": 2,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 108,
+      "offset": 108427,
+      "bytes": 6,
+      "hex": "1700a0fed201",
+      "case_index": 2,
+      "method": "matrix-only"
+    },
+    {
+      "row": 109,
+      "offset": 108511,
+      "bytes": 6,
+      "hex": "1700a0ffd201",
+      "case_index": 3,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 110,
+      "offset": 108595,
+      "bytes": 6,
+      "hex": "1700a000d301",
+      "case_index": 3,
+      "method": "cached-affine"
+    },
+    {
+      "row": 111,
+      "offset": 108679,
+      "bytes": 6,
+      "hex": "1700a001d301",
+      "case_index": 3,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 112,
+      "offset": 108763,
+      "bytes": 6,
+      "hex": "1700a002d301",
+      "case_index": 3,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 113,
+      "offset": 108847,
+      "bytes": 6,
+      "hex": "1700a003d301",
+      "case_index": 3,
+      "method": "matrix-only"
+    },
+    {
+      "row": 114,
+      "offset": 108931,
+      "bytes": 6,
+      "hex": "1700a004d301",
+      "case_index": 4,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 115,
+      "offset": 109015,
+      "bytes": 6,
+      "hex": "1700a005d301",
+      "case_index": 4,
+      "method": "cached-affine"
+    },
+    {
+      "row": 116,
+      "offset": 109099,
+      "bytes": 6,
+      "hex": "1700a006d301",
+      "case_index": 4,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 117,
+      "offset": 109183,
+      "bytes": 6,
+      "hex": "1700a007d301",
+      "case_index": 4,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 118,
+      "offset": 109267,
+      "bytes": 6,
+      "hex": "1700a008d301",
+      "case_index": 4,
+      "method": "matrix-only"
+    },
+    {
+      "row": 119,
+      "offset": 109351,
+      "bytes": 6,
+      "hex": "1700a009d301",
+      "case_index": 5,
+      "method": "ordinary-sized"
+    },
+    {
+      "row": 120,
+      "offset": 109435,
+      "bytes": 6,
+      "hex": "1700a00ad301",
+      "case_index": 5,
+      "method": "cached-affine"
+    },
+    {
+      "row": 121,
+      "offset": 109519,
+      "bytes": 6,
+      "hex": "1700a00bd301",
+      "case_index": 5,
+      "method": "rebuilt-affine"
+    },
+    {
+      "row": 122,
+      "offset": 109603,
+      "bytes": 6,
+      "hex": "1700a00cd301",
+      "case_index": 5,
+      "method": "transform40-plot"
+    },
+    {
+      "row": 123,
+      "offset": 109687,
+      "bytes": 6,
+      "hex": "1700a00dd301",
+      "case_index": 5,
+      "method": "matrix-only"
+    }
+  ],
+  "timed_submit_bytes_each": 6,
+  "all_resident_operations_and_batches_exact": true,
+  "full_foreground_command_schedule_exact": true,
+  "all_csv_rows_match_exact_plan": true,
+  "exact_primary_pixel_validation_response_order": true,
+  "zero_key_callbacks": 124,
+  "marker_indices": [
+    12
+  ],
+  "pixel_payloads": [
+    "0000ff0c"
+  ],
+  "no_timed_swap_or_pixel_upload": true,
+  "input_and_runtime_identities_unchanged": true,
+  "guest_callback_and_prt_restore_reports": true,
+  "clean_mos_return": true,
+  "summary": {
+    "schema": 1,
+    "valid": true,
+    "completed_batches": 124,
+    "planned_batches": 124,
+    "mode": 136,
+    "timed_swaps": 0,
+    "draw_repeats": 128,
+    "setup_repeats": 1024,
+    "samples": 4,
+    "case_mask": 63,
+    "primary_completion": "key-zero",
+    "fallback_used": false,
+    "callback_restored": true,
+    "prt_restored": true,
+    "setup_mos_ticks": 138,
+    "keyboard_packets": 124,
+    "mos_hz_nominal": 120,
+    "prt_hz_nominal": 1000,
+    "failure": "none"
+  },
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 1401,
+    "cycles": 5872397187,
+    "retired": 4996538199,
+    "uart_rx": 110775,
+    "uart_tx": 7488,
+    "uart_delivered": 7488,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "output_sha256": {
+    "summary.json": "fbb33abb46d8ef9073b1b176835b40eac5e92c05412cc5f719be661cccfe99f4",
+    "timings.csv": "8ffced13878d2e2e7d70eb10dbdd0664c09ca9a45341d9b0d9472b929c626182",
+    "done.txt": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431"
+  },
+  "limitations": [
+    "Direction capture files contain no cross-direction timestamps; exact request/response order is interpreted with pinned guest wait/readback source.",
+    "PRT/callback restoration is the pinned guest vector-comparison report; UART alone does not inspect MOS memory.",
+    "Synchronous hidden-page raster completion; no swap, scanout, host-window or physical ESP32 timing claim."
+  ]
+}

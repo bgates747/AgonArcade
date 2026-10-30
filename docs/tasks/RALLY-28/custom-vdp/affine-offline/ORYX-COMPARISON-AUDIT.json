@@ -1,0 +1,5618 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "Independent matching-input Pi5/Oryx host-kernel and Flexe target comparison",
+  "host_architectures": [
+    "aarch64",
+    "x86_64"
+  ],
+  "host_compilers": [
+    "g++ (Debian 14.2.0-19) 14.2.0",
+    "g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0"
+  ],
+  "host_samples_per_machine": 640,
+  "host_checked_case_operation_groups": 128,
+  "host_checked_case_operation_trial_rows": 640,
+  "host_checked_geometry_cases": 16,
+  "host_pixel_and_operation_checksums_identical": true,
+  "host_cpu_comparison": [
+    {
+      "case": "traffic-far",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002091486,
+      "oryx_median_cpu_us": 0.000502042,
+      "oryx_to_pi_cpu_ratio": 0.24004081308696304,
+      "pi_median_wall_us": 0.002091517,
+      "oryx_median_wall_us": 0.000502064
+    },
+    {
+      "case": "traffic-far",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.027995984,
+      "oryx_median_cpu_us": 0.014824026,
+      "oryx_to_pi_cpu_ratio": 0.5295054462097135,
+      "pi_median_wall_us": 0.027996443,
+      "oryx_median_wall_us": 0.014830979
+    },
+    {
+      "case": "traffic-far",
+      "operation": "cached_affine",
+      "checksum": "9739673671334330822",
+      "pi_median_cpu_us": 0.23379933500000002,
+      "oryx_median_cpu_us": 0.154804401,
+      "oryx_to_pi_cpu_ratio": 0.6621250697740436,
+      "pi_median_wall_us": 0.23380209,
+      "oryx_median_wall_us": 0.15480669800000002
+    },
+    {
+      "case": "traffic-far",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "9739673671334330822",
+      "pi_median_cpu_us": 0.262587299,
+      "oryx_median_cpu_us": 0.178814922,
+      "oryx_to_pi_cpu_ratio": 0.6809732332103389,
+      "pi_median_wall_us": 0.262670799,
+      "oryx_median_wall_us": 0.178856815
+    },
+    {
+      "case": "traffic-far",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.434492317,
+      "oryx_median_cpu_us": 0.24620589799999998,
+      "oryx_to_pi_cpu_ratio": 0.5666519023856524,
+      "pi_median_wall_us": 0.434496284,
+      "oryx_median_wall_us": 0.24620835500000002
+    },
+    {
+      "case": "traffic-far",
+      "operation": "transform_then_plot",
+      "checksum": "9739673671334330822",
+      "pi_median_cpu_us": 0.5148947070000001,
+      "oryx_median_cpu_us": 0.308433044,
+      "oryx_to_pi_cpu_ratio": 0.5990215859802963,
+      "pi_median_wall_us": 0.515079926,
+      "oryx_median_wall_us": 0.308437408
+    },
+    {
+      "case": "traffic-far",
+      "operation": "ordinary_pretransformed",
+      "checksum": "9739673671334330822",
+      "pi_median_cpu_us": 0.076418453,
+      "oryx_median_cpu_us": 0.059045966,
+      "oryx_to_pi_cpu_ratio": 0.7726663349230585,
+      "pi_median_wall_us": 0.076420324,
+      "oryx_median_wall_us": 0.05912459
+    },
+    {
+      "case": "traffic-far",
+      "operation": "ordinary_original_size",
+      "checksum": "14796844267896204060",
+      "pi_median_cpu_us": 11.882487060999999,
+      "oryx_median_cpu_us": 9.144871338000002,
+      "oryx_to_pi_cpu_ratio": 0.7696091980621431,
+      "pi_median_wall_us": 11.882613525,
+      "oryx_median_wall_us": 9.145054931999999
+    },
+    {
+      "case": "traffic-middle",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.0020912229999999997,
+      "oryx_median_cpu_us": 0.000512287,
+      "oryx_to_pi_cpu_ratio": 0.2449700486270475,
+      "pi_median_wall_us": 0.002091249,
+      "oryx_median_wall_us": 0.0005123259999999999
+    },
+    {
+      "case": "traffic-middle",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028006854,
+      "oryx_median_cpu_us": 0.015575443,
+      "oryx_to_pi_cpu_ratio": 0.5561296888254568,
+      "pi_median_wall_us": 0.028007101,
+      "oryx_median_wall_us": 0.015578469
+    },
+    {
+      "case": "traffic-middle",
+      "operation": "cached_affine",
+      "checksum": "7118486264106662633",
+      "pi_median_cpu_us": 6.253429321,
+      "oryx_median_cpu_us": 3.556007446,
+      "oryx_to_pi_cpu_ratio": 0.5686491784689031,
+      "pi_median_wall_us": 6.253483521,
+      "oryx_median_wall_us": 3.556050964
+    },
+    {
+      "case": "traffic-middle",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "7118486264106662633",
+      "pi_median_cpu_us": 6.287360229,
+      "oryx_median_cpu_us": 3.57108728,
+      "oryx_to_pi_cpu_ratio": 0.5679787939505383,
+      "pi_median_wall_us": 6.287421387,
+      "oryx_median_wall_us": 3.5711124880000003
+    },
+    {
+      "case": "traffic-middle",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 7.999154419000001,
+      "oryx_median_cpu_us": 5.417223022,
+      "oryx_to_pi_cpu_ratio": 0.6772244587668835,
+      "pi_median_wall_us": 8.000963013,
+      "oryx_median_wall_us": 5.417307495
+    },
+    {
+      "case": "traffic-middle",
+      "operation": "transform_then_plot",
+      "checksum": "7118486264106662633",
+      "pi_median_cpu_us": 9.156738280999999,
+      "oryx_median_cpu_us": 6.289478271,
+      "oryx_to_pi_cpu_ratio": 0.6868688476168975,
+      "pi_median_wall_us": 9.158955811,
+      "oryx_median_wall_us": 6.2906785890000005
+    },
+    {
+      "case": "traffic-middle",
+      "operation": "ordinary_pretransformed",
+      "checksum": "7118486264106662633",
+      "pi_median_cpu_us": 1.131761612,
+      "oryx_median_cpu_us": 0.87409903,
+      "oryx_to_pi_cpu_ratio": 0.7723349340815069,
+      "pi_median_wall_us": 1.132035141,
+      "oryx_median_wall_us": 0.874107941
+    },
+    {
+      "case": "traffic-middle",
+      "operation": "ordinary_original_size",
+      "checksum": "10791946874726146128",
+      "pi_median_cpu_us": 12.023496094,
+      "oryx_median_cpu_us": 9.446970581,
+      "oryx_to_pi_cpu_ratio": 0.7857091237975496,
+      "pi_median_wall_us": 12.023623047,
+      "oryx_median_wall_us": 9.449186767999999
+    },
+    {
+      "case": "traffic-near",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.0020905900000000002,
+      "oryx_median_cpu_us": 0.000516284,
+      "oryx_to_pi_cpu_ratio": 0.24695612243433668,
+      "pi_median_wall_us": 0.002090617,
+      "oryx_median_wall_us": 0.000516325
+    },
+    {
+      "case": "traffic-near",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028102354,
+      "oryx_median_cpu_us": 0.015271145,
+      "oryx_to_pi_cpu_ratio": 0.5434115946301153,
+      "pi_median_wall_us": 0.028102575,
+      "oryx_median_wall_us": 0.015271429
+    },
+    {
+      "case": "traffic-near",
+      "operation": "cached_affine",
+      "checksum": "9548685538626358470",
+      "pi_median_cpu_us": 62.25806543,
+      "oryx_median_cpu_us": 38.522299805,
+      "oryx_to_pi_cpu_ratio": 0.6187519566972834,
+      "pi_median_wall_us": 62.258535156,
+      "oryx_median_wall_us": 38.523278319999996
+    },
+    {
+      "case": "traffic-near",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "9548685538626358470",
+      "pi_median_cpu_us": 62.303060547,
+      "oryx_median_cpu_us": 38.594399414,
+      "oryx_to_pi_cpu_ratio": 0.6194623358010682,
+      "pi_median_wall_us": 62.306477539,
+      "oryx_median_wall_us": 38.595329102
+    },
+    {
+      "case": "traffic-near",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 79.3559375,
+      "oryx_median_cpu_us": 54.887875,
+      "oryx_to_pi_cpu_ratio": 0.6916668963806268,
+      "pi_median_wall_us": 79.3573125,
+      "oryx_median_wall_us": 54.893484375
+    },
+    {
+      "case": "traffic-near",
+      "operation": "transform_then_plot",
+      "checksum": "9548685538626358470",
+      "pi_median_cpu_us": 90.255857422,
+      "oryx_median_cpu_us": 63.386128905999996,
+      "oryx_to_pi_cpu_ratio": 0.7022937980593549,
+      "pi_median_wall_us": 90.256871094,
+      "oryx_median_wall_us": 63.386621094
+    },
+    {
+      "case": "traffic-near",
+      "operation": "ordinary_pretransformed",
+      "checksum": "9548685538626358470",
+      "pi_median_cpu_us": 10.838369873,
+      "oryx_median_cpu_us": 8.66284082,
+      "oryx_to_pi_cpu_ratio": 0.7992752527832098,
+      "pi_median_wall_us": 10.843419921999999,
+      "oryx_median_wall_us": 8.66551709
+    },
+    {
+      "case": "traffic-near",
+      "operation": "ordinary_original_size",
+      "checksum": "4533870252851587362",
+      "pi_median_cpu_us": 11.550274658000001,
+      "oryx_median_cpu_us": 9.261873413,
+      "oryx_to_pi_cpu_ratio": 0.8018747334796061,
+      "pi_median_wall_us": 11.550396973000002,
+      "oryx_median_wall_us": 9.261938721
+    },
+    {
+      "case": "sign-far",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002091701,
+      "oryx_median_cpu_us": 0.0005086159999999999,
+      "oryx_to_pi_cpu_ratio": 0.24315903659270607,
+      "pi_median_wall_us": 0.00209173,
+      "oryx_median_wall_us": 0.000508636
+    },
+    {
+      "case": "sign-far",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.027874205,
+      "oryx_median_cpu_us": 0.015135362000000001,
+      "oryx_to_pi_cpu_ratio": 0.5429881139210967,
+      "pi_median_wall_us": 0.027874452,
+      "oryx_median_wall_us": 0.015135482
+    },
+    {
+      "case": "sign-far",
+      "operation": "cached_affine",
+      "checksum": "10564254911043204863",
+      "pi_median_cpu_us": 0.7807826229999999,
+      "oryx_median_cpu_us": 0.5159941250000001,
+      "oryx_to_pi_cpu_ratio": 0.6608678392679855,
+      "pi_median_wall_us": 0.780989197,
+      "oryx_median_wall_us": 0.5159968189999999
+    },
+    {
+      "case": "sign-far",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "10564254911043204863",
+      "pi_median_cpu_us": 0.8099046019999999,
+      "oryx_median_cpu_us": 0.553272453,
+      "oryx_to_pi_cpu_ratio": 0.6831328672954005,
+      "pi_median_wall_us": 0.810115112,
+      "oryx_median_wall_us": 0.553329475
+    },
+    {
+      "case": "sign-far",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 1.051910965,
+      "oryx_median_cpu_us": 0.593701477,
+      "oryx_to_pi_cpu_ratio": 0.5644027838420717,
+      "pi_median_wall_us": 1.051918304,
+      "oryx_median_wall_us": 0.5938252639999999
+    },
+    {
+      "case": "sign-far",
+      "operation": "transform_then_plot",
+      "checksum": "10564254911043204863",
+      "pi_median_cpu_us": 1.299423767,
+      "oryx_median_cpu_us": 0.8097314760000001,
+      "oryx_to_pi_cpu_ratio": 0.6231465797100509,
+      "pi_median_wall_us": 1.299437927,
+      "oryx_median_wall_us": 0.8097440340000001
+    },
+    {
+      "case": "sign-far",
+      "operation": "ordinary_pretransformed",
+      "checksum": "10564254911043204863",
+      "pi_median_cpu_us": 0.242226635,
+      "oryx_median_cpu_us": 0.205783024,
+      "oryx_to_pi_cpu_ratio": 0.8495474661570558,
+      "pi_median_wall_us": 0.242285484,
+      "oryx_median_wall_us": 0.2057854
+    },
+    {
+      "case": "sign-far",
+      "operation": "ordinary_original_size",
+      "checksum": "13241390976513835171",
+      "pi_median_cpu_us": 10.969522949,
+      "oryx_median_cpu_us": 11.296502441000001,
+      "oryx_to_pi_cpu_ratio": 1.0298079956184247,
+      "pi_median_wall_us": 10.970788818,
+      "oryx_median_wall_us": 11.296644531
+    },
+    {
+      "case": "sign-middle",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002090345,
+      "oryx_median_cpu_us": 0.000506251,
+      "oryx_to_pi_cpu_ratio": 0.2421853808821032,
+      "pi_median_wall_us": 0.002090598,
+      "oryx_median_wall_us": 0.000506277
+    },
+    {
+      "case": "sign-middle",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.02799662,
+      "oryx_median_cpu_us": 0.015140533,
+      "oryx_to_pi_cpu_ratio": 0.5407986035457137,
+      "pi_median_wall_us": 0.02799684,
+      "oryx_median_wall_us": 0.015140715
+    },
+    {
+      "case": "sign-middle",
+      "operation": "cached_affine",
+      "checksum": "15176430790811761923",
+      "pi_median_cpu_us": 4.8553037109999995,
+      "oryx_median_cpu_us": 3.0095816650000002,
+      "oryx_to_pi_cpu_ratio": 0.6198544610467109,
+      "pi_median_wall_us": 4.855335388,
+      "oryx_median_wall_us": 3.0096361689999998
+    },
+    {
+      "case": "sign-middle",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "15176430790811761923",
+      "pi_median_cpu_us": 4.882163940000001,
+      "oryx_median_cpu_us": 3.000753601,
+      "oryx_to_pi_cpu_ratio": 0.6146359765624748,
+      "pi_median_wall_us": 4.883309814,
+      "oryx_median_wall_us": 3.00079657
+    },
+    {
+      "case": "sign-middle",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 5.550482788,
+      "oryx_median_cpu_us": 3.363930298,
+      "oryx_to_pi_cpu_ratio": 0.6060608466839552,
+      "pi_median_wall_us": 5.550541626,
+      "oryx_median_wall_us": 3.3639628299999997
+    },
+    {
+      "case": "sign-middle",
+      "operation": "transform_then_plot",
+      "checksum": "15176430790811761923",
+      "pi_median_cpu_us": 6.983891235,
+      "oryx_median_cpu_us": 4.351018555,
+      "oryx_to_pi_cpu_ratio": 0.6230077772681692,
+      "pi_median_wall_us": 6.983945435,
+      "oryx_median_wall_us": 4.352329285
+    },
+    {
+      "case": "sign-middle",
+      "operation": "ordinary_pretransformed",
+      "checksum": "15176430790811761923",
+      "pi_median_cpu_us": 1.410465393,
+      "oryx_median_cpu_us": 1.051927322,
+      "oryx_to_pi_cpu_ratio": 0.7458015823859353,
+      "pi_median_wall_us": 1.4104800720000001,
+      "oryx_median_wall_us": 1.0520979769999999
+    },
+    {
+      "case": "sign-middle",
+      "operation": "ordinary_original_size",
+      "checksum": "4102165775700070633",
+      "pi_median_cpu_us": 10.981373047,
+      "oryx_median_cpu_us": 11.209208252,
+      "oryx_to_pi_cpu_ratio": 1.0207474242086916,
+      "pi_median_wall_us": 10.981490723,
+      "oryx_median_wall_us": 11.209308838
+    },
+    {
+      "case": "sign-near",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.0020919819999999996,
+      "oryx_median_cpu_us": 0.0005008160000000001,
+      "oryx_to_pi_cpu_ratio": 0.23939785332760996,
+      "pi_median_wall_us": 0.00209201,
+      "oryx_median_wall_us": 0.000500837
+    },
+    {
+      "case": "sign-near",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028067889000000002,
+      "oryx_median_cpu_us": 0.014905481,
+      "oryx_to_pi_cpu_ratio": 0.5310510170536872,
+      "pi_median_wall_us": 0.02806811,
+      "oryx_median_wall_us": 0.014905606
+    },
+    {
+      "case": "sign-near",
+      "operation": "cached_affine",
+      "checksum": "15038702860948048305",
+      "pi_median_cpu_us": 4.212716491999999,
+      "oryx_median_cpu_us": 2.5776391600000004,
+      "oryx_to_pi_cpu_ratio": 0.6118710254760721,
+      "pi_median_wall_us": 4.212747070000001,
+      "oryx_median_wall_us": 2.578030518
+    },
+    {
+      "case": "sign-near",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "15038702860948048305",
+      "pi_median_cpu_us": 4.24165741,
+      "oryx_median_cpu_us": 2.567058838,
+      "oryx_to_pi_cpu_ratio": 0.6052018326487145,
+      "pi_median_wall_us": 4.241686829,
+      "oryx_median_wall_us": 2.567099854
+    },
+    {
+      "case": "sign-near",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 13.794374756,
+      "oryx_median_cpu_us": 9.247227661,
+      "oryx_to_pi_cpu_ratio": 0.6703622182642114,
+      "pi_median_wall_us": 13.794510254,
+      "oryx_median_wall_us": 9.247373291
+    },
+    {
+      "case": "sign-near",
+      "operation": "transform_then_plot",
+      "checksum": "15038702860948048305",
+      "pi_median_cpu_us": 14.986662598,
+      "oryx_median_cpu_us": 10.338759277,
+      "oryx_to_pi_cpu_ratio": 0.6898640180489368,
+      "pi_median_wall_us": 14.986784912,
+      "oryx_median_wall_us": 10.367883300999999
+    },
+    {
+      "case": "sign-near",
+      "operation": "ordinary_pretransformed",
+      "checksum": "15038702860948048305",
+      "pi_median_cpu_us": 1.176795975,
+      "oryx_median_cpu_us": 0.957937393,
+      "oryx_to_pi_cpu_ratio": 0.8140216429615167,
+      "pi_median_wall_us": 1.176970871,
+      "oryx_median_wall_us": 0.957949966
+    },
+    {
+      "case": "sign-near",
+      "operation": "ordinary_original_size",
+      "checksum": "17872890617608335453",
+      "pi_median_cpu_us": 7.195825684000001,
+      "oryx_median_cpu_us": 7.319121094,
+      "oryx_to_pi_cpu_ratio": 1.0171342963843812,
+      "pi_median_wall_us": 7.197125487999999,
+      "oryx_median_wall_us": 7.323451294000001
+    },
+    {
+      "case": "player-fixed",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002091271,
+      "oryx_median_cpu_us": 0.000513743,
+      "oryx_to_pi_cpu_ratio": 0.24566065325823386,
+      "pi_median_wall_us": 0.002091317,
+      "oryx_median_wall_us": 0.0005137939999999999
+    },
+    {
+      "case": "player-fixed",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028136421,
+      "oryx_median_cpu_us": 0.015109944,
+      "oryx_to_pi_cpu_ratio": 0.5370243784737228,
+      "pi_median_wall_us": 0.028136695,
+      "oryx_median_wall_us": 0.015113266
+    },
+    {
+      "case": "player-fixed",
+      "operation": "cached_affine",
+      "checksum": "8659383537456370946",
+      "pi_median_cpu_us": 63.764232422,
+      "oryx_median_cpu_us": 40.104751465,
+      "oryx_to_pi_cpu_ratio": 0.6289537243949167,
+      "pi_median_wall_us": 63.764865234,
+      "oryx_median_wall_us": 40.105242188
+    },
+    {
+      "case": "player-fixed",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "8659383537456370946",
+      "pi_median_cpu_us": 63.795391602,
+      "oryx_median_cpu_us": 39.709730469,
+      "oryx_to_pi_cpu_ratio": 0.6224545295800816,
+      "pi_median_wall_us": 63.802173828,
+      "oryx_median_wall_us": 39.710397461
+    },
+    {
+      "case": "player-fixed",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 87.37897656199999,
+      "oryx_median_cpu_us": 58.594580078,
+      "oryx_to_pi_cpu_ratio": 0.670579839492902,
+      "pi_median_wall_us": 87.38454882799999,
+      "oryx_median_wall_us": 58.595023438
+    },
+    {
+      "case": "player-fixed",
+      "operation": "transform_then_plot",
+      "checksum": "8659383537456370946",
+      "pi_median_cpu_us": 98.86393164100001,
+      "oryx_median_cpu_us": 68.054192383,
+      "oryx_to_pi_cpu_ratio": 0.6883621888528774,
+      "pi_median_wall_us": 98.86501757799999,
+      "oryx_median_wall_us": 68.068668945
+    },
+    {
+      "case": "player-fixed",
+      "operation": "ordinary_pretransformed",
+      "checksum": "8659383537456370946",
+      "pi_median_cpu_us": 11.443110596,
+      "oryx_median_cpu_us": 9.072620972000001,
+      "oryx_to_pi_cpu_ratio": 0.7928456948735061,
+      "pi_median_wall_us": 11.448477295,
+      "oryx_median_wall_us": 9.073701904
+    },
+    {
+      "case": "player-fixed",
+      "operation": "ordinary_original_size",
+      "checksum": "8659383537456370946",
+      "pi_median_cpu_us": 11.385710693,
+      "oryx_median_cpu_us": 9.032778809,
+      "oryx_to_pi_cpu_ratio": 0.7933434330588958,
+      "pi_median_wall_us": 11.389951416,
+      "oryx_median_wall_us": 9.032862427
+    },
+    {
+      "case": "player-fixed-mirror",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002091833,
+      "oryx_median_cpu_us": 0.0005055,
+      "oryx_to_pi_cpu_ratio": 0.241654089977546,
+      "pi_median_wall_us": 0.002091866,
+      "oryx_median_wall_us": 0.000505551
+    },
+    {
+      "case": "player-fixed-mirror",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.027983903,
+      "oryx_median_cpu_us": 0.014968735,
+      "oryx_to_pi_cpu_ratio": 0.5349051917454116,
+      "pi_median_wall_us": 0.027984142,
+      "oryx_median_wall_us": 0.014968867
+    },
+    {
+      "case": "player-fixed-mirror",
+      "operation": "cached_affine",
+      "checksum": "15234531656076141610",
+      "pi_median_cpu_us": 63.625054688,
+      "oryx_median_cpu_us": 38.881369141,
+      "oryx_to_pi_cpu_ratio": 0.6111015437497647,
+      "pi_median_wall_us": 63.626428711,
+      "oryx_median_wall_us": 38.881869141
+    },
+    {
+      "case": "player-fixed-mirror",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "15234531656076141610",
+      "pi_median_cpu_us": 63.650896484,
+      "oryx_median_cpu_us": 38.608544922,
+      "oryx_to_pi_cpu_ratio": 0.6065671821559508,
+      "pi_median_wall_us": 63.651385741999995,
+      "oryx_median_wall_us": 38.62073877
+    },
+    {
+      "case": "player-fixed-mirror",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 86.456632812,
+      "oryx_median_cpu_us": 57.548016602000004,
+      "oryx_to_pi_cpu_ratio": 0.6656287057482125,
+      "pi_median_wall_us": 86.457791016,
+      "oryx_median_wall_us": 57.548420897999996
+    },
+    {
+      "case": "player-fixed-mirror",
+      "operation": "transform_then_plot",
+      "checksum": "15234531656076141610",
+      "pi_median_cpu_us": 97.9738125,
+      "oryx_median_cpu_us": 65.974766602,
+      "oryx_to_pi_cpu_ratio": 0.6733918474592382,
+      "pi_median_wall_us": 97.974753906,
+      "oryx_median_wall_us": 65.975660156
+    },
+    {
+      "case": "player-fixed-mirror",
+      "operation": "ordinary_pretransformed",
+      "checksum": "15234531656076141610",
+      "pi_median_cpu_us": 11.472751221000001,
+      "oryx_median_cpu_us": 8.814228516,
+      "oryx_to_pi_cpu_ratio": 0.7682750498299156,
+      "pi_median_wall_us": 11.472877930000001,
+      "oryx_median_wall_us": 8.814301025
+    },
+    {
+      "case": "player-fixed-mirror",
+      "operation": "ordinary_original_size",
+      "checksum": "6654869651403924672",
+      "pi_median_cpu_us": 11.397872314,
+      "oryx_median_cpu_us": 8.787047363,
+      "oryx_to_pi_cpu_ratio": 0.770937515434953,
+      "pi_median_wall_us": 11.39798999,
+      "oryx_median_wall_us": 8.787176025
+    },
+    {
+      "case": "traffic-fullsize",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002092038,
+      "oryx_median_cpu_us": 0.000500956,
+      "oryx_to_pi_cpu_ratio": 0.2394583654790209,
+      "pi_median_wall_us": 0.002092067,
+      "oryx_median_wall_us": 0.000501087
+    },
+    {
+      "case": "traffic-fullsize",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028114619,
+      "oryx_median_cpu_us": 0.014861865,
+      "oryx_to_pi_cpu_ratio": 0.5286169803688252,
+      "pi_median_wall_us": 0.028115158,
+      "oryx_median_wall_us": 0.014862064
+    },
+    {
+      "case": "traffic-fullsize",
+      "operation": "cached_affine",
+      "checksum": "17815370597011779018",
+      "pi_median_cpu_us": 70.043854492,
+      "oryx_median_cpu_us": 42.756080078,
+      "oryx_to_pi_cpu_ratio": 0.6104187210725724,
+      "pi_median_wall_us": 70.050889648,
+      "oryx_median_wall_us": 42.756960938
+    },
+    {
+      "case": "traffic-fullsize",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "17815370597011779018",
+      "pi_median_cpu_us": 70.050726562,
+      "oryx_median_cpu_us": 42.334745117,
+      "oryx_to_pi_cpu_ratio": 0.6043441259603591,
+      "pi_median_wall_us": 70.069805664,
+      "oryx_median_wall_us": 42.335247069999994
+    },
+    {
+      "case": "traffic-fullsize",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 87.367005859,
+      "oryx_median_cpu_us": 57.723679688,
+      "oryx_to_pi_cpu_ratio": 0.6607034213941037,
+      "pi_median_wall_us": 87.367984375,
+      "oryx_median_wall_us": 57.724268555
+    },
+    {
+      "case": "traffic-fullsize",
+      "operation": "transform_then_plot",
+      "checksum": "17815370597011779018",
+      "pi_median_cpu_us": 99.576423828,
+      "oryx_median_cpu_us": 66.96040332,
+      "oryx_to_pi_cpu_ratio": 0.6724523812550429,
+      "pi_median_wall_us": 99.590023438,
+      "oryx_median_wall_us": 66.961120117
+    },
+    {
+      "case": "traffic-fullsize",
+      "operation": "ordinary_pretransformed",
+      "checksum": "17815370597011779018",
+      "pi_median_cpu_us": 12.199422119000001,
+      "oryx_median_cpu_us": 9.229656859999999,
+      "oryx_to_pi_cpu_ratio": 0.7565650872614089,
+      "pi_median_wall_us": 12.200335449,
+      "oryx_median_wall_us": 9.231914429
+    },
+    {
+      "case": "traffic-fullsize",
+      "operation": "ordinary_original_size",
+      "checksum": "17815370597011779018",
+      "pi_median_cpu_us": 12.053136719,
+      "oryx_median_cpu_us": 9.221694336,
+      "oryx_to_pi_cpu_ratio": 0.7650866783468369,
+      "pi_median_wall_us": 12.053258789,
+      "oryx_median_wall_us": 9.221801025000001
+    },
+    {
+      "case": "sign-fullsize",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002091839,
+      "oryx_median_cpu_us": 0.000499751,
+      "oryx_to_pi_cpu_ratio": 0.23890509738082139,
+      "pi_median_wall_us": 0.00209187,
+      "oryx_median_wall_us": 0.000499772
+    },
+    {
+      "case": "sign-fullsize",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.027968831000000003,
+      "oryx_median_cpu_us": 0.014850440000000001,
+      "oryx_to_pi_cpu_ratio": 0.5309639147950087,
+      "pi_median_wall_us": 0.027969069000000003,
+      "oryx_median_wall_us": 0.014853173
+    },
+    {
+      "case": "sign-fullsize",
+      "operation": "cached_affine",
+      "checksum": "8141721524689076611",
+      "pi_median_cpu_us": 43.10096582,
+      "oryx_median_cpu_us": 27.388499023,
+      "oryx_to_pi_cpu_ratio": 0.635449774777228,
+      "pi_median_wall_us": 43.101580078,
+      "oryx_median_wall_us": 27.396825195
+    },
+    {
+      "case": "sign-fullsize",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "8141721524689076611",
+      "pi_median_cpu_us": 43.119701172,
+      "oryx_median_cpu_us": 27.10578125,
+      "oryx_to_pi_cpu_ratio": 0.6286170941184833,
+      "pi_median_wall_us": 43.12015332,
+      "oryx_median_wall_us": 27.107233398
+    },
+    {
+      "case": "sign-fullsize",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 46.583369141000006,
+      "oryx_median_cpu_us": 30.894990723,
+      "oryx_to_pi_cpu_ratio": 0.663219326826406,
+      "pi_median_wall_us": 46.583821289,
+      "oryx_median_wall_us": 30.895270508000003
+    },
+    {
+      "case": "sign-fullsize",
+      "operation": "transform_then_plot",
+      "checksum": "8141721524689076611",
+      "pi_median_cpu_us": 57.830348633,
+      "oryx_median_cpu_us": 40.599985352000004,
+      "oryx_to_pi_cpu_ratio": 0.702053269809137,
+      "pi_median_wall_us": 57.83109082,
+      "oryx_median_wall_us": 40.601013672
+    },
+    {
+      "case": "sign-fullsize",
+      "operation": "ordinary_pretransformed",
+      "checksum": "8141721524689076611",
+      "pi_median_cpu_us": 11.190126709,
+      "oryx_median_cpu_us": 9.710010254,
+      "oryx_to_pi_cpu_ratio": 0.8677301434120875,
+      "pi_median_wall_us": 11.190253418000001,
+      "oryx_median_wall_us": 9.710080443999999
+    },
+    {
+      "case": "sign-fullsize",
+      "operation": "ordinary_original_size",
+      "checksum": "8141721524689076611",
+      "pi_median_cpu_us": 10.979510254000001,
+      "oryx_median_cpu_us": 10.996590332,
+      "oryx_to_pi_cpu_ratio": 1.0015556320459538,
+      "pi_median_wall_us": 10.979618652,
+      "oryx_median_wall_us": 10.999264404
+    },
+    {
+      "case": "traffic-clipped-left",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002092005,
+      "oryx_median_cpu_us": 0.000502479,
+      "oryx_to_pi_cpu_ratio": 0.24019015250919573,
+      "pi_median_wall_us": 0.00209203,
+      "oryx_median_wall_us": 0.000502499
+    },
+    {
+      "case": "traffic-clipped-left",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028242412,
+      "oryx_median_cpu_us": 0.014820396999999999,
+      "oryx_to_pi_cpu_ratio": 0.5247567736070133,
+      "pi_median_wall_us": 0.028242721,
+      "oryx_median_wall_us": 0.014822150000000001
+    },
+    {
+      "case": "traffic-clipped-left",
+      "operation": "cached_affine",
+      "checksum": "17947920723841602348",
+      "pi_median_cpu_us": 4.283491333,
+      "oryx_median_cpu_us": 2.3687912289999997,
+      "oryx_to_pi_cpu_ratio": 0.5530047909168957,
+      "pi_median_wall_us": 4.283521851000001,
+      "oryx_median_wall_us": 2.369120361
+    },
+    {
+      "case": "traffic-clipped-left",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "17947920723841602348",
+      "pi_median_cpu_us": 4.316252502,
+      "oryx_median_cpu_us": 2.3708011470000003,
+      "oryx_to_pi_cpu_ratio": 0.5492730432015861,
+      "pi_median_wall_us": 4.316281921,
+      "oryx_median_wall_us": 2.371104889
+    },
+    {
+      "case": "traffic-clipped-left",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 7.996299438,
+      "oryx_median_cpu_us": 5.3044847410000004,
+      "oryx_to_pi_cpu_ratio": 0.6633674466706483,
+      "pi_median_wall_us": 7.99636499,
+      "oryx_median_wall_us": 5.304548584
+    },
+    {
+      "case": "traffic-clipped-left",
+      "operation": "transform_then_plot",
+      "checksum": "17947920723841602348",
+      "pi_median_cpu_us": 8.853233032,
+      "oryx_median_cpu_us": 5.93622229,
+      "oryx_to_pi_cpu_ratio": 0.670514632173753,
+      "pi_median_wall_us": 8.853981323,
+      "oryx_median_wall_us": 5.936277588
+    },
+    {
+      "case": "traffic-clipped-left",
+      "operation": "ordinary_pretransformed",
+      "checksum": "17947920723841602348",
+      "pi_median_cpu_us": 0.834158722,
+      "oryx_median_cpu_us": 0.625333725,
+      "oryx_to_pi_cpu_ratio": 0.7496579589801375,
+      "pi_median_wall_us": 0.834165787,
+      "oryx_median_wall_us": 0.625547531
+    },
+    {
+      "case": "traffic-clipped-left",
+      "operation": "ordinary_original_size",
+      "checksum": "7373407782905160128",
+      "pi_median_cpu_us": 12.311753906,
+      "oryx_median_cpu_us": 8.801425903,
+      "oryx_to_pi_cpu_ratio": 0.7148799407621947,
+      "pi_median_wall_us": 12.311871582,
+      "oryx_median_wall_us": 8.801497192000001
+    },
+    {
+      "case": "traffic-clipped-right",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002092078,
+      "oryx_median_cpu_us": 0.0005003109999999999,
+      "oryx_to_pi_cpu_ratio": 0.23914548119142784,
+      "pi_median_wall_us": 0.0020922170000000004,
+      "oryx_median_wall_us": 0.000500331
+    },
+    {
+      "case": "traffic-clipped-right",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028081752,
+      "oryx_median_cpu_us": 0.014833889,
+      "oryx_to_pi_cpu_ratio": 0.5282394417556283,
+      "pi_median_wall_us": 0.028082017,
+      "oryx_median_wall_us": 0.014836657999999999
+    },
+    {
+      "case": "traffic-clipped-right",
+      "operation": "cached_affine",
+      "checksum": "8857096543517402481",
+      "pi_median_cpu_us": 1.749706696,
+      "oryx_median_cpu_us": 0.9747434389999999,
+      "oryx_to_pi_cpu_ratio": 0.5570896203508613,
+      "pi_median_wall_us": 1.749976807,
+      "oryx_median_wall_us": 0.9749952550000001
+    },
+    {
+      "case": "traffic-clipped-right",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "8857096543517402481",
+      "pi_median_cpu_us": 1.800197479,
+      "oryx_median_cpu_us": 0.991053406,
+      "oryx_to_pi_cpu_ratio": 0.5505248271709196,
+      "pi_median_wall_us": 1.800269775,
+      "oryx_median_wall_us": 0.9913015749999999
+    },
+    {
+      "case": "traffic-clipped-right",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 7.993898682,
+      "oryx_median_cpu_us": 5.310795776,
+      "oryx_to_pi_cpu_ratio": 0.6643561530193535,
+      "pi_median_wall_us": 7.993962036,
+      "oryx_median_wall_us": 5.310849731
+    },
+    {
+      "case": "traffic-clipped-right",
+      "operation": "transform_then_plot",
+      "checksum": "15575673143621517486",
+      "pi_median_cpu_us": 8.364452026,
+      "oryx_median_cpu_us": 5.5707322999999995,
+      "oryx_to_pi_cpu_ratio": 0.6660008668450697,
+      "pi_median_wall_us": 8.365591553,
+      "oryx_median_wall_us": 5.570862061
+    },
+    {
+      "case": "traffic-clipped-right",
+      "operation": "ordinary_pretransformed",
+      "checksum": "15575673143621517486",
+      "pi_median_cpu_us": 0.36408601399999996,
+      "oryx_median_cpu_us": 0.245675621,
+      "oryx_to_pi_cpu_ratio": 0.6747735742466615,
+      "pi_median_wall_us": 0.364089966,
+      "oryx_median_wall_us": 0.245677086
+    },
+    {
+      "case": "traffic-clipped-right",
+      "operation": "ordinary_original_size",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.9322119750000001,
+      "oryx_median_cpu_us": 0.570039116,
+      "oryx_to_pi_cpu_ratio": 0.6114908747015398,
+      "pi_median_wall_us": 0.932220169,
+      "oryx_median_wall_us": 0.570047012
+    },
+    {
+      "case": "traffic-clipped-top",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.00209173,
+      "oryx_median_cpu_us": 0.000507708,
+      "oryx_to_pi_cpu_ratio": 0.24272157496426405,
+      "pi_median_wall_us": 0.0020917590000000003,
+      "oryx_median_wall_us": 0.000507759
+    },
+    {
+      "case": "traffic-clipped-top",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028057973,
+      "oryx_median_cpu_us": 0.015123288,
+      "oryx_to_pi_cpu_ratio": 0.5390014453289267,
+      "pi_median_wall_us": 0.028058361,
+      "oryx_median_wall_us": 0.015131410000000001
+    },
+    {
+      "case": "traffic-clipped-top",
+      "operation": "cached_affine",
+      "checksum": "2769655673541331095",
+      "pi_median_cpu_us": 3.932446533,
+      "oryx_median_cpu_us": 2.221911469,
+      "oryx_to_pi_cpu_ratio": 0.5650201345026146,
+      "pi_median_wall_us": 3.933155212,
+      "oryx_median_wall_us": 2.2222863459999997
+    },
+    {
+      "case": "traffic-clipped-top",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "2769655673541331095",
+      "pi_median_cpu_us": 3.959967773,
+      "oryx_median_cpu_us": 2.266600677,
+      "oryx_to_pi_cpu_ratio": 0.5723785664252677,
+      "pi_median_wall_us": 3.960691101,
+      "oryx_median_wall_us": 2.2673316960000003
+    },
+    {
+      "case": "traffic-clipped-top",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 7.9938988040000005,
+      "oryx_median_cpu_us": 5.3238461909999995,
+      "oryx_to_pi_cpu_ratio": 0.6659886898162939,
+      "pi_median_wall_us": 7.993966553,
+      "oryx_median_wall_us": 5.323903809
+    },
+    {
+      "case": "traffic-clipped-top",
+      "operation": "transform_then_plot",
+      "checksum": "2769655673541331095",
+      "pi_median_cpu_us": 8.871995605,
+      "oryx_median_cpu_us": 5.915371582,
+      "oryx_to_pi_cpu_ratio": 0.6667464508961509,
+      "pi_median_wall_us": 8.872056763,
+      "oryx_median_wall_us": 5.9155330809999995
+    },
+    {
+      "case": "traffic-clipped-top",
+      "operation": "ordinary_pretransformed",
+      "checksum": "2769655673541331095",
+      "pi_median_cpu_us": 0.865436691,
+      "oryx_median_cpu_us": 0.598043785,
+      "oryx_to_pi_cpu_ratio": 0.6910312345423774,
+      "pi_median_wall_us": 0.865444336,
+      "oryx_median_wall_us": 0.598047859
+    },
+    {
+      "case": "traffic-clipped-top",
+      "operation": "ordinary_original_size",
+      "checksum": "7562262996610283824",
+      "pi_median_cpu_us": 12.752106689,
+      "oryx_median_cpu_us": 8.645788818000002,
+      "oryx_to_pi_cpu_ratio": 0.6779890592867985,
+      "pi_median_wall_us": 12.752233398,
+      "oryx_median_wall_us": 8.645850463999999
+    },
+    {
+      "case": "traffic-clipped-bottom",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002091978,
+      "oryx_median_cpu_us": 0.000500324,
+      "oryx_to_pi_cpu_ratio": 0.23916312695448996,
+      "pi_median_wall_us": 0.002092008,
+      "oryx_median_wall_us": 0.000500355
+    },
+    {
+      "case": "traffic-clipped-bottom",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028025459000000003,
+      "oryx_median_cpu_us": 0.014863357,
+      "oryx_to_pi_cpu_ratio": 0.5303519560553852,
+      "pi_median_wall_us": 0.028025689,
+      "oryx_median_wall_us": 0.014868913
+    },
+    {
+      "case": "traffic-clipped-bottom",
+      "operation": "cached_affine",
+      "checksum": "11800990712893073998",
+      "pi_median_cpu_us": 2.0012336729999998,
+      "oryx_median_cpu_us": 1.1533287049999998,
+      "oryx_to_pi_cpu_ratio": 0.5763088641573142,
+      "pi_median_wall_us": 2.001248383,
+      "oryx_median_wall_us": 1.1533515010000002
+    },
+    {
+      "case": "traffic-clipped-bottom",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "11800990712893073998",
+      "pi_median_cpu_us": 2.02583139,
+      "oryx_median_cpu_us": 1.182216232,
+      "oryx_to_pi_cpu_ratio": 0.583570892343612,
+      "pi_median_wall_us": 2.026004364,
+      "oryx_median_wall_us": 1.1822313999999998
+    },
+    {
+      "case": "traffic-clipped-bottom",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 7.995390625,
+      "oryx_median_cpu_us": 5.326890625,
+      "oryx_to_pi_cpu_ratio": 0.6662451998710195,
+      "pi_median_wall_us": 7.995449585,
+      "oryx_median_wall_us": 5.326949463
+    },
+    {
+      "case": "traffic-clipped-bottom",
+      "operation": "transform_then_plot",
+      "checksum": "13616309934936239393",
+      "pi_median_cpu_us": 8.355045898,
+      "oryx_median_cpu_us": 5.5759300540000005,
+      "oryx_to_pi_cpu_ratio": 0.6673727615709144,
+      "pi_median_wall_us": 8.355355713000002,
+      "oryx_median_wall_us": 5.575981689
+    },
+    {
+      "case": "traffic-clipped-bottom",
+      "operation": "ordinary_pretransformed",
+      "checksum": "13616309934936239393",
+      "pi_median_cpu_us": 0.348755302,
+      "oryx_median_cpu_us": 0.248530174,
+      "oryx_to_pi_cpu_ratio": 0.7126204894226956,
+      "pi_median_wall_us": 0.348758835,
+      "oryx_median_wall_us": 0.24861781300000002
+    },
+    {
+      "case": "traffic-clipped-bottom",
+      "operation": "ordinary_original_size",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.8418409880000001,
+      "oryx_median_cpu_us": 0.540900894,
+      "oryx_to_pi_cpu_ratio": 0.6425214520441002,
+      "pi_median_wall_us": 0.842162521,
+      "oryx_median_wall_us": 0.541055344
+    },
+    {
+      "case": "synthetic-all-opaque",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.002090227,
+      "oryx_median_cpu_us": 0.000501151,
+      "oryx_to_pi_cpu_ratio": 0.2397591266403123,
+      "pi_median_wall_us": 0.0020902530000000002,
+      "oryx_median_wall_us": 0.000501181
+    },
+    {
+      "case": "synthetic-all-opaque",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.028079148,
+      "oryx_median_cpu_us": 0.01483078,
+      "oryx_to_pi_cpu_ratio": 0.5281777068164604,
+      "pi_median_wall_us": 0.028079404,
+      "oryx_median_wall_us": 0.014830943
+    },
+    {
+      "case": "synthetic-all-opaque",
+      "operation": "cached_affine",
+      "checksum": "16593356637139860800",
+      "pi_median_cpu_us": 7.652443237000001,
+      "oryx_median_cpu_us": 5.172218994,
+      "oryx_to_pi_cpu_ratio": 0.6758911936768148,
+      "pi_median_wall_us": 7.652558472,
+      "oryx_median_wall_us": 5.172342651
+    },
+    {
+      "case": "synthetic-all-opaque",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "16593356637139860800",
+      "pi_median_cpu_us": 7.7198146969999994,
+      "oryx_median_cpu_us": 5.144528931,
+      "oryx_to_pi_cpu_ratio": 0.6664057536250472,
+      "pi_median_wall_us": 7.719880249,
+      "oryx_median_wall_us": 5.145477661
+    },
+    {
+      "case": "synthetic-all-opaque",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 7.997510986,
+      "oryx_median_cpu_us": 5.315569824,
+      "oryx_to_pi_cpu_ratio": 0.664653019333783,
+      "pi_median_wall_us": 7.9982933350000005,
+      "oryx_median_wall_us": 5.317150879
+    },
+    {
+      "case": "synthetic-all-opaque",
+      "operation": "transform_then_plot",
+      "checksum": "14618291834103298971",
+      "pi_median_cpu_us": 11.039297607,
+      "oryx_median_cpu_us": 7.200585815,
+      "oryx_to_pi_cpu_ratio": 0.6522684749828758,
+      "pi_median_wall_us": 11.03943335,
+      "oryx_median_wall_us": 7.201474854
+    },
+    {
+      "case": "synthetic-all-opaque",
+      "operation": "ordinary_pretransformed",
+      "checksum": "14618291834103298971",
+      "pi_median_cpu_us": 3.040295654,
+      "oryx_median_cpu_us": 1.873730377,
+      "oryx_to_pi_cpu_ratio": 0.6162987387541752,
+      "pi_median_wall_us": 3.040329529,
+      "oryx_median_wall_us": 1.873747284
+    },
+    {
+      "case": "synthetic-all-opaque",
+      "operation": "ordinary_original_size",
+      "checksum": "10070636605088384686",
+      "pi_median_cpu_us": 32.897343262,
+      "oryx_median_cpu_us": 21.272997070000002,
+      "oryx_to_pi_cpu_ratio": 0.6466478736771617,
+      "pi_median_wall_us": 32.897569336000004,
+      "oryx_median_wall_us": 21.278276855
+    },
+    {
+      "case": "synthetic-all-transparent",
+      "operation": "empty",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.00209008,
+      "oryx_median_cpu_us": 0.000501119,
+      "oryx_to_pi_cpu_ratio": 0.23976067901707113,
+      "pi_median_wall_us": 0.002090111,
+      "oryx_median_wall_us": 0.0005011799999999999
+    },
+    {
+      "case": "synthetic-all-transparent",
+      "operation": "matrix_setup_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.02796377,
+      "oryx_median_cpu_us": 0.014823337,
+      "oryx_to_pi_cpu_ratio": 0.5300907924789827,
+      "pi_median_wall_us": 0.027964027000000002,
+      "oryx_median_wall_us": 0.01482345
+    },
+    {
+      "case": "synthetic-all-transparent",
+      "operation": "cached_affine",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 5.320649292,
+      "oryx_median_cpu_us": 2.949318542,
+      "oryx_to_pi_cpu_ratio": 0.5543155318345309,
+      "pi_median_wall_us": 5.320710327,
+      "oryx_median_wall_us": 2.949835083
+    },
+    {
+      "case": "synthetic-all-transparent",
+      "operation": "rebuilt_affine_host_model",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 5.346808471999999,
+      "oryx_median_cpu_us": 2.965142395,
+      "oryx_to_pi_cpu_ratio": 0.5545630464468225,
+      "pi_median_wall_us": 5.347348877,
+      "oryx_median_wall_us": 2.965201172
+    },
+    {
+      "case": "synthetic-all-transparent",
+      "operation": "transform_bitmap_kernel",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 7.995935425,
+      "oryx_median_cpu_us": 5.307828247000001,
+      "oryx_to_pi_cpu_ratio": 0.6638157970116424,
+      "pi_median_wall_us": 7.995994385,
+      "oryx_median_wall_us": 5.307911621000001
+    },
+    {
+      "case": "synthetic-all-transparent",
+      "operation": "transform_then_plot",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 8.717305542,
+      "oryx_median_cpu_us": 5.761947632,
+      "oryx_to_pi_cpu_ratio": 0.6609780515595011,
+      "pi_median_wall_us": 8.717825439,
+      "oryx_median_wall_us": 5.762203125
+    },
+    {
+      "case": "synthetic-all-transparent",
+      "operation": "ordinary_pretransformed",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 0.711784088,
+      "oryx_median_cpu_us": 0.458557274,
+      "oryx_to_pi_cpu_ratio": 0.6442364780708613,
+      "pi_median_wall_us": 0.711791138,
+      "oryx_median_wall_us": 0.458563026
+    },
+    {
+      "case": "synthetic-all-transparent",
+      "operation": "ordinary_original_size",
+      "checksum": "7554483400140898179",
+      "pi_median_cpu_us": 6.871758301,
+      "oryx_median_cpu_us": 4.2225047,
+      "oryx_to_pi_cpu_ratio": 0.6144722376783142,
+      "pi_median_wall_us": 6.872260132,
+      "oryx_median_wall_us": 4.222550171
+    }
+  ],
+  "frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+  "core_commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+  "target_inputs_identical": true,
+  "target_application_tx_bytes": 110240,
+  "target_application_tx_sha256": "eebc4d091e2b7ef82cdf8da636fa0b569b55ef78e058f788890c36f8010218a4",
+  "pi_target": {
+    "architecture": "aarch64",
+    "runtime_build": {
+      "name": "PI-RUNTIME-BUILD.json",
+      "sha256": "49e77cea8c84eb58b985ba3b4c3407118c85e5c6e70205bcc15d07bf9d153486",
+      "architecture": "aarch64",
+      "frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+      "core_commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+      "files": {
+        "flexe-agon-emulator.bin": "ffa4e66ac661896952c020cc1e5cad3de719688375adde8889cd82217d5fec98",
+        "flexe-vdp.so": "c1acfd2201ead6fed425d4affe3d396885e16485c33092ee176019d471eecbe4"
+      },
+      "actual_elf_architecture_verified": true
+    },
+    "frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+    "core_commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+    "fixture_inputs": {
+      "artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "config.bin": "acd1307d63838d203cab0450222b29e8d446fd56c56062b4d8d7c23e1e35bf89",
+      "expected.json": "df49a7b3aa1268b018d5997d9b1fe02ad26d686a4bb8d24e284e8346ea7f5e2d",
+      "probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "firmware": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+    "mos": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+    "mode": 136,
+    "swaps": 0,
+    "batches": 124,
+    "application_tx_bytes": 110240,
+    "application_tx_sha256": "eebc4d091e2b7ef82cdf8da636fa0b569b55ef78e058f788890c36f8010218a4",
+    "exact_completion_packet_count": 497,
+    "raw_prt_ticks_total": 72880,
+    "raw_mos_units_total": 1944,
+    "nominal_prt_seconds": 72.88,
+    "nominal_mos_seconds": 16.2,
+    "nominal_prt_to_mos_ratio": 4.498765432098765,
+    "zero_mos_rows": 13,
+    "summaries": [
+      {
+        "case": "empty",
+        "method": "empty",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          24,
+          24,
+          23,
+          23
+        ],
+        "raw_mos_units": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          24,
+          24,
+          23,
+          23
+        ],
+        "median_prt_ticks_per_operation": 0.18359375,
+        "median_mos_units_per_operation": 0.0
+      },
+      {
+        "case": "traffic-far",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          41,
+          39,
+          39,
+          42
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          41,
+          39,
+          39,
+          42
+        ],
+        "median_prt_ticks_per_operation": 0.3125,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      {
+        "case": "traffic-far",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          46,
+          46,
+          48,
+          48
+        ],
+        "raw_mos_units": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          46,
+          46,
+          48,
+          48
+        ],
+        "median_prt_ticks_per_operation": 0.3671875,
+        "median_mos_units_per_operation": 0.0
+      },
+      {
+        "case": "traffic-far",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          373,
+          376,
+          374,
+          375
+        ],
+        "raw_mos_units": [
+          8,
+          6,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          373,
+          376,
+          374,
+          375
+        ],
+        "median_prt_ticks_per_operation": 2.92578125,
+        "median_mos_units_per_operation": 0.0625
+      },
+      {
+        "case": "traffic-far",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          92,
+          86,
+          90,
+          88
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          92,
+          86,
+          90,
+          88
+        ],
+        "median_prt_ticks_per_operation": 0.6953125,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "traffic-far",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          658,
+          649,
+          634,
+          649
+        ],
+        "raw_mos_units": [
+          14,
+          14,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          658,
+          649,
+          634,
+          649
+        ],
+        "median_prt_ticks_per_operation": 0.6337890625,
+        "median_mos_units_per_operation": 0.013671875
+      },
+      {
+        "case": "traffic-middle",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          55,
+          56,
+          56,
+          56
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          55,
+          56,
+          55,
+          56
+        ],
+        "median_prt_ticks_per_operation": 0.4375,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "traffic-middle",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          189,
+          185,
+          189,
+          183
+        ],
+        "raw_mos_units": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          189,
+          185,
+          188,
+          183
+        ],
+        "median_prt_ticks_per_operation": 1.4609375,
+        "median_mos_units_per_operation": 0.03125
+      },
+      {
+        "case": "traffic-middle",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          510,
+          522,
+          517,
+          527
+        ],
+        "raw_mos_units": [
+          10,
+          12,
+          10,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          510,
+          522,
+          517,
+          527
+        ],
+        "median_prt_ticks_per_operation": 4.05859375,
+        "median_mos_units_per_operation": 0.0859375
+      },
+      {
+        "case": "traffic-middle",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          257,
+          260,
+          260,
+          262
+        ],
+        "raw_mos_units": [
+          10,
+          8,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          257,
+          260,
+          260,
+          262
+        ],
+        "median_prt_ticks_per_operation": 2.03125,
+        "median_mos_units_per_operation": 0.0625
+      },
+      {
+        "case": "traffic-middle",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          639,
+          645,
+          636,
+          649
+        ],
+        "raw_mos_units": [
+          12,
+          14,
+          14,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          639,
+          645,
+          636,
+          649
+        ],
+        "median_prt_ticks_per_operation": 0.626953125,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      {
+        "case": "traffic-near",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          191,
+          194,
+          190,
+          195
+        ],
+        "raw_mos_units": [
+          8,
+          6,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          191,
+          194,
+          190,
+          195
+        ],
+        "median_prt_ticks_per_operation": 1.50390625,
+        "median_mos_units_per_operation": 0.0625
+      },
+      {
+        "case": "traffic-near",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1497,
+          1508,
+          1498,
+          1502
+        ],
+        "raw_mos_units": [
+          42,
+          40,
+          42,
+          40
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1497,
+          1507,
+          1498,
+          1502
+        ],
+        "median_prt_ticks_per_operation": 11.71875,
+        "median_mos_units_per_operation": 0.3203125
+      },
+      {
+        "case": "traffic-near",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1839,
+          1843,
+          1859,
+          1846
+        ],
+        "raw_mos_units": [
+          48,
+          46,
+          48,
+          46
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1839,
+          1843,
+          1859,
+          1846
+        ],
+        "median_prt_ticks_per_operation": 14.41015625,
+        "median_mos_units_per_operation": 0.3671875
+      },
+      {
+        "case": "traffic-near",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1875,
+          1851,
+          1868,
+          1876
+        ],
+        "raw_mos_units": [
+          66,
+          66,
+          66,
+          66
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          1875,
+          1851,
+          1868,
+          1875
+        ],
+        "median_prt_ticks_per_operation": 14.62109375,
+        "median_mos_units_per_operation": 0.515625
+      },
+      {
+        "case": "traffic-near",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          643,
+          647,
+          653,
+          647
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          14,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          643,
+          647,
+          652,
+          647
+        ],
+        "median_prt_ticks_per_operation": 0.6318359375,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      {
+        "case": "sign-far",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          44,
+          44,
+          43,
+          43
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          44,
+          44,
+          43,
+          43
+        ],
+        "median_prt_ticks_per_operation": 0.33984375,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      {
+        "case": "sign-far",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          59,
+          59,
+          61,
+          60
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          59,
+          59,
+          61,
+          60
+        ],
+        "median_prt_ticks_per_operation": 0.46484375,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "sign-far",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          389,
+          387,
+          391,
+          391
+        ],
+        "raw_mos_units": [
+          6,
+          8,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          388,
+          387,
+          391,
+          391
+        ],
+        "median_prt_ticks_per_operation": 3.046875,
+        "median_mos_units_per_operation": 0.0625
+      },
+      {
+        "case": "sign-far",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          103,
+          102,
+          102,
+          100
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          103,
+          102,
+          102,
+          100
+        ],
+        "median_prt_ticks_per_operation": 0.796875,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "sign-far",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          648,
+          639,
+          637,
+          631
+        ],
+        "raw_mos_units": [
+          12,
+          14,
+          12,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          647,
+          639,
+          637,
+          630
+        ],
+        "median_prt_ticks_per_operation": 0.623046875,
+        "median_mos_units_per_operation": 0.01171875
+      },
+      {
+        "case": "sign-near",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          67,
+          65,
+          69,
+          68
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          67,
+          65,
+          68,
+          68
+        ],
+        "median_prt_ticks_per_operation": 0.52734375,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "sign-near",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          150,
+          150,
+          152,
+          150
+        ],
+        "raw_mos_units": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          150,
+          150,
+          152,
+          150
+        ],
+        "median_prt_ticks_per_operation": 1.171875,
+        "median_mos_units_per_operation": 0.03125
+      },
+      {
+        "case": "sign-near",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          483,
+          491,
+          487,
+          483
+        ],
+        "raw_mos_units": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          482,
+          491,
+          487,
+          483
+        ],
+        "median_prt_ticks_per_operation": 3.7890625,
+        "median_mos_units_per_operation": 0.078125
+      },
+      {
+        "case": "sign-near",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          382,
+          390,
+          388,
+          384
+        ],
+        "raw_mos_units": [
+          10,
+          12,
+          12,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          382,
+          390,
+          388,
+          383
+        ],
+        "median_prt_ticks_per_operation": 3.015625,
+        "median_mos_units_per_operation": 0.09375
+      },
+      {
+        "case": "sign-near",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          645,
+          636,
+          647,
+          643
+        ],
+        "raw_mos_units": [
+          14,
+          12,
+          14,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          645,
+          636,
+          647,
+          643
+        ],
+        "median_prt_ticks_per_operation": 0.62890625,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          210,
+          206,
+          208,
+          218
+        ],
+        "raw_mos_units": [
+          8,
+          10,
+          8,
+          10
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          210,
+          206,
+          207,
+          218
+        ],
+        "median_prt_ticks_per_operation": 1.6328125,
+        "median_mos_units_per_operation": 0.0703125
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1543,
+          1553,
+          1563,
+          1542
+        ],
+        "raw_mos_units": [
+          42,
+          42,
+          42,
+          42
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1543,
+          1553,
+          1563,
+          1542
+        ],
+        "median_prt_ticks_per_operation": 12.09375,
+        "median_mos_units_per_operation": 0.328125
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1874,
+          1898,
+          1892,
+          1892
+        ],
+        "raw_mos_units": [
+          48,
+          50,
+          48,
+          48
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1874,
+          1898,
+          1892,
+          1892
+        ],
+        "median_prt_ticks_per_operation": 14.78125,
+        "median_mos_units_per_operation": 0.375
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          2006,
+          2016,
+          2032,
+          2046
+        ],
+        "raw_mos_units": [
+          72,
+          72,
+          72,
+          72
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          2006,
+          2016,
+          2032,
+          2046
+        ],
+        "median_prt_ticks_per_operation": 15.8125,
+        "median_mos_units_per_operation": 0.5625
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          646,
+          638,
+          636,
+          636
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          14,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          646,
+          637,
+          635,
+          636
+        ],
+        "median_prt_ticks_per_operation": 0.6220703125,
+        "median_mos_units_per_operation": 0.01171875
+      }
+    ],
+    "elapsed_host_seconds": 83.08564306199696,
+    "backend_stats": {
+      "engine": "jit",
+      "frames": 1312,
+      "cycles": 5504323239,
+      "retired": 4757295071,
+      "uart_rx": 110775,
+      "uart_tx": 7488,
+      "uart_delivered": 7488,
+      "isync": 11,
+      "code_invalidations": 1,
+      "keys": 0,
+      "failed": false,
+      "unhandled": 0,
+      "unregistered": 0,
+      "unmapped": 0
+    }
+  },
+  "oryx_target": {
+    "architecture": "x86_64",
+    "runtime_build": {
+      "name": "ORYX-RUNTIME-BUILD.json",
+      "sha256": "38f726dbee2ff006e81793e3146d4106987b0643cd45be96d2dfd617c7a763b2",
+      "architecture": "x86_64",
+      "frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+      "core_commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+      "files": {
+        "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+        "flexe-vdp.so": "faed8f1c612bf93219b49359337f65457165532465f2ab8006b25059151ff60b"
+      },
+      "actual_elf_architecture_verified": true
+    },
+    "frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+    "core_commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+    "fixture_inputs": {
+      "artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "config.bin": "acd1307d63838d203cab0450222b29e8d446fd56c56062b4d8d7c23e1e35bf89",
+      "expected.json": "df49a7b3aa1268b018d5997d9b1fe02ad26d686a4bb8d24e284e8346ea7f5e2d",
+      "probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "firmware": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+    "mos": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+    "mode": 136,
+    "swaps": 0,
+    "batches": 124,
+    "application_tx_bytes": 110240,
+    "application_tx_sha256": "eebc4d091e2b7ef82cdf8da636fa0b569b55ef78e058f788890c36f8010218a4",
+    "exact_completion_packet_count": 497,
+    "raw_prt_ticks_total": 39309,
+    "raw_mos_units_total": 1958,
+    "nominal_prt_seconds": 39.309,
+    "nominal_mos_seconds": 16.316666666666666,
+    "nominal_prt_to_mos_ratio": 2.409131767109295,
+    "zero_mos_rows": 10,
+    "summaries": [
+      {
+        "case": "empty",
+        "method": "empty",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          13,
+          10,
+          8,
+          9
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          13,
+          10,
+          8,
+          9
+        ],
+        "median_prt_ticks_per_operation": 0.07421875,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      {
+        "case": "traffic-far",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          23,
+          17,
+          17,
+          15
+        ],
+        "raw_mos_units": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          22,
+          17,
+          17,
+          15
+        ],
+        "median_prt_ticks_per_operation": 0.1328125,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      {
+        "case": "traffic-far",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          21,
+          20,
+          21,
+          20
+        ],
+        "raw_mos_units": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          21,
+          20,
+          21,
+          20
+        ],
+        "median_prt_ticks_per_operation": 0.16015625,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      {
+        "case": "traffic-far",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          170,
+          164,
+          156,
+          163
+        ],
+        "raw_mos_units": [
+          6,
+          6,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          170,
+          164,
+          156,
+          163
+        ],
+        "median_prt_ticks_per_operation": 1.27734375,
+        "median_mos_units_per_operation": 0.0546875
+      },
+      {
+        "case": "traffic-far",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          43,
+          41,
+          43,
+          36
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          43,
+          41,
+          43,
+          36
+        ],
+        "median_prt_ticks_per_operation": 0.328125,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "traffic-far",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          270,
+          258,
+          259,
+          255
+        ],
+        "raw_mos_units": [
+          14,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          270,
+          258,
+          259,
+          255
+        ],
+        "median_prt_ticks_per_operation": 0.25244140625,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      {
+        "case": "traffic-middle",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          26,
+          25,
+          25,
+          25
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          26,
+          25,
+          25,
+          24
+        ],
+        "median_prt_ticks_per_operation": 0.1953125,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "traffic-middle",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          112,
+          114,
+          110,
+          119
+        ],
+        "raw_mos_units": [
+          6,
+          6,
+          6,
+          4
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          112,
+          114,
+          110,
+          119
+        ],
+        "median_prt_ticks_per_operation": 0.8828125,
+        "median_mos_units_per_operation": 0.046875
+      },
+      {
+        "case": "traffic-middle",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          253,
+          256,
+          250,
+          260
+        ],
+        "raw_mos_units": [
+          10,
+          10,
+          10,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          253,
+          256,
+          250,
+          259
+        ],
+        "median_prt_ticks_per_operation": 1.98828125,
+        "median_mos_units_per_operation": 0.078125
+      },
+      {
+        "case": "traffic-middle",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          141,
+          152,
+          147,
+          151
+        ],
+        "raw_mos_units": [
+          8,
+          10,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          141,
+          152,
+          147,
+          151
+        ],
+        "median_prt_ticks_per_operation": 1.1640625,
+        "median_mos_units_per_operation": 0.0625
+      },
+      {
+        "case": "traffic-middle",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          267,
+          273,
+          258,
+          257
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          14,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          267,
+          273,
+          258,
+          257
+        ],
+        "median_prt_ticks_per_operation": 0.25634765625,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      {
+        "case": "traffic-near",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          95,
+          91,
+          94,
+          93
+        ],
+        "raw_mos_units": [
+          8,
+          8,
+          8,
+          6
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          95,
+          91,
+          94,
+          93
+        ],
+        "median_prt_ticks_per_operation": 0.73046875,
+        "median_mos_units_per_operation": 0.0625
+      },
+      {
+        "case": "traffic-near",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          986,
+          940,
+          948,
+          944
+        ],
+        "raw_mos_units": [
+          42,
+          42,
+          42,
+          42
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          986,
+          939,
+          948,
+          944
+        ],
+        "median_prt_ticks_per_operation": 7.390625,
+        "median_mos_units_per_operation": 0.328125
+      },
+      {
+        "case": "traffic-near",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1097,
+          1084,
+          1104,
+          1084
+        ],
+        "raw_mos_units": [
+          48,
+          48,
+          48,
+          46
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1097,
+          1084,
+          1104,
+          1084
+        ],
+        "median_prt_ticks_per_operation": 8.51953125,
+        "median_mos_units_per_operation": 0.375
+      },
+      {
+        "case": "traffic-near",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1102,
+          1101,
+          1119,
+          1103
+        ],
+        "raw_mos_units": [
+          66,
+          68,
+          64,
+          66
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1102,
+          1101,
+          1118,
+          1103
+        ],
+        "median_prt_ticks_per_operation": 8.61328125,
+        "median_mos_units_per_operation": 0.515625
+      },
+      {
+        "case": "traffic-near",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          256,
+          264,
+          258,
+          262
+        ],
+        "raw_mos_units": [
+          14,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          255,
+          264,
+          258,
+          262
+        ],
+        "median_prt_ticks_per_operation": 0.25390625,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      {
+        "case": "sign-far",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          18,
+          20,
+          18,
+          18
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          18,
+          20,
+          18,
+          18
+        ],
+        "median_prt_ticks_per_operation": 0.140625,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      {
+        "case": "sign-far",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          28,
+          30,
+          29,
+          30
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          28,
+          30,
+          29,
+          30
+        ],
+        "median_prt_ticks_per_operation": 0.23046875,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "sign-far",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          162,
+          171,
+          164,
+          178
+        ],
+        "raw_mos_units": [
+          6,
+          6,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          162,
+          171,
+          164,
+          178
+        ],
+        "median_prt_ticks_per_operation": 1.30859375,
+        "median_mos_units_per_operation": 0.0546875
+      },
+      {
+        "case": "sign-far",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          47,
+          48,
+          46,
+          48
+        ],
+        "raw_mos_units": [
+          4,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          47,
+          48,
+          46,
+          48
+        ],
+        "median_prt_ticks_per_operation": 0.37109375,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "sign-far",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          268,
+          257,
+          255,
+          256
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          268,
+          257,
+          255,
+          256
+        ],
+        "median_prt_ticks_per_operation": 0.25048828125,
+        "median_mos_units_per_operation": 0.01171875
+      },
+      {
+        "case": "sign-near",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          27,
+          29,
+          28,
+          29
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          27,
+          29,
+          28,
+          28
+        ],
+        "median_prt_ticks_per_operation": 0.22265625,
+        "median_mos_units_per_operation": 0.015625
+      },
+      {
+        "case": "sign-near",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          89,
+          87,
+          85,
+          89
+        ],
+        "raw_mos_units": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          89,
+          87,
+          85,
+          88
+        ],
+        "median_prt_ticks_per_operation": 0.6875,
+        "median_mos_units_per_operation": 0.03125
+      },
+      {
+        "case": "sign-near",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          255,
+          227,
+          221,
+          225
+        ],
+        "raw_mos_units": [
+          8,
+          12,
+          12,
+          10
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          255,
+          227,
+          221,
+          225
+        ],
+        "median_prt_ticks_per_operation": 1.765625,
+        "median_mos_units_per_operation": 0.0859375
+      },
+      {
+        "case": "sign-near",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          228,
+          217,
+          207,
+          217
+        ],
+        "raw_mos_units": [
+          14,
+          12,
+          12,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          228,
+          217,
+          207,
+          217
+        ],
+        "median_prt_ticks_per_operation": 1.6953125,
+        "median_mos_units_per_operation": 0.09375
+      },
+      {
+        "case": "sign-near",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          266,
+          257,
+          257,
+          261
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          266,
+          257,
+          257,
+          261
+        ],
+        "median_prt_ticks_per_operation": 0.2529296875,
+        "median_mos_units_per_operation": 0.01171875
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          96,
+          97,
+          100,
+          96
+        ],
+        "raw_mos_units": [
+          8,
+          10,
+          10,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          96,
+          97,
+          100,
+          96
+        ],
+        "median_prt_ticks_per_operation": 0.75390625,
+        "median_mos_units_per_operation": 0.0703125
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1017,
+          947,
+          979,
+          949
+        ],
+        "raw_mos_units": [
+          42,
+          42,
+          42,
+          42
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1017,
+          947,
+          979,
+          949
+        ],
+        "median_prt_ticks_per_operation": 7.53125,
+        "median_mos_units_per_operation": 0.328125
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1124,
+          1112,
+          1133,
+          1086
+        ],
+        "raw_mos_units": [
+          48,
+          50,
+          48,
+          48
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1124,
+          1112,
+          1133,
+          1086
+        ],
+        "median_prt_ticks_per_operation": 8.734375,
+        "median_mos_units_per_operation": 0.375
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1203,
+          1220,
+          1199,
+          1210
+        ],
+        "raw_mos_units": [
+          72,
+          72,
+          72,
+          70
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1203,
+          1220,
+          1199,
+          1210
+        ],
+        "median_prt_ticks_per_operation": 9.42578125,
+        "median_mos_units_per_operation": 0.5625
+      },
+      {
+        "case": "player-fixed-mirror",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          266,
+          258,
+          261,
+          266
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          266,
+          258,
+          261,
+          266
+        ],
+        "median_prt_ticks_per_operation": 0.25732421875,
+        "median_mos_units_per_operation": 0.01171875
+      }
+    ],
+    "elapsed_host_seconds": 49.1681659310002,
+    "backend_stats": {
+      "engine": "jit",
+      "frames": 1401,
+      "cycles": 5872397187,
+      "retired": 4996538199,
+      "uart_rx": 110775,
+      "uart_tx": 7488,
+      "uart_delivered": 7488,
+      "isync": 11,
+      "code_invalidations": 1,
+      "keys": 0,
+      "failed": false,
+      "unhandled": 0,
+      "unregistered": 0,
+      "unmapped": 0
+    }
+  },
+  "target_raw_count_comparison": [
+    {
+      "case": "empty",
+      "method": "empty",
+      "operations": 128,
+      "pi": {
+        "case": "empty",
+        "method": "empty",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          24,
+          24,
+          23,
+          23
+        ],
+        "raw_mos_units": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          24,
+          24,
+          23,
+          23
+        ],
+        "median_prt_ticks_per_operation": 0.18359375,
+        "median_mos_units_per_operation": 0.0
+      },
+      "oryx": {
+        "case": "empty",
+        "method": "empty",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          13,
+          10,
+          8,
+          9
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          13,
+          10,
+          8,
+          9
+        ],
+        "median_prt_ticks_per_operation": 0.07421875,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.40425531914893614
+    },
+    {
+      "case": "traffic-far",
+      "method": "ordinary-sized",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-far",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          41,
+          39,
+          39,
+          42
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          41,
+          39,
+          39,
+          42
+        ],
+        "median_prt_ticks_per_operation": 0.3125,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      "oryx": {
+        "case": "traffic-far",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          23,
+          17,
+          17,
+          15
+        ],
+        "raw_mos_units": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          22,
+          17,
+          17,
+          15
+        ],
+        "median_prt_ticks_per_operation": 0.1328125,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.425
+    },
+    {
+      "case": "traffic-far",
+      "method": "cached-affine",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-far",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          46,
+          46,
+          48,
+          48
+        ],
+        "raw_mos_units": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          46,
+          46,
+          48,
+          48
+        ],
+        "median_prt_ticks_per_operation": 0.3671875,
+        "median_mos_units_per_operation": 0.0
+      },
+      "oryx": {
+        "case": "traffic-far",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          21,
+          20,
+          21,
+          20
+        ],
+        "raw_mos_units": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          21,
+          20,
+          21,
+          20
+        ],
+        "median_prt_ticks_per_operation": 0.16015625,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.43617021276595747
+    },
+    {
+      "case": "traffic-far",
+      "method": "rebuilt-affine",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-far",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          373,
+          376,
+          374,
+          375
+        ],
+        "raw_mos_units": [
+          8,
+          6,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          373,
+          376,
+          374,
+          375
+        ],
+        "median_prt_ticks_per_operation": 2.92578125,
+        "median_mos_units_per_operation": 0.0625
+      },
+      "oryx": {
+        "case": "traffic-far",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          170,
+          164,
+          156,
+          163
+        ],
+        "raw_mos_units": [
+          6,
+          6,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          170,
+          164,
+          156,
+          163
+        ],
+        "median_prt_ticks_per_operation": 1.27734375,
+        "median_mos_units_per_operation": 0.0546875
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.43658210947930576
+    },
+    {
+      "case": "traffic-far",
+      "method": "transform40-plot",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-far",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          92,
+          86,
+          90,
+          88
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          92,
+          86,
+          90,
+          88
+        ],
+        "median_prt_ticks_per_operation": 0.6953125,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx": {
+        "case": "traffic-far",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          43,
+          41,
+          43,
+          36
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          43,
+          41,
+          43,
+          36
+        ],
+        "median_prt_ticks_per_operation": 0.328125,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.47191011235955055
+    },
+    {
+      "case": "traffic-far",
+      "method": "matrix-only",
+      "operations": 1024,
+      "pi": {
+        "case": "traffic-far",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          658,
+          649,
+          634,
+          649
+        ],
+        "raw_mos_units": [
+          14,
+          14,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          658,
+          649,
+          634,
+          649
+        ],
+        "median_prt_ticks_per_operation": 0.6337890625,
+        "median_mos_units_per_operation": 0.013671875
+      },
+      "oryx": {
+        "case": "traffic-far",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          270,
+          258,
+          259,
+          255
+        ],
+        "raw_mos_units": [
+          14,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          270,
+          258,
+          259,
+          255
+        ],
+        "median_prt_ticks_per_operation": 0.25244140625,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.3983050847457627
+    },
+    {
+      "case": "traffic-middle",
+      "method": "ordinary-sized",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-middle",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          55,
+          56,
+          56,
+          56
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          55,
+          56,
+          55,
+          56
+        ],
+        "median_prt_ticks_per_operation": 0.4375,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx": {
+        "case": "traffic-middle",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          26,
+          25,
+          25,
+          25
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          26,
+          25,
+          25,
+          24
+        ],
+        "median_prt_ticks_per_operation": 0.1953125,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.44642857142857145
+    },
+    {
+      "case": "traffic-middle",
+      "method": "cached-affine",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-middle",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          189,
+          185,
+          189,
+          183
+        ],
+        "raw_mos_units": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          189,
+          185,
+          188,
+          183
+        ],
+        "median_prt_ticks_per_operation": 1.4609375,
+        "median_mos_units_per_operation": 0.03125
+      },
+      "oryx": {
+        "case": "traffic-middle",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          112,
+          114,
+          110,
+          119
+        ],
+        "raw_mos_units": [
+          6,
+          6,
+          6,
+          4
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          112,
+          114,
+          110,
+          119
+        ],
+        "median_prt_ticks_per_operation": 0.8828125,
+        "median_mos_units_per_operation": 0.046875
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.6042780748663101
+    },
+    {
+      "case": "traffic-middle",
+      "method": "rebuilt-affine",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-middle",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          510,
+          522,
+          517,
+          527
+        ],
+        "raw_mos_units": [
+          10,
+          12,
+          10,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          510,
+          522,
+          517,
+          527
+        ],
+        "median_prt_ticks_per_operation": 4.05859375,
+        "median_mos_units_per_operation": 0.0859375
+      },
+      "oryx": {
+        "case": "traffic-middle",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          253,
+          256,
+          250,
+          260
+        ],
+        "raw_mos_units": [
+          10,
+          10,
+          10,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          253,
+          256,
+          250,
+          259
+        ],
+        "median_prt_ticks_per_operation": 1.98828125,
+        "median_mos_units_per_operation": 0.078125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.4898941289701636
+    },
+    {
+      "case": "traffic-middle",
+      "method": "transform40-plot",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-middle",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          257,
+          260,
+          260,
+          262
+        ],
+        "raw_mos_units": [
+          10,
+          8,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          257,
+          260,
+          260,
+          262
+        ],
+        "median_prt_ticks_per_operation": 2.03125,
+        "median_mos_units_per_operation": 0.0625
+      },
+      "oryx": {
+        "case": "traffic-middle",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          141,
+          152,
+          147,
+          151
+        ],
+        "raw_mos_units": [
+          8,
+          10,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          141,
+          152,
+          147,
+          151
+        ],
+        "median_prt_ticks_per_operation": 1.1640625,
+        "median_mos_units_per_operation": 0.0625
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.573076923076923
+    },
+    {
+      "case": "traffic-middle",
+      "method": "matrix-only",
+      "operations": 1024,
+      "pi": {
+        "case": "traffic-middle",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          639,
+          645,
+          636,
+          649
+        ],
+        "raw_mos_units": [
+          12,
+          14,
+          14,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          639,
+          645,
+          636,
+          649
+        ],
+        "median_prt_ticks_per_operation": 0.626953125,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      "oryx": {
+        "case": "traffic-middle",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          267,
+          273,
+          258,
+          257
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          14,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          267,
+          273,
+          258,
+          257
+        ],
+        "median_prt_ticks_per_operation": 0.25634765625,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.4088785046728972
+    },
+    {
+      "case": "traffic-near",
+      "method": "ordinary-sized",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-near",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          191,
+          194,
+          190,
+          195
+        ],
+        "raw_mos_units": [
+          8,
+          6,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          191,
+          194,
+          190,
+          195
+        ],
+        "median_prt_ticks_per_operation": 1.50390625,
+        "median_mos_units_per_operation": 0.0625
+      },
+      "oryx": {
+        "case": "traffic-near",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          95,
+          91,
+          94,
+          93
+        ],
+        "raw_mos_units": [
+          8,
+          8,
+          8,
+          6
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          95,
+          91,
+          94,
+          93
+        ],
+        "median_prt_ticks_per_operation": 0.73046875,
+        "median_mos_units_per_operation": 0.0625
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.4857142857142857
+    },
+    {
+      "case": "traffic-near",
+      "method": "cached-affine",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-near",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1497,
+          1508,
+          1498,
+          1502
+        ],
+        "raw_mos_units": [
+          42,
+          40,
+          42,
+          40
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1497,
+          1507,
+          1498,
+          1502
+        ],
+        "median_prt_ticks_per_operation": 11.71875,
+        "median_mos_units_per_operation": 0.3203125
+      },
+      "oryx": {
+        "case": "traffic-near",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          986,
+          940,
+          948,
+          944
+        ],
+        "raw_mos_units": [
+          42,
+          42,
+          42,
+          42
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          986,
+          939,
+          948,
+          944
+        ],
+        "median_prt_ticks_per_operation": 7.390625,
+        "median_mos_units_per_operation": 0.328125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.6306666666666667
+    },
+    {
+      "case": "traffic-near",
+      "method": "rebuilt-affine",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-near",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1839,
+          1843,
+          1859,
+          1846
+        ],
+        "raw_mos_units": [
+          48,
+          46,
+          48,
+          46
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1839,
+          1843,
+          1859,
+          1846
+        ],
+        "median_prt_ticks_per_operation": 14.41015625,
+        "median_mos_units_per_operation": 0.3671875
+      },
+      "oryx": {
+        "case": "traffic-near",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1097,
+          1084,
+          1104,
+          1084
+        ],
+        "raw_mos_units": [
+          48,
+          48,
+          48,
+          46
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1097,
+          1084,
+          1104,
+          1084
+        ],
+        "median_prt_ticks_per_operation": 8.51953125,
+        "median_mos_units_per_operation": 0.375
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.591217132014096
+    },
+    {
+      "case": "traffic-near",
+      "method": "transform40-plot",
+      "operations": 128,
+      "pi": {
+        "case": "traffic-near",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1875,
+          1851,
+          1868,
+          1876
+        ],
+        "raw_mos_units": [
+          66,
+          66,
+          66,
+          66
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          1875,
+          1851,
+          1868,
+          1875
+        ],
+        "median_prt_ticks_per_operation": 14.62109375,
+        "median_mos_units_per_operation": 0.515625
+      },
+      "oryx": {
+        "case": "traffic-near",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1102,
+          1101,
+          1119,
+          1103
+        ],
+        "raw_mos_units": [
+          66,
+          68,
+          64,
+          66
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1102,
+          1101,
+          1118,
+          1103
+        ],
+        "median_prt_ticks_per_operation": 8.61328125,
+        "median_mos_units_per_operation": 0.515625
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.5890996526850121
+    },
+    {
+      "case": "traffic-near",
+      "method": "matrix-only",
+      "operations": 1024,
+      "pi": {
+        "case": "traffic-near",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          643,
+          647,
+          653,
+          647
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          14,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          643,
+          647,
+          652,
+          647
+        ],
+        "median_prt_ticks_per_operation": 0.6318359375,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      "oryx": {
+        "case": "traffic-near",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          256,
+          264,
+          258,
+          262
+        ],
+        "raw_mos_units": [
+          14,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          255,
+          264,
+          258,
+          262
+        ],
+        "median_prt_ticks_per_operation": 0.25390625,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.401854714064915
+    },
+    {
+      "case": "sign-far",
+      "method": "ordinary-sized",
+      "operations": 128,
+      "pi": {
+        "case": "sign-far",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          44,
+          44,
+          43,
+          43
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          44,
+          44,
+          43,
+          43
+        ],
+        "median_prt_ticks_per_operation": 0.33984375,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      "oryx": {
+        "case": "sign-far",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          18,
+          20,
+          18,
+          18
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          0
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          18,
+          20,
+          18,
+          18
+        ],
+        "median_prt_ticks_per_operation": 0.140625,
+        "median_mos_units_per_operation": 0.0078125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.41379310344827586
+    },
+    {
+      "case": "sign-far",
+      "method": "cached-affine",
+      "operations": 128,
+      "pi": {
+        "case": "sign-far",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          59,
+          59,
+          61,
+          60
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          59,
+          59,
+          61,
+          60
+        ],
+        "median_prt_ticks_per_operation": 0.46484375,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx": {
+        "case": "sign-far",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          28,
+          30,
+          29,
+          30
+        ],
+        "raw_mos_units": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          28,
+          30,
+          29,
+          30
+        ],
+        "median_prt_ticks_per_operation": 0.23046875,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.4957983193277311
+    },
+    {
+      "case": "sign-far",
+      "method": "rebuilt-affine",
+      "operations": 128,
+      "pi": {
+        "case": "sign-far",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          389,
+          387,
+          391,
+          391
+        ],
+        "raw_mos_units": [
+          6,
+          8,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          388,
+          387,
+          391,
+          391
+        ],
+        "median_prt_ticks_per_operation": 3.046875,
+        "median_mos_units_per_operation": 0.0625
+      },
+      "oryx": {
+        "case": "sign-far",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          162,
+          171,
+          164,
+          178
+        ],
+        "raw_mos_units": [
+          6,
+          6,
+          8,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          162,
+          171,
+          164,
+          178
+        ],
+        "median_prt_ticks_per_operation": 1.30859375,
+        "median_mos_units_per_operation": 0.0546875
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.42948717948717946
+    },
+    {
+      "case": "sign-far",
+      "method": "transform40-plot",
+      "operations": 128,
+      "pi": {
+        "case": "sign-far",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          103,
+          102,
+          102,
+          100
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          103,
+          102,
+          102,
+          100
+        ],
+        "median_prt_ticks_per_operation": 0.796875,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx": {
+        "case": "sign-far",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          47,
+          48,
+          46,
+          48
+        ],
+        "raw_mos_units": [
+          4,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          47,
+          48,
+          46,
+          48
+        ],
+        "median_prt_ticks_per_operation": 0.37109375,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.46568627450980393
+    },
+    {
+      "case": "sign-far",
+      "method": "matrix-only",
+      "operations": 1024,
+      "pi": {
+        "case": "sign-far",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          648,
+          639,
+          637,
+          631
+        ],
+        "raw_mos_units": [
+          12,
+          14,
+          12,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          647,
+          639,
+          637,
+          630
+        ],
+        "median_prt_ticks_per_operation": 0.623046875,
+        "median_mos_units_per_operation": 0.01171875
+      },
+      "oryx": {
+        "case": "sign-far",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          268,
+          257,
+          255,
+          256
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          268,
+          257,
+          255,
+          256
+        ],
+        "median_prt_ticks_per_operation": 0.25048828125,
+        "median_mos_units_per_operation": 0.01171875
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.40203761755485895
+    },
+    {
+      "case": "sign-near",
+      "method": "ordinary-sized",
+      "operations": 128,
+      "pi": {
+        "case": "sign-near",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          67,
+          65,
+          69,
+          68
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          67,
+          65,
+          68,
+          68
+        ],
+        "median_prt_ticks_per_operation": 0.52734375,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx": {
+        "case": "sign-near",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          27,
+          29,
+          28,
+          29
+        ],
+        "raw_mos_units": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          27,
+          29,
+          28,
+          28
+        ],
+        "median_prt_ticks_per_operation": 0.22265625,
+        "median_mos_units_per_operation": 0.015625
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.4222222222222222
+    },
+    {
+      "case": "sign-near",
+      "method": "cached-affine",
+      "operations": 128,
+      "pi": {
+        "case": "sign-near",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          150,
+          150,
+          152,
+          150
+        ],
+        "raw_mos_units": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          150,
+          150,
+          152,
+          150
+        ],
+        "median_prt_ticks_per_operation": 1.171875,
+        "median_mos_units_per_operation": 0.03125
+      },
+      "oryx": {
+        "case": "sign-near",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          89,
+          87,
+          85,
+          89
+        ],
+        "raw_mos_units": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          89,
+          87,
+          85,
+          88
+        ],
+        "median_prt_ticks_per_operation": 0.6875,
+        "median_mos_units_per_operation": 0.03125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.5866666666666667
+    },
+    {
+      "case": "sign-near",
+      "method": "rebuilt-affine",
+      "operations": 128,
+      "pi": {
+        "case": "sign-near",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          483,
+          491,
+          487,
+          483
+        ],
+        "raw_mos_units": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "raw_submit_prt_ticks": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          482,
+          491,
+          487,
+          483
+        ],
+        "median_prt_ticks_per_operation": 3.7890625,
+        "median_mos_units_per_operation": 0.078125
+      },
+      "oryx": {
+        "case": "sign-near",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          255,
+          227,
+          221,
+          225
+        ],
+        "raw_mos_units": [
+          8,
+          12,
+          12,
+          10
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          255,
+          227,
+          221,
+          225
+        ],
+        "median_prt_ticks_per_operation": 1.765625,
+        "median_mos_units_per_operation": 0.0859375
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.465979381443299
+    },
+    {
+      "case": "sign-near",
+      "method": "transform40-plot",
+      "operations": 128,
+      "pi": {
+        "case": "sign-near",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          382,
+          390,
+          388,
+          384
+        ],
+        "raw_mos_units": [
+          10,
+          12,
+          12,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "raw_wait_prt_ticks": [
+          382,
+          390,
+          388,
+          383
+        ],
+        "median_prt_ticks_per_operation": 3.015625,
+        "median_mos_units_per_operation": 0.09375
+      },
+      "oryx": {
+        "case": "sign-near",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          228,
+          217,
+          207,
+          217
+        ],
+        "raw_mos_units": [
+          14,
+          12,
+          12,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          228,
+          217,
+          207,
+          217
+        ],
+        "median_prt_ticks_per_operation": 1.6953125,
+        "median_mos_units_per_operation": 0.09375
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.5621761658031088
+    },
+    {
+      "case": "sign-near",
+      "method": "matrix-only",
+      "operations": 1024,
+      "pi": {
+        "case": "sign-near",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          645,
+          636,
+          647,
+          643
+        ],
+        "raw_mos_units": [
+          14,
+          12,
+          14,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          645,
+          636,
+          647,
+          643
+        ],
+        "median_prt_ticks_per_operation": 0.62890625,
+        "median_mos_units_per_operation": 0.0126953125
+      },
+      "oryx": {
+        "case": "sign-near",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          266,
+          257,
+          257,
+          261
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          266,
+          257,
+          257,
+          261
+        ],
+        "median_prt_ticks_per_operation": 0.2529296875,
+        "median_mos_units_per_operation": 0.01171875
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.40217391304347827
+    },
+    {
+      "case": "player-fixed-mirror",
+      "method": "ordinary-sized",
+      "operations": 128,
+      "pi": {
+        "case": "player-fixed-mirror",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          210,
+          206,
+          208,
+          218
+        ],
+        "raw_mos_units": [
+          8,
+          10,
+          8,
+          10
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          210,
+          206,
+          207,
+          218
+        ],
+        "median_prt_ticks_per_operation": 1.6328125,
+        "median_mos_units_per_operation": 0.0703125
+      },
+      "oryx": {
+        "case": "player-fixed-mirror",
+        "method": "ordinary-sized",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          96,
+          97,
+          100,
+          96
+        ],
+        "raw_mos_units": [
+          8,
+          10,
+          10,
+          8
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          96,
+          97,
+          100,
+          96
+        ],
+        "median_prt_ticks_per_operation": 0.75390625,
+        "median_mos_units_per_operation": 0.0703125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.46172248803827753
+    },
+    {
+      "case": "player-fixed-mirror",
+      "method": "cached-affine",
+      "operations": 128,
+      "pi": {
+        "case": "player-fixed-mirror",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1543,
+          1553,
+          1563,
+          1542
+        ],
+        "raw_mos_units": [
+          42,
+          42,
+          42,
+          42
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1543,
+          1553,
+          1563,
+          1542
+        ],
+        "median_prt_ticks_per_operation": 12.09375,
+        "median_mos_units_per_operation": 0.328125
+      },
+      "oryx": {
+        "case": "player-fixed-mirror",
+        "method": "cached-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1017,
+          947,
+          979,
+          949
+        ],
+        "raw_mos_units": [
+          42,
+          42,
+          42,
+          42
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1017,
+          947,
+          979,
+          949
+        ],
+        "median_prt_ticks_per_operation": 7.53125,
+        "median_mos_units_per_operation": 0.328125
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.6227390180878553
+    },
+    {
+      "case": "player-fixed-mirror",
+      "method": "rebuilt-affine",
+      "operations": 128,
+      "pi": {
+        "case": "player-fixed-mirror",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1874,
+          1898,
+          1892,
+          1892
+        ],
+        "raw_mos_units": [
+          48,
+          50,
+          48,
+          48
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1874,
+          1898,
+          1892,
+          1892
+        ],
+        "median_prt_ticks_per_operation": 14.78125,
+        "median_mos_units_per_operation": 0.375
+      },
+      "oryx": {
+        "case": "player-fixed-mirror",
+        "method": "rebuilt-affine",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1124,
+          1112,
+          1133,
+          1086
+        ],
+        "raw_mos_units": [
+          48,
+          50,
+          48,
+          48
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1124,
+          1112,
+          1133,
+          1086
+        ],
+        "median_prt_ticks_per_operation": 8.734375,
+        "median_mos_units_per_operation": 0.375
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.5909090909090909
+    },
+    {
+      "case": "player-fixed-mirror",
+      "method": "transform40-plot",
+      "operations": 128,
+      "pi": {
+        "case": "player-fixed-mirror",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          2006,
+          2016,
+          2032,
+          2046
+        ],
+        "raw_mos_units": [
+          72,
+          72,
+          72,
+          72
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          2006,
+          2016,
+          2032,
+          2046
+        ],
+        "median_prt_ticks_per_operation": 15.8125,
+        "median_mos_units_per_operation": 0.5625
+      },
+      "oryx": {
+        "case": "player-fixed-mirror",
+        "method": "transform40-plot",
+        "operations": 128,
+        "samples": 4,
+        "raw_prt_ticks": [
+          1203,
+          1220,
+          1199,
+          1210
+        ],
+        "raw_mos_units": [
+          72,
+          72,
+          72,
+          70
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          1203,
+          1220,
+          1199,
+          1210
+        ],
+        "median_prt_ticks_per_operation": 9.42578125,
+        "median_mos_units_per_operation": 0.5625
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.5960968379446641
+    },
+    {
+      "case": "player-fixed-mirror",
+      "method": "matrix-only",
+      "operations": 1024,
+      "pi": {
+        "case": "player-fixed-mirror",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          646,
+          638,
+          636,
+          636
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          14,
+          12
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          646,
+          637,
+          635,
+          636
+        ],
+        "median_prt_ticks_per_operation": 0.6220703125,
+        "median_mos_units_per_operation": 0.01171875
+      },
+      "oryx": {
+        "case": "player-fixed-mirror",
+        "method": "matrix-only",
+        "operations": 1024,
+        "samples": 4,
+        "raw_prt_ticks": [
+          266,
+          258,
+          261,
+          266
+        ],
+        "raw_mos_units": [
+          12,
+          12,
+          12,
+          14
+        ],
+        "raw_submit_prt_ticks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_wait_prt_ticks": [
+          266,
+          258,
+          261,
+          266
+        ],
+        "median_prt_ticks_per_operation": 0.25732421875,
+        "median_mos_units_per_operation": 0.01171875
+      },
+      "oryx_to_pi_raw_prt_ratio": 0.41365777080062793
+    }
+  ],
+  "physical_time_qualified": false,
+  "game_fps_claim": false,
+  "emulator_launched": false,
+  "limitations": [
+    "Host CPU timings measure different native CPUs/compilers; they are not ESP32 timings.",
+    "PRT and MOS clocks advance through separate emulator scheduling paths; raw count ratios are observations, not a universal clock correction.",
+    "Total host elapsed includes startup, loading, untimed warming/readback and cleanup, so it is not isolated draw time.",
+    "No physical hardware execution, pixel-cache adoption, firmware modification or game optimization is inferred."
+  ],
+  "input_sha256": {
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/HOST-pi01.json": "4d5436563e375fe4e7f0b3c31c9bcfff540a3948fab4b2cc9594de48ec3d2a97",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/HOST-oryx01.json": "7892a8e8b6cd9b27de785d858601162ab5bb810f92b61ede65b0850a63b3af8c",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/TARGET-RUN-full01.json": "f8320590a297b6bbc4d8a729f6f7d2c9a0c4a52a9b786631c78fda4b759873ce",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/ORYX-RUN-full01.json": "ef8ff3ae37afd4a7dbbd53b1024c914ab396933c109d68df76e9fa11699a9086",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/PI-RUNTIME-BUILD.json": "49e77cea8c84eb58b985ba3b4c3407118c85e5c6e70205bcc15d07bf9d153486",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/ORYX-RUNTIME-BUILD.json": "38f726dbee2ff006e81793e3146d4106987b0643cd45be96d2dfd617c7a763b2",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/HOST-CASES.json": "9645812121a63302dfdd5b8a75962b2ce1a9ab0e31a7f1d7d8f8efa7abe181a7",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/WORKLOAD.json": "93f47c09a3a0440a7c3f592849494f754fc06641a51d9de15fe573c1e0a83f21",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/TARGET-FIXTURES.json": "64dfa117bcabc659ce6650f23c75eac5ef741953fc1156e36eec06cbba479c11",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/TARGET-BUILD.json": "64f80143955575f16c4191a52fdae91f7872364cd1340aa0bb2d3f95665f9123",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/oryx_compare.py": "13e2b86b2fff19070099501e7a76a2ffe43b69f7a2aa3529b1e9b594085cb091",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/target_verify.py": "1c034b6e8e58bdda82dde2ebd8b1e38d3987a6100535f6e2fde42c1049a49258",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/HOST-pi01.csv": "a891410b77b9de5d44e2ad306c0ad558c3b0967a2d06917bc9dbaa865875ab1b",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/HOST-pi01-checks.csv": "f01078aa12c725b7288dcf175af895f92598a69cc613e80f8f2236f229c93e09",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/HOST-oryx01.csv": "57dc2d1d81f9d0df1a22bd61f7a5feed24ea463f80ebc1ec51b3cc2ebcce3b38",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/HOST-oryx01-checks.csv": "f01078aa12c725b7288dcf175af895f92598a69cc613e80f8f2236f229c93e09",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/full01/summary.json": "cc21bfa7d19a79d9885eb0276996b560ca40774e4b4331a234f9d207eb434c11",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/full01/timings.csv": "3db43b7319c16a83de8dfca34f572a7a97434659fa75a5cf973ac7fe9a6627d8",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/full01/done.txt": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/full01/runtime/verified.json": "89538ba4ededac4c3a58ddae927f311e84d8837025037c96424dd90e3fcdbefd",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/full01/runtime/stats.json": "13839326d19d467e68601f4545353692d08df7bcaa08ee4999c106e9c7481c6a",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/full01/runtime/mos-to-vdp.bin": "f2ac5587f73687944202d553294e45cee98beeb48ab79b7c66ee501c2dfea63b",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/full01/runtime/vdp-to-mos.bin": "27291d57b1a925597e6b2219acf3fb33170905d274ae5890b4939e4e7ddbeb80",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/full01/runtime/vdp-to-mos-delivered.bin": "27291d57b1a925597e6b2219acf3fb33170905d274ae5890b4939e4e7ddbeb80",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/oryx/full01/summary.json": "fbb33abb46d8ef9073b1b176835b40eac5e92c05412cc5f719be661cccfe99f4",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/oryx/full01/timings.csv": "8ffced13878d2e2e7d70eb10dbdd0664c09ca9a45341d9b0d9472b929c626182",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/oryx/full01/done.txt": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/oryx/full01/runtime/verified.json": "68a7092a19f5102f52e11f5843f637191f9795aa33dd1cf69dfff4319aefc988",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/oryx/full01/runtime/stats.json": "3eac5118cf2a08dab6b9bbca26374f9f3b2345525ba84ddb8c4152f06ac63526",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/oryx/full01/runtime/mos-to-vdp.bin": "f2ac5587f73687944202d553294e45cee98beeb48ab79b7c66ee501c2dfea63b",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/oryx/full01/runtime/vdp-to-mos.bin": "27291d57b1a925597e6b2219acf3fb33170905d274ae5890b4939e4e7ddbeb80",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/evidence/oryx/full01/runtime/vdp-to-mos-delivered.bin": "27291d57b1a925597e6b2219acf3fb33170905d274ae5890b4939e4e7ddbeb80"
+  }
+}

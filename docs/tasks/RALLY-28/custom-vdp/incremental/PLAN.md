@@ -15,6 +15,13 @@ The ordered work below describes those items; only INC-001-01 is released for
 implementation in this tranche. [Findings](../../research/RENDERER-COST-FINDINGS.md)
 distinguish confirmed costs, Wolf precedents and proposed experiments.
 
+**INC-001-04 static drawing returned2026-10-29:** all prior dirt/scope pushed
+aab566d. Both-page static initialization plus bounded100–103 sky restoration
+gives35.95→42.77nominal MOS FPS(+18.97%) in matched moving pairs; PRT agrees.
+Same module/physics/driver/fences, wire347→274B/frame; actual scene pixels match
+on both parities. [Evidence](static-drawing/RESULTS.md). Candidate awaits Author
+moving review/publication; new work uncommitted. Bitmap caching remains separate.
+
 **INC-001-04 first part released2026-10-29:** checkpoint/push all current dirt,
 then [static drawing on both pages](static-drawing/README.md). Initialize
 invariant text/lower-strip once per page and preserve moving-region restoration;
@@ -73,6 +80,15 @@ runtime limits. Any genuinely missing service needs owner coordination.
 ## Order and rationale
 
 ### INC-001-02-AFF01 — Audit built-in affine usage
+
+**Released2026-10-29:** the Author requests offline timing of transforms on our
+actual bitmaps. [Isolated investigation](../affine-offline/README.md) owns source
+extraction, observed artwork/workload, host checks and a standalone command test.
+The first preparation/tests stayed on Pi5 while Oryx was shut down. The Author
+now releases identical Oryx host/Flexe tests: same frozen guest/assets/official
+firmware, private x86 runtime from the same source pin, both SDL dummy drivers
+and the original95°C/temporary-boost guard. Pi results remain preserved. This supersedes the planning-only status below for that bounded
+investigation. It does not release a game/firmware optimization or publication.
 
 The Author flags this for follow-up after questioning why Rally's built-in
 affine path costs more than expected from other applications. The matched24.2%

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "session": "oryxhost01",
+  "argv": [
+    ".venv/bin/python",
+    "docs/tasks/RALLY-28/custom-vdp/affine-offline/host_run.py",
+    "--name",
+    "oryx01"
+  ],
+  "cwd": "/home/smith/Agon/mystuff/AgonArcade",
+  "host_before": {
+    "host": "oryx-linuxlite",
+    "architecture": "x86_64",
+    "temperatures_celsius": {
+      "acpitz:thermal_zone0": 58.0,
+      "iwlwifi_1:thermal_zone1": 39.0
+    },
+    "load_average": [
+      1.830078125,
+      1.193359375,
+      1.23828125
+    ],
+    "boost": "0"
+  },
+  "controller_sha256": "b413d1edb1936a013b12b7ab86f632252ad06317543af0ecac4edbf7e9f0d231",
+  "original_guard_sha256": "f2c51dcc61c422b4bf0bc3f9442e50fdc0f1193a2e5655ea7b0713fefc4637bd",
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "preflight": {
+    "temperatures_celsius": {
+      "acpitz:thermal_zone0": 58.0,
+      "iwlwifi_1:thermal_zone1": 39.0
+    },
+    "other_emulators": []
+  },
+  "passed": true,
+  "exit": 0,
+  "host_after": {
+    "host": "oryx-linuxlite",
+    "architecture": "x86_64",
+    "temperatures_celsius": {
+      "acpitz:thermal_zone0": 59.0,
+      "iwlwifi_1:thermal_zone1": 39.0
+    },
+    "load_average": [
+      1.982421875,
+      1.357421875,
+      1.2939453125
+    ],
+    "boost": "0"
+  },
+  "elapsed_host_seconds": 55.228950704,
+  "output_sha256": "d79dbc27511befff5bf37d520306382a1d7ec944108767f8ff1fe912f43827de"
+}

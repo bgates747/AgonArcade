@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "name": "full01",
+  "fixture": "full",
+  "profile": "/Agon/mystuff/AgonArcade/.emulator/rally28-affine-pi-full01",
+  "app": "sdcard/test/arcade/rally28/affine",
+  "files": {
+    "flexe-agon-emulator": "6c032d0cfa731f096f38725f0850f3749fb0bf6ca1a6f3ebf40145eb370a66fa",
+    "flexe-agon-emulator.bin": "ffa4e66ac661896952c020cc1e5cad3de719688375adde8889cd82217d5fec98",
+    "flexe-vdp.so": "c1acfd2201ead6fed425d4affe3d396885e16485c33092ee176019d471eecbe4",
+    "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+    "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+    "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+    "sdcard/autoexec.txt": "80c1c19bc817eb57ac9b698df5f12055721a83572904f6d350b540edb5afb87c",
+    "sdcard/test/arcade/rally28/affine/artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+    "sdcard/test/arcade/rally28/affine/config.bin": "acd1307d63838d203cab0450222b29e8d446fd56c56062b4d8d7c23e1e35bf89",
+    "sdcard/test/arcade/rally28/affine/expected.json": "df49a7b3aa1268b018d5997d9b1fe02ad26d686a4bb8d24e284e8346ea7f5e2d",
+    "sdcard/test/arcade/rally28/affine/probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+    "sdcard/test/arcade/rally28/affine/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+  },
+  "expected_batches": 124,
+  "stopped": true,
+  "setup_helper_sha256": "844ab629cb604daf2469c2c1c9c5dab89d8e9abc9c62f0a19c3eceb6f960a98a",
+  "sound": "dummy",
+  "platform": {
+    "host": "raspberrypi",
+    "architecture": "aarch64",
+    "temperature_celsius": 50.15,
+    "cpu_frequency_khz": 2400000,
+    "load_average": [
+      0.28857421875,
+      0.8525390625,
+      2.29541015625
+    ]
+  },
+  "runtime_build_sha256": "49e77cea8c84eb58b985ba3b4c3407118c85e5c6e70205bcc15d07bf9d153486"
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "passed": true,
+  "no_timing_job": true,
+  "checks": {
+    "ordinary": {
+      "passed": true,
+      "compiler_command": [
+        "c++",
+        "-std=c++17",
+        "-O2",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline",
+        "-x",
+        "c++",
+        "-",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/stock/stock.cpp",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/.work/stock-smoke-ordinary"
+      ],
+      "stdout": "PASS: identity plain/affine, raw x^2 addressing, transparent skip, explicit sampler, natural extra edge, offscreen bounds\n",
+      "stderr": ""
+    },
+    "sanitized": {
+      "passed": true,
+      "compiler_command": [
+        "c++",
+        "-std=c++17",
+        "-O2",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline",
+        "-x",
+        "c++",
+        "-",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/stock/stock.cpp",
+        "-o",
+        "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-offline/.work/stock-smoke-sanitized"
+      ],
+      "stdout": "PASS: identity plain/affine, raw x^2 addressing, transparent skip, explicit sampler, natural extra edge, offscreen bounds\n",
+      "stderr": ""
+    }
+  },
+  "host_only": true,
+  "emulator_launched": false
+}

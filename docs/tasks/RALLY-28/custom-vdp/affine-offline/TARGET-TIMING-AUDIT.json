@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "passed": true,
+  "clock_agreement_passed": false,
+  "physical_or_calibrated_milliseconds_qualified": false,
+  "scope": "Read-only independent source and arithmetic audit of full01 target clocks",
+  "inputs": {
+    "TARGET-RUN-full01.json": "f8320590a297b6bbc4d8a729f6f7d2c9a0c4a52a9b786631c78fda4b759873ce",
+    "PI-RUNTIME-BUILD.json": "49e77cea8c84eb58b985ba3b4c3407118c85e5c6e70205bcc15d07bf9d153486",
+    "PI-RUNTIME-PREPARATION.json": "d51de2ee0366af1751ac5dd762cf084b4f21a904f0ccc0da78968a4b6df54537",
+    "evidence/full01/timings.csv": "3db43b7319c16a83de8dfca34f572a7a97434659fa75a5cf973ac7fe9a6627d8",
+    "evidence/full01/summary.json": "cc21bfa7d19a79d9885eb0276996b560ca40774e4b4331a234f9d207eb434c11",
+    "evidence/full01/runtime/verified.json": "89538ba4ededac4c3a58ddae927f311e84d8837025037c96424dd90e3fcdbefd",
+    "evidence/full01/runtime/stats.json": "13839326d19d467e68601f4545353692d08df7bcaa08ee4999c106e9c7481c6a"
+  },
+  "runtime_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+  "source_files": {
+    "src/main.rs": {
+      "sha256": "ffbbd41b32e92e04e9c4a13932cfaa6261f783cbe475a77c325dfb9bfc60d41f",
+      "matches_frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515"
+    },
+    "adapter/flexe_vdp.c": {
+      "sha256": "359e62ac9501ab0989148d2d7abba5ae4736a99259237054f2097cbe22fee489",
+      "matches_frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515"
+    },
+    "adapter/clock.h": {
+      "sha256": "25b15f6bb017bd0bf868f3b724332c8e54c878eacae449ffaa6ac2f2c7cb2a88",
+      "matches_frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515"
+    },
+    "agon-ez80-emulator/src/agon_machine.rs": {
+      "sha256": "63d97564b5bc116bf41143777577192eb13957f4fff5da9f95c038fea7114399",
+      "matches_frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515"
+    },
+    "agon-ez80-emulator/src/prt_timer.rs": {
+      "sha256": "cf55ee02da723b2289beadee338d427c95ee93066a977bac9e62d9b1aac0cb64",
+      "matches_frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515"
+    },
+    "target/main.cpp": {
+      "sha256": "5b661f190a69ac40052a7cc2aa8fd851e021f2d34c48a4cf6a0b022f5d919e9b"
+    },
+    "target/timing_prt.asm": {
+      "sha256": "20055feeef1cbe34d11cbe8a567cc8454a55666c5f11b7f7e3442a6002572fd3"
+    },
+    "target_control.py": {
+      "sha256": "e982d065880876ea590bc690f232b496ebe1e42a6c210d9a0e3126a7ea1c1d35"
+    }
+  },
+  "source_excerpts": [
+    {
+      "path": "src/main.rs",
+      "line_start": 235,
+      "line_end": 247,
+      "purpose": "Default eZ80 clock selection",
+      "text": "                    soft_reset: soft_reset_ez80,\n                    emulator_shutdown: _emulator_shutdown,\n                    exit_status: _exit_status,\n                    paused: _ez80_paused,\n                    tx_gpio_vga_frame,\n                    clockspeed_hz: if args.unlimited_cpu {\n                        1000_000_000\n                    } else {\n                        18_432_000\n                    },\n                    mos_bin: ez80_firmware,\n                    interrupt_precision: if args.precise_interrupts { 1 } else { 16 },\n                    external_ram_size: args.ram_size * 1024,\n"
+    },
+    {
+      "path": "src/main.rs",
+      "line_start": 421,
+      "line_end": 458,
+      "purpose": "Host presentation clock and native-frame gate",
+      "text": "            let frame_duration = std::time::Duration::from_micros(1_000_000 / frame_rate_hz as u64);\n            let elapsed_since_last_frame = last_frame_time.elapsed();\n            if elapsed_since_last_frame < frame_duration {\n                std::thread::sleep(std::time::Duration::from_millis(5));\n                continue;\n            } else if elapsed_since_last_frame > std::time::Duration::from_millis(100) {\n                // don't let lots of frames queue up, due to system lag or whatever\n                last_frame_time = std::time::Instant::now();\n            }\n\n            // Present a frame\n            last_frame_time = last_frame_time\n                .checked_add(frame_duration)\n                .unwrap_or(std::time::Instant::now());\n\n            // Hybrid ESP32 backends own physical scanout timing. Presenting\n            // an unchanged frame must not generate another eZ80 VSync.\n            let native_frame_changed = if let Some(ref frames) = vdp_interface.flexe_vdp_frames {\n                let now = unsafe { (**frames)() };\n                let changed = now != last_native_frame;\n                last_native_frame = now;\n                changed\n            } else { true };\n            // signal vsync to ez80 via GPIO (pin 1 (from 0) of GPIO port B)\n            if native_frame_changed {\n                // XXX note this is wrong, should be asserted for the whole vblank duration.\n                // but we do it here just for an instant since that's sufficient to trigger\n                // the interrupt.\n                gpios.b.set_input_pin(1, true);\n                gpios.b.set_input_pin(1, false);\n            }\n            // signal vblank to VDP\n            unsafe {\n                (*vdp_interface.signal_vblank)();\n            }\n\n            // shutdown if requested (atomic could be set from the debugger)\n            if HOST_SHUTDOWN.load(std::sync::atomic::Ordering::Relaxed)\n"
+    },
+    {
+      "path": "adapter/flexe_vdp.c",
+      "line_start": 165,
+      "line_end": 205,
+      "purpose": "Complete native scan raster increments frame_count without page/content condition",
+      "text": "static void publish_frame(void) {\n    if (scan_columns != expected_columns || scan_rows != expected_rows ||\n        crop_left+screen_width > RASTER_COLUMNS ||\n        crop_top+(screen_height-1u)*scan_repeat >= RASTER_ROWS) return;\n    pthread_mutex_lock(&video_lock);\n    for (unsigned y=0;y<screen_height;++y) {\n        const uint8_t *line=raster[crop_top+y*scan_repeat]+crop_left;\n        for(unsigned x=0;x<screen_width;++x) {\n            uint8_t c=line[x];\n            size_t out=((size_t)y*screen_width+x)*3u;\n            rgb[out]=(c&3u)*85u; rgb[out+1u]=((c>>2)&3u)*85u;\n            rgb[out+2u]=((c>>4)&3u)*85u;\n        }\n    }\n    output_width=screen_width; output_height=screen_height;\n    output_rate=(float)pixel_rate/(float)(expected_columns*expected_rows);\n    pthread_mutex_unlock(&video_lock);\n    /* Mode changes temporarily expose incomplete DMA rasters. Only a complete\n     * frame with the selected modeline may drive the eZ80's VSync signal. */\n    atomic_fetch_add(&frame_count,1);\n}\nstatic void capture_vga(void *unused,int port,const uint8_t *data,size_t length,\n                        uint32_t rate,uint8_t bits,uint8_t channels) {\n    (void)unused;(void)port;\n    if(bits!=8u || channels!=1u || (length&3u)) {fail(\"unsupported VGA DMA format\");return;}\n    pixel_rate=rate;\n    for(size_t i=0;i<length;++i) {\n        uint8_t c=data[i^2u];\n        if(!(c&0x80u) && (previous_pixel&0x80u)) {\n            if(scan_started && scan_y<RASTER_ROWS) {\n                scan_rows=scan_y+1u; publish_frame();\n            }\n            scan_started=true; scan_y=UINT32_MAX;\n        }\n        if(!(c&0x40u) && (previous_pixel&0x40u)) {\n            if(scan_x)scan_columns=scan_x;\n            scan_x=0;scan_y++;\n        }\n        if(scan_started && scan_y<RASTER_ROWS && scan_x<RASTER_COLUMNS)\n            raster[scan_y][scan_x]=c;\n        scan_x++;previous_pixel=c;\n"
+    },
+    {
+      "path": "adapter/flexe_vdp.c",
+      "line_start": 328,
+      "line_end": 352,
+      "purpose": "Independent ESP32 progress and maximum-real-time pacing",
+      "text": "            unsigned ticks=agon_ulp_step(&ulp,flexe_session_mem(session),flexe_session_periph(session));\n            if(!ticks || ps2.fault) {fail(\"ULP/PS2 execution failed\");break;}\n            ulp.ticks+=ticks;\n        }\n        atomic_store(&cycle_count,cpu->cycle_count);\n        atomic_store(&retired_count,cpu->insn_count+other->insn_count);\n        /* Never run the ESP32 clock faster than real time; slow hosts simply\n         * run slower. No additional sleeps or fake FreeRTOS scheduling. */\n        uint64_t now=monotonic_ns();\n        if(now-last_flush>=250000000ull) {\n            pthread_mutex_lock(&io_lock);\n            if(host_trace)fflush(host_trace);\n            if(delivered_trace)fflush(delivered_trace);\n            pthread_mutex_unlock(&io_lock);\n            if(vdp_trace)fflush(vdp_trace);\n            if(debug_trace)fflush(debug_trace);\n            last_flush=now;\n        }\n        uint64_t elapsed=now-wall_start;\n        uint64_t target=agon_cycles_to_ns(cpu->cycle_count);\n        if(target>elapsed+1000000ull)delay_ns(1000000ull);\n    }\n    atomic_store(&ready,false);\n    if(atomic_load(&debug_logging)) fprintf(stderr,\"[flexe-agon-emulator] ULP pc=%u instructions=%llu start=%08x PS2 sent=%llu commands=%llu pending=%u/%u\\n\",\n        ulp.pc,(unsigned long long)ulp.instructions,mem_read32(flexe_session_mem(session),0x3ff4882c),\n"
+    },
+    {
+      "path": "adapter/flexe_vdp.c",
+      "line_start": 388,
+      "line_end": 394,
+      "purpose": "Native vblank signal handling",
+      "text": "    pthread_mutex_unlock(&io_lock);return got;}\nvoid copyVgaFramebuffer(uint32_t *width,uint32_t *height,uint8_t *buffer,float *rate){pthread_mutex_lock(&video_lock);\n    *width=output_width;*height=output_height;*rate=output_rate;memcpy(buffer,rgb,(size_t)*width**height*3u);pthread_mutex_unlock(&video_lock);}\n/* The firmware already receives real modeled I2S VSync interrupts. Fab's\n * host-presentation callback must not inject another interrupt into ESP32. */\nvoid signal_vblank(void){}\nvoid set_startup_screen_mode(uint32_t mode){requested_mode=mode;}\n"
+    },
+    {
+      "path": "adapter/clock.h",
+      "line_start": 1,
+      "line_end": 9,
+      "purpose": "240 MHz native-cycle nominal pacing conversion",
+      "text": "/* Guest-cycle conversion for host pacing. MIT, Brandon Gates. */\n#ifndef AGON_FLEXE_CLOCK_H\n#define AGON_FLEXE_CLOCK_H\n#include <stdint.h>\nstatic inline uint64_t agon_cycles_to_ns(uint64_t cycles) {\n    const uint64_t hz=240000000ull, ns=1000000000ull;\n    return cycles/hz*ns+(cycles%hz)*ns/hz;\n}\n#endif\n"
+    },
+    {
+      "path": "agon-ez80-emulator/src/agon_machine.rs",
+      "line_start": 1526,
+      "line_end": 1543,
+      "purpose": "PRT fed by eZ80 instruction-cycle accounting",
+      "text": "    fn apply_elapsed_cycles(&mut self) -> i32 {\n        let cycles_elapsed = self.cycle_counter.get();\n        if cycles_elapsed > 0 {\n            self.total_cycles_elapsed = self\n                .total_cycles_elapsed\n                .wrapping_add(cycles_elapsed as u64);\n\n            for t in &mut self.prt_timers {\n                t.apply_ticks(cycles_elapsed as u16);\n            }\n\n            self.uart0.apply_ticks(cycles_elapsed as i32);\n            self.uart1.apply_ticks(cycles_elapsed as i32);\n\n            self.cycle_counter.set(0);\n        }\n        cycles_elapsed\n    }\n"
+    },
+    {
+      "path": "agon-ez80-emulator/src/agon_machine.rs",
+      "line_start": 1563,
+      "line_end": 1576,
+      "purpose": "PRT interrupt priority",
+      "text": "\n    #[inline]\n    pub fn do_interrupts(&mut self, cpu: &mut Cpu) {\n        if cpu.state.reg.get_iff1() {\n            // Interrupts in priority order\n            for i in 0..self.prt_timers.len() {\n                if self.prt_timers[i].irq_due() {\n                    Environment::new(&mut cpu.state, self).interrupt(0xa + 2 * (i as u32));\n                    return;\n                }\n            }\n\n            // fire uart interrupt\n            if self.uart0.interrupt_pending() {\n"
+    },
+    {
+      "path": "agon-ez80-emulator/src/agon_machine.rs",
+      "line_start": 1642,
+      "line_end": 1676,
+      "purpose": "Independent eZ80 host pacing",
+      "text": "        let cycles_per_ms: u64 = self.clockspeed_hz / 1000;\n        let mut timeslice_start = std::time::Instant::now();\n        loop {\n            let mut cycle: u64 = 0;\n            while cycle < cycles_per_ms {\n                self.debugger_tick(&mut debugger, &mut cpu);\n                if self.is_paused() {\n                    break;\n                }\n                self.execute_instruction(&mut cpu);\n                if self.cycle_counter.get() >= self.interrupt_precision {\n                    cycle += self.apply_elapsed_cycles() as u64;\n                    self.do_interrupts(&mut cpu);\n                }\n            }\n\n            // perform a soft reset if requested\n            if self.soft_reset.load(std::sync::atomic::Ordering::Relaxed) {\n                // MOS soft reset code always runs from ADL mode.\n                // and set_pc(0) will actually set pc := (mb<<16 + 0) in non-adl mode\n                cpu.state.reg.adl = true;\n                cpu.state.set_pc(0);\n                self.soft_reset\n                    .store(false, std::sync::atomic::Ordering::Relaxed);\n            }\n\n            while timeslice_start.elapsed() < std::time::Duration::from_millis(1) {\n                std::thread::sleep(std::time::Duration::from_micros(500));\n            }\n            timeslice_start = timeslice_start\n                .checked_add(std::time::Duration::from_millis(1))\n                .unwrap_or(std::time::Instant::now());\n        }\n    }\n}\n"
+    },
+    {
+      "path": "agon-ez80-emulator/src/prt_timer.rs",
+      "line_start": 87,
+      "line_end": 141,
+      "purpose": "Timer divider, reload and interrupt model",
+      "text": "                self.ctl |= 0x80;\n                self.interrupt_due_in = 0;\n            } else {\n                self.interrupt_due_in -= clock_ticks as u8;\n            }\n        }\n        if self.ctl & PRT_EN == 0 {\n            return;\n        }\n        if self.ctl & RST_EN != 0 {\n            self.counter = self.reload;\n            self.step_ = 0;\n            self.ctl &= !RST_EN;\n        }\n        let clk_div = self.clk_div();\n        self.step_ = self.step_.wrapping_add(clock_ticks);\n        while self.step_ >= clk_div {\n            self.step_ -= clk_div;\n            self.counter = self.counter.wrapping_sub(1);\n            if self.counter == 0 {\n                // set PRT_IRQ (after some latency)\n                if self.interrupt_due_in == 0 {\n                    self.interrupt_due_in = PRT_INT_LATENCY;\n                }\n\n                if self.ctl & PRT_MODE == 0 {\n                    // clear RST_EN and PRT_EN\n                    self.ctl &= 0b1111_1100;\n                    break;\n                } else {\n                    // continuous mode: reload counter\n                    self.counter = self.reload;\n                }\n            }\n        }\n    }\n}\n\n#[cfg(test)]\nmod tests {\n    use crate::prt_timer::PRT_INT_LATENCY;\n\n    use super::PrtTimer;\n\n    #[test]\n    fn test_timer_single_pass() {\n        let mut timer = PrtTimer::new();\n        timer.write_reload_low(2);\n        timer.apply_ticks(4);\n        // not enabled yet\n        assert_eq!(timer.counter, 0);\n\n        timer.write_ctl(3);\n        assert_eq!(timer.counter, 0);\n        timer.apply_ticks(3);\n"
+    }
+  ],
+  "binary_mos_vblank_check": {
+    "binary_sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+    "map_sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+    "handler_address": "0x0013B7",
+    "clock_address": "0x0BC3BF",
+    "handler_bytes": "f3f5ed389af602ed399ac5d5e52abfc30b010200000922bfc30b3ac2c30bce0032c2c30be1d1c1f1fb5bed4d",
+    "adds_per_handled_vsync_pulse": 2
+  },
+  "arithmetic": {
+    "rows": 124,
+    "independently_verified_packets": 497,
+    "mos_ticks": 1944,
+    "prt_ticks": 72880,
+    "mos_nominal_hz": 120,
+    "prt_nominal_hz": 1000,
+    "nominal_mos_seconds_diagnostic_only": 16.2,
+    "nominal_prt_seconds_diagnostic_only": 72.88,
+    "nominal_prt_to_mos_ratio": 4.498765432098765,
+    "zero_mos_rows": 13,
+    "all_mos_deltas_even": true,
+    "nonzero_row_nominal_ratio_range": [
+      1.44,
+      7.78
+    ],
+    "all_prt_split_sums_exact": true,
+    "method_totals": [
+      {
+        "method": "empty",
+        "rows": 4,
+        "mos_ticks": 2,
+        "prt_ticks": 94,
+        "nominal_prt_to_mos_ratio": 5.64,
+        "zero_mos_rows": 3,
+        "submit_prt_ticks": 0,
+        "wait_prt_ticks": 94
+      },
+      {
+        "method": "ordinary-sized",
+        "rows": 24,
+        "mos_ticks": 88,
+        "prt_ticks": 2439,
+        "nominal_prt_to_mos_ratio": 3.3259090909090907,
+        "zero_mos_rows": 5,
+        "submit_prt_ticks": 3,
+        "wait_prt_ticks": 2436
+      },
+      {
+        "method": "cached-affine",
+        "rows": 24,
+        "mos_ticks": 370,
+        "prt_ticks": 13981,
+        "nominal_prt_to_mos_ratio": 4.534378378378378,
+        "zero_mos_rows": 5,
+        "submit_prt_ticks": 2,
+        "wait_prt_ticks": 13979
+      },
+      {
+        "method": "rebuilt-affine",
+        "rows": 24,
+        "mos_ticks": 526,
+        "prt_ticks": 22019,
+        "nominal_prt_to_mos_ratio": 5.023346007604563,
+        "zero_mos_rows": 0,
+        "submit_prt_ticks": 2,
+        "wait_prt_ticks": 22017
+      },
+      {
+        "method": "transform40-plot",
+        "rows": 24,
+        "mos_ticks": 648,
+        "prt_ticks": 18916,
+        "nominal_prt_to_mos_ratio": 3.502962962962963,
+        "zero_mos_rows": 0,
+        "submit_prt_ticks": 2,
+        "wait_prt_ticks": 18914
+      },
+      {
+        "method": "matrix-only",
+        "rows": 24,
+        "mos_ticks": 310,
+        "prt_ticks": 15431,
+        "nominal_prt_to_mos_ratio": 5.973290322580644,
+        "zero_mos_rows": 0,
+        "submit_prt_ticks": 5,
+        "wait_prt_ticks": 15426
+      }
+    ]
+  },
+  "whole_session_diagnostic": {
+    "host_elapsed_seconds": 83.08564306199696,
+    "native_frames": 1312,
+    "native_modeled_cycles": 5504323239,
+    "native_frames_per_host_second": 15.79093513209027,
+    "native_cycles_nominal240MHz_seconds": 22.9346801625,
+    "interval_matches_timed_rows": false
+  },
+  "proven_source_scope": [
+    "The exact frontend emits an eZ80 GPIO VSync pulse only when its periodically sampled native_frame_count differs from the preceding sample. It emits at most one pulse per presentation-loop iteration, even if multiple native frames elapsed.",
+    "The exact adapter increments native_frame_count when I2S data forms a complete scan raster with the selected modeline geometry. This code contains no image-change, swap or displayed/hidden-page condition.",
+    "The pinned MOS binary VBlank handler adds 2 to its 32-bit clock variable for each handled pulse; map addresses and exact instruction bytes were checked.",
+    "The exact eZ80 model applies emulated instruction cycles to PRT and UART and independently paces that CPU against host millisecond slices. Default 18.432 MHz is selected because the recorded launch has no unlimited-CPU option.",
+    "The guest configures PRT1 reload 1152/divide 16 and counts its IRQs. This is nominally 1000 interrupts per second of 18.432 MHz eZ80 progress, subject to interrupt servicing and quantization.",
+    "The native ESP32 worker separately advances its modeled CPUs and limits modeled 240 MHz progress from exceeding host real time; on a slow host native progress can be slower. Its clock is not locked to eZ80 PRT or the host presentation loop.",
+    "Full01 measured rows therefore sample clock domains with different progress rules while the eZ80 waits on VDP work. They cannot be treated as two calibrated wall stopwatches."
+  ],
+  "limitations": [
+    "The observed nominal-clock disagreement is real and cannot be explained by changing only one seconds-per-tick constant: aggregate ratios differ by method and 13 rows have zero MOS ticks.",
+    "The source establishes native-frame coupling and independent CPU pacing. Full01 contains no per-batch native-cycle/frame timestamps, eZ80-cycle snapshots or synchronized cross-direction UART timestamps, so the exact contribution of gating, coalescing, CPU emulation throughput and host scheduling is not measured.",
+    "Hidden-page/no-swap is a fixture difference, not a demonstrated root cause. Complete native scan frames are counted independently of page changes, and full01 produced 1312 native frames.",
+    "PRT counts are eZ80 timer IRQ counts while waiting for the separately scheduled VDP worker; they are neither Xtensa cycles nor physical milliseconds. Within-fixture raw comparisons are descriptive of this runtime/host session and may include host scheduling effects.",
+    "MOS ticks in this runtime are coupled to native frame delivery and are unsuitable for converting these batches to render milliseconds or FPS. Timeout deadlines based on that clock can also stretch, although no full01 timeout/fallback was used.",
+    "The 72.880 and 16.200 nominal-second totals cover only timed batches, whereas 83.086 host seconds and native backend totals cover the whole session. Their comparison is diagnostic only, not interval-matched calibration.",
+    "The successful independent verifier qualifies exact command/completion order, final marker writes, logs, identities and clean MOS exit. It does not qualify clock calibration, scanout rate, full-game throughput or physical ESP32 speed.",
+    "Prior full-race results used a different preserved runtime lineage. Their earlier clock agreement does not calibrate this newly compiled maintained frontend or justify pooling these timings.",
+    "No source correction, emulator run or calibration experiment was performed by this audit. Host-native HOST-pi01 timings remain a separate measurement."
+  ],
+  "report_preparation_note": "Initial local report-generation attempt had a Python syntax typo and produced no output; corrected before validation. No fixture/evidence defect or source mutation.",
+  "inputs_modified": false,
+  "emulator_launched": false,
+  "new_run": false
+}

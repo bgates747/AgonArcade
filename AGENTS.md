@@ -1,5 +1,101 @@
 # Standing emulator authorization —2026-10-14
 
+AUTHOR METRIC REQUIREMENT2026-10-30: performance reports must lead with
+completed-frame FPS, frames/elapsed time and comparison versus control. Isolated
+microseconds or raw timer counts do not answer the game-framerate question.
+AFF01 did not render complete race frames: cached-bitmap versus cached-affine
+full-race FPS is unmeasured. ORYX-RESULTS now states that gap prominently and
+links prior full-race reference FPS (14.45 baseline/25.73 native spans/31.76
+accepted additive, nominal MOS; PRT separate). Do not present these historical
+figures or the 4.4x host draw ratio as a newly measured bitmap-cache FPS gain.
+No implementation/emulator/publication release follows from this correction.
+
+AFF01 ORYX RETURNED: identical official-stock VDP fixtures pass 124 batches/497
+ordered replies per host; 640 native host samples/128 method groups/16 pixel checks
+match Pi. Read docs/tasks/RALLY-28/custom-vdp/affine-offline/ORYX-RESULTS.md and
+its ORYX-COMPARISON-AUDIT.md. Entire UART streams are byte-identical; guest,
+art/config/firmware/MOS unchanged. Private x86 runtime uses the same a35b17d
+frontend and fbda8e90 core as ARM. Near-car host times: cached 38.522µs,
+generate+plot 63.386µs, prepared 8.663µs (excluding generation); not ESP32 time.
+Raw PRT 39309/MOS 1958 still disagree 2.4091× (Pi 4.4988×); physical time remains
+unqualified. All four original95°C guards pass/max62°C/initial boost1 restored;
+no emulators remain. All81 frozen inputs/Pi evidence unchanged; Oryx is free.
+New work uncommitted; no hardware/optimization/publication release. Root TODO
+owns review and the unresolved timing limit.
+
+AFF01 ORYX RELEASED2026-10-29: Author now says “ok you can do the same tests
+on oryx now.” This supersedes the earlier Pi-only/no-Oryx restriction for the
+same frozen affine tests. Check host availability, then prepare/run host checks
+and silent Flexe using byte-identical guest/artwork/config/stockVDP inputs.
+Preserve all Pi results and all qualified fixtures; compare clocks separately.
+Use original Oryx95°C/temporaryboost guard and restore actual initial boost.
+No graphical/audio output, other-project edits, game/firmware changes or
+commit/push. Oryx access for this scope is explicitly authorized by the latest
+Author message; the earlier shutdown restriction below is historical.
+
+AFF01 RELEASED: Author requests offline costs applying stock affine transforms
+to Rally artwork. Read docs/tasks/RALLY-28/custom-vdp/affine-offline/README.md.
+All preparation/testing stays on Pi5; local Flexe is allowed with both SDL dummy
+drivers, Oryx is shutting down and must not be contacted. Preserve game/firmware/
+all qualified fixtures. Compile unmodified exported runtime source privately if
+needed; no other repository mutation. Keep host timings separate from emulated
+VDP timings; neither establishes physical ESP32 performance. No commit/push.
+
+FULL-RACE VISUAL ACCEPTED: Author reports “it looks good.” Separate full-race/
+HUMAN-ACCEPTANCE.json preserves prior archive/benchmark identity. Publication
+approval still pending; no human timing retrieval or new game optimization.
+
+RACE-001 COMPLETE2026-10-29: actual race-view comparison replaces the flat-sky
+fixture for performance conclusions. Read docs/tasks/RALLY-28/custom-vdp/full-race/
+RESULTS.md, RAW-AUDIT.json and HUMAN-REVIEW.md. All34 selected900frame/3600tick
+runs pass independent state/UART/timer/backend/MOS-exit checks; timed command
+streams identical352768B. Pooled nominal MOS FPS baseline14.45/native spans25.73/
+additive31.76; separate PRT13.96/24.86/30.68. Identical-input variation reaches7.07%;
+word fills+0.35%do not establish a gain. Keep accepted additive byte fills. Static
+and split-clear are executable aliases; old flat-sky19%gain does not transfer.
+All cases execute real eZ80 panorama/HUD/footer/engine work and native road/actors;
+separate explosion/blink/recovery coverage is complete and excluded from timing.
+Original29 successes retained after external boost interruption; five remaining
+reverse cases passed exclusive continuation,60°C max/originalboost0restored.
+Every owned emulator is stopped; Author/peers told Oryx is free. Fresh stopped
+review profiles .emulator/rally28-hz60-racereview01-static and -baseline; effects
+profile .emulator/rally28-hz60-raceeffectsreview01-coverage60. Sound forced dummy.
+RACE-001-01–06completed in dated log; rootTODO owns RACE-001-07human moving review
+and explicit commit/push approval. New work uncommitted; no hardware/publication
+or later optimization release. Nominal emulator completed-frame throughput is
+not physical scanout/hardware speed or autonomous120Hz/manual-player headroom.
+
+AUTHOR CORRECTION/RELEASE: redo the fixture to show actual race drawing, then
+rerun the baseline through all renderer optimizations, including the latest
+static-drawing case. Read docs/tasks/RALLY-28/custom-vdp/full-race/README.md.
+The flat-sky gain is fixture-only; do not promote it as a full-game improvement.
+Use the actual scrolling panorama, race HUD/footer and engine commands with
+native road, traffic, signs, player and finish drawing. Production panorama/HUD
+retention must be common to every case. All17 native variants run forward and
+reverse with the same finite world, motion and rendering fences. Preserve all
+current dirt; no new commit/push is requested. Only silent guarded headless Oryx
+runs are authorized; no hardware. Author visual review remains the final gate.
+
+AUTHOR VISUAL ACCEPTANCE: static-drawing candidate “looks good.” Read
+incremental/static-drawing/HUMAN-ACCEPTANCE.json. INC-001-04-05 visual gate is
+complete; original benchmark/archive bytes remain preserved. New work is still
+uncommitted; this comment supplies no commit/push or next implementation release.
+
+INC-001-04 STATIC TRANCHE READY2026-10-29: prior dirt/scope pushedaab566d, then
+tape-only both-page static title/sky/lower retention. Read incremental/static-
+drawing/RESULTS.md and HUMAN-REVIEW.md. Fresh matched moving900frame runs give
+35.9521→42.7723nominal MOS FPS(+18.9703%), PRT+18.9701%,4.4352nominalms/frame;
+both pairs improve~19%. All22452rawnative replies/finalstate/PRT/MOSexit pass.
+Actual30/31scene pairs pixel-identical; independent900frame two-page proof passes.
+Same acceptedbytefill/additivesampler module310779...,driver/assets/physics/runtime;
+UART347→274B/frame,184extra setupB/twoswaps before initial checkedfence/mark.
+Retain sky24..99/lower224..239; restore100..103 everyframe to erase oldtraffic.
+Harmless textcursor row0vs2 disclosed; no dynamictextbefore sharedcleanup.
+Both sessionsSDLdummy/max56°C/original95guard/boostrestored1/ownedemulatorsstopped.
+Fresh STOPPED Oryx reviewprofile .emulator/rally28-hz60-staticreview01-static;
+soundforceddummy. New work uncommitted pending Author moving review/publication.
+No hardware, bitmap caching, affine audit, scheduler or later optimization release.
+
 AUTHOR RELEASE2026-10-29: commit/push all current dirt, then INC-001-04 first
 static-drawing tranche. Read incremental/static-drawing/README.md. Keep accepted
 byte-fill/additive renderer; initialize invariant text/lower-strip on both pages,

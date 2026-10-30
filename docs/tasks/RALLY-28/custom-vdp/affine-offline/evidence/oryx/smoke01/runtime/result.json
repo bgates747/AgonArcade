@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "name": "smoke01",
+  "fixture": "smoke",
+  "identity": {
+    "schema": 1,
+    "name": "smoke01",
+    "fixture": "smoke",
+    "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-affine-oryx-smoke01",
+    "app": "sdcard/test/arcade/rally28/affine",
+    "files": {
+      "flexe-agon-emulator": "da988d26f5907bf239a4fbaecd9360c680d950898b247f0ca8d45822e27a2fa9",
+      "flexe-agon-emulator.bin": "7e78e991a32c7bc94e84d70e8ad1792e3b840c48adc2e3aae7f635a88f4878ad",
+      "flexe-vdp.so": "faed8f1c612bf93219b49359337f65457165532465f2ab8006b25059151ff60b",
+      "mos_platform.bin": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae",
+      "mos_platform.map": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86",
+      "esp32-firmware.bin": "b807beef35823b13a0a056f11b7464cd1b1c6356dce0e4098b78ebe059ded35f",
+      "sdcard/autoexec.txt": "80c1c19bc817eb57ac9b698df5f12055721a83572904f6d350b540edb5afb87c",
+      "sdcard/test/arcade/rally28/affine/artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "sdcard/test/arcade/rally28/affine/config.bin": "4cbcd11f1a0354a56515d0967a896e9d2d2531bc39a12a6a2aa6871426b81e9a",
+      "sdcard/test/arcade/rally28/affine/expected.json": "ac26f9c0268a3a7758902eaea2dc145ef60d9cac30bacaa3000ab555ff7cb799",
+      "sdcard/test/arcade/rally28/affine/probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "sdcard/test/arcade/rally28/affine/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "expected_batches": 11,
+    "stopped": true,
+    "setup_helper_sha256": "229c66f63a24b4a20822810e6f771c506dff0f25a179df905ea815770277b92e",
+    "sound": "dummy",
+    "video": "dummy",
+    "platform": {
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 60.0,
+        "iwlwifi_1:thermal_zone1": 42.0
+      },
+      "load_average": [
+        1.7138671875,
+        1.34423828125,
+        1.2900390625
+      ],
+      "boost": "1"
+    },
+    "runtime_build_manifest": "ORYX-RUNTIME-BUILD.json",
+    "runtime_build_sha256": "38f726dbee2ff006e81793e3146d4106987b0643cd45be96d2dfd617c7a763b2",
+    "controller_sha256": "b413d1edb1936a013b12b7ab86f632252ad06317543af0ecac4edbf7e9f0d231",
+    "original_guard_sha256": "f2c51dcc61c422b4bf0bc3f9442e50fdc0f1193a2e5655ea7b0713fefc4637bd",
+    "frozen_target_registry_sha256": "64dfa117bcabc659ce6650f23c75eac5ef741953fc1156e36eec06cbba479c11",
+    "source_fixture": "target/fixtures/smoke",
+    "fixture_files": {
+      "artwork.vdu": "44b9b237e4b8ce9b3d660ffe02c11b0c43d2732d421ce983ad1f7ca509675691",
+      "config.bin": "4cbcd11f1a0354a56515d0967a896e9d2d2531bc39a12a6a2aa6871426b81e9a",
+      "expected.json": "ac26f9c0268a3a7758902eaea2dc145ef60d9cac30bacaa3000ab555ff7cb799",
+      "probe.bin": "c85b0fad6c24862b42daece1dc695f4eea38b2935cd8b5316482f8e4ff8a50ba",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    }
+  },
+  "host_before": {
+    "host": "oryx-linuxlite",
+    "architecture": "x86_64",
+    "temperatures_celsius": {
+      "acpitz:thermal_zone0": 57.0,
+      "iwlwifi_1:thermal_zone1": 39.0
+    },
+    "load_average": [
+      1.81689453125,
+      1.3720703125,
+      1.29931640625
+    ],
+    "boost": "0"
+  },
+  "forced_sdl": {
+    "video": "dummy",
+    "audio": "dummy"
+  },
+  "preflight": {
+    "temperatures_celsius": {
+      "acpitz:thermal_zone0": 57.0,
+      "iwlwifi_1:thermal_zone1": 39.0
+    },
+    "other_emulators": []
+  },
+  "samples": [
+    {
+      "elapsed": 0.0010809420000441605,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 57.0,
+        "iwlwifi_1:thermal_zone1": 39.0
+      },
+      "load_average": [
+        1.81689453125,
+        1.3720703125,
+        1.29931640625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 2.0031157450002866,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 55.0,
+        "iwlwifi_1:thermal_zone1": 39.0
+      },
+      "load_average": [
+        1.81689453125,
+        1.3720703125,
+        1.29931640625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 4.005137801000274,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 55.0,
+        "iwlwifi_1:thermal_zone1": 39.0
+      },
+      "load_average": [
+        1.81689453125,
+        1.3720703125,
+        1.29931640625
+      ],
+      "boost": "0"
+    },
+    {
+      "elapsed": 6.007054270000026,
+      "host": "oryx-linuxlite",
+      "architecture": "x86_64",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 55.0,
+        "iwlwifi_1:thermal_zone1": 39.0
+      },
+      "load_average": [
+        1.9921875,
+        1.416015625,
+        1.31396484375
+      ],
+      "boost": "0"
+    }
+  ],
+  "passed": true,
+  "reason": "guest-files",
+  "summary": {
+    "schema": 1,
+    "valid": true,
+    "completed_batches": 11,
+    "planned_batches": 11,
+    "mode": 136,
+    "timed_swaps": 0,
+    "draw_repeats": 4,
+    "setup_repeats": 16,
+    "samples": 1,
+    "case_mask": 33,
+    "primary_completion": "key-zero",
+    "fallback_used": false,
+    "callback_restored": true,
+    "prt_restored": true,
+    "setup_mos_ticks": 42,
+    "keyboard_packets": 11,
+    "mos_hz_nominal": 120,
+    "prt_hz_nominal": 1000,
+    "failure": "none"
+  },
+  "elapsed_host_seconds": 7.124288349999915,
+  "process_exit": 0,
+  "exit": 0,
+  "input_identities_unchanged": true,
+  "host_after": {
+    "host": "oryx-linuxlite",
+    "architecture": "x86_64",
+    "temperatures_celsius": {
+      "acpitz:thermal_zone0": 56.0,
+      "iwlwifi_1:thermal_zone1": 39.0
+    },
+    "load_average": [
+      1.9921875,
+      1.416015625,
+      1.31396484375
+    ],
+    "boost": "0"
+  },
+  "identities_unchanged": true,
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 320,
+    "cycles": 1417539326,
+    "retired": 553297080,
+    "uart_rx": 46456,
+    "uart_tx": 994,
+    "uart_delivered": 994,
+    "isync": 11,
+    "code_invalidations": 1,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "outputs": {
+    "summary.json": "b1fc700afd06aa2599c0a152c73c1cd1a8df48697f0b9ee6c5b8310827a6fa10",
+    "timings.csv": "7686132eb4d1e8a358a71a52525316fdec411603e4072ce30fd70b7b483316b7",
+    "done.txt": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431"
+  }
+}

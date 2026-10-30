@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "frontend_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+  "core_commit": "fbda8e905ccff36a090e4e33b0ffc2337dd79c52",
+  "architecture": "aarch64",
+  "source_changes": false,
+  "initial_attempt_log": ".work/pi-runtime-build.log",
+  "initial_attempt_failure": "GCC -Werror=stringop-truncation in upstream rom_stubs.c",
+  "warning_policy": "Only stringop-truncation remains a warning; no source change",
+  "commands": [
+    {
+      "argv": [
+        "cmake",
+        "-S",
+        "build/flexe-source",
+        "-B",
+        "build/flexe-core",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_POSITION_INDEPENDENT_CODE=ON",
+        "-DFLEXE_LTO=OFF",
+        "-DCMAKE_C_FLAGS=-Wno-error=stringop-truncation"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "cmake",
+        "--build",
+        "build/flexe-core",
+        "--target",
+        "xtensa-emu-lib",
+        "--parallel",
+        "2"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c17",
+        "-O2",
+        "-fPIC",
+        "-shared",
+        "-Wall",
+        "-Wextra",
+        "-Ibuild/flexe-source/src",
+        "adapter/flexe_vdp.c",
+        "adapter/ulp.c",
+        "adapter/ps2.c",
+        "build/flexe-core/libxtensa-emu-lib.a",
+        "-o",
+        "build/flexe-vdp.so",
+        "-lssl",
+        "-lcrypto",
+        "-lz",
+        "-lm",
+        "-lpthread"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Iadapter",
+        "-Ibuild/flexe-source/src",
+        "tests/ulp_ps2.c",
+        "adapter/ulp.c",
+        "adapter/ps2.c",
+        "build/flexe-core/libxtensa-emu-lib.a",
+        "-o",
+        "build/ulp-ps2-tests",
+        "-lssl",
+        "-lcrypto",
+        "-lz",
+        "-lm",
+        "-lpthread"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "build/ulp-ps2-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Ibuild/flexe-source/src",
+        "tests/i2s_eof.c",
+        "build/flexe-core/libxtensa-emu-lib.a",
+        "-o",
+        "build/i2s-eof-tests",
+        "-lssl",
+        "-lcrypto",
+        "-lz",
+        "-lm",
+        "-lpthread"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "build/i2s-eof-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Iadapter",
+        "tests/clock.c",
+        "-o",
+        "build/clock-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "build/clock-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/rustc",
+        "--edition",
+        "2021",
+        "--test",
+        "agon-ez80-emulator/src/uart.rs",
+        "-o",
+        "build/uart-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "build/uart-tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--release",
+        "--jobs",
+        "2",
+        "-p",
+        "flexe-agon-emulator"
+      ],
+      "returncode": 0
+    }
+  ],
+  "emulator_launched": false,
+  "passed": true,
+  "files": {
+    "flexe-agon-emulator": "ffa4e66ac661896952c020cc1e5cad3de719688375adde8889cd82217d5fec98",
+    "flexe-vdp.so": "c1acfd2201ead6fed425d4affe3d396885e16485c33092ee176019d471eecbe4"
+  },
+  "elapsed_host_seconds": 94.74322032099735,
+  "build_log_sha256": "07df9b2e2ffce228e3958334e99bb4a80781ecf8613ff8b2bbaeb2e1ac501177"
+}
