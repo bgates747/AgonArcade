@@ -1,0 +1,39 @@
+{
+  "error": null,
+  "capture_ready": {
+    "schema": 1,
+    "timing_excluded": true,
+    "stage": 1,
+    "frame": 60,
+    "generation": 364,
+    "request": 123,
+    "physics_ticks": 240,
+    "post_swap_fenced": true
+  },
+  "video_driver": "dummy",
+  "audio_driver": "dummy",
+  "intentional_interruption_during_hold": true,
+  "timing_excluded": true,
+  "game_cleanup_validated": false,
+  "host_seconds": 13.749,
+  "runtime_identities": "c8407990aa3f374471752c861f4b0f831bf215f226c6c54699f48f981fab07b4  flexe-agon-emulator\n28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670  flexe-agon-emulator.bin\nd564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin\nd69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map\n200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30  flexe-vdp.so\n8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473  esp32-firmware.bin\nb41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567  esp32-firmware.elf\nbd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1  sdcard/autoexec.txt\n8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2  sdcard/rally25/native.vdu\n371a4e4839ee18bf809ec5c2fa6caa9a5a2c71632503e4f0f83d890488d6b884  sdcard/rally25/probe.bin\nb0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4  sdcard/rally25/artwork.vdu\nbf3dc46533af36df8e720362a0e238d9948c89cfdc8fea274175cf54e9e52afc  sdcard/rally25/expected.json\n1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380  sdcard/rally25/common.vdu\ne0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24  sdcard/rally25/run.txt\n2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2  sdcard/rally25/assets.vdu\n5a83171e5b0363f97b861f691036220909b930b001965eab5649ed6f9757f329  sdcard/rally25/capture.req\n56a6a50311204c725152ea877f10b86cf1cdcc76761598bc3c73935502307593  sdcard/rally25/config.bin\n063872888beeb1be4e264a825e3467713177b28285fa60ce6f2fa1c645b0c2fd  sdcard/rally25/coverage.req\n0a1fbfa3e7a7ca7858e3219a36bc83868ffb822f86694d62f0a58e1896e3ae11  sdcard/rally25/module.vdu\n5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9  sdcard/rally25/motion.bin\n3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363  sdcard/rally25/presentation.vdu\n",
+  "process_exit": 0,
+  "input_hashes_preserved": true,
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 639,
+    "cycles": 2723596476,
+    "retired": 1059381714,
+    "uart_rx": 473993,
+    "uart_tx": 33617,
+    "uart_delivered": 33617,
+    "isync": 376,
+    "code_invalidations": 3,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "scene_ppm_sha256": "62606a0081f39ad63d11d628c42327109175362a29b27092c8b73d61f2650c98"
+}

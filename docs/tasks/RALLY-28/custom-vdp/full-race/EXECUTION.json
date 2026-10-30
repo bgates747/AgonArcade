@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "status": "Complete; all34 selected runs independently audited; Author visual review pending",
+  "remote_host": "oryx-linuxlite",
+  "remote_root": "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/full-race",
+  "session": "racefullsession02",
+  "campaigns": [
+    "raceab03",
+    "raceba03"
+  ],
+  "runner": "retry_control.py",
+  "guest_sha256": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+  "forward_complete": true,
+  "forward_independent_audit": "RAW-AUDIT-FORWARD.json",
+  "capture_selection": "CAPTURE-RESULTS.json",
+  "coverage_campaign": "racecoverage03",
+  "coverage_session": "racecoveragesession03",
+  "audio_driver": "dummy",
+  "video_driver": "dummy",
+  "thermal_stop_celsius": 95,
+  "source_changes_during_active_session_prohibited": [
+    "control.py",
+    "retry_control.py",
+    "verify.py",
+    "fixtures"
+  ],
+  "publication_authorized": false,
+  "hardware_tested": false,
+  "completed_comparison_runs": 34,
+  "final_comparison_qualified": true,
+  "guard_interruption": "External boost changed0to1 at2304.331host seconds; owned emulators stopped, originalboost1restored; observed host94C with two other projects running afterward",
+  "reverse_partial_audit": "RAW-AUDIT-REVERSE-PARTIAL.json",
+  "remaining_reverse_cases": [],
+  "continuation": "Keep29 validated original runs. Run only missing five in fresh profiles under original guard after host is free. Preserve interrupted case and every original campaign/attempt receipt. Use explicit per-case provenance when forming final logical reverse order; do not overwrite prior outcomes or restart29 completed tests.",
+  "continuation_session": "racefinishsession01",
+  "continuation_campaign": "racefinish01",
+  "continuation_runner": "finish_control.py",
+  "host_before_continuation": {
+    "temperature_celsius": 53,
+    "boost": "0",
+    "other_emulators": false
+  },
+  "author_release": "You may proceed; no other agents will use the emulator until Rally says finished.",
+  "finish_complete": true,
+  "finish_session_host_seconds": 358.939,
+  "finish_max_temperature_celsius": 60.0,
+  "finish_original_boost": "0",
+  "finish_final_boost": "0",
+  "finish_boost_restored": true,
+  "finish_owned_emulator_processes_after": [],
+  "stopped_review_profiles": [
+    "PROFILES-racereview01.json",
+    "PROFILES-raceeffectsreview01.json"
+  ],
+  "host_window_released": true,
+  "agents_notified_window_finished": [
+    "2026-10-29_16-52-42_rally_rally28-full-race-oryx-finished-one",
+    "2026-10-29_16-52-42_rally_rally28-full-race-oryx-finished-two"
+  ],
+  "final_audit": "RAW-AUDIT.json",
+  "comparison_selection": "COMPARISON-SELECTION.json",
+  "human_visual_review_pending": true,
+  "all_new_work_uncommitted": true
+}

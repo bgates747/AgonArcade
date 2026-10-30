@@ -1,0 +1,79 @@
+{
+  "coverage60": {
+    "passed": true,
+    "host_seconds": 19.66,
+    "process_exit": 0,
+    "backend_stats": {
+      "engine": "jit",
+      "frames": 850,
+      "cycles": 3603392950,
+      "retired": 1768236852,
+      "uart_rx": 543755,
+      "uart_tx": 90197,
+      "uart_delivered": 90197,
+      "isync": 589,
+      "code_invalidations": 3,
+      "keys": 0,
+      "failed": false,
+      "unhandled": 0,
+      "unregistered": 0,
+      "unmapped": 0
+    },
+    "result": {
+      "frames": 60,
+      "physics_ticks": 240,
+      "final_state_exact": true,
+      "state_sha256": "435612049eeba82e8c5141310f75a5d3cf56dae0892741c9622d5512d4141f45",
+      "nominal_mos_ticks": 224,
+      "nominal_mos_seconds": 1.8666666666666667,
+      "nominal_mos_fps": 32.142857142857146,
+      "nominal_prt_ticks": 1938,
+      "nominal_prt_seconds": 1.938,
+      "nominal_prt_fps": 30.959752321981423,
+      "retained_replies": 2219,
+      "every_frame_completion_and_post_swap_checked": true,
+      "timer_restored": true,
+      "unloaded": true,
+      "race_view": true,
+      "presentation_counters": {
+        "scroll_calls": 0,
+        "repaint_calls": 0,
+        "sky_repair_calls": 60,
+        "hud_bytes": 1083,
+        "footer_calls": 60,
+        "audio_changes": 2,
+        "finish_frames": 16,
+        "input_polls": 60
+      },
+      "player_race_state": {
+        "station": "54000",
+        "phase": "2800",
+        "speed": "170",
+        "lateral": "0",
+        "steering": "0",
+        "rules_ticks": "240",
+        "score": "52",
+        "remaining": "9960",
+        "rank": "7",
+        "laps": "0"
+      },
+      "timed_wire_bytes": 22397,
+      "zero_mos_intervals": [],
+      "stack_before": 2260,
+      "stack_after": 2004,
+      "timing_excluded": true,
+      "effect_coverage_verified": true,
+      "clock_limit": "Nominal MOS120units/s and nominal PRT18.432MHz emulated instruction clock; no physical FPS/scanout claim",
+      "raw_file_sha256": {
+        "result.json": "7e1bbd40efa15e2e7cd1fe8a73d10a26acd2d51d84bc58b745929aa96e0053df",
+        "state.bin": "435612049eeba82e8c5141310f75a5d3cf56dae0892741c9622d5512d4141f45",
+        "player.csv": "e4f9e47f243b9c0a3bb582e8e4d04422ea74188a565af4d201c13d8ded5ac8a1",
+        "ticks.bin": "25e2215a030074481b8f52e4a856b8fc4df7d439059ee2ce839f427dbac25cf3",
+        "prt.bin": "a6eb4d8f0a2fa6b919996562458a5abae14a86c0a7fa45e6308d725bc7af5f35",
+        "replies.bin": "aa8681365a0dd24093ea89b9f6861a8e6a3d1c1f026ba76098334b2241dde4ba",
+        "stages.csv": "21c1c38c509748194ba7be046049ed478f8b10424f50cd7dbd87e034a1bdc44c"
+      }
+    },
+    "input_hashes_preserved": true
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "passed": true,
+  "host_only": true,
+  "emulator_launched": false,
+  "network_used": false,
+  "case_count": 9,
+  "source_sha256": {
+    "full-race/retry_control.py": "cc8ddcfc9a04af92d02a4cefa865948c125a9fb50084be7a6598a00f5600519a",
+    "full-race/control.py": "1f922d962df23015ade6c7e078af09e30ba0137930fe90db4358a484a0644520",
+    "throughput/oryx_session.py": "f2c51dcc61c422b4bf0bc3f9442e50fdc0f1193a2e5655ea7b0713fefc4637bd"
+  },
+  "running_source_files_not_modified": true,
+  "temporary_synthetic_copies_removed": true,
+  "checks": {
+    "preserved_startup_timeout": {
+      "expected_retry_allowed": true,
+      "outcome": {
+        "retry_allowed": true,
+        "exception_type": "TimeoutError",
+        "initial_stack_info_token": 18,
+        "main_window_started": false,
+        "native_packets": [
+          {
+            "kind": 2,
+            "token": 1,
+            "value": 1
+          }
+        ],
+        "multiplexed_packets": 102,
+        "outbound_bytes": 297519,
+        "inbound_bytes": 342,
+        "raw_rx_sha256": "a39a2400dd51d414d8e59e82f39ea3f8d8db12ce6742b3be9dcd0b0247d1e67d",
+        "reason": "Transport TimeoutError with no guest/backend/protocol failure; complete multiplexed native RX is a valid prefix strictly before INFO token18"
+      },
+      "evidence": "evidence/raceab02/float-tri-strips",
+      "input_sha256": {
+        "mos-to-vdp.bin": "f68acc356eec5709daa7379a13c2120329a7a79bfbb976a3ca8245a5f9c4ce27",
+        "run.json": "8bbbd6c58d77be4629c5666650f1c03b9ed27e31c621318c76b28e0be9410e5d",
+        "stats.json": "8b61b14b578d7b68ed1af81613ab6a4a643ee972062492f6688ed9a838be2984",
+        "vdp-to-mos-delivered.bin": "a39a2400dd51d414d8e59e82f39ea3f8d8db12ce6742b3be9dcd0b0247d1e67d",
+        "vdp-to-mos.bin": "a39a2400dd51d414d8e59e82f39ea3f8d8db12ce6742b3be9dcd0b0247d1e67d"
+      }
+    },
+    "completed_baseline": {
+      "expected_retry_allowed": false,
+      "outcome": {
+        "retry_allowed": false,
+        "exception_type": "TimeoutError",
+        "initial_stack_info_token": 18,
+        "main_window_started": false,
+        "reason": "Guest completed main execution"
+      },
+      "evidence": "evidence/raceab02/baseline",
+      "input_sha256": {
+        "mos-to-vdp.bin": "95319acf4bdfde21630cec78b9e393e13a0eb3fabd60735ffed85856d7564062",
+        "result.json": "f452ec49c5db67d2745cfee1851b97859687c1a5acd0944e5a980588fbd9478f",
+        "run.json": "bb2b6c9aff48a8b317059c3e7b93a0db6451f803f14cac1e27038b0cd4a5d9eb",
+        "stats.json": "f31c1c75fa2f615caf7d0a471f7cf2d4955b9181d0e59bfc351729d31b9923cc",
+        "vdp-to-mos-delivered.bin": "29b2d26583f4eabdebed45b074b2aaa984684fe1f68df200ff8cb987edcdde22",
+        "vdp-to-mos.bin": "29b2d26583f4eabdebed45b074b2aaa984684fe1f68df200ff8cb987edcdde22"
+      }
+    },
+    "native_error": {
+      "expected_retry_allowed": false,
+      "outcome": {
+        "retry_allowed": false,
+        "exception_type": "TimeoutError",
+        "initial_stack_info_token": 18,
+        "main_window_started": false,
+        "native_packets": [
+          {
+            "kind": 2,
+            "token": 1,
+            "value": 1
+          },
+          {
+            "kind": 5,
+            "token": 1,
+            "value": 6
+          }
+        ],
+        "multiplexed_packets": 103,
+        "outbound_bytes": 297519,
+        "inbound_bytes": 354,
+        "raw_rx_sha256": "4b6d12be489b26f15dfead978ce5a450bbde166e886ec3e00b6a62a61d9594b1",
+        "reason": "Native error callback"
+      },
+      "base_evidence": "evidence/raceab02/float-tri-strips",
+      "mutation": "Append multiplexed native kind5/token1/value6; keep RX/delivered/accounting matched",
+      "input_sha256": {
+        "mos-to-vdp.bin": "f68acc356eec5709daa7379a13c2120329a7a79bfbb976a3ca8245a5f9c4ce27",
+        "run.json": "703232ce6039047d5cdad313db28af3655132acec32ace0dd9757be6e95b45c1",
+        "stats.json": "8b61b14b578d7b68ed1af81613ab6a4a643ee972062492f6688ed9a838be2984",
+        "vdp-to-mos-delivered.bin": "4b6d12be489b26f15dfead978ce5a450bbde166e886ec3e00b6a62a61d9594b1",
+        "vdp-to-mos.bin": "4b6d12be489b26f15dfead978ce5a450bbde166e886ec3e00b6a62a61d9594b1"
+      }
+    },
+    "guest_failure": {
+      "expected_retry_allowed": false,
+      "outcome": {
+        "retry_allowed": false,
+        "exception_type": "TimeoutError",
+        "initial_stack_info_token": 18,
+        "main_window_started": false,
+        "reason": "Guest failure is present"
+      },
+      "base_evidence": "evidence/raceab02/float-tri-strips",
+      "mutation": "Add failure.txt with a synthetic guest error",
+      "input_sha256": {
+        "failure.txt": "642146320b0dbc527b978a4088f259d1dc66bb9df4bc177d67539796524b4eff",
+        "mos-to-vdp.bin": "f68acc356eec5709daa7379a13c2120329a7a79bfbb976a3ca8245a5f9c4ce27",
+        "run.json": "8bbbd6c58d77be4629c5666650f1c03b9ed27e31c621318c76b28e0be9410e5d",
+        "stats.json": "8b61b14b578d7b68ed1af81613ab6a4a643ee972062492f6688ed9a838be2984",
+        "vdp-to-mos-delivered.bin": "a39a2400dd51d414d8e59e82f39ea3f8d8db12ce6742b3be9dcd0b0247d1e67d",
+        "vdp-to-mos.bin": "a39a2400dd51d414d8e59e82f39ea3f8d8db12ce6742b3be9dcd0b0247d1e67d"
+      }
+    },
+    "backend_fault": {
+      "expected_retry_allowed": false,
+      "outcome": {
+        "retry_allowed": false,
+        "exception_type": "TimeoutError",
+        "initial_stack_info_token": 18,
+        "main_window_started": false,
+        "reason": "Backend fault"
+      },
+      "base_evidence": "evidence/raceab02/float-tri-strips",
+      "mutation": "Set run.json backend_stats.failed=true",
+      "input_sha256": {
+        "mos-to-vdp.bin": "f68acc356eec5709daa7379a13c2120329a7a79bfbb976a3ca8245a5f9c4ce27",
+        "run.json": "e6f4263e2082963b84f5a52601b8b5c3a355a27f968be3a0cb50747c059add5c",
+        "stats.json": "8b61b14b578d7b68ed1af81613ab6a4a643ee972062492f6688ed9a838be2984",
+        "vdp-to-mos-delivered.bin": "a39a2400dd51d414d8e59e82f39ea3f8d8db12ce6742b3be9dcd0b0247d1e67d",
+        "vdp-to-mos.bin": "a39a2400dd51d414d8e59e82f39ea3f8d8db12ce6742b3be9dcd0b0247d1e67d"
+      }
+    },
+    "info18": {
+      "expected_retry_allowed": false,
+      "outcome": {
+        "retry_allowed": false,
+        "exception_type": "TimeoutError",
+        "initial_stack_info_token": 18,
+        "main_window_started": true,
+        "native_packets": [
+          {
+            "kind": 2,
+            "token": 1,
+            "value": 1
+          },
+          {
+            "kind": 4,
+            "token": 18,
+            "value": 2260
+          }
+        ],
+        "multiplexed_packets": 103,
+        "outbound_bytes": 297519,
+        "inbound_bytes": 354,
+        "raw_rx_sha256": "bd4f24a4d4a6e2938e7f5dd54c624a07340528285f82abaebb24f695d71c4e8a",
+        "reason": "Initial timed-window INFO token18 or later was reached"
+      },
+      "base_evidence": "evidence/raceab02/float-tri-strips",
+      "mutation": "Append multiplexed native kind4/token18/value2260; keep RX/delivered/accounting matched",
+      "input_sha256": {
+        "mos-to-vdp.bin": "f68acc356eec5709daa7379a13c2120329a7a79bfbb976a3ca8245a5f9c4ce27",
+        "run.json": "703232ce6039047d5cdad313db28af3655132acec32ace0dd9757be6e95b45c1",
+        "stats.json": "8b61b14b578d7b68ed1af81613ab6a4a643ee972062492f6688ed9a838be2984",
+        "vdp-to-mos-delivered.bin": "bd4f24a4d4a6e2938e7f5dd54c624a07340528285f82abaebb24f695d71c4e8a",
+        "vdp-to-mos.bin": "bd4f24a4d4a6e2938e7f5dd54c624a07340528285f82abaebb24f695d71c4e8a"
+      }
+    },
+    "protocol_error": {
+      "expected_retry_allowed": false,
+      "outcome": {
+        "retry_allowed": false,
+        "exception_type": "TimeoutError",
+        "initial_stack_info_token": 18,
+        "main_window_started": false,
+        "native_packets": [
+          {
+            "kind": 2,
+            "token": 1,
+            "value": 1
+          },
+          {
+            "kind": 3,
+            "token": 1,
+            "value": 0
+          }
+        ],
+        "multiplexed_packets": 103,
+        "outbound_bytes": 297519,
+        "inbound_bytes": 354,
+        "raw_rx_sha256": "fec94dcfa4f4b374260e59238debbfffd6941eb192f80dfc927d43c8fa8e82c3",
+        "reason": "Non-monotonic native callback token"
+      },
+      "base_evidence": "evidence/raceab02/float-tri-strips",
+      "mutation": "Append multiplexed native kind3/token1/value0; keep RX/delivered/accounting matched",
+      "input_sha256": {
+        "mos-to-vdp.bin": "f68acc356eec5709daa7379a13c2120329a7a79bfbb976a3ca8245a5f9c4ce27",
+        "run.json": "703232ce6039047d5cdad313db28af3655132acec32ace0dd9757be6e95b45c1",
+        "stats.json": "8b61b14b578d7b68ed1af81613ab6a4a643ee972062492f6688ed9a838be2984",
+        "vdp-to-mos-delivered.bin": "fec94dcfa4f4b374260e59238debbfffd6941eb192f80dfc927d43c8fa8e82c3",
+        "vdp-to-mos.bin": "fec94dcfa4f4b374260e59238debbfffd6941eb192f80dfc927d43c8fa8e82c3"
+      }
+    },
+    "partial_packet": {
+      "expected_retry_allowed": false,
+      "outcome": {
+        "retry_allowed": false,
+        "exception_type": "TimeoutError",
+        "initial_stack_info_token": 18,
+        "main_window_started": false,
+        "reason": "Incomplete multiplexed RX payload"
+      },
+      "base_evidence": "evidence/raceab02/float-tri-strips",
+      "mutation": "Append multiplexed native kind3/token1/value0; keep RX/delivered/accounting matched; truncate final byte",
+      "input_sha256": {
+        "mos-to-vdp.bin": "f68acc356eec5709daa7379a13c2120329a7a79bfbb976a3ca8245a5f9c4ce27",
+        "run.json": "825ebf568a5371677e4a04166c03d77c46a8946b266a1a243f226b365e53b291",
+        "stats.json": "8b61b14b578d7b68ed1af81613ab6a4a643ee972062492f6688ed9a838be2984",
+        "vdp-to-mos-delivered.bin": "c9ccc371d42f4442a144d2ec45def5ae8f28f569b1db9f2b9d4caf26df5822ec",
+        "vdp-to-mos.bin": "c9ccc371d42f4442a144d2ec45def5ae8f28f569b1db9f2b9d4caf26df5822ec"
+      }
+    },
+    "non_timeout": {
+      "expected_retry_allowed": false,
+      "outcome": {
+        "retry_allowed": false,
+        "exception_type": "RuntimeError",
+        "initial_stack_info_token": 18,
+        "main_window_started": false,
+        "reason": "Not a transport timeout"
+      },
+      "base_evidence": "evidence/raceab02/float-tri-strips",
+      "mutation": "Copy preserved startup evidence without changing raw data",
+      "input_sha256": {
+        "mos-to-vdp.bin": "f68acc356eec5709daa7379a13c2120329a7a79bfbb976a3ca8245a5f9c4ce27",
+        "run.json": "8bbbd6c58d77be4629c5666650f1c03b9ed27e31c621318c76b28e0be9410e5d",
+        "stats.json": "8b61b14b578d7b68ed1af81613ab6a4a643ee972062492f6688ed9a838be2984",
+        "vdp-to-mos-delivered.bin": "a39a2400dd51d414d8e59e82f39ea3f8d8db12ce6742b3be9dcd0b0247d1e67d",
+        "vdp-to-mos.bin": "a39a2400dd51d414d8e59e82f39ea3f8d8db12ce6742b3be9dcd0b0247d1e67d"
+      }
+    }
+  }
+}

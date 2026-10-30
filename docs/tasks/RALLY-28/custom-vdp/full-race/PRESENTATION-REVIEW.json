@@ -1,0 +1,311 @@
+{
+  "schema": 1,
+  "review_kind": "independent maintained-race presentation and all17 helper bounds",
+  "drawing_inventory": [
+    "two-page scrolling1024x104 panorama and exposed-edge repair",
+    "road and checker finish markings",
+    "six scripted approaching/receding opponents",
+    "all original billboard artwork",
+    "player bitmap views/reflection",
+    "production race HUD and footer with notice erasure",
+    "native contact computations under no-damage benchmark policy",
+    "real engine setup/pitch/mute commands under dummy host audio",
+    "separate maintained player explosion/recovery drawing coverage"
+  ],
+  "normal_race_panel": "none; no attract or diagnostic title",
+  "common_production_retention": "SceneryHistory and Hud already present in maintained game; not credited as new static improvement",
+  "traffic_top_min": 100,
+  "traffic_top_max": 153,
+  "sky_repair_interval": [
+    88,
+    103
+  ],
+  "sky_row_colour_assumption": false,
+  "sign_minimum_top": 104,
+  "normal_player_artwork": [
+    {
+      "view": 0,
+      "source_upload_opaque_y": [
+        21,
+        60
+      ],
+      "normal_player_opaque_screen_y": [
+        175,
+        214
+      ]
+    },
+    {
+      "view": 1,
+      "source_upload_opaque_y": [
+        21,
+        60
+      ],
+      "normal_player_opaque_screen_y": [
+        175,
+        214
+      ]
+    },
+    {
+      "view": 2,
+      "source_upload_opaque_y": [
+        20,
+        62
+      ],
+      "normal_player_opaque_screen_y": [
+        174,
+        216
+      ]
+    },
+    {
+      "view": 3,
+      "source_upload_opaque_y": [
+        20,
+        64
+      ],
+      "normal_player_opaque_screen_y": [
+        174,
+        218
+      ]
+    },
+    {
+      "view": 4,
+      "source_upload_opaque_y": [
+        18,
+        64
+      ],
+      "normal_player_opaque_screen_y": [
+        172,
+        218
+      ]
+    }
+  ],
+  "unclipped_burst_y": [
+    157,
+    229
+  ],
+  "required_actor_effect_viewport": [
+    0,
+    24,
+    319,
+    223
+  ],
+  "required_road_footer_viewport": [
+    0,
+    104,
+    319,
+    239
+  ],
+  "viewport_correction": "Applied shared road/footer viewport104..239 followed by actor/player viewport24..223; ordinary artwork fits already and the explosion is correctly clipped at223.",
+  "effects_anchor": "Read frozen native player bitmap/matrix/x from output50303 at byte offsets2,8,13; identical ground anchor to maintained drawPlayer",
+  "read16_alignment": "Pinned SDK runtime spans2bytes at arbitrary offset; offset13 valid. Exactly3 anchor replies.",
+  "main_comparison_policy": "No damage retained; full native traffic/contact/projection plus complete normal race drawing; four simulated ticks per unpaced render",
+  "diagnostic_limit": "Effects are a frozen-camera drawing diagnostic with zero native physics steps, not integrated native opponent destruction/collision recovery or gameplay scheduling",
+  "variant_sources": {
+    "baseline": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/baseline/helper/render_core.inc",
+      "sha256": "2f3eb552538a3e2e8c9a450ae49c319540cc9b774ef925ec02f111d1e8f42f2b",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "float-tri-layered": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/float-tri-layered/helper/render_core.inc",
+      "sha256": "d00d6d9c2cc279075bb2f28c8261bf9ff6db66ebef241e15287f02250d6ab2c2",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "integer-tri-layered": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/integer-tri-layered/helper/render_core.inc",
+      "sha256": "d39d91bad137132509fed1ab9c556d800b532b69373705bf97b5dea2a281c623",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "float-quad-layered": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/float-quad-layered/helper/render_core.inc",
+      "sha256": "6e63276d5c712db12ffd79b7c1ffdc037c03328d5a97d863d8a7014f97884c3c",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "integer-quad-layered": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/integer-quad-layered/helper/render_core.inc",
+      "sha256": "3893b24e21ba571033109f3b2ab22730f55f3233082153b3d4f24c05f7c77cc7",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "float-tri-strips": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/float-tri-strips/helper/render_core.inc",
+      "sha256": "291afe2a97aef007c893e9a7051fcaf95bfd4cbf089dbc5f1167c1edd2488891",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "integer-tri-strips": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/integer-tri-strips/helper/render_core.inc",
+      "sha256": "6c68b9c6cc61c634f18208bd25c9af63d6c1f25a920f8b63080ef80d72e293fc",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "float-quad-strips": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/float-quad-strips/helper/render_core.inc",
+      "sha256": "710777bf2315b00eadceb7838460f8e37a8fa1802d98aac2213e7c8a1d8522d6",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "integer-quad-strips": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/integer-quad-strips/helper/render_core.inc",
+      "sha256": "1422eb4c5f37feff392ef6720ac12e436df22eb7cfd1b56e57f7b347d2d420c9",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "integer-quad-segments": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/integer-quad-segments/helper/render_core.inc",
+      "sha256": "ab05991e373f431871b5677e9c1b10d5660d274741fcaa13685f7087f865e05a",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "float-quad-segments": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/float-quad-segments/helper/render_core.inc",
+      "sha256": "4abecccaa2fe3001245aaa32c84648c0b00a3a96ee267d5a8c25cfbb5035e2ff",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "span-rgba": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/span-rgba/helper/render_core.inc",
+      "sha256": "80f3816b2fc9a085be168999472273f07941504f673fbdd917fc836b412a0875",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "span-native": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/span-native/helper/render_core.inc",
+      "sha256": "80f3816b2fc9a085be168999472273f07941504f673fbdd917fc836b412a0875",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "split-clear": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/span-native/helper/render_core.inc",
+      "sha256": "80f3816b2fc9a085be168999472273f07941504f673fbdd917fc836b412a0875",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "additive": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/additive/helper/render_core.inc",
+      "sha256": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "word-fill": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/word-fill/helper/render_core.inc",
+      "sha256": "db23c7cd14d767631884d81b5f2cecf8a741db588cd518573bf2df86de0707d7",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    },
+    "static": {
+      "source": "docs/tasks/RALLY-28/custom-vdp/full-race/.work/packages/additive/helper/render_core.inc",
+      "sha256": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+      "common_vertical_actor_guards": {
+        "z<64||z>1100": true,
+        "y=96+q": true,
+        "scale=q*2": true,
+        "y-70*scale/256": true,
+        "if(y<104||ground>223)": true,
+        "ground-64*scale/256": true
+      }
+    }
+  },
+  "native_sources_edited": false,
+  "historical_fixtures_edited": false
+}

@@ -1,0 +1,29 @@
+{
+  "attempt": 1,
+  "profile_campaign": "raceba03",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-float-quad-segments",
+  "profiles_receipt": "PROFILES-raceba03.json",
+  "evidence_directory": "evidence/raceba03/float-quad-segments-attempt1",
+  "passed": false,
+  "error": "TimeoutError('UART streams unchanged for60 host seconds; preserve and retry fresh identical inputs')",
+  "input_hashes_preserved": true,
+  "boost_after": "0",
+  "retry_classification": {
+    "retry_allowed": true,
+    "exception_type": "TimeoutError",
+    "initial_stack_info_token": 18,
+    "main_window_started": false,
+    "native_packets": [
+      {
+        "kind": 2,
+        "token": 1,
+        "value": 1
+      }
+    ],
+    "multiplexed_packets": 103,
+    "outbound_bytes": 224915,
+    "inbound_bytes": 345,
+    "raw_rx_sha256": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+    "reason": "Transport TimeoutError with no guest/backend/protocol failure; complete multiplexed native RX is a valid prefix strictly before INFO token18"
+  }
+}

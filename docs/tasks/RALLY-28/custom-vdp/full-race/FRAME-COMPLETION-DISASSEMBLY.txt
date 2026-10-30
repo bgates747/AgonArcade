@@ -1,0 +1,299 @@
+Read-only excerpts from exact pinned firmware ELF. No firmware was rebuilt or executed.
+
+ELF SHA256 b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567
+
+switchBuffer
+
+docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .flash.text:
+
+400d44f0 <switchBuffer()>:
+400d44f0:	004136        	entry	a1, 32
+400d44f3:	eef021        	l32r	a2, 400d00b4 <_stext+0x94>
+400d44f6:	002222        	l32i	a2, a2, 0
+400d44f9:	0020c0        	memw
+400d44fc:	4c0282        	l8ui	a8, a2, 76
+400d44ff:	748080        	extui	a8, a8, 0, 8
+400d4502:	eed721        	l32r	a2, 400d0060 <_stext+0x40>
+400d4505:	0022a2        	l32i	a10, a2, 0
+400d4508:	004816        	beqz	a8, 400d4510 <switchBuffer()+0x20>
+400d450b:	21ec65        	call8	400f63d0 <fabgl::Canvas::swapBuffers()>
+400d450e:	f01d      	retw.n
+400d4510:	220de5        	call8	400f65f0 <fabgl::Canvas::noOp()>
+400d4513:	0022a2        	l32i	a10, a2, 0
+400d4516:	01a0b2        	movi	a11, 1
+400d4519:	210265        	call8	400f5540 <fabgl::Canvas::waitCompletion(bool)>
+400d451c:	f01d      	retw.n
+
+
+Canvas swap
+
+docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .flash.text:
+
+400f63d0 <fabgl::Canvas::swapBuffers()>:
+400f63d0:	008136        	entry	a1, 64
+400f63d3:	67b231        	l32r	a3, 400d029c <_stext+0x27c>
+400f63d6:	392c      	movi.n	a9, 35
+400f63d8:	0020c0        	memw
+400f63db:	0388      	l32i.n	a8, a3, 0
+400f63dd:	0a4192        	s8i	a9, a1, 10
+400f63e0:	0020c0        	memw
+400f63e3:	0020c0        	memw
+400f63e6:	076182        	s32i	a8, a1, 28
+400f63e9:	0020c0        	memw
+400f63ec:	9c2c25        	call8	400926b0 <xTaskGetCurrentTaskHandle>
+400f63ef:	0a8d      	mov.n	a8, a10
+400f63f1:	74d8a0        	extui	a13, a10, 8, 8
+400f63f4:	75c080        	extui	a12, a8, 16, 8
+400f63f7:	02a8      	l32i.n	a10, a2, 0
+400f63f9:	759880        	extui	a9, a8, 24, 8
+400f63fc:	b1ab      	addi.n	a11, a1, 10
+400f63fe:	0b4182        	s8i	a8, a1, 11
+400f6401:	0c41d2        	s8i	a13, a1, 12
+400f6404:	0d41c2        	s8i	a12, a1, 13
+400f6407:	0e4192        	s8i	a9, a1, 14
+400f640a:	0020c0        	memw
+400f640d:	0020c0        	memw
+400f6410:	264e65        	call8	4011c8f8 <fabgl::BitmappedDisplayController::addPrimitive(fabgl::Primitive&)>
+400f6413:	02a8      	l32i.n	a10, a2, 0
+400f6415:	259de5        	call8	4011bdf4 <fabgl::BitmappedDisplayController::primitivesExecutionWait()>
+400f6418:	0020c0        	memw
+400f641b:	7188      	l32i.n	a8, a1, 28
+400f641d:	0020c0        	memw
+400f6420:	0328      	l32i.n	a2, a3, 0
+400f6422:	021827        	beq	a8, a2, 400f6428 <fabgl::Canvas::swapBuffers()+0x58>
+400f6425:	910f25        	call8	40087518 <__stack_chk_fail>
+400f6428:	f01d      	retw.n
+
+
+addPrimitive
+
+docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .flash.text:
+
+4011c8f8 <fabgl::BitmappedDisplayController::addPrimitive(fabgl::Primitive&)>:
+4011c8f8:	006136        	entry	a1, 48
+4011c8fb:	540282        	l8ui	a8, a2, 84
+4011c8fe:	00a816        	beqz	a8, 4011c90c <fabgl::BitmappedDisplayController::addPrimitive(fabgl::Primitive&)+0x14>
+4011c901:	0020c0        	memw
+4011c904:	4c0282        	l8ui	a8, a2, 76
+4011c907:	748080        	extui	a8, a8, 0, 8
+4011c90a:	88bc      	beqz.n	a8, 4011c946 <fabgl::BitmappedDisplayController::addPrimitive(fabgl::Primitive&)+0x4e>
+4011c90c:	382c      	movi.n	a8, 35
+4011c90e:	000392        	l8ui	a9, a3, 0
+4011c911:	311987        	beq	a9, a8, 4011c946 <fabgl::BitmappedDisplayController::addPrimitive(fabgl::Primitive&)+0x4e>
+4011c914:	03bd      	mov.n	a11, a3
+4011c916:	0d0c      	movi.n	a13, 0
+4011c918:	c93331        	l32r	a3, 4010ede4 <fabgl::VGA64Controller::drawEllipse(fabgl::Size const&, fabgl::Rect&)+0x564>
+4011c91b:	08c1c2        	addi	a12, a1, 8
+4011c91e:	20a220        	or	a10, a2, a2
+4011c921:	c92f81        	l32r	a8, 4010ede0 <fabgl::VGA64Controller::drawEllipse(fabgl::Size const&, fabgl::Rect&)+0x560>
+4011c924:	065132        	s16i	a3, a1, 12
+4011c927:	075132        	s16i	a3, a1, 14
+4011c92a:	045182        	s16i	a8, a1, 8
+4011c92d:	055182        	s16i	a8, a1, 10
+4011c930:	0020c0        	memw
+4011c933:	0020c0        	memw
+4011c936:	c92c81        	l32r	a8, 4010ede8 <fabgl::VGA64Controller::drawEllipse(fabgl::Size const&, fabgl::Rect&)+0x568>
+4011c939:	0008e0        	callx8	a8
+4011c93c:	640232        	l8ui	a3, a2, 100
+4011c93f:	93fc      	bnez.n	a3, 4011c97c <fabgl::BitmappedDisplayController::addPrimitive(fabgl::Primitive&)+0x84>
+4011c941:	001046        	j	4011c986 <fabgl::BitmappedDisplayController::addPrimitive(fabgl::Primitive&)+0x8e>
+4011c944:	00          	.byte 00
+4011c945:	00          	.byte 00
+4011c946:	02ad      	mov.n	a10, a2
+4011c948:	03bd      	mov.n	a11, a3
+4011c94a:	ff3165        	call8	4011bc60 <fabgl::BitmappedDisplayController::primitiveReplaceDynamicBuffers(fabgl::Primitive&)>
+4011c94d:	0020c0        	memw
+4011c950:	1422a2        	l32i	a10, a2, 80
+4011c953:	0d0c      	movi.n	a13, 0
+4011c955:	fc7c      	movi.n	a12, -1
+4011c957:	20b330        	or	a11, a3, a3
+4011c95a:	c97081        	l32r	a8, 4010ef1c <fabgl::VGA64Controller::drawEllipse(fabgl::Size const&, fabgl::Rect&)+0x69c>
+4011c95d:	0008e0        	callx8	a8
+4011c960:	0020c0        	memw
+4011c963:	4c0222        	l8ui	a2, a2, 76
+4011c966:	742020        	extui	a2, a2, 0, 8
+4011c969:	929c      	beqz.n	a2, 4011c986 <fabgl::BitmappedDisplayController::addPrimitive(fabgl::Primitive&)+0x8e>
+4011c96b:	fc7c      	movi.n	a12, -1
+4011c96d:	1b0c      	movi.n	a11, 1
+4011c96f:	00a0a2        	movi	a10, 0
+4011c972:	c91f81        	l32r	a8, 4010edf0 <fabgl::VGA64Controller::drawEllipse(fabgl::Size const&, fabgl::Rect&)+0x570>
+4011c975:	0008e0        	callx8	a8
+4011c978:	000286        	j	4011c986 <fabgl::BitmappedDisplayController::addPrimitive(fabgl::Primitive&)+0x8e>
+4011c97b:	00          	.byte 00
+4011c97c:	b18b      	addi.n	a11, a1, 8
+4011c97e:	02ad      	mov.n	a10, a2
+4011c980:	c96881        	l32r	a8, 4010ef20 <fabgl::VGA64Controller::drawEllipse(fabgl::Size const&, fabgl::Rect&)+0x6a0>
+4011c983:	0008e0        	callx8	a8
+4011c986:	f01d      	retw.n
+
+
+SwapBuffers dispatch selector 35
+
+docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .iram0.text:
+
+40085405 <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x149>:
+40085405:	892c      	movi.n	a9, 40
+40085407:	029897        	bne	a8, a9, 4008540d <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x151>
+4008540a:	01ab86        	j	40085abc <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x800>
+4008540d:	303987        	bltu	a9, a8, 40085441 <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x185>
+40085410:	592c      	movi.n	a9, 37
+40085412:	029897        	bne	a8, a9, 40085418 <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x15c>
+40085415:	0184c6        	j	40085a2c <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x770>
+40085418:	123987        	bltu	a9, a8, 4008542e <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x172>
+4008541b:	392c      	movi.n	a9, 35
+4008541d:	029897        	bne	a8, a9, 40085423 <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x167>
+40085420:	015c06        	j	40085994 <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x6d8>
+40085423:	492c      	movi.n	a9, 36
+40085425:	029897        	bne	a8, a9, 4008542b <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x16f>
+40085428:	018406        	j	40085a3c <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x780>
+4008542b:	c6          	.byte 0xc6
+
+
+swap executor before notification
+
+docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .iram0.text:
+
+40085994 <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x6d8>:
+40085994:	0268      	l32i.n	a6, a2, 0
+40085996:	02ad      	mov.n	a10, a2
+40085998:	1b2662        	l32i	a6, a6, 108
+4008599b:	0006e0        	callx8	a6
+4008599e:	01cd      	mov.n	a12, a1
+400859a0:	060c      	movi.n	a6, 0
+400859a2:	0020c0        	memw
+400859a5:	041282        	l16ui	a8, a2, 8
+400859a8:	04bd      	mov.n	a11, a4
+400859aa:	880b      	addi.n	a8, a8, -1
+400859ac:	a18b      	addi.n	a10, a1, 8
+400859ae:	0020c0        	memw
+400859b1:	051222        	l16ui	a2, a2, 10
+400859b4:	220b      	addi.n	a2, a2, -1
+400859b6:	025182        	s16i	a8, a1, 4
+400859b9:	035122        	s16i	a2, a1, 6
+400859bc:	005162        	s16i	a6, a1, 0
+400859bf:	015162        	s16i	a6, a1, 2
+400859c2:	0020c0        	memw
+400859c5:	0020c0        	memw
+400859c8:	05aaa5        	call8	4008b474 <fabgl::Rect::merge(fabgl::Rect const&) const>
+400859cb:	8c0c      	movi.n	a12, 8
+400859cd:	b1ca      	add.n	a11, a1, a12
+400859cf:	04ad      	mov.n	a10, a4
+400859d1:	06d5e5        	call8	4008c730 <memcpy>
+400859d4:	020322        	l8ui	a2, a3, 2
+400859d7:	55ac      	beqz.n	a5, 40085a00 <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x744>
+400859d9:	112280        	slli	a2, a2, 8
+400859dc:	0c0c      	movi.n	a12, 0
+400859de:	20bcc0        	or	a11, a12, a12
+400859e1:	010342        	l8ui	a4, a3, 1
+400859e4:	204240        	or	a4, a2, a4
+400859e7:	030322        	l8ui	a2, a3, 3
+400859ea:	112200        	slli	a2, a2, 16
+400859ed:	202240        	or	a2, a2, a4
+400859f0:	0403a2        	l8ui	a10, a3, 4
+400859f3:	01aa80        	slli	a10, a10, 24
+400859f6:	20aa20        	or	a10, a10, a2
+400859f9:	0d88e5        	call8	40093288 <vTaskGenericNotifyGiveFromISR>
+400859fc:	005886        	j	40085b62 <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x8a6>
+400859ff:	00          	.byte 00
+40085a00:	010342        	l8ui	a4, a3, 1
+40085a03:	112280        	slli	a2, a2, 8
+40085a06:	204240        	or	a4, a2, a4
+40085a09:	00a0e2        	movi	a14, 0
+40085a0c:	02a0d2        	movi	a13, 2
+40085a0f:	030322        	l8ui	a2, a3, 3
+40085a12:	20cee0        	or	a12, a14, a14
+40085a15:	112200        	slli	a2, a2, 16
+40085a18:	202240        	or	a2, a2, a4
+40085a1b:	0ebd      	mov.n	a11, a14
+40085a1d:	0403a2        	l8ui	a10, a3, 4
+40085a20:	01aa80        	slli	a10, a10, 24
+40085a23:	20aa20        	or	a10, a10, a2
+40085a26:	0d7165        	call8	4009313c <xTaskGenericNotify>
+40085a29:	004d46        	j	40085b62 <fabgl::BitmappedDisplayController::execPrimitive(fabgl::Primitive const&, fabgl::Rect&, bool)+0x8a6>
+
+
+VGABaseController swap
+
+docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .iram0.text:
+
+4008b0ac <fabgl::VGABaseController::swapBuffers()>:
+4008b0ac:	004136        	entry	a1, 32
+4008b0af:	202292        	l32i	a9, a2, 128
+4008b0b2:	2122a2        	l32i	a10, a2, 132
+4008b0b5:	880282        	l8ui	a8, a2, 136
+4008b0b8:	2062a2        	s32i	a10, a2, 128
+4008b0bb:	216292        	s32i	a9, a2, 132
+4008b0be:	289c      	beqz.n	a8, 4008b0d4 <fabgl::VGABaseController::swapBuffers()+0x28>
+4008b0c0:	3e2282        	l32i	a8, a2, 248
+4008b0c3:	4122a2        	l32i	a10, a2, 0x104
+4008b0c6:	402292        	l32i	a9, a2, 0x100
+4008b0c9:	3e62a2        	s32i	a10, a2, 248
+4008b0cc:	416282        	s32i	a8, a2, 0x104
+4008b0cf:	0020c0        	memw
+4008b0d2:	2989      	s32i.n	a8, a9, 8
+4008b0d4:	0020c0        	memw
+4008b0d7:	f01d      	retw.n
+
+
+VGAPalettedController swap
+
+docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .flash.text:
+
+4011aa3c <fabgl::VGAPalettedController::swapBuffers()>:
+4011aa3c:	004136        	entry	a1, 32
+4011aa3f:	20a220        	or	a10, a2, a2
+4011aa42:	d11381        	l32r	a8, 4010ee90 <fabgl::VGA64Controller::drawEllipse(fabgl::Size const&, fabgl::Rect&)+0x610>
+4011aa45:	0008e0        	callx8	a8
+4011aa48:	202292        	l32i	a9, a2, 128
+4011aa4b:	212282        	l32i	a8, a2, 132
+4011aa4e:	d0a721        	l32r	a2, 4010ecec <fabgl::VGA64Controller::drawEllipse(fabgl::Size const&, fabgl::Rect&)+0x46c>
+4011aa51:	0299      	s32i.n	a9, a2, 0
+4011aa53:	d10e21        	l32r	a2, 4010ee8c <fabgl::VGA64Controller::drawEllipse(fabgl::Size const&, fabgl::Rect&)+0x60c>
+4011aa56:	0289      	s32i.n	a8, a2, 0
+4011aa58:	0020c0        	memw
+4011aa5b:	f01d      	retw.n
+
+
+Indirect call targets, little endian
+
+docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf:     file format elf32-xtensa-le
+
+Contents of section .flash.text:
+ 4010ede8 bc520840 a84e0840 50300940           .R.@.N.@P0.@    
+
+
+Indirect call targets, little endian
+
+docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf:     file format elf32-xtensa-le
+
+Contents of section .flash.text:
+ 4010ef1c ec100940 784d0840                    ...@xM.@        
+
+
+Decoded literal targets verified against the ELF symbol table:
+4010ede8 -> 400852bc BitmappedDisplayController::execPrimitive
+4010edec -> 40084ea8 BitmappedDisplayController::showSprites
+4010edf0 -> 40093050 ulTaskGenericNotifyTake
+4010ef1c -> 400910ec xQueueGenericSend
+The post-swap notification calls are direct: 400859f9 -> 40093288 vTaskGenericNotifyGiveFromISR; 40085a26 -> 4009313c xTaskGenericNotify.

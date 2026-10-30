@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "actual_ez80_per_frame_presentation": true,
+  "producer": "AgonDev C++17, actual maintained race presentation functions",
+  "native_module_shared_binary": true,
+  "diagnostic_title": false,
+  "attract_panel": false,
+  "race_phase": "Race",
+  "panorama_bitmap": 100,
+  "hud_pixels": [
+    0,
+    23
+  ],
+  "sky_pixels": [
+    24,
+    103
+  ],
+  "road_pixels": [
+    104,
+    223
+  ],
+  "footer_pixels": [
+    224,
+    239
+  ],
+  "warm_frames": 2,
+  "frames": 900,
+  "physics_ticks": 3600,
+  "native_initial_player_station": 3246800,
+  "native_initial_phase": 6800,
+  "render_requests": 902,
+  "generation_before_stop": 4503,
+  "config_contract": "16B R28F; u16schema1@4/u16frames900@6/u32modulebytes@8/u16flags0@12/u16reserved0@14",
+  "capture_contract": "Optional capture.req 4B LE u16stage/u16frame. Stage0 completed main frame1..configured count; stage1 coverage rendered index0..271. After post-swap fence writes capture.ready then holds without display/VDP traffic for24000MOS units. Captures excluded from throughput.",
+  "retained_reply_capacity_bytes": 100000,
+  "memory_sections": {
+    "text": {
+      "start": 262625,
+      "bytes": 31894,
+      "end": 294519
+    },
+    "rodata": {
+      "start": 294519,
+      "bytes": 7492,
+      "end": 302011
+    },
+    "data": {
+      "start": 302011,
+      "bytes": 875,
+      "end": 302886
+    },
+    "bss": {
+      "start": 302886,
+      "bytes": 133494,
+      "end": 436380
+    }
+  },
+  "reserved_stack_bytes_below_mos": 65536,
+  "old_sources": {
+    "rally-game/src/main.cpp": "0bba6d246b57cb578fdd483d13c4bb695f596c0c92d372e63b14da1a1a8e4a7a",
+    "rally-game/include/hud.hpp": "63a8a4b92912e813be4f227bec71b8f21563e9cf8352e7ac34979bda83ed42ee",
+    "rally-game/include/rules.hpp": "fd6f888f2ef27c00e3d262d41201fdecd59fe6fe9b6e1b39064ab3d815a1aff0",
+    "rally-game/include/engine.hpp": "4d677f2c89e5b87c0ea60d9df013af55a11c2c1b8abfc6b21d0595fd7f29fa8f",
+    "rally-game/include/crash.hpp": "98aea4118ec1715a108419a8cefffbef26b3fb0848e8f6f4148b3b573accb720",
+    "rally-game/include/routes_data.hpp": "7304601093871c7f5cdbe824f6d4b99608c3df97cd94bc51e95ad6db25ce807c",
+    "rally-production/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+    "rally-production/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+    "rally-production/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+    "rally-production/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946"
+  },
+  "extracted_functions_sha256": "517cc979f7c5f71efcda520d4befc8d1688ea2f24f0ed8531983297c6bb3b558",
+  "generated_asset_source_sha256": "df7400138c18551cd025a229d77ed8bc55b9f8ab844e084e779a7f2b68c1ea6b",
+  "files": {
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+    "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+    "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+    "probe.map": "fcca4d67c471c482a11c6c6adad173d3eb08a22dad4e9f4f9f2cb0c9414c8c71"
+  }
+}

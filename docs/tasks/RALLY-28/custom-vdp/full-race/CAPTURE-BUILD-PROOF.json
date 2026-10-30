@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "normal_registry_sha256": "91db205f7bc99d97f54e866630e3b3b6c66d290e367cb6b07a52263cfcde8c27",
+  "normal_registry_and_all17_input_sets_unchanged": true,
+  "source_probe_sha256": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+  "builder_sha256": "f965bc8312c8e1fa18aafd9f9cd66f85299defcbf9efff2b5606c90e649a6813",
+  "source_capture_hook_sha256": "3631d46206e267b46217300b57da65469e2cbfd6c7789f78f5b912bc570a5e66",
+  "captures": [
+    "baseline300",
+    "additive300",
+    "additive301",
+    "crash60",
+    "blink160"
+  ],
+  "complete_coverage": [
+    "coverage60"
+  ],
+  "request_format": "capture.req4B little endian <HH(stage,frame); coverage.req presence only",
+  "capture_post_swap_fenced": true,
+  "capture_hold_mos_units": 24000,
+  "capture_profiles_deliberately_interrupted": true,
+  "normal_timing_and_diagnostic_timing_not_pooled": true,
+  "final_reference_sha256": {
+    "60": "b192536d1ec5b7ad3e9f1df33518aec699d66dd6f3dbc97632bbb293a189c963",
+    "900": "3955bc4a2fe8039aa6422414d31f84cbaadd8d771d8b601e802e551838dac156"
+  },
+  "emulator_launched": false
+}

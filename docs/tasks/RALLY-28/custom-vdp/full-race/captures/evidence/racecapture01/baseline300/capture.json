@@ -1,0 +1,38 @@
+{
+  "error": null,
+  "capture_ready": {
+    "schema": 1,
+    "timing_excluded": true,
+    "stage": 0,
+    "frame": 300,
+    "generation": 1503,
+    "request": 302,
+    "physics_ticks": 1200,
+    "post_swap_fenced": true
+  },
+  "video_driver": "dummy",
+  "audio_driver": "dummy",
+  "intentional_interruption_during_hold": true,
+  "timing_excluded": true,
+  "game_cleanup_validated": false,
+  "host_seconds": 27.681,
+  "process_exit": 0,
+  "input_hashes_preserved": true,
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 1059,
+    "cycles": 4455205234,
+    "retired": 2063497497,
+    "uart_rx": 441429,
+    "uart_tx": 39101,
+    "uart_delivered": 39101,
+    "isync": 1515,
+    "code_invalidations": 2,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "scene_ppm_sha256": "95fe7a70c4cdf7a5335544e32775c9881d05d2877ab98159eb71720afef8dde3"
+}

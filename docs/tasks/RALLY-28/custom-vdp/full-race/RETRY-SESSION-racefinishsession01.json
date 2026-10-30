@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "session": "racefinishsession01",
+  "campaigns": [
+    "racefinish01"
+  ],
+  "dynamic_owned_profiles": [
+    "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racefinish01-baseline",
+    "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racefinish01-float-quad-layered",
+    "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racefinish01-float-tri-layered",
+    "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racefinish01-integer-quad-layered",
+    "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racefinish01-integer-tri-layered"
+  ],
+  "original_guard_unchanged": true,
+  "thermal_stop_celsius": 95,
+  "original_run_one_reused": true,
+  "max_attempts_per_case": 3,
+  "automatic_retry_only_before_info_token18": true,
+  "source_pins": {
+    "finish_control.py": "5f3ba870045c85af22262551334a375cbe0cc728e9ece715728b8b6f4df4796e",
+    "control.py": "1f922d962df23015ade6c7e078af09e30ba0137930fe90db4358a484a0644520"
+  },
+  "derivation": {
+    "source": "retry_control.py",
+    "sha256": "cc8ddcfc9a04af92d02a4cefa865948c125a9fb50084be7a6598a00f5600519a"
+  },
+  "sources_unchanged": true
+}

@@ -1,0 +1,406 @@
+{
+  "schema": 1,
+  "helper_check_only": true,
+  "final_comparison_qualified": false,
+  "audit_source_sha256": "e87285587767dc5c6fe0fe2c45955b6a1c15bdde8b4cf81cc5a26c7e718db471",
+  "passed": true,
+  "reverse_prefix_attempts": {
+    "campaign": "raceba03",
+    "registry": "ATTEMPTS-raceba03.json",
+    "original_ordered_cases": [
+      "static",
+      "word-fill",
+      "additive",
+      "split-clear",
+      "span-native",
+      "span-rgba",
+      "float-quad-segments",
+      "integer-quad-segments",
+      "integer-quad-strips",
+      "float-quad-strips",
+      "integer-tri-strips",
+      "float-tri-strips",
+      "integer-quad-layered",
+      "float-quad-layered",
+      "integer-tri-layered",
+      "float-tri-layered",
+      "baseline"
+    ],
+    "selected_cases": [
+      "static",
+      "word-fill",
+      "additive",
+      "split-clear",
+      "span-native",
+      "span-rgba",
+      "float-quad-segments",
+      "integer-quad-segments",
+      "integer-quad-strips",
+      "float-quad-strips",
+      "integer-tri-strips",
+      "float-tri-strips"
+    ],
+    "original_campaign_complete": false,
+    "interrupted_tail": {
+      "case": "integer-quad-layered",
+      "attempt": 1,
+      "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-integer-quad-layered",
+      "source_error": "Boost changed; retries prohibited",
+      "boost_after": "1",
+      "follows_all_selected_cases_in_serial_source_order": true,
+      "excluded_from_timing": true,
+      "raw": {
+        "evidence_directory": "evidence/raceba03/integer-quad-layered-attempt1",
+        "raw_file_sha256": {
+          "ATTEMPT.json": "611a6abf9276fce674f791ec27c5fdfb6cd9e6905fa74571a27a8ecf66a14041",
+          "esp32-uart0.txt": "6d4f9c75e3b351d3d1ffb50215acdf30fa3d3071391cb7ddd7a0a29a91598fc3",
+          "final.ppm": "12c810bd25efe1a7484387cd3d5a8503ce7cc341d61768b99a85c39a0ecca884",
+          "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+          "mos-to-vdp.bin": "7dca61019a84b29d5dc93a3643fe89a9d7def83b712b123c6663fe9bd86d482c",
+          "run.json": "d1e9ca802d74ebb11b46c9080c534fd76ca3cedcfe750d2591e0025259f496b0",
+          "stats.json": "f58e8ea254c10d7dcd968faca89bc4d5987bd139c7d14a2851b2b9341c564102",
+          "vdp-to-mos-delivered.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+          "vdp-to-mos.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3"
+        },
+        "qualified_for_timing": false,
+        "outbound_bytes": 295436,
+        "inbound_bytes": 345,
+        "multiplexed_packets_complete": true,
+        "generic_return_packets": 103,
+        "native_reply_count": 1,
+        "last_native_reply": {
+          "kind": 2,
+          "token": 1,
+          "value": 1
+        },
+        "native_error_callbacks": [],
+        "original_error": "SessionAbort('Session interrupted by signal 10')"
+      }
+    },
+    "bounded_maximum_attempts": 3,
+    "attempts": {
+      "static": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-static",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/static-attempt1"
+        }
+      ],
+      "word-fill": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-word-fill",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/word-fill-attempt1"
+        }
+      ],
+      "additive": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-additive",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/additive-attempt1"
+        }
+      ],
+      "split-clear": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-split-clear",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/split-clear-attempt1"
+        }
+      ],
+      "span-native": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-span-native",
+          "selected": false,
+          "original_error": "TimeoutError('UART streams unchanged for60 host seconds; preserve and retry fresh identical inputs')",
+          "independent_startup_check": {
+            "evidence_directory": "evidence/raceba03/span-native-attempt1",
+            "raw_file_sha256": {
+              "ATTEMPT.json": "71491cafba5ab3206348d19292903a08ca67eeab384fef48b93f383c48be2a7b",
+              "esp32-uart0.txt": "f67bf30f75fc648ac2cd4dd0d9717b4c4b436199fd75f53438ad87bcb29f115a",
+              "final.ppm": "12c810bd25efe1a7484387cd3d5a8503ce7cc341d61768b99a85c39a0ecca884",
+              "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+              "mos-to-vdp.bin": "09d99731b5fa96f1247e0b4cc413e6aa9327736953559afa786f39b5eed95bb8",
+              "run.json": "492f2b9378d81e91f9cd69eaca2a96cdeef1f6a46b1980a60f932d96af1269ca",
+              "stats.json": "58ca096bde59e86eba4569f868652dea5ebe61a36aea687cf226dbbc7bbca73e",
+              "vdp-to-mos-delivered.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+              "vdp-to-mos.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3"
+            },
+            "qualified_for_timing": false,
+            "outbound_bytes": 215822,
+            "inbound_bytes": 345,
+            "multiplexed_packets_complete": true,
+            "generic_return_packets": 103,
+            "native_reply_count": 1,
+            "last_native_reply": {
+              "kind": 2,
+              "token": 1,
+              "value": 1
+            },
+            "native_error_callbacks": [],
+            "original_error": "TimeoutError('UART streams unchanged for60 host seconds; preserve and retry fresh identical inputs')",
+            "valid_startup_callback_prefix": true,
+            "callback_tokens": [
+              1
+            ],
+            "pending_request_token": null,
+            "initial_INFO18_reply_absent": true,
+            "timed_window_not_started": true,
+            "no_main_frame_request": true,
+            "exact_frozen_inputs": true,
+            "no_guest_or_backend_error": true,
+            "outbound_exact_prefix_of_selected_winner": true,
+            "compared_startup_bytes": 215822,
+            "failed_startup_sha256": "09d99731b5fa96f1247e0b4cc413e6aa9327736953559afa786f39b5eed95bb8",
+            "winning_startup_prefix_sha256": "09d99731b5fa96f1247e0b4cc413e6aa9327736953559afa786f39b5eed95bb8",
+            "winning_complete_outbound_sha256": "c974e5ea109a8ae7d4bd8c6e3baf2c5c7384e6f8d8fe082fdedd04db92875409",
+            "winning_evidence_directory": "evidence/raceba03/span-native-attempt2"
+          }
+        },
+        {
+          "attempt": 2,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03r1-span-native",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/span-native-attempt2"
+        }
+      ],
+      "span-rgba": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-span-rgba",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/span-rgba-attempt1"
+        }
+      ],
+      "float-quad-segments": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-float-quad-segments",
+          "selected": false,
+          "original_error": "TimeoutError('UART streams unchanged for60 host seconds; preserve and retry fresh identical inputs')",
+          "independent_startup_check": {
+            "evidence_directory": "evidence/raceba03/float-quad-segments-attempt1",
+            "raw_file_sha256": {
+              "ATTEMPT.json": "9d877d9b099e5ec05b9e8c8682d3850a7cd3eba6a1bd2d58b4608b6c649f3b26",
+              "esp32-uart0.txt": "64b39727d9e9f49cd0e14cc5a7f02daadfe952ef773fbeeb0332b455504d84b8",
+              "final.ppm": "12c810bd25efe1a7484387cd3d5a8503ce7cc341d61768b99a85c39a0ecca884",
+              "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+              "mos-to-vdp.bin": "8bf9ccaa73893f02ca392da365405898a84d16f7d02e3184e47603e2190274e9",
+              "run.json": "2de9150a0170c565ec21026ce3cc8f1c491cc81925d6ab04811939eed047f447",
+              "stats.json": "45367058efbfd957a666c4091d9e975ee80a8af833b47b804ec1d2f962003dad",
+              "vdp-to-mos-delivered.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+              "vdp-to-mos.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3"
+            },
+            "qualified_for_timing": false,
+            "outbound_bytes": 224915,
+            "inbound_bytes": 345,
+            "multiplexed_packets_complete": true,
+            "generic_return_packets": 103,
+            "native_reply_count": 1,
+            "last_native_reply": {
+              "kind": 2,
+              "token": 1,
+              "value": 1
+            },
+            "native_error_callbacks": [],
+            "original_error": "TimeoutError('UART streams unchanged for60 host seconds; preserve and retry fresh identical inputs')",
+            "valid_startup_callback_prefix": true,
+            "callback_tokens": [
+              1
+            ],
+            "pending_request_token": null,
+            "initial_INFO18_reply_absent": true,
+            "timed_window_not_started": true,
+            "no_main_frame_request": true,
+            "exact_frozen_inputs": true,
+            "no_guest_or_backend_error": true,
+            "outbound_exact_prefix_of_selected_winner": true,
+            "compared_startup_bytes": 224915,
+            "failed_startup_sha256": "8bf9ccaa73893f02ca392da365405898a84d16f7d02e3184e47603e2190274e9",
+            "winning_startup_prefix_sha256": "8bf9ccaa73893f02ca392da365405898a84d16f7d02e3184e47603e2190274e9",
+            "winning_complete_outbound_sha256": "09d5a9dc786d8a8723a9e0d1d2d5be646b1f06a05ed711f0d95ae065f5b4d3e6",
+            "winning_evidence_directory": "evidence/raceba03/float-quad-segments-attempt2"
+          }
+        },
+        {
+          "attempt": 2,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03r2-float-quad-segments",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/float-quad-segments-attempt2"
+        }
+      ],
+      "integer-quad-segments": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-integer-quad-segments",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/integer-quad-segments-attempt1"
+        }
+      ],
+      "integer-quad-strips": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-integer-quad-strips",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/integer-quad-strips-attempt1"
+        }
+      ],
+      "float-quad-strips": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-float-quad-strips",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/float-quad-strips-attempt1"
+        }
+      ],
+      "integer-tri-strips": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-integer-tri-strips",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/integer-tri-strips-attempt1"
+        }
+      ],
+      "float-tri-strips": [
+        {
+          "attempt": 1,
+          "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-raceba03-float-tri-strips",
+          "selected": true,
+          "evidence_directory": "evidence/raceba03/float-tri-strips-attempt1"
+        }
+      ]
+    },
+    "every_selected_profile_fresh_and_unique": true,
+    "all_failed_attempts_excluded_from_timing": true
+  },
+  "guard": {
+    "name": "racefullsession02",
+    "campaigns": [
+      "raceab03",
+      "raceba03"
+    ],
+    "completed": [
+      "campaign:raceab03"
+    ],
+    "host_boot_id": "d8e4d3c8-0288-4512-a15d-0be9cc5641f1",
+    "original_boost": "1",
+    "final_boost": "1",
+    "boost_restored": true,
+    "maximum_celsius": 64.0,
+    "thermal_stop_celsius": 95,
+    "video_driver": "dummy",
+    "audio_driver": "dummy",
+    "owned_emulators_stopped": true,
+    "source_session_error": "SessionAbort('Session interrupted by signal 10')",
+    "whole_session_complete": false,
+    "whole_session_required_complete": false,
+    "external_boost_abort_tail": {
+      "first_changed_boost_sample_seconds": 2304.331,
+      "preceding_samples_all_boost_zero": true,
+      "sole_final_sample_boost": "1",
+      "thermal_stop_not_reached": true,
+      "successful_prefix_requires_separate_serial_case_validation": true
+    }
+  },
+  "raw_input_sha256": {
+    "ATTEMPTS-raceba03.json": "8203156f5514257115d36e82db7c84f2abe182647277e985b7a8721dd82d1b16",
+    "CAMPAIGN-raceba03.json": "1deea6c62ebbfa79ad398705e8f8ef4ff49de6f8abdafb993703d5e40d3fc3d7",
+    "EXPECTED-FINAL-900.json": "3955bc4a2fe8039aa6422414d31f84cbaadd8d771d8b601e802e551838dac156",
+    "FIXTURES.json": "91db205f7bc99d97f54e866630e3b3b6c66d290e367cb6b07a52263cfcde8c27",
+    "GUEST-BUILD.json": "881563d29ece81bd347c7e302ca0d20694f24812a1e92297da7a832744267d6a",
+    "PROFILES-raceba03-INITIAL.json": "9ae09469ac43db4b0b4ab3d8b19790a14260bf86cdc0e2ef15ab1fef7e139589",
+    "PROFILES-raceba03.json": "5a8d0079d8acb97c2ab9362a4b78b1ec703b80174ffd82304bf92240db7a7154",
+    "PROFILES-raceba03r1.json": "9815a8dfbc7985f5abd076629f2883a4a4ce3dc5130e8abf588e528722cbdadf",
+    "PROFILES-raceba03r2.json": "623ad967165cac124d4cf21a26e83b271bb7a90f0e4602f99734bd3b9e208acc",
+    "SESSION-racefullsession02.json": "c93f11e1b852f704f2ccb7992c5e2a209c56683c6a8917d52f4e546138e8fa9d",
+    "evidence/raceba03/additive-attempt1/ATTEMPT.json": "fb6c56e18f4ca3b0d081593ec96398eee4bb9e0b7490c8673c86c1853ccbbce6",
+    "evidence/raceba03/additive-attempt1/mos-to-vdp.bin": "3755d903fcad0f4ecabba5f27b52b29449491d271a309496195edb9aec618325",
+    "evidence/raceba03/additive-attempt1/run.json": "29403b59708bdc65644a6c7d366133b37c1c8af1e9540c7b1698177e02be61c5",
+    "evidence/raceba03/float-quad-segments-attempt1/ATTEMPT.json": "9d877d9b099e5ec05b9e8c8682d3850a7cd3eba6a1bd2d58b4608b6c649f3b26",
+    "evidence/raceba03/float-quad-segments-attempt1/esp32-uart0.txt": "64b39727d9e9f49cd0e14cc5a7f02daadfe952ef773fbeeb0332b455504d84b8",
+    "evidence/raceba03/float-quad-segments-attempt1/final.ppm": "12c810bd25efe1a7484387cd3d5a8503ce7cc341d61768b99a85c39a0ecca884",
+    "evidence/raceba03/float-quad-segments-attempt1/frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+    "evidence/raceba03/float-quad-segments-attempt1/mos-to-vdp.bin": "8bf9ccaa73893f02ca392da365405898a84d16f7d02e3184e47603e2190274e9",
+    "evidence/raceba03/float-quad-segments-attempt1/run.json": "2de9150a0170c565ec21026ce3cc8f1c491cc81925d6ab04811939eed047f447",
+    "evidence/raceba03/float-quad-segments-attempt1/stats.json": "45367058efbfd957a666c4091d9e975ee80a8af833b47b804ec1d2f962003dad",
+    "evidence/raceba03/float-quad-segments-attempt1/vdp-to-mos-delivered.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+    "evidence/raceba03/float-quad-segments-attempt1/vdp-to-mos.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+    "evidence/raceba03/float-quad-segments-attempt2/ATTEMPT.json": "e12df26dae6dbf3b8411124cea30b8bbc08a55c0468d1e751cb3ef32c0b310cf",
+    "evidence/raceba03/float-quad-segments-attempt2/mos-to-vdp.bin": "09d5a9dc786d8a8723a9e0d1d2d5be646b1f06a05ed711f0d95ae065f5b4d3e6",
+    "evidence/raceba03/float-quad-segments-attempt2/run.json": "23429a8e37d9b10e8c1e8b746dc1dcce6fb839746590c8c1c2d9bd822b6bd3ab",
+    "evidence/raceba03/float-quad-strips-attempt1/ATTEMPT.json": "fc10136df2a4c337507a5a1416c1d05863b9979a7f6139b5ca47fa85f9539f2e",
+    "evidence/raceba03/float-quad-strips-attempt1/mos-to-vdp.bin": "c0db579a1023c87303ac673b84e96738ab71f7d0bf1fd50c88dc11ca7108a6f7",
+    "evidence/raceba03/float-quad-strips-attempt1/run.json": "140ee6b0a8d132bdfe76dab600d8ff523999051eccd49c075617e3c7fea0eda5",
+    "evidence/raceba03/float-tri-strips-attempt1/ATTEMPT.json": "f97f5cae9ce07e47827f7a71d62d008b6b1e090356e07256884bbfaf55b5b40b",
+    "evidence/raceba03/float-tri-strips-attempt1/mos-to-vdp.bin": "0baf3fd445511b98760164765d9fa44ddf0792901a5d50f69903133b1598df3d",
+    "evidence/raceba03/float-tri-strips-attempt1/run.json": "de8fbb973ae5c15ce607c6a2813366d99d8a845beecce0fcfd98688197603c19",
+    "evidence/raceba03/integer-quad-layered-attempt1/ATTEMPT.json": "611a6abf9276fce674f791ec27c5fdfb6cd9e6905fa74571a27a8ecf66a14041",
+    "evidence/raceba03/integer-quad-layered-attempt1/esp32-uart0.txt": "6d4f9c75e3b351d3d1ffb50215acdf30fa3d3071391cb7ddd7a0a29a91598fc3",
+    "evidence/raceba03/integer-quad-layered-attempt1/final.ppm": "12c810bd25efe1a7484387cd3d5a8503ce7cc341d61768b99a85c39a0ecca884",
+    "evidence/raceba03/integer-quad-layered-attempt1/frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+    "evidence/raceba03/integer-quad-layered-attempt1/mos-to-vdp.bin": "7dca61019a84b29d5dc93a3643fe89a9d7def83b712b123c6663fe9bd86d482c",
+    "evidence/raceba03/integer-quad-layered-attempt1/run.json": "d1e9ca802d74ebb11b46c9080c534fd76ca3cedcfe750d2591e0025259f496b0",
+    "evidence/raceba03/integer-quad-layered-attempt1/stats.json": "f58e8ea254c10d7dcd968faca89bc4d5987bd139c7d14a2851b2b9341c564102",
+    "evidence/raceba03/integer-quad-layered-attempt1/vdp-to-mos-delivered.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+    "evidence/raceba03/integer-quad-layered-attempt1/vdp-to-mos.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+    "evidence/raceba03/integer-quad-segments-attempt1/ATTEMPT.json": "2b841df6d49483cf6a4a1fad4ca8630ccfe47f846e64d7f280ef6090b677ebe6",
+    "evidence/raceba03/integer-quad-segments-attempt1/mos-to-vdp.bin": "367916539d8f7420a46db23cd798eb95ac902301b682316a9a814fa548b3d744",
+    "evidence/raceba03/integer-quad-segments-attempt1/run.json": "ed473a9bb28e549213bea80ca33c5d29cf8d7fea3744f223cce2cde41a74a5b2",
+    "evidence/raceba03/integer-quad-strips-attempt1/ATTEMPT.json": "cda0ea6acc1614b6560a26a840a27d22c83abb52d541a4bf847bc5ceb48b1fd3",
+    "evidence/raceba03/integer-quad-strips-attempt1/mos-to-vdp.bin": "4bde0e96d53950b3fd087693b8ef0304737d462dfb3dac24c3ac0d49b253b9f7",
+    "evidence/raceba03/integer-quad-strips-attempt1/run.json": "d9a17506e469379a07fa7df06f0a77adaea1d7768e843d2eb5d15a5d7e0ff046",
+    "evidence/raceba03/integer-tri-strips-attempt1/ATTEMPT.json": "c782ff1c8ceffbd8681432e954273be88ddab6a44091f969be805a2e7e300124",
+    "evidence/raceba03/integer-tri-strips-attempt1/mos-to-vdp.bin": "d0b93cbbfa0674513d107cdd72f05a6c22abe17520bf08e4cef2b4236237a99c",
+    "evidence/raceba03/integer-tri-strips-attempt1/run.json": "6f4ad15de23f37a64868bb93a1f2b0a6a47ca101493b0649a92060911f949394",
+    "evidence/raceba03/span-native-attempt1/ATTEMPT.json": "71491cafba5ab3206348d19292903a08ca67eeab384fef48b93f383c48be2a7b",
+    "evidence/raceba03/span-native-attempt1/esp32-uart0.txt": "f67bf30f75fc648ac2cd4dd0d9717b4c4b436199fd75f53438ad87bcb29f115a",
+    "evidence/raceba03/span-native-attempt1/final.ppm": "12c810bd25efe1a7484387cd3d5a8503ce7cc341d61768b99a85c39a0ecca884",
+    "evidence/raceba03/span-native-attempt1/frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+    "evidence/raceba03/span-native-attempt1/mos-to-vdp.bin": "09d99731b5fa96f1247e0b4cc413e6aa9327736953559afa786f39b5eed95bb8",
+    "evidence/raceba03/span-native-attempt1/run.json": "492f2b9378d81e91f9cd69eaca2a96cdeef1f6a46b1980a60f932d96af1269ca",
+    "evidence/raceba03/span-native-attempt1/stats.json": "58ca096bde59e86eba4569f868652dea5ebe61a36aea687cf226dbbc7bbca73e",
+    "evidence/raceba03/span-native-attempt1/vdp-to-mos-delivered.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+    "evidence/raceba03/span-native-attempt1/vdp-to-mos.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+    "evidence/raceba03/span-native-attempt2/ATTEMPT.json": "5ed430ba192f0f5b34aea49dd81686b17d61a9353805422fbfc45f007dc0c99d",
+    "evidence/raceba03/span-native-attempt2/mos-to-vdp.bin": "c974e5ea109a8ae7d4bd8c6e3baf2c5c7384e6f8d8fe082fdedd04db92875409",
+    "evidence/raceba03/span-native-attempt2/run.json": "a7885f26391dc42dd224828222d5248eefb88b278deb6a82773416904a6ee34d",
+    "evidence/raceba03/span-rgba-attempt1/ATTEMPT.json": "35023af25f1eddd8254f76c1137c4f8b553518e197c0357b610bf177f18fc5f2",
+    "evidence/raceba03/span-rgba-attempt1/mos-to-vdp.bin": "ebdcada53b4a4f411ed1c5104bc9b835afba105e6203702c3011e4468f324fdf",
+    "evidence/raceba03/span-rgba-attempt1/run.json": "270a2932c07a6e7cafd91d547e5e6c8bef61b12badd23cdbf28dd2e20fc21443",
+    "evidence/raceba03/split-clear-attempt1/ATTEMPT.json": "74b46c5ce0fd01561e17ba28f9098bb64bc68c1b7c44a2d13af0fd25dd56e1a6",
+    "evidence/raceba03/split-clear-attempt1/mos-to-vdp.bin": "c974e5ea109a8ae7d4bd8c6e3baf2c5c7384e6f8d8fe082fdedd04db92875409",
+    "evidence/raceba03/split-clear-attempt1/run.json": "ddb0b991d4f7e3f6a44f3b75c3f7e87838ee3b6bfb98e50ba6d9e30d0b223a1a",
+    "evidence/raceba03/static-attempt1/ATTEMPT.json": "e597f044e61fee5302c25690b4217e5fa40342103df79bf2368897c43f000e56",
+    "evidence/raceba03/static-attempt1/mos-to-vdp.bin": "3755d903fcad0f4ecabba5f27b52b29449491d271a309496195edb9aec618325",
+    "evidence/raceba03/static-attempt1/run.json": "027a9feba7757ff1c9bdd4e55f879d4528d5b2835e26bd6f6049d6be1f86336e",
+    "evidence/raceba03/word-fill-attempt1/ATTEMPT.json": "2b4771f87101d6ff98d0d263e9fefe8d47e35db5cbfd25d7c8a56bb0dd76211c",
+    "evidence/raceba03/word-fill-attempt1/mos-to-vdp.bin": "6b5aca190fb1b5e626cd81104ec25cfedb453b42056db9fa4550cbceebe025bd",
+    "evidence/raceba03/word-fill-attempt1/run.json": "5d762ae06a0728f6a2bb998fd9e551df286fd59f86ae1223d119efb5cad82b4a",
+    "fixtures/float-quad-segments/artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+    "fixtures/float-quad-segments/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "fixtures/float-quad-segments/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "fixtures/float-quad-segments/config.bin": "cc7d2e32fe7631efcf154c8bb2d898822b2e4458da67196ba86dc83b448e800c",
+    "fixtures/float-quad-segments/expected.json": "f14de4084f57402e3d96c34a9a67ce587ae91dd075f4d70deac872e9a577d81b",
+    "fixtures/float-quad-segments/module.vdu": "95fdc4ff083f38949714ce36b62d77b8e32d75c15e0237fc1d7b4e90fd9f7681",
+    "fixtures/float-quad-segments/motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+    "fixtures/float-quad-segments/native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+    "fixtures/float-quad-segments/presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+    "fixtures/float-quad-segments/probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+    "fixtures/float-quad-segments/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "fixtures/span-native/artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+    "fixtures/span-native/assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "fixtures/span-native/common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "fixtures/span-native/config.bin": "3a2d79a64a89419c8c805515393cdde51944eed4bf654939c8503d9763936f22",
+    "fixtures/span-native/expected.json": "79236dd5ac2b272a8b47981b5cd6f47198601de014476dc243caa3c7a42774d0",
+    "fixtures/span-native/module.vdu": "c841d1d29b32dc94c6a75bc7b0f237e142ae29897c060f18558f5ef382bdcd9d",
+    "fixtures/span-native/motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+    "fixtures/span-native/native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+    "fixtures/span-native/presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+    "fixtures/span-native/probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+    "fixtures/span-native/run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+  }
+}

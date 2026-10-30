@@ -1,0 +1,489 @@
+{
+  "schema": 1,
+  "preflight_only": true,
+  "no_archive_generated": true,
+  "no_fixture_or_controller_changes": true,
+  "package_source_sha256": "f56e180217d53a4601f2a4144091426cf31a42f22a266dfc3938ae4fc388a031",
+  "completed": [
+    "local_tree",
+    "preserved_modules",
+    "production_sources",
+    "firmware_and_runner",
+    "fixture_checks"
+  ],
+  "previous_attempts": [
+    {
+      "passed": false,
+      "completed": [
+        "local_tree"
+      ],
+      "package_source_sha256": "3fad9e0bd1c05d362c57b2bd9b08417051c338725970247350f007f89469e7de",
+      "error": "AssertionError(PosixPath('/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/span-PACKAGE.json'))",
+      "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\n  File \"/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/full-race/package.py\", line 195, in preserved_modules\n    archives[source_archive] = open_verified(CUSTOM / source_archive,\n                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n        CUSTOM / manifest_names[source_archive], snapshots)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/full-race/package.py\", line 156, in open_verified\n    assert isinstance(pins, dict), manifest_path\n           ~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/span-PACKAGE.json\n"
+    }
+  ],
+  "package_fixes": [
+    "Older span manifest stores integer member count in members; read member_sha256 dictionary instead."
+  ],
+  "local_member_count": 669,
+  "modules": {
+    "baseline": {
+      "source": "source/baseline",
+      "target": "target/baseline/rally-render.vdpl",
+      "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "float-tri-layered": {
+      "source": "source/float-tri-layered",
+      "target": "target/float-tri-layered/rally-render.vdpl",
+      "module_sha256": "ce50f984d8a96bf0e10568a02cf6a68e8dbbb291878402bcdb643645d0987eb5",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "integer-tri-layered": {
+      "source": "source/integer-tri-layered",
+      "target": "target/integer-tri-layered/rally-render.vdpl",
+      "module_sha256": "c5fd35406ee6c5d7426c960643142150071943e10acc066fe1a30f7393392894",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "float-quad-layered": {
+      "source": "source/float-quad-layered",
+      "target": "target/float-quad-layered/rally-render.vdpl",
+      "module_sha256": "cb3e7072fa6a4d20c575fc27ba9333a34d59529fa653cd9327ff823d1f5b49a8",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "integer-quad-layered": {
+      "source": "source/integer-quad-layered",
+      "target": "target/integer-quad-layered/rally-render.vdpl",
+      "module_sha256": "bb4774e78ad3d09ad65f4753fddd8cacba5f0b811c2851753f76348d38149dc9",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "float-tri-strips": {
+      "source": "source/float-tri-strips",
+      "target": "target/float-tri-strips/rally-render.vdpl",
+      "module_sha256": "8f731772d051165a492a0537930b7dc4b626769390ff665e85f84cb946b72daf",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "integer-tri-strips": {
+      "source": "source/integer-tri-strips",
+      "target": "target/integer-tri-strips/rally-render.vdpl",
+      "module_sha256": "a1fe481077c1a08ee03ec85acd4c3899ec986ff8813b7c8a880ba7644df37ada",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "float-quad-strips": {
+      "source": "source/float-quad-strips",
+      "target": "target/float-quad-strips/rally-render.vdpl",
+      "module_sha256": "b883fca2588ff6ef315305899c6ee189635c68819f742986568745b349611f70",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "integer-quad-strips": {
+      "source": "source/integer-quad-strips",
+      "target": "target/integer-quad-strips/rally-render.vdpl",
+      "module_sha256": "0cfd11d3d399246364b0786132bcd887106595001b5e98ddde0aaf3e91786d6f",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "integer-quad-segments": {
+      "source": "source/integer-quad-segments",
+      "target": "target/integer-quad-segments/rally-render.vdpl",
+      "module_sha256": "945809619a88adfa609f7781e8baaad29fcfbe55e05d5bedbc97d00864711db4",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "float-quad-segments": {
+      "source": "source/float-quad-segments",
+      "target": "target/float-quad-segments/rally-render.vdpl",
+      "module_sha256": "325c58c535c5ab892d3439797d40ec9fd81a1e1eed0884242c40966bab3137e6",
+      "authoritative_available_target_files": [
+        "rally-render.vdpl"
+      ]
+    },
+    "span-rgba": {
+      "source": "source/span-rgba",
+      "target": "target/span-rgba/rally-render.vdpl",
+      "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+      "authoritative_available_target_files": [
+        "rally-render.disassembly.txt",
+        "rally-render.elf",
+        "rally-render.json",
+        "rally-render.o",
+        "rally-render.readelf.txt",
+        "rally-render.su",
+        "rally-render.upload.elf",
+        "rally-render.vdpl"
+      ]
+    },
+    "span-native": {
+      "source": "source/span-native",
+      "target": "target/span-native/rally-render.vdpl",
+      "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+      "authoritative_available_target_files": [
+        "rally-render.disassembly.txt",
+        "rally-render.elf",
+        "rally-render.json",
+        "rally-render.o",
+        "rally-render.readelf.txt",
+        "rally-render.su",
+        "rally-render.upload.elf",
+        "rally-render.vdpl"
+      ]
+    },
+    "additive": {
+      "source": "source/additive",
+      "target": "target/additive/rally-render.vdpl",
+      "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+      "authoritative_available_target_files": [
+        "rally-render.disassembly.txt",
+        "rally-render.elf",
+        "rally-render.json",
+        "rally-render.o",
+        "rally-render.readelf.txt",
+        "rally-render.su",
+        "rally-render.upload.elf",
+        "rally-render.vdpl"
+      ]
+    },
+    "word-fill": {
+      "source": "source/word-fill",
+      "target": "target/word-fill/rally-render.vdpl",
+      "module_sha256": "af6e8a137f65d52434649c0886f005274316a8983a126c1711b3fb638b010303",
+      "authoritative_available_target_files": [
+        "rally-render.disassembly.txt",
+        "rally-render.elf",
+        "rally-render.json",
+        "rally-render.o",
+        "rally-render.readelf.txt",
+        "rally-render.su",
+        "rally-render.upload.elf",
+        "rally-render.vdpl"
+      ]
+    },
+    "split-clear": {
+      "alias_of": "span-native",
+      "source": "source/span-native",
+      "target": "target/span-native/rally-render.vdpl",
+      "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb"
+    },
+    "static": {
+      "alias_of": "additive",
+      "source": "source/additive",
+      "target": "target/additive/rally-render.vdpl",
+      "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702"
+    }
+  },
+  "production": {
+    "guest_sha256": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+    "maintained_source_pins": {
+      "rally-game/src/main.cpp": "0bba6d246b57cb578fdd483d13c4bb695f596c0c92d372e63b14da1a1a8e4a7a",
+      "rally-game/include/hud.hpp": "63a8a4b92912e813be4f227bec71b8f21563e9cf8352e7ac34979bda83ed42ee",
+      "rally-game/include/rules.hpp": "fd6f888f2ef27c00e3d262d41201fdecd59fe6fe9b6e1b39064ab3d815a1aff0",
+      "rally-game/include/engine.hpp": "4d677f2c89e5b87c0ea60d9df013af55a11c2c1b8abfc6b21d0595fd7f29fa8f",
+      "rally-game/include/crash.hpp": "98aea4118ec1715a108419a8cefffbef26b3fb0848e8f6f4148b3b573accb720",
+      "rally-game/include/routes_data.hpp": "7304601093871c7f5cdbe824f6d4b99608c3df97cd94bc51e95ad6db25ce807c",
+      "rally-production/include/scenery.hpp": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0",
+      "rally-production/include/scenery_data.hpp": "3e27600c4f289e35107a851c944c2be6c3b910788ae2b4e4b43b5fab866678ff",
+      "rally-production/include/road.hpp": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101",
+      "rally-production/include/track.hpp": "f1cf23092102ef78decd6578bed7f264deb2c52b596b9301193795ff49c73946"
+    },
+    "original_header_trees": [
+      "production/rally-game/include",
+      "production/rally-production/include"
+    ],
+    "native_LOAD_precedes_mode136": true,
+    "road_clip_then_actor_clip_preserved": true,
+    "original_full_size_artwork": true
+  },
+  "firmware": {
+    "path": "firmware/vdp_rally.bin",
+    "sha256": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+    "prior_archive": "incremental/wide-fill/PORTABLE.zip",
+    "prior_archive_sha256": "1cf285ce483628d19e379d853d72ff27af3760d9c57a950448a5401ee38fe034"
+  },
+  "fixture_registries": {
+    "CAPTURE-FIXTURES.json": {
+      "baseline300": {
+        "directory": "captures/fixtures/baseline300",
+        "source_renderer": "baseline",
+        "module": "target/baseline/rally-render.vdpl",
+        "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": true
+      },
+      "additive300": {
+        "directory": "captures/fixtures/additive300",
+        "source_renderer": "additive",
+        "module": "target/additive/rally-render.vdpl",
+        "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": true
+      },
+      "additive301": {
+        "directory": "captures/fixtures/additive301",
+        "source_renderer": "additive",
+        "module": "target/additive/rally-render.vdpl",
+        "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": true
+      },
+      "crash60": {
+        "directory": "captures/fixtures/crash60",
+        "source_renderer": "additive",
+        "module": "target/additive/rally-render.vdpl",
+        "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+        "frames": 60,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": true
+      },
+      "blink160": {
+        "directory": "captures/fixtures/blink160",
+        "source_renderer": "additive",
+        "module": "target/additive/rally-render.vdpl",
+        "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+        "frames": 60,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": true
+      }
+    },
+    "COVERAGE-FIXTURES.json": {
+      "coverage60": {
+        "directory": "captures/fixtures/coverage60",
+        "source_renderer": "additive",
+        "module": "target/additive/rally-render.vdpl",
+        "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+        "frames": 60,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": true
+      }
+    },
+    "FIXTURES-smoke60.json": {
+      "baseline": {
+        "directory": "fixtures-smoke60/baseline",
+        "source_renderer": "baseline",
+        "module": "target/baseline/rally-render.vdpl",
+        "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+        "frames": 60,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      }
+    },
+    "FIXTURES.json": {
+      "baseline": {
+        "directory": "fixtures/baseline",
+        "source_renderer": "baseline",
+        "module": "target/baseline/rally-render.vdpl",
+        "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "float-tri-layered": {
+        "directory": "fixtures/float-tri-layered",
+        "source_renderer": "float-tri-layered",
+        "module": "target/float-tri-layered/rally-render.vdpl",
+        "module_sha256": "ce50f984d8a96bf0e10568a02cf6a68e8dbbb291878402bcdb643645d0987eb5",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "integer-tri-layered": {
+        "directory": "fixtures/integer-tri-layered",
+        "source_renderer": "integer-tri-layered",
+        "module": "target/integer-tri-layered/rally-render.vdpl",
+        "module_sha256": "c5fd35406ee6c5d7426c960643142150071943e10acc066fe1a30f7393392894",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "float-quad-layered": {
+        "directory": "fixtures/float-quad-layered",
+        "source_renderer": "float-quad-layered",
+        "module": "target/float-quad-layered/rally-render.vdpl",
+        "module_sha256": "cb3e7072fa6a4d20c575fc27ba9333a34d59529fa653cd9327ff823d1f5b49a8",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "integer-quad-layered": {
+        "directory": "fixtures/integer-quad-layered",
+        "source_renderer": "integer-quad-layered",
+        "module": "target/integer-quad-layered/rally-render.vdpl",
+        "module_sha256": "bb4774e78ad3d09ad65f4753fddd8cacba5f0b811c2851753f76348d38149dc9",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "float-tri-strips": {
+        "directory": "fixtures/float-tri-strips",
+        "source_renderer": "float-tri-strips",
+        "module": "target/float-tri-strips/rally-render.vdpl",
+        "module_sha256": "8f731772d051165a492a0537930b7dc4b626769390ff665e85f84cb946b72daf",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "integer-tri-strips": {
+        "directory": "fixtures/integer-tri-strips",
+        "source_renderer": "integer-tri-strips",
+        "module": "target/integer-tri-strips/rally-render.vdpl",
+        "module_sha256": "a1fe481077c1a08ee03ec85acd4c3899ec986ff8813b7c8a880ba7644df37ada",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "float-quad-strips": {
+        "directory": "fixtures/float-quad-strips",
+        "source_renderer": "float-quad-strips",
+        "module": "target/float-quad-strips/rally-render.vdpl",
+        "module_sha256": "b883fca2588ff6ef315305899c6ee189635c68819f742986568745b349611f70",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "integer-quad-strips": {
+        "directory": "fixtures/integer-quad-strips",
+        "source_renderer": "integer-quad-strips",
+        "module": "target/integer-quad-strips/rally-render.vdpl",
+        "module_sha256": "0cfd11d3d399246364b0786132bcd887106595001b5e98ddde0aaf3e91786d6f",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "integer-quad-segments": {
+        "directory": "fixtures/integer-quad-segments",
+        "source_renderer": "integer-quad-segments",
+        "module": "target/integer-quad-segments/rally-render.vdpl",
+        "module_sha256": "945809619a88adfa609f7781e8baaad29fcfbe55e05d5bedbc97d00864711db4",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "float-quad-segments": {
+        "directory": "fixtures/float-quad-segments",
+        "source_renderer": "float-quad-segments",
+        "module": "target/float-quad-segments/rally-render.vdpl",
+        "module_sha256": "325c58c535c5ab892d3439797d40ec9fd81a1e1eed0884242c40966bab3137e6",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "span-rgba": {
+        "directory": "fixtures/span-rgba",
+        "source_renderer": "span-rgba",
+        "module": "target/span-rgba/rally-render.vdpl",
+        "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "span-native": {
+        "directory": "fixtures/span-native",
+        "source_renderer": "span-native",
+        "module": "target/span-native/rally-render.vdpl",
+        "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "split-clear": {
+        "directory": "fixtures/split-clear",
+        "source_renderer": "split-clear",
+        "module": "target/span-native/rally-render.vdpl",
+        "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "additive": {
+        "directory": "fixtures/additive",
+        "source_renderer": "additive",
+        "module": "target/additive/rally-render.vdpl",
+        "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "word-fill": {
+        "directory": "fixtures/word-fill",
+        "source_renderer": "word-fill",
+        "module": "target/word-fill/rally-render.vdpl",
+        "module_sha256": "af6e8a137f65d52434649c0886f005274316a8983a126c1711b3fb638b010303",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      },
+      "static": {
+        "directory": "fixtures/static",
+        "source_renderer": "static",
+        "module": "target/additive/rally-render.vdpl",
+        "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+        "frames": 900,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      }
+    },
+    "SMOKE-FIXTURES.json": {
+      "baseline": {
+        "directory": "fixtures-smoke60/baseline",
+        "source_renderer": "baseline",
+        "module": "target/baseline/rally-render.vdpl",
+        "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+        "frames": 60,
+        "exact_file_hashes_verified": true,
+        "actual_module_upload_verified": true,
+        "diagnostic": false
+      }
+    }
+  },
+  "aliases_input_exact": {
+    "split-clear": "span-native",
+    "static": "additive"
+  },
+  "selected_file_count": 1124,
+  "archive_member_count_before_generated_identity": 1147,
+  "selected_inputs_changed_during_preflight": [],
+  "passed": true
+}

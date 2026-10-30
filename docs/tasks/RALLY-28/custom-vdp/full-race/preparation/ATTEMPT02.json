@@ -1,0 +1,1055 @@
+{
+  "schema": 1,
+  "archive": "preparation/ATTEMPT02-DELTA.zip",
+  "sha256": "aea71d9b4ed7d2e6179e76d32ae09aa2c83189963a6b6b1ba2fd10111c1c2204",
+  "members": {
+    "fixtures/additive/expected.json": "3b939fbd9825882b0ad80b5f0534a473be1271dcb797f5af2a83b03cab28425f",
+    "shared/probe.bin": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+    "fixtures/baseline/expected.json": "e4e75f1efe47087714b5df01e1cde43cd85aa4fa59dc98b483bf937442971f09",
+    "fixtures/float-quad-layered/expected.json": "512089e5a34a260690a184fc5a4b62af57ff5c16eed8ac3b1f4de5ac66401943",
+    "fixtures/float-quad-segments/expected.json": "5daac78862f7c4f09d7e5ac656061db1ee6f194ee57a35a81ab371730f9891f5",
+    "fixtures/float-quad-strips/expected.json": "214843706a91c312d500b2e67cff2c5de3ef22c21fbe18d0c1f8c078a50fee18",
+    "fixtures/float-tri-layered/expected.json": "7086a7b199bc0f06052d60dcaaa7f95095bf9ff119a21d1b4c5882d1b895c6fd",
+    "fixtures/float-tri-strips/expected.json": "aaa8770d6cfbf1cc73ea0b1e73d7412e725016f142946a5709e5dc53f233fb88",
+    "fixtures/integer-quad-layered/expected.json": "35aa4915dda7ce3455ce0ae7b6598396fdab961a448909e7510294c6d4f90adf",
+    "fixtures/integer-quad-segments/expected.json": "c811cf346d7cdfaa95306a994d0539c14d60fd8336755c23247fb334e452b2cb",
+    "fixtures/integer-quad-strips/expected.json": "efec8925ea86c5729e53eaebb382a8858cf4492cc851050ff8295e8e269074ff",
+    "fixtures/integer-tri-layered/expected.json": "0a2ed75ef273b72b4cce4a92585e7021bf0e642636986b6f907223ff1de22dc8",
+    "fixtures/integer-tri-strips/expected.json": "35037bbd1c96b1d40cb16dbc139fc68fbc3276541b43ec2f3b2ad202d01f2ab6",
+    "fixtures/span-native/expected.json": "be689b34954bf40b0fe45276fa2ba618766aa6cc87140a4e6ebb55807e6500ff",
+    "fixtures/span-rgba/expected.json": "96a41cfe7e8a5e98b1adc8f052e3546edb431ca9aa6438bed4d4d73a19cb042c",
+    "fixtures/split-clear/expected.json": "5c1d6b8d638aa83a06060f5c22633883642d3a8071c8fb0aeb86fef99f6d5086",
+    "fixtures/static/expected.json": "7dfb9d1f2ca42adada03e29b7f13174c6d01cc62edb0a229c00cd805cd9d6118",
+    "fixtures/word-fill/expected.json": "e35fa56e6cbc39c9357ee99f021a788083f1ed480263684eb8691ab765817b7f",
+    "fixtures-smoke60/baseline/expected.json": "2bfac53f272abf94d963c5780c665f9d14841667d4eff0af97c82862e24c85ef",
+    "FIXTURES.json": "80b9dbf76bfb890fa8ace34feb73647603598da8e1f0a49bc5a6664f4f8e76c6",
+    "FIXTURES-smoke60.json": "6c9fd43deb84bae59585f836721a4ccd38409d3e922b1689c597f31911baaa86",
+    "SMOKE-FIXTURES.json": "6c9fd43deb84bae59585f836721a4ccd38409d3e922b1689c597f31911baaa86",
+    "BUILD-PROOF.json": "1a081a53a099a53835c3aceebb1ab8c06eb0e61625d05c820de8e2a94320c859",
+    "BUILD-PROOF-smoke60.json": "3eb8f0fd4e2cef03880629c469f7c99a8dbf35e61579d4cf9d99331797599c1c"
+  },
+  "reconstructed_inputs": {
+    "fixtures/additive/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/additive/artwork.vdu"
+    },
+    "fixtures/additive/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/additive/assets.vdu"
+    },
+    "fixtures/additive/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/additive/common.vdu"
+    },
+    "fixtures/additive/config.bin": {
+      "sha256": "1cbadce7ca9c3f61b83a9c46bc462d4ecdac2e4777e2bd2f647c79017b16665c",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/additive/config.bin"
+    },
+    "fixtures/additive/expected.json": {
+      "sha256": "3b939fbd9825882b0ad80b5f0534a473be1271dcb797f5af2a83b03cab28425f",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/additive/expected.json"
+    },
+    "fixtures/additive/module.vdu": {
+      "sha256": "0a1fbfa3e7a7ca7858e3219a36bc83868ffb822f86694d62f0a58e1896e3ae11",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/additive/module.vdu"
+    },
+    "fixtures/additive/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/additive/motion.bin"
+    },
+    "fixtures/additive/native.vdu": {
+      "sha256": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/additive/native.vdu"
+    },
+    "fixtures/additive/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/additive/presentation.vdu"
+    },
+    "fixtures/additive/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/additive/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/additive/run.txt"
+    },
+    "fixtures/baseline/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/baseline/artwork.vdu"
+    },
+    "fixtures/baseline/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/baseline/assets.vdu"
+    },
+    "fixtures/baseline/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/baseline/common.vdu"
+    },
+    "fixtures/baseline/config.bin": {
+      "sha256": "5259565e7024f3d55ba8fb7ff0ff2640448934fd25de47749a94951d4d1ebee3",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/baseline/config.bin"
+    },
+    "fixtures/baseline/expected.json": {
+      "sha256": "e4e75f1efe47087714b5df01e1cde43cd85aa4fa59dc98b483bf937442971f09",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/baseline/expected.json"
+    },
+    "fixtures/baseline/module.vdu": {
+      "sha256": "e710dcedb599d7b25626a23d4c218a7cc377375a455462b2027aa3999e5b61d1",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/baseline/module.vdu"
+    },
+    "fixtures/baseline/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/baseline/motion.bin"
+    },
+    "fixtures/baseline/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/baseline/native.vdu"
+    },
+    "fixtures/baseline/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/baseline/presentation.vdu"
+    },
+    "fixtures/baseline/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/baseline/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/baseline/run.txt"
+    },
+    "fixtures/float-quad-layered/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-layered/artwork.vdu"
+    },
+    "fixtures/float-quad-layered/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-layered/assets.vdu"
+    },
+    "fixtures/float-quad-layered/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-layered/common.vdu"
+    },
+    "fixtures/float-quad-layered/config.bin": {
+      "sha256": "ced498305fec773c0c27999d592afc7a65fcebac7169716b26bd34a45443ab52",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-layered/config.bin"
+    },
+    "fixtures/float-quad-layered/expected.json": {
+      "sha256": "512089e5a34a260690a184fc5a4b62af57ff5c16eed8ac3b1f4de5ac66401943",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/float-quad-layered/expected.json"
+    },
+    "fixtures/float-quad-layered/module.vdu": {
+      "sha256": "687cfa987dc0a12ad5cff5944e61b1ce2f820ae12fbf1c446a9d20cfb658049c",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-layered/module.vdu"
+    },
+    "fixtures/float-quad-layered/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-layered/motion.bin"
+    },
+    "fixtures/float-quad-layered/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-layered/native.vdu"
+    },
+    "fixtures/float-quad-layered/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-layered/presentation.vdu"
+    },
+    "fixtures/float-quad-layered/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/float-quad-layered/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-layered/run.txt"
+    },
+    "fixtures/float-quad-segments/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-segments/artwork.vdu"
+    },
+    "fixtures/float-quad-segments/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-segments/assets.vdu"
+    },
+    "fixtures/float-quad-segments/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-segments/common.vdu"
+    },
+    "fixtures/float-quad-segments/config.bin": {
+      "sha256": "cc7d2e32fe7631efcf154c8bb2d898822b2e4458da67196ba86dc83b448e800c",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-segments/config.bin"
+    },
+    "fixtures/float-quad-segments/expected.json": {
+      "sha256": "5daac78862f7c4f09d7e5ac656061db1ee6f194ee57a35a81ab371730f9891f5",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/float-quad-segments/expected.json"
+    },
+    "fixtures/float-quad-segments/module.vdu": {
+      "sha256": "95fdc4ff083f38949714ce36b62d77b8e32d75c15e0237fc1d7b4e90fd9f7681",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-segments/module.vdu"
+    },
+    "fixtures/float-quad-segments/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-segments/motion.bin"
+    },
+    "fixtures/float-quad-segments/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-segments/native.vdu"
+    },
+    "fixtures/float-quad-segments/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-segments/presentation.vdu"
+    },
+    "fixtures/float-quad-segments/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/float-quad-segments/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-segments/run.txt"
+    },
+    "fixtures/float-quad-strips/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-strips/artwork.vdu"
+    },
+    "fixtures/float-quad-strips/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-strips/assets.vdu"
+    },
+    "fixtures/float-quad-strips/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-strips/common.vdu"
+    },
+    "fixtures/float-quad-strips/config.bin": {
+      "sha256": "21b6d4b88c7ec5c34c78e51c52b3533af31b2076a0b9ad6c6bcb9e2cc856d7ac",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-strips/config.bin"
+    },
+    "fixtures/float-quad-strips/expected.json": {
+      "sha256": "214843706a91c312d500b2e67cff2c5de3ef22c21fbe18d0c1f8c078a50fee18",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/float-quad-strips/expected.json"
+    },
+    "fixtures/float-quad-strips/module.vdu": {
+      "sha256": "be5cd93c867f30a19d5491efbb7bded386a1d96cb875a468146378d8de9ccf01",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-strips/module.vdu"
+    },
+    "fixtures/float-quad-strips/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-strips/motion.bin"
+    },
+    "fixtures/float-quad-strips/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-strips/native.vdu"
+    },
+    "fixtures/float-quad-strips/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-strips/presentation.vdu"
+    },
+    "fixtures/float-quad-strips/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/float-quad-strips/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-quad-strips/run.txt"
+    },
+    "fixtures/float-tri-layered/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-layered/artwork.vdu"
+    },
+    "fixtures/float-tri-layered/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-layered/assets.vdu"
+    },
+    "fixtures/float-tri-layered/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-layered/common.vdu"
+    },
+    "fixtures/float-tri-layered/config.bin": {
+      "sha256": "ced498305fec773c0c27999d592afc7a65fcebac7169716b26bd34a45443ab52",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-layered/config.bin"
+    },
+    "fixtures/float-tri-layered/expected.json": {
+      "sha256": "7086a7b199bc0f06052d60dcaaa7f95095bf9ff119a21d1b4c5882d1b895c6fd",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/float-tri-layered/expected.json"
+    },
+    "fixtures/float-tri-layered/module.vdu": {
+      "sha256": "87c2767c4dd213d5ce5d5ee1c44d181bb573095d4bf4b1aeec33de27e7b979dc",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-layered/module.vdu"
+    },
+    "fixtures/float-tri-layered/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-layered/motion.bin"
+    },
+    "fixtures/float-tri-layered/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-layered/native.vdu"
+    },
+    "fixtures/float-tri-layered/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-layered/presentation.vdu"
+    },
+    "fixtures/float-tri-layered/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/float-tri-layered/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-layered/run.txt"
+    },
+    "fixtures/float-tri-strips/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-strips/artwork.vdu"
+    },
+    "fixtures/float-tri-strips/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-strips/assets.vdu"
+    },
+    "fixtures/float-tri-strips/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-strips/common.vdu"
+    },
+    "fixtures/float-tri-strips/config.bin": {
+      "sha256": "21b6d4b88c7ec5c34c78e51c52b3533af31b2076a0b9ad6c6bcb9e2cc856d7ac",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-strips/config.bin"
+    },
+    "fixtures/float-tri-strips/expected.json": {
+      "sha256": "aaa8770d6cfbf1cc73ea0b1e73d7412e725016f142946a5709e5dc53f233fb88",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/float-tri-strips/expected.json"
+    },
+    "fixtures/float-tri-strips/module.vdu": {
+      "sha256": "0d44b5d88115306774d0bf2da47c4da5b95a396f1e78dd0e9118f38691a0c5ab",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-strips/module.vdu"
+    },
+    "fixtures/float-tri-strips/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-strips/motion.bin"
+    },
+    "fixtures/float-tri-strips/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-strips/native.vdu"
+    },
+    "fixtures/float-tri-strips/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-strips/presentation.vdu"
+    },
+    "fixtures/float-tri-strips/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/float-tri-strips/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/float-tri-strips/run.txt"
+    },
+    "fixtures/integer-quad-layered/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-layered/artwork.vdu"
+    },
+    "fixtures/integer-quad-layered/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-layered/assets.vdu"
+    },
+    "fixtures/integer-quad-layered/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-layered/common.vdu"
+    },
+    "fixtures/integer-quad-layered/config.bin": {
+      "sha256": "49d26b9b56641d453048d8dbc2264d49e9726bd73c6ebd166237d7c6b1b3b887",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-layered/config.bin"
+    },
+    "fixtures/integer-quad-layered/expected.json": {
+      "sha256": "35aa4915dda7ce3455ce0ae7b6598396fdab961a448909e7510294c6d4f90adf",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/integer-quad-layered/expected.json"
+    },
+    "fixtures/integer-quad-layered/module.vdu": {
+      "sha256": "1dd6210009d3196c80684911e9bb8702894a20f2e84608836a92f575cef4ae77",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-layered/module.vdu"
+    },
+    "fixtures/integer-quad-layered/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-layered/motion.bin"
+    },
+    "fixtures/integer-quad-layered/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-layered/native.vdu"
+    },
+    "fixtures/integer-quad-layered/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-layered/presentation.vdu"
+    },
+    "fixtures/integer-quad-layered/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/integer-quad-layered/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-layered/run.txt"
+    },
+    "fixtures/integer-quad-segments/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-segments/artwork.vdu"
+    },
+    "fixtures/integer-quad-segments/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-segments/assets.vdu"
+    },
+    "fixtures/integer-quad-segments/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-segments/common.vdu"
+    },
+    "fixtures/integer-quad-segments/config.bin": {
+      "sha256": "15521fa14440e22fba7c29b1bd25bd2428edd04361a98340f4013b85d05117b3",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-segments/config.bin"
+    },
+    "fixtures/integer-quad-segments/expected.json": {
+      "sha256": "c811cf346d7cdfaa95306a994d0539c14d60fd8336755c23247fb334e452b2cb",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/integer-quad-segments/expected.json"
+    },
+    "fixtures/integer-quad-segments/module.vdu": {
+      "sha256": "5c98520b475b961436a4ce2f327e6023c4a9b7ce0de608bd895ddfc35c8fdb4e",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-segments/module.vdu"
+    },
+    "fixtures/integer-quad-segments/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-segments/motion.bin"
+    },
+    "fixtures/integer-quad-segments/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-segments/native.vdu"
+    },
+    "fixtures/integer-quad-segments/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-segments/presentation.vdu"
+    },
+    "fixtures/integer-quad-segments/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/integer-quad-segments/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-segments/run.txt"
+    },
+    "fixtures/integer-quad-strips/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-strips/artwork.vdu"
+    },
+    "fixtures/integer-quad-strips/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-strips/assets.vdu"
+    },
+    "fixtures/integer-quad-strips/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-strips/common.vdu"
+    },
+    "fixtures/integer-quad-strips/config.bin": {
+      "sha256": "21b6d4b88c7ec5c34c78e51c52b3533af31b2076a0b9ad6c6bcb9e2cc856d7ac",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-strips/config.bin"
+    },
+    "fixtures/integer-quad-strips/expected.json": {
+      "sha256": "efec8925ea86c5729e53eaebb382a8858cf4492cc851050ff8295e8e269074ff",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/integer-quad-strips/expected.json"
+    },
+    "fixtures/integer-quad-strips/module.vdu": {
+      "sha256": "5747668a12bc4f02af8ef34940dba400949b861a91ad118988d55ffba13dee26",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-strips/module.vdu"
+    },
+    "fixtures/integer-quad-strips/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-strips/motion.bin"
+    },
+    "fixtures/integer-quad-strips/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-strips/native.vdu"
+    },
+    "fixtures/integer-quad-strips/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-strips/presentation.vdu"
+    },
+    "fixtures/integer-quad-strips/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/integer-quad-strips/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-quad-strips/run.txt"
+    },
+    "fixtures/integer-tri-layered/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-layered/artwork.vdu"
+    },
+    "fixtures/integer-tri-layered/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-layered/assets.vdu"
+    },
+    "fixtures/integer-tri-layered/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-layered/common.vdu"
+    },
+    "fixtures/integer-tri-layered/config.bin": {
+      "sha256": "49d26b9b56641d453048d8dbc2264d49e9726bd73c6ebd166237d7c6b1b3b887",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-layered/config.bin"
+    },
+    "fixtures/integer-tri-layered/expected.json": {
+      "sha256": "0a2ed75ef273b72b4cce4a92585e7021bf0e642636986b6f907223ff1de22dc8",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/integer-tri-layered/expected.json"
+    },
+    "fixtures/integer-tri-layered/module.vdu": {
+      "sha256": "cad197112d0df17ff8a6858ab59323c7976dfc70c985fb71d0b50a9541835e75",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-layered/module.vdu"
+    },
+    "fixtures/integer-tri-layered/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-layered/motion.bin"
+    },
+    "fixtures/integer-tri-layered/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-layered/native.vdu"
+    },
+    "fixtures/integer-tri-layered/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-layered/presentation.vdu"
+    },
+    "fixtures/integer-tri-layered/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/integer-tri-layered/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-layered/run.txt"
+    },
+    "fixtures/integer-tri-strips/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-strips/artwork.vdu"
+    },
+    "fixtures/integer-tri-strips/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-strips/assets.vdu"
+    },
+    "fixtures/integer-tri-strips/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-strips/common.vdu"
+    },
+    "fixtures/integer-tri-strips/config.bin": {
+      "sha256": "0bb0c416d002bd05fa532ae6765ea710f5da120fee8f5c6a2188d69ba0ce5718",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-strips/config.bin"
+    },
+    "fixtures/integer-tri-strips/expected.json": {
+      "sha256": "35037bbd1c96b1d40cb16dbc139fc68fbc3276541b43ec2f3b2ad202d01f2ab6",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/integer-tri-strips/expected.json"
+    },
+    "fixtures/integer-tri-strips/module.vdu": {
+      "sha256": "9e739d0b3a2d61c9d76895e46469b02549eb5bf1ad916b97b3c6d4ab900494c0",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-strips/module.vdu"
+    },
+    "fixtures/integer-tri-strips/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-strips/motion.bin"
+    },
+    "fixtures/integer-tri-strips/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-strips/native.vdu"
+    },
+    "fixtures/integer-tri-strips/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-strips/presentation.vdu"
+    },
+    "fixtures/integer-tri-strips/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/integer-tri-strips/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/integer-tri-strips/run.txt"
+    },
+    "fixtures/span-native/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-native/artwork.vdu"
+    },
+    "fixtures/span-native/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-native/assets.vdu"
+    },
+    "fixtures/span-native/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-native/common.vdu"
+    },
+    "fixtures/span-native/config.bin": {
+      "sha256": "3a2d79a64a89419c8c805515393cdde51944eed4bf654939c8503d9763936f22",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-native/config.bin"
+    },
+    "fixtures/span-native/expected.json": {
+      "sha256": "be689b34954bf40b0fe45276fa2ba618766aa6cc87140a4e6ebb55807e6500ff",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/span-native/expected.json"
+    },
+    "fixtures/span-native/module.vdu": {
+      "sha256": "c841d1d29b32dc94c6a75bc7b0f237e142ae29897c060f18558f5ef382bdcd9d",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-native/module.vdu"
+    },
+    "fixtures/span-native/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-native/motion.bin"
+    },
+    "fixtures/span-native/native.vdu": {
+      "sha256": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-native/native.vdu"
+    },
+    "fixtures/span-native/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-native/presentation.vdu"
+    },
+    "fixtures/span-native/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/span-native/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-native/run.txt"
+    },
+    "fixtures/span-rgba/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-rgba/artwork.vdu"
+    },
+    "fixtures/span-rgba/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-rgba/assets.vdu"
+    },
+    "fixtures/span-rgba/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-rgba/common.vdu"
+    },
+    "fixtures/span-rgba/config.bin": {
+      "sha256": "3a2d79a64a89419c8c805515393cdde51944eed4bf654939c8503d9763936f22",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-rgba/config.bin"
+    },
+    "fixtures/span-rgba/expected.json": {
+      "sha256": "96a41cfe7e8a5e98b1adc8f052e3546edb431ca9aa6438bed4d4d73a19cb042c",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/span-rgba/expected.json"
+    },
+    "fixtures/span-rgba/module.vdu": {
+      "sha256": "c841d1d29b32dc94c6a75bc7b0f237e142ae29897c060f18558f5ef382bdcd9d",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-rgba/module.vdu"
+    },
+    "fixtures/span-rgba/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-rgba/motion.bin"
+    },
+    "fixtures/span-rgba/native.vdu": {
+      "sha256": "6421da5659765be5c12c55131c0f81887e07e5b7e17bc9135be9d74ccf393229",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-rgba/native.vdu"
+    },
+    "fixtures/span-rgba/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-rgba/presentation.vdu"
+    },
+    "fixtures/span-rgba/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/span-rgba/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/span-rgba/run.txt"
+    },
+    "fixtures/split-clear/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/split-clear/artwork.vdu"
+    },
+    "fixtures/split-clear/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/split-clear/assets.vdu"
+    },
+    "fixtures/split-clear/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/split-clear/common.vdu"
+    },
+    "fixtures/split-clear/config.bin": {
+      "sha256": "3a2d79a64a89419c8c805515393cdde51944eed4bf654939c8503d9763936f22",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/split-clear/config.bin"
+    },
+    "fixtures/split-clear/expected.json": {
+      "sha256": "5c1d6b8d638aa83a06060f5c22633883642d3a8071c8fb0aeb86fef99f6d5086",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/split-clear/expected.json"
+    },
+    "fixtures/split-clear/module.vdu": {
+      "sha256": "c841d1d29b32dc94c6a75bc7b0f237e142ae29897c060f18558f5ef382bdcd9d",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/split-clear/module.vdu"
+    },
+    "fixtures/split-clear/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/split-clear/motion.bin"
+    },
+    "fixtures/split-clear/native.vdu": {
+      "sha256": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/split-clear/native.vdu"
+    },
+    "fixtures/split-clear/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/split-clear/presentation.vdu"
+    },
+    "fixtures/split-clear/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/split-clear/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/split-clear/run.txt"
+    },
+    "fixtures/static/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/static/artwork.vdu"
+    },
+    "fixtures/static/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/static/assets.vdu"
+    },
+    "fixtures/static/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/static/common.vdu"
+    },
+    "fixtures/static/config.bin": {
+      "sha256": "1cbadce7ca9c3f61b83a9c46bc462d4ecdac2e4777e2bd2f647c79017b16665c",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/static/config.bin"
+    },
+    "fixtures/static/expected.json": {
+      "sha256": "7dfb9d1f2ca42adada03e29b7f13174c6d01cc62edb0a229c00cd805cd9d6118",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/static/expected.json"
+    },
+    "fixtures/static/module.vdu": {
+      "sha256": "0a1fbfa3e7a7ca7858e3219a36bc83868ffb822f86694d62f0a58e1896e3ae11",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/static/module.vdu"
+    },
+    "fixtures/static/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/static/motion.bin"
+    },
+    "fixtures/static/native.vdu": {
+      "sha256": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/static/native.vdu"
+    },
+    "fixtures/static/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/static/presentation.vdu"
+    },
+    "fixtures/static/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/static/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/static/run.txt"
+    },
+    "fixtures/word-fill/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/word-fill/artwork.vdu"
+    },
+    "fixtures/word-fill/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/word-fill/assets.vdu"
+    },
+    "fixtures/word-fill/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/word-fill/common.vdu"
+    },
+    "fixtures/word-fill/config.bin": {
+      "sha256": "8a8f7059ff795f2175bdd2ffeb9ae4cb59a93b66dbb3ed1432ba692a5d887217",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/word-fill/config.bin"
+    },
+    "fixtures/word-fill/expected.json": {
+      "sha256": "e35fa56e6cbc39c9357ee99f021a788083f1ed480263684eb8691ab765817b7f",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures/word-fill/expected.json"
+    },
+    "fixtures/word-fill/module.vdu": {
+      "sha256": "742509cb6104b350f24e2961fa55938d95f93e160f3c76a933340e563780bcd7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/word-fill/module.vdu"
+    },
+    "fixtures/word-fill/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/word-fill/motion.bin"
+    },
+    "fixtures/word-fill/native.vdu": {
+      "sha256": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/word-fill/native.vdu"
+    },
+    "fixtures/word-fill/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/word-fill/presentation.vdu"
+    },
+    "fixtures/word-fill/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures/word-fill/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures/word-fill/run.txt"
+    },
+    "fixtures-smoke60/baseline/artwork.vdu": {
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures-smoke60/baseline/artwork.vdu"
+    },
+    "fixtures-smoke60/baseline/assets.vdu": {
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures-smoke60/baseline/assets.vdu"
+    },
+    "fixtures-smoke60/baseline/common.vdu": {
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures-smoke60/baseline/common.vdu"
+    },
+    "fixtures-smoke60/baseline/config.bin": {
+      "sha256": "eeb678f63da89af223e73ff70d511467e5fe07a0e90212cfb8bcb415d62198da",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures-smoke60/baseline/config.bin"
+    },
+    "fixtures-smoke60/baseline/expected.json": {
+      "sha256": "2bfac53f272abf94d963c5780c665f9d14841667d4eff0af97c82862e24c85ef",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "fixtures-smoke60/baseline/expected.json"
+    },
+    "fixtures-smoke60/baseline/module.vdu": {
+      "sha256": "e710dcedb599d7b25626a23d4c218a7cc377375a455462b2027aa3999e5b61d1",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures-smoke60/baseline/module.vdu"
+    },
+    "fixtures-smoke60/baseline/motion.bin": {
+      "sha256": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures-smoke60/baseline/motion.bin"
+    },
+    "fixtures-smoke60/baseline/native.vdu": {
+      "sha256": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures-smoke60/baseline/native.vdu"
+    },
+    "fixtures-smoke60/baseline/presentation.vdu": {
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures-smoke60/baseline/presentation.vdu"
+    },
+    "fixtures-smoke60/baseline/probe.bin": {
+      "sha256": "e91657090804b4c29cc129da9aa019efdfe8618f8caa501f4b0d25a3e79052da",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "shared/probe.bin"
+    },
+    "fixtures-smoke60/baseline/run.txt": {
+      "sha256": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "archive": "preparation/ATTEMPT01.zip",
+      "member": "fixtures-smoke60/baseline/run.txt"
+    },
+    "FIXTURES.json": {
+      "sha256": "80b9dbf76bfb890fa8ace34feb73647603598da8e1f0a49bc5a6664f4f8e76c6",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "FIXTURES.json"
+    },
+    "FIXTURES-smoke60.json": {
+      "sha256": "6c9fd43deb84bae59585f836721a4ccd38409d3e922b1689c597f31911baaa86",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "FIXTURES-smoke60.json"
+    },
+    "SMOKE-FIXTURES.json": {
+      "sha256": "6c9fd43deb84bae59585f836721a4ccd38409d3e922b1689c597f31911baaa86",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "SMOKE-FIXTURES.json"
+    },
+    "BUILD-PROOF.json": {
+      "sha256": "1a081a53a099a53835c3aceebb1ab8c06eb0e61625d05c820de8e2a94320c859",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "BUILD-PROOF.json"
+    },
+    "BUILD-PROOF-smoke60.json": {
+      "sha256": "3eb8f0fd4e2cef03880629c469f7c99a8dbf35e61579d4cf9d99331797599c1c",
+      "archive": "preparation/ATTEMPT02-DELTA.zip",
+      "member": "BUILD-PROOF-smoke60.json"
+    }
+  },
+  "depends_on": {
+    "archive": "preparation/ATTEMPT01.zip",
+    "sha256": "3a90babef32278457fab681ae092997c59a309fa800d7ef261f3dc881dbd10b1"
+  },
+  "emulator_launched": false,
+  "measured": false,
+  "reason": "Unrun common footer/coverage-corrected guest preserved before adding the same optional capture/hold diagnostic to every case. No renderer or timed-case policy change."
+}

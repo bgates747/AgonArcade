@@ -1,0 +1,243 @@
+{
+  "baseline300": {
+    "directory": "captures/fixtures/baseline300",
+    "files": {
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "capture.req": "db6b4af93720537547402616d3f348f85bfd781e4b51c2e0987cda5072c71339",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "config.bin": "5259565e7024f3d55ba8fb7ff0ff2640448934fd25de47749a94951d4d1ebee3",
+      "expected.json": "4307759894c051ac42cd8771e7c70c73035e47a118ef60dfe6b287e7de26b4c2",
+      "module.vdu": "e710dcedb599d7b25626a23d4c218a7cc377375a455462b2027aa3999e5b61d1",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "native.vdu": "3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "source_renderer": "baseline",
+    "source_registry": "FIXTURES.json",
+    "module_sha256": "48eac7efe8fa51f4996c44bc799bee53ce86896a689dad239b531c4ea22fac15",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "frames": 900,
+    "physics_ticks": 3600,
+    "coverage": false,
+    "capture": {
+      "stage": 0,
+      "frame": 300
+    },
+    "expected_capture_ready": {
+      "schema": 1,
+      "timing_excluded": true,
+      "stage": 0,
+      "frame": 300,
+      "generation": 1503,
+      "request": 302,
+      "physics_ticks": 1200,
+      "post_swap_fenced": true
+    },
+    "changed_source_files": [
+      "expected.json"
+    ],
+    "added_request_files": [
+      "capture.req"
+    ],
+    "timing_excluded": true,
+    "expected_retained_replies": 5624
+  },
+  "additive300": {
+    "directory": "captures/fixtures/additive300",
+    "files": {
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "capture.req": "db6b4af93720537547402616d3f348f85bfd781e4b51c2e0987cda5072c71339",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "config.bin": "1cbadce7ca9c3f61b83a9c46bc462d4ecdac2e4777e2bd2f647c79017b16665c",
+      "expected.json": "eb136524a9e42049f53d4e187937085270b6de4e3a252cde935e3e383a53d34a",
+      "module.vdu": "0a1fbfa3e7a7ca7858e3219a36bc83868ffb822f86694d62f0a58e1896e3ae11",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "source_renderer": "additive",
+    "source_registry": "FIXTURES.json",
+    "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "frames": 900,
+    "physics_ticks": 3600,
+    "coverage": false,
+    "capture": {
+      "stage": 0,
+      "frame": 300
+    },
+    "expected_capture_ready": {
+      "schema": 1,
+      "timing_excluded": true,
+      "stage": 0,
+      "frame": 300,
+      "generation": 1503,
+      "request": 302,
+      "physics_ticks": 1200,
+      "post_swap_fenced": true
+    },
+    "changed_source_files": [
+      "expected.json"
+    ],
+    "added_request_files": [
+      "capture.req"
+    ],
+    "timing_excluded": true,
+    "expected_retained_replies": 5624
+  },
+  "additive301": {
+    "directory": "captures/fixtures/additive301",
+    "files": {
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "capture.req": "a062f5c5d61956e6196d7733ddf23abe190d5574432cab337e896b3f7d2415ab",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "config.bin": "1cbadce7ca9c3f61b83a9c46bc462d4ecdac2e4777e2bd2f647c79017b16665c",
+      "expected.json": "1aa55a65e75fa80d21a3b8fd7e0d44ff4c181d09d41c95817b243f430c2780e9",
+      "module.vdu": "0a1fbfa3e7a7ca7858e3219a36bc83868ffb822f86694d62f0a58e1896e3ae11",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "source_renderer": "additive",
+    "source_registry": "FIXTURES.json",
+    "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "frames": 900,
+    "physics_ticks": 3600,
+    "coverage": false,
+    "capture": {
+      "stage": 0,
+      "frame": 301
+    },
+    "expected_capture_ready": {
+      "schema": 1,
+      "timing_excluded": true,
+      "stage": 0,
+      "frame": 301,
+      "generation": 1508,
+      "request": 303,
+      "physics_ticks": 1204,
+      "post_swap_fenced": true
+    },
+    "changed_source_files": [
+      "expected.json"
+    ],
+    "added_request_files": [
+      "capture.req"
+    ],
+    "timing_excluded": true,
+    "expected_retained_replies": 5624
+  },
+  "crash60": {
+    "directory": "captures/fixtures/crash60",
+    "files": {
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "capture.req": "5a83171e5b0363f97b861f691036220909b930b001965eab5649ed6f9757f329",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "config.bin": "56a6a50311204c725152ea877f10b86cf1cdcc76761598bc3c73935502307593",
+      "coverage.req": "063872888beeb1be4e264a825e3467713177b28285fa60ce6f2fa1c645b0c2fd",
+      "expected.json": "35f041e2c98e2ad575a3633bd6432a10a22e58c050424d1fb7743302a14f5923",
+      "module.vdu": "0a1fbfa3e7a7ca7858e3219a36bc83868ffb822f86694d62f0a58e1896e3ae11",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "source_renderer": "additive",
+    "source_registry": "FIXTURES.json",
+    "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "frames": 60,
+    "physics_ticks": 240,
+    "coverage": true,
+    "capture": {
+      "stage": 1,
+      "frame": 60
+    },
+    "expected_capture_ready": {
+      "schema": 1,
+      "timing_excluded": true,
+      "stage": 1,
+      "frame": 60,
+      "generation": 364,
+      "request": 123,
+      "physics_ticks": 240,
+      "post_swap_fenced": true
+    },
+    "changed_source_files": [
+      "config.bin",
+      "expected.json"
+    ],
+    "added_request_files": [
+      "capture.req",
+      "coverage.req"
+    ],
+    "timing_excluded": true,
+    "expected_retained_replies": 2219
+  },
+  "blink160": {
+    "directory": "captures/fixtures/blink160",
+    "files": {
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+      "capture.req": "e8725f24ac5502fad3908daa75d32f48c2927a4e22eb64765e6ec60deb637643",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "config.bin": "56a6a50311204c725152ea877f10b86cf1cdcc76761598bc3c73935502307593",
+      "coverage.req": "063872888beeb1be4e264a825e3467713177b28285fa60ce6f2fa1c645b0c2fd",
+      "expected.json": "d1941609e60ce60807c00cfdeb6338954421592809e54e23458f119ae8d70457",
+      "module.vdu": "0a1fbfa3e7a7ca7858e3219a36bc83868ffb822f86694d62f0a58e1896e3ae11",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24"
+    },
+    "source_renderer": "additive",
+    "source_registry": "FIXTURES.json",
+    "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "frames": 60,
+    "physics_ticks": 240,
+    "coverage": true,
+    "capture": {
+      "stage": 1,
+      "frame": 160
+    },
+    "expected_capture_ready": {
+      "schema": 1,
+      "timing_excluded": true,
+      "stage": 1,
+      "frame": 160,
+      "generation": 464,
+      "request": 223,
+      "physics_ticks": 240,
+      "post_swap_fenced": true
+    },
+    "changed_source_files": [
+      "config.bin",
+      "expected.json"
+    ],
+    "added_request_files": [
+      "capture.req",
+      "coverage.req"
+    ],
+    "timing_excluded": true,
+    "expected_retained_replies": 2219
+  }
+}

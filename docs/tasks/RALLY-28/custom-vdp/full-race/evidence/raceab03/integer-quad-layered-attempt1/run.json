@@ -1,0 +1,25 @@
+{
+  "error": "TimeoutError('UART streams unchanged for60 host seconds; preserve and retry fresh identical inputs')",
+  "host_seconds": 67.005,
+  "process_exit": 0,
+  "result": null,
+  "backend_stats": {
+    "engine": "jit",
+    "frames": 2231,
+    "cycles": 9314800804,
+    "retired": 8266160632,
+    "uart_rx": 199066,
+    "uart_tx": 345,
+    "uart_delivered": 345,
+    "isync": 12,
+    "code_invalidations": 2,
+    "keys": 0,
+    "failed": false,
+    "unhandled": 0,
+    "unregistered": 0,
+    "unmapped": 0
+  },
+  "runtime_identities": "c8407990aa3f374471752c861f4b0f831bf215f226c6c54699f48f981fab07b4  flexe-agon-emulator\n28f50e87190f00de4039dc90c94432347f01c4771c4ea4a5dea8595d6cef7670  flexe-agon-emulator.bin\nd564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae  mos_platform.bin\nd69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86  mos_platform.map\n200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30  flexe-vdp.so\n8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473  esp32-firmware.bin\nb41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567  esp32-firmware.elf\nbd08ae8ca06005ab796684d5b51c460aa80c3b78e2a5e40986ae63b1a354c6d1  sdcard/autoexec.txt\n3e2cf7b817c4043ac984ca24592992f076330606c4b01e980a2e97a0693dfef7  sdcard/rally25/native.vdu\n33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9  sdcard/rally25/probe.bin\nb0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4  sdcard/rally25/artwork.vdu\n2954f96e9f69af7d9a39b25d777efc47aba5f88c3dca3ce68ab8ddcabd78f444  sdcard/rally25/expected.json\n1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380  sdcard/rally25/common.vdu\ne0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24  sdcard/rally25/run.txt\n2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2  sdcard/rally25/assets.vdu\n49d26b9b56641d453048d8dbc2264d49e9726bd73c6ebd166237d7c6b1b3b887  sdcard/rally25/config.bin\n1dd6210009d3196c80684911e9bb8702894a20f2e84608836a92f575cef4ae77  sdcard/rally25/module.vdu\n5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9  sdcard/rally25/motion.bin\n3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363  sdcard/rally25/presentation.vdu\n",
+  "video_driver": "dummy",
+  "audio_driver": "dummy"
+}

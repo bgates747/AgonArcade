@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "frames": 60,
+  "physics_ticks": 240,
+  "variants": 1,
+  "order": [
+    "baseline"
+  ],
+  "shared_files": [
+    "probe.bin",
+    "artwork.vdu",
+    "presentation.vdu",
+    "run.txt",
+    "assets.vdu",
+    "common.vdu",
+    "motion.bin"
+  ],
+  "shared_hashes": {
+    "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+    "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+    "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9"
+  },
+  "aliases": {},
+  "bindings": {
+    "constants": {
+      "Root": 1,
+      "RootBytes": 310,
+      "Args": 9,
+      "Staging": 50305,
+      "Completion": 50304,
+      "Init": 13,
+      "Tick": 3,
+      "Render": 15,
+      "Stop": 16,
+      "TickWrapper": 13,
+      "HandleOffset": 37,
+      "PlayerStation": 198,
+      "PlayerLateral": 202,
+      "RenderPhase": 304,
+      "RenderSteering": 306,
+      "RenderFlags": 308,
+      "RenderRequest": 296,
+      "PlayerUnwrapped": 300,
+      "WorldTick": 136,
+      "FrameCount": 900,
+      "WrapperCount": 17,
+      "StateBytes": 406,
+      "PositionBuffer": 4,
+      "LateralBuffer": 5,
+      "SpanBuffer": 50700,
+      "SamplerFirst": 50710
+    },
+    "state_buffers": [
+      {
+        "id": 1,
+        "offset": 0,
+        "bytes": 310
+      },
+      {
+        "id": 2,
+        "offset": 0,
+        "bytes": 12
+      },
+      {
+        "id": 3,
+        "offset": 0,
+        "bytes": 24
+      },
+      {
+        "id": 4,
+        "offset": 0,
+        "bytes": 24
+      },
+      {
+        "id": 5,
+        "offset": 0,
+        "bytes": 24
+      },
+      {
+        "id": 6,
+        "offset": 0,
+        "bytes": 12
+      }
+    ],
+    "header_sha256": "378033aa5b4dd707e7ff09b3170ae8ce2b488a792410d420ee92e1ed92092eac",
+    "interface_sha256": "e8d04756bb3abfe212635ea39ce8ccc27fb1d6d69ac08ab98d190b9f7c989491",
+    "backends_sha256": "e48626eb71d7a4be0af7bfb25998bbee6a63d0d2fabee8a057786f89b711dfe5"
+  },
+  "native_modules_unchanged": true,
+  "source_generated_c_sha256": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992",
+  "firmware_sha256": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+  "real_scrolling_panorama_restored": true,
+  "production_hud_page_caching_common": true,
+  "all_config_flags_zero": true,
+  "module_load_before_large_artwork": true,
+  "emulator_launched": false,
+  "new_performance_claim": false
+}

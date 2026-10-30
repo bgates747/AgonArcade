@@ -1,0 +1,470 @@
+{
+  "schema": 2,
+  "campaigns": [
+    "racecapture03",
+    "racecapture04",
+    "racecapture05"
+  ],
+  "sessions": [
+    "racecapturesession03",
+    "racecapturesession04",
+    "racecapturesession05"
+  ],
+  "passed": true,
+  "actual_scene_snapshots": true,
+  "scenes": {
+    "baseline300": {
+      "capture": {
+        "stage": 0,
+        "frame": 300
+      },
+      "page_parity": 0,
+      "width": 320,
+      "height": 240,
+      "ppm_sha256": "95fe7a70c4cdf7a5335544e32775c9881d05d2877ab98159eb71720afef8dde3",
+      "png_sha256": "20f416649f1b564697ed9f6e377e8dbeddc16b0f35314dad0aed946e1fac191e",
+      "preview": "captures/previews/racecapture04/baseline300.png",
+      "ordered_post_swap_fence": true,
+      "expected_capture_ready": {
+        "schema": 1,
+        "timing_excluded": true,
+        "stage": 0,
+        "frame": 300,
+        "generation": 1503,
+        "request": 302,
+        "physics_ticks": 1200,
+        "post_swap_fenced": true
+      },
+      "region_content": {
+        "hud": {
+          "rows": [
+            0,
+            23
+          ],
+          "colours": 3,
+          "sha256": "73c9547bce594396e2170034c93fd9f6397fb5e48f31d77c7a275257ab39ac4d"
+        },
+        "panorama": {
+          "rows": [
+            24,
+            103
+          ],
+          "colours": 11,
+          "sha256": "630283a4219df74f0aa3d25d1ca36d724cecd54d16cd4f1fe798c516a1135718"
+        },
+        "road_and_actors": {
+          "rows": [
+            104,
+            223
+          ],
+          "colours": 21,
+          "sha256": "87e7238135cbf8962052dc87e2e5610b47d2897bfa6042aeeb16be75652b6ac0"
+        },
+        "footer": {
+          "rows": [
+            224,
+            239
+          ],
+          "colours": 2,
+          "sha256": "be1e2c5fcba5666cdd0aea8822623855e24696967a7a9aa9df8ea9bc7d9c3c82"
+        }
+      }
+    },
+    "additive300": {
+      "capture": {
+        "stage": 0,
+        "frame": 300
+      },
+      "page_parity": 0,
+      "width": 320,
+      "height": 240,
+      "ppm_sha256": "95fe7a70c4cdf7a5335544e32775c9881d05d2877ab98159eb71720afef8dde3",
+      "png_sha256": "20f416649f1b564697ed9f6e377e8dbeddc16b0f35314dad0aed946e1fac191e",
+      "preview": "captures/previews/racecapture04/additive300.png",
+      "ordered_post_swap_fence": true,
+      "expected_capture_ready": {
+        "schema": 1,
+        "timing_excluded": true,
+        "stage": 0,
+        "frame": 300,
+        "generation": 1503,
+        "request": 302,
+        "physics_ticks": 1200,
+        "post_swap_fenced": true
+      },
+      "region_content": {
+        "hud": {
+          "rows": [
+            0,
+            23
+          ],
+          "colours": 3,
+          "sha256": "73c9547bce594396e2170034c93fd9f6397fb5e48f31d77c7a275257ab39ac4d"
+        },
+        "panorama": {
+          "rows": [
+            24,
+            103
+          ],
+          "colours": 11,
+          "sha256": "630283a4219df74f0aa3d25d1ca36d724cecd54d16cd4f1fe798c516a1135718"
+        },
+        "road_and_actors": {
+          "rows": [
+            104,
+            223
+          ],
+          "colours": 21,
+          "sha256": "87e7238135cbf8962052dc87e2e5610b47d2897bfa6042aeeb16be75652b6ac0"
+        },
+        "footer": {
+          "rows": [
+            224,
+            239
+          ],
+          "colours": 2,
+          "sha256": "be1e2c5fcba5666cdd0aea8822623855e24696967a7a9aa9df8ea9bc7d9c3c82"
+        }
+      }
+    },
+    "additive301": {
+      "capture": {
+        "stage": 0,
+        "frame": 301
+      },
+      "page_parity": 1,
+      "width": 320,
+      "height": 240,
+      "ppm_sha256": "6647e1c4b4a8211cd39f88cdf0a8bfe81bb5a842bffbbeab92846968c124fe84",
+      "png_sha256": "779f693544e5707f7a7c85eb63bb12e0b5c09fb4b3e3e584cd6877d7d3d1d2c8",
+      "preview": "captures/previews/racecapture04/additive301.png",
+      "ordered_post_swap_fence": true,
+      "expected_capture_ready": {
+        "schema": 1,
+        "timing_excluded": true,
+        "stage": 0,
+        "frame": 301,
+        "generation": 1508,
+        "request": 303,
+        "physics_ticks": 1204,
+        "post_swap_fenced": true
+      },
+      "region_content": {
+        "hud": {
+          "rows": [
+            0,
+            23
+          ],
+          "colours": 3,
+          "sha256": "9d745cfd143a66e1761c617e9c061a6498ba2cc92518b33eb971a65c6403a3b9"
+        },
+        "panorama": {
+          "rows": [
+            24,
+            103
+          ],
+          "colours": 14,
+          "sha256": "69dff5c75308ef688bb24c4d8dee80954424f1590ce0f72034672da0e3ff1c22"
+        },
+        "road_and_actors": {
+          "rows": [
+            104,
+            223
+          ],
+          "colours": 22,
+          "sha256": "a9150390d120753a300d4079bbcfeb3827c7009caea82d029d8445170f9fa3e2"
+        },
+        "footer": {
+          "rows": [
+            224,
+            239
+          ],
+          "colours": 2,
+          "sha256": "be1e2c5fcba5666cdd0aea8822623855e24696967a7a9aa9df8ea9bc7d9c3c82"
+        }
+      }
+    },
+    "crash60": {
+      "capture": {
+        "stage": 1,
+        "frame": 60
+      },
+      "page_parity": 1,
+      "width": 320,
+      "height": 240,
+      "ppm_sha256": "62606a0081f39ad63d11d628c42327109175362a29b27092c8b73d61f2650c98",
+      "png_sha256": "389768a2a24e0f7b187ecffe7a3ddb582784cad4ba36b9dc2036d1a7776483a4",
+      "preview": "captures/previews/racecapture05/crash60.png",
+      "ordered_post_swap_fence": true,
+      "expected_capture_ready": {
+        "schema": 1,
+        "timing_excluded": true,
+        "stage": 1,
+        "frame": 60,
+        "generation": 364,
+        "request": 123,
+        "physics_ticks": 240,
+        "post_swap_fenced": true
+      },
+      "region_content": {
+        "hud": {
+          "rows": [
+            0,
+            23
+          ],
+          "colours": 3,
+          "sha256": "387d4b55323f2efec30a1570891ee889d18b12cc465425339716132f7b472d28"
+        },
+        "panorama": {
+          "rows": [
+            24,
+            103
+          ],
+          "colours": 15,
+          "sha256": "cc34e548107876536612b1ac7f53ab00977800beb91add5c31aad2280e8479e2"
+        },
+        "road_and_actors": {
+          "rows": [
+            104,
+            223
+          ],
+          "colours": 17,
+          "sha256": "47e9d0ef5a40900e6c5ee5f09907ff9b9f8e072dfd5aeb99dd482af457a4b037"
+        },
+        "footer": {
+          "rows": [
+            224,
+            239
+          ],
+          "colours": 2,
+          "sha256": "be1e2c5fcba5666cdd0aea8822623855e24696967a7a9aa9df8ea9bc7d9c3c82"
+        }
+      }
+    },
+    "blink160": {
+      "capture": {
+        "stage": 1,
+        "frame": 160
+      },
+      "page_parity": 1,
+      "width": 320,
+      "height": 240,
+      "ppm_sha256": "22129b3aabba2cadb4591626d20bd2b932c13daec5b7b66848257b241a950a1a",
+      "png_sha256": "a83f526abc6916f35c73519b72ffdc992a2334505ebbefea81210beafe96b273",
+      "preview": "captures/previews/racecapture05/blink160.png",
+      "ordered_post_swap_fence": true,
+      "expected_capture_ready": {
+        "schema": 1,
+        "timing_excluded": true,
+        "stage": 1,
+        "frame": 160,
+        "generation": 464,
+        "request": 223,
+        "physics_ticks": 240,
+        "post_swap_fenced": true
+      },
+      "region_content": {
+        "hud": {
+          "rows": [
+            0,
+            23
+          ],
+          "colours": 3,
+          "sha256": "387d4b55323f2efec30a1570891ee889d18b12cc465425339716132f7b472d28"
+        },
+        "panorama": {
+          "rows": [
+            24,
+            103
+          ],
+          "colours": 15,
+          "sha256": "cc34e548107876536612b1ac7f53ab00977800beb91add5c31aad2280e8479e2"
+        },
+        "road_and_actors": {
+          "rows": [
+            104,
+            223
+          ],
+          "colours": 17,
+          "sha256": "7b3d29bc19dd4b281e187b752cf4074c39aca3fedd9ea5d13d9c72db6c6cf3c2"
+        },
+        "footer": {
+          "rows": [
+            224,
+            239
+          ],
+          "colours": 2,
+          "sha256": "be1e2c5fcba5666cdd0aea8822623855e24696967a7a9aa9df8ea9bc7d9c3c82"
+        }
+      }
+    }
+  },
+  "selected": {
+    "baseline300": {
+      "case": "baseline300",
+      "campaign": "racecapture04",
+      "session": "racecapturesession04",
+      "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racecapture04-baseline300",
+      "profile_receipt": "PROFILES-racecapture04.json",
+      "session_receipt": "SESSION-racecapturesession04.json",
+      "campaign_receipt": "CAPTURE-CAMPAIGN-racecapture04.json",
+      "evidence_directory": "captures/evidence/racecapture04/baseline300",
+      "source_session_error": "SessionAbort('Session interrupted by signal 15')",
+      "runtime_identities_sha256": "2a077986c0a420ea5ee0b7157f9360d2c62c714c8cf8a3aa006e7dba1feca8c5"
+    },
+    "additive300": {
+      "case": "additive300",
+      "campaign": "racecapture04",
+      "session": "racecapturesession04",
+      "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racecapture04-additive300",
+      "profile_receipt": "PROFILES-racecapture04.json",
+      "session_receipt": "SESSION-racecapturesession04.json",
+      "campaign_receipt": "CAPTURE-CAMPAIGN-racecapture04.json",
+      "evidence_directory": "captures/evidence/racecapture04/additive300",
+      "source_session_error": "SessionAbort('Session interrupted by signal 15')",
+      "runtime_identities_sha256": "03ca6a77f5a228ea0859afb2de1758ebbc59fc862d53489bb5386773e5afd228"
+    },
+    "additive301": {
+      "case": "additive301",
+      "campaign": "racecapture04",
+      "session": "racecapturesession04",
+      "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racecapture04-additive301",
+      "profile_receipt": "PROFILES-racecapture04.json",
+      "session_receipt": "SESSION-racecapturesession04.json",
+      "campaign_receipt": "CAPTURE-CAMPAIGN-racecapture04.json",
+      "evidence_directory": "captures/evidence/racecapture04/additive301",
+      "source_session_error": "SessionAbort('Session interrupted by signal 15')",
+      "runtime_identities_sha256": "15867f8ac13aeefa5cdbeff86b56f6d53a3de7c5f66ffb32f725024717edaa2f"
+    },
+    "crash60": {
+      "case": "crash60",
+      "campaign": "racecapture05",
+      "session": "racecapturesession05",
+      "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racecapture05-crash60",
+      "profile_receipt": "PROFILES-racecapture05.json",
+      "session_receipt": "SESSION-racecapturesession05.json",
+      "campaign_receipt": "CAPTURE-CAMPAIGN-racecapture05.json",
+      "evidence_directory": "captures/evidence/racecapture05/crash60",
+      "source_session_error": null,
+      "runtime_identities_sha256": "4aaff6d357cc5ed16984e57f0fdba0ab9f8bc7cff7f75ac465ef5bc50d527cd6"
+    },
+    "blink160": {
+      "case": "blink160",
+      "campaign": "racecapture05",
+      "session": "racecapturesession05",
+      "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-racecapture05-blink160",
+      "profile_receipt": "PROFILES-racecapture05.json",
+      "session_receipt": "SESSION-racecapturesession05.json",
+      "campaign_receipt": "CAPTURE-CAMPAIGN-racecapture05.json",
+      "evidence_directory": "captures/evidence/racecapture05/blink160",
+      "source_session_error": null,
+      "runtime_identities_sha256": "29b53b3ecc215af603bfcc6f558f223a6b323246cab1bb930e74451213f04149"
+    }
+  },
+  "excluded_attempts": [
+    {
+      "case": "crash60",
+      "campaign": "racecapture03",
+      "session": "racecapturesession03",
+      "error": "SessionAbort('Session interrupted by signal 15')",
+      "reason": "Unqualified attempt: AssertionError()"
+    },
+    {
+      "case": "baseline300",
+      "campaign": "racecapture03",
+      "session": "racecapturesession03",
+      "error": null,
+      "reason": "Qualified success superseded by a later listed successful original campaign"
+    },
+    {
+      "case": "additive300",
+      "campaign": "racecapture03",
+      "session": "racecapturesession03",
+      "error": null,
+      "reason": "Qualified success superseded by a later listed successful original campaign"
+    },
+    {
+      "case": "additive301",
+      "campaign": "racecapture03",
+      "session": "racecapturesession03",
+      "error": null,
+      "reason": "Qualified success superseded by a later listed successful original campaign"
+    },
+    {
+      "case": "crash60",
+      "campaign": "racecapture04",
+      "session": "racecapturesession04",
+      "error": "SessionAbort('Session interrupted by signal 15')",
+      "reason": "Unqualified attempt: AssertionError()"
+    }
+  ],
+  "source_receipts": {
+    "racecapture03": {
+      "campaign_sha256": "f8bda7437fd0b1c58a68f002e1b7fb51308c5ce5e248006acb7226afbe6a5b57",
+      "session_sha256": "75ec96cae61fcad901240bb275d50347c0ca7805cecd992f5b962d65fdaaf287",
+      "profiles_sha256": "8c54be3078d0d283e84dfbae7d311b7aa60dee5d8264762839f1f5dc2c2d0129",
+      "session": "racecapturesession03",
+      "source_session_error": "SessionAbort('Session interrupted by signal 15')"
+    },
+    "racecapture04": {
+      "campaign_sha256": "0c8cbd5a3044a0d1364cf2e63feaec0a34ccad201031bfb7cead0f655df7bf3a",
+      "session_sha256": "716b4803a4f834dc9dcd93411c04ce5d2cc21c6c81c0c619f1fda1906e9ac8db",
+      "profiles_sha256": "1b9ef633a2ccdef8edd7dd44946d7def43b42d28b810e96e1bee57855f64ca59",
+      "session": "racecapturesession04",
+      "source_session_error": "SessionAbort('Session interrupted by signal 15')"
+    },
+    "racecapture05": {
+      "campaign_sha256": "c9c5fb6597a78bba6a9452fffc169a693e8e310e2198514b06f066255d4e7485",
+      "session_sha256": "0ca56b63fe1c900a5c1230091c66b36ddf1fa4c8ab1e3680f688a3c3a199034b",
+      "profiles_sha256": "2e3e6ed09fa165bcb87e288a7ee734f7e13f9d6cc80847cd63a33f65acdfccc4",
+      "session": "racecapturesession05",
+      "source_session_error": null
+    }
+  },
+  "selection_policy": "Latest qualifying success per case in the explicitly listed original campaign order; raw receipts/evidence are never copied or modified",
+  "matched_baseline_additive_frame300": {
+    "changed_pixels": 0,
+    "pixels": 76800,
+    "agreement_percent": 100.0,
+    "exact": true,
+    "regions": {
+      "hud": {
+        "changed_pixels": 0,
+        "pixels": 7680,
+        "agreement_percent": 100.0
+      },
+      "panorama": {
+        "changed_pixels": 0,
+        "pixels": 25600,
+        "agreement_percent": 100.0
+      },
+      "road_and_actors": {
+        "changed_pixels": 0,
+        "pixels": 38400,
+        "agreement_percent": 100.0
+      },
+      "footer": {
+        "changed_pixels": 0,
+        "pixels": 5120,
+        "agreement_percent": 100.0
+      }
+    }
+  },
+  "both_normal_page_parities_captured": true,
+  "effect_scenes": {
+    "explosion": "crash60",
+    "invulnerability_blink": "blink160"
+  },
+  "pixel_difference_is_reported_not_a_new_author_acceptance_threshold": true,
+  "timing_excluded": true,
+  "intentional_hold_interruption": true,
+  "cleanup_validated_by_capture": false,
+  "cleanup_gate": "Separate complete main/coverage runs qualify PRT restoration, UNLOAD and MOS exit",
+  "human_visual_review_pending": true,
+  "hardware_tested": false,
+  "maximum_temperature_celsius": 76.0,
+  "boost_restored": true,
+  "owned_emulators_stopped": true,
+  "fixture_registry_sha256": "7112a63e02c3e2ed3ba799dafe434657ac7e5840add0cb1333eb0d529c545738",
+  "tool_sha256": "7307ada9421f551eccfaa9fa19f81098b8071d3d7cbc3f705cb7494643115e66"
+}

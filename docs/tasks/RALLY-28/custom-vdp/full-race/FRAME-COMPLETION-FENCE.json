@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "mode": 136,
+  "double_buffered": true,
+  "stock_swap_bytes": "1700c3",
+  "source_conclusion": "C3 waits for swap execution/page exchange after synchronous double-buffered raster work; following serialized READ16 reply fences completed raster and page exchange, not only command parsing.",
+  "native_read16_is_standalone_graphics_flush": false,
+  "frame_timestamp_includes": [
+    "eZ80 presentation",
+    "native physics/preparation",
+    "UART transfer/backpressure",
+    "Canvas raster execution",
+    "swap/VSync wait",
+    "reply/callback transfer"
+  ],
+  "does_not_measure": [
+    "isolated raster CPU time",
+    "entire physical scanout completion",
+    "host-window presentation acknowledgement",
+    "physical ESP32 performance"
+  ],
+  "critical_wait": "addPrimitive(SwapBuffers) queues the primitive and blocks double-buffered caller in ulTaskNotifyTake; execPrimitive swaps first then notifies caller. Queue emptiness alone is not the proof.",
+  "pinned_firmware": {
+    "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/build/esp32dev/firmware.bin",
+    "bytes": 1086192,
+    "sha256": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473"
+  },
+  "pinned_elf": {
+    "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/build/esp32dev/firmware.elf",
+    "bytes": 24866420,
+    "sha256": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567",
+    "local_verified_copy": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/full-race/.work/fence/firmware.elf"
+  },
+  "direct_pinned_ELF_disassembly_verified": true,
+  "ELF_provenance_limit": "None for the inspected compiled functions: the local ELF copy matches the exact Stage-B ELF hash paired with the firmware binary in the preserved build log. Physical scanout and host presentation remain outside the completion claim.",
+  "vdp_pin": "1056ee38ec1cc68ed327bd32ee47d04b1c30597c",
+  "graphics_pin": "ac2dd5986daf496c43ae8e7fe41836274aec54a0",
+  "stock_sources_byte_identical_to_pins": {
+    "canvas": true,
+    "display_controller": true,
+    "base_controller": true,
+    "paletted_controller": true,
+    "vga64_controller": true,
+    "mode_and_swap": true
+  },
+  "source_files": {
+    "mode_and_swap": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/agon_screen.h",
+      "sha256": "648dbc7d0ba9d98a3115a4ba307ff7585c6c5e28189c1e8961eff7a3c3d60343"
+    },
+    "system_dispatch": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/vdu_sys.h",
+      "sha256": "35fff838a0942826fd8b63a69bbde9bae17a0d428e6a9289dd03607b225817ef"
+    },
+    "stream_processing": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/video/vdu_stream_processor.h",
+      "sha256": "29906b870fb2b562e278437c96b8c60599802640c97db4ce3b9aa0a148813cfd"
+    },
+    "canvas": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/canvas.cpp",
+      "sha256": "3626baa0df539ed5a8fde03d67d236c5a38636cd914764eca702b5310bde3271"
+    },
+    "display_controller": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/displaycontroller.cpp",
+      "sha256": "f3588a684647ef258c024251d17b029e2877c8363b28a570432376f353232902"
+    },
+    "base_controller": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/dispdrivers/vgabasecontroller.cpp",
+      "sha256": "443e24bbd568d9eb75fc069a0001275b6959c88dc941ff4fef7fbe2f3f8264aa"
+    },
+    "paletted_controller": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/dispdrivers/vgapalettedcontroller.cpp",
+      "sha256": "5c8f9b6b673d917ed7052a39aaef1f9671b669563f379c40337e3d1a829c2f49"
+    },
+    "vga64_controller": {
+      "path": "/Agon/mystuff/agon-vdplet/build/firmware/firmware-src/.pio/libdeps/esp32dev/vdp-gl/src/dispdrivers/vga64controller.cpp",
+      "sha256": "8a6e3a11daced6d380da7a5cc4f83295bd8ee6bb44d9f821e5bad532976c707b"
+    },
+    "read16_and_reply": {
+      "path": "docs/tasks/RALLY-28/custom-vdp/paced-road/control/sdk/src/vdplet_runtime.h",
+      "sha256": "af049fe93f1e64b0ec1135e5c0e55c1938adf022669dc35d906f5fcb6c58d91b"
+    }
+  },
+  "build_log": {
+    "path": "/Agon/mystuff/agon-vdplet/build/firmware-stage-b.log",
+    "sha256": "7cad5dabd24ccff9781e048213ca85f40b582b34d6f3ebf3a97246470ae6174d"
+  },
+  "prior_source_evidence": "../paced-road/STOCK-PATH.json",
+  "no_code_changes": true,
+  "no_builds_or_runs": true,
+  "scope_limit": "Pinned mode136 Canvas paths and serialized post-swap query; removing swap, changing buffering or adding asynchronous drawing requires a new proof.",
+  "compiled_evidence": {
+    "artifact": "FRAME-COMPLETION-DISASSEMBLY.txt",
+    "sha256": "b7856d075dcebd32dd7ef8dd1fa9e418cae4a89629118d8793ab92ef50aca00e",
+    "Canvas_swapBuffers": "0x400f63d0; calls addPrimitive at 0x400f6410, then primitivesExecutionWait at 0x400f6415",
+    "addPrimitive": "0x4011c8f8; selector35 enters the queued path at 0x4011c946 and calls xQueueGenericSend through literal 0x400910ec; the double-buffered caller waits in ulTaskGenericNotifyTake at 0x4011c975 through literal 0x40093050",
+    "ordinary_double_buffered_raster": "Synchronous execPrimitive call at 0x4011c939 through literal 0x400852bc",
+    "swap_executor": "Selector35 jumps to 0x40085994; the virtual controller swap call at 0x4008599b precedes notification at 0x400859f9 (ISR) or 0x40085a26 (task)",
+    "base_swap": "0x4008b0ac exchanges drawing and visible pointers",
+    "paletted_swap": "0x4011aa3c calls the base swap, then updates scanline pointers",
+    "source_and_ELF_order_agree": true
+  }
+}
