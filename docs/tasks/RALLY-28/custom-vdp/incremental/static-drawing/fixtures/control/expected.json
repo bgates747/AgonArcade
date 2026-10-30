@@ -1,0 +1,2077 @@
+{
+  "schema": 1,
+  "review_fast": true,
+  "frames": 900,
+  "physics_ticks": 3600,
+  "paced": false,
+  "checks": [
+    {
+      "token": 1,
+      "kind": 2,
+      "value": null,
+      "label": "LOAD",
+      "flags": 1,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 2,
+      "kind": 3,
+      "value": 0,
+      "label": "InitRace",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 3,
+      "kind": 4,
+      "value": null,
+      "label": "stack before",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 4,
+      "kind": 3,
+      "value": 0,
+      "label": "Render30",
+      "flags": 0,
+      "repeats": 900,
+      "loop": true
+    },
+    {
+      "token": 5,
+      "kind": 4,
+      "value": 1,
+      "label": "completion ready",
+      "flags": 4,
+      "repeats": 900,
+      "loop": true
+    },
+    {
+      "token": 6,
+      "kind": 4,
+      "value": 0,
+      "label": "completion request = frame",
+      "flags": 16,
+      "repeats": 900,
+      "loop": true
+    },
+    {
+      "token": 7,
+      "kind": 4,
+      "value": 0,
+      "label": "completion tick = frame*4",
+      "flags": 8,
+      "repeats": 900,
+      "loop": true
+    },
+    {
+      "token": 8,
+      "kind": 4,
+      "value": 0,
+      "label": "fresh root generation = frame*5+1",
+      "flags": 36,
+      "repeats": 900,
+      "loop": true
+    },
+    {
+      "token": 219,
+      "kind": 4,
+      "value": 0,
+      "label": "post-swap generation fence = frame*5+1",
+      "flags": 36,
+      "repeats": 900,
+      "loop": true
+    },
+    {
+      "token": 9,
+      "kind": 4,
+      "value": null,
+      "label": "stack after",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 10,
+      "kind": 4,
+      "value": 4501,
+      "label": "final generation",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 11,
+      "kind": 4,
+      "value": 0,
+      "label": "final generation high",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 12,
+      "kind": 4,
+      "value": 3600,
+      "label": "final world tick",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 13,
+      "kind": 4,
+      "value": 900,
+      "label": "final render request",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 14,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:0",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 15,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:2",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 16,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:4",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 17,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:6",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 18,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:8",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 19,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:10",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 20,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:12",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 21,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:14",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 22,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:16",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 23,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:18",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 24,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:20",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 25,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:22",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 26,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:24",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 27,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:26",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 28,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:28",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 29,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:30",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 30,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:32",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 31,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:34",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 32,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:36",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 33,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:38",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 34,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:40",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 35,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:42",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 36,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:44",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 37,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:46",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 38,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:48",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 39,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:50",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 40,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:52",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 41,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:54",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 42,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:56",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 43,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:58",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 44,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:60",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 45,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:62",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 46,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:64",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 47,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:66",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 48,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:68",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 49,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:70",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 50,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:72",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 51,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:74",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 52,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:76",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 53,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:78",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 54,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:80",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 55,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:82",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 56,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:84",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 57,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:86",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 58,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:88",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 59,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:90",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 60,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:92",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 61,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:94",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 62,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:96",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 63,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:98",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 64,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:100",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 65,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:102",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 66,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:104",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 67,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:106",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 68,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:108",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 69,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:110",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 70,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:112",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 71,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:114",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 72,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:116",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 73,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:118",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 74,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:120",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 75,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:122",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 76,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:124",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 77,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:126",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 78,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:128",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 79,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:130",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 80,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:132",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 81,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:134",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 82,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:136",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 83,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:138",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 84,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:140",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 85,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:142",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 86,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:144",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 87,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:146",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 88,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:148",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 89,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:150",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 90,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:152",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 91,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:154",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 92,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:156",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 93,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:158",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 94,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:160",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 95,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:162",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 96,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:164",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 97,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:166",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 98,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:168",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 99,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:170",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 100,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:172",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 101,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:174",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 102,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:176",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 103,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:178",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 104,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:180",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 105,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:182",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 106,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:184",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 107,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:186",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 108,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:188",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 109,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:190",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 110,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:192",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 111,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:194",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 112,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:196",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 113,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:198",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 114,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:200",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 115,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:202",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 116,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:204",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 117,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:206",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 118,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:208",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 119,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:210",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 120,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:212",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 121,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:214",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 122,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:216",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 123,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:218",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 124,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:220",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 125,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:222",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 126,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:224",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 127,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:226",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 128,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:228",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 129,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:230",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 130,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:232",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 131,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:234",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 132,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:236",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 133,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:238",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 134,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:240",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 135,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:242",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 136,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:244",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 137,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:246",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 138,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:248",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 139,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:250",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 140,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:252",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 141,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:254",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 142,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:256",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 143,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:258",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 144,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:260",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 145,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:262",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 146,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:264",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 147,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:266",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 148,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:268",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 149,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:270",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 150,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:272",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 151,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:274",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 152,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:276",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 153,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:278",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 154,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:280",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 155,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:282",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 156,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:284",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 157,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:286",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 158,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:288",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 159,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:290",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 160,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:292",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 161,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:294",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 162,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:296",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 163,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:298",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 164,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:300",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 165,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:302",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 166,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:304",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 167,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:306",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 168,
+      "kind": 4,
+      "value": null,
+      "label": "final:1:308",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 169,
+      "kind": 4,
+      "value": null,
+      "label": "final:2:0",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 170,
+      "kind": 4,
+      "value": null,
+      "label": "final:2:2",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 171,
+      "kind": 4,
+      "value": null,
+      "label": "final:2:4",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 172,
+      "kind": 4,
+      "value": null,
+      "label": "final:2:6",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 173,
+      "kind": 4,
+      "value": null,
+      "label": "final:2:8",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 174,
+      "kind": 4,
+      "value": null,
+      "label": "final:2:10",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 175,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:0",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 176,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:2",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 177,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:4",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 178,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:6",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 179,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:8",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 180,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:10",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 181,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:12",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 182,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:14",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 183,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:16",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 184,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:18",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 185,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:20",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 186,
+      "kind": 4,
+      "value": null,
+      "label": "final:3:22",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 187,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:0",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 188,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:2",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 189,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:4",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 190,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:6",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 191,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:8",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 192,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:10",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 193,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:12",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 194,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:14",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 195,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:16",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 196,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:18",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 197,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:20",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 198,
+      "kind": 4,
+      "value": null,
+      "label": "final:4:22",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 199,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:0",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 200,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:2",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 201,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:4",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 202,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:6",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 203,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:8",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 204,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:10",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 205,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:12",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 206,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:14",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 207,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:16",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 208,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:18",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 209,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:20",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 210,
+      "kind": 4,
+      "value": null,
+      "label": "final:5:22",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 211,
+      "kind": 4,
+      "value": null,
+      "label": "final:6:0",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 212,
+      "kind": 4,
+      "value": null,
+      "label": "final:6:2",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 213,
+      "kind": 4,
+      "value": null,
+      "label": "final:6:4",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 214,
+      "kind": 4,
+      "value": null,
+      "label": "final:6:6",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 215,
+      "kind": 4,
+      "value": null,
+      "label": "final:6:8",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 216,
+      "kind": 4,
+      "value": null,
+      "label": "final:6:10",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 217,
+      "kind": 3,
+      "value": 0,
+      "label": "StopRace",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 218,
+      "kind": 3,
+      "value": 0,
+      "label": "UNLOAD",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    }
+  ],
+  "reply_bytes": 29130,
+  "tick_samples": 902,
+  "prt_instrumented": true,
+  "prt_cycles_per_tick": 18432,
+  "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/sprites/.work/candidate-clipfix/package",
+  "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+  "source_sha256": "8a103582970dcf7a9c57ab57fe3e9272e60eb18b3ac345361e002fc6b2f82089",
+  "resources": {
+    "session": 7,
+    "staging": 50305,
+    "asset": {
+      "buffer": 50300,
+      "offset": 0,
+      "bytes": 149518
+    },
+    "outputs": [
+      {
+        "buffer": 50301,
+        "offset": 0,
+        "bytes": 20480
+      },
+      {
+        "buffer": 50302,
+        "offset": 0,
+        "bytes": 2048
+      },
+      {
+        "buffer": 50303,
+        "offset": 0,
+        "bytes": 256
+      }
+    ],
+    "completion": {
+      "buffer": 50304,
+      "offset": 0,
+      "bytes": 48
+    }
+  },
+  "files": {
+    "artwork.vdu": "124dfd413f1b2d1902547bcc18a1a74a4ade35c6a771a66f990cd1312966cca9",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+    "probe.bin": "a9effac2f7b45560d8003af6add587998cbafedf128ff2dbf070fdb7f68f2f07",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "script.bin": "9a15efed15f60dd7330448cd89cfb24624e8178ac4d997969cdd85c41ba3a3f0",
+    "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9"
+  },
+  "candidate": "Matched moving traffic additive",
+  "extra_app_buffer": {
+    "buffer": 50700,
+    "bytes": 38400,
+    "width": 320,
+    "height": 120,
+    "y": 104,
+    "format": "Native, mode136 raw pixels; same opaque RGBA2222 bytes"
+  },
+  "comparison_scope": "Only native.vdu final bitmap-format byte1->3; exact span module/script/assets/driver/pixels",
+  "bitmap_format": 3,
+  "bitmap_format_name": "Native fixed mode136 (-HSync,-VSync)",
+  "mode136_native_bytes_verified": true,
+  "physics_steps_per_frame": 4,
+  "foreground_deadline_mos_units": null,
+  "swap_retained": true,
+  "completion_fenced": true,
+  "fence_outbound_bytes_per_frame": 17,
+  "fence_reply_payload_bytes_per_frame": 10,
+  "fence_scope": "Ordered native READ16 after controller swap and prior drawing; excludes physical scanout",
+  "timing_scope": "Completed unpaced moving-traffic fixture, including physics, scripted station/lane UART updates, drawing, swap and post-swap fence; nominal MOS120units/s; not hardware",
+  "clear_only_change": {
+    "changed_record": 42,
+    "other_records_exact": true,
+    "additional_wire_bytes_per_frame": 12,
+    "old_paint_bytes": 110,
+    "new_paint_bytes": 122
+  },
+  "early_module_load": true,
+  "canvas_clip_activated_by_plot_move": true,
+  "review_motion": true,
+  "player_final_station": 1179600,
+  "final_scripted_positions": [
+    1155050,
+    1268900,
+    1247750,
+    1218050,
+    1239200,
+    1260350
+  ],
+  "fixed_display_lanes": [
+    -9216,
+    0,
+    9216,
+    -9216,
+    0,
+    9216
+  ],
+  "outbound_uart_bytes_per_frame": 347
+}

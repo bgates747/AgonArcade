@@ -1,0 +1,99 @@
+{
+  "checkpoint": "aab566d",
+  "source_fixture": "wide-fill/fixtures/byte",
+  "source_files": {
+    "script.bin": "9a15efed15f60dd7330448cd89cfb24624e8178ac4d997969cdd85c41ba3a3f0",
+    "expected.json": "b40be79b5e64d0923c92c025def956bc72dfb073e351e30812ae07c5c6bce8ad",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "probe.bin": "a9effac2f7b45560d8003af6add587998cbafedf128ff2dbf070fdb7f68f2f07",
+    "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+    "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "artwork.vdu": "124dfd413f1b2d1902547bcc18a1a74a4ade35c6a771a66f990cd1312966cca9",
+    "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+  },
+  "source_registry_sha256": "ba94382340cf051070e403ae433da95ff41bb0bd6b884c828ce4baf7f1f1a9b0",
+  "source_fixture_and_registry_unchanged": true,
+  "control_byte_exact": true,
+  "changed_candidate_files": [
+    "expected.json",
+    "script.bin"
+  ],
+  "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+  "module_driver_artwork_motion_physics_generated_outputs_unchanged": true,
+  "source_bounds": {
+    "archive_sha256": "d071238e0a163421a42ba8f993519e39d247871cb73685a8189e7a4512bb18d1",
+    "target_member": "target/candidate/rally-render.vdpl",
+    "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "source_members": {
+      "source/candidate/helper/render_core.inc": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+      "source/candidate/helper/sprite.inc": "7aeb37a5dca29dba52925b3d9afe593e93c3d13c1037151732f9fa43bdcea1ca",
+      "source/candidate/helper/sprite_io.inc": "4f46073cd7191173e89db20bade665266c52f974b3c8567ae4ad0f9d6f771e76",
+      "source/candidate/helper/rally_render.c": "f1195f04d78afcb65778c579bb829e796c46fc68809af9dd9d2e1313eed03668",
+      "source/candidate/native.c": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992"
+    },
+    "admitted_integer_depths": 1037,
+    "q_min": 7,
+    "q_max": 125,
+    "traffic_minimum_unclipped_top": 100,
+    "traffic_clip_only_restricts": true,
+    "signs_minimum_top": 104,
+    "normal_player_top": 154,
+    "crash_effect_conservative_minimum_top": 157,
+    "crash_effect_condition": "Reference crash countdown0..150; actual deterministic fixture has no crash effect",
+    "finish_and_opaque_road_top": 104,
+    "road_bottom": 223,
+    "bottom_black_rectangle": "Unchanged native command; outside active playfield and fully clipped",
+    "internal_viewport_reset": false,
+    "recurring_restore_y": [
+      100,
+      103
+    ],
+    "invariant_sky_y": [
+      24,
+      99
+    ],
+    "static_title_and_blank_third_row": "Only existing two title lines are drawn; y16..23 remains the existing cleared blank row"
+  },
+  "patch": {
+    "setup_before_original_record": 31,
+    "setup_offset": 57808,
+    "setup_payload_bytes": 184,
+    "setup_tape_record_bytes": 187,
+    "setup_stock_swaps": 2,
+    "setup_page_parity_unchanged": true,
+    "setup_followed_by_existing_checked_info17": true,
+    "original_initial_mark_offset": 57832,
+    "candidate_initial_mark_offset": 58019,
+    "original_paint_record": 43,
+    "candidate_paint_record": 44,
+    "old_paint_bytes": 122,
+    "new_paint_bytes": 49,
+    "recurring_uart_bytes_saved": 73,
+    "reconstructed_original_tape_exact": true,
+    "all_checked_transactions_byte_identical": true,
+    "new_replies_or_marks": false,
+    "old_script_bytes": 64163,
+    "new_script_bytes": 64277
+  },
+  "frames": 900,
+  "physics_ticks": 3600,
+  "retained_replies": 2913,
+  "timer_samples": 902,
+  "frame_uart_bytes": {
+    "control": 347,
+    "static": 274
+  },
+  "clear_pixel_writes_per_frame": {
+    "control": 30720,
+    "static": 1280,
+    "removed": 29440
+  },
+  "setup_pixel_clear_writes": 61440,
+  "setup_fence": "Existing token3 INFO17 checked reply follows two blocking stock controller swaps before initial mark; no new transaction/reply",
+  "setup_fence_prior_qualification": "../../throughput/COMPLETION-FENCE.json: pinned mode136 synchronous draw and blocking controller swap",
+  "no_allocations_or_new_retained_buffers": true,
+  "no_compilation_or_firmware_sdk_change": true,
+  "emulator_launched": false,
+  "measured_speedup": false
+}

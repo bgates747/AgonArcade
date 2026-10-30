@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "task": "INC-001-04-03",
+  "passed": true,
+  "scope": "Actual generated900-frame moving scene composed on retained physical pages; independent alpha/clipping and invariant-region/history proof; not stock-font/physical-display pixel emulation",
+  "frames": 900,
+  "physics_ticks": 3600,
+  "scenarios": 3,
+  "physical_pages": 2,
+  "presented_pages_equal": 2700,
+  "both_pages_equal_after_second_frame": 2697,
+  "first_use_of_each_page_equal": true,
+  "distinct_dirty_initial_pages": true,
+  "frame_parity_unchanged": true,
+  "actual_native_output_commands": true,
+  "actual_generated_road_and_actor_scratch": true,
+  "unchanged_complete_final_world": true,
+  "invariant_regions": {
+    "title": "Unchanged two8-pixel lines within0..15; untouched16..23 retained",
+    "sky": "24..99 initialized once per page; no actual native drawing reaches it",
+    "lower_strip": "224..239 initialized once per page; native lower rect clipped by playfield ending223"
+  },
+  "moving_restoration": {
+    "recurring_sky": "100..103 opaque colour16",
+    "road": "104..223 full-width opaque bitmap",
+    "actual_actor_bounds_y": [
+      100,
+      222
+    ],
+    "actual_actor_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "effective_native_bounds_y": [
+      100,
+      223
+    ],
+    "rgba_alpha_patterns": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "alpha_rule": "Pinned genericRawDrawBitmap_RGBA2222: alpha bits !=0 write; alpha0 retains prior pixel",
+    "pending_vdu24_activated_by_plot4": true
+  },
+  "history_sha256": [
+    "48c0be21dc7a308d32ec9427f5eb083ed63b93e534582d900724df8c5aa05478",
+    "40ae54b1eed6b6509e94191bc995f2588d6d7f106891f79e5e3f9f88611da593",
+    "97ea1d159efac9267ce94306f246ac8a18b457afca4e53de5b7de897d3616d7e"
+  ],
+  "presented_scene_sha256": "48c0be21dc7a308d32ec9427f5eb083ed63b93e534582d900724df8c5aa05478",
+  "generated_commands_sha256": "da81f9c29a94157ef4660ca507b12299d58b688e661b87a4cdefb239f4feb205",
+  "actor_bounds_sha256": "36b270a09d491b2657684fac6b2e67301d5d55a0d5eecbddb90f9818d409f449",
+  "balanced_leases": true,
+  "grants": 278575,
+  "releases": 278575,
+  "peak_leases": 4,
+  "contract": {
+    "control_paint_bytes": 122,
+    "candidate_paint_bytes": 49,
+    "recurring_uart_bytes_saved": 73,
+    "setup_uart_bytes": 184,
+    "setup_tape_bytes": 187,
+    "two_setup_swaps": true,
+    "unchanged_nonpaint_records": true,
+    "setup_followed_by_existing_checked_info_before_initial_mark": true,
+    "control_script_sha256": "9a15efed15f60dd7330448cd89cfb24624e8178ac4d997969cdd85c41ba3a3f0",
+    "candidate_script_sha256": "435dad4816be6d57f526d74a403a21b8c976b9e117940a1b499b2471c5f3d8ff"
+  },
+  "authority": {
+    "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "source_files": {
+      "calls.inc": "d0fce46192f9d63000db46f87f981a7f807416620301a504bf30d33874033e3f",
+      "helper/asset_meta.inc": "940a4e51c2f06bb34106c858f690bad34d97ed8ab6994b19bb53a945f4eb6cd5",
+      "helper/rally_render.c": "f1195f04d78afcb65778c579bb829e796c46fc68809af9dd9d2e1313eed03668",
+      "helper/rally_render.h": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50",
+      "helper/render_core.inc": "0e1c47f3776b1a01ed123d7eb82214cbea1d5b435f2eb98d7cc85c59d83d4ad8",
+      "helper/sprite.inc": "7aeb37a5dca29dba52925b3d9afe593e93c3d13c1037151732f9fa43bdcea1ca",
+      "helper/sprite_io.inc": "4f46073cd7191173e89db20bade665266c52f974b3c8567ae4ad0f9d6f771e76",
+      "layout.inc": "4825d4d407ce195a531ac425a3aa6c9fc1c140089df8645363e2623cd03e5bb4",
+      "native.c": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992"
+    }
+  },
+  "compile_command": [
+    "cc",
+    "-shared",
+    "-fPIC",
+    "-O1",
+    "-fno-builtin",
+    "-ffp-contract=off",
+    "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/paced-road/control/sdk/include",
+    "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/wide-fill/.work/control/package",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/static-drawing/.work/page-proof/page-host.c",
+    "-o",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/static-drawing/.work/page-proof/page-host.so"
+  ],
+  "negative_controls": {
+    "uninitialized_second_page_detected_on_frame": 2,
+    "missing_100_to_103_clear_leaves_stale_actor_pixel": true,
+    "transparent_current_actor_pixel_retains_old_dirt": true,
+    "missing_plot4_clip_activation_rejected": true
+  },
+  "source_sha256": "da78140b5cff7b234edadc7e2c08941889b36dafb96a7443726b4f10cd15c812",
+  "emulator_used": false,
+  "target_timing_claim": false,
+  "limitations": [
+    "Host ABI/compiler only; no new target execution or physical timing.",
+    "Stable arbitrary8x8 title glyph patterns prove retained support and bytes; stock font raster is not emulated.",
+    "Actor/player images intentionally synthetic and contain all four alpha patterns; actual artwork appearance remains a separate scene-capture/human gate.",
+    "Initial mode/common/font setup is shared; arbitrary unequal physical-page contents deliberately strengthen retained-region initialization tests.",
+    "Only the accepted deterministic motion is replayed; general geometry bounds are documented independently by the source audit."
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "task": "INC-001-04",
+  "checkpoint": "aab566d",
+  "rows": [
+    {
+      "campaign": "staticab01",
+      "case": "control",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 3050,
+      "nominal_mos_seconds": 25.416666666666668,
+      "nominal_mos_fps": 35.40983606557377,
+      "nominal_prt_ticks": 26297,
+      "nominal_prt_seconds": 26.297,
+      "nominal_prt_fps": 34.2244362474807,
+      "host_seconds_including_startup": 35.328,
+      "timed_uart_bytes": 312300,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "zero_single_frame_mos_intervals": [],
+      "final_state_exact": true,
+      "clean_mos_return": true
+    },
+    {
+      "campaign": "staticab01",
+      "case": "static",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 2562,
+      "nominal_mos_seconds": 21.35,
+      "nominal_mos_fps": 42.15456674473068,
+      "nominal_prt_ticks": 22097,
+      "nominal_prt_seconds": 22.097,
+      "nominal_prt_fps": 40.72951079332036,
+      "host_seconds_including_startup": 31.108,
+      "timed_uart_bytes": 246600,
+      "timed_uart_sha256": "5138bee82ef6c28695f2eb99677030d8fd2f29041eff6cf81a12585d1cda5ac5",
+      "zero_single_frame_mos_intervals": [],
+      "final_state_exact": true,
+      "clean_mos_return": true
+    },
+    {
+      "campaign": "staticba01",
+      "case": "static",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 2488,
+      "nominal_mos_seconds": 20.733333333333334,
+      "nominal_mos_fps": 43.40836012861736,
+      "nominal_prt_ticks": 21461,
+      "nominal_prt_seconds": 21.461,
+      "nominal_prt_fps": 41.936536042122924,
+      "host_seconds_including_startup": 30.511,
+      "timed_uart_bytes": 246600,
+      "timed_uart_sha256": "5138bee82ef6c28695f2eb99677030d8fd2f29041eff6cf81a12585d1cda5ac5",
+      "zero_single_frame_mos_intervals": [],
+      "final_state_exact": true,
+      "clean_mos_return": true
+    },
+    {
+      "campaign": "staticba01",
+      "case": "control",
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 2958,
+      "nominal_mos_seconds": 24.65,
+      "nominal_mos_fps": 36.511156186612574,
+      "nominal_prt_ticks": 25524,
+      "nominal_prt_seconds": 25.524,
+      "nominal_prt_fps": 35.26093088857546,
+      "host_seconds_including_startup": 34.518,
+      "timed_uart_bytes": 312300,
+      "timed_uart_sha256": "370d42da5e5f05c6824e65862e5f1d5cec531e8f473deaa15cbb0014d8a88f45",
+      "zero_single_frame_mos_intervals": [
+        47
+      ],
+      "final_state_exact": true,
+      "clean_mos_return": true
+    }
+  ],
+  "pooled": {
+    "control": {
+      "frames": 1800,
+      "nominal_mos_seconds": 50.06666666666666,
+      "nominal_mos_fps": 35.9520639147803,
+      "nominal_mos_ms_per_frame": 27.814814814814813,
+      "nominal_prt_seconds": 51.821,
+      "nominal_prt_fps": 34.734953011327455
+    },
+    "static": {
+      "frames": 1800,
+      "nominal_mos_seconds": 42.083333333333336,
+      "nominal_mos_fps": 42.77227722772277,
+      "nominal_mos_ms_per_frame": 23.37962962962963,
+      "nominal_prt_seconds": 43.558,
+      "nominal_prt_fps": 41.32421139629919
+    }
+  },
+  "pairs": [
+    {
+      "campaign": "staticab01",
+      "nominal_mos_gain_percent": 19.047619047619047,
+      "nominal_prt_gain_percent": 19.007105036882834
+    },
+    {
+      "campaign": "staticba01",
+      "nominal_mos_gain_percent": 18.890675241157552,
+      "nominal_prt_gain_percent": 18.932016215460614
+    }
+  ],
+  "nominal_mos_gain_percent": 18.97029702970294,
+  "nominal_prt_gain_percent": 18.97010882042336,
+  "nominal_mos_ms_saved_per_frame": 4.435185185185183,
+  "wire": {
+    "control_bytes_per_frame": 347,
+    "candidate_bytes_per_frame": 274,
+    "saved_per_frame": 73,
+    "total_saved_timed_bytes": 65700,
+    "extra_setup_bytes": 184,
+    "only_authorized_paint_change": true,
+    "all900_motion_packets_exact": true,
+    "candidate_timed_sha256": "5138bee82ef6c28695f2eb99677030d8fd2f29041eff6cf81a12585d1cda5ac5"
+  },
+  "same_native_module_driver_assets_motion_runtime": true,
+  "full_final_worlds_exact": true,
+  "hardware_tested": false,
+  "human_visual_review_pending": true,
+  "bitmap_caching": false,
+  "clocks": "MOS nominal120units/s, PRT nominal18.432MHz instruction clock; not calibrated physical FPS. Host durations include startup/teardown.",
+  "session": {
+    "host_boot_id": "d8e4d3c8-0288-4512-a15d-0be9cc5641f1",
+    "original_boost": "1",
+    "final_boost": "1",
+    "boost_restored": true,
+    "max_temperature_celsius": 56.0,
+    "elapsed_host_seconds": 131.909
+  },
+  "candidate_promoted": false,
+  "evidence_sha256": {
+    "RAW-AUDIT.json": "febf5356b4f931f8701b4379d8805a41c9fd25af2e089c10af045a30b7af12a4",
+    "STATIC-REVIEW.json": "48d7cbad1bf1f432941c7c79722a9362477026620b78677ce8144ca329fb6ba6",
+    "PAGE-PROOF.json": "d1a5bc007de52814bfef2ea0e4cb6bfd3cfe219874f49a142f8b7f79fd2c964f",
+    "CAPTURE-RESULTS.json": "4f4bc4af0d95092220b0e99796b9d8eddbdd61cbe240fae8583929019d1b1da8"
+  },
+  "human_review_profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-staticreview01-static"
+}

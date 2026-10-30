@@ -1,0 +1,1 @@
+Initial pure-Python per-pixel compositor was manually interrupted for poor host runtime before qualification/report publication. No correctness failure was observed. Bulk row composition retains the same alpha/clipping/retained-page checks; the subsequent run provides the qualified result.

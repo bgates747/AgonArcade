@@ -1,0 +1,35 @@
+{
+  "actual_scene_snapshots": true,
+  "frames": [
+    30,
+    31
+  ],
+  "pairs": [
+    {
+      "frame": 30,
+      "page_parity": 0,
+      "changed_pixels": 0,
+      "pixels": 76800,
+      "exact": true,
+      "scene_sha256": "d4af974cef0df1fd7aa7045d2eca4108001cc4708ef3683381d90f30d7886a93",
+      "preview": "captures/scene-f030.png"
+    },
+    {
+      "frame": 31,
+      "page_parity": 1,
+      "changed_pixels": 0,
+      "pixels": 76800,
+      "exact": true,
+      "scene_sha256": "c6edf96545afe6bfe04343655a5b093f7f801089f8c4a10ee0baa047138e0285",
+      "preview": "captures/scene-f031.png"
+    }
+  ],
+  "timing_excluded": true,
+  "intentional_hold_interruption": true,
+  "cleanup_validated_by_capture": false,
+  "cleanup_gate": "Separate completed900-frame runs validate shutdown and MOS return",
+  "human_visual_review_pending": true,
+  "maximum_temperature_celsius": 56.0,
+  "boost_restored": true,
+  "owned_emulators_stopped": true
+}

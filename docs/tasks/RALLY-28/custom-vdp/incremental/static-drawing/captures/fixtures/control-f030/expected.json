@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "review_fast": true,
+  "frames": 30,
+  "physics_ticks": 120,
+  "paced": false,
+  "checks": [
+    {
+      "token": 1,
+      "kind": 2,
+      "value": null,
+      "label": "LOAD",
+      "flags": 1,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 2,
+      "kind": 3,
+      "value": 0,
+      "label": "InitRace",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 3,
+      "kind": 4,
+      "value": null,
+      "label": "stack before",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 4,
+      "kind": 3,
+      "value": 0,
+      "label": "Render30",
+      "flags": 0,
+      "repeats": 30,
+      "loop": true
+    },
+    {
+      "token": 5,
+      "kind": 4,
+      "value": 1,
+      "label": "completion ready",
+      "flags": 4,
+      "repeats": 30,
+      "loop": true
+    },
+    {
+      "token": 6,
+      "kind": 4,
+      "value": 0,
+      "label": "completion request = frame",
+      "flags": 16,
+      "repeats": 30,
+      "loop": true
+    },
+    {
+      "token": 7,
+      "kind": 4,
+      "value": 0,
+      "label": "completion tick = frame*4",
+      "flags": 8,
+      "repeats": 30,
+      "loop": true
+    },
+    {
+      "token": 8,
+      "kind": 4,
+      "value": 0,
+      "label": "fresh root generation = frame*5+1",
+      "flags": 36,
+      "repeats": 30,
+      "loop": true
+    },
+    {
+      "token": 219,
+      "kind": 4,
+      "value": 0,
+      "label": "post-swap generation fence = frame*5+1",
+      "flags": 36,
+      "repeats": 30,
+      "loop": true
+    },
+    {
+      "token": 60000,
+      "kind": 4,
+      "value": null,
+      "label": "Scene displayed: ordered INFO17 capture marker",
+      "flags": 2,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 217,
+      "kind": 3,
+      "value": 0,
+      "label": "StopRace",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    },
+    {
+      "token": 218,
+      "kind": 3,
+      "value": 0,
+      "label": "UNLOAD",
+      "flags": 0,
+      "repeats": 1,
+      "loop": false
+    }
+  ],
+  "reply_bytes": 960,
+  "tick_samples": 31,
+  "prt_instrumented": true,
+  "prt_cycles_per_tick": 18432,
+  "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/sprites/.work/candidate-clipfix/package",
+  "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+  "source_sha256": "8a103582970dcf7a9c57ab57fe3e9272e60eb18b3ac345361e002fc6b2f82089",
+  "resources": {
+    "session": 7,
+    "staging": 50305,
+    "asset": {
+      "buffer": 50300,
+      "offset": 0,
+      "bytes": 149518
+    },
+    "outputs": [
+      {
+        "buffer": 50301,
+        "offset": 0,
+        "bytes": 20480
+      },
+      {
+        "buffer": 50302,
+        "offset": 0,
+        "bytes": 2048
+      },
+      {
+        "buffer": 50303,
+        "offset": 0,
+        "bytes": 256
+      }
+    ],
+    "completion": {
+      "buffer": 50304,
+      "offset": 0,
+      "bytes": 48
+    }
+  },
+  "files": {
+    "artwork.vdu": "124dfd413f1b2d1902547bcc18a1a74a4ade35c6a771a66f990cd1312966cca9",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2",
+    "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+    "probe.bin": "a9effac2f7b45560d8003af6add587998cbafedf128ff2dbf070fdb7f68f2f07",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "script.bin": "c29abbf65edf2a0c5ccccdec9e50bc0f2383a16cf5620a54a94c174b5500a1bf",
+    "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9"
+  },
+  "candidate": "Diagnostic scene hold after completed moving frame30",
+  "extra_app_buffer": {
+    "buffer": 50700,
+    "bytes": 38400,
+    "width": 320,
+    "height": 120,
+    "y": 104,
+    "format": "Native, mode136 raw pixels; same opaque RGBA2222 bytes"
+  },
+  "comparison_scope": "Same selected scene, actual displayed30/31-frame parity, no benchmark timing claim",
+  "bitmap_format": 3,
+  "bitmap_format_name": "Native fixed mode136 (-HSync,-VSync)",
+  "mode136_native_bytes_verified": true,
+  "physics_steps_per_frame": 4,
+  "foreground_deadline_mos_units": null,
+  "swap_retained": true,
+  "completion_fenced": true,
+  "fence_outbound_bytes_per_frame": 17,
+  "fence_reply_payload_bytes_per_frame": 10,
+  "fence_scope": "Ordered native READ16 after controller swap and prior drawing; excludes physical scanout",
+  "timing_scope": "Excluded: deliberate long hold and possible capture interruption;900-frame fixtures own timing/cleanup evidence",
+  "clear_only_change": {
+    "changed_record": 42,
+    "other_records_exact": true,
+    "additional_wire_bytes_per_frame": 12,
+    "old_paint_bytes": 110,
+    "new_paint_bytes": 122
+  },
+  "early_module_load": true,
+  "canvas_clip_activated_by_plot_move": true,
+  "review_motion": true,
+  "fixed_display_lanes": [
+    -9216,
+    0,
+    9216,
+    -9216,
+    0,
+    9216
+  ],
+  "outbound_uart_bytes_per_frame": 347,
+  "diagnostic_hold": true,
+  "diagnostic_not_benchmark": true,
+  "scene_capture_frame": 30,
+  "scene_capture_page_parity": 0,
+  "diagnostic_scripted_positions": [
+    110150,
+    89000,
+    67850,
+    65150,
+    86300,
+    107450
+  ],
+  "capture_marker": {
+    "token": 60000,
+    "kind": 4,
+    "native_operation": "INFO17",
+    "raw_packet_prefix_hex": "5644504c010460ea",
+    "original_final_frame_post_swap_fence_retained": true
+  },
+  "hold_observed_mos_lowbyte_changes": 12000,
+  "hold_units": "Opcode3 counts observed sysvar_time lowbyte changes; mode136 normally60changes/s, despite120nominal MOS units/s",
+  "hold_sends_or_drawing": false,
+  "cleanup_after_hold": "Original requested-entry/ready update, StopRace/UNLOAD checks, bitmap cleanup, END;900-frame final-world queries omitted",
+  "interrupted_capture_is_not_cleanup_acceptance": true,
+  "diagnostic_source_case": "control"
+}
