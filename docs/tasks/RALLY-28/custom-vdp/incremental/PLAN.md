@@ -77,6 +77,23 @@ or spend excessive time pursuing pixel identity. Build against the frozen SDK,
 check emitted code and declared/actual capacity, and use only already accepted
 runtime limits. Any genuinely missing service needs owner coordination.
 
+## Proposed follow-up: prepare multiple sizes before racing
+
+Later delegated status: full901-image capacity and independent raw audit pass;
+see [capacity-02](../prepared-bitmap-set/capacity-02/RESULTS.md). Conditional
+[native lookup image/host proof](../prepared-bitmap-set/runtime/RESULTS.md) is
+ready for guest integration, not target/FPS/appearance acceptance. Measured
+PSRAM delta2,429,496B leaves1,013,415B; four scoped leases/static image limits
+pass. Root TODO AFF03-03–05owns central disposition and remaining gates.
+
+The original Author request was a potential experiment. [AFF03](../prepared-bitmap-set/PROPOSAL.md)
+specifies offline error-versus-RAM selection, denser nearby sizes, original-artwork
+upload once and VDP generation before the race. Fully prepared drawing would have
+no timed generation; fresh complete-race FPS against additive is the decision
+metric. This extends the bounded-size proposal under INC-001-04 and differs from
+the tested last-image cache. Root TODO owns AFF03-01–05. INC-001-05 protocol waits
+and INC-001-06 transparent work/copy removal remain separate candidates.
+
 ## Order and rationale
 
 ### INC-001-02-AFF01 — Audit built-in affine usage
@@ -140,7 +157,11 @@ old actor/sign bounds before removing clears.
    as the native variant. Budget bitmap IDs, PSRAM, setup time and retained-page
    histories. Present size quantization/visual tradeoffs to the Author. Keep
    these separate from the exact first clear experiment.
-5. **INC-001-05 — Consolidate per-frame synchronization.** Replace intermediate
+5. **INC-001-05 — Consolidate per-frame synchronization.** GOLEM-057 tranche
+   returned: fresh33.09→36.57 nominal MOS FPS (+10.53%), separate PRT31.96→35.35;
+   exact world/nonquery commands and six raw runs pass. See
+   [results](round-trips/RESULTS.md); Author moving review/publication pending.
+   Implemented scope: replace intermediate
    diagnostic round trips with a sequenced combined completion/status mechanism
    while retaining error/publication semantics, a final rendering fence and a
    rich diagnostic control. Count all commands/replies and measured waits. Keep

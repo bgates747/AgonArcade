@@ -2,6 +2,108 @@
 
 Research cheaper arithmetic, geometry and drawing for both Rally implementations. Apply the research first to the standard-VDP game, where pseudo3D computation runs on eZ80; then to the custom-VDP game using Golem/VDPlets. RALLY-28 owns the entire effort: shared findings, separate application work and independent acceptance evidence for both versions. The Author requests one task with separate code areas and the standard version first. Author's2026-10-14 “go” released the first hot-loop research item: completed review below. No candidate implementation, benchmark, emulator run or publication release is inferred.
 
+## Current offline phase-cost audit — released2026-10-31
+
+Author releases [COST-001](RALLY-28/research/phase-cost/PLAN.md): write scope,
+checkpoint/push all prior dirt, then map the current full-race processor/drawing
+boundaries, design completion-safe phase timers, inspect unchanged generated
+assembly and rank the next experiments. No emulator, Oryx, product/fixture or
+firmware change. Existing36.1930nominal MOS FPS compact reference is not a new
+audit measurement. Root TODO owns COST-001-01–04; new findings return uncommitted.
+AFF03 partial-cohort disposition remains preserved and supplies no cache adoption.
+
+## Per-frame serial synchronization — released2026-10-30
+
+GOLEM-057/G057-RLY-001 released existing INC-001-05 under the Author's standing
+delegation. [Results](RALLY-28/custom-vdp/incremental/round-trips/RESULTS.md): fresh
+diagnostic33.09→compact36.57 nominal MOS FPS (+10.53%); PRT31.96→35.35 separately.
+Both orders improve; all four full runs/two smokes/raw state and protocol pass.
+Same
+publication-checked native additive module and same real-race guest in both
+arms; config chooses four diagnostic intermediate reads or none during timed
+frames. Keep RUN failure handling, full native publication checks and the final
+post-swap checked reply. Host900frame/3600tick parity and27fault cases pass.
+Actual68outgoing/48incoming bytes saved per frame. Golem confirmed the preserved
+runtime/firmware pins; exclusive Oryx qualification finished and lease released,
+boost1restored/max61°C. Human moving review/publication remain pending. No
+independent physics scheduler, AFF03 combination, GUI or hardware release is
+inferred. Root TODO owns the unfinished review/disposition gate.
+
+## Pre-generated multi-size bitmaps — capacity returned, 2026-10-30
+
+GOLEM-057 dispatch-eight selected a bounded two-pixel application experiment.
+After a preserved first harness error and separately released classification
+correction, [actual capacity passes](RALLY-28/custom-vdp/prepared-bitmap-set/capacity-02/RESULTS.md):
+901registered images/963pixel checks, measured2,429,496BPSRAM retained and
+1,013,415Bfree. All raw protocol/state/memory/cleanup checks pass; residual
+10,960PSRAM/52internalBreported. Generation18released before analysis, boost
+restored/max56°C/no emulators. No new game FPS or appearance acceptance.
+
+Conditional [native lookup preparation](RALLY-28/custom-vdp/prepared-bitmap-set/runtime/RESULTS.md)
+builds f3a1f8d0... under unchanged limits; actual generated-C ordinary/sanitized
+900frame/3600tick/10,531key-edge/36fault checks pass, peak four leases. Separate
+[race installer preparation](RALLY-28/custom-vdp/prepared-bitmap-set/prepared-race/PREPARATION.md)
+now builds guestac0ece2f... with the exact old timed source/compact control;
+60frame host reference/source closure/profiles are ready. Generation24then
+[passes full functional qualification](RALLY-28/custom-vdp/prepared-bitmap-set/prepared-race/RESULTS.md)
+with actualpreparedtaskminimum1972B, exact state/counters/cleanup. A separately
+frozen three-read oracle correction passes the SAME17946prepared/344control
+replies,909memory samples/963pixels; original oracle/mismatch/all inputs remain.
+Golem accepts this full return and releases only the separately frozen
+[four-run full900preparation](RALLY-28/custom-vdp/prepared-bitmap-set/prepared-benchmark/README.md),
+compact/prepared then prepared/compact. It measures a bundled retention/two-pixel
+size approximation/stock-versus-additive sampling tradeoff, not isolated cache
+gain or identical actor pixels. Fresh grant required before launches; no newFPS.
+Later generation28 [partial900results](RALLY-28/custom-vdp/prepared-bitmap-set/prepared-benchmark/RESULTS.md)
+qualify only first C/P: nominalMOS36.193/36.217FPS, separatePRT34.961/34.995.
+All full raw/state/counter/cleanup and token-normalized291568timed bytes pass;
+third process stalls during original art upload before installer/Init, fourth
+unrun. No four-run gain/order result or retry; release precedes analysis, max61°C/
+boost1restored1. Golem's bounded offline disposition holds more target work.
+[Disposition-twentyfive](RALLY-28/custom-vdp/prepared-bitmap-set/prepared-benchmark/DISPOSITION.md)
+accepts the partial audit and closes this offline tranche. Keep compact default;
+retain prepared implementation/proofs/matched-image proposal as research. No
+useful gain or further tuning/retry/review is established or assigned now.
+Current36.57FPS control/old evidence unchanged; no runtime-default/GUI/hardware/
+publication change. AFF03-03capacity is accepted; root TODO owns AFF03-04/05.
+
+Earlier GOLEM-057 host preparation: [returned findings](RALLY-28/custom-vdp/prepared-bitmap-set/preparation/RESULTS.md)
+enumerate6,927required images: exact14.87MBpixel payload; one-/two-pixel
+alternatives5.44/2.21MB before metadata/objects. Ordinary/UBSan full-domain scans
+and actual-sampler pixel checks pass. [Packed interface](RALLY-28/custom-vdp/prepared-bitmap-set/preparation/PACKED-INTERFACE-v1.md)
+was accepted as the bounded private interface by dispatch-eight. The original
+preparation made no Oryx/emulator/publication action; the later capacity proof
+above now supersedes its unmeasured heap status. Visual threshold/default
+acceptance remains open. Preserve the36.57FPS compact control/frozen contract.
+
+The Author proposes retaining multiple sizes/views in VDP RAM, generated before
+racing, with greater size density near the player. [AFF03 proposal](RALLY-28/custom-vdp/prepared-bitmap-set/PROPOSAL.md)
+defines full-domain enumeration, offline screen-space/anchor/silhouette/popping
+error versus RAM, setup-only generation from original artwork, zero generation
+in the fully covered timed loop and fresh full-race FPS against additive sampling.
+This differs from AFF02's one-last-image policy. A declared near-cache/far-sampler
+hybrid is a separate option if the budget does not cover all sizes. Author moving
+review chooses the approximation tradeoff. Root TODO owns AFF03-01–05; writing
+this proposal releases no implementation, build, emulator, hardware or publication.
+
+## Full-race caching comparison — returned2026-10-30
+
+Prior dirt committed/pushed through `fa7932d`, then the Author released actual
+complete-race FPS analysis on Oryx. [AFF02 results](RALLY-28/custom-vdp/affine-race/RESULTS.md)
+lead with fresh matched values: rebuilt affine26.18/cached affine29.86/prepared
+bitmap29.74/accepted additive33.44 nominal MOS FPS; PRT25.30/28.86/28.74/32.31
+separately. All eight900-frame runs independently pass exact state, full raw
+protocol, identical352768-byte timed UART streams and completion/cleanup checks.
+Matrix reuse improves14.04%; the tested last-image bitmap cache gives no further
+FPS gain(-0.39% versus cached affine). Hits cover61.64% of draws but only16.82%
+of natural transformed pixel area; every large-image draw misses. This is not
+a test of a larger cache retaining multiple sizes. Generation/misses start cold
+inside timing. Existing additive remains fastest; no replacement adopted.
+Two actual300/301frame captures are pixel-identical. One pre-timing startup stall
+is preserved and only that missing control is retried. Silent original95°C guards,
+max63°C, original boost1restored/all emulators stopped; Oryx free. New code/results
+remain uncommitted for [Author moving review](RALLY-28/custom-vdp/affine-race/HUMAN-REVIEW.md).
+
 ## Isolated affine cost investigation — released2026-10-29
 
 The Author requests offline costs of stock affine transforms on the actual Rally

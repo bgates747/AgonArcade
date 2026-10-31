@@ -1,5 +1,276 @@
 # Standing emulator authorization —2026-10-14
 
+AUTHOR OFFLINE RELEASE2026-10-31: write bounded COST-001 plan, commit/push all
+current dirt in logical groups, then phase-map/timing-hook/assembly/ranking audit.
+Read docs/tasks/RALLY-28/research/phase-cost/PLAN.md; rootTODO owns COST-001-01–04.
+No emulator/Oryx contact/lease/hardware/game/firmware/qualifiedfixture change.
+Unchanged source/private assembly inspection only; return new findings uncommitted.
+This direct release supersedes the documentation hold only for this offline scope;
+AFF03 failure/unrun/default/human/publication limitations remain. Publication of
+prior dirt is explicitly approved, not approximate-cache adoption. AFF03-04's
+bounded accepted partial audit is disposed in dated2026-10-31log; no retry.
+
+AFF03 DISPOSITION ACCEPTED2026-10-30: Golem mail
+2026-10-30_22-20-13_golem_golem057-rally-partial-audit-disposition-twentyfive accepts
+bounded offline report; no useful firstpair gain, fourrun/order/variance absent.
+Read prepared-bitmap-set/prepared-benchmark/DISPOSITION.md. Keep acceptedcompact
+default unchanged; cache implementation/capacity/host/target proofs and matched
+followup retained as research. Thirdfailure/fourthunrun preserved. Offline
+tranche COMPLETE; NO further target/retry/fourth/reviewprofile/sourcechange now.
+Human/default/publication gates held; wait for concrete new bounded contract.
+No response-to-ack message is needed or sent.
+
+AFF03 PARTIAL900RETURN2026-10-30: read prepared-bitmap-set/prepared-benchmark/
+RESULTS.md under RALLY-28/custom-vdp. Fresh generation28grants FOUR total C/P/P/C,
+but first C/P passes then third stalls60hostseconds; fourth UNRUN/no retry.
+Qualified firstpair nominalMOS36.1930/36.2173FPS, separatePRT34.9610/34.9949;
+no fourrun gain/order/pooled claim. This is bundled caching/2pxsize/sampler tradeoff.
+All2024/19626native replies/state/counters/cleanup,909memory/963pixels and exact
+291568timed bytes after1800token normalizations pass. Actual prepared task stack
+2424/2196/2196/1940/1940B finite; PSRAMdelta2429420/free1012947/residual10960B.
+Third host-enqueued stream stops233974B: originalassets149554B complete then
+artwork48640/58780B, beforeinstaller/Init/warm/race. Six earlyLOAD/INFO replies
+exact; originalbuffer63800expectedpayload377/2048B captured,1671missing. Adapter
+enqueue/accounting is not firmwareconsumption; exactcause/quiettime unqualified.
+No commoncause with separateARMFSIM. Hostguard exits0but guestcleanup absent.
+Session177.899hostsec/max61C/original95guard/bothSDLdummy/boost1restored1;
+retrieval/freshidle/explicitrelease0bda3f2a... BEFOREanalysis. Golem release25/
+boundary26 notified promptly; root twentyfour holds further target/appearance/
+default/publication. Four frozen profile inputs unchanged, fourth neverlaunched.
+Bounded offline return27 (2026-10-30_22-19-18_rally_golem057-rally-full900-partial-audit-twenty-seven)
+delivers full report. PARTIAL-RESULTS-FREEZE012a294f... pins68raw/result/receipt
+files; original46readiness/41dependencies/oldfunctional freezes unchanged.
+No new request/lease/reviewprofile; stop for Golem's next scoped disposition.
+
+AUTHOR CHAT DELIVERY2026-10-30: notifications to other agents must be steering
+messages, never queued chat messages. The currently exposed send_message_to_thread
+schema has no steering parameter. Do not silently use its queued route; send
+substantive authorized coordination promptly through canonical agentcoms and
+disclose the chat limitation. Use steering when a supported interface is available.
+
+AFF03 FUNCTIONAL QUALIFIED2026-10-30: prepared-race/RESULTS.md supersedes the
+historical pending report below. Golem correction-eighteen released only three
+unchanged initial pose reads in separately frozen raw_audit_pose_v2.py. SAME
+immutable captures pass17946prepared/344compact native replies,909memory rows,
+963pixel witnesses, independent state/counters/cleanup/MOS. Readiness75files,
+firstwitness46files and three-read freeze4files remain exact; no emulator rerun.
+Timed18317Bstreams agree after only120RPC-token normalizations; this proves
+wire/world equivalence, not raster equivalence: prepared901 selects approximate
+two-pixel representatives and stock-generated sampling versus exact-size additive.
+Actual task minimum1972B and cleanup residuals are finite observations. No newFPS.
+Golem preparation-nineteen authorizes AFTER full audit return a separately frozen
+four-run900frame/3600tick compact/prepared then prepared/compact plan, no launches.
+Label it a bundled caching/size/sampling tradeoff; preserve accepted control.
+New central grant required before any emulator. No GUI/hardware/default/commit.
+Full audit returned as2026-10-30_21-55-51_rally_golem057-rally-functional-qualified-twenty-two;
+Golem twentyone accepts it and clarifies FOUR total runs, not four pairs. Separate
+prepared-benchmark/README.md owns ready plan; source/binaries unchanged, prepared
+config60→900 only plus metadata. Fresh stopped prace900ab01/ba01 profiles cover
+both orders. No new emulator or retry/source repair is granted by preparation.
+Prepared-benchmark READINESS-FREEZE0e666a32... pins46files plus41source dependencies;
+central requestfd8f8d3f6bc3 is pending, not a grant. Ready return
+2026-10-30_22-03-35_rally_golem057-rally-full900-ready-twenty-three supplies all four
+profile paths/predictions/limits before execution. No new emulator has run.
+
+AFF03 FIRST FUNCTIONAL RETURN2026-10-30: read prepared-bitmap-set/prepared-race/
+FIRST-FUNCTIONAL.md under RALLY-28/custom-vdp. Generation24compact60thenprepared60
+pass frozen functional verifier/finalstate/counters/cleanup/MOS. Actualprepared
+INFO17remaining2424→2196→2196→1972→1972B; cold38.5667nomMOSsec, noFPSclaim.
+STRICTRAWAUDITOPEN: oracleomits3unchangedinitialposeREADs16647–49alreadyinboth
+control/preparedmain; actualvalues35536/49/6800 reconstruct3246800/phase6800.
+17946actualvs17943predicted. Preserve READINESS517138ab/allraw/firstmismatch;
+NO source/oracle/prediction/pin change or emulatorretry. FIRST-FUNCTIONAL-WITNESS
+pinsreturns; rootTODOAFF03-04awaitsGolem narrowaudit-onlycorrection. Guestreports
+PSRAMdelta2429420/free1012947B,cleanup90buffers/10960PSRAMresidual; internal
++984BafterUNLOAD isnotpre-UNLOADcache-only comparison. Allownedstopped,
+session61.722hostsec/max70C/original95guard/boost1restored1/bothSDLdummy;
+freshidle/explicite4b1a012... release BEFOREanalysis; Golemrelease-eighteen.
+No fullbenchmark/GUI/hardware/appearance/default/publication/commit.
+Canonicalreturn2026-10-30_21-39-20_rally_golem057-rally-functional-audit-omission-nineteen
+asksGolem narrowseparate audit-only3readcorrection on SAMEcaptures, notrerun.
+Awaitrelease; originalraworacle/READINESS/source/profilepins untouched.
+
+AFF03 RACE INSTALLER PREPARED2026-10-30: Golem preparation-sixteen accepts full
+capacitygate and releases separateinstallerprep. Read prepared-bitmap-set/
+prepared-race/PREPARATION.md under RALLY-28/custom-vdp. Guestac0ece2f... installs/
+probes901beforeInit, privatecounter32B, clearsbothprobe pages beforewarm2,
+originaltimedloop source/oldcompactfixture exact. Actual-C60frame/240tick model
+matchesindependentfinal; expected417lookups/416plots/1clipped/othercounters0.
+Loaded/install/warm/steady/cleanupINFO17checkpoints targetactualtaskwatermark;
+no1280Bmodule-only estimate substitution. Stop→UNLOAD→counterread/ownedcleanup
+beforecallbackremoval. Reusesqualifiedhelpers/nativef3a1f8d.../runtime/recipe.
+FirstlocalBSSguardexcess3865Bpreserved; transcript220000Bwithoutceilchange,
+newBSSend639282<0xa0000. Predicted179430B60frame/196230B900framereplies,
+boundedmemoryretryheadroom/failclosedoverflow. Sourceclosure/staticverifier
+checks pass; stoppedprace01compact/prepared profiles ready. Freeze and new
+FUNCTIONAL-onlyrequest precede anytargetrun; no executiongrant/emulatoryet.
+AFF03-03completedviadelegatedacceptance/log; rootTODOAFF03-04/05remainopen.
+Preparedfunctional freeze517138ab... pins75files/sourceclosure42inputs;
+requestbddbdf3ffa48queued. Canonicalreadinessreturn
+2026-10-30_21-29-01_rally_golem057-rally-prepared-smoke-readiness-seventeen
+notifiesGolem. Exactprofilesprace01compact/preparedSTOPPED; awaitfreshgrant
+beforeeachlaunch. Functionalonly60frames; no performance/emulatorrun yet.
+
+AFF03 CAPACITY/NATIVE PREP RETURN2026-10-30: read prepared-bitmap-set/capacity-02/
+RESULTS.md and runtime/RESULTS.md under RALLY-28/custom-vdp. Generation18small
+passes then full901registered/963pixelchecks/raw17,566replies/906memorysamples.
+RetainedPSRAMdelta2429496B/free1013415B; internal61048/largest29684B. Cleanup
+restores89buffers/901absencechecks; residual10960PSRAM/52internalBdisclosed.
+Setup32.500nominalMOS/33.635PRTseconds includes verification, not puregeneration.
+Session65.451hostseconds/max56C/original95guard/bothSDLdummy/boost1restored1;
+freshidle/explicit958943fc... release BEFORE analysis, Golem release-fourteen.
+No emulators, Oryx free; firstfailed76pins/oldcontrols/archives unchanged.
+Conditional separate native imagef3a1f8d0... builds35216B/text32452/data1128under
+unchanged limits. Actual-C ordinary/sanitized each pass10531key-edge cases,
+900frames/3600ticks/twowarm/36faults, peak4balancedleases/canaries. Road/player/
+world exact; independentanchors/clipping/order and full commandbytes agree.
+No timedcachegen/alloc/replacement/fallback. Module-only static stackpath1280B
+excludes SDK/caller/interrupts; targetLOAD/observednewstack still unqualified.
+Remainingguestsetup/counters/memory/cleanup integration precedes targetsmoke
+and new performancelease. Current36.57FPScontrol separate; no newgameFPS,
+appearance/default/hardware/commit acceptance. RootTODOAFF03-03–05ownnextgates.
+Canonical return2026-10-30_20-39-34_rally_golem057-rally-capacity-runtime-return-fifteen
+delivers actualcapacity/runtime/host/stackpins BEFORE performance request.
+runtime/PORTABLE.zipbff0bf33...1678405B/185members; runtimefreeze d647c948...,
+capacityresultfreeze f9cc5444.... Golem notified. No newlease/requestedtargetrun;
+preparedraceguest installer/loaderstacksmoke remains next integration work.
+
+AFF03 CORRECTION READY2026-10-30: Golem correction-eleven releases ONLY wrong
+expectedERRORkind3→frozenVDPL_REPLY_ERROR5 classification. Separate capacity-02/
+under RALLY-28/custom-vdp/prepared-bitmap-set preserves everyfirst76frozenfile.
+Actual guest transaction/errorRead/length/cleanup17branches pass ordinary+ASan/
+UBSan; LSan disabled due executorptrace, firstfatalLSanlogpreserved. Recipe/
+index/generation/97compactinputs/7protectedarchives-sources unchanged. Guest
+6d7231bd... builds/BSSend611136, native479fe1ac... unchanged. Fresh STOPPED
+capacity02-small/full profiles pinned. New central readiness/request only;
+NO executiongrant/retry yet. Read capacity-02/README.md and READINESS-FREEZE.
+Small page/registration/cleanup proof precedes full901. All original human/
+performance/runtime/commit gates remain; rootTODO AFF03-03ownsnextactions.
+New requesta1df765a639a queued, readiness returned in canonicalmail
+2026-10-30_20-11-33_rally_golem057-rally-corrected-readiness-thirteen.
+READINESS-FREEZE.json650960c4... pins74newinputs/proof/profilefiles. Awaitfresh
+centralgrant; no emulator/retry has run. Firstfailed76pins remain exact.
+
+AFF03 FIRST CAPACITY FAILURE2026-10-30: generation16small run stopped BEFORE
+cached generation. Read prepared-bitmap-set/capacity/RESULTS.md under RALLY-28/
+custom-vdp. New errorRead expects DONEkind3 instead of frozen ERRORkind5;
+VDP correctly returns BOUNDS3onindex probe227and BUFFER2oncleanup probe238.
+All240raw native replies/requests audited; no901full run, no pixel/page proof.
+Baseline internal61100/largest29684B, PSRAM3442911B; tabledelta10760B, cleanup/
+minimum aggregate zeros INVALID. Stop/UNLOAD0, mode8/MOSprompt, backend0. Owned
+session12.184hostseconds/max57C/boost1restored1/bothSDLdummy. Fresh whole-host
+idle and explicit release ae560dd2... BEFORE analysis; Golem notified by
+2026-10-30_20-03-35_rally_golem057-rally-capacity-release-eleven. Preservefirst
+witness/build/frozenrecipe; NO retry/fix/runtime/performance/commit. Return
+failure to Golem for bounded correction/new grant. RootTODO AFF03-03remainsopen.
+
+AFF03 CAPACITY RELEASE2026-10-30: Golem dispatch-eight releases an opt-in
+two-pixel901-image experiment, not appearance/default acceptance. Read
+prepared-bitmap-set/capacity/README.md under RALLY-28/custom-vdp. Recipe/table/
+generator frozen before implementation in RECIPE-FREEZE.json d4aaaab5...;
+2,211,975pixelB/10,628tableB, setup stock command40/options3, original art once.
+First prove pixel registration/page semantics on a small case, then actual full
+capacity/memory/cleanup. Request fresh central lease when ready; no launches
+without grant. Only after full-set fit may a separate prepared native image be
+built; return capacity/runtime/host pins before performance lease request.
+No automatic fallback/limit/firmware changes, human review/publication deferred
+centrally, all work uncommitted. Current36.57FPS compact control unchanged;
+road/traffic/player/sky phase split remains missing. Root TODO owns next gates.
+
+Capacity fixture now builds locally: guest f57b978d..., same checked native
+module479fe1ac..., BSSend611140 below0xa0000. HOST-CHECK passes901wire recipes/
+6927full-domain lookups and preserves97control inputs/7archives-sources.
+Two fresh small/full fixtures prepared; no target run/capacity/FPS result yet.
+Central slot56ff79c3e643 queued via capacity/LEASE-REQUEST.json; mail
+2026-10-30_20-01-20_rally_golem057-rally-capacity-slot-ten supplies both planned
+profile paths, pins and3–8minute estimate. Await Golem grant before launch;
+small page/registration proof must pass before full901case. No Oryx contact or
+emulator launch occurred in this preparation; no commit/push. Native runtime
+candidate remains conditional on actual full fit and return to central review.
+
+AFF03 PREPARATION RETURNED2026-10-30: dispatch-five released host-only domain/
+error/ID/resource work; read prepared-bitmap-set/preparation/RESULTS.md under
+RALLY-28/custom-vdp. Full-domain6480traffic+447sign keys (both tracks); exact
+14.87MB pixels,1px5.44MB,2px2.21MB. Tables58,836/19,740/10,628B; allocator/live
+heap fit unmeasured. Two ordinary/UBSan full camera scans and6927actual-C image
+checks/192independent mask checks pass. Source errors/stepping exposed, no visual
+threshold accepted. Proposed packed private table returned before runtime code.
+Old native INFO stops17; stock var0210/0211+command48 supplies freePSRAM source
+route, not live qualification/largest-block query. Exact current compact source/
+guest/module/art/firmware unchanged, still36.57nominalMOS FPS; no new FPS/cache
+implementation/target allocation/Oryx/emulator/SDK/hardware/publication action.
+RootTODO owns AFF03-01/02review and later runtime gates. Preserve old contract/
+FREEZE and all archives; future Oryx use requires a fresh central grant.
+
+AFF03 CONTRACT PREPARED2026-10-30: Golem follow-on results-ack-four requested a
+bounded local prepared-image contract freeze before implementation. Read
+prepared-bitmap-set/CONTRACT-v1.md and FREEZE.json under RALLY-28/custom-vdp.
+Contract/pins/estimate returned in golem057-rally-prepared-contract-one; no set
+generation/build/emulator/implementation started. Preserve checked/compact
+defaults; exact/quantized error choice, full domain, packed lookup and measured
+RAM/IDs remain preparation findings. Await central review/dispatch. Human
+INC-001-05 moving review is scheduled centrally; no independent launch/nudge.
+
+GOLEM-057 RALLY RETURN2026-10-30: G057-RLY-001/INC-001-05 complete independent
+tranche; human moving review/publication pending. Read incremental/round-trips/
+RESULTS.md under RALLY-28/custom-vdp. Diagnostic33.09→compact36.57 nominal MOS
+FPS (+10.53%), PRT31.96→35.35 separately; both900frame pairs improve. All4full
+and2smoke raw audits pass; exact world/nonquery commands,27host faults, balanced
+leases. Same checked module479fe1ac... and common guest685f4b4c...; config switch
+only. Four intermediate reads consolidated into native publication validation;
+RUN errors/final render-swap fence retained. Save68outgoing/48incoming bytes per
+frame. Old qualified firmware/runtime/art/physics retained. Central lease
+f67ac234... explicitly released after fresh empty occupancy; boost1restored,
+max61°C/original95°C guard, bothSDLdummy/no emulators. Fresh STOPPED review:
+.emulator/rally28-hz60-rlyrtreview01-compact, audio dummy, live central author
+lease required before launch. New work uncommitted/no hardware or next scope.
+Before ANY Oryx emulator launch follow agon-dev-env/cross-agent/vdplet-rollout/
+README.md: central grant, live ownership assertion, single emulator including
+libraries/human review, teardown/fresh inspection/release. AFF03 stays separate.
+
+GOLEM COORDINATION AUTHORITY2026-10-30: Author explicitly authorizes sending
+Rally's saved GOLEM-056 response to Golem and says future Golem requests on this
+project may be considered the Author's requests. This is standing project
+coordination/delegation authority; preserve each request's actual scope and the
+existing silent-emulator requirements. Canonical mailbox carries substantive
+responses; short chat notifications may identify the delivered message. No
+commit/push or new experiment is requested by this authorization alone.
+
+AFF03 PROPOSED2026-10-30: Author asks to write a potential pre-generated
+multi-size bitmap collection experiment, then discuss other optimizations.
+Read docs/tasks/RALLY-28/custom-vdp/prepared-bitmap-set/PROPOSAL.md. Offline
+error/RAM selection and dense nearby sizes; original art loaded once and VDP
+preparation before racing, no generation during fully covered timed frames.
+Declare any near-cache/far-additive hybrid separately. Full-domain coverage,
+metadata/peak memory/startup cost, FPS-first fresh comparisons and Author moving
+review required. Root TODO owns proposed AFF03-01–05. Documentation only: no
+implementation/build/emulator/peer/hardware/publication release. Existing work,
+archives and stopped profiles remain unchanged.
+
+AFF02 RETURNED2026-10-30: prior dirt pushed a3a1ddc/059f1f7/fa7932d. New isolated
+full-race cache comparison: rebuild26.18/cached affine29.86/prepared bitmap29.74/
+accepted additive33.44 nominal MOS FPS; PRT25.30/28.86/28.74/32.31 separate. Read
+docs/tasks/RALLY-28/custom-vdp/affine-race/RESULTS.md and RAW-AUDIT.json. All8x900
+frames/3600ticks/exact5624replies each pass; timed UART identical352768B. Both
+caches cold on first timed frame, all generation/misses included. Last-image
+cache hits3000/misses1867; hits61.64%draws but16.82%pixel area, all263large draws
+miss. Larger multi-size cache untested. Keep accepted additive renderer; no new
+adoption. Ordinary/sanitized C host/command/cache/leases pass; captures300/301
+pixel-identical. One LOAD-only startup stall preserved; original7 successes kept
+and only missing control rerun. All original95°C guards, max63°C/boost1restored/
+no emulators; Oryx free. Fresh stopped affreview01-cached-affine/prepared-bitmap
+profiles, sound dummy; see HUMAN-REVIEW.md. New work uncommitted; Author moving
+review/publication pending. No hardware, firmware, game or scheduler change.
+RootTODO retains AFF02-04 and unresolved AFF01 physical timing. Old RACE-001-07
+and static drawing publication gates closed by the requested checkpoint push.
+
+AFF02 RELEASED2026-10-30: Author says commit/push any dirt, then do the complete-
+race caching analysis on Oryx. Prior dirt pushed as a3a1ddc/059f1f7/fa7932d. Read
+docs/tasks/RALLY-28/custom-vdp/affine-race/README.md. Actor-only matrix/pixel cache
+variants retain the actual full-race scene and prior runtime/firmware/guest.
+Silent guarded Oryx only; FPS first, generation/misses within timing. No hardware
+or firmware change. Return with new work uncommitted for visual review.
+
 AUTHOR METRIC REQUIREMENT2026-10-30: performance reports must lead with
 completed-frame FPS, frames/elapsed time and comparison versus control. Isolated
 microseconds or raw timer counts do not answer the game-framerate question.
