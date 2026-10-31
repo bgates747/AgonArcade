@@ -1,5 +1,84 @@
 # Standing emulator authorization —2026-10-14
 
+AUTHOR STARTUP RECOVERY RELEASE 2026-10-31: write task, commit/push all current
+dirt, then latest Flexe UART/CTS findings → isolated bounded original-control
+startup qualification → fresh matched HUD benchmark if startup passes. Read
+docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/PLAN.md;
+root TODO owns START-001-01–04 and HUD-001-03/04. Keep current HUD code fixed,
+preserve all old profiles/failures/unrun cases, identical startup/runtime in
+both fresh benchmark arms. Initial target diagnosis at most two specified
+processes; each frozen before new FIFO checkout, silent SDL drivers/original
+thermal/restore-boost/cleanup rules. No edits in peer projects or physical work.
+This direct release permits checkpoint publication despite prior review holds;
+it does not establish target/visual acceptance. Later new work stays uncommitted.
+
+HUD-001 ATTRIBUTION RETURN 2026-10-31: Golem witness-eightysix answered offline
+by canonical2026-10-31_15-15-55_rally_hud001-control-upload-attribution-one plus
+immediate chat notice. Read incremental/hud-format/ATTRIBUTION.md and
+ATTRIBUTION-PINS.json under docs/tasks/RALLY-28/custom-vdp.84readiness/103control/
+21failure pins reverify; no source edit/new run. Generation49 is original control
+on older custom8da2ebfd firmware/200f28cb adapter using stock command72, NOT
+maintained086/official stock firmware. One nativeLOAD, no RallyInit/Render.
+224661B/9-of-11recolor args differs from generation28's233974B/377-of-2048pixel
+payload. No CTS/consumption/cause or6502-equivalence claim. Existing gates remain.
+
+HUD-001 FIRST TARGET RETURN 2026-10-31: read incremental/hud-format/RESULTS.md
+under docs/tasks/RALLY-28/custom-vdp and FAILED-STARTUP-AUDIT.json. First unchanged
+control685f4b4c... smoke stalls at60hostsecond UART guard before Init/warm/race;
+cached smoke/four full cases UNRUN. No FPS/retry/source repair. LOADtoken1handle1
+exact; outbound224661B = complete149554Bassets plus39772/58780Bart prefix after
+184889. Ends9/11B through original command72dest64008/source64003/map63960, missing
+two map-ID bytes; host enqueue != firmware consumption, exactcause/quiettime open.
+84readiness/103oldcontrol pins exact. Session67.897hostsec/max63°C/original95guard/
+bothSDLdummy/boost1restored1. Raw retrieved/freshwholehostempty/explicitcheckout49
+release BEFORE analysis; nextagon-6502request543ca7e88e76 notified immediately in
+verified-idle existing chat (new turn, no active-turn queue). Full-success audit
+unchanged; separate failed-startup audit passes. HUD-001-01/02 code/host done,
+03/04target/FPS/human gates open for new bounded contract. Stopped review is NOT
+cleared for launch. New code/research remain uncommitted, no cache adoption or
+firmware/SDK/hardware change. Mail read has no newer Golem transport contract.
+
+HUD-001 RELEASE/READINESS 2026-10-31: Author says "alright, go" to shared HUD/footer
+format caching, exact-output checks and matched silent Oryx benchmarking. Read
+custom-vdp/incremental/hud-format/PLAN.md under docs/tasks/RALLY-28. Standard game
+build passes empty startup tables/release checks; separate cached guestc6d75022...
+retains native479fe1ac.../firmware8da2ebfd... and all asset/motion/physics/fences.
+12,932 actual-function host comparisons per ordinary/sanitized/development build
+pass exact bytes/both-page cells; race formatting7200→2645calls. 103oldcontrol/
+archive inputs exact; live game presentation edit is explicitly released.
+Six fresh silent profiles frozen before FIFO request5c6fe3061222, HUD-001; smoke
+control/cached then900frame control/cached and reverse, first failure stops.
+No launch before fresh idle/checkout/assert; no Golem scheduling grant needed.
+New code/research remain uncommitted; human moving review/publication/hardware
+gates remain. No other arithmetic, graphics or scheduler change is released.
+
+ORYX SCHEDULING UPDATE 2026-10-31: follow the canonical
+/Agon/mystuff/agon-dev-env/cross-agent/vdplet-rollout/README.md. Scheduling is
+self-service FIFO in its shared Pi state; Golem scheduling grants are retired.
+Prepare a finite tranche, reserve with this chat's contact details, then check out
+only when first and fresh whole-host inspection proves idle. Assert the checkout
+before each emulator process. Retrieve results, stop owned processes, inspect
+again and release before lengthy analysis; immediately steer the returned next
+agent's existing chat, or record delivery failure and tell the Author. Human GUI
+reviews use Rally as custodian and the Author launches. Existing test scope and
+silent unattended-run requirements still apply; no project-local queue.
+
+COST-001 OFFLINE RETURN 2026-10-31: prior dirt/scope pushed in four groups through
+2ac6a32. Read docs/tasks/RALLY-28/research/phase-cost/RESULTS.md, PHASE-MAP.md,
+ASSEMBLY-REVIEW.md and TIMING-CONTRACT.md. COST-001-01–04 complete in dated log;
+new research remains uncommitted. 163 input hashes/97 frozen controls/7 protected
+archives-sources and static assembly call counts pass; unchanged guest assembly
+emitted only, no binary replacement. Current reference remains36.1930 nominal
+MOS FPS/900frames/24.8667sec; PRT34.9610 separately, no new FPS measurement.
+Existing phase fields overlap. Mode136 ordinary primitives execute inline; stock
+swap waits for VSync. HUD/footer formats eight strings/frame before retained-cell
+suppression; fixture wraps call eight wide remainder helpers/frame. Shared HUD
+format caching is the proposed first follow-up, not an implementation release.
+Timing hooks need a private admitted diagnostic; accepted module has504B text
+headroom. Five stock graphics inputs exact; changed shared vdu_buffered.h recovered
+from pinned upstream Git into this audit only. No Oryx/contact/lease/emulator/
+peer/game/firmware/qualifiedfixture change, no AFF03 retry/adoption or later run.
+
 AUTHOR OFFLINE RELEASE2026-10-31: write bounded COST-001 plan, commit/push all
 current dirt in logical groups, then phase-map/timing-hook/assembly/ranking audit.
 Read docs/tasks/RALLY-28/research/phase-cost/PLAN.md; rootTODO owns COST-001-01–04.

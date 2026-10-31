@@ -2,15 +2,45 @@
 
 Research cheaper arithmetic, geometry and drawing for both Rally implementations. Apply the research first to the standard-VDP game, where pseudo3D computation runs on eZ80; then to the custom-VDP game using Golem/VDPlets. RALLY-28 owns the entire effort: shared findings, separate application work and independent acceptance evidence for both versions. The Author requests one task with separate code areas and the standard version first. Author's2026-10-14 “go” released the first hot-loop research item: completed review below. No candidate implementation, benchmark, emulator run or publication release is inferred.
 
-## Current offline phase-cost audit — released2026-10-31
+## Startup recovery — released2026-10-31
 
-Author releases [COST-001](RALLY-28/research/phase-cost/PLAN.md): write scope,
-checkpoint/push all prior dirt, then map the current full-race processor/drawing
-boundaries, design completion-safe phase timers, inspect unchanged generated
-assembly and rank the next experiments. No emulator, Oryx, product/fixture or
-firmware change. Existing36.1930nominal MOS FPS compact reference is not a new
-audit measurement. Root TODO owns COST-001-01–04; new findings return uncommitted.
-AFF03 partial-cohort disposition remains preserved and supplies no cache adoption.
+The Author releases [START-001](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/PLAN.md):
+write scope, checkpoint/push all dirt, review current Flexe transport findings,
+qualify original setup in an isolated bounded silent tranche, then resume a fresh
+matched HUD cohort if setup succeeds. Keep HUD code fixed and startup/runtime
+treatment identical in both arms. Existing failures/unrun profiles remain exact;
+root TODO owns START-001-01–04 and the pending HUD target/human gates. Explicit
+checkpoint publication is authorized; new post-checkpoint work stays uncommitted.
+
+## Shared HUD string cache — implemented, first benchmark attempt stopped2026-10-31
+
+The Author released [HUD-001](RALLY-28/custom-vdp/incremental/hud-format/PLAN.md).
+The standard game and isolated native-fixture candidate cache unchanged formatted
+HUD/footer values while preserving all drawing and page retention. Both compile;
+ordinary/sanitized/development host runs each pass12,932 actual-function byte/cell
+comparisons. Race formatting7,200→2,645calls is a work count, not an FPS gain.
+[Code findings](RALLY-28/custom-vdp/incremental/hud-format/CODE-REVIEW.md).
+The first unchanged-control smoke stopped in original artwork setup before any
+race frame. Cached smoke/four full tests UNRUN; no new FPS/retry. [Failure return](RALLY-28/custom-vdp/incremental/hud-format/RESULTS.md)
+and independent raw audit preserve the exact command72 prefix and all84readiness/
+103control pins. Oryx checkout49retrieved/released before analysis, next agent
+immediately notified, boost1restored/max63°C/bothSDLdummy. HUD-001-01/02complete
+in dated log;03/04remain for a new bounded startup/benchmark contract and target/
+human gates. Review profile stopped, not cleared. All research/code uncommitted;
+native renderer/firmware/physics/assets unchanged.
+
+## Current offline phase-cost audit — returned2026-10-31
+
+[COST-001 results](RALLY-28/research/phase-cost/RESULTS.md) complete the phase map,
+completion-safe timing design, unchanged-source generated assembly review and
+ranked follow-ups. All prior dirt/scope pushed through2ac6a32; new audit work is
+uncommitted. No emulator, Oryx, product/fixture or firmware change. Existing
+36.1930nominal MOS FPS/900frames/24.8667sec is not a new measurement; PRT34.9610
+separate. Eight HUD/footer formats and eight fixture wide remainders recur per
+frame; shared HUD formatted-value caching is the first proposal. Current phase
+fields overlap; pinned mode136 ordinary plots execute inline, swap waits for
+VSync. COST-001-01–04 completed in the dated log and removed from root TODO.
+AFF03 partial disposition stays preserved; no new implementation/test release.
 
 ## Per-frame serial synchronization — released2026-10-30
 
