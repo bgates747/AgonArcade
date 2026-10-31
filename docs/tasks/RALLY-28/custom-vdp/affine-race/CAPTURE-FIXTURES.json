@@ -1,0 +1,122 @@
+{
+  "rebuild300": {
+    "directory": "captures/fixtures/rebuild300",
+    "files": {
+      "module.vdu": "c841d1d29b32dc94c6a75bc7b0f237e142ae29897c060f18558f5ef382bdcd9d",
+      "expected.json": "79e46922e872aad4a4d9dc53529ba7ad3dbbeae9210325451919de8399a70a38",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "capture.req": "db6b4af93720537547402616d3f348f85bfd781e4b51c2e0987cda5072c71339",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "config.bin": "3a2d79a64a89419c8c805515393cdde51944eed4bf654939c8503d9763936f22",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "expected_capture_ready": {
+      "schema": 1,
+      "timing_excluded": true,
+      "stage": 0,
+      "frame": 300,
+      "generation": 1503,
+      "request": 302,
+      "physics_ticks": 1200,
+      "post_swap_fenced": true
+    }
+  },
+  "rebuild301": {
+    "directory": "captures/fixtures/rebuild301",
+    "files": {
+      "module.vdu": "c841d1d29b32dc94c6a75bc7b0f237e142ae29897c060f18558f5ef382bdcd9d",
+      "expected.json": "604760a87c7cc5e11dd610b7b58b9c999559d0a9b557f255406d3bfbb1b9c94f",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "capture.req": "a062f5c5d61956e6196d7733ddf23abe190d5574432cab337e896b3f7d2415ab",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "config.bin": "3a2d79a64a89419c8c805515393cdde51944eed4bf654939c8503d9763936f22",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "expected_capture_ready": {
+      "schema": 1,
+      "timing_excluded": true,
+      "stage": 0,
+      "frame": 301,
+      "generation": 1508,
+      "request": 303,
+      "physics_ticks": 1204,
+      "post_swap_fenced": true
+    }
+  },
+  "prepared-bitmap300": {
+    "directory": "captures/fixtures/prepared-bitmap300",
+    "files": {
+      "module.vdu": "f3213f36cd8b534578d28470957d1b761b5e82feaf7808f6c20a23c18c18b459",
+      "expected.json": "08429476a471b17d7f5b516c22000c34a6ae2a00cc587b42af2d9fa073c882e0",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "capture.req": "db6b4af93720537547402616d3f348f85bfd781e4b51c2e0987cda5072c71339",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "config.bin": "516b8210f3022e0cbd36282e0a960a2a991d9cea3eb65fc38c8252d306845bdb",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "371e112f6ff1645cc51d7de48474bf6803861ebd381f747f584120ba0431633c",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "expected_capture_ready": {
+      "schema": 1,
+      "timing_excluded": true,
+      "stage": 0,
+      "frame": 300,
+      "generation": 1503,
+      "request": 302,
+      "physics_ticks": 1200,
+      "post_swap_fenced": true
+    }
+  },
+  "prepared-bitmap301": {
+    "directory": "captures/fixtures/prepared-bitmap301",
+    "files": {
+      "module.vdu": "f3213f36cd8b534578d28470957d1b761b5e82feaf7808f6c20a23c18c18b459",
+      "expected.json": "066ac0b131f9182d418d49396913aa873e7d9b2fb1d9e6c78a5c5286a05f8e9f",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "capture.req": "a062f5c5d61956e6196d7733ddf23abe190d5574432cab337e896b3f7d2415ab",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "config.bin": "516b8210f3022e0cbd36282e0a960a2a991d9cea3eb65fc38c8252d306845bdb",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "371e112f6ff1645cc51d7de48474bf6803861ebd381f747f584120ba0431633c",
+    "diagnostic": true,
+    "foreground_paced": false,
+    "expected_capture_ready": {
+      "schema": 1,
+      "timing_excluded": true,
+      "stage": 0,
+      "frame": 301,
+      "generation": 1508,
+      "request": 303,
+      "physics_ticks": 1204,
+      "post_swap_fenced": true
+    }
+  }
+}

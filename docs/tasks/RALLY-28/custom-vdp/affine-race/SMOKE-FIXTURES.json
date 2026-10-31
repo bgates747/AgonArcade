@@ -1,0 +1,78 @@
+{
+  "rebuild": {
+    "directory": "fixtures-smoke60/rebuild",
+    "files": {
+      "module.vdu": "c841d1d29b32dc94c6a75bc7b0f237e142ae29897c060f18558f5ef382bdcd9d",
+      "expected.json": "42c3604c4448a45f445a23877636e3a8398f75a96f8b0f89aa2ba3ad1f5d02de",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "config.bin": "158f000190acda1a6e998200676e5eeb24e1f53f4e421e863c1ad1a4b536271f",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "d178334e4d4beb8a3df326e70ffabae87ff16d0a193b972be15ac3078d1ca4bb",
+    "diagnostic": false,
+    "foreground_paced": false
+  },
+  "cached-affine": {
+    "directory": "fixtures-smoke60/cached-affine",
+    "files": {
+      "module.vdu": "0a375e49ebf0aca9e85e44f1160f58bd0546021653b055334bb50a937ae6d938",
+      "expected.json": "88844286c577820c9b5028991e594c87d2d42829efe6f8cff33263d209a3ddfb",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "config.bin": "a69855f59e179ad8f830633eef92bbeeed75426bd3dba4acc52c48eae7acf353",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "257eb8c7f33b272fd40ae3fd1fef44eb48ab7d9615c9454f8c04f82ea9b0fbd9",
+    "diagnostic": false,
+    "foreground_paced": false
+  },
+  "prepared-bitmap": {
+    "directory": "fixtures-smoke60/prepared-bitmap",
+    "files": {
+      "module.vdu": "f3213f36cd8b534578d28470957d1b761b5e82feaf7808f6c20a23c18c18b459",
+      "expected.json": "91d6a4622fb739de6e986fbd75c96e1bf34b9fb3113d09f786b9760587ebb0a3",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "native.vdu": "911f0067cb200f951841a52278ae1bc5a84de58618c08cde5f2beaf989c1bc78",
+      "config.bin": "9dc08f88a2757169c9e36e0943ca96b011f518d04d49a2e24d87847329e5661a",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "371e112f6ff1645cc51d7de48474bf6803861ebd381f747f584120ba0431633c",
+    "diagnostic": false,
+    "foreground_paced": false
+  },
+  "additive": {
+    "directory": "fixtures-smoke60/additive",
+    "files": {
+      "module.vdu": "0a1fbfa3e7a7ca7858e3219a36bc83868ffb822f86694d62f0a58e1896e3ae11",
+      "expected.json": "ee3bb069901b18a65083481cde87783b2b9ba84d6a75d848361dbc6216ca1bbb",
+      "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+      "probe.bin": "33116db786ef08033a3c5aa3404a7d5ed8411013af9b70ac27051ddd1ade53e9",
+      "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+      "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+      "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+      "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+      "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+      "config.bin": "56a6a50311204c725152ea877f10b86cf1cdcc76761598bc3c73935502307593",
+      "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "module_sha256": "310779643769adde8413b93ea282115990dfebfe873e3395ac5545ac9d506702",
+    "diagnostic": false,
+    "foreground_paced": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "mode": "ordinary",
+  "frames": 900,
+  "physics_ticks": 3600,
+  "warm_frames": 2,
+  "full_final_state_exact": true,
+  "original_actor_plans_exact": true,
+  "road_pixels_and_player_commands_exact": true,
+  "cache_oracles_exact": true,
+  "cold_first_timed_frame": true,
+  "cache_counts": {
+    "cached-affine": {
+      "draws": 4867,
+      "matrix_hits": 3129,
+      "matrix_misses": 1738,
+      "bitmap_hits": 0,
+      "bitmap_misses": 0,
+      "generated_pixels": 0,
+      "logical_peak_retained_pixels": 0
+    },
+    "prepared-bitmap": {
+      "draws": 4867,
+      "matrix_hits": 129,
+      "matrix_misses": 1738,
+      "bitmap_hits": 3000,
+      "bitmap_misses": 1867,
+      "generated_pixels": 1717661,
+      "logical_peak_retained_pixels": 22400
+    }
+  },
+  "max_actor_command_bytes": {
+    "rebuild": 350,
+    "cached-affine": 279,
+    "prepared-bitmap": 348,
+    "additive": 348
+  },
+  "road_sha256": "9260999ef4a0c648c3048b2a5e69b01f744ca35254df2a0279e86968b7dc4f6b",
+  "four_lease_limit": 4,
+  "target_cache_counts_are_host_replay_not_target_telemetry": true
+}

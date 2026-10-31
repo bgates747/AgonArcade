@@ -1,0 +1,50 @@
+{
+  "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0",
+  "abi_header_sha256": "fa8385e2906f07d37372d80c40f73d419defdbefe7a3458461ac9d5fe0820d38",
+  "module": {
+    "name": "rally-render",
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-race/.work/packages/prepared-bitmap/native.c",
+    "source_sha256": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992",
+    "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+    "declared_limits": {
+      "text": 32768,
+      "data": 4096,
+      "stack": 2048,
+      "image": 65536
+    },
+    "build_id": "0x52384132",
+    "capabilities": 1,
+    "envelope_bytes": 64,
+    "elf_bytes": 34196,
+    "package_bytes": 34260,
+    "sha256": "371e112f6ff1645cc51d7de48474bf6803861ebd381f747f584120ba0431633c",
+    "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-race/.work/targets/prepared-bitmap/rally-render.vdpl",
+    "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/affine-race/.work/targets/prepared-bitmap/rally-render.elf",
+    "entry_virtual": 9304,
+    "resident_text_bytes": 31588,
+    "resident_data_bytes": 1364,
+    "relative_relocations": 48,
+    "allocated_sections": {
+      ".text": {
+        "virtual_address": 884,
+        "bytes": 31588,
+        "type": 1
+      },
+      ".rodata": {
+        "virtual_address": 32472,
+        "bytes": 460,
+        "type": 1
+      },
+      ".data": {
+        "virtual_address": 37280,
+        "bytes": 544,
+        "type": 1
+      },
+      ".bss": {
+        "virtual_address": 37824,
+        "bytes": 360,
+        "type": 8
+      }
+    }
+  }
+}

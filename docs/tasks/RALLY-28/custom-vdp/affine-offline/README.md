@@ -88,3 +88,5 @@ and `expected.json`. They use **official stock VDP 2.16.0**, with no Golem modul
 or custom firmware. Loading/asset setup, warm operations and marker readback are
 outside the repeated timed bodies. The page stays hidden during timing; this
 is a data-producing diagnostic, not a visual race review or playable game.
+
+**Complete-race follow-up returned:** [AFF02 results](../affine-race/RESULTS.md) now compare actual FPS. This supplies the previously missing full-race result for the tested eight-slot policy; original isolated measurements remain preserved.
