@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "scope": "One failed original-control startup; no timed race/FPS qualification",
+  "qualified_for_timing": false,
+  "new_game_fps": null,
+  "session": {
+    "name": "hudsession01",
+    "campaigns": [
+      "hudsmoke01",
+      "hudab01",
+      "hudba01"
+    ],
+    "completed": [],
+    "host_boot_id": "65510f5f-b995-44d0-b8ef-bedbd28d5f99",
+    "original_boost": "1",
+    "final_boost": "1",
+    "boost_restored": true,
+    "maximum_celsius": 63.0,
+    "thermal_stop_celsius": 95,
+    "video_driver": "dummy",
+    "audio_driver": "dummy",
+    "owned_emulators_stopped": true,
+    "source_session_error": "TimeoutError('UART streams unchanged for60 host seconds; preserve failure; no automatic retry in this tranche')",
+    "whole_session_complete": false,
+    "whole_session_required_complete": false,
+    "external_boost_abort_tail": null
+  },
+  "raw": {
+    "evidence_directory": "evidence/hudsmoke01/control",
+    "raw_file_sha256": {
+      "esp32-uart0.txt": "5bb387f77f6d187bd87fb73ae25b3cae85d34b1634891a26f14723b9ace2b5d2",
+      "final.ppm": "12c810bd25efe1a7484387cd3d5a8503ce7cc341d61768b99a85c39a0ecca884",
+      "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+      "mos-to-vdp.bin": "da97a4d4afb58a2fb101f36ab49bd12fd99e0c28aecec7d5ed8820fb68ee92ce",
+      "run.json": "6a610ad002aac2e798a8b623ebfb67d9ce123c6b633feb7eb0d423f38bbad1ce",
+      "stats.json": "3e857cfa1d1c0a813f46e41718a87eed9507da7c3eebeec107c6d607a5102b55",
+      "vdp-to-mos-delivered.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3",
+      "vdp-to-mos.bin": "b19015eb9719d772551b21e8274ae397a1a0809c21b1daefcab10fb1837e50e3"
+    },
+    "qualified_for_timing": false,
+    "outbound_bytes": 224661,
+    "inbound_bytes": 345,
+    "multiplexed_packets_complete": true,
+    "generic_return_packets": 103,
+    "native_reply_count": 1,
+    "last_native_reply": {
+      "kind": 2,
+      "token": 1,
+      "value": 1
+    },
+    "native_error_callbacks": [],
+    "original_error": "TimeoutError('UART streams unchanged for60 host seconds; preserve failure; no automatic retry in this tranche')"
+  },
+  "startup_original_control_exact": true,
+  "completed_native_load_reply": true,
+  "native_init_request_absent": true,
+  "warm_and_timed_requests_absent": true,
+  "original_assets": {
+    "offset": 35335,
+    "complete_bytes": 149554
+  },
+  "original_artwork": {
+    "offset": 184889,
+    "expected_bytes": 58780,
+    "captured_prefix_bytes": 39772,
+    "missing_bytes": 19008,
+    "last_partial_command": {
+      "art_offset": 39763,
+      "absolute_uart_offset": 224652,
+      "destination": 64008,
+      "opcode": 72,
+      "source": 64003,
+      "map_buffer": 63960,
+      "expected_bytes": 11,
+      "captured_bytes": 9,
+      "missing_suffix_hex": "d8f9"
+    }
+  },
+  "delivery_limit": "Outgoing trace and uart_rx account host-enqueued bytes; not firmware-consumption proof. Exact cause and expected quiet time unqualified.",
+  "failed_runs": [
+    "hudsmoke01/control"
+  ],
+  "unrun": [
+    "hudsmoke01/cached",
+    "hudab01/control",
+    "hudab01/cached",
+    "hudba01/cached",
+    "hudba01/control"
+  ],
+  "original_readiness_files_unchanged": 84,
+  "preserved_control_inputs": 103,
+  "host_cleanup_verified": true,
+  "guest_cleanup_verified": false,
+  "explicit_checkout_released": true,
+  "handoff": {
+    "next_request": "543ca7e88e76",
+    "threadId": "01a1147a-c6cf-7b42-b6cd-336c8b762c8e",
+    "hostId": "remote-ssh-discovered:raspberrypi",
+    "pre_send_status": {
+      "type": "idle"
+    },
+    "delivery": "Immediate prompt to verified-idle existing chat; no active-turn queue used. Exposed interface has no active-turn steer parameter.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"threadId\":\"01a1147a-c6cf-7b42-b6cd-336c8b762c8e\"}"
+        }
+      ],
+      "isError": false
+    }
+  }
+}

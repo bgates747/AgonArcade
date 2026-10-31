@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "comparisons": 12932,
+  "race_frames": 900,
+  "race_reference_format_calls": 7200,
+  "race_cached_format_calls": 2645,
+  "exact_emitted_bytes_and_both_page_cells": true,
+  "compiler_command": [
+    "c++",
+    "-std=c++17",
+    "-O1",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-unused-variable",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-I/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/.work/host",
+    "-I/Agon/mystuff/AgonArcade/rally-game/include",
+    "-I/Agon/mystuff/AgonArcade/rally-production/include",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/host_test.cpp",
+    "-o",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/.work/host/sanitized"
+  ],
+  "input_sha256": {
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/host_test.cpp": "f3581c6880f1f0961f5d2d0d87a7b1a2d69a03db7947ef389f1f156756d2258a",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/.work/host/reference.inc": "bc9c4591f3f565f7884501a67b9953466b1526959b8fb028e0718de9a8da441f",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/.work/host/candidate.inc": "8055d02338c0f8641ba2047e6aebfa1513b169b96feb9776ccdc48a4afd7db12",
+    "/Agon/mystuff/AgonArcade/rally-game/include/hud_format.hpp": "1abac7f26473a3eb85802b289a966b0a63eae4fb6ed75526b3487ee124e25512"
+  },
+  "leak_sanitizer": "disabled under ptrace; address/undefined enabled"
+}

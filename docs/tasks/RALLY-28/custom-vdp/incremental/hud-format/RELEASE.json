@@ -1,0 +1,34 @@
+{
+  "owner": "rally",
+  "task": "HUD-001",
+  "purpose": "Six frozen silent HUD runs: smoke control/cached, then900frame control/cached and cached/control; first failure stops; retrieve/cleanup/release",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hudsmoke01-control",
+  "notify_thread": "01a1346d-a74a-7211-b5b7-de3bcb8a28e5",
+  "notify_host": "remote-ssh-discovered:raspberrypi",
+  "request": "5c6fe3061222",
+  "requested": "2026-10-31T18:53:25.842421+00:00",
+  "lease": "c360828d235f458c9248434f82ed739e",
+  "generation": 49,
+  "checked_out": "2026-10-31T19:00:33.369578+00:00",
+  "idle_observation": {
+    "machine": "oryx-linuxlite",
+    "epoch": 1793473229.83171,
+    "emulators": []
+  },
+  "released": "2026-10-31T19:02:37.837458+00:00",
+  "release_observation": {
+    "machine": "oryx-linuxlite",
+    "epoch": 1793473355.795428,
+    "emulators": []
+  },
+  "next_request": {
+    "owner": "agon-6502",
+    "task": "VDP-005-017-016-006-r01",
+    "purpose": "Frozen single full-MOS JIT chooser/F5/SAVE/reload/reset/exit test;900s plus30normalquit, first failure stops; pins unchanged",
+    "profile": "/home/smith/Agon/mystuff/agon-6502/.emulator/tests/vdp005-desktop21-mos-jit-r01",
+    "notify_thread": "01a1147a-c6cf-7b42-b6cd-336c8b762c8e",
+    "notify_host": "remote-ssh-discovered:raspberrypi",
+    "request": "543ca7e88e76",
+    "requested": "2026-10-31T18:56:34.351807+00:00"
+  }
+}

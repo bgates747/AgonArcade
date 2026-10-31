@@ -5,6 +5,7 @@
 #include "signs.hpp"
 #include "signs_data.hpp"
 #include "hud.hpp"
+#include "hud_format.hpp"
 #include "font_data.hpp"
 #include "controls.hpp"
 #include "engine.hpp"
@@ -63,6 +64,7 @@ Crash crash;
 Billboards billboards;
 uint32_t attractProgress=0;
 Hud hud;
+HudFormat hudFormat;
 Engine engine;
 const rally::TrackDef *selected=&rally::TriOval;
 bool muted=false,inputArmed=false,quit=false;
@@ -236,21 +238,27 @@ void clockText(char *out,unsigned size,uint32_t ticks) {
              (unsigned long)(hundredths/100%60),(unsigned long)(hundredths%100));
 }
 void drawHud(uint32_t interval) {
-    HudImage image;char value[48],time[20];
+    HudImage image;
     const bool active=driving(rules.phase) || result(rules.phase) || rules.phase==Phase::Qualified;
     const auto &record=records.entries[Records::key(selected==&rally::Fuji,rules.policy==Policy::Arcade,
         steeringStep,active?rules.maxGrip:motion.grip)];
     topScore=record.score;
-    snprintf(value,sizeof(value),"TOP %07lu",(unsigned long)topScore);image.put(0,0,value,11);
-    snprintf(value,sizeof(value),"TIME %03lu",(unsigned long)((rules.remaining+Hz-1)/Hz));image.put(14,0,value,11);
-    clockText(time,sizeof(time),driving(rules.phase)?rules.elapsed-rules.lapBegin:rules.lapTime);
-    snprintf(value,sizeof(value),"LAP %s",time);image.put(25,0,value,15);
-    snprintf(value,sizeof(value),"SCORE %07lu",(unsigned long)rules.score);image.put(0,1,value);
-    snprintf(value,sizeof(value),"SPEED %03ld",(long)motion.speed);image.put(16,1,value);
+    image.put(0,0,hudFormat.top.get(topScore,"TOP %07lu",(unsigned long)topScore),11);
+    const uint32_t seconds=(rules.remaining+Hz-1)/Hz;
+    image.put(14,0,hudFormat.countdown.get(seconds,"TIME %03lu",(unsigned long)seconds),11);
+    const uint32_t lapTicks=driving(rules.phase)?rules.elapsed-rules.lapBegin:rules.lapTime;
+    if(hudFormat.lap.changed(lapTicks)) {
+        char time[20];clockText(time,sizeof(time),lapTicks);
+        hudFormat.lap.get(lapTicks,"LAP %s",time);
+    }
+    image.put(25,0,hudFormat.lap.text,15);
+    image.put(0,1,hudFormat.score.get(rules.score,"SCORE %07lu",(unsigned long)rules.score));
+    image.put(16,1,hudFormat.speed.get(uint32_t(motion.speed),"SPEED %03ld",(long)motion.speed));
     if(rules.policy==Policy::Circuit && (rules.phase==Phase::Race || rules.phase==Phase::Finished || rules.phase==Phase::TimeUp)) {
-        snprintf(value,sizeof(value),"POS %d/7",rules.rank);image.put(30,1,value,11);
+        image.put(30,1,hudFormat.rank.get(rules.rank,"POS %d/7",rules.rank),11);
     }
 #ifdef RALLY_DEVELOPMENT
+    char value[48];
     snprintf(value,sizeof(value),"W%+03d G%03d%% %s DT%02lu B%02u C%u S%u",motion.steering,
              motion.grip,motion.surfaceName(),(unsigned long)interval,road.bands,scene.cars,steeringStep);
     image.put(0,2,value,14);
@@ -296,8 +304,10 @@ void bottom() {
     if(rules.phase==Phase::Attract)text(2,28,"ARROWS DRIVE   -= GRIP   M MUTE",15,0);
     else if(rules.phase==Phase::Qualify)text(1,28,"QUALIFYING LAP",11,0);
     else if(rules.phase==Phase::Race) {
-        char s[40];snprintf(s,sizeof(s),"%s  LAP %u/%u",rules.policy==Policy::Circuit?"RACE":"ARCADE",
-            unsigned(rules.laps+1),unsigned(rules.settings.laps));text(1,28,s,15,0);
+        const uint32_t key=uint32_t(rules.laps)|(uint32_t(rules.settings.laps)<<8)|
+                           (uint32_t(rules.policy==Policy::Circuit)<<16);
+        text(1,28,hudFormat.footer.get(key,"%s  LAP %u/%u",rules.policy==Policy::Circuit?"RACE":"ARCADE",
+            unsigned(rules.laps+1),unsigned(rules.settings.laps)),15,0);
         if(rules.extensionNotice)text(23,28,"TIME EXTENDED!",11,0);
     }
 }
