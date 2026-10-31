@@ -1,0 +1,3387 @@
+{
+  "__ZN2fs3nowEv": {
+    "line": 5,
+    "calls": [
+      {
+        "line": 9,
+        "target": "__frameset"
+      },
+      {
+        "line": 10,
+        "target": "_mos_sysvars"
+      },
+      {
+        "line": 27,
+        "target": "__lcmpu"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__lcmpu": 1,
+      "_mos_sysvars": 1
+    }
+  },
+  "__ZN2fs5timerEv": {
+    "line": 38,
+    "calls": [
+      {
+        "line": 48,
+        "target": "_timing_ticks"
+      }
+    ],
+    "static_call_counts": {
+      "_timing_ticks": 1
+    }
+  },
+  "__ZN2fs10differenceEmm": {
+    "line": 58,
+    "calls": [
+      {
+        "line": 61,
+        "target": "__frameset0"
+      },
+      {
+        "line": 68,
+        "target": "__lsub"
+      },
+      {
+        "line": 71,
+        "target": "__land"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1,
+      "__land": 1,
+      "__lsub": 1
+    }
+  },
+  "__ZN2fs4failEPKc": {
+    "line": 79,
+    "calls": [
+      {
+        "line": 82,
+        "target": "__frameset0"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1
+    }
+  },
+  "__ZN2fs5put16EPht": {
+    "line": 101,
+    "calls": [
+      {
+        "line": 104,
+        "target": "__frameset0"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1
+    }
+  },
+  "__ZN2fs5put32EPhm": {
+    "line": 118,
+    "calls": [
+      {
+        "line": 121,
+        "target": "__frameset0"
+      },
+      {
+        "line": 133,
+        "target": "__lshru"
+      },
+      {
+        "line": 140,
+        "target": "__lshru"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1,
+      "__lshru": 2
+    }
+  },
+  "__ZN2fs5get16EPKh": {
+    "line": 150,
+    "calls": [
+      {
+        "line": 153,
+        "target": "__frameset0"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1
+    }
+  },
+  "__ZN2fs5get32EPKh": {
+    "line": 169,
+    "calls": [
+      {
+        "line": 173,
+        "target": "__frameset"
+      },
+      {
+        "line": 199,
+        "target": "__lshl"
+      },
+      {
+        "line": 206,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__ladd": 1,
+      "__lshl": 1
+    }
+  },
+  "__ZN2fs4sendEPKhj": {
+    "line": 215,
+    "calls": [
+      {
+        "line": 219,
+        "target": "__frameset"
+      },
+      {
+        "line": 226,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 236,
+        "target": "_mos_puts"
+      },
+      {
+        "line": 240,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 243,
+        "target": "__lsub"
+      },
+      {
+        "line": 246,
+        "target": "__land"
+      },
+      {
+        "line": 251,
+        "target": "__ladd"
+      },
+      {
+        "line": 261,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs5timerEv": 2,
+      "__frameset": 1,
+      "__ladd": 2,
+      "__land": 1,
+      "__lsub": 1,
+      "_mos_puts": 1
+    }
+  },
+  "__ZN2fs7commandEth": {
+    "line": 275,
+    "calls": [
+      {
+        "line": 279,
+        "target": "__frameset"
+      },
+      {
+        "line": 293,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "__ZN2fs6updateEttPKhj": {
+    "line": 302,
+    "calls": [
+      {
+        "line": 306,
+        "target": "__frameset"
+      },
+      {
+        "line": 311,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 328,
+        "target": "__ZN2fs4sendEPKhj"
+      },
+      {
+        "line": 335,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 2,
+      "__ZN2fs7commandEth": 1,
+      "__frameset": 1
+    }
+  },
+  "__ZN2fs5set16Ettt": {
+    "line": 344,
+    "calls": [
+      {
+        "line": 348,
+        "target": "__frameset"
+      },
+      {
+        "line": 361,
+        "target": "__ZN2fs6updateEttPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs6updateEttPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "__ZN2fs5set32Ettm": {
+    "line": 370,
+    "calls": [
+      {
+        "line": 374,
+        "target": "__frameset"
+      },
+      {
+        "line": 386,
+        "target": "__lshru"
+      },
+      {
+        "line": 393,
+        "target": "__lshru"
+      },
+      {
+        "line": 402,
+        "target": "__ZN2fs6updateEttPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs6updateEttPKhj": 1,
+      "__frameset": 1,
+      "__lshru": 2
+    }
+  },
+  "__ZN2fs11transactionEhPKhjh": {
+    "line": 411,
+    "calls": [
+      {
+        "line": 415,
+        "target": "__frameset"
+      },
+      {
+        "line": 468,
+        "target": "_memcpy"
+      },
+      {
+        "line": 483,
+        "target": "__ZN2fs4sendEPKhj"
+      },
+      {
+        "line": 486,
+        "target": "__ZN2fs3nowEv"
+      },
+      {
+        "line": 489,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 498,
+        "target": "__ZN2fs3nowEv"
+      },
+      {
+        "line": 501,
+        "target": "__lsub"
+      },
+      {
+        "line": 508,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 526,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 529,
+        "target": "__lsub"
+      },
+      {
+        "line": 533,
+        "target": "__land"
+      },
+      {
+        "line": 538,
+        "target": "__ladd"
+      },
+      {
+        "line": 582,
+        "target": "__ishl"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs3nowEv": 2,
+      "__ZN2fs4sendEPKhj": 1,
+      "__ZN2fs5timerEv": 2,
+      "__frameset": 1,
+      "__ishl": 1,
+      "__ladd": 1,
+      "__land": 1,
+      "__lcmpu": 1,
+      "__lsub": 2,
+      "_memcpy": 1
+    }
+  },
+  "__ZN2fs6read16Etm": {
+    "line": 682,
+    "calls": [
+      {
+        "line": 686,
+        "target": "__frameset"
+      },
+      {
+        "line": 703,
+        "target": "__lshru"
+      },
+      {
+        "line": 710,
+        "target": "__lshru"
+      },
+      {
+        "line": 719,
+        "target": "__ZN2fs11transactionEhPKhjh"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs11transactionEhPKhjh": 1,
+      "__frameset": 1,
+      "__lshru": 2
+    }
+  },
+  "__ZN2fs6read32Etm": {
+    "line": 728,
+    "calls": [
+      {
+        "line": 732,
+        "target": "__frameset"
+      },
+      {
+        "line": 739,
+        "target": "__ZN2fs6read16Etm"
+      },
+      {
+        "line": 751,
+        "target": "__ladd"
+      },
+      {
+        "line": 757,
+        "target": "__ZN2fs6read16Etm"
+      },
+      {
+        "line": 766,
+        "target": "__lshl"
+      },
+      {
+        "line": 772,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs6read16Etm": 2,
+      "__frameset": 1,
+      "__ladd": 2,
+      "__lshl": 1
+    }
+  },
+  "__ZN2fs6expectEttt": {
+    "line": 781,
+    "calls": [
+      {
+        "line": 784,
+        "target": "__frameset0"
+      },
+      {
+        "line": 793,
+        "target": "__ZN2fs6read16Etm"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs6read16Etm": 1,
+      "__frameset0": 1
+    }
+  },
+  "__ZN2fs6invokeEt": {
+    "line": 821,
+    "calls": [
+      {
+        "line": 825,
+        "target": "__frameset"
+      },
+      {
+        "line": 836,
+        "target": "__ZN2fs5set16Ettt"
+      },
+      {
+        "line": 847,
+        "target": "__ZN2fs5set16Ettt"
+      },
+      {
+        "line": 871,
+        "target": "__ZN2fs11transactionEhPKhjh"
+      },
+      {
+        "line": 900,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs11transactionEhPKhjh": 1,
+      "__ZN2fs5set16Ettt": 2,
+      "__frameset": 1,
+      "__ladd": 1
+    }
+  },
+  "__ZN2fs4fileEPKc": {
+    "line": 914,
+    "calls": [
+      {
+        "line": 918,
+        "target": "__frameset"
+      },
+      {
+        "line": 923,
+        "target": "_fopen"
+      },
+      {
+        "line": 973,
+        "target": "_fread"
+      },
+      {
+        "line": 989,
+        "target": "__ZN2fs4sendEPKhj"
+      },
+      {
+        "line": 1006,
+        "target": "_ferror"
+      },
+      {
+        "line": 1029,
+        "target": "_fclose"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1,
+      "_fclose": 1,
+      "_ferror": 1,
+      "_fopen": 1,
+      "_fread": 1
+    }
+  },
+  "__ZN2fs6configEv": {
+    "line": 1061,
+    "calls": [
+      {
+        "line": 1065,
+        "target": "__frameset"
+      },
+      {
+        "line": 1070,
+        "target": "_fopen"
+      },
+      {
+        "line": 1096,
+        "target": "_fread"
+      },
+      {
+        "line": 1108,
+        "target": "_fgetc"
+      },
+      {
+        "line": 1113,
+        "target": "_fclose"
+      },
+      {
+        "line": 1127,
+        "target": "_memcmp"
+      },
+      {
+        "line": 1204,
+        "target": "_fclose"
+      },
+      {
+        "line": 1240,
+        "target": "__ZN2fs5get32EPKh"
+      },
+      {
+        "line": 1247,
+        "target": "__ladd"
+      },
+      {
+        "line": 1249,
+        "target": "__lcmpu"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs5get32EPKh": 1,
+      "__frameset": 1,
+      "__ladd": 1,
+      "__lcmpu": 1,
+      "_fclose": 2,
+      "_fgetc": 1,
+      "_fopen": 1,
+      "_fread": 1,
+      "_memcmp": 1
+    }
+  },
+  "__ZN2fs4tickEv": {
+    "line": 1268,
+    "calls": [
+      {
+        "line": 1275,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 1284,
+        "target": "__ladd"
+      },
+      {
+        "line": 1293,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs7commandEth": 1,
+      "__ladd": 2
+    }
+  },
+  "__ZN2fs6renderEv": {
+    "line": 1303,
+    "calls": [
+      {
+        "line": 1308,
+        "target": "__ZN2fs6invokeEt"
+      },
+      {
+        "line": 1318,
+        "target": "__ladd"
+      },
+      {
+        "line": 1331,
+        "target": "__ZN2fs6expectEttt"
+      },
+      {
+        "line": 1342,
+        "target": "__ZN2fs6expectEttt"
+      },
+      {
+        "line": 1353,
+        "target": "__ZN2fs6expectEttt"
+      },
+      {
+        "line": 1364,
+        "target": "__ZN2fs6expectEttt"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs6expectEttt": 4,
+      "__ZN2fs6invokeEt": 1,
+      "__ladd": 1
+    }
+  },
+  "__ZN2fs5fenceEv": {
+    "line": 1376,
+    "calls": [
+      {
+        "line": 1386,
+        "target": "__ZN2fs6expectEttt"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs6expectEttt": 1
+    }
+  },
+  "__ZN2fs5setupEv": {
+    "line": 1396,
+    "calls": [
+      {
+        "line": 1400,
+        "target": "__frameset"
+      },
+      {
+        "line": 1405,
+        "target": "_mos_setkbvector"
+      },
+      {
+        "line": 1410,
+        "target": "__ZN2fs6configEv"
+      },
+      {
+        "line": 1416,
+        "target": "__ZN2fs4fileEPKc"
+      },
+      {
+        "line": 1435,
+        "target": "__lshru"
+      },
+      {
+        "line": 1442,
+        "target": "__lshru"
+      },
+      {
+        "line": 1453,
+        "target": "__ZN2fs11transactionEhPKhjh"
+      },
+      {
+        "line": 1476,
+        "target": "_vdp_mode"
+      },
+      {
+        "line": 1481,
+        "target": "pe,"
+      },
+      {
+        "line": 1506,
+        "target": "_vdp_set_pixel_coordinates"
+      },
+      {
+        "line": 1507,
+        "target": "_vdp_reset_sprites"
+      },
+      {
+        "line": 1511,
+        "target": "_vdp_cursor_enable"
+      },
+      {
+        "line": 1515,
+        "target": "__ZN2fs4fileEPKc"
+      },
+      {
+        "line": 1522,
+        "target": "__ZN2fs4fileEPKc"
+      },
+      {
+        "line": 1529,
+        "target": "__ZN2fs4fileEPKc"
+      },
+      {
+        "line": 1536,
+        "target": "__ZN2fs4fileEPKc"
+      },
+      {
+        "line": 1543,
+        "target": "__ZN2fs4fileEPKc"
+      },
+      {
+        "line": 1593,
+        "target": "__ZN2fs5set16Ettt"
+      },
+      {
+        "line": 1621,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 1629,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 1638,
+        "target": "__ZN2fs4sendEPKhj"
+      },
+      {
+        "line": 1648,
+        "target": "__ZN2fs4sendEPKhj"
+      },
+      {
+        "line": 1683,
+        "target": "__ishl"
+      },
+      {
+        "line": 1702,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 1713,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 1739,
+        "target": "__ZN2fs4sendEPKhj"
+      },
+      {
+        "line": 1785,
+        "target": "__ZN2fs4sendEPKhj"
+      },
+      {
+        "line": 1819,
+        "target": "__ZN2fs5set32Ettm"
+      },
+      {
+        "line": 1826,
+        "target": "__ZN2fs6invokeEt"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs11transactionEhPKhjh": 1,
+      "__ZN2fs4fileEPKc": 6,
+      "__ZN2fs4sendEPKhj": 4,
+      "__ZN2fs5set16Ettt": 1,
+      "__ZN2fs5set32Ettm": 1,
+      "__ZN2fs6configEv": 1,
+      "__ZN2fs6invokeEt": 1,
+      "__ZN2fs7commandEth": 4,
+      "__frameset": 1,
+      "__ishl": 1,
+      "__lshru": 2,
+      "_mos_setkbvector": 1,
+      "_vdp_cursor_enable": 1,
+      "_vdp_mode": 1,
+      "_vdp_reset_sprites": 1,
+      "_vdp_set_pixel_coordinates": 1,
+      "pe,": 1
+    }
+  },
+  "__ZN2fs10startTimerEv": {
+    "line": 1835,
+    "calls": [
+      {
+        "line": 1838,
+        "target": "_timing_claim"
+      },
+      {
+        "line": 1862,
+        "target": "_mos_setintvector"
+      },
+      {
+        "line": 1868,
+        "target": "_timing_start"
+      }
+    ],
+    "static_call_counts": {
+      "_mos_setintvector": 1,
+      "_timing_claim": 1,
+      "_timing_start": 1
+    }
+  },
+  "__ZN2fs9stopTimerEv": {
+    "line": 1875,
+    "calls": [
+      {
+        "line": 1879,
+        "target": "__frameset"
+      },
+      {
+        "line": 1884,
+        "target": "_timing_stop"
+      },
+      {
+        "line": 1889,
+        "target": "_mos_setintvector"
+      },
+      {
+        "line": 1893,
+        "target": "_timing_release"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "_mos_setintvector": 1,
+      "_timing_release": 1,
+      "_timing_stop": 1
+    }
+  },
+  "__ZN2fs4stopEv": {
+    "line": 1936,
+    "calls": [
+      {
+        "line": 1940,
+        "target": "__frameset"
+      },
+      {
+        "line": 1961,
+        "target": "__ZN2fs6invokeEt"
+      },
+      {
+        "line": 1981,
+        "target": "__ZN2fs11transactionEhPKhjh"
+      },
+      {
+        "line": 2032,
+        "target": "_mos_setkbvector"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs11transactionEhPKhjh": 1,
+      "__ZN2fs6invokeEt": 1,
+      "__frameset": 1,
+      "_mos_setkbvector": 1
+    }
+  },
+  "__ZN2fs4saveEPKcPKvj": {
+    "line": 2047,
+    "calls": [
+      {
+        "line": 2051,
+        "target": "__frameset"
+      },
+      {
+        "line": 2056,
+        "target": "_fopen"
+      },
+      {
+        "line": 2073,
+        "target": "_fwrite"
+      },
+      {
+        "line": 2081,
+        "target": "_fclose"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "_fclose": 1,
+      "_fopen": 1,
+      "_fwrite": 1
+    }
+  },
+  "_vdp_scroll_screen_extent": {
+    "line": 2117,
+    "calls": [
+      {
+        "line": 2121,
+        "target": "__frameset"
+      },
+      {
+        "line": 2133,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "_vdp_select_bitmap": {
+    "line": 2142,
+    "calls": [
+      {
+        "line": 2146,
+        "target": "__frameset"
+      },
+      {
+        "line": 2155,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "_vdp_draw_bitmap": {
+    "line": 2164,
+    "calls": [
+      {
+        "line": 2168,
+        "target": "__frameset"
+      },
+      {
+        "line": 2190,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "_vdp_adv_use_affine_matrix": {
+    "line": 2199,
+    "calls": [
+      {
+        "line": 2203,
+        "target": "__frameset"
+      },
+      {
+        "line": 2217,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "_vdp_set_text_colour": {
+    "line": 2226,
+    "calls": [
+      {
+        "line": 2230,
+        "target": "__frameset"
+      },
+      {
+        "line": 2237,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "_vdp_set_text_bg_colour": {
+    "line": 2246,
+    "calls": [
+      {
+        "line": 2250,
+        "target": "__frameset"
+      },
+      {
+        "line": 2258,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "_vdp_cursor_tab": {
+    "line": 2267,
+    "calls": [
+      {
+        "line": 2271,
+        "target": "__frameset"
+      },
+      {
+        "line": 2280,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "_vdp_swap": {
+    "line": 2289,
+    "calls": [
+      {
+        "line": 2293,
+        "target": "__frameset"
+      },
+      {
+        "line": 2305,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "_main": {
+    "line": 2314,
+    "calls": [
+      {
+        "line": 2318,
+        "target": "__frameset"
+      },
+      {
+        "line": 2412,
+        "target": "_mos_del"
+      },
+      {
+        "line": 2437,
+        "target": "__ZN5rally4game5Rules9raceReadyEv"
+      },
+      {
+        "line": 2469,
+        "target": "__ZN2fs5setupEv"
+      },
+      {
+        "line": 2477,
+        "target": "_fopen"
+      },
+      {
+        "line": 2503,
+        "target": "_fread"
+      },
+      {
+        "line": 2518,
+        "target": "_fgetc"
+      },
+      {
+        "line": 2529,
+        "target": "_fclose"
+      },
+      {
+        "line": 2544,
+        "target": "_fopen"
+      },
+      {
+        "line": 2560,
+        "target": "__ZN2fs6read32Etm"
+      },
+      {
+        "line": 2566,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 2576,
+        "target": "__ZN2fs6read16Etm"
+      },
+      {
+        "line": 2587,
+        "target": "__ZN12_GLOBAL__N_14fontEj"
+      },
+      {
+        "line": 2593,
+        "target": "__ZN5rally4game6Engine5startIPFvPKhjEEEvT_"
+      },
+      {
+        "line": 2596,
+        "target": "__ZN12_GLOBAL__N_19warmLowerEv"
+      },
+      {
+        "line": 2597,
+        "target": "__ZN12_GLOBAL__N_15paintEv"
+      },
+      {
+        "line": 2598,
+        "target": "__ZN12_GLOBAL__N_19warmLowerEv"
+      },
+      {
+        "line": 2599,
+        "target": "__ZN12_GLOBAL__N_15paintEv"
+      },
+      {
+        "line": 2604,
+        "target": "__ZN2fs10startTimerEv"
+      },
+      {
+        "line": 2625,
+        "target": "__ZN2fs11transactionEhPKhjh"
+      },
+      {
+        "line": 2670,
+        "target": "__ZN2fs3nowEv"
+      },
+      {
+        "line": 2674,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 2784,
+        "target": "_vdp_getKeyMap"
+      },
+      {
+        "line": 2808,
+        "target": "__ladd"
+      },
+      {
+        "line": 2812,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 2842,
+        "target": "__ZN5rally4game11RouteCursor4tickEv"
+      },
+      {
+        "line": 2849,
+        "target": "__sshru"
+      },
+      {
+        "line": 2876,
+        "target": "__ladd"
+      },
+      {
+        "line": 2880,
+        "target": "__lrems"
+      },
+      {
+        "line": 2899,
+        "target": "__ladd"
+      },
+      {
+        "line": 2902,
+        "target": "__lrems"
+      },
+      {
+        "line": 2912,
+        "target": "__ZN5rally4game5Rules4tickEm"
+      },
+      {
+        "line": 2916,
+        "target": "__ZN2fs4tickEv"
+      },
+      {
+        "line": 2925,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 2937,
+        "target": "__lsub"
+      },
+      {
+        "line": 2940,
+        "target": "__land"
+      },
+      {
+        "line": 2959,
+        "target": "__imulu"
+      },
+      {
+        "line": 2971,
+        "target": "__ZN2fs6updateEttPKhj"
+      },
+      {
+        "line": 3032,
+        "target": "__lshru"
+      },
+      {
+        "line": 3045,
+        "target": "__lshru"
+      },
+      {
+        "line": 3073,
+        "target": "__ZN2fs6updateEttPKhj"
+      },
+      {
+        "line": 3117,
+        "target": "__ZN2fs5get32EPKh"
+      },
+      {
+        "line": 3130,
+        "target": "__lsub"
+      },
+      {
+        "line": 3144,
+        "target": "__lcmps"
+      },
+      {
+        "line": 3145,
+        "target": "pe,"
+      },
+      {
+        "line": 3166,
+        "target": "__ladd"
+      },
+      {
+        "line": 3182,
+        "target": "__lcmps"
+      },
+      {
+        "line": 3183,
+        "target": "pe,"
+      },
+      {
+        "line": 3198,
+        "target": "__ladd"
+      },
+      {
+        "line": 3263,
+        "target": "__lcmps"
+      },
+      {
+        "line": 3264,
+        "target": "pe,"
+      },
+      {
+        "line": 3306,
+        "target": "__ladd"
+      },
+      {
+        "line": 3341,
+        "target": "__ZN5rally4game6Engine6updateIPFvPKhjEEEvlT_"
+      },
+      {
+        "line": 3363,
+        "target": "__ladd"
+      },
+      {
+        "line": 3369,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 3401,
+        "target": "__ZN12_GLOBAL__N_15paintEv"
+      },
+      {
+        "line": 3402,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 3454,
+        "target": "__ladd"
+      },
+      {
+        "line": 3470,
+        "target": "__lsub"
+      },
+      {
+        "line": 3483,
+        "target": "__ladd"
+      },
+      {
+        "line": 3509,
+        "target": "__lsub"
+      },
+      {
+        "line": 3512,
+        "target": "__land"
+      },
+      {
+        "line": 3564,
+        "target": "__ladd"
+      },
+      {
+        "line": 3577,
+        "target": "__ZN2fs3nowEv"
+      },
+      {
+        "line": 3594,
+        "target": "__ishl"
+      },
+      {
+        "line": 3613,
+        "target": "__ZN2fs5timerEv"
+      },
+      {
+        "line": 3633,
+        "target": "__ZN12_GLOBAL__N_17captureEjj"
+      },
+      {
+        "line": 3656,
+        "target": "_fclose"
+      },
+      {
+        "line": 3691,
+        "target": "__ZN2fs4sendEPKhj"
+      },
+      {
+        "line": 3698,
+        "target": "__ZN2fs4stopEv"
+      },
+      {
+        "line": 3703,
+        "target": "__ZN12_GLOBAL__N_115releaseGraphicsEv"
+      },
+      {
+        "line": 3704,
+        "target": "__ZN12_GLOBAL__N_111restoreTextEv"
+      },
+      {
+        "line": 3711,
+        "target": "_fopen"
+      },
+      {
+        "line": 3732,
+        "target": "_fprintf"
+      },
+      {
+        "line": 3741,
+        "target": "_fclose"
+      },
+      {
+        "line": 3749,
+        "target": "_printf"
+      },
+      {
+        "line": 3776,
+        "target": "_fread"
+      },
+      {
+        "line": 3791,
+        "target": "_fgetc"
+      },
+      {
+        "line": 3802,
+        "target": "_fclose"
+      },
+      {
+        "line": 3898,
+        "target": "_fclose"
+      },
+      {
+        "line": 3956,
+        "target": "__ishl"
+      },
+      {
+        "line": 3990,
+        "target": "__lsub"
+      },
+      {
+        "line": 4037,
+        "target": "__ZN2fs11transactionEhPKhjh"
+      },
+      {
+        "line": 4163,
+        "target": "__ZN2fs6read16Etm"
+      },
+      {
+        "line": 4232,
+        "target": "__lsub"
+      },
+      {
+        "line": 4258,
+        "target": "__land"
+      },
+      {
+        "line": 4280,
+        "target": "_fopen"
+      },
+      {
+        "line": 4289,
+        "target": "_fclose"
+      },
+      {
+        "line": 4361,
+        "target": "__ZN5rally4game11RaceTraffic5resetENS0_6PolicyElhh"
+      },
+      {
+        "line": 4393,
+        "target": "__ZN2fs6read16Etm"
+      },
+      {
+        "line": 4410,
+        "target": "__ZN2fs6read16Etm"
+      },
+      {
+        "line": 4439,
+        "target": "__ZN2fs6read16Etm"
+      },
+      {
+        "line": 4570,
+        "target": "__ZN12_GLOBAL__N_110prepareSkyEv"
+      },
+      {
+        "line": 4571,
+        "target": "__ZN2fs6renderEv"
+      },
+      {
+        "line": 4583,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 4589,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 4594,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 4608,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 4614,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 4619,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 4639,
+        "target": "__sdivu"
+      },
+      {
+        "line": 4641,
+        "target": "__sand"
+      },
+      {
+        "line": 4678,
+        "target": "__ZN5rally4game6Engine6updateIPFvPKhjEEEvlT_"
+      },
+      {
+        "line": 4701,
+        "target": "__sdivu"
+      },
+      {
+        "line": 4703,
+        "target": "__sand"
+      },
+      {
+        "line": 4713,
+        "target": "_vdp_select_bitmap"
+      },
+      {
+        "line": 4722,
+        "target": "_vdp_adv_use_affine_matrix"
+      },
+      {
+        "line": 4732,
+        "target": "_vdp_draw_bitmap"
+      },
+      {
+        "line": 4740,
+        "target": "_vdp_adv_use_affine_matrix"
+      },
+      {
+        "line": 4770,
+        "target": "__idivs"
+      },
+      {
+        "line": 4780,
+        "target": "__idivs"
+      },
+      {
+        "line": 4791,
+        "target": "pe,"
+      },
+      {
+        "line": 4811,
+        "target": "__idivs"
+      },
+      {
+        "line": 4821,
+        "target": "__idivs"
+      },
+      {
+        "line": 4858,
+        "target": "__idivu"
+      },
+      {
+        "line": 4859,
+        "target": "__imulu"
+      },
+      {
+        "line": 4894,
+        "target": "__imulu"
+      },
+      {
+        "line": 4897,
+        "target": "__idivs"
+      },
+      {
+        "line": 4918,
+        "target": "__imulu"
+      },
+      {
+        "line": 4920,
+        "target": "__idivs"
+      },
+      {
+        "line": 4937,
+        "target": "__irems"
+      },
+      {
+        "line": 4980,
+        "target": "__iand"
+      },
+      {
+        "line": 5027,
+        "target": "__ZN5rally6Stream4rectEiiiii"
+      },
+      {
+        "line": 5087,
+        "target": "__ZN5rally6Stream4rectEiiiii"
+      },
+      {
+        "line": 5094,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 5107,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 5113,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 5114,
+        "target": "__ZN12_GLOBAL__N_17drawHudEm"
+      },
+      {
+        "line": 5115,
+        "target": "__ZN12_GLOBAL__N_16bottomEv"
+      },
+      {
+        "line": 5116,
+        "target": "_vdp_swap"
+      },
+      {
+        "line": 5121,
+        "target": "__ixor"
+      },
+      {
+        "line": 5123,
+        "target": "__ZN2fs5fenceEv"
+      },
+      {
+        "line": 5131,
+        "target": "__ZN12_GLOBAL__N_17captureEjj"
+      },
+      {
+        "line": 5144,
+        "target": "__ZN5rally4game5Crash4tickERNS_6MotionERKNS0_11RaceTrafficEm"
+      },
+      {
+        "line": 5165,
+        "target": "__iand"
+      },
+      {
+        "line": 5259,
+        "target": "_fopen"
+      },
+      {
+        "line": 5302,
+        "target": "_fprintf"
+      },
+      {
+        "line": 5314,
+        "target": "_fclose"
+      },
+      {
+        "line": 5340,
+        "target": "__ZN2fs4sendEPKhj"
+      },
+      {
+        "line": 5347,
+        "target": "__ZN2fs4stopEv"
+      },
+      {
+        "line": 5352,
+        "target": "__ZN12_GLOBAL__N_115releaseGraphicsEv"
+      },
+      {
+        "line": 5353,
+        "target": "__ZN12_GLOBAL__N_111restoreTextEv"
+      },
+      {
+        "line": 5360,
+        "target": "__ZN2fs4saveEPKcPKvj"
+      },
+      {
+        "line": 5369,
+        "target": "__ishl"
+      },
+      {
+        "line": 5377,
+        "target": "__ZN2fs4saveEPKcPKvj"
+      },
+      {
+        "line": 5386,
+        "target": "__ishl"
+      },
+      {
+        "line": 5394,
+        "target": "__ZN2fs4saveEPKcPKvj"
+      },
+      {
+        "line": 5407,
+        "target": "__ZN2fs4saveEPKcPKvj"
+      },
+      {
+        "line": 5418,
+        "target": "_fopen"
+      },
+      {
+        "line": 5501,
+        "target": "_fprintf"
+      },
+      {
+        "line": 5510,
+        "target": "_fclose"
+      },
+      {
+        "line": 5521,
+        "target": "_fopen"
+      },
+      {
+        "line": 5718,
+        "target": "_fprintf"
+      },
+      {
+        "line": 5727,
+        "target": "_fclose"
+      },
+      {
+        "line": 5738,
+        "target": "_fopen"
+      },
+      {
+        "line": 5756,
+        "target": "__ishl"
+      },
+      {
+        "line": 5913,
+        "target": "__idivu"
+      },
+      {
+        "line": 6144,
+        "target": "_fprintf"
+      },
+      {
+        "line": 6153,
+        "target": "_fclose"
+      },
+      {
+        "line": 6162,
+        "target": "_puts"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN12_GLOBAL__N_110prepareSkyEv": 1,
+      "__ZN12_GLOBAL__N_111restoreTextEv": 2,
+      "__ZN12_GLOBAL__N_115releaseGraphicsEv": 2,
+      "__ZN12_GLOBAL__N_14fontEj": 1,
+      "__ZN12_GLOBAL__N_15flushEv": 4,
+      "__ZN12_GLOBAL__N_15paintEv": 3,
+      "__ZN12_GLOBAL__N_16bottomEv": 1,
+      "__ZN12_GLOBAL__N_17captureEjj": 2,
+      "__ZN12_GLOBAL__N_17drawHudEm": 1,
+      "__ZN12_GLOBAL__N_19warmLowerEv": 2,
+      "__ZN2fs10startTimerEv": 1,
+      "__ZN2fs11transactionEhPKhjh": 2,
+      "__ZN2fs3nowEv": 2,
+      "__ZN2fs4saveEPKcPKvj": 4,
+      "__ZN2fs4sendEPKhj": 2,
+      "__ZN2fs4stopEv": 2,
+      "__ZN2fs4tickEv": 1,
+      "__ZN2fs5fenceEv": 1,
+      "__ZN2fs5get32EPKh": 1,
+      "__ZN2fs5setupEv": 1,
+      "__ZN2fs5timerEv": 6,
+      "__ZN2fs6read16Etm": 5,
+      "__ZN2fs6read32Etm": 1,
+      "__ZN2fs6renderEv": 1,
+      "__ZN2fs6updateEttPKhj": 2,
+      "__ZN2fs7commandEth": 2,
+      "__ZN5rally4game11RaceTraffic5resetENS0_6PolicyElhh": 1,
+      "__ZN5rally4game11RouteCursor4tickEv": 1,
+      "__ZN5rally4game5Crash4tickERNS_6MotionERKNS0_11RaceTrafficEm": 1,
+      "__ZN5rally4game5Rules4tickEm": 1,
+      "__ZN5rally4game5Rules9raceReadyEv": 1,
+      "__ZN5rally4game6Engine5startIPFvPKhjEEEvT_": 1,
+      "__ZN5rally4game6Engine6updateIPFvPKhjEEEvlT_": 2,
+      "__ZN5rally4game8viewportERNS_6StreamEiiii": 3,
+      "__ZN5rally6Stream4rectEiiiii": 2,
+      "__frameset": 1,
+      "__iand": 2,
+      "__idivs": 6,
+      "__idivu": 2,
+      "__imulu": 4,
+      "__irems": 1,
+      "__ishl": 5,
+      "__ixor": 1,
+      "__ladd": 10,
+      "__land": 3,
+      "__lcmps": 3,
+      "__lcmpu": 1,
+      "__lrems": 2,
+      "__lshru": 2,
+      "__lsub": 6,
+      "__sand": 2,
+      "__sdivu": 2,
+      "__sshru": 1,
+      "_fclose": 10,
+      "_fgetc": 2,
+      "_fopen": 8,
+      "_fprintf": 5,
+      "_fread": 2,
+      "_mos_del": 1,
+      "_printf": 1,
+      "_puts": 1,
+      "_vdp_adv_use_affine_matrix": 2,
+      "_vdp_draw_bitmap": 1,
+      "_vdp_getKeyMap": 1,
+      "_vdp_select_bitmap": 1,
+      "_vdp_swap": 1,
+      "pe,": 4
+    }
+  },
+  "__ZN12_GLOBAL__N_14fontEj": {
+    "line": 6183,
+    "calls": [
+      {
+        "line": 6187,
+        "target": "__frameset"
+      },
+      {
+        "line": 6201,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "__ZN5rally4game6Engine5startIPFvPKhjEEEvT_": {
+    "line": 6210,
+    "calls": [
+      {
+        "line": 6214,
+        "target": "__frameset"
+      },
+      {
+        "line": 6226,
+        "target": "__indcallhl"
+      },
+      {
+        "line": 6238,
+        "target": "__ZN5rally4game6Engine6updateIPFvPKhjEEEvlT_"
+      },
+      {
+        "line": 6252,
+        "target": "__indcallhl"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN5rally4game6Engine6updateIPFvPKhjEEEvlT_": 1,
+      "__frameset": 1,
+      "__indcallhl": 2
+    }
+  },
+  "__ZN12_GLOBAL__N_14sendEPKhj": {
+    "line": 6260,
+    "calls": [
+      {
+        "line": 6263,
+        "target": "__frameset0"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1
+    }
+  },
+  "__ZN12_GLOBAL__N_19warmLowerEv": {
+    "line": 6274,
+    "calls": [
+      {
+        "line": 6286,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 6303,
+        "target": "__ZN5rally6Stream4rectEiiiii"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN5rally4game8viewportERNS_6StreamEiiii": 1,
+      "__ZN5rally6Stream4rectEiiiii": 1
+    }
+  },
+  "__ZN12_GLOBAL__N_15paintEv": {
+    "line": 6315,
+    "calls": [
+      {
+        "line": 6319,
+        "target": "__frameset"
+      },
+      {
+        "line": 6320,
+        "target": "__ZN12_GLOBAL__N_110prepareSkyEv"
+      },
+      {
+        "line": 6321,
+        "target": "__ZN2fs6renderEv"
+      },
+      {
+        "line": 6337,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 6343,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 6348,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 6362,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 6368,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 6373,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 6380,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 6393,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 6399,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 6406,
+        "target": "__ZN12_GLOBAL__N_17drawHudEm"
+      },
+      {
+        "line": 6412,
+        "target": "__lsub"
+      },
+      {
+        "line": 6417,
+        "target": "__ladd"
+      },
+      {
+        "line": 6421,
+        "target": "__ZN12_GLOBAL__N_16bottomEv"
+      },
+      {
+        "line": 6428,
+        "target": "__ladd"
+      },
+      {
+        "line": 6432,
+        "target": "_vdp_swap"
+      },
+      {
+        "line": 6435,
+        "target": "__ixor"
+      },
+      {
+        "line": 6437,
+        "target": "__ZN2fs5fenceEv"
+      },
+      {
+        "line": 6442,
+        "target": "__lsub"
+      },
+      {
+        "line": 6445,
+        "target": "__lrems"
+      },
+      {
+        "line": 6448,
+        "target": "__ladd"
+      },
+      {
+        "line": 6451,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 6460,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN12_GLOBAL__N_110prepareSkyEv": 1,
+      "__ZN12_GLOBAL__N_15flushEv": 3,
+      "__ZN12_GLOBAL__N_16bottomEv": 1,
+      "__ZN12_GLOBAL__N_17drawHudEm": 1,
+      "__ZN2fs5fenceEv": 1,
+      "__ZN2fs6renderEv": 1,
+      "__ZN2fs7commandEth": 3,
+      "__ZN5rally4game8viewportERNS_6StreamEiiii": 3,
+      "__frameset": 1,
+      "__ixor": 1,
+      "__ladd": 4,
+      "__lcmpu": 1,
+      "__lrems": 1,
+      "__lsub": 2,
+      "_vdp_swap": 1
+    }
+  },
+  "__ZN5rally4game11RouteCursor4tickEv": {
+    "line": 6474,
+    "calls": [
+      {
+        "line": 6478,
+        "target": "__frameset"
+      },
+      {
+        "line": 6493,
+        "target": "__sremu"
+      },
+      {
+        "line": 6500,
+        "target": "__sand"
+      },
+      {
+        "line": 6512,
+        "target": "__ishl"
+      },
+      {
+        "line": 6536,
+        "target": "__ishl"
+      },
+      {
+        "line": 6558,
+        "target": "__lshl"
+      },
+      {
+        "line": 6562,
+        "target": "__ZN5rally4game9routeSineEs"
+      },
+      {
+        "line": 6585,
+        "target": "__lmulu"
+      },
+      {
+        "line": 6588,
+        "target": "__ldivs"
+      },
+      {
+        "line": 6598,
+        "target": "__ladd"
+      },
+      {
+        "line": 6609,
+        "target": "__sshl"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN5rally4game9routeSineEs": 1,
+      "__frameset": 1,
+      "__ishl": 2,
+      "__ladd": 1,
+      "__ldivs": 1,
+      "__lmulu": 1,
+      "__lshl": 1,
+      "__sand": 1,
+      "__sremu": 1,
+      "__sshl": 1
+    }
+  },
+  "__ZN5rally4game5Rules4tickEm": {
+    "line": 6618,
+    "calls": [
+      {
+        "line": 6622,
+        "target": "__frameset"
+      },
+      {
+        "line": 6635,
+        "target": "__ladd"
+      },
+      {
+        "line": 6662,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 6682,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 6685,
+        "target": "z,"
+      },
+      {
+        "line": 6704,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 6756,
+        "target": "__ladd"
+      },
+      {
+        "line": 6763,
+        "target": "__lcmpzero"
+      },
+      {
+        "line": 6769,
+        "target": "__ladd"
+      },
+      {
+        "line": 6787,
+        "target": "__ladd"
+      },
+      {
+        "line": 6802,
+        "target": "__ladd"
+      },
+      {
+        "line": 6807,
+        "target": "__ldivu"
+      },
+      {
+        "line": 6827,
+        "target": "__lsub"
+      },
+      {
+        "line": 6834,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 6843,
+        "target": "__ladd"
+      },
+      {
+        "line": 6872,
+        "target": "__lmulu"
+      },
+      {
+        "line": 6878,
+        "target": "__lsub"
+      },
+      {
+        "line": 6889,
+        "target": "__lmulu"
+      },
+      {
+        "line": 6895,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 6902,
+        "target": "__lcmpzero"
+      },
+      {
+        "line": 6928,
+        "target": "__lsub"
+      },
+      {
+        "line": 6942,
+        "target": "__lcmpzero"
+      },
+      {
+        "line": 6947,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 6965,
+        "target": "__ladd"
+      },
+      {
+        "line": 6969,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 6978,
+        "target": "__ladd"
+      },
+      {
+        "line": 7015,
+        "target": "__ZNK5rally4game5Rules14qualifyingGridEm"
+      },
+      {
+        "line": 7028,
+        "target": "__imulu"
+      },
+      {
+        "line": 7043,
+        "target": "__lsub"
+      },
+      {
+        "line": 7047,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 7057,
+        "target": "__ladd"
+      },
+      {
+        "line": 7091,
+        "target": "__ldivu"
+      },
+      {
+        "line": 7093,
+        "target": "__lmulu"
+      },
+      {
+        "line": 7103,
+        "target": "__lsub"
+      },
+      {
+        "line": 7106,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 7117,
+        "target": "__ladd"
+      },
+      {
+        "line": 7155,
+        "target": "__lmulu"
+      },
+      {
+        "line": 7158,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__ZNK5rally4game5Rules14qualifyingGridEm": 1,
+      "__frameset": 1,
+      "__imulu": 1,
+      "__ladd": 11,
+      "__lcmpu": 9,
+      "__lcmpzero": 3,
+      "__ldivu": 2,
+      "__lmulu": 4,
+      "__lsub": 5,
+      "z,": 1
+    }
+  },
+  "__ZN5rally4game6Engine6updateIPFvPKhjEEEvlT_": {
+    "line": 7170,
+    "calls": [
+      {
+        "line": 7174,
+        "target": "__frameset"
+      },
+      {
+        "line": 7186,
+        "target": "__lcmps"
+      },
+      {
+        "line": 7187,
+        "target": "pe,"
+      },
+      {
+        "line": 7214,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 7223,
+        "target": "__ishl"
+      },
+      {
+        "line": 7225,
+        "target": "__iand"
+      },
+      {
+        "line": 7249,
+        "target": "__indcallhl"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__iand": 1,
+      "__indcallhl": 1,
+      "__ishl": 1,
+      "__lcmps": 1,
+      "__lcmpu": 1,
+      "pe,": 1
+    }
+  },
+  "__ZN12_GLOBAL__N_17captureEjj": {
+    "line": 7264,
+    "calls": [
+      {
+        "line": 7268,
+        "target": "__frameset"
+      },
+      {
+        "line": 7296,
+        "target": "_fopen"
+      },
+      {
+        "line": 7342,
+        "target": "_fprintf"
+      },
+      {
+        "line": 7348,
+        "target": "_fclose"
+      },
+      {
+        "line": 7355,
+        "target": "__ZN2fs3nowEv"
+      },
+      {
+        "line": 7360,
+        "target": "__ZN2fs3nowEv"
+      },
+      {
+        "line": 7363,
+        "target": "__lsub"
+      },
+      {
+        "line": 7366,
+        "target": "__lcmpu"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs3nowEv": 2,
+      "__frameset": 1,
+      "__lcmpu": 1,
+      "__lsub": 1,
+      "_fclose": 1,
+      "_fopen": 1,
+      "_fprintf": 1
+    }
+  },
+  "__ZN12_GLOBAL__N_115releaseGraphicsEv": {
+    "line": 7398,
+    "calls": [
+      {
+        "line": 7402,
+        "target": "__frameset"
+      },
+      {
+        "line": 7426,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 7452,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 7480,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 7505,
+        "target": "__ZN2fs7commandEth"
+      },
+      {
+        "line": 7532,
+        "target": "__ZN2fs7commandEth"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs7commandEth": 5,
+      "__frameset": 1
+    }
+  },
+  "__ZN12_GLOBAL__N_111restoreTextEv": {
+    "line": 7550,
+    "calls": [
+      {
+        "line": 7554,
+        "target": "__frameset"
+      },
+      {
+        "line": 7559,
+        "target": "__ZN12_GLOBAL__N_14fontEj"
+      },
+      {
+        "line": 7569,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN12_GLOBAL__N_14fontEj": 1,
+      "__ZN2fs4sendEPKhj": 1,
+      "__frameset": 1
+    }
+  },
+  "__ZN5rally4game5Rules9raceReadyEv": {
+    "line": 7578,
+    "calls": [
+      {
+        "line": 7581,
+        "target": "__frameset0"
+      },
+      {
+        "line": 7603,
+        "target": "__lmulu"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1,
+      "__lmulu": 1
+    }
+  },
+  "__ZN5rally4game8viewportERNS_6StreamEiiii": {
+    "line": 7624,
+    "calls": [
+      {
+        "line": 7628,
+        "target": "__frameset"
+      },
+      {
+        "line": 7671,
+        "target": "__ZN5rally6Stream4wordEi"
+      },
+      {
+        "line": 7678,
+        "target": "__ZN5rally6Stream4wordEi"
+      },
+      {
+        "line": 7685,
+        "target": "__ZN5rally6Stream4wordEi"
+      },
+      {
+        "line": 7692,
+        "target": "__ZN5rally6Stream4wordEi"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN5rally6Stream4wordEi": 4,
+      "__frameset": 1
+    }
+  },
+  "__ZN5rally6Stream4rectEiiiii": {
+    "line": 7711,
+    "calls": [
+      {
+        "line": 7715,
+        "target": "__frameset"
+      },
+      {
+        "line": 7729,
+        "target": "__ZN5rally6Stream5colorEi"
+      },
+      {
+        "line": 7740,
+        "target": "__ZN5rally6Stream4plotEiii"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN5rally6Stream4plotEiii": 1,
+      "__ZN5rally6Stream5colorEi": 1,
+      "__frameset": 1
+    }
+  },
+  "__ZN12_GLOBAL__N_15flushEv": {
+    "line": 7760,
+    "calls": [
+      {
+        "line": 7767,
+        "target": "__ZN2fs4sendEPKhj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN2fs4sendEPKhj": 1
+    }
+  },
+  "__ZN5rally6Stream4wordEi": {
+    "line": 7781,
+    "calls": [
+      {
+        "line": 7784,
+        "target": "__frameset0"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1
+    }
+  },
+  "__ZN5rally6Stream4plotEiii": {
+    "line": 7832,
+    "calls": [
+      {
+        "line": 7836,
+        "target": "__frameset"
+      },
+      {
+        "line": 7894,
+        "target": "__ZN5rally6Stream4wordEi"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN5rally6Stream4wordEi": 1,
+      "__frameset": 1
+    }
+  },
+  "__ZN5rally6Stream5colorEi": {
+    "line": 7909,
+    "calls": [
+      {
+        "line": 7912,
+        "target": "__frameset0"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1
+    }
+  },
+  "__ZN12_GLOBAL__N_110prepareSkyEv": {
+    "line": 7968,
+    "calls": [
+      {
+        "line": 7972,
+        "target": "__frameset"
+      },
+      {
+        "line": 7981,
+        "target": "__ldivs"
+      },
+      {
+        "line": 7987,
+        "target": "__lshl"
+      },
+      {
+        "line": 7994,
+        "target": "__lmulu"
+      },
+      {
+        "line": 8000,
+        "target": "__lsub"
+      },
+      {
+        "line": 8005,
+        "target": "__lshl"
+      },
+      {
+        "line": 8011,
+        "target": "__ldivs"
+      },
+      {
+        "line": 8014,
+        "target": "__ladd"
+      },
+      {
+        "line": 8021,
+        "target": "__ZN5rally11trackSampleElRKNS_8TrackDefE"
+      },
+      {
+        "line": 8035,
+        "target": "__ZN5rally14sceneryHeadingEll"
+      },
+      {
+        "line": 8045,
+        "target": "__ZN5rally14SceneryHistory7prepareEi"
+      },
+      {
+        "line": 8062,
+        "target": "_vdp_adv_use_affine_matrix"
+      },
+      {
+        "line": 8077,
+        "target": "__ladd"
+      },
+      {
+        "line": 8092,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 8098,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 8105,
+        "target": "pe,"
+      },
+      {
+        "line": 8124,
+        "target": "__ixor"
+      },
+      {
+        "line": 8130,
+        "target": "_vdp_scroll_screen_extent"
+      },
+      {
+        "line": 8138,
+        "target": "_vdp_select_bitmap"
+      },
+      {
+        "line": 8150,
+        "target": "__ladd"
+      },
+      {
+        "line": 8164,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 8170,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 8180,
+        "target": "pe,"
+      },
+      {
+        "line": 8184,
+        "target": "__ineg"
+      },
+      {
+        "line": 8189,
+        "target": "_vdp_draw_bitmap"
+      },
+      {
+        "line": 8198,
+        "target": "pe,"
+      },
+      {
+        "line": 8202,
+        "target": "p,"
+      },
+      {
+        "line": 8224,
+        "target": "__ladd"
+      },
+      {
+        "line": 8239,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 8245,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      },
+      {
+        "line": 8247,
+        "target": "__ineg"
+      },
+      {
+        "line": 8251,
+        "target": "_vdp_draw_bitmap"
+      },
+      {
+        "line": 8258,
+        "target": "pe,"
+      },
+      {
+        "line": 8268,
+        "target": "_vdp_draw_bitmap"
+      },
+      {
+        "line": 8284,
+        "target": "__ZN5rally4game8viewportERNS_6StreamEiiii"
+      },
+      {
+        "line": 8290,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN12_GLOBAL__N_15flushEv": 4,
+      "__ZN5rally11trackSampleElRKNS_8TrackDefE": 1,
+      "__ZN5rally14SceneryHistory7prepareEi": 1,
+      "__ZN5rally14sceneryHeadingEll": 1,
+      "__ZN5rally4game8viewportERNS_6StreamEiiii": 4,
+      "__frameset": 1,
+      "__ineg": 2,
+      "__ixor": 1,
+      "__ladd": 4,
+      "__ldivs": 2,
+      "__lmulu": 1,
+      "__lshl": 2,
+      "__lsub": 1,
+      "_vdp_adv_use_affine_matrix": 1,
+      "_vdp_draw_bitmap": 3,
+      "_vdp_scroll_screen_extent": 1,
+      "_vdp_select_bitmap": 1,
+      "p,": 1,
+      "pe,": 4
+    }
+  },
+  "__ZN12_GLOBAL__N_17drawHudEm": {
+    "line": 8298,
+    "calls": [
+      {
+        "line": 8302,
+        "target": "__frameset"
+      },
+      {
+        "line": 8323,
+        "target": "__ZN5rally4game8HudImageC2Ev"
+      },
+      {
+        "line": 8338,
+        "target": "_snprintf"
+      },
+      {
+        "line": 8360,
+        "target": "__ZN5rally4game8HudImage3putEjjPKch"
+      },
+      {
+        "line": 8371,
+        "target": "__ladd"
+      },
+      {
+        "line": 8373,
+        "target": "__ldivu"
+      },
+      {
+        "line": 8386,
+        "target": "_snprintf"
+      },
+      {
+        "line": 8409,
+        "target": "__ZN5rally4game8HudImage3putEjjPKch"
+      },
+      {
+        "line": 8428,
+        "target": "__lsub"
+      },
+      {
+        "line": 8439,
+        "target": "__lmulu"
+      },
+      {
+        "line": 8451,
+        "target": "__ldivu"
+      },
+      {
+        "line": 8467,
+        "target": "__ldivu"
+      },
+      {
+        "line": 8487,
+        "target": "__ldivu"
+      },
+      {
+        "line": 8489,
+        "target": "__lremu"
+      },
+      {
+        "line": 8509,
+        "target": "__lremu"
+      },
+      {
+        "line": 8538,
+        "target": "_snprintf"
+      },
+      {
+        "line": 8556,
+        "target": "_snprintf"
+      },
+      {
+        "line": 8578,
+        "target": "__ZN5rally4game8HudImage3putEjjPKch"
+      },
+      {
+        "line": 8598,
+        "target": "_snprintf"
+      },
+      {
+        "line": 8620,
+        "target": "__ZN5rally4game8HudImage3putEjjPKch"
+      },
+      {
+        "line": 8640,
+        "target": "_snprintf"
+      },
+      {
+        "line": 8662,
+        "target": "__ZN5rally4game8HudImage3putEjjPKch"
+      },
+      {
+        "line": 8690,
+        "target": "_snprintf"
+      },
+      {
+        "line": 8711,
+        "target": "__ZN5rally4game8HudImage3putEjjPKch"
+      },
+      {
+        "line": 8730,
+        "target": "__ZN5rally4game3Hud4emitERNS_6StreamEjRKNS0_8HudImageE"
+      },
+      {
+        "line": 8735,
+        "target": "__ZN12_GLOBAL__N_15flushEv"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN12_GLOBAL__N_15flushEv": 1,
+      "__ZN5rally4game3Hud4emitERNS_6StreamEjRKNS0_8HudImageE": 1,
+      "__ZN5rally4game8HudImage3putEjjPKch": 6,
+      "__ZN5rally4game8HudImageC2Ev": 1,
+      "__frameset": 1,
+      "__ladd": 1,
+      "__ldivu": 4,
+      "__lmulu": 1,
+      "__lremu": 2,
+      "__lsub": 1,
+      "_snprintf": 7
+    }
+  },
+  "__ZN12_GLOBAL__N_16bottomEv": {
+    "line": 8743,
+    "calls": [
+      {
+        "line": 8747,
+        "target": "__frameset"
+      },
+      {
+        "line": 8776,
+        "target": "__ZN12_GLOBAL__N_14textEiiPKcii"
+      },
+      {
+        "line": 8819,
+        "target": "_snprintf"
+      },
+      {
+        "line": 8832,
+        "target": "__ZN12_GLOBAL__N_14textEiiPKcii"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN12_GLOBAL__N_14textEiiPKcii": 2,
+      "__frameset": 1,
+      "_snprintf": 1
+    }
+  },
+  "__ZN5rally11trackSampleElRKNS_8TrackDefE": {
+    "line": 8853,
+    "calls": [
+      {
+        "line": 8857,
+        "target": "__frameset"
+      },
+      {
+        "line": 8862,
+        "target": "__lshrs"
+      },
+      {
+        "line": 8875,
+        "target": "__iremu"
+      },
+      {
+        "line": 8884,
+        "target": "__land"
+      },
+      {
+        "line": 8892,
+        "target": "__ishl"
+      },
+      {
+        "line": 8911,
+        "target": "__ishl"
+      },
+      {
+        "line": 8940,
+        "target": "__lshl"
+      },
+      {
+        "line": 8964,
+        "target": "__lmulu"
+      },
+      {
+        "line": 8969,
+        "target": "__lshrs"
+      },
+      {
+        "line": 8975,
+        "target": "__ladd"
+      },
+      {
+        "line": 9001,
+        "target": "__lshl"
+      },
+      {
+        "line": 9025,
+        "target": "__lmulu"
+      },
+      {
+        "line": 9030,
+        "target": "__lshrs"
+      },
+      {
+        "line": 9036,
+        "target": "__ladd"
+      },
+      {
+        "line": 9077,
+        "target": "__lmulu"
+      },
+      {
+        "line": 9082,
+        "target": "__lshrs"
+      },
+      {
+        "line": 9089,
+        "target": "__ladd"
+      },
+      {
+        "line": 9130,
+        "target": "__lmulu"
+      },
+      {
+        "line": 9135,
+        "target": "__lshrs"
+      },
+      {
+        "line": 9142,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__iremu": 1,
+      "__ishl": 2,
+      "__ladd": 4,
+      "__land": 1,
+      "__lmulu": 4,
+      "__lshl": 2,
+      "__lshrs": 5
+    }
+  },
+  "__ZN5rally14sceneryHeadingEll": {
+    "line": 9155,
+    "calls": [
+      {
+        "line": 9159,
+        "target": "__frameset"
+      },
+      {
+        "line": 9166,
+        "target": "__lshrs"
+      },
+      {
+        "line": 9168,
+        "target": "__ladd"
+      },
+      {
+        "line": 9169,
+        "target": "__lxor"
+      },
+      {
+        "line": 9176,
+        "target": "__lshrs"
+      },
+      {
+        "line": 9180,
+        "target": "__ladd"
+      },
+      {
+        "line": 9181,
+        "target": "__lxor"
+      },
+      {
+        "line": 9188,
+        "target": "__lor"
+      },
+      {
+        "line": 9189,
+        "target": "__lcmpzero"
+      },
+      {
+        "line": 9201,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 9207,
+        "target": "__lshl"
+      },
+      {
+        "line": 9213,
+        "target": "__ldivu"
+      },
+      {
+        "line": 9230,
+        "target": "__lshl"
+      },
+      {
+        "line": 9236,
+        "target": "__ldivu"
+      },
+      {
+        "line": 9247,
+        "target": "__lcmpzero"
+      },
+      {
+        "line": 9258,
+        "target": "__lcmpzero"
+      },
+      {
+        "line": 9279,
+        "target": "__ineg"
+      },
+      {
+        "line": 9287,
+        "target": "__iand"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__iand": 1,
+      "__ineg": 1,
+      "__ladd": 2,
+      "__lcmpu": 1,
+      "__lcmpzero": 3,
+      "__ldivu": 2,
+      "__lor": 1,
+      "__lshl": 2,
+      "__lshrs": 2,
+      "__lxor": 2
+    }
+  },
+  "__ZN5rally14SceneryHistory7prepareEi": {
+    "line": 9298,
+    "calls": [
+      {
+        "line": 9302,
+        "target": "__frameset"
+      },
+      {
+        "line": 9306,
+        "target": "__iand"
+      },
+      {
+        "line": 9312,
+        "target": "__imulu"
+      },
+      {
+        "line": 9326,
+        "target": "__irems"
+      },
+      {
+        "line": 9353,
+        "target": "pe,"
+      },
+      {
+        "line": 9360,
+        "target": "pe,"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__iand": 1,
+      "__imulu": 1,
+      "__irems": 1,
+      "pe,": 2
+    }
+  },
+  "__ZN5rally4game8HudImageC2Ev": {
+    "line": 9430,
+    "calls": [
+      {
+        "line": 9433,
+        "target": "__frameset0"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset0": 1
+    }
+  },
+  "__ZN5rally4game8HudImage3putEjjPKch": {
+    "line": 9467,
+    "calls": [
+      {
+        "line": 9471,
+        "target": "__frameset"
+      },
+      {
+        "line": 9476,
+        "target": "__imulu"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__imulu": 1
+    }
+  },
+  "__ZN5rally4game3Hud4emitERNS_6StreamEjRKNS0_8HudImageE": {
+    "line": 9538,
+    "calls": [
+      {
+        "line": 9542,
+        "target": "__frameset"
+      },
+      {
+        "line": 9564,
+        "target": "__ZN5rally6Stream4rectEiiiii"
+      },
+      {
+        "line": 9576,
+        "target": "__imulu"
+      },
+      {
+        "line": 9599,
+        "target": "__imulu"
+      },
+      {
+        "line": 9637,
+        "target": "__imulu"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN5rally6Stream4rectEiiiii": 1,
+      "__frameset": 1,
+      "__imulu": 3
+    }
+  },
+  "__ZN12_GLOBAL__N_14textEiiPKcii": {
+    "line": 9917,
+    "calls": [
+      {
+        "line": 9921,
+        "target": "__frameset"
+      },
+      {
+        "line": 9928,
+        "target": "_vdp_set_text_colour"
+      },
+      {
+        "line": 9933,
+        "target": "_vdp_set_text_bg_colour"
+      },
+      {
+        "line": 9939,
+        "target": "_vdp_cursor_tab"
+      },
+      {
+        "line": 9944,
+        "target": "_strlen"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "_strlen": 1,
+      "_vdp_cursor_tab": 1,
+      "_vdp_set_text_bg_colour": 1,
+      "_vdp_set_text_colour": 1
+    }
+  },
+  "__ZN5rally4game9routeSineEs": {
+    "line": 9957,
+    "calls": [
+      {
+        "line": 9961,
+        "target": "__frameset"
+      },
+      {
+        "line": 9974,
+        "target": "__sxor"
+      },
+      {
+        "line": 9988,
+        "target": "__lsub"
+      },
+      {
+        "line": 10007,
+        "target": "__ishru"
+      },
+      {
+        "line": 10010,
+        "target": "__ishl"
+      },
+      {
+        "line": 10042,
+        "target": "__land"
+      },
+      {
+        "line": 10048,
+        "target": "__ishl"
+      },
+      {
+        "line": 10076,
+        "target": "__lsub"
+      },
+      {
+        "line": 10079,
+        "target": "__lmulu"
+      },
+      {
+        "line": 10082,
+        "target": "__ldivs"
+      },
+      {
+        "line": 10091,
+        "target": "__sneg"
+      },
+      {
+        "line": 10099,
+        "target": "pe,"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__ishl": 2,
+      "__ishru": 1,
+      "__land": 1,
+      "__ldivs": 1,
+      "__lmulu": 1,
+      "__lsub": 2,
+      "__sneg": 1,
+      "__sxor": 1,
+      "pe,": 1
+    }
+  },
+  "__ZNK5rally4game5Rules14qualifyingGridEm": {
+    "line": 10116,
+    "calls": [
+      {
+        "line": 10120,
+        "target": "__frameset"
+      },
+      {
+        "line": 10130,
+        "target": "__lmulu"
+      },
+      {
+        "line": 10135,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 10148,
+        "target": "__lmulu"
+      },
+      {
+        "line": 10156,
+        "target": "__lsub"
+      },
+      {
+        "line": 10159,
+        "target": "__lmulu"
+      },
+      {
+        "line": 10166,
+        "target": "__lsub"
+      },
+      {
+        "line": 10174,
+        "target": "__ladd"
+      },
+      {
+        "line": 10177,
+        "target": "__ladd"
+      },
+      {
+        "line": 10178,
+        "target": "__ldivu"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__ladd": 2,
+      "__lcmpu": 1,
+      "__ldivu": 1,
+      "__lmulu": 3,
+      "__lsub": 2
+    }
+  },
+  "__ZN5rally4game11RaceTraffic5resetENS0_6PolicyElhh": {
+    "line": 10195,
+    "calls": [
+      {
+        "line": 10199,
+        "target": "__frameset"
+      },
+      {
+        "line": 10222,
+        "target": "__lmulu"
+      },
+      {
+        "line": 10282,
+        "target": "__imulu"
+      },
+      {
+        "line": 10316,
+        "target": "__imulu"
+      },
+      {
+        "line": 10342,
+        "target": "__inot"
+      },
+      {
+        "line": 10350,
+        "target": "pe,"
+      },
+      {
+        "line": 10369,
+        "target": "__lmulu"
+      },
+      {
+        "line": 10379,
+        "target": "__lrems"
+      },
+      {
+        "line": 10382,
+        "target": "__lcmpzero"
+      },
+      {
+        "line": 10406,
+        "target": "__ladd"
+      },
+      {
+        "line": 10414,
+        "target": "__ZN5rally4game11RaceTraffic5placeEj"
+      }
+    ],
+    "static_call_counts": {
+      "__ZN5rally4game11RaceTraffic5placeEj": 1,
+      "__frameset": 1,
+      "__imulu": 2,
+      "__inot": 1,
+      "__ladd": 1,
+      "__lcmpzero": 1,
+      "__lmulu": 2,
+      "__lrems": 1,
+      "pe,": 1
+    }
+  },
+  "__ZN5rally4game5Crash4tickERNS_6MotionERKNS0_11RaceTrafficEm": {
+    "line": 10438,
+    "calls": [
+      {
+        "line": 10442,
+        "target": "__frameset"
+      },
+      {
+        "line": 10502,
+        "target": "__lshl"
+      },
+      {
+        "line": 10514,
+        "target": "__ZNK5rally4game11RaceTraffic7contactEml"
+      }
+    ],
+    "static_call_counts": {
+      "__ZNK5rally4game11RaceTraffic7contactEml": 1,
+      "__frameset": 1,
+      "__lshl": 1
+    }
+  },
+  "__ZN5rally4game11RaceTraffic5placeEj": {
+    "line": 10580,
+    "calls": [
+      {
+        "line": 10584,
+        "target": "__frameset"
+      },
+      {
+        "line": 10589,
+        "target": "__iand"
+      },
+      {
+        "line": 10603,
+        "target": "__imulu"
+      },
+      {
+        "line": 10615,
+        "target": "__iremu"
+      },
+      {
+        "line": 10617,
+        "target": "__imulu"
+      },
+      {
+        "line": 10629,
+        "target": "__lshl"
+      },
+      {
+        "line": 10646,
+        "target": "__ladd"
+      },
+      {
+        "line": 10650,
+        "target": "__lmulu"
+      },
+      {
+        "line": 10653,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__iand": 1,
+      "__imulu": 2,
+      "__iremu": 1,
+      "__ladd": 2,
+      "__lmulu": 1,
+      "__lshl": 1
+    }
+  },
+  "__ZNK5rally4game11RaceTraffic7contactEml": {
+    "line": 10665,
+    "calls": [
+      {
+        "line": 10669,
+        "target": "__frameset"
+      },
+      {
+        "line": 10683,
+        "target": "__lrems"
+      },
+      {
+        "line": 10687,
+        "target": "__lcmpzero"
+      },
+      {
+        "line": 10714,
+        "target": "__ladd"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__ladd": 1,
+      "__lcmpzero": 1,
+      "__lrems": 1
+    }
+  },
+  "__ZNK5rally4game11RaceTraffic14contactStationEll": {
+    "line": 10731,
+    "calls": [
+      {
+        "line": 10735,
+        "target": "__frameset"
+      },
+      {
+        "line": 10748,
+        "target": "__ldivs"
+      },
+      {
+        "line": 10755,
+        "target": "__ldivs"
+      },
+      {
+        "line": 10762,
+        "target": "__lneg"
+      },
+      {
+        "line": 10788,
+        "target": "__lsub"
+      },
+      {
+        "line": 10796,
+        "target": "__lcmps"
+      },
+      {
+        "line": 10797,
+        "target": "pe,"
+      },
+      {
+        "line": 10808,
+        "target": "__lcmps"
+      },
+      {
+        "line": 10809,
+        "target": "pe,"
+      },
+      {
+        "line": 10848,
+        "target": "__ladd"
+      },
+      {
+        "line": 10854,
+        "target": "__lshrs"
+      },
+      {
+        "line": 10856,
+        "target": "__ladd"
+      },
+      {
+        "line": 10857,
+        "target": "__lxor"
+      },
+      {
+        "line": 10860,
+        "target": "__lcmpu"
+      },
+      {
+        "line": 10873,
+        "target": "__lsub"
+      },
+      {
+        "line": 10879,
+        "target": "__lshrs"
+      },
+      {
+        "line": 10881,
+        "target": "__ladd"
+      },
+      {
+        "line": 10882,
+        "target": "__lxor"
+      },
+      {
+        "line": 10885,
+        "target": "__lcmpu"
+      }
+    ],
+    "static_call_counts": {
+      "__frameset": 1,
+      "__ladd": 3,
+      "__lcmps": 2,
+      "__lcmpu": 2,
+      "__ldivs": 2,
+      "__lneg": 1,
+      "__lshrs": 2,
+      "__lsub": 2,
+      "__lxor": 2,
+      "pe,": 2
+    }
+  }
+}
