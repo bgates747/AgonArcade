@@ -1,0 +1,54 @@
+{
+  "schema": "rally.aff03.pose-oracle-source-witness.v1",
+  "sources": [
+    {
+      "path": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/round-trips/guest/src/main.cpp",
+      "sha256": "9c093ccc57f9572f5c4432d2e1db7131402dfb0f3a80efa177f0cb88e54563cb",
+      "line": 132,
+      "guard": "if(fs::read32(fs::Root,fs::PlayerStation)!=3246800||fs::read16(fs::Root,fs::RenderPhase)!=6800)"
+    },
+    {
+      "path": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/prepared-bitmap-set/prepared-race/guest/src/main.cpp",
+      "sha256": "b146823bbf50454a61aa1a43824f3ca82db32562294c223d5e25c57100c1b023",
+      "line": 134,
+      "guard": "if(fs::read32(fs::Root,fs::PlayerStation)!=3246800||fs::read16(fs::Root,fs::RenderPhase)!=6800)"
+    }
+  ],
+  "bindings": {
+    "buffer": 1,
+    "player_station": 198,
+    "render_phase": 304
+  },
+  "raw_witness": [
+    {
+      "token": 16647,
+      "operation": 5,
+      "buffer": 1,
+      "offset": 198,
+      "kind": 4,
+      "value": 35536,
+      "wire_offset": 857604
+    },
+    {
+      "token": 16648,
+      "operation": 5,
+      "buffer": 1,
+      "offset": 200,
+      "kind": 4,
+      "value": 49,
+      "wire_offset": 857621
+    },
+    {
+      "token": 16649,
+      "operation": 5,
+      "buffer": 1,
+      "offset": 304,
+      "kind": 4,
+      "value": 6800,
+      "wire_offset": 857638
+    }
+  ],
+  "preserved_oracle_sha256": "eb9ca86aa59ee8afda950bd7315f511759e7dabd61b69e881826f719a65437d5",
+  "new_oracle_sha256": "e9f1f3e3bfd93bc3ab4f27dc16d35d9b51c6bc6ed8753b3b75642435be7065ae",
+  "only_three_read_lines_added": true
+}

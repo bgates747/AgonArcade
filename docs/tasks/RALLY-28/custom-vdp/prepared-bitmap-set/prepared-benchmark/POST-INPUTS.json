@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "profiles": {
+    "prace900ab01": {
+      "compact": {
+        "input_hashes_preserved": true,
+        "files": 19,
+        "last_run_exists": true,
+        "result_exists": true
+      },
+      "prepared": {
+        "input_hashes_preserved": true,
+        "files": 24,
+        "last_run_exists": true,
+        "result_exists": true
+      }
+    },
+    "prace900ba01": {
+      "prepared": {
+        "input_hashes_preserved": true,
+        "files": 24,
+        "last_run_exists": true,
+        "result_exists": false
+      },
+      "compact": {
+        "input_hashes_preserved": true,
+        "files": 19,
+        "last_run_exists": false,
+        "result_exists": false
+      }
+    }
+  }
+}

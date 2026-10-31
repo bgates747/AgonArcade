@@ -1,0 +1,26 @@
+{
+  "compact": {
+    "changed_files": [],
+    "accepted_full900_byte_identical": true
+  },
+  "prepared": {
+    "config_before": "5232384601003c009089000001000000",
+    "config_after": "52323846010084039089000001000000",
+    "changed_files": [
+      "config.bin",
+      "expected.json"
+    ],
+    "guest_native_sources_unchanged": true
+  },
+  "benchmark_tools": {
+    "guest_or_native_source_edits": false,
+    "new": [
+      "prepare.py",
+      "verify.py",
+      "audit.py"
+    ],
+    "copied_runner_diff": "CONTROL-DIFF.patch",
+    "separate_oracle_diff": "ORACLE-DIFF.patch",
+    "parent_functional_inputs_preserved": true
+  }
+}

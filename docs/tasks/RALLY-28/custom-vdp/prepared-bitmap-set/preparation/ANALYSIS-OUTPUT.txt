@@ -1,0 +1,86 @@
+{
+  "exact-reference": {
+    "covered": true,
+    "entries": 6927,
+    "retained_pixel_bytes": 14874209,
+    "packed_lookup_bytes": 58836,
+    "maximum_edge_error": 0,
+    "maximum_silhouette_distance": 0,
+    "maximum_opaque_rgba_disagreement": 0.0,
+    "overhead_sensitivity": {
+      "0": 14933045,
+      "128": 15819701,
+      "256": 16706357
+    }
+  },
+  "one-pixel-reference": {
+    "covered": true,
+    "entries": 2040,
+    "retained_pixel_bytes": 5443719,
+    "packed_lookup_bytes": 19740,
+    "maximum_edge_error": 1,
+    "maximum_silhouette_distance": 1,
+    "maximum_opaque_rgba_disagreement": 1.0,
+    "overhead_sensitivity": {
+      "0": 5463459,
+      "128": 5724579,
+      "256": 5985699
+    }
+  },
+  "two-pixel-reference": {
+    "covered": true,
+    "entries": 901,
+    "retained_pixel_bytes": 2211975,
+    "packed_lookup_bytes": 10628,
+    "maximum_edge_error": 2,
+    "maximum_silhouette_distance": 2,
+    "maximum_opaque_rgba_disagreement": 1.0,
+    "overhead_sensitivity": {
+      "0": 2222603,
+      "128": 2337931,
+      "256": 2453259
+    }
+  },
+  "one-pixel-stock-model": {
+    "covered": true,
+    "entries": 2040,
+    "retained_pixel_bytes": 5443719,
+    "packed_lookup_bytes": 19740,
+    "maximum_edge_error": 1,
+    "maximum_silhouette_distance": 1,
+    "maximum_opaque_rgba_disagreement": 1.0,
+    "overhead_sensitivity": {
+      "0": 5463459,
+      "128": 5724579,
+      "256": 5985699
+    }
+  },
+  "two-pixel-stock-model": {
+    "covered": true,
+    "entries": 901,
+    "retained_pixel_bytes": 2211975,
+    "packed_lookup_bytes": 10628,
+    "maximum_edge_error": 2,
+    "maximum_silhouette_distance": 2,
+    "maximum_opaque_rgba_disagreement": 1.0,
+    "overhead_sensitivity": {
+      "0": 2222603,
+      "128": 2337931,
+      "256": 2453259
+    }
+  },
+  "near-one-far-two-stock-model": {
+    "covered": true,
+    "entries": 1592,
+    "retained_pixel_bytes": 5121502,
+    "packed_lookup_bytes": 16156,
+    "maximum_edge_error": 2,
+    "maximum_silhouette_distance": 2,
+    "maximum_opaque_rgba_disagreement": 1.0,
+    "overhead_sensitivity": {
+      "0": 5137658,
+      "128": 5341434,
+      "256": 5545210
+    }
+  }
+}

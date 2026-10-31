@@ -1,0 +1,52 @@
+{
+  "independent_full_audit_pending": true,
+  "watermarks_individually_matched_to_raw_info17": [
+    {
+      "phase": "after_load",
+      "token": 2,
+      "remaining_bytes": 2424
+    },
+    {
+      "phase": "after_install",
+      "token": 16645,
+      "remaining_bytes": 2196
+    },
+    {
+      "phase": "after_warm",
+      "token": 16670,
+      "remaining_bytes": 2196
+    },
+    {
+      "phase": "after_steady",
+      "token": 16791,
+      "remaining_bytes": 1972
+    },
+    {
+      "phase": "after_cleanup",
+      "token": 17946,
+      "remaining_bytes": 1972
+    }
+  ],
+  "counters_reported": [
+    417,
+    416,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cold_main_mos_seconds": 38.56666666666667,
+  "install_mos_seconds": 34.15,
+  "verified_install_mos_seconds": 32.78333333333333,
+  "verified_install_prt_seconds": 33.929,
+  "collection_psram_delta": 2429420,
+  "race_ready_psram": 1012947,
+  "race_ready_internal": 59944,
+  "cleanup_psram_residual": 10960,
+  "cleanup_internal_change": 984,
+  "cleanup_after_module_unload": true,
+  "no_standalone_cache_internal_leak_attribution": true,
+  "no_fps_computation": true
+}

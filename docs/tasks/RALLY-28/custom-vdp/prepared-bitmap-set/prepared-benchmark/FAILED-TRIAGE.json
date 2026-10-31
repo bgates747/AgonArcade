@@ -1,0 +1,99 @@
+{
+  "schema": "rally.aff03.full900-first-stall.v1",
+  "raw_prefix_qualified": true,
+  "native_replies": 6,
+  "multiplexed_packets": 108,
+  "outbound_bytes": 233974,
+  "incoming_bytes": 405,
+  "all_six_native_requests_and_values_exact": [
+    {
+      "token": 1,
+      "operation": 1,
+      "fields": "81c4908900000000",
+      "kind": 2,
+      "value": 1,
+      "outbound_start": 35684
+    },
+    {
+      "token": 2,
+      "operation": 4,
+      "fields": "1100",
+      "kind": 4,
+      "value": 2424,
+      "outbound_start": 35703
+    },
+    {
+      "token": 3,
+      "operation": 4,
+      "fields": "0d00",
+      "kind": 4,
+      "value": 58716,
+      "outbound_start": 35716
+    },
+    {
+      "token": 4,
+      "operation": 4,
+      "fields": "0e00",
+      "kind": 4,
+      "value": 0,
+      "outbound_start": 35729
+    },
+    {
+      "token": 5,
+      "operation": 4,
+      "fields": "0f00",
+      "kind": 4,
+      "value": 36852,
+      "outbound_start": 35742
+    },
+    {
+      "token": 6,
+      "operation": 4,
+      "fields": "1000",
+      "kind": 4,
+      "value": 0,
+      "outbound_start": 35755
+    }
+  ],
+  "asset_streams": [
+    {
+      "file": "assets.vdu",
+      "bytes": 149554,
+      "started": true,
+      "outbound_start": 35780,
+      "exact_prefix_bytes": 149554,
+      "complete": true,
+      "outbound_ends_inside": false
+    },
+    {
+      "file": "artwork.vdu",
+      "bytes": 58780,
+      "started": true,
+      "outbound_start": 185334,
+      "exact_prefix_bytes": 48640,
+      "complete": false,
+      "outbound_ends_inside": true
+    }
+  ],
+  "stage": "Original source artwork upload after LOAD/INFO diagnostics, before prepared installer, Init, warm or timed frames",
+  "no_prepared_images_or_race_frames_observed": true,
+  "backend_errors_zero": true,
+  "uart_capture_delivered_stats_exact": true,
+  "host_timeout_seconds": 60,
+  "process_exit": 0,
+  "guest_result_files_absent": true,
+  "guest_teardown_not_observed": true,
+  "runtime_crash_or_exact_stall_cause_unqualified": true,
+  "no_retry": true,
+  "fourth_process_not_launched": true,
+  "evidence_sha256": {
+    "esp32-uart0.txt": "dc5cd25864f5b0d2492b96d1e374233f61c4ff56901a503f2b55c9e0dd659fe9",
+    "final.ppm": "12c810bd25efe1a7484387cd3d5a8503ce7cc341d61768b99a85c39a0ecca884",
+    "frontend.txt": "6b1dcaab815e98723c3f4ff01013a1c4352370bf96dc04aab49509c0226d9bba",
+    "mos-to-vdp.bin": "a2eae4e2d1ac20f7cea8826fe748335fa4bd6457e2be17ad25121dba92ff7315",
+    "run.json": "3aa4affd852bdbb0c4e513486f6027603aaecab9f5c25e52fc488f2971752468",
+    "stats.json": "6d7941e45571f0b120dd6754c3b1cb5af92f1747d2cc6973c293f201fab6acd0",
+    "vdp-to-mos-delivered.bin": "b4fd9c68253f0fc495730c65d0de67cfc0390ce02414d148c7c057d77f596aa6",
+    "vdp-to-mos.bin": "b4fd9c68253f0fc495730c65d0de67cfc0390ce02414d148c7c057d77f596aa6"
+  }
+}

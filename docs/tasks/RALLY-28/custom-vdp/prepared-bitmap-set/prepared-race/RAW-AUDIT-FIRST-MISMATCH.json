@@ -1,0 +1,48 @@
+{
+  "schema": "rally.aff03.raw-audit-first-mismatch.v1",
+  "strict_audit_passed": false,
+  "no_expectation_changes": true,
+  "expected_at_token16647": {
+    "operation": 2,
+    "entry": 15
+  },
+  "actual_unchanged_pose_reads": [
+    {
+      "token": 16647,
+      "operation": 5,
+      "buffer": 1,
+      "offset": 198,
+      "kind": 4,
+      "value": 35536,
+      "wire_offset": 857604
+    },
+    {
+      "token": 16648,
+      "operation": 5,
+      "buffer": 1,
+      "offset": 200,
+      "kind": 4,
+      "value": 49,
+      "wire_offset": 857621
+    },
+    {
+      "token": 16649,
+      "operation": 5,
+      "buffer": 1,
+      "offset": 304,
+      "kind": 4,
+      "value": 6800,
+      "wire_offset": 857638
+    }
+  ],
+  "immutable_control_and_prepared_main_contain_same_pose_guard": true,
+  "prepared_native_replies": 17946,
+  "prepared_functional_verifier_passed": true,
+  "expected_reply_prediction_missing": 3,
+  "overall_independent_qualification_pending": true,
+  "source_sha256": {
+    "raw_audit.py": "eb9ca86aa59ee8afda950bd7315f511759e7dabd61b69e881826f719a65437d5",
+    "guest/src/main.cpp": "b146823bbf50454a61aa1a43824f3ca82db32562294c223d5e25c57100c1b023",
+    "HOST-FIXTURE.json": "e9d1c71f38f46a44f1fe628892a1a2d0476d203dee775795dd16d72645f08c23"
+  }
+}

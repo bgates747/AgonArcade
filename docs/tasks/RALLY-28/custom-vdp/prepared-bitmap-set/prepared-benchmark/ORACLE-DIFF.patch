@@ -1,0 +1,41 @@
+--- prepared-race/raw_audit_pose_v2.py
++++ prepared-benchmark/raw_prepared.py
+@@ -70,7 +70,7 @@
+     meta=json.loads((HERE/'fixtures/prepared/expected.json').read_text())
+     host=json.loads((HERE/'HOST-FIXTURE.json').read_text());recipe=json.loads((HERE.parent/'capacity-02/recipe.json').read_text())
+     initial=json.loads((HERE/'INITIAL-UPLOAD-STATE.json').read_text())
+-    final=json.loads((HERE/'EXPECTED-FINAL-60.json').read_text())
++    final=json.loads((HERE/'EXPECTED-FINAL-900.json').read_text())
+     table=(HERE/'fixtures/prepared/index.bin').read_bytes()
+     handle=o.add(1,struct.pack('<HIH',50305,35216,0),2);assert handle
+     o.info(17,setup['loaded_stack'])
+@@ -97,7 +97,7 @@
+         o.word(1,20,request+1);o.word(1,20,request+1)
+     o.mem('race_ready');o.info(17,result['stack_before'])
+     assert o.at==private['timed_reply_begin']
+-    for frame in range(1,61):o.invoke(handle,15);o.word(1,20,5*frame+3)
++    for frame in range(1,901):o.invoke(handle,15);o.word(1,20,5*frame+3)
+     assert o.at==private['timed_reply_end']
+     o.info(17,result['stack_after']);o.mem('race_end');o.snapshot(final)
+     o.invoke(handle,16);o.add(3,struct.pack('<H',handle),3,0)
+@@ -120,7 +120,7 @@
+     generations=(HERE/'fixtures/prepared/generation.vdu').read_bytes()
+     for i,image in enumerate(recipe['entries']):assert o.tx.count(generations[48*i:48*i+48])==1+(image['id']==small['id'])
+     # Exact immutable runtime/input pins are independently checked again.
+-    profiles=json.loads((HERE/'PROFILES-prace01.json').read_text())['prepared']
++    profiles=json.loads((HERE/('PROFILES-'+e.parent.name+'.json')).read_text())['prepared']
+     run=json.loads((e/'run.json').read_text());assert run['process_exit']==0 and not run['error']
+     actual={name:digest for digest,name in (line.split('  ',1) for line in run['runtime_identities'].splitlines())}
+     assert actual==profiles['input_sha256']
+@@ -131,9 +131,9 @@
+         all_requests_tokens_status_values_matched=True,all_memory_samples=len(memory),all_pixel_witnesses=len(pixels),
+         setup_before_init=True,final_independent_state=True,all_private_cleanup_queries_matched=True,
+         expected_counters=host['expected_counters'],task_watermarks_bytes=[setup['loaded_stack'],setup['installed_stack'],result['stack_before'],result['stack_after'],private['cleanup_stack']],
+-        functional_only=True,no_fps_or_whole_stack_estimate_claim=True,
++        functional_only=False,no_fps_or_whole_stack_estimate_claim=True,
+         evidence_sha256={str(p.relative_to(e)):sha(p) for p in e.iterdir() if p.is_file()})
+-    (HERE/'RAW-FUNCTIONAL-AUDIT.json').write_text(json.dumps(report,indent=2)+'\n')
++    (e/'RAW-PREPARED-AUDIT.json').write_text(json.dumps(report,indent=2)+'\n')
+     return report
+ 
+ 

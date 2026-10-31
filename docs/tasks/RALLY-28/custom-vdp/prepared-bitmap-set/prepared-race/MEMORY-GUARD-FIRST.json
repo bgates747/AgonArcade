@@ -1,0 +1,27 @@
+{
+  "schema": "rally.aff03.guest-memory-guard.v1",
+  "bss_start": 316372,
+  "bss_bytes": 342853,
+  "bss_end": 659225,
+  "unchanged_end_ceiling": 655360,
+  "over_by": 3865,
+  "transcript_bytes": 240000,
+  "correction": "Reduce diagnostic transcript allocation to220000B; preserve end ceiling and fail-closed overflow checks",
+  "no_emulator_launched": true,
+  "files": {
+    "BUILD.txt": "3ae08a10d7bc5380b644315ad0e9a2cef2b28fbe1d748fa0899a7b5517b1c7fa",
+    "src/timing_prt.asm": "20055feeef1cbe34d11cbe8a567cc8454a55666c5f11b7f7e3442a6002572fd3",
+    "src/main.cpp": "b146823bbf50454a61aa1a43824f3ca82db32562294c223d5e25c57100c1b023",
+    "src/callback.asm": "1ca8c8c070f8e1b585a283ebfca0d3f5d21ae138d5e04b827281875a41dd4d1e",
+    "bin/probe.bin": "936538e815eec4ee78c8626fe7bcdb3463ab882457b9477d3798021b6fe7e4a4",
+    "bin/probe.map": "ec5953451a416f5f5a91dc669a4b551be96fa3f9aecfab6a2faf3b409fb345ad",
+    "include/capacity-details.hpp": "b762beffc74aa8031211298d23cb653b9e40965515b00f0c5e4d5a7810f50eb7",
+    "include/native.hpp": "33211b7000c464279b065d4b88432259ae6b9b0e14dc338043000d55d0a16442",
+    "include/bindings.hpp": "378033aa5b4dd707e7ff09b3170ae8ce2b488a792410d420ee92e1ed92092eac",
+    "include/protocol.hpp": "0a15ba1a6c3e20eb086a4c31b98a0a055299dc18a222fc4d72cd0bb0262593b5",
+    "include/recipe-pins.hpp": "18e9fe27a2ecd016594833f59d73d28e49cc7a44ca604a91496721a91b4a2298",
+    "include/setup.hpp": "ab33afc93987f3c166cda8a28a3d54bb802477f65fdd4f9cddc516b54f9eb8df",
+    "include/capacity.hpp": "57f957746c9b048a65587bf93ddaeb58765647ea2bbd66be49079994a7bbfb73",
+    "include/presentation-functions.inc": "517cc979f7c5f71efcda520d4befc8d1688ea2f24f0ed8531983297c6bb3b558"
+  }
+}

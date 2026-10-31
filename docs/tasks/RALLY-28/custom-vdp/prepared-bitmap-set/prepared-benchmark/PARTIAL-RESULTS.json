@@ -1,0 +1,74 @@
+{
+  "comparison_limit": "Bundled retention +2px size approximation +stock-versus-additive sampling; not isolated cache benefit or identical actor images",
+  "completed_cohort_runs": 2,
+  "planned_runs": 4,
+  "cohort_incomplete": true,
+  "four_run_gain_qualified": false,
+  "reverse_order_and_variation_unavailable": true,
+  "pooled_four_run_FPS_unavailable": true,
+  "individual": {
+    "compact": {
+      "nominal_mos_fps": 36.193029490616624,
+      "nominal_prt_fps": 34.96096026104183,
+      "mos_units": 2984,
+      "prt_units": 25743,
+      "native_replies": 2024
+    },
+    "prepared": {
+      "nominal_mos_fps": 36.21730382293762,
+      "nominal_prt_fps": 34.994945174585894,
+      "mos_units": 2982,
+      "prt_units": 25718,
+      "native_replies": 19626
+    }
+  },
+  "single_order_difference_percent": {
+    "nominal_mos": 0.06706908115357013,
+    "nominal_prt": 0.0972081810405312
+  },
+  "actual_timed_wire_bytes": 291568,
+  "token_only_normalizations": 1800,
+  "normalized_wire_sha256": "1d84519a7348393493399b199c81fe9671c5bdda7e3f757959cee707c443418d",
+  "prepared_actual_task_watermarks": [
+    2424,
+    2196,
+    2196,
+    1940,
+    1940
+  ],
+  "compact_task_watermarks": [
+    2260,
+    1956
+  ],
+  "cold_cost": {
+    "main_entry_through_warm_mos_units": 4676,
+    "main_entry_through_warm_nominal_mos_seconds": 38.96666666666667,
+    "install_mos_units": 4146,
+    "install_nominal_mos_seconds": 34.55,
+    "verified_install_nominal_mos_seconds": 33.18333333333333,
+    "verified_install_separate_prt_seconds": 34.344
+  },
+  "memory": {
+    "retained_psram_delta": 2429420,
+    "free_psram": 1012947,
+    "internal_race_ready": 59944,
+    "largest_internal": 29684,
+    "cleanup_psram_residual": 10960,
+    "cleanup_internal_increase_after_UNLOAD": 984,
+    "buffer_count_restored": true
+  },
+  "guard": {
+    "elapsed_host_seconds": 177.899,
+    "thermal_stop_celsius": 95,
+    "max_temperature_celsius": 61.0,
+    "original_boost": "1",
+    "final_boost": "1",
+    "boost_restored": true,
+    "video_driver": "dummy",
+    "audio_driver": "dummy",
+    "owned_emulator_processes_after": []
+  },
+  "failed_third": "evidence/prace900ba01/prepared",
+  "fourth_unrun": true,
+  "no_retry": true
+}

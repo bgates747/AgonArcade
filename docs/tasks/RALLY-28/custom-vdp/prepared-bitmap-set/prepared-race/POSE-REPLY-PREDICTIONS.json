@@ -1,0 +1,16 @@
+{
+  "schema": "rally.aff03.pose-read-prediction-correction.v1",
+  "only_additional_reads": 3,
+  "smoke60": {
+    "original_prediction": 17943,
+    "corrected_prediction": 17946,
+    "observed_packet_count": 17946,
+    "full_corrected_audit_pending": true
+  },
+  "full900": {
+    "original_prediction": 19623,
+    "corrected_prediction": 19626,
+    "target_unrun": true
+  },
+  "no_fixture_or_target_change": true
+}

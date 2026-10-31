@@ -1,0 +1,48 @@
+{
+  "schema": "rally.aff03.prepared-guest-build.v1",
+  "guest_sha256": "ac0ece2f593f49a2a3a229ab74d08150dd36e13b83685666741c6d549aca703b",
+  "sections": {
+    "text": {
+      "start": 262625,
+      "bytes": 41983,
+      "end": 304608
+    },
+    "rodata": {
+      "start": 304608,
+      "bytes": 10946,
+      "end": 315554
+    },
+    "data": {
+      "start": 315554,
+      "bytes": 875,
+      "end": 316429
+    },
+    "bss": {
+      "start": 316429,
+      "bytes": 322853,
+      "end": 639282
+    }
+  },
+  "native_package_sha256": "f3a1f8d01a9cef835d165fc92747f28a00b0d2645592c106c6682de0dc6c055b",
+  "native_stack_audit_sha256": "ab05995d9e2f29e6ef53a91b2938c7504b8559f6469ae6818a1095464217f8c6",
+  "exact_control_fixture": true,
+  "exact_original_timed_loop_source": true,
+  "qualified_capacity_helpers_unchanged": true,
+  "source_sha256": {
+    "src/timing_prt.asm": "20055feeef1cbe34d11cbe8a567cc8454a55666c5f11b7f7e3442a6002572fd3",
+    "src/main.cpp": "b146823bbf50454a61aa1a43824f3ca82db32562294c223d5e25c57100c1b023",
+    "src/callback.asm": "1ca8c8c070f8e1b585a283ebfca0d3f5d21ae138d5e04b827281875a41dd4d1e",
+    "bin/probe.bin": "ac0ece2f593f49a2a3a229ab74d08150dd36e13b83685666741c6d549aca703b",
+    "bin/probe.map": "b495b8ecf846c88ca4dd4bf8fd52570da258ffe2235219e825632a582b0be0ac",
+    "include/capacity-details.hpp": "b762beffc74aa8031211298d23cb653b9e40965515b00f0c5e4d5a7810f50eb7",
+    "include/native.hpp": "855d1d101f5e68e339f79d225c957921f4e232c6be698699c0d75b6ef896d7bf",
+    "include/bindings.hpp": "378033aa5b4dd707e7ff09b3170ae8ce2b488a792410d420ee92e1ed92092eac",
+    "include/protocol.hpp": "0a15ba1a6c3e20eb086a4c31b98a0a055299dc18a222fc4d72cd0bb0262593b5",
+    "include/recipe-pins.hpp": "18e9fe27a2ecd016594833f59d73d28e49cc7a44ca604a91496721a91b4a2298",
+    "include/setup.hpp": "16cc7791dcc147b184140efc30fc48ae194380bc26ca41a474a7d4037cd8e6b4",
+    "include/capacity.hpp": "57f957746c9b048a65587bf93ddaeb58765647ea2bbd66be49079994a7bbfb73",
+    "include/presentation-functions.inc": "517cc979f7c5f71efcda520d4befc8d1688ea2f24f0ed8531983297c6bb3b558"
+  },
+  "functional_frames": 60,
+  "no_emulator_launched": true
+}

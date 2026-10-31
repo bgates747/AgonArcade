@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "guest_sha256": "6d7231bd6a18691d4ad21082f89ef710d3fff89e8ccee373c7accb160d49a7b9",
+  "module_sha256": "479fe1ac99bb2895af8a8b6cca49b90cb5c346a56a5f9e4020cab0b23c933918",
+  "sections": {
+    "text": {
+      "start": 262625,
+      "bytes": 26779,
+      "end": 289404
+    },
+    "rodata": {
+      "start": 289404,
+      "bytes": 7587,
+      "end": 296991
+    },
+    "data": {
+      "start": 296991,
+      "bytes": 645,
+      "end": 297636
+    },
+    "bss": {
+      "start": 297636,
+      "bytes": 313500,
+      "end": 611136
+    }
+  },
+  "source_sha256": {
+    "src/timing_prt.asm": "20055feeef1cbe34d11cbe8a567cc8454a55666c5f11b7f7e3442a6002572fd3",
+    "src/main.cpp": "1ca99b9046e1e90acbe8b52f06a748dd32dda387e063c4d6a9d78425c4109540",
+    "src/callback.asm": "1ca8c8c070f8e1b585a283ebfca0d3f5d21ae138d5e04b827281875a41dd4d1e",
+    "bin/probe.bin": "6d7231bd6a18691d4ad21082f89ef710d3fff89e8ccee373c7accb160d49a7b9",
+    "bin/probe.map": "aa54d5b78ff2b333be3a47e731ab95f9fff86d10c34ee64f392a03fb3308f3e5",
+    "include/capacity-details.hpp": "b762beffc74aa8031211298d23cb653b9e40965515b00f0c5e4d5a7810f50eb7",
+    "include/native.hpp": "16e2f3fdcbe174c4febe12c0b279ce3ad34500b15ccd71563f97018b42e8867f",
+    "include/bindings.hpp": "378033aa5b4dd707e7ff09b3170ae8ce2b488a792410d420ee92e1ed92092eac",
+    "include/protocol.hpp": "0a15ba1a6c3e20eb086a4c31b98a0a055299dc18a222fc4d72cd0bb0262593b5",
+    "include/recipe-pins.hpp": "18e9fe27a2ecd016594833f59d73d28e49cc7a44ca604a91496721a91b4a2298",
+    "include/capacity.hpp": "57f957746c9b048a65587bf93ddaeb58765647ea2bbd66be49079994a7bbfb73",
+    "include/presentation-functions.inc": "517cc979f7c5f71efcda520d4befc8d1688ea2f24f0ed8531983297c6bb3b558"
+  },
+  "detailed_extra_points": 54,
+  "native_module_changed": false,
+  "capacity_only": true,
+  "no_emulator_launched": true
+}

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": {
+    "READINESS-FREEZE.json": {
+      "sha256": "517138ab3779936273cbc1f59bb6509280db44e2a1e2947cd05d8ec4b3b4ecfd",
+      "files_checked": 75
+    },
+    "FIRST-FUNCTIONAL-WITNESS.json": {
+      "sha256": "f3ba0498cd929a3ef032db4d6e0741c55b7c9686e62dedc3fda5a1735ac684d5",
+      "files_checked": 46
+    },
+    "POSE-AUDIT-FREEZE.json": {
+      "sha256": "e15c3209b952627014e8806b3302fefb411cc87ed55469db12da864dc48f7f76",
+      "files_checked": 4
+    },
+    "RAW-FUNCTIONAL-AUDIT.json": {
+      "sha256": "dad0e0bea9028cf2e9051fdb333a5df7cacd5b0f2d5a2fdc4fe73d3be7c9f876",
+      "evidence_files_checked": 23
+    }
+  },
+  "oracle_only_three_additional_reads": true,
+  "no_emulator_or_target_change": true
+}

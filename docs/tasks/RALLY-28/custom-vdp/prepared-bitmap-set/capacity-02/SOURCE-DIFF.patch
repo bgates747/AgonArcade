@@ -1,0 +1,19 @@
+--- capacity/capacity.hpp
++++ capacity-02/capacity.hpp
+@@ -1,6 +1,7 @@
+ #pragma once
+ #include "recipe-pins.hpp"
+ #include "capacity-details.hpp"
++#include "protocol.hpp"
+ 
+ // Setup-only application experiment. Existing runtime, allocator, bitmap and
+ // counter APIs are used without extending their contracts.
+@@ -26,7 +27,7 @@
+ }
+ void variable(unsigned var,unsigned offset){fs::command(Telemetry,48);uint8_t p[5]={128,0,0,0,0};fs::put16(p+1,offset);fs::put16(p+3,var);fs::send(p,sizeof p);}
+ uint16_t errorRead(unsigned id,unsigned offset,unsigned expected){
+-    uint8_t p[6];fs::put16(p,id);fs::put32(p+2,offset);unsigned status=fs::transaction(5,p,6,3);
++    uint8_t p[6];fs::put16(p,id);fs::put32(p+2,offset);unsigned status=fs::transaction(VDPL_READ16,p,6,VDPL_REPLY_ERROR);
+     if(status!=expected)fs::fail("Capacity expected READ16 status");return status;
+ }
+ bool length(unsigned id,unsigned bytes){

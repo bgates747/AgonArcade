@@ -1,0 +1,12 @@
+--- raw_audit.py
++++ raw_audit_pose_v2.py
+@@ -89,6 +89,9 @@
+     o.snapshot(initial);o.word(1,20,0);o.word(1,20,0);o.mem('installed');o.info(17,setup['installed_stack'])
+     assert o.at==private['setup_reply_end']==setup['install_reply_end']
+     o.invoke(handle,13)
++    o.word(1,198,3246800&65535)
++    o.word(1,200,3246800>>16)
++    o.word(1,304,6800)
+     for request in (1,2):
+         o.invoke(handle,15);o.word(50304,44,1);o.word(50304,16,request);o.word(50304,20,0)
+         o.word(1,20,request+1);o.word(1,20,request+1)

@@ -1,0 +1,50 @@
+{
+  "compiler": "xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch5) 8.4.0",
+  "abi_header_sha256": "fa8385e2906f07d37372d80c40f73d419defdbefe7a3458461ac9d5fe0820d38",
+  "module": {
+    "name": "rally-prepared",
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/prepared-bitmap-set/runtime/source/checked.c",
+    "source_sha256": "b8e5e709a64c52a387f27ec3b560ee12a9efa84909804234113447828d61f115",
+    "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+    "declared_limits": {
+      "text": 32768,
+      "data": 4096,
+      "stack": 2048,
+      "image": 65536
+    },
+    "build_id": "0x52385032",
+    "capabilities": 1,
+    "envelope_bytes": 64,
+    "elf_bytes": 35152,
+    "package_bytes": 35216,
+    "sha256": "f3a1f8d01a9cef835d165fc92747f28a00b0d2645592c106c6682de0dc6c055b",
+    "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/prepared-bitmap-set/runtime/target/rally-prepared.vdpl",
+    "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/prepared-bitmap-set/runtime/target/rally-prepared.elf",
+    "entry_virtual": 9612,
+    "resident_text_bytes": 32452,
+    "resident_data_bytes": 1128,
+    "relative_relocations": 49,
+    "allocated_sections": {
+      ".text": {
+        "virtual_address": 896,
+        "bytes": 32452,
+        "type": 1
+      },
+      ".rodata": {
+        "virtual_address": 33348,
+        "bytes": 548,
+        "type": 1
+      },
+      ".data": {
+        "virtual_address": 38236,
+        "bytes": 544,
+        "type": 1
+      },
+      ".bss": {
+        "virtual_address": 38780,
+        "bytes": 36,
+        "type": 8
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "archived-actual-control60-accepted-functional-only",
+    "state-corruption-rejected",
+    "reply-token-corruption-rejected",
+    "raw-actual-load-kind2",
+    "raw-actual-bounds-kind5-status3",
+    "raw-wrong-done-kind3-rejected"
+  ],
+  "archived_input_only": true,
+  "no_new_emulator_or_fps_result": true,
+  "source_sha256": {
+    "local_checks.py": "c46da3fb61d085959cf07be7ed5e5bb64833d7dd2a6999769d677f3048025966",
+    "verify.py": "9d425fded0e65683653625f069c974ac0c2d34d86e59666bb18e588de39c18e2",
+    "prepared_checks.py": "beb13820e6b952c3e6ddac413718f49ee022497fcd9f0e9a147500de3e2770a5",
+    "raw_audit.py": "eb9ca86aa59ee8afda950bd7315f511759e7dabd61b69e881826f719a65437d5"
+  }
+}

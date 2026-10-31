@@ -1,0 +1,11 @@
+--- prepared-race/control.py
++++ prepared-benchmark/control.py
+@@ -144,7 +144,7 @@
+             entry = dict(passed=True, **{k: receipt[k] for k in ('host_seconds', 'process_exit', 'backend_stats', 'result')})
+             assert all(sha(profile/n) == h for n, h in info['input_sha256'].items())
+             entry['input_hashes_preserved'] = True
+-            print(case, 'PASS functional', receipt['result']['frames'], 'frames; timing excluded', flush=True)
++            print(case, 'PASS', round(receipt['result']['nominal_mos_fps'],3), 'nominal MOS FPS; bundled tradeoff', flush=True)
+         except BaseException as exc:
+             entry = dict(passed=False, error=repr(exc))
+             raise

@@ -1,0 +1,17 @@
+{
+  "schema": "rally.aff03.artwork-boundary-witness.v1",
+  "artwork_sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+  "original_art_prefix_bytes": 48640,
+  "clear_offset": 48249,
+  "write_header_offset": 48255,
+  "write_header_hex": "1700a038f9000008",
+  "expected_buffer_id": 63800,
+  "expected_payload_bytes": 2048,
+  "payload_start": 48263,
+  "payload_prefix_captured": 377,
+  "payload_remaining_uncaptured": 1671,
+  "qualification": "Exact expected fixture block around the host-enqueued byte boundary; NOT proof of firmware parser position or FIFO delivery",
+  "guest_upload": "file() reads1024-byte chunks then send(); no deliberate wait or fixed quiet interval inside that source function",
+  "no_native_callback_expected_during_upload": true,
+  "firmware_consumed_artwork_count_unknown": true
+}

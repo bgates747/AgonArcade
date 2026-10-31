@@ -1,0 +1,9 @@
+{
+  "repository": "/Agon/mystuff/flexe-agon-emulator",
+  "export_base_commit": "1f7ea21d41a7e1f11fe89848a559e27ce7828423",
+  "source_blob_sha256": "ce5dc9019f459ceef137ec5132b844bb417fed5b3809dde8cd3d2a5e4a7861be",
+  "read_only_excerpt": "void z80_send_to_vdp(uint8_t byte){pthread_mutex_lock(&io_lock);queue_put(&host_to_vdp,byte);\n    if(host_trace)fputc(byte,host_trace);\n    pthread_mutex_unlock(&io_lock);atomic_fetch_add(&rx_count,1);}\nbool z80_recv_from_vdp(uint8_t *byte){pthread_mutex_lock(&io_lock);bool got=queue_get(&vdp_to_host,byte);\n    if(got){atomic_fetch_add(&delivered_count,1);if(delivered_trace)fputc(*byte,delivered_trace);}\n    pthread_mutex_unlock(&io_lock);return got;}\n",
+  "firmware_rx_count_not_in_exported_stats": true,
+  "interpretation": "uart_rx counts calls after host_to_vdp enqueue; host trace is written there. feed_queues injection/firmware consumption are later boundaries. uart_delivered counts reverse bytes dequeued toward eZ80.",
+  "provenance_limit": "Historical exported frontend base identifies this source; frozen adapter200f28 was copied from maintained Oryx build. No new binary reconstruction/source-to-binary claim or current-private-state inference."
+}

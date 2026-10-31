@@ -1,0 +1,64 @@
+{
+  "schema": "rally.aff03.expected-error-branches.v1",
+  "passed": true,
+  "results": {
+    "ordinary": {
+      "passed": true,
+      "tests": 17,
+      "cases": [
+        "legal-final-word-value",
+        "bounds-error-kind5-code3",
+        "missing-error-kind5-code2",
+        "complete-length-positive-and-negative",
+        "missing-buffer-rejects-length",
+        "oversize-buffer-rejects-length",
+        "mismatched-kind-rejected",
+        "mismatched-token-rejected",
+        "mismatched-magic-rejected",
+        "mismatched-version-rejected",
+        "unexpected-error-status-rejected",
+        "timeout-keeps-callback-pending",
+        "pending-reentry-rejected",
+        "successful-partial-resource-cleanup-901-absence-checks",
+        "failed-setup-cleans-and-preserves-cause",
+        "cleanup-unexpected-reply-not-success",
+        "pending-callback-blocks-cleanup"
+      ]
+    },
+    "asan-ubsan": {
+      "passed": true,
+      "tests": 17,
+      "cases": [
+        "legal-final-word-value",
+        "bounds-error-kind5-code3",
+        "missing-error-kind5-code2",
+        "complete-length-positive-and-negative",
+        "missing-buffer-rejects-length",
+        "oversize-buffer-rejects-length",
+        "mismatched-kind-rejected",
+        "mismatched-token-rejected",
+        "mismatched-magic-rejected",
+        "mismatched-version-rejected",
+        "unexpected-error-status-rejected",
+        "timeout-keeps-callback-pending",
+        "pending-reentry-rejected",
+        "successful-partial-resource-cleanup-901-absence-checks",
+        "failed-setup-cleans-and-preserves-cause",
+        "cleanup-unexpected-reply-not-success",
+        "pending-callback-blocks-cleanup"
+      ]
+    }
+  },
+  "actual_transaction_sha256": "57af5acae40d90a8f9b065fb16cf6a750f50b2ea43df65f5f5422efc38494242",
+  "actual_capacity_functions_sha256": {
+    "uint16_t errorRead(": "122e066adde22ae451869b046eff3fae27ce3765a6e4b15fc267372bde3bad84",
+    "bool length(": "b6bd9d7a29bf001242877ebc179c9273af6faedd6e4cb5bfd7ed09f7cd912c6e",
+    "void cleanup(": "69482f4b8fedd348486acee94978996d4d22de8abf20d49d2b9792ea379a28c0"
+  },
+  "generated_host_source_sha256": "930fc5df5fbc694d322b0fe601de2286872f673193ae5bcedbb5c9088de0c840",
+  "test_producer_sha256": "22ccfe866dbda2b94f1a7f5d1ec361a800ddfe607a46b0f317686db10b1c2966",
+  "fake_uart_and_buffer_store": true,
+  "leak_sanitizer_disabled_due_to_executor_ptrace": true,
+  "no_target_capacity_or_page_claim": true,
+  "no_emulator_launched": true
+}
