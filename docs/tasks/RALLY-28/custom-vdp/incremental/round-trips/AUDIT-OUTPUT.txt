@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "pooled": {
+    "diagnostic": {
+      "frames": 1800,
+      "nominal_mos_seconds": 54.4,
+      "nominal_mos_fps": 33.088235294117645,
+      "nominal_prt_seconds": 56.325,
+      "nominal_prt_fps": 31.957390146471372,
+      "timed_outgoing_bytes_per_run": 352768,
+      "timed_incoming_native_bytes_per_run": 64800,
+      "multiplexed_return_bytes_per_run": [
+        214876,
+        214876
+      ],
+      "timed_native_replies_per_run": 5400,
+      "mean_reply_wait_nominal_prt_ms": 13413.0
+    },
+    "compact": {
+      "frames": 1800,
+      "nominal_mos_seconds": 49.21666666666667,
+      "nominal_mos_fps": 36.572976633931596,
+      "nominal_prt_seconds": 50.925,
+      "nominal_prt_fps": 35.34609720176731,
+      "timed_outgoing_bytes_per_run": 291568,
+      "timed_incoming_native_bytes_per_run": 21600,
+      "multiplexed_return_bytes_per_run": [
+        171676,
+        171676
+      ],
+      "timed_native_replies_per_run": 1800,
+      "mean_reply_wait_nominal_prt_ms": 11878.0
+    }
+  },
+  "gain_percent": {
+    "nominal_mos_fps": 10.531662715882174,
+    "nominal_prt_fps": 10.603829160530198
+  }
+}

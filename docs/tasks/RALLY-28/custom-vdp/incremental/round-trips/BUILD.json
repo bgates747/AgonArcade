@@ -1,0 +1,87 @@
+{
+  "module": {
+    "name": "rally-render",
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/round-trips/.work/package/checked.c",
+    "source_sha256": "0634a36ddadb8d209cb3334b63e9d8f3ed6fcb65176be5672b2c0cf3426d0218",
+    "policy_sha256": "c69d6f3654b4b5dd4a8ae76e971818f4b13369d61dbded607b844e3268f66419",
+    "declared_limits": {
+      "text": 32768,
+      "data": 4096,
+      "stack": 2048,
+      "image": 65536
+    },
+    "build_id": "0x52385231",
+    "capabilities": 1,
+    "envelope_bytes": 64,
+    "elf_bytes": 34772,
+    "package_bytes": 34836,
+    "sha256": "479fe1ac99bb2895af8a8b6cca49b90cb5c346a56a5f9e4020cab0b23c933918",
+    "package": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/round-trips/target/rally-render.vdpl",
+    "elf": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/round-trips/target/rally-render.elf",
+    "entry_virtual": 9340,
+    "resident_text_bytes": 32264,
+    "resident_data_bytes": 1004,
+    "relative_relocations": 44,
+    "allocated_sections": {
+      ".text": {
+        "virtual_address": 836,
+        "bytes": 32264,
+        "type": 1
+      },
+      ".rodata": {
+        "virtual_address": 33100,
+        "bytes": 460,
+        "type": 1
+      },
+      ".data": {
+        "virtual_address": 37900,
+        "bytes": 544,
+        "type": 1
+      }
+    }
+  },
+  "guest": {
+    "binary_sha256": "685f4b4c6bd6959aac330a5c6c361b8e86b4967656bfb049df777b5a74ae3d1d",
+    "sections": {
+      "text": {
+        "start": 262625,
+        "bytes": 31941,
+        "end": 294566
+      },
+      "rodata": {
+        "start": 294566,
+        "bytes": 7492,
+        "end": 302058
+      },
+      "data": {
+        "start": 302058,
+        "bytes": 875,
+        "end": 302933
+      },
+      "bss": {
+        "start": 302933,
+        "bytes": 133496,
+        "end": 436429
+      }
+    },
+    "source_sha256": {
+      "src/timing_prt.asm": "20055feeef1cbe34d11cbe8a567cc8454a55666c5f11b7f7e3442a6002572fd3",
+      "src/main.cpp": "9c093ccc57f9572f5c4432d2e1db7131402dfb0f3a80efa177f0cb88e54563cb",
+      "src/callback.asm": "1ca8c8c070f8e1b585a283ebfca0d3f5d21ae138d5e04b827281875a41dd4d1e",
+      "include/native.hpp": "2c0ecff7414b2a5dcbc3cd6d0d4ab931c3c1894145463cb710e576772c99d583",
+      "include/bindings.hpp": "378033aa5b4dd707e7ff09b3170ae8ce2b488a792410d420ee92e1ed92092eac",
+      "include/presentation-functions.inc": "517cc979f7c5f71efcda520d4befc8d1688ea2f24f0ed8531983297c6bb3b558"
+    }
+  },
+  "baseline_checkpoint": "fa7932d",
+  "original_native_sha256": "94d92d109f9b3b93e8ddfea1427edcdeb9059a87636a6bacfd93d3c3894a1992",
+  "checked_native_sha256": "0634a36ddadb8d209cb3334b63e9d8f3ed6fcb65176be5672b2c0cf3426d0218",
+  "publication_sha256": "81b3dd35ba0cd17d1ab9f7933d38831292b52f24a59f53b21c5a18df99e73c99",
+  "common_module": true,
+  "common_guest": true,
+  "fixture_differences": [
+    "config.bin",
+    "expected.json"
+  ],
+  "original_firmware_unchanged": true
+}

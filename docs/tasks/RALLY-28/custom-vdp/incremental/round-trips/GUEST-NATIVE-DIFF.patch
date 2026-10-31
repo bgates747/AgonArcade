@@ -1,0 +1,22 @@
+--- docs/tasks/RALLY-28/custom-vdp/full-race/guest/native.hpp
++++ docs/tasks/RALLY-28/custom-vdp/incremental/round-trips/guest/include/native.hpp
+@@ -17,6 +17,7 @@
+ uint32_t moduleBytes=0;
+ unsigned frameCount=FrameCount;
+ uint8_t transcript[100000];unsigned transcriptBytes=0;
++bool compactConfigured=false,reducedReads=false;
+ bool pending=false,installed=false,prt=false,healthy=true,timerRestored=false,unloaded=false;
+ void (*previousTimer)()=nullptr;
+ const char *failure="none";
+@@ -49,9 +50,9 @@
+ void expect(uint16_t id,uint16_t offset,uint16_t n){if(read16(id,offset)!=n)fail("VDPL retained-state check");}
+ void invoke(uint16_t entry){if(!healthy)return;set16(Root,28,entry);set16(Completion,44,0);uint8_t p[6];put16(p,handle);put16(p+2,entry);put16(p+4,Args);if(transaction(2,p,sizeof p,3))fail("VDPL RUN status");++generation;}
+ bool file(const char *name){FILE *f=fopen(name,"rb");if(!f){fail("Input file open");return false;}uint8_t b[1024];unsigned n;while((n=fread(b,1,sizeof b,f))!=0)send(b,n);bool ok=!ferror(f);fclose(f);if(!ok)fail("Input file read");return ok;}
+-bool config(){uint8_t b[16];FILE *f=fopen("config.bin","rb");if(!f){fail("Configuration open");return false;}bool ok=fread(b,1,sizeof b,f)==sizeof b&&fgetc(f)==EOF;fclose(f);if(!ok||memcmp(b,"R28F",4)||get16(b+4)!=1||!get16(b+6)||get16(b+6)>FrameCount||get16(b+12)||get16(b+14)){fail("Configuration identity");return false;}frameCount=get16(b+6);moduleBytes=get32(b+8);if(moduleBytes<64||moduleBytes>65536){fail("Configuration module bounds");return false;}return true;}
++bool config(){uint8_t b[16];FILE *f=fopen("config.bin","rb");if(!f){fail("Configuration open");return false;}bool ok=fread(b,1,sizeof b,f)==sizeof b&&fgetc(f)==EOF;fclose(f);if(!ok||memcmp(b,"R28F",4)||get16(b+4)!=1||!get16(b+6)||get16(b+6)>FrameCount||get16(b+12)>1||get16(b+14)){fail("Configuration identity");return false;}compactConfigured=get16(b+12)==1;frameCount=get16(b+6);moduleBytes=get32(b+8);if(moduleBytes<64||moduleBytes>65536){fail("Configuration module bounds");return false;}return true;}
+ void tick(){command(TickWrapper,1);++world;++generation;}
+-void render(){invoke(Render);++request;expect(Completion,44,1);expect(Completion,16,uint16_t(request));expect(Completion,20,uint16_t(world));expect(Root,20,uint16_t(generation));}
++void render(){invoke(Render);++request;if(!reducedReads){expect(Completion,44,1);expect(Completion,16,uint16_t(request));expect(Completion,20,uint16_t(world));expect(Root,20,uint16_t(generation));}}
+ void fence(){expect(Root,20,uint16_t(generation));}
+ bool setup(){
+     mos_setkbvector(fs_callback,0);installed=true;

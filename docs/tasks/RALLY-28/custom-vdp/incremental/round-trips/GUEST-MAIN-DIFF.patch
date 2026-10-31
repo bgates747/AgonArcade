@@ -1,0 +1,18 @@
+--- docs/tasks/RALLY-28/custom-vdp/full-race/guest/main.cpp
++++ docs/tasks/RALLY-28/custom-vdp/incremental/round-trips/guest/src/main.cpp
+@@ -139,6 +139,7 @@
+         uint8_t q[2]={17,0};uint16_t stackBefore=fs::transaction(4,q,2,4);
+         rally::game::RouteCursor pace;uint32_t cpu=0,presentationCpu=0;
+         fs::sendMs=fs::waitMs=fs::wireBytes=0;fs::scrollCalls=fs::repaintCalls=fs::skyRepairCalls=fs::hudBytes=fs::footerCalls=0;finishFrames=0;
++        fs::reducedReads=fs::compactConfigured;
+         times[0]=fs::now();prts[0]=fs::timer();
+         for(unsigned frame=0;frame<fs::frameCount&&fs::healthy;++frame){
+             for(unsigned i=0;i<16;++i)(void)vdp_getKeyMap(i);++inputPolls;
+@@ -151,6 +152,7 @@
+         }
+         if(!fs::healthy)goto failed;
+         const uint32_t elapsedMos=times[fs::frameCount]-times[0],elapsedPrt=fs::difference(prts[fs::frameCount],prts[0]);
++        fs::reducedReads=false;
+         timedSend=fs::sendMs;timedWait=fs::waitMs;timedWire=fs::wireBytes;mainRequest=fs::request;mainGeneration=fs::generation;
+         uint16_t stackAfter=fs::transaction(4,q,2,4);unsigned at=0;
+         for(const auto &b:fs::Buffers)for(unsigned offset=0;offset<b.bytes;offset+=2){fs::put16(finalState+at,fs::read16(b.id,b.offset+offset));at+=2;}

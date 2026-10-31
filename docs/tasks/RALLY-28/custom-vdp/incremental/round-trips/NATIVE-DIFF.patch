@@ -1,0 +1,25 @@
+--- docs/tasks/RALLY-28/custom-vdp/incremental/round-trips/source/native.c
++++ docs/tasks/RALLY-28/custom-vdp/incremental/round-trips/source/checked.c
+@@ -48,6 +48,7 @@
+ for(unsigned i=0;i<6;++i){if(s.opponents[i].active)s.opponents[i].heading_turn16=(int16_t)heading;else s.opponents[i]=(RallyRenderOpponentV1){0,0,0,0};}rc=rally_render_prepare_v1(h,&renderer,&s,&done);}
+ if(done.reason==RALLY_RENDER_REASON_RELEASE)return rc;
+ vdplet_view_v1 out={sizeof(out),0,0,0,0};int32_t pr=h->buffer_acquire(h->context,50304,VDPL_WRITE,0,48,&out);if(pr)return pr;memcpy(out.data,&done,48);pr=h->buffer_release(h->context,out.lease);return pr?pr:rc;}
++#include "publication.inc"
+ __attribute__((visibility("default")))
+ int32_t vdplet_entry(const vdplet_host_v1*h,const vdplet_request_v1*r){
+ if(!h||!r||h->struct_bytes<sizeof(*h)||r->struct_bytes<sizeof(*r)||h->abi_major!=1||!(h->capabilities&VDPL_CAP_BUFFERS)||!h->buffer_acquire||!h->buffer_release)return VDPL_E_ABI;
+@@ -60,6 +61,7 @@
+ uint16_t id=get(args.data);rc=h->buffer_release(h->context,args.lease);if(rc)return rc;args.lease=0;rc=h->buffer_acquire(h->context,id,VDPL_WRITE,0,VDPL_WHOLE_BUFFER,&view);if(rc){return rc;}
+ if(view.bytes!=310){h->buffer_release(h->context,view.lease);return VDPL_E_BOUNDS;}
+ uint8_t*state=view.data;put(state+12,0);
++uint32_t r28_next_generation=get32(state+20)+1u,r28_next_request=get32(state+296)+1u;
+ static const uint8_t offsets[] __attribute__((aligned(4)))={0,1,2,3,4,5,6,7,26,27,30,31,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,};
+ static const uint8_t values[] __attribute__((aligned(4)))={82,71,1,0,112,0,54,1,4,0,0,0,17,0,198,0,0,0,0,0,48,53,50,82,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+ static const uint8_t errors[] __attribute__((aligned(4)))={1,1,2,2,3,3,3,3,3,3,6,6,3,3,3,3,6,6,6,6,6,6,6,6,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,};
+@@ -1709,5 +1711,6 @@
+ break;}
+ }
+ rc=renderer_hook(h,r->entry_id,state);if(rc){int32_t rr=h->buffer_release(h->context,view.lease);return rr?rr:rc;}put32(state+20,get32(state+20)+1u);put(state+24,r->entry_id);put32(state+32,get32(state+8));
++if(r->entry_id==15){rc=r28_check_publication(h,state,r28_next_generation,r28_next_request);if(rc){int32_t rr=h->buffer_release(h->context,view.lease);return rr?rr:rc;}}
+ return h->buffer_release(h->context,view.lease);
+ }
