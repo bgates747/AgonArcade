@@ -1,14 +1,24 @@
 # AgonArcade TODO
 
+Author-selected 2026-11-04: [native state/interpreted-command audit](docs/tasks/RALLY-28/custom-vdp/native-state-audit/PLAN.md). Task first, commit/push all dirt in logical groups, then source research only. Replace legacy interpreted game logic and piecemeal buffer access in the future design with efficient native C structures and appropriately scoped pointers; establish actual costs/lifetimes before implementation.
+
+- **NAT-001-01** [ ] — Trace current native/interpreted call chain and historical origin; pin sources.
+- **NAT-001-02** [ ] — Inventory state/buffers, repeated accesses and actual ownership/lifetimes.
+- **NAT-001-03** [ ] — Audit helper/stock-command/wrapper work and identify cross-path replacements.
+- **NAT-001-04** [ ] — Compare native C/scoped-pointer/persistent-state designs against actual runtime constraints.
+- **NAT-001-05** [ ] — Record prioritized findings and a staged FPS/phase/wire measurement plan.
+- **NAT-001-06** [ ] — Reconcile task and report; stop after research, no implementation or target run.
+
+
 Author-selected2026-11-04: [direct-row road rendering first](docs/tasks/RALLY-28/custom-vdp/direct-rows/PLAN.md). Write contract, commit/push all dirt in logical groups, then implement and compare. Async UART and independent fast physics/render loops are deferred until after this result.
 
-- **ROW-001-01** [ ] — Freeze native bitmap baseline and obtain current VDPlet row-enabled closure/compiler/capacity contract.
-- **ROW-001-02** [ ] — Implement isolated bitmap/direct-row variants preserving all other race work.
-- **ROW-001-03** [ ] — Qualify actual road pixels/sync/layout/error cleanup and compile/resource fit under shared build custody.
-- **ROW-001-04** [ ] — Freeze silent matched profiles and finite two-smoke/four900-frame first-failure cohort.
-- **ROW-001-05** [ ] — Execute selected silent Oryx comparison; retrieve, teardown, release and notify.
-- **ROW-001-06** [ ] — Report completed FPS, correctness, clocks, matched variation and limits.
-- **ROW-001-07** [ ] — Prepare promising candidate for Author visual/physical review; no async or scheduler implementation yet.
+- **ROW-001-01** [x] — Baseline frozen; VDPlet guidance01 supplies a50row-enabled repaired runtime and SDK10947e0. Both new arms share corrected policy; old inputs unchanged.
+- **ROW-001-02** [x] — Bitmap/rows output variants implemented. Unused diagnostic dispatch entries removed in both to retain existing text limits; used numerical case bodies unchanged. Ordinary+sanitized900-frame reference checks pass34,636,800roadpixels each, both pages/sync/error cleanup.
+- **ROW-001-03** [x] — Ordinary+sanitized actual-C pixel/state/sync/failure checks pass; both native modules and common guest compile under unchanged resource guards; actual mode136/load fits in target cohort.
+- **ROW-001-04** [x] — Six silent profiles and231project pins frozen; startup mode/capability fence and exact token-shift/wire audit prepared. Aggregate-manifest chronology disclosed.
+- **ROW-001-05** [x] — All six Oryx cases pass;176retrieval hashes exact, bothSDLdummy/boost restored1/max58C; checkout267released07:11:22ESTbefore analysis, nextnull.
+- **ROW-001-06** [x] — [Results](docs/tasks/RALLY-28/custom-vdp/direct-rows/RESULTS.md): nominalPRT36.28→39.16FPS pooled,+7.92%; both run orders improve. MOS~60uncalibrated, no physical gain claim. Exact finalstate/all2025replies/291568timedB and clean exit pass.
+- **ROW-001-07** [x] — Paired local hardware kit prepared with a50vdp_rally.bin and both900-frame cases; NOTdeployed/flashed. Author visual and physical comparison remain open. Async and independent scheduler work remain deferred.
 
 Console8 return2026-11-04: [900-frame physical baseline](docs/tasks/RALLY-28/custom-vdp/hardware-review-20261104/return01/RESULTS.md) passes independent state/all2,024replies/cleanup;24.68MOS/24.73PRTFPS, clocks within0.194%. Inputs unchanged; hardware visual acceptance not yet explicitly reported. Mean40.44ms/frame includes27.92msreply waits, not isolated VDP render time. No new implementation/run selected.
 
