@@ -1,0 +1,19 @@
+Session rows01 0 seconds; boost=0; max temperature 52.0
+bitmap60 START both SDL dummy
+bitmap60 PASS 60.0 MOS FPS 34.24657534246575 PRT FPS
+rows60 START both SDL dummy
+rows60 PASS 60.0 MOS FPS 36.90036900369004 PRT FPS
+bitmap900a START both SDL dummy
+Session rows01 30 seconds; boost=0; max temperature 54.0
+bitmap900a PASS 60.0 MOS FPS 36.12426748013165 PRT FPS
+rows900a START both SDL dummy
+Session rows01 60 seconds; boost=0; max temperature 56.0
+Session rows01 90 seconds; boost=0; max temperature 57.0
+rows900a PASS 60.06674082313682 MOS FPS 39.2533147243545 PRT FPS
+rows900b START both SDL dummy
+Session rows01 120 seconds; boost=0; max temperature 57.0
+rows900b PASS 60.0 MOS FPS 39.06080465257584 PRT FPS
+bitmap900b START both SDL dummy
+Session rows01 150 seconds; boost=0; max temperature 57.0
+bitmap900b PASS 60.0 MOS FPS 36.44314868804665 PRT FPS
+Session saved: SESSION-rows01.json boost restored: True

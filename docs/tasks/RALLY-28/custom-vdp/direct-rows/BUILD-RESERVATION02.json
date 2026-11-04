@@ -1,0 +1,24 @@
+{
+  "owner": "rally",
+  "task": "ROW-001-guest-r01",
+  "purpose": "One common synchronous eZ80 guest build with mode reply/capability admission; no emulator",
+  "plan": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/BUILD-GUEST-PLAN.md",
+  "notify_thread": "01a1346d-a74a-7211-b5b7-de3bcb8a28e5",
+  "notify_host": "remote-ssh-discovered:raspberrypi",
+  "workload": "build",
+  "resources": "Serial AgonDev compiler/linker; under512MiB",
+  "duration": "Under30seconds expected;180s timeout",
+  "cleanup": "Join owned compiler, retain logs, release",
+  "request": "313e9430f432",
+  "requested": "2026-11-04T11:45:17.325567+00:00",
+  "policy": {
+    "revision": "author-2026-11-04-serial-builds",
+    "instructions": "/Agon/mystuff/agon-dev-env/cross-agent/pi5-workloads/README.md",
+    "builds": "Automatically granted FIFO, one compile job at a time; no manager approval or 10% CPU gate.",
+    "heavy": "Emulators, CFD/solvers and other heavy work require explicit Author authorization, manager admission, and start/end chat notices to pi5-manager.",
+    "build_cleanup": "After owned children stop, release using --work-stopped --cleanup-complete; no manager handback or host-wide quiet test.",
+    "authorization_limit": "A supplied record documents authorization; this same-account helper cannot authenticate human authorship."
+  },
+  "author_authorization": null,
+  "manager_start_end_notice_required": false
+}

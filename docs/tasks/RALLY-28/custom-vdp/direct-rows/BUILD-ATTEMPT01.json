@@ -1,0 +1,58 @@
+[
+  {
+    "name": "bitmap",
+    "returncode": 1,
+    "elapsed_seconds": 2.1178099880053196,
+    "command": [
+      "/Agon/mystuff/agon-dev-env/.venv/bin/python",
+      "docs/tasks/RALLY-28/custom-vdp/direct-rows/sdk/tools/build_module.py",
+      "docs/tasks/RALLY-28/custom-vdp/direct-rows/source/bitmap/checked.c",
+      "--name",
+      "rally-render",
+      "--build-id",
+      "0x52385232",
+      "--capabilities",
+      "273",
+      "--abi-minor",
+      "6",
+      "--output",
+      "docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap",
+      "--text-limit",
+      "32768",
+      "--data-limit",
+      "4096",
+      "--stack-limit",
+      "2048",
+      "--image-limit",
+      "65536"
+    ]
+  },
+  {
+    "name": "rows",
+    "returncode": 1,
+    "elapsed_seconds": 1.836286902995198,
+    "command": [
+      "/Agon/mystuff/agon-dev-env/.venv/bin/python",
+      "docs/tasks/RALLY-28/custom-vdp/direct-rows/sdk/tools/build_module.py",
+      "docs/tasks/RALLY-28/custom-vdp/direct-rows/source/rows/checked.c",
+      "--name",
+      "rally-render",
+      "--build-id",
+      "0x52385232",
+      "--capabilities",
+      "273",
+      "--abi-minor",
+      "6",
+      "--output",
+      "docs/tasks/RALLY-28/custom-vdp/direct-rows/build/rows",
+      "--text-limit",
+      "32768",
+      "--data-limit",
+      "4096",
+      "--stack-limit",
+      "2048",
+      "--image-limit",
+      "65536"
+    ]
+  }
+]

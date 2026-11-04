@@ -1,0 +1,439 @@
+
+Discarded input sections
+
+ .literal.word  0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.plot  0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.rect  0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.affine
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.centre_exact
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.cx    0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.tangent
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.clear_completion
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.asset_ok
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.preflight$part$3
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.end   0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.rally_render_bind_v1
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.rally_render_stop_v1
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.rally_render_prepare_v1
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .literal.vdplet_entry
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .text          0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .data          0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .bss           0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                0x0000000000000094                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000094       0x28
+ *(.hash)
+ .hash          0x0000000000000094       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000000000bc       0x50
+ *(.dynsym)
+ .dynsym        0x00000000000000bc       0x50 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.dynstr         0x000000000000010c       0x26
+ *(.dynstr)
+ .dynstr        0x000000000000010c       0x26 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.gnu.version    0x0000000000000132        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000000132        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.gnu.version_d  0x0000000000000134        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000134        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.gnu.version_r  0x0000000000000134        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000134        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.rela.dyn       0x0000000000000134      0x210
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000000134      0x210 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rela.plt       0x0000000000000344        0x0
+ *(.rela.plt)
+ .rela.plt      0x0000000000000344        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.text           0x0000000000000344     0x8b8e
+ *(.got.plt* .plt*)
+ .got.plt       0x0000000000000344        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                0x0000000000000344                _GLOBAL_OFFSET_TABLE_
+ .plt           0x0000000000000344        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *(.init.literal)
+ *(SORT_NONE(.init))
+ *(.literal .text .stub .literal.* .text.* .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
+ .text.word     0x0000000000000344       0x1b /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x000000000000035f        0x1 00000000
+ .text.plot     0x0000000000000360       0x2b /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                         0x2f (size before relaxing)
+ *fill*         0x000000000000038b        0x1 00000000
+ .text.rect     0x000000000000038c       0x38 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                         0x50 (size before relaxing)
+ .text.affine   0x00000000000003c4       0x30 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                         0x38 (size before relaxing)
+ .text.centre_exact
+                0x00000000000003f4       0xca /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x00000000000004be        0x2 00000000
+ .text.cx       0x00000000000004c0       0x21 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x00000000000004e1        0x3 00000000
+ .text.tangent  0x00000000000004e4       0x63 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x0000000000000547        0x1 00000000
+ .text.clear_completion
+                0x0000000000000548       0x24 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .text.asset_ok
+                0x000000000000056c      0x1fa /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                        0x1fe (size before relaxing)
+ *fill*         0x0000000000000766        0x2 00000000
+ .text.preflight$part$3
+                0x0000000000000768      0x1dd /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x0000000000000945        0x3 00000000
+ .text.end      0x0000000000000948       0x36 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                         0x3e (size before relaxing)
+ *fill*         0x000000000000097e        0x2 00000000
+ .text.rally_render_bind_v1
+                0x0000000000000980      0x332 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                        0x352 (size before relaxing)
+                0x00000000000009a4                rally_render_bind_v1
+ *fill*         0x0000000000000cb2        0x2 00000000
+ .text.rally_render_stop_v1
+                0x0000000000000cb4       0x54 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                         0x60 (size before relaxing)
+                0x0000000000000cb4                rally_render_stop_v1
+ .text.rally_render_prepare_v1
+                0x0000000000000d08     0x1835 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                       0x18cd (size before relaxing)
+                0x0000000000000dc0                rally_render_prepare_v1
+ *fill*         0x000000000000253d        0x3 00000000
+ .text.vdplet_entry
+                0x0000000000002540     0x6715 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                       0x67b1 (size before relaxing)
+                0x00000000000025e0                vdplet_entry
+ *fill*         0x0000000000008c55        0x3 00000000
+ .text.get32    0x0000000000008c58       0x23 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x0000000000008c7b        0x1 00000000
+ .text.put32    0x0000000000008c7c       0x20 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .text.byte     0x0000000000008c9c       0x27 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x0000000000008cc3        0x0 00000000
+ *fill*         0x0000000000008cc3        0x0 00000000
+ *fill*         0x0000000000008cc3        0x0 00000000
+ *fill*         0x0000000000008cc3        0x0 00000000
+ *fill*         0x0000000000008cc3        0x0 00000000
+ *fill*         0x0000000000008cc3        0x1 00000000
+ .text.r28_sprite_plan
+                0x0000000000008cc4       0xaa /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x0000000000008d6e        0x2 00000000
+ .text.overlap  0x0000000000008d70       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .text.host_ok  0x0000000000008d98       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .text.acquire  0x0000000000008dc0       0x2c /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .text.view_ok  0x0000000000008dec       0x2a /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x0000000000008e16        0x0 00000000
+ *fill*         0x0000000000008e16        0x2 00000000
+ .text.bearing$isra$0
+                0x0000000000008e18       0x62 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x0000000000008e7a        0x2 00000000
+ .text.release$isra$2
+                0x0000000000008e7c       0x1a /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x0000000000008e96        0x0 00000000
+ *fill*         0x0000000000008e96        0x0 00000000
+ *fill*         0x0000000000008e96        0x0 00000000
+ *fill*         0x0000000000008e96        0x2 00000000
+ .text.memcpy   0x0000000000008e98       0x1f /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                0x0000000000008e98                memcpy
+ *fill*         0x0000000000008eb7        0x1 00000000
+ .text.memset   0x0000000000008eb8       0x1a /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                0x0000000000008eb8                memset
+ *fill*         0x0000000000008ed2        0x0 00000000
+ *fill*         0x0000000000008ed2        0x0 00000000
+ *(.gnu.warning)
+ *(.fini.literal)
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000008ed4      0x1cc
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000008ed4       0x18 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .rodata.CSWTCH$428
+                0x0000000000008eec        0x4 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .rodata.CSWTCH$388
+                0x0000000000008ef0        0xa /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ *fill*         0x0000000000008efa        0x2 
+ .rodata.errors$2486
+                0x0000000000008efc       0x58 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .rodata.values$2485
+                0x0000000000008f54       0x58 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .rodata.offsets$2484
+                0x0000000000008fac       0x58 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .rodata.boundaries$1937
+                0x0000000000009004       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .rodata.widths$2309
+                0x000000000000902c       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .rodata.counts$2310
+                0x0000000000009054       0x20 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .rodata.r28_span_range
+                0x0000000000009074        0xc /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .rodata.asset_meta
+                0x0000000000009080       0x20 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.rodata1
+ *(.rodata1)
+
+.got.loc        0x00000000000090a0       0x68
+ *(.got.loc)
+ .got.loc       0x00000000000090a0       0x68 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.xt_except_table
+ *(.xt_except_table .xt_except_table.* .gnu.linkonce.e.*)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x0000000000009108                . = (ALIGN (CONSTANT (MAXPAGESIZE)) - ((CONSTANT (MAXPAGESIZE) - .) & (CONSTANT (MAXPAGESIZE) - 0x1)))
+                0x000000000000a108                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.xt_except_table
+ *(.xt_except_table .xt_except_table.* .gnu.linkonce.e.*)
+
+.dynamic        0x000000000000a108       0x88
+ *(.dynamic)
+ .dynamic       0x000000000000a108       0x88 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                0x000000000000a108                _DYNAMIC
+                0x000000000000a190                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x000000000000a190        0x4
+ *(.got)
+ .got           0x000000000000a190        0x4 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.data           0x000000000000a194      0x220
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.render_binding
+                0x000000000000a194       0x4c /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .data.renderer
+                0x000000000000a1e0      0x1d0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+ .data.identity
+                0x000000000000a3b0        0x4 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.data1
+ *(.data1)
+
+.xt_except_desc
+ *(.xt_except_desc .xt_except_desc.* .gnu.linkonce.h.*)
+ *(.xt_except_desc_end)
+
+.lit4           0x000000000000a3b4        0x0
+                [!provide]                        PROVIDE (_lit4_start = .)
+ *(.lit4 .lit4.* .gnu.linkonce.lit4.*)
+                [!provide]                        PROVIDE (_lit4_end = .)
+                0x000000000000a3b4                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000000a3b4                __bss_start = .
+
+.bss            0x000000000000a3b4        0x0
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x000000000000a3b4                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x000000000000a3b4                . = ALIGN (0x4)
+                0x000000000000a3b4                . = ALIGN (0x4)
+                0x000000000000a3b4                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000000a3b4                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2c
+ *(.comment)
+ .comment       0x0000000000000000       0x2c /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                         0x2d (size before relaxing)
+
+.xtensa.info    0x0000000000000000       0x38
+ .xtensa.info   0x0000000000000000       0x38 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.xt.lit         0x0000000000000000       0x68
+ *(.xt.lit .xt.lit.* .gnu.linkonce.p.*)
+ .xt.lit        0x0000000000000000       0x68 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                         0x78 (size before relaxing)
+ .xt.lit.plt    0x0000000000000068        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+
+.xt.insn
+ *(.xt.insn .gnu.linkonce.x.*)
+
+.xt.prop        0x0000000000000000     0x3cd8
+ *(.xt.prop .xt.prop.* .gnu.linkonce.prop.*)
+ .xt.prop       0x0000000000000000     0x3cd8 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.o
+                                       0x3d14 (size before relaxing)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/build/bitmap/rally-render.elf elf32-xtensa-le)

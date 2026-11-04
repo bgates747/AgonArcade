@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/sdk/tools/build_module.py", line 215, in <module>
+    main()
+    ~~~~^^
+  File "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/sdk/tools/build_module.py", line 198, in main
+    entry = build_one(args.source, args.output, args.compiler, args.name or args.source.stem,
+                      args.variant, args.build_id, args.capabilities,
+                      args.text_limit, args.data_limit, args.stack_limit, args.image_limit, math=args.math, abi_minor=args.abi_minor,
+                      linker_script=args.linker_script, psram_workaround=args.psram_cache_workaround)
+  File "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/direct-rows/sdk/tools/build_module.py", line 143, in build_one
+    raise ValueError(f"module exceeds declared text/data envelope: text {text_bytes}/{text_limit}, data {resident_data_bytes}/{data_limit}")
+ValueError: module exceeds declared text/data envelope: text 35728/32768, data 1004/4096

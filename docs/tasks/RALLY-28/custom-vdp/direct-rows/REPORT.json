@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "runs": {
+    "bitmap900a": {
+      "mos_fps": 60.0,
+      "prt_fps": 36.12426748013165,
+      "prt_ms": 24914,
+      "mos_units": 1800,
+      "host_process_seconds": 34.732,
+      "mean_prt_ms": 27.682222222222222,
+      "phase_ms_per_frame": {
+        "player_rules_and_tick_submission_prt_ms": 2.0766666666666667,
+        "presentation_cpu_estimate_prt_ms": 6.55,
+        "submission_prt_ms": 2.9966666666666666,
+        "reply_wait_prt_ms": 14.99
+      },
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "timed_wire_bytes": 291568,
+      "all_gates_pass": true,
+      "vdp_task_stack_min_before": 2136,
+      "vdp_task_stack_min_after": 1972
+    },
+    "rows900a": {
+      "mos_fps": 60.06674082313682,
+      "prt_fps": 39.2533147243545,
+      "prt_ms": 22928,
+      "mos_units": 1798,
+      "host_process_seconds": 32.724,
+      "mean_prt_ms": 25.475555555555555,
+      "phase_ms_per_frame": {
+        "player_rules_and_tick_submission_prt_ms": 2.0833333333333335,
+        "presentation_cpu_estimate_prt_ms": 7.525555555555556,
+        "submission_prt_ms": 2.878888888888889,
+        "reply_wait_prt_ms": 11.925555555555556
+      },
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "timed_wire_bytes": 291568,
+      "all_gates_pass": true,
+      "vdp_task_stack_min_before": 2136,
+      "vdp_task_stack_min_after": 1924
+    },
+    "rows900b": {
+      "mos_fps": 60.0,
+      "prt_fps": 39.06080465257584,
+      "prt_ms": 23041,
+      "mos_units": 1800,
+      "host_process_seconds": 32.828,
+      "mean_prt_ms": 25.601111111111113,
+      "phase_ms_per_frame": {
+        "player_rules_and_tick_submission_prt_ms": 2.07,
+        "presentation_cpu_estimate_prt_ms": 7.421111111111111,
+        "submission_prt_ms": 2.9844444444444442,
+        "reply_wait_prt_ms": 12.055555555555555
+      },
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "timed_wire_bytes": 291568,
+      "all_gates_pass": true,
+      "vdp_task_stack_min_before": 2136,
+      "vdp_task_stack_min_after": 1892
+    },
+    "bitmap900b": {
+      "mos_fps": 60.0,
+      "prt_fps": 36.44314868804665,
+      "prt_ms": 24696,
+      "mos_units": 1800,
+      "host_process_seconds": 34.632,
+      "mean_prt_ms": 27.44,
+      "phase_ms_per_frame": {
+        "player_rules_and_tick_submission_prt_ms": 2.0933333333333333,
+        "presentation_cpu_estimate_prt_ms": 6.626666666666667,
+        "submission_prt_ms": 2.982222222222222,
+        "reply_wait_prt_ms": 14.722222222222221
+      },
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "timed_wire_bytes": 291568,
+      "all_gates_pass": true,
+      "vdp_task_stack_min_before": 2136,
+      "vdp_task_stack_min_after": 1940
+    }
+  },
+  "pooled_nominal_prt_fps": {
+    "bitmap": 36.283007458173756,
+    "rows": 39.15682307642107
+  },
+  "nominal_prt_fps_gain_percent": {
+    "forward": 8.661898115840906,
+    "reverse": 7.182847966668104,
+    "pooled": 7.920555156736064
+  },
+  "all_full_race_states_identical": true,
+  "clocks_calibrated": false,
+  "physical_speedup_proved": false,
+  "source_checks": {
+    "passed": true,
+    "mode": "ordinary",
+    "frames": 900,
+    "warm_frames": 2,
+    "physics_ticks": 3600,
+    "independent_world_each_tick": true,
+    "full_original_state_and_actor_output_exact": true,
+    "road_pixels_compared": 34636800,
+    "both_page_parities": true,
+    "row_guard_and_sync_bits_preserved": true,
+    "row_scope_balanced": true,
+    "intermediate_road_image_untouched": true,
+    "road_command_bytes_removed_per_frame": 18,
+    "row_faults": [
+      "begin",
+      "layout",
+      "null",
+      "short",
+      "('row', 0)",
+      "('row', 59)",
+      "('row', 119)"
+    ],
+    "max_buffer_leases": 4,
+    "original_road_pixel_sha256": "4c549d15fe019557bdfd30f89588a6b03006d08fe3495212b1b631fa65141423",
+    "limitation": "Row service is a host mock; no target raster, Canvas scheduling or FPS claim"
+  },
+  "scope": "Same a50firmware/7e7dfrontend/086backend/common guest/corrected-policy narrowed race module, only road output backend differs.",
+  "memory_caveat": "Old38,400B scratch bitmap remains allocated in both arms for matched history, but rows never writes or plots it.",
+  "next": "Prepared hardware comparison; no async or independent scheduler work selected.",
+  "max_observed_temperature_c": 58.0,
+  "vdp_stack_observation_limit": "Cumulative command-task minimum free bytes, not module-exclusive usage or eZ80 headroom"
+}

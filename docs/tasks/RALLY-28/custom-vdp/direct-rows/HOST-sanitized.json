@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "mode": "sanitized",
+  "frames": 900,
+  "warm_frames": 2,
+  "physics_ticks": 3600,
+  "independent_world_each_tick": true,
+  "full_original_state_and_actor_output_exact": true,
+  "road_pixels_compared": 34636800,
+  "both_page_parities": true,
+  "row_guard_and_sync_bits_preserved": true,
+  "row_scope_balanced": true,
+  "intermediate_road_image_untouched": true,
+  "road_command_bytes_removed_per_frame": 18,
+  "row_faults": [
+    "begin",
+    "layout",
+    "null",
+    "short",
+    "('row', 0)",
+    "('row', 59)",
+    "('row', 119)"
+  ],
+  "max_buffer_leases": 4,
+  "original_road_pixel_sha256": "4c549d15fe019557bdfd30f89588a6b03006d08fe3495212b1b631fa65141423",
+  "limitation": "Row service is a host mock; no target raster, Canvas scheduling or FPS claim"
+}

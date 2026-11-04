@@ -320,3 +320,30 @@ foreground send time, so async transmission alone is not evidence of reaching
 fixture advances98.91logicalsteps/s. Direct-row output and better wait-phase
 attribution are worthwhile discussion topics alongside async CPU overlap.
 No new candidate or test is selected by retrieving this baseline.
+
+## Author-selected first experiment: direct-row output
+
+The Author subsequently selects direct-row road output before async UART, then
+independent fast physics/render scheduling only afterward. Task/prior dirt
+checkpoint-pushed through0715d5f before implementation. The
+[completed first comparison](tasks/RALLY-28/custom-vdp/direct-rows/RESULTS.md)
+passes both smokes and four full900-frame runs on the same a50runtime/common
+guest/compiler policy: nominal PRT **36.28→39.16FPS pooled,+7.92%**; both run
+orders improve. MOSstill reports approximately60and remains uncalibrated.
+The host process windows also shorten, but include setup and teardown.
+
+The candidate performs no timed intermediate road-image write or plot. World,
+actor/sky/HUD/audio work, synchronous UART and coupled simulation schedule stay
+the same. Actual-C ordinary/sanitized checks each compare34,636,800roadpixels
+plus independent state and sync/error ownership. All full target runs match
+the original final state and2025reply schedule with291,568timed outgoing bytes.
+The necessary new shared startup mode/capability admission is distinct from
+the historical479/8da2control; all original artifacts are preserved.
+
+This is a modest gain, not an explanation of the Author-reported FSIMnearly2×
+bespoke/VDPlet gap. [Shared-cost notes](tasks/RALLY-28/custom-vdp/direct-rows/SHARED-COST-NOTES.md)
+record repeated native buffer validation as a source-level question, without
+assigning it an unmeasured duration. A paired C8hardware kit is prepared locally
+but not deployed/flashed. Oryx267released before analysis after176hashes/fresh
+idle proof, boost restored and no next waiter. No async/scheduler experiment
+or further target run was started.
