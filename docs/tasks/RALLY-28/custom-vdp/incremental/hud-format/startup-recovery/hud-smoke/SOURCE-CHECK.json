@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "source_checkpoint": "dec22d0794779ebfb1a0f825583c885415b812e9",
+  "checkpoint_guest_files_exact": {
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/include/bindings.hpp": "378033aa5b4dd707e7ff09b3170ae8ce2b488a792410d420ee92e1ed92092eac",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/include/hud_format.hpp": "1abac7f26473a3eb85802b289a966b0a63eae4fb6ed75526b3487ee124e25512",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/include/native.hpp": "2c0ecff7414b2a5dcbc3cd6d0d4ab931c3c1894145463cb710e576772c99d583",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/include/presentation-functions.inc": "9c6fa99ebbf675d39931f327bc28f5db98dd6bc06c4ff6b4ada74c6001139e51",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/probe.bin": "c6d7502240911dbe749c7e811cd8f86b20d6d5fd2e74731259d92d7b0b583816",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/probe.map": "f25f2449873e05640e3becd6253f676b2a3a9d3d124b90364a6b3692450267ae",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/probe.s": "7460c25c39622ed97a1a7a0b6885873a46c335cbe34f7e6fc46f26a818820508",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/src/callback.asm": "1ca8c8c070f8e1b585a283ebfca0d3f5d21ae138d5e04b827281875a41dd4d1e",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/src/main.cpp": "ff0e53a67350a5014f626ef9c374c14532ecdb2e527d078d1906ef621876bc46",
+    "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/src/timing_prt.asm": "20055feeef1cbe34d11cbe8a567cc8454a55666c5f11b7f7e3442a6002572fd3"
+  },
+  "build_source_inputs_exact": {
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/build.py": "a04f5b92180765a48efc91aaf53e7f32c3353625756b57a13e25aabf99c8366b",
+    "/Agon/mystuff/AgonArcade/rally-game/src/main.cpp": "ffff8d87d931091d86e542640efac2bddd42211215fa6d51814d0b4a7efb5b80",
+    "/Agon/mystuff/AgonArcade/rally-game/include/hud_format.hpp": "1abac7f26473a3eb85802b289a966b0a63eae4fb6ed75526b3487ee124e25512",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/round-trips/target/rally-render.vdpl": "479fe1ac99bb2895af8a8b6cca49b90cb5c346a56a5f9e4020cab0b23c933918"
+  },
+  "guests": {
+    "control": "685f4b4c6bd6959aac330a5c6c361b8e86b4967656bfb049df777b5a74ae3d1d",
+    "cached": "c6d7502240911dbe749c7e811cd8f86b20d6d5fd2e74731259d92d7b0b583816"
+  },
+  "no_rebuild": true,
+  "no_HUD_source_change": true,
+  "expected_final_generation": 303,
+  "expected_render_request": 62,
+  "expected_world_ticks": 240,
+  "expected_player_station": 54000,
+  "expected_player_phase": 2800
+}

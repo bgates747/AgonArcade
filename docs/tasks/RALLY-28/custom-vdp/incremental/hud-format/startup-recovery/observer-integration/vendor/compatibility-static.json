@@ -1,0 +1,32 @@
+{
+  "rally": {
+    "sha256": "200f28cbe399b1fdc60cba1e5fed4c2bb86042b5e92f6e422539a5388c079a30",
+    "source": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-hudsmoke01-control/flexe-vdp.so",
+    "functions": {
+      "flexe_vdp_cycles": "\n/home/smith/Agon/mystuff/flexe-agon-emulator/build/fx114/compatibility-r01/rally-backend.so:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000020cb0 <flexe_vdp_cycles>:\n   20cb0:\tf3 0f 1e fa          \tendbr64\n   20cb4:\t48 8b 05 0d 16 56 00 \tmov    0x56160d(%rip),%rax        # 5822c8 <cycle_count>\n   20cbb:\tc3                   \tret\n\nDisassembly of section .fini:\n",
+      "flexe_vdp_frames": "\n/home/smith/Agon/mystuff/flexe-agon-emulator/build/fx114/compatibility-r01/rally-backend.so:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000020ca0 <flexe_vdp_frames>:\n   20ca0:\tf3 0f 1e fa          \tendbr64\n   20ca4:\t48 8b 05 25 16 56 00 \tmov    0x561625(%rip),%rax        # 5822d0 <frame_count>\n   20cab:\tc3                   \tret\n\nDisassembly of section .fini:\n",
+      "flexe_vdp_failed": "\n/home/smith/Agon/mystuff/flexe-agon-emulator/build/fx114/compatibility-r01/rally-backend.so:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000020cc0 <flexe_vdp_failed>:\n   20cc0:\tf3 0f 1e fa          \tendbr64\n   20cc4:\t0f b6 05 0e 16 56 00 \tmovzbl 0x56160e(%rip),%eax        # 5822d9 <failed>\n   20ccb:\tc3                   \tret\n\nDisassembly of section .fini:\n"
+    },
+    "globals": [
+      "00000000005822c8 0000000000000008 b cycle_count",
+      "00000000005822d9 0000000000000001 b failed",
+      "00000000005822d0 0000000000000008 b frame_count"
+    ],
+    "has_debug_info": false
+  },
+  "6502": {
+    "sha256": "0866265bd6f3d73ad572f31dc1bb954f308ed9a5d857efa9414d37e1ade13374",
+    "source": "/home/smith/Agon/mystuff/agon-6502/.emulator/tests/vdp005-desktop21-mos-jit-r01/flexe-vdp.so",
+    "functions": {
+      "flexe_vdp_cycles": "\n/home/smith/Agon/mystuff/flexe-agon-emulator/build/fx114/compatibility-r01/6502-backend.so:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000020cf0 <flexe_vdp_cycles>:\n   20cf0:\tf3 0f 1e fa          \tendbr64\n   20cf4:\t48 8b 05 cd 15 56 00 \tmov    0x5615cd(%rip),%rax        # 5822c8 <cycle_count>\n   20cfb:\tc3                   \tret\n\nDisassembly of section .fini:\n",
+      "flexe_vdp_frames": "\n/home/smith/Agon/mystuff/flexe-agon-emulator/build/fx114/compatibility-r01/6502-backend.so:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000020ce0 <flexe_vdp_frames>:\n   20ce0:\tf3 0f 1e fa          \tendbr64\n   20ce4:\t48 8b 05 e5 15 56 00 \tmov    0x5615e5(%rip),%rax        # 5822d0 <frame_count>\n   20ceb:\tc3                   \tret\n\nDisassembly of section .fini:\n",
+      "flexe_vdp_failed": "\n/home/smith/Agon/mystuff/flexe-agon-emulator/build/fx114/compatibility-r01/6502-backend.so:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000020d00 <flexe_vdp_failed>:\n   20d00:\tf3 0f 1e fa          \tendbr64\n   20d04:\t0f b6 05 ce 15 56 00 \tmovzbl 0x5615ce(%rip),%eax        # 5822d9 <failed>\n   20d0b:\tc3                   \tret\n\nDisassembly of section .fini:\n"
+    },
+    "globals": [
+      "00000000005822c8 0000000000000008 b cycle_count",
+      "00000000005822d9 0000000000000001 b failed",
+      "00000000005822d0 0000000000000008 b frame_count"
+    ],
+    "has_debug_info": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "readiness_sha256": "ced49e21e5d3e1ee1fc4cc5dc906fdea4fd3be9d424d1e6a61193102fa9b44e2",
+  "verified_files": 12,
+  "archive_members": 55,
+  "archive_sha256": "c67107f9268f3dffb5908c83090fdb478d00024d87b69f5b98a4f1fa13b8a694",
+  "baseline_sha256": "0866265bd6f3d73ad572f31dc1bb954f308ed9a5d857efa9414d37e1ade13374",
+  "candidate_sha256": "d57a87995d9552115479d4245692d6762c01353affe34160447ae29a99eda7af",
+  "source_review": "Original short circuit, owner-only snapshots, fixed direct SRAM budget, unchanged source memory/counters, no extra core run or firmware code; candidate not yet target qualified",
+  "remote_actual_binary_export_audit": "FILES {\"build/fx119/baseline-r01/flexe-vdp.so\": \"0866265bd6f3d73ad572f31dc1bb954f308ed9a5d857efa9414d37e1ade13374\", \"build/fx119/baseline-r01/libxtensa-emu-lib.a\": \"93af5e6655c90d43b919bf78bb6fdcb7908cff6ce7d8133442c869ce1fae9df9\", \"build/fx119/candidate-r02/flexe-vdp-first-stop.so\": \"d57a87995d9552115479d4245692d6762c01353affe34160447ae29a99eda7af\"}\nRESULT {\"baseline_086_byte_identical\": true, \"core_93af_byte_identical\": true, \"candidate_d57a_exact\": true, \"defined_exports_unchanged\": true, \"read_only\": true}\n",
+  "source_diff_sha256": "8bfceb0634a59df608b7e6afe9f7be1e2cf94b08972c0adb7bc7fdafb8dc8150",
+  "synthetic_reader": "Pinned fda0 offline reader accepts owner synthetic record; synthetic evidence only, no target executed"
+}

@@ -1,0 +1,84 @@
+{
+  "functional_pass": true,
+  "frames": 900,
+  "physics_ticks": 3600,
+  "warm_frames": 2,
+  "nominal_mos_units": 1800,
+  "nominal_mos_seconds": 15.0,
+  "nominal_mos_fps": 60.0,
+  "prt_ticks": 24893,
+  "nominal_prt_seconds": 24.893,
+  "nominal_prt_fps": 36.15474229703129,
+  "clock_ratio": 1.6595333333333335,
+  "clock_calibrated": false,
+  "backend": "0866265bd6f3d73ad572f31dc1bb954f308ed9a5d857efa9414d37e1ade13374",
+  "native_replies": 2024,
+  "final_state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+  "player_sha256": "10a8806b92161cb8a64802fc096779c7e8ac9cf9b01b564418bb6e948ff924c4",
+  "wire_phases": {
+    "setup_streams": {
+      "module.vdu": {
+        "bytes": 34850,
+        "offset": 454,
+        "sha256": "c8dbc5773fc90b3648476b8bca1d046c528041372f7ee521bef3d288cbd8a138"
+      },
+      "common.vdu": {
+        "bytes": 1080,
+        "offset": 309321,
+        "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380"
+      },
+      "native.vdu": {
+        "bytes": 91866,
+        "offset": 310401,
+        "sha256": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2"
+      },
+      "assets.vdu": {
+        "bytes": 149554,
+        "offset": 35335,
+        "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+      },
+      "artwork.vdu": {
+        "bytes": 58780,
+        "offset": 184889,
+        "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4"
+      },
+      "presentation.vdu": {
+        "bytes": 65652,
+        "offset": 243669,
+        "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363"
+      }
+    },
+    "named_setup_bytes": 401782,
+    "prefix_bytes": 426498,
+    "timed_bytes": 291568,
+    "suffix_bytes": 4135,
+    "total_bytes": 722201
+  },
+  "complete_wire_sha256": "2e294dd6db99474165ab814e45ca8b3e476927e5c5b3e818f6782e5ec8a2b49c",
+  "timed_wire_sha256": "1d84519a7348393493399b199c81fe9671c5bdda7e3f757959cee707c443418d",
+  "host_process_seconds": 34.779,
+  "host_process_boundary": "Popen through stopped child including setup/teardown, not aligned race",
+  "host_session_seconds": 35.488,
+  "maximum_temperature_celsius": 59.0,
+  "boost_original": "1",
+  "boost_restored": true,
+  "boost_final": "1",
+  "observer": {
+    "schema_valid": true,
+    "finalized": true,
+    "sample_count": 0,
+    "final_reason": "shutdown",
+    "window_complete": false,
+    "sample_timing_within_100ms": false,
+    "all_sample_senders_available": false,
+    "completed_sends_unchanged": null,
+    "diagnosis": "none: no CTS/FIFO/IRQ/PC or causal inference"
+  },
+  "stack_before": 2232,
+  "stack_after": 1988,
+  "source_results_preserved": true,
+  "old_stall_cause_or_repair": false,
+  "cache_gain_or_calibrated_fps_or_hardware_claim": false,
+  "release_before_analysis": true,
+  "old_ABBA_successors": "UNRUN"
+}

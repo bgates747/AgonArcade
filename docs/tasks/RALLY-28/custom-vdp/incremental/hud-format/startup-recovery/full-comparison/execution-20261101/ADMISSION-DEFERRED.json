@@ -1,0 +1,26 @@
+{
+  "state": "DEFERRED_BEFORE_FIRST_PROCESS",
+  "reason": "Known active4core FSIM SU2 CFD; quiet-host admission not met",
+  "case_status": {
+    "control1": "UNRUN",
+    "cached1": "UNRUN",
+    "cached2": "UNRUN",
+    "control2": "UNRUN"
+  },
+  "processes_started": 0,
+  "checkout_obtained": false,
+  "runner_invoked": false,
+  "emulator_executed": false,
+  "power_setting_changed": false,
+  "signal_or_other_job_change": false,
+  "selected_budget_consumed": 0,
+  "readiness_sha256": "71062298847fbd619c5a79324e1fb8e14f6737684726a178a7b30b9766c03279",
+  "local_closure_exact": 320,
+  "remote_input_recheck_exact": 320,
+  "profile_pins_exact": 88,
+  "request_cancelled": true,
+  "next_agent_notified": true,
+  "queue_held": false,
+  "new_game_fps": null,
+  "next_step": "Wait concrete natural quiet interval/owner coordination, then rejoinFIFO and repeat fresh admission; no preemption/score polling"
+}

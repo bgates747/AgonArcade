@@ -1,0 +1,38 @@
+{
+  "event": "release",
+  "time": "2026-11-02T01:37:26.749086+00:00",
+  "record": {
+    "owner": "agon-6502",
+    "task": "VDP-005-017-020",
+    "purpose": "Author-selected current-SDK recovery human review; GUI launched only by Author; custodian retains lease until close and verified shutdown",
+    "profile": "/home/smith/Agon/mystuff/agon-6502/.emulator/tests/vdp005-current-sdk-review-r01",
+    "notify_thread": "01a1147a-c6cf-7b42-b6cd-336c8b762c8e",
+    "notify_host": "remote-ssh-discovered:raspberrypi",
+    "request": "003a3ea9c1e0",
+    "requested": "2026-11-01T23:17:38.338901+00:00",
+    "lease": "99ecd82b73444bb59b90e35b10ab670b",
+    "generation": 76,
+    "checked_out": "2026-11-01T23:18:09.061658+00:00",
+    "idle_observation": {
+      "machine": "oryx-linuxlite",
+      "epoch": 1793575077.2646577,
+      "emulators": []
+    },
+    "released": "2026-11-02T01:37:26.749086+00:00",
+    "release_observation": {
+      "machine": "oryx-linuxlite",
+      "epoch": 1793583443.9166446,
+      "emulators": []
+    },
+    "next_request": {
+      "owner": "rally",
+      "task": "HUD-MRT-001-05",
+      "purpose": "Golem202 exactlyONE maintained086 cached900 qualification after actual review76 release; no retry",
+      "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-maint08601-cached",
+      "notify_thread": "01a1346d-a74a-7211-b5b7-de3bcb8a28e5",
+      "notify_host": "remote-ssh-discovered:raspberrypi",
+      "request": "d25707bd1cc7",
+      "requested": "2026-11-01T23:30:48.247332+00:00"
+    }
+  }
+}

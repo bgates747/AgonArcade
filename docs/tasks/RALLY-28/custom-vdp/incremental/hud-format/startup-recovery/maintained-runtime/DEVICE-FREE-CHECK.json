@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "profile_inputs": 22,
+  "only_changed_file": "flexe-vdp.so",
+  "original_closure_files": 320,
+  "old_result_files": 65,
+  "producer_baseline_reproduction_evidence_verified": true,
+  "required_backend_exports": [
+    "flexe_vdp_cycles",
+    "flexe_vdp_failed",
+    "flexe_vdp_frames",
+    "z80_recv_from_vdp",
+    "z80_send_to_vdp",
+    "z80_uart0_is_cts"
+  ],
+  "archive_members_verified": 23,
+  "negative_admissions": {
+    "occupied_output": true,
+    "backend_tamper": true,
+    "manifest_tamper": true,
+    "old_backend_receipt": true,
+    "incomplete_archive": true
+  },
+  "unchanged_guard_sources": {
+    "run_one": "cf2a34ca9de5b4a76053833902de79dea60ddadf227f5bad1195caa409c60637",
+    "qualified_stop": "1239e5cc7b4f5b836262d42c041993c8ab09713bf63218c9ba8d55a06cc9ca7f",
+    "supervisor": "f2c51dcc61c422b4bf0bc3f9442e50fdc0f1193a2e5655ea7b0713fefc4637bd",
+    "full_audit": "b2a609302253d0de6217b5ee813d57f93f9efcf1b3e66bdd82af535c29fee399",
+    "full_verify": "af2e3a812399cfdabe7c76023a13fbaa4401058cad82db0cad06f009a77c6501",
+    "guest_verify": "155e78e85556a9e18ffeff5164cc9dbf6d888df7af2dc16839c818558d08c208",
+    "reader": "12817411df487931407d1ec7cf4e51c9742a5f350582af2efce5db3fb4a96cde"
+  },
+  "candidate_invocations_intended": 1,
+  "emulator_processes": 0,
+  "oryx_contact": false,
+  "deployed": false,
+  "new_fps_measurement": false,
+  "no_old_failure_relabel": true
+}

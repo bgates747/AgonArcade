@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "application_differences": [
+    "expected.json",
+    "probe.bin"
+  ],
+  "expected_wire_delta": 0,
+  "expected_timed_bytes": 18317,
+  "expected_native_replies": 344,
+  "expected_final_sha256": "b192536d1ec5b7ad3e9f1df33518aec699d66dd6f3dbc97632bbb293a189c963",
+  "prior_complete60_reply_schedule_matches": true,
+  "current_host_presentation_references": {
+    "ordinary": "60de5432af68e4b6b9cbb97ba365fbe5c996c88b7eb50215323aa08c33a0064a",
+    "sanitized": "999ee83ad1516e0e0559b9204d91f88d8244b37aeebcb6a68bbb2106709e650d",
+    "development": "6125d4e324c028f6da6fc81a4b006bbbbfa3ac70732764516164ffffc93c0360"
+  },
+  "actual_checked_c_ordinary_and_sanitized_match": true,
+  "guests_rebuilt": false,
+  "cache_source_changed": false,
+  "emulator_executed": false
+}

@@ -1,0 +1,93 @@
+{
+  "primary_clock": "Nominal MOS120units/s completed-frame interval",
+  "cases": {
+    "control1": {
+      "frames": 900,
+      "physics_ticks": 3600,
+      "nominal_mos_units": 1800,
+      "nominal_mos_seconds": 15.0,
+      "nominal_mos_fps": 60.0,
+      "prt_ticks": 25647,
+      "nominal_prt_seconds": 25.647,
+      "nominal_prt_fps": 35.09182360510001,
+      "host_process_seconds": 35.536,
+      "wire_phases": {
+        "setup_streams": {
+          "module.vdu": {
+            "bytes": 34850,
+            "offset": 454,
+            "sha256": "c8dbc5773fc90b3648476b8bca1d046c528041372f7ee521bef3d288cbd8a138"
+          },
+          "common.vdu": {
+            "bytes": 1080,
+            "offset": 309321,
+            "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380"
+          },
+          "native.vdu": {
+            "bytes": 91866,
+            "offset": 310401,
+            "sha256": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2"
+          },
+          "assets.vdu": {
+            "bytes": 149554,
+            "offset": 35335,
+            "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+          },
+          "artwork.vdu": {
+            "bytes": 58780,
+            "offset": 184889,
+            "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4"
+          },
+          "presentation.vdu": {
+            "bytes": 65652,
+            "offset": 243669,
+            "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363"
+          }
+        },
+        "named_setup_bytes": 401782,
+        "prefix_bytes": 426498,
+        "timed_bytes": 291568,
+        "suffix_bytes": 4135,
+        "total_bytes": 722201
+      },
+      "timed_wire_sha256": "1d84519a7348393493399b199c81fe9671c5bdda7e3f757959cee707c443418d",
+      "whole_wire_sha256": "2e294dd6db99474165ab814e45ca8b3e476927e5c5b3e818f6782e5ec8a2b49c",
+      "MOS_image": {
+        "sha256": "751e937dbc7d451134a1de662e37946cb9f7a9fb44bf1037d4e1fcd92e7c4e1d",
+        "colours": 2
+      },
+      "observer": {
+        "schema_valid": true,
+        "finalized": true,
+        "sample_count": 0,
+        "final_reason": "shutdown",
+        "window_complete": false,
+        "sample_timing_within_100ms": false,
+        "all_sample_senders_available": false,
+        "completed_sends_unchanged": null,
+        "diagnosis": "none: no CTS/FIFO/IRQ/PC or causal inference"
+      },
+      "runtime_INFO_values": {
+        "18": 2260,
+        "1819": 1956
+      },
+      "status": "PASS"
+    },
+    "cached1": {
+      "status": "FAILED",
+      "error": "TimeoutError('UART streams unchanged for60 host seconds; preserve failure; no automatic retry in this tranche')"
+    },
+    "cached2": {
+      "status": "UNRUN"
+    },
+    "control2": {
+      "status": "UNRUN"
+    }
+  },
+  "complete_four_run_ABBA": false,
+  "old_runtime_pooled": false,
+  "host_clock_boundary": "Before process launch through stopped child including setup/teardown; not aligned race FPS",
+  "physical_or_isolated_renderer_claim": false,
+  "race_pixel_or_Author_visual_claim": false,
+  "balanced_gain_claim": false
+}

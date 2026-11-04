@@ -1,0 +1,75 @@
+{
+  "prepare.py": {
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/hud-smoke/prepare.py",
+    "source_sha256": "335bd4db58be8ca46d171c727eeb87a9f2cfc9e53c8fa586339ea691f2ca2768",
+    "sha256": "4915fc21c66cfc777ba31f71b3dd06c459e7c0c5d9239ec9540f91771766a435",
+    "replacements": [
+      {
+        "before": "60",
+        "after": "900"
+      },
+      {
+        "before": "240",
+        "after": "3600"
+      },
+      {
+        "before": "344",
+        "after": "2024"
+      },
+      {
+        "before": "18317",
+        "after": "291568"
+      },
+      {
+        "before": "positions[137]",
+        "after": "positions[1817]"
+      },
+      {
+        "before": "SMOKE-FIXTURES.json",
+        "after": "FIXTURES.json"
+      },
+      {
+        "before": "prepared-bitmap-set/prepared-race",
+        "after": "prepared-bitmap-set/prepared-benchmark"
+      },
+      {
+        "before": "saved = prior/'evidence/prace01/compact'",
+        "after": "saved = prior/'evidence/prace900ab01/compact'"
+      },
+      {
+        "before": "FIRST-FUNCTIONAL-WITNESS.json",
+        "after": "PARTIAL-RESULTS-FREEZE.json"
+      },
+      {
+        "before": "PROFILES-prace01.json",
+        "after": "PROFILES-prace900ab01.json"
+      }
+    ],
+    "post_derivation_correction": "Include saved result.json as the third already-predicted provenance entry; see PREPARATION-NOTE.md"
+  },
+  "verify.py": {
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/hud-smoke/verify.py",
+    "source_sha256": "ef543cab8e1056e6b7b01eee825397f9963cbc332f95d98a228f3d370184b2c6",
+    "sha256": "af2e3a812399cfdabe7c76023a13fbaa4401058cad82db0cad06f009a77c6501",
+    "replacements": [
+      {
+        "before": "excluding smoke from performance",
+        "after": "retaining completed-frame timing"
+      },
+      {
+        "before": "== 60 and result['physics_ticks'] == 240",
+        "after": "== 900 and result['physics_ticks'] == 3600"
+      },
+      {
+        "before": "timing_excluded=True, smoke_functional_only=True",
+        "after": "timing_excluded=False, complete_frame_timing=True"
+      }
+    ]
+  },
+  "reference.py": {
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/hud-smoke/reference.py",
+    "source_sha256": "72656a588a052435efcf4bc0e41349e90bcab4669caa8aaf997d25e8051d0ec1",
+    "sha256": "b50e3bb4c8f8729db032d9b4087729efcaae4af1271ff7da2201bd91241711ca",
+    "changes": "900frames/3600ticks/2024reply reference, independent private workdir"
+  }
+}

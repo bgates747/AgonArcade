@@ -1,0 +1,2284 @@
+{
+  "schema": 1,
+  "scope": "Startup plus one frame and cleanup, timing excluded; no new target measurement",
+  "expected_native_reply_count": 226,
+  "expected_main_frame_replies": 2,
+  "expected_physics_ticks": 4,
+  "expected_first_frame_wire_bytes": 311,
+  "expected_first_frame_wire_sha256": "19eb84eb8a252687f56a44fb592da441cd0764bce4afe446dc2bc0c9665e26d2",
+  "prior_qualified_witness": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/prepared-bitmap-set/prepared-benchmark/evidence/prace900ab01/compact",
+  "prior_files": {
+    "mos-to-vdp.bin": "2e294dd6db99474165ab814e45ca8b3e476927e5c5b3e818f6782e5ec8a2b49c",
+    "vdp-to-mos.bin": "defdfdd26d05a4336beae3beb4f6bf2b0a836a121dd22f2ab47c5b89e0d78a1b",
+    "result.json": "d6a80205658b7c1807734604dfa8de2275c1bf7f2ea299380bd12072ffd706de"
+  },
+  "first20native_replies_match_existing_witness": true,
+  "only_STACK_INFO_values_unspecified": true,
+  "expected_generation": 8,
+  "expected_render_request": 3,
+  "expected_player_station": 3248240,
+  "expected_player_phase": 240,
+  "runtime_not_selected": true,
+  "requests": [
+    {
+      "token": 1,
+      "operation": 1,
+      "fields_hex": "81c4148800000000",
+      "expected_reply_kind": 2,
+      "expected_value": 1,
+      "label": "LOAD",
+      "phase": "setup",
+      "frame": null
+    },
+    {
+      "token": 2,
+      "operation": 2,
+      "fields_hex": "01000d000900",
+      "expected_reply_kind": 3,
+      "expected_value": 0,
+      "label": "RUN 13",
+      "phase": "setup",
+      "frame": null
+    },
+    {
+      "token": 3,
+      "operation": 5,
+      "fields_hex": "0100c6000000",
+      "expected_reply_kind": 4,
+      "expected_value": 35536,
+      "label": "initial player station low",
+      "phase": "setup",
+      "frame": null
+    },
+    {
+      "token": 4,
+      "operation": 5,
+      "fields_hex": "0100c8000000",
+      "expected_reply_kind": 4,
+      "expected_value": 49,
+      "label": "initial player station high",
+      "phase": "setup",
+      "frame": null
+    },
+    {
+      "token": 5,
+      "operation": 5,
+      "fields_hex": "010030010000",
+      "expected_reply_kind": 4,
+      "expected_value": 6800,
+      "label": "initial render phase",
+      "phase": "setup",
+      "frame": null
+    },
+    {
+      "token": 6,
+      "operation": 2,
+      "fields_hex": "01000f000900",
+      "expected_reply_kind": 3,
+      "expected_value": 0,
+      "label": "RUN 15",
+      "phase": "warm",
+      "frame": 1
+    },
+    {
+      "token": 7,
+      "operation": 5,
+      "fields_hex": "80c42c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "published ready",
+      "phase": "warm",
+      "frame": 1
+    },
+    {
+      "token": 8,
+      "operation": 5,
+      "fields_hex": "80c410000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "published request",
+      "phase": "warm",
+      "frame": 1
+    },
+    {
+      "token": 9,
+      "operation": 5,
+      "fields_hex": "80c414000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "published physics tick",
+      "phase": "warm",
+      "frame": 1
+    },
+    {
+      "token": 10,
+      "operation": 5,
+      "fields_hex": "010014000000",
+      "expected_reply_kind": 4,
+      "expected_value": 2,
+      "label": "generated state",
+      "phase": "warm",
+      "frame": 1
+    },
+    {
+      "token": 11,
+      "operation": 5,
+      "fields_hex": "010014000000",
+      "expected_reply_kind": 4,
+      "expected_value": 2,
+      "label": "post-swap generation fence",
+      "phase": "warm",
+      "frame": 1
+    },
+    {
+      "token": 12,
+      "operation": 2,
+      "fields_hex": "01000f000900",
+      "expected_reply_kind": 3,
+      "expected_value": 0,
+      "label": "RUN 15",
+      "phase": "warm",
+      "frame": 2
+    },
+    {
+      "token": 13,
+      "operation": 5,
+      "fields_hex": "80c42c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "published ready",
+      "phase": "warm",
+      "frame": 2
+    },
+    {
+      "token": 14,
+      "operation": 5,
+      "fields_hex": "80c410000000",
+      "expected_reply_kind": 4,
+      "expected_value": 2,
+      "label": "published request",
+      "phase": "warm",
+      "frame": 2
+    },
+    {
+      "token": 15,
+      "operation": 5,
+      "fields_hex": "80c414000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "published physics tick",
+      "phase": "warm",
+      "frame": 2
+    },
+    {
+      "token": 16,
+      "operation": 5,
+      "fields_hex": "010014000000",
+      "expected_reply_kind": 4,
+      "expected_value": 3,
+      "label": "generated state",
+      "phase": "warm",
+      "frame": 2
+    },
+    {
+      "token": 17,
+      "operation": 5,
+      "fields_hex": "010014000000",
+      "expected_reply_kind": 4,
+      "expected_value": 3,
+      "label": "post-swap generation fence",
+      "phase": "warm",
+      "frame": 2
+    },
+    {
+      "token": 18,
+      "operation": 4,
+      "fields_hex": "1100",
+      "expected_reply_kind": 4,
+      "expected_value": null,
+      "label": "initial stack INFO17",
+      "phase": "setup",
+      "frame": null
+    },
+    {
+      "token": 19,
+      "operation": 2,
+      "fields_hex": "01000f000900",
+      "expected_reply_kind": 3,
+      "expected_value": 0,
+      "label": "RUN 15",
+      "phase": "main",
+      "frame": 1
+    },
+    {
+      "token": 20,
+      "operation": 5,
+      "fields_hex": "010014000000",
+      "expected_reply_kind": 4,
+      "expected_value": 8,
+      "label": "post-swap generation fence",
+      "phase": "main",
+      "frame": 1
+    },
+    {
+      "token": 21,
+      "operation": 4,
+      "fields_hex": "1100",
+      "expected_reply_kind": 4,
+      "expected_value": null,
+      "label": "final stack INFO17",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 22,
+      "operation": 5,
+      "fields_hex": "010000000000",
+      "expected_reply_kind": 4,
+      "expected_value": 18258,
+      "label": "final state 1:0",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 23,
+      "operation": 5,
+      "fields_hex": "010002000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:2",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 24,
+      "operation": 5,
+      "fields_hex": "010004000000",
+      "expected_reply_kind": 4,
+      "expected_value": 112,
+      "label": "final state 1:4",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 25,
+      "operation": 5,
+      "fields_hex": "010006000000",
+      "expected_reply_kind": 4,
+      "expected_value": 310,
+      "label": "final state 1:6",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 26,
+      "operation": 5,
+      "fields_hex": "010008000000",
+      "expected_reply_kind": 4,
+      "expected_value": 7,
+      "label": "final state 1:8",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 27,
+      "operation": 5,
+      "fields_hex": "01000a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:10",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 28,
+      "operation": 5,
+      "fields_hex": "01000c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:12",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 29,
+      "operation": 5,
+      "fields_hex": "01000e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:14",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 30,
+      "operation": 5,
+      "fields_hex": "010010000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:16",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 31,
+      "operation": 5,
+      "fields_hex": "010012000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:18",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 32,
+      "operation": 5,
+      "fields_hex": "010014000000",
+      "expected_reply_kind": 4,
+      "expected_value": 8,
+      "label": "final state 1:20",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 33,
+      "operation": 5,
+      "fields_hex": "010016000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:22",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 34,
+      "operation": 5,
+      "fields_hex": "010018000000",
+      "expected_reply_kind": 4,
+      "expected_value": 15,
+      "label": "final state 1:24",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 35,
+      "operation": 5,
+      "fields_hex": "01001a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 4,
+      "label": "final state 1:26",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 36,
+      "operation": 5,
+      "fields_hex": "01001c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 15,
+      "label": "final state 1:28",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 37,
+      "operation": 5,
+      "fields_hex": "01001e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:30",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 38,
+      "operation": 5,
+      "fields_hex": "010020000000",
+      "expected_reply_kind": 4,
+      "expected_value": 7,
+      "label": "final state 1:32",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 39,
+      "operation": 5,
+      "fields_hex": "010022000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:34",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 40,
+      "operation": 5,
+      "fields_hex": "010024000000",
+      "expected_reply_kind": 4,
+      "expected_value": 17,
+      "label": "final state 1:36",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 41,
+      "operation": 5,
+      "fields_hex": "010026000000",
+      "expected_reply_kind": 4,
+      "expected_value": 198,
+      "label": "final state 1:38",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 42,
+      "operation": 5,
+      "fields_hex": "010028000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:40",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 43,
+      "operation": 5,
+      "fields_hex": "01002a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:42",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 44,
+      "operation": 5,
+      "fields_hex": "01002c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 13616,
+      "label": "final state 1:44",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 45,
+      "operation": 5,
+      "fields_hex": "01002e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 21042,
+      "label": "final state 1:46",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 46,
+      "operation": 5,
+      "fields_hex": "010030000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:48",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 47,
+      "operation": 5,
+      "fields_hex": "010032000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:50",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 48,
+      "operation": 5,
+      "fields_hex": "010034000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:52",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 49,
+      "operation": 5,
+      "fields_hex": "010036000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:54",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 50,
+      "operation": 5,
+      "fields_hex": "010038000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:56",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 51,
+      "operation": 5,
+      "fields_hex": "01003a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:58",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 52,
+      "operation": 5,
+      "fields_hex": "01003c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:60",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 53,
+      "operation": 5,
+      "fields_hex": "01003e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:62",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 54,
+      "operation": 5,
+      "fields_hex": "010040000000",
+      "expected_reply_kind": 4,
+      "expected_value": 2,
+      "label": "final state 1:64",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 55,
+      "operation": 5,
+      "fields_hex": "010042000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:66",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 56,
+      "operation": 5,
+      "fields_hex": "010044000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:68",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 57,
+      "operation": 5,
+      "fields_hex": "010046000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:70",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 58,
+      "operation": 5,
+      "fields_hex": "010048000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:72",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 59,
+      "operation": 5,
+      "fields_hex": "01004a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:74",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 60,
+      "operation": 5,
+      "fields_hex": "01004c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:76",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 61,
+      "operation": 5,
+      "fields_hex": "01004e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:78",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 62,
+      "operation": 5,
+      "fields_hex": "010050000000",
+      "expected_reply_kind": 4,
+      "expected_value": 3,
+      "label": "final state 1:80",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 63,
+      "operation": 5,
+      "fields_hex": "010052000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:82",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 64,
+      "operation": 5,
+      "fields_hex": "010054000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:84",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 65,
+      "operation": 5,
+      "fields_hex": "010056000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:86",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 66,
+      "operation": 5,
+      "fields_hex": "010058000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:88",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 67,
+      "operation": 5,
+      "fields_hex": "01005a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:90",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 68,
+      "operation": 5,
+      "fields_hex": "01005c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:92",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 69,
+      "operation": 5,
+      "fields_hex": "01005e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:94",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 70,
+      "operation": 5,
+      "fields_hex": "010060000000",
+      "expected_reply_kind": 4,
+      "expected_value": 4,
+      "label": "final state 1:96",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 71,
+      "operation": 5,
+      "fields_hex": "010062000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:98",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 72,
+      "operation": 5,
+      "fields_hex": "010064000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:100",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 73,
+      "operation": 5,
+      "fields_hex": "010066000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:102",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 74,
+      "operation": 5,
+      "fields_hex": "010068000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:104",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 75,
+      "operation": 5,
+      "fields_hex": "01006a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:106",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 76,
+      "operation": 5,
+      "fields_hex": "01006c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:108",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 77,
+      "operation": 5,
+      "fields_hex": "01006e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:110",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 78,
+      "operation": 5,
+      "fields_hex": "010070000000",
+      "expected_reply_kind": 4,
+      "expected_value": 5,
+      "label": "final state 1:112",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 79,
+      "operation": 5,
+      "fields_hex": "010072000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:114",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 80,
+      "operation": 5,
+      "fields_hex": "010074000000",
+      "expected_reply_kind": 4,
+      "expected_value": 56,
+      "label": "final state 1:116",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 81,
+      "operation": 5,
+      "fields_hex": "010076000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:118",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 82,
+      "operation": 5,
+      "fields_hex": "010078000000",
+      "expected_reply_kind": 4,
+      "expected_value": 128,
+      "label": "final state 1:120",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 83,
+      "operation": 5,
+      "fields_hex": "01007a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:122",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 84,
+      "operation": 5,
+      "fields_hex": "01007c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 26,
+      "label": "final state 1:124",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 85,
+      "operation": 5,
+      "fields_hex": "01007e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:126",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 86,
+      "operation": 5,
+      "fields_hex": "010080000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1440,
+      "label": "final state 1:128",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 87,
+      "operation": 5,
+      "fields_hex": "010082000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:130",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 88,
+      "operation": 5,
+      "fields_hex": "010084000000",
+      "expected_reply_kind": 4,
+      "expected_value": 360,
+      "label": "final state 1:132",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 89,
+      "operation": 5,
+      "fields_hex": "010086000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:134",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 90,
+      "operation": 5,
+      "fields_hex": "010088000000",
+      "expected_reply_kind": 4,
+      "expected_value": 4,
+      "label": "final state 1:136",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 91,
+      "operation": 5,
+      "fields_hex": "01008a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:138",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 92,
+      "operation": 5,
+      "fields_hex": "01008c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 128,
+      "label": "final state 1:140",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 93,
+      "operation": 5,
+      "fields_hex": "01008e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:142",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 94,
+      "operation": 5,
+      "fields_hex": "010090000000",
+      "expected_reply_kind": 4,
+      "expected_value": 128,
+      "label": "final state 1:144",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 95,
+      "operation": 5,
+      "fields_hex": "010092000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:146",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 96,
+      "operation": 5,
+      "fields_hex": "010094000000",
+      "expected_reply_kind": 4,
+      "expected_value": 128,
+      "label": "final state 1:148",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 97,
+      "operation": 5,
+      "fields_hex": "010096000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:150",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 98,
+      "operation": 5,
+      "fields_hex": "010098000000",
+      "expected_reply_kind": 4,
+      "expected_value": 2,
+      "label": "final state 1:152",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 99,
+      "operation": 5,
+      "fields_hex": "01009a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:154",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 100,
+      "operation": 5,
+      "fields_hex": "01009c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:156",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 101,
+      "operation": 5,
+      "fields_hex": "01009e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:158",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 102,
+      "operation": 5,
+      "fields_hex": "0100a0000000",
+      "expected_reply_kind": 4,
+      "expected_value": 2,
+      "label": "final state 1:160",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 103,
+      "operation": 5,
+      "fields_hex": "0100a2000000",
+      "expected_reply_kind": 4,
+      "expected_value": 402,
+      "label": "final state 1:162",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 104,
+      "operation": 5,
+      "fields_hex": "0100a4000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:164",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 105,
+      "operation": 5,
+      "fields_hex": "0100a6000000",
+      "expected_reply_kind": 4,
+      "expected_value": 14464,
+      "label": "final state 1:166",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 106,
+      "operation": 5,
+      "fields_hex": "0100a8000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:168",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 107,
+      "operation": 5,
+      "fields_hex": "0100aa000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:170",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 108,
+      "operation": 5,
+      "fields_hex": "0100ac000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:172",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 109,
+      "operation": 5,
+      "fields_hex": "0100ae000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:174",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 110,
+      "operation": 5,
+      "fields_hex": "0100b0000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:176",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 111,
+      "operation": 5,
+      "fields_hex": "0100b2000000",
+      "expected_reply_kind": 4,
+      "expected_value": 180,
+      "label": "final state 1:178",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 112,
+      "operation": 5,
+      "fields_hex": "0100b4000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:180",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 113,
+      "operation": 5,
+      "fields_hex": "0100b6000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:182",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 114,
+      "operation": 5,
+      "fields_hex": "0100b8000000",
+      "expected_reply_kind": 4,
+      "expected_value": 50,
+      "label": "final state 1:184",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 115,
+      "operation": 5,
+      "fields_hex": "0100ba000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:186",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 116,
+      "operation": 5,
+      "fields_hex": "0100bc000000",
+      "expected_reply_kind": 4,
+      "expected_value": 50,
+      "label": "final state 1:188",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 117,
+      "operation": 5,
+      "fields_hex": "0100be000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:190",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 118,
+      "operation": 5,
+      "fields_hex": "0100c0000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:192",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 119,
+      "operation": 5,
+      "fields_hex": "0100c2000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:194",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 120,
+      "operation": 5,
+      "fields_hex": "0100c4000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:196",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 121,
+      "operation": 5,
+      "fields_hex": "0100c6000000",
+      "expected_reply_kind": 4,
+      "expected_value": 36976,
+      "label": "final state 1:198",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 122,
+      "operation": 5,
+      "fields_hex": "0100c8000000",
+      "expected_reply_kind": 4,
+      "expected_value": 49,
+      "label": "final state 1:200",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 123,
+      "operation": 5,
+      "fields_hex": "0100ca000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:202",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 124,
+      "operation": 5,
+      "fields_hex": "0100cc000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:204",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 125,
+      "operation": 5,
+      "fields_hex": "0100ce000000",
+      "expected_reply_kind": 4,
+      "expected_value": 51440,
+      "label": "final state 1:206",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 126,
+      "operation": 5,
+      "fields_hex": "0100d0000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:208",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 127,
+      "operation": 5,
+      "fields_hex": "0100d2000000",
+      "expected_reply_kind": 4,
+      "expected_value": 14234,
+      "label": "final state 1:210",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 128,
+      "operation": 5,
+      "fields_hex": "0100d4000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:212",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 129,
+      "operation": 5,
+      "fields_hex": "0100d6000000",
+      "expected_reply_kind": 4,
+      "expected_value": 14464,
+      "label": "final state 1:214",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 130,
+      "operation": 5,
+      "fields_hex": "0100d8000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:216",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 131,
+      "operation": 5,
+      "fields_hex": "0100da000000",
+      "expected_reply_kind": 4,
+      "expected_value": 14234,
+      "label": "final state 1:218",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 132,
+      "operation": 5,
+      "fields_hex": "0100dc000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:220",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 133,
+      "operation": 5,
+      "fields_hex": "0100de000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:222",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 134,
+      "operation": 5,
+      "fields_hex": "0100e0000000",
+      "expected_reply_kind": 4,
+      "expected_value": 25,
+      "label": "final state 1:224",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 135,
+      "operation": 5,
+      "fields_hex": "0100e2000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:226",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 136,
+      "operation": 5,
+      "fields_hex": "0100e4000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:228",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 137,
+      "operation": 5,
+      "fields_hex": "0100e6000000",
+      "expected_reply_kind": 4,
+      "expected_value": 2,
+      "label": "final state 1:230",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 138,
+      "operation": 5,
+      "fields_hex": "0100e8000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:232",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 139,
+      "operation": 5,
+      "fields_hex": "0100ea000000",
+      "expected_reply_kind": 4,
+      "expected_value": 14234,
+      "label": "final state 1:234",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 140,
+      "operation": 5,
+      "fields_hex": "0100ec000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:236",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 141,
+      "operation": 5,
+      "fields_hex": "0100ee000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:238",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 142,
+      "operation": 5,
+      "fields_hex": "0100f0000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:240",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 143,
+      "operation": 5,
+      "fields_hex": "0100f2000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:242",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 144,
+      "operation": 5,
+      "fields_hex": "0100f4000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:244",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 145,
+      "operation": 5,
+      "fields_hex": "0100f6000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:246",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 146,
+      "operation": 5,
+      "fields_hex": "0100f8000000",
+      "expected_reply_kind": 4,
+      "expected_value": 17,
+      "label": "final state 1:248",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 147,
+      "operation": 5,
+      "fields_hex": "0100fa000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:250",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 148,
+      "operation": 5,
+      "fields_hex": "0100fc000000",
+      "expected_reply_kind": 4,
+      "expected_value": 19,
+      "label": "final state 1:252",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 149,
+      "operation": 5,
+      "fields_hex": "0100fe000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:254",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 150,
+      "operation": 5,
+      "fields_hex": "010000010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:256",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 151,
+      "operation": 5,
+      "fields_hex": "010002010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:258",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 152,
+      "operation": 5,
+      "fields_hex": "010004010000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:260",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 153,
+      "operation": 5,
+      "fields_hex": "010006010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:262",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 154,
+      "operation": 5,
+      "fields_hex": "010008010000",
+      "expected_reply_kind": 4,
+      "expected_value": 406,
+      "label": "final state 1:264",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 155,
+      "operation": 5,
+      "fields_hex": "01000a010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:266",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 156,
+      "operation": 5,
+      "fields_hex": "01000c010000",
+      "expected_reply_kind": 4,
+      "expected_value": 240,
+      "label": "final state 1:268",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 157,
+      "operation": 5,
+      "fields_hex": "01000e010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:270",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 158,
+      "operation": 5,
+      "fields_hex": "010010010000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 1:272",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 159,
+      "operation": 5,
+      "fields_hex": "010012010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:274",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 160,
+      "operation": 5,
+      "fields_hex": "010014010000",
+      "expected_reply_kind": 4,
+      "expected_value": 2,
+      "label": "final state 1:276",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 161,
+      "operation": 5,
+      "fields_hex": "010016010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:278",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 162,
+      "operation": 5,
+      "fields_hex": "010018010000",
+      "expected_reply_kind": 4,
+      "expected_value": 5,
+      "label": "final state 1:280",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 163,
+      "operation": 5,
+      "fields_hex": "01001a010000",
+      "expected_reply_kind": 4,
+      "expected_value": 6,
+      "label": "final state 1:282",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 164,
+      "operation": 5,
+      "fields_hex": "01001c010000",
+      "expected_reply_kind": 4,
+      "expected_value": 17,
+      "label": "final state 1:284",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 165,
+      "operation": 5,
+      "fields_hex": "01001e010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:286",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 166,
+      "operation": 5,
+      "fields_hex": "010020010000",
+      "expected_reply_kind": 4,
+      "expected_value": 17,
+      "label": "final state 1:288",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 167,
+      "operation": 5,
+      "fields_hex": "010022010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:290",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 168,
+      "operation": 5,
+      "fields_hex": "010024010000",
+      "expected_reply_kind": 4,
+      "expected_value": 7,
+      "label": "final state 1:292",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 169,
+      "operation": 5,
+      "fields_hex": "010026010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:294",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 170,
+      "operation": 5,
+      "fields_hex": "010028010000",
+      "expected_reply_kind": 4,
+      "expected_value": 3,
+      "label": "final state 1:296",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 171,
+      "operation": 5,
+      "fields_hex": "01002a010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:298",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 172,
+      "operation": 5,
+      "fields_hex": "01002c010000",
+      "expected_reply_kind": 4,
+      "expected_value": 36976,
+      "label": "final state 1:300",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 173,
+      "operation": 5,
+      "fields_hex": "01002e010000",
+      "expected_reply_kind": 4,
+      "expected_value": 49,
+      "label": "final state 1:302",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 174,
+      "operation": 5,
+      "fields_hex": "010030010000",
+      "expected_reply_kind": 4,
+      "expected_value": 240,
+      "label": "final state 1:304",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 175,
+      "operation": 5,
+      "fields_hex": "010032010000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 1:306",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 176,
+      "operation": 5,
+      "fields_hex": "010034010000",
+      "expected_reply_kind": 4,
+      "expected_value": 3,
+      "label": "final state 1:308",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 177,
+      "operation": 5,
+      "fields_hex": "020000000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 2:0",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 178,
+      "operation": 5,
+      "fields_hex": "020002000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 2:2",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 179,
+      "operation": 5,
+      "fields_hex": "020004000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 2:4",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 180,
+      "operation": 5,
+      "fields_hex": "020006000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 2:6",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 181,
+      "operation": 5,
+      "fields_hex": "020008000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 2:8",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 182,
+      "operation": 5,
+      "fields_hex": "02000a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 2:10",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 183,
+      "operation": 5,
+      "fields_hex": "030000000000",
+      "expected_reply_kind": 4,
+      "expected_value": 36976,
+      "label": "final state 3:0",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 184,
+      "operation": 5,
+      "fields_hex": "030002000000",
+      "expected_reply_kind": 4,
+      "expected_value": 49,
+      "label": "final state 3:2",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 185,
+      "operation": 5,
+      "fields_hex": "030004000000",
+      "expected_reply_kind": 4,
+      "expected_value": 40175,
+      "label": "final state 3:4",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 186,
+      "operation": 5,
+      "fields_hex": "030006000000",
+      "expected_reply_kind": 4,
+      "expected_value": 49,
+      "label": "final state 3:6",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 187,
+      "operation": 5,
+      "fields_hex": "030008000000",
+      "expected_reply_kind": 4,
+      "expected_value": 40176,
+      "label": "final state 3:8",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 188,
+      "operation": 5,
+      "fields_hex": "03000a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 49,
+      "label": "final state 3:10",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 189,
+      "operation": 5,
+      "fields_hex": "03000c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 43376,
+      "label": "final state 3:12",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 190,
+      "operation": 5,
+      "fields_hex": "03000e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 49,
+      "label": "final state 3:14",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 191,
+      "operation": 5,
+      "fields_hex": "030010000000",
+      "expected_reply_kind": 4,
+      "expected_value": 54976,
+      "label": "final state 3:16",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 192,
+      "operation": 5,
+      "fields_hex": "030012000000",
+      "expected_reply_kind": 4,
+      "expected_value": 49,
+      "label": "final state 3:18",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 193,
+      "operation": 5,
+      "fields_hex": "030014000000",
+      "expected_reply_kind": 4,
+      "expected_value": 51440,
+      "label": "final state 3:20",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 194,
+      "operation": 5,
+      "fields_hex": "030016000000",
+      "expected_reply_kind": 4,
+      "expected_value": 50,
+      "label": "final state 3:22",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 195,
+      "operation": 5,
+      "fields_hex": "040000000000",
+      "expected_reply_kind": 4,
+      "expected_value": 15904,
+      "label": "final state 4:0",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 196,
+      "operation": 5,
+      "fields_hex": "040002000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 4:2",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 197,
+      "operation": 5,
+      "fields_hex": "040004000000",
+      "expected_reply_kind": 4,
+      "expected_value": 60290,
+      "label": "final state 4:4",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 198,
+      "operation": 5,
+      "fields_hex": "040006000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 4:6",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 199,
+      "operation": 5,
+      "fields_hex": "040008000000",
+      "expected_reply_kind": 4,
+      "expected_value": 39140,
+      "label": "final state 4:8",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 200,
+      "operation": 5,
+      "fields_hex": "04000a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 4:10",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 201,
+      "operation": 5,
+      "fields_hex": "04000c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 10340,
+      "label": "final state 4:12",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 202,
+      "operation": 5,
+      "fields_hex": "04000e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 4:14",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 203,
+      "operation": 5,
+      "fields_hex": "040010000000",
+      "expected_reply_kind": 4,
+      "expected_value": 31490,
+      "label": "final state 4:16",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 204,
+      "operation": 5,
+      "fields_hex": "040012000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 4:18",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 205,
+      "operation": 5,
+      "fields_hex": "040014000000",
+      "expected_reply_kind": 4,
+      "expected_value": 52640,
+      "label": "final state 4:20",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 206,
+      "operation": 5,
+      "fields_hex": "040016000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 4:22",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 207,
+      "operation": 5,
+      "fields_hex": "050000000000",
+      "expected_reply_kind": 4,
+      "expected_value": 56320,
+      "label": "final state 5:0",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 208,
+      "operation": 5,
+      "fields_hex": "050002000000",
+      "expected_reply_kind": 4,
+      "expected_value": 65535,
+      "label": "final state 5:2",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 209,
+      "operation": 5,
+      "fields_hex": "050004000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 5:4",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 210,
+      "operation": 5,
+      "fields_hex": "050006000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 5:6",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 211,
+      "operation": 5,
+      "fields_hex": "050008000000",
+      "expected_reply_kind": 4,
+      "expected_value": 9216,
+      "label": "final state 5:8",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 212,
+      "operation": 5,
+      "fields_hex": "05000a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 5:10",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 213,
+      "operation": 5,
+      "fields_hex": "05000c000000",
+      "expected_reply_kind": 4,
+      "expected_value": 56320,
+      "label": "final state 5:12",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 214,
+      "operation": 5,
+      "fields_hex": "05000e000000",
+      "expected_reply_kind": 4,
+      "expected_value": 65535,
+      "label": "final state 5:14",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 215,
+      "operation": 5,
+      "fields_hex": "050010000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 5:16",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 216,
+      "operation": 5,
+      "fields_hex": "050012000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 5:18",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 217,
+      "operation": 5,
+      "fields_hex": "050014000000",
+      "expected_reply_kind": 4,
+      "expected_value": 9216,
+      "label": "final state 5:20",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 218,
+      "operation": 5,
+      "fields_hex": "050016000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 5:22",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 219,
+      "operation": 5,
+      "fields_hex": "060000000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 6:0",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 220,
+      "operation": 5,
+      "fields_hex": "060002000000",
+      "expected_reply_kind": 4,
+      "expected_value": 1,
+      "label": "final state 6:2",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 221,
+      "operation": 5,
+      "fields_hex": "060004000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 6:4",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 222,
+      "operation": 5,
+      "fields_hex": "060006000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 6:6",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 223,
+      "operation": 5,
+      "fields_hex": "060008000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 6:8",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 224,
+      "operation": 5,
+      "fields_hex": "06000a000000",
+      "expected_reply_kind": 4,
+      "expected_value": 0,
+      "label": "final state 6:10",
+      "phase": "final",
+      "frame": null
+    },
+    {
+      "token": 225,
+      "operation": 2,
+      "fields_hex": "010010000900",
+      "expected_reply_kind": 3,
+      "expected_value": 0,
+      "label": "RUN 16",
+      "phase": "teardown",
+      "frame": null
+    },
+    {
+      "token": 226,
+      "operation": 3,
+      "fields_hex": "0100",
+      "expected_reply_kind": 3,
+      "expected_value": 0,
+      "label": "UNLOAD",
+      "phase": "teardown",
+      "frame": null
+    }
+  ]
+}

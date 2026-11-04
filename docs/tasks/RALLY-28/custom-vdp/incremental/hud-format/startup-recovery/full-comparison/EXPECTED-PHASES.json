@@ -1,0 +1,75 @@
+{
+  "named_setup_streams": {
+    "module.vdu": {
+      "bytes": 34850,
+      "offset": 454,
+      "sha256": "c8dbc5773fc90b3648476b8bca1d046c528041372f7ee521bef3d288cbd8a138"
+    },
+    "common.vdu": {
+      "bytes": 1080,
+      "offset": 309321,
+      "sha256": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380"
+    },
+    "native.vdu": {
+      "bytes": 91866,
+      "offset": 310401,
+      "sha256": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2"
+    },
+    "assets.vdu": {
+      "bytes": 149554,
+      "offset": 35335,
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "artwork.vdu": {
+      "bytes": 58780,
+      "offset": 184889,
+      "sha256": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4"
+    },
+    "presentation.vdu": {
+      "bytes": 65652,
+      "offset": 243669,
+      "sha256": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363"
+    }
+  },
+  "named_setup_stream_bytes": 401782,
+  "reference_uart_prefix_bytes": 426498,
+  "reference_timed_bytes": 291568,
+  "reference_uart_suffix_bytes": 4135,
+  "reference_whole_uart_bytes": 722201,
+  "phase_boundary": "After initial INFO17 through frame900 post-swap generation READ",
+  "installed_vs_timed_separate": true,
+  "host_trace_is_enqueue_not_firmware_consumption": true,
+  "expected_timed_wire_delta": 0,
+  "setup_prefix_sha256": "ce3d5ca666bc89ad982a653f466fe04faff59c0d2ec6ab1b7c7054b3c78e58f2",
+  "cleanup_suffix_sha256": "5aae845067b75861229417470b8c2bb62d54ea7179258aaf6cf383ae17ea177c",
+  "setup_prefix_matches_both_current_smoke_cases": true,
+  "fixture_file_bytes": {
+    "control": {
+      "module.vdu": 34850,
+      "expected.json": 22461,
+      "run.txt": 23,
+      "probe.bin": 40789,
+      "motion.bin": 21600,
+      "common.vdu": 1080,
+      "artwork.vdu": 58780,
+      "presentation.vdu": 65652,
+      "native.vdu": 91866,
+      "config.bin": 16,
+      "assets.vdu": 149554
+    },
+    "cached": {
+      "module.vdu": 34850,
+      "expected.json": 22459,
+      "run.txt": 23,
+      "probe.bin": 41324,
+      "motion.bin": 21600,
+      "common.vdu": 1080,
+      "artwork.vdu": 58780,
+      "presentation.vdu": 65652,
+      "native.vdu": 91866,
+      "config.bin": 16,
+      "assets.vdu": 149554
+    }
+  },
+  "SD_file_sizes_are_not_UART_traffic": true
+}

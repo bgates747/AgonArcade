@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "order": [
+    "control1",
+    "cached1",
+    "cached2",
+    "control2"
+  ],
+  "profiles_stopped": 4,
+  "profile_inputs_checked": 88,
+  "same900frame_config": true,
+  "common_runtime_observer": true,
+  "only_declared_HUD_differences": true,
+  "total_timed_frames_if_all_run": 3600,
+  "total_physics_ticks_if_all_run": 14400,
+  "frames_each": 900,
+  "native_replies_each": 2024,
+  "timed_bytes_each": 291568,
+  "expected_timed_delta": 0,
+  "whole_command_stream_and_phases_predicted": true,
+  "correct900frame_verifier_and_gate_imported": true,
+  "audit_CLI_real_help": true,
+  "pooled_FPS_counterexample_passed": true,
+  "original60s_95C_guards": true,
+  "process_seconds": [
+    287,
+    10,
+    3
+  ],
+  "host_conditions_read_only": true,
+  "execution_quiet_host_admission_still_required": true,
+  "emulator_executed": false,
+  "power_settings_changed": false,
+  "queue_reserved": false,
+  "execution_selected": false
+}

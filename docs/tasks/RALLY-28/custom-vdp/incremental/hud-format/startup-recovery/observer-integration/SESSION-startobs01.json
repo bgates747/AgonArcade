@@ -1,0 +1,104 @@
+{
+  "session": "startobs01",
+  "author_approved_temporary_boost_disable": true,
+  "original_boost": "1",
+  "campaigns": [
+    "startobs01"
+  ],
+  "phases": [],
+  "host_boot_id": "ef9a895e-e24e-40b8-858e-633a566760f4",
+  "video_driver": "dummy",
+  "audio_driver": "dummy",
+  "samples": [
+    {
+      "elapsed_seconds": 0.01,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 50.0,
+        "iwlwifi_1:thermal_zone1": 36.0
+      },
+      "load_average": [
+        0.86181640625,
+        0.84814453125,
+        0.6845703125
+      ]
+    },
+    {
+      "elapsed_seconds": 2.013,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 53.0,
+        "iwlwifi_1:thermal_zone1": 33.0
+      },
+      "load_average": [
+        0.86181640625,
+        0.84814453125,
+        0.6845703125
+      ]
+    },
+    {
+      "elapsed_seconds": 4.015,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 53.0,
+        "iwlwifi_1:thermal_zone1": 33.0
+      },
+      "load_average": [
+        1.11328125,
+        0.90087890625,
+        0.70263671875
+      ]
+    },
+    {
+      "elapsed_seconds": 6.017,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 52.0,
+        "iwlwifi_1:thermal_zone1": 33.0
+      },
+      "load_average": [
+        1.11328125,
+        0.90087890625,
+        0.70263671875
+      ]
+    },
+    {
+      "elapsed_seconds": 8.019,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 53.0,
+        "iwlwifi_1:thermal_zone1": 33.0
+      },
+      "load_average": [
+        1.2646484375,
+        0.93603515625,
+        0.71533203125
+      ]
+    },
+    {
+      "elapsed_seconds": 10.02,
+      "boost": "0",
+      "temperatures_celsius": {
+        "acpitz:thermal_zone0": 53.0,
+        "iwlwifi_1:thermal_zone1": 33.0
+      },
+      "load_average": [
+        1.2646484375,
+        0.93603515625,
+        0.71533203125
+      ]
+    }
+  ],
+  "completed": [
+    "campaign:startobs01"
+  ],
+  "thermal_stop_celsius": 95,
+  "error": null,
+  "boost_restored": true,
+  "boost_during_session": "0",
+  "cleanup_stopped_pids": [],
+  "final_boost": "1",
+  "owned_emulator_processes_after": [],
+  "elapsed_host_seconds": 10.511,
+  "max_temperature_celsius": 53.0
+}

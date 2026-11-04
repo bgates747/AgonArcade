@@ -1,0 +1,28 @@
+{
+  "functional_pass": true,
+  "scope": "One maintained086 cached fixture; no comparison",
+  "frames": 900,
+  "physics_ticks": 3600,
+  "warm_frames": 2,
+  "native_replies": 2024,
+  "backend_sha256": "0866265bd6f3d73ad572f31dc1bb954f308ed9a5d857efa9414d37e1ade13374",
+  "full_audit_sha256": "cd3bb49975f2e1d56253880e26efa5f24cfbaa6d52e48117d0b6ea12ad5714e3",
+  "observer": {
+    "schema_valid": true,
+    "finalized": true,
+    "sample_count": 0,
+    "final_reason": "shutdown",
+    "window_complete": false,
+    "sample_timing_within_100ms": false,
+    "all_sample_senders_available": false,
+    "completed_sends_unchanged": null,
+    "diagnosis": "none: no CTS/FIFO/IRQ/PC or causal inference"
+  },
+  "nominal_mos_fps": 60.0,
+  "nominal_prt_fps": 36.15474229703129,
+  "clocks_calibrated": false,
+  "timing_qualified": false,
+  "old_stall_cause_or_repair_claim": false,
+  "cache_gain_or_old_runtime_comparison": false,
+  "visual_or_hardware_claim": false
+}

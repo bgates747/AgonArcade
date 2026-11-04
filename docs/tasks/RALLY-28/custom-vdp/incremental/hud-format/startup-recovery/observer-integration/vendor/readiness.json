@@ -1,0 +1,111 @@
+{
+  "task": "FX-114",
+  "state": "preparation_complete_no_target",
+  "revision": "r02",
+  "baseline_sha256": "82e8492297fd9df07678fddbea83b563d0543fdfadb39ac77984a0bacf56b448",
+  "candidate_sha256": "7e7d0e1bc89af72bde7ffbd6c06446aaefda4d1803f89eb1faf3167307ee1e01",
+  "candidate_bytes": 1954496,
+  "observer_sha256": "3c61fb1a817edb3b47df1e85dd765d7e640cc91130af84a6613fee7de109bc66",
+  "cargo_lock_sha256": "b80ae5fa9f046c15e8222570fe0749ed907ff0664beafd6cf657555d1eff5405",
+  "source_delta": {
+    "agon-ez80-emulator/src/uart.rs": {
+      "before": "5ebea9ab53bfb28bb02c3c7e7bfebd196411ecfea85e9180246efc27cbd47d7c",
+      "after": "6bd92da54a346bf1f1c76fdd8f7e1ecafc50110a495e2c1b04ad62ae21611cf4",
+      "diff": "--- baseline/agon-ez80-emulator/src/uart.rs\n+++ candidate/agon-ez80-emulator/src/uart.rs\n@@ -5,6 +5,7 @@\n     fn send(&mut self, byte: u8);\n     fn recv(&mut self) -> Option<u8>;\n     fn read_clear_to_send(&mut self) -> bool;\n+    fn record_batch_progress(&mut self, _cycles:u64, _paused:bool) {}\n }\n pub struct Uart {\n     link: Box<dyn SerialLink>,\n@@ -36,6 +37,7 @@\n         if now!=self.cts {self.cts=now;self.delta|=1;self.cts_edges+=1;}\n     }\n     // GPIO level reads must not acknowledge the modem delta register.\n+    pub fn record_batch_progress(&mut self,cycles:u64,paused:bool){self.link.record_batch_progress(cycles,paused);}\n     pub fn clear_to_send(&mut self)->bool {self.sample_cts();self.cts}\n     fn start_shift(&mut self) {\n         if self.shift.is_none() {\n"
+    },
+    "agon-ez80-emulator/src/agon_machine.rs": {
+      "before": "de18bc7549e9ba20ae33c56be8b3ec739f70a911485cc5e8221755fb8354d198",
+      "after": "d8cbf1d6842c09052c4fb352e587c6b9d5a6e1b5c65da67f7105b6a3b2a849d9",
+      "diff": "--- baseline/agon-ez80-emulator/src/agon_machine.rs\n+++ candidate/agon-ez80-emulator/src/agon_machine.rs\n@@ -1677,6 +1677,9 @@\n                 }\n             }\n \n+            let observer_paused = self.is_paused();\n+            self.uart0.record_batch_progress(self.total_cycles_elapsed, observer_paused);\n+\n             // perform a soft reset if requested\n             if self.soft_reset.load(std::sync::atomic::Ordering::Relaxed) {\n                 // MOS soft reset code always runs from ADL mode.\n"
+    },
+    "src/ez80_serial_links.rs": {
+      "before": "2bad2254e146d32680bb2f2a5a457b9e1dbe1436d002933e57cb88cc2337c343",
+      "after": "2397fe10ec562fc251833ed00105ed2bc303e0e6220caa2a67360c5d9f8eb73a",
+      "diff": "--- baseline/src/ez80_serial_links.rs\n+++ candidate/src/ez80_serial_links.rs\n@@ -17,14 +17,20 @@\n }\n \n pub struct Ez80ToVdpSerialLink {\n+    pub progress: Option<crate::uart_progress::Writer>,\n     pub z80_uart0_is_cts: libloading::Symbol<'static, unsafe extern \"C\" fn() -> bool>,\n     pub z80_send_to_vdp: libloading::Symbol<'static, unsafe extern \"C\" fn(b: u8)>,\n     pub z80_recv_from_vdp: libloading::Symbol<'static, unsafe extern \"C\" fn(out: *mut u8) -> bool>,\n }\n \n impl SerialLink for Ez80ToVdpSerialLink {\n+    fn record_batch_progress(&mut self,cycles:u64,paused:bool) {\n+        if let Some(progress) = self.progress.as_mut() { progress.batch(cycles,paused); }\n+    }\n     fn send(&mut self, byte: u8) {\n-        unsafe { (*self.z80_send_to_vdp)(byte) }\n+        let call = *self.z80_send_to_vdp;\n+        if let Some(progress) = self.progress.as_mut() { progress.send(|| unsafe { call(byte) }); }\n+        else { unsafe { call(byte) }; }\n     }\n     fn recv(&mut self) -> Option<u8> {\n         let mut data: u8 = 0;\n@@ -37,7 +43,9 @@\n         }\n     }\n     fn read_clear_to_send(&mut self) -> bool {\n-        unsafe { (*self.z80_uart0_is_cts)() }\n+        let call = *self.z80_uart0_is_cts;\n+        if let Some(progress) = self.progress.as_mut() { progress.cts(|| unsafe { call() }) }\n+        else { unsafe { call() } }\n     }\n }\n \n"
+    },
+    "src/vdp_interface.rs": {
+      "before": "c6ea8aeade3d7644866987475b9adee83ff8e7c2f64aab332c0604329e49f558",
+      "after": "8f2699ae64b6d1ee7e28b4fbe41c350ddc5187f291ff204ccc8ea6cabb42de0a",
+      "diff": "--- baseline/src/vdp_interface.rs\n+++ candidate/src/vdp_interface.rs\n@@ -1,5 +1,6 @@\n #[allow(non_snake_case)]\n pub struct VdpInterface {\n+    pub flexe_vdp_cycles: Option<libloading::Symbol<'static, unsafe extern \"C\" fn() -> u64>>,\n     pub flexe_vdp_frames: Option<libloading::Symbol<'static, unsafe extern \"C\" fn() -> u64>>,\n     pub flexe_vdp_failed: Option<libloading::Symbol<'static, unsafe extern \"C\" fn() -> bool>>,\n     pub vdp_setup: libloading::Symbol<'static, unsafe extern \"C\" fn() -> ()>,\n@@ -35,6 +36,7 @@\n     fn new(lib: &'static libloading::Library) -> Self {\n         unsafe {\n             return VdpInterface {\n+                flexe_vdp_cycles: lib.get(b\"flexe_vdp_cycles\").ok(),\n                 flexe_vdp_frames: lib.get(b\"flexe_vdp_frames\").ok(),\n                 flexe_vdp_failed: lib.get(b\"flexe_vdp_failed\").ok(),\n                 vdp_setup: lib.get(b\"vdp_setup\").unwrap(),\n"
+    },
+    "src/main.rs": {
+      "before": "ffbbd41b32e92e04e9c4a13932cfaa6261f783cbe475a77c325dfb9bfc60d41f",
+      "after": "9c77a431b41debf3c54eda47e3d192d7d40bc362fb1a9efe0f391cf6c502ea0e",
+      "diff": "--- baseline/src/main.rs\n+++ candidate/src/main.rs\n@@ -16,6 +16,7 @@\n mod parse_args;\n mod sdl2ps2;\n mod vdp_interface;\n+mod uart_progress;\n \n const PREFIX: Option<&'static str> = option_env!(\"PREFIX\");\n \n@@ -93,6 +94,21 @@\n         firmware_paths(args.firmware, args.vdp_dll, false),\n         args.verbose,\n     );\n+\n+    let mut uart_observer = match uart_progress::Observer::from_env() {\n+        Ok(value) => value,\n+        Err(error) => { eprintln!(\"[Flexe UART observer] admission failed: {error}\"); return 2; }\n+    };\n+    let uart_progress_writer = uart_observer.as_mut().map(|observer| observer.take_writer());\n+    if let Some(observer) = uart_observer.as_mut() {\n+        let (Some(cycles),Some(frames),Some(failed)) = (\n+            vdp_interface.flexe_vdp_cycles.as_ref(),vdp_interface.flexe_vdp_frames.as_ref(),vdp_interface.flexe_vdp_failed.as_ref()) else {\n+            eprintln!(\"[Flexe UART observer] existing atomic VDP getters unavailable\"); return 2;\n+        };\n+        if let Err(error) = observer.start(uart_progress::VdpAtomics { cycles:**cycles, frames:**frames, failed:**failed }) {\n+            eprintln!(\"[Flexe UART observer] reader start failed: {error}\"); return 2;\n+        }\n+    }\n \n     unsafe { (*vdp_interface.setVdpDebugLogging)(args.verbose) }\n \n@@ -226,6 +242,7 @@\n                         RamInit::Random\n                     },\n                     uart0_link: Box::new(ez80_serial_links::Ez80ToVdpSerialLink {\n+                        progress: uart_progress_writer,\n                         z80_uart0_is_cts: vdp_interface.z80_uart0_is_cts.clone(),\n                         z80_send_to_vdp: vdp_interface.z80_send_to_vdp.clone(),\n                         z80_recv_from_vdp: vdp_interface.z80_recv_from_vdp.clone(),\n@@ -799,6 +816,10 @@\n             }\n             canvas.present();\n         }\n+    }\n+\n+    if let Some(observer) = uart_observer.as_mut() {\n+        if let Err(error) = observer.finish() { eprintln!(\"[Flexe UART observer] finalization failed: {error}\"); }\n     }\n \n     // signal the shutdown to any other listeners\n"
+    },
+    "src/uart_progress.rs": {
+      "before": null,
+      "after": "3c61fb1a817edb3b47df1e85dd765d7e640cc91130af84a6613fee7de109bc66",
+      "new_owned_diagnostic": true
+    }
+  },
+  "configuration": {
+    "schema": "fx114-sender-v1",
+    "stall_ms": 50000,
+    "poll_ms": 100,
+    "sample_offsets_ms": [
+      0,
+      250,
+      500
+    ],
+    "max_lifetime_ms": 630000,
+    "max_lines": 5,
+    "snapshot_attempts": 4,
+    "offline_max_bytes": 65536,
+    "offline_sample_lateness_ms": 100
+  },
+  "tests": {
+    "rust_observer": 8,
+    "ez80_library": "passed, original pinned library suite",
+    "python_reader_pi": 8,
+    "python_reader_oryx": 8,
+    "frontend_release": "passed; not executed"
+  },
+  "artifacts": {
+    "docs/tasks/FX-114/uart_progress.rs": "3c61fb1a817edb3b47df1e85dd765d7e640cc91130af84a6613fee7de109bc66",
+    "docs/tasks/FX-114/prepare_candidate.py": "6eec6b7501d30f481410c1e19ec4db460c93c1e180bde5d9e360bf41c922d616",
+    "docs/tasks/FX-114/read_record.py": "12817411df487931407d1ec7cf4e51c9742a5f350582af2efce5db3fb4a96cde",
+    "docs/tasks/FX-114/test_read_record.py": "23fd908055ba7ff13400ee7cfc09179f264cd4d477e549f0e400f1f9e257e967",
+    "docs/tasks/FX-114/observer-contract.md": "8bab5ca2d81ab2949d9f15f37d2ac7f0ba69be590da87d39a6b0f9f609cec0e4",
+    "docs/tasks/FX-114/baseline-closure.json": "3f826eb0ba51120699d934b676230a1ad7bf84ccae70f18605a05a001b46023e"
+  },
+  "evidence": {
+    "build/fx114/preparation-r02.tar": "464582cc7045412f27050e256c751f43c2f265b4733772bc3265b30fd4a656c2",
+    "build/fx114/candidate-r02-result.json": "0ea911878d8e0ebac375aa7ca5ead433bfa12aba81bfbb02668c0cf778c313ad",
+    "build/fx114/reader-tests-oryx.log": "79986efb31620de3e6c54a30e167d372c94fe0d6e8be5ba8efba7cf1bb745dcc",
+    "build/fx114/compatibility-static.json": "580fcb1e915fd3e7b1b7fc3ac15787ae8239ea2a2a5da5201a6b2c4a4a54638f",
+    "build/fx114/old-backend-counter-accesses.txt": "d65ac1de66f4d59b02ef340717d5061680fa5892ef5fc296df46c4d1e281c65f"
+  },
+  "bundle_members": {
+    "input-r01/source.tar": "eff797d9665f8be348b8ef2a1726505adcfb1a079df60c31ad5128292d3eff76",
+    "input-r01/hostfs_build.py": "fda2d0f6a080625d9d2ceaa781930fde453c39acc18b3c46eeb237a4e747af9a",
+    "input-r01/hostfs-sync.patch": "8f799a19012c9a57c9e89b20ef9b6b4bf5ed99efe852f4fb00355e83ae865fd8",
+    "input-r01/producer-result.json": "58f0004b2cbf66b9fe7facf509083e067aad6d9f972d4910b861e6efc742e57f",
+    "input-r01/input-manifest.json": "308f65e19ba9bc1bf917d36150d233d5ea54ea142f93eb082e3bb931f9dd6981",
+    "baseline-r01/result.json": "82c69c6cb80382becb3675c1643ce152edb599908dda5ce3c1983dd892bb48dc",
+    "candidate-r02/result.json": "0ea911878d8e0ebac375aa7ca5ead433bfa12aba81bfbb02668c0cf778c313ad",
+    "candidate-r02/source-delta.json": "43904a4151b9d4654f55ee7ada3cd3b8e969b62d33afdc5a9fce52a90604f3ae",
+    "candidate-r02/observer.patch": "3132157250481de31c31422dd6b7be0108bea9ad67e9440481e4baed3e4fc32b",
+    "candidate-r02/source/src/uart_progress.rs": "3c61fb1a817edb3b47df1e85dd765d7e640cc91130af84a6613fee7de109bc66",
+    "candidate-r02/build.log": "f1ad24331ade877dd5552273eeb3e1f2a81bd1cc1c3f6e76c406aeb1d2b764fc",
+    "candidate-r02/flexe-agon-emulator": "7e7d0e1bc89af72bde7ffbd6c06446aaefda4d1803f89eb1faf3167307ee1e01",
+    "compatibility-r01/result.json": "580fcb1e915fd3e7b1b7fc3ac15787ae8239ea2a2a5da5201a6b2c4a4a54638f",
+    "contract-r02/read_record.py": "12817411df487931407d1ec7cf4e51c9742a5f350582af2efce5db3fb4a96cde",
+    "contract-r02/baseline-closure.json": "3f826eb0ba51120699d934b676230a1ad7bf84ccae70f18605a05a001b46023e",
+    "contract-r02/observer-contract.md": "8bab5ca2d81ab2949d9f15f37d2ac7f0ba69be590da87d39a6b0f9f609cec0e4",
+    "contract-r02/test_read_record.py": "23fd908055ba7ff13400ee7cfc09179f264cd4d477e549f0e400f1f9e257e967",
+    "contract-r02/__pycache__/read_record.cpython-314.pyc": "e4bc77fc6fbcc574411887194eb6068b1f3ca604fe154d1279db76bafda73f06",
+    "contract-r02/__pycache__/test_read_record.cpython-314.pyc": "467c365c8fcc85b396f1729580d8e9dd8310684c35e9fc4dbe0feaaf7b8b62d8"
+  },
+  "oryx_candidate": "/home/smith/Agon/mystuff/flexe-agon-emulator/build/fx114/candidate-r02/flexe-agon-emulator",
+  "input_contract": "docs/tasks/FX-114/observer-contract.md",
+  "availability": "Required public cycles/frames/failed getters statically verified in exact old200f and maintained086; no live qualification",
+  "limits": [
+    "No emulator/device/attach/profile/queue/default/repair action",
+    "No PC/FIFO/IRQ or firmware parser observation",
+    "Frontend snapshot and VDP getters not a cross-thread coherent instant",
+    "New82-derived cohort in BOTH Rally arms; old28f50 FPS excluded",
+    "50s trigger does not alter Rally60s consumer guard; missing/late windows incomplete",
+    "No commit or push; preserve original and foreign dirt"
+  ]
+}

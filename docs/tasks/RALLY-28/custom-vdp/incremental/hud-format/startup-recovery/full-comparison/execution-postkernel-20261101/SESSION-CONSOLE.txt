@@ -1,0 +1,22 @@
+Session hud900abba01 0 seconds; boost=0; max temperature 59.0
+Session hud900abba01 30 seconds; boost=0; max temperature 60.0
+control1 900-frame raw/state/clock/cleanup gate PASS; report after release.
+Session hud900abba01 60 seconds; boost=0; max temperature 56.0
+Session hud900abba01 90 seconds; boost=0; max temperature 56.0
+Session saved: SESSION-hud900abba01.json boost restored: True
+Traceback (most recent call last):
+  File "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/full-comparison/runner.py", line 91, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/full-comparison/runner.py", line 88, in main
+    supervisor.session('hud900abba01',['hud900abba01'],[])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/throughput/oryx_session.py", line 135, in session
+    run_campaign(campaign)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/full-comparison/runner.py", line 43, in campaign
+    base.run_one(profile,timeout=287)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/smith/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/control.py", line 96, in run_one
+    raise TimeoutError('UART streams unchanged for60 host seconds; preserve failure; no automatic retry in this tranche')
+TimeoutError: UART streams unchanged for60 host seconds; preserve failure; no automatic retry in this tranche

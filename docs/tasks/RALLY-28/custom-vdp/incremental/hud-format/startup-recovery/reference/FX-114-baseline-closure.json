@@ -1,0 +1,125 @@
+{
+  "schema": "fx114-exact-frontend-baseline-v1",
+  "provenance_established_before_instrumentation": true,
+  "producer_closure": {
+    "producer_receipt": {
+      "passed": true,
+      "scope": "Private host-directory SD f_sync correction; no owner/MOS/VDP firmware/backend modification",
+      "owner_checkout": "/home/smith/Agon/mystuff/flexe-agon-emulator",
+      "source_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+      "source_archive_sha256": "eff797d9665f8be348b8ef2a1726505adcfb1a079df60c31ad5128292d3eff76",
+      "base_machine_sha256": "63d97564b5bc116bf41143777577192eb13957f4fff5da9f95c038fea7114399",
+      "patched_machine_sha256": "de18bc7549e9ba20ae33c56be8b3ec739f70a911485cc5e8221755fb8354d198",
+      "patch_sha256": "8f799a19012c9a57c9e89b20ef9b6b4bf5ed99efe852f4fb00355e83ae865fd8",
+      "builder_sha256": "fda2d0f6a080625d9d2ceaa781930fde453c39acc18b3c46eeb237a4e747af9a",
+      "cargo_lock_sha256": "b80ae5fa9f046c15e8222570fe0749ed907ff0664beafd6cf657555d1eff5405",
+      "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+      "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+      "commands": [
+        [
+          "/home/smith/.cargo/bin/cargo",
+          "test",
+          "--offline",
+          "--locked",
+          "--jobs",
+          "2",
+          "-p",
+          "agon-ez80-emulator",
+          "--lib"
+        ],
+        [
+          "/home/smith/.cargo/bin/cargo",
+          "build",
+          "--offline",
+          "--locked",
+          "--release",
+          "--jobs",
+          "2",
+          "-p",
+          "flexe-agon-emulator"
+        ]
+      ],
+      "binary": "/home/smith/Agon/mystuff/agon-6502/build/vdp005/write/hostfs-runtime-r02/flexe-agon-emulator",
+      "binary_bytes": 1924872,
+      "binary_sha256": "82e8492297fd9df07678fddbea83b563d0543fdfadb39ac77984a0bacf56b448",
+      "host_build_seconds": 20.171385390999603,
+      "tests": {
+        "hostfs_sync": [
+          "valid write/sync/close/reopen bytes",
+          "missing handle returns FR_INVALID_OBJECT",
+          "real OS sync failure returns FR_DISK_ERR"
+        ],
+        "eZ80_library": "all pinned library tests"
+      },
+      "limitation": "New private frontend build is separately pinned; original frozen binary provenance does not establish a byte-reproducible base build. No system/runtime adoption or physical SD claim."
+    },
+    "source_archive_sha256": "eff797d9665f8be348b8ef2a1726505adcfb1a079df60c31ad5128292d3eff76",
+    "checked_archive_files": 227,
+    "missing": [],
+    "changed": [
+      {
+        "path": "agon-ez80-emulator/src/agon_machine.rs",
+        "before": "63d97564b5bc116bf41143777577192eb13957f4fff5da9f95c038fea7114399",
+        "after": "de18bc7549e9ba20ae33c56be8b3ec739f70a911485cc5e8221755fb8354d198"
+      }
+    ],
+    "actual_producer_binary_sha256": "82e8492297fd9df07678fddbea83b563d0543fdfadb39ac77984a0bacf56b448",
+    "machine_matches_receipt": true
+  },
+  "rebuild": {
+    "passed": true,
+    "scope": "Private host-directory SD f_sync correction; no owner/MOS/VDP firmware/backend modification",
+    "owner_checkout": "/home/smith/Agon/mystuff/flexe-agon-emulator",
+    "source_commit": "a35b17d7dddb83d127ef4bb75f33a5808d9d8515",
+    "source_archive_sha256": "eff797d9665f8be348b8ef2a1726505adcfb1a079df60c31ad5128292d3eff76",
+    "base_machine_sha256": "63d97564b5bc116bf41143777577192eb13957f4fff5da9f95c038fea7114399",
+    "patched_machine_sha256": "de18bc7549e9ba20ae33c56be8b3ec739f70a911485cc5e8221755fb8354d198",
+    "patch_sha256": "8f799a19012c9a57c9e89b20ef9b6b4bf5ed99efe852f4fb00355e83ae865fd8",
+    "builder_sha256": "fda2d0f6a080625d9d2ceaa781930fde453c39acc18b3c46eeb237a4e747af9a",
+    "cargo_lock_sha256": "b80ae5fa9f046c15e8222570fe0749ed907ff0664beafd6cf657555d1eff5405",
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+    "commands": [
+      [
+        "/home/smith/.cargo/bin/cargo",
+        "test",
+        "--offline",
+        "--locked",
+        "--jobs",
+        "2",
+        "-p",
+        "agon-ez80-emulator",
+        "--lib"
+      ],
+      [
+        "/home/smith/.cargo/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--release",
+        "--jobs",
+        "2",
+        "-p",
+        "flexe-agon-emulator"
+      ]
+    ],
+    "binary": "/home/smith/Agon/mystuff/flexe-agon-emulator/build/fx114/baseline-r01/flexe-agon-emulator",
+    "binary_bytes": 1924872,
+    "binary_sha256": "82e8492297fd9df07678fddbea83b563d0543fdfadb39ac77984a0bacf56b448",
+    "host_build_seconds": 20.156688118000602,
+    "tests": {
+      "hostfs_sync": [
+        "valid write/sync/close/reopen bytes",
+        "missing handle returns FR_INVALID_OBJECT",
+        "real OS sync failure returns FR_DISK_ERR"
+      ],
+      "eZ80_library": "all pinned library tests"
+    },
+    "limitation": "New private frontend build is separately pinned; original frozen binary provenance does not establish a byte-reproducible base build. No system/runtime adoption or physical SD claim."
+  },
+  "baseline_byte_identical": true,
+  "no_observer_instrumentation_yet": true,
+  "no_target_or_device_run": true,
+  "current_oryx_release_not_baseline": "5c632b43f8304d196d84863fba14fb1c72a4143e90ae12e8c9fbdf6f3f61dadc",
+  "closure_limit": "Original producer receipt limitation retained verbatim; this independent rebuild establishes byte equality for82e849 specifically, not another older frontend"
+}

@@ -1,0 +1,147 @@
+{
+  "wall_seconds": 1.0180942510000932,
+  "top20": [
+    {
+      "pid": 11015,
+      "comm": "ChatGPT",
+      "state": "S",
+      "cpu_seconds": 0.18,
+      "cores": 0.17680091978044526
+    },
+    {
+      "pid": 11294,
+      "comm": "ChatGPT",
+      "state": "S",
+      "cpu_seconds": 0.1,
+      "cores": 0.09822273321135849
+    },
+    {
+      "pid": 12888,
+      "comm": "firefox",
+      "state": "S",
+      "cpu_seconds": 0.1,
+      "cores": 0.09822273321135849
+    },
+    {
+      "pid": 14367,
+      "comm": "Isolated Web Co",
+      "state": "S",
+      "cpu_seconds": 0.07,
+      "cores": 0.06875591324795095
+    },
+    {
+      "pid": 1517,
+      "comm": "Xorg",
+      "state": "S",
+      "cpu_seconds": 0.06,
+      "cores": 0.05893363992681509
+    },
+    {
+      "pid": 2897,
+      "comm": "xfwm4",
+      "state": "S",
+      "cpu_seconds": 0.02,
+      "cores": 0.019644546642271696
+    },
+    {
+      "pid": 10883,
+      "comm": "ChatGPT",
+      "state": "S",
+      "cpu_seconds": 0.02,
+      "cores": 0.019644546642271696
+    },
+    {
+      "pid": 19953,
+      "comm": "Isolated Web Co",
+      "state": "R",
+      "cpu_seconds": 0.02,
+      "cores": 0.019644546642271696
+    },
+    {
+      "pid": 2191,
+      "comm": "pulseaudio",
+      "state": "S",
+      "cpu_seconds": 0.01,
+      "cores": 0.009822273321135848
+    },
+    {
+      "pid": 14498,
+      "comm": "kworker/u98:6-events_unbound",
+      "state": "I",
+      "cpu_seconds": 0.01,
+      "cores": 0.009822273321135848
+    },
+    {
+      "pid": 15458,
+      "comm": "Isolated Servic",
+      "state": "S",
+      "cpu_seconds": 0.01,
+      "cores": 0.009822273321135848
+    },
+    {
+      "pid": 15871,
+      "comm": "Isolated Web Co",
+      "state": "S",
+      "cpu_seconds": 0.01,
+      "cores": 0.009822273321135848
+    },
+    {
+      "pid": 16320,
+      "comm": "Isolated Web Co",
+      "state": "S",
+      "cpu_seconds": 0.01,
+      "cores": 0.009822273321135848
+    },
+    {
+      "pid": 21031,
+      "comm": "python3",
+      "state": "R",
+      "cpu_seconds": 0.01,
+      "cores": 0.009822273321135848
+    },
+    {
+      "pid": 1,
+      "comm": "systemd",
+      "state": "S",
+      "cpu_seconds": 0.0,
+      "cores": 0.0
+    },
+    {
+      "pid": 2,
+      "comm": "kthreadd",
+      "state": "S",
+      "cpu_seconds": 0.0,
+      "cores": 0.0
+    },
+    {
+      "pid": 3,
+      "comm": "pool_workqueue_release",
+      "state": "S",
+      "cpu_seconds": 0.0,
+      "cores": 0.0
+    },
+    {
+      "pid": 4,
+      "comm": "kworker/R-rcu_gp",
+      "state": "I",
+      "cpu_seconds": 0.0,
+      "cores": 0.0
+    },
+    {
+      "pid": 5,
+      "comm": "kworker/R-sync_wq",
+      "state": "I",
+      "cpu_seconds": 0.0,
+      "cores": 0.0
+    },
+    {
+      "pid": 6,
+      "comm": "kworker/R-kvfree_rcu_reclaim",
+      "state": "I",
+      "cpu_seconds": 0.0,
+      "cores": 0.0
+    }
+  ],
+  "total_cores": 0.6188032192315585,
+  "read_only": true
+}

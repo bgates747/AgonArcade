@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "scope": "Original startup + two warm pages + exactly one frame/four ticks; no performance claim",
+  "guest_unchanged": true,
+  "guest_sha256": "685f4b4c6bd6959aac330a5c6c361b8e86b4967656bfb049df777b5a74ae3d1d",
+  "fixture_differences": [
+    "expected.json",
+    "config.bin"
+  ],
+  "files": {
+    "module.vdu": "c8dbc5773fc90b3648476b8bca1d046c528041372f7ee521bef3d288cbd8a138",
+    "expected.json": "0364d3b9b3a0dd12e63b3e1d2ef6de249c6f192495d6295bf64e518387b3b2fd",
+    "run.txt": "e0a18367e1b996123abde3f6a51b9ab8232163178cba2bd04ca32461e7942a24",
+    "probe.bin": "685f4b4c6bd6959aac330a5c6c361b8e86b4967656bfb049df777b5a74ae3d1d",
+    "motion.bin": "5ca7f145e3160618dc1708b3624741dcd1ccb7fc61db41fda8482881b50ed3e9",
+    "common.vdu": "1320393f76881eb4a25429e780143b8cdbcee3d0a2bdacff42a2f6a30d2c0380",
+    "artwork.vdu": "b0a2d12d15e4f9c3219edcffa54549b4d758eb9f4a3fd99ddabe8e8d7b3248f4",
+    "presentation.vdu": "3b11b78710c46551daf80ca476c4de2161af5e87febb5ad7430f92bc58b1e363",
+    "native.vdu": "8076420b84af6e120d4efbfd5cae2d5ff79b987a9bcb6f380b603c9b1da966f2",
+    "config.bin": "13950bb0628667b1767dffce952d84380ead571ed5aa0f1a6a655bdeb46f87c8",
+    "assets.vdu": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+  },
+  "oracle_modes_agree": true,
+  "runtime_selection_pending": true,
+  "target_run": false,
+  "hud_code_unchanged": {
+    "/Agon/mystuff/AgonArcade/rally-game/src/main.cpp": "ffff8d87d931091d86e542640efac2bddd42211215fa6d51814d0b4a7efb5b80",
+    "/Agon/mystuff/AgonArcade/rally-game/include/hud_format.hpp": "1abac7f26473a3eb85802b289a966b0a63eae4fb6ed75526b3487ee124e25512",
+    "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/guest/probe.bin": "c6d7502240911dbe749c7e811cd8f86b20d6d5fd2e74731259d92d7b0b583816"
+  }
+}

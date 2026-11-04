@@ -1,0 +1,16 @@
+{
+  "control1": {
+    "passed": true,
+    "role": "control",
+    "frames_requested": 900,
+    "frames_completed": 900,
+    "physics_ticks": 3600,
+    "raw_state_clock_cleanup_gate": true
+  },
+  "cached1": {
+    "passed": false,
+    "role": "cached",
+    "frames_requested": 900,
+    "error": "TimeoutError('UART streams unchanged for60 host seconds; preserve failure; no automatic retry in this tranche')"
+  }
+}

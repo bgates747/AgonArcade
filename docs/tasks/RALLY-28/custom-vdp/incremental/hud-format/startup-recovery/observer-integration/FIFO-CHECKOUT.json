@@ -1,0 +1,18 @@
+{
+  "owner": "rally",
+  "task": "START-001-03-OBS01",
+  "purpose": "Exactly one frozen observed original-control startup/one-frame diagnostic; 60s UART/300s process ceiling; no retry",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-startobs01-control",
+  "notify_thread": "01a1346d-a74a-7211-b5b7-de3bcb8a28e5",
+  "notify_host": "remote-ssh-discovered:raspberrypi",
+  "request": "119c1395b03b",
+  "requested": "2026-10-31T20:23:46.526624+00:00",
+  "lease": "7dd5a5d143934038a197064a45265d7a",
+  "generation": 58,
+  "checked_out": "2026-10-31T20:24:03.227685+00:00",
+  "idle_observation": {
+    "machine": "oryx-linuxlite",
+    "epoch": 1793478236.1619606,
+    "emulators": []
+  }
+}

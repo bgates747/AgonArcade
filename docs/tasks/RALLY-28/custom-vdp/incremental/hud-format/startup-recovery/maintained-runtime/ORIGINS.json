@@ -1,0 +1,60 @@
+{
+  "sdcard/rally25/artwork.vdu": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/artwork.vdu",
+  "sdcard/rally25/assets.vdu": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/assets.vdu",
+  "sdcard/rally25/common.vdu": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/common.vdu",
+  "sdcard/rally25/config.bin": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/config.bin",
+  "sdcard/rally25/expected.json": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/expected.json",
+  "sdcard/rally25/module.vdu": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/module.vdu",
+  "sdcard/rally25/motion.bin": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/motion.bin",
+  "sdcard/rally25/native.vdu": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/native.vdu",
+  "sdcard/rally25/presentation.vdu": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/presentation.vdu",
+  "sdcard/rally25/probe.bin": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/probe.bin",
+  "sdcard/rally25/run.txt": "docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/fixtures/cached/run.txt",
+  "mos_platform.bin": {
+    "source": "/Agon/mystuff/AgonArcade/.emulator/rally28-affine-pi-full01/mos_platform.bin",
+    "sha256": "d564243283972690933a4554296ad6202ca4ef54572279533a942960846bebae"
+  },
+  "mos_platform.map": {
+    "source": "/Agon/mystuff/AgonArcade/.emulator/rally28-affine-pi-full01/mos_platform.map",
+    "sha256": "d69e60bbce61a7b4b3eef318ba395f11c4e1a5b585755755113992dc94edcb86"
+  },
+  ".mos-release": {
+    "source": "/Agon/mystuff/AgonArcade/.emulator/rally28-affine-pi-full01/.mos-release",
+    "sha256": "857eb82c24dabfeece5f196549e418d3eadce278a2bbf37c30a79b08044c4afd"
+  },
+  ".mos-release.sha256": {
+    "source": "/Agon/mystuff/AgonArcade/.emulator/rally28-affine-pi-full01/.mos-release.sha256",
+    "sha256": "aee02d6e06411dcdab6d68fd41eaf781e61c9d1746c90de001596dd31fe36e72"
+  },
+  ".bespoke-vdp-profile": {
+    "source": "/Agon/mystuff/AgonArcade/.emulator/rally28-affine-pi-full01/.bespoke-vdp-profile",
+    "sha256": "3016ae6e37a83c44f8f0b1ce533c4b98e23b48e1c1639ed41919b90ea05db1cb"
+  },
+  "esp32-firmware.bin": {
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/paced-road/control/fixture/vdp_rally.bin",
+    "sha256": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473"
+  },
+  "esp32-firmware.elf": {
+    "source": "/Agon/mystuff/golem/docs/tasks/GOLEM-044/app/build/runtime-inputs/firmware.elf",
+    "sha256": "b41e4cb37bd44633d14b2e6eea615cbbbdd29a1d4b49c3258b4f49f2e215e567"
+  },
+  "flexe-agon-emulator": {
+    "source": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/observer-integration/STAGED-LAUNCHER.sh",
+    "sha256": "41fab20adc3ba41f1538e33dfb2b83be2b4f7e3ca7a658186c5feae89708255b"
+  },
+  "sdcard/autoexec.txt": "Exact original bytes from RALLY-25/native-demo/profile.py, verified by old pin",
+  "flexe-agon-emulator.bin": {
+    "archive": "/Agon/mystuff/flexe-agon-emulator/build/fx114/preparation-r02.tar",
+    "archive_sha256": "464582cc7045412f27050e256c751f43c2f265b4733772bc3265b30fd4a656c2",
+    "member": "candidate-r02/flexe-agon-emulator",
+    "bytes": 1954496,
+    "sha256": "7e7d0e1bc89af72bde7ffbd6c06446aaefda4d1803f89eb1faf3167307ee1e01"
+  },
+  "flexe-vdp.so": {
+    "archive": "/Agon/mystuff/flexe-agon-emulator/build/fx119/preparation-r03-complete.tar",
+    "archive_sha256": "c67107f9268f3dffb5908c83090fdb478d00024d87b69f5b98a4f1fa13b8a694",
+    "member": "fx119/baseline-r01/flexe-vdp.so",
+    "bytes": 1746744,
+    "sha256": "0866265bd6f3d73ad572f31dc1bb954f308ed9a5d857efa9414d37e1ade13374"
+  }
+}

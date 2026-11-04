@@ -1,0 +1,7 @@
+# Quiet-host admission deferred before any benchmark process
+
+Battery checkout66 was actually released and Golem151 relayed the handoff. Fresh320 source/88profile checks pass with absent output and initial boost1. Read-only preflight then found active SU2_CFD PID34020, cwd under agon-fsim/utilities/airfoil-analysis/build/su2-reference/cases/g897-257-a00. A one-second procfs sample observed4.0CPU seconds/1.000334wall seconds, approximately3.999core equivalents in stateR. This is current competing work, not merely the lifetime `%CPU` display.
+
+Frozen/root144 quiet-host admission therefore defers the cohort before its first process. Rally sent no signal to the solver and changed no settings. No checkout/emulator/benchmark process occurred. Requeste9c7660738db was cancelled15:22:13EST to avoid holding the queue; next6502e4cfa4c2e665 was immediately notified successfully. All four cases remain UNRUN, not failed or retried; selected process budget remains unused. Source71062298 and its profiles are unchanged.
+
+Coordinate a finite quiet window through Golem/FSIM ownership before reserving afresh. Expected3–5minutes is not a deadline; original four300s process ceilings and first-failure stop remain. Do not pause/kill another owner's job or change affinity/power/governor to manufacture quiet. This deferral adds no process, replacement or campaign and reports no FPS. After actual readiness, fresh input/quiet/idle/FIFO admission is still required.
