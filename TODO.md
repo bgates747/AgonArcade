@@ -1,13 +1,24 @@
 # AgonArcade TODO
 
+Author release 2026-11-04: goal [native-owned state implementation](docs/tasks/RALLY-28/custom-vdp/native-state/PLAN.md). Checkpoint all dirt/task before implementation; preserve direct-row full-race baseline, isolate native state then coarse four-step calls, qualify on leased silent Oryx and prepare paired C8 fixtures.
+
+- **NAT-002-01** [ ] — Freeze state/lifecycle/control contracts and checkpoint all dirt/task.
+- **NAT-002-02** [ ] — Implement native-owned typed state and direct numerical/array access.
+- **NAT-002-03** [ ] — Prepare coarse native four-step entry and matching guest.
+- **NAT-002-04** [ ] — Qualify exact state/pixels/commands/lifecycles and build under frozen policy.
+- **NAT-002-05** [ ] — Freeze and run finite matched silent Oryx cohort under FIFO custody.
+- **NAT-002-06** [ ] — Retrieve/release/notify; report FPS, service counts, wire and correctness.
+- **NAT-002-07** [ ] — Prepare complete matched C8 baseline/candidate kit and report.
+
+
 Author-selected 2026-11-04: [native state/interpreted-command audit](docs/tasks/RALLY-28/custom-vdp/native-state-audit/PLAN.md). Task first, commit/push all dirt in logical groups, then source research only. Replace legacy interpreted game logic and piecemeal buffer access in the future design with efficient native C structures and appropriately scoped pointers; establish actual costs/lifetimes before implementation.
 
-- **NAT-001-01** [ ] — Trace current native/interpreted call chain and historical origin; pin sources.
-- **NAT-001-02** [ ] — Inventory state/buffers, repeated accesses and actual ownership/lifetimes.
-- **NAT-001-03** [ ] — Audit helper/stock-command/wrapper work and identify cross-path replacements.
-- **NAT-001-04** [ ] — Compare native C/scoped-pointer/persistent-state designs against actual runtime constraints.
-- **NAT-001-05** [ ] — Record prioritized findings and a staged FPS/phase/wire measurement plan.
-- **NAT-001-06** [ ] — Reconcile task and report; stop after research, no implementation or target run.
+- **NAT-001-01** [x] — Current/native/interpreted call chain and historical dual-backend representation traced; 45 inspected inputs pinned.
+- **NAT-001-02** [x] — Root310B + arrays96B + tables562B inventoried; scalar borrow costs and lifetime ownership recorded, source-derived 294–346 acquire/release pairs per normal all-active frame.
+- **NAT-001-03** [x] — Tick wrappers, three output-list interpreters, preflight/scratch work and stock data/primitive interfaces classified.
+- **NAT-001-04** [x] — Native module data persists in internal RAM; typed state and scoped external asset pointers need no new generic ABI. Borrowed pointers still expire at return.
+- **NAT-001-05** [x] — [NAT-F01–07 findings and proposed next steps](docs/tasks/RALLY-28/custom-vdp/native-state-audit/FINDINGS.md) recorded, including FPS/phase/wire measurement contract.
+- **NAT-001-06** [x] — Research complete; implementation, new timing, hardware/visual and async/scheduler work remain pending separate selection. New audit results uncommitted; earlier dirt/task pushed c10eca3/a77a42b.
 
 
 Author-selected2026-11-04: [direct-row road rendering first](docs/tasks/RALLY-28/custom-vdp/direct-rows/PLAN.md). Write contract, commit/push all dirt in logical groups, then implement and compare. Async UART and independent fast physics/render loops are deferred until after this result.
