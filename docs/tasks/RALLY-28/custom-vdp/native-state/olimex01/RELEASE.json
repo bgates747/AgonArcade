@@ -1,0 +1,101 @@
+{
+  "owner": "rally",
+  "task": "NAT-HW-001",
+  "purpose": "Author requested unattended six-run matched native-state hardware comparison instead of manual C8 testing",
+  "plan": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/PLAN.md",
+  "notify_thread": "01a1346d-a74a-7211-b5b7-de3bcb8a28e5",
+  "notify_host": "remote-ssh-discovered:raspberrypi",
+  "request": "68cc81defe48",
+  "requested": "2026-11-04T14:19:43.065359+00:00",
+  "lease": "720eed82009642828057395894d7ead6",
+  "generation": 25,
+  "granted": "2026-11-04T14:30:33.024000+00:00",
+  "phase": "consumer",
+  "entry_observation": {
+    "schema": "olimex-bench-observation-v1",
+    "bench": "olimex",
+    "epoch": 1793802632.956179,
+    "observer": "linux-extender",
+    "lease": null,
+    "checks": {
+      "no_workload": true,
+      "no_transfer": true,
+      "no_serial_readers": true,
+      "no_reset_holders": true,
+      "cli_verified": true,
+      "input_ready_neutral": true,
+      "listener_offline": true,
+      "staged_job_idle": true,
+      "restoration_verified": true
+    },
+    "evidence": [
+      "/Agon/mystuff/agon-extender/agents/bench-scheduler/rally-nat-hw001/fresh.json",
+      "/Agon/mystuff/agon-6502/build/cpu003/olimex-physical-cmos-r01/handback/observation.json",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/PREPARATION-PINS.json"
+    ],
+    "components": {
+      "native_vdp_sha256": "8ade1e7dbc8b82cfbb20bfc92bdeb02e909c38c9f93c37723f9c9d409a9af7c4",
+      "emos_rom_sha256": "f62eed7f6bab8c164dcfe5e700132d289d52352f19d955acccbe1cff81b5e893",
+      "p4_app_sha256": "5db0c0a0c378ca80a7947150501f9b2a0fa44b12544873a691c4de94f2d8c527",
+      "startup_sha256": "9e97ceae5489e1b6330c6a2f207d95c6566c60cac304d65e7aad54b610a5b423",
+      "listener_sha256": "0566e17f18747c2e625d2450ce5324a2b1097bce323a5e4d70fad6dcb41cdff2"
+    },
+    "component_provenance": {
+      "native_vdp_sha256": "Fresh full-flash compare exact original17caa/application8ade Retained prior6502 independent full restoration proof; scheduler performs no redundant flash read or capability claim.",
+      "emos_rom_sha256": "Retained verified incoming grant; never modified by CPU003",
+      "p4_app_sha256": "Retained verified incoming grant; never modified by CPU003",
+      "startup_sha256": "Fresh complete scheduler actual CLI read, original108B exact; listener EXIT verified.",
+      "listener_sha256": "Fresh complete scheduler24753B canonical listener read exact; service EXIT verified."
+    },
+    "disposition": "Grant finite prepared Rally six-case native Legacy cohort after prior6502 clean release; FSIM remains Author-paused. Exact known temporary a50eb23a app selected subject consumer fresh full incoming backup/partition validation and exact changed-span restoration/full independent compare. Preserve Eirene/P4/startup/listeners. No scheduler test invocation/reset/firmware write; no production adoption."
+  },
+  "released": "2026-11-04T15:10:14.545962+00:00",
+  "release_observation": {
+    "schema": "olimex-bench-observation-v1",
+    "bench": "olimex",
+    "epoch": 1793804976.90682,
+    "observer": "rally",
+    "lease": "720eed82009642828057395894d7ead6",
+    "checks": {
+      "no_workload": true,
+      "no_transfer": true,
+      "no_serial_readers": true,
+      "no_reset_holders": true,
+      "cli_verified": true,
+      "input_ready_neutral": true,
+      "listener_offline": true,
+      "staged_job_idle": true,
+      "restoration_verified": true
+    },
+    "evidence": [
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/evidence/handback/state.json",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/evidence/restore/verified.json",
+      "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/evidence/entry/receipt.json"
+    ],
+    "components": {
+      "native_vdp_sha256": "8ade1e7dbc8b82cfbb20bfc92bdeb02e909c38c9f93c37723f9c9d409a9af7c4",
+      "emos_rom_sha256": "f62eed7f6bab8c164dcfe5e700132d289d52352f19d955acccbe1cff81b5e893",
+      "p4_app_sha256": "5db0c0a0c378ca80a7947150501f9b2a0fa44b12544873a691c4de94f2d8c527",
+      "startup_sha256": "9e97ceae5489e1b6330c6a2f207d95c6566c60cac304d65e7aad54b610a5b423",
+      "listener_sha256": "0566e17f18747c2e625d2450ce5324a2b1097bce323a5e4d70fad6dcb41cdff2"
+    },
+    "component_provenance": {
+      "native_vdp_sha256": "Fresh full-flash compare exact original17caa/application8ade",
+      "emos_rom_sha256": "Retained verified incoming grant; never modified by Rally",
+      "p4_app_sha256": "Retained verified incoming grant; never modified by Rally",
+      "startup_sha256": "Fresh complete file comparison at handback",
+      "listener_sha256": "Fresh complete file comparison at handback"
+    },
+    "disposition": "Finite six-case Rally comparison; exact incoming native full flash restored; P4/EMOS/startup/listener unchanged; actual listener read/EXIT, cwd/cursor commands, neutral input/idle workers/free USB. No optical/audio qualification."
+  },
+  "next_request": {
+    "owner": "wolf3dorig",
+    "task": "WOLF-PERF-001-hardware",
+    "purpose": "Author-requested three-arm Wolf rotation hardware suite: CPU600, hidden-render600, paced720degrees/20seconds;30minute preparation/run/restoration allowance; no firmware change selected",
+    "plan": "/Agon/mystuff/Wolf3dOrig/agonport/doc/tasks/WOLF-PERF-001/HARDWARE-RUNBOOK.md",
+    "notify_thread": "01a1a67f-c3b5-76a2-9eef-66047be3dea3",
+    "notify_host": "remote-ssh-discovered:raspberrypi",
+    "request": "4361fc8e2b3d",
+    "requested": "2026-11-04T14:34:08.506808+00:00"
+  }
+}

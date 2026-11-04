@@ -1,0 +1,40 @@
+{
+  "url": "http://192.168.0.20",
+  "job": null,
+  "last": {
+    "id": 1744784074,
+    "boot": 2292158905,
+    "operation": "put",
+    "remote": "/test/arcade/rally/native01-olimex01/baseline1/common.vdu",
+    "activate": true,
+    "size": 1080,
+    "destination": null,
+    "started": 1793802802.5810237,
+    "result": {
+      "protocol": 1,
+      "boot": 2292158905,
+      "id": 1744784074,
+      "phase": 4,
+      "bytes": 1080,
+      "size": 1080,
+      "records": 10,
+      "error": 0,
+      "remote_status": 0,
+      "filesystem": 0,
+      "stage_us": 20068,
+      "mainboard_us": 575881,
+      "parallel_prepare_us": 0,
+      "parallel_active_ms": 0,
+      "parallel_handover_ms": 0,
+      "parallel_phase": 0,
+      "parallel_outcome": 0,
+      "parallel_clock_count": -1,
+      "parallel_valid_count": -1,
+      "host_elapsed_s": 0.8192577362060547,
+      "http_upload_s": 0.044341344000713434
+    },
+    "delivered": true,
+    "http_upload_s": 0.044341344000713434,
+    "finished": 1793802803.4002814
+  }
+}

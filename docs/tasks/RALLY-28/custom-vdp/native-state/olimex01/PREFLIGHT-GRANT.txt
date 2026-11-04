@@ -1,0 +1,13 @@
+backup verified
+install verified
+restore verified
+{
+  "passed": true,
+  "device_access": false,
+  "checks": [
+    "31 exact fixture and firmware hashes",
+    "six isolated exact-file staged/readback flows and explicit CLI scripts; no startup writes",
+    "repeated action refused before second firmware write",
+    "actual partition parser, sector-tail preservation, entire-image comparison and exact restoration offline"
+  ]
+}

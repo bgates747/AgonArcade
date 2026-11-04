@@ -1,0 +1,42 @@
+{
+  "url": "http://192.168.0.20",
+  "job": null,
+  "last": {
+    "id": 574065853,
+    "boot": 2292158905,
+    "operation": "get",
+    "remote": "/test/arcade/rally/native01-olimex01/state2/presentation.vdu",
+    "activate": false,
+    "size": 0,
+    "destination": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/evidence/stage/state2-read-08.bin",
+    "started": 1793803031.176501,
+    "result": {
+      "protocol": 1,
+      "boot": 2292158905,
+      "id": 574065853,
+      "phase": 4,
+      "bytes": 65652,
+      "size": 65652,
+      "records": 306,
+      "error": 0,
+      "remote_status": 0,
+      "filesystem": 0,
+      "stage_us": 13472,
+      "mainboard_us": 2606343,
+      "parallel_prepare_us": 0,
+      "parallel_active_ms": 0,
+      "parallel_handover_ms": 0,
+      "parallel_phase": 0,
+      "parallel_outcome": 0,
+      "parallel_clock_count": -1,
+      "parallel_valid_count": -1,
+      "http_download_s": 0.08830417499848409,
+      "host_elapsed_s": 2.9474213123321533,
+      "http_upload_s": 0.03780269099661382
+    },
+    "delivered": true,
+    "http_upload_s": 0.03780269099661382,
+    "partial_owned": true,
+    "finished": 1793803034.1239223
+  }
+}

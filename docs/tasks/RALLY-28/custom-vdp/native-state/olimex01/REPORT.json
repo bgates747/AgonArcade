@@ -1,0 +1,251 @@
+{
+  "passed": true,
+  "board": "Olimex AgonLight2",
+  "fixture_bytes_unchanged": true,
+  "rows": [
+    {
+      "case": "baseline1",
+      "arm": "baseline",
+      "frames": 900,
+      "mos_seconds": 30.0,
+      "prt_seconds": 29.942,
+      "mos_fps": 30.0,
+      "prt_fps": 30.058112350544384,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "retained_replies": 2025,
+      "timed_wire_bytes": 291568,
+      "phases": {
+        "player_rules_and_tick_submission_prt_ms": 1889,
+        "presentation_cpu_estimate_prt_ms": 7130,
+        "submission_prt_ms": 2856,
+        "reply_wait_prt_ms": 17182,
+        "loop_prt_ms": 29942,
+        "wire_bytes": 291568
+      },
+      "raw_file_sha256": {
+        "result.json": "5714853b01808d5296c69da37d00c17c64346474f3655ad0e1c2a103d0ce359b",
+        "state.bin": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+        "player.csv": "10a8806b92161cb8a64802fc096779c7e8ac9cf9b01b564418bb6e948ff924c4",
+        "ticks.bin": "fc6046f9f7e9291fbaf93dce002226f9100383d80ad080ceee1508d6d035302f",
+        "prt.bin": "ff0d229bb2e914d4fae455d87fbeb7a06d7564c56b73e376cbab28279dc30614",
+        "replies.bin": "4328695dbb4e99f1918b2c635581a4e3079986e7e76f9d15878559a6d8d6dd6e",
+        "stages.csv": "c2e7020dff0ed85acbb725258593f8c559b8b196b1a3c481c2feeba2b5d12634"
+      }
+    },
+    {
+      "case": "state1",
+      "arm": "state",
+      "frames": 900,
+      "mos_seconds": 30.0,
+      "prt_seconds": 29.942,
+      "mos_fps": 30.0,
+      "prt_fps": 30.058112350544384,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "retained_replies": 2025,
+      "timed_wire_bytes": 291568,
+      "phases": {
+        "player_rules_and_tick_submission_prt_ms": 1861,
+        "presentation_cpu_estimate_prt_ms": 7170,
+        "submission_prt_ms": 2774,
+        "reply_wait_prt_ms": 17133,
+        "loop_prt_ms": 29942,
+        "wire_bytes": 291568
+      },
+      "raw_file_sha256": {
+        "result.json": "f2d25ae63a719287c4dca0e525c99b7063ce010f1d030c61c2e05cfac5704f4a",
+        "state.bin": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+        "player.csv": "10a8806b92161cb8a64802fc096779c7e8ac9cf9b01b564418bb6e948ff924c4",
+        "ticks.bin": "295524783772675725440ff34d508e8a0ea80668120658f9df12799f6f40a80e",
+        "prt.bin": "c6c72ea89bf2458eab5ce16388f81ac2aadaf601981b8a876da4b4f096b467a2",
+        "replies.bin": "df48c0e43bcb70837586d7f9de155d4cd231595c16d5fcf56930b358a5c3f1ba",
+        "stages.csv": "ee2b5c365769d841a471fa86c688200b73fb3f93d90c362c36a8ab23560ebb62"
+      }
+    },
+    {
+      "case": "coarse1",
+      "arm": "coarse",
+      "frames": 900,
+      "mos_seconds": 30.0,
+      "prt_seconds": 29.942,
+      "mos_fps": 30.0,
+      "prt_fps": 30.058112350544384,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "retained_replies": 2025,
+      "timed_wire_bytes": 285268,
+      "phases": {
+        "player_rules_and_tick_submission_prt_ms": 1772,
+        "presentation_cpu_estimate_prt_ms": 7204,
+        "submission_prt_ms": 2634,
+        "reply_wait_prt_ms": 17289,
+        "loop_prt_ms": 29942,
+        "wire_bytes": 285268
+      },
+      "raw_file_sha256": {
+        "result.json": "0fec04f4962ab745529fb2060a7f9794badb138e0b6f0884fecc39c7ab74b312",
+        "state.bin": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+        "player.csv": "10a8806b92161cb8a64802fc096779c7e8ac9cf9b01b564418bb6e948ff924c4",
+        "ticks.bin": "4b34651e4e241c23238ced0ba066d19e1a3f374513e1ba771302f33ee7099886",
+        "prt.bin": "8bc870151dfdef03ded56b85dd8532b0a090e70d6eb33879822edcf142703e1f",
+        "replies.bin": "bb7427d5cb83361c77090a29b7a370f8eff156761e4fa891106cab35931e4640",
+        "stages.csv": "7c812984f1c4d16f61a835a039b23c5a71df929da4a811698a3d731129542da8"
+      }
+    },
+    {
+      "case": "coarse2",
+      "arm": "coarse",
+      "frames": 900,
+      "mos_seconds": 30.0,
+      "prt_seconds": 29.942,
+      "mos_fps": 30.0,
+      "prt_fps": 30.058112350544384,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "retained_replies": 2025,
+      "timed_wire_bytes": 285268,
+      "phases": {
+        "player_rules_and_tick_submission_prt_ms": 1762,
+        "presentation_cpu_estimate_prt_ms": 7313,
+        "submission_prt_ms": 2640,
+        "reply_wait_prt_ms": 17243,
+        "loop_prt_ms": 29942,
+        "wire_bytes": 285268
+      },
+      "raw_file_sha256": {
+        "result.json": "ed088a4fa460a6335727fe673254657be5ed2570232fb0b3c3e30a01559984bb",
+        "state.bin": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+        "player.csv": "10a8806b92161cb8a64802fc096779c7e8ac9cf9b01b564418bb6e948ff924c4",
+        "ticks.bin": "de4479109e0058e4668a768d7482063919848f474ffc08a2ccce1dbdd71097af",
+        "prt.bin": "7d8fa04ebd5117d3493a723b2c81cb3625f25be810bb4323565285760bcb6e06",
+        "replies.bin": "6eeb8c2c738756c3ebf2acb0fffb08f2f3f53e0bdeae1c148449faeef24f2d9e",
+        "stages.csv": "6970df7c087cb33b16eaa68593669e3bec3572570756ca2829127682b95a8684"
+      }
+    },
+    {
+      "case": "state2",
+      "arm": "state",
+      "frames": 900,
+      "mos_seconds": 30.0,
+      "prt_seconds": 29.942,
+      "mos_fps": 30.0,
+      "prt_fps": 30.058112350544384,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "retained_replies": 2025,
+      "timed_wire_bytes": 291568,
+      "phases": {
+        "player_rules_and_tick_submission_prt_ms": 1878,
+        "presentation_cpu_estimate_prt_ms": 7176,
+        "submission_prt_ms": 2776,
+        "reply_wait_prt_ms": 17133,
+        "loop_prt_ms": 29942,
+        "wire_bytes": 291568
+      },
+      "raw_file_sha256": {
+        "result.json": "ad69e71acda4c4db28f31a575f91f622f2e319e831e46e03efbb8646dcf90d6c",
+        "state.bin": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+        "player.csv": "10a8806b92161cb8a64802fc096779c7e8ac9cf9b01b564418bb6e948ff924c4",
+        "ticks.bin": "f0c38d85cc34a14873456f05e95e3de032701832d591616e992ba0aa65b69768",
+        "prt.bin": "20ac6a378376e8267553e800e244230333844286a429dd8f6dd23320e73384d3",
+        "replies.bin": "3e77f06a74fef46dcbe371f1822fb2a39328552275f90b180f951f36e69833cc",
+        "stages.csv": "744e2129e399b690852b842be872b8a151260df485c55d9c875271b72f0478e7"
+      }
+    },
+    {
+      "case": "baseline2",
+      "arm": "baseline",
+      "frames": 900,
+      "mos_seconds": 30.0,
+      "prt_seconds": 29.942,
+      "mos_fps": 30.0,
+      "prt_fps": 30.058112350544384,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "retained_replies": 2025,
+      "timed_wire_bytes": 291568,
+      "phases": {
+        "player_rules_and_tick_submission_prt_ms": 1875,
+        "presentation_cpu_estimate_prt_ms": 7142,
+        "submission_prt_ms": 2780,
+        "reply_wait_prt_ms": 17182,
+        "loop_prt_ms": 29942,
+        "wire_bytes": 291568
+      },
+      "raw_file_sha256": {
+        "result.json": "ad69e71acda4c4db28f31a575f91f622f2e319e831e46e03efbb8646dcf90d6c",
+        "state.bin": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+        "player.csv": "10a8806b92161cb8a64802fc096779c7e8ac9cf9b01b564418bb6e948ff924c4",
+        "ticks.bin": "7ebc46d264e021e5682aafc1b9bbe5bb2d24b8768740038859240077700a3350",
+        "prt.bin": "a2a707965ba89b2a06dd263061a2d26e191ca7789434c141c0c6d5ba08e7e9e1",
+        "replies.bin": "f787c193449468da65cf09481e04fc678ef5498f44ff37af843d65f5bbc3ab34",
+        "stages.csv": "4a354fa463b1b975659cb8b45fb3dd7e9b8f2cb2195eedf40a1358c491a6ccba"
+      }
+    }
+  ],
+  "pooled": {
+    "baseline": {
+      "n": 2,
+      "mos_fps": 30.0,
+      "prt_fps": 30.058112350544384,
+      "prt_ms_per_frame": 33.26888888888889,
+      "repeat_prt_fps_range": [
+        30.058112350544384,
+        30.058112350544384
+      ],
+      "prt_fps_percent_vs_baseline": 0.0
+    },
+    "state": {
+      "n": 2,
+      "mos_fps": 30.0,
+      "prt_fps": 30.058112350544384,
+      "prt_ms_per_frame": 33.26888888888889,
+      "repeat_prt_fps_range": [
+        30.058112350544384,
+        30.058112350544384
+      ],
+      "prt_fps_percent_vs_baseline": 0.0
+    },
+    "coarse": {
+      "n": 2,
+      "mos_fps": 30.0,
+      "prt_fps": 30.058112350544384,
+      "prt_ms_per_frame": 33.26888888888889,
+      "repeat_prt_fps_range": [
+        30.058112350544384,
+        30.058112350544384
+      ],
+      "prt_fps_percent_vs_baseline": 0.0
+    }
+  },
+  "clock_limit": "MOS120 units/sec and PRT1000 units/sec nominal. On-device counters; agreement is reported, no scanout/optical/calibration claim. Do not pool with Oryx or Console8.",
+  "sound": "Enabled, unassessed",
+  "scope": "Full race 900 rendered frames,3600 logical steps,two warm frames; fixed four physics steps/render comparison, not independent real-time scheduler. Printer mirror instrumentation enabled.",
+  "flexe_comparison": {
+    "baseline": {
+      "hardware_prt_fps": 30.058112350544384,
+      "hardware_mos_fps": 30.0,
+      "flexe_prt_fps": 39.517881841533296,
+      "flexe_mos_fps": 60.0,
+      "nominal_flexe_prt_fps_percent_above_hardware": 31.471602011021105
+    },
+    "state": {
+      "hardware_prt_fps": 30.058112350544384,
+      "hardware_mos_fps": 30.0,
+      "flexe_prt_fps": 38.59017236943659,
+      "flexe_mos_fps": 60.0,
+      "nominal_flexe_prt_fps_percent_above_hardware": 28.385215676185595
+    },
+    "coarse": {
+      "hardware_prt_fps": 30.058112350544384,
+      "hardware_mos_fps": 30.0,
+      "flexe_prt_fps": 38.730500268961805,
+      "flexe_mos_fps": 60.0,
+      "nominal_flexe_prt_fps_percent_above_hardware": 28.852071005917157
+    }
+  },
+  "comparison_limit": "Exact application/module/config/assets/a50 native firmware; physical Eirene EMOS differs from emulator MOS and hardware printer mirror is enabled. Emulator PRT is not calibrated wall time and MOS disagrees there. Nominal FPS contrast, not a calibrated emulator speed ratio or pure renderer cost.",
+  "release": "2026-11-04T15:10:14.545962+00:00",
+  "hardware_flash_restored": true,
+  "clock_agreement": {
+    "hardware_mos_seconds": 30.0,
+    "hardware_prt_seconds": 29.942,
+    "prt_duration_percent_vs_mos": -0.19333333333333425
+  },
+  "new_timing_guidance_implemented": false
+}

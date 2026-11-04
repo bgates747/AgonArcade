@@ -1,0 +1,40 @@
+{
+  "url": "http://192.168.0.20",
+  "job": null,
+  "last": {
+    "id": 3872903474,
+    "boot": 2292158905,
+    "operation": "put",
+    "remote": "/test/arcade/rally/native01-olimex01/coarse2/expected.json",
+    "activate": true,
+    "size": 22638,
+    "destination": null,
+    "started": 1793802959.9372256,
+    "result": {
+      "protocol": 1,
+      "boot": 2292158905,
+      "id": 3872903474,
+      "phase": 4,
+      "bytes": 22638,
+      "size": 22638,
+      "records": 111,
+      "error": 0,
+      "remote_status": 0,
+      "filesystem": 0,
+      "stage_us": 54345,
+      "mainboard_us": 1373878,
+      "parallel_prepare_us": 0,
+      "parallel_active_ms": 0,
+      "parallel_handover_ms": 0,
+      "parallel_phase": 0,
+      "parallel_outcome": 0,
+      "parallel_clock_count": -1,
+      "parallel_valid_count": -1,
+      "host_elapsed_s": 1.6228137016296387,
+      "http_upload_s": 0.07934064399887575
+    },
+    "delivered": true,
+    "http_upload_s": 0.07934064399887575,
+    "finished": 1793802961.5600393
+  }
+}

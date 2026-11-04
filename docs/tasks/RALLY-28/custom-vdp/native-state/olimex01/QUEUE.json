@@ -1,0 +1,194 @@
+{
+  "schema": "olimex-bench-checkout-v1",
+  "scheduler": "linux-extender",
+  "generation": 24,
+  "active": {
+    "owner": "agon-6502",
+    "task": "CPU-003-physical-flags-r01",
+    "purpose": "One frozen2036-check lazy-NZ assembly physical qualification; exact incoming native restore; no adoption",
+    "plan": "/Agon/mystuff/agon-6502/docs/tasks/CPU-003/PHYSICAL-R04.md",
+    "notify_thread": "01a1147a-c6cf-7b42-b6cd-336c8b762c8e",
+    "notify_host": "remote-ssh-discovered:raspberrypi",
+    "request": "a2ed9a81c8ca",
+    "requested": "2026-11-04T14:01:35.232826+00:00",
+    "lease": "d83cbdf3d57f403799738ddac5c461e0",
+    "generation": 24,
+    "granted": "2026-11-04T14:02:51.062284+00:00",
+    "phase": "consumer",
+    "entry_observation": {
+      "schema": "olimex-bench-observation-v1",
+      "bench": "olimex",
+      "epoch": 1793800971.0045893,
+      "observer": "linux-extender",
+      "lease": null,
+      "checks": {
+        "no_workload": true,
+        "no_transfer": true,
+        "no_serial_readers": true,
+        "no_reset_holders": true,
+        "cli_verified": true,
+        "input_ready_neutral": true,
+        "listener_offline": true,
+        "staged_job_idle": true,
+        "restoration_verified": true
+      },
+      "evidence": [
+        "/Agon/mystuff/agon-extender/agents/bench-scheduler/cpu003-flags-r01/fresh.json",
+        "/Agon/mystuff/agon-6502/build/cpu003/olimex-physical-cmos-r01/handback/observation.json",
+        "/Agon/mystuff/agon-6502/build/cpu003/flags-physical-r01/freeze.json"
+      ],
+      "components": {
+        "native_vdp_sha256": "8ade1e7dbc8b82cfbb20bfc92bdeb02e909c38c9f93c37723f9c9d409a9af7c4",
+        "emos_rom_sha256": "f62eed7f6bab8c164dcfe5e700132d289d52352f19d955acccbe1cff81b5e893",
+        "p4_app_sha256": "5db0c0a0c378ca80a7947150501f9b2a0fa44b12544873a691c4de94f2d8c527",
+        "startup_sha256": "9e97ceae5489e1b6330c6a2f207d95c6566c60cac304d65e7aad54b610a5b423",
+        "listener_sha256": "0566e17f18747c2e625d2450ce5324a2b1097bce323a5e4d70fad6dcb41cdff2"
+      },
+      "component_provenance": {
+        "native_vdp_sha256": "Fresh full-flash compare exact original17caa/application8ade Retained prior6502 independent full restoration proof; scheduler performs no redundant flash read or capability claim.",
+        "emos_rom_sha256": "Retained verified incoming grant; never modified by CPU003",
+        "p4_app_sha256": "Retained verified incoming grant; never modified by CPU003",
+        "startup_sha256": "Fresh complete scheduler actual CLI read, original108B exact; listener EXIT verified.",
+        "listener_sha256": "Fresh complete scheduler24753B canonical listener read exact; service EXIT verified."
+      },
+      "disposition": "Grant finite prepared CPU003 lazy-NZ2036-check native Legacy cohort after prior6502 clean release; FSIM remains Author-paused. Exact known temporary b4c62cb2 app selected subject consumer fresh full incoming backup/partition validation and exact changed-span restoration/full independent compare. Preserve Eirene/P4/startup/listeners. No scheduler test invocation/reset/firmware write; no production adoption."
+    }
+  },
+  "reservations": [
+    {
+      "owner": "agon-6502",
+      "task": "CPU-003-physical-flags-r01",
+      "purpose": "One frozen2036-check lazy-NZ assembly physical qualification; exact incoming native restore; no adoption",
+      "plan": "/Agon/mystuff/agon-6502/docs/tasks/CPU-003/PHYSICAL-R04.md",
+      "notify_thread": "01a1147a-c6cf-7b42-b6cd-336c8b762c8e",
+      "notify_host": "remote-ssh-discovered:raspberrypi",
+      "request": "a2ed9a81c8ca",
+      "requested": "2026-11-04T14:01:35.232826+00:00"
+    },
+    {
+      "owner": "rally",
+      "task": "NAT-HW-001",
+      "purpose": "Author requested unattended six-run matched native-state hardware comparison instead of manual C8 testing",
+      "plan": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/PLAN.md",
+      "notify_thread": "01a1346d-a74a-7211-b5b7-de3bcb8a28e5",
+      "notify_host": "remote-ssh-discovered:raspberrypi",
+      "request": "68cc81defe48",
+      "requested": "2026-11-04T14:19:43.065359+00:00"
+    }
+  ],
+  "bootstrap_handoff": "/Agon/mystuff/agon-dev-env/cross-agent/agentcoms/messages/2026-11-02_22-28-43_golem_g057-physical-scheduler-authority-handoff-414.md",
+  "last_release": {
+    "owner": "agon-6502",
+    "task": "CPU-003-physical-cmos-r01",
+    "purpose": "One frozen1272-check physical178-form binary core qualification, exact incoming native restoration; no adoption",
+    "plan": "/Agon/mystuff/agon-6502/docs/tasks/CPU-003/PHYSICAL-R03.md",
+    "notify_thread": "01a1147a-c6cf-7b42-b6cd-336c8b762c8e",
+    "notify_host": "remote-ssh-discovered:raspberrypi",
+    "request": "2cfd652a0c98",
+    "requested": "2026-11-04T13:36:51.470966+00:00",
+    "lease": "c9ccf3675ed74e4cb472ffc453424404",
+    "generation": 23,
+    "granted": "2026-11-04T13:37:47.274758+00:00",
+    "phase": "consumer",
+    "entry_observation": {
+      "schema": "olimex-bench-observation-v1",
+      "bench": "olimex",
+      "epoch": 1793799467.1992364,
+      "observer": "linux-extender",
+      "lease": null,
+      "checks": {
+        "no_workload": true,
+        "no_transfer": true,
+        "no_serial_readers": true,
+        "no_reset_holders": true,
+        "cli_verified": true,
+        "input_ready_neutral": true,
+        "listener_offline": true,
+        "staged_job_idle": true,
+        "restoration_verified": true
+      },
+      "evidence": [
+        "/Agon/mystuff/agon-extender/agents/bench-scheduler/cpu003-cmos-r01/fresh.json",
+        "/Agon/mystuff/agon-6502/build/cpu003/olimex-physical-complete-r01/handback/observation.json",
+        "/Agon/mystuff/agon-6502/build/cpu003/cmos-physical-r01/freeze.json"
+      ],
+      "components": {
+        "native_vdp_sha256": "8ade1e7dbc8b82cfbb20bfc92bdeb02e909c38c9f93c37723f9c9d409a9af7c4",
+        "emos_rom_sha256": "f62eed7f6bab8c164dcfe5e700132d289d52352f19d955acccbe1cff81b5e893",
+        "p4_app_sha256": "5db0c0a0c378ca80a7947150501f9b2a0fa44b12544873a691c4de94f2d8c527",
+        "startup_sha256": "9e97ceae5489e1b6330c6a2f207d95c6566c60cac304d65e7aad54b610a5b423",
+        "listener_sha256": "0566e17f18747c2e625d2450ce5324a2b1097bce323a5e4d70fad6dcb41cdff2"
+      },
+      "component_provenance": {
+        "native_vdp_sha256": "Fresh full-flash compare exact original17caa/application8ade Retained prior6502 independent full restoration proof; scheduler performs no redundant flash read or capability claim.",
+        "emos_rom_sha256": "Retained verified incoming grant; never modified by CPU003",
+        "p4_app_sha256": "Retained verified incoming grant; never modified by CPU003",
+        "startup_sha256": "Fresh complete scheduler actual CLI read, original108B exact; listener EXIT verified.",
+        "listener_sha256": "Fresh complete scheduler24753B canonical listener read exact; service EXIT verified."
+      },
+      "disposition": "Grant finite prepared CPU003178-form native Legacy cohort after prior6502 clean release; FSIM remains Author-paused. Exact known temporary b4c62cb2 app selected subject consumer fresh full incoming backup/partition validation and exact changed-span restoration/full independent compare. Preserve Eirene/P4/startup/listeners. No scheduler test invocation/reset/firmware write; no production adoption."
+    },
+    "released": "2026-11-04T13:54:24.268386+00:00",
+    "release_observation": {
+      "schema": "olimex-bench-observation-v1",
+      "bench": "olimex",
+      "epoch": 1793800464.1848795,
+      "observer": "agon-6502",
+      "lease": "c9ccf3675ed74e4cb472ffc453424404",
+      "checks": {
+        "no_workload": true,
+        "no_transfer": true,
+        "no_serial_readers": true,
+        "no_reset_holders": true,
+        "cli_verified": true,
+        "input_ready_neutral": true,
+        "listener_offline": true,
+        "staged_job_idle": true,
+        "restoration_verified": true
+      },
+      "evidence": [
+        "/Agon/mystuff/agon-6502/build/cpu003/olimex-physical-cmos-r01/handback/state.json",
+        "/Agon/mystuff/agon-6502/build/cpu003/olimex-physical-cmos-r01/restore/verified.json",
+        "/Agon/mystuff/agon-6502/build/cpu003/olimex-physical-cmos-r01/entry/receipt.json"
+      ],
+      "components": {
+        "native_vdp_sha256": "8ade1e7dbc8b82cfbb20bfc92bdeb02e909c38c9f93c37723f9c9d409a9af7c4",
+        "emos_rom_sha256": "f62eed7f6bab8c164dcfe5e700132d289d52352f19d955acccbe1cff81b5e893",
+        "p4_app_sha256": "5db0c0a0c378ca80a7947150501f9b2a0fa44b12544873a691c4de94f2d8c527",
+        "startup_sha256": "9e97ceae5489e1b6330c6a2f207d95c6566c60cac304d65e7aad54b610a5b423",
+        "listener_sha256": "0566e17f18747c2e625d2450ce5324a2b1097bce323a5e4d70fad6dcb41cdff2"
+      },
+      "component_provenance": {
+        "native_vdp_sha256": "Fresh full-flash compare exact original17caa/application8ade",
+        "emos_rom_sha256": "Retained verified incoming grant; never modified by CPU003",
+        "p4_app_sha256": "Retained verified incoming grant; never modified by CPU003",
+        "startup_sha256": "Fresh complete file comparison at handback",
+        "listener_sha256": "Fresh complete file comparison at handback"
+      },
+      "disposition": "Single finite CPU pilot; exact incoming native full flash restored; P4/EMOS/startup/listener unchanged; actual listener read/EXIT, cwd/cursor commands, neutral input/idle workers/free USB. No optical/audio qualification."
+    },
+    "next_request": null
+  },
+  "queue": [
+    {
+      "owner": "rally",
+      "task": "NAT-HW-001",
+      "purpose": "Author requested unattended six-run matched native-state hardware comparison instead of manual C8 testing",
+      "plan": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/PLAN.md",
+      "notify_thread": "01a1346d-a74a-7211-b5b7-de3bcb8a28e5",
+      "notify_host": "remote-ssh-discovered:raspberrypi",
+      "request": "68cc81defe48",
+      "requested": "2026-11-04T14:19:43.065359+00:00"
+    }
+  ],
+  "next_request": {
+    "owner": "rally",
+    "task": "NAT-HW-001",
+    "purpose": "Author requested unattended six-run matched native-state hardware comparison instead of manual C8 testing",
+    "plan": "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/PLAN.md",
+    "notify_thread": "01a1346d-a74a-7211-b5b7-de3bcb8a28e5",
+    "notify_host": "remote-ssh-discovered:raspberrypi",
+    "request": "68cc81defe48",
+    "requested": "2026-11-04T14:19:43.065359+00:00"
+  }
+}
