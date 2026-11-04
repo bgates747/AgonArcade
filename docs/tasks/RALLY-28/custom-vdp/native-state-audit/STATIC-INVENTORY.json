@@ -1,0 +1,1050 @@
+{
+  "method": "Static source and restricted installation decoding; no native/VDU execution or timing.",
+  "prefix_acquire_sites": 9,
+  "tick_acquire_sites": 16,
+  "init_acquire_sites": 30,
+  "root_constant_byte_checks_per_run": 88,
+  "root_bytes": 310,
+  "mutable_array_bytes": 96,
+  "immutable_route_sine_bytes": 562,
+  "native_wrappers": [
+    {
+      "buffer": 10,
+      "entry": 0,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 11,
+      "entry": 1,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 12,
+      "entry": 2,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 13,
+      "entry": 3,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 14,
+      "entry": 4,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 15,
+      "entry": 5,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 16,
+      "entry": 6,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 17,
+      "entry": 7,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 18,
+      "entry": 8,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 19,
+      "entry": 9,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 20,
+      "entry": 10,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 21,
+      "entry": 11,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 22,
+      "entry": 12,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 23,
+      "entry": 13,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 24,
+      "entry": 14,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 25,
+      "entry": 15,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    },
+    {
+      "buffer": 26,
+      "entry": 16,
+      "bytes": 43,
+      "behavior": [
+        "SET16 completion.ready=0",
+        "SET16 root.requested_entry=entry",
+        "native RUN flags=0 token=0 handle=patched entry=entry args=9"
+      ]
+    }
+  ],
+  "native_install_allocations": {
+    "9": 2,
+    "10": 43,
+    "11": 43,
+    "12": 43,
+    "13": 43,
+    "14": 43,
+    "15": 43,
+    "16": 43,
+    "17": 43,
+    "18": 43,
+    "19": 43,
+    "20": 43,
+    "21": 43,
+    "22": 43,
+    "23": 43,
+    "24": 43,
+    "25": 43,
+    "26": 43,
+    "50700": 38400,
+    "50710": 7425,
+    "50711": 7425,
+    "50712": 7425,
+    "50713": 7425,
+    "50714": 7425,
+    "50715": 7425,
+    "50716": 3844,
+    "50717": 3844
+  },
+  "bitmap_registrations": [
+    {
+      "at": 39399,
+      "select_bitmap": 50700
+    },
+    {
+      "at": 39404,
+      "from_buffer": [
+        320,
+        120,
+        3
+      ]
+    },
+    {
+      "at": 46851,
+      "select_bitmap": 50710
+    },
+    {
+      "at": 46856,
+      "from_buffer": [
+        99,
+        75,
+        1
+      ]
+    },
+    {
+      "at": 54303,
+      "select_bitmap": 50711
+    },
+    {
+      "at": 54308,
+      "from_buffer": [
+        99,
+        75,
+        1
+      ]
+    },
+    {
+      "at": 61755,
+      "select_bitmap": 50712
+    },
+    {
+      "at": 61760,
+      "from_buffer": [
+        99,
+        75,
+        1
+      ]
+    },
+    {
+      "at": 69207,
+      "select_bitmap": 50713
+    },
+    {
+      "at": 69212,
+      "from_buffer": [
+        99,
+        75,
+        1
+      ]
+    },
+    {
+      "at": 76659,
+      "select_bitmap": 50714
+    },
+    {
+      "at": 76664,
+      "from_buffer": [
+        99,
+        75,
+        1
+      ]
+    },
+    {
+      "at": 84111,
+      "select_bitmap": 50715
+    },
+    {
+      "at": 84116,
+      "from_buffer": [
+        99,
+        75,
+        1
+      ]
+    },
+    {
+      "at": 87982,
+      "select_bitmap": 50716
+    },
+    {
+      "at": 87987,
+      "from_buffer": [
+        62,
+        62,
+        1
+      ]
+    },
+    {
+      "at": 91853,
+      "select_bitmap": 50717
+    },
+    {
+      "at": 91858,
+      "from_buffer": [
+        62,
+        62,
+        1
+      ]
+    }
+  ],
+  "globals": [
+    {
+      "name": "slot",
+      "type": "uint16",
+      "offset": 112,
+      "bytes": 2,
+      "bounds": [
+        0,
+        65535
+      ]
+    },
+    {
+      "name": "routeRecord",
+      "type": "uint16",
+      "offset": 114,
+      "bytes": 2,
+      "bounds": [
+        0,
+        65535
+      ]
+    },
+    {
+      "name": "routeRemaining",
+      "type": "uint16",
+      "offset": 116,
+      "bytes": 2,
+      "bounds": [
+        0,
+        65535
+      ]
+    },
+    {
+      "name": "routeIndex",
+      "type": "uint16",
+      "offset": 118,
+      "bytes": 2,
+      "bounds": [
+        0,
+        65535
+      ]
+    },
+    {
+      "name": "routeHeading",
+      "type": "sint32",
+      "offset": 120,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "routeLateral",
+      "type": "sint32",
+      "offset": 124,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "routeForward",
+      "type": "uint32",
+      "offset": 128,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "forwardAdvance",
+      "type": "uint32",
+      "offset": 132,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "worldTick",
+      "type": "uint32",
+      "offset": 136,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "headingInput",
+      "type": "sint32",
+      "offset": 140,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "headingChecked",
+      "type": "sint32",
+      "offset": 144,
+      "bytes": 4,
+      "bounds": [
+        -32768,
+        32767
+      ]
+    },
+    {
+      "name": "magnitude",
+      "type": "sint32",
+      "offset": 148,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "sineQuotient",
+      "type": "sint32",
+      "offset": 152,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "sineFraction",
+      "type": "sint32",
+      "offset": 156,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "sineIndex",
+      "type": "uint16",
+      "offset": 160,
+      "bytes": 2,
+      "bounds": [
+        0,
+        65535
+      ]
+    },
+    {
+      "name": "sineValue",
+      "type": "sint32",
+      "offset": 162,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "work",
+      "type": "sint32",
+      "offset": 166,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "quotient",
+      "type": "sint32",
+      "offset": 170,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "remainder",
+      "type": "sint32",
+      "offset": 174,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "speed",
+      "type": "sint32",
+      "offset": 178,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "lapInput",
+      "type": "sint32",
+      "offset": 182,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "lap",
+      "type": "sint32",
+      "offset": 186,
+      "bytes": 4,
+      "bounds": [
+        1,
+        3276800
+      ]
+    },
+    {
+      "name": "normalizeInput",
+      "type": "sint32",
+      "offset": 190,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "normalPosition",
+      "type": "uint32",
+      "offset": 194,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "playerStation",
+      "type": "uint32",
+      "offset": 198,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "playerLateral",
+      "type": "sint32",
+      "offset": 202,
+      "bytes": 4,
+      "bounds": [
+        -38400,
+        38400
+      ]
+    },
+    {
+      "name": "opponentStation",
+      "type": "uint32",
+      "offset": 206,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "opponentLateral",
+      "type": "sint32",
+      "offset": 210,
+      "bytes": 4,
+      "bounds": [
+        -14260,
+        14260
+      ]
+    },
+    {
+      "name": "separation",
+      "type": "sint32",
+      "offset": 214,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "lateralSeparation",
+      "type": "sint32",
+      "offset": 218,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "halfLap",
+      "type": "sint32",
+      "offset": 222,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "contactResult",
+      "type": "bool",
+      "offset": 226,
+      "bytes": 2,
+      "bounds": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "contactAny",
+      "type": "bool",
+      "offset": 228,
+      "bytes": 2,
+      "bounds": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "laneQuotient",
+      "type": "uint16",
+      "offset": 230,
+      "bytes": 2,
+      "bounds": [
+        0,
+        65535
+      ]
+    },
+    {
+      "name": "laneRemainder",
+      "type": "uint16",
+      "offset": 232,
+      "bytes": 2,
+      "bounds": [
+        0,
+        65535
+      ]
+    },
+    {
+      "name": "placedLateral",
+      "type": "sint32",
+      "offset": 234,
+      "bytes": 4,
+      "bounds": [
+        -14260,
+        14260
+      ]
+    },
+    {
+      "name": "activeChecked",
+      "type": "uint16",
+      "offset": 238,
+      "bytes": 2,
+      "bounds": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "sa",
+      "type": "sint32",
+      "offset": 240,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "sb",
+      "type": "sint32",
+      "offset": 244,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "sq",
+      "type": "sint32",
+      "offset": 248,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "sr",
+      "type": "sint32",
+      "offset": 252,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "ua",
+      "type": "uint32",
+      "offset": 256,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "ub",
+      "type": "uint32",
+      "offset": 260,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "uq",
+      "type": "uint32",
+      "offset": 264,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "ur",
+      "type": "uint32",
+      "offset": 268,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "boundedQ",
+      "type": "sint32",
+      "offset": 272,
+      "bytes": 4,
+      "bounds": [
+        -10,
+        10
+      ]
+    },
+    {
+      "name": "boundedR",
+      "type": "sint32",
+      "offset": 276,
+      "bytes": 4,
+      "bounds": [
+        -3,
+        3
+      ]
+    },
+    {
+      "name": "effect",
+      "type": "uint16",
+      "offset": 280,
+      "bytes": 2,
+      "bounds": [
+        0,
+        65535
+      ]
+    },
+    {
+      "name": "shiftCount",
+      "type": "uint16",
+      "offset": 282,
+      "bytes": 2,
+      "bounds": [
+        0,
+        65535
+      ]
+    },
+    {
+      "name": "signedShift",
+      "type": "sint32",
+      "offset": 284,
+      "bytes": 4,
+      "bounds": [
+        -2147483648,
+        2147483647
+      ]
+    },
+    {
+      "name": "unsignedShift",
+      "type": "uint32",
+      "offset": 288,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "renderSession",
+      "type": "uint32",
+      "offset": 292,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "renderRequest",
+      "type": "uint32",
+      "offset": 296,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "playerUnwrapped",
+      "type": "uint32",
+      "offset": 300,
+      "bytes": 4,
+      "bounds": [
+        0,
+        4294967295
+      ]
+    },
+    {
+      "name": "renderPhase",
+      "type": "uint16",
+      "offset": 304,
+      "bytes": 2,
+      "bounds": [
+        0,
+        7999
+      ]
+    },
+    {
+      "name": "renderSteering",
+      "type": "sint16",
+      "offset": 306,
+      "bytes": 2,
+      "bounds": [
+        -21,
+        21
+      ]
+    },
+    {
+      "name": "renderFlags",
+      "type": "uint16",
+      "offset": 308,
+      "bytes": 2,
+      "bounds": [
+        0,
+        7
+      ]
+    }
+  ],
+  "arrays": [
+    {
+      "name": "active",
+      "type": "uint16",
+      "buffer": 2,
+      "offset": 0,
+      "bytes": 12,
+      "lower": 0,
+      "upper": 5,
+      "count": 6,
+      "element_bytes": 2,
+      "access": 3,
+      "owner": "application_retained",
+      "initial_data": "array-active.bin"
+    },
+    {
+      "name": "progress",
+      "type": "sint32",
+      "buffer": 3,
+      "offset": 0,
+      "bytes": 24,
+      "lower": 0,
+      "upper": 5,
+      "count": 6,
+      "element_bytes": 4,
+      "access": 3,
+      "owner": "application_retained",
+      "initial_data": "array-progress.bin"
+    },
+    {
+      "name": "position",
+      "type": "uint32",
+      "buffer": 4,
+      "offset": 0,
+      "bytes": 24,
+      "lower": 0,
+      "upper": 5,
+      "count": 6,
+      "element_bytes": 4,
+      "access": 3,
+      "owner": "application_retained",
+      "initial_data": "array-position.bin"
+    },
+    {
+      "name": "lateral",
+      "type": "sint32",
+      "buffer": 5,
+      "offset": 0,
+      "bytes": 24,
+      "lower": 0,
+      "upper": 5,
+      "count": 6,
+      "element_bytes": 4,
+      "access": 3,
+      "owner": "application_retained",
+      "initial_data": "array-lateral.bin"
+    },
+    {
+      "name": "contacts",
+      "type": "uint16",
+      "buffer": 6,
+      "offset": 0,
+      "bytes": 12,
+      "lower": 0,
+      "upper": 5,
+      "count": 6,
+      "element_bytes": 2,
+      "access": 3,
+      "owner": "application_retained",
+      "initial_data": "array-contacts.bin"
+    },
+    {
+      "name": "routes",
+      "type": "sint16",
+      "buffer": 7,
+      "offset": 0,
+      "bytes": 48,
+      "lower": 0,
+      "upper": 23,
+      "count": 24,
+      "element_bytes": 2,
+      "access": 1,
+      "owner": "application_retained",
+      "initial_data": "array-routes.bin"
+    },
+    {
+      "name": "sine",
+      "type": "sint16",
+      "buffer": 8,
+      "offset": 0,
+      "bytes": 514,
+      "lower": 0,
+      "upper": 256,
+      "count": 257,
+      "element_bytes": 2,
+      "access": 1,
+      "owner": "application_retained",
+      "initial_data": "array-sine.bin"
+    }
+  ],
+  "common_allocations": {
+    "1": {
+      "bytes": 310,
+      "sha256": "dc2187929eee56076d40e5e55c1eb574432aa98e17b554962cad6d1057b223c2"
+    },
+    "2": {
+      "bytes": 12,
+      "sha256": "9279aba84b65c836059f143f595b35fa7ff78a64c750da958a15319d1a333f2f"
+    },
+    "3": {
+      "bytes": 24,
+      "sha256": "b791541c28cb6757574c12ecc5d20d17abc7677be0aba5c025b2d302229eef15"
+    },
+    "4": {
+      "bytes": 24,
+      "sha256": "8fb5224a9f8a0c7aee4d96d7209b99446a9dcc6e5626e13f2609835d623d7997"
+    },
+    "5": {
+      "bytes": 24,
+      "sha256": "9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0"
+    },
+    "6": {
+      "bytes": 12,
+      "sha256": "15ec7bf0b50732b49f8228e07d24365338f9e3ab994b00af08e5a3bffe55fd8b"
+    },
+    "7": {
+      "bytes": 48,
+      "sha256": "899bc1c3676004731f4751cd50cfe3e363ad19ffe6ab0ac33bd2cfc04f61d561"
+    },
+    "8": {
+      "bytes": 514,
+      "sha256": "6062d337f69ac6ae99b7da9cdf95f87aea1ee04a9110f26839f0a85f74efff68"
+    }
+  },
+  "tick_path_formula": {
+    "N": "active opponents, 0..6",
+    "C": "contact-true opponents, 0..N",
+    "B": "route record transition, 0 or 1",
+    "I": "sine interpolation branch, 0 or 1",
+    "acquire_release_pairs": "24 + 7*N + C + 2*B + I",
+    "all_six_active_range": [
+      66,
+      75
+    ]
+  },
+  "render_success_pairs_formula": "30 + 2*S, S=sampled actors, 0..8; row services excluded",
+  "five_run_frame_pairs_range_all_active": [
+    294,
+    346
+  ],
+  "count_limit": "Manual successful-path formulas, not dynamic trace or timing; acquire and release each count once per pair.",
+  "native_state_raw_budget_example": {
+    "current_data_rodata_bss": 1004,
+    "add_complete_legacy_root_arrays_tables": 968,
+    "raw_sum_before_new_alignment_or_metadata": 1972,
+    "declared_limit": 4096
+  }
+}

@@ -30,32 +30,32 @@ for restoration. General findings may apply to both RALLY-28 code silos.
 
 ## Work items
 
-- **NAT-001-01** [ ] — Pin the selected guest/native/helper/runtime/SDK sources,
+- **NAT-001-01** [x] — Pin the selected guest/native/helper/runtime/SDK sources,
   read VDPlet's Rally/Wolf comparison and locate earlier interpreted-command
   artifacts. Trace guest packets through buffered wrappers, native dispatch,
   state access, drawing and completion. Record which bytes are interpreted,
   what is native and what storage is shared. Use precise source references.
-- **NAT-001-02** [ ] — Inventory active buffers, state layouts, handles, ownership,
+- **NAT-001-02** [x] — Inventory active buffers, state layouts, handles, ownership,
   validation and lease lifetimes. Trace every root/array/scalar acquisition,
   release, copy and repeated shape check in Tick/Init/Render/Stop. Separate
   static site counts from exact path counts and unmeasured timing. Include
   eZ80 reads/writes and presentation dependencies on the exposed state.
-- **NAT-001-03** [ ] — Audit native helper access, actor/sky/HUD/drawing command
+- **NAT-001-03** [x] — Audit native helper access, actor/sky/HUD/drawing command
   construction and interpreted wrappers for avoidable indirection, staging,
   serialization and repeated work. Classify each retained buffered operation:
   required transport/stock primitive, replaceable game logic, data allocation,
   native-code loading or diagnostic-only. Identify common fixes across paths.
-- **NAT-001-04** [ ] — Compare concrete native-C replacement designs: one checked
+- **NAT-001-04** [x] — Compare concrete native-C replacement designs: one checked
   borrow per useful scope, packed/typed state with immutable tables, consolidated
   calls and persistent native-owned state if supported. Establish pointer,
   allocation, alias/alignment, mode/unload/failure and four-lease constraints
   from actual runtime source. Record missing contracts instead of inventing
   pointer persistence or weakening validation. No peer edits or new ABI work.
-- **NAT-001-05** [ ] — Record prioritized findings, evidence, proposed replacement,
+- **NAT-001-05** [x] — Record prioritized findings, evidence, proposed replacement,
   dependencies and a staged measurement plan. Preserve exact simulation and
   complete-race rendering when comparing integration changes; report FPS plus
   phase costs and wire bytes. Distinguish experiments requiring later release.
-- **NAT-001-06** [ ] — Reconcile the task/root TODO and report the research result,
+- **NAT-001-06** [x] — Reconcile the task/root TODO and report the research result,
   concrete next implementation tranche and remaining questions to the Author.
   Stop after research; hardware/visual, async UART and independent scheduling
   keep their own pending scopes and are not started by this audit.
@@ -75,3 +75,14 @@ References: [direct-row result](../direct-rows/RESULTS.md),
 [shared costs](../direct-rows/SHARED-COST-NOTES.md),
 [VDPlet comparison](/Agon/mystuff/agon-vdplet/docs/tasks/VDPL-024/RALLY-WOLF.md),
 [original renderer/state work](../../../RALLY-25.md).
+
+## Research return — 2026-11-04
+
+NAT-001-01–06 completed after pushed checkpoints c10eca3/a77a42b.
+[FINDINGS.md](FINDINGS.md) records NAT-F01–07, the active resource inventory,
+valid persistent/private versus borrowed pointer lifetimes and proposed
+NAT-NEXT-01–04 implementation order. The first recommendation is native-owned
+state and whole-scope access, preserving numerical/full-race controls. The
+45-input source manifest and bounded installation decoder record source facts,
+not timing results. No implementation/build/emulator/queue/physical work was
+performed; new research files remain uncommitted for Author review.
