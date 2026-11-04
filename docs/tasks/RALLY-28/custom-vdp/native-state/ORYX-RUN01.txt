@@ -1,0 +1,27 @@
+Session native01 0 seconds; boost=0; max temperature 53.0
+baseline60 START both SDL dummy
+baseline60 PASS 60.0 MOS FPS 35.44004725339634 PRT FPS
+state60 START both SDL dummy
+state60 PASS 60.0 MOS FPS 37.3134328358209 PRT FPS
+coarse60 START both SDL dummy
+Session native01 30 seconds; boost=0; max temperature 55.0
+coarse60 PASS 60.0 MOS FPS 35.566093657379966 PRT FPS
+baseline900a START both SDL dummy
+Session native01 60 seconds; boost=0; max temperature 57.0
+baseline900a PASS 60.0 MOS FPS 39.77548945949529 PRT FPS
+state900a START both SDL dummy
+Session native01 90 seconds; boost=0; max temperature 60.0
+state900a PASS 60.0 MOS FPS 39.376968848442424 PRT FPS
+coarse900a START both SDL dummy
+Session native01 120 seconds; boost=0; max temperature 57.0
+coarse900a PASS 60.0 MOS FPS 38.85339319633915 PRT FPS
+coarse900b START both SDL dummy
+Session native01 150 seconds; boost=0; max temperature 56.0
+coarse900b PASS 60.0 MOS FPS 38.60838230878126 PRT FPS
+state900b START both SDL dummy
+Session native01 180 seconds; boost=0; max temperature 56.0
+state900b PASS 60.0 MOS FPS 37.83420211871532 PRT FPS
+baseline900b START both SDL dummy
+Session native01 210 seconds; boost=0; max temperature 58.0
+baseline900b PASS 60.0 MOS FPS 39.26358956461042 PRT FPS
+Session saved: SESSION-native01.json boost restored: True

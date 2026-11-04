@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/host_check.py", line 111, in <module>
+    worker(a.worker) if a.worker else build()
+    ~~~~~~^^^^^^^^^^
+  File "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/host_check.py", line 78, in worker
+    root=bytearray(r.data(1));struct.pack_into('<I',root,8,8);r.store(1,0,root)
+                                                              ~~~~~~~^^^^^^^^^^
+  File "/Agon/mystuff/AgonArcade/docs/tasks/RALLY-25/generated-state/host.py", line 29, in store
+    assert not self.live and 0<=offset<=self.sizes[id]-len(data);C.memmove(self.pointer(id)+offset,data,len(data))
+                                                                 ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ctypes.ArgumentError: argument 2: TypeError: 'bytearray' object cannot be interpreted as ctypes.c_void_p

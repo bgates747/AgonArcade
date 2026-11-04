@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "scope": "nine first-failure processes, no retries",
+  "full_runs": {
+    "baseline900a": {
+      "mos_fps": 60.0,
+      "prt_fps": 39.77548945949529,
+      "mos_ticks": 1800,
+      "prt_ticks": 22627,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "wire_bytes": 291568,
+      "stack_before": 2136,
+      "stack_after": 1892,
+      "host_process_seconds": 32.434,
+      "phase_totals_prt_ms": {
+        "player_rules_and_tick_submission_prt_ms": 1863,
+        "presentation_cpu_estimate_prt_ms": 6713,
+        "submission_prt_ms": 2626,
+        "reply_wait_prt_ms": 10457,
+        "loop_prt_ms": 22627,
+        "wire_bytes": 291568
+      }
+    },
+    "state900a": {
+      "mos_fps": 60.0,
+      "prt_fps": 39.376968848442424,
+      "mos_ticks": 1800,
+      "prt_ticks": 22856,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "wire_bytes": 291568,
+      "stack_before": 1828,
+      "stack_after": 1620,
+      "host_process_seconds": 32.625,
+      "phase_totals_prt_ms": {
+        "player_rules_and_tick_submission_prt_ms": 1858,
+        "presentation_cpu_estimate_prt_ms": 6686,
+        "submission_prt_ms": 2659,
+        "reply_wait_prt_ms": 10695,
+        "loop_prt_ms": 22856,
+        "wire_bytes": 291568
+      }
+    },
+    "coarse900a": {
+      "mos_fps": 60.0,
+      "prt_fps": 38.85339319633915,
+      "mos_ticks": 1800,
+      "prt_ticks": 23164,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "wire_bytes": 285268,
+      "stack_before": 1872,
+      "stack_after": 1620,
+      "host_process_seconds": 32.924,
+      "phase_totals_prt_ms": {
+        "player_rules_and_tick_submission_prt_ms": 1759,
+        "presentation_cpu_estimate_prt_ms": 6656,
+        "submission_prt_ms": 2573,
+        "reply_wait_prt_ms": 11119,
+        "loop_prt_ms": 23164,
+        "wire_bytes": 285268
+      }
+    },
+    "coarse900b": {
+      "mos_fps": 60.0,
+      "prt_fps": 38.60838230878126,
+      "mos_ticks": 1800,
+      "prt_ticks": 23311,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "wire_bytes": 285268,
+      "stack_before": 1872,
+      "stack_after": 1620,
+      "host_process_seconds": 33.032,
+      "phase_totals_prt_ms": {
+        "player_rules_and_tick_submission_prt_ms": 1758,
+        "presentation_cpu_estimate_prt_ms": 6616,
+        "submission_prt_ms": 2631,
+        "reply_wait_prt_ms": 11261,
+        "loop_prt_ms": 23311,
+        "wire_bytes": 285268
+      }
+    },
+    "state900b": {
+      "mos_fps": 60.0,
+      "prt_fps": 37.83420211871532,
+      "mos_ticks": 1800,
+      "prt_ticks": 23788,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "wire_bytes": 291568,
+      "stack_before": 1872,
+      "stack_after": 1620,
+      "host_process_seconds": 33.533,
+      "phase_totals_prt_ms": {
+        "player_rules_and_tick_submission_prt_ms": 1865,
+        "presentation_cpu_estimate_prt_ms": 6603,
+        "submission_prt_ms": 2730,
+        "reply_wait_prt_ms": 11665,
+        "loop_prt_ms": 23788,
+        "wire_bytes": 291568
+      }
+    },
+    "baseline900b": {
+      "mos_fps": 60.0,
+      "prt_fps": 39.26358956461042,
+      "mos_ticks": 1800,
+      "prt_ticks": 22922,
+      "state_sha256": "5a8095bbcda707b7377b3962b0e03c5cd7fdc104fbb6a14c4317d5c1a5f9780e",
+      "wire_bytes": 291568,
+      "stack_before": 2020,
+      "stack_after": 1892,
+      "host_process_seconds": 32.737,
+      "phase_totals_prt_ms": {
+        "player_rules_and_tick_submission_prt_ms": 1864,
+        "presentation_cpu_estimate_prt_ms": 6702,
+        "submission_prt_ms": 2689,
+        "reply_wait_prt_ms": 10721,
+        "loop_prt_ms": 22922,
+        "wire_bytes": 291568
+      }
+    }
+  },
+  "pooled": {
+    "baseline": {
+      "prt_fps": 39.517881841533296,
+      "mos_fps": 60.0,
+      "prt_frame_ms": 25.305,
+      "timed_wire_bytes": 291568,
+      "prt_gain_percent": 0.0
+    },
+    "state": {
+      "prt_fps": 38.59017236943659,
+      "mos_fps": 60.0,
+      "prt_frame_ms": 25.913333333333334,
+      "timed_wire_bytes": 291568,
+      "prt_gain_percent": -2.347568819140722
+    },
+    "coarse": {
+      "prt_fps": 38.730500268961805,
+      "mos_fps": 60.0,
+      "prt_frame_ms": 25.819444444444443,
+      "timed_wire_bytes": 285268,
+      "prt_gain_percent": -1.9924690693921554
+    }
+  },
+  "selected_candidate": "coarse",
+  "host_checks": {
+    "passed": true,
+    "mode": "ordinary",
+    "frames": 900,
+    "physics_ticks": 3600,
+    "warm_frames": 2,
+    "exact_per_step_state": true,
+    "coarse_group_state_exact": true,
+    "independent_world_each_tick": true,
+    "full_road_pixels": 34636800,
+    "both_pages_and_sync": true,
+    "actor_command_completion_bytes_exact": true,
+    "service_counts": {
+      "control": {
+        "pairs_per_900_frames": 278512,
+        "mean_pairs_per_frame": 309.4577777777778,
+        "tick_min": 67,
+        "tick_max": 70,
+        "render_min": 36,
+        "render_max": 44
+      },
+      "state": {
+        "pairs_per_900_frames": 54734,
+        "mean_pairs_per_frame": 60.815555555555555,
+        "tick_min": 7,
+        "tick_max": 7,
+        "render_min": 28,
+        "render_max": 36
+      },
+      "coarse": {
+        "pairs_per_900_frames": 35834,
+        "mean_pairs_per_frame": 39.815555555555555,
+        "tick_min": 7,
+        "tick_max": 7,
+        "render_min": 28,
+        "render_max": 36
+      }
+    },
+    "row_faults": [
+      "begin",
+      "layout",
+      "null",
+      "short",
+      "('row', 0)",
+      "('row', 59)",
+      "('row', 119)"
+    ],
+    "reload_stop_session_checks": true,
+    "max_live_views": 4,
+    "limitation": "Mocked row service, not target Canvas or FPS evidence"
+  },
+  "clock_limit": "Uncalibrated emulator clocks. No physical FPS or speedup claim.",
+  "runtime": "a50/7e7d/plain086, frozen correctedSDK10947e0",
+  "hardware_deployed": false,
+  "hardware_flashed": false,
+  "emulator_performance_winner": "baseline",
+  "emulator_gain_demonstrated": false,
+  "phase_limit": "Buckets overlap and include native/transport/presentation; no exclusive processor attribution."
+}

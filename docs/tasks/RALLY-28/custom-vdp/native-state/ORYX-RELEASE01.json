@@ -1,0 +1,34 @@
+{
+  "owner": "rally",
+  "task": "NAT-002-native01",
+  "purpose": "Nine frozen baseline/state/coarse full-race comparisons, first failure stops, bothSDLdummy",
+  "profile": "/home/smith/Agon/mystuff/AgonArcade/.emulator/rally28-hz60-native01-baseline60",
+  "notify_thread": "01a1346d-a74a-7211-b5b7-de3bcb8a28e5",
+  "notify_host": "remote-ssh-discovered:raspberrypi",
+  "request": "9ef689742244",
+  "requested": "2026-11-04T13:42:58.580996+00:00",
+  "lease": "4f0019f6107d404a9a7a826205b1abd9",
+  "generation": 274,
+  "checked_out": "2026-11-04T13:57:41.320336+00:00",
+  "idle_observation": {
+    "machine": "oryx-linuxlite",
+    "epoch": 1793800661.2568064,
+    "emulators": []
+  },
+  "released": "2026-11-04T14:05:35.176859+00:00",
+  "release_observation": {
+    "machine": "oryx-linuxlite",
+    "epoch": 1793801135.114663,
+    "emulators": []
+  },
+  "next_request": {
+    "owner": "root-wolf3dorig",
+    "task": "WOLF-PERF-001-r04",
+    "purpose": "CPU teardown diagnosis with stopped-interval memory snapshots, at most300s; three original arms only on clean return, first failure stops; retrieve and release",
+    "profile": "/home/smith/Agon/mystuff/Wolf3dOrig/.emulator/wolf-perf-001-r04",
+    "notify_thread": "01a1a67f-c3b5-76a2-9eef-66047be3dea3",
+    "notify_host": "remote-ssh-discovered:raspberrypi",
+    "request": "ca258bca56ec",
+    "requested": "2026-11-04T14:01:07.550012+00:00"
+  }
+}

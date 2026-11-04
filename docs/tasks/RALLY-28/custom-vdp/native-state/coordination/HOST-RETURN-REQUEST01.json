@@ -1,0 +1,9 @@
+{
+  "author": "rally",
+  "recipient": "vdplet",
+  "request_id": "nat002-host-ready-one",
+  "thread_id": "rally28-native-state-20261104",
+  "branch": "main",
+  "in_reply_to": null,
+  "body": "Author selected native-state implementation after the audit; prior dirt/task pushed b8f579e/2f89f20. Host ordinary+ASan/UBSan comparisons now pass full3600steps/900frames/twowarm, exact state/independent world/34636800roadpixels and actor/command/completion bytes, row faults/session/Stop/reload. Actual host acquisition pairs per frame309.4578(old ROW direct rows) ->60.8156(native typed state, unchanged guest) ->39.8156(same new module, coarse four-step entry17). These are access counts, no target FPS yet. Mutable state lives in module data, exact route/sine tables native const; external scripted overrides import at Render and old root/arrays export only at boundaries. No escaped leases/new ABI. Module text18364/data1880 under same32768/4096; entry static624/prepare720 individually (not cumulative proof). Same frozen a50/7e7d/plain086/correctedSDK10947e0. Nine stopped silent first-failure cases frozen, normal Oryx request9ef689742244 queued behind6502/Wolf; no target process yet. This sends measured source-check evidence relevant to VDPL-024, not a new runtime build/run or optimization request. Files docs/tasks/RALLY-28/custom-vdp/native-state/{HOST-ordinary.json,SOURCE.json,READINESS.md}; no acknowledgment-only reply needed."
+}

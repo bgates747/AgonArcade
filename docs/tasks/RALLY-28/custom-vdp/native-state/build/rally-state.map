@@ -1,0 +1,455 @@
+
+Discarded input sections
+
+ .literal.word  0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.plot  0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.rect  0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.affine
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.centre_exact
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.cx    0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.tangent
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.clear_completion
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.asset_ok
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.preflight$part$5
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.end   0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.rally_render_bind_v1
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.rally_render_prepare_v1
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.rally_render_stop_v1
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .literal.vdplet_entry
+                0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .text          0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .data          0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .bss           0x0000000000000000        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                0x0000000000000094                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000094       0x28
+ *(.hash)
+ .hash          0x0000000000000094       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000000000bc       0x50
+ *(.dynsym)
+ .dynsym        0x00000000000000bc       0x50 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.dynstr         0x000000000000010c       0x26
+ *(.dynstr)
+ .dynstr        0x000000000000010c       0x26 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.gnu.version    0x0000000000000132        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000000132        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.gnu.version_d  0x0000000000000134        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000134        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.gnu.version_r  0x0000000000000134        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000134        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.rela.dyn       0x0000000000000134      0x258
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000000134      0x258 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rela.plt       0x000000000000038c        0x0
+ *(.rela.plt)
+ .rela.plt      0x000000000000038c        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.text           0x000000000000038c     0x47ba
+ *(.got.plt* .plt*)
+ .got.plt       0x000000000000038c        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                0x000000000000038c                _GLOBAL_OFFSET_TABLE_
+ .plt           0x000000000000038c        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *(.init.literal)
+ *(SORT_NONE(.init))
+ *(.literal .text .stub .literal.* .text.* .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
+ .text.word     0x000000000000038c       0x1b /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x00000000000003a7        0x1 00000000
+ .text.plot     0x00000000000003a8       0x2b /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                         0x2f (size before relaxing)
+ *fill*         0x00000000000003d3        0x1 00000000
+ .text.rect     0x00000000000003d4       0x38 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                         0x50 (size before relaxing)
+ .text.affine   0x000000000000040c       0x30 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                         0x38 (size before relaxing)
+ .text.centre_exact
+                0x000000000000043c       0xca /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x0000000000000506        0x2 00000000
+ .text.cx       0x0000000000000508       0x21 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x0000000000000529        0x3 00000000
+ .text.tangent  0x000000000000052c       0x63 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x000000000000058f        0x1 00000000
+ .text.clear_completion
+                0x0000000000000590       0x24 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .text.asset_ok
+                0x00000000000005b4      0x1fa /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                        0x1fe (size before relaxing)
+ *fill*         0x00000000000007ae        0x2 00000000
+ .text.preflight$part$5
+                0x00000000000007b0      0x1dd /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x000000000000098d        0x3 00000000
+ .text.end      0x0000000000000990       0x36 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                         0x3e (size before relaxing)
+ *fill*         0x00000000000009c6        0x2 00000000
+ .text.rally_render_bind_v1
+                0x00000000000009c8      0x332 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                        0x352 (size before relaxing)
+                0x00000000000009ec                rally_render_bind_v1
+ *fill*         0x0000000000000cfa        0x2 00000000
+ .text.rally_render_prepare_v1
+                0x0000000000000cfc     0x1879 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                       0x1909 (size before relaxing)
+                0x0000000000000db4                rally_render_prepare_v1
+ *fill*         0x0000000000002575        0x3 00000000
+ .text.rally_render_stop_v1
+                0x0000000000002578       0x54 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                         0x60 (size before relaxing)
+                0x0000000000002578                rally_render_stop_v1
+ .text.vdplet_entry
+                0x00000000000025cc     0x2281 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                       0x22dd (size before relaxing)
+                0x0000000000002684                vdplet_entry
+ *fill*         0x000000000000484d        0x3 00000000
+ .text.get32    0x0000000000004850       0x23 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x0000000000004873        0x1 00000000
+ .text.put32    0x0000000000004874       0x20 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .text.r28_rows_fill
+                0x0000000000004894       0x2e /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x00000000000048c2        0x2 00000000
+ .text.byte     0x00000000000048c4       0x27 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x00000000000048eb        0x0 00000000
+ *fill*         0x00000000000048eb        0x0 00000000
+ *fill*         0x00000000000048eb        0x0 00000000
+ *fill*         0x00000000000048eb        0x0 00000000
+ *fill*         0x00000000000048eb        0x0 00000000
+ *fill*         0x00000000000048eb        0x1 00000000
+ .text.r28_sprite_plan
+                0x00000000000048ec       0xaa /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x0000000000004996        0x2 00000000
+ .text.overlap  0x0000000000004998       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .text.host_ok  0x00000000000049c0       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .text.acquire  0x00000000000049e8       0x2c /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .text.view_ok  0x0000000000004a14       0x2a /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x0000000000004a3e        0x0 00000000
+ *fill*         0x0000000000004a3e        0x2 00000000
+ .text.r28_rows_row
+                0x0000000000004a40       0x4c /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .text.bearing$isra$2
+                0x0000000000004a8c       0x62 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x0000000000004aee        0x2 00000000
+ .text.release$isra$4
+                0x0000000000004af0       0x1a /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x0000000000004b0a        0x0 00000000
+ *fill*         0x0000000000004b0a        0x0 00000000
+ *fill*         0x0000000000004b0a        0x0 00000000
+ *fill*         0x0000000000004b0a        0x0 00000000
+ *fill*         0x0000000000004b0a        0x2 00000000
+ .text.memcpy   0x0000000000004b0c       0x1f /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                0x0000000000004b0c                memcpy
+ *fill*         0x0000000000004b2b        0x1 00000000
+ .text.memset   0x0000000000004b2c       0x1a /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                0x0000000000004b2c                memset
+ *fill*         0x0000000000004b46        0x0 00000000
+ *(.gnu.warning)
+ *(.fini.literal)
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000004b48      0x400
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000004b48       0x18 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.CSWTCH$306
+                0x0000000000004b60        0x4 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.CSWTCH$265
+                0x0000000000004b64        0xa /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x0000000000004b6e        0x2 
+ .rodata.errors$2979
+                0x0000000000004b70       0x58 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.values$2978
+                0x0000000000004bc8       0x58 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.offsets$2977
+                0x0000000000004c20       0x58 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.boundaries$1971
+                0x0000000000004c78       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.widths$2344
+                0x0000000000004ca0       0x28 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.counts$2345
+                0x0000000000004cc8       0x20 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.native_sine
+                0x0000000000004ce8      0x202 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.native_routes
+                0x0000000000004eea       0x30 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *fill*         0x0000000000004f1a        0x2 
+ .rodata.r28_span_range
+                0x0000000000004f1c        0xc /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .rodata.asset_meta
+                0x0000000000004f28       0x20 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.rodata1
+ *(.rodata1)
+
+.got.loc        0x0000000000004f48       0x68
+ *(.got.loc)
+ .got.loc       0x0000000000004f48       0x68 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.xt_except_table
+ *(.xt_except_table .xt_except_table.* .gnu.linkonce.e.*)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x0000000000004fb0                . = (ALIGN (CONSTANT (MAXPAGESIZE)) - ((CONSTANT (MAXPAGESIZE) - .) & (CONSTANT (MAXPAGESIZE) - 0x1)))
+                0x0000000000005000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.xt_except_table
+ *(.xt_except_table .xt_except_table.* .gnu.linkonce.e.*)
+
+.dynamic        0x0000000000005000       0x88
+ *(.dynamic)
+ .dynamic       0x0000000000005000       0x88 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                0x0000000000005000                _DYNAMIC
+                0x0000000000005088                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x0000000000005088        0x4
+ *(.got)
+ .got           0x0000000000005088        0x4 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.data           0x000000000000508c      0x220
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.render_binding
+                0x000000000000508c       0x4c /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .data.renderer
+                0x00000000000050d8      0x1d0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .data.identity
+                0x00000000000052a8        0x4 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.data1
+ *(.data1)
+
+.xt_except_desc
+ *(.xt_except_desc .xt_except_desc.* .gnu.linkonce.h.*)
+ *(.xt_except_desc_end)
+
+.lit4           0x00000000000052ac        0x0
+                [!provide]                        PROVIDE (_lit4_start = .)
+ *(.lit4 .lit4.* .gnu.linkonce.lit4.*)
+                [!provide]                        PROVIDE (_lit4_end = .)
+                0x00000000000052ac                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x00000000000052ac                __bss_start = .
+
+.bss            0x00000000000052ac      0x138
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.poisoned  0x00000000000052ac        0x2 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .bss.initialized
+                0x00000000000052ae        0x2 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .bss.owner_session
+                0x00000000000052b0        0x4 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ .bss.world     0x00000000000052b4      0x130 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+ *(COMMON)
+                0x00000000000053e4                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00000000000053e4                . = ALIGN (0x4)
+                0x00000000000053e4                . = ALIGN (0x4)
+                0x00000000000053e4                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x00000000000053e4                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2c
+ *(.comment)
+ .comment       0x0000000000000000       0x2c /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                         0x2d (size before relaxing)
+
+.xtensa.info    0x0000000000000000       0x38
+ .xtensa.info   0x0000000000000000       0x38 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.xt.lit         0x0000000000000000       0x68
+ *(.xt.lit .xt.lit.* .gnu.linkonce.p.*)
+ .xt.lit        0x0000000000000000       0x68 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                         0x78 (size before relaxing)
+ .xt.lit.plt    0x0000000000000068        0x0 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+
+.xt.insn
+ *(.xt.insn .gnu.linkonce.x.*)
+
+.xt.prop        0x0000000000000000     0x2058
+ *(.xt.prop .xt.prop.* .gnu.linkonce.prop.*)
+ .xt.prop       0x0000000000000000     0x2058 /Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.o
+                                       0x2094 (size before relaxing)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/Agon/mystuff/AgonArcade/docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.elf elf32-xtensa-le)

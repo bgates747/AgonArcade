@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "mode": "sanitized",
+  "frames": 900,
+  "physics_ticks": 3600,
+  "warm_frames": 2,
+  "exact_per_step_state": true,
+  "coarse_group_state_exact": true,
+  "independent_world_each_tick": true,
+  "full_road_pixels": 34636800,
+  "both_pages_and_sync": true,
+  "actor_command_completion_bytes_exact": true,
+  "service_counts": {
+    "control": {
+      "pairs_per_900_frames": 278512,
+      "mean_pairs_per_frame": 309.4577777777778,
+      "tick_min": 67,
+      "tick_max": 70,
+      "render_min": 36,
+      "render_max": 44
+    },
+    "state": {
+      "pairs_per_900_frames": 54734,
+      "mean_pairs_per_frame": 60.815555555555555,
+      "tick_min": 7,
+      "tick_max": 7,
+      "render_min": 28,
+      "render_max": 36
+    },
+    "coarse": {
+      "pairs_per_900_frames": 35834,
+      "mean_pairs_per_frame": 39.815555555555555,
+      "tick_min": 7,
+      "tick_max": 7,
+      "render_min": 28,
+      "render_max": 36
+    }
+  },
+  "row_faults": [
+    "begin",
+    "layout",
+    "null",
+    "short",
+    "('row', 0)",
+    "('row', 59)",
+    "('row', 119)"
+  ],
+  "reload_stop_session_checks": true,
+  "max_live_views": 4,
+  "limitation": "Mocked row service, not target Canvas or FPS evidence"
+}

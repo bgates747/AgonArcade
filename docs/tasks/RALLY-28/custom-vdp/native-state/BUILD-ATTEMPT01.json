@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/Agon/mystuff/agon-dev-env/.venv/bin/python",
+    "docs/tasks/RALLY-28/custom-vdp/direct-rows/sdk/tools/build_module.py",
+    "docs/tasks/RALLY-28/custom-vdp/native-state/source/checked.c",
+    "--name",
+    "rally-state",
+    "--build-id",
+    "0x52385331",
+    "--capabilities",
+    "273",
+    "--abi-minor",
+    "6",
+    "--output",
+    "docs/tasks/RALLY-28/custom-vdp/native-state/build",
+    "--text-limit",
+    "32768",
+    "--data-limit",
+    "4096",
+    "--stack-limit",
+    "2048",
+    "--image-limit",
+    "65536"
+  ],
+  "returncode": 0,
+  "seconds": 1.2350493150006514
+}
