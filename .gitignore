@@ -12,3 +12,8 @@ __pycache__/
 .idea/
 .vscode/
 .research-cache/
+# Local device backups and transaction locks; retained evidence hashes stay tracked.
+**/*.lock
+/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/evidence/backup/*.bin
+/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/evidence/install/full.bin
+/docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/evidence/restore/full.bin

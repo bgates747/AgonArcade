@@ -1,14 +1,20 @@
 # AgonArcade TODO
 
+- **TIM-002** [ ] — [Timing-only fixture attribution](docs/tasks/RALLY-28/custom-vdp/timing-attribution/PLAN.md): Author releases telemetry/collection only; task+all dirt checkpoint/push first, then native/guest boundaries, observer controls, unchanged scene/arithmetic/workload and finite leased correctness/timing qualification. Oryx/Olimex as needed; no steering fix or optimization.
+
+- **NUM-001** [x] — [Static precision audit](docs/tasks/RALLY-28/custom-vdp/precision-audit/FINDINGS.md):37source/artifact inputs; source/type/range/retained-opcode audit returned to VDPlet. Static negative-steering sign-extension hazard identified (zero-steer fixtures do not cover it), ranked finite-FP/lookup/wrap opportunities. No game edits/builds/tests/new custody; optimization/timing implementation remain held.
+
+- **NAT-HW-001** [x] — [Olimex results](docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/RESULTS.md): allsix exact900/3600 cases pass; allarms30.00MOS/30.058nominalPRTFPS versusFlexe39.52/38.59/38.73. No rewrite FPS gain. Original4MiB exactly restored, nativeentrymode0/startup/listener/CLI/input/idle verified; generation25 released10:10:14EST, nextWolf immediately notified. Timing recommendations remain unimplemented.
+
 Author release 2026-11-04: goal [native-owned state implementation](docs/tasks/RALLY-28/custom-vdp/native-state/PLAN.md). Checkpoint all dirt/task before implementation; preserve direct-row full-race baseline, isolate native state then coarse four-step calls, qualify on leased silent Oryx and prepare paired C8 fixtures.
 
-- **NAT-002-01** [ ] — Freeze state/lifecycle/control contracts and checkpoint all dirt/task.
-- **NAT-002-02** [ ] — Implement native-owned typed state and direct numerical/array access.
-- **NAT-002-03** [ ] — Prepare coarse native four-step entry and matching guest.
-- **NAT-002-04** [ ] — Qualify exact state/pixels/commands/lifecycles and build under frozen policy.
-- **NAT-002-05** [ ] — Freeze and run finite matched silent Oryx cohort under FIFO custody.
-- **NAT-002-06** [ ] — Retrieve/release/notify; report FPS, service counts, wire and correctness.
-- **NAT-002-07** [ ] — Prepare complete matched C8 baseline/candidate kit and report.
+- **NAT-002-01** [x] — Task/control contracts frozen and prior dirt pushed b8f579e/2f89f20 before implementation.
+- **NAT-002-02** [x] — Native-owned typed state/exact tables, zero scalar physics borrows; compatible diagnostic exports retained.
+- **NAT-002-03** [x] — Separate direct four-step entry17 and guest remove hot interpreted Tick wrapper; same new native module.
+- **NAT-002-04** [x] — Ordinary+sanitized full3600-step/900-frame pixel/state/lifecycle checks pass; native18364text/1880data and coarse guest build under old guards.
+- **NAT-002-05** [x] — All nine silent Oryx cases pass; same a50/7e7d/086, inputs exact/no retry; bothSDLdummy/max60C/boost restored.
+- **NAT-002-06** [x] — [Results](docs/tasks/RALLY-28/custom-vdp/native-state/RESULTS.md): nominal PRT39.52baseline/38.59state/38.73coarse; no gain. Service pairs309.46→60.82→39.82.263hashes retrieved, checkout274released09:05:35ESTbefore analysis, nextWolf immediately steered.
+- **NAT-002-07** [x] — Three-arm C8 kit ready with required a50vdp_rally.bin, exact tested fixture bytes and self-written logs. Not deployed/flashed; Author hardware/visual gates open. Selected implementation goal complete; new work uncommitted for review.
 
 
 Author-selected 2026-11-04: [native state/interpreted-command audit](docs/tasks/RALLY-28/custom-vdp/native-state-audit/PLAN.md). Task first, commit/push all dirt in logical groups, then source research only. Replace legacy interpreted game logic and piecemeal buffer access in the future design with efficient native C structures and appropriately scoped pointers; establish actual costs/lifetimes before implementation.
