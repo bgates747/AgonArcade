@@ -1,0 +1,395 @@
+{
+  "files": {
+    "docs/tasks/RALLY-28/custom-vdp/native-state/source/checked.c": {
+      "bytes": 41626,
+      "sha256": "e0ec91f0cf23245aeeba70f5c6bb0f2c73fd8975dc73156d5af1f173c39d136e"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/source/helper/render_core.inc": {
+      "bytes": 14929,
+      "sha256": "ad618e909ebc3caa899eb8e4edd4b7525d793f39e8dc1a697bacacc16b3c7d48"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/source/helper/sprite.inc": {
+      "bytes": 2723,
+      "sha256": "7aeb37a5dca29dba52925b3d9afe593e93c3d13c1037151732f9fa43bdcea1ca"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/source/helper/rally_render.c": {
+      "bytes": 12435,
+      "sha256": "4ae767703b075f711e83547a1eef5499550f9bd777e8cc7f27027a4799c7a294"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/source/helper/rally_render.h": {
+      "bytes": 3849,
+      "sha256": "2adcc445e416f3dd95db2f52afb7ef8803c67e6fc444556be5e9d1505b133e50"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/source/helper/road_rows.inc": {
+      "bytes": 2739,
+      "sha256": "2fb7c88926a3b009235c2fb79ba7f7c25895b4623e01de8e1b0c8f4ef05fa28f"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/direct-rows/source/rows/checked.c": {
+      "bytes": 40909,
+      "sha256": "772aa9ef7cc21e40cdb03d108453d204aa83d4315a294c28e93f4b5703a5459c"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.elf": {
+      "bytes": 32268,
+      "sha256": "b758c269d585fab2a32229a142405857f5489afc2cb13e9e66ea87bf0910e3ab"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.map": {
+      "bytes": 21558,
+      "sha256": "6461c50e1689c44bcb02e59fe027e16c6827b973f7fed28c675be4e708719325"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.json": {
+      "bytes": 2177,
+      "sha256": "d1017356d519f630d08669e92f9aa2a2c6853d4ece3c819a9ee0e30f48fcc22d"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/build/rally-state.disassembly.txt": {
+      "bytes": 402339,
+      "sha256": "8919daba3156f363feb64ab04e77bf475502870dd8ea74b670349fba62660702"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/direct-rows/build-r02/rows/rally-render.elf": {
+      "bytes": 40888,
+      "sha256": "a94fbfd85ee3f8eecae809761b2fedc02c389e84d5eab39f446f6fc317a5ffff"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/direct-rows/build-r02/rows/rally-render.map": {
+      "bytes": 21293,
+      "sha256": "c354b35109407ef4f9aa02a997197006be406788cc3eda837fdd0dcbfeb62fa5"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/direct-rows/build-r02/rows/rally-render.json": {
+      "bytes": 2109,
+      "sha256": "488c2f0eeda9b5df54e4a91d78508c44fbd3cce31c03495fb02aeab0d106fb4d"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/direct-rows/build-r02/rows/rally-render.disassembly.txt": {
+      "bytes": 541233,
+      "sha256": "4db03227a62153bf1414f568c9af164fcd4f36865457b9f21226915af7eac631"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/guest-coarse/bin/probe.map": {
+      "bytes": 51114,
+      "sha256": "e1666db4e2ddf395bc32ff34f67d5e176c3ec7aba807be4904379c010a6ff8ef"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/guest-coarse/bin/probe.bin": {
+      "bytes": 41518,
+      "sha256": "5d9c62778294e9fd7c886f08832ecdb3df93c0549f97c88884663fa24216dda7"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/direct-rows/guest/bin/probe.map": {
+      "bytes": 51053,
+      "sha256": "89e226ce1323462f42d314a8b94702ebe7260b519367a7731aae6bfe3900d5b3"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/direct-rows/guest/bin/probe.bin": {
+      "bytes": 41549,
+      "sha256": "a2e8eae9f075851e606d1fd519ad664b26662fed632c6b9428dab539b2342109"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/direct-rows/sdk/tools/build_module.py": {
+      "bytes": 14148,
+      "sha256": "c7b7075679fed93bde4a59b78a093fdb089d74f58d998f05c3892f53ae0c3ce0"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/guest-coarse/src/main.cpp": {
+      "bytes": 14820,
+      "sha256": "ff0e53a67350a5014f626ef9c374c14532ecdb2e527d078d1906ef621876bc46"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/guest-coarse/include/native.hpp": {
+      "bytes": 7552,
+      "sha256": "7cf5529663ec33b999622572c08eb0ace6c009d2651f90bdffd2569262019148"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/guest-coarse/include/presentation-functions.inc": {
+      "bytes": 4413,
+      "sha256": "9c6fa99ebbf675d39931f327bc28f5db98dd6bc06c4ff6b4ada74c6001139e51"
+    },
+    "rally-production/include/road.hpp": {
+      "bytes": 8857,
+      "sha256": "ea50b1d24ea37949eef53d24835832b5cb89bee9e3572d085f171f92814dd101"
+    },
+    "rally-production/include/lookup_road.hpp": {
+      "bytes": 6737,
+      "sha256": "030bd0de511eea291b1a1c5d6a11a0e43aa7e74c3ea863027e79ef08e98c5c8f"
+    },
+    "rally-production/include/lookup_format.hpp": {
+      "bytes": 1441,
+      "sha256": "320c5c05ba7e88767f4b017cb9b89a489f8ff1cb06807523fe84ebd61f301dce"
+    },
+    "rally-production/include/vehicle.hpp": {
+      "bytes": 3844,
+      "sha256": "d390c1a41755dc8a84383fd406988250e3328c3bbd7dd69ad41d5d65735f1070"
+    },
+    "rally-production/include/scenery.hpp": {
+      "bytes": 1062,
+      "sha256": "ac36ea2db97309c0c53ca978b68c1b261b0f4d5842eee234b4bc834c382207c0"
+    },
+    "rally-game/include/rules.hpp": {
+      "bytes": 3829,
+      "sha256": "fd6f888f2ef27c00e3d262d41201fdecd59fe6fe9b6e1b39064ab3d815a1aff0"
+    },
+    "rally-game/include/engine.hpp": {
+      "bytes": 1012,
+      "sha256": "4d677f2c89e5b87c0ea60d9df013af55a11c2c1b8abfc6b21d0595fd7f29fa8f"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/olimex01/REPORT.json": {
+      "bytes": 10426,
+      "sha256": "8d07a2556fe6d27a0f2afd5de4f1f0395cf5beb18dd1662a72233e6bab78d79f"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/REPORT.json": {
+      "bytes": 6217,
+      "sha256": "ee5c2473dbf37e3d66dd60c33038a099f8faeb2ae023d17a98c594dc4df0aeb7"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/hardware-kit/baseline/assets.vdu": {
+      "bytes": 149554,
+      "sha256": "2725666d498130d628c828206c9ef7c0167c84214180852cc7f0adcd3b3c2fd2"
+    },
+    "rally-game/include/race_traffic.hpp": {
+      "bytes": 4916,
+      "sha256": "8511e4ac3db6e2e7fdcadf2b098fe1fc8ba3c3586ae960a7a6933d14f0ab299d"
+    },
+    "rally-game/include/routes_data.hpp": {
+      "bytes": 1917,
+      "sha256": "7304601093871c7f5cdbe824f6d4b99608c3df97cd94bc51e95ad6db25ce807c"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/guest-coarse/Makefile": {
+      "bytes": 354,
+      "sha256": "5fceb031afdc2bf3e8b966b3f29cfc642374250119172388328ac62d9dc773c3"
+    },
+    "docs/tasks/RALLY-28/custom-vdp/native-state/GUEST-BUILD.txt": {
+      "bytes": 403,
+      "sha256": "a59c7f52d1af39a088f6266dbf864d5f08ebd3a6673c065b97f5fc596d002406"
+    }
+  },
+  "retained_opcodes": {
+    "baseline": {
+      "static_instruction_sites": {
+        "mull": 33,
+        "mulsh": 24,
+        "muluh": 8,
+        "quos": 11,
+        "quou": 0,
+        "rems": 8,
+        "remu": 0,
+        "float.s": 5,
+        "ufloat.s": 0,
+        "trunc.s": 2,
+        "utrunc.s": 0,
+        "add.s": 7,
+        "sub.s": 1,
+        "mul.s": 7,
+        "madd.s": 0,
+        "msub.s": 0
+      },
+      "selected_sites_by_symbol": {
+        "centre_exact": {
+          "mull": 4
+        },
+        "tangent": {
+          "mull": 1,
+          "mulsh": 1
+        },
+        "asset_ok": {
+          "mull": 3
+        },
+        "rally_render_prepare_v1": {
+          "mull": 16,
+          "mulsh": 22,
+          "muluh": 4,
+          "quos": 9,
+          "rems": 6,
+          "float.s": 5,
+          "trunc.s": 2,
+          "add.s": 7,
+          "sub.s": 1,
+          "mul.s": 7
+        },
+        "vdplet_entry": {
+          "mull": 7,
+          "mulsh": 1,
+          "muluh": 4,
+          "quos": 2,
+          "rems": 2
+        },
+        "r28_sprite_plan": {
+          "mull": 2
+        }
+      },
+      "external_arithmetic_symbols": [],
+      "meaning": "Static opcode sites, not dynamic execution/time. Inline body sites attributed to surviving containing symbol."
+    },
+    "native_state_and_coarse": {
+      "static_instruction_sites": {
+        "mull": 32,
+        "mulsh": 24,
+        "muluh": 8,
+        "quos": 11,
+        "quou": 0,
+        "rems": 8,
+        "remu": 0,
+        "float.s": 5,
+        "ufloat.s": 0,
+        "trunc.s": 2,
+        "utrunc.s": 0,
+        "add.s": 7,
+        "sub.s": 1,
+        "mul.s": 7,
+        "madd.s": 0,
+        "msub.s": 0
+      },
+      "selected_sites_by_symbol": {
+        "centre_exact": {
+          "mull": 4
+        },
+        "tangent": {
+          "mull": 1,
+          "mulsh": 1
+        },
+        "asset_ok": {
+          "mull": 3
+        },
+        "rally_render_prepare_v1": {
+          "mull": 16,
+          "mulsh": 22,
+          "muluh": 4,
+          "quos": 9,
+          "rems": 6,
+          "float.s": 5,
+          "trunc.s": 2,
+          "add.s": 7,
+          "sub.s": 1,
+          "mul.s": 7
+        },
+        "vdplet_entry": {
+          "mull": 6,
+          "mulsh": 1,
+          "muluh": 4,
+          "quos": 2,
+          "rems": 2
+        },
+        "r28_sprite_plan": {
+          "mull": 2
+        }
+      },
+      "external_arithmetic_symbols": [],
+      "meaning": "Static opcode sites, not dynamic execution/time. Inline body sites attributed to surviving containing symbol."
+    }
+  },
+  "literal_asset_ranges": {
+    "asset_offset_in_first_vdu_block": 14,
+    "vdu_block_lengths": [
+      60000,
+      60000,
+      29518
+    ],
+    "asset_bytes": 149518,
+    "tables": [
+      {
+        "id": 1,
+        "width": 12,
+        "count": 9728,
+        "offset": 192,
+        "bytes": 116736
+      },
+      {
+        "id": 2,
+        "width": 8,
+        "count": 512,
+        "offset": 116928,
+        "bytes": 4096
+      },
+      {
+        "id": 3,
+        "width": 2,
+        "count": 2408,
+        "offset": 121024,
+        "bytes": 4816
+      },
+      {
+        "id": 4,
+        "width": 1,
+        "count": 16803,
+        "offset": 125840,
+        "bytes": 16803
+      },
+      {
+        "id": 5,
+        "width": 1,
+        "count": 4000,
+        "offset": 142644,
+        "bytes": 4000
+      },
+      {
+        "id": 6,
+        "width": 2,
+        "count": 101,
+        "offset": 146644,
+        "bytes": 202
+      },
+      {
+        "id": 7,
+        "width": 1,
+        "count": 1060,
+        "offset": 146848,
+        "bytes": 1060
+      },
+      {
+        "id": 8,
+        "width": 4,
+        "count": 129,
+        "offset": 147908,
+        "bytes": 516
+      },
+      {
+        "id": 9,
+        "width": 2,
+        "count": 257,
+        "offset": 148424,
+        "bytes": 514
+      },
+      {
+        "id": 10,
+        "width": 2,
+        "count": 289,
+        "offset": 148940,
+        "bytes": 578
+      }
+    ],
+    "coefficients": {
+      "count": 9728,
+      "minimum": [
+        -28,
+        -6488,
+        -61932,
+        -6683,
+        -2287
+      ],
+      "maximum": [
+        20605,
+        13748,
+        77934,
+        9570,
+        943
+      ]
+    },
+    "track_component_minimum": [
+      -6111,
+      0,
+      -4096,
+      -4096
+    ],
+    "track_component_maximum": [
+      5723,
+      4208,
+      4096,
+      4092
+    ],
+    "conservative_center_bounds": {
+      "abs_A": 82986,
+      "abs_B": 83009,
+      "abs_B_times_q": 10625152,
+      "abs_centerQ8": 747059
+    },
+    "derivation": "Static table extrema/interval arithmetic; no application, simulator, compiler, test or renderer executed."
+  },
+  "steering_sign_extension_witness": {
+    "source": "native-state/source/checked.c signed16 helper + native_validate renderSteering",
+    "stored_signed16": -21,
+    "cast_uint32": 4294967275,
+    "cast_int32": -21,
+    "helper_subtract": 65536,
+    "helper_result": -65557,
+    "valid_zero_extended_input": 65515,
+    "correct_result": -21,
+    "kind": "Static C value-flow calculation, not a new runtime test",
+    "fixture_steering": 0
+  }
+}

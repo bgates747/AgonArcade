@@ -1,0 +1,147 @@
+{
+  "task": "NUM-001",
+  "static_only": true,
+  "source_inputs": 37,
+  "source_changes": false,
+  "application_executions": 0,
+  "builds": 0,
+  "machine_custody": false,
+  "hot_float_format": "native single precision endpoint stage only",
+  "signed_steering_hazard": {
+    "source": "native-state/source/checked.c signed16 helper + native_validate renderSteering",
+    "stored_signed16": -21,
+    "cast_uint32": 4294967275,
+    "cast_int32": -21,
+    "helper_subtract": 65536,
+    "helper_result": -65557,
+    "valid_zero_extended_input": 65515,
+    "correct_result": -21,
+    "kind": "Static C value-flow calculation, not a new runtime test",
+    "fixture_steering": 0
+  },
+  "opcodes": {
+    "baseline": {
+      "static_instruction_sites": {
+        "mull": 33,
+        "mulsh": 24,
+        "muluh": 8,
+        "quos": 11,
+        "quou": 0,
+        "rems": 8,
+        "remu": 0,
+        "float.s": 5,
+        "ufloat.s": 0,
+        "trunc.s": 2,
+        "utrunc.s": 0,
+        "add.s": 7,
+        "sub.s": 1,
+        "mul.s": 7,
+        "madd.s": 0,
+        "msub.s": 0
+      },
+      "selected_sites_by_symbol": {
+        "centre_exact": {
+          "mull": 4
+        },
+        "tangent": {
+          "mull": 1,
+          "mulsh": 1
+        },
+        "asset_ok": {
+          "mull": 3
+        },
+        "rally_render_prepare_v1": {
+          "mull": 16,
+          "mulsh": 22,
+          "muluh": 4,
+          "quos": 9,
+          "rems": 6,
+          "float.s": 5,
+          "trunc.s": 2,
+          "add.s": 7,
+          "sub.s": 1,
+          "mul.s": 7
+        },
+        "vdplet_entry": {
+          "mull": 7,
+          "mulsh": 1,
+          "muluh": 4,
+          "quos": 2,
+          "rems": 2
+        },
+        "r28_sprite_plan": {
+          "mull": 2
+        }
+      },
+      "external_arithmetic_symbols": [],
+      "meaning": "Static opcode sites, not dynamic execution/time. Inline body sites attributed to surviving containing symbol."
+    },
+    "native_state_and_coarse": {
+      "static_instruction_sites": {
+        "mull": 32,
+        "mulsh": 24,
+        "muluh": 8,
+        "quos": 11,
+        "quou": 0,
+        "rems": 8,
+        "remu": 0,
+        "float.s": 5,
+        "ufloat.s": 0,
+        "trunc.s": 2,
+        "utrunc.s": 0,
+        "add.s": 7,
+        "sub.s": 1,
+        "mul.s": 7,
+        "madd.s": 0,
+        "msub.s": 0
+      },
+      "selected_sites_by_symbol": {
+        "centre_exact": {
+          "mull": 4
+        },
+        "tangent": {
+          "mull": 1,
+          "mulsh": 1
+        },
+        "asset_ok": {
+          "mull": 3
+        },
+        "rally_render_prepare_v1": {
+          "mull": 16,
+          "mulsh": 22,
+          "muluh": 4,
+          "quos": 9,
+          "rems": 6,
+          "float.s": 5,
+          "trunc.s": 2,
+          "add.s": 7,
+          "sub.s": 1,
+          "mul.s": 7
+        },
+        "vdplet_entry": {
+          "mull": 6,
+          "mulsh": 1,
+          "muluh": 4,
+          "quos": 2,
+          "rems": 2
+        },
+        "r28_sprite_plan": {
+          "mull": 2
+        }
+      },
+      "external_arithmetic_symbols": [],
+      "meaning": "Static opcode sites, not dynamic execution/time. Inline body sites attributed to surviving containing symbol."
+    }
+  },
+  "candidates": [
+    "C01 signed steering conversion correctness",
+    "C02 finite float boundary constants/zero operations",
+    "C03 per-render centre/coefficient reuse",
+    "C04 proven bounded wrap/modulo with compatibility scratch retained",
+    "C05 exact reduced eZ80 constant ratios/local coordinates",
+    "C06 separately selected approximation experiments"
+  ],
+  "performance_prediction": null,
+  "retained_hardware_result": "all six cases30.00MOS/30.058112PRTFPS, no candidate FPS gain; native restored/released",
+  "proposed_validation_only": true
+}

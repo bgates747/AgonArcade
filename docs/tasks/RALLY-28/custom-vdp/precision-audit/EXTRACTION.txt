@@ -1,0 +1,157 @@
+{
+  "opcodes": {
+    "baseline": {
+      "mull": 33,
+      "mulsh": 24,
+      "muluh": 8,
+      "quos": 11,
+      "quou": 0,
+      "rems": 8,
+      "remu": 0,
+      "float.s": 5,
+      "ufloat.s": 0,
+      "trunc.s": 2,
+      "utrunc.s": 0,
+      "add.s": 7,
+      "sub.s": 1,
+      "mul.s": 7,
+      "madd.s": 0,
+      "msub.s": 0
+    },
+    "native_state_and_coarse": {
+      "mull": 32,
+      "mulsh": 24,
+      "muluh": 8,
+      "quos": 11,
+      "quou": 0,
+      "rems": 8,
+      "remu": 0,
+      "float.s": 5,
+      "ufloat.s": 0,
+      "trunc.s": 2,
+      "utrunc.s": 0,
+      "add.s": 7,
+      "sub.s": 1,
+      "mul.s": 7,
+      "madd.s": 0,
+      "msub.s": 0
+    }
+  },
+  "asset_ranges": {
+    "asset_offset_in_first_vdu_block": 14,
+    "vdu_block_lengths": [
+      60000,
+      60000,
+      29518
+    ],
+    "asset_bytes": 149518,
+    "tables": [
+      {
+        "id": 1,
+        "width": 12,
+        "count": 9728,
+        "offset": 192,
+        "bytes": 116736
+      },
+      {
+        "id": 2,
+        "width": 8,
+        "count": 512,
+        "offset": 116928,
+        "bytes": 4096
+      },
+      {
+        "id": 3,
+        "width": 2,
+        "count": 2408,
+        "offset": 121024,
+        "bytes": 4816
+      },
+      {
+        "id": 4,
+        "width": 1,
+        "count": 16803,
+        "offset": 125840,
+        "bytes": 16803
+      },
+      {
+        "id": 5,
+        "width": 1,
+        "count": 4000,
+        "offset": 142644,
+        "bytes": 4000
+      },
+      {
+        "id": 6,
+        "width": 2,
+        "count": 101,
+        "offset": 146644,
+        "bytes": 202
+      },
+      {
+        "id": 7,
+        "width": 1,
+        "count": 1060,
+        "offset": 146848,
+        "bytes": 1060
+      },
+      {
+        "id": 8,
+        "width": 4,
+        "count": 129,
+        "offset": 147908,
+        "bytes": 516
+      },
+      {
+        "id": 9,
+        "width": 2,
+        "count": 257,
+        "offset": 148424,
+        "bytes": 514
+      },
+      {
+        "id": 10,
+        "width": 2,
+        "count": 289,
+        "offset": 148940,
+        "bytes": 578
+      }
+    ],
+    "coefficients": {
+      "count": 9728,
+      "minimum": [
+        -28,
+        -6488,
+        -61932,
+        -6683,
+        -2287
+      ],
+      "maximum": [
+        20605,
+        13748,
+        77934,
+        9570,
+        943
+      ]
+    },
+    "track_component_minimum": [
+      -6111,
+      0,
+      -4096,
+      -4096
+    ],
+    "track_component_maximum": [
+      5723,
+      4208,
+      4096,
+      4092
+    ],
+    "conservative_center_bounds": {
+      "abs_A": 82986,
+      "abs_B": 83009,
+      "abs_B_times_q": 10625152,
+      "abs_centerQ8": 747059
+    },
+    "derivation": "Static table extrema/interval arithmetic; no application, simulator, compiler, test or renderer executed."
+  }
+}
