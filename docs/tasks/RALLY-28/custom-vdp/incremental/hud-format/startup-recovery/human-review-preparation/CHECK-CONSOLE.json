@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "profile_inputs": 23,
+  "unchanged_baseline_inputs": 20,
+  "changed_files": [
+    "flexe-agon-emulator",
+    "sdcard/autoexec.txt"
+  ],
+  "added_file": "sdcard/rally25/review.txt",
+  "archive_members": 24,
+  "instruction_lines": 20,
+  "maximum_line_columns": 39,
+  "no_startup_autorun": true,
+  "compact_config_flag": 1,
+  "hud_cache_enabled": true,
+  "canonical_preflight_pass": true,
+  "canonical_idempotence_preserves_hashes": true,
+  "canonical_helper_sha256": "2e7fa13cb9f27ea1a696d472c90604749dd0c8709afc29034ec6e1909409bf34",
+  "original_cleanup_evidence_preserved": true,
+  "preserved_baseline_freezes": {
+    "READINESS-FREEZE.json": "c5efef1d256c636fe9084b7a0e142173fc1bf81c83fbc03f160b6ba6d29f6ca1",
+    "RESULTS-FREEZE.json": "a5848d6ee05ba63c17108053556ebffd70844cad457e80f211aa842ff9caabb5"
+  },
+  "game_guest_changed": false,
+  "emulator_processes": 0,
+  "library_invocations": 0,
+  "oryx_contact": false,
+  "live_desktop_manual_start_verified": false,
+  "new_900_frame_test_required_by_game_code_change": false
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "profile_inputs": 24,
+  "archive_members": 25,
+  "custody_tests": {
+    "missing_file": true,
+    "matching_owner_profile_uuid": true,
+    "stored_wrong_owner": true,
+    "file_wrong_owner": true,
+    "stored_wrong_profile": true,
+    "file_wrong_profile": true,
+    "stored_wrong_lease": true,
+    "file_wrong_lease": true,
+    "live_wrong_owner": true,
+    "live_wrong_profile": true,
+    "live_wrong_lease": true,
+    "stale_checkout": true
+  },
+  "custody_mode": "0600",
+  "custody_ignored": true,
+  "custody_in_archive": false,
+  "custody_populated": false,
+  "wrapper_invoked": false,
+  "canonical_preflight": true,
+  "instruction_report_destination": "Golem",
+  "original_preparation_preserved": true,
+  "game_runtime_changed": false,
+  "ssh_invocations": 0,
+  "emulator_processes": 0
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "g057-profile-preflight-owner-acceptance-v1",
+  "owner": "flexe",
+  "owner_task": "FX-134",
+  "source_mail": "2026-11-01_22-47-01_flexe_g057-profile-executable-preflight-ready-58",
+  "root_disposition": "2026-11-01_22-49-41_golem_g057-profile-preflight-ready-accepted-248",
+  "scope": "source/device-free executable admission only",
+  "readiness": "/Agon/mystuff/flexe-agon-emulator/docs/tasks/FX-134/readiness.json",
+  "readiness_sha256": "0355fbe10dc561fdd1c960886ba09a9df41e344384334d33c15d7f7838fde8af",
+  "source": {
+    "../agon-dev-env/scripts/setup_emulator.py": {
+      "before": "844ab629cb604daf2469c2c1c9c5dab89d8e9abc9c62f0a19c3eceb6f960a98a",
+      "after": "f3239ee6e4e47e9060a1d8193df5f96c5e361129989733cceee713a515e0adf4",
+      "patch": "240118184149f540d89a50bb65129e32697199752684276f2748e9d2038b0738"
+    },
+    "../agon-dev-env/scripts/flexe_profile.py": {
+      "before": "8e605a90049ab2cd67e57d3ae7ddd95a301b9dc01420828e0a911ae0dddd98e8",
+      "after": "2e7fa13cb9f27ea1a696d472c90604749dd0c8709afc29034ec6e1909409bf34",
+      "patch": "ad7590fa71b3d3bf3bb4ba2c2d7881f0dcfcfb292230b10762cc2f494f5793ee"
+    }
+  },
+  "test_path": "/Agon/mystuff/agon-dev-env/scripts/test_setup_profile_exec.py",
+  "test_sha256": "88547bc8e7cac8c87cb315ba9ed772096229d3ef63fdebaf3463ef60cdd4cd6e",
+  "owner_tests_pass": 14,
+  "root_checked_actual_source_log_receipt_hashes": true,
+  "root_checked_unrelated_setup_prefix_unchanged": true,
+  "owner_tests_repeated_by_root": false,
+  "active_source_path": "scripts/flexe_profile.py via setup_emulator.py bottomrunpy export",
+  "consumer_source_changed": false,
+  "profiles_changed": false,
+  "emulator_or_fleet_run": false,
+  "publication_authorized": false,
+  "human_gate_preserved": true,
+  "caller": "verify_profile_executables(launcher:Path,raw:Path), generated executable wrapper and regular executable raw target; not full environment verification"
+}
