@@ -1,0 +1,83 @@
+{
+  "platform": "Console8 physical hardware; Author-run",
+  "source_card": "AGONC8 UUID 8658-1C23",
+  "returned_directory": "/run/media/smith/AGONC8/test/arcade/rally-28",
+  "renamed_from_deployed_directory": "rally28-hud-review-20261104",
+  "functional_pass": true,
+  "frames": 900,
+  "logical_physics_steps": 3600,
+  "mos_fps": 24.680073126142595,
+  "prt_fps": 24.727992087042534,
+  "mos_seconds": 36.46666666666667,
+  "prt_seconds": 36.396,
+  "clock_duration_disagreement_percent": 0.19416053046122586,
+  "prt_mean_frame_ms": 40.44,
+  "logical_steps_per_second": 98.91196834817012,
+  "phase_observations": {
+    "player_rules_and_tick_submission_prt_ms": {
+      "total_ms": 1869,
+      "mean_ms_per_frame": 2.0766666666666667,
+      "percent_of_total": 5.135179690075833
+    },
+    "presentation_cpu_estimate_prt_ms": {
+      "total_ms": 5757,
+      "mean_ms_per_frame": 6.3966666666666665,
+      "percent_of_total": 15.817672271678207
+    },
+    "submission_prt_ms": {
+      "total_ms": 2672,
+      "mean_ms_per_frame": 2.968888888888889,
+      "percent_of_total": 7.341466095175294
+    },
+    "reply_wait_prt_ms": {
+      "total_ms": 25130,
+      "mean_ms_per_frame": 27.92222222222222,
+      "percent_of_total": 69.04604901637542
+    }
+  },
+  "phase_caveat": "Not disjoint: player/rules/tick-submission includes synchronous send time; presentation estimate subtracts measured IO. Reply wait includes transport, remote execution, drawing and swap/presentation ordering; not isolated pure VDP rendering.",
+  "intervals": {
+    "ticks.bin": {
+      "minimum": 2,
+      "median": 4.0,
+      "p95": 8,
+      "maximum": 8,
+      "counts": {
+        "2": 6,
+        "4": 547,
+        "6": 300,
+        "8": 47
+      }
+    },
+    "prt.bin": {
+      "minimum": 33,
+      "median": 34.0,
+      "p95": 50,
+      "maximum": 50,
+      "counts": {
+        "33": 372,
+        "34": 140,
+        "49": 40,
+        "50": 348
+      }
+    }
+  },
+  "all_12_deployed_files_hash_match": true,
+  "retrieved_card_files": 20,
+  "all_20_retrieval_hashes_match": true,
+  "final_state_exact": true,
+  "native_replies_validated": 2024,
+  "cleanup": {
+    "timer_restored": true,
+    "native_unloaded": true,
+    "clean_text_exit": true
+  },
+  "physical_firmware_readback": false,
+  "mos_identity_captured": false,
+  "supplied_firmware_sha256": "8da2ebfdfa3b5b00f4a1929ad4885c838845b160f570259792ef370b69d4f473",
+  "human_visual_acceptance": "Not yet explicitly reported for this run",
+  "raw_clocks": "Nominal physical MOS120 units/s and PRT1ms; no external calibration/optical scanout measurement",
+  "verifier": "Existing unchanged hud-format/verify.py passes; its generic emulation-oriented clock_limit string is not the platform description for this physical cohort",
+  "card_writes_by_retrieval": false,
+  "emulator_run": false
+}
