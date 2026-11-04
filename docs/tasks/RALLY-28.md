@@ -2,6 +2,29 @@
 
 Research cheaper arithmetic, geometry and drawing for both Rally implementations. Apply the research first to the standard-VDP game, where pseudo3D computation runs on eZ80; then to the custom-VDP game using Golem/VDPlets. RALLY-28 owns the entire effort: shared findings, separate application work and independent acceptance evidence for both versions. The Author requests one task with separate code areas and the standard version first. Author's2026-10-14 “go” released the first hot-loop research item: completed review below. No candidate implementation, benchmark, emulator run or publication release is inferred.
 
+Latest preparation2026-11-02: [corrected combined compact/HUD review](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/human-review-preparation/revision02/STAGED-READINESS.md)
+is staged and stopped in the NEW Oryx profile. No manual Author lease export:
+custodian later saves fresh local checkout, wrapper verifies owner/profile/UUID
+against live state. Guide reports in Golem; game/runtime unchanged.24file pins
+and executablepreflight pass, no custody/history/emulator/desktop probe or PCM
+changes. Golem coordinates later offer; live visual/manual flow and publication
+remain open, no human prompt or target selected by staging.
+
+Latest target2026-11-01: [maintained086 cached900 functional pass](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/maintained-runtime/RESULTS.md).
+Exactlyone process passes all2024native/exactstate/fullwire/cleanup gates.
+60.00nominalMOSFPS versus36.15nominalPRTFPS remains uncalibrated; no comparison
+or oldstallrepair. Checkout77 released before extendedaudit/nextWolfnotified,
+boostrestored; no Oryx process/queue or additional targetselected. New work
+uncommitted; Golem224 independently accepts the single functional qualification; no further target work selected.
+
+Current tranche2026-11-01: [partial current-kernel ABBA results](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/full-comparison/RESULTS.md).
+Control completes900frames:60.00nominalMOSFPS but35.09nominalPRTFPS; clocks disagree,
+so no verified60FPS claim. Cached startup stalls before timedrace; remaining two
+casesUNRUN/no retry/no cachegain. Actual3-sample sender stasis/CTSfalse witness
+returned to Golem. Oryx released before analysis/boostrestored, no queue held.
+All frozen source/profile inputs remain unchanged; owner disposition next.
+New work uncommitted; human/publication gates remain.
+
 ## Startup recovery — released2026-10-31
 
 The Author releases [START-001](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/PLAN.md):
@@ -11,6 +34,55 @@ matched HUD cohort if setup succeeds. Keep HUD code fixed and startup/runtime
 treatment identical in both arms. Existing failures/unrun profiles remain exact;
 root TODO owns START-001-01–04 and the pending HUD target/human gates. Explicit
 checkpoint publication is authorized; new post-checkpoint work stays uncommitted.
+
+Checkpoint pushed through `dec22d0`; owner research START-001-01 is complete.
+[Application preparation](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/PREPARATION.md)
+uses the unchanged original guest with only a one-frame config change; offline
+state/protocol checks pass. [Observer integration](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/observer-integration/PLAN.md)
+is now frozen as readiness `432d0bf5…`:18 inputs/186 dependencies/22 profile pins,
+device-free checks pass, stopped original one-frame control with new7e7d host
+and old200f/8da2. START-001-02 preparation is complete. Golem111 releases only
+integration preparation;03 awaits concrete technical execution selection.
+Golem115 selected one process; the shutdown hold preserved checkout58 as
+[unrun](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/observer-integration/NO-LAUNCH.md).
+The Author resumed2026-11-01: [observed startup passes](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/observer-integration/RESULTS.md).
+All226 native replies/exact311-byte frame/final state/normal cleanup pass; observer
+finalizes shutdown with zero samples before50s. This is no new game FPS or stall
+fix. Checkout59 released empty13:52:11EST/next6502 notified/boost1 restored/max53°C.
+START-001-03/04 return is complete; HUD-001-03 owns the fresh matched comparison
+next. No second/performance process, queue hold or automatic old-case retry.
+
+Golem124 then released [two-process smoke preparation](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/hud-smoke/READINESS.md)
+only. Freeze4cf9f6f1 pins23 files/237 dependencies; actual Oryx checks all260 and44
+stopped-profile inputs. Common7e7d/200f/8da2 control60 then gated cached60,
+344 replies/18,317 identical timed bytes/240 physics ticks each. No source change,
+new target, queue hold, race image or performance result. Readiness returned by
+mail/immediate chat. Golem133 then selected that exact pair: [both smoke runs pass](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/hud-smoke/RESULTS.md),
+344 replies and18,317 identical bytes/final state/normal cleanup each. No new
+representative FPS or race-pixel claim. Checkout61 released empty14:19:28EST,
+boost1restored/max57°C; resultd378c6d1 pins56 files. HUD-SMK-001-04 is complete;
+HUD-001-03 retains the separately scoped full-race timing comparison next.
+
+Golem136 requested [four-run900-frame ABBA preparation](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/full-comparison/READINESS.md)
+only. Freeze71062298 pins32 files/288 dependencies; actual Oryx all320 and88
+stopped-profile inputs pass. Control–cached–cached–control use common runtime/
+observer and unchanged source,2024replies/291,568timed bytes/3600ticks each.
+Setup/timed/cleanup streams and FPS-first reporting/quiet-host/finite cleanup are
+frozen. HUD-BEN-001-04/05 remain held pending separate technical selection; no
+emulator, reservation, newFPS or publication occurred during preparation.
+
+Golem144 separately selects that exact four-process cohort. Current normal FIFO
+requeste9c7660738db waits behind linux-extender battery checkout66; Rally makes no
+Oryx contact/load during the power experiment. Actual release/handoff and fresh
+quiet-host/input/idle/checkout checks precede the still-unrun benchmark. No retry
+or deadline/guard change; contact is registered for handoff notification.
+
+After actual66 release, fresh inputs match, but read-only admission confirms a
+known active FSIM solver at~4cores. [Quiet-host deferral](RALLY-28/custom-vdp/incremental/hud-format/startup-recovery/full-comparison/execution-20261101/QUIET-DEFERRED.md)
+occurs before any benchmark process/checkout. Golem152 concurs and coordinates
+the owner's next natural boundary. Rally cancels its unready head/alerts next
+6502, with no job or host-setting change; all four cases remain unrun and no
+queue is held. Fresh admission follows a concrete quiet interval, no preemption.
 
 ## Shared HUD string cache — implemented, first benchmark attempt stopped2026-10-31
 

@@ -1,5 +1,254 @@
 # Standing emulator authorization —2026-10-14
 
+DIRECT ROW ROAD SELECTED —2026-11-04: Author prioritizes direct hidden-page road spans before async UART, then independent fast physics/render scheduling later. Read docs/tasks/RALLY-28/custom-vdp/direct-rows/PLAN.md. Author requires task first, then commit/push all dirt in logical groups, then execute. ROW00101–07 own immutable baseline/VDPlet closure, isolated bitmap/rows full-race matched output, source/resource checks, bounded silent Oryx cohort and review preparation. No async/scheduler/physical flash/default adoption. Current canonical Pi policy now auto-grants shared serial build reservations; older per-build manager rule is superseded for compile/link only. Heavy non-build admission and Oryx FIFO remain separate. Preserve all frozen profiles/source/results and retired Golem chat.
+
+PI-NATIVE CHAT ROUTE —2026-11-04: Read docs/2026-11-04-pi-native-chat.md and canonical agon-dev-env/cross-agent/agentcoms/pi-chat.md plus README Pi-hosted section. Future authorized Pi notifications use canonical .venv/bin/python scripts/pi_chat.py send with Rally source UUID01a1346d-a74a-7211-b5b7-de3bcb8a28e5, verified target, --resume, stable unique --delivery-id and UTF-8 --message-file. Durable substantive mail then immediate short alert; active chats are steered. Accepted is not read; resolve uncertain delivery before retry. Native socket escalation may be required; do not change permissions. Supersedes desktop-only Pi recipe, grants no task/machine authority. No acknowledgment-only message, test, build, emulator, queue or profile change selected.
+
+VDPLET OWNER HANDOFF —2026-11-04: Author-appointed runtime/SDK replacement is mailbox vdplet, chat01a1a540-82f4-7970-a1e4-fefc8b8ff9fb, host remote-ssh-discovered:raspberrypi; project /Agon/mystuff/agon-vdplet/source/API/TODO/docs/HANDOFF.md. Read docs/2026-11-04-vdplet-runtime-owner.md and exact owner notice. Route authorized runtime/SDK/ABI/wire/generic firmware/consumer-dependency matters there; preserve disabled predecessor and do not prompt it. Golem language/compiler work is separate. Oryx normal FIFO unchanged; reservation breakdowns go to existing oryx manager01a1231b-398e-7080-b9c1-46c73c07036a, not VDPlet; Pi/physical roles unchanged. Rally owns its source/qualification/review. Introduction selects no restart/test/repin/deploy/default/human/publication or new workload. Existing stopped guide's Golem feedback route is historical; do not silently edit frozen profile or revive old chat. Resolve routing in a later selected review-readiness scope. No build/emulator/Oryx/queue/contact action now.
+
+
+PI5 HEAVY-WORK SCHEDULING —2026-11-03: Smith's Pi5-manager policy applies to substantial Pi builds/linking/tests/native emulators/solvers/sustained busy scans. Read /Agon/mystuff/agon-dev-env/cross-agent/pi5-workloads/README.md and local docs/2026-11-03-pi5-scheduling.md. Prepare finite already-authorized scope, reserve shared FIFO, then obtain manager's explicit token/generation; empty/active:null is NOT permission. Assert before launches, hold through owned teardown, release with fresh native reviewed evidence, notify manager/next (next still needs grant). No time expiry/takeover/service termination. Light editing/control/mail remains compatible. Pi custody is separate from Oryx/physical/GUI/source/publication authority and does not prove performance isolation. Notice starts/resumes no task/test/build/reservation; no acknowledgment-only reply sent.
+
+
+SDK COMPILER POLICY NOTICE — 2026-11-02: Golem354 boundary recorded in custom-vdp/compiler-policy-boundary-20261102/BOUNDARY.md. Maintained agon-vdplet builderc7b70756 now defaults to classicESP32 PSRAM compile/link/multilib workaround; uncommitted source integration, no consumer adoption/publication. Explicit legacy CLI --no-psram-cache-workaround or build_one(..., psram_workaround=False) remains. Rally round-trips/prepared-runtime builders use frozen project SDK export, unchanged; AgDev eZ80 guest unaffected. Future explicit maintained-native rebuild must pin policy/maps/library hashes and measure size (accepted module only504B text headroom), not silently replace/relabel output or raise limits. No rebuild/run/Oryx/contact/profile/source overwrite selected; accepted packages/human gates remain unchanged.
+
+
+RALLY CORRECTED HUMAN STAGING RETURN — 2026-11-02: Golem292 complete. Read human-review-preparation/revision02/STAGED-READINESS.md. NEW stopped Oryx profile .emulator/rally28-hz60-rhp01-cached staged/24pins+manifest/executable canonical preflight2e7fa13c/syntax/exact files pass; no custody/history. No emulator/desktop probe, queue/checkout/human prompt/publication or PCM/oldprofile/sharedruntime changes. Author lease export removed. Profile-local review_custody.py reads ignored fresh0600 .review-custody.json, validates stored owner=rally/exact profile/UUID and all3 against canonical live assert-owner reply. Twelve actual synthetic-reply/temporary-file tests pass; no archived/hardcoded lease. Custodian installs actual fresh checkout only after later selected normal Rally custody; absent now. Guide reports success/stalls in Golem. Original19ba preserved; correction source60df9be5 pins12+429, staging9b52e43d pins5files. Exact game/runtime unchanged; desktop/MOS/manual live gap remains, no new900test needed by game changes. RHP005–007 complete/date log; canonicaltwenty+immediatechat returned. Golem coordinates offer after PCMclose/report; ordinary later Author cd/./ only, no manual token. No further target selected/newworkuncommitted.
+
+
+RALLY HUMAN PREPARATION RETURN — 2026-11-02: Golem289 source/profile-only preparation complete. Read startup-recovery/human-review-preparation/READINESS.md. Local stopped .emulator/rally28-hz60-rhp01-cached combines compact INC-001-05/HUD-001-04 using unchanged qualified c6/479/7e7d/plain086/8da2/ELF/MOS/JIT900/3600/twowarm. Only human wrapper and fresh isolated SD startup change; review.txt added. Desktop video/audio dummy/live Rally custodian guard; MOS20line39column guide before manual LOAD/RUN. No new eZ80/frontend/game/native/physics/render/timing binary. Readiness19ba22ef pins15files+413deps/23profileinputs; canonical executable preflight/syntax/idempotence/archive/readability checks pass, accepted source/result freezes intact. Concrete live gap: desktop/ready screen/manual handoff unobserved; no new game-code correctness gap requiring repeated900run. Prelude changes human startup wire; no strict-benchmark normalization/claim, observer idle caveat explicit. NOTdeployed to Oryx/no host contact/queue/emulator/human prompt; Golem PCM custody untouched. RHP001–004 complete in datedlog, canonical readinessnineteen+immediatechat returned. Human acceptance/publication/default/hardware remain open; no further target selected.
+
+
+GOLEM057 GATES INVENTORY — 2026-11-02: Golem283 existing-evidence reconciliation returned by canonical inventory-eighteen plus immediate chat. Read incremental/hud-format/gates-inventory-20261102/INVENTORY.md. Earlier HZ60 and full-race RACE-001-07 visual acceptance exist (HUMAN-ACCEPTANCE.json/commit059f1f7); later INC-001-05 compact/HUD-001-04 moving acceptance remains open. Original compact source/results were checkpoint-published78ef50d; HUD source191a1e8/recovery contractdec22d0 were also explicitly pushed (Oct31 logs). Nov1 harness/results remain uncommitted; no new default/product/publication approval. No required missing generic VDPlet hook identified for accepted bounded fixture; calibrated timing/old stall cause remain separate, no current-SDK-image migration claim. Inventory only: no implementation, emulator/Oryx/queue or publication action and no additional root work selected.
+
+
+HUD MAINTAINED DISPOSITION — 2026-11-01: Golem224 independently accepts the single maintained086 functional qualification. Read maintained-runtime/DISPOSITION224.md. All65 terminal files/27 retrieval hashes/24+321 preparation dependencies/old65 partial results verify; actual private-copy qualification/full-audit/verified and pinned reader reproduce exactly. Raw clocks remain uncalibrated. Central reviews/rally086-terminal-root.json records the audit. HUD-MRT-001-05/06 complete; no further target, retry, ABBA/control, timer correction, default, human, publication or hardware work selected. Preserve old failure and two unrun successors. No extra root work requested; direct Author tasks retain priority. No acknowledgment loop needed.
+
+
+HUD MAINTAINED FUNCTIONAL RETURN2026-11-01: Golem202 exactlyONE selected086 cached900/3600/warm2 passes all2024native/exactstate/player/counters/render-swapfences/722201Bwholewire/StopUNLOAD/timer/MOS/backend. No normalization/sourceguard edit/retry. Read maintained-runtime/RESULTS.md/REPORT.json; RESULTS-FREEZEa5848d6e/65files.60.00nomMOSFPS(1800units/120) versus36.154742nomPRTFPS(24893/1000), ratio1.659533uncalibrated/allMOSdeltas2; no verified60FPS/cachegain/oldstallrepair. Observer shutdown0samples; taskstack2232→1988not eZ80headroom. Actual postrelease auditcopy reproducesqualification/fullaudit/verified byteidentical. Review76 actualrelease20:37:26EST beforecontact, freshadmission/custody77/staging345pins+22profile/dependencies pass. Process34.779/session35.488hostsec/max59C/bothSDLdummy/boost1restored.27retrievalhashes/freshidle/release20:42:13EST BEFOREextendedanalysis; nextWolf2c61ff6ac4bb immediatelynotifiedsuccessfully.24+321prep/old65results/source7106exact/twoABBAUNRUN. Canonical terminalseventeen+immediatechat return; HUD-MRT00105/06 complete. No Oryxprocess/queue, extra target/calibration/adoption/publication/hardware; newworkuncommitted. Await independent terminal disposition.
+
+
+HUD MAINTAINED ONE RUN SELECTED/FIFO WAIT2026-11-01: Golem202 independently reproducesc5ef devicefreechecks and selects exactlyONE cached900/3600/warm2 onplain086 after actualAuthorreview76release. Read maintained-runtime/EXECUTION-PLAN.md and execution-20261101/RUN-CONTRACT.md. Pi-only FIFO d25707bd1cc7 queued behindagon-6502review76; contact registered. NO Oryxcontact/deploy/inspection/build/run whilehumanleaseheld/no elapsedtakeover. All345localfrozenfiles exact, oneprocessbudget0used. After actualrelease/firstposition: freshquiet/idle/7.1.5+boot9ba12fbc/source/archive/dependencies/power/checkout/frozenstage/22deployedpins/outputabsence/liveassert, original60s/95C/287+10+3/boostrestore/bothSDLdummy/strictwire. No guardedit/normalization/retry/successor/repair/calibratedFPS/cachegain/adoption/publication.05waiting/06pending; old65results/twoABBAUNRUN intact/newworkuncommitted.
+
+
+HUD MAINTAINED PREPARATION RETURN2026-11-01: Golem198 offlinePi-only scope complete; read startup-recovery/maintained-runtime/READINESS.md and DELTA.md. New stoppedlocal maint08601-cached900/3600/warm2 package, NOTdeployed/targetselected. Only backend changes among22pins:200f→plain0866265b; original7e7d/12817411/8da2/ELF/MOS/guest/assets/wire/wrapper unchanged. Readinessc5efef1d pins24newfiles+321deps;23archive members/5negativeadmissions/staticexports pass, originalguard sources reused/unedited. RetainedFX119 byteidentical086/core93af buildproof separate from unreproduced200f. Existing320closure/65results exact/twoABBAUNRUN. Canonical readinessfifteen plus immediatechat sent. No Oryxcontact/deploy/build/inspection/queue/emulator or Pi substitute during Authorreview76. Strictoriginalfullwiregate retained includingbootpoll limitation; no relaxation/calibration/repair/cachegain/adoption/publication. HUD-MRT00101–04 complete in datedlog; await reviewed staging/targetdisposition and actualhumancustodyrelease/freshFIFO later. Newworkuncommitted.
+
+
+HUD CLOCK SOURCE RETURN2026-11-01: Golem194/Flexe55 explanation preserved separately at full-comparison/source-followup-194/FINDINGS.md. MOS2units per servicedVSync/presentationpulsescoalesce; PRT counts servicedguestcycleIRQs and cancoalesce. Neither counter calibrateshosttime; no ratiofix/verified60FPS. Exact200fCTS ready&&!failed&&hostqueued+publishedpending<=127; samples prove repeatedrefusal, notoperands/FIFO/IRQ/PC/cause. Rootseeks200f-vs086sourcedifferences; no lastdecisioninstrumentation/clockcalibration/client/source/retry/run selected. Preserve65results, twoUNRUN; awaitboundedsource disposition/noackloop.
+
+
+HUD PARTIAL DISPOSITION2026-11-01: Golem189 accepts partialterminal evidence after independent65file/2086245B verification, actualcontrolaudit/verified byteidentical, bothpinnedobserverreads/rawclock/artheader reproduction. Functionalcontrolpasses/performanceuncalibrated/no cachecomparison. Read full-comparison/DISPOSITION189.md. Root188relays toFlexesource/offlineownership; no build/run/repair/timercorrection selected. Two successorsUNRUN/no retry/extra; await bounded generic source review. No acknowledgmentloop, implementation/adoption/default/publication release.
+
+
+HUD PARTIAL ABBA RETURN2026-11-01: Golem185 accepts7.1.5/boot9ba12fbc as separatecohort. Selected ABBA stops at firstfailure: control1900frames/3600ticks/all2024native/exact722201B/finalstate/fences/MOS/cleanup PASS; cached1 startup60sUARTstall, cached2/control2UNRUN/no retry. Control60.00nomMOSFPS(1800units/120=15sec) versus35.0918nomPRTFPS(25647/1000=25.647sec); allMOSdeltas2, clocksdisagree1.7098×, NOTverified60physicalFPS/no cachegain or oldFPSpooling. Read full-comparison/RESULTS.md/REPORT.json, RESULTS-FREEZEcb41e832/65files. Failed241988out/342in/oneLOAD; originalart63800cmd0payload420/2048B. Newcomplete3timelyobserver snapshots returned_ctsfalse/sends241988fixed/countersadvance, finalstasis; exactcauseunqualified. Checkout74released17:57:09EST after37filehashretrieval/freshidle BEFOREofflineaudit; nextnull/boost1restored/max72C/bothSDLdummy.320closure/88pins/47b17files exact. Canonical partialreturnfourteen plus immediatechat supplies witness/clockissue to Golem. No further target/source/repair/queue; newworkuncommitted. HUD-BEN00104/05tranche disposed/returned; HUD00103 still lacks matchedcachebenchmark/humanpublicationgates.
+
+
+HUD POSTBOUNDARY KERNEL DRIFT2026-11-01: Golem181 lifts maintenance hold; actual finalfine10 exited16:39/no moreCFD. Fresh Oryx320closure/88pins/outputabsence pass, but kernel changed7.2.6→7.1.5-76070105-generic/boot9ba12fbc. Per181 stop on changed host context, no reservation/checkout/runner/emulator/power change; allFOUR UNRUN/budget0. New admission-1749-20261101/KERNEL-DRIFT.md receipts preserve old71062298/47b freezes. Ask Golem explicit current-kernel cohort disposition before fresh quiet/FIFO/idle/liveassert. No silent repin/oldFPS pooling/new scope. New work uncommitted.
+
+HUD FINE10 ACTIVE/DEFER2026-11-01: Golem168 relays actualmodeler15: final
+untouchedfine10 launched15:55:07EST/wrapper11132, original4threads/nice10/20000
+iterations/3600wall; quietquery arrivedafterlaunch so no prelaunchwindow. Oldfine0
+interrupted/notretried. SAME4ABBA allUNRUN/noqueue/noOryxcontact/budget0 until
+actual finalsolver/controllergone notice via owner→root→Rally, then freshquiet/
+inputs/boot/kernel/power/wrapper/output/wholehostidle/FIFO/liveassert.16:55bound
+NOTrelease, no preemption/pause/scorepoll/waiver/extra. Humanreview70 staysowned.
+Ownerchattransport failing; durablemail/rootrelay remains authoritative. See
+postmaintenance-20261101/FINE10-ACTIVE.md and FINE10-WAIT.json.71062298/47b source
+and frozen outcomes intact; no new process or publication selected.
+
+HUD WINDOW WAIT2026-11-01: Golem165 confirms root164 is negotiating explicit
+finite pre-launch quiet interval with modeler; no action from silence and owner
+may decline/start selectedfine10, then wait actualcompletion. Sharedcheckout70
+is fsim-pingo/Author humanflightreview; preserve until actualrelease, no assumed
+duration. No Rally reservation/hostcontact/process/source change. See new
+postmaintenance-20261101/WINDOW-COORDINATION.md and WAITING.json. Wait concrete
+owner disposition AND reviewrelease, then fresh71062298/admission/FIFO for SAME
+four/no retry; original47bdeferral stays immutable. No new scope/grant/oldFPS.
+
+HUD POSTMAINTENANCE RESUMPTION2026-11-01: Golem161 relays explicit Author
+reopen/resume, but no new test/repair scope. Preserve71062298/fourUNRUN/47b17file
+deferral; use NEW postmaintenance-20261101 receipts.320local inputs pass, noOryx
+contact/reservation. Owner modeler13 actualreadonly reconciliation finds old
+SU2/controller gone; fine0 interrupted/unknown exit, untouched fine10 pending
+under separate Author scope. No oldPID/16:50/emptyhost assumption grants quiet.
+Canonical2026-11-01_15-53-10_rally_hudben001-postmaintenance-window-twelve plus
+immediate chat asks Golem to coordinate an explicit finite pre-launch quietwindow
+with owner (no preemption/silence assumption). Wait concrete owner-ready window
+or actual wholebatchgone notice, then fresh remote320+88/output/wrapper/boot/
+kernel/power/quiet/idle/FIFO/liveassert for SAME selected144 FOURcases. No new
+source/build/emulator/GUI/adoption/publication or oldhostFPS pooling.
+
+HUD ABBA QUIET DEFERRED2026-11-01: battery66 actually released and Golem151
+relayed handoff; fresh remote320+88pins/nooutputs pass. Read full-comparison/
+execution-20261101/QUIET-DEFERRED.md under incremental/hud-format/startup-recovery.
+Known FSIM SU2_CFD pid34020 actively consumes4CPU seconds/1.000334wall (~3.999cores),
+stateR,cwd agon-fsim/.../cases/g897-257-a00. Frozen144 quiet admission defers;
+Golem152 concurs and seeks natural owner boundary. No checkout/runner/emulator/
+boost/setting/signal/renice/affinity/preemption; all4casesUNRUN, budget0, noFPS.
+Requeste9c7660738db cancelled15:22:13EST, next6502e4cfa4c2e665 immediately notified
+successfully; no queue held.71062298/320closure/88inputs unchanged. Canonical
+2026-11-01_15-23-43_rally_hudben001-quiet-admission-deferred-ten plus immediate chat
+records evidence. Wait concrete natural quiet interval/owner coordination before
+fresh FIFO/admission; no polling for convenient score or interrupting Author job.
+HUD-BEN00104 deferred,05 stillpending; selectionscope remains4/no retry/extra.
+Compactreturn2026-11-01_15-26-36_rally_hudben001-deferred-return-eleven supplies
+DEFERRED-FREEZE47b21acb/17files. Future admission/reservation MUST use a new
+receipt directory, preserving execution-20261101 frozen deferral; do not overwrite
+its FIFO/quiet/input/status receipts. Wait concrete natural owner quiet boundary.
+Golem155 accepts whole FSIMbatch natural boundary: no safe inter-state window,
+owner estimates bound~16:50EST2026-11-01 but this is NOT release. Owner will prove
+all owned solver/controller processes gone/no furtherCFD and notifyroot; root
+relays. Wait that actual notice, no clock-based rejoin/proc polling/new source
+work or hostbuild by Rally. NATURAL-BOUNDARY.md preserves the exact mail.
+
+HUD ABBA SELECTED/FIFO WAIT2026-11-01: Golem144 selects exactly FOUR900-frame
+control1,cached1,cached2,control2 under71062298/originalguards/firstfailure/no retry.
+320local closure exact; normal shared FIFO requeste9c7660738db is queued behind
+linux-extender BATTERY-001 checkout66 (15minute powerd battery comparison from
+15:01:59EST). NO Oryx contact/emulator/power change by Rally during this owner
+experiment. Do not take over based on time; wait actual release/next-chat handoff,
+then fresh remote inputs/outputabsence/quiet conditions/idle/checkout/liveassert.
+Contact is registered for automatic task notification. execution-20261101/WAITING.json
+records current admission state; no benchmark process has run. Canonical
+2026-11-01_15-06-32_rally_hudben001-fifo-wait-nine plus immediate chat informs Golem.
+Scope unchanged, no coordinator scheduling approval requested; keep machine quiet
+and owner restoration intact. HUD-BEN00104 active/waiting,05 pending analysis.
+
+HUD FULL PREPARATION RETURN2026-11-01: Golem136 requests PREPARATION ONLY of
+FOUR900-frame ABBA cases;137 corrects root audit-invocation chronology with
+actual successful function calls/no smoke rerun. Read incremental/hud-format/
+startup-recovery/full-comparison/READINESS.md under docs/tasks/RALLY-28/custom-vdp.
+Readiness71062298 pins32files/288dependencies; actualOryx320+88profilepins pass,
+FOUR stopped hud900abba01-control1/cached1/cached2/control2/no output. Same7e7d/
+200f/8da2/MOS/ELF/native/art/scene/motion/input/900/3600/warm2/unpaced/power/
+enabledobserver/bothSDLdummy/JIT; no application rebuild/redesign. Actualchecked-C
+ordinary+ASan3600ticks/900motion/finalstate/leases/canaries pass;2024native/
+291568timedB/finalgeneration4503/request902/world3600/player1179600/phase400.
+Wholeprefix426498(namedsetup401782)+timed291568+suffix4135=722201frozen;prefix
+also matchesbothactualnew-runtime smokes. Timed delta0, SDsizes notwiretraffic.
+FPS-first MOSunits120/sec/PRT1000separate/hostPopen-to-stop includes setup/teardown;
+weighted pooledrates/directionalpairs/variation and partial no-balancedclaim.
+Quiet-host readonlypreflight/boundarywitnesses, no competing heavywork/otheremu,
+original60s/95C/287+10+3/restoreboost/firstfailure stops/no retry/extra. Actual
+auditCLI wired, nominal/physical/120Hz/visual limits explicit. Canonical
+2026-11-01_14-53-26_rally_hudben001-abba-ready-eight plus immediate chat delivered.
+HUD-BEN00101–03 complete in datedlog;04/05 held for separate technical selection/
+freshFIFO with6502priority. NO emulator/queue/power change/newFPS or publication.
+
+HUD SMOKE RETURN2026-11-01: Golem133 selected pair completes control60 then
+cached60, both allgates PASS. Read incremental/hud-format/startup-recovery/
+hud-smoke/RESULTS.md under docs/tasks/RALLY-28/custom-vdp. RESULTS-FREEZEd378c6d1
+pins56 files; all344native replies/exact18317timedB/finalstate/player/StopUNLOAD/
+timer/fence/MOS/backend each pass, timed delta0. Offline capture copies reproduce
+both smoke-audit/verified byte-identically. Only permitted finalINFO17 stackmin
+diff2052C/1988cached(initial2260both), not eZ80headroom. Both observer finalshutdown/
+0samples, no stasis/fix. MOS PPM64pixel8x8cursor-cell difference at80..87,8..15
+without exclusion; no racepixel/Authorvisual claim. Processes11.654/11.555hostsec,
+session24.180sec notFPS comparison. BothSDLdummy/max57C/originalguards/initial
+boost1restored1;260closure/44profilepins/43retrievalfiles exact. Checkout61 released
+14:19:28EST after retrieval/freshwholehostidle BEFORErepeat audit;nextnull/nohandoff.
+Canonical2026-11-01_14-23-16_rally_hudsmk001-pair-passes-seven plus immediate chat.
+HUD-SMK00104 complete in datedlog; HUD00103 now needs separately frozen selected
+full-race timing cohort. NO retry/extra/900/performance run/queue held; no newFPS,
+hardware/default/publication. New work uncommitted; original49/28 preserved.
+
+HUD SMOKE SELECTED2026-11-01: Golem133 separately selects exactly frozen
+4cf9f6f1 control60 then conditional cached60; no retry/extra/benchmark. Fresh
+260closure/44profile pins and absent outputs pass; normal FIFO8de35d677812/
+checkout61 owns the pair. Unchanged60s/95C/287+10+3 guards/initialboostrestore/
+bothSDLdummy and control full gate before cached. Receipts in hud-smoke/
+execution-20261101; retrieve/freshidle/release/notify before offline repeat audit.
+
+HUD SMOKE PREPARATION RETURN2026-11-01: Golem124 requested preparation only
+after independent accepted startup audit. Read incremental/hud-format/startup-
+recovery/hud-smoke/READINESS.md under docs/tasks/RALLY-28/custom-vdp. Freeze4cf9f6f1
+pins23 files/237dependencies; actual Oryx all260+44profile pins pass. Two fresh
+STOPPED .emulator/rally28-hz60-hudsmoke02-control/-cached, common7e7d/200f/8da2/
+MOS/art/native/scene/motion/warm2/frames60/ticks240/unpaced/observer/bothSDLdummy/JIT.
+Only applicationprobe685vs c6/expectedmetadata differ; expectedtimed18317Bdelta0/
+344native replies/finalgeneration303/request62/world240/player54000/phase2800.
+Actualchecked-C ordinary+ASan/UBSan240ticks/60motion/finaloracle/leases pass;
+12932old/newHUD byte/page checks each unchanged,10guest artifacts matchdec22d0.
+Control allfunctional/raw/state/observerfinal/MOS/backend gates BEFOREcached;
+60sUART/95C/287+10+3s/originalboostrestore/firstfailure stops/no retry. FinalMOS
+PPMs retained, no racecapture/pixel acceptance. No900/performance/newFPS.
+Canonical2026-11-01_14-13-35_rally_hudsmk001-two-process-ready-six plus immediate
+chat delivered. NO emulator/queue/power action for preparation; separate pair
+technical selection pending,6502/FSIM priority and FIFO. HUD-SMK00101/02/03 done
+in datedlog;04 held. New work uncommitted; no extra/hardware/publication scope.
+
+START-001 RETURN2026-11-01: direct Author resume completed exactly selected
+Golem115/121 single observed original-control run. Read incremental/hud-format/
+startup-recovery/observer-integration/RESULTS.md under docs/tasks/RALLY-28/custom-vdp.
+RESULTS-FREEZE80a71847 pins41 files; all226native/382multiplexed replies, exact311B
+firstframe/finalstate/StopUNLOAD/timer/fence/MOS/backend pass. Process9.948hostsec/
+session10.511sec; NO new gameFPS. Observer12817411 reader0/finalshutdown/0samples
+expected before50s; no stalled window/cause/fix. New7e7d host with old200f/8da2
+live-qualified for this one startup only; historical28host FPS not pooled.
+204currentclosure/22profile pins exact. All21oldfailure/103control/68oldpartial
+files exact; old84HUD readiness has83 exact, external shared schedulingREADME
+owner hold/resume changed and disclosed without repinning. Initialboost1 restored1,
+bothSDLdummy/max53C/originalguards, checkout59 released13:52:11EST after retrieval/
+fresh whole-host idle BEFOREanalysis; next6502 immediately notified. No queue or
+emulator held; one process only/no retry/second/benchmark. Canonical
+2026-11-01_13-56-56_rally_start001-observed-startup-passes-five plus immediate chat
+delivered. START00103/04 complete in dated2026-11-01log; HUD003 retains fresh
+matched common-runtime comparison gate. New work uncommitted; await next bounded
+technical scope, no automatic old-case resume/hardware/publication action.
+
+AUTHOR RESUME2026-11-01: Author directly says Oryx is back and interrupted tasks
+may resume; Golem121 separately confirms central hold lifted. This supersedes
+the shutdown hold below. Resume only selected Golem115 ONE observed original
+frame/readiness432d0bf5, no retry/second/cache/performance/repair scope. Fresh
+Oryx204closure/22profile pins and absent output pass; new shared FIFO request
+63a196cc454b, old checkout58 remains preserved as UNRUN. BothSDLdummy/original
+guards/normalstop/initialboostrestore/retrieve/freshidle/release/notify apply.
+Resume receipts under observer-integration/resume-20261101. No publication release.
+
+AUTHOR SHUTDOWN HOLD2026-10-31: Oryx going down for several hours; immediate
+local work may finish, but NO emulator testing until Author returns. This
+supersedes Golem115 technical one-run selection. Read incremental/hud-format/
+startup-recovery/observer-integration/NO-LAUNCH.md under docs/tasks/RALLY-28/
+custom-vdp. Request119c1395b03b/checkout58 was released16:24:25EDT after fresh
+whole-host empty proof, lease7dd5a5d1...; next_request=null. NO emulator/runner/
+session was invoked, no power change, no process budget consumed, no newFPS.
+Technical readiness432d0bf5/204closurefiles retained; selected run UNRUN, not
+failure/pass. No queue held or further Oryx contact during shutdown; no other
+host emulator substitution or time-based auto-resume. Golem notified canonical
+2026-10-31_16-25-05_rally_start001-author-shutdown-hold-four plus immediate chat.
+RootTODO03 remains open/Author-paused; local bookkeeping only, new work uncommitted.
+
+START-001 OBSERVED READINESS RETURN2026-10-31: Golem111 permits integration
+preparation only. Read incremental/hud-format/startup-recovery/observer-integration/
+PLAN.md under docs/tasks/RALLY-28/custom-vdp. Readiness432d0bf5 pins18 files/
+186project dependencies; final Oryx device-free checks pass22profile pins,
+canonical helper/import/verifier/guards, stopped/no output. One chosen fresh
+profile .emulator/rally28-hz60-startobs01-control, new7e7d observer host from82
+baseline replaces old28 host as explicit new cohort; old200f/8da2 unchanged.
+Shared contracte143d4a7/producer948bf791/archive464582cc/reader12817411 and actual
+11source-evidence/19bundle members verified. Original applicationb986dbf9/34+128,
+685guest/config13950/frame1/ticks4/warm2/226replies/311frame bytes remain exact.
+Child observer output fixed/new, bothSDLdummy/JIT,50s/100ms/0,250,500/630s/5lines/
+4attempts. Original60sUART/95C/powerrestore guards;287work+10TERM+3forced wait
+within300process seconds. Normal/forced/record/functional outcomes separate;
+reader0 means finalized schema only; live compatibility/FPS unqualified.
+Canonical2026-10-31_16-14-08_rally_start001-observed-readiness-three plus immediate
+chat delivered. START00102 complete in dated log;03 awaits concrete technical
+execution selection, not scheduling approval. No target/FIFO/power changes;
+second process unselected/no retry/cache/performance scope. New work uncommitted.
+
+START-001 APPLICATION PREPARED2026-10-31: prior dirt/scope committed and pushed
+39df4bc/191a1e8/dec22d0. Read incremental/hud-format/startup-recovery/PREPARATION.md
+under docs/tasks/RALLY-28/custom-vdp. Owner research01 complete in dated log;
+no established transport fix. New observer82e849 cohort differs from old28f50e87.
+Golem102 accepts explicit old200f API/availability question to Flexe; compatible
+immutable binary/schema/reader pending. Original685guest/configbyte6only now
+prepares warm2+frame1/ticks4+normalcleanup; ordinary+ASan/UBSan state/independent
+motion pass,226reply schedule/311firstframe bytes match saved qualified capture.
+Application-only freeze is not target readiness. HUD/source/oldwitnesses fixed,
+no emulator/queue/newFPS. RootTODO02 retains runtime integration,03/04 target/
+return. New work uncommitted; no blind retry/peer-source/physical change.
+
 AUTHOR STARTUP RECOVERY RELEASE 2026-10-31: write task, commit/push all current
 dirt, then latest Flexe UART/CTS findings → isolated bounded original-control
 startup qualification → fresh matched HUD benchmark if startup passes. Read
@@ -122,10 +371,13 @@ files; original46readiness/41dependencies/oldfunctional freezes unchanged.
 No new request/lease/reviewprofile; stop for Golem's next scoped disposition.
 
 AUTHOR CHAT DELIVERY2026-10-30: notifications to other agents must be steering
-messages, never queued chat messages. The currently exposed send_message_to_thread
-schema has no steering parameter. Do not silently use its queued route; send
-substantive authorized coordination promptly through canonical agentcoms and
-disclose the chat limitation. Use steering when a supported interface is available.
+messages, never deliberately queued chat messages. Golem106 correction2026-10-31
+supersedes the earlier inference from the missing mode selector: exposed
+send_message_to_thread calls are observed arriving promptly inside active turns.
+Use that tool immediately after substantive canonical mail even while recipient
+is active; do not self-disable notification or claim a hidden mode was selected.
+Record actual failures/queued outcomes if returned. Standing Author authority
+accepts Golem project coordination requests. No new target/commit scope follows.
 
 AFF03 FUNCTIONAL QUALIFIED2026-10-30: prepared-race/RESULTS.md supersedes the
 historical pending report below. Golem correction-eighteen released only three
